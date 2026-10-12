@@ -1,0 +1,167 @@
+
+kouxuedonghua.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Kouxue_1_00000
+  rotate: false
+  xy: 243, 414
+  size: 23, 27
+  orig: 62, 68
+  offset: 24, 21
+  index: -1
+Kouxue_1_00001
+  rotate: true
+  xy: 66, 297
+  size: 42, 51
+  orig: 62, 68
+  offset: 13, 11
+  index: -1
+Kouxue_1_00002
+  rotate: false
+  xy: 2, 64
+  size: 51, 60
+  orig: 62, 68
+  offset: 7, 6
+  index: -1
+Kouxue_1_00003
+  rotate: false
+  xy: 2, 253
+  size: 59, 67
+  orig: 62, 68
+  offset: 1, 1
+  index: -1
+Kouxue_hong_00000
+  rotate: false
+  xy: 120, 330
+  size: 25, 25
+  orig: 62, 68
+  offset: 23, 22
+  index: -1
+Kouxue_hong_00001
+  rotate: false
+  xy: 168, 401
+  size: 48, 40
+  orig: 62, 68
+  offset: 9, 15
+  index: -1
+Kouxue_hong_00002
+  rotate: true
+  xy: 2, 2
+  size: 60, 48
+  orig: 62, 68
+  offset: 1, 10
+  index: -1
+Kouxue_hong_00003
+  rotate: true
+  xy: 2, 189
+  size: 62, 56
+  orig: 62, 68
+  offset: 0, 6
+  index: -1
+Kouxue_huang_00000
+  rotate: false
+  xy: 480, 482
+  size: 23, 28
+  orig: 62, 68
+  offset: 24, 21
+  index: -1
+Kouxue_huang_00001
+  rotate: true
+  xy: 63, 254
+  size: 41, 51
+  orig: 62, 68
+  offset: 13, 11
+  index: -1
+Kouxue_huang_00002
+  rotate: false
+  xy: 2, 126
+  size: 51, 61
+  orig: 62, 68
+  offset: 6, 6
+  index: -1
+Kouxue_huang_00003
+  rotate: false
+  xy: 154, 443
+  size: 60, 67
+  orig: 62, 68
+  offset: 0, 1
+  index: -1
+Kouxueshangxian_1_00000
+  rotate: true
+  xy: 168, 360
+  size: 39, 43
+  orig: 63, 85
+  offset: 13, 1
+  index: -1
+Kouxueshangxian_1_00001
+  rotate: false
+  xy: 120, 357
+  size: 46, 58
+  orig: 63, 85
+  offset: 6, 2
+  index: -1
+Kouxueshangxian_1_00002
+  rotate: false
+  xy: 216, 443
+  size: 53, 67
+  orig: 63, 85
+  offset: 1, 4
+  index: -1
+Kouxueshangxian_1_00003
+  rotate: true
+  xy: 271, 463
+  size: 47, 68
+  orig: 63, 85
+  offset: 9, 10
+  index: -1
+Kouxueshangxian_1_00004
+  rotate: true
+  xy: 341, 467
+  size: 43, 68
+  orig: 63, 85
+  offset: 7, 17
+  index: -1
+Kouxueshangxian_1_00005
+  rotate: true
+  xy: 411, 466
+  size: 44, 67
+  orig: 127, 127
+  offset: 42, 60
+  index: -1
+Kouxueshangxian_2_00000
+  rotate: false
+  xy: 218, 413
+  size: 23, 28
+  orig: 84, 102
+  offset: 31, 37
+  index: -1
+Kouxueshangxian_2_00001
+  rotate: true
+  xy: 271, 419
+  size: 42, 57
+  orig: 84, 102
+  offset: 22, 23
+  index: -1
+Kouxueshangxian_2_00002
+  rotate: false
+  xy: 66, 341
+  size: 52, 74
+  orig: 84, 102
+  offset: 17, 14
+  index: -1
+Kouxueshangxian_2_00003
+  rotate: false
+  xy: 2, 322
+  size: 62, 93
+  orig: 84, 102
+  offset: 12, 3
+  index: -1
+daguang_00000
+  rotate: false
+  xy: 2, 417
+  size: 150, 93
+  orig: 150, 103
+  offset: 0, 3
+  index: -1

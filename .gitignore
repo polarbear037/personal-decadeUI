@@ -1,0 +1,30 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor settings
+.idea/
+.vscode/
+十周年UI（一将成名样式）/
+assets/dynamic/
+image/character/
+.codex-tmp/
+tests/*
+tools/
+.chrome-*/
+.codex-poptip-*.json
+
+# Local logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*~
+
+# Local development notes
+开发前先看.md
+
+# Temporary asset scan output
+/tmp_*/
+/tmp_*.*
