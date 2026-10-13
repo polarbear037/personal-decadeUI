@@ -1,1 +1,80 @@
-import{lib}from"noname";import{cardSkinMeta as e}from"../../config/utils.js";import{generateSkinFilename as s,isSkinPreloaded as c,getSkinCache as a,getFallbackKey as r,getFallbackSkinUrl as d,createSkinAsset as o,buildSkinUrl as n,loadSkinImage as t,loadFallbackSkin as i}from"./skin-loader.js";function l(e,s){e.style.background=`url("${s}")`,e.classList.add("decade-card")}function u(u,card){const f=Array.isArray(card)?card[2]:card.name,m=Array.isArray(card)?card[3]:card.nature,{skinKey:y,isOff:g}=function(){const e=lib.config.extension_十周年UI_cardPrettify;return{skinKey:e,isOff:!e||"off"===e}}();if(u.classList.remove("decade-card"),g)return void function(e){e.classList.remove("decade-card"),e.style.removeProperty("background")}(u);if(!e[y])return;if(function(e){e._decadeRawBg||(e._decadeRawBg=e.style.backgroundImage||e.style.background||"")}(u),u.classList.add("decade-card"),u.classList.contains("infohidden"))return;const k=s(f,m);c(y)?function(e,s,c){const o=a(s)[c],n=r(s);if(void 0===o){const s=d(n,c);s?l(e,s):e.classList.remove("decade-card")}else o?.url?l(e,o.url):e.classList.remove("decade-card")}(u,y,k):function(e,s,c){const d=a(s);let u=d[c];const f=r(s);if(!0===u?.loaded&&u.url)l(e,u.url);else if(!1!==u?.loaded){if(u||(u=o(c),d[c]=u),void 0===u.loaded){const a=n(s,c),r=e._decadeRawBg||"";t({url:a,asset:u,onSuccess:()=>{},onError:()=>{f?i({asset:u,fallbackKey:f,filename:c,onSuccess:s=>{e.style.background=`url("${s}")`},onFail:()=>{e.style.background=r,e.classList.remove("decade-card")}}):(u.loaded=!1,e.style.background=r,e.classList.remove("decade-card"))}}),e.style.background=`url("${a}")`}}else e.classList.remove("decade-card")}(u,y,k)}function f(card,e,s,c){const a=card._decadeRawBg||"";if(!s)return card.style.background=a,void card.classList.remove("decade-card");const r=d(s,c);r?card.style.background=`url("${r}")`:(card.style.background=a,card.classList.remove("decade-card"))}function m(card){card&&u(card,card)}export{u as applyCardSkin,f as handleSkinFallback,m as refreshCardSkin};
+import { lib } from "noname";
+import { cardSkinMeta as cardSkinMeta } from "../../config/utils.js";
+import { generateSkinFilename as generateSkinFilename, isSkinPreloaded as isSkinPreloaded, getSkinCache as getSkinCache, getFallbackKey as getFallbackKey, getFallbackSkinUrl as getFallbackSkinUrl, createSkinAsset as createSkinAsset, buildSkinUrl as buildSkinUrl, loadSkinImage as loadSkinImage, loadFallbackSkin as loadFallbackSkin } from "./skin-loader.js";
+function l(cardElement, url) {
+	((cardElement.style.background = `url("${url}")`), cardElement.classList.add("decade-card"));
+}
+function u(u, card) {
+	const f = Array.isArray(card) ? card[2] : card.name,
+		m = Array.isArray(card) ? card[3] : card.nature,
+		{ skinKey: y, isOff: g } = (function () {
+			const skinKey = lib.config.extension_十周年UI_cardPrettify;
+			return { skinKey: skinKey, isOff: !skinKey || "off" === skinKey };
+		})();
+	if ((u.classList.remove("decade-card"), g))
+		return void (function (cardElement) {
+			(cardElement.classList.remove("decade-card"), cardElement.style.removeProperty("background"));
+		})(u);
+	if (!cardSkinMeta[y]) return;
+	if (
+		((function (cardElement) {
+			cardElement._decadeRawBg || (cardElement._decadeRawBg = cardElement.style.backgroundImage || cardElement.style.background || "");
+		})(u),
+		u.classList.add("decade-card"),
+		u.classList.contains("infohidden"))
+	)
+		return;
+	const k = generateSkinFilename(f, m);
+	isSkinPreloaded(y)
+		? (function (cardElement, skinKey, filename) {
+				const o = getSkinCache(skinKey)[filename],
+					fallbackKey = getFallbackKey(skinKey);
+				if (void 0 === o) {
+					const s = getFallbackSkinUrl(fallbackKey, filename);
+					s ? l(cardElement, s) : cardElement.classList.remove("decade-card");
+				} else o?.url ? l(cardElement, o.url) : cardElement.classList.remove("decade-card");
+			})(u, y, k)
+		: (function (cardElement, skinKey, filename) {
+				const cache = getSkinCache(skinKey);
+				let asset = cache[filename];
+				const fallbackKey = getFallbackKey(skinKey);
+				if (!0 === asset?.loaded && asset.url) l(cardElement, asset.url);
+				else if (!1 !== asset?.loaded) {
+					if ((asset || ((asset = createSkinAsset(filename)), (cache[filename] = asset)), void 0 === asset.loaded)) {
+						const a = buildSkinUrl(skinKey, filename),
+							r = cardElement._decadeRawBg || "";
+						(loadSkinImage({
+							url: a,
+							asset: asset,
+							onSuccess: () => {},
+							onError: () => {
+								fallbackKey
+									? loadFallbackSkin({
+											asset: asset,
+											fallbackKey: fallbackKey,
+											filename: filename,
+											onSuccess: fallbackUrl => {
+												cardElement.style.background = `url("${fallbackUrl}")`;
+											},
+											onFail: () => {
+												((cardElement.style.background = r), cardElement.classList.remove("decade-card"));
+											},
+										})
+									: ((asset.loaded = !1), (cardElement.style.background = r), cardElement.classList.remove("decade-card"));
+							},
+						}),
+							(cardElement.style.background = `url("${a}")`));
+					}
+				} else cardElement.classList.remove("decade-card");
+			})(u, y, k);
+}
+function f(card, asset, fallbackKey, filename) {
+	const rawBg = card._decadeRawBg || "";
+	if (!fallbackKey) return ((card.style.background = rawBg), void card.classList.remove("decade-card"));
+	const fallbackUrl = getFallbackSkinUrl(fallbackKey, filename);
+	fallbackUrl ? (card.style.background = `url("${fallbackUrl}")`) : ((card.style.background = rawBg), card.classList.remove("decade-card"));
+}
+function m(card) {
+	card && u(card, card);
+}
+export { u as applyCardSkin, f as handleSkinFallback, m as refreshCardSkin };

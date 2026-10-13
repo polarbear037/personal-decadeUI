@@ -1,1 +1,19 @@
-import"noname";import{CONFIG as t}from"./config.js";function i(i){decadeUI.animate.add(function(i,a,e){const h=e.context;h.shadowColor="yellow",h.shadowBlur=1,this.head=this.head||0,this.tail=this.tail||-1;const s=t.ANIM_SPEED*(e.deltaTime/t.FRAME_RATE);if(this.head=Math.min(this.head+s,1),this.head>=1&&(this.tail+=s),this.tail>1)return!0;const d=Math.max(0,this.tail),o=decadeUI.get.lerp;return e.drawLine(o(i.x,a.x,d),o(i.y,a.y,d),o(i.x,a.x,this.head),o(i.y,a.y,this.head),t.LINE_COLOR,t.LINE_WIDTH),!1},!0,{x:i[0],y:i[1]},{x:i[2],y:i[3]})}export{i as drawLine};
+import "noname";
+import { CONFIG as CONFIG } from "./config.js";
+function i(dots) {
+	decadeUI.animate.add(
+		function (source, target, e) {
+			const ctx = e.context;
+			((ctx.shadowColor = "yellow"), (ctx.shadowBlur = 1), (this.head = this.head || 0), (this.tail = this.tail || -1));
+			const speed = CONFIG.ANIM_SPEED * (e.deltaTime / CONFIG.FRAME_RATE);
+			if (((this.head = Math.min(this.head + speed, 1)), this.head >= 1 && (this.tail += speed), this.tail > 1)) return !0;
+			const tail = Math.max(0, this.tail),
+				lerp = decadeUI.get.lerp;
+			return (e.drawLine(lerp(source.x, target.x, tail), lerp(source.y, target.y, tail), lerp(source.x, target.x, this.head), lerp(source.y, target.y, this.head), CONFIG.LINE_COLOR, CONFIG.LINE_WIDTH), !1);
+		},
+		!0,
+		{ x: dots[0], y: dots[1] },
+		{ x: dots[2], y: dots[3] }
+	);
+}
+export { i as drawLine };

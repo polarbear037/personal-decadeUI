@@ -1,1 +1,9 @@
-import"noname";import{drawLine as e}from"./line.js";import{playKillEffect as o}from"./kill.js";import{playSkillEffect as d}from"./skill.js";import{setGhostEffectEnabled as i,addGhostTrail as l,setupCardGhost as r}from"./cardGhost.js";function t(){"undefined"!=typeof decadeUI?(decadeUI.effect={dialog:{create:()=>decadeUI.dialog.create("effect-dialog dui-dialog")},line:e,kill:o,skill:d,ghost:{add:l,setEnabled:i}},r()):console.error("decadeUI 未定义，无法初始化特效模块")}export{l as addGhostTrail,e as drawLine,o as playKillEffect,d as playSkillEffect,i as setGhostEffectEnabled,r as setupCardGhost,t as setupEffects};
+import "noname";
+import { drawLine as drawLine } from "./line.js";
+import { playKillEffect as playKillEffect } from "./kill.js";
+import { playSkillEffect as playSkillEffect } from "./skill.js";
+import { setGhostEffectEnabled as setGhostEffectEnabled, addGhostTrail as addGhostTrail, setupCardGhost as setupCardGhost } from "./cardGhost.js";
+function t() {
+	"undefined" != typeof decadeUI ? ((decadeUI.effect = { dialog: { create: () => decadeUI.dialog.create("effect-dialog dui-dialog") }, line: drawLine, kill: playKillEffect, skill: playSkillEffect, ghost: { add: addGhostTrail, setEnabled: setGhostEffectEnabled } }), setupCardGhost()) : console.error("decadeUI 未定义，无法初始化特效模块");
+}
+export { addGhostTrail as addGhostTrail, drawLine as drawLine, playKillEffect as playKillEffect, playSkillEffect as playSkillEffect, setGhostEffectEnabled as setGhostEffectEnabled, setupCardGhost as setupCardGhost, t as setupEffects };

@@ -1,1 +1,26 @@
-import{lib}from"noname";function e(e,n=!1){if(document.querySelector(`script[src*="${e}"]`))return null;const r=lib.extensionPack.十周年UI.version,o=document.createElement("script");return n?(o.async=!0,o.defer=!0,o.src=`${e}?v=${r}&t=${Date.now()}`,o.onload=()=>o.remove(),o.onerror=()=>o.remove(),document.head.appendChild(o),o):new Promise((n,t)=>{o.src=`${e}?v=${r}&t=${Date.now()}`,o.onload=()=>{o.remove(),n(o)},o.onerror=()=>{o.remove(),t(new Error(`Failed to load script: ${e}`))},document.head.appendChild(o)})}function n(e){const n=e.split("?")[0];if(document.querySelector(`link[href*="${n}"]`))return null;const r=lib.extensionPack.十周年UI.version,o=document.createElement("link");return o.rel="stylesheet",o.href=`${e}?v=${r}&t=${Date.now()}`,document.head.appendChild(o),o}export{n as createLinkElement,e as createScriptElement};
+import { lib } from "noname";
+function e(path, isAsync = !1) {
+	if (document.querySelector(`script[src*="${path}"]`)) return null;
+	const version = lib.extensionPack.十周年UI.version,
+		script = document.createElement("script");
+	return isAsync
+		? ((script.async = !0), (script.defer = !0), (script.src = `${path}?v=${version}&t=${Date.now()}`), (script.onload = () => script.remove()), (script.onerror = () => script.remove()), document.head.appendChild(script), script)
+		: new Promise((resolve, reject) => {
+				((script.src = `${path}?v=${version}&t=${Date.now()}`),
+					(script.onload = () => {
+						(script.remove(), resolve(script));
+					}),
+					(script.onerror = () => {
+						(script.remove(), reject(new Error(`Failed to load script: ${path}`)));
+					}),
+					document.head.appendChild(script));
+			});
+}
+function n(path) {
+	const basePath = path.split("?")[0];
+	if (document.querySelector(`link[href*="${basePath}"]`)) return null;
+	const version = lib.extensionPack.十周年UI.version,
+		link = document.createElement("link");
+	return ((link.rel = "stylesheet"), (link.href = `${path}?v=${version}&t=${Date.now()}`), document.head.appendChild(link), link);
+}
+export { n as createLinkElement, e as createScriptElement };

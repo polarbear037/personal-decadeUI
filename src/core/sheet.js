@@ -1,1 +1,52 @@
-import"noname";function e(){return{init(){if(!this.sheetList){this.sheetList=[];for(let e=0;e<document.styleSheets.length;e++)-1!==document.styleSheets[e].href?.indexOf("extension/"+encodeURI(decadeUIName))&&this.sheetList.push(document.styleSheets[e])}this.sheetList&&delete this.init},getStyle(e,t){if(this.sheetList||this.init(),!this.sheetList)throw"sheet not loaded";if("string"!=typeof e||!e)throw'parameter "selector" error';if(this.cachedSheet||(this.cachedSheet={}),this.cachedSheet[e])return this.cachedSheet[e];const s=this.sheetList;let i,h=!1;for(let n=s.length-1;n>=0;n--){if("string"==typeof t){t=t.replace(/.css/,"")+".css";for(let e=n;e>=0;e--)-1!==s[e].href.indexOf(t)&&(i=s[e]);if(h=!0,!i)throw"cssName not found"}else i=s[n];try{for(let t=0;t<i.cssRules.length;t++)if(i.cssRules[t]instanceof CSSMediaRule){const s=i.cssRules[t].cssRules;for(let t=0;t<s.length;t++)if(s[t].selectorText===e)return s[t].style}else if(i.cssRules[t].selectorText===e)return this.cachedSheet[e]=i.cssRules[t].style,i.cssRules[t].style}catch(r){console.error(r,"error-sheet",i)}if(h)break}return null},insertRule(e,t,s){if(this.sheetList||this.init(),!this.sheetList)throw"sheet not loaded";if("string"!=typeof e||!e)throw'parameter "rule" error';let i;if("string"==typeof s){s=s.replace(/.css/,"")+".css";for(let e=this.sheetList.length-1;e>=0;e--)-1!==this.sheetList[e].href.indexOf(s)&&(i=this.sheetList[e]);if(!i)throw"cssName not found"}i||(i=this.sheetList[this.sheetList.length-1]);const h="number"==typeof t?i.insertRule(e,t):i.insertRule(e,i.cssRules.length);return i.cssRules[h].style}}}export{e as createSheetModule};
+import "noname";
+function e() {
+	return {
+		init() {
+			if (!this.sheetList) {
+				this.sheetList = [];
+				for (let e = 0; e < document.styleSheets.length; e++) -1 !== document.styleSheets[e].href?.indexOf("extension/" + encodeURI(decadeUIName)) && this.sheetList.push(document.styleSheets[e]);
+			}
+			this.sheetList && delete this.init;
+		},
+		getStyle(selector, cssName) {
+			if ((this.sheetList || this.init(), !this.sheetList)) throw "sheet not loaded";
+			if ("string" != typeof selector || !selector) throw 'parameter "selector" error';
+			if ((this.cachedSheet || (this.cachedSheet = {}), this.cachedSheet[selector])) return this.cachedSheet[selector];
+			const sheetList = this.sheetList;
+			let sheet,
+				shouldBreak = !1;
+			for (let n = sheetList.length - 1; n >= 0; n--) {
+				if ("string" == typeof cssName) {
+					cssName = cssName.replace(/.css/, "") + ".css";
+					for (let e = n; e >= 0; e--) -1 !== sheetList[e].href.indexOf(cssName) && (sheet = sheetList[e]);
+					if (((shouldBreak = !0), !sheet)) throw "cssName not found";
+				} else sheet = sheetList[n];
+				try {
+					for (let t = 0; t < sheet.cssRules.length; t++)
+						if (sheet.cssRules[t] instanceof CSSMediaRule) {
+							const s = sheet.cssRules[t].cssRules;
+							for (let t = 0; t < s.length; t++) if (s[t].selectorText === selector) return s[t].style;
+						} else if (sheet.cssRules[t].selectorText === selector) return ((this.cachedSheet[selector] = sheet.cssRules[t].style), sheet.cssRules[t].style);
+				} catch (r) {
+					console.error(r, "error-sheet", sheet);
+				}
+				if (shouldBreak) break;
+			}
+			return null;
+		},
+		insertRule(rule, index, cssName) {
+			if ((this.sheetList || this.init(), !this.sheetList)) throw "sheet not loaded";
+			if ("string" != typeof rule || !rule) throw 'parameter "rule" error';
+			let sheet;
+			if ("string" == typeof cssName) {
+				cssName = cssName.replace(/.css/, "") + ".css";
+				for (let e = this.sheetList.length - 1; e >= 0; e--) -1 !== this.sheetList[e].href.indexOf(cssName) && (sheet = this.sheetList[e]);
+				if (!sheet) throw "cssName not found";
+			}
+			sheet || (sheet = this.sheetList[this.sheetList.length - 1]);
+			const inserted = "number" == typeof index ? sheet.insertRule(rule, index) : sheet.insertRule(rule, sheet.cssRules.length);
+			return sheet.cssRules[inserted].style;
+		},
+	};
+}
+export { e as createSheetModule };

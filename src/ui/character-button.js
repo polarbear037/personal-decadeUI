@@ -1,1 +1,64 @@
-import{ui,_status,lib,get}from"noname";import{element as e}from"../utils/element.js";function n(){return function(n,t,o,r,a){a?(a.classList.add("button","character","decadeUI"),a.style.display=""):a=ui.create.div(".button.character.decadeUI"),a._link=n,"characterx"===t&&(_status.noReplaceCharacter?t="character":lib.characterReplace[n]?.length&&(n=lib.characterReplace[n].randomGet())),"characterx"===t&&lib.characterReplace[n]?.length&&(n=lib.characterReplace[n].randomGet()),a.link=n,decadeUI.element.create("character",a);return get.is.double(a._link,!0)&&(a._changeGroup=!0),"characterx"===t&&lib.characterReplace[a._link]?.length>1&&(a._replaceButton=!0),a.refresh=function(n,t,o){n.setBackground(t,"character"),n.node&&(n.node.name.remove(),n.node.hp.remove(),n.node.group.remove(),n.node.intro.remove(),n.node.replaceButton&&n.node.replaceButton.remove()),n.node={name:e.create("name",n),hp:e.create("hp",n),group:e.create("identity",n),intro:e.create("intro",n),info:e.create("info",n)};const a=get.character(t);if(n.node.name.innerHTML=get.slimName(t),"default"===lib.config.buttoncharacter_style||"simple"===lib.config.buttoncharacter_style){"simple"===lib.config.buttoncharacter_style&&(n.node.group.style.display="none"),n.classList.add("newstyle"),n.node.name.dataset.nature=get.groupnature(get.bordergroup(a)),n.node.group.dataset.nature=get.groupnature(get.bordergroup(a),"raw"),ui.create.div(n.node.hp);const e=get.infoHp(a[2]),t=get.infoMaxHp(a[2]),o=get.infoHujia(a[2]),r="single"===get.mode()&&"changban"===_status.mode||("guozhan"===get.mode()||("string"==typeof(c=_status.connectMode?lib.configOL.double_character:get.config("double_character"))?"double"===c:Boolean(c)))&&(_status.connectMode||"pingjun"===(_status.connectMode?lib.configOL.double_hp:get.config("double_hp")));let d=get.numStr(e/(r?2:1));e!==t&&(d+="/"+get.numStr(t/(r?2:1))),ui.create.div(".text",d,n.node.hp),0===a[2]?n.node.hp.hide():get.infoHp(a[2])<=3?n.node.hp.dataset.condition="mid":n.node.hp.dataset.condition="high",o>0&&(ui.create.div(n.node.hp,".shield"),ui.create.div(".text",get.numStr(o),n.node.hp))}else{const e=get.infoHp(a[2]),t=get.infoMaxHp(a[2]),o=get.infoHujia(a[2]);if(t>14)n.node.hp.innerHTML="string"==typeof a[2]?a[2]:get.numStr(a[2]),n.node.hp.classList.add("text");else{for(let o=0;o<t;o++){const t=ui.create.div("",n.node.hp);o>=e&&t.classList.add("exclude")}for(let e=0;e<o;e++)ui.create.div(n.node.hp,".shield")}}var c;if(n.node.hp.childNodes.length||(n.node.name.style.top="8px"),n.node.name.querySelectorAll("br").length>=4&&(n.node.name.classList.add("long"),"old"===lib.config.buttoncharacter_style&&(n.addEventListener("mouseenter",ui.click.buttonnameenter),n.addEventListener("mouseleave",ui.click.buttonnameleave))),n.node.intro.innerText=lib.config.intro,r||lib.setIntro(n),a[1]){const e=get.is.double(t,!0);e?(n.node.group.innerHTML=e.reduce((e,n)=>`${e}<div data-nature="${get.groupnature(n)}">${get.translation(n)}</div>`,""),e.length>4&&(n.node.group.style.height=/* @__PURE__ */new Set([5,6,9]).has(e.length)?"48px":"64px")):n.node.group.innerHTML=`<div>${get.translation(a[1])}</div>`,n.node.group.style.backgroundColor=get.translation(`${get.bordergroup(a)}Color`)}else n.node.group.style.display="none";if(n._replaceButton){const e=ui.create.div(".button.replaceButton",n);n.node.replaceButton=e,e.innerText="切换",e._node=n,e.addEventListener(lib.config.touchscreen?"touchend":"click",function(){_status.tempNoButton=!0;const e=this._node,n=lib.characterReplace[e._link];let t=e.link,o=n.indexOf(t);o=o===n.length-1?0:o+1,e.link=n[o],e.refresh(e,n[o]),setTimeout(()=>{_status.tempNoButton=void 0},200)})}},a.refresh(a,n,o?.intersection),o&&o.appendChild(a),a}}export{n as createCharacterButtonPreset};
+import { ui, _status, lib, get } from "noname";
+import { element as element } from "../utils/element.js";
+function n() {
+	return function (item, type, position, noclick, node) {
+		(node ? (node.classList.add("button", "character", "decadeUI"), (node.style.display = "")) : (node = ui.create.div(".button.character.decadeUI")), (node._link = item), "characterx" === type && (_status.noReplaceCharacter ? (type = "character") : lib.characterReplace[item]?.length && (item = lib.characterReplace[item].randomGet())), "characterx" === type && lib.characterReplace[item]?.length && (item = lib.characterReplace[item].randomGet()), (node.link = item), decadeUI.element.create("character", node));
+		return (
+			get.is.double(node._link, !0) && (node._changeGroup = !0),
+			"characterx" === type && lib.characterReplace[node._link]?.length > 1 && (node._replaceButton = !0),
+			(node.refresh = function (node, item, intersection) {
+				(node.setBackground(item, "character"), node.node && (node.node.name.remove(), node.node.hp.remove(), node.node.group.remove(), node.node.intro.remove(), node.node.replaceButton && node.node.replaceButton.remove()), (node.node = { name: element.create("name", node), hp: element.create("hp", node), group: element.create("identity", node), intro: element.create("intro", node), info: element.create("info", node) }));
+				const infoitem = get.character(item);
+				if (((node.node.name.innerHTML = get.slimName(item)), "default" === lib.config.buttoncharacter_style || "simple" === lib.config.buttoncharacter_style)) {
+					("simple" === lib.config.buttoncharacter_style && (node.node.group.style.display = "none"), node.classList.add("newstyle"), (node.node.name.dataset.nature = get.groupnature(get.bordergroup(infoitem))), (node.node.group.dataset.nature = get.groupnature(get.bordergroup(infoitem), "raw")), ui.create.div(node.node.hp));
+					const e = get.infoHp(infoitem[2]),
+						t = get.infoMaxHp(infoitem[2]),
+						o = get.infoHujia(infoitem[2]),
+						r = ("single" === get.mode() && "changban" === _status.mode) || (("guozhan" === get.mode() || ("string" == typeof (c = _status.connectMode ? lib.configOL.double_character : get.config("double_character")) ? "double" === c : Boolean(c))) && (_status.connectMode || "pingjun" === (_status.connectMode ? lib.configOL.double_hp : get.config("double_hp"))));
+					let d = get.numStr(e / (r ? 2 : 1));
+					(e !== t && (d += "/" + get.numStr(t / (r ? 2 : 1))), ui.create.div(".text", d, node.node.hp), 0 === infoitem[2] ? node.node.hp.hide() : get.infoHp(infoitem[2]) <= 3 ? (node.node.hp.dataset.condition = "mid") : (node.node.hp.dataset.condition = "high"), o > 0 && (ui.create.div(node.node.hp, ".shield"), ui.create.div(".text", get.numStr(o), node.node.hp)));
+				} else {
+					const e = get.infoHp(infoitem[2]),
+						t = get.infoMaxHp(infoitem[2]),
+						o = get.infoHujia(infoitem[2]);
+					if (t > 14) ((node.node.hp.innerHTML = "string" == typeof infoitem[2] ? infoitem[2] : get.numStr(infoitem[2])), node.node.hp.classList.add("text"));
+					else {
+						for (let o = 0; o < t; o++) {
+							const t = ui.create.div("", node.node.hp);
+							o >= e && t.classList.add("exclude");
+						}
+						for (let e = 0; e < o; e++) ui.create.div(node.node.hp, ".shield");
+					}
+				}
+				var c;
+				if ((node.node.hp.childNodes.length || (node.node.name.style.top = "8px"), node.node.name.querySelectorAll("br").length >= 4 && (node.node.name.classList.add("long"), "old" === lib.config.buttoncharacter_style && (node.addEventListener("mouseenter", ui.click.buttonnameenter), node.addEventListener("mouseleave", ui.click.buttonnameleave))), (node.node.intro.innerText = lib.config.intro), noclick || lib.setIntro(node), infoitem[1])) {
+					const e = get.is.double(item, !0);
+					(e ? ((node.node.group.innerHTML = e.reduce((prev, cur) => `${prev}<div data-nature="${get.groupnature(cur)}">${get.translation(cur)}</div>`, "")), e.length > 4 && (node.node.group.style.height = /* @__PURE__ */ new Set([5, 6, 9]).has(e.length) ? "48px" : "64px")) : (node.node.group.innerHTML = `<div>${get.translation(infoitem[1])}</div>`), (node.node.group.style.backgroundColor = get.translation(`${get.bordergroup(infoitem)}Color`)));
+				} else node.node.group.style.display = "none";
+				if (node._replaceButton) {
+					const e = ui.create.div(".button.replaceButton", node);
+					((node.node.replaceButton = e),
+						(e.innerText = "切换"),
+						(e._node = node),
+						e.addEventListener(lib.config.touchscreen ? "touchend" : "click", function () {
+							_status.tempNoButton = !0;
+							const e = this._node,
+								list = lib.characterReplace[e._link];
+							let link = e.link,
+								index = list.indexOf(link);
+							((index = index === list.length - 1 ? 0 : index + 1),
+								(e.link = list[index]),
+								e.refresh(e, list[index]),
+								setTimeout(() => {
+									_status.tempNoButton = void 0;
+								}, 200));
+						}));
+				}
+			}),
+			node.refresh(node, item, position?.intersection),
+			position && position.appendChild(node),
+			node
+		);
+	};
+}
+export { n as createCharacterButtonPreset };

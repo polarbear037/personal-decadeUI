@@ -15,20 +15,34 @@
 | 十周年 (shizhounian) | dcloutou | `image/character/dcloutou/` |
 | 手杀 (shousha)       | ssloutou | `image/character/ssloutou/` |
 
+实际目录由十周年UI根目录的 `path.json` 控制：`十周年露头皮肤` 和 `手杀露头皮肤` 分别指定这两类图片目录。路径相对于十周年UI目录，未配置对应键时使用表格中的默认目录。Electron 的 `file:` 页面通过游戏 `readFileAsText` API 读取配置，HTTP 页面通过 `fetch` 读取。
+
 ## 三、目录结构
 
 ```
-十周年UI/image/character/
-├── dcloutou/          # 十周年风格露头图
-│   ├── caocao.jpg
-│   ├── liubei.jpg
-│   └── ...
-├── ssloutou/          # 手杀风格露头图
-│   ├── caocao.jpg
-│   ├── liubei.jpg
-│   └── ...
-└── lihui/             # 立绘图（技能特效用）
+无名杀游戏根目录/
+├── 资源文件夹/
+│   ├── dc_lutou/
+│   │   ├── caocao.jpg
+│   │   └── liubei.jpg
+│   └── ss_lutou/
+│       ├── caocao.jpg
+│       └── liubei.jpg
+└── extension/
+    └── 十周年UI/
+        └── path.json
 ```
+
+上面的目录布局应配置为：
+
+```json
+{
+  "十周年露头皮肤": "../../资源文件夹/dc_lutou",
+  "手杀露头皮肤": "../../资源文件夹/ss_lutou"
+}
+```
+
+点击露头样式后会显式更新已有主、副头像；后续 `setBackground` 同时支持旧的 `.avatar` / `.avatar2` 与当前 `.primary-avatar` / `.deputy-avatar`。图片异步加载期间再次切换样式或关闭时，旧请求不会覆盖新设置。
 
 ## 四、外部扩展支持
 
@@ -57,8 +71,8 @@
 // 扩展目录
 extension / { 扩展名 } / image / character / { 子目录 } / { 武将名 }.jpg;
 
-// 十周年UI目录（回退）
-extension / 十周年UI / image / character / { 子目录 } / { 武将名 }.jpg;
+// 十周年UI目录（回退）：由 path.json 中对应的露头目录键指定
+extension / 十周年UI / { path.json 中配置的目录 } / { 武将名 }.jpg;
 ```
 
 示例：武将 `mychar` 属于扩展 `我的扩展`，十周年风格露头图路径：

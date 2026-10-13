@@ -836,10 +836,6 @@
 	z-index: 60;
 }
 
-#arena[data-dynamic-skin-outcrop="on"] .player>.dynamic-wrap {
-	border-radius: 0 3px 3px 0;
-}
-
 .player>.dynamic-wrap>.animation-player {
 	display: block;
 	position: absolute;
@@ -1151,7 +1147,7 @@
 	left: auto;
 	right: -1%;
 	top: auto;
-	bottom: -1%;
+	bottom: calc(-1% - 8px);
 	width: auto;
 	height: 0;
 	padding-bottom: 0;

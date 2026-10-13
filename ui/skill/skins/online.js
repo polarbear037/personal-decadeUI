@@ -12,155 +12,172 @@ const ASSETS_PATH = "extension/十周年UI/ui/assets/skill/online";
 export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 	const base = createBaseSkillPlugin(lib, game, ui, get, ai, _status, app);
 
-    // 新增：技能栏回弹效果类
-    class BounceHandler {
-        constructor(container) {
-            this.container = container;
-            this.offsetY = 0;
-            this.enabled = true;
-            this.abortController = new AbortController();
-            this.activeTouchId = null;
-            this._autoBounceTimer = null;  // 超时回弹
-            this._startY = 0;
-            this.bindEvents();
-        }
-    
-        bindEvents() {
-            const { container, abortController } = this;
-            const signal = abortController.signal;
-    
-            // 触摸开始
-            container.addEventListener('touchstart', (e) => {
-                if (this.activeTouchId !== null) return;
-                if (e.touches.length === 0) return;
-    
-                const touch = e.touches[0];
-                this.activeTouchId = touch.identifier;
-                this._startY = touch.clientY;
-                this._clearAutoBounceTimer();
-                this._cancelBounceAnim();
-            }, { signal, passive: false });
-    
-            // 触摸移动
-            container.addEventListener('touchmove', (e) => {
-                if (!this.enabled) return;
-                const touch = Array.from(e.touches).find(t => t.identifier === this.activeTouchId);
-                if (!touch) return;
-    
-                const deltaY = touch.clientY - this._startY;
-                e.preventDefault();
-    
-                // 计算新的偏移并应用
-                const absDelta = Math.abs(deltaY);
-                const maxStretch = 80;
-                const resistance = 0.45;
-                const raw = absDelta * resistance;
-                this.offsetY = (raw / (1 + raw / maxStretch)) * (deltaY > 0 ? 1 : -1);
-                container.style.transition = 'none';
-                container.style.transform = `translateY(${this.offsetY}px)`;
-    
-                // 重置超时自动回弹
-                this._clearAutoBounceTimer();
-                if (this.offsetY !== 0) {
-                    this._autoBounceTimer = setTimeout(() => {
-                        this._tryBounceBack();
-                        this.activeTouchId = null;  // 超时后强制清除触摸状态
-                    }, 300);
-                }
-            }, { signal, passive: false });
-    
-            // 触摸结束
-            const endHandler = (e) => {
-                if (e.type === 'touchend') {
-                    const stillActive = Array.from(e.touches).some(t => t.identifier === this.activeTouchId);
-                    if (stillActive) return;
-                }
-                this._clearAutoBounceTimer();
-                this._tryBounceBack();
-                this.activeTouchId = null;
-            };
-            container.addEventListener('touchend', endHandler, { signal });
-            container.addEventListener('touchcancel', endHandler, { signal });
-    
-            // 超时强制回弹
-            container.addEventListener('contextmenu', (e) => {
-                if (this.activeTouchId !== null && this.offsetY !== 0) {
-                    e.preventDefault();
-                    this._clearAutoBounceTimer();
-                    this._tryBounceBack();
-                    this.activeTouchId = null;
-                }
-            }, { signal });
-    
-            // 滚轮支持
-            let wheelAcc = 0, wheelTimer = null;
-            container.addEventListener('wheel', (e) => {
-                if (!this.enabled) return;
-                e.preventDefault();
-                wheelAcc += -e.deltaY;
-                wheelAcc = Math.max(-60, Math.min(60, wheelAcc));
-                const abs = Math.abs(wheelAcc);
-                const maxStretch = 50;
-                const resistance = 0.5;
-                const raw = abs * resistance;
-                const o = (raw / (1 + raw / maxStretch)) * (wheelAcc > 0 ? 1 : -1);
-                container.style.transition = 'none';
-                container.style.transform = `translateY(${o}px)`;
-                this.offsetY = o;
-                clearTimeout(wheelTimer);
-                wheelTimer = setTimeout(() => {
-                    this._tryBounceBack();
-                    wheelAcc = 0;
-                }, 200);
-            }, { signal, passive: false });
-        }
-    
-        _tryBounceBack() {
-            if (this.offsetY !== 0) {
-                this.bounceBack();
-            }
-        }
-    
-        _cancelBounceAnim() {
-            this.container.style.transition = 'none';
-            this.container.style.transform = 'translateY(0px)';
-            this.offsetY = 0;
-        }
-    
-        bounceBack() {
-            const { container } = this;
-            container.style.transition = 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)';
-            container.style.transform = 'translateY(0px)';
-            this.offsetY = 0;
-            const handler = () => {
-                container.style.transition = '';
-                container.removeEventListener('transitionend', handler);
-            };
-            container.addEventListener('transitionend', handler);
-        }
-    
-        _clearAutoBounceTimer() {
-            if (this._autoBounceTimer) {
-                clearTimeout(this._autoBounceTimer);
-                this._autoBounceTimer = null;
-            }
-        }
-    
-        setEnabled(val) {
-            this.enabled = val;
-            if (!val) {
-                this._clearAutoBounceTimer();
-                this._cancelBounceAnim();
-            }
-        }
-    
-        destroy() {
-            this.abortController.abort();
-            this._clearAutoBounceTimer();
-            this._cancelBounceAnim();
-        }
-    }
-    // 结束新增
+	// 新增：技能栏回弹效果类
+	class BounceHandler {
+		constructor(container) {
+			this.container = container;
+			this.offsetY = 0;
+			this.enabled = true;
+			this.abortController = new AbortController();
+			this.activeTouchId = null;
+			this._autoBounceTimer = null; // 超时回弹
+			this._startY = 0;
+			this.bindEvents();
+		}
+
+		bindEvents() {
+			const { container, abortController } = this;
+			const signal = abortController.signal;
+
+			// 触摸开始
+			container.addEventListener(
+				"touchstart",
+				e => {
+					if (this.activeTouchId !== null) return;
+					if (e.touches.length === 0) return;
+
+					const touch = e.touches[0];
+					this.activeTouchId = touch.identifier;
+					this._startY = touch.clientY;
+					this._clearAutoBounceTimer();
+					this._cancelBounceAnim();
+				},
+				{ signal, passive: false }
+			);
+
+			// 触摸移动
+			container.addEventListener(
+				"touchmove",
+				e => {
+					if (!this.enabled) return;
+					const touch = Array.from(e.touches).find(t => t.identifier === this.activeTouchId);
+					if (!touch) return;
+
+					const deltaY = touch.clientY - this._startY;
+					e.preventDefault();
+
+					// 计算新的偏移并应用
+					const absDelta = Math.abs(deltaY);
+					const maxStretch = 80;
+					const resistance = 0.45;
+					const raw = absDelta * resistance;
+					this.offsetY = (raw / (1 + raw / maxStretch)) * (deltaY > 0 ? 1 : -1);
+					container.style.transition = "none";
+					container.style.transform = `translateY(${this.offsetY}px)`;
+
+					// 重置超时自动回弹
+					this._clearAutoBounceTimer();
+					if (this.offsetY !== 0) {
+						this._autoBounceTimer = setTimeout(() => {
+							this._tryBounceBack();
+							this.activeTouchId = null; // 超时后强制清除触摸状态
+						}, 300);
+					}
+				},
+				{ signal, passive: false }
+			);
+
+			// 触摸结束
+			const endHandler = e => {
+				if (e.type === "touchend") {
+					const stillActive = Array.from(e.touches).some(t => t.identifier === this.activeTouchId);
+					if (stillActive) return;
+				}
+				this._clearAutoBounceTimer();
+				this._tryBounceBack();
+				this.activeTouchId = null;
+			};
+			container.addEventListener("touchend", endHandler, { signal });
+			container.addEventListener("touchcancel", endHandler, { signal });
+
+			// 超时强制回弹
+			container.addEventListener(
+				"contextmenu",
+				e => {
+					if (this.activeTouchId !== null && this.offsetY !== 0) {
+						e.preventDefault();
+						this._clearAutoBounceTimer();
+						this._tryBounceBack();
+						this.activeTouchId = null;
+					}
+				},
+				{ signal }
+			);
+
+			// 滚轮支持
+			let wheelAcc = 0,
+				wheelTimer = null;
+			container.addEventListener(
+				"wheel",
+				e => {
+					if (!this.enabled) return;
+					e.preventDefault();
+					wheelAcc += -e.deltaY;
+					wheelAcc = Math.max(-60, Math.min(60, wheelAcc));
+					const abs = Math.abs(wheelAcc);
+					const maxStretch = 50;
+					const resistance = 0.5;
+					const raw = abs * resistance;
+					const o = (raw / (1 + raw / maxStretch)) * (wheelAcc > 0 ? 1 : -1);
+					container.style.transition = "none";
+					container.style.transform = `translateY(${o}px)`;
+					this.offsetY = o;
+					clearTimeout(wheelTimer);
+					wheelTimer = setTimeout(() => {
+						this._tryBounceBack();
+						wheelAcc = 0;
+					}, 200);
+				},
+				{ signal, passive: false }
+			);
+		}
+
+		_tryBounceBack() {
+			if (this.offsetY !== 0) {
+				this.bounceBack();
+			}
+		}
+
+		_cancelBounceAnim() {
+			this.container.style.transition = "none";
+			this.container.style.transform = "translateY(0px)";
+			this.offsetY = 0;
+		}
+
+		bounceBack() {
+			const { container } = this;
+			container.style.transition = "transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)";
+			container.style.transform = "translateY(0px)";
+			this.offsetY = 0;
+			const handler = () => {
+				container.style.transition = "";
+				container.removeEventListener("transitionend", handler);
+			};
+			container.addEventListener("transitionend", handler);
+		}
+
+		_clearAutoBounceTimer() {
+			if (this._autoBounceTimer) {
+				clearTimeout(this._autoBounceTimer);
+				this._autoBounceTimer = null;
+			}
+		}
+
+		setEnabled(val) {
+			this.enabled = val;
+			if (!val) {
+				this._clearAutoBounceTimer();
+				this._cancelBounceAnim();
+			}
+		}
+
+		destroy() {
+			this.abortController.abort();
+			this._clearAutoBounceTimer();
+			this._cancelBounceAnim();
+		}
+	}
+	// 结束新增
 
 	const plugin = {
 		...base,
@@ -585,7 +602,7 @@ export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 					});
 					combinedNodes.forEach(node => this.node.combined.appendChild(node));
 				}
-				
+
 				updateSkillUsability(this.node.combined.childNodes, skills, { lib, game, ui, get, ai, _status });
 
 				const count = this.node.combined.childNodes.length;

@@ -1,1 +1,20 @@
-import{game,get}from"noname";import{wrapAfter as e}from"../utils/safeOverride.js";function t(){const t=[];return t.push(e(get,"skillState",function(e,player){if(game.me!==player&&e?.global){e.global=e.global.concat();for(let t=e.global.length-1;t>=0;t--)e.global[t].includes("decadeUI")&&e.global.splice(t,1)}})),t}function l(e){return{"[object Array]":"array","[object Object]":"object","[object HTMLDivElement]":"div","[object HTMLTableElement]":"table","[object HTMLTableRowElement]":"tr","[object HTMLTableCellElement]":"td","[object HTMLBodyElement]":"td"}[e=Object.prototype.toString.call(e)]}export{t as applyGetOverrides,l as getObjtype};
+import { game, get } from "noname";
+import { wrapAfter as wrapAfter } from "../utils/safeOverride.js";
+function t() {
+	const restoreFns = [];
+	return (
+		restoreFns.push(
+			wrapAfter(get, "skillState", function (skills, player) {
+				if (game.me !== player && skills?.global) {
+					skills.global = skills.global.concat();
+					for (let t = skills.global.length - 1; t >= 0; t--) skills.global[t].includes("decadeUI") && skills.global.splice(t, 1);
+				}
+			})
+		),
+		restoreFns
+	);
+}
+function l(obj) {
+	return { "[object Array]": "array", "[object Object]": "object", "[object HTMLDivElement]": "div", "[object HTMLTableElement]": "table", "[object HTMLTableRowElement]": "tr", "[object HTMLTableCellElement]": "td", "[object HTMLBodyElement]": "td" }[(obj = Object.prototype.toString.call(obj))];
+}
+export { t as applyGetOverrides, l as getObjtype };

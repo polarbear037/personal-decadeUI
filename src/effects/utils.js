@@ -1,1 +1,28 @@
-import{get,lib}from"noname";function e(player,e=!1){return e?player.node.avatar2:player.node.avatar}function n(e,n=null,t={}){const a=decadeUI.dialog.create(e,n);return Object.assign(a.style,t),a}function t(e){return"player"===get.itemtype(e)}function a(player){const e="female"===player.sex?"female":"male";return`${lib.assetURL}image/character/default_silhouette_${e}.jpg`}function o(e){const n=decadeUI.getRandom(0,1)?"":"-",t=decadeUI.getRandom(0,1)?"":"-";return{x:`${n}${decadeUI.getRandom(0,100)}px`,y:`${t}${decadeUI.getRandom(0,e/4)}px`,scale:decadeUI.getRandom(1,10)/10}}function r(player,e=!1){const n=e?player.name2:player.name;return n?get.slimNameHorizontal(n):""}function c(e){return e.replace(/[A-Z]/g,e=>`-${e.toLowerCase()}`)}export{n as create,e as getAvatar,a as getDefaultAvatar,r as getName,t as isPlayer,o as randomPosition,c as toKebab};
+import { get, lib } from "noname";
+function e(player, isUnseen = !1) {
+	return isUnseen ? player.node.avatar2 : player.node.avatar;
+}
+function n(className, parent = null, styles = {}) {
+	const el = decadeUI.dialog.create(className, parent);
+	return (Object.assign(el.style, styles), el);
+}
+function t(obj) {
+	return "player" === get.itemtype(obj);
+}
+function a(player) {
+	const gender = "female" === player.sex ? "female" : "male";
+	return `${lib.assetURL}image/character/default_silhouette_${gender}.jpg`;
+}
+function o(height) {
+	const signX = decadeUI.getRandom(0, 1) ? "" : "-",
+		signY = decadeUI.getRandom(0, 1) ? "" : "-";
+	return { x: `${signX}${decadeUI.getRandom(0, 100)}px`, y: `${signY}${decadeUI.getRandom(0, height / 4)}px`, scale: decadeUI.getRandom(1, 10) / 10 };
+}
+function r(player, useName2 = !1) {
+	const name = useName2 ? player.name2 : player.name;
+	return name ? get.slimNameHorizontal(name) : "";
+}
+function c(str) {
+	return str.replace(/[A-Z]/g, e => `-${e.toLowerCase()}`);
+}
+export { n as create, e as getAvatar, a as getDefaultAvatar, r as getName, t as isPlayer, o as randomPosition, c as toKebab };

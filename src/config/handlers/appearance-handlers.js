@@ -1,1 +1,87 @@
-import{lib,game,ui,_status}from"noname";import{UI_ANIMATION as e}from"../../constants.js";function n(){window.decadeUI?.toggleExtensions?.()}function o(){const e="extension_十周年UI_closedExtensions",n=Array.isArray(lib.config[e])?lib.config[e]:[],o=lib.extensionMenu?.extension_十周年UI?.extensionToggle;o&&(o.name=n.length>0?`<ins>一键恢复 ${n.length} 个扩展</ins>`:"<ins>一键关闭其他扩展</ins>")}function t(n){const o=lib.config.extension_十周年UI_newDecadeStyle;game.saveConfig("extension_十周年UI_newDecadeStyle",n),o!==n&&setTimeout(()=>game.reload(),e.RELOAD_DELAY)}function a(){if(!window.decadeUI)return;const e=lib.config.extension_十周年UI_newDecadeStyle;ui.arena.dataset.newDecadeStyle=e;ui.arena.dataset.decadeLayout=["on","othersOff","onlineUI","babysha","codename"].includes(e)?"on":"off"}function i(e){lib.config.extension_十周年UI_rightLayout=e??"off",game.saveConfig("extension_十周年UI_rightLayout",e),game.reload()}function s(){const e=lib.config.extension_十周年UI_rightLayout;"on"!==e&&"off"!==e||(ui.arena.dataset.rightLayout=e)}function c(e){if(game.saveConfig("extension_十周年UI_outcropSkin",e),window.decadeUI){ui.arena.dataset.outcropSkin=e,decadeUI.clearOutcropCache?.();[...game.players||[],...game.dead||[]].forEach(player=>{if(!player?.node)return;const e=player.name1||player.name;player.node.avatar&&e&&player.node.avatar.setBackground(e,"character"),player.node.avatar2&&player.name2&&player.node.avatar2.setBackground(player.name2,"character")})}}function d(){if(!window.decadeUI)return;const e=lib.config.extension_十周年UI_outcropSkin;ui.arena.dataset.outcropSkin=e,decadeUI.updateAllOutcropAvatars?.(e)}function r(){if(!window.decadeUI)return;const e=lib.config.extension_十周年UI_borderLevel;if(ui.arena.dataset.borderLevel=e,ui.arena.dataset.longLevel=e,!_status.gameStarted)return;const n=ui.arena?.querySelectorAll?.(".player")||[];if("random"===e){const e=["one","two","three","four","five"];n.forEach(n=>{const o=n===game.me?"five":e[Math.floor(Math.random()*e.length)];n.dataset.borderLevel=o,n.dataset.longLevel=o})}else n.forEach(e=>{delete e.dataset.borderLevel,delete e.dataset.longLevel})}function u(){const e=lib.config.extension_十周年UI_aloneEquip;if(window.decadeUI&&(ui.arena.dataset.aloneEquip=e?"on":"off"),_status.nopopequip=e,_status.gameStarted&&ui?.equipSolts){try{ui.equipSolts.style.display=e?"":"none"}catch(n){}e&&game.me!==ui.equipSolts.me&&(ui.equipSolts.me?.appendChild(ui.equipSolts.equips),ui.equipSolts.me=game.me,ui.equipSolts.equips=game.me.node.equips,ui.equipSolts.appendChild(game.me.node.equips),game.me.$syncExpand()),e||game.me!==ui.equipSolts.me||(ui.equipSolts.me.appendChild(ui.equipSolts.equips),ui.equipSolts.me=void 0),game.uncheck(),game.check()}}function f(e){game.saveConfig("extension_十周年UI_meanPrettify",e),ui.css.decadeMenu?.remove(),delete ui.css.decadeMenu,e&&(ui.css.decadeMenu=lib.init.css(`${window.decadeUIPath}src/styles`,"menu"))}function l(e){game.saveConfig("extension_十周年UI_dynamicSkin",e),lib.config.dynamicSkin=e,game.saveConfig("dynamicSkin",e)}function p(){if(!window.decadeUI)return;const e=lib.config.extension_十周年UI_dynamicSkinOutcrop;ui.arena.dataset.dynamicSkinOutcrop=e?"on":"off",game.players?.forEach(player=>{player.dynamic&&(player.dynamic.outcropMask=e,player.dynamic.update(!1))})}export{u as onAloneEquipUpdate,r as onBorderLevelUpdate,l as onDynamicSkinClick,p as onDynamicSkinOutcropUpdate,n as onExtensionToggleClick,o as onExtensionToggleUpdate,f as onMeanPrettifyClick,t as onNewDecadeStyleClick,a as onNewDecadeStyleUpdate,c as onOutcropSkinClick,d as onOutcropSkinUpdate,i as onRightLayoutClick,s as onRightLayoutUpdate};
+import { lib, game, ui, _status } from "noname";
+import { UI_ANIMATION as UI_ANIMATION } from "../../constants.js";
+import { refreshDynamicOutcrop } from "../../ui/dynamicOutcrop.js";
+function n() {
+	window.decadeUI?.toggleExtensions?.();
+}
+function o() {
+	const key = "extension_十周年UI_closedExtensions",
+		closed = Array.isArray(lib.config[key]) ? lib.config[key] : [],
+		menu = lib.extensionMenu?.extension_十周年UI?.extensionToggle;
+	menu && (menu.name = closed.length > 0 ? `<ins>一键恢复 ${closed.length} 个扩展</ins>` : "<ins>一键关闭其他扩展</ins>");
+}
+function t(control) {
+	const origin = lib.config.extension_十周年UI_newDecadeStyle;
+	(game.saveConfig("extension_十周年UI_newDecadeStyle", control), origin !== control && setTimeout(() => game.reload(), UI_ANIMATION.RELOAD_DELAY));
+}
+function a() {
+	if (!window.decadeUI) return;
+	const style = lib.config.extension_十周年UI_newDecadeStyle;
+	ui.arena.dataset.newDecadeStyle = style;
+	ui.arena.dataset.decadeLayout = ["on", "othersOff", "onlineUI", "babysha", "codename"].includes(style) ? "on" : "off";
+}
+function i(item) {
+	((lib.config.extension_十周年UI_rightLayout = item ?? "off"), game.saveConfig("extension_十周年UI_rightLayout", item), game.reload());
+}
+function s() {
+	const layout = lib.config.extension_十周年UI_rightLayout;
+	("on" !== layout && "off" !== layout) || (ui.arena.dataset.rightLayout = layout);
+}
+function c(item) {
+	if ((game.saveConfig("extension_十周年UI_outcropSkin", item), window.decadeUI)) {
+		((ui.arena.dataset.outcropSkin = item), decadeUI.clearOutcropCache?.());
+		[...(game.players || []), ...(game.dead || [])].forEach(player => {
+			if (!player?.node) return;
+			const name1 = player.name1 || player.name;
+			(player.node.avatar && name1 && player.node.avatar.setBackground(name1, "character"), player.node.avatar2 && player.name2 && player.node.avatar2.setBackground(player.name2, "character"));
+		});
+		decadeUI.updateAllOutcropAvatars?.(item);
+	}
+}
+function d() {
+	if (!window.decadeUI) return;
+	const style = lib.config.extension_十周年UI_outcropSkin;
+	((ui.arena.dataset.outcropSkin = style), decadeUI.updateAllOutcropAvatars?.(style));
+}
+function r() {
+	if (!window.decadeUI) return;
+	const value = lib.config.extension_十周年UI_borderLevel;
+	const style = lib.config.extension_十周年UI_borderStyle || "xinsha";
+	if (((ui.arena.dataset.borderLevel = value), (ui.arena.dataset.longLevel = value), (ui.arena.dataset.borderStyle = style), !_status.gameStarted)) return;
+	const players = ui.arena?.querySelectorAll?.(".player") || [];
+	if ("random" === value) {
+		const e = ["one", "two", "three", "four", "five"];
+		players.forEach(n => {
+			const level = n === game.me ? "five" : e[Math.floor(Math.random() * e.length)];
+			((n.dataset.borderLevel = level), (n.dataset.longLevel = level));
+		});
+	} else
+		players.forEach(e => {
+			(delete e.dataset.borderLevel, delete e.dataset.longLevel);
+		});
+}
+function u() {
+	const config = lib.config.extension_十周年UI_aloneEquip;
+	if ((window.decadeUI && (ui.arena.dataset.aloneEquip = config ? "on" : "off"), (_status.nopopequip = config), _status.gameStarted && ui?.equipSolts)) {
+		try {
+			ui.equipSolts.style.display = config ? "" : "none";
+		} catch (n) {}
+		(config && game.me !== ui.equipSolts.me && (ui.equipSolts.me?.appendChild(ui.equipSolts.equips), (ui.equipSolts.me = game.me), (ui.equipSolts.equips = game.me.node.equips), ui.equipSolts.appendChild(game.me.node.equips), game.me.$syncExpand()), config || game.me !== ui.equipSolts.me || (ui.equipSolts.me.appendChild(ui.equipSolts.equips), (ui.equipSolts.me = void 0)), game.uncheck(), game.check());
+	}
+}
+function f(bool) {
+	(game.saveConfig("extension_十周年UI_meanPrettify", bool), ui.css.decadeMenu?.remove(), delete ui.css.decadeMenu, bool && (ui.css.decadeMenu = lib.init.css(`${window.decadeUIPath}src/styles`, "menu")));
+}
+function l(value) {
+	(game.saveConfig("extension_十周年UI_dynamicSkin", value), (lib.config.dynamicSkin = value), game.saveConfig("dynamicSkin", value));
+}
+function p() {
+	if (!window.decadeUI) return;
+	const enable = lib.config.extension_十周年UI_dynamicSkinOutcrop;
+	window.decadeUI.config.dynamicSkinOutcrop = !!enable;
+	((ui.arena.dataset.dynamicSkinOutcrop = enable ? "on" : "off"),
+		[...new Set([...(game.players || []), ...(game.dead || [])])].forEach(player => {
+			player.dynamic && ((player.dynamic.outcropMask = enable), player.dynamic.update(), refreshDynamicOutcrop(player));
+		}));
+}
+export { u as onAloneEquipUpdate, r as onBorderLevelUpdate, l as onDynamicSkinClick, p as onDynamicSkinOutcropUpdate, n as onExtensionToggleClick, o as onExtensionToggleUpdate, f as onMeanPrettifyClick, t as onNewDecadeStyleClick, a as onNewDecadeStyleUpdate, c as onOutcropSkinClick, d as onOutcropSkinUpdate, i as onRightLayoutClick, s as onRightLayoutUpdate };

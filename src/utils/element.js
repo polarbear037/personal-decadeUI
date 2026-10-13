@@ -1,1 +1,16 @@
-import"noname";const e={removeSelf(e){if(e){const t="number"==typeof e?e:parseInt(e);return void setTimeout(()=>this.parentNode?.removeChild(this),t)}this.parentNode?.removeChild(this)}};function t(t,n,o="div"){const i=document.createElement(o);return i.view={},Object.assign(i,e),t&&(i.className=t),n&&n.appendChild(i),i}const n={base:e,create:t,clone:e=>e?.cloneNode?.(!0)};export{t as createElement,n as element};
+import "noname";
+const e = {
+	removeSelf(milliseconds) {
+		if (milliseconds) {
+			const t = "number" == typeof milliseconds ? milliseconds : parseInt(milliseconds);
+			return void setTimeout(() => this.parentNode?.removeChild(this), t);
+		}
+		this.parentNode?.removeChild(this);
+	},
+};
+function t(className, parentNode, tagName = "div") {
+	const element = document.createElement(tagName);
+	return ((element.view = {}), Object.assign(element, e), className && (element.className = className), parentNode && parentNode.appendChild(element), element);
+}
+const n = { base: e, create: t, clone: e => e?.cloneNode?.(!0) };
+export { t as createElement, n as element };

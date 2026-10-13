@@ -1,1 +1,60 @@
-import{game,lib,_status}from"noname";function e(e=0,n=100,t){const o=document.createElement("input");o.className="slider",o.type="range",o.min=e,o.max=n;const c=()=>{const e=(o.value-o.min)/(o.max-o.min)*100;o.style.backgroundSize=`${e}% 100%`},a=Object.getOwnPropertyDescriptor(o.__proto__,"value");return Object.defineProperty(o,"value",{configurable:!0,get:()=>a.get.call(o),set:e=>{a.set.call(o,e),c()}}),o.addEventListener("input",c),o.value=t??.5*(n-e),o}function n(e){const{dialog:n}=e,t=n.create("chat-box folded");t.container=n.create("container",t),t.operation=n.create("operation",t),t.content=n.create("content",t.container);const o=t.operation;o.fold=n.create("fold-button",o,"button"),o.input=n.create("chat-input",o,"input"),o.sticker=n.create("sticker-button",o,"button"),o.send=n.create("send-button",o,"button"),o.fold.innerHTML="…",o.sticker.innerHTML="表情",o.send.innerHTML="发送";const c=o.input;t.addEntry=e=>{n.create("chat-text",t.content).innerHTML=`<span class="sender">${e[0]}</span>:<span class="text">${e[1]}</span>`,t.overrideEntry?.(e),t.content.scrollTop=t.content.scrollHeight},t.addEntry._origin=t;return t.sendInputText=()=>{const e=c.value;if(!e)return;const player=game.me?game.me:game.connectPlayers?game.online?game.connectPlayers.find(e=>e.playerid===game.onlineID)||null:game.connectPlayers[0]:null;player&&(game.online?game.send("chat",game.onlineID,e):lib.element.player.chat.call(player,e),c.value="",_status.chatValue="")},o.fold.addEventListener("click",()=>{const e=t.classList.toggle("folded");o.fold.innerHTML=e?"…":"<<"}),o.send.addEventListener("click",()=>{t.sendInputText(),c.focus()}),c.addEventListener("change",()=>{_status.chatValue=c.value}),c.addEventListener("keydown",e=>{13===e.keyCode&&t.sendInputText(),e.stopPropagation()}),t}function t(t){t.component={slider:e,chatBox:()=>n(t)}}export{n as createChatBox,e as createSlider,t as initComponent};
+import { game, lib, _status } from "noname";
+function e(min = 0, max = 100, value) {
+	const slider = document.createElement("input");
+	((slider.className = "slider"), (slider.type = "range"), (slider.min = min), (slider.max = max));
+	const updateProgress = () => {
+			const percent = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
+			slider.style.backgroundSize = `${percent}% 100%`;
+		},
+		originalValue = Object.getOwnPropertyDescriptor(slider.__proto__, "value");
+	return (
+		Object.defineProperty(slider, "value", {
+			configurable: !0,
+			get: () => originalValue.get.call(slider),
+			set: val => {
+				(originalValue.set.call(slider, val), updateProgress());
+			},
+		}),
+		slider.addEventListener("input", updateProgress),
+		(slider.value = value ?? 0.5 * (max - min)),
+		slider
+	);
+}
+function n(decadeUI) {
+	const { dialog: dialog } = decadeUI,
+		box = dialog.create("chat-box folded");
+	((box.container = dialog.create("container", box)), (box.operation = dialog.create("operation", box)), (box.content = dialog.create("content", box.container)));
+	const operation = box.operation;
+	((operation.fold = dialog.create("fold-button", operation, "button")), (operation.input = dialog.create("chat-input", operation, "input")), (operation.sticker = dialog.create("sticker-button", operation, "button")), (operation.send = dialog.create("send-button", operation, "button")), (operation.fold.innerHTML = "…"), (operation.sticker.innerHTML = "表情"), (operation.send.innerHTML = "发送"));
+	const input = operation.input;
+	((box.addEntry = info => {
+		((dialog.create("chat-text", box.content).innerHTML = `<span class="sender">${info[0]}</span>:<span class="text">${info[1]}</span>`), box.overrideEntry?.(info), (box.content.scrollTop = box.content.scrollHeight));
+	}),
+		(box.addEntry._origin = box));
+	return (
+		(box.sendInputText = () => {
+			const e = input.value;
+			if (!e) return;
+			const player = game.me ? game.me : game.connectPlayers ? (game.online ? game.connectPlayers.find(e => e.playerid === game.onlineID) || null : game.connectPlayers[0]) : null;
+			player && (game.online ? game.send("chat", game.onlineID, e) : lib.element.player.chat.call(player, e), (input.value = ""), (_status.chatValue = ""));
+		}),
+		operation.fold.addEventListener("click", () => {
+			const isFolded = box.classList.toggle("folded");
+			operation.fold.innerHTML = isFolded ? "…" : "<<";
+		}),
+		operation.send.addEventListener("click", () => {
+			(box.sendInputText(), input.focus());
+		}),
+		input.addEventListener("change", () => {
+			_status.chatValue = input.value;
+		}),
+		input.addEventListener("keydown", e => {
+			(13 === e.keyCode && box.sendInputText(), e.stopPropagation());
+		}),
+		box
+	);
+}
+function t(decadeUI) {
+	decadeUI.component = { slider: e, chatBox: () => n(decadeUI) };
+}
+export { n as createChatBox, e as createSlider, t as initComponent };

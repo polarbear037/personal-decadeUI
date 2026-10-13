@@ -1,1 +1,20 @@
-import{_status,lib,game}from"noname";import{initRecast as i}from"./recast.js";import{animateSkill as s}from"./animate.js";import{baseSkill as o}from"./base.js";import{inheritSkill as e}from"./inherit.js";import{inheritComplexSkill as l}from"./inherit-complex.js";import{guhuoSkill as t}from"./guhuo.js";import{inheritSubSkill as r,factionOptimizeSkill as n}from"./sub-skills.js";const c={...e,...l,...t};function f(){if(!_status.connectMode){decadeUI.animateSkill=s,decadeUI.skill=o,decadeUI.inheritSkill=c,decadeUI.inheritSubSkill=r;for(const i of Object.keys(s))lib.skill[i]=s[i],game.addGlobalSkill(i);Object.assign(lib.skill,o);for(const i of Object.keys(c))lib.skill[i]&&Object.assign(lib.skill[i],c[i]);for(const i of Object.keys(r))if(lib.skill[i]?.subSkill)for(const s of Object.keys(r[i]))lib.skill[i].subSkill[s]&&Object.assign(lib.skill[i].subSkill[s],r[i][s]);lib.config["extension_十周年UI_shiliyouhua"]&&(Object.defineProperty(lib,"group",{get:()=>["wei","shu","wu","qun","jin"],set:()=>{}}),lib.skill._slyh=n._slyh),i()}}export{s as animateSkill,o as baseSkill,r as inheritSubSkill,f as initSkills};
+import { _status, lib, game } from "noname";
+import { initRecast as initRecast } from "./recast.js";
+import { animateSkill as animateSkill } from "./animate.js";
+import { baseSkill as baseSkill } from "./base.js";
+import { inheritSkill as inheritSkill } from "./inherit.js";
+import { inheritComplexSkill as inheritComplexSkill } from "./inherit-complex.js";
+import { guhuoSkill as guhuoSkill } from "./guhuo.js";
+import { inheritSubSkill as inheritSubSkill, factionOptimizeSkill as factionOptimizeSkill } from "./sub-skills.js";
+const c = { ...inheritSkill, ...inheritComplexSkill, ...guhuoSkill };
+function f() {
+	if (!_status.connectMode) {
+		((decadeUI.animateSkill = animateSkill), (decadeUI.skill = baseSkill), (decadeUI.inheritSkill = c), (decadeUI.inheritSubSkill = inheritSubSkill));
+		for (const i of Object.keys(animateSkill)) ((lib.skill[i] = animateSkill[i]), game.addGlobalSkill(i));
+		Object.assign(lib.skill, baseSkill);
+		for (const i of Object.keys(c)) lib.skill[i] && Object.assign(lib.skill[i], c[i]);
+		for (const i of Object.keys(inheritSubSkill)) if (lib.skill[i]?.subSkill) for (const s of Object.keys(inheritSubSkill[i])) lib.skill[i].subSkill[s] && Object.assign(lib.skill[i].subSkill[s], inheritSubSkill[i][s]);
+		(lib.config["extension_十周年UI_shiliyouhua"] && (Object.defineProperty(lib, "group", { get: () => ["wei", "shu", "wu", "qun", "jin"], set: () => {} }), (lib.skill._slyh = factionOptimizeSkill._slyh)), initRecast());
+	}
+}
+export { animateSkill as animateSkill, baseSkill as baseSkill, inheritSubSkill as inheritSubSkill, f as initSkills };

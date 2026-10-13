@@ -1,1 +1,10 @@
-import"noname";function e(){return{activeElement(e){const t=decadeUI.$activeElement;t!==e&&(decadeUI.$activeElement=e,t?.ondeactive?.(),e?.onactive?.())}}}export{e as createDecadeUISetModule};
+import "noname";
+function e() {
+	return {
+		activeElement(element) {
+			const deactive = decadeUI.$activeElement;
+			deactive !== element && ((decadeUI.$activeElement = element), deactive?.ondeactive?.(), element?.onactive?.());
+		},
+	};
+}
+export { e as createDecadeUISetModule };

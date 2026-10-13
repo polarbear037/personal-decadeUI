@@ -1,1 +1,84 @@
-import{get,game,lib,ui,_status}from"noname";import{getBasePlayerMethods as t}from"./base.js";function e(e){const result=t().awakenSkill.apply(this,arguments);if(ui.updateSkillControl?.(this),get.info(e)?.dutySkill){const t=this;game.expandSkills([e]).forEach(e=>{t.setSkillState(e,"shixiao")})}const i=_status.event.getParent()?.skill;return i?.endsWith("_fail")&&i.slice(0,-5)===e&&this.setSkillState(e,"fail"),result}function i(t){return t=t||this.identity,this.node.identity.dataset.color=t,"guozhan"===get.mode()?("ye"===t&&get.is.jun(this)&&(this.identity=t=lib.character[this.name1][1]),this.group=t,this.node.identity.firstChild.innerHTML=get.translation(t),this):(get.is.jun(this)?this.node.identity.firstChild.innerHTML="君":this.node.identity.firstChild.innerHTML=get.translation(t),this)}function n(){const e=t().getState.apply(this,arguments);return e.seat=this.seat,e}function s(e){e?.seat&&this.node.seat&&(this.node.seat.innerHTML=get.cnNumber(e.seat,!0));return t().setModeState.apply(this,arguments)}function a(){t().setSeatNum.apply(this,arguments),this.seat=this.getSeatNum(),game.broadcastAll(player=>{const t=player.getSeatNum?.()??player.seat;player.node.seat&&(player.node.seat.innerHTML=get.cnNumber(t,!0))},this)}function o(){window.decadeModule?.prefixMark&&window.decadeModule.prefixMark.clearPrefixMarks(this),this.stopDynamic(),this.doubleAvatar=!1,delete this.node.campWrap.dataset.camp;const e=this.node.campWrap.node.campName;for(;e.firstChild;)e.removeChild(e.lastChild);e.style.removeProperty("background-image");const i=this.node.hpWrap.querySelector(".hujia");i&&i.remove(),this.node.showCards?.hide();return t().$uninit.apply(this,arguments),this}function r(e,i,n,s){t().$reinit.apply(this,arguments);const a=this.name1||this.name;return window.decadeModule?.prefixMark&&(window.decadeModule.prefixMark.clearPrefixMarks(this),a&&window.decadeModule.prefixMark.showPrefixMark(a,this),this.doubleAvatar&&this.name2&&window.decadeModule.prefixMark.showPrefixMark(this.name2,this)),this.node.name&&a&&(this.node.name.innerHTML=get.slimNameHorizontal?.(a)||get.slimName(a)),this.doubleAvatar&&this.node.name2&&this.name2&&(this.node.name2.innerHTML=get.slimNameHorizontal?.(this.name2)||get.slimName(this.name2)),this}async function d(e,i,n){this.stopDynamic();const result=t().reinitCharacter.apply(this,arguments);return await Promise.resolve(result),this._decadeUIApplyDynamicSkin(),result}function h(){return t().$update.apply(this,arguments),function(player){let t=player.node.hpWrap.querySelector(".hujia");player.hujia>0?(t||(t=ui.create.div(".hujia"),player.node.hpWrap.appendChild(t)),t.innerText=player.hujia===1/0?"∞":player.hujia):t&&t.remove()}(this),function(player){const t=player.classList.contains("unseen_show")||player.classList.contains("unseen2_show"),e=player.hp,i=t?1:player.maxHp,n=player.node.hp,s=i>5||player.hujia&&i>3;if(!player.storage.nohp&&s){const t=isNaN(e)?"×":e===1/0?"∞":e,s=isNaN(i)?"×":i===1/0?"∞":i;n.innerHTML=`${t}<br>/<br>${s}<div></div>`,0===e&&n.lastChild.classList.add("lost"),n.classList.add("textstyle")}player.dataset.maxHp=s?4:i}(this),function(player){const t=player.countCards("h");if(player===game.me){const e=lib.config.extension_十周年UI_newDecadeStyle,i=["onlineUI","babysha","codename"].includes(e);player.node.count.innerHTML=i?`${t}/${player.getHandcardLimit()}`:t}else t>=10&&(player.node.count.innerHTML=t)}(this),this.decadeUI_updateShowCards(),this}export{e as playerAwakenSkill,n as playerGetState,r as playerReinit,d as playerReinitCharacter,i as playerSetIdentity,s as playerSetModeState,a as playerSetSeatNum,o as playerUninit,h as playerUpdate};
+import { get, game, lib, ui, _status } from "noname";
+import { getBasePlayerMethods as getBasePlayerMethods } from "./base.js";
+function e(skill) {
+	const result = getBasePlayerMethods().awakenSkill.apply(this, arguments);
+	if ((ui.updateSkillControl?.(this), get.info(skill)?.dutySkill)) {
+		const that = this;
+		game.expandSkills([skill]).forEach(subSkill => {
+			that.setSkillState(subSkill, "shixiao");
+		});
+	}
+	const parentSkill = _status.event.getParent()?.skill;
+	return (parentSkill?.endsWith("_fail") && parentSkill.slice(0, -5) === skill && this.setSkillState(skill, "fail"), result);
+}
+function i(identity) {
+	return ((identity = identity || this.identity), (this.node.identity.dataset.color = identity), "guozhan" === get.mode() ? ("ye" === identity && get.is.jun(this) && (this.identity = identity = lib.character[this.name1][1]), (this.group = identity), (this.node.identity.firstChild.innerHTML = get.translation(identity)), this) : (get.is.jun(this) ? (this.node.identity.firstChild.innerHTML = "君") : (this.node.identity.firstChild.innerHTML = get.translation(identity)), this));
+}
+function n() {
+	const state = getBasePlayerMethods().getState.apply(this, arguments);
+	return ((state.seat = this.seat), state);
+}
+function s(info) {
+	info?.seat && this.node.seat && (this.node.seat.innerHTML = get.cnNumber(info.seat, !0));
+	return getBasePlayerMethods().setModeState.apply(this, arguments);
+}
+function a() {
+	(getBasePlayerMethods().setSeatNum.apply(this, arguments),
+		(this.seat = this.getSeatNum()),
+		game.broadcastAll(player => {
+			const seat = player.getSeatNum?.() ?? player.seat;
+			player.node.seat && (player.node.seat.innerHTML = get.cnNumber(seat, !0));
+		}, this));
+}
+function o() {
+	(window.decadeModule?.prefixMark && window.decadeModule.prefixMark.clearPrefixMarks(this), this.stopDynamic(), (this.doubleAvatar = !1), delete this.node.campWrap.dataset.camp);
+	const campName = this.node.campWrap.node.campName;
+	for (; campName.firstChild; ) campName.removeChild(campName.lastChild);
+	campName.style.removeProperty("background-image");
+	const hujiat = this.node.hpWrap.querySelector(".hujia");
+	(hujiat && hujiat.remove(), this.node.showCards?.hide());
+	return (getBasePlayerMethods().$uninit.apply(this, arguments), this);
+}
+function r(from, to, maxHp, online) {
+	getBasePlayerMethods().$reinit.apply(this, arguments);
+	const character1 = this.name1 || this.name;
+	return (window.decadeModule?.prefixMark && (window.decadeModule.prefixMark.clearPrefixMarks(this), character1 && window.decadeModule.prefixMark.showPrefixMark(character1, this), this.doubleAvatar && this.name2 && window.decadeModule.prefixMark.showPrefixMark(this.name2, this)), this.node.name && character1 && (this.node.name.innerHTML = get.slimNameHorizontal?.(character1) || get.slimName(character1)), this.doubleAvatar && this.node.name2 && this.name2 && (this.node.name2.innerHTML = get.slimNameHorizontal?.(this.name2) || get.slimName(this.name2)), this);
+}
+async function d(from, to, log) {
+	this.stopDynamic();
+	const result = getBasePlayerMethods().reinitCharacter.apply(this, arguments);
+	return (await Promise.resolve(result), this._decadeUIApplyDynamicSkin(), result);
+}
+function h() {
+	return (
+		getBasePlayerMethods().$update.apply(this, arguments),
+		(function (player) {
+			let hujiat = player.node.hpWrap.querySelector(".hujia");
+			player.hujia > 0 ? (hujiat || ((hujiat = ui.create.div(".hujia")), player.node.hpWrap.appendChild(hujiat)), (hujiat.innerText = player.hujia === 1 / 0 ? "∞" : player.hujia)) : hujiat && hujiat.remove();
+		})(this),
+		(function (player) {
+			const hidden = player.classList.contains("unseen_show") || player.classList.contains("unseen2_show"),
+				hp = player.hp,
+				hpMax = hidden ? 1 : player.maxHp,
+				hpNode = player.node.hp,
+				useTextStyle = hpMax > 5 || (player.hujia && hpMax > 3);
+			if (!player.storage.nohp && useTextStyle) {
+				const t = isNaN(hp) ? "×" : hp === 1 / 0 ? "∞" : hp,
+					s = isNaN(hpMax) ? "×" : hpMax === 1 / 0 ? "∞" : hpMax;
+				((hpNode.innerHTML = `${t}<br>/<br>${s}<div></div>`), 0 === hp && hpNode.lastChild.classList.add("lost"), hpNode.classList.add("textstyle"));
+			}
+			player.dataset.maxHp = useTextStyle ? 4 : hpMax;
+		})(this),
+		(function (player) {
+			const count = player.countCards("h");
+			if (player === game.me) {
+				const e = lib.config.extension_十周年UI_newDecadeStyle,
+					i = ["onlineUI", "babysha", "codename"].includes(e);
+				player.node.count.innerHTML = i ? `${count}/${player.getHandcardLimit()}` : count;
+			} else count >= 10 && (player.node.count.innerHTML = count);
+		})(this),
+		this.decadeUI_updateShowCards(),
+		this
+	);
+}
+export { e as playerAwakenSkill, n as playerGetState, r as playerReinit, d as playerReinitCharacter, i as playerSetIdentity, s as playerSetModeState, a as playerSetSeatNum, o as playerUninit, h as playerUpdate };

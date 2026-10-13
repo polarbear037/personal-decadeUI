@@ -1,1 +1,67 @@
-import"noname";function e(e,r,t){let n,o,s;return(...a)=>{o&&clearTimeout(o),null===s&&(s=performance.now()),n=a;const i=performance.now()-s;i>=r?(o=s=null,e.apply(t,n)):o=setTimeout(()=>{o=s=null,e.apply(t,n)},r-i)}}const r=(()=>{if(!self.ResizeObserver)return null;const e=new ResizeObserver(r=>{for(const t of r){const r=e.callbacks[t.target.observeId];if(r){const e=t.contentRect;r({width:e.width,height:e.height})}}});return e.observeId=0,e.callbacks={},(r,t)=>{r.observeId=e.observeId++,e.observe(r),e.callbacks[r.observeId]=t}})();function t(e,r,t){return(r-e)*t+e}function n(){if("object"==typeof window?.process?.versions&&window.process.versions.chrome){return["chrome",...window.process.versions.chrome.split(".").slice(0,3).map(e=>parseInt(e,10))]}if(navigator.userAgentData?.brands?.length){const e=navigator.userAgentData.brands.find(({brand:e})=>{const r=e.toLowerCase();return r.includes("chrome")||r.includes("chromium")});return e?["chrome",parseInt(e.version,10),0,0]:["other",NaN,NaN,NaN]}const e=navigator.userAgent.toLowerCase().match(/(firefox|chrome|safari)\/(\d+(?:\.\d+)+)/);if(!e)return["other",NaN,NaN,NaN];if("safari"!==e[1]){const[r,t,n]=e[2].split(".");return[e[1],parseInt(r,10),parseInt(t,10),parseInt(n,10)]}const r=navigator.userAgent.toLowerCase(),result=/macintosh/.test(r)?r.match(/version\/(\d+(?:\.\d+)+).*safari/):r.match(/(?:iphone|ipad); cpu (?:iphone )?os (\d+(?:_\d+)+)/);if(!result)return["other",NaN,NaN,NaN];const[t,n,o]=result[1].split(/[._]/);return["safari",parseInt(t,10),parseInt(n,10),parseInt(o,10)]}const o=n(),s="chrome"===o[0]&&o[1]>=128||"firefox"===o[0]&&o[1]>=126;export{n as getBrowserInfo,t as lerp,r as observeSize,e as throttle,s as useNewDpr};
+import "noname";
+function e(func, timeout, context) {
+	let args, timer, previous;
+	return (...innerArgs) => {
+		(timer && clearTimeout(timer), null === previous && (previous = performance.now()), (args = innerArgs));
+		const timestamp = performance.now() - previous;
+		timestamp >= timeout
+			? ((timer = previous = null), func.apply(context, args))
+			: (timer = setTimeout(() => {
+					((timer = previous = null), func.apply(context, args));
+				}, timeout - timestamp));
+	};
+}
+const r = (() => {
+	if (!self.ResizeObserver) return null;
+	const observer = new ResizeObserver(entries => {
+		for (const entry of entries) {
+			const callback = observer.callbacks[entry.target.observeId];
+			if (callback) {
+				const rect = entry.contentRect;
+				callback({ width: rect.width, height: rect.height });
+			}
+		}
+	});
+	return (
+		(observer.observeId = 0),
+		(observer.callbacks = {}),
+		(target, callback) => {
+			((target.observeId = observer.observeId++), observer.observe(target), (observer.callbacks[target.observeId] = callback));
+		}
+	);
+})();
+function t(min, max, fraction) {
+	return (max - min) * fraction + min;
+}
+function n() {
+	if ("object" == typeof window?.process?.versions && window.process.versions.chrome) {
+		return [
+			"chrome",
+			...window.process.versions.chrome
+				.split(".")
+				.slice(0, 3)
+				.map(e => parseInt(e, 10)),
+		];
+	}
+	if (navigator.userAgentData?.brands?.length) {
+		const e = navigator.userAgentData.brands.find(({ brand: brand }) => {
+			const lower = brand.toLowerCase();
+			return lower.includes("chrome") || lower.includes("chromium");
+		});
+		return e ? ["chrome", parseInt(e.version, 10), 0, 0] : ["other", NaN, NaN, NaN];
+	}
+	const matched = navigator.userAgent.toLowerCase().match(/(firefox|chrome|safari)\/(\d+(?:\.\d+)+)/);
+	if (!matched) return ["other", NaN, NaN, NaN];
+	if ("safari" !== matched[1]) {
+		const [major, minor, patch] = matched[2].split(".");
+		return [matched[1], parseInt(major, 10), parseInt(minor, 10), parseInt(patch, 10)];
+	}
+	const ua = navigator.userAgent.toLowerCase(),
+		result = /macintosh/.test(ua) ? ua.match(/version\/(\d+(?:\.\d+)+).*safari/) : ua.match(/(?:iphone|ipad); cpu (?:iphone )?os (\d+(?:_\d+)+)/);
+	if (!result) return ["other", NaN, NaN, NaN];
+	const [major, minor, patch] = result[1].split(/[._]/);
+	return ["safari", parseInt(major, 10), parseInt(minor, 10), parseInt(patch, 10)];
+}
+const o = n(),
+	s = ("chrome" === o[0] && o[1] >= 128) || ("firefox" === o[0] && o[1] >= 126);
+export { n as getBrowserInfo, t as lerp, r as observeSize, e as throttle, s as useNewDpr };

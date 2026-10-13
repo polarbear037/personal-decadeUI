@@ -1,1 +1,70 @@
-import"noname";function t(t,e){const a=e.hand;a.check();const n=a.width,c=a.cardWidth,h=a.cardHeight,o=a.cardScale,s=c*o,r=[],d=t.duiMod;if(d&&d!==window.game?.me){d.checkBoundsCache?.();let e=27,n=d.cacheLeft-a.x-s/2-(c-s)/2,r=e*t.length+(s-e);const l=d.cacheWidth+s;r>l?e=s-Math.abs(l-s*t.length)/(t.length-1):n+=(l-r)/2;const i=Math.round(d.cacheTop-a.y-30+(d.cacheHeight-h)/2);for(let a=0;a<t.length;a++){const c=Math.round(n+a*e),card=t[a];card.tx=c,card.ty=i,card.fixed=!0,card.scaled=!0,card.style.transform=`translate(${c}px, ${i}px) scale(${o})`}return}for(let x=0;x<t.length;x++){const card=t[x],e=card.clone;if(e&&!e.fixed&&e.parentNode===window.ui?.arena){const t=Math.round(e.tx-a.x),n=Math.round(e.ty-(a.y+30));card.tx=t,card.ty=n,card.scaled=!0,card.style.transform=`translate(${t}px, ${n}px) scale(${o})`}else r.push(card)}const l=Math.round(-h*o*2),i=.5*s,u=(n-i*(r.length+1))/2-(c-s)/2;for(let x=0;x<r.length;x++){const t=Math.round(u+x*i),card=r[x];card.tx=t,card.ty=l,card.scaled=!0,card.style.transition="transform 400ms ease-out",card.style.transform=`translate(${t}px, ${l}px) scale(${o})`}}function e(t,player,e,a){const n=a.arena;n.updated||n.update(),player.checkBoundsCache?.();const c=player.cacheLeft,h=player.cacheTop,o=player.cacheWidth,s=player.cacheHeight,r=n.width,d=n.height,l=n.cardWidth,i=n.cardHeight,u=n.cardScale,x=l*u;let f=27,g=(e?(r-o)/2:c)-x/2-(l-x)/2,p=f*t.length+(x-f);const y=o+x;p>y?f=x-Math.abs(y-x*t.length)/(t.length-1):g+=(y-p)/2;const M=e?Math.round((d-i)/2):Math.round(h+(s-i)/2);for(let $=0;$<t.length;$++){const e=Math.round(g+$*f),card=t[$];card.tx=e,card.ty=M,card.scaled=!0,card.style.transform=`translate(${e}px, ${M}px) scale(${u})`}}export{e as layoutDrawCards,t as layoutHandDraws};
+import "noname";
+function t(cards, boundsCaches) {
+	const bounds = boundsCaches.hand;
+	bounds.check();
+	const pw = bounds.width,
+		cw = bounds.cardWidth,
+		ch = bounds.cardHeight,
+		cs = bounds.cardScale,
+		csw = cw * cs,
+		draws = [],
+		source = cards.duiMod;
+	if (source && source !== window.game?.me) {
+		source.checkBoundsCache?.();
+		let e = 27,
+			n = source.cacheLeft - bounds.x - csw / 2 - (cw - csw) / 2,
+			r = e * cards.length + (csw - e);
+		const l = source.cacheWidth + csw;
+		r > l ? (e = csw - Math.abs(l - csw * cards.length) / (cards.length - 1)) : (n += (l - r) / 2);
+		const i = Math.round(source.cacheTop - bounds.y - 30 + (source.cacheHeight - ch) / 2);
+		for (let a = 0; a < cards.length; a++) {
+			const c = Math.round(n + a * e),
+				card = cards[a];
+			((card.tx = c), (card.ty = i), (card.fixed = !0), (card.scaled = !0), (card.style.transform = `translate(${c}px, ${i}px) scale(${cs})`));
+		}
+		return;
+	}
+	for (let x = 0; x < cards.length; x++) {
+		const card = cards[x],
+			e = card.clone;
+		if (e && !e.fixed && e.parentNode === window.ui?.arena) {
+			const t = Math.round(e.tx - bounds.x),
+				n = Math.round(e.ty - (bounds.y + 30));
+			((card.tx = t), (card.ty = n), (card.scaled = !0), (card.style.transform = `translate(${t}px, ${n}px) scale(${cs})`));
+		} else draws.push(card);
+	}
+	const l = Math.round(-ch * cs * 2),
+		xMargin = 0.5 * csw,
+		xStart = (pw - xMargin * (draws.length + 1)) / 2 - (cw - csw) / 2;
+	for (let x = 0; x < draws.length; x++) {
+		const t = Math.round(xStart + x * xMargin),
+			card = draws[x];
+		((card.tx = t), (card.ty = l), (card.scaled = !0), (card.style.transition = "transform 400ms ease-out"), (card.style.transform = `translate(${t}px, ${l}px) scale(${cs})`));
+	}
+}
+function e(cards, player, center, boundsCaches) {
+	const bounds = boundsCaches.arena;
+	(bounds.updated || bounds.update(), player.checkBoundsCache?.());
+	const playerX = player.cacheLeft,
+		playerY = player.cacheTop,
+		playerW = player.cacheWidth,
+		playerH = player.cacheHeight,
+		pw = bounds.width,
+		ph = bounds.height,
+		cw = bounds.cardWidth,
+		ch = bounds.cardHeight,
+		cs = bounds.cardScale,
+		csw = cw * cs;
+	let xMargin = 27,
+		xStart = (center ? (pw - playerW) / 2 : playerX) - csw / 2 - (cw - csw) / 2,
+		totalW = xMargin * cards.length + (csw - xMargin);
+	const limitW = playerW + csw;
+	totalW > limitW ? (xMargin = csw - Math.abs(limitW - csw * cards.length) / (cards.length - 1)) : (xStart += (limitW - totalW) / 2);
+	const M = center ? Math.round((ph - ch) / 2) : Math.round(playerY + (playerH - ch) / 2);
+	for (let $ = 0; $ < cards.length; $++) {
+		const e = Math.round(xStart + $ * xMargin),
+			card = cards[$];
+		((card.tx = e), (card.ty = M), (card.scaled = !0), (card.style.transform = `translate(${e}px, ${M}px) scale(${cs})`));
+	}
+}
+export { e as layoutDrawCards, t as layoutHandDraws };

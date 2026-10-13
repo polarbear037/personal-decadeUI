@@ -795,14 +795,6 @@
 	z-index: 60;
 }
 
-/* 动皮露头开启时 */
-#arena[data-dynamic-skin-outcrop="on"] .player > .dynamic-wrap {
-	border-top-left-radius: 100px 40px;
-	border-top-right-radius: 100px 40px;
-	border-bottom-right-radius: 8px;
-	border-bottom-left-radius: 8px;
-}
-
 .player > .dynamic-wrap > .animation-player {
 	display: block;
 	position: absolute;

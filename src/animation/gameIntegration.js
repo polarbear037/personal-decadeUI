@@ -1,1 +1,101 @@
-import{AnimationPlayer as n}from"./AnimationPlayer.js";import{AnimationPlayerPool as e}from"./AnimationPlayerPool.js";import{assetList as i}from"./configs/assetList.js";import{initSkillAnimations as a}from"./initAnimations.js";const o=0,t=1,s=2,d=3,c={effect_youxikaishi:o,effect_youxikaishi_shousha:o,effect_loseHp:o,aar_chupaizhishiX:t,aar_chupaizhishi:t,SF_xuanzhong_eff_jiangjun:t,SF_xuanzhong_eff_weijiangjun:t,SF_xuanzhong_eff_cheqijiangjun:t,SF_xuanzhong_eff_biaoqijiangjun:t,SF_xuanzhong_eff_dajiangjun:t,SF_xuanzhong_eff_dasima:t,"globaltexiao/huifushuzi/shuzi2":t,"globaltexiao/shanghaishuzi/shuzi":t,"globaltexiao/shanghaishuzi/SZN_shuzi":t},l=/* @__PURE__ */new Map;function u(lib,game,ui,get,ai,_status){decadeUI.animation=(()=>{const u=new n(decadeUIPath+"assets/animation/",document.body,"decadeUI-canvas");if(decadeUI.bodySensor.addListener(()=>u.resized=!1,!0),u.cap=new e(4,decadeUIPath+"assets/animation/","decadeUI.animation"),!u.gl)return a(u),u;const h=u.playSpine,r=u.cap.playSpineTo,f=n=>i.find(e=>e.name===n)?.fileType||"skel",p=n=>u.cap.animations?.[0]?.hasSpine?.(n),m=(n,player,e,i)=>{if(e?p(n):player?.hasSpine?.(n))return void i();const a=(e?"cap:":"")+n;if("loading"===l.get(a)){const n=a+"_cb";return void l.set(n,[...l.get(n)||[],i])}l.set(a,"loading");const o=()=>{l.set(a,"loaded"),i();const n=a+"_cb";(l.get(n)||[]).forEach(n=>n()),l.delete(n)},t=()=>l.set(a,"error");e?u.cap.loadSpine(n,f(n),o,t):player.loadSpine(n,f(n),()=>{player.prepSpine(n),o()},t)};u.playSpine=function(n,e){if(!n)return;const i="string"==typeof n?n:n.name;return i?this.hasSpine(i)?h.call(this,n,e):void m(i,this,!1,()=>h.call(this,n,e)):h.call(this,n,e)},u.loopSpine=function(n,e){return"string"==typeof n?n={name:n,loop:!0}:n&&(n.loop=!0),this.playSpine(n,e)},u.cap.playSpineTo=function(n,e,i){if(!e)return;const a="string"==typeof e?e:e.name;return a?p(a)?r.call(this,n,e,i):void m(a,null,!0,()=>r.call(this,n,e,i)):r.call(this,n,e,i)};const g=[[],[],[],[]];i.forEach(n=>g[c[n.name]??s].push(n));const _=(n,e,i)=>{if(!n.length)return i?.();const a=[...n];let o=0,t=0;const s=()=>{for(;o<e&&a.length;){const e=a.shift(),i=e.follow;(i?p(e.name):u.hasSpine(e.name))?(++t,n.length):(o++,m(e.name,u,i,()=>{o--,++t===n.length||s()}))}};s()};return _(g[o],2),lib.arenaReady.push(()=>{setTimeout(()=>_(g[t],2),500);const n=()=>_([...g[s],...g[d]],2);window.requestIdleCallback?requestIdleCallback(n,{timeout:8e3}):setTimeout(n,3e3)}),a(u),u})(),window.dcdAnim=decadeUI.animation,window.dcdBackAnim=decadeUI.backgroundAnimation,window.game=game,window.get=get,window.ui=ui,window._status=_status}"undefined"!=typeof window&&window.decadeModule&&window.decadeModule.import((lib,game,ui,get,ai,_status)=>{u(lib,game,ui,get,0,_status)});export{u as setupGameAnimation};
+import { AnimationPlayer as AnimationPlayer } from "./AnimationPlayer.js";
+import { AnimationPlayerPool as AnimationPlayerPool } from "./AnimationPlayerPool.js";
+import { assetList as assetList } from "./configs/assetList.js";
+import { initSkillAnimations as initSkillAnimations } from "./initAnimations.js";
+const o = 0,
+	t = 1,
+	s = 2,
+	d = 3,
+	c = { effect_youxikaishi: o, effect_youxikaishi_shousha: o, effect_loseHp: o, aar_chupaizhishiX: t, aar_chupaizhishi: t, SF_xuanzhong_eff_jiangjun: t, SF_xuanzhong_eff_weijiangjun: t, SF_xuanzhong_eff_cheqijiangjun: t, SF_xuanzhong_eff_biaoqijiangjun: t, SF_xuanzhong_eff_dajiangjun: t, SF_xuanzhong_eff_dasima: t, "globaltexiao/huifushuzi/shuzi2": t, "globaltexiao/shanghaishuzi/shuzi": t, "globaltexiao/shanghaishuzi/SZN_shuzi": t },
+	l = /* @__PURE__ */ new Map();
+function u(lib, game, ui, get, ai, _status) {
+	((decadeUI.animation = (() => {
+		const animation = new AnimationPlayer(decadeUIPath + "assets/animation/", document.body, "decadeUI-canvas");
+		if ((decadeUI.bodySensor.addListener(() => (animation.resized = !1), !0), (animation.cap = new AnimationPlayerPool(4, decadeUIPath + "assets/animation/", "decadeUI.animation")), !animation.gl)) return (initSkillAnimations(animation), animation);
+		const originalPlaySpine = animation.playSpine,
+			originalCapPlaySpineTo = animation.cap.playSpineTo,
+			getFileType = name => assetList.find(a => a.name === name)?.fileType || "skel",
+			capHasSpine = name => animation.cap.animations?.[0]?.hasSpine?.(name),
+			ensureLoaded = (name, player, isCap, callback) => {
+				if (isCap ? capHasSpine(name) : player?.hasSpine?.(name)) return void callback();
+				const key = (isCap ? "cap:" : "") + name;
+				if ("loading" === l.get(key)) {
+					const n = key + "_cb";
+					return void l.set(n, [...(l.get(n) || []), callback]);
+				}
+				l.set(key, "loading");
+				const onLoad = () => {
+						(l.set(key, "loaded"), callback());
+						const cbKey = key + "_cb";
+						((l.get(cbKey) || []).forEach(cb => cb()), l.delete(cbKey));
+					},
+					onError = () => l.set(key, "error");
+				isCap
+					? animation.cap.loadSpine(name, getFileType(name), onLoad, onError)
+					: player.loadSpine(
+							name,
+							getFileType(name),
+							() => {
+								(player.prepSpine(name), onLoad());
+							},
+							onError
+						);
+			};
+		((animation.playSpine = function (sprite, position) {
+			if (!sprite) return;
+			const name = "string" == typeof sprite ? sprite : sprite.name;
+			return name ? (this.hasSpine(name) ? originalPlaySpine.call(this, sprite, position) : void ensureLoaded(name, this, !1, () => originalPlaySpine.call(this, sprite, position))) : originalPlaySpine.call(this, sprite, position);
+		}),
+			(animation.loopSpine = function (n, e) {
+				return ("string" == typeof n ? (n = { name: n, loop: !0 }) : n && (n.loop = !0), this.playSpine(n, e));
+			}),
+			(animation.cap.playSpineTo = function (element, anim, position) {
+				if (!anim) return;
+				const name = "string" == typeof anim ? anim : anim.name;
+				return name ? (capHasSpine(name) ? originalCapPlaySpineTo.call(this, element, anim, position) : void ensureLoaded(name, null, !0, () => originalCapPlaySpineTo.call(this, element, anim, position))) : originalCapPlaySpineTo.call(this, element, anim, position);
+			}));
+		const groups = [[], [], [], []];
+		assetList.forEach(n => groups[c[n.name] ?? s].push(n));
+		const preload = (files, concurrency, onDone) => {
+			if (!files.length) return onDone?.();
+			const queue = [...files];
+			let active = 0,
+				done = 0;
+			const next = () => {
+				for (; active < concurrency && queue.length; ) {
+					const e = queue.shift(),
+						i = e.follow;
+					(i ? capHasSpine(e.name) : animation.hasSpine(e.name))
+						? (++done, files.length)
+						: (active++,
+							ensureLoaded(e.name, animation, i, () => {
+								(active--, ++done === files.length || next());
+							}));
+				}
+			};
+			next();
+		};
+		return (
+			preload(groups[o], 2),
+			lib.arenaReady.push(() => {
+				setTimeout(() => preload(groups[t], 2), 500);
+				const n = () => preload([...groups[s], ...groups[d]], 2);
+				window.requestIdleCallback ? requestIdleCallback(n, { timeout: 8e3 }) : setTimeout(n, 3e3);
+			}),
+			initSkillAnimations(animation),
+			animation
+		);
+	})()),
+		(window.dcdAnim = decadeUI.animation),
+		(window.dcdBackAnim = decadeUI.backgroundAnimation),
+		(window.game = game),
+		(window.get = get),
+		(window.ui = ui),
+		(window._status = _status));
+}
+"undefined" != typeof window &&
+	window.decadeModule &&
+	window.decadeModule.import((lib, game, ui, get, ai, _status) => {
+		u(lib, game, ui, get, 0, _status);
+	});
+export { u as setupGameAnimation };

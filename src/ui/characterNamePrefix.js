@@ -1,1 +1,34 @@
-import{get,lib}from"noname";const t=["新杀","手杀","OL","TW"],n=n=>{const e=t.find(t=>n.startsWith(t));return e?n.slice(e.length):n};function e(){get.slimNameHorizontal=function(e){const s=lib.translate[`${e}_ab`]||lib.translate[e];if(!s)return"";const r=`${e}_prefix`;if(!lib.translate[r])return n(s);const i=lib.translate[r].split("|").filter(n=>!t.includes(n)),a=[];let l=s;for(const n of i){const e=t.find(t=>l.startsWith(t+n));if(e)a.push(n),l=l.slice(e.length+n.length);else{if(!l.startsWith(n))break;a.push(n),l=l.slice(n.length)}}if(a.length){return`${a.map(t=>get.prefixSpan(t,e)).join("")}<span>${n(l)}</span>`}return n(l)};const e=get.prefixSpan;get.prefixSpan=function(n,s){return t.includes(n)?"":e.call(this,n,s)}}export{e as setupCharacterNamePrefix};
+import { get, lib } from "noname";
+const t = ["新杀", "手杀", "OL", "TW"],
+	n = name => {
+		const prefix = t.find(t => name.startsWith(t));
+		return prefix ? name.slice(prefix.length) : name;
+	};
+function e() {
+	get.slimNameHorizontal = function (str) {
+		const slimName = lib.translate[`${str}_ab`] || lib.translate[str];
+		if (!slimName) return "";
+		const prefixKey = `${str}_prefix`;
+		if (!lib.translate[prefixKey]) return n(slimName);
+		const prefixList = lib.translate[prefixKey].split("|").filter(p => !t.includes(p)),
+			setPrefix = [];
+		let processedName = slimName;
+		for (const n of prefixList) {
+			const e = t.find(hp => processedName.startsWith(hp + n));
+			if (e) (setPrefix.push(n), (processedName = processedName.slice(e.length + n.length)));
+			else {
+				if (!processedName.startsWith(n)) break;
+				(setPrefix.push(n), (processedName = processedName.slice(n.length)));
+			}
+		}
+		if (setPrefix.length) {
+			return `${setPrefix.map(t => get.prefixSpan(t, str)).join("")}<span>${n(processedName)}</span>`;
+		}
+		return n(processedName);
+	};
+	const originalPrefixSpan = get.prefixSpan;
+	get.prefixSpan = function (prefix, name) {
+		return t.includes(prefix) ? "" : originalPrefixSpan.call(this, prefix, name);
+	};
+}
+export { e as setupCharacterNamePrefix };

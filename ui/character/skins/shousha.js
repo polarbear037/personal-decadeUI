@@ -463,10 +463,7 @@ export function createShoushaCharacterPlugin(lib, game, ui, get, ai, _status, ap
 		 */
 		_getFilteredSkills(player) {
 			let skills = player.getSkills(null, false, false).slice(0);
-			skills = skills.filter(
-				skill =>
-					lib.skill[skill] && skill !== "jiu" && !lib.skill[skill].nopop && !lib.skill[skill].equipSkill && lib.translate[skill + "_info"]
-			);
+			skills = skills.filter(skill => lib.skill[skill] && skill !== "jiu" && !lib.skill[skill].nopop && !lib.skill[skill].equipSkill && lib.translate[skill + "_info"]);
 			if (player === game.me && player.hiddenSkills?.length) {
 				skills.addArray(player.hiddenSkills);
 			}
@@ -583,11 +580,7 @@ export function createShoushaCharacterPlugin(lib, game, ui, get, ai, _status, ap
 		 */
 		_createForbiddenSkill(container, skillName, skillInfo, conflicts) {
 			const conflict = conflicts.length ? `（与${get.translation(conflicts)}冲突）` : "（双将禁用）";
-			ui.create.div(
-				".xskill",
-				`<div data-color><span style="opacity:0.5">${skillName}</span></div><div><span style="opacity:0.5">${conflict}${skillInfo}</span></div>`,
-				container
-			);
+			ui.create.div(".xskill", `<div data-color><span style="opacity:0.5">${skillName}</span></div><div><span style="opacity:0.5">${conflict}${skillInfo}</span></div>`, container);
 		},
 
 		/**
@@ -596,23 +589,13 @@ export function createShoushaCharacterPlugin(lib, game, ui, get, ai, _status, ap
 		 */
 		_createHiddenSkill(container, name, skillName, skillInfo, icon, player) {
 			if (lib.skill[name].preHidden && get.mode() === "guozhan") {
-				const el = ui.create.div(
-					".xskill",
-					icon +
-						`<div data-color><span style="opacity:0.5">${skillName}</span></div><div><span style="opacity:0.5">${skillInfo}</span><br><div class="underlinenode on gray" style="position:relative;padding-left:0;padding-top:7px">预亮技能</div></div>`,
-					container
-				);
+				const el = ui.create.div(".xskill", icon + `<div data-color><span style="opacity:0.5">${skillName}</span></div><div><span style="opacity:0.5">${skillInfo}</span><br><div class="underlinenode on gray" style="position:relative;padding-left:0;padding-top:7px">预亮技能</div></div>`, container);
 				const underlinenode = el.querySelector(".underlinenode");
 				if (_status.prehidden_skills.includes(name)) underlinenode.classList.remove("on");
 				underlinenode.link = name;
 				underlinenode.listen(ui.click.hiddenskill);
 			} else {
-				ui.create.div(
-					".xskill",
-					icon +
-						`<div data-color><span style="opacity:0.5">${skillName}</span></div><div><span style="opacity:0.5">${skillInfo}</span></div>`,
-					container
-				);
+				ui.create.div(".xskill", icon + `<div data-color><span style="opacity:0.5">${skillName}</span></div><div><span style="opacity:0.5">${skillInfo}</span></div>`, container);
 			}
 		},
 
@@ -621,11 +604,7 @@ export function createShoushaCharacterPlugin(lib, game, ui, get, ai, _status, ap
 		 * @private
 		 */
 		_createInactiveSkill(container, skillName, skillInfo, icon) {
-			ui.create.div(
-				".xskill",
-				icon + `<div data-color><span style="opacity:0.5">${skillName}</span></div><div><span style="opacity:0.5">${skillInfo}</span></div>`,
-				container
-			);
+			ui.create.div(".xskill", icon + `<div data-color><span style="opacity:0.5">${skillName}</span></div><div><span style="opacity:0.5">${skillInfo}</span></div>`, container);
 		},
 
 		/**
@@ -633,16 +612,9 @@ export function createShoushaCharacterPlugin(lib, game, ui, get, ai, _status, ap
 		 * @private
 		 */
 		_createFrequentSkill(container, name, skillName, skillInfo, icon) {
-			const el = ui.create.div(
-				".xskill",
-				icon +
-					`<div data-color>${skillName}</div><div>${skillInfo}<br><div class="underlinenode on gray" style="position:relative;padding-left:0;padding-top:7px">自动发动</div></div>`,
-				container
-			);
+			const el = ui.create.div(".xskill", icon + `<div data-color>${skillName}</div><div>${skillInfo}<br><div class="underlinenode on gray" style="position:relative;padding-left:0;padding-top:7px">自动发动</div></div>`, container);
 			const underlinenode = el.querySelector(".underlinenode");
-			const shouldDisable =
-				(lib.skill[name].frequent && lib.config.autoskilllist.includes(name)) ||
-				(lib.skill[name].subfrequent && lib.skill[name].subfrequent.some(sub => lib.config.autoskilllist.includes(name + "_" + sub)));
+			const shouldDisable = (lib.skill[name].frequent && lib.config.autoskilllist.includes(name)) || (lib.skill[name].subfrequent && lib.skill[name].subfrequent.some(sub => lib.config.autoskilllist.includes(name + "_" + sub)));
 			if (shouldDisable) underlinenode.classList.remove("on");
 			underlinenode.link = name;
 			underlinenode.listen(ui.click.autoskill2);
@@ -653,12 +625,7 @@ export function createShoushaCharacterPlugin(lib, game, ui, get, ai, _status, ap
 		 * @private
 		 */
 		_createClickableSkill(container, name, skillName, skillInfo, icon, player, dialogContainer) {
-			const el = ui.create.div(
-				".xskill",
-				icon +
-					`<div data-color>${skillName}</div><div>${skillInfo}<br><div class="menubutton skillbutton" style="position:relative;margin-top:5px;color:rgba(255,203,0,1);">点击发动</div></div>`,
-				container
-			);
+			const el = ui.create.div(".xskill", icon + `<div data-color>${skillName}</div><div>${skillInfo}<br><div class="menubutton skillbutton" style="position:relative;margin-top:5px;color:rgba(255,203,0,1);">点击发动</div></div>`, container);
 			const intronode = el.querySelector(".skillbutton");
 			if (!_status.gameStarted || (lib.skill[name].clickableFilter && !lib.skill[name].clickableFilter(player))) {
 				intronode.classList.add("disabled");

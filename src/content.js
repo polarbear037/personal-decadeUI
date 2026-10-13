@@ -1,1 +1,99 @@
-import{lib,_status,ai,get,ui,game}from"noname";import{bootstrapExtension as o}from"./core/bootstrap.js";import{createDecadeUIObject as e}from"./core/decadeUI.js";import{enhanceDecadeUIRuntime as r,registerDecadeUIUtilityModule as i}from"./core/utility.js";import{setupGameAnimation as t}from"./animation/gameIntegration.js";import{setupEffects as n}from"./effects/index.js";import{setupAutoSelect as a}from"./features/autoSelect.js";import{setupCardDragSort as s}from"./features/cardDragSort.js";import{setupEquipHand as m}from"./features/equipHand.js";import{setupLuckyCard as c}from"./features/luckyCard.js";import{setupExtensionToggle as f}from"./features/extensionToggle.js";import{setupStyleHotkeys as p}from"./features/styleHotkeys.js";import{setupDisableBrowserShortcuts as u}from"./features/disableBrowserShortcuts.js";import{setupWelcomeDialog as d}from"./features/welcomeDialog.js";import{setupConfigWindow as l}from"./features/configWindow.js";import{setupSkillDieAudio as g}from"./audio/skillDieAudio.js";import{setupAudioHooks as j}from"./audio/audioHooks.js";import{setupEnhancedAudio as y}from"./audio/enhancedAudio.js";import{setupDynamicSkin as k}from"./skins/dynamicSkin.js";import{registerLegacyModules as h}from"./ui/progress-bar.js";import{initCardPrompt as w}from"./ui/cardPrompt.js";import{initComponent as I}from"./ui/component.js";import{setupCharacterBackground as x}from"./ui/characterBackground.js";import{setupCardStyles as S,updateCardStyles as U}from"./ui/cardStyles.js";import{setupCharacterNamePrefix as _}from"./ui/characterNamePrefix.js";import{setupSkillDisplay as b}from"./ui/skillDisplay.js";import{setupOutcropAvatar as D}from"./ui/outcropAvatar.js";import{initSkills as P}from"./skills/index.js";import{createLbtnPlugin as A}from"../ui/lbtn/plugin.js";import{createSkillPlugin as H}from"../ui/skill/plugin.js";import{createCharacterPlugin as M}from"../ui/character/plugin.js";const N=(o,e)=>(i(o),o.config=e,o.config.campIdentityImageMode??=!0,o.config.update=()=>{const o=lib.extensionMenu[`extension_${decadeUIName}`];for(const e in o)o[e]?.update&&o[e].update()},o.init(),t(lib,game,ui,get,ai,_status),n(),I(o),P(),w({game:game,ui:ui}),a(),s(),m(),c(),f(),p(),u(),l(),y(),x(),S(),o.updateCardStyles=U,_(),b(),D(),g(),j(),k(),d(lib.extensionPack.十周年UI),console.timeEnd(decadeUIName),o);async function $(i){if(!o())return;const t=e();window.decadeUI=t,t.config={...i,dynamicSkin:lib.config.extension_十周年UI_dynamicSkin??!1,newDecadeStyle:lib.config.extension_十周年UI_newDecadeStyle??"on",dynamicSkinOutcrop:lib.config.extension_十周年UI_dynamicSkinOutcrop??!1,rightLayout:"on"===lib.config.extension_十周年UI_rightLayout},r(t),N(t,t.config),h(t.config),await async function(){if(["chess","tafang","hs_hearthstone"].includes(get.mode()))return;const o=[{name:"lbtn",creator:A},{name:"skill",creator:H},{name:"character",creator:M,enabled:()=>!1!==lib.config.extension_十周年UI_characterPlugin}];for(const{name:r,creator:i,enabled:t}of o)if(!t||t())try{const o=await i(lib,game,ui,get,ai,_status,window.app);o&&(o.name&&(window.app.pluginsMap[o.name]=o),!o.precontent||o.filter&&!o.filter()||o.precontent(),window.app.plugins.push(o))}catch(e){console.error(`[十周年UI] ${r}模块加载失败:`,e)}else console.log(`[十周年UI] ${r}模块已被配置关闭`)}()}export{$ as content,N as finalizeDecadeUICore};
+import { lib, _status, ai, get, ui, game } from "noname";
+import { loadResourcePaths } from "./core/resourcePaths.js";
+import { bootstrapExtension as bootstrapExtension } from "./core/bootstrap.js";
+import { createDecadeUIObject as createDecadeUIObject } from "./core/decadeUI.js";
+import { enhanceDecadeUIRuntime as enhanceDecadeUIRuntime, registerDecadeUIUtilityModule as registerDecadeUIUtilityModule } from "./core/utility.js";
+import { setupGameAnimation as setupGameAnimation } from "./animation/gameIntegration.js";
+import { setupEffects as setupEffects } from "./effects/index.js";
+import { setupAutoSelect as setupAutoSelect } from "./features/autoSelect.js";
+import { setupCardDragSort as setupCardDragSort } from "./features/cardDragSort.js";
+import { setupEquipHand as setupEquipHand } from "./features/equipHand.js";
+import { setupLuckyCard as setupLuckyCard } from "./features/luckyCard.js";
+import { setupExtensionToggle as setupExtensionToggle } from "./features/extensionToggle.js";
+import { setupStyleHotkeys as setupStyleHotkeys } from "./features/styleHotkeys.js";
+import { setupDisableBrowserShortcuts as setupDisableBrowserShortcuts } from "./features/disableBrowserShortcuts.js";
+import { setupWelcomeDialog as setupWelcomeDialog } from "./features/welcomeDialog.js";
+import { setupConfigWindow as setupConfigWindow } from "./features/configWindow.js";
+import { setupSkillDieAudio as g } from "./audio/skillDieAudio.js";
+import { setupAudioHooks as j } from "./audio/audioHooks.js";
+import { setupEnhancedAudio as y } from "./audio/enhancedAudio.js";
+import { setupDynamicSkin as setupDynamicSkin } from "./skins/dynamicSkin.js";
+import { registerLegacyModules as registerLegacyModules } from "./ui/progress-bar.js";
+import { initCardPrompt as initCardPrompt } from "./ui/cardPrompt.js";
+import { initComponent as initComponent } from "./ui/component.js";
+import { setupCharacterBackground as setupCharacterBackground } from "./ui/characterBackground.js";
+import { setupCardStyles as setupCardStyles, updateCardStyles as updateCardStyles } from "./ui/cardStyles.js";
+import { setupCharacterNamePrefix as setupCharacterNamePrefix } from "./ui/characterNamePrefix.js";
+import { setupSkillDisplay as setupSkillDisplay } from "./ui/skillDisplay.js";
+import { setupOutcropAvatar as setupOutcropAvatar } from "./ui/outcropAvatar.js";
+import { initSkills as initSkills } from "./skills/index.js";
+import { createLbtnPlugin as createLbtnPlugin } from "../ui/lbtn/plugin.js";
+import { createSkillPlugin as createSkillPlugin } from "../ui/skill/plugin.js";
+import { createCharacterPlugin as createCharacterPlugin } from "../ui/character/plugin.js";
+import { loadPlayerCardOverrides as loadPlayerCardOverrides } from "./overrides/player/card-route.js";
+const N = (decadeUI, config) => (
+	registerDecadeUIUtilityModule(decadeUI),
+	(decadeUI.config = config),
+	(decadeUI.config.campIdentityImageMode ??= !0),
+	(decadeUI.config.update = () => {
+		const menu = lib.extensionMenu[`extension_${decadeUIName}`];
+		for (const e in menu) menu[e]?.update && menu[e].update();
+	}),
+	decadeUI.init(),
+	setupGameAnimation(lib, game, ui, get, ai, _status),
+	setupEffects(),
+	initComponent(decadeUI),
+	initSkills(),
+	initCardPrompt({ game: game, ui: ui }),
+	setupAutoSelect(),
+	setupCardDragSort(),
+	setupEquipHand(),
+	setupLuckyCard(),
+	setupExtensionToggle(),
+	setupStyleHotkeys(),
+	setupDisableBrowserShortcuts(),
+	setupConfigWindow(),
+	y(),
+	setupCharacterBackground(),
+	setupCardStyles(),
+	(decadeUI.updateCardStyles = updateCardStyles),
+	setupCharacterNamePrefix(),
+	setupSkillDisplay(),
+	setupOutcropAvatar(),
+	g(),
+	j(),
+	setupDynamicSkin(),
+	setupWelcomeDialog(lib.extensionPack.十周年UI),
+	console.timeEnd(decadeUIName),
+	decadeUI
+);
+async function $(i) {
+	if (!bootstrapExtension()) return;
+	await loadPlayerCardOverrides(lib.config.extension_十周年UI_newDecadeStyle ?? i?.newDecadeStyle ?? "on");
+	const resourcePaths = await loadResourcePaths();
+	const t = createDecadeUIObject();
+	((window.decadeUI = t),
+		(t.resourcePaths = resourcePaths),
+		(t.config = { ...i, dynamicSkin: lib.config.extension_十周年UI_dynamicSkin ?? !1, newDecadeStyle: lib.config.extension_十周年UI_newDecadeStyle ?? "on", dynamicSkinOutcrop: lib.config.extension_十周年UI_dynamicSkinOutcrop ?? !1, rightLayout: "on" === lib.config.extension_十周年UI_rightLayout }),
+		enhanceDecadeUIRuntime(t),
+		N(t, t.config),
+		registerLegacyModules(t.config),
+		await (async function () {
+			if (["chess", "tafang", "hs_hearthstone"].includes(get.mode())) return;
+			const plugins = [
+				{ name: "lbtn", creator: createLbtnPlugin },
+				{ name: "skill", creator: createSkillPlugin },
+				{ name: "character", creator: createCharacterPlugin, enabled: () => !1 !== lib.config.extension_十周年UI_characterPlugin },
+			];
+			for (const { name: r, creator: i, enabled: t } of plugins)
+				if (!t || t())
+					try {
+						const o = await i(lib, game, ui, get, ai, _status, window.app);
+						o && (o.name && (window.app.pluginsMap[o.name] = o), !o.precontent || (o.filter && !o.filter()) || o.precontent(), window.app.plugins.push(o));
+					} catch (e) {
+						console.error(`[十周年UI] ${r}模块加载失败:`, e);
+					}
+				else console.log(`[十周年UI] ${r}模块已被配置关闭`);
+		})());
+}
+export { $ as content, N as finalizeDecadeUICore };

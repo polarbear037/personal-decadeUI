@@ -44,7 +44,7 @@ function playShowCardAudio() {
 }
 
 function getDui() {
-	return dui || (dui = window.decadeUI), dui;
+	return (dui || (dui = window.decadeUI), dui);
 }
 
 export { getBasePlayerMethods, getDui, playShowCardAudio, setBasePlayerMethods };

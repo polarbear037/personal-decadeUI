@@ -1,1 +1,18 @@
-import{ui}from"noname";function r(){return{handMousewheel(r){const e=ui.handcards1Container;if(!e)return console.error("ui.handcards1Container");e.scrollNum??=0,e.lastFrameTime??=performance.now();const o=()=>{const r=performance.now(),m=r-e.lastFrameTime;let a=Math.round(m);e.lastFrameTime=r,e.scrollNum>0?(a=Math.min(e.scrollNum,a),e.scrollNum-=a):(a=Math.min(-e.scrollNum,a),e.scrollNum+=a,a=-a),0===e.scrollNum?e.frameId=e.lastFrameTime=void 0:(e.frameId=requestAnimationFrame(o),e.scrollLeft+=a)};e.scrollNum+=r.wheelDelta>0?-84:84,e.frameId??=requestAnimationFrame(o)}}}export{r as createHandlerModule};
+import { ui } from "noname";
+function r() {
+	return {
+		handMousewheel(r) {
+			const hand = ui.handcards1Container;
+			if (!hand) return console.error("ui.handcards1Container");
+			((hand.scrollNum ??= 0), (hand.lastFrameTime ??= performance.now()));
+			const handScroll = () => {
+				const now = performance.now(),
+					delta = now - hand.lastFrameTime;
+				let num = Math.round(delta);
+				((hand.lastFrameTime = now), hand.scrollNum > 0 ? ((num = Math.min(hand.scrollNum, num)), (hand.scrollNum -= num)) : ((num = Math.min(-hand.scrollNum, num)), (hand.scrollNum += num), (num = -num)), 0 === hand.scrollNum ? (hand.frameId = hand.lastFrameTime = void 0) : ((hand.frameId = requestAnimationFrame(handScroll)), (hand.scrollLeft += num)));
+			};
+			((hand.scrollNum += r.wheelDelta > 0 ? -84 : 84), (hand.frameId ??= requestAnimationFrame(handScroll)));
+		},
+	};
+}
+export { r as createHandlerModule };

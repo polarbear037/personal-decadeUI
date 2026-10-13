@@ -252,6 +252,10 @@ export function createShoushaLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 
 	// 显示距离
 	const showDistanceDisplay = () => {
+		if (!lib.config["extension_十周年UI_showDistanceDisplay"]) {
+			closeDistanceDisplay();
+			return;
+		}
 		closeDistanceDisplay();
 		_lastMe = game.me;
 		if (game.players?.length > 0) {
@@ -352,6 +356,15 @@ export function createShoushaLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 						}
 					};
 					checkAndShow();
+				});
+			}
+
+			if (lib.announce?.subscribe) {
+				lib.announce.subscribe("extensionConfigChanged", data => {
+					if (data?.extension === "十周年UI" && data?.config === "showDistanceDisplay") {
+						if (data.value) showDistanceDisplay();
+						else closeDistanceDisplay();
+					}
 				});
 			}
 		},
@@ -546,13 +559,11 @@ export function createShoushaLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 			const self = this;
 			const headImg = ui.create.node("img");
 			headImg.src = `${lib.assetURL}${assetPath}shousha/button.png`;
-			headImg.style.cssText =
-				"display:block;--w:130px;--h:calc(var(--w)*1080/1434);width:var(--w);height:var(--h);position:absolute;bottom:calc(100% - 98px);left:calc(100% - 126.2px);background-color:transparent;z-index:1;";
+			headImg.style.cssText = "display:block;--w:130px;--h:calc(var(--w)*1080/1434);width:var(--w);height:var(--h);position:absolute;bottom:calc(100% - 98px);left:calc(100% - 126.2px);background-color:transparent;z-index:1;";
 			document.body.appendChild(headImg);
 
 			const head = ui.create.node("div");
-			head.style.cssText =
-				"display:block;width:134px;height:103px;position:absolute;top:0px;right:-8px;background-color:transparent;z-index:1;";
+			head.style.cssText = "display:block;width:134px;height:103px;position:absolute;top:0px;right:-8px;background-color:transparent;z-index:1;";
 			head.onclick = () => self.showMenu();
 			document.body.appendChild(head);
 		},
@@ -600,8 +611,7 @@ export function createShoushaLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 			const self = this;
 			const tip = ui.create.node("img");
 			tip.src = `${lib.assetURL}${assetPath}uibutton/shenfen.png`;
-			tip.style.cssText =
-				"display:block;--w:400px;--h:calc(var(--w)*279/2139);width:var(--w);height:var(--h);position:absolute;top:-1px;left:-45px;background-color:transparent;z-index:1;";
+			tip.style.cssText = "display:block;--w:400px;--h:calc(var(--w)*279/2139);width:var(--w);height:var(--h);position:absolute;top:-1px;left:-45px;background-color:transparent;z-index:1;";
 
 			tip.onclick = () => {
 				game.playAudio(`../${assetPath}shousha/label.mp3`);
@@ -711,18 +721,8 @@ export function createShoushaLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 					// 限定技专属按钮
 					const isLimitedSkill = () => {
 						if (_status.event?.skill && get.info(_status.event.skill)?.limited && _status.event.player === game.me) return true;
-						if (
-							_status.event?.getParent?.(2)?.skill &&
-							get.info(_status.event.getParent(2).skill)?.limited &&
-							_status.event.getParent(2).player === game.me
-						)
-							return true;
-						if (
-							_status.event?.getParent?.()?.skill &&
-							get.info(_status.event.getParent().skill)?.limited &&
-							_status.event.getParent().player === game.me
-						)
-							return true;
+						if (_status.event?.getParent?.(2)?.skill && get.info(_status.event.getParent(2).skill)?.limited && _status.event.getParent(2).player === game.me) return true;
+						if (_status.event?.getParent?.()?.skill && get.info(_status.event.getParent().skill)?.limited && _status.event.getParent().player === game.me) return true;
 						return false;
 					};
 					if (isLimitedSkill() && !confirm.node.ok.classList.contains("xiandingji")) {

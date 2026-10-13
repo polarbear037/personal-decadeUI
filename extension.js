@@ -1,1 +1,36 @@
-import{lib}from"noname";import{config as n}from"./src/config/index.js";import{content as e}from"./src/content.js";import{precontent as o}from"./src/precontent.js";import{mainpackage as t}from"./src/package.js";const s="extension";async function a(){const s=`${lib.assetURL}extension/十周年UI/info.json`,{name:a,...c}=await lib.init.promises.json(s),i=a,r=`${lib.assetURL}extension/${i}/`;Object.assign(window,{decadeUIName:i,decadeUIPath:r});const m=t(c);return{name:i,editable:!1,content:e,precontent:o,config:n,package:m,mainpackage:m}}export{a as default,s as type};
+import { lib } from "noname";
+import { config } from "./src/config/index.js";
+import { content } from "./src/content.js";
+import { precontent } from "./src/precontent.js";
+import { mainpackage } from "./src/package.js";
+
+const type = "extension";
+
+/**
+ * 十周年UI扩展入口
+ * @returns {Promise<import("noname").ExtensionInfo>} 扩展配置对象
+ */
+async function extensionEntry() {
+	const infoUrl = `${lib.assetURL}extension/十周年UI/info.json`;
+	const { name: extensionName, ...otherInfo } = await lib.init.promises.json(infoUrl);
+
+	const extensionPath = `${lib.assetURL}extension/${extensionName}/`;
+	Object.assign(window, {
+		decadeUIName: extensionName,
+		decadeUIPath: extensionPath,
+	});
+
+	const packageData = mainpackage(otherInfo);
+
+	return {
+		name: extensionName,
+		editable: false,
+		content,
+		precontent,
+		config,
+		package: packageData,
+		mainpackage: packageData,
+	};
+}
+
+export { type, extensionEntry as default };

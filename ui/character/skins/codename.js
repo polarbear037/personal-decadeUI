@@ -236,8 +236,7 @@ export function createCodenameCharacterPlugin(lib, game, ui, get, ai, _status, a
 			const rarity = game.getRarity(name) || "junk";
 			const head = ui.create.node("img");
 			head.src = this.getRarityIcon(rarity);
-			head.style.cssText =
-				"display:inline-block;width:61.6px;height:53.2px;top:-13px;position:absolute;background-color:transparent;z-index:1;margin-left:5px;";
+			head.style.cssText = "display:inline-block;width:61.6px;height:53.2px;top:-13px;position:absolute;background-color:transparent;z-index:1;margin-left:5px;";
 			namestyle.appendChild(head);
 		},
 
@@ -288,9 +287,7 @@ export function createCodenameCharacterPlugin(lib, game, ui, get, ai, _status, a
 			const formattedSkillInfo = skillButtonTooltip.formatSkillDescription(rawSkillInfo);
 
 			const skillNameHtml = isAwakened ? `<span style="opacity:0.5">${translation}： </span>` : `${translation}： `;
-			const skillInfoHtml = isAwakened
-				? `<span style="opacity:0.5;text-indent:10px">${formattedSkillInfo}</span>`
-				: `<span style="text-indent:10px">${formattedSkillInfo}</span>`;
+			const skillInfoHtml = isAwakened ? `<span style="opacity:0.5;text-indent:10px">${formattedSkillInfo}</span>` : `<span style="text-indent:10px">${formattedSkillInfo}</span>`;
 
 			let skillContent = `<div data-color>${skillNameHtml}</div><div>${skillInfoHtml}`;
 

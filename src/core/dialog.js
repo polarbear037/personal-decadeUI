@@ -1,1 +1,64 @@
-import{ui}from"noname";const e=e=>({_dialog:e,_list:[],add(e,event,t,s){if(!(e instanceof HTMLElement&&event&&"function"==typeof t))return console.error("Invalid arguments for listener");this._list.push([e,event,t]),e.addEventListener(event,t,s)},remove(e,event,t){for(let s=this._list.length-1;s>=0;s--){const[i,n,r]=this._list[s];!(e&&i!==e||event&&n!==event||t&&r!==t)&&(i.removeEventListener(n,r),this._list.splice(s,1))}},clear(){this._list.forEach(([e,t,s])=>e.removeEventListener(t,s)),this._list.length=0}});const t=()=>({create(t,s,i="div"){const n=document.createElement(i);return Object.keys(decadeUI.dialog).forEach(e=>{decadeUI.dialog[e]&&"listens"!==e&&(n[e]=decadeUI.dialog[e])}),n.listens=e(n),t&&(n.className=t),s&&s.appendChild(n),n},show(){this!==decadeUI.dialog&&this.classList.remove("hidden")},hide(){this!==decadeUI.dialog&&this.classList.add("hidden")},animate(e,t,s,i){if(this===decadeUI.dialog||!e||!t||!s)return;const n=e.replace(/\s/g,"").split(","),r=function(e){return"number"==typeof e?e:e.includes("ms")?parseInt(e):e.includes("s")?1e3*parseFloat(e):parseInt(e)}(t);if(isNaN(r))return console.error("Invalid duration");i&&n.forEach((e,t)=>this.style.setProperty(e,i[t]));const{transitionDuration:o,transitionProperty:a}=this.style;this.style.transitionDuration=`${r}ms`,this.style.transitionProperty=e,ui.refresh(this),n.forEach((e,t)=>this.style.setProperty(e,s[t])),setTimeout(()=>{this.style.transitionDuration=o,this.style.transitionProperty=a},r)},close(e,t){if(this!==decadeUI.dialog&&this.parentNode)if(this.listens.clear(),t&&e&&this.addTempClass("opacity",e,[0]),e){const t="number"==typeof e?e:parseInt(e);setTimeout(()=>this.parentNode?.removeChild(this),t)}else this.parentNode.removeChild(this)},listens:e(null)});export{t as createDecadeUIDialogModule};
+import { ui } from "noname";
+const e = dialog => ({
+	_dialog: dialog,
+	_list: [],
+	add(element, event, handler, useCapture) {
+		if (!(element instanceof HTMLElement && event && "function" == typeof handler)) return console.error("Invalid arguments for listener");
+		(this._list.push([element, event, handler]), element.addEventListener(event, handler, useCapture));
+	},
+	remove(element, event, handler) {
+		for (let s = this._list.length - 1; s >= 0; s--) {
+			const [i, n, r] = this._list[s];
+			!((element && i !== element) || (event && n !== event) || (handler && r !== handler)) && (i.removeEventListener(n, r), this._list.splice(s, 1));
+		}
+	},
+	clear() {
+		(this._list.forEach(([el, evt, fn]) => el.removeEventListener(evt, fn)), (this._list.length = 0));
+	},
+});
+const t = () => ({
+	create(className, parentNode, tagName = "div") {
+		const element = document.createElement(tagName);
+		return (
+			Object.keys(decadeUI.dialog).forEach(key => {
+				decadeUI.dialog[key] && "listens" !== key && (element[key] = decadeUI.dialog[key]);
+			}),
+			(element.listens = e(element)),
+			className && (element.className = className),
+			parentNode && parentNode.appendChild(element),
+			element
+		);
+	},
+	show() {
+		this !== decadeUI.dialog && this.classList.remove("hidden");
+	},
+	hide() {
+		this !== decadeUI.dialog && this.classList.add("hidden");
+	},
+	animate(property, duration, toValues, fromValues) {
+		if (this === decadeUI.dialog || !property || !duration || !toValues) return;
+		const props = property.replace(/\s/g, "").split(","),
+			ms = (function (duration) {
+				return "number" == typeof duration ? duration : duration.includes("ms") ? parseInt(duration) : duration.includes("s") ? 1e3 * parseFloat(duration) : parseInt(duration);
+			})(duration);
+		if (isNaN(ms)) return console.error("Invalid duration");
+		fromValues && props.forEach((prop, i) => this.style.setProperty(prop, fromValues[i]));
+		const { transitionDuration: transitionDuration, transitionProperty: transitionProperty } = this.style;
+		((this.style.transitionDuration = `${ms}ms`),
+			(this.style.transitionProperty = property),
+			ui.refresh(this),
+			props.forEach((prop, i) => this.style.setProperty(prop, toValues[i])),
+			setTimeout(() => {
+				((this.style.transitionDuration = transitionDuration), (this.style.transitionProperty = transitionProperty));
+			}, ms));
+	},
+	close(delay, fadeOut) {
+		if (this !== decadeUI.dialog && this.parentNode)
+			if ((this.listens.clear(), fadeOut && delay && this.addTempClass("opacity", delay, [0]), delay)) {
+				const t = "number" == typeof delay ? delay : parseInt(delay);
+				setTimeout(() => this.parentNode?.removeChild(this), t);
+			} else this.parentNode.removeChild(this);
+	},
+	listens: e(null),
+});
+export { t as createDecadeUIDialogModule };

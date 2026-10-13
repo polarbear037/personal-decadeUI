@@ -8,19 +8,23 @@ import { createBaseLbtnPlugin } from "./base.js";
 export function createOnlineLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 	const base = createBaseLbtnPlugin(lib, game, ui, get, ai, _status, app);
 	const assetPath = "extension/十周年UI/ui/assets/lbtn/";
-	
-    //为元素添加点击缩放效果
-    function addScaleEffect(el, scale = 0.85) {
-        el.style.transition = "transform 0.1s ease";
-        el.style.cursor = "pointer";
-        const shrink = () => { el.style.transform = `scale(${scale})`; };
-        const restore = () => { el.style.transform = "scale(1)"; };
-        el.addEventListener("mousedown", shrink);
-        el.addEventListener("touchstart", shrink, { passive: true });
-        el.addEventListener("mouseup", restore);
-        el.addEventListener("touchend", restore);
-        el.addEventListener("mouseleave", restore);
-    }
+
+	//为元素添加点击缩放效果
+	function addScaleEffect(el, scale = 0.85) {
+		el.style.transition = "transform 0.1s ease";
+		el.style.cursor = "pointer";
+		const shrink = () => {
+			el.style.transform = `scale(${scale})`;
+		};
+		const restore = () => {
+			el.style.transform = "scale(1)";
+		};
+		el.addEventListener("mousedown", shrink);
+		el.addEventListener("touchstart", shrink, { passive: true });
+		el.addEventListener("mouseup", restore);
+		el.addEventListener("touchend", restore);
+		el.addEventListener("mouseleave", restore);
+	}
 
 	// 礼物配置
 	const GIFT_CONFIG = {
@@ -63,8 +67,8 @@ export function createOnlineLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 			undefined: "击败所有敌方",
 		},
 		versus: {
-            undefined: "击败所有敌方"
-        },
+			undefined: "击败所有敌方",
+		},
 	};
 
 	// 工具函数
@@ -135,13 +139,7 @@ export function createOnlineLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 			const originalCancel = ui.click.cancel;
 			ui.click.cancel = function (node) {
 				const event = _status.event;
-				if (
-					event &&
-					event.type === "phase" &&
-					ui.confirm &&
-					!event.skill &&
-					(ui.selected.cards.length !== 0 || ui.selected.targets.length !== 0)
-				) {
+				if (event && event.type === "phase" && ui.confirm && !event.skill && (ui.selected.cards.length !== 0 || ui.selected.targets.length !== 0)) {
 					ui.confirm.classList.add("removing");
 					event.restore();
 					const cards = event.player.getCards("hej");
@@ -328,7 +326,7 @@ export function createOnlineLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 				self.createBottomButtons();
 				const isTouch = lib.config.touchscreen;
 				if (isTouch) {
-						ui.create.div(".huanfuButton_new", ui.arena, base.click.huanfu);
+					ui.create.div(".huanfuButton_new", ui.arena, base.click.huanfu);
 				}
 				self.createTimeNode();
 			});
@@ -364,32 +362,7 @@ export function createOnlineLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 			// 更新玩家昵称
 			game.countPlayer(player => {
 				if (!player.nickname) {
-					const nicknames = [
-						"缘之空",
-						"小小恐龙",
-						"自然萌",
-						"海边的ebao",
-						"小云云",
-						"点点",
-						"猫猫虫",
-						"小爱莉",
-						"冰佬",
-						"鹿鹿",
-						"黎佬",
-						"浮牢师",
-						"U佬",
-						"蓝宝",
-						"影宝",
-						"柳下跖",
-						"无语",
-						"小曦",
-						"墨渊",
-						"k9",
-						"扶苏",
-						"皇叔",
-					    "龙哥",
-						"🦅🦅🦅",
-					];
+					const nicknames = ["缘之空", "小小恐龙", "自然萌", "海边的ebao", "小云云", "点点", "猫猫虫", "小爱莉", "冰佬", "鹿鹿", "黎佬", "浮牢师", "U佬", "蓝宝", "影宝", "柳下跖", "无语", "小曦", "墨渊", "k9", "扶苏", "皇叔", "龙哥", "🦅🦅🦅"];
 					player.nickname = player === game.me ? lib.config.connect_nickname : nicknames.randomGet();
 				}
 			});
@@ -420,267 +393,262 @@ export function createOnlineLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 		},
 
 		// 创建菜单按钮
-         createMenuButton() {
-            const self = this;
-        
-            ui.caidanbutton = ui.create.div(".ui.caidanbutton", ui.window);
-            // 通用缩放效果（长按需额外覆盖）
-            addScaleEffect(ui.caidanbutton, 0.85);
-        
-            let pressTimer = null;
-            let isLongPress = false;
-        
-            const startPress = (e) => {
-                e.preventDefault();
-                isLongPress = false;
-                pressTimer = setTimeout(() => { isLongPress = true; }, 500);
-            };
-        
-            const endPress = (e) => {
-                e.preventDefault();
-                if (pressTimer) {
-                    clearTimeout(pressTimer);
-                    pressTimer = null;
-                }
-                if (!isLongPress) {
-                    game.playAudio(`../${assetPath}CD/click.mp3`);
-                    self.openMenu();
-                }
-            };
-            
-            ui.caidanbutton.addEventListener("mousedown", startPress);
-            ui.caidanbutton.addEventListener("touchstart", startPress, { passive: false });
-            ui.caidanbutton.addEventListener("mouseup", endPress);
-            ui.caidanbutton.addEventListener("touchend", endPress);
-            ui.caidanbutton.onclick = null;
-        },
-        
-        // 独立的菜单创建函数，供短按调用
-        openMenu() {
-            const self = this;
-            const container = ui.create.div(".popup-container", ui.window);
-            container.style.zIndex = "9999";
-            const home = ui.create.div(".caidanopen", container);
-        
-            Object.assign(home.style, {
-                position: "fixed",
-                right: "15px",
-                top: "0",
-                width: "50%",
-                height: "100%",
-                background: "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8))",
-                zIndex: "200",
-                gap: "18px",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-end",
-                paddingRight: "98px",
-                justifyContent: "flex-start",
-                paddingTop: "91px"
-            });
-        
-            // 定义直接关闭
-            const immediateClose = () => {
-                if (container.parentNode) container.remove();
-            };
-        
-            // 通用按钮创建（带点击缩放，默认关闭）
-            const createMenuItem = (bgImg, onClickHandler) => {
-                const btn = ui.create.div(".controls", home);
-                btn.setBackgroundImage(bgImg);
-                Object.assign(btn.style, {
-                    width: "90px",
-                    height: "30.75px",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "contain",
-                    margin: "6px 0",
-                    backgroundColor: "transparent",
-                    transition: "transform 0.1s ease"
-                });
-        
-                btn.addEventListener("click", (e) => {
-                    e.stopPropagation();
-                    game.playAudio(`../${assetPath}CD/button.mp3`);
-                    btn.style.transform = "scale(0.9)";
-                    setTimeout(() => {
-                        btn.style.transform = "scale(1)";
-                        onClickHandler?.();
-                        immediateClose();
-                    }, 100);
-                });
-                return btn;
-            };
-        
-            // 设置
-            createMenuItem(`${assetPath}OL_line/uibutton/shezhi.png`, () => {
-                game.closePopped?.();
-                game.pause2?.();
-                ui.click.configMenu?.();
-                ui.system1?.classList.remove("shown");
-                ui.system2?.classList.remove("shown");
-            });
-            // 背景
-            createMenuItem(`${assetPath}OL_line/uibutton/beijing.png`, () => {
-                self.openBackgroundSelector();
-            });
-            // 托管按钮（不关闭菜单，缩放动画，点击切换图标）
-            const getAutoState = () => game.me?.isAuto?.() ?? _status.auto ?? false;
-            const tuoguanBtn = ui.create.div(".controls", home);
-            const updateTuoGuanIcon = () => {
-                const isAuto = getAutoState();
-                tuoguanBtn.setBackgroundImage(
-                    `${assetPath}OL_line/uibutton/tuoguan_${isAuto ? 'off' : 'on'}.png`
-                );
-            };
-            updateTuoGuanIcon();
-            
-            Object.assign(tuoguanBtn.style, {
-                width: "90px",
-                height: "30.75px",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "contain",
-                margin: "6px 0",
-                backgroundColor: "transparent",
-                transition: "transform 0.1s ease"
-            });
-            
-            tuoguanBtn.addEventListener("click", (e) => {
-                e.stopPropagation();
-                game.playAudio(`../${assetPath}CD/button.mp3`);
-                tuoguanBtn.style.transform = "scale(0.85)";
-                setTimeout(() => {
-                    tuoguanBtn.style.transform = "scale(1)";
-                    ui.click.auto();
-                    updateTuoGuanIcon();
-                }, 100);
-            });
-            // 投降
-            createMenuItem(`${assetPath}OL_line/uibutton/touxiang.png`, () => {
-                game.over();
-            });
-            // 离开
-            createMenuItem(`${assetPath}OL_line/uibutton/likai.png`, () => {
-                window.location.reload();
-            });
-        
-            // 动态系统菜单项
-            self.addSystemMenuItems(home, immediateClose);
-        
-            // 动画初始化
-            const items = Array.from(home.children).filter(el => el.classList.contains('controls'));
-            items.forEach(item => {
-                item.style.transform = 'translateX(100px)';
-                item.style.opacity = '0';
-                item.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
-                item.style.transitionDelay = '0s';
-            });
-            requestAnimationFrame(() => {
-                items.forEach((item, index) => {
-                    item.style.transitionDelay = `${index * 0.05}s`;
-                    item.style.transform = 'translateX(0)';
-                    item.style.opacity = '1';
-                });
-            });
-        
-            // 带动画关闭（背景/空白）
-            const closeMenu = () => {
-                items.forEach((item, index) => {
-                    item.style.transitionDelay = `${(items.length - 1 - index) * 0.05}s`;
-                    item.style.transform = 'translateX(100px)';
-                    item.style.opacity = '0';
-                });
-                const totalDelay = ((items.length - 1) * 0.05) + 0.3;
-                setTimeout(() => {
-                    if (container.parentNode) container.remove();
-                }, totalDelay * 1000);
-            };
-        
-            container.addEventListener("click", e => {
-                if (e.target === container) {
-                    game.playAudio(`../${assetPath}CD/back.mp3`);
-                    e.stopPropagation();
-                    closeMenu();
-                }
-            });
-            home.addEventListener("click", e => {
-                if (!e.target.closest('.controls')) {
-                    game.playAudio(`../${assetPath}CD/back.mp3`);
-                    closeMenu();
-                }
-            });
-        },
+		createMenuButton() {
+			const self = this;
+
+			ui.caidanbutton = ui.create.div(".ui.caidanbutton", ui.window);
+			// 通用缩放效果（长按需额外覆盖）
+			addScaleEffect(ui.caidanbutton, 0.85);
+
+			let pressTimer = null;
+			let isLongPress = false;
+
+			const startPress = e => {
+				e.preventDefault();
+				isLongPress = false;
+				pressTimer = setTimeout(() => {
+					isLongPress = true;
+				}, 500);
+			};
+
+			const endPress = e => {
+				e.preventDefault();
+				if (pressTimer) {
+					clearTimeout(pressTimer);
+					pressTimer = null;
+				}
+				if (!isLongPress) {
+					game.playAudio(`../${assetPath}CD/click.mp3`);
+					self.openMenu();
+				}
+			};
+
+			ui.caidanbutton.addEventListener("mousedown", startPress);
+			ui.caidanbutton.addEventListener("touchstart", startPress, { passive: false });
+			ui.caidanbutton.addEventListener("mouseup", endPress);
+			ui.caidanbutton.addEventListener("touchend", endPress);
+			ui.caidanbutton.onclick = null;
+		},
+
+		// 独立的菜单创建函数，供短按调用
+		openMenu() {
+			const self = this;
+			const container = ui.create.div(".popup-container", ui.window);
+			container.style.zIndex = "9999";
+			const home = ui.create.div(".caidanopen", container);
+
+			Object.assign(home.style, {
+				position: "fixed",
+				right: "15px",
+				top: "0",
+				width: "50%",
+				height: "100%",
+				background: "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8))",
+				zIndex: "200",
+				gap: "18px",
+				display: "flex",
+				flexDirection: "column",
+				alignItems: "flex-end",
+				paddingRight: "98px",
+				justifyContent: "flex-start",
+				paddingTop: "91px",
+			});
+
+			// 定义直接关闭
+			const immediateClose = () => {
+				if (container.parentNode) container.remove();
+			};
+
+			// 通用按钮创建（带点击缩放，默认关闭）
+			const createMenuItem = (bgImg, onClickHandler) => {
+				const btn = ui.create.div(".controls", home);
+				btn.setBackgroundImage(bgImg);
+				Object.assign(btn.style, {
+					width: "90px",
+					height: "30.75px",
+					backgroundRepeat: "no-repeat",
+					backgroundSize: "contain",
+					margin: "6px 0",
+					backgroundColor: "transparent",
+					transition: "transform 0.1s ease",
+				});
+
+				btn.addEventListener("click", e => {
+					e.stopPropagation();
+					game.playAudio(`../${assetPath}CD/button.mp3`);
+					btn.style.transform = "scale(0.9)";
+					setTimeout(() => {
+						btn.style.transform = "scale(1)";
+						onClickHandler?.();
+						immediateClose();
+					}, 100);
+				});
+				return btn;
+			};
+
+			// 设置
+			createMenuItem(`${assetPath}OL_line/uibutton/shezhi.png`, () => {
+				game.closePopped?.();
+				game.pause2?.();
+				ui.click.configMenu?.();
+				ui.system1?.classList.remove("shown");
+				ui.system2?.classList.remove("shown");
+			});
+			// 背景
+			createMenuItem(`${assetPath}OL_line/uibutton/beijing.png`, () => {
+				self.openBackgroundSelector();
+			});
+			// 托管按钮（不关闭菜单，缩放动画，点击切换图标）
+			const getAutoState = () => game.me?.isAuto?.() ?? _status.auto ?? false;
+			const tuoguanBtn = ui.create.div(".controls", home);
+			const updateTuoGuanIcon = () => {
+				const isAuto = getAutoState();
+				tuoguanBtn.setBackgroundImage(`${assetPath}OL_line/uibutton/tuoguan_${isAuto ? "off" : "on"}.png`);
+			};
+			updateTuoGuanIcon();
+
+			Object.assign(tuoguanBtn.style, {
+				width: "90px",
+				height: "30.75px",
+				backgroundRepeat: "no-repeat",
+				backgroundSize: "contain",
+				margin: "6px 0",
+				backgroundColor: "transparent",
+				transition: "transform 0.1s ease",
+			});
+
+			tuoguanBtn.addEventListener("click", e => {
+				e.stopPropagation();
+				game.playAudio(`../${assetPath}CD/button.mp3`);
+				tuoguanBtn.style.transform = "scale(0.85)";
+				setTimeout(() => {
+					tuoguanBtn.style.transform = "scale(1)";
+					ui.click.auto();
+					updateTuoGuanIcon();
+				}, 100);
+			});
+			// 投降
+			createMenuItem(`${assetPath}OL_line/uibutton/touxiang.png`, () => {
+				game.over();
+			});
+			// 离开
+			createMenuItem(`${assetPath}OL_line/uibutton/likai.png`, () => {
+				window.location.reload();
+			});
+
+			// 动态系统菜单项
+			self.addSystemMenuItems(home, immediateClose);
+
+			// 动画初始化
+			const items = Array.from(home.children).filter(el => el.classList.contains("controls"));
+			items.forEach(item => {
+				item.style.transform = "translateX(100px)";
+				item.style.opacity = "0";
+				item.style.transition = "transform 0.3s ease, opacity 0.3s ease";
+				item.style.transitionDelay = "0s";
+			});
+			requestAnimationFrame(() => {
+				items.forEach((item, index) => {
+					item.style.transitionDelay = `${index * 0.05}s`;
+					item.style.transform = "translateX(0)";
+					item.style.opacity = "1";
+				});
+			});
+
+			// 带动画关闭（背景/空白）
+			const closeMenu = () => {
+				items.forEach((item, index) => {
+					item.style.transitionDelay = `${(items.length - 1 - index) * 0.05}s`;
+					item.style.transform = "translateX(100px)";
+					item.style.opacity = "0";
+				});
+				const totalDelay = (items.length - 1) * 0.05 + 0.3;
+				setTimeout(() => {
+					if (container.parentNode) container.remove();
+				}, totalDelay * 1000);
+			};
+
+			container.addEventListener("click", e => {
+				if (e.target === container) {
+					game.playAudio(`../${assetPath}CD/back.mp3`);
+					e.stopPropagation();
+					closeMenu();
+				}
+			});
+			home.addEventListener("click", e => {
+				if (!e.target.closest(".controls")) {
+					game.playAudio(`../${assetPath}CD/back.mp3`);
+					closeMenu();
+				}
+			});
+		},
 
 		// 添加系统菜单项
-         addSystemMenuItems(home, immediateClose) {
-            const excludedItems = [
-                "聊天",
-                "联机大厅",
-                "最近连接",
-                "投降",
-                "重来",
-                "选项",
-                "暂停",
-                "不询问无懈",
-                "托管",
-                "♫",
-                "整理手牌",
-                "收藏",
-                "牌堆"
-            ];
-            for (let i in game.system) {
-                if (excludedItems.includes(game.system[i].name)) continue;
-                const node = ui.create.div(".controls", game.system[i].name, home);
-                node.style.transition = "transform 0.1s ease"; // 缩放动画准备
-                if (game.system[i].click) {
-                    node.addEventListener("click", (e) => {
-                        e.stopPropagation();
-                        game.playAudio(`../${assetPath}CD/button.mp3`);
-                        node.style.transform = "scale(0.85)";
-                        setTimeout(() => {
-                            node.style.transform = "scale(1)";
-                            game.system[i].click();
-                            if (immediateClose) immediateClose();
-                        }, 100);
-                    });
-                }
-            }
-        },
+		addSystemMenuItems(home, immediateClose) {
+			const excludedItems = ["聊天", "联机大厅", "最近连接", "投降", "重来", "选项", "暂停", "不询问无懈", "托管", "♫", "整理手牌", "收藏", "牌堆"];
+			for (let i in game.system) {
+				if (excludedItems.includes(game.system[i].name)) continue;
+				const node = ui.create.div(".controls", game.system[i].name, home);
+				node.style.transition = "transform 0.1s ease"; // 缩放动画准备
+				if (game.system[i].click) {
+					node.addEventListener("click", e => {
+						e.stopPropagation();
+						game.playAudio(`../${assetPath}CD/button.mp3`);
+						node.style.transform = "scale(0.85)";
+						setTimeout(() => {
+							node.style.transform = "scale(1)";
+							game.system[i].click();
+							if (immediateClose) immediateClose();
+						}, 100);
+					});
+				}
+			}
+		},
 
 		// 创建底部按钮
-        createBottomButtons() {
-            const self = this;
-            const isRight = lib.config["extension_十周年UI_rightLayout"] === "on";
-            ui.anniubuttons = ui.create.div(isRight ? ".leftbuttons" : ".rightbuttons", ui.window);
-        
-            const playClickSound = () => game.playAudio(`../${assetPath}CD/button.mp3`);
-        
-            // 礼物按钮
-            const giftBtn = ui.create.div(".anniubutton", ui.anniubuttons);
-            giftBtn.setBackgroundImage(`${assetPath}OL_line/uibutton/gameview_tool_btn_prop.png`);
-            addScaleEffect(giftBtn);
-            giftBtn.onclick = () => { playClickSound(); self.showGiftPanel(); };
-        
-            // 聊天按钮
-            const talkBtn = ui.create.div(".anniubutton", ui.anniubuttons);
-            talkBtn.setBackgroundImage(`${assetPath}OL_line/uibutton/gameview_tool_btn_chat.png`);
-            addScaleEffect(talkBtn);
-            talkBtn.onclick = () => { playClickSound(); self.showTalkPanel(); };
-        
-            // 排序按钮
-            const sortBtn = ui.create.div(".anniubutton", ui.anniubuttons);
-            sortBtn.setBackgroundImage(`${assetPath}OL_line/uibutton/gameview_tool_btn_sort.png`);
-            addScaleEffect(sortBtn);
-            sortBtn.onclick = () => { playClickSound(); self.sortHandCards(); };
-        
-            // 容器样式
-            Object.assign(ui.anniubuttons.style, {
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "flex-end",
-                alignItems: "flex-start",
-                gap: "14px"
-            });
-        },
+		createBottomButtons() {
+			const self = this;
+			const isRight = lib.config["extension_十周年UI_rightLayout"] === "on";
+			ui.anniubuttons = ui.create.div(isRight ? ".leftbuttons" : ".rightbuttons", ui.window);
+
+			const playClickSound = () => game.playAudio(`../${assetPath}CD/button.mp3`);
+
+			// 礼物按钮
+			const giftBtn = ui.create.div(".anniubutton", ui.anniubuttons);
+			giftBtn.setBackgroundImage(`${assetPath}OL_line/uibutton/gameview_tool_btn_prop.png`);
+			addScaleEffect(giftBtn);
+			giftBtn.onclick = () => {
+				playClickSound();
+				self.showGiftPanel();
+			};
+
+			// 聊天按钮
+			const talkBtn = ui.create.div(".anniubutton", ui.anniubuttons);
+			talkBtn.setBackgroundImage(`${assetPath}OL_line/uibutton/gameview_tool_btn_chat.png`);
+			addScaleEffect(talkBtn);
+			talkBtn.onclick = () => {
+				playClickSound();
+				self.showTalkPanel();
+			};
+
+			// 排序按钮
+			const sortBtn = ui.create.div(".anniubutton", ui.anniubuttons);
+			sortBtn.setBackgroundImage(`${assetPath}OL_line/uibutton/gameview_tool_btn_sort.png`);
+			addScaleEffect(sortBtn);
+			sortBtn.onclick = () => {
+				playClickSound();
+				self.sortHandCards();
+			};
+
+			// 容器样式
+			Object.assign(ui.anniubuttons.style, {
+				display: "flex",
+				flexDirection: "column",
+				justifyContent: "flex-end",
+				alignItems: "flex-start",
+				gap: "14px",
+			});
+		},
 
 		// 创建计时器节点
 		createTimeNode() {
@@ -844,8 +812,7 @@ export function createOnlineLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 					shuru = document.createElement("input");
 					shuru.type = "text";
 					shuru.placeholder = "请输入要说的话";
-					shuru.style.cssText =
-						"position:absolute;left:50%;transform:translateX(-50%);z-index:1000;top:5%;width:60%;height:10%;font-size:30px;background-color:rgba(255,255,255,0.9);border:2px solid #C1AD92;border-radius:5px;padding:5px;outline:none;pointer-events:auto;";
+					shuru.style.cssText = "position:absolute;left:50%;transform:translateX(-50%);z-index:1000;top:5%;width:60%;height:10%;font-size:30px;background-color:rgba(255,255,255,0.9);border:2px solid #C1AD92;border-radius:5px;padding:5px;outline:none;pointer-events:auto;";
 					ui.window.appendChild(shuru);
 				}
 				shuru.style.display = "block";
@@ -927,34 +894,24 @@ export function createOnlineLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 					folders
 						.filter(pack => pack !== "throw_emotion")
 						.forEach(pack => {
-							const packDiv = ui.create.div(
-								".card.fullskin",
-								`<img src="${srcBase}${pack}/1.gif" width="80" height="80">`,
-								list1,
-								() => {
-									list2.innerHTML = "";
-									game.getFileList(
-										`${srcBase}${pack}/`,
-										(_, files) => {
-											files.forEach(file => {
-												const btn = ui.create.div(
-													".card.fullskin",
-													`<img src="${srcBase}${pack}/${file}" width="80" height="80">`,
-													list2,
-													() => {
-														if (game.online) game.send("emotion", game.onlineID, pack, file);
-														else game.me.emotion(pack, file);
-													}
-												);
-												btn.style.cssText = "width:80px;height:80px;";
+							const packDiv = ui.create.div(".card.fullskin", `<img src="${srcBase}${pack}/1.gif" width="80" height="80">`, list1, () => {
+								list2.innerHTML = "";
+								game.getFileList(
+									`${srcBase}${pack}/`,
+									(_, files) => {
+										files.forEach(file => {
+											const btn = ui.create.div(".card.fullskin", `<img src="${srcBase}${pack}/${file}" width="80" height="80">`, list2, () => {
+												if (game.online) game.send("emotion", game.onlineID, pack, file);
+												else game.me.emotion(pack, file);
 											});
-										},
-										() => {}
-									);
-									list1.style.display = "none";
-									list2.style.display = "grid";
-								}
-							);
+											btn.style.cssText = "width:80px;height:80px;";
+										});
+									},
+									() => {}
+								);
+								list1.style.display = "none";
+								list2.style.display = "grid";
+							});
 							packDiv.style.cssText = "width:80px;height:80px;";
 						});
 				},

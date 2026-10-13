@@ -1,1 +1,144 @@
-import{_status,game,lib,get,ui}from"noname";import{initCanvas as e,loadImageToCanvas as t}from"./utils.js";const o={xinfu_pingcai:{contentx:[async(event,trigger,player)=>{event.pingcai_delayed=!0;const o=lib.skill.xinfu_pingcai_backup.takara;event.cardname=o,event.videoId=lib.status.videoId++,player.isUnderControl()&&game.swapPlayerAuto(player);const i=(o,i)=>{const n=_status.event;_status.xinfu_pingcai_finished=!1;const a=ui.create.dialog("forcebutton","hidden");a.textPrompt=a.add('<div class="text center">擦拭掉宝物上的灰尘吧！</div>'),a.classList.add("fixed","scroll1","scroll2","fullwidth","fullheight","noupdate"),a.videoId=o,n.switchToAuto=()=>{n._result={bool:_status.xinfu_pingcai_finished},game.resume(),_status.imchoosing=!1,_status.xinfu_pingcai_finished=!0};const c=document.createElement("canvas"),s=document.createElement("canvas");a.appendChild(s),a.appendChild(c);const d=e(c),l=e(s);t(l,s,i),d.fillStyle="lightgray",d.fillRect(0,0,c.width,c.height);const r=(e,t)=>{_status.xinfu_pingcai_finished||(d.beginPath(),d.clearRect(e-16,t-16,32,32),(()=>{const e=d.getImageData(.1*c.width,.1*c.height,.8*c.width,.8*c.height).data;let t=0;for(let o=3;o<e.length;o+=4)0===e[o]&&t++;t>=c.width*c.height*.6&&!_status.xinfu_pingcai_finished&&(_status.xinfu_pingcai_finished=!0,n.switchToAuto())})())};c.onmousedown=()=>{c.onmousemove=e=>r(e.offsetX/game.documentZoom,e.offsetY/game.documentZoom)},c.onmouseup=()=>c.onmousemove=null,c.ontouchstart=()=>{c.ontouchmove=e=>{const t=c.getBoundingClientRect(),o=(e.touches[0].clientX/game.documentZoom-t.left)/t.width*c.width,i=(e.touches[0].clientY/game.documentZoom-t.top)/t.height*c.height;r(o,i)}},c.ontouchend=()=>c.ontouchmove=null,a.open(),game.pause(),game.countChoose()};game.broadcastAll((o,i,n)=>{if(o===game.me)return;const a=ui.create.dialog("forcebutton","hidden"),c=!_status.connectMode;let s=`${get.translation(o)}正在擦拭宝物上的灰尘…`;c&&(s+="<br>（点击宝物可以跳过等待AI操作）"),a.textPrompt=a.add(`<div class="text center">${s}</div>`),a.classList.add("fixed","scroll1","scroll2","fullwidth","fullheight","noupdate"),a.videoId=i;const d=document.createElement("canvas");a.canvas_viewer=d,a.appendChild(d),d.classList.add("grayscale");const l=e(d);if(t(l,d,n),c){const e=()=>{event.pingcai_delayed&&(delete event.pingcai_delayed,clearTimeout(event.timeout),event._result={bool:!0},game.resume(),d.removeEventListener(lib.config.touchscreen?"touchend":"click",e))};d.addEventListener(lib.config.touchscreen?"touchend":"click",e)}a.open()},player,event.videoId,o),event.isMine()?i(event.videoId,o):event.isOnline()?(event.player.send(i,event.videoId,o),event.player.wait(),game.pause()):(game.pause(),game.countChoose(),event.timeout=setTimeout(()=>{_status.imchoosing=!1,event._result={bool:!0},game.resume()},9e3))},async(event,trigger,player)=>{const result=event._result||event.result||{bool:!1};event._result=result,game.broadcastAll((e,t,o)=>{_status.xinfu_pingcai_finished=!0;const i=get.idDialog(e);i&&(i.textPrompt.innerHTML=`<div class="text center">${get.translation(o)}擦拭宝物${t.bool?"成功！":"失败…"}</div>`,t.bool&&i.canvas_viewer&&i.canvas_viewer.classList.remove("grayscale")),_status.connectMode||delete event.pingcai_delayed},event.videoId,result,player),await game.delay(2.5)},async(event,trigger,player)=>{game.broadcastAll("closeDialog",event.videoId),event._result?.bool&&(player.logSkill(`pcaudio_${event.cardname}`),event.insert(lib.skill.xinfu_pingcai[event.cardname],{player:player}))}],ai:{order:7,fireAttack:!0,threaten:1.7,result:{player:1}}},xz_xunxun:{inherit:"xunxun",filter:(event,player)=>game.hasPlayer(e=>e.isDamaged())&&!player.hasSkill("xunxun")},dddfenye:{$compareFenye(e,t,o,i){game.broadcast((e,t,o,i)=>{lib.skill.dddfenye.$compareFenye(e,t,o,i)},e,t,o,i),game.addVideo("compareFenye",[get.targetsInfo(e),get.cardsInfo(t),get.targetsInfo(o),get.cardsInfo(i)]);for(let n=e.length-1;n>=0;n--)e[n].$throwordered2(t[n].copy(!1));for(let n=o.length-1;n>=0;n--)o[n].$throwordered2(i[n].copy(!1))}},dcqixin:{mark:void 0,init(player,e){_status.gameStarted&&!player.storage.dcqixin_hp&&(player.storage.dcqixin_hp=[player.maxHp,player.maxHp]),player.marks[e]||player.markSkill(e),game.broadcastAll((e,t)=>{lib.skill.dcqixin.$zhuanhuanji(t,e)},player,e)},$zhuanhuanji(e,player){const t=player.storage[e]?"caojie":"liuxie",o=player.marks[e];o&&(o.setBackground(t,"character"),o._name=t,o.style.setProperty("background-size","cover","important"),o.text.style.setProperty("font-size","0px","important")),player.changeSkin({characterName:"liuxiecaojie"},"liuxiecaojie"+(player.storage[e]?"_shadow":""))}}};export{o as inheritSkill};
+import { _status, game, lib, get, ui } from "noname";
+import { initCanvas as initCanvas, loadImageToCanvas as loadImageToCanvas } from "./utils.js";
+const o = {
+	xinfu_pingcai: {
+		contentx: [
+			async (event, trigger, player) => {
+				event.pingcai_delayed = !0;
+				const name = lib.skill.xinfu_pingcai_backup.takara;
+				((event.cardname = name), (event.videoId = lib.status.videoId++), player.isUnderControl() && game.swapPlayerAuto(player));
+				const chooseButton = (id, name) => {
+					const event = _status.event;
+					_status.xinfu_pingcai_finished = !1;
+					const dialog = ui.create.dialog("forcebutton", "hidden");
+					((dialog.textPrompt = dialog.add('<div class="text center">擦拭掉宝物上的灰尘吧！</div>')),
+						dialog.classList.add("fixed", "scroll1", "scroll2", "fullwidth", "fullheight", "noupdate"),
+						(dialog.videoId = id),
+						(event.switchToAuto = () => {
+							((event._result = { bool: _status.xinfu_pingcai_finished }), game.resume(), (_status.imchoosing = !1), (_status.xinfu_pingcai_finished = !0));
+						}));
+					const canvas = document.createElement("canvas"),
+						canvas2 = document.createElement("canvas");
+					(dialog.appendChild(canvas2), dialog.appendChild(canvas));
+					const ctx = initCanvas(canvas),
+						ctx2 = initCanvas(canvas2);
+					(loadImageToCanvas(ctx2, canvas2, name), (ctx.fillStyle = "lightgray"), ctx.fillRect(0, 0, canvas.width, canvas.height));
+					const r = (e, t) => {
+						_status.xinfu_pingcai_finished ||
+							(ctx.beginPath(),
+							ctx.clearRect(e - 16, t - 16, 32, 32),
+							(() => {
+								const data = ctx.getImageData(0.1 * canvas.width, 0.1 * canvas.height, 0.8 * canvas.width, 0.8 * canvas.height).data;
+								let cleared = 0;
+								for (let o = 3; o < data.length; o += 4) 0 === data[o] && cleared++;
+								cleared >= canvas.width * canvas.height * 0.6 && !_status.xinfu_pingcai_finished && ((_status.xinfu_pingcai_finished = !0), event.switchToAuto());
+							})());
+					};
+					((canvas.onmousedown = () => {
+						canvas.onmousemove = e => r(e.offsetX / game.documentZoom, e.offsetY / game.documentZoom);
+					}),
+						(canvas.onmouseup = () => (canvas.onmousemove = null)),
+						(canvas.ontouchstart = () => {
+							canvas.ontouchmove = e => {
+								const rect = canvas.getBoundingClientRect(),
+									o = ((e.touches[0].clientX / game.documentZoom - rect.left) / rect.width) * canvas.width,
+									i = ((e.touches[0].clientY / game.documentZoom - rect.top) / rect.height) * canvas.height;
+								r(o, i);
+							};
+						}),
+						(canvas.ontouchend = () => (canvas.ontouchmove = null)),
+						dialog.open(),
+						game.pause(),
+						game.countChoose());
+				};
+				(game.broadcastAll(
+					(player, id, name) => {
+						if (player === game.me) return;
+						const dialog = ui.create.dialog("forcebutton", "hidden"),
+							canSkip = !_status.connectMode;
+						let str = `${get.translation(player)}正在擦拭宝物上的灰尘…`;
+						(canSkip && (str += "<br>（点击宝物可以跳过等待AI操作）"), (dialog.textPrompt = dialog.add(`<div class="text center">${str}</div>`)), dialog.classList.add("fixed", "scroll1", "scroll2", "fullwidth", "fullheight", "noupdate"), (dialog.videoId = id));
+						const canvas2 = document.createElement("canvas");
+						((dialog.canvas_viewer = canvas2), dialog.appendChild(canvas2), canvas2.classList.add("grayscale"));
+						const ctx2 = initCanvas(canvas2);
+						if ((loadImageToCanvas(ctx2, canvas2, name), canSkip)) {
+							const e = () => {
+								event.pingcai_delayed && (delete event.pingcai_delayed, clearTimeout(event.timeout), (event._result = { bool: !0 }), game.resume(), canvas2.removeEventListener(lib.config.touchscreen ? "touchend" : "click", e));
+							};
+							canvas2.addEventListener(lib.config.touchscreen ? "touchend" : "click", e);
+						}
+						dialog.open();
+					},
+					player,
+					event.videoId,
+					name
+				),
+					event.isMine()
+						? chooseButton(event.videoId, name)
+						: event.isOnline()
+							? (event.player.send(chooseButton, event.videoId, name), event.player.wait(), game.pause())
+							: (game.pause(),
+								game.countChoose(),
+								(event.timeout = setTimeout(() => {
+									((_status.imchoosing = !1), (event._result = { bool: !0 }), game.resume());
+								}, 9e3))));
+			},
+			async (event, trigger, player) => {
+				const result = event._result || event.result || { bool: !1 };
+				((event._result = result),
+					game.broadcastAll(
+						(id, result, player) => {
+							_status.xinfu_pingcai_finished = !0;
+							const dialog = get.idDialog(id);
+							(dialog && ((dialog.textPrompt.innerHTML = `<div class="text center">${get.translation(player)}擦拭宝物${result.bool ? "成功！" : "失败…"}</div>`), result.bool && dialog.canvas_viewer && dialog.canvas_viewer.classList.remove("grayscale")), _status.connectMode || delete event.pingcai_delayed);
+						},
+						event.videoId,
+						result,
+						player
+					),
+					await game.delay(2.5));
+			},
+			async (event, trigger, player) => {
+				(game.broadcastAll("closeDialog", event.videoId), event._result?.bool && (player.logSkill(`pcaudio_${event.cardname}`), event.insert(lib.skill.xinfu_pingcai[event.cardname], { player: player })));
+			},
+		],
+		ai: { order: 7, fireAttack: !0, threaten: 1.7, result: { player: 1 } },
+	},
+	xz_xunxun: { inherit: "xunxun", filter: (event, player) => game.hasPlayer(current => current.isDamaged()) && !player.hasSkill("xunxun") },
+	dddfenye: {
+		$compareFenye(players, cards1, targets, cards2) {
+			(game.broadcast(
+				(players, cards1, targets, cards2) => {
+					lib.skill.dddfenye.$compareFenye(players, cards1, targets, cards2);
+				},
+				players,
+				cards1,
+				targets,
+				cards2
+			),
+				game.addVideo("compareFenye", [get.targetsInfo(players), get.cardsInfo(cards1), get.targetsInfo(targets), get.cardsInfo(cards2)]));
+			for (let n = players.length - 1; n >= 0; n--) players[n].$throwordered2(cards1[n].copy(!1));
+			for (let n = targets.length - 1; n >= 0; n--) targets[n].$throwordered2(cards2[n].copy(!1));
+		},
+	},
+	dcqixin: {
+		mark: void 0,
+		init(player, skill) {
+			(_status.gameStarted && !player.storage.dcqixin_hp && (player.storage.dcqixin_hp = [player.maxHp, player.maxHp]),
+				player.marks[skill] || player.markSkill(skill),
+				game.broadcastAll(
+					(player, skill) => {
+						lib.skill.dcqixin.$zhuanhuanji(skill, player);
+					},
+					player,
+					skill
+				));
+		},
+		$zhuanhuanji(skill, player) {
+			const character = player.storage[skill] ? "caojie" : "liuxie",
+				mark = player.marks[skill];
+			(mark && (mark.setBackground(character, "character"), (mark._name = character), mark.style.setProperty("background-size", "cover", "important"), mark.text.style.setProperty("font-size", "0px", "important")), player.changeSkin({ characterName: "liuxiecaojie" }, "liuxiecaojie" + (player.storage[skill] ? "_shadow" : "")));
+		},
+	},
+};
+export { o as inheritSkill };

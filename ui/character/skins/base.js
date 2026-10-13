@@ -4,6 +4,7 @@
  */
 import { _status } from "noname";
 import { skillButtonTooltip } from "../../../src/ui/skillButtonTooltip.js";
+import { getResourceUrl } from "../../../src/core/resourcePaths.js";
 
 export function createBaseCharacterPlugin(lib, game, ui, get, ai, _status, app) {
 	return {
@@ -167,7 +168,8 @@ export function createBaseCharacterPlugin(lib, game, ui, get, ai, _status, app) 
 
 			// 获取立绘路径
 			getLihuiPath(originalPath) {
-				return originalPath.replace(/image\/character/, "image/lihui");
+				const characterPath = originalPath.match(/image\/character\/(.+)$/)?.[1]?.split(/[?#]/)[0];
+				return characterPath ? getResourceUrl("立绘文件", characterPath) : originalPath;
 			},
 
 			// 设置立绘
