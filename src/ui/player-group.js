@@ -1,4 +1,5 @@
 import { lib, get, game } from "noname";
+import { refreshDynamicSkinTop } from "./dynamicOutcrop.js";
 function e(group) {
 	if (decadeUI.config.campIdentityImageMode)
 		((this._lastCampTask = this._lastCampTask || Promise.resolve()),
@@ -46,7 +47,7 @@ function a() {
 				return this._group;
 			},
 			set(group) {
-				group && ((this._group = group), (this.node.campWrap.dataset.camp = get.character(this.name)?.groupBorder || group), e.call(this, group));
+				group && ((this._group = group), (this.node.campWrap.dataset.camp = get.character(this.name)?.groupBorder || group), e.call(this, group), refreshDynamicSkinTop(this));
 			},
 		},
 	});

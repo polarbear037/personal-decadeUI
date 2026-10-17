@@ -27,7 +27,7 @@
 }
 
 /* 菜单按钮 */
-.buttonyjcm > .controls {
+.buttonyjcm>.controls {
 	--w: 56px;
 	--h: calc(var(--w) * 55 / 71);
 	width: var(--w);
@@ -45,16 +45,16 @@
 	justify-content: center;
 }
 
-#arena:not(.single-handcard):not(.chess).cxy-new-ui > .lbtn-controls ~ #mebg,
-#arena:not(.single-handcard):not(.chess).cxy-new-ui > .lbtn-controls ~ #me {
+#arena:not(.single-handcard):not(.chess).cxy-new-ui>.lbtn-controls~#mebg,
+#arena:not(.single-handcard):not(.chess).cxy-new-ui>.lbtn-controls~#me {
 	left: 40px !important;
 }
 
-.lbtn-controls ~ #me #handcards1 {
+.lbtn-controls~#me #handcards1 {
 	--lessw: 40px;
 }
 
-.lbtn-controls > div {
+.lbtn-controls>div {
 	display: block;
 	position: relative;
 }
@@ -119,7 +119,7 @@
 	padding: 0;
 }
 
-.control > div {
+.control>div {
 	background-image: url("../../assets/lbtn/uibutton/new_btnn.png");
 	background-size: 100% 100%;
 	line-height: var(--h);
@@ -135,13 +135,13 @@
 }
 
 /* 无懈按钮位置 */
-#arena > #dui-controls > .control.stayleft {
+#arena>#dui-controls>.control.stayleft {
 	left: calc(50% - 420px) !important;
 	margin-bottom: 5px !important;
 	order: 3;
 }
 
-.control > div.primary2 {
+.control>div.primary2 {
 	bottom: 1.8px;
 	color: #f5d79e;
 	font-family: "BKJT";
@@ -158,7 +158,7 @@
 	transition: none;
 }
 
-.control > div.primary {
+.control>div.primary {
 	color: #f5d79e;
 	font-family: "BKJT";
 	font-size: 20px;
@@ -172,12 +172,12 @@
 	background-image: url("../../assets/lbtn/uibutton/new_btnn.png");
 }
 
-.control > div.disabled:not([data-type="endButton"]) {
+.control>div.disabled:not([data-type="endButton"]) {
 	background-size: 100% 100%;
 	filter: grayscale(100%);
 }
 
-.lbtn-confirm[data-skill] > [data-type="skill2"] {
+.lbtn-confirm[data-skill]>[data-type="skill2"] {
 	display: none;
 }
 
@@ -195,7 +195,7 @@
 	z-index: 1;
 }
 
-.handcardNumber > .cardPicture {
+.handcardNumber>.cardPicture {
 	left: 110px;
 	bottom: 10px;
 	--w: 100px;
@@ -210,7 +210,7 @@
 	z-index: -1;
 }
 
-.handcardNumber > .cardNumber {
+.handcardNumber>.cardNumber {
 	left: 120px;
 	bottom: 30px;
 	height: 8px;
@@ -233,7 +233,7 @@
 		#b4a993 0.2px -0.2px 0.2px;
 }
 
-.cardRoundNumber > .cardPileNumber {
+.cardRoundNumber>.cardPileNumber {
 	left: 20px;
 	top: -15px;
 	--w: 80px;
@@ -247,7 +247,7 @@
 	z-index: 2;
 }
 
-.cardRoundNumber > .cardPileNumber > span {
+.cardRoundNumber>.cardPileNumber>span {
 	left: 12px;
 	top: 15px;
 	width: 100%;
@@ -259,8 +259,8 @@
 	font-size: 18px;
 }
 
-.cardRoundNumber > .roundNumber,
-.cardRoundNumber > .time {
+.cardRoundNumber>.roundNumber,
+.cardRoundNumber>.time {
 	left: 35px;
 	top: 30px;
 	height: 20px;
@@ -271,15 +271,15 @@
 	z-index: 3;
 }
 
-.cardRoundNumber > .time {
+.cardRoundNumber>.time {
 	top: 55px;
-	left: 43px;
+	left: 34px;
 	font-size: 16px;
 	color: #a78d72;
 }
 
 /* 托管中图标 */
-#autonode > div:last-child {
+#autonode>div:last-child {
 	z-index: 10;
 	margin-bottom: -75px !important;
 	left: calc(50% - 440px);

@@ -160,6 +160,25 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 			const caizhu = ui.create.div(".caizhu", dialog);
 			caizhu.onclick = () => this._showProfileDialog(player, playname);
 
+			const miniChangePanel = globalThis.__tlMiniChangePanel;
+			const miniChangeEnabled = (() => {
+				const value = lib.config?.tl_versus_miniChange;
+				return value === undefined || value === true || value === "开启";
+			})();
+			if (miniChangeEnabled && typeof miniChangePanel?.open === "function") {
+				const miniChange = ui.create.div(".miniChange", dialog);
+				miniChange.title = "更换皮肤";
+				miniChange.setAttribute("role", "button");
+				miniChange.setAttribute("aria-label", "更换皮肤");
+				miniChange.onclick = event => {
+					event.preventDefault();
+					event.stopPropagation();
+					const currentValue = lib.config?.tl_versus_miniChange;
+					if (currentValue !== undefined && currentValue !== true && currentValue !== "开启") return;
+					void globalThis.__tlMiniChangePanel?.open?.(player);
+				};
+			}
+
 			const leftPaneProfile = ui.create.div(lib.config.extension_十周年UI_ZLLT ? ".left" : ".left2", dialog);
 			leftPaneProfile.style.backgroundImage = player.node.avatar.style.backgroundImage;
 		},

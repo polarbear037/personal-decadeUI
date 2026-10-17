@@ -23,14 +23,6 @@ function getExtensionName() {
 	return window.decadeUIName || "十周年UI";
 }
 
-function isFileUrl(url) {
-	try {
-		return new URL(url, window.location?.href || "http://localhost/").protocol === "file:";
-	} catch {
-		return false;
-	}
-}
-
 function parseConfiguredPaths(text) {
 	return JSON.parse(String(text).replace(/^\uFEFF/, "").trim());
 }
@@ -47,13 +39,7 @@ function readLocalConfig() {
 }
 
 async function readConfiguredPaths() {
-	const extensionPath = getExtensionPath();
-	if (isFileUrl(extensionPath)) {
-		return parseConfiguredPaths(await readLocalConfig());
-	}
-	const response = await fetch(`${extensionPath.replace(/\/+$/, "")}/path.json`);
-	if (!response.ok) throw new Error(`HTTP ${response.status}`);
-	return parseConfiguredPaths(await response.text());
+	return parseConfiguredPaths(await readLocalConfig());
 }
 
 async function loadResourcePaths() {

@@ -3,25 +3,34 @@ import { applyCardBorder as applyCardBorder } from "../../ui/cardStyles.js";
 
 let baseDraw = null;
 let decadeUIInstance = null;
+let equipAudioOriginal = null;
+let equipAudioWrapper = null;
+const activeEquipFlights = new Set();
+const EQUIP_AUDIO_SUBTYPES = new Set(["equip1", "equip2", "equip3", "equip4", "equip5"]);
 
 // ==========================
 // 【摸牌/获得卡牌 动画参数】
 // ==========================
-const GAIN_CARD_MOVE_DURATION = 500; // 卡牌从牌堆/目标飞到手牌的动画时长（毫秒）
-const GAIN_CARD_REMOVE_DELAY = 480; // 卡牌动画结束后，多久从舞台移除（防止残影）
-const GAIN_CARD_REMOVE_DURATION = 380; // 卡牌消失/淡出的动画时长
+const GAIN_CARD_MOVE_DURATION = 450; // 放慢摸牌/获得牌的飞行速度
+const GAIN_CARD_REMOVE_DELAY = 610; // 给较慢的飞行动画留出落牌时间
+const GAIN_CARD_REMOVE_DURATION = 220;
 
 // ==========================
 // 【装备牌 动画参数】
 // ==========================
-const EQUIP_CARD_MOVE_DURATION = 200; // 装备牌从手牌飞到装备区的动画时长
+const EQUIP_CARD_HOLD_DELAY = 300; // 出手后保留装备牌悬停展示的时间
+const EQUIP_CARD_LIFT_HEIGHT = 20; // 装备牌展示时的抬升高度（单位px）
+const EQUIP_CARD_DISPLAY_SCALE = 1.15; // 展示倍率，乘以 arena.cardScale
+const EQUIP_CARD_LIFT_DURATION = 220; // 装备牌抬升并放大的时长（毫秒）
+const EQUIP_CARD_MOVE_DURATION = 350; // 装备牌从悬停位置飞入对应装备槽的时长
 const EQUIP_CARD_CLEANUP_DELAY = 0; // 装备牌动画结束后，清理元素的延迟时间
 const EQUIP_CARD_TARGET_HEIGHT = 10; // 装备牌落地后的目标高度（缩放用，单位px）
 const EQUIP_CARD_TARGET_LEFT_OFFSET = -10; // 装备牌落点的水平偏移（左/右微调）
+const EXPANSION_COVER_MOVE_DURATION = 700; // 盖到武将牌上的卡牌移动速度（毫秒）
 
 const EQUIP_ENTRY_DELAY = EQUIP_CARD_MOVE_DURATION + 220;
 
-// 装备入场动画的触发延迟（在卡牌飞到位后，再等220ms触发）
+// 装备入场动画参数
 const EQUIP_ENTRY_DURATION = 260; // 装备“进场/亮起”的动画时长
 const EQUIP_ENTRY_PENDING_WINDOW = 1600; // 装备进场动画的最长等待窗口（超时强制结束）
 const EQUIP_ENTRY_SETTLING_CLASS = "decade-equip-entry-settling";
@@ -33,7 +42,7 @@ const EQUIP_ENTRY_SETTLING_CLEANUP_DELAY = 0;
 // 【延时锦囊判定牌 动画参数】
 // ==========================
 const DELAY_JUDGE_HOLD_DELAY = 100; // 延时锦囊出牌后，动画开始前的等待延迟（防止瞬间飞出）
-const DELAY_JUDGE_MOVE_DURATION = 245; // 延时锦囊从手牌飞到判定区的动画时长（你之前卡帧，这里调短了）
+const DELAY_JUDGE_MOVE_DURATION = 370; // 放慢延时锦囊飞入判定区的速度
 const DELAY_JUDGE_TARGET_SIZE = 45; // 延时锦囊落地后的目标尺寸（缩放用，单位px）
 const DELAY_JUDGE_TARGET_GAP = 25; // 多张延时锦囊在判定区堆叠时，每张之间的水平间距（px）
 
@@ -89,13 +98,35 @@ function writeTransform(card, transform) {
 	card.style.transform = `translate(${transform.x}px,${transform.y}px) scale(${transform.scale})`;
 }
 
-function cubicBezier(progress, start, control1, control2, end) {
-	const rest = 1 - progress;
-	return rest * rest * rest * start + 3 * rest * rest * progress * control1 + 3 * rest * progress * progress * control2 + progress * progress * progress * end;
+function easeOutSine(progress) {
+	return Math.sin((progress * Math.PI) / 2);
 }
 
-function easeOutCubic(progress) {
-	return 1 - Math.pow(1 - progress, 3);
+function quadraticBezier(progress, start, control, end) {
+	const inverse = 1 - progress;
+	return inverse ** 2 * start + 2 * inverse * progress * control + progress ** 2 * end;
+}
+
+function getOfficialBezierControlPoint(start, end, allowSeatToSeat = true) {
+	const arena = getDui().boundsCaches.arena;
+	arena.check();
+	const dx = end.x - start.x;
+	const dy = end.y - start.y;
+	if (!allowSeatToSeat) return { x: end.x, y: end.y + arena.cardWidth };
+	if (dx && dy) {
+		const middleY = (start.y + end.y) / 2;
+		const vector = start.x > end.x
+			? middleY > arena.height / 2 ? { x: -dy, y: dx } : { x: dy, y: -dx }
+			: middleY > arena.height / 2 ? { x: dy, y: -dx } : { x: -dy, y: dx };
+		const length = Math.hypot(vector.x, vector.y) || 1;
+		const distance = Math.max(200, Math.floor(Math.hypot(dx, dy)) >> 1);
+		return {
+			x: ((start.x + end.x) / 2 + vector.x / length * distance) | 0,
+			y: ((start.y + end.y) / 2 + vector.y / length * distance) | 0,
+		};
+	}
+	if (!dx) return { x: end.x + (start.x < arena.width / 2 ? 100 : -100), y: start.y + dy / 2 };
+	return { x: start.x + dx / 2, y: start.y + (start.y < arena.height / 2 ? 60 : -60) };
 }
 
 function nowTime() {
@@ -112,6 +143,17 @@ function normalizeCards(cards) {
 function normalizeDomNodes(nodes) {
 	if (!nodes) return [];
 	return Array.from(nodes).filter(node => node?.nodeType === 1 && node.classList?.contains("card"));
+}
+
+function setDrawCardStartPosition(cards) {
+	const arena = getDui().boundsCaches.arena;
+	arena.check();
+	const start = {
+		x: Math.round((arena.width - arena.cardWidth) / 2),
+		y: Math.round(arena.height - 5 - arena.cardHeight / 2),
+		scale: arena.cardScale,
+	};
+	cards.forEach(card => writeTransform(card, start));
 }
 
 function markPendingEquipEntry(player, cards) {
@@ -136,9 +178,115 @@ function markPendingEquipEntry(player, cards) {
 	ensureEquipEntryObserver(player);
 }
 
+function equipFlightMatchesCard(flight, card) {
+	if (!flight || !card) return false;
+	if (flight.sourceCard) {
+		if (card === flight.sourceCard) return true;
+		return !!card.viewAs && card.viewAs === flight.name;
+	}
+	if (flight.cardid && card.cardid) return flight.cardid === card.cardid;
+	const cardName = card.viewAs || card.name;
+	return !!flight.name && flight.name === cardName;
+}
+
+function ensureEquipAudioDeferral() {
+	if (equipAudioWrapper && game.playAudio === equipAudioWrapper) return;
+	if (typeof game.playAudio !== "function") return;
+	equipAudioOriginal = game.playAudio;
+	equipAudioWrapper = function (...args) {
+		if (args[0] === "effect" && EQUIP_AUDIO_SUBTYPES.has(args[1])) {
+			const flight = Array.from(activeEquipFlights).find(item => !item.completed && item.audioSubtype === args[1]);
+			if (flight) {
+				if (!flight.pendingAudio) flight.pendingAudio = [];
+				flight.pendingAudio.push({ context: this, args });
+				return;
+			}
+		}
+		return equipAudioOriginal.apply(this, args);
+	};
+	game.playAudio = equipAudioWrapper;
+}
+
+function releaseEquipAudioDeferral() {
+	if (activeEquipFlights.size || !equipAudioWrapper) return;
+	if (game.playAudio === equipAudioWrapper) game.playAudio = equipAudioOriginal;
+	equipAudioOriginal = null;
+	equipAudioWrapper = null;
+}
+
+function markEquipFlight(player, card) {
+	const useCard = getUseCardEvent(_status.event)?.card;
+	const equippedCard = useCard && get.type(useCard, null, player) === "equip" ? useCard : card;
+	const subtype = get.subtype(equippedCard);
+	const flight = {
+		sourceCard: card._decadeEquipSourceCard || null,
+		cardid: card.cardid,
+		name: equippedCard.viewAs || equippedCard.name,
+		audioSubtype: subtype === "equip6" ? "equip3" : subtype,
+		completed: false,
+		equippedCard: null,
+	};
+	flight.promise = new Promise(resolve => {
+		flight.resolve = resolve;
+	});
+	if (!Array.isArray(player._decadeEquipFlights)) player._decadeEquipFlights = [];
+	player._decadeEquipFlights.push(flight);
+	activeEquipFlights.add(flight);
+	ensureEquipAudioDeferral();
+	flight.fallbackTimer = setTimeout(
+		() => finishEquipFlight(player, flight),
+		EQUIP_CARD_LIFT_DURATION + EQUIP_CARD_HOLD_DELAY + EQUIP_CARD_MOVE_DURATION + 300
+	);
+	return flight;
+}
+
+function hideEquipFlightCard(player, card) {
+	const flight = player?._decadeEquipFlights?.find(item => !item.completed && equipFlightMatchesCard(item, card));
+	if (!flight) return false;
+	flight.equippedCard = card;
+	if (!Object.prototype.hasOwnProperty.call(card, "_decadeEquipFlightVisibility")) {
+		card._decadeEquipFlightVisibility = card.style.visibility || "";
+	}
+	card.style.visibility = "hidden";
+	return true;
+}
+
+function finishEquipFlight(player, flight) {
+	if (!flight || flight.completed) return;
+	flight.completed = true;
+	if (flight.fallbackTimer) clearTimeout(flight.fallbackTimer);
+	const equippedCards = normalizeDomNodes(player?.node?.equips?.childNodes);
+	const trackedCard = flight.equippedCard;
+	if (trackedCard && Object.prototype.hasOwnProperty.call(trackedCard, "_decadeEquipFlightVisibility")) {
+		trackedCard.style.visibility = trackedCard._decadeEquipFlightVisibility || "";
+		delete trackedCard._decadeEquipFlightVisibility;
+	}
+	const card = flight.equippedCard?.parentNode === player?.node?.equips
+		? flight.equippedCard
+		: equippedCards.find(item => equipFlightMatchesCard(flight, item));
+	if (card) {
+		if (Object.prototype.hasOwnProperty.call(card, "_decadeEquipFlightVisibility")) {
+			card.style.visibility = card._decadeEquipFlightVisibility || "";
+			delete card._decadeEquipFlightVisibility;
+		}
+		card._decadeEquipEntryAnimated = true;
+		restartEquipEntryAnimation(card);
+	}
+	const flights = player?._decadeEquipFlights;
+	if (Array.isArray(flights)) {
+		const index = flights.indexOf(flight);
+		if (index !== -1) flights.splice(index, 1);
+		if (!flights.length) delete player._decadeEquipFlights;
+	}
+	for (const audio of flight.pendingAudio || []) equipAudioOriginal?.apply(audio.context, audio.args);
+	activeEquipFlights.delete(flight);
+	flight.resolve?.();
+	releaseEquipAudioDeferral();
+}
+
 function isPendingEquipEntryCard(card, pending) {
 	if (!card || !pending) return false;
-	if (pending.cardids?.size && pending.cardids.has(card.cardid)) return true;
+	if (pending.cardids?.size && card.cardid) return pending.cardids.has(card.cardid);
 	if (pending.names?.size && pending.names.has(card.name)) return true;
 	return !pending.cardids?.size && !pending.names?.size;
 }
@@ -310,13 +458,15 @@ function animatePendingEquipEntries(player, previousCards, candidateCards) {
 	const previous = new Set(previousCards || []);
 	const currentCards = normalizeDomNodes(player.node?.equips?.childNodes);
 	const newCards = candidateCards ? normalizeDomNodes(candidateCards).filter(card => card.parentNode === player.node?.equips) : currentCards.filter(card => !previous.has(card));
-	let cards = newCards.filter(card => isPendingEquipEntryCard(card, pending));
-	if (!cards.length && newCards.length === 1) cards = newCards;
+	const flightCards = newCards.filter(card => hideEquipFlightCard(player, card));
+	let cards = newCards.filter(card => !flightCards.includes(card) && !card._decadeEquipEntryAnimated && isPendingEquipEntryCard(card, pending));
+	if (!cards.length && !flightCards.length && newCards.length === 1) cards = newCards;
 	if (!cards.length && !candidateCards) {
-		const currentMatches = currentCards.filter(card => !card._decadeEquipEntryAnimated && isPendingEquipEntryCard(card, pending));
+		const currentMatches = currentCards.filter(card => !card._decadeEquipEntryAnimated && !hideEquipFlightCard(player, card) && isPendingEquipEntryCard(card, pending));
 		if (currentMatches.length === 1) cards = currentMatches;
 	}
 	if (!cards.length) {
+		if (flightCards.length) return;
 		if ((pending.retries || 0) < 4) {
 			pending.retries = (pending.retries || 0) + 1;
 			setTimeout(() => animatePendingEquipEntries(player, previousCards), 50);
@@ -326,8 +476,7 @@ function animatePendingEquipEntries(player, previousCards, candidateCards) {
 		}
 		return;
 	}
-	const delay = Math.max(0, (pending.delayUntil || now) - now);
-	// cards.forEach((card, index) => animateEquipEntryCard(card, delay + index * 45));
+	// 让装备实体牌播放 equip.css 中从左侧插入的 insertEquips 动画。
 	cards.forEach(restartEquipEntryAnimation);
 	delete player._decadeEquipEntryAnimation;
 	clearEquipEntrySettling(player, EQUIP_ENTRY_SETTLING_CLEANUP_DELAY);
@@ -343,6 +492,17 @@ function getArenaRelativeRect(node) {
 		top: (rect.top - arenaRect.top) / scaleY + ui.arena.scrollTop,
 		width: rect.width / scaleX,
 		height: rect.height / scaleY,
+	};
+}
+
+function getArenaRelativeTransform(node) {
+	const rect = getArenaRelativeRect(node);
+	const arena = getDui().boundsCaches.arena;
+	arena.check();
+	return {
+		x: rect.left,
+		y: rect.top,
+		scale: rect.width && arena.cardWidth ? rect.width / arena.cardWidth : 1,
 	};
 }
 
@@ -638,13 +798,41 @@ function getPlayerCardTransform(player, scale) {
 	};
 }
 
-function getEquipTargetTransform(player, index, total) {
+function getEquipTargetTransform(card, player, index, total) {
 	const arena = getDui().boundsCaches.arena;
 	arena.check();
 	player.checkBoundsCache?.(true);
+	const equipNum = Math.min(5, Math.max(1, Number(get.equipNum(card)) || 1));
+	const slotNode = player === game.me && ui.equipSolts?.back
+		? Array.from(ui.equipSolts.back.children).find(slot => Number(slot.dataset.type) === equipNum - 1)
+		: null;
+	let slotRect = slotNode ? getArenaRelativeRect(slotNode) : null;
+	if (!isUsableRect(slotRect)) {
+		const equippedCard = Array.from(player.node?.equips?.children || []).find(equipped => Number(get.equipNum(equipped)) === equipNum);
+		slotRect = equippedCard ? getArenaRelativeRect(equippedCard) : null;
+	}
+	if (!isUsableRect(slotRect)) {
+		const equipsRect = player.node?.equips ? getArenaRelativeRect(player.node.equips) : null;
+		if (isUsableRect(equipsRect)) {
+			const slotHeight = equipsRect.height / 5;
+			slotRect = {
+				left: equipsRect.left,
+				top: equipsRect.top + (equipNum - 1) * slotHeight,
+				width: equipsRect.width,
+				height: slotHeight,
+			};
+		}
+	}
 	const targetScale = EQUIP_CARD_TARGET_HEIGHT / arena.cardHeight;
+	if (isUsableRect(slotRect)) {
+		return {
+			x: Math.round(slotRect.left + slotRect.width / 2 - arena.cardWidth / 2),
+			y: Math.round(slotRect.top + slotRect.height / 2 - arena.cardHeight / 2),
+			scale: targetScale,
+		};
+	}
 	return {
-		x: Math.round(player.cacheLeft + EQUIP_CARD_TARGET_LEFT_OFFSET - arena.cardWidth / 2),
+		x: Math.round(player.cacheLeft + player.cacheWidth / 2 + EQUIP_CARD_TARGET_LEFT_OFFSET - arena.cardWidth / 2),
 		y: Math.round(player.cacheTop + player.cacheHeight / 2 - arena.cardHeight / 2 + (index - (total - 1) / 2) * 4),
 		scale: targetScale,
 	};
@@ -653,12 +841,41 @@ function getEquipTargetTransform(player, index, total) {
 function animateEquipCardToPlayer(card, player, index, total) {
 	const dui = getDui();
 	const arena = dui.boundsCaches.arena;
+	const flight = markEquipFlight(player, card);
 	arena.check();
-	if (card.throwordered === undefined && !card.style.transform) {
-		writeTransform(card, getPlayerCardTransform(player, arena.cardScale));
+	let start;
+	if (card._decadeEquipStartRect) {
+		const sourceRect = card._decadeEquipStartRect;
+		const centerX = sourceRect.left + sourceRect.width / 2;
+		const centerY = sourceRect.top + sourceRect.height / 2;
+		start = {
+			x: Math.round(centerX - arena.cardWidth / 2),
+			y: Math.round(centerY - arena.cardHeight / 2),
+			scale: sourceRect.width / arena.cardWidth || arena.cardScale,
+		};
+		delete card._decadeEquipStartRect;
+	} else if (card._decadeEquipStartTransform) {
+		start = card._decadeEquipStartTransform;
+		delete card._decadeEquipStartTransform;
+	} else if (card.throwordered === undefined && !card.style.transform) {
+		if (player === game.me && Number.isFinite(card.tx) && Number.isFinite(card.ty)) {
+			const hand = dui.boundsCaches.hand;
+			hand.check();
+			start = {
+				x: Math.round(hand.x + card.tx),
+				y: Math.round(hand.y + 30 + card.ty),
+				scale: hand.cardScale,
+			};
+		} else {
+			start = getPlayerCardTransform(player, arena.cardScale);
+		}
 	} else {
+		start = readTransform(card);
 		card.throwordered = undefined;
 	}
+	const wasHovered = !!card._decadeEquipStartHovered;
+	delete card._decadeEquipStartHovered;
+	writeTransform(card, start);
 	card.classList.add("thrown", "decade-equip-direct");
 	card.fixed = true;
 	applyCardBorder(card, player, player === game.me);
@@ -667,26 +884,39 @@ function animateEquipCardToPlayer(card, player, index, total) {
 	card.$usedtag = usedInfo;
 	dui.tryAddPlayerCardUseTag(card, player, _status.event);
 	ui.arena.appendChild(card);
-	const target = getEquipTargetTransform(player, index, total);
+	const target = getEquipTargetTransform(card, player, index, total);
 	card._decadeEquipUseDirect = true;
-	card._decadeEquipDirectUntil = performance.now() + EQUIP_CARD_MOVE_DURATION;
+	card._decadeEquipDirectUntil = performance.now() + EQUIP_CARD_LIFT_DURATION + EQUIP_CARD_HOLD_DELAY + EQUIP_CARD_MOVE_DURATION + 120;
+	card.style.transition = "none";
+	card.style.willChange = "transform, opacity";
+	card.style.opacity = "1";
+	const display = {
+		x: start.x,
+		y: start.y - (wasHovered ? 0 : EQUIP_CARD_LIFT_HEIGHT),
+		scale: arena.cardScale * EQUIP_CARD_DISPLAY_SCALE,
+	};
 	dui.queueNextFrameTick(() => {
 		if (!card.parentNode) return;
-		card.style.transition = `transform ${EQUIP_CARD_MOVE_DURATION}ms linear, opacity ${EQUIP_CARD_MOVE_DURATION}ms linear`;
-		card.style.willChange = "transform, opacity";
-		card.style.opacity = "0.88";
-		writeTransform(card, target);
+		card.style.transition = `transform ${EQUIP_CARD_LIFT_DURATION}ms ease-out`;
+		writeTransform(card, display);
 		setTimeout(() => {
 			if (!card.parentNode || !card._decadeEquipUseDirect) return;
-			card.style.transition = "opacity 180ms ease-out";
-			card.style.opacity = "0";
-			setTimeout(() => card.remove(), 190);
-		}, EQUIP_CARD_MOVE_DURATION + EQUIP_CARD_CLEANUP_DELAY);
+			card.style.transition = `transform ${EQUIP_CARD_MOVE_DURATION}ms linear, opacity ${EQUIP_CARD_MOVE_DURATION}ms linear`;
+			card.style.opacity = "0.88";
+			writeTransform(card, target);
+			setTimeout(() => finishEquipFlight(player, flight), EQUIP_CARD_MOVE_DURATION);
+			setTimeout(() => {
+				if (!card.parentNode || !card._decadeEquipUseDirect) return;
+				card.style.transition = "opacity 180ms ease-out";
+				card.style.opacity = "0";
+				setTimeout(() => card.remove(), 190);
+			}, EQUIP_CARD_MOVE_DURATION + EQUIP_CARD_CLEANUP_DELAY);
+		}, EQUIP_CARD_LIFT_DURATION + EQUIP_CARD_HOLD_DELAY);
 	});
 	return card;
 }
 
-function animateGainCards(cards, layoutTarget, moveDuration = GAIN_CARD_MOVE_DURATION, removeDelay = GAIN_CARD_REMOVE_DELAY, removeDuration = GAIN_CARD_REMOVE_DURATION) {
+function animateGainCards(cards, layoutTarget, moveDuration = GAIN_CARD_MOVE_DURATION, removeDelay = GAIN_CARD_REMOVE_DELAY, removeDuration = GAIN_CARD_REMOVE_DURATION, allowSeatToSeat = false, coverLoop = false, coverLoopUpward = false) {
 	if (!cards.length) return;
 	if (typeof requestAnimationFrame !== "function") {
 		layoutTarget();
@@ -694,7 +924,7 @@ function animateGainCards(cards, layoutTarget, moveDuration = GAIN_CARD_MOVE_DUR
 		return;
 	}
 
-	const starts = cards.map(readTransform);
+	const starts = cards.map(card => card._decadeMotionStartTransform || readTransform(card));
 
 	cards.forEach(card => {
 		card.style.transition = "none";
@@ -703,39 +933,22 @@ function animateGainCards(cards, layoutTarget, moveDuration = GAIN_CARD_MOVE_DUR
 
 	layoutTarget();
 
-	// ===================== 弧度控制区（这里改数字就行）=====================
-	const ARC_HEIGHT = 75; // 弧度高度，0=纯直线，20=小弧度，40=中等，80=原版弧度
-	const SPREAD_OFFSET = 16; // 卡牌横向散开量，0=不偏移，16=原版散开
-	// ======================================================================
-
 	const states = cards.map((card, index) => {
 		const start = starts[index];
 		const end = readTransform(card);
-		const dx = end.x - start.x;
-		const dy = end.y - start.y;
-		const distance = Math.hypot(dx, dy);
-
-		// 计算弧度方向（上/下）
-		const midY = (start.y + end.y) / 2;
-		const arenaMiddleY = (ui.arena?.offsetHeight || window.innerHeight || 0) / 2;
-		const direction = Math.abs(dy) > 1 ? (dy < 0 ? 1 : -1) : midY < arenaMiddleY ? 1 : -1;
-
-		// 应用弧度与偏移
-		const bend = ARC_HEIGHT * direction;
-		const spread = (index - (cards.length - 1) / 2) * SPREAD_OFFSET;
-
+		const useSeatToSeatCurve = typeof allowSeatToSeat === "function" ? allowSeatToSeat(card, index) : allowSeatToSeat;
+		const control = getOfficialBezierControlPoint(start, end, useSeatToSeatCurve);
+		const leftCardCount = cards.length === 1 ? 1 : cards.length - 1;
+		delete card._decadeMotionStartTransform;
 		return {
 			card,
 			start,
 			end,
-			control1: {
-				x: start.x + dx * 0.3 + spread,
-				y: start.y + dy * 0.3 + bend,
-			},
-			control2: {
-				x: start.x + dx * 0.7 + spread,
-				y: start.y + dy * 0.3 + bend,
-			},
+			control,
+			coverLoopSide: coverLoop ? (cards.length === 1 || index < cards.length - 1 ? -1 : 1) : 0,
+			coverLoopDepth: coverLoop && index < leftCardCount
+				? leftCardCount === 1 ? Number(cards.length > 1) : index / (leftCardCount - 1)
+				: 0,
 		};
 	});
 
@@ -744,13 +957,20 @@ function animateGainCards(cards, layoutTarget, moveDuration = GAIN_CARD_MOVE_DUR
 	const startTime = performance.now();
 	const step = now => {
 		const rawProgress = Math.min(Math.max((now - startTime) / moveDuration, 0), 1);
-		const progress = easeOutCubic(rawProgress);
+		const progress = easeOutSine(rawProgress);
+		const loopOffset = coverLoop ? Math.sin(Math.PI * progress) * getDui().boundsCaches.arena.cardWidth * 0.45 : 0;
 
 		for (const state of states) {
 			if (!state.card.parentNode) continue;
+			const linearX = state.start.x + (state.end.x - state.start.x) * progress;
+			const linearY = state.start.y + (state.end.y - state.start.y) * progress;
 			const transform = {
-				x: cubicBezier(progress, state.start.x, state.control1.x, state.control2.x, state.end.x),
-				y: cubicBezier(progress, state.start.y, state.control1.y, state.control2.y, state.end.y),
+				x: state.coverLoopSide
+					? linearX + state.coverLoopSide * loopOffset
+					: quadraticBezier(progress, state.start.x, state.control.x, state.end.x),
+				y: state.coverLoopSide
+					? linearY + loopOffset * (coverLoopUpward ? -1 : 1) * (1 + state.coverLoopDepth * 0.35)
+					: quadraticBezier(progress, state.start.y, state.control.y, state.end.y),
 				scale: state.start.scale + (state.end.scale - state.start.scale) * progress,
 			};
 			writeTransform(state.card, transform);
@@ -770,6 +990,31 @@ function animateGainCards(cards, layoutTarget, moveDuration = GAIN_CARD_MOVE_DUR
 
 	requestAnimationFrame(step);
 	getDui().delayRemoveCards(cards, removeDelay, removeDuration);
+}
+
+function animateCardAlongBezier(card, start, end, duration, onComplete) {
+	const control = getOfficialBezierControlPoint(start, end, true);
+	const startTime = performance.now();
+	const step = now => {
+		if (!card.parentNode) return;
+		const rawProgress = Math.min((now - startTime) / duration, 1);
+		const progress = easeOutSine(rawProgress);
+		writeTransform(card, {
+			x: quadraticBezier(progress, start.x, control.x, end.x),
+			y: quadraticBezier(progress, start.y, control.y, end.y),
+			scale: start.scale + (end.scale - start.scale) * progress,
+		});
+		card.style.opacity = String(progress < 0.78 ? 1 : 1 - (progress - 0.78) / 0.22);
+		if (rawProgress < 1) requestAnimationFrame(step);
+		else {
+			writeTransform(card, end);
+			card.style.opacity = "0";
+			card.style.willChange = "";
+			onComplete?.();
+		}
+	};
+	card.style.willChange = "transform, opacity";
+	requestAnimationFrame(step);
 }
 
 function playerDirectgain(cards, broadcast, gaintag) {
@@ -900,7 +1145,7 @@ function playerDraw(num, init, config) {
 		draws[index] = card;
 		fragment.appendChild(card);
 	}
-	_dui.layoutDrawCards(draws, player, true);
+	setDrawCardStartPosition(draws);
 	ui.arena.appendChild(fragment);
 	_dui.queueNextFrameTick(function () {
 		animateGainCards(draws, function () {
@@ -926,6 +1171,7 @@ function playerGain2(cards, log) {
 	);
 	const gains = [];
 	const draws = [];
+	const seatToSeatCards = new Set();
 	let card;
 	let clone;
 	const player = this;
@@ -934,10 +1180,13 @@ function playerGain2(cards, log) {
 		card = cards[index].copy("thrown", "gainingcard");
 		card.fixed = true;
 		if (player !== game.me) applyCardBorder(card, player);
-		if (clone && clone.parentNode == ui.arena) {
+		const sourceNode = clone && ui.arena.contains(clone) ? clone : ui.arena.contains(cards[index]) ? cards[index] : null;
+		if (sourceNode) {
 			card.scaled = true;
-			card.style.transform = clone.style.transform;
+			card.style.transform = sourceNode.style.transform;
+			card._decadeMotionStartTransform = getArenaRelativeTransform(sourceNode);
 			gains.push(card);
+			seatToSeatCards.add(card);
 		} else {
 			draws.push(card);
 		}
@@ -947,14 +1196,14 @@ function playerGain2(cards, log) {
 	if (cards.duiMod && this == game.me) return;
 	cards = gains.concat(draws);
 	const _dui = getDui();
-	_dui.layoutDrawCards(draws, this, true);
+	setDrawCardStartPosition(draws);
 	const fragment = document.createDocumentFragment();
 	for (let i = 0; i < cards.length; i++) fragment.appendChild(cards[i]);
 	ui.arena.appendChild(fragment);
 	_dui.queueNextFrameTick(function () {
 		animateGainCards(cards, function () {
 			_dui.layoutDrawCards(cards, player);
-		});
+		}, GAIN_CARD_MOVE_DURATION, GAIN_CARD_REMOVE_DELAY, GAIN_CARD_REMOVE_DURATION, card => seatToSeatCards.has(card));
 	});
 }
 
@@ -994,16 +1243,22 @@ function playerGive(cards, target, log, record) {
 	}
 	if (this.$givemod) return void this.$givemod(cards, target);
 	if (duiMod) return;
+	const giveToExpansion = isExpansionGiveTo(target);
+	const useOnlineLocalExpansionMotion = lib.config.extension_十周年UI_newDecadeStyle === "onlineUI" && this === game.me;
 	let card;
 	const _dui = getDui();
 	const hand = _dui.boundsCaches.hand;
 	hand.check();
+	const arena = _dui.boundsCaches.arena;
+	arena.check();
 	const draws = [];
 	const player = this;
 	const fragment = document.createDocumentFragment();
 	for (let index = 0; index < cards.length; index++) {
 		if ((card = cards[index])) {
+			const sourceTransform = ui.arena.contains(card) ? getArenaRelativeTransform(card) : null;
 			const copy = card.copy("card", "thrown", "gainingcard", false);
+			if (sourceTransform) copy._decadeMotionStartTransform = sourceTransform;
 			let fromHand = player == game.me;
 			if (fromHand) {
 				fromHand = card.throwWith ? card.throwWith == "h" || card.throwWith == "s" : card.parentNode == player.node.handcards1;
@@ -1028,10 +1283,28 @@ function playerGive(cards, target, log, record) {
 	if (draws.length) _dui.layoutDrawCards(draws, player);
 	ui.arena.appendChild(fragment);
 	_dui.queueNextFrameTick(function () {
+		if (giveToExpansion) {
+			const targetTransform = getPlayerCardTransform(target, arena.cardScale);
+			const cardSpacing = Math.max(12, arena.cardWidth - 110);
+			animateGainCards(cards, () => {
+				cards.forEach((card, index) => writeTransform(card, {
+					x: targetTransform.x + ((useOnlineLocalExpansionMotion ? cards.length - 1 - index : index) - (cards.length - 1) / 2) * cardSpacing,
+					y: targetTransform.y,
+					scale: targetTransform.scale,
+				}));
+			}, EXPANSION_COVER_MOVE_DURATION, EXPANSION_COVER_MOVE_DURATION, 180, true, true, useOnlineLocalExpansionMotion);
+			return;
+		}
 		animateGainCards(cards, function () {
 			_dui.layoutDrawCards(cards, target);
-		});
+		}, 750, 750, GAIN_CARD_REMOVE_DURATION, true);
 	});
+}
+
+function isExpansionGiveTo(target) {
+	const event = _status.event;
+	if (event?.name === "addToExpansion" && event.player === target) return true;
+	return event?.getParent?.("addToExpansion", false, true)?.player === target;
 }
 
 function playerThrow(cards, time, record, nosource) {
@@ -1064,7 +1337,13 @@ function playerThrow(cards, time, record, nosource) {
 	for (let index = 0; index < cards.length; index++) {
 		card = cards[index];
 		if (card) {
-			clone = card.copy("thrown");
+			const sourceCard = card;
+			clone = sourceCard.copy("thrown");
+			if (directEquip) clone._decadeEquipSourceCard = sourceCard;
+			if (directEquip && ui.arena.contains(sourceCard)) {
+				clone._decadeEquipStartRect = getArenaRelativeRect(sourceCard);
+				clone._decadeEquipStartHovered = sourceCard.classList.contains("selected");
+			}
 			if (directEquip) clone._decadeEquipUseAnimation = true;
 			if (directDelayJudge) markDelayJudgeSourceCard(clone);
 			if (duiMod && (card.throwWith == "h" || card.throwWith == "s")) {

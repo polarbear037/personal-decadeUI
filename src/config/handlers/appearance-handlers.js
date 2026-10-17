@@ -29,7 +29,7 @@ function s() {
 }
 function c(item) {
 	if ((game.saveConfig("extension_十周年UI_outcropSkin", item), window.decadeUI)) {
-		((ui.arena.dataset.outcropSkin = item), decadeUI.clearOutcropCache?.());
+		((ui.arena.dataset.outcropSkin = item), ui.arena.classList.toggle("outcrop-skin-enabled", !!item && "off" !== item), ui.arena.classList.toggle("outcrop-skin-disabled", !item || "off" === item), decadeUI.clearOutcropCache?.());
 		[...(game.players || []), ...(game.dead || [])].forEach(player => {
 			if (!player?.node) return;
 			const name1 = player.name1 || player.name;
@@ -41,7 +41,7 @@ function c(item) {
 function d() {
 	if (!window.decadeUI) return;
 	const style = lib.config.extension_十周年UI_outcropSkin;
-	((ui.arena.dataset.outcropSkin = style), decadeUI.updateAllOutcropAvatars?.(style));
+	((ui.arena.dataset.outcropSkin = style), ui.arena.classList.toggle("outcrop-skin-enabled", !!style && "off" !== style), ui.arena.classList.toggle("outcrop-skin-disabled", !style || "off" === style), decadeUI.updateAllOutcropAvatars?.(style));
 }
 function r() {
 	if (!window.decadeUI) return;

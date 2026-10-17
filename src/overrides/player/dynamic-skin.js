@@ -2,6 +2,14 @@ import { game, _status } from "noname";
 import "../../animation/utils.js";
 import { DynamicPlayer as i } from "../../animation/DynamicPlayer.js";
 import { getResourceUrl } from "../../core/resourcePaths.js";
+function r(player, animation, clearMissing = false) {
+	const background = animation?.background;
+	if (typeof background === "string" && background.trim()) {
+		player.$dynamicWrap.style.setProperty("--dynamic-skin-background", `url("${getResourceUrl("动态皮肤文件", background)}")`);
+	} else if (clearMissing) {
+		player.$dynamicWrap.style.removeProperty("--dynamic-skin-background");
+	}
+}
 function n(n, e) {
 	if (((e = !0 === e), void 0 === n)) return console.error("playDynamic: 参数1不能为空");
 	let t = this.dynamic;
@@ -16,6 +24,7 @@ function n(n, e) {
 		this.$dynamicWrap.parentNode !== this && this.appendChild(this.$dynamicWrap),
 		(t.outcropMask = window.decadeUI?.config?.dynamicSkinOutcrop));
 	const a = t.play(n);
+	r(this, n);
 	(e ? (t.deputy = a) : (t.primary = a), this.classList.add(e ? "d-skin2" : "d-skin"));
 }
 function e(i, n) {
@@ -63,7 +72,7 @@ function t() {
 			(skin.player || void 0 !== skin._transform) && (animation.player = { ...(skin.player || {}), ...(void 0 !== skin._transform && { _transform: skin._transform }) });
 			return animation;
 		})(s);
-		(this.playDynamic(d, 1 === a), s.background ? this.$dynamicWrap.style.setProperty("--dynamic-skin-background", `url("${getResourceUrl("动态皮肤文件", s.background)}")`) : this.$dynamicWrap.style.removeProperty("--dynamic-skin-background"), t || ((t = !0), i.CUR_DYNAMIC++));
+		(this.playDynamic(d, 1 === a), r(this, s, !0), t || ((t = !0), i.CUR_DYNAMIC++));
 	});
 }
 export { t as playerApplyDynamicSkin, n as playerPlayDynamic, e as playerStopDynamic };

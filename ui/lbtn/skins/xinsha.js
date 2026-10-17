@@ -149,17 +149,6 @@ export function createXinshaLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 			const jiluBtn = ui.create.div(isRight ? ".jiluButton_new" : ".jiluButton_new1", document.body);
 			jiluBtn.onclick = () => ui.click.pause();
 
-			// 换肤按钮
-			const huanfuBtn = ui.create.div(isRight ? ".huanfuButton_new" : ".huanfuButton_new1", document.body);
-			huanfuBtn.onclick = () => {
-				game.playAudio(`../${assetPath}CD/huanfu.mp3`);
-				if (window.zyile_charactercard) {
-					window.zyile_charactercard(game.me, false);
-				} else {
-					ui.click.charactercard(game.me.name, game.zhu, lib.config.mode === "guozhan" ? "guozhan" : true);
-				}
-			};
-
 			// 笑脸按钮（聊天）
 			const xiaolianBtn = ui.create.div(isRight ? ".xiaolianButton_new" : ".xiaolianButton_new1", document.body);
 			xiaolianBtn.onclick = () => {

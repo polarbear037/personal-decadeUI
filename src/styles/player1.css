@@ -649,10 +649,27 @@
 	width: 100%;
 	height: 100%;
 	border-radius: 8px;
+	background-image: none !important;
 	background-size: cover;
 	background-repeat: no-repeat;
+	--dynamic-top-left-x: 60px;
+	--dynamic-top-left-y: 21px;
+	--dynamic-top-right-x: 60px;
+	--dynamic-top-right-y: 21px;
 	pointer-events: none;
 	z-index: 60;
+}
+
+.player > .dynamic-wrap::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 8px;
+	background-image: var(--dynamic-skin-background);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left top;
+	pointer-events: none;
 }
 
 .player > .dynamic-wrap > .animation-player {
@@ -702,6 +719,34 @@
 #arena:not(.observe) > .player[data-position="0"].unseen.d-skin > .dynamic-wrap > .primary-bg,
 #arena:not(.observe) > .player[data-position="0"].unseen2.d-skin2 > .dynamic-wrap > .deputy-bg {
 	opacity: 0.3;
+}
+
+/* 动皮露头背景与画布底部对齐，仅裁去顶部 20px。 */
+#arena[data-dynamic-skin-outcrop="on"] > .player > .dynamic-wrap::before,
+#arena[data-dynamic-skin-outcrop="on"] > .player > .dynamic-wrap > .primary-bg,
+#arena[data-dynamic-skin-outcrop="on"] > .player > .dynamic-wrap > .deputy-bg {
+	top: auto;
+	bottom: 0;
+	height: 200px;
+	clip-path: inset(20px 0 0 0);
+	-webkit-clip-path: inset(20px 0 0 0);
+}
+
+#arena[data-dynamic-skin-outcrop="on"] > .player > .dynamic-wrap {
+	border-radius: var(--dynamic-top-left-x) var(--dynamic-top-right-x) 8px 8px / var(--dynamic-top-left-y) var(--dynamic-top-right-y) 8px 8px;
+}
+
+/* 动皮露头弧顶由 dynamicOutcrop.js 挂到 player 下，独立于画布。 */
+.player > .dynamic-skin-top {
+	display: none;
+	position: absolute;
+	top: auto;
+	height: auto;
+	transform: translateY(100%);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	pointer-events: none;
+	z-index: 61;
 }
 
 #window:not([data-radius_size=""]) .player {

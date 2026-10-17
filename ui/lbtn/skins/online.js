@@ -324,10 +324,6 @@ export function createOnlineLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 				self.initIdentityShow();
 				self.createMenuButton();
 				self.createBottomButtons();
-				const isTouch = lib.config.touchscreen;
-				if (isTouch) {
-					ui.create.div(".huanfuButton_new", ui.arena, base.click.huanfu);
-				}
 				self.createTimeNode();
 			});
 		},

@@ -190,15 +190,26 @@
 .player>.mask {
 	position: absolute;
 	left: 0;
-	top: 0;
+	bottom: 0;
 	width: 100%;
-	height: 100%;
 	border-radius: inherit;
-	background: rgba(0, 0, 0, 0.65);
 	opacity: 0;
 	transition: opacity 0.3s ease-in-out;
 	pointer-events: none;
 	z-index: 66;
+}
+
+#arena.outcrop-skin-disabled .player>.mask {
+	height: 100%;
+	background: rgba(0, 0, 0, 0.65);
+}
+
+#arena.outcrop-skin-enabled .player>.mask {
+	height: 112%;
+	background: linear-gradient(to top,
+			rgba(0, 0, 0, 0.65) 0%,
+			rgba(0, 0, 0, 0.65) 90%,
+			rgba(0, 0, 0, 0) 100%);
 }
 
 .player.un-selectable:not(.selectable)>.mask {
@@ -400,6 +411,40 @@
 #arena.decadeUI[data-border-level="five"] .player>.camp-wrap>.camp-border,
 .player[data-border-level="five"]>.camp-wrap>.camp-border {
 	background-image: url("../../image/styles/decade/border_campOL5.png");
+}
+
+/* online 样式开启露头时使用露头专用等级边框，关闭露头保留原 online 边框。 */
+#arena.decadeUI[data-new-decade-style="onlineUI"][data-outcrop-skin]:not([data-outcrop-skin="off"]) .player[data-border-level="two"]>.camp-wrap>.camp-border {
+	background-image: url("../../image/styles/decade/game_out_grade2.png");
+}
+
+#arena.decadeUI[data-new-decade-style="onlineUI"][data-outcrop-skin]:not([data-outcrop-skin="off"]) .player[data-border-level="three"]>.camp-wrap>.camp-border {
+	background-image: url("../../image/styles/decade/game_out_grade3.png");
+}
+
+#arena.decadeUI[data-new-decade-style="onlineUI"][data-outcrop-skin]:not([data-outcrop-skin="off"]) .player[data-border-level="four"]>.camp-wrap>.camp-border {
+	background-image: url("../../image/styles/decade/game_out_grade4.png");
+}
+
+#arena.decadeUI[data-new-decade-style="onlineUI"][data-outcrop-skin]:not([data-outcrop-skin="off"]) .player[data-border-level="five"]>.camp-wrap>.camp-border {
+	background-image: url("../../image/styles/decade/game_out_grade5.png");
+}
+
+/* 保留原有场景统一等级优先于玩家等级的规则。 */
+#arena.decadeUI[data-new-decade-style="onlineUI"][data-outcrop-skin]:not([data-outcrop-skin="off"])[data-border-level="two"] .player>.camp-wrap>.camp-border {
+	background-image: url("../../image/styles/decade/game_out_grade2.png");
+}
+
+#arena.decadeUI[data-new-decade-style="onlineUI"][data-outcrop-skin]:not([data-outcrop-skin="off"])[data-border-level="three"] .player>.camp-wrap>.camp-border {
+	background-image: url("../../image/styles/decade/game_out_grade3.png");
+}
+
+#arena.decadeUI[data-new-decade-style="onlineUI"][data-outcrop-skin]:not([data-outcrop-skin="off"])[data-border-level="four"] .player>.camp-wrap>.camp-border {
+	background-image: url("../../image/styles/decade/game_out_grade4.png");
+}
+
+#arena.decadeUI[data-new-decade-style="onlineUI"][data-outcrop-skin]:not([data-outcrop-skin="off"])[data-border-level="five"] .player>.camp-wrap>.camp-border {
+	background-image: url("../../image/styles/decade/game_out_grade5.png");
 }
 
 /** 武将名称 */
@@ -802,7 +847,7 @@
 /* 露头裁剪 - 手杀 */
 #arena[data-outcrop-skin="shousha"]>.player>.primary-avatar.has-outcrop,
 #arena[data-outcrop-skin="shousha"]>.player>.deputy-avatar.has-outcrop {
-	height: 207px;
+	height: 202px;
 	clip-path: url(#solo-clip);
 	-webkit-clip-path: url(#solo-clip);
 }
@@ -830,10 +875,27 @@
 	box-shadow:
 		0.3px 0.3px 0 rgba(0, 0, 0, 0.8),
 		-0.3px -0.3px 0 rgba(0, 0, 0, 0.8);
+	background-image: none !important;
 	background-size: cover;
 	background-repeat: no-repeat;
+	--dynamic-top-left-x: 60px;
+	--dynamic-top-left-y: 21px;
+	--dynamic-top-right-x: 60px;
+	--dynamic-top-right-y: 21px;
 	pointer-events: none;
 	z-index: 60;
+}
+
+.player>.dynamic-wrap::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 8px;
+	background-image: var(--dynamic-skin-background);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left top;
+	pointer-events: none;
 }
 
 .player>.dynamic-wrap>.animation-player {
@@ -843,16 +905,16 @@
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	border-radius: 0 3px 3px 0;
+	border-radius: inherit;
 	pointer-events: none;
 	/*	clip-path: inset(0 0 0 0 round 8px);
 	-webkit-clip-path: inset(0 0 0 0 round 8px);*/
 }
 
 #arena[data-dynamic-skin-outcrop="on"]>.player>.dynamic-wrap>.animation-player {
-	height: 200px;
-	clip-path: url(#dskin-clip);
-	-webkit-clip-path: url(#dskin-clip);
+	height: 184px;
+	clip-path: none;
+	-webkit-clip-path: none;
 }
 
 /* 动皮背景 */
@@ -886,6 +948,36 @@
 #arena:not(.observe)>.player[data-position="0"].unseen.d-skin>.dynamic-wrap>.primary-bg,
 #arena:not(.observe)>.player[data-position="0"].unseen2.d-skin2>.dynamic-wrap>.deputy-bg {
 	opacity: 0.3;
+}
+
+#arena[data-dynamic-skin-outcrop="on"]>.player>.dynamic-wrap::before {
+	clip-path: inset(14% 0 0 0);
+	-webkit-clip-path: inset(14% 0 0 0);
+}
+
+#arena[data-dynamic-skin-outcrop="on"]>.player>.dynamic-wrap {
+	border-radius: var(--dynamic-top-left-x) var(--dynamic-top-right-x) 8px 8px / var(--dynamic-top-left-y) var(--dynamic-top-right-y) 8px 8px;
+}
+
+/* 动皮露头弧顶由 dynamicOutcrop.js 挂到 player 下，独立于画布。 */
+.player>.dynamic-skin-top {
+	display: none;
+	position: absolute;
+	top: auto;
+	height: auto;
+	transform: translateY(100%);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	pointer-events: none;
+	z-index: 61;
+}
+
+#arena[data-dynamic-skin-outcrop="on"]>.player>.dynamic-skin-top {
+	display: block;
+	left: 15%;
+	width: 84.4%;
+	bottom: calc(0.9% + 185px);
+	aspect-ratio: 147 / 51;
 }
 
 #window:not([data-radius_size=""]).player {

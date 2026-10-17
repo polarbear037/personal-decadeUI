@@ -223,12 +223,10 @@ export function createShizhounianLbtnPlugin(lib, game, ui, get, ai, _status, app
 				// 功能按钮（仅触屏布局）
 				if (isTouch) {
 					if (isRight) {
-						ui.create.div(".huanfuButton_new", ui.arena, base.click.huanfu);
 						ui.create.div(".jiluButton_new", ui.arena, ui.click.pause);
 						ui.create.div(".meiguiButton_new", ui.arena, ui.click.pause);
 						ui.create.div(".xiaolianButton_new", ui.arena, ui.click.pause);
 					} else {
-						ui.create.div(".huanfuButton_new1", ui.arena, base.click.huanfu);
 						ui.create.div(".jiluButton_new1", ui.arena, ui.click.pause);
 						ui.create.div(".meiguiButton_new1", ui.arena, ui.click.pause);
 						ui.create.div(".xiaolianButton_new1", ui.arena, ui.click.pause);

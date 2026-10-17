@@ -12425,7 +12425,7 @@ export const dynamicSkinConfig = {
 	dongguiren: {
 		//董贵人
 		经典形象: {
-			name: "董贵人/祈福/SF_qifu_eff_dongguiren",
+			name: "董贵人/经典形象/SF_qifu_eff_dongguiren",
 			x: [0, 1.9],
 			y: [0, 0.3],
 			scale: 0.5,
@@ -24147,7 +24147,7 @@ export const dynamicSkinConfig = {
 	liujinliupei: {
 		//刘衿刘佩
 		经典形象: {
-			name: "刘衿刘佩/祈福/SF_qifu_eff_liujinliupei",
+			name: "刘衿刘佩/经典形象/SF_qifu_eff_liujinliupei",
 			x: [0, 0.53],
 			y: [0, 0.53],
 			scale: 0.5,
@@ -36298,14 +36298,14 @@ export const dynamicSkinConfig = {
 	sunlingluan: {
 		//孙翎鸾
 		经典形象: {
-			name: "孙翎鸾/祈福/SF_qifu_eff_sunlingluan",
+			name: "孙翎鸾/经典形象/SF_qifu_eff_sunlingluan",
 			x: [0, 0.4],
 			y: [0, 0.25],
 			scale: 0.5,
 			angle: 0,
 			//speed: 1,
 			//action: 'DaiJi',
-			background: "孙翎鸾/祈福/beijing.png",
+			background: "孙翎鸾/经典形象/beijing.png",
 		},
 		少女回战: {
 			name: "孙翎鸾/少女回战/Fanzeng01",
@@ -43802,7 +43802,7 @@ export const dynamicSkinConfig = {
 	dc_xiahouxuan: {
 		//夏侯玄
 		经典形象: {
-			name: "夏侯玄/祈福/SF_qifu_eff_xiahouxuan",
+			name: "夏侯玄/经典形象/SF_qifu_eff_xiahouxuan",
 			x: [0, 0.52],
 			y: [0, 0.52],
 			scale: 0.5,
@@ -46337,7 +46337,7 @@ export const dynamicSkinConfig = {
 			},
 		},
 		经典形象: {
-			name: "许靖/祈福/SF_qifu_eff_xujing",
+			name: "许靖/经典形象/SF_qifu_eff_xujing",
 			x: [0, 0.5],
 			y: [0, 0.3],
 			scale: 0.5,
@@ -51275,7 +51275,7 @@ export const dynamicSkinConfig = {
 	zhangjinyun: {
 		//张瑾云
 		经典形象: {
-			name: "张瑾云/祈福/SF_qifu_eff_zhanghuanghou",
+			name: "张瑾云/经典形象/SF_qifu_eff_zhanghuanghou",
 			x: [0, 1.7],
 			y: [0, 0.4],
 			scale: 0.4,
@@ -67327,7 +67327,7 @@ export const dynamicSkinConfig = {
 	renwan: {
 		//任婉
 		经典形象: {
-			name: "任婉/祈福/SF_qifu_eff_renwan",
+			name: "任婉/经典形象/SF_qifu_eff_renwan",
 			x: [0, 0.5],
 			y: [0, 0.52],
 			scale: 0.5,

@@ -5,7 +5,7 @@ import { animatePendingEquipEntries, markPendingEquipEntry } from "./card-moveme
 function playerUseCard() {
 	const event = getBasePlayerMethods().useCard.apply(this, arguments);
 	playShowCardAudio();
-	if (isEquipUseEvent(event, this)) markPendingEquipEntry(this, event.cards?.length ? event.cards : event.card);
+	markPendingEquipMovement(event, this);
 	event.pushHandler("decadeUI_TargetHighlight", (event, option) => {
 		if (option.state !== "begin" || event.step !== 1 || event.hideTargets) return;
 		event.targets?.forEach(target => target.classList.add("target"));
@@ -43,10 +43,15 @@ function isEquipUseEvent(event, player) {
 }
 
 function playerUseCardAnimateBefore(event) {
+	markPendingEquipMovement(event, this);
 	const base = getBasePlayerMethods();
 	base.useCardAnimateBefore?.apply(this, arguments);
-	if (isEquipUseEvent(event, this)) markPendingEquipEntry(this, event.cards?.length ? event.cards : event.card);
 	if (hasOwnerLoseMap(event)) event.throw = false;
+}
+
+function markPendingEquipMovement(event, player) {
+	if (!isEquipUseEvent(event, player)) return;
+	markPendingEquipEntry(player, event.cards?.length ? event.cards : event.card);
 }
 
 function playerRespondAnimateBefore(event) {

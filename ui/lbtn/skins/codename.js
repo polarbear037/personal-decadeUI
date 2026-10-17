@@ -207,11 +207,11 @@ export function createCodenameLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 
 				// 功能按钮 - 注意：toggleDistanceDisplay需要通过plugin对象调用
 				if (isRight) {
-					ui.create.div(".huanfuButton_new", ui.arena, base.click.huanfu);
+					if (!lib.config.phonelayout) ui.create.div(".huanfuButton_new", ui.arena, base.click.huanfu);
 					ui.create.div(".jiluButton_new", ui.arena, ui.click.pause);
 					ui.create.div(".meiguiButton_new", ui.arena);
 				} else {
-					ui.create.div(".huanfuButton_new1", ui.arena, base.click.huanfu);
+					if (!lib.config.phonelayout) ui.create.div(".huanfuButton_new1", ui.arena, base.click.huanfu);
 					ui.create.div(".jiluButton_new1", ui.arena, ui.click.pause);
 					ui.create.div(".meiguiButton_new1", ui.arena);
 				}
