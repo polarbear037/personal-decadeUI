@@ -1,0 +1,60 @@
+{
+  "source": "reverse/main.sgs",
+  "className": "cns",
+  "start": 19260323,
+  "end": 19261778,
+  "sha256": "cb78e7a3825714df4123b2bf1451d29bc38476bd6668f3aaca1e2389d4304943",
+  "assets": [
+    {
+      "original": "/res/assets/game/seat.atlas#seat_shield_bg.png",
+      "sheet": "/res/assets/game/seat.png",
+      "frame": {
+        "h": 37,
+        "idx": 0,
+        "w": 32,
+        "x": 823,
+        "y": 341
+      },
+      "target": "image/ui/armor/seat_shield_bg.png",
+      "pixelEqual": true,
+      "sha256": "80162d29cb544b8a735f2138c47d465f92d04da8c9d7455538e79784746f75a6"
+    },
+    {
+      "original": "/res/assets/fontApp/FZLBGBK.ttf",
+      "target": "ui/assets/fonts/FZLBGBK.ttf",
+      "sha256": "19e6426eee18e655f4d247976a73fd51cefc03e599667e224497c73d598762b8"
+    }
+  ],
+  "methods": [
+    {
+      "offset": 7466098,
+      "raw": "spPosLayout(t,i){this.SetHpBarPos(t,i),this.countryUI&&this.countryUI.pos(t,i),this.figureManager&&this.figureManager.pos(t+mMt.SEAT_WIDTH*this.seatScale-this.figureManager.width-5,i-15*this.seatScale),this.shieldManager&&this.shieldManager.pos(t+this.ScaledWidth-26,i+45),this.markerTagManager&&this.markerTagManager.pos(t+mMt.SEAT_WIDTH-32|0,i+32)}"
+    },
+    {
+      "offset": 7440450,
+      "raw": "Seat_UpdateSheild(t){this.seat&&(this.seat.CurrentShield>0&&this.createShield(),this.shieldManager&&(t.msg?this.shieldManager.UpdateShield(t.msg):this.shieldManager.UpdateShieldValue(this.seat.CurrentShield),this.shieldManager.visible=this.seat&&!this.seat.IsHide,this.spPosLayout(this.otherTopManager.x,this.otherTopManager.y)),this.seat.CurrentShield<=0&&this.clearShield())}"
+    },
+    {
+      "offset": 18915392,
+      "raw": "set CurrentShield(t){this.currentShield=t,this.event(sH.SEAT_SHEILD_CHANGE,new sH(sH.SEAT_SHEILD_CHANGE,this))}"
+    }
+  ],
+  "fontAlias": "hB.SemiBold=fzlbgbk; yxt.Create defaults to hB.SemiBold, bold=false, letterSpacing=1",
+  "layout": {
+    "width": 32,
+    "height": 37,
+    "x": "roleWidth - 26",
+    "y": 45,
+    "text": {
+      "x": 0,
+      "y": 8,
+      "width": 32,
+      "height": 20,
+      "fontSize": 24,
+      "updatedFontSize": 26,
+      "align": "center",
+      "valign": "middle",
+      "color": "#FFFFFF"
+    }
+  }
+}

@@ -1,13 +1,13 @@
 import { createCollapseEnd as createCollapseEnd, createCollapseTitle as createCollapseTitle } from "../utils.js";
 import { onRightLayoutClick as onRightLayoutClick, onRightLayoutUpdate as onRightLayoutUpdate } from "../handlers/appearance-handlers.js";
 const a = createCollapseTitle("stuff_title", "小小玩楞"),
-	o = { name: "更多音效", intro: "开启后，点击卡牌或按钮和出牌弃牌会有音效播放", init: !0 },
+	o = { name: "更多音效", intro: "开启后，点击卡牌或按钮和出牌弃牌会有音效播放；手牌点选及 Online 样式的基础按钮音效不受此项影响", init: !0 },
 	r = { name: "中二模式", intro: "众所周知，使用技能前需要吟唱。", init: !0 },
 		v = { name: "手杀距离显示", intro: "开启后，将在游戏中实时显示你与其他角色的距离", init: !0 },
 	s = { name: "武将彩蛋", intro: "开启后，特定武将使用特定卡牌或触发特定事件时会播放彩蛋语音", init: !0 },
 	m = { name: "武将背景", init: !0, intro: "开启后，单双将和国战模式将用设置好的武将背景" },
 	l = { name: "官方势力", init: !0, intro: "开启后，非魏蜀吴群晋势力的角色将会重新选择势力" },
-	f = { name: "重铸交互（Beta）", init: !1, intro: "开启后，可重铸卡牌可以通过不选目标直接重铸，无需额外操作，重启生效" },
+	f = { name: "重铸交互（Beta）", init: !1, intro: "开启后，可重铸卡牌可以通过不选目标直接重铸，无需额外操作，重启生效。Online 样式固定使用独立重铸按钮，不受此项影响" },
 	u = { name: "装备入手", init: !0, intro: "开启后，选择卡牌时装备区的牌会复制到手牌区显示，方便选择，即时生效" },
 	d = { name: "自由选将筛选框", init: "extension-OL-system", intro: "更改自由选将筛选框", item: { default: "默认本体框", "extension-OL-system": "扩展内置框", offDialog: "关闭筛选框" } },
 	c = { name: "左右布局（已停止维护）", init: "on", intro: "切换完以后自动重启游戏", item: { off: "左手", on: "右手" }, update: onRightLayoutUpdate, onclick: onRightLayoutClick },

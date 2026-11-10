@@ -1,0 +1,1845 @@
+{
+  "fixture": "真实本体，独立IndexedDB；以山河图战斗建立主视角/队友/敌军；未改用户存档。",
+  "cases": [
+    {
+      "style": "onlineUI",
+      "effects": [
+        {
+          "player": "caocao",
+          "zoom": 1,
+          "action": "play",
+          "started": true,
+          "countBeforeUpdate": 0,
+          "originalScale": 0.8,
+          "originalParent": true,
+          "scale": 1,
+          "speed": 0.5,
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0,
+            0.5135135135135135
+          ],
+          "bounds": {
+            "left": 1771.734375,
+            "top": 715.328125,
+            "right": 1803.734375,
+            "bottom": 752.328125,
+            "width": 32,
+            "height": 37,
+            "x": 1771.734375,
+            "y": 715.328125,
+            "bottomInBody": 118.671875,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 1771.734375,
+            "top": 715.328125,
+            "width": 32,
+            "height": 37
+          },
+          "fitted": {
+            "left": 1771.734375,
+            "top": 715.328125,
+            "width": 32,
+            "height": 37
+          }
+        },
+        {
+          "player": "caocao",
+          "zoom": 1,
+          "action": "play3",
+          "started": true,
+          "countBeforeUpdate": 1,
+          "originalScale": 0.8,
+          "originalParent": true,
+          "scale": 1,
+          "speed": 0.5,
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0,
+            0.5135135135135135
+          ],
+          "bounds": {
+            "left": 1771.734375,
+            "top": 715.328125,
+            "right": 1803.734375,
+            "bottom": 752.328125,
+            "width": 32,
+            "height": 37,
+            "x": 1771.734375,
+            "y": 715.328125,
+            "bottomInBody": 118.671875,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 1771.734375,
+            "top": 715.328125,
+            "width": 32,
+            "height": 37
+          },
+          "fitted": {
+            "left": 1771.734375,
+            "top": 715.328125,
+            "width": 32,
+            "height": 37
+          }
+        },
+        {
+          "player": "caocao",
+          "zoom": 0.8,
+          "action": "play",
+          "started": true,
+          "countBeforeUpdate": 0,
+          "originalScale": 0.8,
+          "originalParent": true,
+          "scale": 0.7999992370605469,
+          "speed": 0.5,
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0,
+            0.5135135135135135
+          ],
+          "bounds": {
+            "left": 1763.734375,
+            "top": 723.828125,
+            "right": 1789.3343505859375,
+            "bottom": 753.4281005859375,
+            "width": 25.5999755859375,
+            "height": 29.5999755859375,
+            "x": 1763.734375,
+            "y": 723.828125,
+            "bottomInBody": 117.5718994140625,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 1763.734375,
+            "top": 723.828125,
+            "width": 25.5999755859375,
+            "height": 29.5999755859375
+          },
+          "fitted": {
+            "left": 1763.734375,
+            "top": 723.8281268557987,
+            "width": 25.5999755859375,
+            "height": 29.599971771240234
+          }
+        },
+        {
+          "player": "caocao",
+          "zoom": 0.8,
+          "action": "play3",
+          "started": true,
+          "countBeforeUpdate": 1,
+          "originalScale": 0.8,
+          "originalParent": true,
+          "scale": 0.7999992370605469,
+          "speed": 0.5,
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0,
+            0.5135135135135135
+          ],
+          "bounds": {
+            "left": 1763.734375,
+            "top": 723.828125,
+            "right": 1789.3343505859375,
+            "bottom": 753.4281005859375,
+            "width": 25.5999755859375,
+            "height": 29.5999755859375,
+            "x": 1763.734375,
+            "y": 723.828125,
+            "bottomInBody": 117.5718994140625,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 1763.734375,
+            "top": 723.828125,
+            "width": 25.5999755859375,
+            "height": 29.5999755859375
+          },
+          "fitted": {
+            "left": 1763.734375,
+            "top": 723.8281268557987,
+            "width": 25.5999755859375,
+            "height": 29.599971771240234
+          }
+        },
+        {
+          "player": "shanhetu_enemy_22473_0",
+          "zoom": 1,
+          "action": "play",
+          "started": true,
+          "countBeforeUpdate": 0,
+          "originalScale": 0.8,
+          "originalParent": true,
+          "scale": 1,
+          "speed": 0.5,
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0,
+            0.5135135135135135
+          ],
+          "bounds": {
+            "left": 994,
+            "top": 148.359375,
+            "right": 1026,
+            "bottom": 185.359375,
+            "width": 32,
+            "height": 37,
+            "x": 994,
+            "y": 148.359375,
+            "bottomInBody": 685.640625,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 994,
+            "top": 148.359375,
+            "width": 32,
+            "height": 37
+          },
+          "fitted": {
+            "left": 994,
+            "top": 148.359375,
+            "width": 32,
+            "height": 37
+          }
+        },
+        {
+          "player": "shanhetu_enemy_22473_0",
+          "zoom": 1,
+          "action": "play3",
+          "started": true,
+          "countBeforeUpdate": 1,
+          "originalScale": 0.8,
+          "originalParent": true,
+          "scale": 1,
+          "speed": 0.5,
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0,
+            0.5135135135135135
+          ],
+          "bounds": {
+            "left": 994,
+            "top": 148.359375,
+            "right": 1026,
+            "bottom": 185.359375,
+            "width": 32,
+            "height": 37,
+            "x": 994,
+            "y": 148.359375,
+            "bottomInBody": 685.640625,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 994,
+            "top": 148.359375,
+            "width": 32,
+            "height": 37
+          },
+          "fitted": {
+            "left": 994,
+            "top": 148.359375,
+            "width": 32,
+            "height": 37
+          }
+        },
+        {
+          "player": "shanhetu_enemy_22473_0",
+          "zoom": 0.8,
+          "action": "play",
+          "started": true,
+          "countBeforeUpdate": 0,
+          "originalScale": 0.8,
+          "originalParent": true,
+          "scale": 0.8000011444091797,
+          "speed": 0.5,
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0,
+            0.5135135135135135
+          ],
+          "bounds": {
+            "left": 986,
+            "top": 156.859375,
+            "right": 1011.6000366210938,
+            "bottom": 186.45938110351562,
+            "width": 25.60003662109375,
+            "height": 29.600006103515625,
+            "x": 986,
+            "y": 156.859375,
+            "bottomInBody": 684.5406188964844,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 986,
+            "top": 156.859375,
+            "width": 25.60003662109375,
+            "height": 29.600006103515625
+          },
+          "fitted": {
+            "left": 986,
+            "top": 156.85935736991263,
+            "width": 25.60003662109375,
+            "height": 29.60004234313965
+          }
+        },
+        {
+          "player": "shanhetu_enemy_22473_0",
+          "zoom": 0.8,
+          "action": "play3",
+          "started": true,
+          "countBeforeUpdate": 1,
+          "originalScale": 0.8,
+          "originalParent": true,
+          "scale": 0.8000011444091797,
+          "speed": 0.5,
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0,
+            0.5135135135135135
+          ],
+          "bounds": {
+            "left": 986,
+            "top": 156.859375,
+            "right": 1011.6000366210938,
+            "bottom": 186.45938110351562,
+            "width": 25.60003662109375,
+            "height": 29.600006103515625,
+            "x": 986,
+            "y": 156.859375,
+            "bottomInBody": 684.5406188964844,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 986,
+            "top": 156.859375,
+            "width": 25.60003662109375,
+            "height": 29.600006103515625
+          },
+          "fitted": {
+            "left": 986,
+            "top": 156.85935736991263,
+            "width": 25.60003662109375,
+            "height": 29.60004234313965
+          }
+        },
+        {
+          "player": "shanhetu_ally_997019_1",
+          "zoom": 1,
+          "action": "play",
+          "started": true,
+          "countBeforeUpdate": 0,
+          "originalScale": 0.8,
+          "originalParent": true,
+          "scale": 1,
+          "speed": 0.5,
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0,
+            0.5135135135135135
+          ],
+          "bounds": {
+            "left": 246.0625,
+            "top": 317.359375,
+            "right": 278.0625,
+            "bottom": 354.359375,
+            "width": 32,
+            "height": 37,
+            "x": 246.0625,
+            "y": 317.359375,
+            "bottomInBody": 516.640625,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 246.0625,
+            "top": 317.359375,
+            "width": 32,
+            "height": 37
+          },
+          "fitted": {
+            "left": 246.0625,
+            "top": 317.359375,
+            "width": 32,
+            "height": 37
+          }
+        },
+        {
+          "player": "shanhetu_ally_997019_1",
+          "zoom": 1,
+          "action": "play3",
+          "started": true,
+          "countBeforeUpdate": 1,
+          "originalScale": 0.8,
+          "originalParent": true,
+          "scale": 1,
+          "speed": 0.5,
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0,
+            0.5135135135135135
+          ],
+          "bounds": {
+            "left": 246.0625,
+            "top": 317.359375,
+            "right": 278.0625,
+            "bottom": 354.359375,
+            "width": 32,
+            "height": 37,
+            "x": 246.0625,
+            "y": 317.359375,
+            "bottomInBody": 516.640625,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 246.0625,
+            "top": 317.359375,
+            "width": 32,
+            "height": 37
+          },
+          "fitted": {
+            "left": 246.0625,
+            "top": 317.359375,
+            "width": 32,
+            "height": 37
+          }
+        },
+        {
+          "player": "shanhetu_ally_997019_1",
+          "zoom": 0.8,
+          "action": "play",
+          "started": true,
+          "countBeforeUpdate": 0,
+          "originalScale": 0.8,
+          "originalParent": true,
+          "scale": 0.8000001907348633,
+          "speed": 0.5,
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0,
+            0.5135135135135135
+          ],
+          "bounds": {
+            "left": 238.0625,
+            "top": 325.859375,
+            "right": 263.6625061035156,
+            "bottom": 355.4593811035156,
+            "width": 25.600006103515625,
+            "height": 29.600006103515625,
+            "x": 238.0625,
+            "y": 325.859375,
+            "bottomInBody": 515.5406188964844,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 238.0625,
+            "top": 325.859375,
+            "width": 25.600006103515625,
+            "height": 29.600006103515625
+          },
+          "fitted": {
+            "left": 238.0625,
+            "top": 325.8593745360503,
+            "width": 25.600006103515625,
+            "height": 29.60000705718994
+          }
+        },
+        {
+          "player": "shanhetu_ally_997019_1",
+          "zoom": 0.8,
+          "action": "play3",
+          "started": true,
+          "countBeforeUpdate": 1,
+          "originalScale": 0.8,
+          "originalParent": true,
+          "scale": 0.8000001907348633,
+          "speed": 0.5,
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0,
+            0.5135135135135135
+          ],
+          "bounds": {
+            "left": 238.0625,
+            "top": 325.859375,
+            "right": 263.6625061035156,
+            "bottom": 355.4593811035156,
+            "width": 25.600006103515625,
+            "height": 29.600006103515625,
+            "x": 238.0625,
+            "y": 325.859375,
+            "bottomInBody": 515.5406188964844,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 238.0625,
+            "top": 325.859375,
+            "width": 25.600006103515625,
+            "height": 29.600006103515625
+          },
+          "fitted": {
+            "left": 238.0625,
+            "top": 325.8593745360503,
+            "width": 25.600006103515625,
+            "height": 29.60000705718994
+          }
+        }
+      ]
+    },
+    {
+      "style": "onlineUI",
+      "states": [
+        {
+          "phase": "zero",
+          "player": "caocao",
+          "value": 0,
+          "exists": false
+        },
+        {
+          "phase": "1",
+          "player": "caocao",
+          "value": 1,
+          "exists": true,
+          "direct": true,
+          "insideHp": false,
+          "count": 1,
+          "text": "1",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/armor/seat_shield_bg.png\")",
+          "x": 106,
+          "y": 45,
+          "width": 32,
+          "height": 37,
+          "playerWidth": 132,
+          "number": {
+            "x": 0,
+            "y": 8,
+            "width": 32,
+            "height": 20,
+            "font": "dui-online-armor, serif",
+            "fontSize": 24,
+            "weight": "400",
+            "color": "rgb(255, 255, 255)",
+            "spacing": "1px"
+          },
+          "hpText": false
+        },
+        {
+          "phase": "11",
+          "player": "caocao",
+          "value": 12,
+          "exists": true,
+          "direct": true,
+          "insideHp": false,
+          "count": 1,
+          "text": "12",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/armor/seat_shield_bg.png\")",
+          "x": 106,
+          "y": 45,
+          "width": 32,
+          "height": 37,
+          "playerWidth": 132,
+          "number": {
+            "x": 0,
+            "y": 8,
+            "width": 32,
+            "height": 20,
+            "font": "dui-online-armor, serif",
+            "fontSize": 26,
+            "weight": "400",
+            "color": "rgb(255, 255, 255)",
+            "spacing": "1px"
+          },
+          "hpText": false
+        },
+        {
+          "phase": "-10",
+          "player": "caocao",
+          "value": 2,
+          "exists": true,
+          "direct": true,
+          "insideHp": false,
+          "count": 1,
+          "text": "2",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/armor/seat_shield_bg.png\")",
+          "x": 106,
+          "y": 45,
+          "width": 32,
+          "height": 37,
+          "playerWidth": 132,
+          "number": {
+            "x": 0,
+            "y": 8,
+            "width": 32,
+            "height": 20,
+            "font": "dui-online-armor, serif",
+            "fontSize": 26,
+            "weight": "400",
+            "color": "rgb(255, 255, 255)",
+            "spacing": "1px"
+          },
+          "hpText": false
+        },
+        {
+          "phase": "-2",
+          "player": "caocao",
+          "value": 0,
+          "exists": false
+        },
+        {
+          "phase": "infinity",
+          "player": "caocao",
+          "value": null,
+          "exists": true,
+          "direct": true,
+          "insideHp": false,
+          "count": 1,
+          "text": "∞",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/armor/seat_shield_bg.png\")",
+          "x": 106,
+          "y": 45,
+          "width": 32,
+          "height": 37,
+          "playerWidth": 132,
+          "number": {
+            "x": 0,
+            "y": 8,
+            "width": 32,
+            "height": 20,
+            "font": "dui-online-armor, serif",
+            "fontSize": 24,
+            "weight": "400",
+            "color": "rgb(255, 255, 255)",
+            "spacing": "1px"
+          },
+          "hpText": false
+        },
+        {
+          "phase": "zero",
+          "player": "shanhetu_enemy_22473_0",
+          "value": 0,
+          "exists": false
+        },
+        {
+          "phase": "1",
+          "player": "shanhetu_enemy_22473_0",
+          "value": 1,
+          "exists": true,
+          "direct": true,
+          "insideHp": false,
+          "count": 1,
+          "text": "1",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/armor/seat_shield_bg.png\")",
+          "x": 106,
+          "y": 45,
+          "width": 32,
+          "height": 37,
+          "playerWidth": 132,
+          "number": {
+            "x": 0,
+            "y": 8,
+            "width": 32,
+            "height": 20,
+            "font": "dui-online-armor, serif",
+            "fontSize": 24,
+            "weight": "400",
+            "color": "rgb(255, 255, 255)",
+            "spacing": "1px"
+          },
+          "hpText": false
+        },
+        {
+          "phase": "11",
+          "player": "shanhetu_enemy_22473_0",
+          "value": 12,
+          "exists": true,
+          "direct": true,
+          "insideHp": false,
+          "count": 1,
+          "text": "12",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/armor/seat_shield_bg.png\")",
+          "x": 106,
+          "y": 45,
+          "width": 32,
+          "height": 37,
+          "playerWidth": 132,
+          "number": {
+            "x": 0,
+            "y": 8,
+            "width": 32,
+            "height": 20,
+            "font": "dui-online-armor, serif",
+            "fontSize": 26,
+            "weight": "400",
+            "color": "rgb(255, 255, 255)",
+            "spacing": "1px"
+          },
+          "hpText": false
+        },
+        {
+          "phase": "-10",
+          "player": "shanhetu_enemy_22473_0",
+          "value": 2,
+          "exists": true,
+          "direct": true,
+          "insideHp": false,
+          "count": 1,
+          "text": "2",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/armor/seat_shield_bg.png\")",
+          "x": 106,
+          "y": 45,
+          "width": 32,
+          "height": 37,
+          "playerWidth": 132,
+          "number": {
+            "x": 0,
+            "y": 8,
+            "width": 32,
+            "height": 20,
+            "font": "dui-online-armor, serif",
+            "fontSize": 26,
+            "weight": "400",
+            "color": "rgb(255, 255, 255)",
+            "spacing": "1px"
+          },
+          "hpText": false
+        },
+        {
+          "phase": "-2",
+          "player": "shanhetu_enemy_22473_0",
+          "value": 0,
+          "exists": false
+        },
+        {
+          "phase": "infinity",
+          "player": "shanhetu_enemy_22473_0",
+          "value": null,
+          "exists": true,
+          "direct": true,
+          "insideHp": false,
+          "count": 1,
+          "text": "∞",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/armor/seat_shield_bg.png\")",
+          "x": 106,
+          "y": 45,
+          "width": 32,
+          "height": 37,
+          "playerWidth": 132,
+          "number": {
+            "x": 0,
+            "y": 8,
+            "width": 32,
+            "height": 20,
+            "font": "dui-online-armor, serif",
+            "fontSize": 24,
+            "weight": "400",
+            "color": "rgb(255, 255, 255)",
+            "spacing": "1px"
+          },
+          "hpText": false
+        },
+        {
+          "phase": "zero",
+          "player": "shanhetu_ally_997019_1",
+          "value": 0,
+          "exists": false
+        },
+        {
+          "phase": "1",
+          "player": "shanhetu_ally_997019_1",
+          "value": 1,
+          "exists": true,
+          "direct": true,
+          "insideHp": false,
+          "count": 1,
+          "text": "1",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/armor/seat_shield_bg.png\")",
+          "x": 106,
+          "y": 45,
+          "width": 32,
+          "height": 37,
+          "playerWidth": 132,
+          "number": {
+            "x": 0,
+            "y": 8,
+            "width": 32,
+            "height": 20,
+            "font": "dui-online-armor, serif",
+            "fontSize": 24,
+            "weight": "400",
+            "color": "rgb(255, 255, 255)",
+            "spacing": "1px"
+          },
+          "hpText": false
+        },
+        {
+          "phase": "11",
+          "player": "shanhetu_ally_997019_1",
+          "value": 12,
+          "exists": true,
+          "direct": true,
+          "insideHp": false,
+          "count": 1,
+          "text": "12",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/armor/seat_shield_bg.png\")",
+          "x": 106,
+          "y": 45,
+          "width": 32,
+          "height": 37,
+          "playerWidth": 132,
+          "number": {
+            "x": 0,
+            "y": 8,
+            "width": 32,
+            "height": 20,
+            "font": "dui-online-armor, serif",
+            "fontSize": 26,
+            "weight": "400",
+            "color": "rgb(255, 255, 255)",
+            "spacing": "1px"
+          },
+          "hpText": false
+        },
+        {
+          "phase": "-10",
+          "player": "shanhetu_ally_997019_1",
+          "value": 2,
+          "exists": true,
+          "direct": true,
+          "insideHp": false,
+          "count": 1,
+          "text": "2",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/armor/seat_shield_bg.png\")",
+          "x": 106,
+          "y": 45,
+          "width": 32,
+          "height": 37,
+          "playerWidth": 132,
+          "number": {
+            "x": 0,
+            "y": 8,
+            "width": 32,
+            "height": 20,
+            "font": "dui-online-armor, serif",
+            "fontSize": 26,
+            "weight": "400",
+            "color": "rgb(255, 255, 255)",
+            "spacing": "1px"
+          },
+          "hpText": false
+        },
+        {
+          "phase": "-2",
+          "player": "shanhetu_ally_997019_1",
+          "value": 0,
+          "exists": false
+        },
+        {
+          "phase": "infinity",
+          "player": "shanhetu_ally_997019_1",
+          "value": null,
+          "exists": true,
+          "direct": true,
+          "insideHp": false,
+          "count": 1,
+          "text": "∞",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/armor/seat_shield_bg.png\")",
+          "x": 106,
+          "y": 45,
+          "width": 32,
+          "height": 37,
+          "playerWidth": 132,
+          "number": {
+            "x": 0,
+            "y": 8,
+            "width": 32,
+            "height": 20,
+            "font": "dui-online-armor, serif",
+            "fontSize": 24,
+            "weight": "400",
+            "color": "rgb(255, 255, 255)",
+            "spacing": "1px"
+          },
+          "hpText": false
+        },
+        {
+          "phase": "uninit",
+          "value": 3,
+          "exists": false
+        }
+      ]
+    },
+    {
+      "style": "on",
+      "effects": [
+        {
+          "player": "caocao",
+          "zoom": 1,
+          "action": "play",
+          "started": true,
+          "countBeforeUpdate": 0,
+          "originalScale": 0.8,
+          "originalParent": false,
+          "scale": 0.8,
+          "speed": 0.5,
+          "x": [
+            1,
+            0.87
+          ],
+          "y": [
+            0,
+            0.6
+          ],
+          "bounds": {
+            "left": 1735,
+            "top": 674.546875,
+            "right": 1865,
+            "bottom": 854.546875,
+            "width": 130,
+            "height": 180,
+            "x": 1735,
+            "y": 674.546875,
+            "bottomInBody": 16.453125,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 1845,
+            "top": 745.546875,
+            "width": 20.25,
+            "height": 22.5
+          },
+          "fitted": {
+            "left": 1836.3,
+            "top": 732.146875,
+            "width": 25.6,
+            "height": 29.6
+          }
+        },
+        {
+          "player": "caocao",
+          "zoom": 1,
+          "action": "play3",
+          "started": true,
+          "countBeforeUpdate": 1,
+          "originalScale": 0.8,
+          "originalParent": false,
+          "scale": 0.8,
+          "speed": 0.5,
+          "x": [
+            1,
+            0.87
+          ],
+          "y": [
+            0,
+            0.6
+          ],
+          "bounds": {
+            "left": 1735,
+            "top": 674.546875,
+            "right": 1865,
+            "bottom": 854.546875,
+            "width": 130,
+            "height": 180,
+            "x": 1735,
+            "y": 674.546875,
+            "bottomInBody": 16.453125,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 1845,
+            "top": 745.546875,
+            "width": 20.25,
+            "height": 22.5
+          },
+          "fitted": {
+            "left": 1836.3,
+            "top": 732.146875,
+            "width": 25.6,
+            "height": 29.6
+          }
+        },
+        {
+          "player": "caocao",
+          "zoom": 0.8,
+          "action": "play",
+          "started": true,
+          "countBeforeUpdate": 0,
+          "originalScale": 0.8,
+          "originalParent": false,
+          "scale": 0.8,
+          "speed": 0.5,
+          "x": [
+            1,
+            0.87
+          ],
+          "y": [
+            0,
+            0.6
+          ],
+          "bounds": {
+            "left": 1748,
+            "top": 692.546875,
+            "right": 1852,
+            "bottom": 836.546875,
+            "width": 104,
+            "height": 144,
+            "x": 1748,
+            "y": 692.546875,
+            "bottomInBody": 34.453125,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 1836,
+            "top": 749.3468627929688,
+            "width": 16.199951171875,
+            "height": 18
+          },
+          "fitted": {
+            "left": 1826.68,
+            "top": 735.746875,
+            "width": 25.6,
+            "height": 29.6
+          }
+        },
+        {
+          "player": "caocao",
+          "zoom": 0.8,
+          "action": "play3",
+          "started": true,
+          "countBeforeUpdate": 1,
+          "originalScale": 0.8,
+          "originalParent": false,
+          "scale": 0.8,
+          "speed": 0.5,
+          "x": [
+            1,
+            0.87
+          ],
+          "y": [
+            0,
+            0.6
+          ],
+          "bounds": {
+            "left": 1748,
+            "top": 692.546875,
+            "right": 1852,
+            "bottom": 836.546875,
+            "width": 104,
+            "height": 144,
+            "x": 1748,
+            "y": 692.546875,
+            "bottomInBody": 34.453125,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 1836,
+            "top": 749.3468627929688,
+            "width": 16.199951171875,
+            "height": 18
+          },
+          "fitted": {
+            "left": 1826.68,
+            "top": 735.746875,
+            "width": 25.6,
+            "height": 29.6
+          }
+        },
+        {
+          "player": "shanhetu_enemy_22473_0",
+          "zoom": 1,
+          "action": "play",
+          "started": true,
+          "countBeforeUpdate": 0,
+          "originalScale": 0.8,
+          "originalParent": false,
+          "scale": 0.8,
+          "speed": 0.5,
+          "x": [
+            1,
+            0.87
+          ],
+          "y": [
+            0,
+            0.6
+          ],
+          "bounds": {
+            "left": 896,
+            "top": 96.09375,
+            "right": 1026,
+            "bottom": 276.09375,
+            "width": 130,
+            "height": 180,
+            "x": 896,
+            "y": 96.09375,
+            "bottomInBody": 594.90625,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 1006,
+            "top": 167.09375,
+            "width": 20.25,
+            "height": 22.5
+          },
+          "fitted": {
+            "left": 997.3000000000001,
+            "top": 153.69375,
+            "width": 25.6,
+            "height": 29.6
+          }
+        },
+        {
+          "player": "shanhetu_enemy_22473_0",
+          "zoom": 1,
+          "action": "play3",
+          "started": true,
+          "countBeforeUpdate": 1,
+          "originalScale": 0.8,
+          "originalParent": false,
+          "scale": 0.8,
+          "speed": 0.5,
+          "x": [
+            1,
+            0.87
+          ],
+          "y": [
+            0,
+            0.6
+          ],
+          "bounds": {
+            "left": 896,
+            "top": 96.09375,
+            "right": 1026,
+            "bottom": 276.09375,
+            "width": 130,
+            "height": 180,
+            "x": 896,
+            "y": 96.09375,
+            "bottomInBody": 594.90625,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 1006,
+            "top": 167.09375,
+            "width": 20.25,
+            "height": 22.5
+          },
+          "fitted": {
+            "left": 997.3000000000001,
+            "top": 153.69375,
+            "width": 25.6,
+            "height": 29.6
+          }
+        },
+        {
+          "player": "shanhetu_enemy_22473_0",
+          "zoom": 0.8,
+          "action": "play",
+          "started": true,
+          "countBeforeUpdate": 0,
+          "originalScale": 0.8,
+          "originalParent": false,
+          "scale": 0.8,
+          "speed": 0.5,
+          "x": [
+            1,
+            0.87
+          ],
+          "y": [
+            0,
+            0.6
+          ],
+          "bounds": {
+            "left": 909,
+            "top": 114.09375,
+            "right": 1013,
+            "bottom": 258.09375,
+            "width": 104,
+            "height": 144,
+            "x": 909,
+            "y": 114.09375,
+            "bottomInBody": 612.90625,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 997,
+            "top": 170.8937530517578,
+            "width": 16.20001220703125,
+            "height": 18
+          },
+          "fitted": {
+            "left": 987.6800000000001,
+            "top": 157.29375000000002,
+            "width": 25.6,
+            "height": 29.6
+          }
+        },
+        {
+          "player": "shanhetu_enemy_22473_0",
+          "zoom": 0.8,
+          "action": "play3",
+          "started": true,
+          "countBeforeUpdate": 1,
+          "originalScale": 0.8,
+          "originalParent": false,
+          "scale": 0.8,
+          "speed": 0.5,
+          "x": [
+            1,
+            0.87
+          ],
+          "y": [
+            0,
+            0.6
+          ],
+          "bounds": {
+            "left": 909,
+            "top": 114.09375,
+            "right": 1013,
+            "bottom": 258.09375,
+            "width": 104,
+            "height": 144,
+            "x": 909,
+            "y": 114.09375,
+            "bottomInBody": 612.90625,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 997,
+            "top": 170.8937530517578,
+            "width": 16.20001220703125,
+            "height": 18
+          },
+          "fitted": {
+            "left": 987.6800000000001,
+            "top": 157.29375000000002,
+            "width": 25.6,
+            "height": 29.6
+          }
+        },
+        {
+          "player": "shanhetu_ally_997019_1",
+          "zoom": 1,
+          "action": "play",
+          "started": true,
+          "countBeforeUpdate": 0,
+          "originalScale": 0.8,
+          "originalParent": false,
+          "scale": 0.8,
+          "speed": 0.5,
+          "x": [
+            1,
+            0.87
+          ],
+          "y": [
+            0,
+            0.6
+          ],
+          "bounds": {
+            "left": 47,
+            "top": 234.375,
+            "right": 177,
+            "bottom": 414.375,
+            "width": 130,
+            "height": 180,
+            "x": 47,
+            "y": 234.375,
+            "bottomInBody": 456.625,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 157,
+            "top": 305.375,
+            "width": 20.25,
+            "height": 22.5
+          },
+          "fitted": {
+            "left": 148.29999999999998,
+            "top": 291.975,
+            "width": 25.6,
+            "height": 29.6
+          }
+        },
+        {
+          "player": "shanhetu_ally_997019_1",
+          "zoom": 1,
+          "action": "play3",
+          "started": true,
+          "countBeforeUpdate": 1,
+          "originalScale": 0.8,
+          "originalParent": false,
+          "scale": 0.8,
+          "speed": 0.5,
+          "x": [
+            1,
+            0.87
+          ],
+          "y": [
+            0,
+            0.6
+          ],
+          "bounds": {
+            "left": 47,
+            "top": 234.375,
+            "right": 177,
+            "bottom": 414.375,
+            "width": 130,
+            "height": 180,
+            "x": 47,
+            "y": 234.375,
+            "bottomInBody": 456.625,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 157,
+            "top": 305.375,
+            "width": 20.25,
+            "height": 22.5
+          },
+          "fitted": {
+            "left": 148.29999999999998,
+            "top": 291.975,
+            "width": 25.6,
+            "height": 29.6
+          }
+        },
+        {
+          "player": "shanhetu_ally_997019_1",
+          "zoom": 0.8,
+          "action": "play",
+          "started": true,
+          "countBeforeUpdate": 0,
+          "originalScale": 0.8,
+          "originalParent": false,
+          "scale": 0.8,
+          "speed": 0.5,
+          "x": [
+            1,
+            0.87
+          ],
+          "y": [
+            0,
+            0.6
+          ],
+          "bounds": {
+            "left": 60,
+            "top": 252.375,
+            "right": 164,
+            "bottom": 396.375,
+            "width": 104,
+            "height": 144,
+            "x": 60,
+            "y": 252.375,
+            "bottomInBody": 474.625,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 148,
+            "top": 309.17498779296875,
+            "width": 16.20001220703125,
+            "height": 18
+          },
+          "fitted": {
+            "left": 138.68,
+            "top": 295.57500000000005,
+            "width": 25.6,
+            "height": 29.6
+          }
+        },
+        {
+          "player": "shanhetu_ally_997019_1",
+          "zoom": 0.8,
+          "action": "play3",
+          "started": true,
+          "countBeforeUpdate": 1,
+          "originalScale": 0.8,
+          "originalParent": false,
+          "scale": 0.8,
+          "speed": 0.5,
+          "x": [
+            1,
+            0.87
+          ],
+          "y": [
+            0,
+            0.6
+          ],
+          "bounds": {
+            "left": 60,
+            "top": 252.375,
+            "right": 164,
+            "bottom": 396.375,
+            "width": 104,
+            "height": 144,
+            "x": 60,
+            "y": 252.375,
+            "bottomInBody": 474.625,
+            "canvasBottomInBody": 0
+          },
+          "badge": {
+            "left": 148,
+            "top": 309.17498779296875,
+            "width": 16.20001220703125,
+            "height": 18
+          },
+          "fitted": {
+            "left": 138.68,
+            "top": 295.57500000000005,
+            "width": 25.6,
+            "height": 29.6
+          }
+        }
+      ]
+    },
+    {
+      "style": "on",
+      "states": [
+        {
+          "phase": "zero",
+          "player": "caocao",
+          "value": 0,
+          "exists": false
+        },
+        {
+          "phase": "1",
+          "player": "caocao",
+          "value": 1,
+          "exists": true,
+          "direct": false,
+          "insideHp": true,
+          "count": 1,
+          "text": "1",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/decade/shield_decade.png\")",
+          "x": 110,
+          "y": 71,
+          "width": 20.25,
+          "height": 22.5,
+          "playerWidth": 130,
+          "number": null,
+          "hpText": true
+        },
+        {
+          "phase": "11",
+          "player": "caocao",
+          "value": 12,
+          "exists": true,
+          "direct": false,
+          "insideHp": true,
+          "count": 1,
+          "text": "12",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/decade/shield_decade.png\")",
+          "x": 110,
+          "y": 71,
+          "width": 20.25,
+          "height": 22.5,
+          "playerWidth": 130,
+          "number": null,
+          "hpText": true
+        },
+        {
+          "phase": "-10",
+          "player": "caocao",
+          "value": 2,
+          "exists": true,
+          "direct": false,
+          "insideHp": true,
+          "count": 1,
+          "text": "2",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/decade/shield_decade.png\")",
+          "x": 110,
+          "y": 71,
+          "width": 20.25,
+          "height": 22.5,
+          "playerWidth": 130,
+          "number": null,
+          "hpText": true
+        },
+        {
+          "phase": "-2",
+          "player": "caocao",
+          "value": 0,
+          "exists": false
+        },
+        {
+          "phase": "infinity",
+          "player": "caocao",
+          "value": null,
+          "exists": true,
+          "direct": false,
+          "insideHp": true,
+          "count": 1,
+          "text": "∞",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/decade/shield_decade.png\")",
+          "x": 110,
+          "y": 71,
+          "width": 20.25,
+          "height": 22.5,
+          "playerWidth": 130,
+          "number": null,
+          "hpText": true
+        },
+        {
+          "phase": "zero",
+          "player": "shanhetu_enemy_22473_0",
+          "value": 0,
+          "exists": false
+        },
+        {
+          "phase": "1",
+          "player": "shanhetu_enemy_22473_0",
+          "value": 1,
+          "exists": true,
+          "direct": false,
+          "insideHp": true,
+          "count": 1,
+          "text": "1",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/decade/shield_decade.png\")",
+          "x": 110,
+          "y": 101,
+          "width": 20.25,
+          "height": 22.5,
+          "playerWidth": 130,
+          "number": null,
+          "hpText": true
+        },
+        {
+          "phase": "11",
+          "player": "shanhetu_enemy_22473_0",
+          "value": 12,
+          "exists": true,
+          "direct": false,
+          "insideHp": true,
+          "count": 1,
+          "text": "12",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/decade/shield_decade.png\")",
+          "x": 110,
+          "y": 101,
+          "width": 20.25,
+          "height": 22.5,
+          "playerWidth": 130,
+          "number": null,
+          "hpText": true
+        },
+        {
+          "phase": "-10",
+          "player": "shanhetu_enemy_22473_0",
+          "value": 2,
+          "exists": true,
+          "direct": false,
+          "insideHp": true,
+          "count": 1,
+          "text": "2",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/decade/shield_decade.png\")",
+          "x": 110,
+          "y": 101,
+          "width": 20.25,
+          "height": 22.5,
+          "playerWidth": 130,
+          "number": null,
+          "hpText": true
+        },
+        {
+          "phase": "-2",
+          "player": "shanhetu_enemy_22473_0",
+          "value": 0,
+          "exists": false
+        },
+        {
+          "phase": "infinity",
+          "player": "shanhetu_enemy_22473_0",
+          "value": null,
+          "exists": true,
+          "direct": false,
+          "insideHp": true,
+          "count": 1,
+          "text": "∞",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/decade/shield_decade.png\")",
+          "x": 110,
+          "y": 101,
+          "width": 20.25,
+          "height": 22.5,
+          "playerWidth": 130,
+          "number": null,
+          "hpText": true
+        },
+        {
+          "phase": "zero",
+          "player": "shanhetu_ally_997019_1",
+          "value": 0,
+          "exists": false
+        },
+        {
+          "phase": "1",
+          "player": "shanhetu_ally_997019_1",
+          "value": 1,
+          "exists": true,
+          "direct": false,
+          "insideHp": true,
+          "count": 1,
+          "text": "1",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/decade/shield_decade.png\")",
+          "x": 110,
+          "y": 86,
+          "width": 20.25,
+          "height": 22.5,
+          "playerWidth": 130,
+          "number": null,
+          "hpText": true
+        },
+        {
+          "phase": "11",
+          "player": "shanhetu_ally_997019_1",
+          "value": 12,
+          "exists": true,
+          "direct": false,
+          "insideHp": true,
+          "count": 1,
+          "text": "12",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/decade/shield_decade.png\")",
+          "x": 110,
+          "y": 86,
+          "width": 20.25,
+          "height": 22.5,
+          "playerWidth": 130,
+          "number": null,
+          "hpText": true
+        },
+        {
+          "phase": "-10",
+          "player": "shanhetu_ally_997019_1",
+          "value": 2,
+          "exists": true,
+          "direct": false,
+          "insideHp": true,
+          "count": 1,
+          "text": "2",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/decade/shield_decade.png\")",
+          "x": 110,
+          "y": 86,
+          "width": 20.25,
+          "height": 22.5,
+          "playerWidth": 130,
+          "number": null,
+          "hpText": true
+        },
+        {
+          "phase": "-2",
+          "player": "shanhetu_ally_997019_1",
+          "value": 0,
+          "exists": false
+        },
+        {
+          "phase": "infinity",
+          "player": "shanhetu_ally_997019_1",
+          "value": null,
+          "exists": true,
+          "direct": false,
+          "insideHp": true,
+          "count": 1,
+          "text": "∞",
+          "image": "url(\"http://127.0.0.1:8130/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/decade/shield_decade.png\")",
+          "x": 110,
+          "y": 86,
+          "width": 20.25,
+          "height": 22.5,
+          "playerWidth": 130,
+          "number": null,
+          "hpText": true
+        },
+        {
+          "phase": "uninit",
+          "value": 3,
+          "exists": false
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "failures": [
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/preload.js"
+    },
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/theme/style/card"
+    },
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/皮肤切换/style/adjustBox.css"
+    },
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/effect_loseHp.skel"
+    },
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/effect_loseHp.atlas"
+    },
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/effect_baguazhen.skel"
+    },
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/effect_baguazhen.atlas"
+    },
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/effect_baiyinshizi.skel"
+    },
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/effect_baiyinshizi.atlas"
+    },
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/globaltexiao/huifushuzi/shuzi2.skel"
+    },
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/globaltexiao/huifushuzi/shuzi2.atlas"
+    },
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.skel"
+    },
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.atlas"
+    },
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/image/styles/decade/border_campOL1.png"
+    },
+    {
+      "style": "onlineUI",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/标记补充/animation/OL特效/OL额外/qimenhujia.json"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/preload.js"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/theme/style/card"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/皮肤切换/style/adjustBox.css"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/src/overrides/player/card-actions-shizhounian.js"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/effect_loseHp.skel"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/effect_loseHp.atlas"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/effect_baguazhen.skel"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/effect_baguazhen.atlas"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/effect_baiyinshizi.skel"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/effect_baiyinshizi.atlas"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/globaltexiao/huifushuzi/shuzi2.skel"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/globaltexiao/huifushuzi/shuzi2.atlas"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.skel"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/十周年UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.atlas"
+    },
+    {
+      "style": "on",
+      "status": 404,
+      "url": "http://127.0.0.1:8130/extension/标记补充/animation/OL特效/OL额外/qimenhujia.json"
+    }
+  ],
+  "passed": true
+}

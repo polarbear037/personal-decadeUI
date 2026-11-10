@@ -1,9 +1,24 @@
 import { ui, lib, get } from "noname";
+import { isOnlineTooltip, createOfficialTooltip, layoutOfficialTooltip } from "./officialTooltip.js";
 class t {
 	constructor() {
 		((this.tooltip = null), (this.currentButton = null), (this.hideTimeout = null), (this.showTimeout = null), (this.showDelay = 500));
 	}
 	createTooltip() {
+		if (isOnlineTooltip()) {
+			if (!this.tooltip?.dataset.decadeTooltip) {
+				this.tooltip?.remove();
+				this.tooltip = document.createElement("div");
+				this.tooltip.className = "skill-button-tooltip decade-official-tooltip-host";
+				this.tooltip.dataset.decadeTooltip = "skill";
+				this.tooltip.style.cssText = "position:absolute;z-index:99999;display:none;opacity:0";
+				ui.window.append(this.tooltip);
+				this.tooltip.addEventListener("mouseenter", () => clearTimeout(this.hideTimeout));
+				this.tooltip.addEventListener("mouseleave", () => this.hide());
+			}
+			return this.tooltip;
+		}
+		if (this.tooltip?.dataset.decadeTooltip) { this.tooltip.remove(); this.tooltip = null; }
 		return (this.tooltip || ((this.tooltip = document.createElement("div")), (this.tooltip.className = "skill-button-tooltip"), (this.tooltip.style.cssText = "\n\t\t\tposition: absolute;\n\t\t\tbackground: rgba(0, 0, 0, 0.9);\n\t\t\tcolor: white;\n\t\t\tpadding: 10px 15px;\n\t\t\tborder-radius: 4px;\n\t\t\tborder: 1px solid white;\n\t\t\tfont-family: yuanli, sans-serif;\n\t\t\tfont-size: 14px;\n\t\t\tline-height: 1.6;\n\t\t\tmax-width: 300px;\n\t\t\tword-wrap: break-word;\n\t\t\tz-index: 99999;\n\t\t\tpointer-events: none;\n\t\t\topacity: 0;\n\t\t\ttransition: opacity 0.2s ease;\n\t\t\tbox-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);\n\t\t"), ui.arena.appendChild(this.tooltip)), this.tooltip);
 	}
 	getElementPosition(element) {
@@ -113,22 +128,43 @@ class t {
 			clearTimeout(this.showTimeout),
 			(this.currentButton = button),
 			(this.showTimeout = setTimeout(() => {
-				if (this.currentButton !== button) return;
+				if (this.currentButton !== button || !button.isConnected) return;
 				const tooltip = this.createTooltip(),
 					skillInfo = this.getSkillDescription(skillName, player),
 					formattedInfo = this.formatSkillDescription(skillInfo),
 					skillTranslation = lib.translate[skillName] || get.translation(skillName) || skillName;
-				((tooltip.innerHTML = `<strong style="font-size: 20px;">${skillTranslation}</strong><br>${formattedInfo}`),
+				if (isOnlineTooltip()) {
+					tooltip.replaceChildren(createOfficialTooltip("skill", skillTranslation, skillInfo));
+				} else tooltip.innerHTML = `<strong style="font-size: 20px;">${skillTranslation}</strong><br>${formattedInfo}`;
+				(
 					(tooltip.style.opacity = "0"),
 					(tooltip.style.display = "block"),
 					(tooltip.style.left = "-9999px"),
 					(tooltip.style.top = "-9999px"),
 					requestAnimationFrame(() => {
+						if (this.currentButton !== button || !button.isConnected) return this.hide();
 						this.positionTooltip(tooltip, button);
+						document.fonts?.ready.then(() => {
+							if (this.currentButton === button && button.isConnected) this.positionTooltip(tooltip, button);
+						});
 					}));
 			}, this.showDelay)));
 	}
 	positionTooltip(tooltip, button) {
+		if (tooltip.dataset.decadeTooltip) {
+			layoutOfficialTooltip(tooltip);
+			const parent = tooltip.offsetParent || ui.window;
+			const bounds = parent.getBoundingClientRect(), anchor = button.getBoundingClientRect();
+			const scaleX = bounds.width / parent.offsetWidth || 1, scaleY = bounds.height / parent.offsetHeight || 1;
+			const width = tooltip.offsetWidth, height = tooltip.offsetHeight;
+			const left = (anchor.left + anchor.width / 2 - bounds.left) / scaleX - width / 2;
+			let top = (anchor.top - bounds.top) / scaleY - height - 10;
+			if (top < 5) top = (anchor.bottom - bounds.top) / scaleY + 10;
+			tooltip.style.left = `${Math.max(5, Math.min(left, parent.offsetWidth - width - 5))}px`;
+			tooltip.style.top = `${Math.max(5, Math.min(top, parent.offsetHeight - height - 5))}px`;
+			tooltip.style.opacity = "1";
+			return;
+		}
 		const buttonPos = this.getElementPosition(button),
 			tooltipWidth = tooltip.offsetWidth,
 			tooltipHeight = tooltip.offsetHeight;
@@ -139,6 +175,17 @@ class t {
 		((tooltip.style.left = `${left}px`), (tooltip.style.top = `${top}px`), (tooltip.style.opacity = "1"));
 	}
 	hide() {
+		// 官方长说明允许从按钮移到提示内滚动；进入提示时取消此延时。
+		if (this.tooltip?.dataset.decadeTooltip) {
+			clearTimeout(this.showTimeout);
+			clearTimeout(this.hideTimeout);
+			this.hideTimeout = setTimeout(() => {
+				this.tooltip.style.display = "none";
+				this.tooltip.style.opacity = "0";
+				this.currentButton = null;
+			}, 200);
+			return;
+		}
 		(clearTimeout(this.showTimeout),
 			this.tooltip
 				? ((this.tooltip.style.opacity = "0"),

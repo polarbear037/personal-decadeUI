@@ -1,8 +1,29 @@
-import { ui, _status, lib, get } from "noname";
+import { ui, _status, lib, get, game } from "noname";
 import { element as element } from "../utils/element.js";
+const characterVoicePlayed = new WeakMap();
+function playCharacterSelectionVoice(node) {
+	if (lib.config.extension_十周年UI_newDecadeStyle !== "onlineUI" || !node.classList.contains("selectable") || node.classList.contains("noclick")) return;
+	const event = _status.event;
+	if (_status.dragged || _status.clicked || _status.tempNoButton || _status.draggingtouchdialog || _status.justdragged || typeof event?.custom?.replace?.button === "function") return;
+	if (event?.name !== "chooseButton" || typeof event.isMine === "function" && !event.isMine()) return;
+	const characterName = node.link;
+	if (!characterName || characterVoicePlayed.get(node) === characterName) return;
+	const character = lib.character[characterName];
+	const skills = Array.isArray(character) ? character[3] : character?.skills;
+	const voicedSkills = (skills || []).filter(skill => lib.skill[skill]?.audio && !lib.skill[skill]?.silent);
+	if (!voicedSkills.length) return;
+	characterVoicePlayed.set(node, characterName);
+	const skill = voicedSkills[Math.floor(Math.random() * voicedSkills.length)];
+	game.trySkillAudio(skill, characterName, true, true);
+}
 function n() {
 	return function (item, type, position, noclick, node) {
 		(node ? (node.classList.add("button", "character", "decadeUI"), (node.style.display = "")) : (node = ui.create.div(".button.character.decadeUI")), (node._link = item), "characterx" === type && (_status.noReplaceCharacter ? (type = "character") : lib.characterReplace[item]?.length && (item = lib.characterReplace[item].randomGet())), "characterx" === type && lib.characterReplace[item]?.length && (item = lib.characterReplace[item].randomGet()), (node.link = item), decadeUI.element.create("character", node));
+		const clickType = lib.config.touchscreen ? "touchend" : "click";
+		if (!node._decadeCharacterVoiceHandler) {
+			node._decadeCharacterVoiceHandler = () => playCharacterSelectionVoice(node);
+			node.addEventListener(clickType, node._decadeCharacterVoiceHandler, true);
+		}
 		return (
 			get.is.double(node._link, !0) && (node._changeGroup = !0),
 			"characterx" === type && lib.characterReplace[node._link]?.length > 1 && (node._replaceButton = !0),

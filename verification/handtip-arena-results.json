@@ -1,0 +1,14 @@
+{
+  "afterClear": {
+    "same": true,
+    "connected": true,
+    "infoConnected": true
+  },
+  "afterReplace": {
+    "parent": true,
+    "infoParent": true
+  },
+  "activeRecovered": true,
+  "poolSize": 1,
+  "errors": []
+}

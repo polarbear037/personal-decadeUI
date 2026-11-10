@@ -1,4 +1,5 @@
 import { lib, get, _status } from "noname";
+import { rememberEquipPresentation, updateEquipPresentation, refreshEquipLayout } from "./equip-layout.js";
 const e = {
 		界: "jie",
 		神: "shen",
@@ -245,80 +246,7 @@ if (!lib.config["extension_十周年UI_aloneEquip"]) {
 	//装备栏美化
 	lib.element.player.$addVirtualEquip = function (card, cards) {
 		const player = this;
-		const isViewAsCard = cards.length !== 1 || cards[0].name !== card.name,
-			info = get.info(card, false);
-		let cardShownName = get.translation(card.name);
-		let cardname = card.name;
-		let type = info.type;
-		let subtype = get.subtypes(card)[0];
-		let backgroundURL;
-		//装备栏背景图
-		if (type != "equip") {
-			backgroundURL = decadeUIPath + "/image/ui/equip/online/equip5.png";
-		} else if (subtype) {
-			if (card.name == "liulongcanjia") backgroundURL = decadeUIPath + "/image/ui/equip/online/liulongcanjia.png";
-			else {
-				backgroundURL = decadeUIPath + "/image/ui/equip/online/" + subtype + ".png";
-			}
-		}
-		//装备名称列表
-		let SSEquip = {
-			爪黄飞电: "爪黄&nbsp;&nbsp;+1",
-			大宛: "大宛&nbsp;&nbsp;-1",
-			绝影: "绝影&nbsp;&nbsp;+1",
-			赤兔: "赤兔&nbsp;&nbsp;-1",
-			骅骝: "骅骝&nbsp;&nbsp;+1",
-			紫骍: "紫骍&nbsp;&nbsp;-1",
-			的卢: "的卢&nbsp;&nbsp;+1",
-			吴六剑: "吴六剑&nbsp;2",
-			机关弩: "机关弩&nbsp;1",
-			雌雄双股剑: "雌雄剑&nbsp;2",
-			方天画戟: "方天戟&nbsp;4",
-			贯石斧: "贯石斧&nbsp;3",
-			寒冰剑: "寒冰剑&nbsp;2",
-			麒麟弓: "麒麟弓&nbsp;5",
-			青釭剑: "青釭剑&nbsp;2",
-			青龙偃月刀: "青龙刀&nbsp;3",
-			丈八蛇矛: "丈八矛&nbsp;3",
-			古锭刀: "古锭刀&nbsp;2",
-			朱雀羽扇: "朱雀扇&nbsp;4",
-			七宝刀: "七宝刀&nbsp;2",
-			银月枪: "银月枪&nbsp;3",
-			衠钢槊: "衠钢槊&nbsp;3",
-			飞龙夺凤: "飞龙刀&nbsp;2",
-			三尖两刃刀: "三尖刀&nbsp;3",
-			诸葛连弩: "诸葛弩&nbsp;1",
-			倚天剑: "倚天剑&nbsp;2",
-			七星宝刀: "七星刀&nbsp;2",
-			折戟: "折戟&nbsp;&nbsp;0",
-			无锋剑: "无锋剑&nbsp;1",
-			涯角枪: "涯角枪&nbsp;3",
-			五行鹤翎扇: "五行扇&nbsp;4",
-			断剑: "断剑&nbsp;&nbsp;0",
-			霹雳车: "霹雳车&nbsp;9",
-			水波剑: "水波剑&nbsp;2",
-			红缎枪: "红缎枪&nbsp;3",
-			天雷刃: "天雷刃&nbsp;4",
-			混毒弯匕: "混毒匕&nbsp;1",
-			元戎精械弩: "精械弩&nbsp;3",
-			乌铁锁链: "铁锁链&nbsp;3",
-			太极拂尘: "太极拂&nbsp;5",
-			灵宝仙壶: "灵宝壶&nbsp;3",
-			冲应神符: "冲应符",
-			先天八卦阵: "先天八卦",
-			八卦阵: "八卦",
-			照月狮子盔: "狮子盔",
-			玲珑狮蛮带: "狮蛮带",
-			束发紫金冠: "紫金冠",
-			红棉百花袍: "百花袍",
-			无双方天戟: "方天戟",
-			白银狮子: "银狮子",
-			仁王金刚盾: "金剛盾",
-			桐油百韧甲: "百韧甲",
-			定澜夜明珠: "夜明珠",
-			霹雳投石车: "霹雳车",
-		};
-		if (SSEquip[cardShownName]) cardShownName = SSEquip[cardShownName];
+		const isViewAsCard = cards.length !== 1 || cards[0].name !== card.name;
 		const cardx = isViewAsCard ? game.createCard(card) : cards[0];
 		cardx.fix();
 		const cardSymbol = Symbol("card");
@@ -329,35 +257,7 @@ if (!lib.config["extension_十周年UI_aloneEquip"]) {
 		cardx.classList.remove("drawinghidden");
 		delete cardx._transform;
 
-		const number = get.strNumber(cardx.number);
-		let suitImgHtml = "";
-		let numPrefix = "";
-
-		if (cardx.suit === "heart") {
-			suitImgHtml = '<img src="extension/十周年UI/images/suit/heart.png" style="width:14px;height:auto;vertical-align:middle;" class="mark-suit">';
-			numPrefix = "r";
-		} else if (cardx.suit === "diamond") {
-			suitImgHtml = '<img src="extension/十周年UI/images/suit/diamond.png" style="width:14px;height:auto;vertical-align:middle;" class="mark-suit">';
-			numPrefix = "r";
-		} else if (cardx.suit === "spade") {
-			suitImgHtml = '<img src="extension/十周年UI/images/suit/spade.png" style="width:14px;height:auto;vertical-align:middle;" class="mark-suit">';
-			numPrefix = "b";
-		} else if (cardx.suit === "club") {
-			suitImgHtml = '<img src="extension/十周年UI/images/suit/club.png" style="width:14px;height:auto;vertical-align:middle;" class="mark-suit">';
-			numPrefix = "b";
-		} else {
-			suitImgHtml = "";
-		}
-
-		// 拼接图片，自动支持1(A)~13(K)
-		const numImgHtml = `<img src="extension/十周年UI/images/number/${numPrefix}${cardx.number}.png" style="width:14px;height:auto;vertical-align:middle;margin-left:-2px;">`;
-
-		const imgStyle = `opacity:1;height:72%;margin-left:2px;margin-top:-1px;position:absolute;` + (lib.config["extension_十周年UI_newDecadeStyle"] == "on" ? "margin-left:-5.5px;" : "");
-
-		cardx.node.name2.innerHTML = `<img src="${backgroundURL}" style="${imgStyle}">
-    <span style="font-size:14px;margin-left:15px;margin-top:-1.5px;display:inline-block;">${suitImgHtml}</span>
-    ${numImgHtml}
-    <span style="font-size:17px;color:white;margin-top:1px;margin-left:2px;">${cardShownName}</span>`;
+		updateEquipPresentation(cardx, card);
 
 		if (isViewAsCard) {
 			cardx.cards = cards || [];
@@ -382,5 +282,14 @@ if (!lib.config["extension_十周年UI_aloneEquip"]) {
 			player.node.equips.appendChild(cardx);
 			if (cards?.length && _status.discarded) _status.discarded.removeArray(cards);
 		}
+	};
+} else {
+	// 独立装备栏沿用本体装备流程，在本体改写 name2 前保存原始节点。
+	const addVirtualEquip = lib.element.player.$addVirtualEquip;
+	lib.element.player.$addVirtualEquip = function (card, cards) {
+		for (const source of cards || []) rememberEquipPresentation(source);
+		const result = addVirtualEquip.apply(this, arguments);
+		refreshEquipLayout(this);
+		return result;
 	};
 }

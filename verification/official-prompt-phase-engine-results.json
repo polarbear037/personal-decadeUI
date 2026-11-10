@@ -1,0 +1,108 @@
+{
+  "nativeCaption": "请选择要使用的牌",
+  "before": {
+    "main": "出牌阶段，请选择一张卡牌",
+    "progress": "",
+    "card": null,
+    "selected": [],
+    "targets": 0,
+    "officialId": null,
+    "cardColors": [
+      {
+        "text": "出牌阶段",
+        "color": "rgb(255, 216, 0)"
+      }
+    ],
+    "visible": true
+  },
+  "selectedSha": {
+    "main": "请选择1名角色，作为杀的目标",
+    "progress": "",
+    "card": "sha",
+    "selected": [
+      "sha"
+    ],
+    "targets": 0,
+    "officialId": "1",
+    "cardColors": [
+      {
+        "text": "杀",
+        "color": "rgb(255, 216, 0)"
+      }
+    ],
+    "visible": true
+  },
+  "selectedTarget": {
+    "main": "请选择1名角色，作为杀的目标",
+    "progress": "",
+    "card": "sha",
+    "selected": [
+      "sha"
+    ],
+    "targets": 1,
+    "officialId": "1",
+    "cardColors": [
+      {
+        "text": "杀",
+        "color": "rgb(255, 216, 0)"
+      }
+    ],
+    "visible": true
+  },
+  "deselected": {
+    "main": "出牌阶段，请选择一张卡牌",
+    "progress": "",
+    "card": null,
+    "selected": [],
+    "targets": 0,
+    "officialId": null,
+    "cardColors": [
+      {
+        "text": "出牌阶段",
+        "color": "rgb(255, 216, 0)"
+      }
+    ],
+    "visible": true
+  },
+  "selectedTrick": {
+    "main": "请选择一名角色，弃置其一张牌",
+    "progress": "",
+    "card": "guohe",
+    "selected": [
+      "guohe"
+    ],
+    "targets": 0,
+    "officialId": "5",
+    "cardColors": [],
+    "visible": true
+  },
+  "afterSwitch": {
+    "main": "出牌阶段，请选择一张卡牌",
+    "progress": "",
+    "card": null,
+    "selected": [],
+    "targets": 0,
+    "officialId": null,
+    "cardColors": [
+      {
+        "text": "出牌阶段",
+        "color": "rgb(255, 216, 0)"
+      }
+    ],
+    "visible": true
+  },
+  "canceled": {
+    "main": "",
+    "progress": "",
+    "card": null,
+    "selected": [],
+    "targets": 0,
+    "officialId": null,
+    "cardColors": [],
+    "visible": false
+  },
+  "cancelResult": {
+    "confirm": "cancel",
+    "bool": false
+  }
+}

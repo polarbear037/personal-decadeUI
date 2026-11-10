@@ -1,5 +1,28 @@
 import { lib, game, get } from "noname";
 import { isDoubleCharacterMode as isDoubleCharacterMode } from "./characterBackground.js";
+const ONLINE_CONVERSION_ICON_ROOT = "extension/十周年UI/ui/assets/skill/online";
+
+function getConversionDisplaySrc(state) {
+	if (lib.config.extension_十周年UI_newDecadeStyle === "onlineUI") {
+		return `${lib.assetURL}${ONLINE_CONVERSION_ICON_ROOT}/skillitem_yinyang_${state === "yang" ? "bg" : "bg_1"}.png`;
+	}
+	return `extension/十周年UI/ui/assets/skill/baby/${state === "yang" ? "mark_yanghs.png" : "mark_yinghs.png"}`;
+}
+
+function bindConversionIconUpdates() {
+	if (typeof document === "undefined" || document.__decadeUIConversionIconUpdates) return;
+	const handler = event => {
+		const detail = event.detail;
+		if (!detail?.skill || !detail.state) return;
+		for (const box of document.querySelectorAll(".baby_skill_box[data-skill]")) {
+			if (box.dataset.skill !== detail.skill) continue;
+			const icon = box.querySelector(".baby_skill_conversion_mark");
+			if (icon) icon.src = getConversionDisplaySrc(detail.state);
+		}
+	};
+	document.addEventListener("decadeui:conversion-icon-change", handler);
+	document.__decadeUIConversionIconUpdates = handler;
+}
 function t() {
 	const playerSkillArrays = /* @__PURE__ */ new WeakMap(),
 		getAllPlayersCount = () => game.players.length + (game.dead?.length || 0),
@@ -68,12 +91,18 @@ function t() {
 					return null;
 				})(e, player);
 				if (a) {
-					const e = document.createElement("img");
-					((e.src = `extension/十周年UI/ui/assets/skill/baby/${a}`), Object.assign(e.style, { position: "absolute", top: "3px", right: "-15px", width: "16px", height: "16px", zIndex: "103" }), n.appendChild(e));
+					const icon = document.createElement("img");
+					if (get.is.zhuanhuanji(e, player)) {
+						icon.className = "baby_skill_conversion_mark";
+						const markNode = player?.node?.xSkillMarks?.querySelector(`.skillMarkItem.zhuanhuanji[data-id="${e}"]`);
+						icon.src = getConversionDisplaySrc(markNode?.classList.contains("yin") ? "yin" : "yang");
+					} else icon.src = `extension/十周年UI/ui/assets/skill/baby/${a}`;
+					Object.assign(icon.style, { position: "absolute", top: "3px", right: "-15px", width: "16px", height: "16px", zIndex: "103" });
+					n.appendChild(icon);
 				}
 				p.appendChild(n);
 			}),
-				i.parentNode.appendChild(p));
+				i.parentNode.appendChild(p), bindConversionIconUpdates());
 		},
 		updateSkillArray = (player, skill, add = !0) => {
 			if (getAllPlayersCount() > 5 || !i(skill, player)) return;
@@ -132,6 +161,6 @@ function n() {
 	for (const player of [...game.players, ...(game.dead || [])]) player.node?.avatar?.parentNode?.querySelectorAll(".baby_skill").forEach(e => e.remove());
 }
 function i() {
-	("babysha" === lib.config.extension_十周年UI_newDecadeStyle && game.players.length <= 5 && t(), (lib.clearAllSkillDisplay = n));
+	(bindConversionIconUpdates(), "babysha" === lib.config.extension_十周年UI_newDecadeStyle && game.players.length <= 5 && t(), (lib.clearAllSkillDisplay = n));
 }
 export { n as clearAllSkillDisplay, t as initSkillDisplay, i as setupSkillDisplay };

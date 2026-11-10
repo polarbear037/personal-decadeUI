@@ -186,8 +186,8 @@
 }
 
 /* 技能弹窗出现时，自动隐藏出牌提示 自改 */
-#arena.decadeUI:has(.dialog.prompt:not(:empty)) .hand-tip,
-#arena.decadeUI:has(.dialog.prompt:not(:empty)) .hand-tip-info {
+#arena.decadeUI:has(> .dialog.prompt:not(.hidden):not(.removing):not([style*="display: none"]):not([data-decade-optimized-prompt]):not(:empty)) .hand-tip:not(.decade-optimized-hand-tip),
+#arena.decadeUI:has(> .dialog.prompt:not(.hidden):not(.removing):not([style*="display: none"]):not([data-decade-optimized-prompt]):not(:empty)) .hand-tip-info {
  	display: none !important;
 }
 /*出牌响应提示*/

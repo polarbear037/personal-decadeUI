@@ -50,8 +50,15 @@ function o(t) {
 	})(n.trashBin);
 	return e || t;
 }
+function getExplicitOutcropImage(characterName) {
+	const marker = lib.character?.[characterName]?.trashBin?.find(value => typeof value === "string" && value.startsWith("outcrop:"));
+	const image = marker?.slice(8);
+	return image && image !== "original" ? image : null;
+}
 function s(n, e) {
 	if (!(e = e ?? r()) || "off" === e || !t[e]) return null;
+	const explicitImage = getExplicitOutcropImage(n);
+	if (explicitImage) return explicitImage;
 	const s = o(n),
 		i = t[e],
 		c = a(n);
@@ -74,6 +81,7 @@ function i(path) {
 }
 async function c(n, e, s) {
 	if (!e || !n) return !1;
+	e.classList.remove("has-explicit-outcrop");
 	const request = {};
 	avatarRequests.set(e, request);
 	const isCurrentRequest = () => avatarRequests.get(e) === request;
@@ -91,6 +99,14 @@ async function c(n, e, s) {
 		const exists = await i(imageUrl);
 		if (!isCurrentRequest()) return !1;
 		return exists ? (e.style.setProperty("background-image", `url("${imageUrl}")`, "important"), e.classList.add("has-outcrop"), !0) : (e.classList.remove("has-outcrop"), !1);
+	}
+	// 独立角色可提供扩展内的真实露头PNG，沿用同一加载缓存、暗将保护与请求失效检查。
+	const explicitImage = getExplicitOutcropImage(n);
+	if (explicitImage) {
+		const exists = await i(explicitImage);
+		if (!isCurrentRequest()) return !1;
+		if (exists) return ((e.style.backgroundImage = `url("${explicitImage}")`), e.classList.add("has-outcrop", "has-explicit-outcrop"), !0);
+		return (e.classList.remove("has-outcrop"), !1);
 	}
 	const f = o(n),
 		l = [],

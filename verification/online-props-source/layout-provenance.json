@@ -1,0 +1,45 @@
+{
+  "apkSha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+  "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb!main.sgs",
+  "mainSha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "files": [
+    {
+      "file": "Dns.js",
+      "startCharacter": 19433137,
+      "endCharacter": 19434361,
+      "sha256": "76183735de6e32ab708ed7cf06ad231b7dbd31e4afbd90a36924e0ed3e0bca58"
+    },
+    {
+      "file": "Gns.js",
+      "startCharacter": 19434361,
+      "endCharacter": 19447940,
+      "sha256": "24235afa0b4bba6dc61301214687c95104efdc602575263a081e7095ac781ecd"
+    },
+    {
+      "file": "EnsTarget.js",
+      "startCharacter": 19322922,
+      "endCharacter": 19324540,
+      "sha256": "5ea448cf5405d9500c2521a0055c4ad32e3968c50663b196b10c17e297b9e72d"
+    }
+  ],
+  "seat": {
+    "width": 174,
+    "height": 232,
+    "arrow": {
+      "x": 63,
+      "topWith24pxText": -11,
+      "width": 62,
+      "height": 58,
+      "moveDistance": 10,
+      "duration": 500
+    },
+    "tip": {
+      "x": 26,
+      "y": 105,
+      "width": 142,
+      "height": 41,
+      "fontSize": 24,
+      "color": "#FFFF00"
+    }
+  }
+}

@@ -1,0 +1,120 @@
+@font-face {
+	font-family: "dui-online-player-tip";
+	src: url("../../ui/assets/fonts/FZLBGBK.ttf") format("truetype");
+	font-display: swap;
+}
+
+/* Ens：立绘146×225，思考条180×22，次数条190×22；底图为原seat图集切片。 */
+body[data-style="onlineUI"] .player > .decade-online-player-tip,
+body[data-style="onlineUI"] .player > .decade-online-sha-toast {
+	/* 当前牌桌的文字比例，保留完整技能提示所需空间。 */
+	--online-tip-text-scale: 0.72;
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	bottom: auto;
+	width: calc(100% * 180 / 146);
+	height: auto;
+	aspect-ratio: 180 / 22;
+	container-type: inline-size;
+	margin: 0;
+	padding: 0;
+	transform: translateX(-50%);
+	background: url("../../image/ui/tip/online/seat_opt_tips_bg.png") center / 100% 100% no-repeat;
+	color: #dbc7a5;
+	font-family: "dui-online-player-tip", sans-serif;
+	font-weight: normal;
+	text-shadow: none;
+	pointer-events: none;
+	z-index: 92;
+	transition: none;
+}
+
+.decade-online-player-tip > .decade-online-thinking-text {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-size: calc(100cqw * 22 / 180 * var(--online-tip-text-scale));
+	line-height: 1;
+	letter-spacing: calc(100cqw / 180 * var(--online-tip-text-scale));
+	white-space: nowrap;
+}
+
+.decade-online-thinking-text > span {
+	white-space: pre;
+	color: #ffd800;
+}
+
+.decade-online-player-tip[data-kind="discard"] > .decade-online-thinking-text > span {
+	color: #ff5050;
+}
+
+body[data-style="onlineUI"] .player > .decade-online-sha-toast {
+	width: calc(100% * 190 / 146);
+	aspect-ratio: 190 / 22;
+	animation: decade-online-sha-enter 150ms linear both;
+}
+
+.decade-online-sha-toast > .decade-online-sha-line {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-size: calc(100cqw * 18 / 190 * var(--online-tip-text-scale));
+	font-weight: bold;
+	line-height: 1;
+	letter-spacing: calc(100cqw / 190 * var(--online-tip-text-scale));
+	white-space: pre;
+}
+
+.decade-online-sha-label { color: #f1dbb5; }
+.decade-online-sha-max { color: #e4d5a0; }
+.decade-online-sha-current { position: relative; color: #df9845; }
+.decade-online-sha-current.is-zero,
+.decade-online-sha-current > .is-zero { color: #b3b3b3; }
+.decade-online-sha-toast[data-unlimited="true"] > .decade-online-sha-line { font-weight: normal; }
+.decade-online-sha-toast[data-unlimited="true"] .decade-online-sha-label { color: #e4d5a0; }
+.decade-online-sha-current.is-changing { color: transparent; }
+.decade-online-sha-current.is-changing > span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #df9845;
+}
+.decade-online-sha-current.is-changing > .is-zero { color: #b3b3b3; }
+.decade-online-sha-old { animation: decade-online-sha-old 150ms linear both; }
+.decade-online-sha-incoming { animation: decade-online-sha-incoming 150ms linear both; }
+.decade-online-sha-current.is-changing > .decade-online-sha-glow {
+	animation: decade-online-sha-glow 300ms 150ms linear both;
+}
+
+body[data-style="onlineUI"] .player > .decade-online-sha-toast.is-leaving {
+	animation: decade-online-sha-leave 150ms linear both;
+}
+
+@keyframes decade-online-sha-enter {
+	from { opacity: 0; transform: translate(-50%, 0); }
+	to { opacity: 1; transform: translate(-50%, calc(100% + 2px)); }
+}
+@keyframes decade-online-sha-leave {
+	from { opacity: 1; transform: translate(-50%, calc(100% + 2px)); }
+	to { opacity: 0; transform: translate(-50%, 0); }
+}
+@keyframes decade-online-sha-old {
+	to { opacity: 0; transform: translateY(calc(var(--count-direction) * -1em)); }
+}
+@keyframes decade-online-sha-incoming {
+	from { opacity: 0; transform: translateY(calc(var(--count-direction) * 1em)); font-size: calc(22em / 18); }
+	to { opacity: 1; transform: translateY(0); font-size: 1em; }
+}
+@keyframes decade-online-sha-glow {
+	from { opacity: 1; font-size: calc(22em / 18); }
+	to { opacity: 0; font-size: calc(41em / 18); transform: translate(-3px, -5px); }
+}

@@ -1,0 +1,58 @@
+{
+  "samples": [
+    {
+      "label": "native-names",
+      "name": "chooseButton",
+      "choosing": true,
+      "display": "flex",
+      "okDisabled": true,
+      "targets": 0
+    },
+    {
+      "label": "name-selected",
+      "name": "chooseButton",
+      "choosing": true,
+      "display": "flex",
+      "okDisabled": false,
+      "targets": 0
+    },
+    {
+      "label": "virtual-target-choice",
+      "name": "chooseToUse",
+      "skill": "oljiaozhao_backup",
+      "result": true,
+      "choosing": true,
+      "display": "flex",
+      "okDisabled": true,
+      "targets": 0,
+      "card": "guohe"
+    },
+    {
+      "label": "virtual-target-selected",
+      "name": "chooseToUse",
+      "skill": "oljiaozhao_backup",
+      "result": true,
+      "choosing": true,
+      "display": "flex",
+      "okDisabled": false,
+      "targets": 1,
+      "card": "guohe"
+    },
+    {
+      "label": "settling",
+      "name": "_verify_printed_settlement",
+      "choosing": false,
+      "display": "none",
+      "targets": 0
+    },
+    {
+      "label": "after-virtual-use",
+      "name": "chooseToUse",
+      "choosing": true,
+      "display": "flex",
+      "okDisabled": true,
+      "targets": 0
+    }
+  ],
+  "errors": []
+}

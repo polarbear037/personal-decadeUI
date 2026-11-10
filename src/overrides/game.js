@@ -1,5 +1,6 @@
 import { get, game, lib, ui } from "noname";
 import { wrapAfter as wrapAfter } from "../utils/safeOverride.js";
+import { refreshOnlineMarkView } from "./player/marks.js";
 function a() {
 	const restoreFns = [];
 	return (
@@ -10,6 +11,7 @@ function a() {
 		),
 		restoreFns.push(
 			wrapAfter(game, "swapPlayer", function (result, player) {
+				refreshOnlineMarkView();
 				const list = [game.me, player].filter(Boolean);
 				if (
 					(lib.config.extension_十周年UI_aloneEquip && game.me && ui.equipSolts && game.me !== ui.equipSolts.me && (ui.equipSolts.me.appendChild(ui.equipSolts.equips), (ui.equipSolts.me = game.me), (ui.equipSolts.equips = game.me.node.equips), ui.equipSolts.appendChild(game.me.node.equips), "function" == typeof game.me.$syncExpand && game.me.$syncExpand()),
@@ -26,6 +28,7 @@ function a() {
 		),
 		restoreFns.push(
 			wrapAfter(game, "swapControl", function (result, player) {
+				refreshOnlineMarkView();
 				if ((lib.config.extension_十周年UI_aloneEquip && game.me && ui.equipSolts && game.me !== ui.equipSolts.me && (ui.equipSolts.me.appendChild(ui.equipSolts.equips), (ui.equipSolts.me = game.me), (ui.equipSolts.equips = game.me.node.equips), ui.equipSolts.appendChild(game.me.node.equips), "function" == typeof game.me.$syncExpand && game.me.$syncExpand()), ui.equipSolts && (game.me && "function" == typeof game.me.$handleEquipChange && game.me.$handleEquipChange(), player && "function" == typeof player.$handleEquipChange && player.$handleEquipChange()), player && "function" == typeof player.decadeUI_updateShowCards && player.decadeUI_updateShowCards(), lib.refreshPlayerSkills && (player && lib.refreshPlayerSkills(player), game.me && lib.refreshPlayerSkills(game.me)), lib.clearAllSkillDisplay && lib.clearAllSkillDisplay(), lib.refreshPlayerSkills)) {
 					game.players.concat(game.dead || []).forEach(e => lib.refreshPlayerSkills(e));
 				}

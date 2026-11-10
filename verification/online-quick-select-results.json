@@ -1,0 +1,277 @@
+{
+  "results": [
+    {
+      "kind": "give",
+      "mobile": false,
+      "geometry": {
+        "quick": {
+          "text": "一键选择",
+          "rect": {
+            "x": 373.71875,
+            "y": 601.890625,
+            "width": 108.375,
+            "height": 39.6875,
+            "top": 601.890625,
+            "right": 482.09375,
+            "bottom": 641.578125,
+            "left": 373.71875
+          },
+          "display": "flex"
+        },
+        "label": {
+          "text": "一键选择",
+          "rect": {
+            "x": 373.71875,
+            "y": 601.890625,
+            "width": 108.375,
+            "height": 39.6875,
+            "top": 601.890625,
+            "right": 482.09375,
+            "bottom": 641.578125,
+            "left": 373.71875
+          },
+          "display": "flex"
+        },
+        "ok": {
+          "text": "确定",
+          "rect": {
+            "x": 540.5,
+            "y": 594.75,
+            "width": 158,
+            "height": 54,
+            "top": 594.75,
+            "right": 698.5,
+            "bottom": 648.75,
+            "left": 540.5
+          },
+          "display": "flex"
+        },
+        "cancel": {
+          "text": "取消",
+          "rect": {
+            "x": 755.5,
+            "y": 598.25,
+            "width": 134,
+            "height": 47,
+            "top": 598.25,
+            "right": 889.5,
+            "bottom": 645.25,
+            "left": 755.5
+          },
+          "display": "flex"
+        },
+        "scale": 0.7632850241545893,
+        "linked": "AI代选",
+        "nativeCallback": true,
+        "first": true,
+        "last": true
+      }
+    },
+    {
+      "kind": "give",
+      "mobile": true,
+      "geometry": {
+        "quick": {
+          "text": "一键选择",
+          "rect": {
+            "x": 376.21875,
+            "y": 614.921875,
+            "width": 108.375,
+            "height": 39.6875,
+            "top": 614.921875,
+            "right": 484.59375,
+            "bottom": 654.609375,
+            "left": 376.21875
+          },
+          "display": "flex"
+        },
+        "label": {
+          "text": "一键选择",
+          "rect": {
+            "x": 376.21875,
+            "y": 614.921875,
+            "width": 108.375,
+            "height": 39.6875,
+            "top": 614.921875,
+            "right": 484.59375,
+            "bottom": 654.609375,
+            "left": 376.21875
+          },
+          "display": "flex"
+        },
+        "ok": {
+          "text": "确定",
+          "rect": {
+            "x": 543,
+            "y": 607.78125,
+            "width": 158,
+            "height": 54,
+            "top": 607.78125,
+            "right": 701,
+            "bottom": 661.78125,
+            "left": 543
+          },
+          "display": "flex"
+        },
+        "cancel": {
+          "text": "取消",
+          "rect": {
+            "x": 758,
+            "y": 611.28125,
+            "width": 134,
+            "height": 47,
+            "top": 611.28125,
+            "right": 892,
+            "bottom": 658.28125,
+            "left": 758
+          },
+          "display": "flex"
+        },
+        "scale": 0.7632850241545893,
+        "linked": "AI代选",
+        "nativeCallback": true,
+        "first": true,
+        "last": true
+      }
+    },
+    {
+      "kind": "discard",
+      "mobile": false,
+      "geometry": {
+        "quick": {
+          "text": "一键选择",
+          "rect": {
+            "x": 373.71875,
+            "y": 601.890625,
+            "width": 108.375,
+            "height": 39.6875,
+            "top": 601.890625,
+            "right": 482.09375,
+            "bottom": 641.578125,
+            "left": 373.71875
+          },
+          "display": "flex"
+        },
+        "label": {
+          "text": "一键选择",
+          "rect": {
+            "x": 373.71875,
+            "y": 601.890625,
+            "width": 108.375,
+            "height": 39.6875,
+            "top": 601.890625,
+            "right": 482.09375,
+            "bottom": 641.578125,
+            "left": 373.71875
+          },
+          "display": "flex"
+        },
+        "ok": {
+          "text": "确定",
+          "rect": {
+            "x": 540.5,
+            "y": 594.75,
+            "width": 158,
+            "height": 54,
+            "top": 594.75,
+            "right": 698.5,
+            "bottom": 648.75,
+            "left": 540.5
+          },
+          "display": "flex"
+        },
+        "cancel": {
+          "text": "取消",
+          "rect": {
+            "x": 755.5,
+            "y": 598.25,
+            "width": 134,
+            "height": 47,
+            "top": 598.25,
+            "right": 889.5,
+            "bottom": 645.25,
+            "left": 755.5
+          },
+          "display": "flex"
+        },
+        "scale": 0.7632850241545893,
+        "linked": "AI代选",
+        "nativeCallback": true,
+        "first": true,
+        "last": true
+      }
+    },
+    {
+      "kind": "discard",
+      "mobile": true,
+      "geometry": {
+        "quick": {
+          "text": "一键选择",
+          "rect": {
+            "x": 376.21875,
+            "y": 614.921875,
+            "width": 108.375,
+            "height": 39.6875,
+            "top": 614.921875,
+            "right": 484.59375,
+            "bottom": 654.609375,
+            "left": 376.21875
+          },
+          "display": "flex"
+        },
+        "label": {
+          "text": "一键选择",
+          "rect": {
+            "x": 376.21875,
+            "y": 614.921875,
+            "width": 108.375,
+            "height": 39.6875,
+            "top": 614.921875,
+            "right": 484.59375,
+            "bottom": 654.609375,
+            "left": 376.21875
+          },
+          "display": "flex"
+        },
+        "ok": {
+          "text": "确定",
+          "rect": {
+            "x": 543,
+            "y": 607.78125,
+            "width": 158,
+            "height": 54,
+            "top": 607.78125,
+            "right": 701,
+            "bottom": 661.78125,
+            "left": 543
+          },
+          "display": "flex"
+        },
+        "cancel": {
+          "text": "取消",
+          "rect": {
+            "x": 758,
+            "y": 611.28125,
+            "width": 134,
+            "height": 47,
+            "top": 611.28125,
+            "right": 892,
+            "bottom": 658.28125,
+            "left": 758
+          },
+          "display": "flex"
+        },
+        "scale": 0.7632850241545893,
+        "linked": "AI代选",
+        "nativeCallback": true,
+        "first": true,
+        "last": true
+      }
+    }
+  ],
+  "otherStyle": {
+    "text": "AI代选",
+    "adapted": false
+  },
+  "errors": []
+}

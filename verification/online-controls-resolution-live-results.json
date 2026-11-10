@@ -1,0 +1,60 @@
+{
+  "before": {
+    "label": "first-choice",
+    "display": "flex",
+    "name": "chooseToUse",
+    "text": "确定确定重铸取消"
+  },
+  "nested": {
+    "label": "nested-choice",
+    "display": "flex",
+    "name": "chooseBool",
+    "text": "确定确定重铸取消"
+  },
+  "after": {
+    "label": "next-choice",
+    "display": "flex",
+    "name": "chooseToUse",
+    "text": "确定确定重铸取消"
+  },
+  "samples": [
+    {
+      "label": "first-choice",
+      "display": "flex",
+      "name": "chooseToUse",
+      "text": "确定确定重铸取消"
+    },
+    {
+      "label": "settling",
+      "display": "none",
+      "name": "_verify_controls_settlement",
+      "text": "确定"
+    },
+    {
+      "label": "nested-choice",
+      "display": "flex",
+      "name": "chooseBool",
+      "text": "确定确定重铸取消"
+    },
+    {
+      "label": "settling-again",
+      "display": "none",
+      "name": "_verify_controls_settlement",
+      "text": "确定"
+    },
+    {
+      "label": "next-choice",
+      "display": "flex",
+      "name": "chooseToUse",
+      "text": "确定确定重铸取消"
+    }
+  ],
+  "scopes": {
+    "hidden": "none",
+    "otherStyle": "flex",
+    "over": "flex",
+    "character": "flex",
+    "restored": "flex"
+  },
+  "errors": []
+}

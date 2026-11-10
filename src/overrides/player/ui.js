@@ -1,4 +1,6 @@
 import { game, get, lib, ui, _status } from "noname";
+import { refreshEquipLayout } from "../../ui/equip-layout.js";
+import { updateOnlineHandCards } from "../../ui/online-hand-cards.js";
 let e = null;
 function t(str) {
 	str = str.replace(/##assetURL##/g, lib.assetURL);
@@ -39,27 +41,14 @@ function t(str) {
 	(lib.chatHistory.push(info), _status.addChatEntry && (_status.addChatEntry._origin.parentNode ? _status.addChatEntry(info, !1) : (_status.addChatEntry = void 0)), lib.config.background_speak && lib.quickVoice.includes(str) && game.playAudio("voice", "female" === this.sex ? "female" : "male", lib.quickVoice.indexOf(str)));
 }
 function i(map) {
-	if (this != game.me) return;
-	(map || (map = this.expandedSlots || {}),
-		game.addVideo("$syncExpand", this, get.copy(map)),
-		game.broadcast(
-			function (player, map) {
-				((player.expandedSlots = map), player.$syncExpand(map));
-			},
-			this,
-			map
-		));
-	let ele;
-	for (this[lib.skill.expandedSlots.intro.markcount(null, game.me) > 0 ? "markSkill" : "unmarkSkill"]("expandedSlots"); (ele = ui.equipSolts.back.firstChild); ) ele.remove();
-	const storage = this.expandedSlots,
-		equipSolts = ui.equipSolts;
-	for (let n = 0; n < 5; n++) {
-		if (storage && storage["equip" + (n + 1)])
-			for (let e = 0; e < storage["equip" + (n + 1)]; e++) {
-				decadeUI.element.create(null, equipSolts.back).dataset.type = n;
-			}
-		decadeUI.element.create(null, equipSolts.back).dataset.type = n;
-	}
+	map ||= this.expandedSlots || {};
+	game.addVideo("$syncExpand", this, get.copy(map));
+	game.broadcast(function (player, map) {
+		player.expandedSlots = map;
+		player.$syncExpand(map);
+	}, this, map);
+	this[lib.skill.expandedSlots.intro.markcount(null, this) > 0 ? "markSkill" : "unmarkSkill"]("expandedSlots");
+	refreshEquipLayout(this);
 }
 function s(characterName, isDeputy) {
 	if (!get.character(characterName)) return;
@@ -85,11 +74,18 @@ function n() {
 	const player = this;
 	if (!player.node.showCards) return;
 	if (player == game.me || player.isDead()) {
+		updateOnlineHandCards(player, []);
 		for (player.node.showCards.hide(); player.node.showCards.hasChildNodes(); ) player.node.showCards.removeChild(player.node.showCards.firstChild);
 		return;
 	}
 	const cards = player.getCards("h", e => get.is.shownCard(e) || (void 0 !== game.me && player.isUnderControl(!0)) || (game.me && game.me.hasSkillTag("viewHandcard", null, player, !0)));
+	if (updateOnlineHandCards(player, cards)) return;
 	if (cards.length) {
+		const bounds = player.getBoundingClientRect();
+		const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+		const onRight = bounds.left + bounds.width / 2 >= viewportWidth / 2;
+		player.node.showCards.style.left = onRight ? "auto" : "calc(100% + 10px)";
+		player.node.showCards.style.right = onRight ? "calc(100% + 10px)" : "auto";
 		for (player.node.showCards.show(); player.node.showCards.hasChildNodes(); ) player.node.showCards.removeChild(player.node.showCards.firstChild);
 		for (let i = 0; i < 5; i++) createElement("div", { class: ["handcard"], innerHTML: i < cards.length ? (lib.translate[cards[i].name] || "").slice(0, 2) : "", parentNode: player.node.showCards });
 	} else player.node.showCards.hide();

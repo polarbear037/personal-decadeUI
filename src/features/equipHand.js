@@ -2,6 +2,7 @@ import { get, lib, ui, game } from "noname";
 import { setupEquipCopy } from "./equipCopy.js";
 import { setupEquipAlone } from "./equipAlone.js";
 import { wrapAround } from "../utils/safeOverride.js";
+import { installEquipSweepCompatibility } from "../ui/equip-effects.js";
 
 function loadLateEquipStyle() {
 	const id = "decade-equip-style-override";
@@ -50,6 +51,8 @@ function setupChooseAllForEquips() {
 }
 
 function setupEquipHand() {
+	installEquipSweepCompatibility();
+	lib.arenaReady.push(installEquipSweepCompatibility);
 	loadLateEquipStyle();
 	setupChooseAllForEquips();
 	setupEquipCopy();

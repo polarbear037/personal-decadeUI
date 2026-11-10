@@ -1,6 +1,7 @@
 import { ui, lib, get, game, _status } from "noname";
 import { element as element } from "../utils/element.js";
 import { installDynamicOutcrop } from "./dynamicOutcrop.js";
+import { restoreEquipPresentation } from "./equip-layout.js";
 class t {
 	constructor(dom) {
 		((this.dom = dom), (this._cache = null));
@@ -50,6 +51,10 @@ function i(i, n) {
 	const r = { $cardCount: a.node.count, $dynamicWrap: element.create("dynamic-wrap") };
 	((a.node.handcards1._childNodesWatcher = new t(a.node.handcards1)), (a.node.handcards2._childNodesWatcher = new t(a.node.handcards2)), decadeUI.get.extend(player, r), decadeUI.get.extend(player, a), Object.setPrototypeOf(player, lib.element.Player.prototype), (player.node.action = ui.create.div(".action", player.node.avatar)));
 	installDynamicOutcrop(player);
+	if (lib.config.extension_十周年UI_newDecadeStyle === "onlineUI") {
+		const mark = element.create("mark online-seat-trusteeship", player.node.marks);
+		element.create("mark-text", mark).textContent = "托管";
+	}
 	const o = ui.create.div(player.node.identity);
 	((o.player = player),
 		(function (realIdentity, player) {
@@ -119,6 +124,11 @@ function i(i, n) {
 			},
 		}));
 	(new MutationObserver(mutations => {
+		for (const mutation of mutations) {
+			for (const card of mutation.removedNodes) {
+				if (!card.parentElement?.classList?.contains("equips")) restoreEquipPresentation(card);
+			}
+		}
 		for (const t of mutations)
 			if ("childList" === t.type) {
 				(Array.from(t.addedNodes).some(e => !e.classList?.contains("emptyequip")) || Array.from(t.removedNodes).some(e => !e.classList?.contains("emptyequip"))) && player.$handleEquipChange();

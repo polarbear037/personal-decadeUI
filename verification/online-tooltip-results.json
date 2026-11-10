@@ -1,0 +1,180 @@
+{
+  "card": {
+    "kind": "card",
+    "text": "杀♥ 7基本牌出牌阶段，对你攻击范围内的一名角色使用。其须使用一张【闪】，否则你对其造成1点伤害。",
+    "name": "杀",
+    "width": 416,
+    "hostWidth": 332.797,
+    "rect": {
+      "x": 557,
+      "y": 254,
+      "width": 332.796875,
+      "height": 192,
+      "top": 254,
+      "right": 889.796875,
+      "bottom": 446,
+      "left": 557
+    },
+    "panel": {
+      "x": 557,
+      "y": 254,
+      "width": 332.800048828125,
+      "height": 192,
+      "top": 254,
+      "right": 889.800048828125,
+      "bottom": 446,
+      "left": 557
+    },
+    "nameColor": "rgb(48, 220, 35)",
+    "nameSize": "32px",
+    "bodySize": "26px",
+    "bodyLine": "31.2px",
+    "border": "28 fill",
+    "background": "url(\"http://127.0.0.1:6337/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/tool_tips_bg.png\")",
+    "font": "DecadeOfficialTooltip, KaiTi, serif",
+    "caption": "杀"
+  },
+  "skill": {
+    "kind": "skill",
+    "text": "制衡出牌阶段限一次，你可以弃置任意张牌，然后摸等量的牌。",
+    "name": "制衡",
+    "width": 491,
+    "hostWidth": 392.797,
+    "rect": {
+      "x": 1042,
+      "y": 626,
+      "width": 392.796875,
+      "height": 128.796875,
+      "top": 626,
+      "right": 1434.796875,
+      "bottom": 754.796875,
+      "left": 1042
+    },
+    "panel": {
+      "x": 1042,
+      "y": 626,
+      "width": 392.800048828125,
+      "height": 128.79998779296875,
+      "top": 626,
+      "right": 1434.800048828125,
+      "bottom": 754.7999877929688,
+      "left": 1042
+    },
+    "nameColor": "rgb(255, 216, 0)",
+    "nameSize": "33px",
+    "bodySize": "28px",
+    "bodyLine": "34px",
+    "border": "29 29 29 31 fill",
+    "background": "url(\"http://127.0.0.1:6337/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/tip_bg.png\")",
+    "font": "DecadeOfficialTooltip, KaiTi, serif",
+    "caption": "制衡"
+  },
+  "nativeCases": {
+    "text": "诸葛连弩♠ Q装备牌-武器攻击范围：3动态说明：当前已存放2张牌。 此牌标签：测试标签",
+    "hiddenStyled": false,
+    "normalStyled": false,
+    "mark": {
+      "compact": true,
+      "text": "附属牌标记当前已记录2张牌。桃♥︎3 桃i附属牌标记桃附属牌标记杀♠︎8 杀i附属牌标记杀附属牌标记",
+      "cards": 2
+    }
+  },
+  "long": {
+    "height": 520,
+    "scrollHeight": 2741,
+    "clientHeight": 482,
+    "arrowHidden": false
+  },
+  "scrolled": {
+    "top": 400,
+    "display": "block"
+  },
+  "painted": {
+    "opacity": "1",
+    "z": "99999",
+    "playerZ": "4",
+    "onTop": true
+  },
+  "edges": {
+    "results": [
+      {
+        "x": 48.27967834472656,
+        "y": 24.199996948242188,
+        "width": 266.237548828125,
+        "height": 153.60000610351562,
+        "top": 24.199996948242188,
+        "right": 314.51722717285156,
+        "bottom": 177.8000030517578,
+        "left": 48.27967834472656
+      },
+      {
+        "x": 1125.2796630859375,
+        "y": 717.2000122070312,
+        "width": 266.237548828125,
+        "height": 153.60003662109375,
+        "top": 717.2000122070312,
+        "right": 1391.5172119140625,
+        "bottom": 870.800048828125,
+        "left": 1125.2796630859375
+      },
+      {
+        "x": 69.91874694824219,
+        "y": 36.29999542236328,
+        "width": 399.3499755859375,
+        "height": 230.4000244140625,
+        "top": 36.29999542236328,
+        "right": 469.2687225341797,
+        "bottom": 266.7000198364258,
+        "left": 69.91874694824219
+      },
+      {
+        "x": 970.4187622070312,
+        "y": 625.7999877929688,
+        "width": 399.35003662109375,
+        "height": 230.4000244140625,
+        "top": 625.7999877929688,
+        "right": 1369.768798828125,
+        "bottom": 856.2000122070312,
+        "left": 970.4187622070312
+      }
+    ],
+    "clicked": true
+  },
+  "hover": {
+    "kind": "card",
+    "text": "杀♥ 7基本牌出牌阶段，对你攻击范围内的一名角色使用。其须使用一张【闪】，否则你对其造成1点伤害。",
+    "name": "杀",
+    "width": 416,
+    "hostWidth": 332.797,
+    "rect": {
+      "x": 337.2796630859375,
+      "y": 717.2000122070312,
+      "width": 266.237548828125,
+      "height": 153.60003662109375,
+      "top": 717.2000122070312,
+      "right": 603.5172119140625,
+      "bottom": 870.800048828125,
+      "left": 337.2796630859375
+    },
+    "panel": {
+      "x": 337.2796630859375,
+      "y": 717.2000122070312,
+      "width": 266.239990234375,
+      "height": 153.60003662109375,
+      "top": 717.2000122070312,
+      "right": 603.5196533203125,
+      "bottom": 870.800048828125,
+      "left": 337.2796630859375
+    },
+    "nameColor": "rgb(48, 220, 35)",
+    "nameSize": "32px",
+    "bodySize": "26px",
+    "bodyLine": "31.2px",
+    "border": "28 fill",
+    "background": "url(\"http://127.0.0.1:6337/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/tool_tips_bg.png\")",
+    "font": "DecadeOfficialTooltip, KaiTi, serif",
+    "caption": "杀"
+  },
+  "errors": [],
+  "badResources": []
+}

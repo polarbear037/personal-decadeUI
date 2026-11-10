@@ -19,6 +19,7 @@ function o(player, n) {
 	const e = lib.config;
 	if (!e["extension_十周年UI_enable"] || "0" === e.extension_十周年UI_jindutiaoYangshi) return;
 	if (player === game.me) return;
+	if (e.extension_十周年UI_newDecadeStyle === "onlineUI") return;
 	player.querySelector(".tipskill")?.remove();
 	const i = e.extension_十周年UI_newDecadeStyle;
 	t.includes(n) ||

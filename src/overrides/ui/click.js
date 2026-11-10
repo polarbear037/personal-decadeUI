@@ -1,5 +1,15 @@
 import { _status, game, lib, get, ui } from "noname";
 import { getBaseUiClickIntro as getBaseUiClickIntro } from "./base.js";
+import { isHandCardAvailable } from "../../ui/handcard-selection.js";
+function switchSelectedHandCard(card) {
+	const event = _status.event;
+	if (!event.isMine() || !event.filterCard || ui.selected.cards.length !== 1 || get.select(event.selectCard)[1] !== 1 || card.classList.contains("selected") || !event.player.getCards("h").includes(card) || !event.player.getCards(event.position).includes(card)) return false;
+	if (!isHandCardAvailable(card, event)) return false;
+	// 复用本体清理旧目标、转化牌名及花色点数，再走原来的选中流程。
+	game.uncheck("card", "target");
+	card.classList.add("selectable");
+	return true;
+}
 function t(e) {
 	if ((delete this._waitingfordrag, _status.dragged)) return;
 	if (_status.clicked) return;
@@ -14,7 +24,7 @@ function t(e) {
 	}
 	const t = _status.event.custom;
 	if (t.replace.card) t.replace.card(this);
-	else if (0 != this.classList.contains("selectable")) {
+	else if (this.classList.contains("selectable") || switchSelectedHandCard(this)) {
 		if (this.classList.contains("selected")) (ui.selected.cards.remove(this), _status.multitarget || _status.event.complexSelect ? (game.uncheck(), game.check()) : (this.classList.remove("selected"), this.updateTransform(), 1 == this.dataset.view && ((this.dataset.view = 0), this._tempName && (this._tempName.delete(), delete this._tempName, (this.dataset.low = 0))), 1 == this.dataset.views && ((this.dataset.views = 0), this._tempSuitNum && (this._tempSuitNum.delete(), delete this._tempSuitNum)), decadeUI && decadeUI.layout && decadeUI.layout.invalidateHand()));
 		else {
 			(ui.selected.cards.add(this), this.classList.add("selected"), ui._handcardHover === this && (ui._handcardHover = null), this.updateTransform(!0));

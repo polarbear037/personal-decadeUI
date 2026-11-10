@@ -1,5 +1,6 @@
 import { game, get, _status, ui, lib } from "noname";
 import { applyCardBorder as applyCardBorder } from "../../ui/cardStyles.js";
+import { getDrawStackStart } from "../../ui/layout-utils.js";
 
 let baseDraw = null;
 let decadeUIInstance = null;
@@ -26,9 +27,66 @@ const EQUIP_CARD_MOVE_DURATION = 350; // 装备牌从悬停位置飞入对应装
 const EQUIP_CARD_CLEANUP_DELAY = 0; // 装备牌动画结束后，清理元素的延迟时间
 const EQUIP_CARD_TARGET_HEIGHT = 10; // 装备牌落地后的目标高度（缩放用，单位px）
 const EQUIP_CARD_TARGET_LEFT_OFFSET = -10; // 装备牌落点的水平偏移（左/右微调）
+const EQUIP_CARD_REMOTE_TARGET_LEFT_OFFSET = -4; // 非主视角装备牌相对装备区左边缘再向左微调
 const EXPANSION_COVER_MOVE_DURATION = 700; // 盖到武将牌上的卡牌移动速度（毫秒）
 
 const EQUIP_ENTRY_DELAY = EQUIP_CARD_MOVE_DURATION + 220;
+
+const ONLINE_DYNAMIC_JUDGE_MARKS = Object.freeze({
+	// Online 统一使用用户指定的按钮动画布局。
+	lebu: Object.freeze({ file: "FX_LBSS_icon_play_dynamic.png", size: "95%", position: "50% 80%" }),
+	bingliang: Object.freeze({ file: "FX_BLCD_icon_play_dynamic.png", size: "95%", position: "50% 80%" }),
+	shandian: Object.freeze({ file: "FX_SD_icon_play_dynamic.png", size: "95%", position: "50% 80%" }),
+});
+
+function applyJudgeMarkIcon(judgeNode, name, path, judgeText, suffix) {
+	const request = {};
+	judgeNode._decadeUIJudgeMarkRequest = request;
+	const onlineDynamic = lib.config.extension_十周年UI_newDecadeStyle === "onlineUI" ? ONLINE_DYNAMIC_JUDGE_MARKS[name] : null;
+	if (onlineDynamic) {
+		judgeNode.style.backgroundSize = onlineDynamic.size;
+		judgeNode.style.backgroundPosition = onlineDynamic.position;
+		judgeNode.style.backgroundRepeat = "no-repeat";
+		// 向上扩展绘制区域并保持原节点底边，避免较高的新图被 45px 标记节点裁切。
+		judgeNode.style.height = "60px";
+		judgeNode.style.marginTop = "-15px";
+	} else {
+		judgeNode.style.removeProperty("background-size");
+		judgeNode.style.removeProperty("background-position");
+		judgeNode.style.removeProperty("background-repeat");
+		judgeNode.style.removeProperty("height");
+		judgeNode.style.removeProperty("margin-top");
+	}
+	if (!name) {
+		judgeNode.style.backgroundImage = `url("${path}tongyong.png")`;
+		return;
+	}
+	const image = new Image();
+	image.onload = function () {
+		if (judgeNode._decadeUIJudgeMarkRequest !== request) return;
+		judgeNode.style.backgroundImage = `url("${image.src}")`;
+		judgeNode.innerText = "";
+		judgeNode.style.fontSize = "0px";
+	};
+	image.onerror = function () {
+		if (judgeNode._decadeUIJudgeMarkRequest !== request) return;
+		const fallbackName = onlineDynamic ? name : "tongyong";
+		judgeNode.style.backgroundImage = `url("${path}${fallbackName}.png")`;
+		judgeNode.innerText = onlineDynamic ? "" : judgeText ? judgeText[0] : "";
+		judgeNode.style.fontSize = onlineDynamic ? "0px" : "";
+		if (onlineDynamic) {
+			judgeNode.style.removeProperty("background-size");
+			judgeNode.style.removeProperty("background-position");
+			judgeNode.style.removeProperty("background-repeat");
+			judgeNode.style.removeProperty("height");
+			judgeNode.style.removeProperty("margin-top");
+		}
+	};
+	image.src = `${path}${onlineDynamic ? onlineDynamic.file : `${name}${suffix}`}`;
+}
+
+// broadcastAll 会把回调重新编译到其他客户端；通过 game 实例注册，避免回调捕获模块局部变量。
+game._decadeUIApplyJudgeMarkIcon = applyJudgeMarkIcon;
 
 // 装备入场动画参数
 const EQUIP_ENTRY_DURATION = 260; // 装备“进场/亮起”的动画时长
@@ -37,6 +95,10 @@ const EQUIP_ENTRY_SETTLING_CLASS = "decade-equip-entry-settling";
 // 装备稳定状态的CSS类名（控制最终显示样式）
 const EQUIP_ENTRY_SETTLING_CLEANUP_DELAY = 0;
 // 装备稳定后，清理入场动画的延迟时间
+
+const localHandVisibilityStates = new WeakMap();
+const pendingWuguGains = new WeakMap();
+const handledWuguGains = new WeakMap();
 
 // ==========================
 // 【延时锦囊判定牌 动画参数】
@@ -110,23 +172,14 @@ function quadraticBezier(progress, start, control, end) {
 function getOfficialBezierControlPoint(start, end, allowSeatToSeat = true) {
 	const arena = getDui().boundsCaches.arena;
 	arena.check();
-	const dx = end.x - start.x;
-	const dy = end.y - start.y;
+	// 摸牌保持原有横向展开；玩家间传牌沿起终点矩形内侧的直角转向。
 	if (!allowSeatToSeat) return { x: end.x, y: end.y + arena.cardWidth };
-	if (dx && dy) {
-		const middleY = (start.y + end.y) / 2;
-		const vector = start.x > end.x
-			? middleY > arena.height / 2 ? { x: -dy, y: dx } : { x: dy, y: -dx }
-			: middleY > arena.height / 2 ? { x: dy, y: -dx } : { x: -dy, y: dx };
-		const length = Math.hypot(vector.x, vector.y) || 1;
-		const distance = Math.max(200, Math.floor(Math.hypot(dx, dy)) >> 1);
-		return {
-			x: ((start.x + end.x) / 2 + vector.x / length * distance) | 0,
-			y: ((start.y + end.y) / 2 + vector.y / length * distance) | 0,
-		};
-	}
-	if (!dx) return { x: end.x + (start.x < arena.width / 2 ? 100 : -100), y: start.y + dy / 2 };
-	return { x: start.x + dx / 2, y: start.y + (start.y < arena.height / 2 ? 60 : -60) };
+	const sameColumn = start.x === end.x;
+	const sameRow = start.y === end.y;
+	return {
+		x: sameColumn || sameRow ? (start.x + end.x) / 2 : start.y < end.y ? start.x : end.x,
+		y: sameColumn || sameRow ? (start.y + end.y) / 2 : start.y > end.y ? start.y : end.y,
+	};
 }
 
 function nowTime() {
@@ -146,14 +199,14 @@ function normalizeDomNodes(nodes) {
 }
 
 function setDrawCardStartPosition(cards) {
+	if (!cards.length) return;
 	const arena = getDui().boundsCaches.arena;
-	arena.check();
-	const start = {
-		x: Math.round((arena.width - arena.cardWidth) / 2),
-		y: Math.round(arena.height - 5 - arena.cardHeight / 2),
-		scale: arena.cardScale,
-	};
-	cards.forEach(card => writeTransform(card, start));
+	const start = getDrawStackStart(cards.length, arena);
+	cards.forEach((card, index) => writeTransform(card, {
+		x: Math.round(start.x + index * start.spacing),
+		y: Math.round(start.y),
+		scale: start.scale,
+	}));
 }
 
 function markPendingEquipEntry(player, cards) {
@@ -318,7 +371,8 @@ function restartEquipEntryAnimation(card) {
 }
 
 function cleanupEquipEntryCard(card, saved) {
-	if (!card?.parentNode) return;
+	if (!card?.parentNode || card._decadeEquipEntryStyle !== saved) return;
+	delete card._decadeEquipEntryStyle;
 	card.style.transition = saved.transition;
 	card.style.willChange = saved.willChange;
 	card.style.transformOrigin = saved.transformOrigin;
@@ -381,13 +435,14 @@ function animateEquipEntryCard(card, delay) {
 		webkitClipPath: card.style.webkitClipPath || "",
 		translate: card.style.translate || "",
 	};
+	card._decadeEquipEntryStyle = saved;
 	card.style.transition = "none";
 	card.style.opacity = "0";
 	setTimeout(
 		() => {
-			if (!card.parentNode) return;
+			if (!card.parentNode || card._decadeEquipEntryStyle !== saved) return;
 			requestAnimationFrame(() => {
-				if (!card.parentNode) return;
+				if (!card.parentNode || card._decadeEquipEntryStyle !== saved) return;
 				const cardRect = getArenaRelativeRect(card);
 				const parentRect = getArenaRelativeRect(card.parentNode);
 				if (!cardRect.width || !cardRect.height) {
@@ -504,6 +559,339 @@ function getArenaRelativeTransform(node) {
 		y: rect.top,
 		scale: rect.width && arena.cardWidth ? rect.width / arena.cardWidth : 1,
 	};
+}
+
+function isLocalHandCard(card, target = game.me) {
+	const handNode = target?.node?.handcards1 || (target === game.me ? ui.handcards1 : null);
+	return !!card && !!handNode && card.parentNode === handNode;
+}
+
+function getLocalHandCardTarget(card, target = game.me) {
+	if (!isLocalHandCard(card, target)) return null;
+	const arena = getDui().boundsCaches.arena;
+	arena.check();
+	const transition = card.style.getPropertyValue("transition-property");
+	const priority = card.style.getPropertyPriority("transition-property");
+	try {
+		// The real card is hidden during flight. Measure its settled layout rather
+		// than an in-progress transform transition or a cached hand-area offset.
+		card.style.setProperty("transition-property", "none", "important");
+		const rect = getArenaRelativeRect(card);
+		if (!isUsableRect(rect)) return null;
+		return {
+			x: rect.left + (rect.width - arena.cardWidth) / 2,
+			y: rect.top + (rect.height - arena.cardHeight) / 2,
+			scale: rect.width / arena.cardWidth,
+		};
+	} finally {
+		if (transition) card.style.setProperty("transition-property", transition, priority);
+		else card.style.removeProperty("transition-property");
+	}
+}
+
+function getWuguContext(event = _status.event, dialogId) {
+	let current = event;
+	const explicitId = dialogId;
+	let resolvedId = dialogId;
+	for (let depth = 0; current && depth < 24; depth++) {
+		if (resolvedId == null && current.preResult != null) resolvedId = current.preResult;
+		if (resolvedId == null && current.dialog?.videoId != null) resolvedId = current.dialog.videoId;
+		const cardName = current.card?.name || current.cardname;
+		if (current.name === "wugu" || cardName === "wugu") return { event: current, dialogId: resolvedId };
+		const parent = typeof current.getParent === "function" ? current.getParent() : current.parent;
+		if (!parent || parent === current) break;
+		current = parent;
+	}
+	return explicitId == null ? null : { event: null, dialogId: explicitId };
+}
+
+function findWuguDialog(dialogId) {
+	const dialogs = Array.from(ui?.dialogs || []);
+	let dialog = dialogId == null
+		? null
+		: dialogs.find(item => String(item?.videoId ?? item?.dataset?.videoId) === String(dialogId));
+	if (!dialog && dialogId != null && typeof document !== "undefined") {
+		dialog = Array.from(document.querySelectorAll(".dialog")).find(item => String(item?.videoId ?? item?.dataset?.videoId) === String(dialogId));
+	}
+	if (!dialog && dialogId == null) {
+		dialog = dialogs.find(item => item?.getAttribute?.("data-dialog-name") === "wugu" || item?.dataset?.dialogName === "wugu");
+	}
+	return dialog || null;
+}
+
+function findWuguDialogForCard(card) {
+	const cardId = card?.cardid == null ? null : String(card.cardid);
+	for (const dialog of Array.from(ui?.dialogs || [])) {
+		const markedWugu = dialog?.getAttribute?.("dialog-name") === "wugu"
+			|| dialog?.getAttribute?.("data-dialog-name") === "wugu"
+			|| dialog?.dataset?.dialogName === "wugu"
+			|| dialog?.querySelector?.('[sourceCard="wugu"]')
+			|| String(dialog?.content?.firstChild?.textContent || "").includes("五谷丰登");
+		if (!markedWugu || !dialog.querySelectorAll) continue;
+		const match = Array.from(dialog.querySelectorAll(".button, .card")).some(node => {
+			if (node.link === card) return true;
+			const linkId = node.link?.cardid ?? node.dataset?.cardid;
+			return cardId != null && linkId != null && String(linkId) === cardId;
+		});
+		if (match) return dialog;
+	}
+	return null;
+}
+
+function getWuguSelectionStart(card, dialogId) {
+	const dialog = findWuguDialog(dialogId) || findWuguDialogForCard(card);
+	if (!dialog?.querySelectorAll) return null;
+	const cardId = card?.cardid == null ? null : String(card.cardid);
+	const candidates = Array.from(dialog.querySelectorAll(".button, .card"));
+	const source = candidates.find(node => {
+		if (node.link === card) return true;
+		const linkId = node.link?.cardid ?? node.dataset?.cardid;
+		return cardId != null && linkId != null && String(linkId) === cardId;
+	});
+	if (!source) return null;
+	const rect = getArenaRelativeRect(source);
+	if (!isUsableRect(rect)) return null;
+	const arena = getDui().boundsCaches.arena;
+	arena.check();
+	const scale = arena.cardWidth > 0 ? rect.width / arena.cardWidth : 1;
+	return {
+		x: rect.left + (rect.width - arena.cardWidth) / 2,
+		y: rect.top + (rect.height - arena.cardHeight) / 2,
+		scale,
+	};
+}
+
+function isWuguEntryInScope(entry, event, dialogId, recipient) {
+	if (!entry) return false;
+	const context = getWuguContext(event, dialogId);
+	if (!context) return false;
+	if (entry.recipient && recipient && entry.recipient !== recipient) return false;
+	if (entry.dialogId != null && context.dialogId != null) return String(entry.dialogId) === String(context.dialogId);
+	return !!recipient && entry.recipient === recipient && context.event;
+}
+
+function isCardInPlayerHand(card, player) {
+	return !!card && (card.parentNode === player?.node?.handcards1 || card.parentNode === player?.node?.handcards2);
+}
+
+function prepareWuguGain(cards, event = _status.event, dialogId, recipient) {
+	const list = normalizeCards(cards);
+	const context = getWuguContext(event, dialogId);
+	let found = false;
+	for (const card of list) {
+		const existing = pendingWuguGains.get(card);
+		const handled = handledWuguGains.get(card);
+		if (handled && isWuguEntryInScope(existing || handled, event, dialogId, recipient)) {
+			found = true;
+			continue;
+		}
+		if (handled && !context) continue;
+		if (existing && !handled) {
+			if (recipient && !existing.recipient) existing.recipient = recipient;
+			found = true;
+			continue;
+		}
+		if (!context) continue;
+		const start = getWuguSelectionStart(card, context?.dialogId ?? dialogId);
+		if (!start) continue;
+		const dialog = findWuguDialog(context?.dialogId ?? dialogId) || findWuguDialogForCard(card);
+		handledWuguGains.delete(card);
+		pendingWuguGains.set(card, { start, dialogId: context?.dialogId ?? dialogId ?? dialog?.videoId, recipient });
+		found = true;
+	}
+	return found;
+}
+
+function hasPendingWuguGain(cards, event = _status.event, dialogId, recipient) {
+	const list = normalizeCards(cards);
+	if (list.some(card => {
+		const handled = handledWuguGains.get(card);
+		return handled && isWuguEntryInScope(pendingWuguGains.get(card) || handled, event, dialogId, recipient);
+	})) return true;
+	return prepareWuguGain(list, event, dialogId, recipient);
+}
+
+function getWuguDialogId(cards, event = _status.event, dialogId, recipient) {
+	for (const card of normalizeCards(cards)) {
+		const entry = pendingWuguGains.get(card);
+		if (entry?.dialogId != null && isWuguEntryInScope(entry, event, dialogId, recipient)) return entry.dialogId;
+	}
+	return undefined;
+}
+
+function isHandledWuguGain(cards, event = _status.event, dialogId, recipient) {
+	const list = normalizeCards(cards);
+	return list.length > 0 && list.every(card => {
+		const entry = pendingWuguGains.get(card);
+		return handledWuguGains.has(card) && isWuguEntryInScope(entry || handledWuguGains.get(card), event, dialogId, recipient);
+	});
+}
+
+function isPendingWuguGain(cards, event = _status.event, dialogId, recipient) {
+	const list = normalizeCards(cards);
+	return list.length > 0 && list.every(card => {
+		const entry = pendingWuguGains.get(card);
+		return entry && !handledWuguGains.has(card) && isWuguEntryInScope(entry, event, dialogId, recipient);
+	});
+}
+
+function playPendingWuguGain(cards, player, event = _status.event, dialogId) {
+	const list = normalizeCards(cards);
+	const flights = [];
+	const localHandTargets = new Map();
+	const pendingEntries = [];
+	for (const sourceCard of list) {
+		const entry = pendingWuguGains.get(sourceCard);
+		if (!entry || handledWuguGains.has(sourceCard) || (entry.recipient && entry.recipient !== player) || !isCardInPlayerHand(sourceCard, player)) continue;
+		pendingEntries.push({ sourceCard, entry });
+	}
+	if (!pendingEntries.length) return isHandledWuguGain(list, event, dialogId, player);
+	const target = player || game.me;
+	for (const { sourceCard, entry } of pendingEntries) {
+		const flight = sourceCard.copy("thrown", "gainingcard");
+		flight.classList.add("drawingcard");
+		// 五谷副本会先插入 arena，再等待下一帧启动曲线动画。先写入
+		// 选牌位置的 transform，避免浏览器用默认 left/top 在左上角绘制一帧。
+		flight.style.left = "0px";
+		flight.style.top = "0px";
+		writeTransform(flight, entry.start);
+		// 主视角的手牌根节点 z-index 为 3，副本落入手牌区后应在其后方；
+		// 第三视角保持原有 gainingcard 层级，确保飞牌可见。
+		if (target === game.me) flight.style.zIndex = "2";
+		else flight.style.removeProperty("z-index");
+		flight.fixed = true;
+		flight._decadeMotionStartTransform = entry.start;
+		if (target !== game.me) applyCardBorder(flight, target);
+		flights.push(flight);
+		handledWuguGains.set(sourceCard, { dialogId: entry.dialogId, recipient: target });
+		if (target === game.me && isLocalHandCard(sourceCard, target)) localHandTargets.set(flight, sourceCard);
+	}
+	if (!flights.length) return true;
+	game.addVideo("gain2", target, get.cardsInfo(pendingEntries.map(({ sourceCard }) => sourceCard)));
+	const dui = getDui();
+	const fragment = document.createDocumentFragment();
+	for (const flight of flights) fragment.appendChild(flight);
+	const localVisibilityEntries = hideLocalHandTargets(localHandTargets);
+	let localFinished = false;
+	const finishLocal = () => {
+		if (localFinished) return;
+		localFinished = true;
+		finishLocalHandFlight(localHandTargets, localVisibilityEntries);
+	};
+	try {
+		ui.arena.appendChild(fragment);
+		dui.queueNextFrameTick(() => {
+			try {
+				// 主视角用获得牌曲线，避免摸牌控制点低于手牌落点造成下探回弹。
+				animateGainCards(flights, () => {
+					if (localHandTargets.size) applyLocalHandTargets(flights, target, localHandTargets, dui);
+					else dui.layoutDrawCards(flights, target, false, { compact: true });
+				}, GAIN_CARD_MOVE_DURATION, GAIN_CARD_REMOVE_DELAY, GAIN_CARD_REMOVE_DURATION, target === game.me, false, false, localVisibilityEntries.length ? finishLocal : undefined);
+			} catch (error) {
+				finishLocal();
+				if (localVisibilityEntries.length) console.error("[十周年UI] 五谷本地获得牌动画启动失败", error);
+				else throw error;
+			}
+		});
+	} catch (error) {
+		finishLocal();
+		if (localVisibilityEntries.length) console.error("[十周年UI] 五谷本地获得牌动画排队失败", error);
+		else throw error;
+	}
+	return true;
+}
+
+function collectLocalHandCards(value, handNode, result, seen) {
+	if (!value) return;
+	if (Array.isArray(value)) {
+		value.forEach(item => collectLocalHandCards(item, handNode, result, seen));
+		return;
+	}
+	if (typeof value !== "object" || seen.has(value)) return;
+	seen.add(value);
+	if (value.parentNode === handNode && value.classList?.contains("card")) result.push(value);
+}
+
+function getCurrentLocalGainCards(source, target, count) {
+	const handNode = target?.node?.handcards1 || (target === game.me ? ui.handcards1 : null);
+	if (!handNode || target !== game.me || count <= 0) return [];
+	const event = _status.event;
+	const result = [];
+	const seen = new Set();
+	const sourceKey = source?.playerid ?? source?.dataset?.position;
+	const sourceEntry = sourceKey != null ? event?.losing_map?.[sourceKey] : null;
+	collectLocalHandCards(sourceEntry, handNode, result, seen);
+	if (result.length) return result.slice(0, count);
+	collectLocalHandCards(event?.cards, handNode, result, seen);
+	return result.slice(0, count);
+}
+
+function applyLocalHandTargets(cards, player, localHandTargets, dui) {
+	dui.layoutHand?.();
+	dui.layoutDrawCards(cards, player, false, { compact: true });
+	for (const [card, targetCard] of localHandTargets) {
+		const target = getLocalHandCardTarget(targetCard, game.me);
+		if (target) writeTransform(card, target);
+	}
+}
+
+function hideLocalHandTargets(localHandTargets) {
+	const entries = [];
+	const hidden = new Set();
+	for (const [flightCard, targetCard] of localHandTargets) {
+		if (!targetCard) continue;
+		let state = localHandVisibilityStates.get(targetCard);
+		if (!state) {
+			state = {
+				count: 0,
+				value: targetCard.style.getPropertyValue("visibility"),
+				priority: targetCard.style.getPropertyPriority("visibility"),
+				opacity: targetCard.style.getPropertyValue("opacity"),
+				opacityPriority: targetCard.style.getPropertyPriority("opacity"),
+				transitionProperty: targetCard.style.getPropertyValue("transition-property"),
+				transitionPropertyPriority: targetCard.style.getPropertyPriority("transition-property"),
+			};
+			localHandVisibilityStates.set(targetCard, state);
+		}
+		if (!hidden.has(targetCard)) {
+			hidden.add(targetCard);
+			state.count++;
+			targetCard.style.setProperty("transition-property", "transform, left, top", "important");
+			targetCard.style.setProperty("visibility", "hidden", "important");
+			targetCard.style.setProperty("opacity", "0", "important");
+			entries.push(targetCard);
+		}
+		if (state.value) flightCard.style.setProperty("visibility", state.value, state.priority);
+		else flightCard.style.removeProperty("visibility");
+		if (state.opacity) flightCard.style.setProperty("opacity", state.opacity, state.opacityPriority);
+		else flightCard.style.removeProperty("opacity");
+		if (state.transitionProperty) flightCard.style.setProperty("transition-property", state.transitionProperty, state.transitionPropertyPriority);
+		else flightCard.style.removeProperty("transition-property");
+	}
+	return entries;
+}
+
+function restoreLocalHandTargets(entries) {
+	for (const targetCard of entries || []) {
+		const state = localHandVisibilityStates.get(targetCard);
+		if (!state) continue;
+		state.count--;
+		if (state.count > 0) continue;
+		if (state.value) targetCard.style.setProperty("visibility", state.value, state.priority);
+		else targetCard.style.removeProperty("visibility");
+		if (state.opacity) targetCard.style.setProperty("opacity", state.opacity, state.opacityPriority);
+		else targetCard.style.removeProperty("opacity");
+		// 先提交落地透明度，再恢复原过渡，避免恢复时出现淡入。
+		getComputedStyle(targetCard).opacity;
+		if (state.transitionProperty) targetCard.style.setProperty("transition-property", state.transitionProperty, state.transitionPropertyPriority);
+		else targetCard.style.removeProperty("transition-property");
+		localHandVisibilityStates.delete(targetCard);
+	}
+}
+
+function finishLocalHandFlight(localHandTargets, visibilityEntries) {
+	restoreLocalHandTargets(visibilityEntries);
+	for (const card of localHandTargets.keys()) card.remove();
 }
 
 function isUsableRect(rect) {
@@ -759,6 +1147,7 @@ function getUseCardEvent(event) {
 }
 
 function shouldUseDirectEquipAnimation(cards, player) {
+	if (cards?.some(card => card?._decadeRemoteEquipThrow)) return false;
 	if (cards?.some(card => card?._decadeEquipUseAnimation)) return true;
 	const event = _status.event;
 	const useEvent = getUseCardEvent(event);
@@ -826,7 +1215,7 @@ function getEquipTargetTransform(card, player, index, total) {
 	const targetScale = EQUIP_CARD_TARGET_HEIGHT / arena.cardHeight;
 	if (isUsableRect(slotRect)) {
 		return {
-			x: Math.round(slotRect.left + slotRect.width / 2 - arena.cardWidth / 2),
+			x: Math.round((player === game.me && slotNode ? slotRect.left + slotRect.width / 2 : slotRect.left + EQUIP_CARD_REMOTE_TARGET_LEFT_OFFSET) - arena.cardWidth / 2),
 			y: Math.round(slotRect.top + slotRect.height / 2 - arena.cardHeight / 2),
 			scale: targetScale,
 		};
@@ -916,10 +1305,14 @@ function animateEquipCardToPlayer(card, player, index, total) {
 	return card;
 }
 
-function animateGainCards(cards, layoutTarget, moveDuration = GAIN_CARD_MOVE_DURATION, removeDelay = GAIN_CARD_REMOVE_DELAY, removeDuration = GAIN_CARD_REMOVE_DURATION, allowSeatToSeat = false, coverLoop = false, coverLoopUpward = false) {
-	if (!cards.length) return;
+function animateGainCards(cards, layoutTarget, moveDuration = GAIN_CARD_MOVE_DURATION, removeDelay = GAIN_CARD_REMOVE_DELAY, removeDuration = GAIN_CARD_REMOVE_DURATION, allowSeatToSeat = false, coverLoop = false, coverLoopUpward = false, onComplete) {
+	if (!cards.length) {
+		onComplete?.();
+		return;
+	}
 	if (typeof requestAnimationFrame !== "function") {
 		layoutTarget();
+		onComplete?.();
 		getDui().delayRemoveCards(cards, removeDelay, removeDuration);
 		return;
 	}
@@ -931,7 +1324,11 @@ function animateGainCards(cards, layoutTarget, moveDuration = GAIN_CARD_MOVE_DUR
 		card.style.willChange = "transform";
 	});
 
-	layoutTarget();
+	const followPlayer = layoutTarget()?.followPlayer;
+	const followOrigin = followPlayer && {
+		x: followPlayer.cacheLeft + followPlayer.cacheWidth / 2,
+		y: followPlayer.cacheTop + followPlayer.cacheHeight / 2,
+	};
 
 	const states = cards.map((card, index) => {
 		const start = starts[index];
@@ -945,6 +1342,7 @@ function animateGainCards(cards, layoutTarget, moveDuration = GAIN_CARD_MOVE_DUR
 			start,
 			end,
 			control,
+			useSeatToSeatCurve,
 			coverLoopSide: coverLoop ? (cards.length === 1 || index < cards.length - 1 ? -1 : 1) : 0,
 			coverLoopDepth: coverLoop && index < leftCardCount
 				? leftCardCount === 1 ? Number(cards.length > 1) : index / (leftCardCount - 1)
@@ -955,36 +1353,56 @@ function animateGainCards(cards, layoutTarget, moveDuration = GAIN_CARD_MOVE_DUR
 	states.forEach(({ card, start }) => writeTransform(card, start));
 
 	const startTime = performance.now();
+	let completed = false;
+	const complete = () => {
+		if (completed) return;
+		completed = true;
+		onComplete?.();
+	};
 	const step = now => {
-		const rawProgress = Math.min(Math.max((now - startTime) / moveDuration, 0), 1);
-		const progress = easeOutSine(rawProgress);
-		const loopOffset = coverLoop ? Math.sin(Math.PI * progress) * getDui().boundsCaches.arena.cardWidth * 0.45 : 0;
+		try {
+			const rawProgress = Math.min(Math.max((now - startTime) / moveDuration, 0), 1);
+			const progress = easeOutSine(rawProgress);
+			const loopOffset = coverLoop ? Math.sin(Math.PI * progress) * getDui().boundsCaches.arena.cardWidth * 0.45 : 0;
+			const followX = followOrigin && followPlayer.isConnected !== false
+				? followPlayer.offsetLeft + followPlayer.offsetWidth / 2 - followOrigin.x : 0;
+			const followY = followOrigin && followPlayer.isConnected !== false
+				? followPlayer.offsetTop + followPlayer.offsetHeight / 2 - followOrigin.y : 0;
 
-		for (const state of states) {
-			if (!state.card.parentNode) continue;
-			const linearX = state.start.x + (state.end.x - state.start.x) * progress;
-			const linearY = state.start.y + (state.end.y - state.start.y) * progress;
-			const transform = {
-				x: state.coverLoopSide
-					? linearX + state.coverLoopSide * loopOffset
-					: quadraticBezier(progress, state.start.x, state.control.x, state.end.x),
-				y: state.coverLoopSide
-					? linearY + loopOffset * (coverLoopUpward ? -1 : 1) * (1 + state.coverLoopDepth * 0.35)
-					: quadraticBezier(progress, state.start.y, state.control.y, state.end.y),
-				scale: state.start.scale + (state.end.scale - state.start.scale) * progress,
-			};
-			writeTransform(state.card, transform);
-		}
-
-		if (rawProgress < 1) {
-			requestAnimationFrame(step);
-		} else {
 			for (const state of states) {
 				if (!state.card.parentNode) continue;
-				writeTransform(state.card, state.end);
-				state.card.style.transition = "";
-				state.card.style.willChange = "";
+				// 接牌角色可能仍处于布局过渡中，终点跟随其当前位置，避免落在过渡前的位置。
+				const end = followOrigin ? { ...state.end, x: state.end.x + followX, y: state.end.y + followY } : state.end;
+				const control = followOrigin ? getOfficialBezierControlPoint(state.start, end, state.useSeatToSeatCurve) : state.control;
+				state.followEnd = end;
+				const linearX = state.start.x + (end.x - state.start.x) * progress;
+				const linearY = state.start.y + (end.y - state.start.y) * progress;
+				const transform = {
+					x: state.coverLoopSide
+						? linearX + state.coverLoopSide * loopOffset
+						: quadraticBezier(progress, state.start.x, control.x, end.x),
+					y: state.coverLoopSide
+						? linearY + loopOffset * (coverLoopUpward ? -1 : 1) * (1 + state.coverLoopDepth * 0.35)
+						: quadraticBezier(progress, state.start.y, control.y, end.y),
+					scale: state.start.scale + (state.end.scale - state.start.scale) * progress,
+				};
+				writeTransform(state.card, transform);
 			}
+
+			if (rawProgress < 1) {
+				requestAnimationFrame(step);
+			} else {
+				for (const state of states) {
+					if (!state.card.parentNode) continue;
+					writeTransform(state.card, state.followEnd || state.end);
+					state.card.style.transition = "";
+					state.card.style.willChange = "";
+				}
+				complete();
+			}
+		} catch (error) {
+			if (onComplete) complete();
+			throw error;
 		}
 	};
 
@@ -1051,6 +1469,7 @@ function playerDirectgain(cards, broadcast, gaintag) {
 			cards
 		);
 	}
+	if (hasPendingWuguGain(cards, _status.event, undefined, this)) playPendingWuguGain(cards, this, _status.event);
 	return this;
 }
 
@@ -1149,12 +1568,14 @@ function playerDraw(num, init, config) {
 	ui.arena.appendChild(fragment);
 	_dui.queueNextFrameTick(function () {
 		animateGainCards(draws, function () {
-			_dui.layoutDrawCards(draws, player);
+			player.checkBoundsCache?.(true);
+			_dui.layoutDrawCards(draws, player, false, { compact: true });
+			return { followPlayer: player };
 		});
 	});
 }
 
-function playerGain2(cards, log) {
+function playerGain2(cards, log, dialogId) {
 	let type = get.itemtype(cards);
 	if (type != "cards") {
 		if (type != "card") return;
@@ -1162,25 +1583,34 @@ function playerGain2(cards, log) {
 		cards = [cards];
 	}
 	if (log === true) game.log(this, "获得了", cards);
+	prepareWuguGain(cards, _status.event, dialogId, this);
+	const wuguDialogId = getWuguDialogId(cards, _status.event, dialogId, this) ?? dialogId;
 	game.broadcast(
-		function (player, cards) {
-			player.$gain2(cards);
+		function (player, cards, dialogId) {
+			player.$gain2(cards, undefined, dialogId);
 		},
 		this,
-		cards
+		cards,
+		wuguDialogId
 	);
+	if (isHandledWuguGain(cards, _status.event, dialogId, this) || isPendingWuguGain(cards, _status.event, dialogId, this)) {
+		playPendingWuguGain(cards, this, _status.event, dialogId);
+		return;
+	}
 	const gains = [];
 	const draws = [];
 	const seatToSeatCards = new Set();
+	const localHandTargets = new Map();
 	let card;
 	let clone;
 	const player = this;
 	for (let index = 0; index < cards.length; index++) {
-		clone = cards[index].clone;
-		card = cards[index].copy("thrown", "gainingcard");
+		const sourceCard = cards[index];
+		clone = sourceCard.clone;
+		card = sourceCard.copy("thrown", "gainingcard");
 		card.fixed = true;
 		if (player !== game.me) applyCardBorder(card, player);
-		const sourceNode = clone && ui.arena.contains(clone) ? clone : ui.arena.contains(cards[index]) ? cards[index] : null;
+		const sourceNode = clone && ui.arena.contains(clone) ? clone : ui.arena.contains(sourceCard) ? sourceCard : null;
 		if (sourceNode) {
 			card.scaled = true;
 			card.style.transform = sourceNode.style.transform;
@@ -1190,6 +1620,7 @@ function playerGain2(cards, log) {
 		} else {
 			draws.push(card);
 		}
+		if (player === game.me && isLocalHandCard(sourceCard, player)) localHandTargets.set(card, sourceCard);
 	}
 	if (gains.length) game.addVideo("gain2", this, get.cardsInfo(gains));
 	if (draws.length) game.addVideo("drawCard", this, get.cardsInfo(draws));
@@ -1199,12 +1630,32 @@ function playerGain2(cards, log) {
 	setDrawCardStartPosition(draws);
 	const fragment = document.createDocumentFragment();
 	for (let i = 0; i < cards.length; i++) fragment.appendChild(cards[i]);
-	ui.arena.appendChild(fragment);
-	_dui.queueNextFrameTick(function () {
-		animateGainCards(cards, function () {
-			_dui.layoutDrawCards(cards, player);
-		}, GAIN_CARD_MOVE_DURATION, GAIN_CARD_REMOVE_DELAY, GAIN_CARD_REMOVE_DURATION, card => seatToSeatCards.has(card));
-	});
+	const localVisibilityEntries = hideLocalHandTargets(localHandTargets);
+	let localFinished = false;
+	const finishLocal = () => {
+		if (localFinished) return;
+		localFinished = true;
+		finishLocalHandFlight(localHandTargets, localVisibilityEntries);
+	};
+	try {
+		ui.arena.appendChild(fragment);
+		_dui.queueNextFrameTick(function () {
+			try {
+				animateGainCards(cards, function () {
+					if (localHandTargets.size) applyLocalHandTargets(cards, player, localHandTargets, _dui);
+					else _dui.layoutDrawCards(cards, player, false, { compact: true });
+				}, GAIN_CARD_MOVE_DURATION, GAIN_CARD_REMOVE_DELAY, GAIN_CARD_REMOVE_DURATION, card => seatToSeatCards.has(card), false, false, localVisibilityEntries.length ? finishLocal : undefined);
+			} catch (error) {
+				finishLocal();
+				if (localVisibilityEntries.length) console.error("[十周年UI] 本地获得牌动画启动失败", error);
+				else throw error;
+			}
+		});
+	} catch (error) {
+		finishLocal();
+		if (localVisibilityEntries.length) console.error("[十周年UI] 本地获得牌动画排队失败", error);
+		else throw error;
+	}
 }
 
 function playerGive(cards, target, log, record) {
@@ -1252,20 +1703,25 @@ function playerGive(cards, target, log, record) {
 	const arena = _dui.boundsCaches.arena;
 	arena.check();
 	const draws = [];
+	const localHandTargets = new Map();
 	const player = this;
 	const fragment = document.createDocumentFragment();
+	const localHandCards = getCurrentLocalGainCards(player, target, cards.length);
 	for (let index = 0; index < cards.length; index++) {
-		if ((card = cards[index])) {
-			const sourceTransform = ui.arena.contains(card) ? getArenaRelativeTransform(card) : null;
-			const copy = card.copy("card", "thrown", "gainingcard", false);
+		const sourceCard = cards[index];
+		const targetCard = sourceCard || localHandCards[index];
+		if (sourceCard) {
+			const isLocalTargetCard = target === game.me && isLocalHandCard(sourceCard, target);
+			const sourceTransform = !isLocalTargetCard && ui.arena.contains(sourceCard) ? getArenaRelativeTransform(sourceCard) : null;
+			const copy = sourceCard.copy("card", "thrown", "gainingcard", false);
 			if (sourceTransform) copy._decadeMotionStartTransform = sourceTransform;
 			let fromHand = player == game.me;
 			if (fromHand) {
-				fromHand = card.throwWith ? card.throwWith == "h" || card.throwWith == "s" : card.parentNode == player.node.handcards1;
+				fromHand = sourceCard.throwWith ? sourceCard.throwWith == "h" || sourceCard.throwWith == "s" : sourceCard.parentNode == player.node.handcards1;
 			}
 			if (fromHand) {
-				copy.tx = Math.round(hand.x + card.tx);
-				copy.ty = Math.round(hand.y + 30 + card.ty);
+				copy.tx = Math.round(hand.x + sourceCard.tx);
+				copy.ty = Math.round(hand.y + 30 + sourceCard.ty);
 				copy.scaled = true;
 				copy.style.transform = "translate(" + copy.tx + "px," + copy.ty + "px) scale(" + hand.cardScale + ")";
 			} else {
@@ -1276,29 +1732,53 @@ function playerGive(cards, target, log, record) {
 			card = _dui.element.create("card thrown gainingcard");
 			draws.push(card);
 		}
+		if (target === game.me && isLocalHandCard(targetCard, target)) localHandTargets.set(card, targetCard);
 		cards[index] = card;
 		cards[index].fixed = true;
 		fragment.appendChild(cards[index]);
 	}
 	if (draws.length) _dui.layoutDrawCards(draws, player);
-	ui.arena.appendChild(fragment);
-	_dui.queueNextFrameTick(function () {
-		if (giveToExpansion) {
-			const targetTransform = getPlayerCardTransform(target, arena.cardScale);
-			const cardSpacing = Math.max(12, arena.cardWidth - 110);
-			animateGainCards(cards, () => {
-				cards.forEach((card, index) => writeTransform(card, {
-					x: targetTransform.x + ((useOnlineLocalExpansionMotion ? cards.length - 1 - index : index) - (cards.length - 1) / 2) * cardSpacing,
-					y: targetTransform.y,
-					scale: targetTransform.scale,
-				}));
-			}, EXPANSION_COVER_MOVE_DURATION, EXPANSION_COVER_MOVE_DURATION, 180, true, true, useOnlineLocalExpansionMotion);
-			return;
-		}
-		animateGainCards(cards, function () {
-			_dui.layoutDrawCards(cards, target);
-		}, 750, 750, GAIN_CARD_REMOVE_DURATION, true);
-	});
+	const localVisibilityEntries = giveToExpansion ? [] : hideLocalHandTargets(localHandTargets);
+	let localFinished = false;
+	const finishLocal = () => {
+		if (localFinished) return;
+		localFinished = true;
+		finishLocalHandFlight(localHandTargets, localVisibilityEntries);
+	};
+	try {
+		ui.arena.appendChild(fragment);
+		_dui.queueNextFrameTick(function () {
+			const play = () => {
+				if (giveToExpansion) {
+					const targetTransform = getPlayerCardTransform(target, arena.cardScale);
+					const cardSpacing = Math.max(12, arena.cardWidth - 110);
+					animateGainCards(cards, () => {
+						cards.forEach((card, index) => writeTransform(card, {
+							x: targetTransform.x + ((useOnlineLocalExpansionMotion ? cards.length - 1 - index : index) - (cards.length - 1) / 2) * cardSpacing,
+							y: targetTransform.y,
+							scale: targetTransform.scale,
+						}));
+					}, EXPANSION_COVER_MOVE_DURATION, EXPANSION_COVER_MOVE_DURATION, 180, true, true, useOnlineLocalExpansionMotion);
+					return;
+				}
+				animateGainCards(cards, function () {
+					if (localHandTargets.size) applyLocalHandTargets(cards, target, localHandTargets, _dui);
+					else _dui.layoutDrawCards(cards, target);
+				}, 750, 750, GAIN_CARD_REMOVE_DURATION, true, false, false, localVisibilityEntries.length ? finishLocal : undefined);
+			};
+			if (!localVisibilityEntries.length) return play();
+			try {
+				play();
+			} catch (error) {
+				finishLocal();
+				console.error("[十周年UI] 本地给予牌动画启动失败", error);
+			}
+		});
+	} catch (error) {
+		finishLocal();
+		if (localVisibilityEntries.length) console.error("[十周年UI] 本地给予牌动画排队失败", error);
+		else throw error;
+	}
 }
 
 function isExpansionGiveTo(target) {
@@ -1364,14 +1844,83 @@ function playerThrow(cards, time, record, nosource) {
 	if (time !== false) {
 		if (time !== "nobroadcast") {
 			game.broadcast(
-				function (player, cards, time, record, nosource) {
-					player.$throw(cards, time, record, nosource);
+				function (player, cards, time, record, nosource, equipUseAnimation) {
+					const remoteCards = Array.isArray(cards) ? cards : [cards];
+					remoteCards.forEach(card => { if (card && typeof card === "object") card._decadeRemoteEquipThrow = true; });
+					let shownCard;
+					try {
+						shownCard = player.$throw(cards, false, false, nosource, false);
+					} finally {
+						remoteCards.forEach(card => { if (card && typeof card === "object") delete card._decadeRemoteEquipThrow; });
+					}
+					if (!equipUseAnimation || !shownCard || shownCard._decadeEquipUseDirect || !shownCard.style || !ui.arena?.contains(shownCard)) return;
+					if (Array.isArray(ui.thrown)) {
+						const thrownIndex = ui.thrown.indexOf(shownCard);
+						if (thrownIndex !== -1) ui.thrown.splice(thrownIndex, 1);
+					}
+					shownCard.fixed = true;
+					const arenaRect = ui.arena.getBoundingClientRect();
+					const cardRect = shownCard.getBoundingClientRect();
+					const arenaScaleX = arenaRect.width / (ui.arena.clientWidth || arenaRect.width) || 1;
+					const arenaScaleY = arenaRect.height / (ui.arena.clientHeight || arenaRect.height) || 1;
+					const cardWidth = shownCard.offsetWidth || cardRect.width / arenaScaleX;
+					const cardHeight = shownCard.offsetHeight || cardRect.height / arenaScaleY;
+					const start = {
+						x: (cardRect.left - arenaRect.left) / arenaScaleX,
+						y: (cardRect.top - arenaRect.top) / arenaScaleY,
+						scale: cardRect.height / arenaScaleY / cardHeight,
+					};
+					const equipNum = Math.min(5, Math.max(1, Number(get.equipNum(shownCard)) || 1));
+					let slot = player === game.me && ui.equipSolts?.back
+						? Array.from(ui.equipSolts.back.children).find(item => Number(item.dataset.type) === equipNum - 1)
+						: null;
+					let slotRect = slot?.getBoundingClientRect();
+					if (!slotRect || !slotRect.width || !slotRect.height) {
+						const equipped = Array.from(player.node?.equips?.children || []).find(item => Number(get.equipNum(item)) === equipNum);
+						slotRect = equipped?.getBoundingClientRect();
+					}
+					if (!slotRect || !slotRect.width || !slotRect.height) {
+						const equipsRect = player.node?.equips?.getBoundingClientRect?.();
+						if (equipsRect?.width && equipsRect.height) {
+							const slotHeight = equipsRect.height / 5;
+							slotRect = { left: equipsRect.left, top: equipsRect.top + (equipNum - 1) * slotHeight, width: equipsRect.width, height: slotHeight };
+						}
+					}
+					if (!slotRect?.width || !slotRect.height) return;
+					const targetScale = 10 / cardHeight;
+					const target = {
+						x: (slotRect.left - arenaRect.left) / arenaScaleX - cardWidth * targetScale / 2 - 4,
+						y: (slotRect.top - arenaRect.top) / arenaScaleY + slotRect.height / arenaScaleY / 2 - cardHeight * targetScale / 2,
+						scale: targetScale,
+					};
+					const writeTransform = (x, y, scale) => { shownCard.style.transform = `translate(${x}px,${y}px) scale(${scale})`; };
+					shownCard.style.transformOrigin = "0 0";
+					shownCard.style.willChange = "transform, opacity";
+					shownCard.style.transition = "none";
+					writeTransform(start.x, start.y, start.scale);
+					requestAnimationFrame(() => {
+						if (!shownCard.parentNode) return;
+						shownCard.style.transition = "transform 220ms ease-out";
+						writeTransform(start.x, start.y - 20, start.scale * 1.15);
+						setTimeout(() => {
+							if (!shownCard.parentNode) return;
+							shownCard.style.transition = "transform 350ms linear, opacity 350ms linear";
+							shownCard.style.opacity = "0.88";
+							writeTransform(target.x, target.y, target.scale);
+							setTimeout(() => {
+								shownCard.style.transition = "opacity 180ms ease-out";
+								shownCard.style.opacity = "0";
+								setTimeout(() => shownCard.remove(), 190);
+							}, 350);
+						}, 520);
+					});
 				},
 				this,
 				cards,
 				0,
 				time,
-				nosource
+				nosource,
+				directEquip
 			);
 		}
 		game.addVideo("throw", this, [get.cardsInfo(cards), 0, nosource]);
@@ -1517,29 +2066,20 @@ function playerAddVirtualJudge(VCard, cards) {
 				if (window.decadeUI) cardx.node.judgeMark.node.judge.innerHTML = lib.translate[cardx.name + "_bg"] || get.translation(cardx.name)[0];
 			}
 			player.node.judges.insertBefore(cardx, player.node.judges.firstChild);
-			if (["bingliang", "lebu", "shandian", "fulei", "hongshui", "huoshan", "caomu", "jlsgqs_shuiyanqijun", "jydiy_zouhuorumo", "jydiy_yungongliaoshang", "xwjh_biguanqingxiu", "xumou_jsrg", "dczixi_bingliang", "dczixi_lebu", "dczixi_shandian"].includes(cardx.name)) {
-				let name = cardx.name;
-				const judgeText = lib.translate[cardx.name + "_bg"] || get.translation(cardx.name) || "";
+			const judgeName = lib.config.extension_十周年UI_newDecadeStyle === "onlineUI" ? cardx.viewAs || cardx.name : cardx.name;
+			if (["bingliang", "lebu", "shandian", "fulei", "hongshui", "huoshan", "caomu", "jlsgqs_shuiyanqijun", "jydiy_zouhuorumo", "jydiy_yungongliaoshang", "xwjh_biguanqingxiu", "xumou_jsrg", "dczixi_bingliang", "dczixi_lebu", "dczixi_shandian"].includes(judgeName)) {
+				let name = judgeName;
+				const judgeText = lib.translate[name + "_bg"] || get.translation(name) || "";
 				cardx.node.judgeMark.node.judge.innerText = "";
 				cardx.node.judgeMark.node.judge.style.fontSize = "";
 				const suffix = (lib.config.extension_十周年UI_newDecadeStyle === "on" || lib.config.extension_十周年UI_newDecadeStyle === "othersOff") && ["bingliang", "lebu", "shandian"].includes(name) ? "1.png" : ".png";
 				const path = `${lib.assetURL}extension/十周年UI/image/ui/judge-mark/`;
-				const image = new Image();
-				image.onload = function () {
-					cardx.node.judgeMark.node.judge.style.backgroundImage = `url("${image.src}")`;
-					cardx.node.judgeMark.node.judge.innerText = "";
-					cardx.node.judgeMark.node.judge.style.fontSize = "0px";
-				};
-				image.onerror = function () {
-					cardx.node.judgeMark.node.judge.style.backgroundImage = `url("${path}tongyong.png")`;
-					cardx.node.judgeMark.node.judge.innerText = judgeText ? judgeText[0] : "";
-				};
-				image.src = `${path}${name}${suffix}`;
+				game._decadeUIApplyJudgeMarkIcon(cardx.node.judgeMark.node.judge, name, path, judgeText, suffix);
 				cardx.node.judgeMark.node.judge.style.zIndex = "99";
 				cardx.node.judgeMark.node.judge.parentElement.children[0].style.background = "none";
 				cardx.node.judgeMark.node.judge.parentElement.children[0].style.display = "none";
 			} else {
-				cardx.node.judgeMark.node.judge.style.backgroundImage = `url("${lib.assetURL}extension/十周年UI/image/ui/judge-mark/tongyong.png")`;
+				game._decadeUIApplyJudgeMarkIcon(cardx.node.judgeMark.node.judge, null, `${lib.assetURL}extension/十周年UI/image/ui/judge-mark/`, "", ".png");
 			}
 			ui.updatej(player);
 			if (judgeMarkMap && !animateDelayJudgeUseToPlayer(player, cardx, cards)) revealDelayJudgeAttachedCard(cardx);
@@ -1552,4 +2092,4 @@ function playerAddVirtualJudge(VCard, cards) {
 	);
 }
 
-export { animatePendingEquipEntries, markPendingEquipEntry, playerAddVirtualJudge, playerDirectgain, playerDirectgains, playerDraw, playerGain2, playerGive, playerPhaseJudge, playerThrow, playerThrowordered2, setBasePlayerDraw };
+export { animatePendingEquipEntries, hasPendingWuguGain, markPendingEquipEntry, playPendingWuguGain, playerAddVirtualJudge, playerDirectgain, playerDirectgains, playerDraw, playerGain2, playerGive, playerPhaseJudge, playerThrow, playerThrowordered2, setBasePlayerDraw };

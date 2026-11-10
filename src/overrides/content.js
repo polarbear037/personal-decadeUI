@@ -1,4 +1,5 @@
 import { ui, get, lib, _status, game } from "noname";
+import { hasPendingWuguGain, playPendingWuguGain } from "./player/card-movement-online.js";
 function e(methods) {}
 function a(baseGain) {
 	return [
@@ -16,9 +17,18 @@ function a(baseGain) {
 			}
 			const _dui = window.decadeUI,
 				gainTo = function (cards, nodelay) {
-					((cards.duiMod = event.source), player == game.me && (_dui.layoutHandDraws(cards), _dui.queueNextFrameTick(_dui.layoutHand, _dui), game.addVideo("gain12", player, [get.cardsInfo(fragment.childNodes), gaintag])));
+					const pendingWugu = lib.config.extension_十周年UI_newDecadeStyle == "onlineUI" && hasPendingWuguGain(cards, event, undefined, player);
+					cards.duiMod = event.source;
+					if (player == game.me) {
+						if (!pendingWugu) {
+							_dui.layoutHandDraws(cards);
+							_dui.queueNextFrameTick(_dui.layoutHand, _dui);
+						}
+						game.addVideo("gain12", player, [get.cardsInfo(fragment.childNodes), gaintag]);
+					}
 					const d = player.getCards("s");
 					(d.length ? handcards.insertBefore(fragment, d[0]) : handcards.appendChild(fragment),
+						pendingWugu && playPendingWuguGain(cards, player, event),
 						game.broadcast(
 							function (player, cards, num, gaintag) {
 								(player.directgain(cards, null, gaintag), (_status.cardPileNum = num));

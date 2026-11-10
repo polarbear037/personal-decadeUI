@@ -35,52 +35,11 @@
 	background-size: 100% 100%;
 }
 
-/* 左侧按钮 */
-.leftbuttons,
-.rightbuttons {
-	width: 85px;
-	bottom: 5px;
-	max-height: 205px;
-	overflow: auto;
-}
-
-.leftbuttons {
-	left: 40px;
-}
-
-.rightbuttons {
-	right: 80px;
-}
-
-.anniubutton {
-	width: 80%;
-	height: 40px;
-	background-size: 100% 100%;
-	margin-top: 9%;
-	position: relative;
-	background-image: url("../../../assets/lbtn/OL_line/uibutton/gameanniubuttonsbg.png");
-	background-size: 100% 100%;
-	font-size: 20px;
-	font-weight: 550;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: rgb(197, 167, 139);
-	font-family: "shousha";
-	text-shadow: none;
-}
-
-.caidanbutton {
-	background-image: url("../../../assets/lbtn/OL_line/uibutton/caidan.png");
-	background-size: 100% 100%;
-	display: block;
-	width: 55px;
-	height: 58px;
-	position: absolute;
-	top: 40px;
-	right: 50px;
-	background-color: transparent;
-	z-index: 1;
+/* 桌面本体系统栏保留入口，避开两侧 Online 牌局控件。 */
+body[data-style="onlineUI"] #window:has(> .caidanbutton) > #system {
+	box-sizing: border-box;
+	width: 100%;
+	padding-inline: 114px 146px;
 }
 
 .lbtn-confirm:not(.closing).removing {
@@ -198,97 +157,4 @@
 	display: none !important;
 }
 
-/* 牌堆数显示 */
-.cardRoundNumber {
-	top: 59px;
-	right: 138.5px;
-	font-weight: 400;
-	font-family: "yuanli";
-	text-shadow:
-		#b4a993 0.2px 0.2px 0.2px,
-		#b4a993 0.2px -0.2px 0.2px,
-		#b4a993 -0.2px 0.2px 0.2px,
-		#b4a993 -0.2px -0.2px 0.2px;
-	z-index: 3;
-}
-
-.cardRoundNumber > .cardPileNumber {
-	left: 30px;
-	top: -15px;
-	--w: 105px;
-	--h: 55px;
-	width: var(--w);
-	height: var(--h);
-	background-image: url("../../../assets/lbtn/OL_line/uibutton/round_info_time_bg.png");
-	background-size: 100% 100%;
-	background-color: transparent;
-	position: relative;
-	z-index: 1;
-}
-
-.cardRoundNumber > .cardPileNumber > span {
-	left: -30px;
-	top: 25px;
-	width: 100%;
-	display: block;
-	position: absolute;
-	font-family: "yuanli";
-	line-height: 25px;
-	text-align: center;
-	color: #b08463;
-	font-size: 16px;
-	-webkit-text-stroke: 0.1px #000;
-	text-shadow:
-		-1px 0 0 #000,
-		1px 0 0 #000,
-		0 -1px 0 #000,
-		0 1px 0 #000,
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-}
-
-.cardRoundNumber > .roundNumber,
-.cardRoundNumber > .time {
-	left: 70px;
-	top: 0px;
-	height: 20px;
-	line-height: 5px;
-	white-space: nowrap;
-	font-size: 16px;
-	font-family: "shousha";
-	color: #b08463;
-	z-index: 3;
-}
-
-.cardRoundNumber > .roundNumber {
-	left: 80px;
-}
-
-.cardRoundNumber > .time {
-	top: 25px;
-	display: flex;
-	justify-content: center;
-	font-size: 16px;
-	font-family: "shousha";
-	color: #b08463;
-	min-width: 70px;
-}
-
-/* 托管中图标 */
-#autonode > div:last-child {
-	z-index: 10;
-	margin-bottom: -75px !important;
-	left: calc(50% - 440px);
-	font-size: 0px;
-	text-shadow: none;
-	--w: 400px;
-	--h: calc(var(--w) * 149 / 598);
-	width: var(--w);
-	height: var(--h);
-	background-image: url("../../../assets/lbtn/CD/tuoguan2.png");
-	background-size: 100% 100%;
-	-webkit-text-fill-color: transparent;
-	text-shadow: none !important;
-}
+/* 托管区统一复用 ../online.css 的官方 OL 素材与布局。 */

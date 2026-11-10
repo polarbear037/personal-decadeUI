@@ -9,15 +9,21 @@ const e = {
 			game.removeGlobalSkill("mx_start");
 			const e = "off" === lib.config.extension_十周年UI_newDecadeStyle,
 				effectName = e ? "effect_youxikaishi_shousha" : "effect_youxikaishi",
-				audio = e ? "audio/game_start_shousha.mp3" : "audio/game_start.mp3",
+				audioSetting = lib.config.extension_十周年UI_gameStartAudio,
+				audio = "shousha" === audioSetting ? "audio/game_start_shousha.mp3" : "online" === audioSetting ? "audio/kaizhan.ogg" : "audio/game_start.mp3",
 				scaleFactor = e ? 1.5 : 0.76;
-			game.playAudio("../extension", decadeUI.extensionName, audio);
+			const playGameStartAudio = () => game.playAudio("../extension", decadeUI.extensionName, audio);
+			if ("online" !== audioSetting) playGameStartAudio();
 			const animation = decadeUI.animation,
 				bounds = animation.getSpineBounds(effectName);
-			if (!bounds) return;
+			if (!bounds) {
+				if ("online" === audioSetting) playGameStartAudio();
+				return;
+			}
 			const { size: size } = bounds,
 				scale = Math.min(animation.canvas.width / size.x, animation.canvas.height / size.y) * scaleFactor;
 			animation.playSpine({ name: effectName, scale: scale });
+			if ("online" === audioSetting) setTimeout(playGameStartAudio, 133.333);
 		},
 	},
 	mx_borderLevel: {

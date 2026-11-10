@@ -1,0 +1,886 @@
+{
+  "apkSha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+  "reaEvidenceId": "ev_32483949fee139f6db2757f22d574f2cbe5546f2c7637023601d83f12254c266",
+  "mainMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb!main.sgs",
+  "mainSha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "rangeUnit": "decoded Unicode characters",
+  "references": [
+    {
+      "anchor": "class Yki extends",
+      "start": 14090875,
+      "end": 14097949,
+      "sha256": "d24c0a96c53eae2da5e1a249701aa6fc36a0760260de82fc59b6777304d9bd9f"
+    },
+    {
+      "anchor": "class BFi extends",
+      "start": 15050187,
+      "end": 15058006,
+      "sha256": "94fe22158ffa830f15948a6e8e5fe3cb77a15f1784682b36815f7c475673a047"
+    },
+    {
+      "anchor": "class VFi extends",
+      "start": 15060313,
+      "end": 15061723,
+      "sha256": "d2d9eded45ac652a2bc6057e51ea53cc828417976cf388fff9b201a244b06a54"
+    },
+    {
+      "anchor": "class qos extends",
+      "start": 20216845,
+      "end": 20242752,
+      "sha256": "821059d7c356d886446d1b63d0feccab57ed693c9964cdaf2a2c9ba80ffe2c33"
+    },
+    {
+      "anchor": "class sus extends",
+      "start": 20245696,
+      "end": 20251716,
+      "sha256": "4fd81e716b087eb9a539711766da9dbbc9871649ea6ad22cb81ef5dd045b95a5"
+    },
+    {
+      "anchor": "ShowGeneralInfo(){this.showGeneralTipHandler()}",
+      "start": 7398401,
+      "end": 7398748,
+      "sha256": "b11b38d170dfc140970e860d203e742ea44a655a5804325fa2436e21f8fb18cd"
+    },
+    {
+      "anchor": "class jki extends",
+      "start": 14119827,
+      "end": 14120939,
+      "sha256": "02dca7248149178a93f4802af0740db7389a1beb19b10e09ff62a2eac3e6c7ed"
+    },
+    {
+      "anchor": "class $ki extends",
+      "start": 14120939,
+      "end": 14133616,
+      "sha256": "d9c2f7205185ac7bde50ebfd22dbdcc1b2b5dbeb03ece0428af19361b17cce59"
+    }
+  ],
+  "assets": [
+    {
+      "file": "ui/assets/character/online/general-tool/wnd_cls.png",
+      "sha256": "0f9d19a6d8acc82c8ae18989f7dad24c17476662f06ad6638320afb721e5c54d",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/d8a64e4c",
+      "atlasSha256": "fd473c5ece9a74f0f226581220457646660c6784b4d260c4a38228d5822e3442",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/eb530a35",
+      "textureSha256": "7252693c76b2d82e8473ea32d96e448b4d6cc7a680b3ac4a1c59e33ad81b2309",
+      "frame": {
+        "frame": {
+          "h": 35,
+          "idx": 0,
+          "w": 36,
+          "x": 0,
+          "y": 932
+        },
+        "sourceSize": {
+          "h": 35,
+          "w": 36
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "0f9d19a6d8acc82c8ae18989f7dad24c17476662f06ad6638320afb721e5c54d",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/wnd_bg_medium.png",
+      "sha256": "81a43696601372f5f521c506bb4bfa0f71a0ba1d983bf77326d6c0d49ed89615",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/d8a64e4c",
+      "atlasSha256": "fd473c5ece9a74f0f226581220457646660c6784b4d260c4a38228d5822e3442",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/eb530a35",
+      "textureSha256": "7252693c76b2d82e8473ea32d96e448b4d6cc7a680b3ac4a1c59e33ad81b2309",
+      "frame": {
+        "frame": {
+          "h": 532,
+          "idx": 0,
+          "w": 882,
+          "x": 0,
+          "y": 0
+        },
+        "sourceSize": {
+          "h": 532,
+          "w": 882
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "51d66466745ffbbe54c6c2269c31a5920300ccbc362b4ba9aba79782685760e1",
+      "composed": [
+        [
+          1080,
+          600
+        ],
+        [
+          100,
+          80,
+          100,
+          80
+        ]
+      ]
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/wjxq_titlebg.png",
+      "sha256": "75941ee1a4fb72a889a863c1f472f50af89aaca02921238ee60132f9383a0494",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3129f86e",
+      "atlasSha256": "13db48649e7b281c7870a2693b26bef2319782ada6ed1c39e15e94e8115d28a9",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/9bb62af4",
+      "textureSha256": "3cbfc9f69d1860dc66e5085936ed11cf972015946744b3de0c558b2d969fbff2",
+      "frame": {
+        "frame": {
+          "h": 43,
+          "idx": 0,
+          "w": 253,
+          "x": 0,
+          "y": 433
+        },
+        "sourceSize": {
+          "h": 43,
+          "w": 253
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "75941ee1a4fb72a889a863c1f472f50af89aaca02921238ee60132f9383a0494",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/generaldetail_skill1.png",
+      "sha256": "7282f57510aca2ed1bcf425edab30ecf525aa35fec4a51db8df1c04a978a14d1",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3129f86e",
+      "atlasSha256": "13db48649e7b281c7870a2693b26bef2319782ada6ed1c39e15e94e8115d28a9",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/9bb62af4",
+      "textureSha256": "3cbfc9f69d1860dc66e5085936ed11cf972015946744b3de0c558b2d969fbff2",
+      "frame": {
+        "frame": {
+          "h": 20,
+          "idx": 0,
+          "w": 20,
+          "x": 242,
+          "y": 478
+        },
+        "sourceSize": {
+          "h": 20,
+          "w": 20
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "7282f57510aca2ed1bcf425edab30ecf525aa35fec4a51db8df1c04a978a14d1",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/generalTool_info_icon.png",
+      "sha256": "72d9a6ca2330efca50631a60ae78e817373e52ff8887e36257dad1af593ebb33",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3129f86e",
+      "atlasSha256": "13db48649e7b281c7870a2693b26bef2319782ada6ed1c39e15e94e8115d28a9",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/9bb62af4",
+      "textureSha256": "3cbfc9f69d1860dc66e5085936ed11cf972015946744b3de0c558b2d969fbff2",
+      "frame": {
+        "frame": {
+          "h": 106,
+          "idx": 0,
+          "w": 106,
+          "x": 0,
+          "y": 325
+        },
+        "sourceSize": {
+          "h": 106,
+          "w": 106
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "72d9a6ca2330efca50631a60ae78e817373e52ff8887e36257dad1af593ebb33",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/general_sealSkill_icon.png",
+      "sha256": "9a67462535b41c11a8169e06bb27345bc29c60a816d4238ac9bd308ae368e96f",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3129f86e",
+      "atlasSha256": "13db48649e7b281c7870a2693b26bef2319782ada6ed1c39e15e94e8115d28a9",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/9bb62af4",
+      "textureSha256": "3cbfc9f69d1860dc66e5085936ed11cf972015946744b3de0c558b2d969fbff2",
+      "frame": {
+        "frame": {
+          "h": 40,
+          "idx": 0,
+          "w": 50,
+          "x": 431,
+          "y": 47
+        },
+        "sourceSize": {
+          "h": 40,
+          "w": 50
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "9a67462535b41c11a8169e06bb27345bc29c60a816d4238ac9bd308ae368e96f",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/nei_rong_di_kao_bei_2.png",
+      "sha256": "5399165f0e193d3305c59630e19597655562e52b633d72caff2853db59acbcee",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3129f86e",
+      "atlasSha256": "13db48649e7b281c7870a2693b26bef2319782ada6ed1c39e15e94e8115d28a9",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/9bb62af4",
+      "textureSha256": "3cbfc9f69d1860dc66e5085936ed11cf972015946744b3de0c558b2d969fbff2",
+      "frame": {
+        "frame": {
+          "h": 107,
+          "idx": 0,
+          "w": 429,
+          "x": 0,
+          "y": 0
+        },
+        "sourceSize": {
+          "h": 107,
+          "w": 429
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "5399165f0e193d3305c59630e19597655562e52b633d72caff2853db59acbcee",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/wjxq_line.png",
+      "sha256": "ebc70fb78e27cd9244ea566e10aa941b24c0c0e667942006892fb37092ed92b9",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3129f86e",
+      "atlasSha256": "13db48649e7b281c7870a2693b26bef2319782ada6ed1c39e15e94e8115d28a9",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/9bb62af4",
+      "textureSha256": "3cbfc9f69d1860dc66e5085936ed11cf972015946744b3de0c558b2d969fbff2",
+      "frame": {
+        "frame": {
+          "h": 105,
+          "idx": 0,
+          "w": 1,
+          "x": 508,
+          "y": 0
+        },
+        "sourceSize": {
+          "h": 105,
+          "w": 1
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "ebc70fb78e27cd9244ea566e10aa941b24c0c0e667942006892fb37092ed92b9",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/wjxq_line_1.png",
+      "sha256": "1d415372f17f2a4a989c5d0b8826902e199294fb288aebfda456692df79619a9",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3129f86e",
+      "atlasSha256": "13db48649e7b281c7870a2693b26bef2319782ada6ed1c39e15e94e8115d28a9",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/9bb62af4",
+      "textureSha256": "3cbfc9f69d1860dc66e5085936ed11cf972015946744b3de0c558b2d969fbff2",
+      "frame": {
+        "frame": {
+          "h": 2,
+          "idx": 0,
+          "w": 429,
+          "x": 0,
+          "y": 506
+        },
+        "sourceSize": {
+          "h": 2,
+          "w": 429
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "1d415372f17f2a4a989c5d0b8826902e199294fb288aebfda456692df79619a9",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/wjxq_titlezhuangshi.png",
+      "sha256": "ef0ae6542e914c0ee9d1c0e8006809d64a5786c4bda20af3b617bf7b60dbb97e",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3129f86e",
+      "atlasSha256": "13db48649e7b281c7870a2693b26bef2319782ada6ed1c39e15e94e8115d28a9",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/9bb62af4",
+      "textureSha256": "3cbfc9f69d1860dc66e5085936ed11cf972015946744b3de0c558b2d969fbff2",
+      "frame": {
+        "frame": {
+          "h": 13,
+          "idx": 0,
+          "w": 16,
+          "x": 483,
+          "y": 48
+        },
+        "sourceSize": {
+          "h": 13,
+          "w": 16
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "ef0ae6542e914c0ee9d1c0e8006809d64a5786c4bda20af3b617bf7b60dbb97e",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/wjxq_titlezhuangshi_1.png",
+      "sha256": "23b4a37a6c90fe9ae38e2abe9e352749ac029232ce38a8ff16052d765e17e384",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3129f86e",
+      "atlasSha256": "13db48649e7b281c7870a2693b26bef2319782ada6ed1c39e15e94e8115d28a9",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/9bb62af4",
+      "textureSha256": "3cbfc9f69d1860dc66e5085936ed11cf972015946744b3de0c558b2d969fbff2",
+      "frame": {
+        "frame": {
+          "h": 13,
+          "idx": 0,
+          "w": 16,
+          "x": 483,
+          "y": 33
+        },
+        "sourceSize": {
+          "h": 13,
+          "w": 16
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "23b4a37a6c90fe9ae38e2abe9e352749ac029232ce38a8ff16052d765e17e384",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/wjxq_txt1.png",
+      "sha256": "c51c5ba3d28e851b9a2511741ff83964c609a612ee945ecd219e87e2e9e7b16a",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3129f86e",
+      "atlasSha256": "13db48649e7b281c7870a2693b26bef2319782ada6ed1c39e15e94e8115d28a9",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/9bb62af4",
+      "textureSha256": "3cbfc9f69d1860dc66e5085936ed11cf972015946744b3de0c558b2d969fbff2",
+      "frame": {
+        "frame": {
+          "h": 25,
+          "idx": 0,
+          "w": 72,
+          "x": 95,
+          "y": 478
+        },
+        "sourceSize": {
+          "h": 25,
+          "w": 72
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "c51c5ba3d28e851b9a2511741ff83964c609a612ee945ecd219e87e2e9e7b16a",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/wjxq_txt2.png",
+      "sha256": "689b4056cb65635f7eaafddba2a3b5f0b645dfd443d133521402797bba153dcf",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3129f86e",
+      "atlasSha256": "13db48649e7b281c7870a2693b26bef2319782ada6ed1c39e15e94e8115d28a9",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/9bb62af4",
+      "textureSha256": "3cbfc9f69d1860dc66e5085936ed11cf972015946744b3de0c558b2d969fbff2",
+      "frame": {
+        "frame": {
+          "h": 26,
+          "idx": 0,
+          "w": 93,
+          "x": 0,
+          "y": 478
+        },
+        "sourceSize": {
+          "h": 26,
+          "w": 93
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "689b4056cb65635f7eaafddba2a3b5f0b645dfd443d133521402797bba153dcf",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/wjxq_txt3.png",
+      "sha256": "f28a7f3345ff8404b5fc8eb43f0fd2159af95526bd1fb89226736e53a688ff33",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3129f86e",
+      "atlasSha256": "13db48649e7b281c7870a2693b26bef2319782ada6ed1c39e15e94e8115d28a9",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/9bb62af4",
+      "textureSha256": "3cbfc9f69d1860dc66e5085936ed11cf972015946744b3de0c558b2d969fbff2",
+      "frame": {
+        "frame": {
+          "h": 25,
+          "idx": 0,
+          "w": 71,
+          "x": 169,
+          "y": 478
+        },
+        "sourceSize": {
+          "h": 25,
+          "w": 71
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "f28a7f3345ff8404b5fc8eb43f0fd2159af95526bd1fb89226736e53a688ff33",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/generaldetail_bgskill.png",
+      "sha256": "101d234bccbee37b82f9943889f751d2fe65fca337b1662c1d48c37ed4d59f42",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/71445296",
+      "atlasSha256": "98e13074fd217a6ce182502f81970d43cad43f2aee019efe6ae21d6091267b05",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/8723e84d",
+      "textureSha256": "6fba16e2295766af1978d0ebd00cf0e51ce4e2220b8a42256d4c6e590f9a8875",
+      "frame": {
+        "frame": {
+          "h": 55,
+          "idx": 0,
+          "w": 116,
+          "x": 0,
+          "y": 881
+        },
+        "sourceSize": {
+          "h": 55,
+          "w": 116
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "101d234bccbee37b82f9943889f751d2fe65fca337b1662c1d48c37ed4d59f42",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/dmdsubarrow_dn.png",
+      "sha256": "653882ebf0d1755e03c38f5c7b11f26ac3e3e410967ab56c69baa83aab27918e",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/71445296",
+      "atlasSha256": "98e13074fd217a6ce182502f81970d43cad43f2aee019efe6ae21d6091267b05",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/8723e84d",
+      "textureSha256": "6fba16e2295766af1978d0ebd00cf0e51ce4e2220b8a42256d4c6e590f9a8875",
+      "frame": {
+        "frame": {
+          "h": 14,
+          "idx": 0,
+          "w": 22,
+          "x": 1052,
+          "y": 935
+        },
+        "sourceSize": {
+          "h": 14,
+          "w": 22
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "653882ebf0d1755e03c38f5c7b11f26ac3e3e410967ab56c69baa83aab27918e",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/common_gary_style_4.png",
+      "sha256": "4122ea5cf2d4ecc791aeb0c3981107192564bb2a24ffa91624852d80d93ae008",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/71445296",
+      "atlasSha256": "98e13074fd217a6ce182502f81970d43cad43f2aee019efe6ae21d6091267b05",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/8723e84d",
+      "textureSha256": "6fba16e2295766af1978d0ebd00cf0e51ce4e2220b8a42256d4c6e590f9a8875",
+      "frame": {
+        "frame": {
+          "h": 24,
+          "idx": 0,
+          "w": 24,
+          "x": 1236,
+          "y": 863
+        },
+        "sourceSize": {
+          "h": 24,
+          "w": 24
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "47ffdaa5d2ad1f9121deeeefa4ea7cfb9d5d5b6bc5f7ca7d27893c1213060653",
+      "composed": [
+        [
+          557,
+          496
+        ],
+        [
+          6,
+          6,
+          6,
+          6
+        ]
+      ]
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/general_bigSkin_icon_gary_bg_new.png",
+      "sha256": "5120c9b3f714e548b5623f08d68df486e92e04ccf49f6e64b09431d9ceb955d7",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 263,
+          "idx": 0,
+          "w": 43,
+          "x": 1552,
+          "y": 0
+        },
+        "sourceSize": {
+          "h": 263,
+          "w": 43
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "5120c9b3f714e548b5623f08d68df486e92e04ccf49f6e64b09431d9ceb955d7",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/general_bigSkin_icon_wei_bg_new.png",
+      "sha256": "6a6138938864c1321bc60691bbe54c58681d1cf7109c6408340e7627bb0ff889",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 263,
+          "idx": 0,
+          "w": 43,
+          "x": 1291,
+          "y": 516
+        },
+        "sourceSize": {
+          "h": 263,
+          "w": 43
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "6a6138938864c1321bc60691bbe54c58681d1cf7109c6408340e7627bb0ff889",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/general_bigSkin_icon_shu_bg_new.png",
+      "sha256": "76f84422ac462d0c368dd04e75a96c52c280eb85ed282c32e2f539ce16e6700c",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 263,
+          "idx": 0,
+          "w": 43,
+          "x": 1336,
+          "y": 516
+        },
+        "sourceSize": {
+          "h": 263,
+          "w": 43
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "76f84422ac462d0c368dd04e75a96c52c280eb85ed282c32e2f539ce16e6700c",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/general_bigSkin_icon_wu_bg_new.png",
+      "sha256": "b960d2ab6486765f7a18c94b1b4fb8f0a1a97fd9c0255935a03055cc64eb4254",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 263,
+          "idx": 0,
+          "w": 43,
+          "x": 1471,
+          "y": 64
+        },
+        "sourceSize": {
+          "h": 263,
+          "w": 43
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "b960d2ab6486765f7a18c94b1b4fb8f0a1a97fd9c0255935a03055cc64eb4254",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/general_bigSkin_icon_qun_bg_new.png",
+      "sha256": "33b7245d57f3dfc967924e230bd5462eda0f2a961f71979febcc00fc2a65f7db",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 263,
+          "idx": 0,
+          "w": 43,
+          "x": 1426,
+          "y": 290
+        },
+        "sourceSize": {
+          "h": 263,
+          "w": 43
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "33b7245d57f3dfc967924e230bd5462eda0f2a961f71979febcc00fc2a65f7db",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/general_bigSkin_icon_jin_bg_new.png",
+      "sha256": "f6846af689935801827fce03b9188c3f343b574c6352d4a805d66af0e15909e2",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 263,
+          "idx": 0,
+          "w": 43,
+          "x": 1426,
+          "y": 555
+        },
+        "sourceSize": {
+          "h": 263,
+          "w": 43
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "f6846af689935801827fce03b9188c3f343b574c6352d4a805d66af0e15909e2",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/general_bigSkin_icon_shen_bg_new.png",
+      "sha256": "00ff463bbc35393f08bb75e07cf121fa99a8f6e0bca11c698945239a39be2af2",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 263,
+          "idx": 0,
+          "w": 43,
+          "x": 1381,
+          "y": 516
+        },
+        "sourceSize": {
+          "h": 263,
+          "w": 43
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "00ff463bbc35393f08bb75e07cf121fa99a8f6e0bca11c698945239a39be2af2",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/general_bigSkin_icon_xie_bg_new.png",
+      "sha256": "5d2af631e17fc3c3c29a62a159e307223f92697376bc376c5a61404f94b98688",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 263,
+          "idx": 0,
+          "w": 43,
+          "x": 1471,
+          "y": 329
+        },
+        "sourceSize": {
+          "h": 263,
+          "w": 43
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "5d2af631e17fc3c3c29a62a159e307223f92697376bc376c5a61404f94b98688",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/general_bigSkin_icon_yao_bg_new.png",
+      "sha256": "33b7245d57f3dfc967924e230bd5462eda0f2a961f71979febcc00fc2a65f7db",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 263,
+          "idx": 0,
+          "w": 43,
+          "x": 1471,
+          "y": 594
+        },
+        "sourceSize": {
+          "h": 263,
+          "w": 43
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "33b7245d57f3dfc967924e230bd5462eda0f2a961f71979febcc00fc2a65f7db",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/general_bigSkin_icon_yeXin_bg_new.png",
+      "sha256": "b4178ee86a90516ef85c1be1cf7630a68d941c8b3403e58dea6142016360e8d0",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 263,
+          "idx": 0,
+          "w": 43,
+          "x": 1516,
+          "y": 265
+        },
+        "sourceSize": {
+          "h": 263,
+          "w": 43
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "b4178ee86a90516ef85c1be1cf7630a68d941c8b3403e58dea6142016360e8d0",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/generals_gradebg.png",
+      "sha256": "3f3ee8a4d2bdbb5521b5707ca4db70be80fc5750ce027b771dd4442ba7bc8089",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 60,
+          "idx": 0,
+          "w": 60,
+          "x": 1875,
+          "y": 154
+        },
+        "sourceSize": {
+          "h": 60,
+          "w": 60
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "248234acc011c771367fac6fabf12ea64abc6cbd9dfbeec783fc8a19f243cbb2",
+      "composed": [
+        [
+          172,
+          228
+        ],
+        [
+          20,
+          20,
+          20,
+          20
+        ]
+      ]
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/generals_frame.png",
+      "sha256": "adf53de01b70e9b8fd922be358b75ad0fcabf22643adca79838d47df7ae505c2",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 44,
+          "idx": 0,
+          "w": 44,
+          "x": 1245,
+          "y": 516
+        },
+        "sourceSize": {
+          "h": 44,
+          "w": 44
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "49f8d15fe0c7bb280ad0fb5688ec11d5b0a13bd5740564a7da1b90c58e35be51",
+      "composed": [
+        [
+          178,
+          231
+        ],
+        [
+          16,
+          16,
+          16,
+          16
+        ]
+      ]
+    }
+  ]
+}

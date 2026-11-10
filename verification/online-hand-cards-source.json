@@ -1,0 +1,145 @@
+{
+  "source": "OL Android 4.0.2 APK",
+  "apk_sha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+  "main_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "rea_evidence": "ev_496659af822b952a64fef2c7ff9fa53340b0395ed5f49305efe1f276536eef36",
+  "classes": [
+    "kki",
+    "Cns",
+    "Ens.createHandCardSpr",
+    "current card class OnShowCardTagTex/getTagName"
+  ],
+  "official": {
+    "strip": [
+      47,
+      108
+    ],
+    "lines": 4,
+    "ellipsis_at": 5,
+    "columns": 4,
+    "card_scale": 0.85,
+    "card_size": [
+      126,
+      174
+    ],
+    "height": [
+      220,
+      380,
+      400
+    ],
+    "popup_title": "{0}的手牌",
+    "default_recommend_limit": 1,
+    "default_send_ms": 100,
+    "refresh_ms": 3000,
+    "open_ms": 200
+  },
+  "adaptation": {
+    "scale": 0.72,
+    "refresh_ms": 250,
+    "transport": "Private native player.send, client request authenticated by server socket id; no game decision changes",
+    "recommend_badge": "Independent span.dui-mate-recommend-badge; sender uses card_tag_recommon0, recipient uses card_tag_recommon1; cleared on cancellation/hand exit/game end and stripped from Card.copy()."
+  },
+  "assets": [
+    {
+      "atlas": "res/assets/game/seatBottom.atlas",
+      "frame": {
+        "h": 12,
+        "idx": 0,
+        "w": 12,
+        "x": 0,
+        "y": 952
+      },
+      "target": "image/ui/hand/other_hand_card_bg.png",
+      "pixel_equal": true,
+      "sha256": "92e752947d0fe3ca3d8b27b38525e4a3ee243fec210ef8619ba52abdf319f83a"
+    },
+    {
+      "atlas": "res/assets/game/seat.atlas",
+      "frame": {
+        "h": 248,
+        "idx": 0,
+        "w": 108,
+        "x": 52,
+        "y": 227
+      },
+      "target": "image/ui/hand/skillTipShowBg.png",
+      "pixel_equal": true,
+      "sha256": "6460c5ed16e51919cb7a78a1ba722b68291fa6bb842cb63ba235e3740b7c8fe4"
+    },
+    {
+      "atlas": "res/assets/cards/cards.atlas",
+      "frame": {
+        "h": 26,
+        "idx": 0,
+        "w": 93,
+        "x": 1900,
+        "y": 352
+      },
+      "target": "image/ui/hand/card_tag_recommon0.png",
+      "pixel_equal": true,
+      "sha256": "5d48f6bb2d9f490ea891c85848f88df09a8bacdc800dab1e32edd2ec56f6bc53"
+    },
+    {
+      "atlas": "res/assets/cards/cards.atlas",
+      "frame": {
+        "h": 26,
+        "idx": 0,
+        "w": 93,
+        "x": 1900,
+        "y": 380
+      },
+      "target": "image/ui/hand/card_tag_recommon1.png",
+      "pixel_equal": true,
+      "sha256": "9735e9f753f34324977cf5b590e08ea5f9c38237b348c261fa5f8cc361dbdc72"
+    }
+  ],
+  "current_card_rea_evidence": "ev_75e9cc82c6d74672099f2e69e6f10f7ac29d62803e74027798885baa2b0a3f93",
+  "verified_apk_members": {
+    "res/assets/game/seatBottom.atlas": {
+      "apk_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/d71f8945",
+      "sha256": "72081f8c260299cb776722e662395ca5ee03a58f6a9deb576cd07602767b533a"
+    },
+    "res/assets/game/seatBottom.png": {
+      "apk_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/b3ba4a43",
+      "sha256": "bce3ceb3b41fc490f41437476c0b10d546c188bdcc1712a07847a7ceeeda8a72"
+    },
+    "res/assets/game/seat.atlas": {
+      "apk_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/61c5aa54",
+      "sha256": "13216107810332015fe8b7875765d05e646cac00e0ebc85c04cbc1c3e1b056b1"
+    },
+    "res/assets/game/seat.png": {
+      "apk_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/db156ff2",
+      "sha256": "b083b66f6a922defd964c71416d5c0c108d8610ec109d69a75afb05640cb87b8"
+    },
+    "res/assets/cards/cards.atlas": {
+      "apk_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/bec0945b",
+      "sha256": "41edd6600d5753efefd1054978728fcc8cd394b829c3105a2e1522c2c66923c7"
+    },
+    "res/assets/cards/cards.png": {
+      "apk_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/ba0005aa",
+      "sha256": "671ccd3a0205ea89e1c0567e0ba6a1d1a5bafae4c62c3e6da7888ba59a3a031a"
+    }
+  },
+  "focused_rea_evidence": "ev_a6247ed1700acd20e07bb5545bbb7d98f8f98c599e2f1d29d04545ec9406ccf7",
+  "verified_classes": {
+    "Cns": {
+      "sha256": "b7b2464b89f0f20506b6e3d8f6d314612c56190ae084e282d9a8da46f224e827",
+      "exact_substring_of_main": true
+    },
+    "kki": {
+      "sha256": "00e620a093f26f307f787ac025953b279546c00c4622c2039a4db2c91b7ff99a",
+      "exact_substring_of_main": true
+    }
+  },
+  "interaction_contract": {
+    "click": "Toggle pending card; default limit 1. Clicking again before dispatch cancels the pending recommendation.",
+    "send": "After 100ms, revalidate Online style, friendship and visible card ownership, send privately, then close the popup.",
+    "receive": "Online recipient shows official badge; native selection and AI decisions remain unchanged.",
+    "lifecycle": "Close on hidden/dead/removed hand, observer state or style change; clear at game end and restart refresh on next initialization."
+  },
+  "verification_limits": [
+    "APK class inspection is static, not official client runtime observation.",
+    "Browser tests use the real noname entry and native WebSocket codecs on loopback, not a remote multiplayer game.",
+    "No full Electron game or official client screenshot comparison was performed."
+  ]
+}

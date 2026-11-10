@@ -1,0 +1,318 @@
+{
+  "stages": [
+    {
+      "phase": "hhks",
+      "text": "回合开始",
+      "zIndex": "6",
+      "display": "block",
+      "width": 109,
+      "height": 23,
+      "font": "21.4297px",
+      "color": "rgb(196, 176, 136)",
+      "rect": {
+        "x": 89.59375,
+        "y": 442.796875,
+        "width": 108.796875,
+        "height": 23.078125,
+        "top": 442.796875,
+        "right": 198.390625,
+        "bottom": 465.875,
+        "left": 89.59375
+      }
+    },
+    {
+      "phase": "zbjd",
+      "text": "准备阶段",
+      "zIndex": "6",
+      "display": "block",
+      "width": 109,
+      "height": 23,
+      "font": "21.4297px",
+      "color": "rgb(196, 176, 136)",
+      "rect": {
+        "x": 89.59375,
+        "y": 442.796875,
+        "width": 108.796875,
+        "height": 23.078125,
+        "top": 442.796875,
+        "right": 198.390625,
+        "bottom": 465.875,
+        "left": 89.59375
+      }
+    },
+    {
+      "phase": "pdjd",
+      "text": "判定阶段",
+      "zIndex": "6",
+      "display": "block",
+      "width": 109,
+      "height": 23,
+      "font": "21.4297px",
+      "color": "rgb(196, 176, 136)",
+      "rect": {
+        "x": 89.59375,
+        "y": 442.796875,
+        "width": 108.796875,
+        "height": 23.078125,
+        "top": 442.796875,
+        "right": 198.390625,
+        "bottom": 465.875,
+        "left": 89.59375
+      }
+    },
+    {
+      "phase": "mpjd",
+      "text": "摸牌阶段",
+      "zIndex": "6",
+      "display": "block",
+      "width": 109,
+      "height": 23,
+      "font": "21.4297px",
+      "color": "rgb(196, 176, 136)",
+      "rect": {
+        "x": 89.59375,
+        "y": 442.796875,
+        "width": 108.796875,
+        "height": 23.078125,
+        "top": 442.796875,
+        "right": 198.390625,
+        "bottom": 465.875,
+        "left": 89.59375
+      }
+    },
+    {
+      "phase": "cpjd",
+      "text": "出牌阶段",
+      "zIndex": "6",
+      "display": "block",
+      "width": 109,
+      "height": 23,
+      "font": "21.4297px",
+      "color": "rgb(196, 176, 136)",
+      "rect": {
+        "x": 89.59375,
+        "y": 442.796875,
+        "width": 108.796875,
+        "height": 23.078125,
+        "top": 442.796875,
+        "right": 198.390625,
+        "bottom": 465.875,
+        "left": 89.59375
+      }
+    },
+    {
+      "phase": "qpjd",
+      "text": "弃牌阶段",
+      "zIndex": "6",
+      "display": "block",
+      "width": 109,
+      "height": 23,
+      "font": "21.4297px",
+      "color": "rgb(196, 176, 136)",
+      "rect": {
+        "x": 89.59375,
+        "y": 442.796875,
+        "width": 108.796875,
+        "height": 23.078125,
+        "top": 442.796875,
+        "right": 198.390625,
+        "bottom": 465.875,
+        "left": 89.59375
+      }
+    },
+    {
+      "phase": "jsjd",
+      "text": "回合结束",
+      "zIndex": "6",
+      "display": "block",
+      "width": 109,
+      "height": 23,
+      "font": "21.4297px",
+      "color": "rgb(196, 176, 136)",
+      "rect": {
+        "x": 89.59375,
+        "y": 442.796875,
+        "width": 108.796875,
+        "height": 23.078125,
+        "top": 442.796875,
+        "right": 198.390625,
+        "bottom": 465.875,
+        "left": 89.59375
+      }
+    },
+    {
+      "phase": "hhjs",
+      "text": "回合结束",
+      "zIndex": "6",
+      "display": "block",
+      "width": 109,
+      "height": 23,
+      "font": "21.4297px",
+      "color": "rgb(196, 176, 136)",
+      "rect": {
+        "x": 89.59375,
+        "y": 442.796875,
+        "width": 108.796875,
+        "height": 23.078125,
+        "top": 442.796875,
+        "right": 198.390625,
+        "bottom": 465.875,
+        "left": 89.59375
+      }
+    }
+  ],
+  "animation": {
+    "samples": [
+      {
+        "time": 0,
+        "opacity": 0,
+        "x": -18
+      },
+      {
+        "time": 120,
+        "opacity": 0.684643,
+        "x": -5.67642
+      },
+      {
+        "time": 240,
+        "opacity": 1,
+        "x": 0
+      }
+    ],
+    "bg": "30x30",
+    "border": "10 fill",
+    "fontReady": true
+  },
+  "cssPosition": {
+    "inline": {
+      "left": "",
+      "top": "",
+      "transform": ""
+    },
+    "rect": {
+      "x": 128,
+      "y": 396,
+      "width": 108.796875,
+      "height": 23.078125,
+      "top": 396,
+      "right": 236.796875,
+      "bottom": 419.078125,
+      "left": 128
+    }
+  },
+  "lifecycle": {
+    "response": {
+      "phase": "ddxy",
+      "text": "等待响应",
+      "zIndex": "6",
+      "display": "block",
+      "width": 109,
+      "height": 23,
+      "font": "21.4297px",
+      "color": "rgb(196, 176, 136)",
+      "rect": {
+        "x": 89.59375,
+        "y": 442.796875,
+        "width": 108.796875,
+        "height": 23.078125,
+        "top": 442.796875,
+        "right": 198.390625,
+        "bottom": 465.875,
+        "left": 89.59375
+      }
+    },
+    "restored": {
+      "phase": "hhjs",
+      "text": "回合结束",
+      "zIndex": "6",
+      "display": "block",
+      "width": 109,
+      "height": 23,
+      "font": "21.4297px",
+      "color": "rgb(196, 176, 136)",
+      "rect": {
+        "x": 89.59375,
+        "y": 442.796875,
+        "width": 108.796875,
+        "height": 23.078125,
+        "top": 442.796875,
+        "right": 198.390625,
+        "bottom": 465.875,
+        "left": 89.59375
+      }
+    },
+    "afterOldTimer": {
+      "phase": "cpjd",
+      "text": "出牌阶段",
+      "zIndex": "6",
+      "display": "block",
+      "width": 109,
+      "height": 23,
+      "font": "21.4297px",
+      "color": "rgb(196, 176, 136)",
+      "rect": {
+        "x": 89.59375,
+        "y": 442.796875,
+        "width": 108.796875,
+        "height": 23.078125,
+        "top": 442.796875,
+        "right": 198.390625,
+        "bottom": 465.875,
+        "left": 89.59375
+      }
+    },
+    "legacy": {
+      "url": "url(\"http://127.0.0.1:4004/extension/十周年UI/ui/assets/lbtn/tips/hhjs.png\")",
+      "olNodes": 0
+    },
+    "afterLegacyTimer": {
+      "phase": "hhjs",
+      "text": "回合结束",
+      "zIndex": "6",
+      "display": "block",
+      "width": 109,
+      "height": 23,
+      "font": "21.4297px",
+      "color": "rgb(196, 176, 136)",
+      "rect": {
+        "x": 89.59375,
+        "y": 442.796875,
+        "width": 108.796875,
+        "height": 23.078125,
+        "top": 442.796875,
+        "right": 198.390625,
+        "bottom": 465.875,
+        "left": 89.59375
+      }
+    },
+    "surviving": 1,
+    "repeated": true,
+    "resized": {
+      "phase": "mpjd",
+      "text": "摸牌阶段",
+      "zIndex": "6",
+      "display": "block",
+      "width": 109,
+      "height": 23,
+      "font": "21.4297px",
+      "color": "rgb(196, 176, 136)",
+      "rect": {
+        "x": 89.59375,
+        "y": 492,
+        "width": 108.796875,
+        "height": 23.078125,
+        "top": 492,
+        "right": 198.390625,
+        "bottom": 515.078125,
+        "left": 89.59375
+      }
+    },
+    "off": {
+      "nodes": 0,
+      "active": false
+    },
+    "over": 0
+  },
+  "errors": [],
+  "badResponses": []
+}

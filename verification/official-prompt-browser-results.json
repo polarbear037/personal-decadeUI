@@ -1,0 +1,40 @@
+{
+  "scenes": [
+    "phase",
+    "useCard",
+    "skillCard",
+    "skillTarget",
+    "chooseCardTarget",
+    "discard",
+    "chooseCard",
+    "respond",
+    "dying",
+    "wuxie",
+    "control",
+    "button",
+    "compare"
+  ],
+  "recoveredCatalog": {
+    "records": 3129,
+    "oldSkillId": "42",
+    "revisedSkillId": "717",
+    "versionSeparated": true,
+    "customSkillPreserved": true,
+    "unresolvedParametersHidden": true,
+    "multipleTargets": true,
+    "recast": true
+  },
+  "cardPromptDisabled": true,
+  "nativeDialog": true,
+  "fontLoaded": true,
+  "semanticColors": true,
+  "nativeRichColor": true,
+  "interactivePreserved": true,
+  "cleanup": {
+    "unchecked": null,
+    "remote": null,
+    "disabled": null,
+    "over": null
+  },
+  "errors": []
+}

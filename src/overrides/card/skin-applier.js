@@ -1,31 +1,63 @@
-import { lib } from "noname";
+import { lib, get } from "noname";
 import { cardSkinMeta as cardSkinMeta } from "../../config/utils.js";
+import { getChixuerenSkinFilename as getChixuerenSkinFilename } from "./chixueren.js";
 import { generateSkinFilename as generateSkinFilename, isSkinPreloaded as isSkinPreloaded, getSkinCache as getSkinCache, getFallbackKey as getFallbackKey, getFallbackSkinUrl as getFallbackSkinUrl, createSkinAsset as createSkinAsset, buildSkinUrl as buildSkinUrl, loadSkinImage as loadSkinImage, loadFallbackSkin as loadFallbackSkin } from "./skin-loader.js";
 function l(cardElement, url) {
 	((cardElement.style.background = `url("${url}")`), cardElement.classList.add("decade-card"));
 }
-function u(u, card) {
-	const f = Array.isArray(card) ? card[2] : card.name,
-		m = Array.isArray(card) ? card[3] : card.nature,
+function p(cardElement, card, skinKey) {
+	const owner = typeof get.owner === "function" ? get.owner(cardElement) : null;
+	const chixuerenFilename = getChixuerenSkinFilename(cardElement, owner);
+	const cardName = Array.isArray(card) ? card[2] : card?.name || cardElement?.name;
+	const nature = Array.isArray(card) ? card[3] : card?.nature || cardElement?.nature;
+	return chixuerenFilename && skinKey === "online" ? chixuerenFilename : generateSkinFilename(cardName, nature);
+}
+let observerInstalled = false;
+function installChixuerenObserver() {
+	if (observerInstalled || typeof MutationObserver === "undefined" || !document.body) return;
+	observerInstalled = true;
+	new MutationObserver(records => {
+		for (const record of records) {
+			for (const added of record.addedNodes) {
+				if (added.nodeType !== 1) continue;
+				const cards = [];
+				if (added.classList?.contains("card") && added.dataset?.cardName === "chixueren") cards.push(added);
+				added.querySelectorAll?.('.card[data-card-name="chixueren"]').forEach(card => cards.push(card));
+				cards.forEach(card => !card._decadeChixuerenSkinClone && applySkin(card, card));
+			}
+		}
+	}).observe(document.body, { childList: true, subtree: true });
+}
+function applySkin(cardElement, card) {
+	const cardName = Array.isArray(card) ? card[2] : card?.name || cardElement?.name || cardElement?.dataset?.cardName;
+	// Faction dialog buttons are group_* virtual cards whose country images are set by their own dialog renderer.
+	// The generic skin loader has no matching card assets and its asynchronous fallback can overwrite those images.
+	if (typeof cardName === "string" && cardName.startsWith("group_")) return;
+	const f = cardName,
 		{ skinKey: y, isOff: g } = (function () {
 			const skinKey = lib.config.extension_十周年UI_cardPrettify;
 			return { skinKey: skinKey, isOff: !skinKey || "off" === skinKey };
 		})();
-	if ((u.classList.remove("decade-card"), g))
+	f === "chixueren" && (installChixuerenObserver(), cardElement._decadeChixuerenRefreshBound || ((cardElement._decadeChixuerenRefreshBound = true), cardElement.addEventListener("decadeUIChixuerenRefresh", () => applySkin(cardElement, cardElement))));
+	if ((cardElement.classList.remove("decade-card"), g))
 		return void (function (cardElement) {
 			(cardElement.classList.remove("decade-card"), cardElement.style.removeProperty("background"));
-		})(u);
+		})(cardElement);
 	if (!cardSkinMeta[y]) return;
 	if (
 		((function (cardElement) {
 			cardElement._decadeRawBg || (cardElement._decadeRawBg = cardElement.style.backgroundImage || cardElement.style.background || "");
-		})(u),
-		u.classList.add("decade-card"),
-		u.classList.contains("infohidden"))
+		})(cardElement),
+		cardElement.classList.add("decade-card"),
+		cardElement.classList.contains("infohidden"))
 	)
 		return;
-	const k = generateSkinFilename(f, m);
-	isSkinPreloaded(y)
+	const k = p(cardElement, card, y);
+	f === "chixueren" && (cardElement._decadeChixuerenSkinFilename = k);
+	const cachedAsset = getSkinCache(y)[k];
+	// A completed directory scan can still lack a variant card skin (for example chixueren2).
+	// Load that missing asset on demand instead of treating READ_OK as proof it exists.
+	isSkinPreloaded(y) && cachedAsset !== undefined
 		? (function (cardElement, skinKey, filename) {
 				const o = getSkinCache(skinKey)[filename],
 					fallbackKey = getFallbackKey(skinKey);
@@ -33,7 +65,7 @@ function u(u, card) {
 					const s = getFallbackSkinUrl(fallbackKey, filename);
 					s ? l(cardElement, s) : cardElement.classList.remove("decade-card");
 				} else o?.url ? l(cardElement, o.url) : cardElement.classList.remove("decade-card");
-			})(u, y, k)
+			})(cardElement, y, k)
 		: (function (cardElement, skinKey, filename) {
 				const cache = getSkinCache(skinKey);
 				let asset = cache[filename];
@@ -66,7 +98,7 @@ function u(u, card) {
 							(cardElement.style.background = `url("${a}")`));
 					}
 				} else cardElement.classList.remove("decade-card");
-			})(u, y, k);
+			})(cardElement, y, k);
 }
 function f(card, asset, fallbackKey, filename) {
 	const rawBg = card._decadeRawBg || "";
@@ -75,6 +107,6 @@ function f(card, asset, fallbackKey, filename) {
 	fallbackUrl ? (card.style.background = `url("${fallbackUrl}")`) : ((card.style.background = rawBg), card.classList.remove("decade-card"));
 }
 function m(card) {
-	card && u(card, card);
+	card && applySkin(card, card);
 }
-export { u as applyCardSkin, f as handleSkinFallback, m as refreshCardSkin };
+export { applySkin as applyCardSkin, f as handleSkinFallback, m as refreshCardSkin };

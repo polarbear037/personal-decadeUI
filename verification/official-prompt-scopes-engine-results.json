@@ -1,0 +1,21 @@
+{
+  "regular": {
+    "text": "",
+    "caption": "flex"
+  },
+  "free": {
+    "text": "",
+    "buttons": 2307,
+    "marked": false
+  },
+  "phaseTexts": [
+    {
+      "enabled": false,
+      "text": ""
+    },
+    {
+      "enabled": true,
+      "text": "出牌阶段，请选择一张卡牌"
+    }
+  ]
+}

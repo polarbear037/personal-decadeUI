@@ -6,8 +6,130 @@ import { lib, game, ui, get, ai, _status } from "noname";
 import { createBaseSkillPlugin } from "./base.js";
 import { getAvailableSkills, updateSkillUsability, isGSkillCacheSame, shouldSkipEquipSkill } from "./gskillMixin.js";
 import { skillButtonTooltip } from "../../../src/ui/skillButtonTooltip.js";
+import { syncOnlineJudgeLayout } from "../../../src/ui/online-judge-layout.js";
 
 const ASSETS_PATH = "extension/十周年UI/ui/assets/skill/online";
+const SKILL_USABILITY_FX = Object.freeze({
+	active: Object.freeze({ file: "fx_UI_AnNIu_ZhuDong_play_dynamic.png", widthScale: 178 / 146, heightScale: 95 / 60 }),
+	passive: Object.freeze({ file: "fx_UI_AnNIu_BeiDong_new_play_dynamic.png", widthScale: 145 / 129, heightScale: 71 / 56 }),
+});
+
+function getOnlineConversionState(skillId) {
+	const markNode = game.me?.node?.xSkillMarks?.querySelector(`.skillMarkItem.zhuanhuanji[data-id="${skillId}"]`);
+	return markNode ? (markNode.classList.contains("yin") ? "yin" : "yang") : game.me?.yingedSkills?.includes(skillId) ? "yin" : "yang";
+}
+
+let skillUsabilityContainer;
+let skillUsabilityRefreshQueued = false;
+const hookedSkillEvents = typeof WeakSet === "function" ? new WeakSet() : null;
+
+function requestSkillUsabilityRefresh() {
+	if (!skillUsabilityContainer || skillUsabilityRefreshQueued) return;
+	skillUsabilityRefreshQueued = true;
+	Promise.resolve().then(() => {
+		skillUsabilityRefreshQueued = false;
+		if (skillUsabilityContainer) updateSkillUsabilityEffects(skillUsabilityContainer);
+	});
+}
+
+function hookSkillEventCompletion(event) {
+	if (!event || typeof event.then !== "function" || !hookedSkillEvents || hookedSkillEvents.has(event)) return;
+	hookedSkillEvents.add(event);
+	let completion;
+	try {
+		completion = event.then(requestSkillUsabilityRefresh, requestSkillUsabilityRefresh);
+	} catch (error) {
+		return;
+	}
+	completion?.catch?.(requestSkillUsabilityRefresh);
+}
+
+function getSkillEventIds(event) {
+	const ids = new Set();
+	for (const name of [event?.skill, event?.sourceSkill, event?.button, event?._skill, event?.skillId, event?.name]) {
+		if (!name || typeof name !== "string") continue;
+		// 事件名只有在确实对应技能定义时才视为技能，避免把 choosePlayerCard 等普通子事件加入集合。
+		if (name === event?.name && !lib?.skill?.[name]) continue;
+		ids.add(name);
+		try {
+			const sourceSkill = get.sourceSkillFor?.(name) || get.info(name)?.sourceSkill;
+			if (sourceSkill) ids.add(sourceSkill);
+		} catch (error) { }
+	}
+	return ids;
+}
+
+function getActiveSkillIds() {
+	const active = new Set();
+	let current = _status?.event;
+	const chain = [];
+	for (let depth = 0; current && depth < 32; depth++) {
+		chain.push(current);
+		const parent = typeof current.getParent === "function" ? current.getParent() : current.parent;
+		if (!parent || parent === current) break;
+		current = parent;
+	}
+	// 从根事件向当前事件传播归属；远端子事件有明确 player/source 时不能继承本地父事件权限。
+	let localOwner = false;
+	let stopped = false;
+	for (const event of chain.reverse()) {
+		if (event.player != null) localOwner = event.player === game.me;
+		else if (event.source != null) localOwner = event.source === game.me;
+		const finished = event.finished === true || event.cancelled === true || event._cancelled === true || event._finished === true;
+		if (finished) stopped = true;
+		if (localOwner && !stopped) {
+			const eventSkills = getSkillEventIds(event);
+			for (const skill of eventSkills) active.add(skill);
+			if (eventSkills.size) hookSkillEventCompletion(event);
+		}
+	}
+	return active;
+}
+
+function updateSkillUsabilityEffects(container) {
+	if (!container) return;
+	skillUsabilityContainer = container;
+	const activeSkillIds = getActiveSkillIds();
+	for (const node of Array.from(container.children || [])) {
+		const type = node.classList.contains("enable-skill") ? "active" : node.classList.contains("trigger-skill") ? "passive" : null;
+		const skillActive = !!type && activeSkillIds.has(node.dataset.id);
+		const usable = !!type && (node.classList.contains("usable") || skillActive);
+		let effect = Array.from(node.children).find(child => child.classList?.contains("skill-usability-fx"));
+		const activeSkillResolving = type === "active" && skillActive;
+		node.classList.toggle("skill-actively-resolving", activeSkillResolving);
+		node.classList.toggle("skill-passively-resolving", type === "passive" && skillActive);
+		if (!usable) {
+			effect?.remove();
+			node.classList.remove("has-skill-usability-fx", "skill-actively-resolving", "skill-passively-resolving");
+			continue;
+		}
+		if (!effect) {
+			effect = document.createElement("img");
+			effect.className = "skill-usability-fx";
+			effect.alt = "";
+			effect.draggable = false;
+			effect.setAttribute("aria-hidden", "true");
+			node.appendChild(effect);
+		}
+		const config = SKILL_USABILITY_FX[type];
+		effect.dataset.effectType = type;
+		effect.style.setProperty("--skill-usability-fx-width", `${config.widthScale * 100}%`);
+		effect.style.setProperty("--skill-usability-fx-height", `${config.heightScale * 100}%`);
+		const source = `${ASSETS_PATH}/${config.file}`;
+		if (effect.getAttribute("src") !== source) effect.src = source;
+		node.classList.add("has-skill-usability-fx");
+	}
+}
+
+function ensureSkillLabelContent(node) {
+	if (!node || node.querySelector(":scope > .skill-label-content")) return;
+	const label = document.createElement("span");
+	label.className = "skill-label-content";
+	for (const child of Array.from(node.childNodes)) {
+		if (child.nodeType === Node.TEXT_NODE) label.appendChild(child);
+	}
+	if (label.childNodes.length) node.appendChild(label);
+}
 
 export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 	const base = createBaseSkillPlugin(lib, game, ui, get, ai, _status, app);
@@ -313,7 +435,7 @@ export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 				const eSkills = player.getSkills("e", true, false).slice(0);
 				eSkills.addArray(plugin._getExtraEquipSkills(player));
 				let skills = player.getSkills("invisible", null, false);
-				let gSkills = ui.skills2?.skills.length ? ui.skills2.skills : null;
+				let gSkills = ui.skills2?.skills.length ? ui.skills2.skills.filter(skill => skill !== "_recasting") : null;
 
 				skills = skills.filter(skill => {
 					const info = get.info(skill);
@@ -375,7 +497,7 @@ export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 				try {
 					const tmp = game.me.getSkills("invisible", null, false) || [];
 					nativeSkillsRaw = nativeSkillsRaw.concat(tmp);
-				} catch (e) {}
+				} catch (e) { }
 			}
 			nativeSkillsRaw.forEach(s => {
 				const expanded = game.expandSkills([s]) || [];
@@ -411,16 +533,15 @@ export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 					let finalName = skillName.slice(0, 2);
 
 					if (lib.skill[skillId]?.zhuanhuanji) {
-						let imgType = "yang";
-						const markNode = game.me?.node?.xSkillMarks?.querySelector(`.skillMarkItem.zhuanhuanji[data-id="${skillId}"]`);
-						if (markNode?.classList.contains("yin")) imgType = "ying";
-						const imgPath = `${ASSETS_PATH}/skillitem_yinyang_${imgType === "yang" ? "1" : "2"}.png`;
+						const imgType = getOnlineConversionState(skillId);
+						const imgPath = `${ASSETS_PATH}/skillitem_yinyang_${imgType === "yang" ? "bg1" : "bg2"}.png`;
 						finalName = `<img src="${imgPath}" class="skill-zhuanhuanji-img">${skillName}`;
 					}
 
 					const cls = info.limited ? ".xiandingji.enable-skill" : ".skillitem.enable-skill";
 					const node = ui.create.div(cls, this.node.combined);
 					node.innerHTML = finalName;
+					ensureSkillLabelContent(node);
 					node.dataset.id = skillId;
 					node.dataset.gskill = "true";
 
@@ -440,11 +561,6 @@ export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 						node.appendChild(dot);
 					}
 
-					node.addEventListener("click", () => {
-						if (lib.config["extension_十周年UI_bettersound"]) {
-							game.playAudio("..", "extension", "十周年UI", "audio/SkillBtn");
-						}
-					});
 					app.listen(node, plugin.clickSkill);
 
 					// 添加悬浮提示
@@ -510,10 +626,8 @@ export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 
 					// 转换技图标
 					if (lib.skill[item.id]?.zhuanhuanji) {
-						let imgType = "yang";
-						const markNode = game.me?.node?.xSkillMarks?.querySelector(`.skillMarkItem.zhuanhuanji[data-id="${item.id}"]`);
-						if (markNode?.classList.contains("yin")) imgType = "ying";
-						const imgPath = `${ASSETS_PATH}/skillitem_yinyang_${imgType === "yang" ? "1" : "2"}.png`;
+						const imgType = getOnlineConversionState(item.id);
+						const imgPath = `${ASSETS_PATH}/skillitem_yinyang_${imgType === "yang" ? "bg1" : "bg2"}.png`;
 						finalName = `<img src="${imgPath}" class="skill-zhuanhuanji-img">${skillName}`;
 					}
 
@@ -521,6 +635,7 @@ export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 						const cls = lib.skill[item.id].limited ? ".xiandingji.enable-skill" : ".skillitem.enable-skill";
 						node = ui.create.div(cls, this.node.combined);
 						node.innerHTML = finalName;
+						ensureSkillLabelContent(node);
 						node.dataset.id = item.id;
 
 						// 限定技pass图标
@@ -541,11 +656,6 @@ export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 							node.appendChild(dot);
 						}
 
-						node.addEventListener("click", () => {
-							if (lib.config["extension_十周年UI_bettersound"]) {
-								game.playAudio("..", "extension", "十周年UI", "audio/SkillBtn");
-							}
-						});
 						app.listen(node, plugin.clickSkill);
 
 						// 添加悬浮提示
@@ -558,6 +668,7 @@ export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 					if (eSkills?.includes(item.id)) return;
 
 					node = ui.create.div(".skillitem.trigger-skill", this.node.combined, finalName);
+					ensureSkillLabelContent(node);
 					node.dataset.id = item.id;
 
 					// 添加悬浮提示
@@ -604,10 +715,12 @@ export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 				}
 
 				updateSkillUsability(this.node.combined.childNodes, skills, { lib, game, ui, get, ai, _status });
+				updateSkillUsabilityEffects(this.node.combined);
 
 				const count = this.node.combined.childNodes.length;
 				const level = count > 2 ? 4 : count > 0 ? 2 : 0;
 				ui.arena.dataset.sclevel = level;
+				syncOnlineJudgeLayout(game.me);
 
 				// >6个技能时滚动，否则关闭滚动并启用回弹
 				const enableScroll = count > 6;
@@ -685,6 +798,7 @@ export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 			node.style.display = "";
 
 			Array.from(node.childNodes).forEach(item => {
+				if (!item.classList.contains("skillMarkItem")) return;
 				if (!xiandingji.hasOwnProperty(item.dataset.id) && !juexingji[item.dataset.id]) {
 					item.remove();
 				}
@@ -702,6 +816,12 @@ export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 					}
 				}
 				item.classList.toggle("used", used);
+				if (info.zhuanhuanji) {
+					const state = item.classList.contains("yin") || player.yingedSkills?.includes(skill) ? "yin" : "yang";
+					item.classList.toggle("yin", state === "yin");
+					item.classList.toggle("yang", state === "yang");
+					item._decadeUIConversionState = state;
+				}
 				item.dataset.id = skill;
 			});
 

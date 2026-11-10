@@ -1,4 +1,5 @@
 import { lib, get, ui, game } from "noname";
+import { refreshOptimizedPrompt, initOptimizedPromptHooks } from "./optimizedPrompt.js";
 const e = ["compareMultiple", "chooseToCompare", "chooseToCompareMultiple"],
 	n = {
 		sha: "选择1名角色，作为杀的目标",
@@ -237,9 +238,12 @@ const e = ["compareMultiple", "chooseToCompare", "chooseToCompareMultiple"],
 		return null;
 	},
 	h = event => {
-		const e = event.getParent?.(),
-			n = e?._info_map,
-			t = n.state || 1,
+		const n = event.info_map || event.getParent?.()?._info_map || g(event, 8, parent => !!parent._info_map)?._info_map;
+		if (!n) {
+			const prompt = a(event.prompt);
+			return [{ text: /是否.*无懈可击/.test(prompt) ? prompt : `${prompt}${prompt ? " " : ""}是否使用【无懈可击】？` }];
+		}
+		const t = n.state || 1,
 			o = t > 0 ? "生效" : "失效";
 		const s = n._source || n;
 		if (s.isJudge) {
@@ -255,13 +259,13 @@ const e = ["compareMultiple", "chooseToCompare", "chooseToCompareMultiple"],
 			card = s.card,
 			l = get.translation(card?.name || card),
 			c = i(r);
-		let g;
+		let targetNames;
 		return (
-			s.multitargets && s.targets?.length ? (g = get.translation(s.targets)) : u && (g = u === r ? "自己" : i(u)),
+			s.multitarget && s.targets?.length ? (targetNames = get.translation(s.targets)) : u && (targetNames = u === r ? "自己" : i(u)),
 			((sourceName, targetName, cardName, stateWord) => {
 				const o = a;
 				return [{ text: o(sourceName), style: "phase" }, { text: o("对") }, { text: o(targetName), style: "phase" }, { text: o("使用的") }, { text: o(cardName), style: "thunder" }, { text: o("即将") }, { text: o(stateWord), style: "生效" === stateWord ? "fire" : "wood" }, { text: o("，是否使用") }, { text: o("无懈可击"), style: "phase" }, { text: o("？") }];
-			})(c, g, l, o)
+			})(c, targetNames, l, o)
 		);
 	},
 	p = event => {
@@ -415,6 +419,12 @@ function T({ game: game, ui: ui }) {
 		lib.hooks.checkEnd.add(event => {
 			event.player === game.me
 				? setTimeout(() => {
+						if (refreshOptimizedPrompt()) {
+							s();
+							refreshOptimizedPrompt();
+							return;
+						}
+						if (lib.config.extension_十周年UI_optimizePrompt) return;
 						if (!ui.cardDialog?._isLuckyCardTip)
 							switch (event.name) {
 								case "chooseToDiscard":
@@ -458,5 +468,6 @@ function T({ game: game, ui: ui }) {
 			return n.apply(this, e);
 		};
 	}
+	initOptimizedPromptHooks();
 }
 export { t as getCardPhasePrompt, T as initCardPrompt, a as sanitizePrompt };

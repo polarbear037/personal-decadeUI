@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "engine": "Microsoft Edge headless / Playwright",
+  "cases": {
+    "single": {
+      "background": "url(\"http://127.0.0.1:9366/image/ui/player-bg/general_seat_base.png\")",
+      "width": "120px",
+      "height": "180px",
+      "size": "100% 100%"
+    },
+    "selectable": {
+      "background": "url(\"http://127.0.0.1:9366/image/ui/player-bg/general_seat_base.png\")",
+      "width": "120px",
+      "height": "180px",
+      "size": "100% 100%"
+    },
+    "selected": {
+      "background": "url(\"http://127.0.0.1:9366/image/ui/player-bg/general_seat_base.png\")",
+      "width": "120px",
+      "height": "180px",
+      "size": "100% 100%"
+    },
+    "fullskin2": {
+      "background": "url(\"http://127.0.0.1:9366/image/ui/player-bg/bj2.png\")",
+      "width": "120px",
+      "height": "180px",
+      "size": "100% 100%"
+    },
+    "double-character": {
+      "background": "url(\"http://127.0.0.1:9366/image/ui/player-bg/bj2.png\")",
+      "width": "120px",
+      "height": "180px",
+      "size": "100% 100%"
+    },
+    "data-double": {
+      "background": "url(\"http://127.0.0.1:9366/image/ui/player-bg/bj2.png\")",
+      "width": "120px",
+      "height": "180px",
+      "size": "100% 100%"
+    },
+    "guozhan": {
+      "background": "url(\"http://127.0.0.1:9366/image/ui/player-bg/bj2.png\")",
+      "width": "120px",
+      "height": "180px",
+      "size": "100% 100%"
+    }
+  },
+  "unchangedGeometry": true,
+  "unchangedDualAndGuozhan": true,
+  "onlineOnly": true,
+  "pageErrors": [],
+  "httpErrors": [],
+  "limitations": [
+    "Loaded real player4.css and image resources in an isolated desktop fixture; full Electron game and official APK runtime not tested."
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "apk": "G:\\yoka.game_g_android_4.0.2.apk",
+  "apkSha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+  "configSha256": "50f0bd3f57dd50f57303cb154df1da60e236559554eb267a91dbd4e4b8c79b5e",
+  "configNote": "existing official runtime list7; separate from APK identity",
+  "assets": [
+    {
+      "resource": "/res/assets/animate/interactProp/fx_uihd_caoxie.skel",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/f0704bc6",
+      "file": "assets/animation/online-props/fx_uihd_caoxie.skel",
+      "sha256": "1b6c9dc66fb59b779020744604011676b7520b09610a8c4dde36fafdf03885be"
+    },
+    {
+      "resource": "/res/assets/animate/interactProp/fx_uihd_caoxie.atlas.txt",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/bf6d678f",
+      "file": "assets/animation/online-props/fx_uihd_caoxie.atlas",
+      "sha256": "4cdd4cfefface9b69df44aacda9b1d38de83ac90506a8c7700fa077155d8b41c"
+    },
+    {
+      "resource": "/res/assets/animate/interactProp/fx_uihd_caoxie.png",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/e18dd9ea",
+      "file": "assets/animation/online-props/fx_uihd_caoxie.png",
+      "sha256": "92ff37921550f65e0108ba6a0a460e419e4905b397fddeb07479997a63098591"
+    },
+    {
+      "resource": "/res/assets/animate/interactProp/Ol_DaoJu_jidan.skel",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/b8a02c9e",
+      "file": "assets/animation/online-props/Ol_DaoJu_jidan.skel",
+      "sha256": "165d0838ae7aaee8937f01da55fcbbc7ede19430192aea75c342733dc0832bea"
+    },
+    {
+      "resource": "/res/assets/animate/interactProp/Ol_DaoJu_jidan.atlas.txt",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/a4d6dc02",
+      "file": "assets/animation/online-props/Ol_DaoJu_jidan.atlas",
+      "sha256": "93d3358ef74bffd5aa23d0aec13840dc2dc3eb1effcd3461b39dd77ba896cd59"
+    },
+    {
+      "resource": "/res/assets/animate/interactProp/Ol_DaoJu_jidan.png",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/83dcca4d",
+      "file": "assets/animation/online-props/Ol_DaoJu_jidan.png",
+      "sha256": "7b6019fb2681fcb45469e0b9a5033618a2eed8cd711fb0d9fc5c37a67a9a2802"
+    },
+    {
+      "resource": "/res/assets/animate/interactProp/fx_uihd_huashu.skel",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/cd1d23fb",
+      "file": "assets/animation/online-props/fx_uihd_huashu.skel",
+      "sha256": "30941362a1e418e4ad7f51dbcff18f4718837ae8d94d3c6edc916af661ea3621"
+    },
+    {
+      "resource": "/res/assets/animate/interactProp/fx_uihd_huashu.atlas.txt",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/32a9d499",
+      "file": "assets/animation/online-props/fx_uihd_huashu.atlas",
+      "sha256": "b9e1d3dc0dea7a2b03df2da36b179383e5a0c47d734c5ef0cd6aaa8a321f8702"
+    },
+    {
+      "resource": "/res/assets/animate/interactProp/fx_uihd_huashu.png",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/5470338f",
+      "file": "assets/animation/online-props/fx_uihd_huashu.png",
+      "sha256": "8957c32c51ddc9d578abbf11c3ccb67be76593930c2a874e42d263b2988027df"
+    },
+    {
+      "resource": "/res/assets/animate/interactProp/fx_uihd_qingmeijiu.skel",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/5eaaaa18",
+      "file": "assets/animation/online-props/fx_uihd_qingmeijiu.skel",
+      "sha256": "3ed73d81b60bd5968ce4caba262bc78422d389c968d77e10b088950f2afa9933"
+    },
+    {
+      "resource": "/res/assets/animate/interactProp/fx_uihd_qingmeijiu.atlas.txt",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/57f1a16b",
+      "file": "assets/animation/online-props/fx_uihd_qingmeijiu.atlas",
+      "sha256": "7041570e03515ff80248b89b815fea46c38779ec0eec720a3abf3348e226891e"
+    },
+    {
+      "resource": "/res/assets/animate/interactProp/fx_uihd_qingmeijiu.png",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/ea064d02",
+      "file": "assets/animation/online-props/fx_uihd_qingmeijiu.png",
+      "sha256": "d8e1a56d394f35a556e1f2d5c354839190957841361f95d7d17b1cb1dbfdbe29"
+    },
+    {
+      "resource": "/res/assets/animate/interactProp/FX_MatchGame_daoju_shouji3.skel",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/5707f8dc",
+      "file": "assets/animation/online-props/FX_MatchGame_daoju_shouji3.skel",
+      "sha256": "3c2337d1f685b1713ae5a9a0337d706935a12c9f4c3639213445730329b03d08"
+    },
+    {
+      "resource": "/res/assets/animate/interactProp/FX_MatchGame_daoju_shouji3.atlas.txt",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/2a025d23",
+      "file": "assets/animation/online-props/FX_MatchGame_daoju_shouji3.atlas",
+      "sha256": "460e31231eb47f49453c01e12495bfabbc96cd60c6247188edd46eb675bb1799"
+    },
+    {
+      "resource": "/res/assets/animate/interactProp/FX_MatchGame_daoju_shouji3.png",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/f118a20e",
+      "file": "assets/animation/online-props/FX_MatchGame_daoju_shouji3.png",
+      "sha256": "7c918bfb227e21bd70ca3a71ba52c8257c08b33bedbfacdaa1d1b7585bdb44ff"
+    },
+    {
+      "resource": "/res/local/voice/paijuhudong/DaoJu_caoxie_fly.ogg",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/a649c764",
+      "file": "audio/online-props/DaoJu_caoxie_fly.ogg",
+      "sha256": "b783437bd9b0322c29e31c768bc7112a7a18d841c953a21b6290b220fdf3c962"
+    },
+    {
+      "resource": "/res/local/voice/paijuhudong/DaoJu_caoxie_hit.ogg",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/5e2be93b",
+      "file": "audio/online-props/DaoJu_caoxie_hit.ogg",
+      "sha256": "9fd759b48f6024910d7d0b1c6ce0a3540d3b08d3e816022767f5f1a8ab17403b"
+    },
+    {
+      "resource": "/res/local/voice/paijuhudong/DaoJu_hua_fly.ogg",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0ad4a9b9",
+      "file": "audio/online-props/DaoJu_hua_fly.ogg",
+      "sha256": "300dee7c9401a8ed6990a6c3d23f15a4d13b1862c1eb55a1a1016450fa8e8e27"
+    },
+    {
+      "resource": "/res/local/voice/paijuhudong/DaoJu_hua_hit.ogg",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/f2b687e6",
+      "file": "audio/online-props/DaoJu_hua_hit.ogg",
+      "sha256": "f2997e384941d7337ccb5fd4964132b4f490ed60fbffe342f4e4c9443ca4238f"
+    },
+    {
+      "resource": "/res/local/voice/paijuhudong/DaoJu_jidan_fly.ogg",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/28ae8119",
+      "file": "audio/online-props/DaoJu_jidan_fly.ogg",
+      "sha256": "6a4f9a7a5fa758fa21868ae6ec0233ec5233736ccae0ffb8e4ab53ecafd5f92c"
+    },
+    {
+      "resource": "/res/local/voice/paijuhudong/DaoJu_jidan_hit.ogg",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/d0ccaf46",
+      "file": "audio/online-props/DaoJu_jidan_hit.ogg",
+      "sha256": "9d8aed50bc5820167c93135b80d49ca41bcf7ffe855fb85a7e519ce6752b7896"
+    },
+    {
+      "resource": "/res/local/voice/paijuhudong/DaoJu_jiu_fly.ogg",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/9e066263",
+      "file": "audio/online-props/DaoJu_jiu_fly.ogg",
+      "sha256": "9e3c91f7d0f744e0824204d10e00c1c83cef0b246228767676a002d2e74d6a12"
+    },
+    {
+      "resource": "/res/local/voice/paijuhudong/DaoJu_jiu_hit.ogg",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/66644c3c",
+      "file": "audio/online-props/DaoJu_jiu_hit.ogg",
+      "sha256": "be4dd31b5d54dfd2a0f9624403bdce62d8fcac29eedefcfb26005d4e07c95c00"
+    },
+    {
+      "resource": "/res/assets/game/gameBase.atlas",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/48fbc971",
+      "atlasSha256": "7131ba83f2d394aa47d537418c387150411aae7afdaec2282470976283f55fa4",
+      "pngMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/c98511fc",
+      "frame": {
+        "frame": {
+          "h": 50,
+          "idx": 0,
+          "w": 50,
+          "x": 0,
+          "y": 964
+        },
+        "sourceSize": {
+          "h": 50,
+          "w": 50
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "file": "ui/assets/lbtn/OL_line/props/interact_bg.png",
+      "sha256": "1efbce2e0b77bf3415b2fcc7a7661c1764d122914483b59146d0e9e40a2cb9a5"
+    },
+    {
+      "resource": "/res/assets/game/seat.atlas",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/61c5aa54",
+      "atlasSha256": "13216107810332015fe8b7875765d05e646cac00e0ebc85c04cbc1c3e1b056b1",
+      "pngMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/db156ff2",
+      "frame": {
+        "frame": {
+          "h": 41,
+          "idx": 0,
+          "w": 142,
+          "x": 542,
+          "y": 775
+        },
+        "sourceSize": {
+          "h": 41,
+          "w": 142
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "file": "ui/assets/lbtn/OL_line/props/interact_tips_texture.png",
+      "sha256": "88534608e40c6104e45c163cf0677cb0f32a55d31c15b3e243a07c26c5649914"
+    },
+    {
+      "resource": "/res/assets/game/seat.atlas",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/61c5aa54",
+      "atlasSha256": "13216107810332015fe8b7875765d05e646cac00e0ebc85c04cbc1c3e1b056b1",
+      "pngMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/db156ff2",
+      "frame": {
+        "frame": {
+          "h": 58,
+          "idx": 0,
+          "w": 62,
+          "x": 645,
+          "y": 533
+        },
+        "sourceSize": {
+          "h": 58,
+          "w": 62
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "file": "ui/assets/lbtn/OL_line/props/interact_arrow.png",
+      "sha256": "4c342efec25180b392bdc6cda435498de11c42e500c1412b56416c525486e241"
+    },
+    {
+      "resource": "/res/assets/Common/baseUI1.atlas",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/71445296",
+      "atlasSha256": "98e13074fd217a6ce182502f81970d43cad43f2aee019efe6ae21d6091267b05",
+      "pngMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/8723e84d",
+      "frame": {
+        "frame": {
+          "h": 14,
+          "idx": 0,
+          "w": 10,
+          "x": 1766,
+          "y": 997
+        },
+        "sourceSize": {
+          "h": 14,
+          "w": 10
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "file": "ui/assets/lbtn/OL_line/props/card_mask_1.png",
+      "sha256": "ea56812bb39f24aa92ef6abae2cba0ec9e6ef73ebfa004a405ae7e88cfdb1fbe"
+    },
+    {
+      "resource": "/res/assets/Common/baseUI1.atlas",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/71445296",
+      "atlasSha256": "98e13074fd217a6ce182502f81970d43cad43f2aee019efe6ae21d6091267b05",
+      "pngMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/8723e84d",
+      "frame": {
+        "frame": {
+          "h": 106,
+          "idx": 0,
+          "w": 106,
+          "x": 1083,
+          "y": 560
+        },
+        "sourceSize": {
+          "h": 106,
+          "w": 106
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "file": "ui/assets/lbtn/OL_line/props/shopitem_border_0.png",
+      "sha256": "942fe6c2e114dfebc168aa9e8556cb0e227c6668690198bdb4ffbc428028d51b"
+    },
+    {
+      "resource": "/res/assets/Common/baseUI1.atlas",
+      "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/71445296",
+      "atlasSha256": "98e13074fd217a6ce182502f81970d43cad43f2aee019efe6ae21d6091267b05",
+      "pngMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/8723e84d",
+      "frame": {
+        "frame": {
+          "h": 98,
+          "idx": 0,
+          "w": 98,
+          "x": 611,
+          "y": 602
+        },
+        "sourceSize": {
+          "h": 98,
+          "w": 98
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "file": "ui/assets/lbtn/OL_line/props/shopitem_select.png",
+      "sha256": "6ab93675ad52a3cc70b3b90e7ae4e366080649a0eca4239f2a36282578326587"
+    },
+    {
+      "resource": "/res/runtime/m/shop/GiveBuy/12010201.png",
+      "url": "https://web.sanguosha.com/220/sgsolApp/res/runtime/m/shop/GiveBuy/12010201.png",
+      "file": "ui/assets/lbtn/OL_line/props/12010201.png",
+      "sha256": "95c759b95428d718cd63e8c13263e2d95f4c5d0d0b2759cd5a41a23611863126",
+      "note": "official resource endpoint; absent in APK cache"
+    },
+    {
+      "resource": "/res/runtime/m/shop/GiveBuy/12010401.png",
+      "url": "https://web.sanguosha.com/220/sgsolApp/res/runtime/m/shop/GiveBuy/12010401.png",
+      "file": "ui/assets/lbtn/OL_line/props/12010401.png",
+      "sha256": "6b19a99d098d6328da2d16afc6fc0f733bd619cc0289a29dfc872afaff068c26",
+      "note": "official resource endpoint; absent in APK cache"
+    },
+    {
+      "resource": "/res/runtime/m/shop/GiveBuy/12110101.png",
+      "url": "https://web.sanguosha.com/220/sgsolApp/res/runtime/m/shop/GiveBuy/12110101.png",
+      "file": "ui/assets/lbtn/OL_line/props/12110101.png",
+      "sha256": "2680d56b3859bcef6ca41e1269ca23ad57406fae34eac22d6c86a7a8d9e2fba7",
+      "note": "official resource endpoint; absent in APK cache"
+    },
+    {
+      "resource": "/res/runtime/m/shop/GiveBuy/12110201.png",
+      "url": "https://web.sanguosha.com/220/sgsolApp/res/runtime/m/shop/GiveBuy/12110201.png",
+      "file": "ui/assets/lbtn/OL_line/props/12110201.png",
+      "sha256": "7542375474d2053fff670cf0c9412f0ad0c74de9753462306f2ea2a86fa7a35b",
+      "note": "official resource endpoint; absent in APK cache"
+    },
+    {
+      "resource": "/res/runtime/m/shop/GiveBuy/12110000.png",
+      "url": "https://web.sanguosha.com/220/sgsolApp/res/runtime/m/shop/GiveBuy/12110000.png",
+      "file": "ui/assets/lbtn/OL_line/props/12110000.png",
+      "sha256": "383d64dea8d0f7def5df966524afba33bf940ad615a35f335f97b95b60f8c7fc",
+      "note": "official resource endpoint; absent in APK cache"
+    }
+  ]
+}

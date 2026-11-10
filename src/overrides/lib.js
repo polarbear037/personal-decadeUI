@@ -1,7 +1,27 @@
-import { lib, ui } from "noname";
+import { lib, ui, game, _status } from "noname";
 import { wrapAround as wrapAround } from "../utils/safeOverride.js";
+import { applyFactionCharacterInit as applyFactionCharacterInit, applyFactionControlChoice as applyFactionControlChoice } from "./faction-character-init.js";
+import { positionOfficialTooltip } from "../ui/officialTooltip.js";
 function t() {
 	const restoreFns = [];
+	restoreFns.push(wrapAround(lib.filter, "wuxieSwap", function (original, event) {
+		const ignore = ui.tempnowuxie;
+		if (event.type === "wuxie" && event.state > 0 && ignore?.classList.contains("glow") && !ui.wuxie?.classList.contains("glow")) {
+			const trigger = event.getTrigger();
+			const map = event.info_map?._source || event.info_map;
+			const target = map?.target || trigger?.target;
+			const targets = map?.targets || trigger?.targets;
+			const origin = trigger ? trigger.parent?.id : _status.event.id2;
+			// “本次不无懈”只跳过其他目标；群体锦囊轮到本人时仍询问。
+			if (ignore._origin === origin && target === game.me && targets?.length > 1 && !map?.isJudge && !trigger?.multitarget && !map?.multitargets) return false;
+		}
+		return original.call(this, event);
+	}));
+	restoreFns.push(wrapAround(lib, "placePoppedDialog", function (original, dialog, event) {
+		if (!positionOfficialTooltip(dialog, event)) return original.call(this, dialog, event);
+	}));
+	restoreFns.push(...applyFactionCharacterInit());
+	restoreFns.push(...applyFactionControlChoice());
 	return (
 		lib.init &&
 			"function" == typeof lib.init.cssstyles &&

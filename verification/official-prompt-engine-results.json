@@ -1,0 +1,30 @@
+{
+  "command": "node .codex-tmp/official-prompt-game.cjs --decade",
+  "environment": "isolated browser loading the complete noname engine and 十周年UI",
+  "cardPromptEnabled": false,
+  "optimizePromptEnabled": true,
+  "interaction": "native game.check() and ui.click.target()",
+  "selection": {
+    "event": "chooseTarget",
+    "before": "仁德：请选择1至2名角色，令其获得2张牌已选0/1至2名角色",
+    "after": "仁德：请选择1至2名角色，令其获得2张牌已选1/1至2名角色",
+    "selected": ["guanyu"],
+    "display": "block",
+    "fontSize": "30px",
+    "confirm": "确定取消"
+  },
+  "mapping": {
+    "loadedSkillIdsScanned": 10232,
+    "matchedNativeSkillIds": 1792,
+    "note": "Mapping includes records without operation text; this is not a count of individually verified skill branches."
+  },
+  "scriptErrors": [],
+  "startupResourceErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "loadSpine: [effect_loseHp] 加载失败.",
+    "loadSpine: [effect_baguazhen] 加载失败.",
+    "loadSpine: [effect_baiyinshizi] 加载失败."
+  ],
+  "fullGamePlaythrough": false,
+  "allOfficialBranchesIndividuallyVerified": false
+}

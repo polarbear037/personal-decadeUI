@@ -23,7 +23,7 @@ function r() {
 		},
 		prefixMark: prefixMarkModule,
 		init: async function () {
-			["src/styles/extension.css", "src/styles/decadeLayout.css", "src/styles/card.css", "src/styles/meihua.css"].forEach(path => this.css(`${decadeUIPath}${path}`));
+			["src/styles/extension.css", "src/styles/decadeLayout.css", "src/styles/card.css", "src/styles/meihua.css", "src/styles/online-faction-dialog.css", "src/styles/online-hand-cards.css"].forEach(path => this.css(`${decadeUIPath}${path}`));
 			const style = a("newDecadeStyle", "on"),
 				styleIndex = n.indexOf(style);
 			(this.css(`${decadeUIPath}src/styles/player${-1 !== styleIndex ? styleIndex + 1 : 2}.css`), this.css(`${decadeUIPath}src/styles/equip.css`), this.css(`${decadeUIPath}src/styles/layout.css`), document.body.setAttribute("data-style", style), a("meanPrettify", !1) && (ui.css.decadeMenu = this.css(`${decadeUIPath}src/styles/menu.css`)), await this.js(`${decadeUIPath}src/libs/spine.js`));

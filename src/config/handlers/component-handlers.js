@@ -21,6 +21,7 @@ function t() {
 	}
 }
 function i() {
+	if (game.updateJDTsStyle) return game.updateJDTsStyle();
 	"0" === lib.config.extension_十周年UI_JDTSYangshi && (game.as_removeImage?.(), delete _status.as_showImage_phase);
 }
 function a(item) {

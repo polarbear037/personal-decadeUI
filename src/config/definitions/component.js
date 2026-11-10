@@ -17,12 +17,13 @@ const O = {
 		item: (function () {
 			const basePath = `${lib.assetURL}extension/十周年UI/image/ui/dialog`,
 				createPreview = filename => `<div style="width:60px;height:40px;position:relative;background-image: url(${basePath}/${filename});background-size: 100% 100%;"></div>`;
-			return { off: "关闭", on: createPreview("dialog2.png"), On: createPreview("dialog1.png"), othersOn: createPreview("dialog3.png"), othersOff: createPreview("dialog4.png"), onlineUI: createPreview("dialog5.png") };
+			return { off: "关闭", on: createPreview("dialog2.png"), On: createPreview("dialog1.png"), othersOn: createPreview("dialog3.png"), othersOff: createPreview("dialog4.png"), onlineUI: createPreview("dialog5.png"), dialog_ol: createPreview("dialog_ol.png") };
 		})(),
 		update: onLoadingStyleUpdate,
 	},
 	S = { name: "获得技能显示", init: "othersOn", item: { on: "显示", off: "不显示", othersOn: "显示他人" }, update: onGainSkillsVisibleUpdate },
 	T = { name: "武将详情插件", init: !0, intro: "开启后，点击武将可查看详细信息" },
+	A = { name: "开战音效", init: "decade", intro: "下次开战生效", item: { decade: "十周年", shousha: "手杀", online: "online" } },
 	j = createCollapseEnd("component_title"),
-	k = { component_title: p, jindutiaoYangshi: s, jindutiaoST: g, jindutiaoSet: u, JDTSYangshi: c, GTBBYangshi: f, GTBBFont: h, GTBBTime: y, playerMarkStyle: B, loadingStyle: O, gainSkillsVisible: S, characterPlugin: T, component_title_end: j };
-export { h as GTBBFont, y as GTBBTime, f as GTBBYangshi, c as JDTSYangshi, T as characterPlugin, k as componentConfigs, p as component_title, j as component_title_end, S as gainSkillsVisible, g as jindutiaoST, u as jindutiaoSet, s as jindutiaoYangshi, O as loadingStyle, B as playerMarkStyle };
+	k = { component_title: p, jindutiaoYangshi: s, jindutiaoST: g, jindutiaoSet: u, JDTSYangshi: c, GTBBYangshi: f, GTBBFont: h, GTBBTime: y, playerMarkStyle: B, loadingStyle: O, gainSkillsVisible: S, characterPlugin: T, gameStartAudio: A, component_title_end: j };
+export { h as GTBBFont, y as GTBBTime, f as GTBBYangshi, c as JDTSYangshi, T as characterPlugin, k as componentConfigs, p as component_title, j as component_title_end, S as gainSkillsVisible, g as jindutiaoST, u as jindutiaoSet, s as jindutiaoYangshi, O as loadingStyle, B as playerMarkStyle, A as gameStartAudio };

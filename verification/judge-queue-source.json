@@ -1,0 +1,132 @@
+{
+  "assets": [
+    {
+      "source": "apk:/res/assets/cards/cards.atlas#decideCardUI_queue_arrow_gray.png",
+      "sheet": "/res/assets/cards/cards.png",
+      "sheetSha256": "671ccd3a0205ea89e1c0567e0ba6a1d1a5bafae4c62c3e6da7888ba59a3a031a",
+      "frame": {
+        "frame": {
+          "h": 21,
+          "idx": 0,
+          "w": 14,
+          "x": 1764,
+          "y": 329
+        },
+        "sourceSize": {
+          "h": 21,
+          "w": 14
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "target": "image/ui/judge-mark/decideCardUI_queue_arrow_gray.png",
+      "sha256": "04878c697a89367f23d69877b59ed127f7ae8a1a9d95e2d3466501b9fcab0789"
+    },
+    {
+      "source": "apk:/res/assets/cards/cards.atlas#decideCardUI_queue_arrow_light.png",
+      "sheet": "/res/assets/cards/cards.png",
+      "sheetSha256": "671ccd3a0205ea89e1c0567e0ba6a1d1a5bafae4c62c3e6da7888ba59a3a031a",
+      "frame": {
+        "frame": {
+          "h": 25,
+          "idx": 0,
+          "w": 18,
+          "x": 1963,
+          "y": 558
+        },
+        "sourceSize": {
+          "h": 25,
+          "w": 18
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "target": "image/ui/judge-mark/decideCardUI_queue_arrow_light.png",
+      "sha256": "71663bb9505e6c03d639e3741a6bfe748734600cc65365ba014aaa4f6d0253ba"
+    }
+  ],
+  "methods": [
+    {
+      "source": "reverse/main.sgs",
+      "offset": 13664329,
+      "method": "Seat_UpdateJudgeCard(t){",
+      "text": "Seat_UpdateJudgeCard(t){this.cardContainer.UpdateDecideCard(t.Cards)}",
+      "sha256": "f5853ab4b98d65419f3c1be83cab2213bee447c64e059b7df301a70b4fe315cf"
+    },
+    {
+      "source": "reverse/main.sgs",
+      "offset": 18237789,
+      "method": "Seat_UpdateJudgeCard(t){",
+      "text": "Seat_UpdateJudgeCard(t){this.cardContainer.UpdateDecideCard(t.Cards)}",
+      "sha256": "f5853ab4b98d65419f3c1be83cab2213bee447c64e059b7df301a70b4fe315cf"
+    },
+    {
+      "source": "reverse/main.sgs",
+      "offset": 13807897,
+      "method": "layoutDecideCards(){",
+      "text": "layoutDecideCards(){let t=!(arguments.length>0&&void 0!==arguments[0])||arguments[0];this.decideTween&&(Laya.Tween.clear(this.decideTween),this.decideTween=null);let i=this.seatBottomSprite.width-this.x-mMt.SEAT_WIDTH-65,s=-25;1==this.skillItemCnt?s=51:2!=this.skillItemCnt&&4!=this.skillItemCnt||(s=21);const e=this.decideCardUis.length;i-=50*(e-1);for(let h=e-1;h>=0;h--){let e=this.decideCardUis[h];e.StartX=e.x,e.StartY=e.y,e.EndX=i,e.EndY=s,this.switchIng&&(this.switchOut?e.EndX=-30:e.x=e.StartX=-30),t||(e.x=e.StartX=e.EndX=i,e.y=e.StartY=e.EndY=s),i+=50}let h;for(let t=e-1;t>=0;t--){h=this.decideCardUis[t];const i=t>0;t==e-1?h.ShowInQueue(!0,i):h.ShowInQueue(!1,i)}this.startDecideCardTween()}",
+      "sha256": "172f01e3effda140d33d50b35bc152aa0fea991e12b360e084db675f03e66e75"
+    },
+    {
+      "source": "reverse/main.sgs",
+      "offset": 19264299,
+      "method": "ShowInQueue(t){",
+      "text": "ShowInQueue(t){let i=arguments.length>1&&void 0!==arguments[1]&&arguments[1];this.resetQueueDisplay(),this.isSelf||(i=!1),t?(this.arrowImgLight.visible=i,this.bmpFace.FType=0):(this.arrowImgGray.visible=i,this.bmpFace.FType=1)}",
+      "sha256": "5049efb4562b275c6dade4be9263e5fae2de52583405cb1a74553cd70a2e6fd3"
+    },
+    {
+      "source": "reverse/main.sgs",
+      "offset": 13758233,
+      "method": "layoutPveZhanfa(t,i,s,e){",
+      "text": "layoutPveZhanfa(t,i,s,e){let h=t*e+s*(e+1)+30,r=this.width-320;h>=r?this.pveZhanfaPanel.size(r,110):this.pveZhanfaPanel.size(h,110);for(let h=0;h<e;h++){let e=this.zhanFaItems[h];e.SetNameVisible(!0),e.SetActualSize(t,i),e.x=27+h*(t+s),e.y=35,!this.isZhanFaExpand&&h>1?e.visible=!1:e.visible=!0}this.pveZhanfaPanel&&(this.pveZhanfaPanel.canScroll=h>r),this.pveZhanfaPanel.UpdateDrawContent(),this.isZhanFaExpand||this.pveZhanfaPanel.size(166,110),this.pveZhanfaPanel.pos(this.ZhuSeatX-this.pveZhanfaPanel.width-15,this.ZhuSeatY+this.pveZhanfaPanel.height-165),this.layoutArrow&&(this.layoutArrow.pos(this.lastZhanfaPosX(),this.pveZhanfaPanel.y+40),this.layoutArrow.Flip=this.isZhanFaExpand,this.layoutArrow.visible=e>=5),Laya.timer.once(50,this,(()=>{this.pveZhanfaPanel.scrollTo(0,Number.MAX_VALUE)}))}",
+      "sha256": "7338d6aef8806025d408ccb2c3d931a5595917d8b5302372051cac7730fba647"
+    },
+    {
+      "source": "reverse/http/score-audit/main.js",
+      "offset": 14944846,
+      "method": "layoutDecideCards(){",
+      "text": "layoutDecideCards(){let t=!(arguments.length>0&&void 0!==arguments[0])||arguments[0];this.decideTween&&(Laya.Tween.clear(this.decideTween),this.decideTween=null);let i=this.seatBottomSprite.width-this.x-gWt.SEAT_WIDTH-65,s=-25;1==this.skillItemCnt?s=51:2!=this.skillItemCnt&&4!=this.skillItemCnt||(s=21);const e=this.decideCardUis.length;i-=50*(e-1);for(let h=e-1;h>=0;h--){let e=this.decideCardUis[h];e.StartX=e.x,e.StartY=e.y,e.EndX=i,e.EndY=s,this.switchIng&&(this.switchOut?e.EndX=-30:e.x=e.StartX=-30),t||(e.x=e.StartX=e.EndX=i,e.y=e.StartY=e.EndY=s),i+=50}let h;for(let t=e-1;t>=0;t--){h=this.decideCardUis[t];const i=t>0;t==e-1?h.ShowInQueue(!0,i):h.ShowInQueue(!1,i)}this.startDecideCardTween()}",
+      "sha256": "6cab48747d3be17fdcdce4b6e90ebc2710ad7a7b1161fe10f94bcee1d8297509"
+    },
+    {
+      "source": "reverse/http/score-audit/main.js",
+      "offset": 21390811,
+      "method": "ShowInQueue(t){",
+      "text": "ShowInQueue(t){let i=arguments.length>1&&void 0!==arguments[1]&&arguments[1];this.resetQueueDisplay(),this.isSelf||(i=!1),t?(this.arrowImgLight.visible=i,this.bmpFace.FType=0):(this.arrowImgGray.visible=i,this.bmpFace.FType=1)}",
+      "sha256": "5049efb4562b275c6dade4be9263e5fae2de52583405cb1a74553cd70a2e6fd3"
+    }
+  ],
+  "rules": {
+    "selfJudgeStep": 50,
+    "selfJudgeSize": 36,
+    "selfJudgeX": -40,
+    "selfJudgeY": {
+      "default": 16,
+      "oneSkill": 92,
+      "twoOrFourSkills": 62
+    },
+    "selfHandHeight": 194,
+    "selfHandBottom": 15,
+    "seatHeight": 232,
+    "seatBottom": 18,
+    "tacticPanel": {
+      "xGap": 15,
+      "y": -55,
+      "itemY": 35
+    },
+    "queue": "Newest first, arrow on each item except oldest; newest light, subsequent gray. No click-collapse or lightning exclusion."
+  },
+  "localPresentation": {
+    "nodeSizeMeaning": "Official 36x36 is carrier/hit area; effect has its own dimensions.",
+    "pngWidth": 50,
+    "pngScale": 1,
+    "queueStep": 50,
+    "queueArrowX": 40,
+    "positionScaleOnly": true,
+    "reason": "Restore pre-queue Online dynamic PNG display size; do not multiply PNG drawing by seat scale or .8."
+  }
+}

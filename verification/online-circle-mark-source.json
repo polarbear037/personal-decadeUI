@@ -1,0 +1,765 @@
+{
+  "source": {
+    "resource": "/res/config/list6.sgs",
+    "member": "list6.sgs",
+    "path_in_config": "cha_spell.GameSpells.circleMark",
+    "member_sha256": "da3cb2ec30e707ab63eb25972b02135d7efb8fa9de50d363f0cb496e5049fac3",
+    "local_archive_sha256": "13343248067f613d41316cb158aaeafe756c0f999613c8c0fc9c8bc30b973f91",
+    "provenance": "Member bytes match the previously verified OL Android 4.0.1 emulator cache recorded in official-skill-prompt-source.json.",
+    "state_constant_source": "OL Android 4.0.2 APK main.sgs",
+    "state_constant_source_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+    "lookup": "The client indexes by state ID. stateConstants lists exact numeric matches from the APK and can be empty. It does not imply a one-to-one skill ID mapping.",
+    "apk_sha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+    "apk_script_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb!main.sgs",
+    "rea_main_member_evidence": "ev_066690bc5fcc481674ce2d62b5103dd6bf1821fc5164f31325cb8157c8e0f54e",
+    "icon_renderer": "oOi: 37x37, glyph 24px or two glyphs 14px at (4,4) and (16,15), count 14px, light frame selected by ShowText >= LightNum. The noname adapter shares the existing skillMarks lane with conversion marks.",
+    "panshi_binding": "The APK updates DATA_CIXIAO based on HasSkill(XIt.PANSHI). noname gives panshi to the chosen player in cixiao and exposes it as a mark.",
+    "cxliushi2_binding": "APK state vkt uses DATA_LIUSHI and shows the numeric value. noname cxliushi2 tracks the affected player's hand limit penalty until zhanwan removes it."
+  },
+  "rows": [
+    {
+      "markid": 9,
+      "color": "534145",
+      "lightnum": 7,
+      "text": "舌",
+      "tipstitle": "饶舌",
+      "tipstext": "“鼓舌”拼点没赢时获得。<br>当你有7个饶舌标记时，你死亡。<br><br><font color='#a61ba9'>天数有变，神器更易，而归有德之人，此乃自然之理。</font>",
+      "stateConstants": [
+        "DATA_RAOSHE"
+      ]
+    },
+    {
+      "markid": 14,
+      "color": "38283c",
+      "lightnum": 4,
+      "text": "忍",
+      "tipstitle": "忍戒",
+      "tipstext": "准备阶段，若你有4枚此标记则觉醒。<br>觉醒后可移除此标记以发动极略。<br><br><font color='#a61ba9'>“终于，结束了吗？不，这是新的开始…… ”</font>",
+      "stateConstants": [
+        "DATA_RENJIE"
+      ]
+    },
+    {
+      "markid": 16,
+      "color": "403032",
+      "text": "梦",
+      "tipstitle": "梦魇",
+      "tipstext": "拥有武魂技能的角色死亡时，梦魇标记最多的角色判定。结果若不为桃或桃园结义，则一同死亡。<br><br><font color='#a61ba9'>“他回来了，带着一身新装备——鬼龙斩月刀和梦魇赤兔马。”</font>",
+      "stateConstants": [
+        "DATA_MENGYAN"
+      ]
+    },
+    {
+      "markid": 18,
+      "color": "84585c",
+      "lightnum": 6,
+      "text": "怒",
+      "tipstitle": "暴怒",
+      "tipstext": "神吕布的怒气，其可以弃置暴怒标记以发动技能。<br><br><font color='#a61ba9'>颤抖着滚开吧杂鱼们！这世上还有谁能满足我？</font>",
+      "stateConstants": [
+        "DATA_BAONU"
+      ]
+    },
+    {
+      "markid": 21,
+      "color": "557c8d",
+      "text": "宝",
+      "stateConstants": [
+        "DATA_LONGCHUAN_TAP"
+      ]
+    },
+    {
+      "markid": 23,
+      "color": "78332b",
+      "text": "成",
+      "stateConstants": [
+        "DATA_CHENGDU_TAP"
+      ]
+    },
+    {
+      "markid": 24,
+      "color": "6b8d42",
+      "text": "武",
+      "stateConstants": [
+        "DATA_WUCHANG_TAP"
+      ]
+    },
+    {
+      "markid": 25,
+      "color": "89a6e4",
+      "text": "许",
+      "stateConstants": [
+        "DATA_XUCHANG_TAP"
+      ]
+    },
+    {
+      "markid": 27,
+      "color": "ced84a",
+      "text": "粮",
+      "stateConstants": [
+        "DATA_LIANG_TAP"
+      ]
+    },
+    {
+      "markid": 28,
+      "color": "ced84a",
+      "text": "邺",
+      "stateConstants": [
+        "DATA_YECHENG_TAP"
+      ]
+    },
+    {
+      "markid": 33,
+      "color": "463e24",
+      "text": "先",
+      "tipstitle": "先驱",
+      "tipstext": "出牌阶段，弃置“先驱”标记将手牌摸至四张并观看一张暗置武将牌。",
+      "stateConstants": [
+        "DATA_XIANQU"
+      ]
+    },
+    {
+      "markid": 34,
+      "color": "54312b",
+      "text": "鱼",
+      "tipstitle": "阴阳鱼",
+      "tipstext": "出牌阶段，弃置“阴阳鱼”标记摸一张牌。弃牌阶段开始时，弃置“阴阳鱼”标记令本阶段手牌上限+2。",
+      "stateConstants": [
+        "DATA_YINYANGYU"
+      ]
+    },
+    {
+      "markid": 35,
+      "color": "736668",
+      "text": "珠",
+      "tipstitle": "珠联璧合",
+      "tipstext": "出牌阶段，弃置“珠联璧合”标记摸两张牌或回复1点体力。<br>当濒死求桃时，弃置“珠联璧合”视为使用桃。",
+      "stateConstants": [
+        "DATA_ZHULIANBIHE"
+      ]
+    },
+    {
+      "markid": 37,
+      "color": "c756a4",
+      "text": "紫微",
+      "tipstitle": "紫微",
+      "tipstext": "可将判定牌修改为黑桃5或红桃5。<br><br><font color='#a61ba9'>大罗天阙，紫微星宫。</font>",
+      "stateConstants": [
+        "DATA_ZIWEI"
+      ]
+    },
+    {
+      "markid": 38,
+      "color": "c77b50",
+      "text": "后土",
+      "tipstitle": "后土",
+      "tipstext": "回合外可将一张牌当桃使用。<br><br><font color='#a61ba9'>岳渎是依，山川成仗。</font>",
+      "stateConstants": [
+        "DATA_HOUTU"
+      ]
+    },
+    {
+      "markid": 39,
+      "color": "a6d26a",
+      "text": "玉清",
+      "tipstitle": "玉清",
+      "tipstext": "造成伤害时可使伤害+1。<br><br><font color='#a61ba9'>恩溥干元，仁敷浩劫。</font>",
+      "stateConstants": [
+        "DATA_YUQING"
+      ]
+    },
+    {
+      "markid": 40,
+      "color": "a64338",
+      "text": "勾陈",
+      "tipstitle": "勾陈",
+      "tipstext": "受到属性伤害后，可随机从牌堆获得三种类型牌各一张。<br><br><font color='#a61ba9'>上象巍峨,真元恢漠。</font>",
+      "stateConstants": [
+        "DATA_GOUCHEN"
+      ]
+    },
+    {
+      "markid": 50,
+      "color": "ced84a",
+      "text": "洛",
+      "stateConstants": [
+        "DATA_LUOYANG"
+      ]
+    },
+    {
+      "markid": 101,
+      "color": "736668",
+      "text": "雾",
+      "tipstitle": "大雾",
+      "tipstext": "防止你受到的非雷电伤害。<br><br><font color='#a61ba9'>“一天浓雾满长江，远近难分水渺茫。”</font>",
+      "stateConstants": [
+        "DATA_DAWU"
+      ]
+    },
+    {
+      "markid": 102,
+      "color": "7f7752",
+      "text": "风",
+      "tipstitle": "狂风",
+      "tipstext": "你受到的火焰伤害+1。<br><br><font color='#a61ba9'>“七星坛上卧龙登，一夜东风江水腾。”</font>",
+      "stateConstants": [
+        "DATA_KUANGFENG"
+      ]
+    },
+    {
+      "markid": 111,
+      "tipstitle": "令",
+      "tipstext": "该角色正在执行放权的额外回合。",
+      "stateConstants": [
+        "DATA_FANGQUAN"
+      ]
+    },
+    {
+      "markid": 130,
+      "tipstitle": "鉴",
+      "tipstext": "下回合手牌上限+1且使用杀的限制次数+1",
+      "stateConstants": [
+        "DATA_MINGJIAN"
+      ]
+    },
+    {
+      "markid": 166,
+      "color": "6e2aa2",
+      "text": "辅",
+      "tipstitle": "先辅",
+      "tipstext": "你受到伤害后，戏志才受到等量伤害；你回复体力后，戏志才回复等量体力。<br>戏志才发动“筹策”令你摸牌时可以多摸一张。<br><br><font color='#a61ba9'>我选定的君主，任岁聿也要从一而终。</font>",
+      "stateConstants": [
+        "DATA_XIANFU"
+      ]
+    },
+    {
+      "markid": 190,
+      "color": "29183b",
+      "text": "傀",
+      "tipstitle": "傀",
+      "tipstext": "你已成为卑弥呼的傀儡，她以你的痛苦为乐。<br>最终,你将无法生出反抗她的念头。",
+      "stateConstants": [
+        "DATA_ZONGKUI"
+      ]
+    },
+    {
+      "markid": 304,
+      "color": "37005b",
+      "text": "子",
+      "tipstitle": "义子",
+      "tipstext": "你视为拥有技能“叛弑”。<br><br><font color='#a61ba9'>大丈夫，岂能郁郁久居人下！</font>",
+      "stateConstants": [
+        "DATA_CIXIAO"
+      ]
+    },
+    {
+      "markid": 331,
+      "color": "400483",
+      "text": "歌",
+      "tipstitle": "抗歌",
+      "tipstext": "你于回合外获得牌时，唐姬摸等量张牌（每回合至多3张）。<br>每轮限一次，你进入濒死状态时，唐姬可以令你回复至1点体力。<br>你死亡时，唐姬弃置所有牌并失去一点体力。<br><br><font color='#a61ba9'>“此身翎羽,为君而生,为君而彩,为君而落。”</font>",
+      "stateConstants": [
+        "DATA_KANGGE"
+      ]
+    },
+    {
+      "markid": 337,
+      "color": "400483",
+      "text": "协",
+      "tipstitle": "同协",
+      "tipstext": "同协角色使用仅指定唯一目标的杀结算后，其他同协角色可以依次对目标使用一张无距离限制的杀。<br>同协角色受到伤害时，本回合未失去过体力的其他同协角色可以防止此伤害并失去1点体力。<br><br><font color='#a61ba9'>协同心之勠力，督良将而加勋！</font>",
+      "stateConstants": [
+        "DATA_TONGXIE"
+      ]
+    },
+    {
+      "markid": 350,
+      "color": "ba3000",
+      "stateConstants": [
+        "DATA_LUNZHAN"
+      ]
+    },
+    {
+      "markid": 3730,
+      "color": "ba3000",
+      "text": "狂",
+      "tipstitle": "狂",
+      "tipstext": "“狂”角色每回合对彼此首次造成的伤害+1。<br>击败对方后，获得对方所有“炁”。<br><br><font color='#a61ba9'>“在绝对的力量面前，一切都不堪一击！”</font>",
+      "stateConstants": [
+        "DATA_SHAZHE"
+      ]
+    },
+    {
+      "markid": 31,
+      "color": "37005b",
+      "text": "龙",
+      "tipstitle": "龙印",
+      "tipstext": "你视为拥有“火计”。<br>同时拥有凤印时，可以弃置龙凤印发动“业炎”。<br><br><font color='#a61ba9'>“伏龙、凤雏何人也？”</font>",
+      "stateConstants": [
+        "DATA_LONGYING"
+      ]
+    },
+    {
+      "markid": 32,
+      "color": "690909",
+      "text": "凤",
+      "tipstitle": "凤印",
+      "tipstext": "你视为拥有“连环”。<br>同时拥有龙印时，可以弃置龙凤印发动“业炎”。<br><br><font color='#a61ba9'>“伏龙、凤雏，果系何人？”</font>",
+      "stateConstants": [
+        "DATA_FENGYING"
+      ]
+    },
+    {
+      "markid": 46,
+      "color": "b35400",
+      "text": "营",
+      "tipstitle": "营",
+      "tipstext": "摸牌阶段多摸一张牌、出牌阶段使用【杀】限制次数+1、手牌上限+1。<br>回合结束时，神甘宁获得你的所有手牌和此标记。<br><br><font color='#a61ba9'>“劫寨将轻骑，驱兵饮巨瓯，<br>神鸦能显圣，香火永千秋。”</font>",
+      "stateConstants": [
+        "DATA_JIEYING"
+      ]
+    },
+    {
+      "markid": 36,
+      "color": "8a1700",
+      "lightnum": 3,
+      "text": "暴戾",
+      "tipstext": "蕴蓄着自北地而来的暴戾之气，任谁也无法阻挡！<br>宵小们，在恐惧中揣度自己的结局吧！",
+      "stateConstants": [
+        "DATA_BAOLI"
+      ]
+    },
+    {
+      "markid": 30,
+      "color": "25540e",
+      "lightnum": 7,
+      "text": "军略",
+      "tipstitle": "军略",
+      "tipstext": "出牌阶段开始时，根据“军略”数量发动“摧克”的不同效果。<br>发动技能“绽火”时会移除所有“军略”标记。<br><br><font color='#a61ba9'>“那夷陵的漫天大火，就像翩翩舞动的精灵，守护着我们的江东。”</font>",
+      "stateConstants": [
+        "DATA_JUNLVE"
+      ]
+    },
+    {
+      "markid": 3670,
+      "color": "171723",
+      "text": "损",
+      "tipstitle": "损",
+      "tipstext": "每有一枚“损”，发动技能“缮甲”后需多弃置一张牌。<br>你失去一张装备牌移后除一枚“损”。<br><br><font color='#a61ba9'>怀勇者多，披甲者少。虎豹骑，冲杀！</font>",
+      "stateConstants": [
+        "DATA_SHANJIA2025"
+      ]
+    },
+    {
+      "markid": 3673,
+      "color": "291633",
+      "text": "奸回",
+      "tipstitle": "奸回",
+      "tipstext": "对贾充造成伤害后需弃置一张牌。<br>贾充对你造成伤害后摸一张牌。<br><br><font color='#a61ba9'>“今日之事如何？”</font>",
+      "stateConstants": [
+        "DATA_JIANHUI"
+      ]
+    },
+    {
+      "markid": 3169,
+      "color": "8c8622",
+      "text": "卑势",
+      "tipstitle": "卑势",
+      "tipstext": "每当你失去最后的手牌，族荀谌回复1点体力。<br><br><font color='#a61ba9'>唉，我为袁氏故吏，又能做些什么呢……</font>",
+      "stateConstants": [
+        "DATA_STATE_SANKUANG"
+      ]
+    },
+    {
+      "markid": 65,
+      "color": "56c7d4",
+      "lightnum": 5,
+      "text": "贤",
+      "tipstitle": "贤",
+      "tipstext": "谋孔融的回合结束时，有“贤”的角色依次选择使用一张牌或移除所有“贤”标记并令谋孔融摸等量牌。<br>有“贤”的角色受到非属性伤害时，其他有“贤”的角色可以防止此伤害并失去等量体力。<br><br><font color='#a61ba9'>主上宽仁，贵德宥过。明公辅政，思贤并立。</font>",
+      "stateConstants": [
+        "DATA_XIAN"
+      ]
+    },
+    {
+      "markid": 48,
+      "color": "442e82",
+      "text": "爵",
+      "tipstitle": "爵",
+      "tipstext": "移除1枚“爵”以发动“突袭”或“骁果”。<br>结束阶段，获得等同于你本回合造成伤害数的“爵”。<br><br><font color='#a61ba9'>“荫父辈爵禄，我等必不辱没将门家风！”</font>",
+      "stateConstants": [
+        "DATA_XIJUE"
+      ]
+    },
+    {
+      "markid": 311,
+      "color": "f364e7",
+      "text": "诔###赋###颂",
+      "tipstitle": "诔###赋###颂",
+      "tipstext": "进入濒死时，回复至1点体力并摸一张牌。<br><br><font color='#a61ba9'>奕世朱轮，耀彼华阳。惟岳降神，显兹祯祥。</font>###出牌阶段开始时，弃置一名角色区域内至多两张牌。<br><br><font color='#a61ba9'>惟屈原之哀感兮，嗟悲伤于离别。</font>###使用杀指定唯一目标时，多指定至多两个目标。<br><br><font color='#a61ba9'>英英丽质，禀气灵和。春茂翠叶，秋耀金华。</font>",
+      "stateConstants": [
+        "DATA_ZHAOSONG"
+      ]
+    },
+    {
+      "markid": 514,
+      "color": "f364e7",
+      "text": "梅影",
+      "tipstitle": "梅影",
+      "tipstext": "可以移除一枚“梅影”发动“龙胆”并摸一张牌。<br><br><font color='#a61ba9'>“暗香疏影处，一梅独傲霜。”</font>",
+      "stateConstants": [
+        "DATA_MEIYING"
+      ]
+    },
+    {
+      "markid": 517,
+      "color": "291633",
+      "text": "赈赡",
+      "tipstitle": "赈赡",
+      "tipstext": "你的回合内，界全琮视为拥有技能“赈赡”。<br><br><font color='#a61ba9'>“好施慕名，一时之佳。”</font>",
+      "stateConstants": [
+        "DATA_YAOMING"
+      ]
+    },
+    {
+      "markid": 3850,
+      "color": "f364e7",
+      "text": "遁迹",
+      "tipstitle": "遁迹",
+      "tipstext": "上次“遁迹”的目标角色。<br>你本回合扣减过体力或失去了牌，族荀灌会获得对应收益。<br><br><font color='#a61ba9'>“再拜而倏忽不见……”</font>",
+      "stateConstants": [
+        "DATA_DUNJI"
+      ]
+    },
+    {
+      "markid": 3793,
+      "color": "56c7d4",
+      "text": "白虹|青冥|辟邪|紫电|百里|流星",
+      "tipstitle": "白虹|青冥|辟邪|紫电|百里|流星",
+      "tipstext": "伤害+1 <br><br><font color='#a61ba9'>“白虹贯苍穹，挥刃血溅宫”</font>|目标+1<br><br><font color='#a61ba9'>“刃似寒潭水，剑出溯空明”</font>|无视防具 <br><br><font color='#a61ba9'>“神锋所向诛邪恶，利刃飞出鬼魅惊”</font>|不可响应<br><br><font color='#a61ba9'>“恰似明空紫电生，神兵舞起快如风”</font>|额外结算 <br><br><font color='#a61ba9'>“锋芒震四方，可息天下兵”</font>|无次数限制 <br><br><font color='#a61ba9'>“流星飞玉弹，破阵清边尘”</font>",
+      "stateConstants": [
+        "DATA_QUANYU"
+      ]
+    },
+    {
+      "markid": 44,
+      "color": "a21212",
+      "text": "裔",
+      "tipstitle": "裔",
+      "tipstext": "你每有1枚“裔”，手牌上限便+1。<br><br><font color='#a61ba9'>“四世五公，鼎贵世德莫如袁杨。”</font>",
+      "stateConstants": [
+        "DATA_YI"
+      ]
+    },
+    {
+      "markid": 259,
+      "color": "204b03",
+      "text": "烈",
+      "tipstitle": "烈",
+      "tipstext": "你受到伤害时，移除“烈”并防止此伤害。<br><br><font color='#a61ba9'>四叶垂鸿烈，三方开鼎峙。</font>",
+      "stateConstants": [
+        "DATA_WULIE"
+      ]
+    },
+    {
+      "markid": 29,
+      "color": "d27d0f",
+      "text": "橘",
+      "tipstitle": "橘",
+      "tipstext": "你摸牌阶段多摸一张牌。<br>你受到伤害时，防止此伤害并移除1枚“橘”。<br><br><font color='#a61ba9'>年岁虽少，可师长兮。<br>行比伯夷，置以为像兮。</font>",
+      "stateConstants": [
+        "DATA_HUAIJU"
+      ]
+    },
+    {
+      "markid": 326,
+      "color": "424c7b",
+      "text": "变",
+      "tipstitle": "变",
+      "tipstext": "你可以移除1枚“变”，跳过你的一个阶段。<br><br><font color='#a61ba9'>水因地而制流，兵因敌而制胜。</font>",
+      "stateConstants": [
+        "DATA_QIAOBIANPO"
+      ]
+    },
+    {
+      "markid": 323,
+      "color": "182768",
+      "text": "辎",
+      "tipstitle": "辎",
+      "tipstext": "摸牌阶段结束时，你移除“辎”，执行一个额外的摸牌阶段。<br><br><font color='#a61ba9'>军无辎重则亡，无粮食则亡，无委积则亡。</font>",
+      "stateConstants": [
+        "DATA_JIEZIPO"
+      ]
+    },
+    {
+      "markid": 133,
+      "color": "580b0b",
+      "text": "燃",
+      "tipstitle": "燃",
+      "tipstext": "结束阶段，你每有1枚“燃”，你便失去1点体力。<br><br><font color='#a61ba9'>桐油藤甲，最怕恶火。</font>",
+      "stateConstants": [
+        "DATA_RANSHANG"
+      ]
+    },
+    {
+      "markid": 144,
+      "color": "3e0606",
+      "text": "乱战",
+      "tipstitle": "乱战",
+      "tipstext": "你每有1枚“乱战”标记，你使用【杀】或黑色普通锦囊牌便可以多指定一个目标。<br><br><font color='#a61ba9'>敢受亡命，以雄百蛮！</font>",
+      "stateConstants": [
+        "DATA_LUANZHAN"
+      ]
+    },
+    {
+      "markid": 264,
+      "color": "8f4098",
+      "lightnum": 3,
+      "text": "三陈",
+      "tipstitle": "三陈",
+      "tipstext": "本局游戏你发动“三陈”的次数。<br><br><font color='#a61ba9'>“不过费损日月之间，何惜而不一试之！”</font>",
+      "stateConstants": [
+        "DATA_ZHAOTAO"
+      ]
+    },
+    {
+      "markid": 454,
+      "color": "100312",
+      "lightnum": 9,
+      "text": "执柄",
+      "tipstitle": "执柄",
+      "tipstext": "其他群雄势力角色累计使用的黑色牌数量。<br>达到3，你增加体力上限并回复体力；<br>达到6，你获得“焚城”；<br>达到9，你获得“崩坏”。<br><br><font color='#a61ba9'>郿去长安二百六十里，高厚皆七丈，积谷储卅年。</font>",
+      "stateConstants": [
+        "DATA_ZHIBING2"
+      ]
+    },
+    {
+      "markid": 262,
+      "color": "1e62ee",
+      "lightnum": 6,
+      "text": "省身",
+      "tipstitle": "省身",
+      "tipstext": "下次“严教”额外亮出牌的数量。<br><br><font color='#a61ba9'>为人谋而不忠乎？<br>与朋友交而不信乎？<br>传不习乎？</font>",
+      "stateConstants": [
+        "DATA_YANJIAO"
+      ]
+    },
+    {
+      "markid": 360,
+      "color": "56c7d4",
+      "text": "分钗",
+      "tipstitle": "分钗",
+      "tipstext": "你是首次成为荀粲技能目标的异性角色。<br><br><font color='#a61ba9'>水声繁，弦声浅。<br>情若何，荀奉倩。</font>",
+      "stateConstants": [
+        "DATA_FENCHAI2_OTHER"
+      ]
+    },
+    {
+      "markid": 224,
+      "color": "cc2626",
+      "text": "思蜀",
+      "tipstitle": "思蜀",
+      "tipstext": "本局你的【乐不思蜀】效果反转。<br><br><font color='#a61ba9'>“先人坟墓，远在陇蜀， <br>乃心西悲，无日不思……”</font>",
+      "stateConstants": [
+        "DATA_SISHUPO"
+      ]
+    },
+    {
+      "markid": 305,
+      "color": "081b82",
+      "text": "翊正",
+      "tipstitle": "翊正",
+      "tipstext": "若你的体力上限小于曹嵩，你造成伤害或回复体力值+1。<br><br><font color='#a61ba9'>翊策匡国所在忠，正纲兴族所在孝。</font>",
+      "stateConstants": [
+        "DATA_YIZHENG"
+      ]
+    },
+    {
+      "markid": 278,
+      "color": "56c7d4",
+      "text": "流矢",
+      "tipstitle": "流矢",
+      "tipstext": "你每有1枚“流矢”标记，你的手牌上限便-1，直到触发“斩腕”。<br><br><font color='#a61ba9'>隼鹰折羽，一镞惊鸿。</font>",
+      "stateConstants": [
+        "DATA_LIUSHI"
+      ]
+    },
+    {
+      "markid": 142,
+      "color": "ba1a1a",
+      "text": "奔袭",
+      "tipstitle": "奔袭",
+      "tipstext": "每有1枚“奔袭”，你计算与其他角色距离-1。<br><br><font color='#a61ba9'>追亡逐北，至止而得。</font>",
+      "stateConstants": [
+        "DATA_BENXI"
+      ]
+    },
+    {
+      "markid": 69,
+      "color": "6e2d2d",
+      "text": "恨",
+      "tipstitle": "恨",
+      "tipstext": "吕布对你使用伤害牌，你每有1枚“恨”，此牌伤害便+1。<br><br><font color='#a61ba9'>“老贼，我誓杀汝！”</font>",
+      "stateConstants": [
+        "DATA_HEN"
+      ]
+    },
+    {
+      "markid": 522,
+      "color": "f364e7",
+      "text": "诔",
+      "tipstitle": "诔",
+      "tipstext": "进入濒死时，回复至1点体力并摸一张牌。<br><br><font color='#a61ba9'>奕世朱轮，耀彼华阳。惟岳降神，显兹祯祥。</font>",
+      "stateConstants": [
+        "DATA_ZHAOSONG2026_LEI"
+      ]
+    },
+    {
+      "markid": 523,
+      "color": "4df2ec",
+      "text": "赋",
+      "tipstitle": "赋",
+      "tipstext": "出牌阶段开始时，弃置一名角色区域内至多两张牌。<br><br><font color='#a61ba9'>惟屈原之哀感兮，嗟悲伤于离别。</font>",
+      "stateConstants": [
+        "DATA_ZHAOSONG2026_FU"
+      ]
+    },
+    {
+      "markid": 524,
+      "color": "30fe5b",
+      "text": "颂",
+      "tipstitle": "颂",
+      "tipstext": "使用杀指定唯一目标时，多指定至多两个目标。<br><br><font color='#a61ba9'>英英丽质，禀气灵和。春茂翠叶，秋耀金华。</font>",
+      "stateConstants": [
+        "DATA_ZHAOSONG2026_SONG"
+      ]
+    },
+    {
+      "markid": 4029,
+      "color": "4df2ec",
+      "text": "荡魔",
+      "tipstitle": "荡魔",
+      "tipstext": "<br><br><font color='#a61ba9'>凡有邪祟，吾自一剑除之</font>",
+      "stateConstants": [
+        "DATA_DANGMO"
+      ]
+    },
+    {
+      "markid": 4030,
+      "color": "30fe5b",
+      "text": "济惠",
+      "tipstitle": "济惠",
+      "tipstext": "你本轮首次失去牌数大于体力值后，你获得一张【桃】。<br><br><font color='#a61ba9'>怀仁施济惠，悲悯渡黎元</font>",
+      "stateConstants": [
+        "DATA_JIHUI"
+      ]
+    },
+    {
+      "markid": 4031,
+      "color": "ba3000",
+      "text": "霞举",
+      "tipstitle": "霞举",
+      "tipstext": "下次此技能获得牌数+1。<br><br><font color='#a61ba9'>凌虚凭霞举，羽化入瑶京</font>",
+      "stateConstants": [
+        "DATA_XIAJU"
+      ]
+    },
+    {
+      "markid": 72,
+      "color": "4caf50",
+      "text": "美味###拉完###?",
+      "tipstitle": "美味###拉完###?",
+      "tipstext": "获得正面效果，美味！<br>使用牌*可能*执行：<br>摸牌；回复体力；额外结算；分配伤害；本回合获得一个有用的技能###获得负面效果，拉完！<br>使用牌*可能*执行：<br>弃牌；失去体力；随机指定目标；随机重铸手牌；本回合获得一个没用的技能###未知效果",
+      "stateConstants": [
+        "DATA_WUGU_FENGDENG"
+      ]
+    },
+    {
+      "markid": 7196,
+      "color": "D14A51",
+      "text": "词元",
+      "tipstitle": "词元",
+      "tipstext": "你所剩余的token数<br><br><font color='#a61ba9'>思考中……</font>",
+      "stateConstants": [
+        "DATA_FUNENG"
+      ]
+    },
+    {
+      "markid": 3712,
+      "color": "ba3000",
+      "text": "入魔",
+      "tipstitle": "入魔",
+      "tipstext": "\n你已入魔。<br>入魔是魔武将专属的动作，每局游戏限一次。<br>入魔后，每轮结束时，若本轮你未造成过伤害，你失去1点体力。",
+      "stateConstants": [
+        "DATA_RUMO"
+      ]
+    }
+  ],
+  "noname_adapter": {
+    "module": "src/ui/online-circle-mark-data.js",
+    "bindings": {
+      "gushe": 9,
+      "renjie": 14,
+      "new_wuhun": 16,
+      "baonu": 18,
+      "dawu2": 101,
+      "kuangfeng2": 102,
+      "xianfu2": 166,
+      "zongkui_mark": 190,
+      "olkuangmo_effect": 3730,
+      "jianjie_huoji": 31,
+      "jianjie_lianhuan": 32,
+      "drlt_jieying_mark": 46,
+      "nzry_junlve": 30,
+      "xijue": 48,
+      "nzry_huaiju": 29,
+      "wulie2": 259,
+      "ranshang": 133,
+      "luanzhan": 144,
+      "reluanzhan": 144,
+      "panshi": 304,
+      "cxliushi2": 278
+    },
+    "assets": [
+      {
+        "atlas_frame": "state_icon_bg.png",
+        "frame": {
+          "h": 38,
+          "idx": 0,
+          "w": 37,
+          "x": 1033,
+          "y": 518
+        },
+        "target": "image/ui/tip/online/state_icon_bg.png",
+        "sha256": "fbdebccae8c163435c9290bf2d252ae64042e5905a2ae36284b2be20c408e5ee",
+        "pixel_equal": true
+      },
+      {
+        "atlas_frame": "state_icon_frame.png",
+        "frame": {
+          "h": 38,
+          "idx": 0,
+          "w": 37,
+          "x": 1046,
+          "y": 558
+        },
+        "target": "image/ui/tip/online/state_icon_frame.png",
+        "sha256": "b57c37d07cd3dae73dc3eabe74a1d4694dcb4cec0b513eaa4f3d1c39514d05b1",
+        "pixel_equal": true
+      },
+      {
+        "atlas_frame": "state_icon_frame_light.png",
+        "frame": {
+          "h": 38,
+          "idx": 0,
+          "w": 37,
+          "x": 1046,
+          "y": 598
+        },
+        "target": "image/ui/tip/online/state_icon_frame_light.png",
+        "sha256": "d8d25211c6a5d20ad06a8497b0571f4da13796000f88dea85267126f05ae2380",
+        "pixel_equal": true
+      }
+    ]
+  }
+}

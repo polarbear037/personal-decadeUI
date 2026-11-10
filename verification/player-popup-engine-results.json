@@ -1,0 +1,29 @@
+{
+  "filtered": [],
+  "skill": [
+    {
+      "text": "武圣",
+      "layer": 6,
+      "display": "flex",
+      "inline": "200"
+    }
+  ],
+  "dialogLayer": 7,
+  "fullLayer": 7,
+  "disabled": [
+    {
+      "text": "胜",
+      "layer": 200,
+      "display": "flex",
+      "inline": "200"
+    }
+  ],
+  "liveOn": [
+    {
+      "text": "胜",
+      "layer": 6,
+      "display": "none",
+      "inline": "200"
+    }
+  ]
+}

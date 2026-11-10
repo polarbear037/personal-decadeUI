@@ -1,0 +1,1530 @@
+[
+  {
+    "style": "onlineUI",
+    "phone": false,
+    "initial": {
+      "auto": false,
+      "arenaAuto": false,
+      "seatBadgeCount": 0,
+      "seatBadgeOnSelf": false,
+      "playerRect": {
+        "x": 1214.1875,
+        "y": 698.46875,
+        "width": 132,
+        "height": 175,
+        "top": 698.46875,
+        "right": 1346.1875,
+        "bottom": 873.46875,
+        "left": 1214.1875
+      },
+      "marks": [
+        {
+          "text": "计",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "rect": {
+            "x": 1235.421875,
+            "y": 758.859375,
+            "width": 42.4375,
+            "height": 22.59375,
+            "top": 758.859375,
+            "right": 1277.859375,
+            "bottom": 781.453125,
+            "left": 1235.421875
+          }
+        },
+        {
+          "text": "武圣",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "rect": {
+            "x": 1235.421875,
+            "y": 734.765625,
+            "width": 40,
+            "height": 22.59375,
+            "top": 734.765625,
+            "right": 1275.421875,
+            "bottom": 757.359375,
+            "left": 1235.421875
+          }
+        }
+      ],
+      "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/trusteeship_bg_new.png\")",
+      "opacity": "0",
+      "text": "取消托管",
+      "cancel": "取消托管",
+      "cancelBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/secbtn_sub.png\")",
+      "cancelRect": {
+        "x": 650.5,
+        "y": 786.3359375,
+        "width": 136,
+        "height": 45.328125,
+        "top": 786.3359375,
+        "right": 786.5,
+        "bottom": 831.6640625,
+        "left": 650.5
+      },
+      "cancelColor": "rgb(238, 222, 188)",
+      "cancelFont": "22.67px",
+      "panelRect": {
+        "x": -5.859375,
+        "y": 711,
+        "width": 1448.71875,
+        "height": 196.015625,
+        "top": 711,
+        "right": 1442.859375,
+        "bottom": 907.015625,
+        "left": -5.859375
+      },
+      "nodes": 1,
+      "windowCss": true
+    },
+    "active": {
+      "auto": true,
+      "arenaAuto": true,
+      "seatBadgeCount": 1,
+      "seatBadge": "托管",
+      "seatBadgeOnSelf": true,
+      "seatBadgeRect": {
+        "x": 1235.421875,
+        "y": 758.859375,
+        "width": 40,
+        "height": 22.59375,
+        "top": 758.859375,
+        "right": 1275.421875,
+        "bottom": 781.453125,
+        "left": 1235.421875
+      },
+      "playerRect": {
+        "x": 1214.1875,
+        "y": 698.46875,
+        "width": 132,
+        "height": 175,
+        "top": 698.46875,
+        "right": 1346.1875,
+        "bottom": 873.46875,
+        "left": 1214.1875
+      },
+      "marks": [
+        {
+          "text": "托管",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "rect": {
+            "x": 1235.421875,
+            "y": 758.859375,
+            "width": 40,
+            "height": 22.59375,
+            "top": 758.859375,
+            "right": 1275.421875,
+            "bottom": 781.453125,
+            "left": 1235.421875
+          }
+        },
+        {
+          "text": "计",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "rect": {
+            "x": 1235.421875,
+            "y": 734.765625,
+            "width": 42.4375,
+            "height": 22.59375,
+            "top": 734.765625,
+            "right": 1277.859375,
+            "bottom": 757.359375,
+            "left": 1235.421875
+          }
+        },
+        {
+          "text": "武圣",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "rect": {
+            "x": 1235.421875,
+            "y": 710.671875,
+            "width": 40,
+            "height": 22.59375,
+            "top": 710.671875,
+            "right": 1275.421875,
+            "bottom": 733.265625,
+            "left": 1235.421875
+          }
+        }
+      ],
+      "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/trusteeship_bg_new.png\")",
+      "opacity": "1",
+      "text": "取消托管",
+      "cancel": "取消托管",
+      "cancelBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/secbtn_sub.png\")",
+      "cancelRect": {
+        "x": 650.5,
+        "y": 786.3359375,
+        "width": 136,
+        "height": 45.328125,
+        "top": 786.3359375,
+        "right": 786.5,
+        "bottom": 831.6640625,
+        "left": 650.5
+      },
+      "cancelColor": "rgb(238, 222, 188)",
+      "cancelFont": "22.67px",
+      "panelRect": {
+        "x": -5.859375,
+        "y": 711,
+        "width": 1448.71875,
+        "height": 196.015625,
+        "top": 711,
+        "right": 1442.859375,
+        "bottom": 907.015625,
+        "left": -5.859375
+      },
+      "nodes": 1,
+      "windowCss": true,
+      "markInteraction": {
+        "grayPopup": false,
+        "textType": "status",
+        "textIntro": false,
+        "pilePopup": true,
+        "cards": 1,
+        "actionX": 0.7067945075757576,
+        "actionY": 0.21553571428571427,
+        "compact": true,
+        "tag": "缚豕",
+        "count": "1",
+        "pileBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_btn_0_new2024.png\")",
+        "grayBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+        "grayHover": false,
+        "emptyVisible": false,
+        "refilled": true,
+        "fallbackCards": 1
+      },
+      "hiddenPile": {
+        "other": {
+          "type": "status",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "intro": false
+        },
+        "own": {
+          "type": "dialog",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_btn_0_new2024.png\")",
+          "intro": true,
+          "cards": 3
+        },
+        "returned": {
+          "type": "status",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "intro": false
+        },
+        "empty": "empty"
+      },
+      "compactLayout": {
+        "gap": 1.40625,
+        "dialog": {
+          "x": 640.4815673828125,
+          "y": 691.079345703125,
+          "width": 679.036865234375,
+          "height": 111.84136962890625,
+          "top": 691.079345703125,
+          "right": 1319.5184326171875,
+          "bottom": 802.9207153320312,
+          "left": 640.4815673828125
+        },
+        "card": {
+          "x": 652.464599609375,
+          "y": 747,
+          "width": 124.3236083984375,
+          "height": 32.95330810546875,
+          "top": 747,
+          "right": 776.7882080078125,
+          "bottom": 779.9533081054688,
+          "left": 652.464599609375
+        },
+        "frame": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/tip_bg.png\")",
+        "banners": [
+          "shunshou.png",
+          "sha_fire.png"
+        ],
+        "suits": 0
+      },
+      "graphicMarks": {
+        "initial": {
+          "fury": "怒3",
+          "frenzy": "狂",
+          "other": "狂",
+          "color": "#ba3000",
+          "mask": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/state_icon_bg.png\")",
+          "right": true,
+          "separate": true,
+          "hittable": true,
+          "centerXs": [
+            1344.1875,
+            1344.1875,
+            1344.1875,
+            1344.1875,
+            1344.1875
+          ],
+          "iconRect": {
+            "x": 1330.1875,
+            "y": 813.46875,
+            "width": 28,
+            "height": 28,
+            "top": 813.46875,
+            "right": 1358.1875,
+            "bottom": 841.46875,
+            "left": 1330.1875
+          },
+          "conversionRect": {
+            "x": 1327.0875244140625,
+            "y": 753.1187744140625,
+            "width": 34.199951171875,
+            "height": 34.199951171875,
+            "top": 753.1187744140625,
+            "right": 1361.2874755859375,
+            "bottom": 787.3187255859375,
+            "left": 1327.0875244140625
+          },
+          "playerRect": {
+            "x": 1214.1875,
+            "y": 698.46875,
+            "width": 132,
+            "height": 175,
+            "top": 698.46875,
+            "right": 1346.1875,
+            "bottom": 873.46875,
+            "left": 1214.1875
+          },
+          "laneDisplay": "flex",
+          "popup": true
+        },
+        "lit": {
+          "text": "怒6",
+          "frame": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/state_icon_frame_light.png\")"
+        },
+        "removed": true,
+        "otherRemains": true,
+        "child": "子",
+        "arrowGlyphs": [
+          "流",
+          "矢"
+        ],
+        "arrowCount": "2",
+        "arrowRemoved": true
+      },
+      "lifecycle": {
+        "nodes": 1,
+        "menu": "url(\"extension/十周年UI/ui/assets/lbtn/OL_line/uibutton/tool_trusteeship_0.png\")"
+      },
+      "menuState": {
+        "on": {
+          "auto": true,
+          "image": "url(\"extension/十周年UI/ui/assets/lbtn/OL_line/uibutton/tool_trusteeship_0_cancel.png\")"
+        },
+        "off": {
+          "auto": false,
+          "image": "url(\"extension/十周年UI/ui/assets/lbtn/OL_line/uibutton/tool_trusteeship_0.png\")"
+        }
+      }
+    },
+    "cancelled": {
+      "auto": false,
+      "arenaAuto": false,
+      "seatBadgeCount": 0,
+      "seatBadgeOnSelf": false,
+      "playerRect": {
+        "x": 1214.1875,
+        "y": 698.46875,
+        "width": 132,
+        "height": 175,
+        "top": 698.46875,
+        "right": 1346.1875,
+        "bottom": 873.46875,
+        "left": 1214.1875
+      },
+      "marks": [
+        {
+          "text": "计",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "rect": {
+            "x": 1235.421875,
+            "y": 758.859375,
+            "width": 42.4375,
+            "height": 22.59375,
+            "top": 758.859375,
+            "right": 1277.859375,
+            "bottom": 781.453125,
+            "left": 1235.421875
+          }
+        },
+        {
+          "text": "武圣",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "rect": {
+            "x": 1235.421875,
+            "y": 734.765625,
+            "width": 40,
+            "height": 22.59375,
+            "top": 734.765625,
+            "right": 1275.421875,
+            "bottom": 757.359375,
+            "left": 1235.421875
+          }
+        }
+      ],
+      "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/trusteeship_bg_new.png\")",
+      "opacity": "0",
+      "text": "取消托管",
+      "cancel": "取消托管",
+      "cancelBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/secbtn_sub.png\")",
+      "cancelRect": {
+        "x": 650.5,
+        "y": 786.3359375,
+        "width": 136,
+        "height": 45.328125,
+        "top": 786.3359375,
+        "right": 786.5,
+        "bottom": 831.6640625,
+        "left": 650.5
+      },
+      "cancelColor": "rgb(238, 222, 188)",
+      "cancelFont": "22.67px",
+      "panelRect": {
+        "x": -5.859375,
+        "y": 711,
+        "width": 1448.71875,
+        "height": 196.015625,
+        "top": 711,
+        "right": 1442.859375,
+        "bottom": 907.015625,
+        "left": -5.859375
+      },
+      "nodes": 1,
+      "windowCss": true
+    },
+    "errors": [],
+    "failed": [
+      [
+        404,
+        "http://127.0.0.1:8691/preload.js"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/theme/style/card"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_loseHp.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_loseHp.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baguazhen.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baguazhen.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baiyinshizi.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baiyinshizi.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/huifushuzi/shuzi2.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/huifushuzi/shuzi2.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/empty_equip1.png"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/empty_equip2.png"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/empty_equip3.png"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/empty_equip4.png"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/empty_equip5.png"
+      ]
+    ]
+  },
+  {
+    "style": "onlineUI",
+    "phone": true,
+    "initial": {
+      "auto": false,
+      "arenaAuto": false,
+      "seatBadgeCount": 0,
+      "seatBadgeOnSelf": false,
+      "playerRect": {
+        "x": 1214.1875,
+        "y": 696.890625,
+        "width": 132,
+        "height": 175,
+        "top": 696.890625,
+        "right": 1346.1875,
+        "bottom": 871.890625,
+        "left": 1214.1875
+      },
+      "marks": [
+        {
+          "text": "计",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "rect": {
+            "x": 1235.421875,
+            "y": 757.28125,
+            "width": 42.4375,
+            "height": 22.59375,
+            "top": 757.28125,
+            "right": 1277.859375,
+            "bottom": 779.875,
+            "left": 1235.421875
+          }
+        },
+        {
+          "text": "武圣",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "rect": {
+            "x": 1235.421875,
+            "y": 733.1875,
+            "width": 40,
+            "height": 22.59375,
+            "top": 733.1875,
+            "right": 1275.421875,
+            "bottom": 755.78125,
+            "left": 1235.421875
+          }
+        }
+      ],
+      "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/trusteeship_bg_new.png\")",
+      "opacity": "0",
+      "text": "取消托管",
+      "cancel": "取消托管",
+      "cancelBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/secbtn_sub.png\")",
+      "cancelRect": {
+        "x": 650.5,
+        "y": 787.0546875,
+        "width": 136,
+        "height": 45.328125,
+        "top": 787.0546875,
+        "right": 786.5,
+        "bottom": 832.3828125,
+        "left": 650.5
+      },
+      "cancelColor": "rgb(238, 222, 188)",
+      "cancelFont": "22.67px",
+      "panelRect": {
+        "x": -5.859375,
+        "y": 711,
+        "width": 1448.71875,
+        "height": 197.453125,
+        "top": 711,
+        "right": 1442.859375,
+        "bottom": 908.453125,
+        "left": -5.859375
+      },
+      "nodes": 1,
+      "windowCss": false
+    },
+    "active": {
+      "auto": true,
+      "arenaAuto": true,
+      "seatBadgeCount": 1,
+      "seatBadge": "托管",
+      "seatBadgeOnSelf": true,
+      "seatBadgeRect": {
+        "x": 1235.421875,
+        "y": 757.28125,
+        "width": 40,
+        "height": 22.59375,
+        "top": 757.28125,
+        "right": 1275.421875,
+        "bottom": 779.875,
+        "left": 1235.421875
+      },
+      "playerRect": {
+        "x": 1214.1875,
+        "y": 696.890625,
+        "width": 132,
+        "height": 175,
+        "top": 696.890625,
+        "right": 1346.1875,
+        "bottom": 871.890625,
+        "left": 1214.1875
+      },
+      "marks": [
+        {
+          "text": "托管",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "rect": {
+            "x": 1235.421875,
+            "y": 757.28125,
+            "width": 40,
+            "height": 22.59375,
+            "top": 757.28125,
+            "right": 1275.421875,
+            "bottom": 779.875,
+            "left": 1235.421875
+          }
+        },
+        {
+          "text": "计",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "rect": {
+            "x": 1235.421875,
+            "y": 733.1875,
+            "width": 42.4375,
+            "height": 22.59375,
+            "top": 733.1875,
+            "right": 1277.859375,
+            "bottom": 755.78125,
+            "left": 1235.421875
+          }
+        },
+        {
+          "text": "武圣",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "rect": {
+            "x": 1235.421875,
+            "y": 709.09375,
+            "width": 40,
+            "height": 22.59375,
+            "top": 709.09375,
+            "right": 1275.421875,
+            "bottom": 731.6875,
+            "left": 1235.421875
+          }
+        }
+      ],
+      "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/trusteeship_bg_new.png\")",
+      "opacity": "1",
+      "text": "取消托管",
+      "cancel": "取消托管",
+      "cancelBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/secbtn_sub.png\")",
+      "cancelRect": {
+        "x": 650.5,
+        "y": 787.0546875,
+        "width": 136,
+        "height": 45.328125,
+        "top": 787.0546875,
+        "right": 786.5,
+        "bottom": 832.3828125,
+        "left": 650.5
+      },
+      "cancelColor": "rgb(238, 222, 188)",
+      "cancelFont": "22.67px",
+      "panelRect": {
+        "x": -5.859375,
+        "y": 711,
+        "width": 1448.71875,
+        "height": 197.453125,
+        "top": 711,
+        "right": 1442.859375,
+        "bottom": 908.453125,
+        "left": -5.859375
+      },
+      "nodes": 1,
+      "windowCss": false,
+      "markInteraction": {
+        "grayPopup": false,
+        "textType": "status",
+        "textIntro": false,
+        "pilePopup": true,
+        "cards": 1,
+        "actionX": 0.7067945075757576,
+        "actionY": 0.21553571428571427,
+        "compact": true,
+        "tag": "缚豕",
+        "count": "1",
+        "pileBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_btn_0_new2024.png\")",
+        "grayBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+        "grayHover": false,
+        "emptyVisible": false,
+        "refilled": true,
+        "fallbackCards": 1
+      },
+      "hiddenPile": {
+        "other": {
+          "type": "status",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "intro": false
+        },
+        "own": {
+          "type": "dialog",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_btn_0_new2024.png\")",
+          "intro": true,
+          "cards": 3
+        },
+        "returned": {
+          "type": "status",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "intro": false
+        },
+        "empty": "empty"
+      },
+      "compactLayout": {
+        "gap": 1.40625,
+        "dialog": {
+          "x": 640.4835815429688,
+          "y": 689.0796508789062,
+          "width": 679.0327758789062,
+          "height": 111.8406982421875,
+          "top": 689.0796508789062,
+          "right": 1319.516357421875,
+          "bottom": 800.9203491210938,
+          "left": 640.4835815429688
+        },
+        "card": {
+          "x": 652.4664916992188,
+          "y": 745,
+          "width": 124.32293701171875,
+          "height": 32.95306396484375,
+          "top": 745,
+          "right": 776.7894287109375,
+          "bottom": 777.9530639648438,
+          "left": 652.4664916992188
+        },
+        "frame": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/tip_bg.png\")",
+        "banners": [
+          "shunshou.png",
+          "sha_fire.png"
+        ],
+        "suits": 0
+      },
+      "graphicMarks": {
+        "initial": {
+          "fury": "怒3",
+          "frenzy": "狂",
+          "other": "狂",
+          "color": "#ba3000",
+          "mask": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/state_icon_bg.png\")",
+          "right": true,
+          "separate": true,
+          "hittable": true,
+          "centerXs": [
+            1345.6875,
+            1345.6875,
+            1345.6875,
+            1345.6875,
+            1345.6875
+          ],
+          "iconRect": {
+            "x": 1331.6875,
+            "y": 805.890625,
+            "width": 28,
+            "height": 28,
+            "top": 805.890625,
+            "right": 1359.6875,
+            "bottom": 833.890625,
+            "left": 1331.6875
+          },
+          "conversionRect": {
+            "x": 1335.6875,
+            "y": 758.890625,
+            "width": 20,
+            "height": 20,
+            "top": 758.890625,
+            "right": 1355.6875,
+            "bottom": 778.890625,
+            "left": 1335.6875
+          },
+          "playerRect": {
+            "x": 1214.1875,
+            "y": 696.890625,
+            "width": 132,
+            "height": 175,
+            "top": 696.890625,
+            "right": 1346.1875,
+            "bottom": 871.890625,
+            "left": 1214.1875
+          },
+          "laneDisplay": "flex",
+          "popup": true
+        },
+        "lit": {
+          "text": "怒6",
+          "frame": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/state_icon_frame_light.png\")"
+        },
+        "removed": true,
+        "otherRemains": true,
+        "child": "子",
+        "arrowGlyphs": [
+          "流",
+          "矢"
+        ],
+        "arrowCount": "2",
+        "arrowRemoved": true
+      },
+      "lifecycle": {
+        "nodes": 1,
+        "menu": "url(\"extension/十周年UI/ui/assets/lbtn/OL_line/uibutton/tool_trusteeship_0.png\")"
+      },
+      "menuState": {
+        "on": {
+          "auto": true,
+          "image": "url(\"extension/十周年UI/ui/assets/lbtn/OL_line/uibutton/tool_trusteeship_0_cancel.png\")"
+        },
+        "off": {
+          "auto": false,
+          "image": "url(\"extension/十周年UI/ui/assets/lbtn/OL_line/uibutton/tool_trusteeship_0.png\")"
+        }
+      }
+    },
+    "cancelled": {
+      "auto": false,
+      "arenaAuto": false,
+      "seatBadgeCount": 0,
+      "seatBadgeOnSelf": false,
+      "playerRect": {
+        "x": 1214.1875,
+        "y": 696.890625,
+        "width": 132,
+        "height": 175,
+        "top": 696.890625,
+        "right": 1346.1875,
+        "bottom": 871.890625,
+        "left": 1214.1875
+      },
+      "marks": [
+        {
+          "text": "计",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "rect": {
+            "x": 1235.421875,
+            "y": 757.28125,
+            "width": 42.4375,
+            "height": 22.59375,
+            "top": 757.28125,
+            "right": 1277.859375,
+            "bottom": 779.875,
+            "left": 1235.421875
+          }
+        },
+        {
+          "text": "武圣",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/online/seat_state_bg_new.png\")",
+          "rect": {
+            "x": 1235.421875,
+            "y": 733.1875,
+            "width": 40,
+            "height": 22.59375,
+            "top": 733.1875,
+            "right": 1275.421875,
+            "bottom": 755.78125,
+            "left": 1235.421875
+          }
+        }
+      ],
+      "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/trusteeship_bg_new.png\")",
+      "opacity": "0",
+      "text": "取消托管",
+      "cancel": "取消托管",
+      "cancelBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/secbtn_sub.png\")",
+      "cancelRect": {
+        "x": 650.5,
+        "y": 787.0546875,
+        "width": 136,
+        "height": 45.328125,
+        "top": 787.0546875,
+        "right": 786.5,
+        "bottom": 832.3828125,
+        "left": 650.5
+      },
+      "cancelColor": "rgb(238, 222, 188)",
+      "cancelFont": "22.67px",
+      "panelRect": {
+        "x": -5.859375,
+        "y": 711,
+        "width": 1448.71875,
+        "height": 197.453125,
+        "top": 711,
+        "right": 1442.859375,
+        "bottom": 908.453125,
+        "left": -5.859375
+      },
+      "nodes": 1,
+      "windowCss": false
+    },
+    "errors": [],
+    "failed": [
+      [
+        404,
+        "http://127.0.0.1:8691/preload.js"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/theme/style/card"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_loseHp.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_loseHp.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baguazhen.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baguazhen.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baiyinshizi.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baiyinshizi.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/huifushuzi/shuzi2.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/huifushuzi/shuzi2.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/empty_equip1.png"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/empty_equip2.png"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/empty_equip3.png"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/empty_equip4.png"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/empty_equip5.png"
+      ]
+    ]
+  },
+  {
+    "style": "on",
+    "phone": false,
+    "initial": {
+      "auto": false,
+      "arenaAuto": false,
+      "seatBadgeCount": 0,
+      "seatBadgeOnSelf": false,
+      "playerRect": {
+        "x": 1260,
+        "y": 703,
+        "width": 130,
+        "height": 180,
+        "top": 703,
+        "right": 1390,
+        "bottom": 883,
+        "left": 1260
+      },
+      "marks": [
+        {
+          "text": "计",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/mark/player_mark.png\")",
+          "rect": {
+            "x": 1343,
+            "y": 737,
+            "width": 48,
+            "height": 24,
+            "top": 737,
+            "right": 1391,
+            "bottom": 761,
+            "left": 1343
+          }
+        },
+        {
+          "text": "武圣",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/mark/player_mark.png\")",
+          "rect": {
+            "x": 1343,
+            "y": 761,
+            "width": 48,
+            "height": 24,
+            "top": 761,
+            "right": 1391,
+            "bottom": 785,
+            "left": 1343
+          }
+        }
+      ],
+      "background": "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))",
+      "opacity": "0",
+      "text": "托管中...",
+      "cancel": "托管中...",
+      "cancelBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/CD/tuoguan2.png\")",
+      "cancelRect": {
+        "x": 453.5,
+        "y": 780.484375,
+        "width": 530,
+        "height": 132.046875,
+        "top": 780.484375,
+        "right": 983.5,
+        "bottom": 912.53125,
+        "left": 453.5
+      },
+      "cancelColor": "rgb(255, 255, 255)",
+      "cancelFont": "0px",
+      "panelRect": {
+        "x": -5.859375,
+        "y": 711,
+        "width": 1448.71875,
+        "height": 196.015625,
+        "top": 711,
+        "right": 1442.859375,
+        "bottom": 907.015625,
+        "left": -5.859375
+      },
+      "nodes": 1,
+      "windowCss": true
+    },
+    "active": {
+      "auto": true,
+      "arenaAuto": true,
+      "seatBadgeCount": 0,
+      "seatBadgeOnSelf": false,
+      "playerRect": {
+        "x": 1260,
+        "y": 703,
+        "width": 130,
+        "height": 180,
+        "top": 703,
+        "right": 1390,
+        "bottom": 883,
+        "left": 1260
+      },
+      "marks": [
+        {
+          "text": "计",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/mark/player_mark.png\")",
+          "rect": {
+            "x": 1343,
+            "y": 737,
+            "width": 48,
+            "height": 24,
+            "top": 737,
+            "right": 1391,
+            "bottom": 761,
+            "left": 1343
+          }
+        },
+        {
+          "text": "武圣",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/mark/player_mark.png\")",
+          "rect": {
+            "x": 1343,
+            "y": 761,
+            "width": 48,
+            "height": 24,
+            "top": 761,
+            "right": 1391,
+            "bottom": 785,
+            "left": 1343
+          }
+        }
+      ],
+      "background": "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))",
+      "opacity": "1",
+      "text": "托管中...",
+      "cancel": "托管中...",
+      "cancelBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/CD/tuoguan2.png\")",
+      "cancelRect": {
+        "x": 453.5,
+        "y": 780.484375,
+        "width": 530,
+        "height": 132.046875,
+        "top": 780.484375,
+        "right": 983.5,
+        "bottom": 912.53125,
+        "left": 453.5
+      },
+      "cancelColor": "rgb(255, 255, 255)",
+      "cancelFont": "0px",
+      "panelRect": {
+        "x": -5.859375,
+        "y": 711,
+        "width": 1448.71875,
+        "height": 196.015625,
+        "top": 711,
+        "right": 1442.859375,
+        "bottom": 907.015625,
+        "left": -5.859375
+      },
+      "nodes": 1,
+      "windowCss": true
+    },
+    "cancelled": {
+      "auto": false,
+      "arenaAuto": false,
+      "seatBadgeCount": 0,
+      "seatBadgeOnSelf": false,
+      "playerRect": {
+        "x": 1260,
+        "y": 690,
+        "width": 130,
+        "height": 180,
+        "top": 690,
+        "right": 1390,
+        "bottom": 870,
+        "left": 1260
+      },
+      "marks": [
+        {
+          "text": "计",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/mark/player_mark.png\")",
+          "rect": {
+            "x": 1343,
+            "y": 724,
+            "width": 48,
+            "height": 24,
+            "top": 724,
+            "right": 1391,
+            "bottom": 748,
+            "left": 1343
+          }
+        },
+        {
+          "text": "武圣",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/mark/player_mark.png\")",
+          "rect": {
+            "x": 1343,
+            "y": 748,
+            "width": 48,
+            "height": 24,
+            "top": 748,
+            "right": 1391,
+            "bottom": 772,
+            "left": 1343
+          }
+        }
+      ],
+      "background": "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))",
+      "opacity": "0",
+      "text": "托管中...",
+      "cancel": "托管中...",
+      "cancelBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/CD/tuoguan2.png\")",
+      "cancelRect": {
+        "x": 453.5,
+        "y": 767.484375,
+        "width": 530,
+        "height": 132.046875,
+        "top": 767.484375,
+        "right": 983.5,
+        "bottom": 899.53125,
+        "left": 453.5
+      },
+      "cancelColor": "rgb(255, 255, 255)",
+      "cancelFont": "0px",
+      "panelRect": {
+        "x": -5.859375,
+        "y": 698,
+        "width": 1448.71875,
+        "height": 196.015625,
+        "top": 698,
+        "right": 1442.859375,
+        "bottom": 894.015625,
+        "left": -5.859375
+      },
+      "nodes": 1,
+      "windowCss": true
+    },
+    "errors": [],
+    "failed": [
+      [
+        404,
+        "http://127.0.0.1:8691/preload.js"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/theme/style/card"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/overrides/player/card-actions-shizhounian.js"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_loseHp.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_loseHp.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baguazhen.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baguazhen.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baiyinshizi.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baiyinshizi.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/huifushuzi/shuzi2.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/huifushuzi/shuzi2.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.atlas"
+      ]
+    ]
+  },
+  {
+    "style": "codename",
+    "phone": false,
+    "initial": {
+      "auto": false,
+      "arenaAuto": false,
+      "seatBadgeCount": 0,
+      "seatBadgeOnSelf": false,
+      "playerRect": {
+        "x": 1260,
+        "y": 703,
+        "width": 130,
+        "height": 180,
+        "top": 703,
+        "right": 1390,
+        "bottom": 883,
+        "left": 1260
+      },
+      "marks": [
+        {
+          "text": "计",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/mark/player_mark.png\")",
+          "rect": {
+            "x": 1347,
+            "y": 729,
+            "width": 48,
+            "height": 25,
+            "top": 729,
+            "right": 1395,
+            "bottom": 754,
+            "left": 1347
+          }
+        },
+        {
+          "text": "武圣",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/mark/player_mark.png\")",
+          "rect": {
+            "x": 1347,
+            "y": 754,
+            "width": 48,
+            "height": 25,
+            "top": 754,
+            "right": 1395,
+            "bottom": 779,
+            "left": 1347
+          }
+        }
+      ],
+      "background": "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))",
+      "opacity": "0",
+      "text": "托管中...",
+      "cancel": "托管中...",
+      "cancelBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/CD/tuoguan2.png\")",
+      "cancelRect": {
+        "x": 518.5,
+        "y": 796.671875,
+        "width": 400,
+        "height": 99.65625,
+        "top": 796.671875,
+        "right": 918.5,
+        "bottom": 896.328125,
+        "left": 518.5
+      },
+      "cancelColor": "rgb(255, 255, 255)",
+      "cancelFont": "0px",
+      "panelRect": {
+        "x": -5.859375,
+        "y": 711,
+        "width": 1448.71875,
+        "height": 196.015625,
+        "top": 711,
+        "right": 1442.859375,
+        "bottom": 907.015625,
+        "left": -5.859375
+      },
+      "nodes": 1,
+      "windowCss": true
+    },
+    "active": {
+      "auto": true,
+      "arenaAuto": true,
+      "seatBadgeCount": 0,
+      "seatBadgeOnSelf": false,
+      "playerRect": {
+        "x": 1260,
+        "y": 703,
+        "width": 130,
+        "height": 180,
+        "top": 703,
+        "right": 1390,
+        "bottom": 883,
+        "left": 1260
+      },
+      "marks": [
+        {
+          "text": "计",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/mark/player_mark.png\")",
+          "rect": {
+            "x": 1347,
+            "y": 729,
+            "width": 48,
+            "height": 25,
+            "top": 729,
+            "right": 1395,
+            "bottom": 754,
+            "left": 1347
+          }
+        },
+        {
+          "text": "武圣",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/mark/player_mark.png\")",
+          "rect": {
+            "x": 1347,
+            "y": 754,
+            "width": 48,
+            "height": 25,
+            "top": 754,
+            "right": 1395,
+            "bottom": 779,
+            "left": 1347
+          }
+        }
+      ],
+      "background": "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))",
+      "opacity": "1",
+      "text": "托管中...",
+      "cancel": "托管中...",
+      "cancelBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/CD/tuoguan2.png\")",
+      "cancelRect": {
+        "x": 518.5,
+        "y": 796.671875,
+        "width": 400,
+        "height": 99.65625,
+        "top": 796.671875,
+        "right": 918.5,
+        "bottom": 896.328125,
+        "left": 518.5
+      },
+      "cancelColor": "rgb(255, 255, 255)",
+      "cancelFont": "0px",
+      "panelRect": {
+        "x": -5.859375,
+        "y": 711,
+        "width": 1448.71875,
+        "height": 196.015625,
+        "top": 711,
+        "right": 1442.859375,
+        "bottom": 907.015625,
+        "left": -5.859375
+      },
+      "nodes": 1,
+      "windowCss": true
+    },
+    "cancelled": {
+      "auto": false,
+      "arenaAuto": false,
+      "seatBadgeCount": 0,
+      "seatBadgeOnSelf": false,
+      "playerRect": {
+        "x": 1260,
+        "y": 703,
+        "width": 130,
+        "height": 180,
+        "top": 703,
+        "right": 1390,
+        "bottom": 883,
+        "left": 1260
+      },
+      "marks": [
+        {
+          "text": "计",
+          "count": "3",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/mark/player_mark.png\")",
+          "rect": {
+            "x": 1347,
+            "y": 729,
+            "width": 48,
+            "height": 25,
+            "top": 729,
+            "right": 1395,
+            "bottom": 754,
+            "left": 1347
+          }
+        },
+        {
+          "text": "武圣",
+          "background": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/mark/player_mark.png\")",
+          "rect": {
+            "x": 1347,
+            "y": 754,
+            "width": 48,
+            "height": 25,
+            "top": 754,
+            "right": 1395,
+            "bottom": 779,
+            "left": 1347
+          }
+        }
+      ],
+      "background": "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))",
+      "opacity": "0",
+      "text": "托管中...",
+      "cancel": "托管中...",
+      "cancelBackground": "url(\"http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/CD/tuoguan2.png\")",
+      "cancelRect": {
+        "x": 518.5,
+        "y": 796.671875,
+        "width": 400,
+        "height": 99.65625,
+        "top": 796.671875,
+        "right": 918.5,
+        "bottom": 896.328125,
+        "left": 518.5
+      },
+      "cancelColor": "rgb(255, 255, 255)",
+      "cancelFont": "0px",
+      "panelRect": {
+        "x": -5.859375,
+        "y": 711,
+        "width": 1448.71875,
+        "height": 196.015625,
+        "top": 711,
+        "right": 1442.859375,
+        "bottom": 907.015625,
+        "left": -5.859375
+      },
+      "nodes": 1,
+      "windowCss": true
+    },
+    "errors": [],
+    "failed": [
+      [
+        404,
+        "http://127.0.0.1:8691/preload.js"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/theme/style/card"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/overrides/player/card-actions-codename.js"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/overrides/player/card-movement-codename.js"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_loseHp.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_loseHp.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baguazhen.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baguazhen.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baiyinshizi.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baiyinshizi.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/huifushuzi/shuzi2.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/huifushuzi/shuzi2.atlas"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.skel"
+      ],
+      [
+        404,
+        "http://127.0.0.1:8691/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.atlas"
+      ]
+    ]
+  }
+]

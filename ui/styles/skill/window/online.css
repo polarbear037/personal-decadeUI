@@ -4,7 +4,7 @@
  */
 
 /* 右手布局 */
-#arena[data-right-layout="on"] > .skill-control {
+#arena[data-right-layout="on"]>.skill-control {
 	max-width: 220px;
 	bottom: 0px;
 	right: 155px;
@@ -12,7 +12,7 @@
 }
 
 /* 左手布局 */
-#arena[data-right-layout="off"] > .skill-control {
+#arena[data-right-layout="off"]>.skill-control {
 	max-width: 220px;
 	bottom: 0px;
 	left: 180px;
@@ -30,20 +30,20 @@
 	font-size: 18px;
 }
 
-.skill-control > div {
+.skill-control>div {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 }
 
-.skill-control > div::after {
+.skill-control>div::after {
 	content: "";
 	display: block;
 	clear: both;
 }
 
 /* 右手布局 - 合并区域 */
-#arena[data-right-layout="on"] > .skill-control .combined {
+#arena[data-right-layout="on"]>.skill-control .combined {
 	height: auto;
 	width: auto;
 	display: flex;
@@ -54,7 +54,7 @@
 	max-height: 150px;
 }
 
-#arena[data-right-layout="on"] > .skill-control .combined.scroll-enabled {
+#arena[data-right-layout="on"]>.skill-control .combined.scroll-enabled {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-end;
@@ -66,7 +66,7 @@
 }
 
 /* 左手布局 - 合并区域 */
-#arena[data-right-layout="off"] > .skill-control .combined {
+#arena[data-right-layout="off"]>.skill-control .combined {
 	height: auto;
 	width: auto;
 	display: flex;
@@ -77,7 +77,7 @@
 	max-height: 150px;
 }
 
-#arena[data-right-layout="off"] > .skill-control .combined.scroll-enabled {
+#arena[data-right-layout="off"]>.skill-control .combined.scroll-enabled {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -89,7 +89,7 @@
 }
 
 /* 主动技按钮 */
-.skill-control > .combined > .skillitem.enable-skill {
+.skill-control>.combined>.skillitem.enable-skill {
 	margin: 2px 4px;
 	width: 85px;
 	height: 40px;
@@ -109,18 +109,18 @@
 	justify-content: center;
 }
 
-.skill-control > .combined > .skillitem.enable-skill.select {
+.skill-control>.combined>.skillitem.enable-skill.select {
 	background-image: url("../../../assets/skill/online/btnnOL4.png");
 	filter: brightness(1.2);
 }
 
-.skill-control > .combined > .skillitem.enable-skill:not(.usable):not(.select) {
+.skill-control>.combined>.skillitem.enable-skill:not(.usable):not(.select) {
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
 }
 
 /* 限定技按钮 */
-.skill-control > .combined > .xiandingji.enable-skill {
+.skill-control>.combined>.xiandingji.enable-skill {
 	margin: 2px 4px;
 	width: 85px;
 	height: 40px;
@@ -140,17 +140,17 @@
 	justify-content: center;
 }
 
-.skill-control > .combined > .xiandingji.enable-skill.select {
+.skill-control>.combined>.xiandingji.enable-skill.select {
 	background-image: url("../../../assets/skill/online/btnnOL2.png");
 }
 
-.skill-control > .combined > .xiandingji.enable-skill:not(.usable):not(.select) {
+.skill-control>.combined>.xiandingji.enable-skill:not(.usable):not(.select) {
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
 }
 
 /* 被动技按钮 */
-.skill-control > .combined > .skillitem.trigger-skill {
+.skill-control>.combined>.skillitem.trigger-skill {
 	margin: 2px 4px;
 	width: 85px;
 	height: 40px;
@@ -182,7 +182,7 @@
 	align-items: center;
 }
 
-.skillMarks > .skillMarkItem {
+.skillMarks>.skillMarkItem {
 	--h: 19px;
 	width: 28.5px !important;
 	height: 28.5px !important;
@@ -224,7 +224,7 @@
 	color: #888;
 }
 
-.skillMarkItem + .skillMarkItem {
+.skillMarkItem+.skillMarkItem {
 	margin-bottom: 1px;
 }
 
@@ -255,12 +255,12 @@
 
 /* 转换技标记 */
 .skillMarkItem.zhuanhuanji {
-	--w: 30px;
+	--w: 18px;
 	--h: calc(var(--w) * 1 / 1);
 	width: var(--w);
 	height: var(--h);
-	margin-left: 2px;
 	background-size: 95% 95%;
+	background-position: center;
 	background-repeat: no-repeat;
 	transform-style: preserve-3d;
 	background-image: url("../../../assets/skill/online/skillitem_yinyang_bg.png");
@@ -342,10 +342,10 @@
 /* 转换技图片 */
 .skill-zhuanhuanji-img {
 	position: absolute;
-	left: 1px;
-	top: 1px;
-	width: 15px;
-	height: 15px;
+	left: -1px;
+	top: -1px;
+	width: 22px;
+	height: 22px;
 	z-index: 3;
 	pointer-events: none;
 }
@@ -365,13 +365,14 @@
 	animation: scroll-bounce 2s infinite;
 }
 
-#arena[data-right-layout="on"] > .skill-control.scroll-enabled::after {
+#arena[data-right-layout="on"]>.skill-control.scroll-enabled::after {
 	right: auto;
 	left: 105px;
 	bottom: 0px;
 }
 
 @keyframes scroll-bounce {
+
 	0%,
 	20%,
 	50%,

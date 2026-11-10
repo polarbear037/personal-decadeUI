@@ -1,0 +1,15 @@
+{
+  "change": "Remove extension-generated generic selection progress line from official operation prompts.",
+  "official_prompt_browser": "passed",
+  "native_phase_selection": "passed",
+  "selected_target_count": 1,
+  "selected_target_extra_progress": "",
+  "layout_regression": {
+    "status": "failed-existing",
+    "error": "AssertionError [ERR_ASSERTION]: 现有高度设置无法避开确认栏",
+    "baseline_with_original_generated_counter": "same failure",
+    "cause": "Existing dialog.css sets --hand-tip-bottom on the prompt itself, overriding the height setting inherited from documentElement.",
+    "changed_existing_layout": false
+  },
+  "official_runtime": "APK not executed; selected official prompt classes inspected statically with REA."
+}

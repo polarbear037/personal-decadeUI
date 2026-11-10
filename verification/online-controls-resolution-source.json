@@ -1,0 +1,26 @@
+{
+  "source": "OL Android 4.0.2 APK",
+  "apk_sha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+  "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb!main.sgs",
+  "main_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "apk_inventory_evidence": "ev_edcf0b916ee34807938588035c3ed96b6f776080202e0b1ddb6b950602425eab",
+  "excerpts": {
+    "Ors": {
+      "Reset(){": "Reset(){let t=!1;this.discardBtn.visible=this.ignoreWuxieBtn.visible=this.allSelectBtn.visible=this.allSelectRevBtn.visible=this.quickSelectBtn.visible=this.quickSelectRevBtn.visible=this.resetBtn.visible=t,this.SetBtnEnable(this.okBtn,t),this.SetBtnEnable(this.cancelBtn,t),this.SetBtnEnable(this.discardBtn,t),this.SetBtnEnable(this.ignoreWuxieBtn,t),this.SetBtnEnable(this.allSelectBtn,t),this.SetBtnEnable(this.allSelectRevBtn,t),this.SetBtnEnable(this.quickSelectBtn,t),this.SetBtnEnable(this.quickSelectRevBtn,t),this.SetBtnEnable(this.resetBtn,t),this.SetOperateBtnsVisbile(!1),this.resultFuncs=null,this.buttonEnabledFunc=null,this.selectErrFunc=null,this.thisObj=null,this.OperateMessage=\"\"}",
+      "Show(t,i,s){": "Show(t,i,s){let e=arguments.length>3&&void 0!==arguments[3]?arguments[3]:\"\",h=arguments.length>4&&void 0!==arguments[4]?arguments[4]:null;this.Reset(),this.thisObj=t,this.OperateMessage=e,this.buttonEnabledFunc=i,this.resultFuncs=s,this.selectErrFunc=h,this.Update()}",
+      "SetOperateBtnsVisbile(t){": "SetOperateBtnsVisbile(t){this.okBtn.visible=this.cancelBtn.visible=t&&!Wwt.IsViewer,fz.I().event(_z.GAME_BUTTON_BAR_BTN_VISIBLE,t)}",
+      "Update(t){": "Update(t){if(this.destroyed)return;let i,s,e=0;if(this.buttonEnabledFunc)for(let t in this.btns){if(i=this.btns[t],!this.buttonEnabledFunc)return;if(s=!Wwt.IsViewer&&Boolean(this.buttonEnabledFunc.apply(this.thisObj,[i.name])),!this.buttonEnabledFunc)return;s&&e++,this.SetBtnEnable(i,s),i!=this.discardBtn&&i!=this.ignoreWuxieBtn&&i!=this.allSelectBtn&&i!=this.allSelectRevBtn&&i!=this.quickSelectBtn&&i!=this.quickSelectRevBtn&&i!=this.resetBtn||(i.visible=s)}if(0<e||this.seat&&this.seat.RoundState==HF.DISCARD?this.SetOperateBtnsVisbile(!0):this.SetOperateBtnsVisbile(!1),this.cancelBtn.visible&&this.discardBtn.visible){Boolean(this.buttonEnabledFunc.apply(this.thisObj,[kIt.BUTTON_CANCEL+kIt.BUTTON_DISACARD]))?this.cancelBtn.visible=!1:this.discardBtn.visible=!1}t&&(this.OperateMessage=t),this.layout(),this.startGuide()}"
+    },
+    "bvi": {
+      "HideCountdownTimer(){": "HideCountdownTimer(){if(this.ClearSkillAutoSkip(),this.CloseGuideTip(),super.HideCountdownTimer(),this.countdownTimer&&(this.countdownTimer.y=this.height-215),this.It&&(this.It.y=this.countdownTimer.y-this.It.height+25),this.spellSelector.y=this.It.y,this.ClearSelfOpertate(),this.ClearWhenHideCountTimer(),this.seat&&this.seat.event(sH.COUNTDOWN_TIMER_END,new sH(sH.COUNTDOWN_TIMER_END,this.seat)),this.clearAiHelpData(),this.clearSwapData(!1),this.restoreCardUIContainer(),Wwt.Seats)for(let t=0,i=Wwt.Seats.length;t<i;t++){let i=Wwt.Seats[t];i&&i.ShowMoveGeneralLight(!1)}Wwt.IsGameTableInOptTime&&(Wwt.IsGameTableInOptTime=!1,this.seat&&this.seat.IsDead&&St.I().event(St.AUTO_LEAVE_TABLE_WHEN_DEAD,[this.seat,!0]))}",
+      "ClearWhenHideCountTimer(){": "ClearWhenHideCountTimer(){let t=!(arguments.length>0&&void 0!==arguments[0])||arguments[0];this.lastCountdown=0,this.clearSelector(),this.EndSelector(),t&&this.resetCardContainer(),this.It&&(this.It.ClearOperateMsg(),this.It.Reset()),this.spellSelector&&this.spellSelector.Hide(),this.EndSelectSkillItem(),this.EndSelectEquipSkill(),this.seat&&this.seat.ClearAction(!0),Wwt.LastActivateSpell&&Wwt.LastActivateSpell.ClearWhenTimeout(),Wwt.LastTriggerSpell&&Wwt.LastTriggerSpell.ClearWhenTimeout(),this.clearAiHelpData()}",
+      "ShowButtonBar(t,i){": "ShowButtonBar(t,i){let s=arguments.length>2&&void 0!==arguments[2]?arguments[2]:\"\",e=arguments.length>3&&void 0!==arguments[3]?arguments[3]:null;this.spellSelector&&this.spellSelector.visible?(console.log(\"关闭多选按钮进度条\"),this.It.visible=!1):this.It.visible=!0;let h=Wwt.LastTriggerSpell;h&&h.ID==XIt.YINGBIAN_ZHUZHAN?this.It.setOkBtnText(Dwt.yingbian_zhuzhan):this.It.setOkBtnText(Dwt.Confirm2),this.It.Show(this,t,i,s,e),St.I().event(St.BUTTONBAR_STATE_CHANGED,this.It.visible)}"
+    }
+  },
+  "behavior": "bvi.HideCountdownTimer -> ClearWhenHideCountTimer -> Ors.Reset hides operation buttons. ShowButtonBar -> Ors.Show -> Update restores buttons for the next operation. No fixed delay.",
+  "adaptation": "Online only: hide dui-controls during useCard/respond/useSkill and committed chooseToUse/chooseToRespond. The current local event with imchoosing=true restores controls regardless of its name, including gainPlayerCard/discardPlayerCard nested in card resolution. A current choice remains active even when backup/goto(0) retained a previous result.bool; complete uncheck clears imchoosing on final submission.",
+  "limitations": [
+    "Static shipped JavaScript inspected; official APK not executed.",
+    "REA inventory identifies APK; excerpts read from its exact nested main.sgs bytes and matched against the existing extracted archive."
+  ]
+}

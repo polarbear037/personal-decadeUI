@@ -1,6 +1,7 @@
 import { lib, game, ui, _status } from "noname";
 import { UI_ANIMATION as UI_ANIMATION } from "../../constants.js";
 import { refreshDynamicOutcrop } from "../../ui/dynamicOutcrop.js";
+import { refreshOptimizedPrompt } from "../../ui/optimizedPrompt.js";
 function n() {
 	window.decadeUI?.toggleExtensions?.();
 }
@@ -84,4 +85,8 @@ function p() {
 			player.dynamic && ((player.dynamic.outcropMask = enable), player.dynamic.update(), refreshDynamicOutcrop(player));
 		}));
 }
-export { u as onAloneEquipUpdate, r as onBorderLevelUpdate, l as onDynamicSkinClick, p as onDynamicSkinOutcropUpdate, n as onExtensionToggleClick, o as onExtensionToggleUpdate, f as onMeanPrettifyClick, t as onNewDecadeStyleClick, a as onNewDecadeStyleUpdate, c as onOutcropSkinClick, d as onOutcropSkinUpdate, i as onRightLayoutClick, s as onRightLayoutUpdate };
+function m(value) {
+	game.saveConfig("extension_十周年UI_optimizePrompt", !!value);
+	refreshOptimizedPrompt();
+}
+export { u as onAloneEquipUpdate, r as onBorderLevelUpdate, l as onDynamicSkinClick, p as onDynamicSkinOutcropUpdate, n as onExtensionToggleClick, o as onExtensionToggleUpdate, f as onMeanPrettifyClick, t as onNewDecadeStyleClick, a as onNewDecadeStyleUpdate, c as onOutcropSkinClick, d as onOutcropSkinUpdate, i as onRightLayoutClick, s as onRightLayoutUpdate, m as onOptimizePromptClick };

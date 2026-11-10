@@ -1,0 +1,129 @@
+{
+  "source": "OL Android 4.0.2, main.sgs!main.sgs",
+  "source_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "rea_evidence": "ev_a17cd5e48c18714374afec45fbee58f0ad4f3d5a43fa075f8419c0dc364eaddd",
+  "classes": [
+    "Fvi.createChild",
+    "Ors.Update",
+    "dOi.ShowButton"
+  ],
+  "official": {
+    "recast": {
+      "center": [
+        109,
+        40
+      ],
+      "size": [
+        142,
+        52
+      ],
+      "fontSize": 30,
+      "color": "#7c2d06"
+    },
+    "ignore": {
+      "center": [
+        900,
+        40
+      ],
+      "size": [
+        177,
+        63
+      ],
+      "fontSize": 30,
+      "color": "#FEEFCF"
+    },
+    "ok": {
+      "center": [
+        360,
+        38
+      ],
+      "size": [
+        207,
+        72
+      ]
+    },
+    "cancel": {
+      "center": [
+        650,
+        40
+      ],
+      "size": [
+        177,
+        63
+      ]
+    },
+    "quickSelect": {
+      "label": "一键选择",
+      "center": [
+        109,
+        40
+      ],
+      "size": [
+        142,
+        52
+      ],
+      "fontSize": 30,
+      "color": "#7c2d06",
+      "skin": "seatui_btns_allselect"
+    }
+  },
+  "adaptation": "Scale new buttons and center offsets by current confirm width / 207; preserve native confirm/cancel layout.",
+  "bindings": {
+    "recast": "ui.click.skill('_recasting'), native selection and ui.click.ok",
+    "ignore": "original ui.tempnowuxie DOM, custom callback and _origin",
+    "self_target": "extension override of lib.filter.wuxieSwap, retain skip for other targets"
+  },
+  "assets": [
+    {
+      "source": "res/assets/game/gameBase.atlas#seatui_btns_allselect.png",
+      "frame": {
+        "h": 52,
+        "idx": 0,
+        "w": 142,
+        "x": 536,
+        "y": 645
+      },
+      "target": "ui/assets/lbtn/OL_line/uibutton/seatui_btns_allselect.png",
+      "pixel_equal": true,
+      "sha256": "718cc9f10380481ce0e05f2a8778ea19cde08eb1bfdcd4ecb2bfee489466cd40"
+    },
+    {
+      "source": "res/assets/game/gameBase.atlas#seatui_btns_confirm.png",
+      "frame": {
+        "h": 72,
+        "idx": 0,
+        "w": 208,
+        "x": 400,
+        "y": 353
+      },
+      "target": "ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm.png",
+      "pixel_equal": true,
+      "sha256": "ce360a3332aba3ee541112f1cfb145c5c292fd074cee4e8550b52c526dd26423"
+    }
+  ],
+  "selectionSlotEvidence": {
+    "apkInventoryEvidence": "ev_edcf0b916ee34807938588035c3ed96b6b950602425eab",
+    "classes": ["Fvi.createChild", "Ors.onCreateChild"],
+    "callback": "selectCardBtn_UpdateCallback",
+    "buttons": ["allSelectBtn", "allSelectRevBtn", "quickSelectBtn", "quickSelectRevBtn"],
+    "center": [109, 40],
+    "size": [142, 52],
+    "visibility": "Forward and reverse controls are selected using SelectedHandCount. The quick pair also checks the discard or skill context and the AutoChooseCards thresholds.",
+    "adaptation": "When native AI selection and native cardChooseAll coexist, use the same slot and show AI selection before a card is selected or native inversion afterward. Both callbacks remain native."
+  },
+  "quickSelectEvidence": {
+    "apkSha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+    "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb!main.sgs",
+    "reaEvidence": "ev_066690bc5fcc481674ce2d62b5103dd6bf1821fc5164f31325cb8157c8e0f54e",
+    "verifiedMainSha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+    "classes": [
+      "Fvi.createChild",
+      "Ors.onCreateChild"
+    ],
+    "textKey": "Game_Quick_Select_Card",
+    "binding": "Original AI代选 control and native chooseToGive.aiChoose / chooseToDiscard.promptdiscard callbacks; Online only.",
+    "limitations": [
+      "Static APK source verified by byte equality with extracted main.sgs; no official-client runtime comparison."
+    ]
+  }
+}

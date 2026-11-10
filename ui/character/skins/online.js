@@ -2,7 +2,6 @@
  * @fileoverview OL风格角色弹窗
  * 特点：将灯系统、段位信息、详细资料、衍生技能显示
  */
-import { _status } from "noname";
 import { createBaseCharacterPlugin } from "./base.js";
 import { skillButtonTooltip } from "../../../src/ui/skillButtonTooltip.js";
 
@@ -21,6 +20,7 @@ export function createOnlineCharacterPlugin(lib, game, ui, get, ai, _status, app
 	const base = createBaseCharacterPlugin(lib, game, ui, get, ai, _status, app);
 
 	const IMAGE_PATH = "extension/十周年UI/ui/assets/character/online/";
+	const TOOL_PATH = IMAGE_PATH + "general-tool/";
 	const AUDIO_PATH = "../extension/十周年UI/ui/assets/lbtn/shousha/caidan.mp3";
 
 	/**
@@ -126,207 +126,152 @@ export function createOnlineCharacterPlugin(lib, game, ui, get, ai, _status, app
 
 		click: {
 			...base.click,
-
-			/**
-			 * 玩家信息点击处理
-			 * @param {Event} e - 事件对象
-			 * @param {HTMLElement} node - 节点元素
-			 */
-			playerIntro(e, node) {
-				e?.preventDefault();
-				e?.stopPropagation();
-				const plugin = this;
-				const player = node || this;
-
-				if (plugin.playerDialog) {
-					plugin.playerDialog.remove?.();
-					plugin.playerDialog = null;
-				}
-
-				const manager = plugin.createCharacterInfoManager();
-				plugin.playerDialog = manager;
-				manager.show(player, "name1", true);
+			playerIntro(event, player) {
+				event?.preventDefault();
+				event?.stopPropagation();
+				if ((document.body.dataset.style || lib.config.extension_十周年UI_newDecadeStyle) !== "onlineUI" || !player?.name || !ui.window) return;
+				this.playerDialog?.();
+				this.showGeneralTool(player);
 			},
 		},
 
-		/**
-		 * 创建角色信息管理器
-		 * @returns {object} 角色信息管理器对象
-		 */
-		createCharacterInfoManager() {
-			const plugin = this;
+		showGeneralTool(player) {
+			const container = ui.create.div(".popup-container.online-general-tool", ui.window);
+			const dialog = ui.create.div(".online-general-tool-window", container);
+			dialog.setAttribute("role", "dialog");
+			dialog.setAttribute("aria-modal", "true");
+			dialog.setAttribute("aria-label", "武将信息");
+			ui.create.div(".online-general-tool-title", "武将信息", dialog);
+			ui.create.div(".online-general-tool-list-bg", dialog);
+			const rightPane = ui.create.div(".online-general-tool-list", dialog);
+			const portrait = ui.create.div(".online-general-tool-portrait", dialog);
+			const artwork = ui.create.div(".online-general-tool-artwork", portrait);
+			ui.create.div(".online-general-tool-frame", portrait);
+			const namePlate = ui.create.div(".online-general-tool-nameplate", portrait);
+			const groupLabel = document.createElement("span");
+			const nameLabel = document.createElement("span");
+			namePlate.append(groupLabel, nameLabel);
+			const nickname = ui.create.div(".online-general-tool-player", dialog);
+			nickname.textContent = player.nickname || "";
 
-			return {
-				/**
-				 * 显示角色信息对话框
-				 * @param {Player} player - 玩家对象
-				 * @param {string} nametype - 名称类型（name1或name2）
-				 * @param {boolean} bool - 是否显示
-				 */
-				show(player, nametype, bool) {
-					if (!bool) return;
-
-					game.playAudio(AUDIO_PATH);
-
-					let name = player.name1 || player.name;
-					let name2 = player.name2;
-					if (player.classList.contains("unseen") && player !== game.me) name = "unknown";
-					if (player.classList.contains("unseen2") && player !== game.me) name2 = "unknown";
-
-					const container = ui.create.div(".popup-container.hidden", ui.window, ev => {
-						if (ev.target === container) {
-							game.playAudio(AUDIO_PATH);
-							container.hide();
-							plugin.playerDialog = null;
-							game.resume2();
-						}
-					});
-					container.style.backgroundColor = "RGBA(0, 0, 0, 0.5)";
-
-					const dialog = ui.create.div(".online-character-dialog.popped", container);
-					const blackBg1 = ui.create.div(".blackBg.one", dialog);
-					const blackBg2 = ui.create.div(".blackBg.two", dialog);
-					ui.create.div(".basicInfo", blackBg1);
-					const rightPane = ui.create.div(".right", blackBg2);
-
-					const randomData = plugin.generateRandomData(player);
-
-					const biankuang = ui.create.div(".biankuang2", blackBg1);
-					const leftPane = ui.create.div(".left2", biankuang);
-					leftPane.setBackground(name, "character");
-
-					const biankuang3 = ui.create.div(".biankuang3", blackBg1);
-					plugin.createBiankuangColor(biankuang3, name === "unknown" ? player.group : lib.character[name][1]);
-
-					const biankuang4 = ui.create.div(".biankuang4", blackBg1);
-					const groupForBg = name === "unknown" ? player.group : lib.character[name][1];
-					biankuang4.setBackgroundImage(plugin.getOlsBackgroundImage(groupForBg));
-
-					ui.create.div(".wanjia", biankuang, `${player.nickname}Lv.${randomData.level}`);
-					const shenglv = ui.create.div(".shenglv", biankuang);
-					shenglv.innerHTML = randomData.winRate;
-					const taolv = ui.create.div(".taolv", biankuang);
-					taolv.innerHTML = randomData.escapeRate + "%";
-					const renqizz = ui.create.div(".renqi", biankuang);
-					renqizz.innerHTML = randomData.popularity;
-
-					const diaozhui = ui.create.div(".diaozhui", biankuang4);
-					diaozhui.setBackgroundImage(`${IMAGE_PATH}diaozhui.png`);
-					diaozhui.addEventListener("click", () => {
-						game.playAudio(AUDIO_PATH);
-						container.hide();
-						plugin.playerDialog = null;
-						game.resume2();
-					});
-
-					let popuperContainer = null;
-					const xinxi = ui.create.div(".xinxi", blackBg1);
-					xinxi.onclick = () => {
-						game.playAudio(AUDIO_PATH);
-						if (!popuperContainer) {
-							popuperContainer = plugin.createDetailPopup(player, randomData);
-						}
-						popuperContainer.style.display = "block";
-					};
-
-					const nametext = name === "unknown" ? "未知" : get.slimNameHorizontal(name);
-					const namestyle = ui.create.div(".name", nametext, dialog);
-					namestyle.dataset.camp = player.group;
-
-					if (name && name2) {
-						namestyle.style.fontSize = "20px";
-						namestyle.style.letterSpacing = "1px";
-					}
-
-					const peijian = ui.create.div(".peijian", biankuang4);
-					peijian.setBackgroundImage(`${IMAGE_PATH}p1.png`);
-
-					let sjright = null;
-					let sjleft = null;
-					if (name2) {
-						sjright = ui.create.div(".sjright", leftPane);
-						sjright.onclick = ev => {
-							ev.stopPropagation();
-							sjright.style.display = "none";
-							namestyle.innerHTML = name2 === "unknown" ? "未知" : get.slimNameHorizontal(name2);
-							plugin.createRightPanel(dialog, rightPane, player, "name2");
-							leftPane.setBackground(name2, "character");
-							plugin.createBiankuangColor(biankuang3, name2 === "unknown" ? player.group : lib.character[name2][1]);
-							biankuang4.setBackgroundImage(plugin.getOlsBackgroundImage(name2 === "unknown" ? player.group : lib.character[name2][1]));
-
-							if (!sjleft) {
-								sjleft = ui.create.div(".sjleft", leftPane);
-								sjleft.onclick = ev2 => {
-									ev2.stopPropagation();
-									sjleft.style.display = "none";
-									sjright.style.display = "block";
-									namestyle.innerHTML = nametext;
-									plugin.createRightPanel(dialog, rightPane, player, "name1");
-									leftPane.setBackground(name, "character");
-									plugin.createBiankuangColor(biankuang3, name === "unknown" ? player.group : lib.character[name][1]);
-									biankuang4.setBackgroundImage(plugin.getOlsBackgroundImage(groupForBg));
-								};
-							} else {
-								sjleft.style.display = "block";
-							}
-						};
-					}
-
-					plugin.createRightPanel(dialog, rightPane, player, nametype);
-
-					container.classList.remove("hidden");
-					game.pause2();
-				},
+			// 无名杀没有 OL 的账户统计，沿用资料入口，主面板留空的统计以横线表示。
+			const rates = ui.create.div(".online-general-tool-rates", dialog);
+			for (const [index, label] of ["人气值", "胜率", "逃跑率"].entries()) {
+				const cell = document.createElement("section");
+				const title = new Image();
+				title.src = lib.assetURL + TOOL_PATH + `wjxq_txt${3 - index}.png`;
+				title.alt = label;
+				const value = document.createElement("span");
+				value.textContent = "—";
+				cell.append(title, value);
+				rates.append(cell);
+			}
+			const button = (className, label, action) => {
+				const node = document.createElement("button");
+				node.type = "button";
+				node.className = className;
+				node.setAttribute("aria-label", label);
+				node.addEventListener("click", action);
+				dialog.append(node);
+				return node;
 			};
-		},
+			let detail;
+			button("online-general-tool-info", "查看玩家资料", () => {
+				if (!detail) {
+					detail = this.createDetailPopup(player, this.generateRandomData(player));
+					container.append(detail);
+				}
+				detail.style.display = "block";
+				game.playAudio(AUDIO_PATH);
+			});
 
-		/**
-		 * 创建右侧面板
-		 * @param {HTMLElement} dialog - 对话框元素
-		 * @param {HTMLElement} rightPane - 右侧面板元素
-		 * @param {Player} player - 玩家对象
-		 * @param {string} nametype - 名称类型（name1或name2）
-		 */
-		createRightPanel(dialog, rightPane, player, nametype) {
-			dialog.classList.add("single");
-			rightPane.innerHTML = "<div></div>";
-			lib.setScroll(rightPane.firstChild);
-
-			let skills;
-			if (player.name2 && nametype) {
-				skills = nametype === "name1" ? lib.character[player.name1][3].slice(0) : lib.character[player.name2][3].slice(0);
-			} else {
-				skills = player.getSkills(null, false, false).slice(0);
-			}
-			skills = skills.filter(s => lib.skill[s] && s !== "jiu" && !lib.skill[s].nopop && !lib.skill[s].equipSkill && lib.translate[s + "_info"]);
-			if (player === game.me && player.hiddenSkills?.length && !nametype) {
-				skills.addArray(player.hiddenSkills);
-			}
-
-			if (skills.length) {
-				ui.create.div(".xcaption", "武将技能", rightPane.firstChild);
-				const hasSkills = [];
-				skills.forEach(name => {
-					if (hasSkills.includes(name)) return;
-					if (player.name2 && nametype) {
-						if (nametype === "name1" && lib.character[player.name2][3].includes(name)) return;
-						if (nametype === "name2" && lib.character[player.name1][3].includes(name)) return;
-					}
-					this.createOLSkillItem(rightPane.firstChild, name, player, hasSkills);
+			let second = false;
+			const refresh = () => {
+				const name = second ? player.name2 : player.name1 || player.name;
+				const hidden = player !== game.me && player.classList.contains(second ? "unseen2" : "unseen");
+				const character = !hidden && lib.character[name];
+				const group = character?.group || character?.[1];
+				const textureGroup = group === "ye" ? "yeXin" : group;
+				const supported = ["wei", "shu", "wu", "qun", "jin", "shen", "xie", "yao", "yeXin"];
+				namePlate.setBackgroundImage(TOOL_PATH + `general_bigSkin_icon_${supported.includes(textureGroup) ? textureGroup : "gary"}_bg_new.png`);
+				artwork.setBackground(hidden ? "unknown" : name, "character");
+				groupLabel.textContent = group ? get.translation(group) : "";
+				nameLabel.textContent = hidden ? "未知" : get.slimNameHorizontal(name);
+				this.createRightPanel(rightPane, player, second, hidden);
+			};
+			if (player.name2) {
+				button("online-general-tool-switch", "切换主副将", () => {
+					second = !second;
+					refresh();
 				});
 			}
+			refresh();
 
-			this.showHandCards(rightPane.firstChild, player);
-			this.createOLEquipmentSection(rightPane.firstChild, player);
-			this.showJudgeArea(rightPane.firstChild, player);
+			const fit = () => {
+				const scale = Math.min(container.clientWidth / 1450, container.clientHeight / 750);
+				if (scale > 0) dialog.style.setProperty("--general-tool-scale", scale);
+			};
+			fit();
+			const observer = new ResizeObserver(fit);
+			observer.observe(container);
+			const wasPaused = _status.paused2;
+			const close = () => {
+				observer.disconnect();
+				container.remove();
+				this.playerDialog = null;
+				if (!wasPaused && !ui.arena?.classList.contains("menupaused")) game.resume2();
+			};
+			this.playerDialog = close;
+			button("online-general-tool-close", "关闭武将信息", () => {
+				game.playAudio(AUDIO_PATH);
+				close();
+			});
+			container.addEventListener("click", event => {
+				event.stopPropagation();
+				if (event.target === container) {
+					game.playAudio(AUDIO_PATH);
+					close();
+				}
+			});
+			for (const type of ["touchstart", "touchend"]) {
+				container.addEventListener(type, event => event.stopPropagation());
+			}
+			game.playAudio(AUDIO_PATH);
+			game.pause2();
 		},
+		createRightPanel(rightPane, player, second, hidden) {
+			rightPane.replaceChildren();
+			rightPane.scrollTop = 0;
+			const content = ui.create.div(".online-general-tool-list-content", rightPane);
+			const skills = player.getSkills(null, false, false);
+			const names = [player.name1 || player.name, player.name2];
+			const generalSkills = names.map(name => lib.character[name]?.skills || lib.character[name]?.[3] || []);
+			const current = generalSkills[second ? 1 : 0];
+			const other = generalSkills[second ? 0 : 1];
+			const visible = hidden ? [] : skills.filter(skill => !player.name2 || current.includes(skill) || !other.includes(skill));
+			if (!hidden && player === game.me) {
+				visible.push(...(player.hiddenSkills || []).filter(skill => !player.name2 || current.includes(skill)));
+			}
+			const entries = [...new Set(visible)].filter(skill => lib.skill[skill] && skill !== "jiu" && !lib.skill[skill].nopop && !lib.skill[skill].equipSkill && lib.translate[skill + "_info"]);
 
+			if (hidden) ui.create.div(".online-general-tool-sealed", "武将暗置，暂不显示", content);
+			if (entries.length) {
+				ui.create.div(".xcaption", "武将技能", content);
+				const shown = new Set();
+				for (const name of entries) {
+					if (!shown.has(name)) this.createOLSkillItem(content, name, player, shown);
+				}
+			}
+			this.showHandCards(content, player);
+			this.createOLEquipmentSection(content, player);
+			this.showJudgeArea(content, player);
+		},
 		/**
 		 * 创建OL风格技能项
 		 * @param {HTMLElement} container - 容器元素
 		 * @param {string} name - 技能名称
 		 * @param {Player} player - 玩家对象
-		 * @param {string[]} hasSkills - 已显示的技能列表
+		 * @param {Set<string>} hasSkills - 已显示的技能集合
 		 */
 		createOLSkillItem(container, name, player, hasSkills) {
 			const info = get.info(name);
@@ -338,21 +283,23 @@ export function createOnlineCharacterPlugin(lib, game, ui, get, ai, _status, app
 			};
 			const typeText = getTypeText();
 			const typeTag = `<span class="skill-type-tag">(${typeText})</span>`;
+			hasSkills.add(name);
 
 			const skillName = lib.translate[name];
 
 			const rawSkillInfo = skillButtonTooltip.getSkillDescription(name, player);
 			const skillInfo = skillButtonTooltip.formatSkillDescription(rawSkillInfo);
 
-			ui.create.div(".xskill", `<div data-color>${skillName}</div>${typeTag}<div>${skillInfo}</div>`, container);
+			ui.create.div(".xskill.online-general-tool-skill", `<header><span>${skillName}</span>${typeTag}</header><div>${skillInfo}</div>`, container);
 
 			if (info.derivation) {
 				const derivations = Array.isArray(info.derivation) ? info.derivation : [info.derivation];
 				derivations.forEach(skill => {
-					hasSkills.push(skill);
 					const ysInfo = get.info(skill);
+					if (!ysInfo || !lib.translate[skill + "_info"] || hasSkills.has(skill)) return;
+					hasSkills.add(skill);
 					const ysName = get.skillTranslation(skill);
-					const ysDesc = get.translation(skill + "_info");
+					const ysDesc = skillButtonTooltip.formatSkillDescription(skillButtonTooltip.getSkillDescription(skill, player));
 					let has;
 					if (ysInfo.juexingji || ysInfo.limited) {
 						has = !player.hasSkill(skill) ? (player.awakenedSkills.includes(skill) ? "已发动" : "未生效") : "未发动";
@@ -360,7 +307,7 @@ export function createOnlineCharacterPlugin(lib, game, ui, get, ai, _status, app
 						has = player.hasSkill(skill) ? "已生效" : "未生效";
 					}
 					const color = has === "未生效" ? 'style="color:#978a81;"' : "";
-					ui.create.div(".xskill", `<span class="yanshengji" ${color}>${ysName}(${has})</span><span class="yanshengjiinfo">${ysDesc}</span>`, container);
+					ui.create.div(".xskill.online-general-tool-derived", `<header ${color}>${ysName}（${has}）</header><div>${ysDesc}</div>`, container);
 				});
 			}
 		},

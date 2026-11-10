@@ -1,0 +1,159 @@
+#arena.decadeUI>.dialog.online-faction-dialog#online-faction-dialog {
+	--online-faction-gap: 24px;
+	--online-faction-button-size: min(68px, calc((100vw - 24px - (var(--online-faction-count) - 1) * var(--online-faction-gap)) / var(--online-faction-count)));
+	--online-faction-dialog-bottom: calc(20% + 85px);
+	--online-faction-dialog-z: 94;
+	position: absolute !important;
+	left: 50% !important;
+	right: auto !important;
+	top: auto !important;
+	bottom: var(--online-faction-dialog-bottom) !important;
+	animation: none !important;
+	transform: translateX(-50%) scale(1) !important;
+	width: max-content !important;
+	min-width: 0 !important;
+	height: auto !important;
+	min-height: 0 !important;
+	padding: 0 !important;
+	background: transparent !important;
+	background-image: none !important;
+	box-shadow: none !important;
+	border: 0 !important;
+	white-space: nowrap !important;
+	z-index: var(--online-faction-dialog-z) !important;
+}
+
+@media (max-width: 600px) {
+	#arena.decadeUI>.dialog.online-faction-dialog#online-faction-dialog {
+		--online-faction-gap: 6px;
+	}
+}
+
+#arena.decadeUI>.dialog.online-faction-dialog>.content-container,
+#arena.decadeUI>.dialog.online-faction-dialog>.content-container>.content {
+	position: relative !important;
+	left: auto !important;
+	top: auto !important;
+	right: auto !important;
+	bottom: auto !important;
+	display: block !important;
+	width: fit-content !important;
+	height: auto !important;
+	max-height: none !important;
+	min-height: 0 !important;
+	overflow: visible !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#arena.decadeUI>.dialog.online-faction-dialog .caption,
+#arena.decadeUI>.dialog.online-faction-dialog .online-faction-native-hidden {
+	display: none !important;
+}
+
+#arena.decadeUI>.dialog.online-faction-dialog .buttons {
+	position: relative !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	flex-wrap: nowrap !important;
+	gap: var(--online-faction-gap) !important;
+	width: fit-content !important;
+	max-width: calc(100vw - 24px) !important;
+	height: var(--online-faction-button-size) !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#arena.decadeUI>.dialog.online-faction-dialog .online-faction-button {
+	position: relative !important;
+	display: block !important;
+	flex: 0 0 var(--online-faction-button-size) !important;
+	width: var(--online-faction-button-size) !important;
+	height: var(--online-faction-button-size) !important;
+	min-width: var(--online-faction-button-size) !important;
+	min-height: var(--online-faction-button-size) !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	background-color: transparent !important;
+	background-image: none !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-size: 100% 100% !important;
+	transform: none !important;
+	cursor: pointer;
+}
+
+/* 独立图片层不受旧卡牌图片请求的异步 background 回写影响。 */
+#arena.decadeUI>.dialog.online-faction-dialog .online-faction-button::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	opacity: 1;
+	z-index: 0;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	background: var(--online-faction-image) center / 100% 100% no-repeat;
+	transition: none;
+	pointer-events: none;
+}
+
+#arena.decadeUI>.dialog.online-faction-dialog .online-faction-label {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	color: #f4d99a;
+	font-family: "HYZLSJ", "FZLBJW", sans-serif;
+	font-size: clamp(18px, 2.1vw, 40px);
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	text-shadow: 0 0 2px #2a1607, 1px 1px 2px #2a1607, -1px -1px 2px #2a1607;
+	pointer-events: none;
+}
+
+#arena.decadeUI>.hand-tip.online-faction-hand-tip {
+	--online-faction-tip-bottom: calc(20% + 37px);
+	position: absolute !important;
+	left: 12px !important;
+	right: 12px !important;
+	bottom: var(--online-faction-tip-bottom) !important;
+	width: auto !important;
+	max-width: none !important;
+	height: auto !important;
+	min-height: 20px !important;
+	line-height: 22px !important;
+	white-space: normal !important;
+	text-align: center !important;
+	z-index: 93 !important;
+}
+
+#arena.decadeUI>.hand-tip.online-faction-hand-tip>span {
+	white-space: normal !important;
+}
+
+#arena.decadeUI>.online-faction-progress {
+	--online-faction-progress-bottom: 27.5%;
+	--online-faction-progress-width: 568px;
+	--online-faction-progress-scale: 1;
+	position: fixed !important;
+	left: 50% !important;
+	right: auto !important;
+	top: auto !important;
+	bottom: var(--online-faction-progress-bottom) !important;
+	width: var(--online-faction-progress-width) !important;
+	transform: translateX(-50%) scaleX(var(--online-faction-progress-scale)) !important;
+	transform-origin: center center !important;
+	transition: none !important;
+	z-index: 92 !important;
+	pointer-events: none !important;
+}

@@ -1,0 +1,43 @@
+{
+  "apkSha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+  "mainMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb!main.sgs",
+  "mainSha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "files": [
+    {
+      "file": "WP.js",
+      "startCharacter": 2394871,
+      "endCharacter": 2400518,
+      "sha256": "0c5218ac3837a7acd69b99be7e78eb1caffd5eca9cee8e183ea3f437f8eba239"
+    },
+    {
+      "file": "Vvi.js",
+      "startCharacter": 13841338,
+      "endCharacter": 13850905,
+      "sha256": "ed8778dda9ca028007bd7d53aef7756181d77fed62690f0eb37072a976864c8d"
+    },
+    {
+      "file": "yns.js",
+      "startCharacter": 19429963,
+      "endCharacter": 19433137,
+      "sha256": "48c57a60bbbbe4e219ad51005200fd3185b57bf9dfae91864be7878262c44e32"
+    },
+    {
+      "file": "lns.js",
+      "startCharacter": 19254365,
+      "endCharacter": 19257812,
+      "sha256": "14619ff93e18bd04af2c5c5ad8154bee5ab96ef37bfd03b69eeaff29605b0d17"
+    },
+    {
+      "file": "sOi.js",
+      "startCharacter": 14137882,
+      "endCharacter": 14138773,
+      "sha256": "8f1903ebda344b7f595833d633d63c01c553eda857593c204d2d1b95a546831f"
+    },
+    {
+      "file": "fCs.js",
+      "startCharacter": 22884997,
+      "endCharacter": 22887295,
+      "sha256": "7515f1a65831fb248f9feb23e63ca15804783c5f31c8c6f0e989504e16da2a87"
+    }
+  ]
+}

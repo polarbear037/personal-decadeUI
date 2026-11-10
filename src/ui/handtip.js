@@ -38,6 +38,12 @@ function t(t, n) {
 						this.dataset.text = this.innerText;
 					}),
 					(tip.show = function () {
+						// 连续战斗清场会移除 DOM，缓存提示再次显示时须挂回当前场景。
+						const arena = window.ui?.arena;
+						if (arena) {
+							if (this.parentNode !== arena) arena.appendChild(this);
+							if (this.$info && this.$info.parentNode !== arena) arena.appendChild(this.$info);
+						}
 						(this.classList.remove("hidden"), this.$info?.innerHTML && this.$info.show?.());
 					}),
 					(tip.hide = function () {

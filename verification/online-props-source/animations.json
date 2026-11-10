@@ -1,0 +1,89 @@
+{
+  "fx_uihd_caoxie": {
+    "version": "4.0.56",
+    "actions": [
+      {
+        "name": "fly1",
+        "duration": 0.6666666865348816
+      },
+      {
+        "name": "fly2",
+        "duration": 0.6666666865348816
+      },
+      {
+        "name": "hit1",
+        "duration": 0.8333333730697632
+      },
+      {
+        "name": "hit2",
+        "duration": 1
+      }
+    ],
+    "width": 210.04100036621094,
+    "height": 226.38967895507812
+  },
+  "Ol_DaoJu_jidan": {
+    "version": "4.0.56",
+    "actions": [
+      {
+        "name": "create1",
+        "duration": 0.5
+      },
+      {
+        "name": "fly1",
+        "duration": 0.6666666865348816
+      },
+      {
+        "name": "hit1",
+        "duration": 0.5666667222976685
+      },
+      {
+        "name": "nohit1",
+        "duration": 0.5333333611488342
+      }
+    ],
+    "width": 108.94600677490234,
+    "height": 236.0950927734375
+  },
+  "fx_uihd_huashu": {
+    "version": "4.0.56",
+    "actions": [
+      {
+        "name": "fly1",
+        "duration": 0.36666667461395264
+      },
+      {
+        "name": "hit1",
+        "duration": 1.100000023841858
+      }
+    ],
+    "width": 150,
+    "height": 150
+  },
+  "fx_uihd_qingmeijiu": {
+    "version": "4.0.56",
+    "actions": [
+      {
+        "name": "fly1",
+        "duration": 1
+      },
+      {
+        "name": "hit1",
+        "duration": 2.4666666984558105
+      }
+    ],
+    "width": 621.6898803710938,
+    "height": 399.62005615234375
+  },
+  "FX_MatchGame_daoju_shouji3": {
+    "version": "4.0.56",
+    "actions": [
+      {
+        "name": "play",
+        "duration": 0.6666666865348816
+      }
+    ],
+    "width": 0,
+    "height": 0
+  }
+}

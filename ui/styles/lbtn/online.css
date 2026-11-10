@@ -300,44 +300,55 @@
 	font-weight: 500;
 }
 
-/* 身份任务 */
-.identityShow {
-	top: 50px;
-	left: 89px;
-	z-index: 4;
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 3px;
-	width: 130px;
+/* OL Yvi / Xrs：身份统计、目标和牌局记录。 */
+body[data-style="onlineUI"] #window>.identityShow {
+	position: absolute;
+	top: calc(68px* 2 / 3);
+	left: 72px;
+	z-index: 6;
+	box-sizing: border-box;
+	width: max-content;
+	min-width: calc(152px * 2 / 3);
+	max-width: calc(230px * 2 / 3);
+	padding: 5.33px 6.67px 3.33px;
+	border-image: url("../../../image/ui/phase/online/win_info_time_bg.png") 10 fill / 7px;
+	font: calc(22px * 2 / 3) / 1.2 "dui-online-action", SimSun, serif;
+	color: #c4b088;
+	text-align: center;
+	text-shadow: none;
 }
 
-/* 记录按钮 */
-.jiluButton {
+body[data-style="onlineUI"] .identityShow> :is(.online-identity-count, .online-identity-goal) {
+	position: relative;
 	display: block;
-	--w: 117px;
-	--h: 42px;
-	width: var(--w);
-	height: var(--h);
-	position: absolute;
-	top: -48px;
-	background-image: url("../../assets/lbtn/OL_line/uibutton/jiluShow.png");
-	background-size: 100% 100%;
-	z-index: 5;
-	left: 0px;
 }
 
-.jiluButton::after {
-	content: "牌局记录";
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	color: #f5d78e;
-	font-size: 20px;
-	font-weight: bold;
-	font-family: "HYXLSJ";
-	text-shadow: 0 0 3px black;
+body[data-style="onlineUI"] .identityShow>.online-identity-count[hidden],
+body[data-style="onlineUI"] .identityShow>.online-identity-goal:empty {
+	display: none;
+}
+
+body[data-style="onlineUI"] .identityShow>.online-identity-count {
 	white-space: nowrap;
-	pointer-events: none;
+}
+
+body[data-style="onlineUI"] .identityShow>.online-identity-count:not([hidden])+.online-identity-goal {
+	margin-top: 1px;
+}
+
+body[data-style="onlineUI"] .identityShow>.jiluButton {
+	display: grid;
+	place-items: center;
+	position: absolute;
+	top: calc(-61px* 2 / 3);
+	left: -5px;
+	width: 115px;
+	height: 40px;
+	background: url(../../assets/lbtn/OL_line/uibutton/jiluShow.png) center / 100% 100% no-repeat;
+	color: #e0cf9c;
+	font-size: calc(28px* 2 / 3);
+	white-space: nowrap;
+	cursor: pointer;
 }
 
 /* 背景选择器 */
@@ -410,95 +421,191 @@
 	transform: translate(-50%, -50%);
 }
 
-/* 礼物面板 */
-.giftbg {
-	width: 35%;
-	height: 30%;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	background: rgba(0, 0, 0, 0.7);
-	border-radius: 4px;
-	border: 1px solid #ae8e7d;
-}
-
-.giftbgtext {
-	bottom: 5%;
-	font-size: 18px;
-	width: 100%;
-	text-align: center;
-	color: #efdbb6;
-	font-family: "HYXLSJ";
-}
-
-.giftes {
-	width: 100%;
-	height: 70%;
-	top: 10%;
-}
-
-.gift {
-	width: 19%;
-	height: 65%;
-	background-size: 100% 100%;
-	position: relative;
-	margin-left: 4.55%;
-}
-
-.giftname {
-	bottom: -30%;
-	font-size: 18px;
-	width: 100%;
-	text-align: center;
-	color: #efdbb6;
-	font-family: "HYXLSJ";
-}
-
-.giftcost {
-	bottom: -55%;
-	font-size: 18px;
-	width: 100%;
-	text-align: center;
-	color: #efdbb6;
-	font-family: "HYXLSJ";
-}
-
-.giftcost::before {
-	content: "";
-	background-image: url("../../assets/lbtn/OL_line/gift/hua.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	margin-right: 3px;
-	vertical-align: middle;
-}
-
-.giftbg2 {
-	width: 25%;
-	height: 25%;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	background: rgba(0, 0, 0, 0.7);
-	border-radius: 4px;
-	border: 1px solid #aa8f3a;
-}
-
-.gift2 {
-	width: 25%;
-	height: 55%;
-	background-size: 100% 100%;
-	position: relative;
-	left: 50%;
-	top: 40%;
-	transform: translate(-50%, -50%);
-}
-
-.giftgive {
-	/* 送礼物元素，位置在js里设置 */
+/* Online 官方互动道具；与其他风格隔离。 */
+body[data-style="onlineUI"] .online-prop-panel {
 	position: absolute;
+	left: 0;
+	top: 0;
+	width: 565px;
+	height: 205px;
+	box-sizing: border-box;
+	transform-origin: 0 0;
+	transition: none;
+	border: 14px solid transparent;
+	border-image: url("../../assets/lbtn/OL_line/props/interact_bg.png") 12 14 14 12 fill stretch;
+	z-index: 110;
+	font-family: "dui-online-action", simsun, serif;
+	color: #e5d9be;
+	text-shadow: none;
+}
+
+body[data-style="onlineUI"] .online-prop-list {
+	position: absolute;
+	left: 30px;
+	top: 26px;
+	width: 495px;
+	height: 130px;
+	display: flex;
+	gap: 50px;
+}
+
+body[data-style="onlineUI"] .online-prop-item {
+	position: relative;
+	flex: none;
+	width: 80px;
+	height: 100px;
+	border: 0;
+	padding: 0;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+	box-shadow: none;
+	outline: none;
+}
+
+body[data-style="onlineUI"] .online-prop-icon {
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	width: 80px;
+	height: 80px;
+	background: url("../../assets/lbtn/OL_line/props/shopitem_border_0.png") center/100% 100%;
+}
+
+body[data-style="onlineUI"] .online-prop-icon img {
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 70px;
+	height: 70px;
+	object-fit: contain;
+}
+
+body[data-style="onlineUI"] .online-prop-item.online-prop-selected::after {
+	content: "";
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	width: 80px;
+	height: 80px;
+	pointer-events: none;
+	background: url("../../assets/lbtn/OL_line/props/shopitem_select.png") center/100% 100%;
+}
+
+body[data-style="onlineUI"] .online-prop-name {
+	position: absolute;
+	left: 0;
+	top: 78px;
+	width: 80px;
+	height: 25px;
+	font-size: 23px;
+	text-align: center;
+	line-height: 25px;
+	white-space: nowrap;
+}
+
+body[data-style="onlineUI"] .online-prop-cost {
+	position: absolute;
+	left: 3px;
+	top: 58px;
+	width: 73px;
+	height: 24px;
+	font-size: 22px;
+	line-height: 24px;
+}
+
+body[data-style="onlineUI"] .online-prop-cost::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 3px;
+	width: 73px;
+	height: 15px;
+	background: url("../../assets/lbtn/OL_line/props/card_mask_1.png") center/100% 100% no-repeat;
+}
+
+body[data-style="onlineUI"] .online-prop-amount {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 41px;
+	height: 24px;
+	text-align: right;
+}
+
+body[data-style="onlineUI"] .online-prop-cost img {
+	position: absolute;
+	left: 43px;
+	top: 4px;
+	width: 14px;
+	height: 13px;
+	object-fit: contain;
+}
+
+body[data-style="onlineUI"] .online-prop-tip {
+	position: absolute;
+	left: 160px;
+	top: 145px;
+	width: 212px;
+	height: 39px;
+	font-size: 26px;
+	line-height: 39px;
+	text-align: center;
+	color: #a68f73;
+}
+
+body[data-style="onlineUI"] .player>.online-prop-target {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 95;
+	container-type: size;
+	transition: none;
+}
+
+body[data-style="onlineUI"] .online-prop-target-content {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	transition: none;
+}
+
+body[data-style="onlineUI"] .online-prop-target span {
+	position: absolute;
+	left: calc(100% * 26 / 174);
+	top: calc(100% * 105 / 232);
+	width: calc(100% * 142 / 174);
+	height: calc(100% * 41 / 232);
+	padding: 0;
+	white-space: nowrap;
+	text-align: center;
+	font: calc(100cqw * 24 / 174)/calc(100cqh * 41 / 232) "dui-online-action", simsun, serif;
+	color: #ffff00;
+	background: url("../../assets/lbtn/OL_line/props/interact_tips_texture.png") center/100% 100% no-repeat;
+	text-shadow: none;
+}
+
+body[data-style="onlineUI"] .online-prop-target img {
+	position: absolute;
+	left: calc(100% * 63 / 174);
+	top: calc(-100% * 11 / 232);
+	width: calc(100% * 62 / 174);
+	height: calc(100% * 58 / 232);
+	animation: online-prop-arrow .5s ease-in-out infinite alternate;
+}
+
+@keyframes online-prop-arrow {
+	from {
+		transform: translateY(0);
+	}
+
+	to {
+		transform: translateY(calc(100cqh * 10 / 232));
+	}
 }
 
 /* 聊天面板 */
@@ -624,88 +731,70 @@
 	position: absolute;
 }
 
-/* 左侧按钮 */
-.leftbuttons,
-.rightbuttons {
-	width: 80px;
-	bottom: 5px;
-	max-height: 205px;
-	overflow: auto;
-}
-
-.leftbuttons {
-	left: 76px;
-}
-
-.rightbuttons {
-	right: 80px;
-}
-
-.anniubutton {
-	width: 80%;
-	height: 40px;
-	background-size: 100% 100%;
-	margin-top: 9%;
-	position: relative;
-	background-image: url("../../assets/lbtn/OL_line/uibutton/gameanniubuttonsbg.png");
-	background-size: 100% 100%;
-	font-size: 20px;
-	font-weight: 550;
+/* OL bvi.createLeftBtn 与 jrs 游戏菜单，按 2/3 设计尺寸显示。 */
+body[data-style="onlineUI"] #window> :is(.leftbuttons, .rightbuttons) {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: rgb(197, 167, 139);
-	font-family: "HYXLSJ";
-	text-shadow: none;
-}
-
-/* 菜单按钮 */
-.caidanbutton {
-	background-image: url("../../assets/lbtn/OL_line/uibutton/caidan.png");
-	background-size: 100% 100%;
-	display: block;
-	width: 53px;
-	height: 46px;
-	position: absolute;
-	top: 8px;
-	right: 80px;
-	background-color: transparent;
-	z-index: 1;
-}
-
-.caidanopen {
-	width: 47px;
-	height: 236.34px;
 	flex-direction: column;
-	align-items: flex-start;
-	white-space: normal;
-	position: fixed;
-	top: 12px;
-	right: 56px;
-	background-color: rgba(0, 0, 0, 0.7);
-	border-radius: 4px;
-	overflow: auto;
+	gap: 14px;
+	width: 56px;
+	bottom: 5px;
+	z-index: 6;
 }
 
-.controls {
-	width: 95%;
-	height: 40.1px;
-	background-size: 100% 100%;
-	z-index: 99;
-	left: -4px;
+body[data-style="onlineUI"] #window>.leftbuttons {
+	left: 73px;
+}
+
+body[data-style="onlineUI"] #window>.rightbuttons {
+	right: 16px;
+}
+
+body[data-style="onlineUI"] .anniubutton {
 	position: relative;
-	margin-top: 6px;
-	font-size: 16px;
-	font-weight: bold;
-	font-family: "HYXLSJ";
-	color: rgb(194, 145, 105);
+	width: 64px;
+	height: 43px;
+	background: center / 100% 100% no-repeat;
+}
+
+body[data-style="onlineUI"] #window>.caidanbutton {
+	position: absolute;
+	top: calc(5px* 2 / 3);
+	right: 69px;
+	width: calc(81px* 2 / 3);
+	height: calc(72px* 2 / 3);
+	z-index: 6;
+	background: url("../../assets/lbtn/OL_line/uibutton/caidan.png") center / 100% 100% no-repeat;
+}
+
+body[data-style="onlineUI"] #window>.online-game-menu {
+	z-index: 9999;
+}
+
+body[data-style="onlineUI"] .online-game-menu>.caidanopen {
+	position: absolute;
+	inset: 0 0 0 auto;
+	box-sizing: border-box;
+	width: calc(460px * 2 / 3);
+	padding: calc(80px * 2 / 3) 49px 0 0;
 	display: flex;
+	flex-direction: column;
 	align-items: flex-end;
-	justify-content: center;
-	background-color: rgb(87, 59, 38);
-	border-radius: 2px;
-	text-align: center;
+	background: url("../../assets/lbtn/OL_line/uibutton/pop_list_btn_bg.png") center / 100% 100% no-repeat;
+	overflow: auto;
+	scrollbar-width: none;
+}
+
+body[data-style="onlineUI"] .online-game-menu .controls {
+	position: relative;
+	display: grid;
+	place-items: center;
+	flex: 0 0 calc(80px * 2 / 3);
+	width: calc(122px * 2 / 3);
+	background: center / contain no-repeat;
+	color: #e0cf9c;
+	font: 16px "dui-online-action", serif;
 	text-shadow: none;
+	cursor: pointer;
 }
 
 /* 控制按钮 */
@@ -734,7 +823,7 @@
 	-webkit-text-stroke: 2px black;
 	paint-order: stroke fill;
 	font-family: "HYXLSJ";
-	font-size: 26px;
+	font-size: 1.6cqw;
 	text-shadow:
 		1px 1px 0px #5d4022,
 		-1px -1px 0px #5d4022;
@@ -798,90 +887,412 @@
 	filter: grayscale(100%);
 }
 
-/* 牌堆显示 */
-.cardRoundNumber {
-	top: 23px;
-	right: 164px;
-	font-weight: 400;
-	font-family: "HYXLSJ";
-	z-index: 3;
-}
-
-.cardRoundNumber>.cardPileNumber {
-	left: 30px;
-	top: -15px;
-	--w: 86px;
-	--h: 46px;
-	width: var(--w);
-	height: var(--h);
-	background-image: url("../../assets/lbtn/OL_line/uibutton/round_info_time_bg.png");
-	background-size: 100% 100%;
-	background-color: transparent;
-	position: relative;
-	z-index: 1;
-}
-
-.cardRoundNumber>.cardPileNumber>span {
-	left: -25px;
-	top: 23px;
-	width: 100%;
-	display: block;
-	position: absolute;
-	font-family: "HYXLSJ";
-	line-height: 25px;
-	text-align: center;
-	color: #b08463;
-	font-size: 16px;
-	-webkit-text-stroke: 0.1px #000;
-	text-shadow:
-		-1px 0 0 #000,
-		1px 0 0 #000,
-		0 -1px 0 #000,
-		0 1px 0 #000;
-}
-
-.cardRoundNumber>.roundNumber,
-.cardRoundNumber>.time {
-	left: 55px;
-	top: -5px;
-	height: 20px;
-	line-height: 5px;
-	white-space: nowrap;
-	font-size: 16px;
-	font-family: "HYXLSJ";
-	color: #b08463;
-	z-index: 3;
-}
-
-.cardRoundNumber>.roundNumber {
-	left: 68px;
-}
-
-.cardRoundNumber>.time {
-	top: 20px;
-	display: flex;
-	justify-content: center;
-	font-size: 16px;
-	font-family: "HYXLSJ";
-	color: #b08463;
-	min-width: 70px;
-}
-
-/* 托管中图标 */
-#autonode>div:last-child {
-	z-index: 10;
-	margin-bottom: -75px !important;
-	left: calc(50% - 440px);
-	font-size: 0px;
+/* OL lki / ens：九宫格底板、牌堆图标、牌数、轮次及计时。 */
+body[data-style="onlineUI"] #window>.cardRoundNumber {
+	top: 13px;
+	right: calc(10px + 170px* 2 / 3);
+	width: 96px;
+	height: calc(68px* 2 / 3);
+	z-index: 6;
+	border-image: url(../../assets/lbtn/OL_line/uibutton/round_info_time_bg.png) 10 4 10 55 fill / 6.67px 2.67px 6.67px 40.67px;
+	font-family: "dui-online-action", SimSun, serif;
+	color: #c4b088;
 	text-shadow: none;
-	--w: 400px;
-	--h: calc(var(--w) * 149 / 598);
-	width: var(--w);
-	height: var(--h);
-	background-image: url("../../assets/lbtn/CD/tuoguan2.png");
-	background-size: 100% 100%;
-	-webkit-text-fill-color: transparent;
-	text-shadow: none !important;
+	pointer-events: none;
+}
+
+body[data-style="onlineUI"] .cardRoundNumber>.cardPileNumber {
+	position: absolute;
+	left: calc(5px * 2 / 3);
+	top: 0;
+	width: calc(46px * 2 / 3);
+	height: 100%;
+	background: url("../../assets/lbtn/OL_line/uibutton/round_info_card_icon.png") calc(7px * 2 / 3) calc(11px * 2 / 3) / calc(39px * 2 / 3) 29px no-repeat;
+}
+
+body[data-style="onlineUI"] .cardRoundNumber .online-card-count,
+body[data-style="onlineUI"] .cardRoundNumber> :is(.roundNumber, .time) {
+	position: absolute;
+	top: calc(35px * 2 / 3);
+	display: grid;
+	place-items: center;
+	height: calc(32px * 2 / 3);
+	white-space: nowrap;
+}
+
+body[data-style="onlineUI"] .cardRoundNumber .online-card-count {
+	width: 100%;
+	font-size: calc(32px * 2 / 3);
+	paint-order: stroke fill;
+	-webkit-text-stroke: calc(2px * 2 / 3) #432c1e;
+}
+
+body[data-style="onlineUI"] .cardRoundNumber> :is(.roundNumber, .time) {
+	left: calc(63px * 2 / 3);
+	width: 44px;
+	font-size: 18px;
+}
+
+body[data-style="onlineUI"] .cardRoundNumber>.roundNumber {
+	top: 0;
+	font-size: calc(24px * 2 / 3);
+}
+
+/* OL Pvi / cb.SetCommonBtnStyle(SECOND, SUBTLE)，按现有确定按钮 28/42 缩放。 */
+body[data-style="onlineUI"] #arena.decadeUI>#autonode,
+body[data-style="onlineUI"] #arena.decadeUI:not(.single-handcard):not(.chess)>#autonode {
+	top: auto;
+	background: url("../../assets/lbtn/OL_line/uibutton/trusteeship_bg_new.png") center / 100% 100% no-repeat;
+	text-shadow: none;
+}
+
+body[data-style="onlineUI"] #autonode>.online-auto-cancel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 50%;
+	left: 50%;
+	bottom: auto;
+	width: 136px;
+	height: 45.33px;
+	margin: 0;
+	padding: 0;
+	transform: translate(-50%, -50%);
+	font-family: "dui-online-action", serif;
+	font-size: 22.67px;
+	font-weight: bold;
+	white-space: nowrap;
+	color: #eedebc;
+	-webkit-text-fill-color: currentColor;
+	text-shadow: none;
+	background: url("../../assets/lbtn/OL_line/uibutton/secbtn_sub.png") center / 100% 100% no-repeat;
+	cursor: pointer;
+}
+
+body[data-style="onlineUI"] #arena:not(.auto)>#autonode .online-auto-cancel {
+	visibility: hidden;
+}
+
+body[data-style="onlineUI"] #autonode>.online-auto-cancel:active {
+	filter: brightness(0.8);
+}
+
+/* OL uOi / layoutStateIcons：按 174×232 的座位尺寸定位。 */
+body[data-style="onlineUI"] #arena>.player>.dui-marks {
+	position: absolute;
+	left: calc(100% * 28 / 174);
+	right: 0;
+	top: 0;
+	bottom: calc(100% * 122 / 232);
+	width: auto;
+	height: auto;
+	flex-direction: column-reverse;
+	align-items: flex-start;
+	gap: 1.5px;
+	overflow: visible;
+	pointer-events: none;
+	z-index: 90;
+}
+
+body[data-style="onlineUI"] #arena>.player>.dui-marks>.mark {
+	position: relative;
+	top: auto;
+	left: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: none;
+	width: max-content;
+	min-width: 26px;
+	height: 22.6px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0 6px 3px 2px;
+	border: 0 solid transparent;
+	background: none;
+	border-image: url("../../../image/ui/tip/online/seat_state_bg_new.png") 6 11 10 7 fill / 4.5px 8px 7.5px 5px stretch;
+	color: #dbdbdb;
+	white-space: nowrap;
+	animation: none;
+	pointer-events: auto;
+}
+
+body[data-style="onlineUI"] #arena>.player>.dui-marks>.mark>:is(.mark-text, .mark-count) {
+	display: inline-block;
+	position: static;
+	width: auto;
+	max-width: none;
+	height: auto;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	transform: none;
+	font: 16px/1 "dui-online-action", SimSun, serif !important;
+	color: inherit;
+	background: none;
+	box-shadow: none;
+	text-shadow: none;
+	animation: none;
+}
+
+body[data-style="onlineUI"] #arena>.player>.dui-marks>.mark[data-online-mark-type="dialog"] {
+	position: absolute;
+	left: calc(100% * 95 / 146);
+	top: calc(100% * 50 / 110 + var(--online-mark-index, 0) * 24px);
+	transform: none !important;
+	min-width: 47px;
+	border-image: url("../../../image/ui/tip/online/seat_state_btn_0_new2024.png") 4 10 10 6 fill / 3px 7.5px 7.5px 4.5px stretch;
+	color: #ffefad;
+	cursor: pointer;
+}
+
+body[data-style="onlineUI"] #arena>.player>.dui-marks>.mark[data-online-mark-type="dialog"].removing {
+	display: none;
+}
+
+body[data-style="onlineUI"] #arena>.player>.dui-marks>.mark:is([data-online-mark-type="empty"], [data-online-mark-type="graphic"]) {
+	display: none;
+}
+
+body[data-style="onlineUI"] #arena>.player>.dui-marks>.mark[data-online-mark-type="status"] {
+	cursor: default;
+}
+
+/* 标记介绍盖住 102 的 dui-controls，原生关闭层仍在介绍面板下方。 */
+body[data-style="onlineUI"] #window>.dialog.popped.online-player-mark-intro {
+	z-index: 103 !important;
+}
+
+body[data-style="onlineUI"] #window>.dialog.popped.online-player-mark-intro + .poplayer {
+	z-index: 102;
+}
+
+body[data-style="onlineUI"] #window>.dialog.popped.online-mark-card-dialog {
+	width: min(320px, calc(100% - 20px)) !important;
+	min-height: 154px;
+	border: 0;
+	border-radius: 0;
+	background: none;
+	box-shadow: none;
+}
+
+body[data-style="onlineUI"] #window>.online-mark-card-dialog::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border: 14px solid transparent;
+	border-image: url("../../../image/ui/tooltip/tip_bg.png") 29 29 31 fill / 14px stretch;
+	pointer-events: none;
+}
+
+body[data-style="onlineUI"] #window>.online-mark-card-dialog .content {
+	box-sizing: border-box;
+	min-height: 154px;
+	padding: 10px 12px 16px;
+	color: #e5d9be;
+	text-align: left;
+}
+
+body[data-style="onlineUI"] #window>.online-mark-card-dialog .content>.caption {
+	display: table;
+	width: auto;
+	min-width: 58px;
+	height: 30px;
+	margin: 0 0 10px;
+	padding: 3px 8px;
+	border-image: url("../../../image/ui/tooltip/userinfowin_skillitem_title_bg.png") 9 fill / 7px stretch;
+	color: #ffd800;
+	font: 20px/24px "dui-online-action", KaiTi, serif;
+	text-align: center;
+	text-shadow: none;
+}
+
+body[data-style="onlineUI"] #window>.online-mark-card-dialog .content .buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 8px;
+	margin: 0;
+	padding: 0;
+}
+
+body[data-style="onlineUI"] #window>.online-mark-card-dialog .buttons>.card.button {
+	flex: none;
+	zoom: .58;
+	margin: 0;
+}
+
+body[data-style="onlineUI"] #window>.online-mark-card-dialog .online-mark-card-tag {
+	position: absolute;
+	left: 0;
+	bottom: 4px;
+	z-index: 6;
+	min-width: 56px;
+	padding: 4px 12px 3px 7px;
+	border-image: url("../../../image/ui/card/card_tag_bg.png") 10 20 10 5 fill / 7px 14px 7px 4px stretch;
+	color: #ffefbe;
+	font: 15px/1.1 "dui-online-action", KaiTi, serif;
+	white-space: nowrap;
+	pointer-events: none;
+}
+
+body[data-style="onlineUI"] #arena>.player>.dui-marks>.mark[data-online-lucun="used"]>.mark-count {
+	display: none;
+}
+
+body[data-style="onlineUI"] #window>.dialog.popped.online-lucun-card-dialog {
+	width: min(680px, calc(100% - 20px)) !important;
+	min-height: 106px;
+}
+
+body[data-style="onlineUI"] #window>.online-lucun-card-dialog .content {
+	min-height: 106px;
+}
+
+body[data-style="onlineUI"] #window>.online-lucun-card-dialog .content>.caption:not(:first-child) {
+	display: none;
+}
+
+body[data-style="onlineUI"] #window>.online-lucun-card-dialog .buttons {
+	gap: 4px;
+}
+
+body[data-style="onlineUI"] #window>.online-lucun-card-dialog .buttons>.card.online-mark-vcard {
+	position: relative;
+	display: grid;
+	place-items: center;
+	zoom: 1;
+	width: 124.5px;
+	height: 33px;
+	border-radius: 0;
+	background: #322616 !important;
+	box-shadow: none;
+	transform: none;
+}
+
+body[data-style="onlineUI"] #window>.online-lucun-card-dialog .online-mark-vcard>:not(.online-mark-vcard-label, .online-mark-vcard-image) {
+	display: none !important;
+}
+
+body[data-style="onlineUI"] #window>.online-lucun-card-dialog .online-mark-vcard-label {
+	color: #ffefbe;
+	font: 16px/1 "dui-online-action", KaiTi, serif;
+}
+
+body[data-style="onlineUI"] #window>.online-lucun-card-dialog .online-mark-vcard-image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+body[data-style="onlineUI"] #arena>.player>.dui-marks>.mark>.mark-text::before {
+	display: none;
+}
+
+body[data-style="onlineUI"] #arena>.player>.dui-marks>.mark>.mark-count::before,
+body[data-style="onlineUI"] #arena>.player>.dui-marks>.mark>.mark-count::after {
+	display: inline;
+	color: inherit;
+	transform: none;
+}
+
+body[data-style="onlineUI"] #arena>.player>.dui-marks>.mark>.mark-count::before {
+	content: "[";
+}
+
+body[data-style="onlineUI"] #arena>.player>.dui-marks>.mark>.mark-count::after {
+	content: "]";
+}
+
+body[data-style="onlineUI"] #arena>.player>.dui-marks>.online-seat-trusteeship {
+	display: none;
+	pointer-events: none;
+}
+
+body[data-style="onlineUI"] #arena.auto:not(.observe)>.player[data-position="0"]:not(.dead)>.dui-marks>.online-seat-trusteeship {
+	display: flex;
+}
+
+/* OL oOi：底图着色，边框和计数独立叠放。 */
+body[data-style="onlineUI"] #arena>.player>.skillMarks:has(>.online-circle-mark) {
+	/* 桌面阴阳标记翻转时放大到 1.2 倍。 */
+	row-gap: 4px;
+}
+
+body[data-style="onlineUI"] #arena>.player>.skillMarks>.online-circle-mark {
+	position: relative;
+	display: block;
+	flex: none;
+	width: 28px;
+	height: 28px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	color: white;
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+body[data-style="onlineUI"] .online-circle-mark::before,
+body[data-style="onlineUI"] .online-circle-mark::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+body[data-style="onlineUI"] .online-circle-mark::before {
+	background: var(--online-circle-color) url("../../../image/ui/tip/online/state_icon_bg.png") center / 100% 100% no-repeat;
+	background-blend-mode: multiply;
+	mask: url("../../../image/ui/tip/online/state_icon_bg.png") center / 100% 100% no-repeat;
+}
+
+body[data-style="onlineUI"] .online-circle-mark::after {
+	background: url("../../../image/ui/tip/online/state_icon_frame.png") center / 100% 100% no-repeat;
+}
+
+body[data-style="onlineUI"] .online-circle-mark.lit::after {
+	background-image: url("../../../image/ui/tip/online/state_icon_frame_light.png");
+}
+
+body[data-style="onlineUI"] .online-circle-glyph,
+body[data-style="onlineUI"] .online-circle-count {
+	position: absolute;
+	z-index: 1;
+	pointer-events: none;
+	paint-order: stroke fill;
+}
+
+body[data-style="onlineUI"] .online-circle-glyph {
+	inset: 0;
+	font: 18px/28px "dui-online-action", SimSun, serif;
+	text-align: center;
+	-webkit-text-stroke: 1.5px #2f2014;
+}
+
+body[data-style="onlineUI"] .online-circle-mark.two-glyphs>.online-circle-glyph {
+	inset: auto;
+	left: 3px;
+	top: 3px;
+	width: 12px;
+	font-size: 11px;
+	line-height: 12px;
+}
+
+body[data-style="onlineUI"] .online-circle-mark.two-glyphs>.online-circle-glyph:nth-child(2) {
+	left: 12px;
+	top: 11px;
+}
+
+body[data-style="onlineUI"] .online-circle-count {
+	top: 2px;
+	right: 2px;
+	font: bold 11px/1 sans-serif;
+	-webkit-text-stroke: 1.5px #000;
 }
 
 /* 手牌数 */
@@ -904,4 +1315,89 @@
 
 .lbtn-confirm[data-skill]>[data-type="skill2"] {
 	display: none;
+}
+
+/* OL Fvi: reset(109,40)/142×52，ignore(900,40)/177×63；确定(360,38)/207×72。 */
+@font-face {
+	font-family: "dui-online-action";
+	src: url("../../assets/fonts/FZLBGBK.ttf") format("truetype");
+}
+
+#arena>#dui-controls>.lbtn-confirm>.online-recast-button,
+body[data-style="onlineUI"] #arena>#dui-controls>:is(.online-quick-select, .online-card-choose-all).control>div {
+	position: absolute;
+	width: calc(142px * var(--ol-action-scale));
+	min-width: 0;
+	height: calc(52px * var(--ol-action-scale));
+	padding: 0 !important;
+	margin: 0 !important;
+	background: url("../../assets/lbtn/OL_line/uibutton/seatui_btns_allselect.png") center / 100% 100% no-repeat;
+	color: #7c2d06;
+	font: calc(30px * var(--ol-action-scale)) "dui-online-action", serif;
+	letter-spacing: 0;
+	-webkit-text-stroke: 0;
+	text-shadow: none;
+	box-shadow: none;
+	transform-origin: center;
+	transition: none;
+}
+
+body[data-style="onlineUI"] #arena>#dui-controls>:is(.online-quick-select, .online-card-choose-all).control {
+	position: absolute !important;
+	left: var(--ol-action-left) !important;
+	top: var(--ol-action-top) !important;
+	bottom: auto !important;
+	width: calc(142px * var(--ol-action-scale)) !important;
+	height: calc(52px * var(--ol-action-scale)) !important;
+	margin: 0 !important;
+	padding: 0;
+	transform: none !important;
+	transition: none;
+}
+
+body[data-style="onlineUI"] #arena>#dui-controls>.control.online-selection-hidden {
+	display: none !important;
+}
+
+#arena>#dui-controls>.online-tempnowuxie.control.stayleft {
+	position: absolute !important;
+	left: var(--ol-action-left) !important;
+	top: var(--ol-action-top) !important;
+	bottom: auto !important;
+	width: calc(177px * var(--ol-action-scale)) !important;
+	height: calc(63px * var(--ol-action-scale)) !important;
+	margin: 0 !important;
+	padding: 0;
+	transform: none !important;
+	transition: none;
+}
+
+#arena>#dui-controls>.online-tempnowuxie.control>div {
+	width: 100%;
+	height: 100%;
+	padding: 0 !important;
+	margin: 0 !important;
+	background: url("../../assets/lbtn/OL_line/uibutton/seatui_btns_confirm.png") center / 100% 100% no-repeat;
+	color: #feefcf;
+	font: calc(30px * var(--ol-action-scale)) "dui-online-action", serif;
+	letter-spacing: 0;
+	-webkit-text-stroke: calc(2px * var(--ol-action-scale)) #b75c29;
+	paint-order: stroke fill;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+/* Ors.Reset / Show：结算时收起整个按钮区，下一次本人操作随事件恢复。 */
+body[data-style="onlineUI"] #arena>#dui-controls.online-controls-resolving {
+	display: none !important;
+}
+
+#arena>#dui-controls>.online-tempnowuxie.glow {
+	display: none !important;
+}
+
+#arena>#dui-controls>.online-tempnowuxie:active>div,
+body[data-style="onlineUI"] #arena>#dui-controls>:is(.online-quick-select, .online-card-choose-all):active>div,
+#arena>#dui-controls>.lbtn-confirm>.online-recast-button:active {
+	filter: brightness(0.85);
 }

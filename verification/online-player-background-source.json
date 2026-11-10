@@ -1,0 +1,55 @@
+{
+  "source": "OL Android 4.0.2 APK",
+  "apk_sha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+  "rea_evidence": "ev_edcf0b916ee34807938588035c3ed96b6f776080202e0b1ddb6b950602425eab",
+  "members": {
+    "atlas": {
+      "logical_path": "res/assets/game/seatBottom.atlas",
+      "apk_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/d71f8945",
+      "sha256": "72081f8c260299cb776722e662395ca5ee03a58f6a9deb576cd07602767b533a"
+    },
+    "texture": {
+      "logical_path": "res/assets/game/seatBottom.png",
+      "apk_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/b3ba4a43",
+      "sha256": "bce3ceb3b41fc490f41437476c0b10d546c188bdcc1712a07847a7ceeeda8a72"
+    },
+    "script": {
+      "apk_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb!main.sgs",
+      "sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad"
+    }
+  },
+  "official_class": "fns (seat bottom manager)",
+  "methods": {
+    "initGeneralBg": "initGeneralBg(){this.seatBg||(this.seatBg=new Dxt(Bwt.GetRes(\"general_seat_bottom\")),this.seatBg.sizeGrid=\"20,20,20,20\",this.seatBg.posInteger(-5,-5),this.seatBg.size(mMt.SEAT_WIDTH+13,mMt.SEAT_HEIGHT+17),this.addDrawChild(this.seatBg)),this.generalBg||(this.generalBg=new Dxt(Bwt.GetRes(\"general_seat_base\")),this.generalBg.size(mMt.SEAT_WIDTH,mMt.SEAT_HEIGHT),this.addDrawChild(this.generalBg))}",
+    "UpdateGeneralBg": "UpdateGeneralBg(){let t=arguments.length>0&&void 0!==arguments[0]&&arguments[0];this.generalBg&&(this.generalBg.visible=t),this.guanjieIcon&&(this.guanjieIcon.visible=!1),this.guanjieName&&(this.guanjieName.visible=!1)}"
+  },
+  "asset": {
+    "name": "general_seat_base.png",
+    "atlas_entry": {
+      "frame": {
+        "h": 224,
+        "idx": 0,
+        "w": 172,
+        "x": 460,
+        "y": 516
+      },
+      "sourceSize": {
+        "h": 224,
+        "w": 172
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "target": "image/ui/player-bg/general_seat_base.png",
+    "sha256": "de2e262107756472a839daeeca88babdb29cd6313055774d2971bff81dc716d4",
+    "pixel_equal": true,
+    "conversion": "Lossless RGBA crop from original PNG atlas; no recoloring or resizing."
+  },
+  "scope": "player4.css is loaded only for onlineUI (src/core/decadeModule.js); preserve existing single-general selector and layout.",
+  "limitations": [
+    "Static APK resource and call-site inspection; official APK runtime not executed.",
+    "Browser CSS verification does not replace complete Electron in-game validation."
+  ]
+}

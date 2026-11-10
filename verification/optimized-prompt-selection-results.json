@@ -1,0 +1,192 @@
+{
+  "ranges": {
+    "empty": {
+      "text": "出牌阶段，请选择一张卡牌",
+      "main": "出牌阶段，请选择一张卡牌",
+      "progress": ""
+    },
+    "shan": {
+      "text": "请使用一张闪响应杀",
+      "main": "请使用一张闪响应杀",
+      "progress": ""
+    },
+    "response": {
+      "text": "请打出一张闪",
+      "main": "请打出一张闪",
+      "progress": ""
+    },
+    "converted": {
+      "text": "发动“转化”，请选择1名角色已选1/1张牌，已选0/1名角色",
+      "main": "发动“转化”，请选择1名角色",
+      "progress": "已选1/1张牌，已选0/1名角色"
+    }
+  },
+  "takeover": {
+    "hidden": "none",
+    "legacy": "none",
+    "info": "none",
+    "interactive": "visible",
+    "restored": true,
+    "counterOnly": {
+      "hidden": "none",
+      "main": "请选择1名角色"
+    }
+  },
+  "layouts": [
+    {
+      "top": 564,
+      "bottom": 590,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 25,
+      "lines": 1
+    },
+    {
+      "top": 604,
+      "bottom": 630,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 20,
+      "lines": 1
+    },
+    {
+      "top": 620,
+      "bottom": 646,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 18,
+      "lines": 1
+    },
+    {
+      "top": 644,
+      "bottom": 670,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 15,
+      "lines": 1
+    },
+    {
+      "top": 668,
+      "bottom": 694,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 12,
+      "lines": 1
+    }
+  ],
+  "multilineLayouts": [
+    {
+      "top": 538,
+      "bottom": 590,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 25,
+      "lines": 2
+    },
+    {
+      "top": 578,
+      "bottom": 630,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 20,
+      "lines": 2
+    },
+    {
+      "top": 594,
+      "bottom": 646,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 18,
+      "lines": 2
+    },
+    {
+      "top": 618,
+      "bottom": 670,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 15,
+      "lines": 2
+    },
+    {
+      "top": 642,
+      "bottom": 694,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 12,
+      "lines": 2
+    },
+    {
+      "top": 512,
+      "bottom": 590,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 25,
+      "lines": 3
+    },
+    {
+      "top": 552,
+      "bottom": 630,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 20,
+      "lines": 3
+    },
+    {
+      "top": 568,
+      "bottom": 646,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 18,
+      "lines": 3
+    },
+    {
+      "top": 592,
+      "bottom": 670,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 15,
+      "lines": 3
+    },
+    {
+      "top": 616,
+      "bottom": 694,
+      "buttonBottom": 558,
+      "layer": 102,
+      "frameLayer": 101,
+      "controlsLayer": 102,
+      "heightSetting": 12,
+      "lines": 3
+    }
+  ],
+  "testedSetting": 18,
+  "confirmClickable": true,
+  "errors": []
+}

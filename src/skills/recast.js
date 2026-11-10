@@ -136,6 +136,8 @@ function c() {
 			}));
 }
 function s() {
+	// Online 使用独立按钮进入本体 _recasting，不安装无目标重铸的替代交互。
+	if (lib.config.extension_十周年UI_newDecadeStyle === "onlineUI") return;
 	!1 !== lib.config.extension_十周年UI_enableRecastInteraction &&
 		"off" !== lib.config.extension_十周年UI_newDecadeStyle &&
 		(Object.assign(lib.skill, r, a),

@@ -70,6 +70,9 @@ function l(dialog) {
 		isMe = !sourcePlayer || sourcePlayer === game.me,
 		bgName = a(sourcePlayer || game.me, isMe);
 	cards.forEach(card => {
+		// Online faction buttons reuse the `.card.infohidden` classes, but their
+		// background and optional custom-faction label are owned by that dialog.
+		if (card.closest?.(".online-faction-dialog")) return;
 		if (!card.dataset.identityCard)
 			if ((card.innerHTML && (card.innerHTML = ""), bgName)) {
 				const e = `${lib.assetURL}extension/十周年UI/image/ui/card/${bgName}.png`;

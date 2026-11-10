@@ -1,0 +1,482 @@
+{
+  "setup": {
+    "nativeRecastEnabled": true,
+    "replacedRecast": false,
+    "none": {
+      "ok": {
+        "text": "确定",
+        "display": "flex",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_1.png\")",
+        "rect": {
+          "x": 540.5,
+          "y": 594.75,
+          "width": 158,
+          "height": 54,
+          "top": 594.75,
+          "right": 698.5,
+          "bottom": 648.75,
+          "left": 540.5
+        },
+        "first": true,
+        "last": false
+      },
+      "cancel": {
+        "text": "取消",
+        "display": "flex",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_2.png\")",
+        "rect": {
+          "x": 755.5,
+          "y": 598.25,
+          "width": 134,
+          "height": 47,
+          "top": 598.25,
+          "right": 889.5,
+          "bottom": 645.25,
+          "left": 755.5
+        },
+        "first": false,
+        "last": true
+      },
+      "recast": {
+        "text": "重铸",
+        "display": "none",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_allselect.png\")",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "first": false,
+        "last": false
+      },
+      "scale": 0.7632850241545893
+    }
+  },
+  "selection": {
+    "sha": {
+      "ok": {
+        "text": "确定",
+        "display": "flex",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_1.png\")",
+        "rect": {
+          "x": 540.5,
+          "y": 594.75,
+          "width": 158,
+          "height": 54,
+          "top": 594.75,
+          "right": 698.5,
+          "bottom": 648.75,
+          "left": 540.5
+        },
+        "first": true,
+        "last": false
+      },
+      "cancel": {
+        "text": "取消",
+        "display": "flex",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_2.png\")",
+        "rect": {
+          "x": 755.5,
+          "y": 598.25,
+          "width": 134,
+          "height": 47,
+          "top": 598.25,
+          "right": 889.5,
+          "bottom": 645.25,
+          "left": 755.5
+        },
+        "first": false,
+        "last": true
+      },
+      "recast": {
+        "text": "重铸",
+        "display": "none",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_allselect.png\")",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "first": false,
+        "last": false
+      },
+      "scale": 0.7632850241545893
+    },
+    "iron": {
+      "ok": {
+        "text": "确定",
+        "display": "flex",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_1.png\")",
+        "rect": {
+          "x": 540.5,
+          "y": 594.75,
+          "width": 158,
+          "height": 54,
+          "top": 594.75,
+          "right": 698.5,
+          "bottom": 648.75,
+          "left": 540.5
+        },
+        "first": true,
+        "last": false
+      },
+      "cancel": {
+        "text": "取消",
+        "display": "flex",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_2.png\")",
+        "rect": {
+          "x": 755.5,
+          "y": 598.25,
+          "width": 134,
+          "height": 47,
+          "top": 598.25,
+          "right": 889.5,
+          "bottom": 645.25,
+          "left": 755.5
+        },
+        "first": false,
+        "last": true
+      },
+      "recast": {
+        "text": "重铸",
+        "display": "flex",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_allselect.png\")",
+        "rect": {
+          "x": 373.71875,
+          "y": 601.890625,
+          "width": 108.375,
+          "height": 39.6875,
+          "top": 601.890625,
+          "right": 482.09375,
+          "bottom": 641.578125,
+          "left": 373.71875
+        },
+        "first": false,
+        "last": false
+      },
+      "scale": 0.7632850241545893
+    },
+    "withTarget": {
+      "ok": {
+        "text": "确定",
+        "display": "flex",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_1.png\")",
+        "rect": {
+          "x": 540.5,
+          "y": 594.75,
+          "width": 158,
+          "height": 54,
+          "top": 594.75,
+          "right": 698.5,
+          "bottom": 648.75,
+          "left": 540.5
+        },
+        "first": true,
+        "last": false
+      },
+      "cancel": {
+        "text": "取消",
+        "display": "flex",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_2.png\")",
+        "rect": {
+          "x": 755.5,
+          "y": 598.25,
+          "width": 134,
+          "height": 47,
+          "top": 598.25,
+          "right": 889.5,
+          "bottom": 645.25,
+          "left": 755.5
+        },
+        "first": false,
+        "last": true
+      },
+      "recast": {
+        "text": "重铸",
+        "display": "flex",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_allselect.png\")",
+        "rect": {
+          "x": 373.71875,
+          "y": 601.890625,
+          "width": 108.375,
+          "height": 39.6875,
+          "top": 601.890625,
+          "right": 482.09375,
+          "bottom": 641.578125,
+          "left": 373.71875
+        },
+        "first": false,
+        "last": false
+      },
+      "scale": 0.7632850241545893
+    },
+    "targets": 1,
+    "duplicates": 0
+  },
+  "recast": {
+    "skill": "_recasting",
+    "bool": true,
+    "cards": [
+      "tiesuo"
+    ],
+    "targets": 0
+  },
+  "wuxie": {
+    "nativeCallback": true,
+    "before": false,
+    "geometry": {
+      "ok": {
+        "text": "确定",
+        "display": "flex",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_1.png\")",
+        "rect": {
+          "x": 540.5,
+          "y": 594.75,
+          "width": 158,
+          "height": 54,
+          "top": 594.75,
+          "right": 698.5,
+          "bottom": 648.75,
+          "left": 540.5
+        },
+        "first": true,
+        "last": false
+      },
+      "cancel": {
+        "text": "取消",
+        "display": "flex",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_2.png\")",
+        "rect": {
+          "x": 755.5,
+          "y": 598.25,
+          "width": 134,
+          "height": 47,
+          "top": 598.25,
+          "right": 889.5,
+          "bottom": 645.25,
+          "left": 755.5
+        },
+        "first": false,
+        "last": true
+      },
+      "recast": {
+        "text": "重铸",
+        "display": "none",
+        "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_allselect.png\")",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "first": false,
+        "last": false
+      },
+      "ignore": {
+        "text": "本次不无懈",
+        "display": "flex",
+        "background": "none",
+        "rect": {
+          "x": 945.765625,
+          "y": 597.703125,
+          "width": 135.09375,
+          "height": 48.078125,
+          "top": 597.703125,
+          "right": 1080.859375,
+          "bottom": 645.78125,
+          "left": 945.765625
+        },
+        "first": false,
+        "last": false
+      },
+      "scale": 0.7632850241545893
+    }
+  },
+  "skip": {
+    "clicked": {
+      "glow": true,
+      "result": false,
+      "other": true,
+      "display": "none"
+    },
+    "self": false,
+    "global": true,
+    "afterSelf": true,
+    "counter": false,
+    "different": false
+  },
+  "selfPrompt": {
+    "paused": true,
+    "confirm": true,
+    "prompt": "群体锦囊对你生效，是否使用【无懈可击】？",
+    "selectable": true
+  },
+  "zoom": {
+    "ok": {
+      "text": "确定",
+      "display": "flex",
+      "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_1.png\")",
+      "rect": {
+        "x": 287.625,
+        "y": 375.515625,
+        "width": 197.5,
+        "height": 67.5,
+        "top": 375.515625,
+        "right": 485.125,
+        "bottom": 443.015625,
+        "left": 287.625
+      },
+      "first": true,
+      "last": false
+    },
+    "cancel": {
+      "text": "取消",
+      "display": "flex",
+      "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_2.png\")",
+      "rect": {
+        "x": 556.375,
+        "y": 379.890625,
+        "width": 167.5,
+        "height": 58.75,
+        "top": 379.890625,
+        "right": 723.875,
+        "bottom": 438.640625,
+        "left": 556.375
+      },
+      "first": false,
+      "last": true
+    },
+    "recast": {
+      "text": "重铸",
+      "display": "none",
+      "background": "url(\"http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_allselect.png\")",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "first": false,
+      "last": false
+    },
+    "ignore": {
+      "text": "本次不无懈",
+      "display": "flex",
+      "background": "none",
+      "rect": {
+        "x": 794.0625,
+        "y": 379.203125,
+        "width": 168.875,
+        "height": 60.09375,
+        "top": 379.203125,
+        "right": 962.9375,
+        "bottom": 439.296875,
+        "left": 794.0625
+      },
+      "first": false,
+      "last": false
+    },
+    "scale": 0.7632850241545893
+  },
+  "controls": [
+    {
+      "class": "control stayleft online-tempnowuxie",
+      "text": "本次不无懈",
+      "html": "<div class=\"control stayleft online-tempnowuxie\" style=\"opacity: 1; --ol-action-scale: 0.7632850241545893; --ol-action-left: 470.253628229013px; --ol-action-top: 0.9558956957247595px;\"><div>本次不无懈</div></div>",
+      "rect": {
+        "x": 794.0625,
+        "y": 379.203125,
+        "width": 168.875,
+        "height": 60.09375,
+        "top": 379.203125,
+        "right": 962.9375,
+        "bottom": 439.296875,
+        "left": 794.0625
+      }
+    },
+    {
+      "class": "control combo-control lbtn-confirm",
+      "text": "确定重铸取消",
+      "html": "<div class=\"control combo-control lbtn-confirm\" style=\"opacity: 1;\"><div class=\"control primary\"><span>确定</span></div><div class=\"online-recast-button\" role=\"button\" style=\"display: none; --ol-action-scale: 0.7632850241545893; left: -101.705px; top: 5.15396px;\">重铸</div><div class=\"control primary2\">取消</div></div>",
+      "rect": {
+        "x": 258.25,
+        "y": 383.015625,
+        "width": 495,
+        "height": 52.5,
+        "top": 383.015625,
+        "right": 753.25,
+        "bottom": 435.515625,
+        "left": 258.25
+      }
+    }
+  ],
+  "errors": [],
+  "requests": [
+    [
+      404,
+      "http://127.0.0.1:39321/preload.js"
+    ],
+    [
+      404,
+      "http://127.0.0.1:39321/theme/style/card"
+    ],
+    [
+      404,
+      "http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_loseHp.skel"
+    ],
+    [
+      404,
+      "http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_loseHp.atlas"
+    ],
+    [
+      404,
+      "http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baguazhen.skel"
+    ],
+    [
+      404,
+      "http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baguazhen.atlas"
+    ],
+    [
+      404,
+      "http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baiyinshizi.skel"
+    ],
+    [
+      404,
+      "http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baiyinshizi.atlas"
+    ],
+    [
+      404,
+      "http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/huifushuzi/shuzi2.skel"
+    ],
+    [
+      404,
+      "http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/huifushuzi/shuzi2.atlas"
+    ],
+    [
+      404,
+      "http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.skel"
+    ],
+    [
+      404,
+      "http://127.0.0.1:39321/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.atlas"
+    ]
+  ]
+}

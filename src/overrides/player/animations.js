@@ -1,17 +1,20 @@
 import { game, get, ui, lib } from "noname";
 import { getDui as getDui } from "./base.js";
+import { isOfficialPlayerPopup, syncOfficialPlayerPopups } from "../../ui/officialPlayerPopup.js";
 const t = { thunder: ["play5", "play6"], fire: ["play3", "play4"], __default: ["play1", "play2"] };
 function a(num, nature = "soil", font, nobroadcast) {
 	const player = this;
 	if ("string" == typeof num) {
 		(game.addVideo("damagepop", player, [num, nature, font]), !1 !== nobroadcast && game.broadcast((e, t, na, n) => e.$damagepop(t, na, n), player, num, nature, font));
+		syncOfficialPlayerPopups();
+		if (lib.config.extension_十周年UI_optimizePrompt && !isOfficialPlayerPopup(num)) return;
 		const e = ui.create.div(".damage.skill-popup", ui.arena);
 		e.dataset.nature = nature || "soil";
 		let t = 0,
 			o = 0,
 			d = player;
-		for (; d && d !== ui.arena; ) ((t += d.offsetLeft || 0), (o += d.offsetTop || 0), (d = d.offsetParent));
-		((e.style.position = "absolute"), (e.style.left = `${t}px`), (e.style.top = `${o + 80}px`), (e.style.width = `${player.offsetWidth}px`), (e.style.zIndex = "9999"));
+		for (; d && d !== ui.arena;) ((t += d.offsetLeft || 0), (o += d.offsetTop || 0), (d = d.offsetParent));
+		((e.style.position = "absolute"), (e.style.left = `${t}px`), (e.style.top = `${o + 80}px`), (e.style.width = `${player.offsetWidth}px`), (e.style.zIndex = "200"));
 		const r = num.split(""),
 			c = Math.ceil(r.length / 2);
 		return (
@@ -126,17 +129,17 @@ function c(animation) {
 	let animations = this._cssanimations;
 	(void 0 === animations &&
 		((animations = []),
-		(this._cssanimations = animations),
-		this.addEventListener("animationend", function (e) {
-			if (this.style.animationName !== e.animationName) return;
-			const current = this.style.animation,
-				animations = this._cssanimations;
-			for (; animations.length; ) {
-				if (((this.style.animation = animations.shift()), this.style.animation !== current)) return;
-				animations.current = this.style.animation;
-			}
-			((animations.current = ""), (this.style.animation = ""));
-		})),
+			(this._cssanimations = animations),
+			this.addEventListener("animationend", function (e) {
+				if (this.style.animationName !== e.animationName) return;
+				const current = this.style.animation,
+					animations = this._cssanimations;
+				for (; animations.length;) {
+					if (((this.style.animation = animations.shift()), this.style.animation !== current)) return;
+					animations.current = this.style.animation;
+				}
+				((animations.current = ""), (this.style.animation = ""));
+			})),
 		animations.current || animations.length ? animations.push(animation) : ((animations.current = animation), (this.style.animation = animation)));
 }
 function l(players) {

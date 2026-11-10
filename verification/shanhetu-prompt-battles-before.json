@@ -1,0 +1,136 @@
+{
+  "fixture": "隔离浏览器真实本体/十周年UI/皮肤切换/山河图；测试输入启动三场战斗，原生 die 胜利，跳过奖励选择返回地图；不写用户 Electron 存档。",
+  "battles": [
+    {
+      "phase": {
+        "text": "出牌阶段，请选择一张卡牌",
+        "visible": true,
+        "poolSize": 1,
+        "detached": 0
+      },
+      "selected": {
+        "text": "请选择1名角色，作为杀的目标",
+        "visible": true,
+        "poolSize": 1,
+        "detached": 0
+      },
+      "targeted": {
+        "text": "请选择1名角色，作为杀的目标",
+        "visible": true,
+        "poolSize": 1,
+        "detached": 0,
+        "targets": 1
+      },
+      "deselected": {
+        "text": "出牌阶段，请选择一张卡牌",
+        "visible": true,
+        "poolSize": 1,
+        "detached": 0
+      }
+    },
+    {
+      "phase": {
+        "text": "",
+        "visible": false,
+        "poolSize": 1,
+        "detached": 1
+      },
+      "selected": {
+        "text": "",
+        "visible": false,
+        "poolSize": 1,
+        "detached": 1
+      },
+      "targeted": {
+        "text": "",
+        "visible": false,
+        "poolSize": 1,
+        "detached": 1,
+        "targets": 1
+      },
+      "deselected": {
+        "text": "",
+        "visible": false,
+        "poolSize": 1,
+        "detached": 1
+      }
+    }
+  ],
+  "errors": [],
+  "extensionFailures": [
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/extension/十周年UI/assets/animation/effect_loseHp.skel"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/extension/十周年UI/assets/animation/effect_loseHp.atlas"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/extension/十周年UI/assets/animation/effect_baguazhen.skel"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/extension/十周年UI/assets/animation/effect_baguazhen.atlas"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/extension/十周年UI/assets/animation/effect_baiyinshizi.skel"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/extension/十周年UI/assets/animation/effect_baiyinshizi.atlas"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/extension/十周年UI/image/styles/decade/border_campOL1.png"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/extension/十周年UI/assets/animation/globaltexiao/huifushuzi/shuzi2.skel"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/extension/十周年UI/assets/animation/globaltexiao/huifushuzi/shuzi2.atlas"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/extension/十周年UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.skel"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/extension/十周年UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.atlas"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/extension/十周年UI/assets/animation/effect_zhenwang.skel"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/extension/十周年UI/assets/animation/effect_zhenwang.atlas"
+    }
+  ],
+  "hostFailures": [
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/preload.js"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/preload.js"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/theme/style/card"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/extension/皮肤切换/style/adjustBox.css"
+    },
+    {
+      "status": 404,
+      "url": "http://127.0.0.1:8176/audio/die/shanhetu_enemy_22473_0.mp3"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { ui, lib, game, _status } from "noname";
+const CARD_DRAG_THRESHOLD = 10;
 const e = null,
 	t = "sort",
 	n = "escaped",
@@ -6,7 +7,7 @@ const e = null,
 	r = "PointerEvent" in window,
 	o = r ? ["pointerdown", "pointermove", "pointerup"] : a ? ["touchstart", "touchmove", "touchend"] : ["mousedown", "mousemove", "mouseup"],
 	i = r ? "pointercancel" : a ? "touchcancel" : null,
-	s = { dragMode: e, sourceNode: null, movedNode: null, startX: 0, startY: 0, initialTransform: { x: 0, y: 0, scale: 1 }, originalPointerEvents: null, savedWaitingForDrag: null },
+	s = { dragMode: e, sourceNode: null, movedNode: null, pointerId: null, touchId: null, startX: 0, startY: 0, initialTransform: { x: 0, y: 0, scale: 1 }, originalPointerEvents: null, savedWaitingForDrag: null },
 	d = fn => new Promise(t => requestAnimationFrame(() => t(fn()))),
 	c = e => (r ? e : (e.touches?.[0] ?? e.changedTouches?.[0] ?? e)),
 	l = e => e?.closest?.(".card") ?? null,
@@ -21,46 +22,49 @@ const e = null,
 	},
 	g = async (skipLayout = !1) => {
 		const card = s.sourceNode;
-		card && (s.dragMode !== t || s.movedNode || (card.style.transform = `translate(${s.initialTransform.x}px, ${s.initialTransform.y}px) scale(${s.initialTransform.scale})`), Object.assign(card.style, { transition: "", pointerEvents: s.originalPointerEvents ?? "", opacity: "1", zIndex: "" }), document.removeEventListener(o[1], v), document.removeEventListener(o[2], w), i && document.removeEventListener(i, w), window.removeEventListener("blur", w), Object.assign(s, { sourceNode: null, movedNode: null, dragMode: e, savedWaitingForDrag: null }), skipLayout || d(() => window.decadeUI?.layout?.updateHand?.()), (_status.dragged = null));
+		card && (s.dragMode !== t || s.movedNode || (card.style.transform = `translate(${s.initialTransform.x}px, ${s.initialTransform.y}px) scale(${s.initialTransform.scale})`), Object.assign(card.style, { transition: "", pointerEvents: s.originalPointerEvents ?? "", opacity: "1", zIndex: "" }), document.removeEventListener(o[1], v), document.removeEventListener(o[2], w, !0), i && document.removeEventListener(i, w, !0), window.removeEventListener("blur", w), Object.assign(s, { sourceNode: null, movedNode: null, pointerId: null, touchId: null, dragMode: e, savedWaitingForDrag: null }), skipLayout || d(() => window.decadeUI?.layout?.updateHand?.()), (_status.dragged = null));
 	},
-	f = async t => {
+	f = t => {
 		if (!lib.config.enable_drag) return;
 		if (game.me?.hasSkillTag("noSortCard")) return;
-		if (!r && 2 === t.button) return;
+		if ((t.button != null && t.button !== 0) || t.isPrimary === !1 || (t.touches && t.touches.length !== 1)) return;
 		if (u()) return;
-		s.sourceNode && (await g(!0));
 		const card = l(t.target);
 		if (!card || card.parentNode !== ui.handcards1) return;
-		const { clientX: n, clientY: a } = c(t),
-			m = await ((f = card),
-			d(() => {
-				try {
-					const e = new DOMMatrixReadOnly(getComputedStyle(f).transform);
-					return { x: e.m41, y: e.m42, scale: e.m11 };
-				} catch {
-					return { x: 0, y: 0, scale: 1 };
-				}
-			}));
-		var f;
-		(Object.assign(s, { sourceNode: card, startX: n, startY: a, initialTransform: { x: m.x, y: m.y, scale: m.scale }, dragMode: e, originalPointerEvents: getComputedStyle(card).pointerEvents, savedWaitingForDrag: card._waitingfordrag || { clientX: n, clientY: a } }), (card.scale = m.scale), delete card._waitingfordrag, document.addEventListener(o[1], v, { passive: !1 }), document.addEventListener(o[2], w, { passive: !1 }), i && document.addEventListener(i, w, { passive: !1 }), window.addEventListener("blur", w, { once: !0 }));
+		if (s.sourceNode && r && s.pointerId !== t.pointerId) return;
+		s.sourceNode && g(!0);
+		const { clientX: n, clientY: a, identifier } = c(t);
+		let transform;
+		// 按下时同步取位并挂监听，避免等待下一帧期间漏掉快速点击的松开。
+		try {
+			const matrix = new DOMMatrixReadOnly(getComputedStyle(card).transform);
+			transform = { x: matrix.m41, y: matrix.m42, scale: matrix.m11 };
+		} catch {
+			transform = { x: 0, y: 0, scale: 1 };
+		}
+		(Object.assign(s, { sourceNode: card, pointerId: t.pointerId, touchId: identifier, startX: n, startY: a, initialTransform: transform, dragMode: e, originalPointerEvents: getComputedStyle(card).pointerEvents, savedWaitingForDrag: card._waitingfordrag || { clientX: n, clientY: a } }), (card.scale = transform.scale), delete card._waitingfordrag, document.addEventListener(o[1], v, { passive: !1 }), document.addEventListener(o[2], w, { passive: !1, capture: !0 }), i && document.addEventListener(i, w, { passive: !1, capture: !0 }), window.addEventListener("blur", w, { once: !0 }));
 	},
 	v = async e => {
 		const card = s.sourceNode;
 		if (!card) return;
+		if (r && e.pointerId !== s.pointerId) return;
+		if (e.touches && (e.touches.length !== 1 || c(e).identifier !== s.touchId)) return g();
+		// 松开可能发生在窗口外；无左键的移动只能清理，不能启动排序。
+		if ((!r || e.pointerType !== "touch") && typeof e.buttons === "number" && !(e.buttons & 1)) return g();
 		if (u()) return g();
-		_status.dragged = !0;
 		const { clientX: clientX, clientY: clientY, pageX: pageX, pageY: pageY } = c(e),
 			dx = clientX - s.startX,
 			dy = clientY - s.startY,
 			absDx = Math.abs(dx),
 			absDy = Math.abs(dy);
 		if (!s.dragMode) {
-			if (Math.sqrt(dx * dx + dy * dy) < 5) return;
+			if (dx * dx + dy * dy < CARD_DRAG_THRESHOLD * CARD_DRAG_THRESHOLD) return;
 			if (absDy > absDx || dy < -50) return ((s.dragMode = n), s.savedWaitingForDrag && (card._waitingfordrag = s.savedWaitingForDrag), g(!0));
 			((s.dragMode = t), e.preventDefault(), e.stopPropagation(), (_status.mousedragging = _status.mousedragorigin = null), delete card._waitingfordrag, Object.assign(card.style, { pointerEvents: "none", transition: "none", opacity: "0.5", zIndex: "99" }));
 		}
 		if (s.dragMode === t) {
 			if (dy < -50) return ((card.style.transform = `translate(${s.initialTransform.x}px, ${s.initialTransform.y}px) scale(${s.initialTransform.scale})`), (s.dragMode = n), s.savedWaitingForDrag && (card._waitingfordrag = s.savedWaitingForDrag), g(!0));
+			_status.dragged = !0;
 			(e.preventDefault(), e.stopPropagation());
 			const t = window.game?.documentZoom ?? 1;
 			card.style.transform = `translate(${s.initialTransform.x + dx / t}px, ${s.initialTransform.y}px) scale(${card.scale})`;
@@ -91,10 +95,20 @@ const e = null,
 			d(() => window.decadeUI?.layout?.updateHand?.()));
 	},
 	w = e => {
-		if (s.dragMode === t && (e?.preventDefault?.(), e?.stopPropagation?.(), e?.stopImmediatePropagation?.(), (_status.mousedragging = _status.mousedragorigin = null), (_status.mouseleft = !1), (_status.clicked = !0), s.sourceNode && (delete s.sourceNode._waitingfordrag, s.sourceNode.classList.contains("selected")))) {
-			s.sourceNode.classList.remove("selected");
-			const e = ui.selected.cards.indexOf(s.sourceNode);
-			(e > -1 && ui.selected.cards.splice(e, 1), game.uncheck(), game.check());
+		if (e?.type !== "blur" && (r ? e?.pointerId !== s.pointerId : e?.changedTouches && !Array.from(e.changedTouches).some(touch => touch.identifier === s.touchId))) return;
+		if (s.dragMode === t) {
+			e?.preventDefault?.();
+			// 鼠标降级共用本体 mouseup，必须让其继续清理 mousedown 等状态。
+			if (r || a) { e?.stopPropagation?.(); e?.stopImmediatePropagation?.(); }
+			_status.mousedragging = _status.mousedragorigin = null;
+			_status.mouseleft = !1;
+			_status.clicked = e?.type === o[2];
+			if (s.sourceNode) delete s.sourceNode._waitingfordrag;
+			if (e?.type === o[2] && s.sourceNode?.classList.contains("selected")) {
+				s.sourceNode.classList.remove("selected");
+				const e = ui.selected.cards.indexOf(s.sourceNode);
+				(e > -1 && ui.selected.cards.splice(e, 1), game.uncheck(), game.check());
+			}
 		}
 		g();
 	},

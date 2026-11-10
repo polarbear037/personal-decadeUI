@@ -7,6 +7,10 @@ let copyOwnerEvent = null;
 function n(original) {
 	const card = ui.create.card(ui.special);
 	(card.init([original.suit, original.number, original.name, original.nature]), (card.cardid = original.cardid), (card.wunature = original.wunature), (card.storage = original.storage), (card.relatedCard = original), (card.owner = get.owner(original)));
+	const equippedLabel = document.createElement("div");
+	equippedLabel.className = "equip-hand-equipped";
+	equippedLabel.textContent = "已装备";
+	card.appendChild(equippedLabel);
 	const syncSelection = () => {
 		if ("s" !== get.position(card) || !card.hasGaintag(e)) return;
 		ui.selected.cards.remove(card);
@@ -97,7 +101,7 @@ function a() {
 		})(event, player, a, i);
 		(c.length && player.directgains(c, null, e),
 			(function (cards) {
-				for (const card of cards) (card.node.gaintag.classList.remove("gaintag", "info"), (card.node.gaintag.innerHTML = '<div class="epclick"></div>'));
+				for (const card of cards) (card.node.gaintag.classList.remove("gaintag", "info"), (card.node.gaintag.textContent = ""));
 			})([...a, ...i]),
 			a.sort((e, s) => (s.name !== e.name ? lib.sort.card(s.name, e.name) : s.suit !== e.suit ? lib.suit.indexOf(s) - lib.suit.indexOf(e) : s.number - e.number)));
 	}),

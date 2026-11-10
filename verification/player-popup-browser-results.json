@@ -1,0 +1,90 @@
+{
+  "filtered": [
+    {
+      "input": "胜",
+      "text": "",
+      "layer": null
+    },
+    {
+      "input": "负",
+      "text": "",
+      "layer": null
+    },
+    {
+      "input": "判定生效",
+      "text": "",
+      "layer": null
+    },
+    {
+      "input": "判定失效",
+      "text": "",
+      "layer": null
+    },
+    {
+      "input": "拼点成功",
+      "text": "",
+      "layer": null
+    },
+    {
+      "input": "拼点失败",
+      "text": "",
+      "layer": null
+    },
+    {
+      "input": "闪",
+      "text": "",
+      "layer": null
+    },
+    {
+      "input": "八卦阵",
+      "text": "",
+      "layer": null
+    },
+    {
+      "input": "自定义系统提示",
+      "text": "",
+      "layer": null
+    },
+    {
+      "input": "凿险",
+      "text": "",
+      "layer": null
+    }
+  ],
+  "skill": {
+    "text": "武圣",
+    "layer": 6,
+    "inlineLayer": "200"
+  },
+  "layers": {
+    "skill": 6,
+    "trigger": 5,
+    "full": 7,
+    "order": {
+      "popup": 2,
+      "trigger": 3,
+      "full": 0
+    }
+  },
+  "dialogLayer": 7,
+  "coveredByDialog": true,
+  "framedLayer": 101,
+  "numeric": {
+    "addedText": 0,
+    "effect": {
+      "name": "effect_shoujidonghua",
+      "action": "play4"
+    }
+  },
+  "disabled": {
+    "text": "胜",
+    "layer": 100,
+    "inlineLayer": "200"
+  },
+  "liveOn": "none",
+  "liveOff": "flex",
+  "records": 14,
+  "broadcasts": 12,
+  "localOnlyPreserved": true,
+  "errors": []
+}

@@ -1,0 +1,298 @@
+{
+  "strip": {
+    "text": "火杀闪桃无懈...",
+    "lines": 4,
+    "ellipsis": "...",
+    "rect": {
+      "x": 1180.109375,
+      "y": 382.28125,
+      "width": 33.828125,
+      "height": 77.75,
+      "top": 382.28125,
+      "right": 1213.9375,
+      "bottom": 460.03125,
+      "left": 1180.109375
+    },
+    "player": {
+      "x": 1218.9375,
+      "y": 285.03125,
+      "width": 132,
+      "height": 175,
+      "top": 285.03125,
+      "right": 1350.9375,
+      "bottom": 460.03125,
+      "left": 1218.9375
+    },
+    "visible": true,
+    "z": "80"
+  },
+  "panel": {
+    "cards": 10,
+    "title": "关羽的手牌",
+    "scrollHeight": 330,
+    "clientHeight": 239,
+    "rect": {
+      "x": 832.109375,
+      "y": 172.03125,
+      "width": 343,
+      "height": 288,
+      "top": 172.03125,
+      "right": 1175.109375,
+      "bottom": 460.03125,
+      "left": 832.109375
+    },
+    "columns": "77.1094px 77.1094px 77.1094px 77.1094px",
+    "visible": "visible"
+  },
+  "rec": {
+    "closed": true,
+    "recommended": [
+      "mate-probe-0"
+    ],
+    "selected": 0,
+    "hand": [
+      "mate-probe-0",
+      "mate-probe-1",
+      "mate-probe-2",
+      "mate-probe-3",
+      "mate-probe-4",
+      "mate-probe-5",
+      "mate-probe-6",
+      "mate-probe-7",
+      "mate-probe-8",
+      "mate-probe-9"
+    ],
+    "label": "火杀"
+  },
+  "badge": {
+    "tag": "SPAN",
+    "kind": "sent",
+    "display": "block",
+    "background": "url(\"http://127.0.0.1:1562/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/hand/card_tag_recommon0.png\")",
+    "width": "79.7031px",
+    "height": "22.4062px"
+  },
+  "changes": [
+    {
+      "count": 1,
+      "rect": {
+        "x": 1070.109375,
+        "y": 302.03125,
+        "width": 105.109375,
+        "height": 158.390625,
+        "top": 302.03125,
+        "right": 1175.21875,
+        "bottom": 460.421875,
+        "left": 1070.109375
+      },
+      "scroll": false
+    },
+    {
+      "count": 4,
+      "rect": {
+        "x": 832.109375,
+        "y": 302.03125,
+        "width": 343,
+        "height": 158.390625,
+        "top": 302.03125,
+        "right": 1175.109375,
+        "bottom": 460.421875,
+        "left": 832.109375
+      },
+      "scroll": false
+    },
+    {
+      "count": 5,
+      "rect": {
+        "x": 832.109375,
+        "y": 186.03125,
+        "width": 343,
+        "height": 273.59375,
+        "top": 186.03125,
+        "right": 1175.109375,
+        "bottom": 459.625,
+        "left": 832.109375
+      },
+      "scroll": false
+    },
+    {
+      "count": 8,
+      "rect": {
+        "x": 832.109375,
+        "y": 186.03125,
+        "width": 343,
+        "height": 273.59375,
+        "top": 186.03125,
+        "right": 1175.109375,
+        "bottom": 459.625,
+        "left": 832.109375
+      },
+      "scroll": false
+    },
+    {
+      "count": 9,
+      "rect": {
+        "x": 832.109375,
+        "y": 172.03125,
+        "width": 343,
+        "height": 288,
+        "top": 172.03125,
+        "right": 1175.109375,
+        "bottom": 460.03125,
+        "left": 832.109375
+      },
+      "scroll": true
+    },
+    {
+      "count": 16,
+      "rect": {
+        "x": 832.109375,
+        "y": 172.03125,
+        "width": 343,
+        "height": 288,
+        "top": 172.03125,
+        "right": 1175.109375,
+        "bottom": 460.03125,
+        "left": 832.109375
+      },
+      "scroll": true
+    }
+  ],
+  "zoom": {
+    "x": 560.71875,
+    "y": 136.53125,
+    "width": 514.5,
+    "height": 410.390625,
+    "top": 136.53125,
+    "right": 1075.21875,
+    "bottom": 546.921875,
+    "left": 560.71875
+  },
+  "assets": [
+    {
+      "name": "other_hand_card_bg.png",
+      "width": 12,
+      "height": 12
+    },
+    {
+      "name": "skillTipShowBg.png",
+      "width": 108,
+      "height": 248
+    },
+    {
+      "name": "card_tag_recommon0.png",
+      "width": 93,
+      "height": 26
+    },
+    {
+      "name": "card_tag_recommon1.png",
+      "width": 93,
+      "height": 26
+    }
+  ],
+  "network": {
+    "received": {
+      "card": "mate-probe-0",
+      "by": "关羽",
+      "selected": 0,
+      "badge": {
+        "tag": "SPAN",
+        "kind": "received",
+        "display": "block",
+        "visibility": "visible",
+        "background": "url(\"http://127.0.0.1:1562/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/hand/card_tag_recommon1.png\")",
+        "width": 77.95100402832031,
+        "height": 21.9136962890625
+      }
+    },
+    "privatePackets": 1,
+    "rejected": true,
+    "transport": "native game.send -> WebSocket -> named server handler -> Player.send/Client.send -> native ws.onmessage"
+  },
+  "legacy": [
+    {
+      "style": "on",
+      "lines": 5,
+      "online": false,
+      "nativePopup": true
+    },
+    {
+      "style": "babysha",
+      "lines": 5,
+      "online": false,
+      "nativePopup": true
+    }
+  ],
+  "lifecycle": {
+    "copied": {
+      "sourceBadges": 1,
+      "cloneBadges": 0,
+      "cloneMarked": false
+    },
+    "cancelled": {
+      "open": true,
+      "recommended": false,
+      "badges": 0
+    },
+    "nonOnlineReceive": {
+      "before": 0,
+      "after": 0
+    },
+    "interruptedSend": {
+      "packets": 0,
+      "recommended": false
+    },
+    "restartedRefresh": true
+  },
+  "errors": [],
+  "badResponses": [
+    {
+      "status": 404,
+      "path": "/preload.js"
+    },
+    {
+      "status": 404,
+      "path": "/theme/style/card"
+    },
+    {
+      "status": 404,
+      "path": "/extension/十周年UI/assets/animation/effect_loseHp.skel"
+    },
+    {
+      "status": 404,
+      "path": "/extension/十周年UI/assets/animation/effect_loseHp.atlas"
+    },
+    {
+      "status": 404,
+      "path": "/extension/十周年UI/assets/animation/effect_baguazhen.skel"
+    },
+    {
+      "status": 404,
+      "path": "/extension/十周年UI/assets/animation/effect_baguazhen.atlas"
+    },
+    {
+      "status": 404,
+      "path": "/extension/十周年UI/assets/animation/effect_baiyinshizi.skel"
+    },
+    {
+      "status": 404,
+      "path": "/extension/十周年UI/assets/animation/effect_baiyinshizi.atlas"
+    },
+    {
+      "status": 404,
+      "path": "/extension/十周年UI/assets/animation/globaltexiao/huifushuzi/shuzi2.skel"
+    },
+    {
+      "status": 404,
+      "path": "/extension/十周年UI/assets/animation/globaltexiao/huifushuzi/shuzi2.atlas"
+    },
+    {
+      "status": 404,
+      "path": "/extension/十周年UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.skel"
+    },
+    {
+      "status": 404,
+      "path": "/extension/十周年UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.atlas"
+    }
+  ]
+}

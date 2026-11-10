@@ -1,0 +1,52 @@
+{
+  "apk_sha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+  "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb!main.sgs",
+  "source_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "constant_symbol": "Dwt",
+  "constant_count": 12721,
+  "prompt_constant_count": 387,
+  "rea_inventory_evidence": "ev_edcf0b916ee34807938588035c3ed96b6f776080202e0b1ddb6b950602425eab",
+  "style": {
+    "font": "FZLBGBK",
+    "font_size": 30,
+    "color": "#f9ecce",
+    "stroke": 4,
+    "stroke_color": "#533d21",
+    "multiselect_stroke_color": "#582b0c",
+    "letter_spacing": 1,
+    "leading": 4,
+    "align": "center",
+    "bold": false
+  },
+  "semantic_colors": {
+    "player": "#E4A840",
+    "skill": "#FFD800",
+    "card": "#FFD800",
+    "number": "#FFE073",
+    "discard": "#FF5050",
+    "gain": "#91F47E"
+  },
+  "font_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/d54ce33c",
+  "font_resource_url": "/res/assets/fontApp/FZLBGBK.ttf",
+  "resource_hash_rule": "cache member name = lowercase hex CRC32 of resource path including leading slash",
+  "font_sha256": "19e6426eee18e655f4d247976a73fd51cefc03e599667e224497c73d598762b8",
+  "observed": [
+    "Fvi.createChild: Qx.Create(30,#f9ecce,null,400,39,false,4,#533d21,center,middle)",
+    "dOi: multi-select text stroke #582b0c",
+    "Qx.Create: mobile font hB.SemiBold, letterSpacing=1, leading=4",
+    "eH: semantic color getters",
+    "TZ: FileName=cha_spell; skills load ActiveTip/AskTip/PassiveTip/DefensiveTip from configuration",
+    "Fvi.createChild and dOi constructor each create one txtOptMsg; no generic selected-target progress row in these prompt containers."
+  ],
+  "limitations": [
+    "Static artifact inspection; APK runtime not executed.",
+    "Catalog contains packaged battle UI constants, not the complete cha_spell skill configuration.",
+    "No speculative pairing of official numeric skill IDs with noname skill IDs.",
+    "Fallback wording comes from noname events; it is not claimed as official wording."
+  ],
+  "selection_progress_review": {
+    "rea_evidence": "ev_27ab6ca45725ac460204e65eac4a02fc5c6c6666b8ad16254e75ed2a73d0df86",
+    "classes": ["Fvi", "dOi"],
+    "implementation": "Do not append a generic selected cards/targets/buttons progress row; preserve quantities in the operation message."
+  }
+}

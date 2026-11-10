@@ -1,0 +1,3697 @@
+{
+  "passed": 48,
+  "errors": [],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "loadSpine: [effect_loseHp] 加载失败.",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "loadSpine: [effect_baguazhen] 加载失败.",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "loadSpine: [effect_baiyinshizi] 加载失败.",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "loadSpine: [globaltexiao/huifushuzi/shuzi2] 加载失败.",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "loadSpine: [globaltexiao/shanghaishuzi/SZN_shuzi] 加载失败.",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "badResponses": [
+    {
+      "status": 404,
+      "url": "/preload.js"
+    },
+    {
+      "status": 404,
+      "url": "/theme/style/card"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_loseHp.skel"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_loseHp.atlas"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baguazhen.skel"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baguazhen.atlas"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baiyinshizi.skel"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baiyinshizi.atlas"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/huifushuzi/shuzi2.skel"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/huifushuzi/shuzi2.atlas"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.skel"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.atlas"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/feichu_equip2.png"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/empty_equip1.png"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/empty_equip3.png"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/empty_equip4.png"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/empty_equip5.png"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/feichu_equip3.png"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/feichu_equip4.png"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/feichu_equip1.png"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/qiexie_guanyu.png"
+    },
+    {
+      "status": 404,
+      "url": "/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/decade/qiexie_liubei.png"
+    }
+  ],
+  "results": [
+    {
+      "label": "local empty",
+      "layout": "normal",
+      "cards": [
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "1",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        },
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        }
+      ]
+    },
+    {
+      "label": "local one",
+      "layout": "normal",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "1",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        },
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        }
+      ]
+    },
+    {
+      "label": "local two",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "1",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "block",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        },
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        }
+      ]
+    },
+    {
+      "label": "local horses",
+      "layout": "attack",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 112,
+          "y": 735,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "1",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        },
+        {
+          "type": "4",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        }
+      ]
+    },
+    {
+      "label": "local lone horse",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "1",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "3",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        },
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        }
+      ]
+    },
+    {
+      "label": "local disabled horses",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "feichu_equip3",
+          "display": "flex",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "name": "feichu_equip4",
+          "display": "flex",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "1",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "block",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        },
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        }
+      ]
+    },
+    {
+      "label": "local disabled weapon",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "name": "feichu_equip1",
+          "display": "flex",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "1",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "block",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        },
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        }
+      ]
+    },
+    {
+      "label": "local qiexie",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qiexie_liubei",
+          "display": "flex",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "name": "qiexie_guanyu",
+          "display": "flex",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "1",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "block",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        },
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        }
+      ]
+    },
+    {
+      "label": "local armor restored",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 112,
+          "y": 645,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 672
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "name": "bagua",
+          "display": "flex",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 645,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 672
+        },
+        {
+          "type": "1",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "block",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        },
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        }
+      ]
+    },
+    {
+      "label": "local three weapons",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "cixiong",
+          "display": "flex",
+          "x": 112,
+          "y": 645,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 672
+        },
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 645,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 672
+        },
+        {
+          "type": "1",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "block",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        },
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        }
+      ]
+    },
+    {
+      "label": "local two armors",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 112,
+          "y": 645,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 672
+        },
+        {
+          "name": "renwang",
+          "display": "flex",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "name": "bagua",
+          "display": "flex",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 645,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 672
+        },
+        {
+          "type": "1",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "block",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        },
+        {
+          "type": "1",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        }
+      ]
+    },
+    {
+      "label": "local expansion removed",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "flex",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "1",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "block",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ]
+    },
+    {
+      "label": "local normal",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "name": "bagua",
+          "display": "flex",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "1",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "block",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ]
+    },
+    {
+      "label": "local before sync",
+      "layout": "normal",
+      "cards": [
+        {
+          "name": "feichu_equip2",
+          "display": "flex",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "1",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ]
+    },
+    {
+      "label": "local observer before loss",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "1",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "block",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        },
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        }
+      ]
+    },
+    {
+      "label": "local observer after loss",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        }
+      ],
+      "backgrounds": [
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 675,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 702
+        },
+        {
+          "type": "1",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "type": "2",
+          "display": "block",
+          "x": 112,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 177,
+          "bottom": 762
+        },
+        {
+          "type": "3",
+          "display": "block",
+          "x": 177,
+          "y": 735,
+          "width": 65,
+          "height": 27,
+          "right": 242,
+          "bottom": 762
+        },
+        {
+          "type": "4",
+          "display": "block",
+          "x": 112,
+          "y": 765,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 792
+        },
+        {
+          "type": "0",
+          "display": "block",
+          "x": 112,
+          "y": 705,
+          "width": 130,
+          "height": 27,
+          "right": 242,
+          "bottom": 732
+        }
+      ]
+    },
+    {
+      "label": "other empty",
+      "layout": "normal",
+      "cards": [
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other one",
+      "layout": "normal",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 347.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 367.0625
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other two",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 347.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 367.0625
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 367.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 387.0625
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 387.0625,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1141.53125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1141.53125,
+          "y": 387.0625,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 407.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 427.0625
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other horses",
+      "layout": "attack",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 347.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 367.0625
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 367.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 387.0625
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 387.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 407.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 427.0625
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other lone horse",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 347.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 367.0625
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 367.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 387.0625
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 387.0625,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1141.53125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 407.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 427.0625
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other disabled horses",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 347.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 367.0625
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 367.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 387.0625
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "feichu_equip3",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 387.0625,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1141.53125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "feichu_equip4",
+          "display": "flex",
+          "x": 1141.53125,
+          "y": 387.0625,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 407.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 427.0625
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other disabled weapon",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 347.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 367.0625
+        },
+        {
+          "name": "feichu_equip1",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 367.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 387.0625
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 407.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 427.0625
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other qiexie",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qiexie_liubei",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 347.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 367.0625
+        },
+        {
+          "name": "qiexie_guanyu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 367.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 387.0625
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 387.0625,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1141.53125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1141.53125,
+          "y": 387.0625,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 407.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 427.0625
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other armor restored",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 327.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 347.0625
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 347.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 367.0625
+        },
+        {
+          "name": "bagua",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 367.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 387.0625
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 387.0625,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1141.53125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1141.53125,
+          "y": 387.0625,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 407.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 427.0625
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other three weapons",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "cixiong",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 327.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 347.0625
+        },
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 347.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 367.0625
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 367.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 387.0625
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 387.0625,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1141.53125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1141.53125,
+          "y": 387.0625,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 407.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 427.0625
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other two armors",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 327.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 347.0625
+        },
+        {
+          "name": "renwang",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 347.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 367.0625
+        },
+        {
+          "name": "bagua",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 367.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 387.0625
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 387.0625,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1141.53125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1141.53125,
+          "y": 387.0625,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 407.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 427.0625
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other expansion removed",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 347.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 367.0625
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 367.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 387.0625
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 387.0625,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1141.53125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1141.53125,
+          "y": 387.0625,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 407.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 427.0625
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other normal",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 347.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 367.0625
+        },
+        {
+          "name": "bagua",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 367.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 387.0625
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 387.0625,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1141.53125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1141.53125,
+          "y": 387.0625,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 407.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 427.0625
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other before sync",
+      "layout": "normal",
+      "cards": [
+        {
+          "name": "feichu_equip2",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 367.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 387.0625
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other observer before loss",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 347.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 367.0625
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 367.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 387.0625
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 387.0625,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1141.53125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1141.53125,
+          "y": 387.0625,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 407.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 427.0625
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "other observer after loss",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 347.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 367.0625
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 387.0625,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1141.53125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1141.53125,
+          "y": 387.0625,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 407.0625
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1086.75,
+          "y": 407.0625,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1196.328125,
+          "bottom": 427.0625
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded empty",
+      "layout": "normal",
+      "cards": [
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded one",
+      "layout": "normal",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 695.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 715.125
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded two",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 695.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 715.125
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 715.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 735.125
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 735.125,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1137.328125,
+          "bottom": 755.125
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1137.328125,
+          "y": 735.125,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 755.125
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 755.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 775.125
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded horses",
+      "layout": "attack",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 695.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 715.125
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 715.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 735.125
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 735.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 755.125
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 755.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 775.125
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded lone horse",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 695.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 715.125
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 715.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 735.125
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 735.125,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1137.328125,
+          "bottom": 755.125
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 755.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 775.125
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded disabled horses",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 695.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 715.125
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 715.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 735.125
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "feichu_equip3",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 735.125,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1137.328125,
+          "bottom": 755.125
+        },
+        {
+          "name": "feichu_equip4",
+          "display": "flex",
+          "x": 1137.328125,
+          "y": 735.125,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 755.125
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 755.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 775.125
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded disabled weapon",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 695.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 715.125
+        },
+        {
+          "name": "feichu_equip1",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 715.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 735.125
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 755.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 775.125
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded qiexie",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qiexie_liubei",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 695.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 715.125
+        },
+        {
+          "name": "qiexie_guanyu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 715.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 735.125
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 735.125,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1137.328125,
+          "bottom": 755.125
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1137.328125,
+          "y": 735.125,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 755.125
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 755.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 775.125
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded armor restored",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 675.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 695.125
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 695.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 715.125
+        },
+        {
+          "name": "bagua",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 715.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 735.125
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 735.125,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1137.328125,
+          "bottom": 755.125
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1137.328125,
+          "y": 735.125,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 755.125
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 755.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 775.125
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded three weapons",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "cixiong",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 675.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 695.125
+        },
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 695.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 715.125
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 715.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 735.125
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 735.125,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1137.328125,
+          "bottom": 755.125
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1137.328125,
+          "y": 735.125,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 755.125
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 755.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 775.125
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded two armors",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 675.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 695.125
+        },
+        {
+          "name": "renwang",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 695.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 715.125
+        },
+        {
+          "name": "bagua",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 715.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 735.125
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 735.125,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1137.328125,
+          "bottom": 755.125
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1137.328125,
+          "y": 735.125,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 755.125
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 755.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 775.125
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded expansion removed",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 695.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 715.125
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 715.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 735.125
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 735.125,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1137.328125,
+          "bottom": 755.125
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1137.328125,
+          "y": 735.125,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 755.125
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 755.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 775.125
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded normal",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 695.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 715.125
+        },
+        {
+          "name": "bagua",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 715.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 735.125
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 735.125,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1137.328125,
+          "bottom": 755.125
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1137.328125,
+          "y": 735.125,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 755.125
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 755.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 775.125
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded before sync",
+      "layout": "normal",
+      "cards": [
+        {
+          "name": "feichu_equip2",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 715.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 735.125
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded observer before loss",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "qinggang",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 695.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 715.125
+        },
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 715.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 735.125
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 735.125,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1137.328125,
+          "bottom": 755.125
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1137.328125,
+          "y": 735.125,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 755.125
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 755.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 775.125
+        }
+      ],
+      "backgrounds": []
+    },
+    {
+      "label": "embedded observer after loss",
+      "layout": "combined",
+      "cards": [
+        {
+          "name": "zhuge",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 695.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 715.125
+        },
+        {
+          "name": "feichu_equip2",
+          "display": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        {
+          "name": "dilu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 735.125,
+          "width": 54.78125,
+          "height": 20,
+          "right": 1137.328125,
+          "bottom": 755.125
+        },
+        {
+          "name": "chitu",
+          "display": "flex",
+          "x": 1137.328125,
+          "y": 735.125,
+          "width": 54.796875,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 755.125
+        },
+        {
+          "name": "muniu",
+          "display": "flex",
+          "x": 1082.546875,
+          "y": 755.125,
+          "width": 109.578125,
+          "height": 20,
+          "right": 1192.125,
+          "bottom": 775.125
+        }
+      ],
+      "backgrounds": []
+    }
+  ]
+}

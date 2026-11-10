@@ -1,0 +1,361 @@
+{
+  "source": "OL Android 4.0.2 APK",
+  "apk_sha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+  "apk_members": {
+    "main": {
+      "path": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb",
+      "sha256": "5048a2c27556924e756a7f1950e194787482f675e51b3165a34c7056c588cc3b"
+    },
+    "atlas": {
+      "path": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/48fbc971",
+      "sha256": "7131ba83f2d394aa47d537418c387150411aae7afdaec2282470976283f55fa4"
+    },
+    "sheet": {
+      "path": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/c98511fc",
+      "sha256": "9a95c01b221b00af9b1456d4d548ba6978d25e431046cf3d152455f7ee73d832"
+    },
+    "gamewindow_atlas": {
+      "path": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/17cc6bca",
+      "sha256": "4ac2c0a14e358d1ddc8eb07818c4dcf7e9701d093b968af33624275bf0f9f729"
+    },
+    "gamewindow_sheet": {
+      "path": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3b5acbd0",
+      "sha256": "f7a6145ae64ab304a194aa1170ef16f7e505d8b568bc007cb113166f5149084d"
+    }
+  },
+  "main_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "rea_evidence": {
+    "inventory": "ev_edcf0b916ee34807938588035c3ed96b6f776080202e0b1ddb6b950602425eab",
+    "main_member": "ev_066690bc5fcc481674ce2d62b5103dd6bf1821fc5164f31325cb8157c8e0f54e",
+    "atlas_members": "ev_15bfaaa3429a1bd3632ff5b92bba956cb2b1b059104989c116d4f8289721c902"
+  },
+  "atlas": "res/assets/game/gameBase.atlas / gameBase.png (lossless PNG crop at frame x,y,w,h; exact RGBA)",
+  "assets": {
+    "gameview_tool_btn_record.png": {
+      "frame": [
+        99,
+        650,
+        153,
+        54
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/jiluShow.png",
+      "sha256": "d8c8db33f23b8d85eb26a48a81baa47888e494d4f4615d1996a5a08a961932b3",
+      "reused": false
+    },
+    "gameview_tool_btn_prop.png": {
+      "frame": [
+        680,
+        669,
+        84,
+        54
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/gameview_tool_btn_prop.png",
+      "sha256": "b1af8e18fceca1ea2677d83591ff75ca986a42fb0b9768e6c009c32f73a27fac",
+      "reused": false
+    },
+    "gameview_tool_btn_chat.png": {
+      "frame": [
+        914,
+        845,
+        84,
+        54
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/gameview_tool_btn_chat.png",
+      "sha256": "4a1461c3a1c96d2657be49a98e6f321fce780b174cc59ca44eba52b5514cc1e6",
+      "reused": false
+    },
+    "gameview_tool_btn_sort.png": {
+      "frame": [
+        248,
+        786,
+        84,
+        54
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/gameview_tool_btn_sort.png",
+      "sha256": "42266a72a29650ca805feba4a3c4dadcf9d0531e64647eceb2b0e0a09cf501e0",
+      "reused": false
+    },
+    "btn_menu3_0.png": {
+      "frame": [
+        458,
+        786,
+        67,
+        64
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/caidan.png",
+      "sha256": "d9f4b08e516e47c892afaa67becdbdd346844e0f93cc23839f9085e884cdf03b",
+      "reused": false
+    },
+    "pop_list_btn_bg.png": {
+      "frame": [
+        152,
+        1009,
+        375,
+        4
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/pop_list_btn_bg.png",
+      "sha256": "7a978d5646b9bda6cdf2b8b282154d9b5936252c6765f49569f47d558ff9ef75",
+      "reused": false
+    },
+    "btn_setting2_0.png": {
+      "frame": [
+        248,
+        743,
+        120,
+        41
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/shezhi.png",
+      "sha256": "d93644579054cebc353c2304b8507a15b72355e872718e3786ebf53035f77b2e",
+      "reused": false
+    },
+    "btn_background2_0.png": {
+      "frame": [
+        120,
+        820,
+        116,
+        38
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/beijing.png",
+      "sha256": "a3f6a3c70762121250a06364f6ee9ff26da2760b2cf745ec03a6992878b5ce1c",
+      "reused": false
+    },
+    "tool_trusteeship_0.png": {
+      "frame": [
+        807,
+        804,
+        119,
+        39
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/tool_trusteeship_0.png",
+      "sha256": "5d9b9734ce3b3a40a7d68693d7362c5b82c62427eb886e31d6b9ba0527fdbc4e",
+      "reused": true
+    },
+    "tool_trusteeship_0_cancel.png": {
+      "frame": [
+        686,
+        765,
+        119,
+        39
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/tool_trusteeship_0_cancel.png",
+      "sha256": "94c9672ef9be70fd4607d614b551b5307dc48f3cf500f31234aa8ca7a1254f43",
+      "reused": true
+    },
+    "btn_feedback_0.png": {
+      "frame": [
+        334,
+        786,
+        122,
+        36
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/btn_feedback_0.png",
+      "sha256": "f85bdf5b8489cae46499bd0727d28ddfe5fd8445d126ec37ef65436258a1824c",
+      "reused": false
+    },
+    "btn_back2_0.png": {
+      "frame": [
+        492,
+        743,
+        120,
+        41
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/likai.png",
+      "sha256": "9d4cef6a189ce9c297a7866ba8efab3522fd726021ec84bd5c8d5199d1f4f0c5",
+      "reused": false
+    },
+    "btn_giveup2_0.png": {
+      "frame": [
+        370,
+        743,
+        120,
+        41
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/touxiang.png",
+      "sha256": "5f4b140e4df4870bd299e62cd9660ff008a1b76fdf430b89c3ac1c3ab72a8732",
+      "reused": false
+    },
+    "round_info_time_bg.png": {
+      "frame": [
+        527,
+        786,
+        67,
+        64
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/round_info_time_bg.png",
+      "sha256": "1b40cd3bb5b1efc212f062bcf4743d0f5d6d5980a3ea7aa02683f92e2ec41f97",
+      "reused": false
+    },
+    "round_info_card_icon.png": {
+      "frame": [
+        789,
+        162,
+        34,
+        36
+      ],
+      "target": "ui/assets/lbtn/OL_line/uibutton/round_info_card_icon.png",
+      "sha256": "4f3d76d306844f70277ad32d8486c05b90c05b3ac684885b1b764781164d7127",
+      "reused": false
+    },
+    "win_info_time_bg.png": {
+      "frame": [
+        554,
+        920,
+        30,
+        30
+      ],
+      "target": "image/ui/phase/online/win_info_time_bg.png",
+      "sha256": "d20e2955620b4d320a5618e50da1a9a5a307d1903647f4e1c088f8e44c06ebff",
+      "reused": true
+    }
+  },
+  "official": {
+    "bvi.createLeftBtn": {
+      "centers": [
+        50,
+        125,
+        200
+      ],
+      "size": [
+        84,
+        54
+      ]
+    },
+    "bvi.createRecordBtn": {
+      "size": [
+        153,
+        54
+      ],
+      "font_size": 28,
+      "color": "#E0CF9C"
+    },
+    "Yvi.createChild / Xrs.UpdateUI / Xrs.layout": {
+      "format": "主{0}忠{1}反{2}内{3}",
+      "colors": [
+        "#FA4A22",
+        "#FFE258",
+        "#9FF371",
+        "#A87AFB"
+      ],
+      "base_color": "#C4B088",
+      "font_size": 22,
+      "font": "hB.SemiBold / fzlbgbk for Laya mobile",
+      "min_width": 152,
+      "max_background_width": 230,
+      "size_grid": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "win_goals": {
+        "happy_2v2": {
+          "branch": "Wwt.IsHappy includes Y.IsHappy2v2",
+          "key": "M_GAME_TIP_HAPPY_TXT1",
+          "text": "击败所有敌方",
+          "noname_submodes": ["two", "2v2"]
+        },
+        "doudizhu": {
+          "branch": "Wwt.IsDouDuZhu2023 / Wwt.SelfFigure",
+          "DDZ2023_WIN_DIZHU_TIP": "击败所有农民",
+          "DDZ2023_WIN_NONGMING_TIP": "击败地主"
+        },
+        "shanhetu": {
+          "branch": "Wwt.IsPveRoguelike",
+          "key": "ROGUE_WIN_TEXT1",
+          "text": "消灭所有敌方",
+          "noname_use": "Fallback when no mode or identity goal is available"
+        },
+        "figure_count_row": "Xrs.UpdateUI shows 主忠反内 only for Wwt.IsFigureMode, excluding Happy 2v2 and 斗地主"
+      }
+    },
+    "nki.createChild / jrs.showBtns": {
+      "menu_size": [
+        68,
+        62
+      ],
+      "entries": [
+        "设置",
+        "背景",
+        "托管",
+        "投降（有条件）",
+        "反馈（有条件）",
+        "离开"
+      ],
+      "first_center_y": 120,
+      "row_pitch": 80,
+      "image_sizes": [
+        [
+          120,
+          41
+        ],
+        [
+          122,
+          38
+        ],
+        [
+          120,
+          41
+        ],
+        [
+          120,
+          41
+        ],
+        [
+          122,
+          36
+        ],
+        [
+          120,
+          41
+        ]
+      ]
+    },
+    "lki.createChild / ens.UpdateRoundInfo": {
+      "size": [
+        117,
+        64
+      ],
+      "size_grid": [
+        10,
+        4,
+        10,
+        55
+      ],
+      "card_icon_xy": [
+        12,
+        11
+      ],
+      "color": "#C4B088",
+      "pile_count": [
+        26,
+        2,
+        "#432C1E"
+      ],
+      "round_font_size": 20,
+      "time_font_size": 24
+    },
+    "USs / z2i / hki.addHideWindowBtn": {
+      "registered_window": "SelectCardWindow",
+      "label_key": "M_GAME_SHOW_POPWINDOW",
+      "label": "显示弹窗",
+      "source": "res/assets/game/gamewindow.atlas#window_btn_0_4_2024.png",
+      "target": "image/ui/dialog/window_btn_0_4_2024.png",
+      "frame": [495, 175, 204, 72],
+      "sha256": "4fe122cb7262115bfe81609a96fc10ab39c7851e7653287833102e48539ab2c6",
+      "size": [142, 50],
+      "font": "Laya.Text.defaultFont = hB.SemiBold / fzlbgbk on Android",
+      "font_size": 32,
+      "color": "#CAAF8F",
+      "stroke": [2, "#6A472B"],
+      "bold": false,
+      "align": "center / middle"
+    }
+  },
+  "font": {
+    "source": "res/assets/fontApp/FZLBGBK.ttf",
+    "target": "ui/assets/fonts/FZLBGBK.ttf",
+    "sha256": "19e6426eee18e655f4d247976a73fd51cefc03e599667e224497c73d598762b8",
+    "reused": true
+  },
+  "adaptation": "2/3 design coordinates, original noname actions and mirrored hand layout. Feedback uses a registered noname system action if available. Official values are from package code, not an official live run."
+}

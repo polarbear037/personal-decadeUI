@@ -1,0 +1,183 @@
+{
+  "result": {
+    "style": "3",
+    "hookRegistered": true,
+    "results": [
+      {
+        "name": "phaseZhunbeiBefore",
+        "filter": true,
+        "text": "准备阶段",
+        "layer": "6",
+        "animation": "decade-online-phase-enter",
+        "rect": {
+          "x": 89.59375,
+          "y": 492,
+          "width": 108.796875,
+          "height": 23.078125,
+          "top": 492,
+          "right": 198.390625,
+          "bottom": 515.078125,
+          "left": 89.59375
+        }
+      },
+      {
+        "name": "phaseJudgeBefore",
+        "filter": true,
+        "text": "判定阶段",
+        "layer": "6",
+        "animation": "decade-online-phase-enter",
+        "rect": {
+          "x": 89.59375,
+          "y": 492,
+          "width": 108.796875,
+          "height": 23.078125,
+          "top": 492,
+          "right": 198.390625,
+          "bottom": 515.078125,
+          "left": 89.59375
+        }
+      },
+      {
+        "name": "phaseDrawBefore",
+        "filter": true,
+        "text": "摸牌阶段",
+        "layer": "6",
+        "animation": "decade-online-phase-enter",
+        "rect": {
+          "x": 89.59375,
+          "y": 492,
+          "width": 108.796875,
+          "height": 23.078125,
+          "top": 492,
+          "right": 198.390625,
+          "bottom": 515.078125,
+          "left": 89.59375
+        }
+      },
+      {
+        "name": "phaseUseBefore",
+        "filter": true,
+        "text": "出牌阶段",
+        "layer": "6",
+        "animation": "decade-online-phase-enter",
+        "rect": {
+          "x": 89.59375,
+          "y": 492,
+          "width": 108.796875,
+          "height": 23.078125,
+          "top": 492,
+          "right": 198.390625,
+          "bottom": 515.078125,
+          "left": 89.59375
+        }
+      },
+      {
+        "name": "phaseDiscardBefore",
+        "filter": true,
+        "text": "弃牌阶段",
+        "layer": "6",
+        "animation": "decade-online-phase-enter",
+        "rect": {
+          "x": 89.59375,
+          "y": 492,
+          "width": 108.796875,
+          "height": 23.078125,
+          "top": 492,
+          "right": 198.390625,
+          "bottom": 515.078125,
+          "left": 89.59375
+        }
+      },
+      {
+        "name": "phaseJieshuBefore",
+        "filter": true,
+        "text": "回合结束",
+        "layer": "6",
+        "animation": "decade-online-phase-enter",
+        "rect": {
+          "x": 89.59375,
+          "y": 492,
+          "width": 108.796875,
+          "height": 23.078125,
+          "top": 492,
+          "right": 198.390625,
+          "bottom": 515.078125,
+          "left": 89.59375
+        }
+      }
+    ],
+    "phaseNodes": 1,
+    "active": "出牌阶段",
+    "fontReady": true
+  },
+  "errors": [],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "loadSpine: [effect_loseHp] 加载失败.",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "loadSpine: [effect_baguazhen] 加载失败.",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "loadSpine: [effect_baiyinshizi] 加载失败.",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "loadSpine: [globaltexiao/huifushuzi/shuzi2] 加载失败.",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "loadSpine: [globaltexiao/shanghaishuzi/SZN_shuzi] 加载失败."
+  ],
+  "badResponses": [
+    [
+      404,
+      "http://127.0.0.1:4003/preload.js"
+    ],
+    [
+      404,
+      "http://127.0.0.1:4003/theme/style/card"
+    ],
+    [
+      404,
+      "http://127.0.0.1:4003/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_loseHp.skel"
+    ],
+    [
+      404,
+      "http://127.0.0.1:4003/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_loseHp.atlas"
+    ],
+    [
+      404,
+      "http://127.0.0.1:4003/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baguazhen.skel"
+    ],
+    [
+      404,
+      "http://127.0.0.1:4003/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baguazhen.atlas"
+    ],
+    [
+      404,
+      "http://127.0.0.1:4003/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baiyinshizi.skel"
+    ],
+    [
+      404,
+      "http://127.0.0.1:4003/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/effect_baiyinshizi.atlas"
+    ],
+    [
+      404,
+      "http://127.0.0.1:4003/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/huifushuzi/shuzi2.skel"
+    ],
+    [
+      404,
+      "http://127.0.0.1:4003/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/huifushuzi/shuzi2.atlas"
+    ],
+    [
+      404,
+      "http://127.0.0.1:4003/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.skel"
+    ],
+    [
+      404,
+      "http://127.0.0.1:4003/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/assets/animation/globaltexiao/shanghaishuzi/SZN_shuzi.atlas"
+    ]
+  ]
+}

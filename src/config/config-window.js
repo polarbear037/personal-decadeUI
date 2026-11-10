@@ -67,6 +67,7 @@ function i(t, n) {
 					{ key: "dynamicSkin", name: "动态皮肤", type: "toggle" },
 					{ key: "dynamicSkinOutcrop", name: "动皮露头", type: "toggle" },
 					{ key: "killEffect", name: "击杀特效", type: "toggle" },
+					{ key: "optimizePrompt", name: "优化提示", type: "toggle" },
 				],
 				card: [
 					{ isTitle: !0, name: "卡牌效果" },
@@ -97,6 +98,7 @@ function i(t, n) {
 					{ key: "playerMarkStyle", name: "标记样式", type: "select" },
 					{ key: "loadingStyle", name: "光标+loading框", type: "select" },
 					{ key: "gainSkillsVisible", name: "获得技能显示", type: "select" },
+					{ key: "gameStartAudio", name: "开战音效", type: "select" },
 					{ isTitle: !0, name: "插件功能" },
 					{ key: "characterPlugin", name: "武将详情插件", type: "toggle" },
 				],

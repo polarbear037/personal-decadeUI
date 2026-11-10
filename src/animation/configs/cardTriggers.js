@@ -89,7 +89,7 @@ const a = {
 		},
 	},
 	lebu: {
-		effect() {
+		async effect(event, trigger, player, result) {
 			if (!1 === result.bool) {
 				const lib = ("undefined" != typeof window && window.lib) || ("undefined" != typeof globalThis && globalThis.lib);
 				(lib && lib.animate && lib.animate.skill && lib.animate.skill.lebu && lib.animate.skill.lebu.call(player, "lebu"), player.skip("phaseUse"));
@@ -97,7 +97,7 @@ const a = {
 		},
 	},
 	bingliang: {
-		effect() {
+		async effect(event, trigger, player, result) {
 			if (!1 === result.bool) {
 				const get = ("undefined" != typeof window && window.get) || ("undefined" != typeof globalThis && globalThis.get);
 				if (get && get.is && get.is.changban && get.is.changban()) player.addTempSkill("bingliang_changban");
@@ -109,11 +109,11 @@ const a = {
 		},
 	},
 	shandian: {
-		effect() {
+		async effect(event, trigger, player, result) {
 			if (!1 === result.bool) {
 				const lib = ("undefined" != typeof window && window.lib) || ("undefined" != typeof globalThis && globalThis.lib);
 				(lib && lib.animate && lib.animate.skill && lib.animate.skill.shandian && lib.animate.skill.shandian.call(player, "shandian"), player.damage(3, "thunder", "nosource"));
-			} else player.addJudgeNext(card);
+			} else player.addJudgeNext(event.card);
 		},
 	},
 };

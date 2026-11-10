@@ -1,404 +1,290 @@
-/**
- * OL风格 - 角色信息弹窗样式
- * 使用独立容器类名 .online-character-dialog
- */
-
-.popup-container > .online-character-dialog {
-	top: calc(49% - var(--h) / 2 + var(--bt));
-	left: calc(50% - var(--w) / 2 + var(--bl));
+/* OL 4.0.2 GeneralToolWindow，尺寸使用 APK 中的设计坐标。 */
+@font-face {
+	font-family: "GeneralToolTitle";
+	src: url("../../assets/fonts/FZLBGBK.ttf") format("truetype");
+	font-display: swap;
 }
 
-/* 基础弹窗 */
-.online-character-dialog {
-	--w: 828px;
-	--h: 503px;
-	--bt: calc(var(--h) * 15 / 290);
-	--bl: calc(var(--w) * 38 / 497);
-	--bb: calc(var(--h) * 17 / 290);
-	--dw: calc(var(--w) - 2 * var(--bl));
-	--dh: calc(var(--h) - var(--bt) - var(--bb));
-	width: var(--dw);
-	height: var(--dh);
+body[data-style="onlineUI"] #window > .online-general-tool {
 	position: absolute;
-	box-sizing: border-box;
-	padding: 0;
-	z-index: 13;
-}
-
-.online-character-dialog > .blackBg {
-	padding: 0;
-	position: relative;
-	width: 100%;
-	height: 115px;
-	top: 0;
-	left: -25px;
-}
-
-.online-character-dialog .blackBg.two {
-	margin-top: 8px;
-	height: 218px;
-}
-
-.online-character-dialog::before {
-	content: "";
-	top: calc(0% - var(--bt));
-	left: calc(0% - var(--bl));
-	width: var(--w);
-	height: var(--h);
-	position: absolute;
-	background-image: url("../../assets/character/online/dialog4.png");
-	background-size: 100% 100%;
-}
-
-.online-character-dialog > div {
-	top: 0;
-	height: 100%;
-	position: absolute;
-}
-
-/* 武将框 */
-.online-character-dialog > .blackBg.one > div.biankuang3 {
-	width: 22px;
-	height: 204px;
-	top: 51px;
-	left: 57.2px;
-	background-size: 100% 100%;
-	z-index: 60;
-	position: absolute;
-	background: rgb(154, 148, 122);
-	box-shadow:
-	    inset -0.1px 0.3px 1px rgba(0,0,0,0.6),
-	    inset 0.1px 0.3px 1.5px rgba(0,0,0,0.6),
-		2.5px -0.5px 2px rgba(0,0,0,0.8);
-	filter: none;
-	border-top-left-radius: 4px;
-	border-bottom-left-radius: 4px;
-	visibility: visible;
-}
-
-.online-character-dialog > .blackBg.one > div.biankuang2 {
-	width: 155px;
-	height: 204px;
-	top: 51px;
-	left: 56px;
-	background-size: 100% 100%;
-	z-index: 60;
-    background: #3f3f3f;
-    border-radius: 4px;
-	box-shadow:
-		-0.3px -0.3px 0 rgba(0,0,0,0.5),
-		0.3px 0 0 rgba(0,0,0,0.5),
-		0 1px 5px black;
-	position: absolute;
-/*	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));*/
-}
-
-/* 势力 */
-.online-character-dialog .biankuang4 {
-	width: 25px;
-	height: 25px;
-	top: 50px;
-	left: 55px;
-	background-size: 100% 100%;
-	z-index: 60;
-	position: absolute;
-}
-
-/* 武将名字 */
-.online-character-dialog > .name {
-	position: absolute;
-	width: 24px;
-	height: 135px;
-	left: 32.5px;
-	overflow-y: auto;
-	overflow-x: hidden;
-	top: 72px;
-	font-size: 22px;
-	font-family: "HYXLSJ";
-	z-index: 99;
-	color: #ffffff;
-	-webkit-text-stroke: 3px black;
-    paint-order: stroke fill;
-	line-height: 24px;
-	white-space: normal;
-}
-
-/* 吊坠 */
-.online-character-dialog .diaozhui {
-	width: 80px;
-	height: 40px;
-	top: -85px;
-	left: 700px;
-	background-size: 100% 100%;
-	z-index: 60;
-	position: absolute;
-}
-
-/* 玩家名 */
-.online-character-dialog .wanjia {
-	font-size: 20px;
-	font-family: "HYXLSJ";
-	left: 0px;
-	top: 300px;
-	color: #efdbb6;
-	font-weight: bold;
-	text-align: center;
-	z-index: 99;
-}
-
-/* 配件 */
-.online-character-dialog .peijian {
-	width: 270px;
-	height: 30px;
-	top: 235px;
-	left: -60px;
-	background-size: 100% 100%;
-	z-index: 60;
-	position: absolute;
-}
-
-/* 人气值 */
-.online-character-dialog .renqi {
-	left: -42px;
-	top: 370px;
-	font-size: 20px;
-	font-weight: bold;
-	font-family: "HYXLSJ";
-	color: #efdbb6;
-	text-shadow: none;
-}
-
-/* 胜率 */
-.online-character-dialog .shenglv {
-	left: 59px;
-	top: 370px;
-	font-size: 20px;
-	font-weight: bold;
-	font-family: "HYXLSJ";
-	color: #efdbb6;
-	text-shadow: none;
-}
-
-/* 逃率 */
-.online-character-dialog .taolv {
-	left: 155px;
-	top: 370px;
-	font-size: 20px;
-	font-weight: bold;
-	font-family: "HYXLSJ";
-	color: #efdbb6;
-	text-shadow: none;
-}
-
-/* 资料页启动按钮 */
-.online-character-dialog .xinxi {
-	background: url("../../assets/character/online/xinxi.png");
-	background-size: 100% 100%;
-	bottom: -305%;
-	right: -24.5%;
-	height: 65px;
-	width: 80px;
-}
-
-/* 双将切换按钮 */
-.online-character-dialog .sjright {
-	background: url("../../assets/character/online/sj_btn.png");
-	background-size: 100% 100%;
-	width: 25px;
-	height: 25px;
-	right: -45px;
-	top: 80px;
-}
-
-.online-character-dialog .sjleft {
-	background: url("../../assets/character/online/sj_btn.png");
-	background-size: 100% 100%;
-	width: 25px;
-	height: 25px;
-	transform: rotate(180deg);
-	left: -55px;
-	top: 80px;
-}
-
-/* 边框底纹 */
-.online-character-dialog > .blackBg.one > div.biankuang3::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-image: url("../../assets/character/online/border_diwen.png");
-	background-size: 100% 100%;
-	border-radius: 4px 0 0 4px;
-	opacity: 0.18;
-	z-index: 61;
-}
-
-/* 武将牌不露头 */
-.online-character-dialog .biankuang2 > div.left2 {
-	left: 15%;
-	top: auto;
-	bottom: 0.7%;
-	width: 84%;
-	height: 98.7%;
-	opacity: 1;
-	box-shadow:
-	0.3px 0.3px 0 rgba(0, 0, 0, 0.8),
-	-0.3px -0.3px 0 rgba(0, 0, 0, 0.8);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: top;
-	border-radius: 0 3px 3px 0;
-	transition-property: opacity, transform;
-	z-index: 69;
-}
-
-/* 技能窗口 */
-.online-character-dialog.single div.right {
-	top: -48.5%;
-/*	border: 1px solid red;*/
-	left: 41%;
-	width: calc(70%);
-	height: calc(202.5%);
-}
-
-.online-character-dialog div.right {
-	left: 50%;
-	width: 50%;
-	box-sizing: border-box;
-	overflow: auto;
-}
-
-.online-character-dialog div.right > div {
-	position: absolute !important;
-	top: 0;
-	left: 4%;
-	width: 91.5%;
-	height: 100%;
-	overflow: auto;
-}
-
-.online-character-dialog div.right div {
-	position: relative;
-}
-
-.online-character-dialog div.right .xcaption {
-	background: url("../../assets/character/online/quyu4.png") center/contain no-repeat;
-	background-size: 260px 30px;
-	background-origin: content-box;
-	text-align: center;
-	line-height: 1.8;
-	color: #bb9870;
-	display: inline-block;
-	position: relative;
-	min-width: 250px;
-	width: 100%;
-	bottom: 0%;
-	font-size: 20px;
-	font-weight: bold;
-	padding: 0;
-	font-family: "HYXLSJ";
-}
-
-/* 技能描述 */
-.online-character-dialog div.right .xskill > div {
-	display: block;
-	color: #efdbb6;
-	text-shadow: none;
-	font-size: 20.5px;
-	text-align: justify;
-	word-break:break-all;
-	font-weight: 550;
-	font-family: "HYXLSJ";
-}
-
-.online-character-dialog div.right .xskill > div[data-color] {
-	display: inline-block;
-	color: #f7d229;
-	padding: 3px 0px;
-	text-align: center;
-	font-size: 20px;
-	min-width: 62px;
-	max-width: 1000px;
-	white-space: nowrap;
+	inset: 0;
 	overflow: hidden;
-	text-overflow: ellipsis;
-	box-sizing: border-box;
-	border-image: url("../../assets/character/online/btn4.png") 0 25 fill / 0 15px stretch;
-	border-width: 0 0px;
-	border-style: solid;
+	overflow: clip;
+	z-index: 103;
+	background: rgba(0, 0, 0, .7);
 }
 
-.online-character-dialog div.right .xskill + .xskill {
-	margin-top: 15px;
-}
-
-/* 装备描述 */
-.online-character-dialog div.right .xskillx > div {
-	display: block;
-	color: #efdbb6;
-	text-shadow: none;
-	font-size: 20px;
-	font-weight: 550;
-	font-family: "HYXLSJ";
-}
-
-.online-character-dialog div.right .xskillx > div[data-color] {
-	display: inline-block;
-	text-align: center;
-	font-size: 20px;
-	font-family: "HYXLSJ";
-	font-weight: bold;
-	color: #f7d229;
-}
-
-/* 主被动标签 */
-.online-character-dialog div.right > div > div.xskill > span.skill-type-tag {
-	position: relative;
-	color: #f7d229;
-	top: -5px;
-	left: 10px;
-	font-size: 20px;
-	font-weight: bold;
-	font-family: "HYXLSJ";
+.online-general-tool-window {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 1324px;
+	height: 600px;
+	transform: translate(-50%, -50%) scale(var(--general-tool-scale, 1));
+	pointer-events: none;
 	text-shadow: none;
 }
 
-/* 衍生技 */
-.online-character-dialog div.right > div > div.xskill > span.yanshengji {
-	position: relative;
-	color: #f7d229;
-	top: -5px;
-	left: 15px;
-	font-size: 19px;
-	font-weight: 700;
-	font-family: "HYXLSJ";
-	text-shadow: none;
-}
-
-.online-character-dialog div.right > div > div.xskill > span.yanshengji::before {
+.online-general-tool-window::before {
 	content: "";
-	background-image: url("../../assets/character/online/ysjineg.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	margin-right: 5px;
-	vertical-align: middle;
+	position: absolute;
+	left: 122px;
+	top: 0;
+	width: 1080px;
+	height: 600px;
+	background: url("../../assets/character/online/general-tool/wnd_bg_medium.png") no-repeat;
+	pointer-events: auto;
 }
 
-/* 衍生技描述 */
-.online-character-dialog div.right > div > div.xskill > span.yanshengjiinfo {
-	display: block;
-	width: 90%;
-	margin-left: 15px;
-	color: #d1b296;
-	text-shadow: none;
-	font-size: 17px;
-	font-weight: 550;
-	font-family: "HYXLSJ";
+.online-general-tool-title {
+	position: absolute;
+	inset: -3px 0 auto;
+	text-align: center;
+	font: 36px/1.35 "GeneralToolTitle", serif;
+	filter: drop-shadow(2px 2px 5px #0006);
+	background: linear-gradient(#ddbc58, #f7ecc2);
+	background-clip: text;
+	color: transparent;
+}
+
+.online-general-tool-list-bg {
+	position: absolute;
+	left: 609px;
+	top: 72px;
+	width: 557px;
+	height: 496px;
+	background: url("../../assets/character/online/general-tool/common_gary_style_4.png") no-repeat;
+}
+
+.online-general-tool-list {
+	position: absolute;
+	left: 612px;
+	top: 80px;
+	width: 555px;
+	height: 482px;
+	overflow: hidden auto;
+	overscroll-behavior: contain;
+	touch-action: pan-y;
+	scrollbar-width: none;
+	pointer-events: auto;
+	color: #674f2c;
+	font: 30px/1.2 Arial, "Microsoft YaHei", sans-serif;
+}
+
+.online-general-tool-list::-webkit-scrollbar {
+	display: none;
+}
+
+.online-general-tool-list-content {
+	position: relative;
+	width: 512px;
+	margin-left: 20px;
+}
+
+.online-general-tool-list-content div {
+	position: relative;
+}
+
+.online-general-tool-list-content > * {
+	margin-bottom: 8px;
+}
+
+.online-general-tool-list-content > .xcaption {
+	width: 253px;
+	height: 43px;
+	margin-left: 129px;
+	background: url("../../assets/character/online/general-tool/wjxq_titlebg.png") no-repeat;
+	text-align: center;
+	font-size: 32px;
+	line-height: 43px;
+	color: #f2e4c0;
+}
+
+.online-general-tool-list-content > .xskill > div,
+.online-general-tool-list-content > .xskillx > div {
+	width: 490px;
+	margin-left: 5px;
+	overflow-wrap: anywhere;
+}
+
+.online-general-tool-skill > header {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	min-height: 55px;
+	margin: 0 0 13px 1px;
+	font-size: 32px;
+	color: #d87103;
+}
+
+.online-general-tool-skill > header > span:first-child {
+	display: grid;
+	place-items: center;
+	width: 116px;
+	min-height: 55px;
+	background: url("../../assets/character/online/general-tool/generaldetail_bgskill.png") center / 100% 100% no-repeat;
+	color: #fffbcb;
+	font: 32px/1 "GeneralToolTitle", serif;
+	text-shadow: 1px 1px #b08337, -1px -1px #b08337;
+}
+
+.online-general-tool-list-content > .online-general-tool-derived {
+	box-sizing: border-box;
+	padding-left: 54px;
+	background: url("../../assets/character/online/general-tool/generaldetail_skill1.png") 25px 14px no-repeat;
+}
+
+.online-general-tool-derived > header {
+	font-size: 32px;
+	line-height: 42px;
+	color: #d87103;
+}
+
+.online-general-tool-list-content > .online-general-tool-derived > div {
+	width: auto;
+	margin-left: 0;
+}
+
+.online-general-tool-sealed {
+	padding-top: 95px;
+	background: url("../../assets/character/online/general-tool/general_sealSkill_icon.png") center 30px / 80px 60px no-repeat;
+	text-align: center;
+}
+
+.online-general-tool-portrait {
+	position: absolute;
+	left: 285px;
+	top: 105px;
+	width: 172px;
+	height: 228px;
+	background: url("../../assets/character/online/general-tool/generals_gradebg.png") no-repeat;
+}
+
+.online-general-tool-artwork {
+	position: absolute;
+	left: 27px;
+	top: 4px;
+	width: 139px;
+	height: 214px;
+	background-position: center;
+	background-size: cover;
+}
+
+.online-general-tool-frame {
+	position: absolute;
+	inset: -4px auto auto -2px;
+	width: 178px;
+	height: 231px;
+	background: url("../../assets/character/online/general-tool/generals_frame.png") no-repeat;
+}
+
+.online-general-tool-nameplate {
+	position: absolute;
+	left: -3px;
+	top: -4px;
+	width: 37px;
+	height: 227px;
+	background-size: 100% 100%;
+	color: #fff;
+	text-shadow: 1px 1px 2px #3b2322, -1px -1px 2px #3b2322;
+}
+
+.online-general-tool-nameplate > span {
+	position: absolute;
+	left: 3px;
+	width: 30px;
+	text-align: center;
+}
+
+.online-general-tool-nameplate > span:first-child {
+	top: 8px;
+	font: 26px "GeneralToolTitle", serif;
+	color: #f4d6a0;
+}
+
+.online-general-tool-nameplate > span:last-child {
+	top: 35px;
+	font: 22px/1.1 "GeneralToolTitle", serif;
+	word-break: break-all;
+}
+
+.online-general-tool-player {
+	position: absolute;
+	left: 155px;
+	top: 413px;
+	width: 429px;
+	height: 42px;
+	text-align: center;
+	font: 30px/42px Arial, "Microsoft YaHei", sans-serif;
+	color: #674f2c;
+}
+
+.online-general-tool-rates {
+	position: absolute;
+	left: 155px;
+	top: 435px;
+	width: 429px;
+	height: 135px;
+	display: grid;
+	grid-template-columns: 136px 155px 138px;
+	background:
+		url("../../assets/character/online/general-tool/wjxq_titlezhuangshi.png") 39px 0 no-repeat,
+		url("../../assets/character/online/general-tool/wjxq_titlezhuangshi_1.png") 377px 0 no-repeat,
+		url("../../assets/character/online/general-tool/wjxq_line_1.png") 0 73px no-repeat,
+		url("../../assets/character/online/general-tool/wjxq_line.png") 136px 29px no-repeat,
+		url("../../assets/character/online/general-tool/wjxq_line.png") 291px 29px no-repeat,
+		url("../../assets/character/online/general-tool/nei_rong_di_kao_bei_2.png") 0 28px no-repeat;
+	color: #674f2c;
+	font: 30px/34px Arial, "Microsoft YaHei", sans-serif;
+}
+
+.online-general-tool-rates > section {
+	display: grid;
+	grid-template-rows: 35px 34px;
+	justify-items: center;
+	align-items: start;
+	gap: 16px;
+	padding-top: 40px;
+}
+
+.online-general-tool-window > button {
+	position: absolute;
+	padding: 0;
+	border: 0;
+	background: transparent center / 100% 100% no-repeat;
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+.online-general-tool-window > .online-general-tool-close {
+	left: 1160px;
+	top: 25px;
+	width: 36px;
+	height: 35px;
+	background-image: url("../../assets/character/online/general-tool/wnd_cls.png");
+}
+
+.online-general-tool-window > .online-general-tool-info {
+	left: 1205px;
+	top: 507px;
+	width: 94px;
+	height: 94px;
+	background-image: url("../../assets/character/online/general-tool/generalTool_info_icon.png");
+}
+
+.online-general-tool-window > .online-general-tool-switch {
+	left: 433px;
+	top: 199px;
+	width: 33px;
+	height: 21px;
+	transform: rotate(-90deg);
+	background-image: url("../../assets/character/online/general-tool/dmdsubarrow_dn.png");
+}
+
+.online-general-tool > .online-detail-popup {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
 }
 
 /** 详细资料弹窗样式 */

@@ -1,6 +1,7 @@
 import { game, lib, _status, ui, get } from "noname";
 import { initGTBB as initGTBB } from "./gtbb.js";
 import { initPhaseTipsSkills as initPhaseTipsSkills } from "./phase-tips.js";
+import { initOnlinePlayerTips } from "./online-player-tips.js";
 
 const a = "jindutiaopl";
 const i = [0, 0, 100, 100];
@@ -52,13 +53,35 @@ const h = (className, imgName) => {
 };
 
 function m() {
-	game.Jindutiaoplayer = () => {
-		n("timer");
-		n("timer2");
-		r(a);
+	game.Jindutiaoplayer = options => {
+		const isolated = options && typeof options === "object";
+		const barId = isolated && options.id ? options.id : a;
+		const parent = isolated && options.parent?.appendChild ? options.parent : document.body;
+		let isolatedTimer = null;
+		let isolatedTimer2 = null;
+		let isolatedSpecial = false;
+		let disposed = false;
+		if (!isolated) {
+			n("timer");
+			n("timer2");
+			r(a);
+		}
 
 		const e = document.createElement("div");
-		e.id = a;
+		e.id = barId;
+		const dispose = () => {
+			if (disposed) return;
+			disposed = true;
+			if (isolatedTimer) {
+				clearInterval(isolatedTimer);
+				isolatedTimer = null;
+			}
+			if (isolatedTimer2) {
+				clearInterval(isolatedTimer2);
+				isolatedTimer2 = null;
+			}
+			e.remove();
+		};
 
 		const t = (() => {
 			const styleType = lib.config.extension_十周年UI_jindutiaoYangshi;
@@ -182,8 +205,14 @@ function m() {
 			return configs[styleType] ?? configs[1];
 		})();
 
-		t.clearSpecial && delete window.jindutiaoTeshu;
-		t.setSpecial && !window.jindutiaoTeshu && (window.jindutiaoTeshu = true);
+		if (t.clearSpecial) {
+			if (isolated) isolatedSpecial = false;
+			else delete window.jindutiaoTeshu;
+		}
+		if (t.setSpecial) {
+			if (isolated) isolatedSpecial = true;
+			else !window.jindutiaoTeshu && (window.jindutiaoTeshu = true);
+		}
 
 		Object.assign(e.style, t.container);
 		const i = c(t.progressBar.data, t.progressBar.style);
@@ -216,21 +245,57 @@ function m() {
 			});
 		}
 
-		document.body.appendChild(e);
+		parent.appendChild(e);
 		const p = parseFloat(lib.config.extension_十周年UI_jindutiaoST);
 
-		window.timer = setInterval(() => {
+		const updateProgress = () => {
+			if (disposed) return;
 			i.style.width = `${i.data}px`;
 			i.style.backgroundColor = i.data <= s ? "rgba(230,56,65,0.88)" : "rgb(230,151,91)";
-			0 === --i.data && (n("timer"), e.remove());
-		}, p);
+			if (0 === --i.data) {
+				if (isolated) {
+					isolatedTimer && clearInterval(isolatedTimer);
+					isolatedTimer = null;
+					e.remove();
+				} else {
+					n("timer");
+					e.remove();
+				}
+			}
+		};
+		if (isolated) isolatedTimer = setInterval(updateProgress, p);
+		else window.timer = setInterval(updateProgress, p);
 
-		if (window.jindutiaoTeshu && o && l) {
-			window.timer2 = setInterval(() => {
+		if ((isolated ? isolatedSpecial : window.jindutiaoTeshu) && o && l) {
+			const updateSecondary = () => {
+				if (disposed) return;
 				o.style.width = --o.data + "px";
-				0 === o.data && (n("timer2"), delete window.jindutiaoTeshu, o.remove(), l.remove());
-			}, p / 2);
+				if (0 === o.data) {
+					if (isolated) {
+						isolatedTimer2 && clearInterval(isolatedTimer2);
+						isolatedTimer2 = null;
+					} else {
+						n("timer2");
+						delete window.jindutiaoTeshu;
+					}
+					o.remove();
+					l.remove();
+				}
+			};
+			if (isolated) isolatedTimer2 = setInterval(updateSecondary, p / 2);
+			else window.timer2 = setInterval(updateSecondary, p / 2);
 		}
+		if (!isolated) return;
+		return {
+			bar: e,
+			dispose,
+			get timer() {
+				return isolatedTimer;
+			},
+			get timer2() {
+				return isolatedTimer2;
+			},
+		};
 	};
 
 	game.as_removeText = () => {
@@ -262,6 +327,7 @@ function m() {
 	game.as_removeImage = () => {
 		if (_status.as_showImage) {
 			const e = _status.as_showImage;
+			if (e._decadePhaseTipRemove) return e._decadePhaseTipRemove();
 			e.style.animation = "left-to-right-out 1s";
 			delete _status.as_showImage;
 			setTimeout(() => e.remove(), 1000);
@@ -279,7 +345,9 @@ function m() {
 		_status.as_showImage = div;
 		_status.as_showText && div.hide();
 
-		true !== time && setTimeout(game.as_removeImage, 1000 * time);
+		true !== time && setTimeout(() => {
+			if (_status.as_showImage === div) game.as_removeImage();
+		}, 1000 * time);
 		return true;
 	};
 }
@@ -415,6 +483,7 @@ function g(a) {
 		});
 
 	initPhaseTipsSkills();
+	initOnlinePlayerTips();
 
 	if ("connect" !== get.mode()) {
 		u();
@@ -423,6 +492,11 @@ function g(a) {
 			let t = null;
 			const a = () => {
 				if (!_status.gameStarted || !game.players) return;
+				if (lib.config.extension_十周年UI_newDecadeStyle === "onlineUI") {
+					e && (p(e, "playertip"), (e = null));
+					t && (p(t, "playertipQP"), (t = null));
+					return;
+				}
 				const a = _status.currentPhase;
 				if (a && a !== game.me && a.isPhaseUsing?.()) {
 					if (e !== a) {
@@ -466,6 +540,7 @@ function g(a) {
 
 			lib.announce.subscribe("Noname.Game.Event.Trigger", data => {
 				const { name: name, event: event } = data;
+				if (lib.config.extension_十周年UI_newDecadeStyle === "onlineUI") return;
 				if (!["useCardBegin", "respondBegin"].includes(name)) return;
 				if (!event?.card || event.player === game.me) return;
 				const cardName = event.card.name || event.card.viewAs;

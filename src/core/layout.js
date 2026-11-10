@@ -46,7 +46,9 @@ function e() {
 				let fx = xStart + e * xMargin + baseShift;
 				(spreadOffsetLeft || spreadOffsetRight) && (e < selectedIndex ? (fx -= spreadOffsetLeft) : e > selectedIndex && (fx += spreadOffsetRight));
 				const a = Math.round(fx);
-				((card.tx = a), (card.ty = l), (card.scaled = !0), (card.style.transform = `translate(${a}px,${l}px) scale(${cs})`), (card._transform = card.style.transform), card.updateTransform(card.classList.contains("selected")));
+				((card.tx = a), (card.ty = l), (card.scaled = !0));
+				// 基础位置交给 updateTransform 合成，避免已选牌先落下再抬起。
+				card.updateTransform(card.classList.contains("selected"), 0, `translate(${a}px,${l}px) scale(${cs})`);
 			});
 			const container = ui.handcards1Container;
 			f ? (container.classList.add("scrollh"), (container.style.overflowX = "scroll"), (container.style.overflowY = "hidden"), (handNode.style.width = `${Math.round(t.length * xMargin + (csw - xMargin))}px`)) : (container.classList.remove("scrollh"), (container.style.overflowX = container.style.overflowY = ""), (handNode.style.width = "100%"));
@@ -57,9 +59,9 @@ function e() {
 				bounds = decadeUI.boundsCaches.arena;
 			bounds.check();
 			const { width: pw, height: ph, cardWidth: cw, cardHeight: ch } = bounds,
-				cs = Math.min((decadeUI.get.bodySize().height * (lib.config?.extension_十周年UI_discardScale ?? 0.14)) / ch, 1),
+				cs = decadeUI.getCardBestScale({ height: ch }, lib.config?.extension_十周年UI_discardScale ?? 0.14),
 				csw = cw * cs,
-				c = Math.round((ph - ch) / 2),
+				c = Math.round((ph - ch) / 2) - 5,
 				maxWidth = 0.7 * pw,
 				totalW = cards.length * csw + 2 * (cards.length - 1),
 				limitW = Math.min(maxWidth, pw);
@@ -118,7 +120,11 @@ function e() {
 			const ensureStyle = selector => decadeUI.sheet.getStyle(selector) || decadeUI.sheet.insertRule(`${selector} { zoom: 1; }`),
 				buttonsWindow = ensureStyle("#window > .dialog.popped .buttons:not(.smallzoom)"),
 				buttonsArena = ensureStyle("#arena:not(.choose-character) .buttons:not(.smallzoom)");
-			((decadeUI.zooms.card = decadeUI.getCardBestScale()), ui.me && (ui.me.style.height = `${Math.round(decadeUI.getHandCardSize().height * decadeUI.zooms.card + 30.4)}px`), buttonsArena && (buttonsArena.zoom = decadeUI.zooms.card), buttonsWindow && (buttonsWindow.zoom = decadeUI.zooms.card), this.invalidate());
+			((decadeUI.zooms.card = decadeUI.getCardBestScale()), ui.me && (ui.me.style.height = `${Math.round(decadeUI.getHandCardSize().height * decadeUI.zooms.card + 30.4)}px`), buttonsArena && (buttonsArena.zoom = decadeUI.zooms.card), buttonsWindow && (buttonsWindow.zoom = decadeUI.zooms.card), this.update());
+			// 尺寸变化立即落位，避免防抖与移牌过渡让卡牌在拖动窗口时滞后。
+			for (const card of [...(ui.handcards1?.children ?? []), ...(ui.thrown ?? [])])
+				for (const animation of card.getAnimations?.() ?? [])
+					if (animation.transitionProperty === "transform") animation.finish();
 		},
 	};
 }

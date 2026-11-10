@@ -1,0 +1,41 @@
+{
+  "first": {
+    "target": "968182111",
+    "origin": "3651713344"
+  },
+  "self": {
+    "glow": true,
+    "skip": false,
+    "prompt": "刘备对曹操使用的南蛮入侵【♠︎K】即将生效。是否使用【无懈可击】？",
+    "canUse": true
+  },
+  "result": {
+    "recastResult": {
+      "skill": "_recasting",
+      "cards": [
+        "tiesuo"
+      ],
+      "bool": true
+    },
+    "recast": {
+      "before": 2,
+      "after": 2,
+      "discarded": true,
+      "history": true
+    },
+    "prompts": [
+      {
+        "target": "968182111",
+        "self": false,
+        "state": 1
+      },
+      {
+        "target": "377614212",
+        "self": true,
+        "state": 1
+      }
+    ],
+    "final": "done"
+  },
+  "errors": []
+}

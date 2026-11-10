@@ -36,7 +36,7 @@
 
 /* 非国战模式 - 单将背景(OL样式) */
 [data-mode]:not([data-mode="guozhan"]) .player:not(.fullskin2):not(.double-character):not([data-double="1"]) {
-	background: url("../../image/ui/player-bg/bjOL1.png") no-repeat center center !important;
+	background: url("../../image/ui/player-bg/general_seat_base.png") no-repeat center center !important;
 	background-size: 100% 100% !important;
 }
 
@@ -251,7 +251,7 @@
 	left: 70px;
 	top: auto;
 	right: auto;
-	bottom: 2.69%;
+	bottom: 2.19%;
 }
 
 #arena[data-right-layout="on"]>.player[data-position="0"],
@@ -772,6 +772,51 @@
 }
 
 
+/* 原cns/SeatUI.spPosLayout：护甲固定32×37，位置(角色宽度-26,45)。 */
+@font-face {
+	font-family: "dui-online-armor";
+	src: url("../../ui/assets/fonts/FZLBGBK.ttf") format("truetype");
+	font-display: swap;
+}
+
+.player>.hujia.online-armor {
+	display: block;
+	position: absolute;
+	left: calc(100% - 26px);
+	top: 45px;
+	right: auto;
+	bottom: auto;
+	width: 32px;
+	height: 37px;
+	padding: 0;
+	border: 0;
+	box-sizing: content-box;
+	background: url("../../image/ui/armor/seat_shield_bg.png") no-repeat 0 0 / 32px 37px;
+	transform: none;
+	transition: none;
+	pointer-events: none;
+	z-index: 100;
+}
+
+.player>.online-armor>.online-armor-value {
+	position: absolute;
+	left: 0;
+	top: 8px;
+	width: 32px;
+	height: 20px;
+	padding: 0;
+	font: 400 24px/20px "dui-online-armor", serif;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: center;
+	text-shadow: none;
+	-webkit-text-stroke: 0;
+}
+
+.player>.online-armor[data-updated="true"]>.online-armor-value {
+	font-size: 26px;
+}
+
 /** 武将头像 */
 .player>.primary-avatar {
 	left: 14%;
@@ -869,7 +914,7 @@
 	top: auto;
 	bottom: 0.9%;
 	width: 84.4%;
-	height: 98%;
+	height: 105%;
 	opacity: 1;
 	border-radius: 0 3px 3px 0;
 	box-shadow:
@@ -1320,7 +1365,7 @@
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	left: -16px;
+	left: -20px;
 	top: -16px;
 	width: 45px;
 	height: 45px;
@@ -1801,4 +1846,60 @@
 
 .player-hurt {
 	animation: player-hurt 1.8s linear forwards;
+}
+
+/* 主视角官方判定队列。data标记仅由Online布局模块设置，覆盖Nova的旧偏移。 */
+#arena > .player[data-position="0"]:not(.minskin) > .judges[data-online-judge-layout="true"] {
+	display: block;
+	left: 0;
+	right: auto;
+	top: var(--online-judge-y);
+	bottom: auto;
+	width: 0;
+	height: 0;
+	transform: none;
+	transform-origin: 0 0;
+	transition: var(--online-judge-transition, top .3s linear);
+}
+#arena > .player[data-position="0"]:not(.minskin) > .judges[data-online-judge-layout="true"] > .card {
+	position: absolute;
+	left: var(--online-judge-x);
+	top: 0;
+	width: 50px;
+	height: 50px;
+	margin: 0;
+	transform: none;
+	transition: left .3s linear;
+}
+#arena > .player[data-position="0"]:not(.minskin) > .judges[data-online-judge-layout="true"] > .card > .judge-mark {
+	left: 0;
+	top: 0;
+	width: 50px;
+	height: 50px;
+	transform: none;
+	transform-origin: 0 0;
+}
+#arena > .player[data-position="0"]:not(.minskin) > .judges[data-online-judge-layout="true"] > .card > .judge-mark > .judge {
+	left: 0;
+	top: 0;
+	width: 50px;
+	height: 50px;
+}
+#arena > .player[data-position="0"]:not(.minskin) > .judges[data-online-judge-layout="true"] > .card[data-online-judge-queue="pending"][data-online-judge-effect="false"] > .judge-mark > .judge {
+	filter: url("../../image/ui/judge-mark/queue-pending.svg#pending");
+}
+.dui-judge-queue-arrow { display: none; }
+#arena > .player[data-position="0"]:not(.minskin) > .judges[data-online-judge-layout="true"] > .card > .dui-judge-queue-arrow {
+	display: block;
+	position: absolute;
+	left: 40px;
+	top: 5px;
+	width: 14px;
+	height: 21px;
+	pointer-events: none;
+}
+#arena > .player[data-position="0"]:not(.minskin) > .judges[data-online-judge-layout="true"] > .card[data-online-judge-queue="active"] > .dui-judge-queue-arrow {
+	top: 3px;
+	width: 18px;
+	height: 25px;
 }

@@ -1,0 +1,49 @@
+{
+  "source": "OL Android 4.0.2, main.sgs!main.sgs",
+  "source_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "rea_evidence": "ev_73a456c0fc26cdbefd3a79107977a65f5f95f8cb532029f39a3d460752526012",
+  "class": "_ns",
+  "facts": {
+    "normal_name_x": 60,
+    "special_text_x": "(this.width - this.zuoBangYouBiSkillTxt.width) >> 1",
+    "special_formats": [
+      "左:{0}",
+      "右:{0}"
+    ],
+    "original_name_cleared": true,
+    "local_reserved_name_x": {
+      "player": 41,
+      "standalone": 49
+    }
+  },
+  "methods": [
+    {
+      "method": "createChildren",
+      "bundle_utf16_start": 19267131,
+      "bundle_utf16_end": 19268725,
+      "source": "createChildren(){this.size(zP.M_EQUIP_SIZE.width,zP.M_EQUIP_SIZE.height),this.bmpFace=new Dxt(cb.GetEmptyTextrue(this.emptyRes)),this.bmpFlower=new Dxt(cb.GetEmptyTextrue(this.emptyRes)),this.bmpNumber=new Dxt(cb.GetEmptyTextrue(this.emptyRes)),this.bmpRange=new Dxt(cb.GetEmptyTextrue(this.emptyRes)),this.bmpFace.size(this.width,this.height),this.bmpFlower.size(20,20),this.bmpNumber.size(20,20),this.bmpRange.size(20,20),this.bmpFlower.posInteger(22,5),this.bmpNumber.posInteger(38,5),this.bmpRange.visible=!1,this.addDrawChild(this.bmpFace),this.addDrawChild(this.bmpFlower),this.addDrawChild(this.bmpNumber),this.addDrawChild(this.bmpRange),this.bmpFace.texture=Bwt.GetRes(this.equipResName),this.width=this.bmpFace.width,this.height=this.bmpFace.height;let t=this.textureContainer;this.isFlat||(t=this),this.typeTex=new Dxt(cb.GetEmptyTextrue(this.emptyRes)),this.typeTex.size(20,20),t.addDrawChild(this.typeTex),this.typeTex.posInteger(3,this.height-this.typeTex.height>>1),this.nameLabel=yxt.Create(this,\"\",22,\"#FFF7F7\",40,this.height,hB.SemiBold),this.nameLabel.valign=\"middle\",this.nameLabel.align=\"left\",this.nameLabel.letterSpacing=0,this.nameLabel.pos(60,this.height-this.nameLabel.height>>1),this.numLabel=yxt.Create(this,\"\",22,\"#FFF7F7\",40,this.height,hB.SemiBold),this.numLabel.valign=\"middle\",this.numLabel.pos(this.width-36,this.height-this.numLabel.height>>1),this.rangeLabel=yxt.Create(this,\"\",22,\"#FFF7F7\",40,this.height,hB.SemiBold),this.rangeLabel.valign=\"middle\",this.rangeLabel.name=\"rangeLabel\",this.rangeLabel.pos(this.width-20,this.height-this.rangeLabel.height>>1)}"
+    },
+    {
+      "method": "IsZuoBangYouBi",
+      "bundle_utf16_start": 19272111,
+      "bundle_utf16_end": 19272288,
+      "source": "IsZuoBangYouBi(){return this.theCard&&this.theCard.FirstSkill&&(this.theCard.FirstSkill.ID==XIt.SPELL_SHENDIANWEI_LEFT||this.theCard.FirstSkill.ID==XIt.SPELL_SHENDIANWEI_RIGHT)}"
+    },
+    {
+      "method": "layout",
+      "bundle_utf16_start": 19275552,
+      "bundle_utf16_end": 19276740,
+      "source": "layout(){this.bmpFlower.y=this.height-this.bmpFlower.height>>1,this.bmpNumber.y=this.height-this.bmpNumber.height>>1,this.typeTex.y=this.height-this.typeTex.height>>1,this.isHalf?(this.numLabel.x=this.width-21,this.rangeLabel.x=this.width-10,this.Card&&this.Card.FirstSkill&&this.Card.FirstSkill.Type==UIt.ATT_HORSE&&(this.rangeLabel.x=this.width-12)):(this.numLabel.x=this.width-36,this.rangeLabel.x=this.width-20),this.fireHurtBg&&(this.fireHurtBg.size(this.width,this.height),this.fireHurtBg.posInteger(0,0)),this.fireHurtAdd&&this.fireHurtAdd.posInteger((this.width>>1)-20,this.height>>1),this.fireHurtIcon&&this.fireHurtIcon.posInteger(4,this.height>>1),this.invalidEffectiveBg&&(this.invalidEffectiveBg.size(this.width,this.height),this.invalidEffectiveBg.posInteger(0,0)),this.invalidEffectiveIcon&&this.invalidEffectiveIcon.posInteger(4,this.height>>1),this.invalidEffectiveTxt&&this.invalidEffectiveTxt.posInteger(this.width+30-this.invalidEffectiveTxt.width>>1,1),this.zuoBangYouBiSkillTxt&&this.zuoBangYouBiSkillTxt.posInteger(this.width-this.zuoBangYouBiSkillTxt.width>>1,this.height-this.zuoBangYouBiSkillTxt.height>>1),this.lightFrameBg&&this.lightFrameBg.posInteger(-2,-5)}"
+    },
+    {
+      "method": "DisplayZuoBangYouBiSkill",
+      "bundle_utf16_start": 19281048,
+      "bundle_utf16_end": 19281865,
+      "source": "DisplayZuoBangYouBiSkill(){let t=this.getZuoBangYouBiSkillList();if(t.length){if(t.length>0){let i=this.theCard.Seat.GetSkillInstance(t[0]);if(!i)return;this.zuoBangYouBiSkillTxt||(this.zuoBangYouBiSkillTxt=yxt.Create(this,\"\",22,\"#FFF7F7\",100,this.height,hB.SemiBold),this.zuoBangYouBiSkillTxt.valign=\"middle\",this.zuoBangYouBiSkillTxt.align=\"left\",this.addDrawChild(this.zuoBangYouBiSkillTxt));let s=this.theCard.FirstSkill.ID==XIt.SPELL_SHENDIANWEI_LEFT?Dwt.ZuoBang:Dwt.YouBi;this.zuoBangYouBiSkillTxt.text=gt.F(s,i.Name),this.zuoBangYouBiSkillTxt.posInteger(this.width-this.zuoBangYouBiSkillTxt.width>>1,this.height-this.zuoBangYouBiSkillTxt.height>>1),t.length>1&&(this.zuoBangYouBiSkillTxt.text+=\"...\"),this.numLabel&&(this.nameLabel.text=\"\")}}else this.zuoBangYouBiSkillTxt&&(this.zuoBangYouBiSkillTxt.text=\"\")}"
+    }
+  ],
+  "limitations": [
+    "Official source was inspected statically; the official client was not executed.",
+    "The special text uses the selected skill name; local qiexie cards currently use the general name."
+  ]
+}

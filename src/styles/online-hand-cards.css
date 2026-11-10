@@ -1,0 +1,147 @@
+@font-face {
+	font-family: "dui-mate-hand";
+	src: url("../../ui/assets/fonts/FZLBGBK.ttf") format("truetype");
+	font-display: swap;
+}
+
+body[data-style="onlineUI"] .player > .handdisplays.online-handdisplays {
+	position: absolute;
+	width: 33.84px;
+	height: 77.76px;
+	box-sizing: border-box;
+	padding-top: 3.6px;
+	overflow: hidden;
+	border: 2.88px solid transparent;
+	border-image: url("../../image/ui/hand/other_hand_card_bg.png") 4 fill stretch;
+	background: none;
+	color: #ccb78e;
+	z-index: 80;
+	cursor: pointer;
+}
+
+body[data-style="onlineUI"] .online-handdisplays > .handcard {
+	position: relative;
+	width: 100%;
+	height: 14.4px;
+	margin: 0;
+	font: 14.4px/14.4px "dui-mate-hand", serif;
+	color: #ccb78e;
+	text-align: center;
+	pointer-events: none;
+}
+
+body[data-style="onlineUI"] .player > .online-handdisplays.hidden {
+	display: none !important;
+}
+
+body[data-style="onlineUI"] .online-handdisplays > .handcard-more {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 21.6px;
+	font: 15.84px/21.6px "dui-mate-hand", serif;
+	text-align: center;
+	pointer-events: none;
+}
+
+body[data-style="onlineUI"] .online-handdisplays > .dui-mate-recommended-label {
+	color: #ded4b8;
+	text-shadow: 0 1px 2px #1e1817;
+}
+
+body[data-style="onlineUI"] #window > .dui-mate-hand-popup {
+	position: absolute;
+	box-sizing: border-box;
+	border: 21.6px solid transparent;
+	border-image: url("../../image/ui/hand/skillTipShowBg.png") 30 fill stretch;
+	background: none;
+	box-shadow: none;
+	z-index: 1000;
+	animation: dui-mate-hand-open 200ms ease-out;
+	font-family: "dui-mate-hand", serif;
+	color: #f4edd4;
+	transition: none;
+}
+
+body[data-style="onlineUI"] .dui-mate-hand-popup > .dui-mate-hand-grid {
+	position: absolute;
+	left: -10.8px;
+	top: -7.2px;
+	width: calc(100% + 21.6px);
+	height: calc(100% - 7.2px);
+	display: grid;
+	grid-template-columns: repeat(4, 77.112px);
+	grid-auto-rows: 106.488px;
+	align-content: start;
+	gap: 4.32px;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+}
+
+body[data-style="onlineUI"] .dui-mate-hand-grid > .dui-mate-card-cell {
+	position: relative;
+	width: 77.112px;
+	height: 106.488px;
+	margin: 0;
+}
+
+body[data-style="onlineUI"] .dui-mate-card-cell > .card.dui-mate-card {
+	position: absolute !important;
+	left: 0 !important;
+	top: 0 !important;
+	width: 108px !important;
+	height: 150px !important;
+	margin: 0 !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+	transform: scale(0.714) !important;
+	transform-origin: left top !important;
+	pointer-events: auto !important;
+	transition: none !important;
+	animation: none !important;
+}
+
+body[data-style="onlineUI"] .dui-mate-hand-popup > .dui-mate-hand-title {
+	position: absolute;
+	left: -15px;
+	bottom: -5.76px;
+	width: calc(100% + 30px);
+	height: 22px;
+	margin: 0;
+	font: 18.72px/22px "dui-mate-hand", serif;
+	text-align: center;
+	white-space: nowrap;
+	pointer-events: none;
+}
+
+body[data-style="onlineUI"] .dui-mate-card-selected > .dui-mate-recommend-badge,
+body[data-style="onlineUI"] .handcards > .card.dui-mate-recommended > .dui-mate-recommend-badge {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: auto;
+	bottom: 0;
+	width: 73.81%;
+	height: 14.94%;
+	border: none;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+	opacity: 1;
+	visibility: visible;
+	background: url("../../image/ui/hand/card_tag_recommon0.png") left bottom / 100% 100% no-repeat;
+	pointer-events: none;
+	z-index: 100;
+}
+
+body[data-style="onlineUI"] .handcards > .card.dui-mate-recommended > .dui-mate-recommend-badge[data-recommendation="received"] {
+	background-image: url("../../image/ui/hand/card_tag_recommon1.png");
+}
+
+@keyframes dui-mate-hand-open {
+	from { transform: scaleX(0); }
+	to { transform: scaleX(1); }
+}

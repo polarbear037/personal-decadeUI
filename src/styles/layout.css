@@ -7,6 +7,8 @@
 @import "card.css";
 @import "icon.css";
 @import "effect.css";
+@import "online-phase-tips.css";
+@import "online-player-tips.css";
 
 /** 基础样式 */
 
@@ -190,8 +192,8 @@ body>.background {
 #arena[data-new-decade-style="onlineUI"][data-alone-equip="off"][data-right-layout="on"]>.hand-back {
 	right: 300px !important;
 	width: 617px !important;
-	left: 141px !important;
-	bottom: -0.7%;
+	left: 129px !important;
+	bottom: 0.5%;
 }
 
 .discard-zone {
@@ -592,7 +594,8 @@ body>.background {
 }
 
 .card.invalided>.card-mask,
-#arena.selecting:not(.video) .handcards>.card:not(.selectable)>.card-mask,
+body:not([data-style="onlineUI"]) #arena.selecting:not(.video) .handcards>.card:not(.selectable)>.card-mask,
+body[data-style="onlineUI"] #arena.selecting:not(.video) .handcards>.card:not(.dui-handcard-available)>.card-mask,
 #arena.thrownhighlight>.card.thrown:not(.thrownhighlight):not(.drawingcard),
 #arena.thrownhighlight>.card.thrown:not(.thrownhighlight):not(.drawingcard)>.card-mask {
 	opacity: 1;
@@ -604,6 +607,21 @@ body>.background {
 
 #arena>.card>.judge-mark {
 	visibility: hidden;
+}
+
+/* 主视角判定区仅展示标记，兼容扩展追加的卡面和标签。 */
+#arena>.player[data-position="0"]>.judges>.card {
+	background: none !important;
+	box-shadow: none !important;
+}
+
+#arena>.player[data-position="0"]>.judges>.card>:not(.judge-mark):not(.dui-judge-queue-arrow),
+#arena>.player[data-position="0"]>.judges>.card::before,
+#arena>.player[data-position="0"]>.judges>.card::after {
+	display: none !important;
+	/* 卡面扩展可能以更高优先级重新显示标签，仍须禁止绘制。 */
+	opacity: 0 !important;
+	pointer-events: none !important;
 }
 
 .player>.judges>.card.decade-delay-judge-attached {
@@ -667,7 +685,8 @@ body>.background {
 	font-family: "HYXLSJ";
 	transition: opacity 0.3s;
 	pointer-events: none;
-	z-index: 8;
+	/* 控制栏需位于 dialog_ol(101) 之上，空白区仍由 pointer-events:none 穿透。 */
+	z-index: 102;
 }
 
 #arena>#dui-controls>* {
@@ -710,12 +729,6 @@ body>.background {
 #arena>#dui-controls>.control.stayleft {
 	position: absolute;
 	left: -25px;
-	order: 0;
-}
-
-#arena.decadeUI.dui-mobile>#dui-controls>.control.stayleft {
-	position: absolute;
-	left: 120px !important;
 	order: 0;
 }
 
@@ -914,4 +927,10 @@ body[data-style="babysha"] #arena[data-long-level="five"]>.player>.wei {
 .card:has(.tempsuitnum)>.suit-num {
 	display: none !important;
 	visibility: hidden !important;
+}
+
+/* 官方静态露头图含透明顶缘，按原版178/146宽度比居中、底部对齐。 */
+.player>.has-outcrop.has-explicit-outcrop {
+	background-size: 121.917808% auto !important;
+	background-position: center bottom !important;
 }

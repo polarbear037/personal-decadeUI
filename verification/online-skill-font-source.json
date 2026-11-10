@@ -1,0 +1,18 @@
+{
+  "apk": "yoka.game_g_android_4.0.2.apk",
+  "apk_sha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+  "rea_inventory_evidence": "ev_edcf0b916ee34807938588035c3ed96b6f776080202e0b1ddb6b950602425eab",
+  "script_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb",
+  "script_entry": "main.sgs",
+  "script_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "skill_button": "Frs.init assigns labelFont=hB.HYF3GJM",
+  "font_resource": "/res/assets/fontApp/HYF3GJM.ttf",
+  "font_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/faca1f64",
+  "font_sha256": "d047850bd032c8547922777f92b3ddc37942267455c83d92269d1ce5616b0c9d",
+  "target": "ui/assets/fonts/HYF3GJM.ttf",
+  "glyphs": {
+    "U+593A": "uni593A",
+    "U+7081": "uni7081"
+  },
+  "verification": "Edge 夹具通过 CSS.getPlatformFontsForNode 确认主动、被动和限定技能按钮的两个字形均由 HYF3GJM 绘制。"
+}

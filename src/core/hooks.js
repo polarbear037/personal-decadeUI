@@ -1,5 +1,13 @@
 import { lib, _status, get, ui, game } from "noname";
+import { isHandCardAvailable } from "../ui/handcard-selection.js";
 function e() {
+	lib.hooks.checkCard.push(function (card, event) {
+		if (lib.config.extension_十周年UI_newDecadeStyle !== "onlineUI") return;
+		card.classList.toggle("dui-handcard-available", card.classList.contains("selectable") || card.classList.contains("selected") || isHandCardAvailable(card, event));
+	});
+	lib.hooks.uncheckCard.push(function (card) {
+		card.classList.remove("dui-handcard-available");
+	});
 	lib.hooks.checkTarget.push(function (e) {
 		e.classList[["selected", "selectable"].some(t => e.classList.contains(t)) ? "remove" : "add"]("un-selectable");
 	});

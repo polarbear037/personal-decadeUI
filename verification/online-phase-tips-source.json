@@ -1,0 +1,99 @@
+{
+  "source": "OL Android 4.0.2, main.sgs!main.sgs",
+  "source_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "rea_analysis_evidence": "ev_4792b5d13f86d7808339ca11ebb2569e95771e770b843d5e89f6836aeb2c2457",
+  "rea_module_evidence": "ev_610075a860af71c88477fe67a6e65d7d2821ebd9455584bda925b3d114566e8d",
+  "class": "bvi",
+  "methods": [
+    "initChildren",
+    "Seat_RoundStateChanged",
+    "layoutUI",
+    "OnStageResize"
+  ],
+  "official": {
+    "texture": "win_info_time_bg",
+    "size": [
+      132,
+      28
+    ],
+    "sizeGrid": "10,10,10,10",
+    "font": "FZLBGBK",
+    "fontSize": 26,
+    "color": "#C4B088",
+    "align": "center",
+    "valign": "middle",
+    "safeAreaWidth": 16,
+    "selfSeatHeight": 185,
+    "roundContentPosition": [
+      10,
+      -90
+    ],
+    "labels": {
+      "SeatRoundState_1": "回合开始",
+      "SeatRoundState_2": "判定阶段",
+      "SeatRoundState_3": "摸牌阶段",
+      "SeatRoundState_4": "出牌阶段",
+      "SeatRoundState_5": "弃牌阶段",
+      "SeatRoundState_6": "回合结束"
+    }
+  },
+  "assets": [
+    {
+      "source": "res/assets/game/gameBase.atlas#win_info_time_bg.png",
+      "sheet": "res/assets/game/gameBase.png",
+      "frame": {
+        "h": 30,
+        "idx": 0,
+        "w": 30,
+        "x": 554,
+        "y": 920
+      },
+      "target": "image/ui/phase/online/win_info_time_bg.png",
+      "pixel_equal": true,
+      "sha256": "d20e2955620b4d320a5618e50da1a9a5a307d1903647f4e1c088f8e44c06ebff"
+    },
+    {
+      "source": "res/assets/fontApp/FZLBGBK.ttf",
+      "target": "ui/assets/fonts/FZLBGBK.ttf",
+      "reused": true,
+      "sha256": "19e6426eee18e655f4d247976a73fd51cefc03e599667e224497c73d598762b8"
+    }
+  ],
+  "transition": {
+    "authority": "extension implementation",
+    "entryMs": 240,
+    "exitMs": 180,
+    "entryX": [
+      -18,
+      0
+    ],
+    "exitX": [
+      0,
+      18
+    ],
+    "opacity": [
+      0,
+      1
+    ]
+  },
+  "limitations": [
+    "Selected official class inspection, not a complete application execution.",
+    "The inspected official roundContent branch sets text and visible directly; no dedicated transition duration was observed there.",
+    "Transition durations and slide distances are supplied by this extension, not claimed as official values.",
+    "Reference screenshot build identity was not established."
+  ],
+  "verification": [
+    "verification/online-phase-tips-browser.cjs",
+    "verification/online-phase-tips-results.json",
+    "verification/online-phase-tips-game-results.json"
+  ],
+  "implementation_layout": {
+    "authority": "user-directed CSS positioning",
+    "stylesheet": "src/styles/online-phase-tips.css",
+    "left": "7%",
+    "top": "61.5%",
+    "width": "8.5%",
+    "aspect_ratio": "132 / 28",
+    "javascript_coordinates": false
+  }
+}

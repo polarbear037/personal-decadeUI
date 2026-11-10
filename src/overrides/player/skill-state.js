@@ -1,6 +1,20 @@
 import { game, get, lib } from "noname";
 import { getBasePlayerMethods as getBasePlayerMethods } from "./base.js";
 const s = /* @__PURE__ */ new Map();
+const ONLINE_CONVERSION_ICON_ROOT = "extension/十周年UI/ui/assets/skill/online";
+
+function notifyConversionIconChange(player, skill, mark) {
+	if (lib.config.extension_十周年UI_newDecadeStyle !== "onlineUI" || typeof document === "undefined") return;
+	if (player !== game.me) return;
+	const state = mark.classList.contains("yin") ? "yin" : "yang";
+	const previous = mark._decadeUIConversionState;
+	mark._decadeUIConversionState = state;
+	if (previous == null || previous === state) return;
+	const icon = Array.from(document.querySelectorAll(".skill-zhuanhuanji-img")).find(node => node.closest("[data-id]")?.dataset.id === skill);
+	if (!icon) return;
+	icon.src = `${lib.assetURL}${ONLINE_CONVERSION_ICON_ROOT}/skillitem_yinyang_${state === "yang" ? "bg1" : "bg2"}.png`;
+	document.dispatchEvent(new CustomEvent("decadeui:conversion-icon-change", { detail: { skill, state, icon } }));
+}
 function n(n) {
 	if ((getBasePlayerMethods().$changeZhuanhuanji.apply(this, arguments), !get.is.zhuanhuanji(n, this))) return;
 	if (this.hiddenSkills.includes(n) && this !== game.me) return;
@@ -41,6 +55,7 @@ function e(player, i, s) {
 					l = `${n}ditu_ying.png`;
 				!0 === i.dd ? (player.setSkillYinYang(s, !1), (i.dd = !1), i.setBackgroundImage(i.dk ? e : a)) : (player.setSkillYinYang(s, !0), (i.dd = !0), i.setBackgroundImage(i.dk ? t : l));
 			})(player, i, s);
+	notifyConversionIconChange(player, s, i);
 }
 function t(skill, isYang) {
 	game.broadcastAll((player, skill, isYang) => player.$setSkillYinYang(skill, isYang), this, skill, isYang);

@@ -1,0 +1,124 @@
+{
+  "apk_sha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+  "source_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb!main.sgs",
+  "source_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "rea_analysis_evidence": "ev_c7d7e083b902e203f2dd5cd23ee58f3179cb1ad903fb23f45922445f74693863",
+  "rea_module_evidence": "ev_d67fd7d833ec9e6b0b5ebf6c4fcb6dbcdf13371e3738b0090576d3fd97715ed8",
+  "excerpts": [
+    {
+      "feature": "general-skill-name",
+      "filename": "general-skill-name.js",
+      "symbol": "MUt",
+      "utf16Start": 7818138,
+      "utf16End": 7820763,
+      "byteStart": 8042543,
+      "byteLength": 2625,
+      "sha256": "5e610cda0cffb496950717205c4be195954c86803fe6c79c0e9a2da2f5cfc595",
+      "methods": [
+        {
+          "name": "playEffect",
+          "source": "playEffect(t,i){if(!t||t.AniType===jk.NONE)return void this.onComplete();this.skill=t;const s=this.getUrlName(i);this.effectUrl=\"res/assets/animate/game/skill/general/\".concat(s,\".skel\"),this.nameOrIndex=this.getAnimationName(),this.autoReleaseRes&&Cx.GetInstane().AddSpine(this.effectUrl),super.playEffect()}"
+        },
+        {
+          "name": "labelHandler",
+          "source": "labelHandler(t){if(this.skill)if(Laya.Tween.clearAll(this.skillNameLeft),Laya.Tween.clearAll(this.skillNameRight),\"chuxian\"===t.name){this.skillNameLeft.visible=!0,this.skillNameRight.visible=!0;const t=this.skill.Name,i=Math.floor(t.length/2);this.skillNameLeft.text=t.substr(0,i),this.skillNameRight.text=t.substr(i);const s=i>1?20:0,e=this.skillNameLeft.x-s,h=this.skillNameRight.x+s;this.skillNameLeft.x=e-70,this.skillNameRight.x=h+70,this.skillNameLeft.alpha=0,this.skillNameRight.alpha=0,Laya.Tween.to(this.skillNameLeft,{x:e,alpha:1},150),Laya.Tween.to(this.skillNameRight,{x:h,alpha:1},150)}else\"xiaoshi\"===t.name&&(Laya.Tween.to(this.skillNameLeft,{alpha:0},150),Laya.Tween.to(this.skillNameRight,{alpha:0},150))}"
+        },
+        {
+          "name": "getUrlName",
+          "source": "getUrlName(t){return t?\"gaojichufa\":\"putongchufa\"}"
+        }
+      ]
+    },
+    {
+      "feature": "seat-skill-dispatch",
+      "filename": "seat-skill-dispatch.js",
+      "symbol": "mMt",
+      "utf16Start": 7356979,
+      "utf16End": 7484302,
+      "byteStart": 7580536,
+      "byteLength": 127435,
+      "sha256": "2efd60b05eb9203fbf27819e61f56f7e2541d464a6e9c4e75bd49f89b52eca95",
+      "methods": [
+        {
+          "name": "onUseSkill",
+          "source": "onUseSkill(t){let i=t.Skill;if(!i)return;let s=this.seat.Gradation;if(i instanceof $xt||i.ID==XIt.GUANDU_SHISHENGSHIBAI||i.ID==XIt.GUANDU_YIRUOSHENGQIANG){if(i.ID==XIt.GUSHE_ONLINE){if(Ey.I().IsGameScene)if(this.gusheEffect||(this.gusheEffect=new tO),fz.I().on(_z.MULTI_PINDIAN_CLOSE,this,this.gusheDelayPlay),t.DestSeatIDs.length>0)this.gusheSeatIDs=[].concat(t.DestSeatIDs);else if(t.Params.length>1){let i=Wwt.GetSeat(t.Params[1]);if(this.gusheSeatIDs){let i=this.gusheSeatIDs.indexOf(t.Params[1]);i>-1&&this.gusheSeatIDs.splice(i,1)}let s=hO.Instance().seatUIContainer;if(s){let t=s.GetSeatUiBySeat(i);if(t){let i=t.GetEffectCenterPos(),s=[this.GetEffectCenterPos()];this.gusheEffect.PlayGuSheEffect(i,s,2)}}}}else if(i.ID==XIt.JINLAN);else if(i.ID==XIt.ZIRUO||i.ID==XIt.ZIRUO2)this.ShowZiruoEffect(i);else if(i.ID>=XIt.ZHANFA_XING_YUN_1&&i.ID<=XIt.ZHANFA_XING_YUN_13);else if(i.IsXianDingSkill||i.IsJueXingSkill)Wwt.ShowGameAwakenEffects&&this.playXDJXSkillEffect(i),i.ID,XIt.NSHONGBAO2024,i.IsXianDingSkill&&this.onUpdateXianDingSkill(i);else if(i.ID==XIt.JIAOYU)return;i.AniType!=jk.NONE&&this.playGeneralSkillEffect(i,s>=2,t)}else i instanceof Xxt?this.playEquipSkillAnimate(i,t):i instanceof PUt||(i.CardSkillAnimationZone==vF.SPECIAL?i.PlaySpecialEffect(this):i.ID==XIt.TIESUOLIANHUAN?hO.Instance().PlayEffect(i.ID):i.CardSkillAnimationZone==vF.SPECIAL?i.PlaySpecialEffect(this):i.ID==XIt.TIESUOLIANHUAN?i.Show3dEffect&&!WUt.I().NeedPauseSkill(i.ID)&&hO.Instance().PlayEffect(i.ID):i.ID!=XIt.LEBUSISHU&&i.ID!=XIt.BINGLIANGCUNDUAN&&i.ID!=XIt.SHANDIAN&&this.playCardSkillAnimate(i,t.CardID,t.Color));i.PlayExtraEffect([t,this])}"
+        },
+        {
+          "name": "playEquipSkillAnimate",
+          "source": "playEquipSkillAnimate(t,i){if(!t||!i)return;if(WUt.I().NeedPauseSkill(t.ID,WUt.TYPE_SKILL_TRIGGER))return;let s=255;i.DestSeatIDs&&i.DestSeatIDs.length>0&&(s=i.DestSeatIDs[0]),this.play3DEquipSkill(t,s,null,i.Params)}"
+        },
+        {
+          "name": "playXDJXSkillEffect",
+          "source": "playXDJXSkillEffect(t){if(!t||!t.SkillAnimationUrl)return;if(!Ey.I().IsGameScene)return;if(this.skinHasXDJXSkill(t))return;let i=t.SkillAnimationUrl,s=new Tx(!1,mMt.spineUseKtx(i));s.AutoReleaseRes=!0,s.InitEffect(i,0,!1,!0),s.playEffect(),this.addGameSceneEffect(s),s.zOrder=1e3,s.pos(b$.gameWidth>>1,b$.gameHeight>>1)}"
+        },
+        {
+          "name": "getGeneralSkillSpineEffect",
+          "source": "getGeneralSkillSpineEffect(){let t=new MUt;return t.AutoReleaseRes=!0,t.pos(mMt.SEAT_WIDTH>>1,mMt.SEAT_HEIGHT>>1),this.effectSprite.addChild(t),t}"
+        }
+      ]
+    },
+    {
+      "feature": "pindian-dispatch",
+      "filename": "pindian-dispatch.js",
+      "symbol": "wk",
+      "utf16Start": 2119999,
+      "utf16End": 2131150,
+      "byteStart": 2125869,
+      "byteLength": 11151,
+      "sha256": "5d6f126047ef17013b049e2543c8063e5e4e35c292c0f8a1325ef9d24912ef05",
+      "methods": [
+        {
+          "name": "pindianResultFunc",
+          "source": "pindianResultFunc(t,i,s){if(t.Datas&&3<t.Datas.length)if(yOt.I().hasWindow(\"Single3v3PinDianWindow\")){let i=1==t.Datas[1];St.I().UpdateWindow(\"Single3v3PinDianWindow\",[t.Datas[2],t.SeatID,t.Datas[3],t.Datas[0],i])}else if(yOt.I().hasWindow(\"PinDianWindow\")){let i=1==t.Datas[1];St.I().UpdateWindow(\"PinDianWindow\",[t.Datas[2],t.SeatID,t.Datas[3],t.Datas[0],i]),yOt.I().ShowAndStartFightWindowByName(\"PinDianWindow\")}else yOt.I().hasWindow(\"PinDianMultiWindow\")&&St.I().UpdateWindow(\"PinDianMultiWindow\",t.Datas);let e=this.rm.GetRecord(eH.RECORD_TYPE_29,s?s.Index:-1);e.destSeats=[],e.type=eH.RECORD_TYPE_29,e.positive=1==t.Datas[1],e.destSeats=[t.Datas[0]],t.Datas[2]&&t.Datas[3]&&(e.cards=[t.Datas[2],t.Datas[3]]),this.rm.AddRecord(e)}"
+        }
+      ]
+    }
+  ],
+  "observations": [
+    "MUt.playEffect 在 AniType=NONE 时结束，不创建通用技能触发动画；labelHandler 在 chuxian 标签上显示 skill.Name。",
+    "mMt.onUseSkill 将武将技能、装备技能、卡牌效果分开处理；普通武将技能名是触发动画的组成部分。",
+    "wk.pindianResultFunc 更新拼点窗口并写入牌局记录；此分支没有调用武将通用技能名飘字。"
+  ],
+  "policy": {
+    "configuration_sources": [
+      {
+        "config": "cha_spell",
+        "resource": "/res/config/list6.sgs",
+        "member": "list6.sgs",
+        "cache_sha256": "cc806a5520bd217e3174efeadda7f8775ff008ce1b90b6da5885c4c6154ed2d1",
+        "package_sha256": "fbb6ea3da5c49820b98335ec28bbe3dd644f41233655a8f59da0a3cc165a5e6e",
+        "member_sha256": "da3cb2ec30e707ab63eb25972b02135d7efb8fa9de50d363f0cb496e5049fac3"
+      }
+    ],
+    "configuration_identity": "MuMu 热更新配置，与 APK 主脚本分别保存身份，未声称来自相同版本字节。",
+    "allowed": "cha_spell 中 SkillType=2 且 AniType 为1至8的非空技能名；同名官方版本共享显示文本。",
+    "hidden": "不在上述通用技能名范围的文字，包括拼点胜负、判定状态、卡牌名称、装备名称、未知自定义文字。",
+    "scope": "仅过滤武将的文字飘字渲染，操作提示、数字伤害、记录、联机消息、专用特效各走原流程。",
+    "limitations": [
+      "静态检查覆盖选定的通用触发、技能派发与拼点结果分支，不代表已枚举所有官方皮肤脚本和协议事件。",
+      "纯文字 popup 已丢失官方技能ID，不以文字决定本体是否发动技能；这里只限制允许显示的内容。"
+    ]
+  },
+  "layers": {
+    "trigger": {
+      "z_index": 5,
+      "source": "../标记补充/olSkillEffects.js:33",
+      "scope": "arena 逐元素特效画布，旧版皮肤切换的回退入口不保证这一层级"
+    },
+    "popup": 6,
+    "fullscreen": {
+      "z_index": 7,
+      "source": "src/styles/layout.css:42",
+      "canvas": "decadeUI-canvas",
+      "parent": "body"
+    },
+    "normal_dialog_base": 7,
+    "ol_dialog": 101,
+    "scope": "仅优化提示开启时应用；专用对话框的高优先级规则保留。"
+  },
+  "verification": [
+    "verification/player-popup-browser.cjs",
+    "verification/player-popup-browser-results.json",
+    "verification/player-popup-engine-results.json"
+  ]
+}

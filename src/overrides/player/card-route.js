@@ -1,6 +1,8 @@
 import { STYLE_TO_SKIN, DEFAULT_SKIN } from "../../../ui/constants.js";
 import * as fallbackActions from "./card-actions.js";
 import * as fallbackMovement from "./card-movement.js";
+import { refreshEquipLayout } from "../../ui/equip-layout.js";
+import { installEquipSweepCompatibility } from "../../ui/equip-effects.js";
 
 const ACTION_EXPORTS = ["playerHandleEquipChange", "playerLose", "playerRespond", "playerRespondAnimateBefore", "playerUseCard", "playerUseCardAnimateBefore"];
 const MOVEMENT_EXPORTS = ["playerAddVirtualJudge", "playerDirectgain", "playerDirectgains", "playerDraw", "playerGain2", "playerGive", "playerPhaseJudge", "playerThrow", "playerThrowordered2", "setBasePlayerDraw"];
@@ -38,7 +40,10 @@ async function loadPlayerCardOverrides(style) {
 }
 
 function playerHandleEquipChange() {
-	return actionOverrides.playerHandleEquipChange.apply(this, arguments);
+	const result = actionOverrides.playerHandleEquipChange.apply(this, arguments);
+	refreshEquipLayout(this);
+	installEquipSweepCompatibility();
+	return result;
 }
 
 function playerLose() {

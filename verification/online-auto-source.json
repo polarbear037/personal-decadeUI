@@ -1,0 +1,176 @@
+{
+  "source": "OL Android 4.0.2 APK",
+  "apk_sha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+  "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb!main.sgs",
+  "outer_member_sha256": "5048a2c27556924e756a7f1950e194787482f675e51b3165a34c7056c588cc3b",
+  "main_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "rea_inventory_evidence": "ev_edcf0b916ee34807938588035c3ed96b6f776080202e0b1ddb6b950602425eab",
+  "rea_main_member_evidence": "ev_066690bc5fcc481674ce2d62b5103dd6bf1821fc5164f31325cb8157c8e0f54e",
+  "rea_asset_member_evidence": "ev_15bfaaa3429a1bd3632ff5b92bba956cb2b1b059104989c116d4f8289721c902",
+  "official": {
+    "panel_height": 185,
+    "background_sizeGrid": "10,2,10,2",
+    "cancel_size": [
+      204,
+      68
+    ],
+    "cancel_font": 34,
+    "cancel_color": "#eedebc",
+    "normal_status_text": "",
+    "trusteeship_entry_offsets": [13665812, 18239225],
+    "status_text_evidence": "Pvi initializes tipTxt with an empty string. The three tipsArray references initialize, populate and clear the array. Neither trusteeship entry assigns tipTxt or reads tipsArray. The separate reward timer updates msg via ShowNoRewardTips."
+  },
+  "adaptation": "Reuse the noname autonode and native ui.click.auto. Keep the original mark nodes under dui-marks for native updates and intros. Lay out gray and gold marks independently from the official anchors. Present the native visible cards in a compact popup matching the supplied reference.",
+  "seat_badge": {
+    "state": "PF.ShowText maps trusteeship and host intelligence to 托管. PF.NeedShow hides the state for dead seats and uses the mode's IsShowTuoGuan flag for other seats.",
+    "layout": "updateSeatState creates a uOi text badge. layoutStateIcons starts text states at (28, 80) on a 174×232 seat and stacks subsequent rows upward by badge height plus 2.",
+    "counts": "Text-state implementations such as xT render the name and the count together as Name[Value].",
+    "offsets": { "PF": 2662352, "updateSeatState": 7454769, "layoutStateIcons": 7458335, "uOi": 14158175, "bracketed_ShowText": 1456362 },
+    "font_size": 22,
+    "color": "#DBDBDB",
+    "height": 30,
+    "sizeGrid": "6,11,10,7,0",
+    "source": "res/assets/game/seat.atlas#seat_state_bg_new.png",
+    "atlas_cache": "61c5aa54",
+    "sheet_cache": "db156ff2",
+    "frame": { "x": 1129, "y": 491, "w": 30, "h": 30 },
+    "target": "image/ui/tip/online/seat_state_bg_new.png",
+    "sha256": "852f3bc76ab331cbfd21304544f9a579b9bb225ec92a6dccf99662fd86f52c47",
+    "pixel_equal": true
+  },
+  "seat_mark_categories": {
+    "coordinates": { "seat": [174, 232], "gray_text_start": [28, 80], "action_start": [123, 50], "icon_start": [153, 188] },
+    "gray_text": {
+      "renderer": "uOi",
+      "condition": "NeedLayout, no MIconName, no NeedOperate. Click delegates to ClickCallback, which is empty in iE and is not overridden by PF or nC.",
+      "examples": "PF displays 托管. nC displays 罡拳[决斗] or 罡拳[火杀] from DATA_GANGQUAN (3732)."
+    },
+    "gold_action": {
+      "renderers": ["RCs", "Kns"],
+      "condition": "NeedOperate text states use RCs. Skills with NeedShowOutsideCardOnSeat use Kns while their outside pile is nonempty.",
+      "example": "FuShi/lai displays 缚豕[count] using the outside-pile count. onOutsideBtnClick opens SkillBuQuWindow on the default path.",
+      "atlas_frame": "seat_state_btn_0_new2024.png",
+      "frame": { "x": 1132, "y": 442, "w": 30, "h": 30 },
+      "target": "image/ui/tip/online/seat_state_btn_0_new2024.png",
+      "sha256": "656b5e22300f0d6e48cfe537539a2f815da7fae9fc149bfac27812c4517b2b0c",
+      "sizeGrid": "4,10,10,6",
+      "color": "#FFEFAD"
+    },
+    "graphic_icon": {
+      "renderer": "oOi",
+      "condition": "MIconName or multi-state icon entries. The renderer uses an explicit texture or a tinted state_icon_bg with an overlay frame and text from GameSpells.circleMark.",
+      "examples": "ShaZhe/t9t toggles DATA_SHAZHE (3730), which is implemented by hkt extending MN. DongDao/m9i inherits cOi and updates DATA_SWITCH (251). iN picks SeatSate_Yin for state 2 and SeatSate_Yang otherwise.",
+      "atlas_frames": ["state_icon_bg.png", "state_icon_frame.png", "state_icon_frame_light.png", "SeatSate_Yin.png", "SeatSate_Yang.png"],
+      "configuration": "online-circle-mark-source.json records all 69 rows from the verified emulator-cache member. The row for DATA_SHAZHE (3730) gives text 狂 and tint #ba3000. The APK verifies the renderer and state IDs."
+    },
+    "offsets": { "FuShi": 12232694, "updateOutsideCard": 7452448, "onOutsideBtnClick": 7453857, "Kns": 19528967, "RCs": 22904606, "oOi": 14151407, "ShaZhe": 11653593, "MN": 1555815, "DongDao": 18514958, "switchState": 1546153, "circleMark": 3394635 }
+  },
+  "outside_card_popup": {
+    "apk_paths": {
+      "general": "onOutsideBtnClick opens SkillBuQuWindow (vSs) with skill2025_bg_small and normal cards.",
+      "lucun": "DATA_LUCUN (aI) opens LuCunCardWindow (ufs) with skill2025_bg_big and separate physical-card and virtual-choice rows.",
+      "card_tag": "getCardTagBtn uses card_tag_bg, sizeGrid 10,20,10,5, and text color #FFEFBE. Virtual hand cards add a tag via OutSideCardLabel."
+    },
+    "offsets": { "vSs": 22336077, "ufs": 21488769, "z2i_initStyle": 17794184, "getCardTagBtn": 19381726 },
+    "adapter": "The compact preview reuses native nodeintro card buttons. It uses tip_bg and userinfowin_skillitem_title_bg for the frame and title, and card_tag_bg on visible physical cards. Lucun is split into a gray olsblucun expansion count and a gold olsblucun_used history. The latter lists used names only and displays existing image/vcard banners at 0.75 of the official 166x44 design size.",
+    "lucun_source": "aI.ShowText returns the skill name. ufs.enterWindow adds physical cards independently, then creates C_<CardResName>_Nor banner buttons for virtual skills, disabling used names via Oti.hasUsed. noname records the actual view-as card in olsblucun_used during precontent and clears that skill during olsbtuisheng.",
+    "assets": {
+      "image/ui/tooltip/tip_bg.png": "f3eb8fdd03f5b9bff44acf7a8ae905f31acfe0e15143eab432b8e66e628860f7",
+      "image/ui/tooltip/userinfowin_skillitem_title_bg.png": "25ca86efe93e9b177132e065d90f4faf20520e6c157f23bef64d6048f46fdc78",
+      "image/ui/card/card_tag_bg.png": "ded1d8ddd58ac01c884ddcf7d47fd34d141ca78f784690e1c5846d76a7cb57ed"
+    }
+  },
+  "assets": [
+    {
+      "target": "ui/assets/lbtn/OL_line/uibutton/trusteeship_bg_new.png",
+      "source": "res/assets/game/gameBase.atlas#trusteeship_bg_new.png",
+      "frame": {
+        "h": 269,
+        "idx": 0,
+        "w": 8,
+        "x": 1016,
+        "y": 0
+      },
+      "sha256": "0dfadf49899fb30e442eb1479c0dec33be27303dd43b99ad379ad12e992a5f1b",
+      "pixel_equal": true,
+      "atlas_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/48fbc971",
+      "atlas_sha256": "7131ba83f2d394aa47d537418c387150411aae7afdaec2282470976283f55fa4",
+      "sheet_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/c98511fc",
+      "sheet_sha256": "9a95c01b221b00af9b1456d4d548ba6978d25e431046cf3d152455f7ee73d832"
+    },
+    {
+      "target": "ui/assets/lbtn/OL_line/uibutton/tool_trusteeship_0.png",
+      "source": "res/assets/game/gameBase.atlas#tool_trusteeship_0.png",
+      "frame": {
+        "h": 39,
+        "idx": 0,
+        "w": 119,
+        "x": 807,
+        "y": 804
+      },
+      "sha256": "5d9b9734ce3b3a40a7d68693d7362c5b82c62427eb886e31d6b9ba0527fdbc4e",
+      "pixel_equal": true,
+      "atlas_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/48fbc971",
+      "atlas_sha256": "7131ba83f2d394aa47d537418c387150411aae7afdaec2282470976283f55fa4",
+      "sheet_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/c98511fc",
+      "sheet_sha256": "9a95c01b221b00af9b1456d4d548ba6978d25e431046cf3d152455f7ee73d832"
+    },
+    {
+      "target": "ui/assets/lbtn/OL_line/uibutton/tool_trusteeship_0_cancel.png",
+      "source": "res/assets/game/gameBase.atlas#tool_trusteeship_0_cancel.png",
+      "frame": {
+        "h": 39,
+        "idx": 0,
+        "w": 119,
+        "x": 686,
+        "y": 765
+      },
+      "sha256": "94c9672ef9be70fd4607d614b551b5307dc48f3cf500f31234aa8ca7a1254f43",
+      "pixel_equal": true,
+      "atlas_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/48fbc971",
+      "atlas_sha256": "7131ba83f2d394aa47d537418c387150411aae7afdaec2282470976283f55fa4",
+      "sheet_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/c98511fc",
+      "sheet_sha256": "9a95c01b221b00af9b1456d4d548ba6978d25e431046cf3d152455f7ee73d832"
+    },
+    {
+      "target": "ui/assets/lbtn/OL_line/uibutton/secbtn_sub.png",
+      "source": "res/assets/common/baseUI1.atlas#secbtn_sub.png",
+      "frame": {
+        "h": 68,
+        "idx": 0,
+        "w": 204,
+        "x": 1598,
+        "y": 570
+      },
+      "sha256": "31d63c2bee6ab8230d77c3d2d3cf4fc9a959558b51494777f020f009d2944400",
+      "pixel_equal": true,
+      "atlas_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/71445296",
+      "atlas_sha256": "98e13074fd217a6ce182502f81970d43cad43f2aee019efe6ae21d6091267b05",
+      "sheet_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/8723e84d",
+      "sheet_sha256": "6fba16e2295766af1978d0ebd00cf0e51ce4e2220b8a42256d4c6e590f9a8875"
+    }
+  ],
+  "code": [
+    {
+      "name": "Pvi",
+      "character_range": [
+        13764607,
+        13767223
+      ],
+      "sha256": "27105967d54dd47ffd39c391d83e21d047e5a0e00f9bd748252bd19753f731ab",
+      "source": "class Pvi extends Gxt{constructor(){super(),kwt(this,\"leftTime\",0),kwt(this,\"tipsType\",5),this.addClick();let t=b$.gameWidth-mMt.SEAT_WIDTH-30-bvi.handCardLeft;this.size(t,Uvi.STACK_HEIGHT),this.bg=new Dxt(Bwt.GetRes(\"trusteeship_bg_new\")),this.bg.sizeGrid=\"10,2,10,2\",this.bg.size(this.width,this.height),this.addDrawChild(this.bg),this.cancelBtn=cb.getWindowBtn(this,qP.SECOND,qP.SUBTLE,Dwt.CANCEL_TRUSTEESHIP),this.cancelBtn.on(Laya.Event.CLICK,this,this.O),this.cancelBtn.pos(this.width>>1,this.height>>1),this.addTips(),this.tipTxt=yxt.Create(null,\"\",32,\"#FFEED1\",200,25,null,!1,3,\"#402E12\"),this.tipTxt.align=\"center\",this.tipTxt.valign=\"middle\",this.tipTxt.pos(this.width-400-this.tipTxt.width>>1,this.height-this.tipTxt.height>>1),this.addDrawChild(this.tipTxt),this.tipsArray=[];let i=\"托管中\";for(let t=0;t<this.tipsType;t++)this.tipsArray.push(i),i+=\".\";this.cancelBtn.visible=!Wwt.IsViewer,this.layout()}addTips(){this.msg||(this.msg=new Qx,this.msg.mouseEnabled=!1,this.addChild(this.msg),this.msg.style.color=\"#F5EDD6\",this.msg.style.fontSize=28,this.msg.style.stroke=3,this.msg.style.strokeColor=\"#402E12\",this.msg.style.wordWrap=!1)}ShowNoRewardTips(t){this.leftTime=t,this.updateMsg(t),Laya.timer.loop(1e3,this,this.timerHanadler)}updateMsg(t){let i=\"\";(Wwt.GetModeVO().AiTimeMax||Wwt.GetModeVO().AiTimeHalfMax)&&(t>=Wwt.GetModeVO().AiTimeMax&&Wwt.GetModeVO().AiTimeMax?(i=Dwt.M_GAME_RESULT_NO_REWARD_TIPS3,this.stopTimer()):i=t>=Wwt.GetModeVO().AiTimeHalfMax&&Wwt.GetModeVO().AiTimeHalfMax?gt.F(Dwt.M_GAME_RESULT_NO_REWARD_TIPS2,lt.TimeFormatToMinutes(t),lt.TimeFormatToMinutes(Wwt.GetModeVO().AiTimeMax)):gt.F(Dwt.M_GAME_RESULT_NO_REWARD_TIPS1,lt.TimeFormatToMinutes(t),lt.TimeFormatToMinutes(Wwt.GetModeVO().AiTimeHalfMax)),this.msg.innerHTML=i,this.msg.pos(this.width-this.msg.contextWidth>>1,this.height-30))}ClearMsg(){this.stopTimer(),this.msg&&(this.msg.innerHTML=\"\")}OnStageResize(){super.OnStageResize(),this.layout()}layout(){let t=b$.gameWidth-mMt.SEAT_WIDTH-30-bvi.handCardLeft;this.size(t,185),this.bg.size(this.width,this.height),this.msg.pos(this.width-this.msg.contextWidth>>1,this.height-30),this.tipTxt.pos(this.width-400-this.tipTxt.width>>1,this.height-this.tipTxt.height>>1),this.cancelBtn.pos(this.width>>1,this.height>>1)}size(t,i){return super.size(t,i),this}timerHanadler(){this.leftTime++,this.updateMsg(this.leftTime)}stopTimer(){Laya.timer.clear(this,this.timerHanadler)}O(){let t=new QF;t.SeatID=Wwt.SelfSeatIndex,t.Flag=QF.gsuserstate_normal,Ot.I().L(t),Wwt.CancelTruestValue=!0}CancelTruset(){this.O()}destroy(){this.tipsArray.length=0,this.stopTimer(),super.destroy()}}"
+    },
+    {
+      "name": "cb.SetCommonBtnStyle",
+      "character_range": [
+        1940143,
+        1942186
+      ],
+      "sha256": "5fe5e923f7c757eb619d38b273a16103910615293794c1b7f779e1ef52fa79a9",
+      "source": "static SetCommonBtnStyle(t,i,s,e){let h=arguments.length>4&&void 0!==arguments[4]?arguments[4]:0,r=\"pribtn\",n=\"nrm\",l=0,a=\"\",o=0,u=0,c=\"\",d=\"\",_=0,f=0;if(i==qP.NORMAL){o=44,u=36,_=88,l=0,h||(t.size(286,88),h=t.width),f=3.25;let i=h/286;i>=1.1?o=44:i<=.8?o=38:i>.8&&i<1&&(o=42),s==qP.COMMON||s==qP.NORMAL?a=\"#77570b,#77570b,#77570b,#3d3c3c,#77570b\":s==qP.RECEIVE?a=\"#155806,#155806,#155806,#3d3c3c,#155806\":s==qP.SPECIAL?a=\"#7c2d06,#7c2d06,#7c2d06,#3d3c3c,#7c2d06\":s==qP.SUBTLE&&(a=\"#5c3d00,#5c3d00,#5c3d00,#3d3c3c,#5c3d00\")}else if(i==qP.SECOND){o=34,u=28,_=68,c=\"14,83,12,83,1\",r=\"secbtn\",h||(t.size(204,68),h=t.width),f=3;let i=h/204;i>=1.1?o=38:i<=.8?o=30:i>.8&&i<1&&(o=32),s==qP.COMMON||s==qP.NORMAL?a=\"#77570b,#77570b,#77570b,#252525,#77570b\":s==qP.RECEIVE?a=\"#155806,#155806,#155806,#252525,#155806\":s==qP.SPECIAL?a=\"#7c2d06,#7c2d06,#7c2d06,#252525,#7c2d06\":s==qP.SUBTLE&&(a=\"#eedebc,#eedebc,#eedebc,#252525,#eedebc\",n=\"sub\")}else if(i==qP.TAB_BIG){o=34,u=28,_=74,c=\"22,70,22,70,1\",r=\"pritab\",h||(t.size(234,74),h=t.width),f=234/74;let i=h/234;i>=1.1?o=38:i<=.8?o=30:i>.8&&i<1&&(o=32),a=\"#DFCA96,#DFCA96,#DFCA96,#DFCA96,#3E351A\",d=\"pritab_sel\"}else if(i==qP.TAB_MIDDLE){o=34,u=28,_=74,c=\"22,70,22,70,1\",r=\"prisubtab\",h||(t.size(208,74),h=t.width),f=208/74;let i=h/208;i>=1.1?o=38:i<=.8?o=30:i>.8&&i<1&&(o=32),a=\"#DFCA96,#DFCA96,#DFCA96,#DFCA96,#3E351A\",d=\"prisubtab_sel\"}else if(i==qP.TAB_SMALL){o=34,u=28,_=50,c=\"22,70,22,70,1\",r=\"sectab\",h||(t.size(188,50),h=t.width),f=3.76;let i=h/188;i>=1.1?o=38:i<=.8?o=30:i>.8&&i<1&&(o=32),a=\"#DFCA96,#DFCA96,#DFCA96,#DFCA96,#3E351A\",d=\"sectab_sel\"}s==qP.RECEIVE?n=\"recv\":s==qP.SPECIAL?n=\"sp\":s==qP.SUBTLE&&(n=\"sub\");let g=gt.F(\"{0}_{1}\",r,n);t.InitSkin(g,g,g,\"dis\",d||g),t.sizeGrid=c,t.SizeGridLimit=!0,t.UseColorFilter=!0,t.labelFont=hB.SemiBold,t.label=e,t.labelSize=o,t.labelBold=!0;const p=Math.floor(h/f),S=cb.getCommonBtnLabelPaddingTop(_,p,o,u);t.labelPadding=\"\".concat(S,\",0,0,0\"),t.labelColors=a,t.labelStroke=l,t.strokeColors=\"\",t.labelAlign=\"center\",t.labelValign=\"middle\",t.size(h,p)}"
+    }
+  ],
+  "limitations": [
+    "Static source and byte verification; official Android runtime and full visual comparison were not executed."
+  ]
+}

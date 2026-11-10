@@ -1,0 +1,28 @@
+{
+  "regular": {
+    "tip": "",
+    "nativeCaption": "block",
+    "marked": false,
+    "active": false
+  },
+  "free": {
+    "tip": "",
+    "nativeCaption": "block",
+    "marked": false,
+    "active": false
+  },
+  "arenaOnly": {
+    "tip": "",
+    "nativeCaption": "block",
+    "marked": false,
+    "active": false
+  },
+  "engineFallback": "",
+  "phaseTexts": [
+    "出牌阶段，请选择一张卡牌",
+    ""
+  ],
+  "skill": "胆守：请选择一种类型",
+  "characterSkill": "请选择一名化身武将",
+  "errors": []
+}

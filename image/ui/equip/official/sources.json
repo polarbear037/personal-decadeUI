@@ -1,0 +1,32 @@
+[
+  {
+    "file": "image/ui/equip/official/new_equip_card_bg_new.png",
+    "source": "../山河图/assets/official/common/new_equip_card_bg_new.png",
+    "sha256": "7ef3d5d2796cf475c73335676f37cb4bbb7dc7345a50433c56761a77bf6d6288"
+  },
+  {
+    "file": "image/ui/equip/official/new_equip_type_3_new.png",
+    "source": "../山河图/assets/official/common/new_equip_type_3_new.png",
+    "sha256": "645c89ed9a550a597b89167a4a73ed52d65d2db8e108be1ea6ea6dbec81930d7"
+  },
+  {
+    "file": "image/ui/equip/official/new_equip_type_4_new.png",
+    "source": "../山河图/assets/official/common/new_equip_type_4_new.png",
+    "sha256": "bf3e53af032fc40676e9c764ec0481446216af2a4090d9fd97bb17fe97ee9579"
+  },
+  {
+    "file": "image/ui/equip/official/new_equip_type_5_new.png",
+    "source": "../山河图/assets/official/common/new_equip_type_5_new.png",
+    "sha256": "b2edddd63614dac9940f7e34a4a8c33149a53ff9760bfcec15675abb21db244f"
+  },
+  {
+    "file": "image/ui/equip/official/new_equip_type_6_new.png",
+    "source": "../山河图/assets/official/common/new_equip_type_6_new.png",
+    "sha256": "b2edddd63614dac9940f7e34a4a8c33149a53ff9760bfcec15675abb21db244f"
+  },
+  {
+    "file": "image/ui/equip/official/new_equip_type_7_new.png",
+    "source": "../山河图/assets/official/common/new_equip_type_7_new.png",
+    "sha256": "6f11b400ebe0cb2c9f61ae5bf14dfec9fafbfe92753e621ffa6655bf7aafd398"
+  }
+]

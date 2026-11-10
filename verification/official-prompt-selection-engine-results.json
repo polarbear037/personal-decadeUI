@@ -1,0 +1,39 @@
+{
+  "before": {
+    "text": "出牌阶段，请选择一张卡牌",
+    "progress": "",
+    "selected": [],
+    "targets": 0
+  },
+  "nativeRange": null,
+  "selectable": true,
+  "after": {
+    "text": "请使用一张闪响应杀",
+    "progress": "",
+    "card": "shan",
+    "selected": [
+      "shan"
+    ],
+    "targets": 0
+  },
+  "noTargetRange": [
+    0,
+    0
+  ],
+  "converted": {
+    "text": "发动“转化”，请选择1名角色已选1/1张牌，已选0/1名角色",
+    "progress": "已选1/1张牌，已选0/1名角色",
+    "card": "sha",
+    "selected": [
+      "shan"
+    ],
+    "targets": 0
+  },
+  "layout": {
+    "top": 618.5625,
+    "bottom": 696.5625,
+    "buttonBottom": 572.890625,
+    "lines": 3,
+    "setting": 12
+  }
+}

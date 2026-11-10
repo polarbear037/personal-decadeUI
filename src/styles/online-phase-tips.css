@@ -1,0 +1,76 @@
+@font-face {
+	font-family: "dui-online-phase";
+	src: url("../../ui/assets/fonts/FZLBGBK.ttf") format("truetype");
+	font-display: swap;
+}
+
+#window>.decade-online-phase-tip {
+	position: absolute;
+	left: 5.8%;
+	top: 63.4%;
+	width: 8%;
+	height: auto;
+	aspect-ratio: 132 / 31;
+	container-type: inline-size;
+	margin: 0;
+	pointer-events: none;
+	z-index: 6;
+	transition: none;
+	transform: scaleY(0.95);
+}
+
+.decade-online-phase-tip>.decade-online-phase-banner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	color: #c4b088;
+	font-family: "dui-online-phase", sans-serif;
+	font-size: calc(100cqw * 25 / 132);
+	font-weight: normal;
+	line-height: calc(100cqw * 33 / 132);
+	letter-spacing: calc(100cqw / 132);
+	text-align: center;
+	white-space: nowrap;
+	text-shadow: none;
+	animation: decade-online-phase-enter 240ms ease-out both;
+}
+
+.decade-online-phase-banner::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	box-sizing: border-box;
+	border: calc(100cqw * 10 / 132) solid transparent;
+	border-image: url("../../image/ui/phase/online/win_info_time_bg.png") 10 fill / 1;
+	z-index: -1;
+}
+
+.decade-online-phase-tip.is-leaving>.decade-online-phase-banner {
+	animation: decade-online-phase-leave 180ms ease-in both;
+}
+
+/* 此节点在 APK 中直接切换 visible；以下时长是十周年UI补充的过渡参数。 */
+@keyframes decade-online-phase-enter {
+	from {
+		opacity: 0;
+		transform: translateX(-18px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes decade-online-phase-leave {
+	from {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	to {
+		opacity: 0;
+		transform: translateX(18px);
+	}
+}

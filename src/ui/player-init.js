@@ -2,6 +2,7 @@ import { lib, get, game, _status, ui } from "noname";
 import { element as element } from "../utils/element.js";
 import { updatePlayerOutcropAvatar as updatePlayerOutcropAvatar } from "./outcropAvatar.js";
 import { getResourceUrl } from "../core/resourcePaths.js";
+import { openOnlineHandCards } from "./online-hand-cards.js";
 function i(base) {
 	return function (character, character2) {
 		(base.lib.element.player.$init.apply(this, arguments), (this.doubleAvatar = void 0 !== (character2 && lib.character[character2])));
@@ -36,14 +37,10 @@ function i(base) {
 		if (!this.node.showCards) {
 			const player = this;
 			((player.node.showCards = element.create("handdisplays", player)), player.node.showCards.hide());
-			const t = player.getBoundingClientRect(),
-				i = window.innerWidth || document.documentElement.clientWidth,
-				n = player.node.showCards,
-				o = 10,
-				s = "babysha" === lib.config.extension_十周年UI_newDecadeStyle;
-			((s && t.left < i / 2) || (!s && t.left >= i / 2) ? ((n.style.left = ""), (n.style.right = player.offsetWidth + o + "px")) : ((n.style.left = player.offsetWidth + o + "px"), (n.style.right = "")),
-				(n.style.top = "90px"),
-				(player.node.showCards.onclick = function () {
+			((player.node.showCards.style.top = "90px"),
+				(player.node.showCards.onclick = function (event) {
+					event?.stopPropagation();
+					if (openOnlineHandCards(player)) return;
 					const cards = player.getCards("h", e => get.is.shownCard(e) || player.isUnderControl(!0) || game.me?.hasSkillTag("viewHandcard", null, player, !0));
 					if (cards.length > 0) {
 						const t = ui.create.div(".popup-container", ui.window),
@@ -63,6 +60,9 @@ function i(base) {
 							}
 					}).observe(player.node[zone], { childList: !0 });
 				}));
+			// 座次在初始化后才确定，换位时也要按实际画面方位更新。
+			new MutationObserver(() => player.decadeUI_updateShowCards()).observe(player, { attributes: true, attributeFilter: ["data-position"] });
+			requestAnimationFrame(() => player.decadeUI_updateShowCards());
 		}
 		(window.decadeModule?.prefixMark && (window.decadeModule.prefixMark.showPrefixMark(character, this), character2 && this.doubleAvatar && window.decadeModule.prefixMark.showPrefixMark(character2, this)), this.node.seat || (this.node.seat = element.create("seat", this)), this.decadeUI_updateShowCards());
 		const outcropStyle = lib.config.extension_十周年UI_outcropSkin;

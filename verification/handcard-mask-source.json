@@ -1,0 +1,32 @@
+{
+  "apk": "OL Android 4.0.2",
+  "apk_sha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+  "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb!main.sgs",
+  "source_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "rea_inventory_evidence": "ev_ab72096e59dce6fac34e455532dc65e7898647beb7ef8528db52c77eee530c29",
+  "rea_inspection_evidence": "ev_edcf0b916ee34807938588035c3ed96b6f776080202e0b1ddb6b950602425eab",
+  "observed": {
+    "l1t.PrivateUpdateCardUis": {
+      "utf16_offset": 11011200,
+      "excerpt": "PrivateUpdateCardUis(){let t=arguments.length>0&&void 0!==arguments[0]&&arguments[0],i=this.selectCardContext?this.selectCardContext.CardSelector:null;if(this.activatedCardtems.length=0,this.areChoosingCard){i&&i.InitSelect();let s=!1,e=i instanceof oBt?i.Skill:null,h=i?i.AutoSelectCardIds:null;this.cardUis.forEach((r=>{if(r.Activated=!!i&&i.IsAllowCard(r.Card),this.skillCardLabelChange(r,e,!0),r.Activated){r.LightOn();let e=Wwt.LastTriggerSpell;e&&e.NeedHighlightWhenSelectCard&&null==Wwt.LastActivateSpell&&r.ShowHighlightImg(!0),t&&h&&h.length?h.indexOf(r.Card.CardId)>-1&&r.Card.N(!0):i&&i.AutoSelectCard&&!i.SelectComplete&&!s&&(s=!0,r.Card.N(!0)),this.activatedCardtems.push(r)}else r.LightOff()})),this.virtualCardUis.forEach((t=>{t.Activated=!!i&&i.IsAllowCard(t.Card),this.skillCardLabelChange(t,e,!1),t.Activated?(t.LightOn(),i&&i.AutoSelectCard&&!i.SelectComplete&&!s&&(s=!0,t.Card.N(!0)),this.activatedCardtems.push(t)):t.LightOff()})),i&&i.EndSelect()}else this.cardUis.forEach((t=>{t.Activated=!1,this.skillCardLabelChange(t,null,!0),t.LightOn(),t.ShowHighlightImg(!1)})),this.virtualCardUis.forEach((t=>{t.Activated=!1,this.skillCardLabelChange(t,null,!1),t.LightOn()}));this.invalidateLayoutHandCard()}CardUI_Click(t){if(this.skipNextCardClick)return void(this.skipNextCardClick=!1);if(!Wwt.CanOperationInGame())return;if(!this.selectCardContext)return;let i=t.CardUi;i.Activated&&this.areChoosingCard&&t&&t.EventData&&this.seat.onAiHelpSelfOpt(0),i.Activated&&this.areChoosingCard&&i.Card.N(!i.Card.Selected)}onMouseInC"
+    },
+    "l1t.CardUI_SelectedChanged": {
+      "utf16_offset": 11015421,
+      "excerpt": "CardUI_SelectedChanged(t){let i=t.CardUi,s=t.Card;if(!this.selectCardContext)return;let e=this.selectCardContext.CardSelector;if(this.resentlySelectedCardId=0,i.Selected)e.SelectedCount>=e.SelectCountMax&&(s.IsVirtualCard?e.PopFirstVirtualCard():e.PopFirstCard()),e.AddSelectCard(s),this.resentlySelectedCardId=s.CardId;else{if(e instanceof oBt&&!s.IsVirtualCard&&e.Skill&&!e.Skill.VirtualRemoveSelectCard)return;e.RemoveSelectCard(s)}e instanceof oBt&&e.NeedUpdateCardAfterChange&&this.PrivateUpdateCardUis(),this.invalidateLayoutHandCard(),this.event(TH.SELECTED_CHANGED,t),this.seftSeatUI&&this.seftSeatUI.UpdateButtonBar()}destroy(){St.I().off(St.SKILL_STATE_DATA_CHANGE,this,this.skillOrStateDataChange),this.clearDragState()"
+    },
+    "Ins.LightOff": {
+      "utf16_offset": 7398902,
+      "excerpt": "LightOff(){this.otherTopManager.LightOff(),this.HideFireHurtEffect(),this.HideInvalidArmorEquipTip()}ShowUnSelectReason(){this.otherTopManager.ShowUnSelectReason()}HideUnSelectReason(){this.otherTopManager.HideUnSelectReason()}ShowOtherSeatDistance()"
+    },
+    "Ins.createBmpMask": {
+      "utf16_offset": 19244682,
+      "excerpt": "createBmpMask(t){this.bmpMask||(this.bmpMask=new Dxt(Bwt.GetRes(\"card_mask_face\")),this.bmpMask.sizeGrid=\"10,10,10,10\",this.bmpMask.size(126,174),this.addDrawChild(this.bmpMask)),this.BmpMaskAlpha=t}removeBmpMask(){this.bmpMask&&(this.bmpMask.visible=!1),this.maskAlpha=0}set BmpMaskAlpha(t){this.maskAlpha=t,this.bmpMask&&(this.bmpMask.alpha=t,this.bmpMask.visible=t>0)"
+    }
+  },
+  "adaptation": "Online hand-card mask follows native filter eligibility separately from the selection-count limit. Single-card replacement checks eligibility with previous cards and targets temporarily removed, using the same predicate as click handling. Skill-dependent multi-card filters are evaluated with current selections. Other styles keep their native selectable-based mask.",
+  "limitations": [
+    "Static packaged JavaScript evidence; official APK runtime not executed.",
+    "No new visual asset or mask opacity change.",
+    "Browser regression uses real noname engine and extension; full Electron game not exercised."
+  ]
+}

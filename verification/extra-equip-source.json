@@ -1,0 +1,41 @@
+{
+  "source": "OL Android 4.0.2, main.sgs!main.sgs",
+  "source_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "rea_evidence": "ev_59c26b377c8f7a95f8485f323af3e8139011db6633ca40efdcbb136955aceef0",
+  "facts": [
+    "LayoutEquipCards: primary weapon is at n; armor or extra weapon is at n+30.",
+    "UUt.updateUI: omit abolished armor if seat.IsAvailableWeaponEx.",
+    "Treasure is at n+90; horses retain the existing conditional full/half width layout."
+  ],
+  "methods": [
+    {
+      "symbol": "mMt",
+      "method": "LayoutEquipCards",
+      "source_sha256": "2efd60b05eb9203fbf27819e61f56f7e2541d464a6e9c4e75bd49f89b52eca95",
+      "bundle_utf16_start": 7459435,
+      "bundle_utf16_end": 7460744,
+      "source": "LayoutEquipCards(){let t=arguments.length>0&&void 0!==arguments[0]&&arguments[0],i=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0,s=arguments.length>2&&void 0!==arguments[2]?arguments[2]:0,e=arguments.length>3&&void 0!==arguments[3]?arguments[3]:null;var h;i=this.equipStartX(i),s=this.equipStartY(s);var r=i+27,n=s+110,l=30;for(let s in this.equipCardUIs){if((h=this.equipCardUIs[s]).UpdateCardFace(),h.visible&&(h.EndX=r),Wwt.IsPveRoguelike&&h.Card.IsRogueBaoWu)h.EndY=n+90;else switch(h.Card&&h.Card.FirstSkill&&h.Card.CardZoneType){case MIt.ZONE_EQUIP_TREASURE:h.EndY=n+90;break;case MIt.ZONE_EQUIP_WEAPON:h.EndY=n;break;case MIt.ZONE_EQUIP_ARMOR:case MIt.ZONE_EQUIP_WEAPON_EX:h.EndY=n+l;break;case MIt.ZONE_EQUIP_HORSE_DEF:h.EndY=n+60;break;case MIt.ZONE_EQUIP_HORSE_ATT:this.seat&&!this.seat.HasEquipByType(UIt.DEF_HORSE)&&this.seat.HasZone(MIt.ZONE_EQUIP_HORSE_DEF)?h.EndY=n+60:this.seat&&!this.seat.HasEquipByType(UIt.TREASURE)&&this.seat.HasZone(MIt.ZONE_EQUIP_TREASURE)?h.EndY=n+90:(h.EndY=n+60,h.EndX=r+(zP.M_EQUIP_SIZE.width>>1));break;case MIt.ZONE_SKILL:h.EndY=n}e==(h.Card?h.Card.CardId:-1)||0==h.x&&!t?(h.x=i-zP.M_EQUIP_SIZE.width|0,h.y=h.StartY=h.EndY,h.visible&&h.Run(Math.round(h.EndX),Math.round(h.EndY),300,!0)):(Laya.Tween.clearAll(h),h.x=h.StartX=h.EndX,h.y=h.StartY=h.EndY)}}"
+    },
+    {
+      "symbol": "UUt",
+      "method": "updateUI",
+      "source_sha256": "44f669b7010dee5751094d7c60a50fcb8bf0fabd88f3a45760804901403fadde",
+      "bundle_utf16_start": 7821356,
+      "bundle_utf16_end": 7822615,
+      "source": "updateUI(){this.RemoveDrawChildren();let t=this.abolishVal;if((t&rH.ZONE_EQUIP)==rH.ZONE_EQUIP)for(let t=0;t<5;t++){let i=2==t||3==t,s=Dwt.Abolished+(2==t?Dwt.M_JIAYIMA:3==t?Dwt.M_JIANYIMA:\"\"),e=this.startX+(3==t?this.halfBgWidth:0),h=t;2==t||3==t?h=2:4==t&&(h=3);let r=this.typeList[t];this.createItem(i,r,s,e,this.getPosY(h))}else{let i=!1;if((t&rH.ZONE_EQUIP_WEAPON)==rH.ZONE_EQUIP_WEAPON){let t=0;this.createItem(!1,this.typeList[t],Dwt.Abolished,this.startX,this.getPosY(t))}if((t&rH.ZONE_EQUIP_WEAPON_EX)>0&&this.seat&&this.seat.IsAvailableWeaponEx){let t=0;this.createItem(!1,this.typeList[t],Dwt.Abolished,this.startX,this.getPosY(t))}if((t&rH.ZONE_EQUIP_ARMOR)>0&&this.seat&&!this.seat.IsAvailableWeaponEx){let t=1;this.createItem(!1,this.typeList[t],Dwt.Abolished,this.startX,this.getPosY(t))}if((t&rH.ZONE_EQUIP_TREASURE)>0){let t=3;this.createItem(!1,this.typeList[4],Dwt.Abolished,this.startX,this.getPosY(t)),i=!0}if(i=i||this.hasEquipedTreasure,(t&rH.ZONE_EQUIP_HORSE_DEF)>0){let t=2;this.createItem(i,this.typeList[2],Dwt.Abolished+Dwt.M_JIAYIMA,this.startX,this.getPosY(t))}if((t&rH.ZONE_EQUIP_HORSE_ATT)>0){let t=i?2:3,s=this.startX+(i?this.halfBgWidth:0);this.createItem(i,this.typeList[3],Dwt.Abolished+Dwt.M_JIANYIMA,s,this.getPosY(t))}}}"
+    },
+    {
+      "symbol": "nrs",
+      "method": "IsAvailableWeaponEx",
+      "source_sha256": "ce1a65942eafff095a5bd80726ff290c2c47d6b48e94c8ba80d7265a2b7d6e55",
+      "bundle_utf16_start": 18960725,
+      "bundle_utf16_end": 18960833,
+      "source": "get IsAvailableWeaponEx(){return this.zoneAvailableData&&(this.zoneAvailableData&rH.ZONE_EQUIP_WEAPON_EX)>0}"
+    }
+  ],
+  "limitations": [
+    "Static source analysis; the official client was not executed.",
+    "Generalized extra rows beyond the official extra weapon slot are local compatibility behavior."
+  ],
+  "verification": "node verification/extra-equip-browser.cjs --decade"
+}

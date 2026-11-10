@@ -1,0 +1,108 @@
+{
+  "source": "OL Android 4.0.2 APK",
+  "apk_sha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+  "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb!main.sgs",
+  "main_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+  "rea_application_evidence": "ev_c5cb980feee4d2adcdc285e7eea849942f159748cf95cab628b08633759da881",
+  "rea_module_evidence": "ev_146692a0e6f529025911439d98ef8080f031a5e1d9e67dbe428695970b08de88",
+  "rea_color_font_evidence": "ev_f46757cd1299153dda10702ce1d9410015057bcbfbbad4d37814274106fc7f5e",
+  "asset": {
+    "atlas": "res/assets/game/seat.atlas",
+    "atlas_cache": "61c5aa54",
+    "sheet": "res/assets/game/seat.png",
+    "sheet_cache": "db156ff2",
+    "frame": {
+      "x": 351,
+      "y": 996,
+      "w": 210,
+      "h": 26
+    },
+    "target": "image/ui/tip/online/seat_opt_tips_bg.png",
+    "sha256": "7a3e3afb51118d4da0947ba0c87ee1bfb9640b7b01b1f01b9dec9058509d121b",
+    "pixel_equal": true
+  },
+  "official": {
+    "avatar": [
+      146,
+      225
+    ],
+    "thinking": [
+      180,
+      22
+    ],
+    "thinking_text": [
+      146,
+      22
+    ],
+    "font": "FZLBGBK",
+    "font_size": 22,
+    "color": "#DBC7A5",
+    "skill_card_color": "#FFD800",
+    "discard_color": "#FF5050",
+    "skill_template": "思考“{0}”技能",
+    "card_template": "思考{0}",
+    "toast": [
+      190,
+      22
+    ],
+    "toast_font_size": 18,
+    "label_color": "#F1DBB5",
+    "max_color": "#E4D5A0",
+    "remaining_color": "#DF9845",
+    "zero_color": "#b3b3b3",
+    "unlimited": "出杀次数 ∞",
+    "toast_delay_ms": 200,
+    "toast_stay_ms": 2000,
+    "toast_transition_ms": 150,
+    "toast_slide_y": 30,
+    "count_slide_y": 18,
+    "count_pop_font_size": 41,
+    "self_seat": false,
+    "count_semantics": "remaining/max; max=1 does not emit toast"
+  },
+  "excerpts": {
+    "Ens": {
+      "UpdateOptTips(t){": "UpdateOptTips(t){let i=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0,s=arguments.length>2&&void 0!==arguments[2]?arguments[2]:\"\",e=arguments.length>3&&void 0!==arguments[3]&&arguments[3];if(!this.seat||this.seat.IsSelf)return;this.optTipsTex||(this.optTipsTex=new rB(Bwt.GetRes(\"seat_opt_tips_bg\")),this.optTipsTex.size(180,22),this.addDrawChild(this.optTipsTex)),this.optTipsTxt||(this.optTipsTxt=Qx.Create(22,\"#DBC7A5\",null,146,22,!1,null,null,\"center\",\"middle\",this.render),this.optTipsTxt.PreventLayoutWidthWriteBack=!0,this.optTipsTxt.wordWrap=!1);let h=\"\",r=eH.I();if(t==wM.OPT_PLAY_CARD)h=gt.F(Dwt.OPT_TIPS_2,r.ConvertSkillColor(\" \"+Dwt.DEAL_CARD));else if(t==wM.OPT_DISCARD)h=gt.F(Dwt.OPT_TIPS_2,r.ConvertDiscardColor(\" \"+Dwt.DIS_CARD));else if(t!=wM.OPT_SKILL&&t!=wM.OPT_LOOK_SKILL||!i)if(t==wM.OPT_LOOK_GENERAL&&i){let t=iLt.I().GetGeneralInfo(i);h=t&&t.ItemName,h=Dwt.MATCH_TXT_119+r.ConvertSeatColor(h)}else t==wM.OPT_STRING&&(h=s);else{let t=uOt.GetInstance(i);h=gt.F(Dwt.OPT_TIPS_2,r.ConvertCardSkillColor(t,!1,!0)),t&&t.IsGeneral&&(h+=Dwt.Seat_Tip_Button_1)}h&&(e||(this.originText=h),this.optTipsTex.visible=!0,this.optTipsTxt.visible=!0,this.optTipsTxt.innerHTML=h,this.optTipsTex.posInteger(this.width-this.optTipsTex.width>>1,this.height),this.optTipsTxt.pos(this.renderX+(this.width-this.optTipsTex.width>>1)+(this.optTipsTex.width-this.optTipsTxt.width>>1),this.renderY+this.height))}",
+      "createShaCntPart(){": "createShaCntPart(){this.shaCntPart=new Gxt,this.shaCntPart.name=\"shaCntPart\",this.textSprite.addChild(this.shaCntPart),this.shaCntPart.alpha=0,this.shaCntPart.size(190,22),this.shaCntBg=new rB(Bwt.GetRes(\"seat_opt_tips_bg\")),this.shaCntPart.addDrawChild(this.shaCntBg),this.shaCntBg.size(this.shaCntPart.width,this.shaCntPart.height),this.numPart=new Gxt,this.shaCntPart.addChild(this.numPart),this.numPart.pos(0,0),this.numPart.size(this.shaCntPart.width,this.shaCntPart.height);const t=this.shaCntSX,i=this.shaCntSY;this.shaCntLabel=Qx.Create(18,\"#F1DBB5\",hB.SemiBold,100,30,!0,null,null,\"center\",\"middle\",this.numPart),this.shaCntLabel.innerHTML=\"出杀次数：\",this.shaCntLabel.pos(t,i);let s=this.shaCntLabel.contextWidth;this.cnt=Qx.Create(18,this.originColor,hB.SemiBold,40,30,!0,null,null,\"center\",\"middle\",this.numPart),this.cnt.innerHTML=\"1\",this.cnt.pos(t+s,i),this.cnt.wordWrap=!1,this.maxCnt=Qx.Create(18,\"#E4D5A0\",hB.SemiBold,40,30,!0,null,null,\"left\",\"middle\",this.numPart),this.maxCnt.innerHTML=\"/1\",this.maxCnt.pos(t+s+13,i),this.effectNew=Qx.Create(18,this.originColor,hB.SemiBold,40,30,!0,null,null,\"center\",\"middle\",this.numPart),this.effectNew.innerHTML=\"1\",this.effectNew.pos(t+s,i),this.effectNew.visible=!1,this.effectNew.wordWrap=!1,this.effectOld=Qx.Create(18,this.originColor,hB.SemiBold,40,30,!0,null,null,\"center\",\"middle\",this.numPart),this.effectOld.innerHTML=\"1\",this.effectOld.pos(t+s,i),this.effectOld.visible=!1,this.effectOld.wordWrap=!1,this.nolimitPart=new Gxt,this.shaCntPart.addChild(this.nolimitPart),this.nolimitPart.pos(0,0),this.nolimitPart.visible=!1,this.nolimitPart.size(this.shaCntPart.width,this.shaCntPart.height);let e=Qx.Create(18,\"#E4D5A0\",hB.SemiBold,this.nolimitPart.width,30,!1,null,null,\"center\",\"middle\",this.nolimitPart);e.innerHTML=\"出杀次数 <font color='#DF9845'>∞</font>\",e.y=i}",
+      "ShowShaCntPart(){": "ShowShaCntPart(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:null;if(!this.seat)return;if(this.seat.IsSelf)return;if(this.shaCntPart||this.createShaCntPart(),!t&&this.shaOldCnt)return;const i=this.seat.ShaNoLimit,s=this.seat.ShaCount,e=this.seat.ShaMaxCount;if(this.updateShaCntPart(i,null!=t?t:s,e),this.shaCntShow)return Laya.timer.clear(this,this.hideShaCntPart),Laya.timer.once(2e3,this,this.hideShaCntPart),void(null==t||t==s||i||this.showCntChangeEff(t));null!=t&&(this.shaOldCnt=t),this.shaCntOut=!0,this.effectOld.visible=!1,this.effectNew.visible=!1,this.cnt.alpha=1;let h=Math.round(this.y+zP.AVATAR_SEAT_SIZE.height*this.scaleY);this.shaCntPart.y=h+this.shaCntOriginY-this.shaPartMoveY,Laya.Tween.to(this.shaCntPart,{y:h+this.shaCntOriginY},1e3*this.shaCntMoveTime),Laya.Tween.to(this.shaCntPart,{alpha:1},1e3*this.shaCntMoveTime),Laya.timer.once(1e3*this.shaCntMoveTime,this,this.setShaCntVisible,[!0]),Laya.timer.once(2e3,this,this.hideShaCntPart)}",
+      "showCntChangeEff(t){": "showCntChangeEff(t){if(this.inChangeEff||!this.seat)return;if(!(this.effectOld&&this.effectNew&&this.cnt&&this.shaCntLabel))return;this.effectOld.visible=!0,this.effectOld.alpha=1,this.effectNew.visible=!0,this.setTextValue(this.effectNew,this.seat.ShaCount),this.setTextValue(this.effectOld,t),this.inChangeEff=!0,this.cnt.alpha=0;const i=t<this.seat.ShaCount,s=this.shaCntSY;this.effectOld.y=s,this.effectNew.y=s+(i?-this.shaCntMoveY:this.shaCntMoveY),this.effectNew.x=this.shaCntSX+this.shaCntLabel.contextWidth,this.effectNew.alpha=0,this.effectNew.fontSize=22;const e=s+(i?this.shaCntMoveY:-this.shaCntMoveY);Laya.Tween.to(this.effectOld,{y:e,alpha:0},1e3*this.shaCntMoveTime),Laya.Tween.to(this.effectNew,{y:s,alpha:1},1e3*this.shaCntMoveTime,null,Laya.Handler.create(this,this.showBiggerEffect))}",
+      "hideShaCntPart(){": "hideShaCntPart(){if(!this.shaCntShow)return;let t=Math.round(this.y+zP.AVATAR_SEAT_SIZE.height*this.scaleY);this.shaCntShow=!1,Laya.Tween.to(this.shaCntPart,{y:t+this.shaCntOriginY-this.shaPartMoveY},1e3*this.shaCntMoveTime),Laya.Tween.to(this.shaCntPart,{alpha:0},1e3*this.shaCntMoveTime)}"
+    },
+    "eH": {
+      "ConvertCardSkillColor(t){": "ConvertCardSkillColor(t){let i=!(arguments.length>1&&void 0!==arguments[1])||arguments[1],s=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(!t)return\"\";if(Wwt.IsApp){i&&(s=!t.IsGeneral);let e=t.Name,h=\"\";return t.IsGeneral?(e=s?\"“\"+e+\"”\":e,h=this.SkillColor):h=this.CardColor,this.GetColorString(e,h)}return t.Name}",
+      "get SkillColor(){": "get SkillColor(){return Wwt.IsApp?\"#FFD800\":this.YellowColor}",
+      "get DiscardColor(){": "get DiscardColor(){return Wwt.IsApp?\"#FF5050\":\"\"}"
+    }
+  },
+  "limitations": [
+    "Static APK inspection; official APK runtime not executed.",
+    "Whole 23MB main.js parsing exhausted the REA worker heap. Selected Ens/eH/Qx/hB fragments parsed successfully.",
+    "noname event names and getCardUsable bridge official protocol fields; no official server protocol is emulated.",
+    "CSS dimensions scale official design coordinates to the current noname player width."
+  ],
+  "font": {
+    "source": "res/assets/fontApp/FZLBGBK.ttf",
+    "target": "ui/assets/fonts/FZLBGBK.ttf",
+    "sha256": "19e6426eee18e655f4d247976a73fd51cefc03e599667e224497c73d598762b8",
+    "byte_equal": true
+  },
+  "verification": [
+    "node verification/online-player-tips-browser.cjs",
+    "verification/online-player-tips-results.json",
+    "verification/online-player-tips-game.png"
+  ],
+  "implementation": {
+    "event_notification": "Noname.Game.Event.Changed + checkEnd",
+    "thinking_lifetime": "Follow active choice/action/phase ancestors; AI result objects alone do not end a phase.",
+    "text_scale": 0.72,
+    "text_scale_authority": "Extension visual adjustment requested by user; APK design font values above remain unchanged.",
+    "validation": [
+      "node verification/online-player-tips-browser.cjs",
+      "node verification/online-player-tips-live.cjs",
+      "node verification/online-player-tips-live.cjs --subjects"
+    ],
+    "subject_resolution": "Resolve the nearest choice/card action/skill execution/trigger and its actor; phase text is fallback only.",
+    "toast_gap_px": 2,
+    "toast_position_authority": "User-requested layout: toast top is 2 CSS px below the thinking tip bottom; replaces the APK 30-unit landing offset."
+  }
+}

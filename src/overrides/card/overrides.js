@@ -3,21 +3,35 @@ import { applyCardBorder as applyCardBorder } from "../../ui/cardStyles.js";
 import { applyCardSkin as applyCardSkin, handleSkinFallback as handleSkinFallback } from "./skin-applier.js";
 import { isSkinPreloaded as isSkinPreloaded, getSkinCache as getSkinCache, generateSkinFilename as generateSkinFilename, getFallbackKey as getFallbackKey, getFallbackSkinUrl as getFallbackSkinUrl } from "./skin-loader.js";
 import { CARD_ANIMATION as CARD_ANIMATION, LAYOUT as LAYOUT } from "../../constants.js";
+import { restoreEquipPresentation } from "../../ui/equip-layout.js";
+import { ensureChixuerenCardDefinition as ensureChixuerenCardDefinition, getChixuerenSkinFilename as getChixuerenSkinFilename } from "./chixueren.js";
 let h = null,
 	u = null;
 function l(init, copy) {
-	((h = init), (u = copy));
+	((h = init), (u = copy), ensureChixuerenCardDefinition());
 }
 function m() {
+	ensureChixuerenCardDefinition();
 	const clone = u.apply(this, arguments);
+	// 推荐属于当前手牌，不能随出牌/移牌副本带走。
+	clone.querySelectorAll(".dui-mate-recommend-badge").forEach(badge => badge.remove());
+	clone.classList.remove("dui-mate-recommended", "dui-mate-card-selected");
+	delete clone.dataset.mateRecommender;
+	restoreEquipPresentation(clone, this);
 	((clone.nature = this.nature), this._decadeEquipUseAnimation && (clone._decadeEquipUseAnimation = !0));
+	if (clone.name === "chixueren") {
+		clone._decadeChixuerenSkinClone = true;
+		clone._decadeChixuerenSkinFilename = this._decadeChixuerenSkinFilename;
+	}
 	const skinKey = lib.config.extension_十周年UI_cardPrettify;
 	if (!skinKey || "off" === skinKey) return clone;
 	if (!isSkinPreloaded(skinKey)) return clone;
 	const cache = getSkinCache(skinKey),
-		filename = generateSkinFilename(clone.name, clone.nature),
+		owner = typeof get.owner === "function" ? get.owner(this) : null,
+		filename = skinKey === "online" ? this._decadeChixuerenSkinFilename || getChixuerenSkinFilename(this, owner) || generateSkinFilename(clone.name, clone.nature) : generateSkinFilename(clone.name, clone.nature),
 		asset = cache[filename],
 		fallbackKey = getFallbackKey(skinKey);
+	clone.name === "chixueren" && (clone._decadeChixuerenSkinFilename = filename);
 	if (asset && !asset.loaded && clone.classList.contains("decade-card"))
 		void 0 === asset.loaded && asset.image
 			? asset.image.addEventListener("error", () => {
@@ -31,6 +45,7 @@ function m() {
 	return clone;
 }
 function f(card) {
+	ensureChixuerenCardDefinition();
 	(h.apply(this, arguments), (this.node.range.innerHTML = ""));
 	const t = lib.card[card[2]];
 	return (
@@ -95,17 +110,19 @@ function f(card) {
 		this
 	);
 }
-function p(bool, delay) {
+function p(bool, delay, baseTransform) {
 	if (delay)
 		return void setTimeout(() => {
 			this.updateTransform(this.classList.contains("selected"));
 		}, delay);
-	if (_status.event.player != game.me) return;
-	if (this._transform && this.parentNode?.parentNode?.parentNode == ui.me && (!_status.mousedown || _status.mouseleft))
+	if (baseTransform !== undefined) this._transform = baseTransform;
+	let transform = baseTransform;
+	if (_status.event.player == game.me && this._transform && this.parentNode?.parentNode?.parentNode == ui.me && (!_status.mousedown || _status.mouseleft))
 		if (bool) {
 			const offset = window.decadeUI?.isMobile?.() ? LAYOUT.CARD_SELECT_OFFSET_MOBILE : LAYOUT.CARD_SELECT_OFFSET_DESKTOP;
-			this.style.transform = `${this._transform} translateY(-${offset}px)`;
-		} else this.style.transform = this._transform || "";
+			transform = `${this._transform} translateY(-${offset}px)`;
+		} else transform = this._transform || "";
+	if (transform !== undefined && this.style.transform !== transform) this.style.transform = transform;
 }
 function g(player) {
 	if (!player) return;

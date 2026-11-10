@@ -1,5 +1,7 @@
 import { get, game, lib, ui, _status } from "noname";
 import { getBasePlayerMethods as getBasePlayerMethods } from "./base.js";
+import { clearOnlineJudgeLayout } from "../../ui/online-judge-layout.js";
+import { closeOnlineHandCards } from "../../ui/online-hand-cards.js";
 function e(skill) {
 	const result = getBasePlayerMethods().awakenSkill.apply(this, arguments);
 	if ((ui.updateSkillControl?.(this), get.info(skill)?.dutySkill)) {
@@ -31,13 +33,16 @@ function a() {
 		}, this));
 }
 function o() {
+	closeOnlineHandCards(this);
 	(window.decadeModule?.prefixMark && window.decadeModule.prefixMark.clearPrefixMarks(this), this.stopDynamic(), (this.doubleAvatar = !1), delete this.node.campWrap.dataset.camp);
 	const campName = this.node.campWrap.node.campName;
 	for (; campName.firstChild; ) campName.removeChild(campName.lastChild);
 	campName.style.removeProperty("background-image");
-	const hujiat = this.node.hpWrap.querySelector(".hujia");
+	const hujiat = this.querySelector(":scope > .hujia") || this.node.hpWrap.querySelector(".hujia");
 	(hujiat && hujiat.remove(), this.node.showCards?.hide());
-	return (getBasePlayerMethods().$uninit.apply(this, arguments), this);
+	getBasePlayerMethods().$uninit.apply(this, arguments);
+	clearOnlineJudgeLayout(this);
+	return this;
 }
 function r(from, to, maxHp, online) {
 	getBasePlayerMethods().$reinit.apply(this, arguments);
@@ -53,15 +58,33 @@ function h() {
 	return (
 		getBasePlayerMethods().$update.apply(this, arguments),
 		(function (player) {
-			let hujiat = player.node.hpWrap.querySelector(".hujia");
-			player.hujia > 0 ? (hujiat || ((hujiat = ui.create.div(".hujia")), player.node.hpWrap.appendChild(hujiat)), (hujiat.innerText = player.hujia === 1 / 0 ? "∞" : player.hujia)) : hujiat && hujiat.remove();
+			let hujiat = player.querySelector(":scope > .hujia") || player.node.hpWrap.querySelector(".hujia");
+			if (!(player.hujia > 0)) { hujiat?.remove(); return; }
+			const online = lib.config.extension_十周年UI_newDecadeStyle === "onlineUI";
+			const value = player.hujia === Infinity ? "∞" : String(player.hujia);
+			if (!hujiat) hujiat = ui.create.div(".hujia");
+			hujiat.classList.toggle("online-armor", online);
+			(online ? player : player.node.hpWrap).appendChild(hujiat);
+			if (online) {
+				// 原cns：独立于血条，数字(0,8)/32×20，初次24px，护甲变动后26px。
+				if (hujiat.dataset.value !== undefined && hujiat.dataset.value !== value) hujiat.dataset.updated = "true";
+				let number = hujiat.querySelector(".online-armor-value");
+				if (!number) { hujiat.textContent = ""; number = ui.create.div(".online-armor-value", hujiat); }
+				number.textContent = value;
+				hujiat.dataset.value = value;
+				hujiat.setAttribute("aria-label", `护甲：${value}`);
+			} else {
+				hujiat.textContent = value;
+				delete hujiat.dataset.value; delete hujiat.dataset.updated;
+				hujiat.removeAttribute("aria-label");
+			}
 		})(this),
 		(function (player) {
 			const hidden = player.classList.contains("unseen_show") || player.classList.contains("unseen2_show"),
 				hp = player.hp,
 				hpMax = hidden ? 1 : player.maxHp,
 				hpNode = player.node.hp,
-				useTextStyle = hpMax > 5 || (player.hujia && hpMax > 3);
+				useTextStyle = hpMax > 5 || (lib.config.extension_十周年UI_newDecadeStyle !== "onlineUI" && player.hujia && hpMax > 3);
 			if (!player.storage.nohp && useTextStyle) {
 				const t = isNaN(hp) ? "×" : hp === 1 / 0 ? "∞" : hp,
 					s = isNaN(hpMax) ? "×" : hpMax === 1 / 0 ? "∞" : hpMax;
