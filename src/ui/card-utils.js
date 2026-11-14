@@ -115,44 +115,6 @@ function a(card, player, event, a) {
 					})(card, player, event, a)),
 		(u.innerHTML = s));
 }
-const onlineJudgeLayerStates = new WeakMap();
-// onlineUI 使用的 panding 资源与判定框的 ol 资源导出尺寸不同；按动作
-// 校正骨骼可见边界，使同卡宽、同基准比例下两套资源的实际图形等大。
-const judgePandingResourceScale = { play: 1.22, play2: 1.2 };
-function raiseOnlineJudgeLayer(card) {
-	if (!card?.classList?.contains?.("thrown")) return () => {};
-	const doc = card.ownerDocument || (typeof document !== "undefined" ? document : null);
-	const wrapper = doc?.getElementById?.("chukuang-canvas-wraper2");
-	if (!wrapper) return () => {};
-	let state = onlineJudgeLayerStates.get(wrapper);
-	if (!state) {
-		state = {
-			count: 0,
-			originalZIndex: wrapper.style.zIndex,
-			originalTransition: wrapper.style.getPropertyValue("transition"),
-			originalTransitionPriority: wrapper.style.getPropertyPriority("transition"),
-		};
-		onlineJudgeLayerStates.set(wrapper, state);
-	}
-	state.count++;
-	if (state.count === 1) {
-		// 本体 div 默认 transition: all 0.5s，层级必须立即提高，避免短动画被遮住。
-		wrapper.style.setProperty("transition", "none", "important");
-		wrapper.style.zIndex = "6";
-	}
-	let released = false;
-	return () => {
-		if (released) return;
-		released = true;
-		state.count--;
-		if (state.count > 0) return;
-		wrapper.style.zIndex = state.originalZIndex;
-		// 先在无过渡状态下还原层级，再恢复原过渡规则。
-		doc.defaultView?.getComputedStyle(wrapper).zIndex;
-		wrapper.style.setProperty("transition", state.originalTransition, state.originalTransitionPriority);
-		onlineJudgeLayerStates.delete(wrapper);
-	};
-}
 function getJudgeResultEffect(success) {
 	const online = typeof lib !== "undefined" && lib.config?.extension_十周年UI_newDecadeStyle === "onlineUI";
 	return online ? { name: "panding", action: success ? "play" : "play2" } : { name: "effect_panding", action: success ? "play4" : "play5" };
@@ -163,34 +125,12 @@ function playJudgeResultEffect(card, success, decadeUI, apcard) {
 	card?._ap?.stopSpineAll?.();
 	const effect = getJudgeResultEffect(success);
 	if (effect.name === "panding") {
-		const worker = uiRuntime?.chukuangWorkerApi || (typeof window !== "undefined" ? window.skinSwitch?.chukuangWorkerApi : null);
-		if (typeof worker?.playEffect2 !== "function") return false;
-		const cardWidth = card.getBoundingClientRect?.().width || card.clientWidth || 108;
-		const position = { parent: card, follow: true };
-		// 对齐判定框的 108px 卡宽、0.75 基准，并补偿两套资源的导出尺寸差异。
-		const scale = 0.75 * (cardWidth / 108) * (judgePandingResourceScale[effect.action] || 1);
-		let releaseLayer = () => {};
-		let cleanupRequested = false;
-		const cleanup = () => {
-			if (cleanupRequested) return;
-			cleanupRequested = true;
-			worker._followUpdateMap?.delete(position.elementId);
-			releaseLayer();
-		};
-		const scheduleCleanup = started => {
-			if (started) setTimeout(cleanup, 800);
-			else cleanup();
-		};
-		try {
-			worker.playEffect2({ ...effect, name: "../../../十周年UI/assets/animation/panding", version: "4.0", skelType: "skel", speed: 1, loop: false, scale }, position, scheduleCleanup);
-		} catch (error) {
-			cleanup();
-			return false;
-		}
-		releaseLayer = raiseOnlineJudgeLayer(card);
-		if (cleanupRequested) releaseLayer();
-		if (!worker.supportsEffectStartCallback) setTimeout(cleanup, 1500);
-		return true;
+		const cap = uiRuntime?.animation?.cap;
+		if (!card.isConnected || typeof cap?.playSpineTo !== "function") return false;
+		// 画布直接附在卡牌内，使用未变换的逻辑卡宽，缩放由卡牌自身继承。
+		// 官方 tns/aCs：126×174 牌面，Spine 原点 (63,87)，自身 scale=1。
+		const scale = (card.clientWidth || 108) / 126;
+		return !!cap.playSpineTo(card, { ...effect, version: "4.0", json: false, speed: 1, loop: false, scale });
 	}
 	const cap = uiRuntime?.animation?.cap;
 	if (apcard?._ap && apcard === card && typeof apcard._ap.playSpine === "function") {

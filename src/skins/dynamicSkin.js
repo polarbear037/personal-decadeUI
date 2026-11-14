@@ -2,6 +2,160 @@
 import { lib, game, ui, get, ai, _status } from "noname";
 // import { setupDecadeAnimationTools } from "./decadeAnimationTools.js";
 export const dynamicSkinConfig = {
+	dm_zhangfei: {
+		经典形象: {
+			// 原皮 75000：newSkinJudge=100，直接待机；参数沿用 online 的 232/678 参考基准。
+			name: "魔张飞/经典形象/daiji",
+			version: "4.0",
+			action: "DaiJi",
+			ss_jinchang: "DaiJi",
+			x: [
+				0,
+				0.5
+			],
+			y: [
+				-54.087284,
+				0.5
+			],
+			scale: 0.396419,
+			shizhounian: true,
+			beijing: {
+				name: "魔张飞/经典形象/beijing",
+				version: "4.0",
+				action: "DaiJi",
+				ss_jinchang: "DaiJi",
+				x: [
+					0,
+					0.5
+				],
+				y: [
+					-54.087284,
+					0.5
+				],
+				scale: 0.396419
+			},
+			jineng: {
+				name: "魔张飞/经典形象/xingxiang",
+				version: "4.0",
+				action: "JiNeng",
+				scale: 0.396419
+			}
+		},
+		业火淬魂: {
+			// 官服座位 146×172 → 本地 130×175.5：k=130/146；zoom=45，place=10,-20。
+			// ifOutChuChang=1：只保留框内入场。战斗采用 skinEffectSmall；Big 形象骨骼另存。
+			name: "魔张飞/业火淬魂/daiji",
+			version: "4.0",
+			action: "DaiJi",
+			ss_jinchang: "ChuChang",
+			x: [
+				8.90411,
+				0.5
+			],
+			y: [
+				17.808219,
+				0.5
+			],
+			scale: 0.400685,
+			shizhounian: true,
+			effectAudio: {
+				ChuChang: "魔张飞/业火淬魂/audio_chuchang.mp3",
+				DaiJi: "魔张飞/业火淬魂/audio_daiji.mp3"
+			},
+			beijing: {
+				name: "魔张飞/业火淬魂/beijing",
+				version: "4.0",
+				action: "DaiJi",
+				ss_jinchang: "ChuChang",
+				x: [
+					8.90411,
+					0.5
+				],
+				y: [
+					17.808219,
+					0.5
+				],
+				scale: 0.400685
+			},
+			gongji: {
+				name: "魔张飞/业火淬魂/xingxiang",
+				version: "4.0",
+				action: "GongJi",
+				scale: 0.400685,
+				effectAudio: "魔张飞/业火淬魂/audio_gongji.mp3"
+			},
+			hudong: {
+				name: "魔张飞/业火淬魂/xingxiang",
+				version: "4.0",
+				action: "HuDong",
+				scale: 0.400685,
+				effectAudio: "魔张飞/业火淬魂/audio_hudong.mp3"
+			},
+			teshu: {
+				name: "魔张飞/业火淬魂/xingxiang",
+				version: "4.0",
+				action: "HuDong",
+				scale: 0.400685,
+				effectAudio: "魔张飞/业火淬魂/audio_hudong.mp3"
+			}
+		}
+	},
+	dm_sunquan: {
+		秉钧持衡: {
+			name: "魔孙权/秉钧持衡/daiji",
+			version: "4.0",
+			action: "DaiJi",
+			ss_jinchang: "ChuChang",
+			x: [0, 0.5],
+			y: [0, 0.5],
+			scale: 0.7,
+			shizhounian: true,
+			beijing: {
+				name: "魔孙权/秉钧持衡/beijing",
+				version: "4.0",
+				action: "DaiJi",
+				ss_jinchang: "ChuChang",
+				x: [0, 0.5],
+				y: [0, 0.5],
+				scale: 0.7,
+			},
+			qianjing: {
+				name: "魔孙权/秉钧持衡/qianjing",
+				version: "4.0",
+				action: "DaiJi",
+				ss_jinchang: "ChuChang",
+				x: [0, 0.5],
+				y: [0, 0.5],
+				scale: 0.7,
+			},
+			chuchang: {
+				name: "魔孙权/秉钧持衡/beijing",
+				version: "4.0",
+				action: "ChuChang",
+				scale: 0.48,
+				showTime: 3.67,
+				effectAudio: "魔孙权/秉钧持衡/audio_chuchang.ogg",
+				extra: [
+					{ name: "魔孙权/秉钧持衡/daiji" },
+					{ name: "魔孙权/秉钧持衡/qianjing" },
+				],
+			},
+			gongji: {
+				name: "魔孙权/秉钧持衡/xingxiang",
+				version: "4.0",
+				action: "GongJi",
+				scale: 0.44,
+				effectAudio: "魔孙权/秉钧持衡/audio_gongji.ogg",
+			},
+			hudong: {
+				name: "魔孙权/秉钧持衡/xingxiang",
+				version: "4.0",
+				action: "HuDong",
+				scale: 0.5,
+				effectAudio: "魔孙权/秉钧持衡/audio_hudong.ogg",
+			},
+		},
+	},
 	//鸣潮
 	jinxi: {
 		//今汐
@@ -14320,21 +14474,25 @@ export const dynamicSkinConfig = {
 		},
 		轻舟月岚: {
 			name: "冯妤/轻舟月岚/daiji",
+			// 官方形态 49102；资源目录沿用冯妤，显式 ID 避免与官服冯方女名称不匹配。
+			onlineSkinId: "49102",
 			version: "4.0",
 			ss_jinchang: "ChuChang",
 			action: "DaiJi",
 			json: true,
-			x: [0, 1.1],
-			y: [0, 0.3],
-			scale: 0.8,
+			// zoom=.55、place=150,-100；按232高座位、306高素材换算至本地130×175.5。
+			// Online播放由现有Worker按实际座位尺寸、朝向与露头状态换算，以下为普通播放基准。
+			x: [0, 0.980065],
+			y: [0, 0.262931],
+			scale: 0.878341,
 			angle: 0,
 			shizhounian: true,
 			//speed: 1,
 			qianjing: {
 				name: "冯妤/轻舟月岚/qianjing",
-				x: [0, 0.5],
-				y: [0, 0.5],
-				scale: 0.6,
+				x: [0, 0.980065],
+				y: [0, 0.262931],
+				scale: 0.878341,
 				json: true,
 				version: "4.0",
 				ss_jinchang: "ChuChang",
@@ -14346,30 +14504,31 @@ export const dynamicSkinConfig = {
 				json: true,
 				ss_jinchang: "ChuChang",
 				action: "DaiJi",
-				scale: 0.6,
-				x: [0, 0.5],
-				y: [0, 0.5],
+				scale: 0.878341,
+				x: [0, 0.980065],
+				y: [0, 0.262931],
 			},
+			// ifOutChuChang=1：只保留框内入场。出框位置及ChuKuang偏移交给官方播放链路。
 			gongji: {
 				name: "冯妤/轻舟月岚/xingxiang",
 				version: "4.0",
 				json: true,
 				action: "GongJi",
-				scale: 0.7,
+				scale: 0.832112,
 			},
 			hudong: {
 				name: "冯妤/轻舟月岚/xingxiang",
 				version: "4.0",
 				json: true,
 				action: "HuDong",
-				scale: 0.7,
+				scale: 0.832112,
 			},
 			teshu: {
 				name: "冯妤/轻舟月岚/xingxiang",
 				version: "4.0",
 				json: true,
 				action: "JiNeng",
-				scale: 0.7,
+				scale: 0.832112,
 			},
 		},
 		丹唇点绛: {
@@ -19660,6 +19819,61 @@ export const dynamicSkinConfig = {
 		},
 	},
 	huangyueying: {
+		// 62203：Small 用于局内，Big 另存 big/；ifOutChuChang=1，仅框内入场。
+		// 沿用现有 OL 130×175.5、232/306 参考换算；zoom=70，place=40,-170。
+		"拂花渡世": {
+			"name": "黄月英/拂花渡世/daiji",
+			"version": "4.0",
+			"onlineSkinId": "62203",
+			"action": "DaiJi",
+			"ss_jinchang": "ChuChang",
+			"x": [
+				0,
+				0.662931034
+			],
+			"y": [
+				0,
+				-0.012931034
+			],
+			"scale": 1.117887931,
+			"shizhounian": true,
+			"beijing": {
+				"name": "黄月英/拂花渡世/beijing",
+				"version": "4.0",
+				"action": "DaiJi",
+				"ss_jinchang": "ChuChang",
+				"x": [
+					0,
+					0.662931034
+				],
+				"y": [
+					0,
+					-0.012931034
+				],
+				"scale": 1.117887931
+			},
+			"gongji": {
+				"name": "黄月英/拂花渡世/xingxiang",
+				"version": "4.0",
+				"action": "GongJi",
+				"scale": 1.059051724,
+				"showTime": 3.333333493
+			},
+			"hudong": {
+				"name": "黄月英/拂花渡世/xingxiang",
+				"version": "4.0",
+				"action": "HuDong",
+				"scale": 1.059051724,
+				"showTime": 3.000000239
+			},
+			"teshu": {
+				"name": "黄月英/拂花渡世/xingxiang",
+				"version": "4.0",
+				"action": "JiNeng",
+				"scale": 1.059051724,
+				"showTime": 3.566666842
+			}
+		},
 		//黄月英
 		三幻黄月英: {
 			name: "黄月英/三幻黄月英/skeleton",
@@ -21161,6 +21375,61 @@ export const dynamicSkinConfig = {
 		},
 	},
 	jiaxu: {
+		// 66301：Small 用于局内，Big 另存 big/；ifOutChuChang=1，仅框内入场。
+		// 沿用现有 OL 130×175.5、232/306 参考换算；zoom=65，place=80,-50。
+		"颠覆珍珑": {
+			"name": "贾诩/颠覆珍珑/daiji",
+			"version": "4.0",
+			"onlineSkinId": "66301",
+			"action": "DaiJi",
+			"ss_jinchang": "ChuChang",
+			"x": [
+				0,
+				0.802586207
+			],
+			"y": [
+				0,
+				0.359913793
+			],
+			"scale": 1.038038793,
+			"shizhounian": true,
+			"beijing": {
+				"name": "贾诩/颠覆珍珑/beijing",
+				"version": "4.0",
+				"action": "DaiJi",
+				"ss_jinchang": "ChuChang",
+				"x": [
+					0,
+					0.802586207
+				],
+				"y": [
+					0,
+					0.359913793
+				],
+				"scale": 1.038038793
+			},
+			"gongji": {
+				"name": "贾诩/颠覆珍珑/xingxiang",
+				"version": "4.0",
+				"action": "GongJi",
+				"scale": 0.983405172,
+				"showTime": 3.000000239
+			},
+			"hudong": {
+				"name": "贾诩/颠覆珍珑/xingxiang",
+				"version": "4.0",
+				"action": "HuDong",
+				"scale": 0.983405172,
+				"showTime": 2.933333397
+			},
+			"teshu": {
+				"name": "贾诩/颠覆珍珑/xingxiang",
+				"version": "4.0",
+				"action": "HuDong",
+				"scale": 0.983405172,
+				"showTime": 2.933333397
+			}
+		},
 		//贾诩
 		少女回战: {
 			name: "贾诩/少女回战/Jiaxu01",
@@ -58758,52 +59027,130 @@ export const dynamicSkinConfig = {
 			},
 		},
 		山河无恙: {
-			name: "诸葛亮/山河无恙/daiji",
-			version: "4.0",
-			ss_jinchang: "ChuChang",
-			action: "DaiJi",
-			json: true,
-			x: [0, 0.15],
-			y: [0, 0.2],
-			scale: 1.04,
-			angle: 0,
-			//speed: 1,
-			shizhounian: true,
-			qianjing: {
-				name: "诸葛亮/山河无恙/qianjing",
-				x: [0, 0.5],
-				y: [0, 0.5],
-				scale: 0.6,
-				version: "4.0",
-				json: true,
-				ss_jinchang: "ChuChang",
-				action: "DaiJi",
+			// 手机端 71701；按现有 OL 播放器的 232 高、646/306 美术基准适配 zoom=65、place=-150,-100。保留已有完整前景。
+			"name": "诸葛亮/山河无恙/daiji",
+			"version": "4.0",
+			"json": false,
+			"ss_jinchang": "ChuChang",
+			"action": "DaiJi",
+			"x": [
+				0,
+				-0.06734913793103459
+			],
+			"y": [
+				0,
+				0.21982758620689657
+			],
+			"scale": 1.0380387931034483,
+			"shizhounian": true,
+			"beijing": {
+				"name": "诸葛亮/山河无恙/beijing",
+				"version": "4.0",
+				"json": false,
+				"ss_jinchang": "ChuChang",
+				"action": "DaiJi",
+				"x": [
+					0,
+					-0.06734913793103459
+				],
+				"y": [
+					0,
+					0.21982758620689657
+				],
+				"scale": 1.0380387931034483
 			},
-			beijing: {
-				name: "诸葛亮/山河无恙/beijing",
-				version: "4.0",
-				ss_jinchang: "ChuChang",
-				action: "DaiJi",
-				json: true,
-				scale: 0.6,
-				x: [0, 0.5],
-				y: [0, 0.5],
+			"gongji": {
+				"name": "诸葛亮/山河无恙/xingxiang",
+				"version": "4.0",
+				"json": false,
+				"action": "GongJi",
+				"scale": 0.9834051724137932,
+				"onlineSkinId": "71701"
 			},
-			gongji: {
-				name: "诸葛亮/山河无恙/xingxiang",
-				version: "4.0",
-				json: true,
-				action: "GongJi",
-				scale: 0.8,
+			"hudong": {
+				"name": "诸葛亮/山河无恙/xingxiang",
+				"version": "4.0",
+				"json": false,
+				"action": "HuDong",
+				"scale": 0.9834051724137932,
+				"onlineSkinId": "71701"
 			},
-			hudong: {
-				name: "诸葛亮/山河无恙/xingxiang",
-				version: "4.0",
-				json: true,
-				action: "HuDong",
-				scale: 0.8,
-			},
+			"onlineSkinId": "71701",
+			"qianjing": {
+				"name": "诸葛亮/山河无恙/qianjing",
+				"x": [
+					0,
+					-0.06734913793103459
+				],
+				"y": [
+					0,
+					0.21982758620689657
+				],
+				"scale": 1.0380387931034483,
+				"version": "4.0",
+				"json": true,
+				"ss_jinchang": "ChuChang",
+				"action": "DaiJi"
+			}
 		},
+
+		千灯照夜: {
+			// 手机端 71702；同一 OL 基准适配 zoom=65、place=0,-65。局内使用 Small；Big 另存，尚未接入专用大厅入口。
+			"name": "诸葛亮/千灯照夜/daiji",
+			"version": "4.0",
+			"json": false,
+			"ss_jinchang": "ChuChang",
+			"action": "DaiJi",
+			"x": [
+				0,
+				0.5
+			],
+			"y": [
+				0,
+				0.31788793103448276
+			],
+			"scale": 1.0380387931034483,
+			"shizhounian": true,
+			"effectAudio": {
+				"ChuChang": "诸葛亮/千灯照夜/audio_chuchang.mp3"
+			},
+			"beijing": {
+				"name": "诸葛亮/千灯照夜/beijing",
+				"version": "4.0",
+				"json": false,
+				"ss_jinchang": "ChuChang",
+				"action": "DaiJi",
+				"x": [
+					0,
+					0.5
+				],
+				"y": [
+					0,
+					0.31788793103448276
+				],
+				"scale": 1.0380387931034483
+			},
+			"gongji": {
+				"name": "诸葛亮/千灯照夜/xingxiang",
+				"version": "4.0",
+				"json": false,
+				"action": "GongJi",
+				"scale": 0.9834051724137932,
+				"effectAudio": "诸葛亮/千灯照夜/audio_gongji.mp3",
+				"onlineSkinId": "71702"
+			},
+			"hudong": {
+				"name": "诸葛亮/千灯照夜/xingxiang",
+				"version": "4.0",
+				"json": false,
+				"action": "HuDong",
+				"scale": 0.9834051724137932,
+				"effectAudio": "诸葛亮/千灯照夜/audio_hudong.mp3",
+				"onlineSkinId": "71702"
+			},
+			"onlineSkinId": "71702"
+		},
+
 		花月福智: {
 			name: "诸葛亮/花月福智/xingxiang",
 			version: "4.0",
@@ -60691,9 +61038,9 @@ export const dynamicSkinConfig = {
 			ss_jinchang: "ChuChang",
 			action: "DaiJi",
 			json: true,
-			x: [0, 0],
-			y: [0, 0.15],
-			scale: 0.96,
+			x: [0, -0.15],
+			y: [0, 0.05],
+			scale: 1.1,
 			angle: 0,
 			//speed: 1,
 			shizhounian: true,
@@ -60701,7 +61048,7 @@ export const dynamicSkinConfig = {
 				name: "张让/啮金饲龙/qianjing",
 				x: [0, 0.5],
 				y: [0, 0.5],
-				scale: 0.6,
+				scale: 0.7,
 				version: "4.0",
 				json: true,
 				ss_jinchang: "ChuChang",
@@ -60713,7 +61060,7 @@ export const dynamicSkinConfig = {
 				ss_jinchang: "ChuChang",
 				action: "DaiJi",
 				json: true,
-				scale: 0.6,
+				scale: 0.7,
 				x: [0, 0.5],
 				y: [0, 0.5],
 			},
@@ -60771,7 +61118,7 @@ export const dynamicSkinConfig = {
 				name: "张让/啮金饲龙2/qianjing",
 				x: [0, 0.5],
 				y: [0, 0.5],
-				scale: 0.6,
+				scale: 0.7,
 				version: "4.0",
 				json: true,
 				ss_jinchang: "ChuChang",
@@ -60783,7 +61130,7 @@ export const dynamicSkinConfig = {
 				ss_jinchang: "ChuChang",
 				action: "DaiJi",
 				json: true,
-				scale: 0.6,
+				scale: 0.7,
 				x: [0, 0.5],
 				y: [0, 0.5],
 			},
@@ -62022,17 +62369,40 @@ export const dynamicSkinConfig = {
 			},
 		},
 	},
+	v_caozhang: {
+		// 手机原皮场景 154，原生 Spine 3.6.38；只提供 play/play2 展示动作。
+		// 人物与背景同原点；按 130×175.5 卡框预览对齐原皮裁图。
+		经典形象: {
+			name: "威曹彰/经典形象/zhujiemian_weicaozhang1",
+			version: "3.6",
+			action: "play",
+			x: [0, 1.05],
+			y: [0, -0.1],
+			scale: 0.7,
+			beijing: {
+				name: "威曹彰/经典形象/zhujiemian_weicaozhang2",
+				version: "3.6",
+				action: "play",
+				x: [0, 1.05],
+				y: [0, -0.1],
+				scale: 0.7,
+			},
+		},
+	},
 	v_caocao: {
 		//威曹操
 		经典形象: {
 			name: "威曹操/经典形象/zhujiemian_weicaocao1",
-			version: "4.0",
+			version: "3.6",
+			action: "play",
 			x: [0, 0.4],
 			y: [0, 0.2],
 			scale: 0.4,
 			//speed: 1,
 			beijing: {
 				name: "威曹操/经典形象/zhujiemian_weicaocao2",
+				version: "3.6",
+				action: "play",
 				x: [0, 0.5],
 				y: [0, 0.5],
 				scale: 0.4,
@@ -66546,17 +66916,87 @@ export const dynamicSkinConfig = {
 				alpha: false,
 			},
 		},
+		// 手机原生 3.6.38：局内使用 daiji2；daiji 保留为展示资源。
+		// 动作来自 622301 参数与骨骼；位置/倍率沿用同结构手机动皮基准，待实局校准。
+		冥狱弑魂: {
+			"name": "神钟会/冥狱弑魂/daiji2",
+			"version": "3.6",
+			"action": "play",
+			"daijiteshu": "play2",
+			"daijishan": "play3",
+			"x": [
+				0,
+				0.5
+			],
+			"y": [
+				0,
+				0.5
+			],
+			"scale": 0.72,
+			"shizhounian": true,
+			"beijing": {
+				"name": "神钟会/冥狱弑魂/beijing",
+				"version": "3.6",
+				"action": "play",
+				"x": [
+					0,
+					0.5
+				],
+				"y": [
+					0,
+					0.5
+				],
+				"scale": 0.4
+			},
+			"chuchang": {
+				"name": "神钟会/冥狱弑魂/chuchang",
+				"version": "3.6",
+				"action": "play",
+				"scale": 0.7,
+				"showTime": 2
+			},
+			"gongji": {
+				"name": "神钟会/冥狱弑魂/chuchang2",
+				"version": "3.6",
+				"action": "gongji",
+				"scale": 0.8,
+				"showTime": 1.3333333730697632
+			},
+			"teshu": {
+				"name": "神钟会/冥狱弑魂/chuchang2",
+				"version": "3.6",
+				"action": "jineng",
+				"scale": 0.8,
+				"showTime": 3.066666603088379
+			},
+			"zhishixian": {
+				"name": "神钟会/冥狱弑魂/shouji2",
+				"version": "3.6",
+				"action": "play",
+				"scale": 0.7,
+				"effect": {
+					"name": "神钟会/冥狱弑魂/shouji",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.7
+				}
+			}
+		},
 		经典形象: {
-			name: "神钟会/经典形象/zhujiemian_shenzhonghui1",
-			version: "4.0",
+			// 新一将成名场景与原皮静图一致；包内原生骨骼为 3.6.38。
+			name: "神钟会/经典形象/zhujiemian_shenzhonghuixin1",
+			version: "3.6",
+			action: "play",
 			x: [0, 0.5],
-			y: [0, 0.6],
+			y: [0, 0.35],
 			scale: 0.3,
 			//speed: 1,
 			beijing: {
-				name: "神钟会/经典形象/zhujiemian_shenzhonghui2",
+				name: "神钟会/经典形象/zhujiemian_shenzhonghuixin2",
+				version: "3.6",
+				action: "play",
 				x: [0, 0.5],
-				y: [0, 0.6],
+				y: [0, 0.35],
 				scale: 0.3,
 			},
 		},
@@ -69014,48 +69454,50 @@ export const dynamicSkinConfig = {
 		傲睨九州: {
 			name: "魔司马懿/傲睨九州/daiji",
 			version: "4.0",
-			ss_jinchang: "ChuChang",
-			action: "DaiJi",
-			version: "4.0",
+			// 官服 zoom=50：三层共用父变换；沿用本地主层基准，统一层间位置与缩放。
 			x: [0, 0.1],
 			y: [0, 0.1],
-			angle: 36,
 			scale: 0.72,
 			angle: 0,
-			//speed: 1,
+			// ifOutChuChang=1 关闭独立出框入场，保留卡框内 ChuChang → DaiJi。
+			ss_jinchang: "ChuChang",
+			action: "DaiJi",
 			qianjing: {
 				name: "魔司马懿/傲睨九州/qianjing",
-				scale: 0.6,
 				version: "4.0",
+				x: [0, 0.1],
+				y: [0, 0.1],
+				scale: 0.72,
 				ss_jinchang: "ChuChang",
 				action: "DaiJi",
 			},
 			beijing: {
 				name: "魔司马懿/傲睨九州/beijing",
 				version: "4.0",
+				x: [0, 0.1],
+				y: [0, 0.1],
+				scale: 0.72,
 				ss_jinchang: "ChuChang",
 				action: "DaiJi",
-				scale: 0.6,
-				x: [0, 0.5],
-				y: [0, 0.5],
 			},
+			// 官服出框继续采用同一 zoom，事件层沿用同一本地缩放基准。
 			gongji: {
 				name: "魔司马懿/傲睨九州/xingxiang",
 				version: "4.0",
 				action: "GongJi",
-				scale: 0.7,
+				scale: 0.72,
 			},
 			hudong: {
 				name: "魔司马懿/傲睨九州/xingxiang",
 				version: "4.0",
 				action: "HuDong",
-				scale: 0.7,
+				scale: 0.72,
 			},
 			teshu: {
 				name: "魔司马懿/傲睨九州/xingxiang",
 				version: "4.0",
 				action: "HuDong",
-				scale: 0.7,
+				scale: 0.72,
 			},
 		},
 	},
@@ -70323,8 +70765,8 @@ export const dynamicSkinConfig = {
 			action: "DaiJi",
 			ss_jinchang: "ChuChang",
 			x: [0, 0.5],
-			y: [0, 0.60],
-			scale: 0.50,
+			y: [0, 0.5],
+			scale: 0.7,
 			shizhounian: true,
 			beijing: {
 				name: "神黄忠/赤血丹心/beijing",
@@ -70332,8 +70774,8 @@ export const dynamicSkinConfig = {
 				action: "DaiJi",
 				ss_jinchang: "ChuChang",
 				x: [0, 0.5],
-				y: [0, 0.60],
-				scale: 0.60,
+				y: [0, 0.5],
+				scale: 0.7,
 			},
 			qianjing: {
 				name: "神黄忠/赤血丹心/qianjing",
@@ -70341,8 +70783,8 @@ export const dynamicSkinConfig = {
 				action: "DaiJi",
 				ss_jinchang: "ChuChang",
 				x: [0, 0.5],
-				y: [0, 0.60],
-				scale: 0.60,
+				y: [0, 0.5],
+				scale: 0.7,
 			},
 			chuchang: {
 				name: "神黄忠/赤血丹心/beijing",

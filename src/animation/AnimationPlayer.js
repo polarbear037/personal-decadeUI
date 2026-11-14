@@ -8,7 +8,7 @@ class t {
 		const config = { alpha: !0 };
 		let gl = canvas.getContext("webgl2", config);
 		(gl ? (gl.isWebgl2 = !0) : (gl = canvas.getContext("webgl", config) || canvas.getContext("experimental-webgl", config)),
-			gl ? (this.spine = { shader: spine.webgl.Shader.newTwoColoredTextured(gl), batcher: new spine.webgl.PolygonBatcher(gl), skeletonRenderer: new spine.webgl.SkeletonRenderer(gl), assetManager: new spine.webgl.AssetManager(gl, pathPrefix), assets: {}, skeletons: [] }) : ((this.spine = { assets: {} }), console.error("当前设备不支持 WebGL.")),
+			gl ? (() => { const context = new spine.webgl.ManagedWebGLRenderingContext(gl); this.spine = { context, shader: spine.webgl.Shader.newTwoColoredTextured(context), batcher: new spine.webgl.PolygonBatcher(context), skeletonRenderer: new spine.webgl.SkeletonRenderer(context), assetManager: new spine.webgl.AssetManager(context, pathPrefix), assets: {}, skeletons: [] }; })() : ((this.spine = { assets: {} }), console.error("当前设备不支持 WebGL.")),
 			(this.gl = gl),
 			(this.canvas = this.$canvas = canvas),
 			(this.frameTime = void 0),
@@ -39,6 +39,43 @@ class t {
 			}),
 			this.offscreen || ((this.canvas.width = canvas.clientWidth), (this.canvas.height = canvas.clientHeight)),
 			this.check());
+		this.installContextLifecycle();
+	}
+	installContextLifecycle() {
+		if (!this.gl || this._contextLifecycleInstalled) return;
+		this._contextLifecycleInstalled = true;
+		this.canvas.addEventListener("webglcontextlost", event => { event.preventDefault(); this.handleContextLost(); });
+		this.canvas.addEventListener("webglcontextrestored", () => this.handleContextRestored());
+		if (!this.offscreen) this.canvas.style.visibility = "hidden";
+		if (this.gl.isContextLost()) this.handleContextLost();
+	}
+	handleContextLost() {
+		this._contextLost = true;
+		cancelAnimationFrame(this.requestId);
+		this.frameTime = this.requestId = undefined;
+		this.running = false;
+		this.bindShader = undefined;
+		if (!this.offscreen) this.canvas.style.visibility = "hidden";
+	}
+	handleContextRestored() {
+		if (this.gl.isContextLost()) return;
+		if (!this.offscreen) this.canvas.style.visibility = "hidden";
+		try {
+			// 旧实例热接入时也收集各自的ManagedContext；新实例全部共用spine.context。
+			const resources = new Set(), collect = context => { for (const resource of context?.restorables || []) resources.add(resource); };
+			collect(this.spine.context); collect(this.spine.shader?.context); collect(this.spine.batcher?.mesh?.context);
+			for (const asset of Object.values(this.spine.assetManager?.assets || {})) collect(asset?.context);
+			for (const resource of resources) {
+				if (resource instanceof spine.webgl.Mesh) resource.dirtyVertices = resource.dirtyIndices = true;
+				resource.restore();
+			}
+			this.spine.batcher.isDrawing = false;
+			this.bindShader = undefined;
+			this.resized = false;
+			this._contextLost = false;
+			this.frameTime = undefined;
+			if (this.nodes.some(node => !node.completed)) { this.running = true; this.requestId = requestAnimationFrame(this.render.bind(this)); }
+		} catch (error) { this.handleContextLost(); console.error("[十周年UI] WebGL restore failed", error); }
 	}
 	check() {
 		if (!this.gl) {
@@ -130,6 +167,7 @@ class t {
 	}
 	playSpine(sprite, position) {
 		if (void 0 === sprite) return void console.error("playSpine: parameter undefined");
+		if (this._contextLost || this.gl?.isContextLost()) { this.handleContextLost(); return; }
 		if (("string" == typeof sprite && (sprite = { name: sprite }), !this.hasSpine(sprite.name))) return void console.error(`playSpine: [${sprite.name}] 骨骼没有加载`);
 		let skeleton;
 		if (sprite instanceof APNode && sprite.skeleton.completed) skeleton = sprite.skeleton;
@@ -141,7 +179,7 @@ class t {
 			((sprite.skeleton = skeleton), (skeleton.node = sprite));
 		}
 		((sprite.completed = skeleton.completed = !1), position && Object.assign(sprite, { x: position.x, y: position.y, height: position.height, width: position.width, scale: position.scale, angle: position.angle, referNode: position.parent, referFollow: position.follow }));
-		return ((skeleton.state.setAnimation(0, sprite.action || skeleton.defaultAction, sprite.loop).mixDuration = 0), void 0 === this.requestId && ((this.running = !0), this.offscreen || (this.canvas.style.visibility = "visible"), (this.requestId = requestAnimationFrame(this.render.bind(this)))), (sprite.referBounds = void 0), sprite);
+		return ((skeleton.state.setAnimation(0, sprite.action || skeleton.defaultAction, sprite.loop).mixDuration = 0), void 0 === this.requestId && ((this.running = !0), (this.requestId = requestAnimationFrame(this.render.bind(this)))), (sprite.referBounds = void 0), sprite);
 	}
 	loopSpine(e, t) {
 		return ("string" == typeof e ? (e = { name: e, loop: !0 }) : (e.loop = !0), this.playSpine(e, t));
@@ -169,6 +207,7 @@ class t {
 		return (skeleton || (skeleton = this.prepSpine(filename)), skeleton.bounds);
 	}
 	render(timestamp) {
+		if (this._contextLost || this.gl?.isContextLost()) { this.handleContextLost(); return; }
 		const canvas = this.canvas,
 			offscreen = this.offscreen,
 			dpr = this.dprAdaptive ? (offscreen ? this.dpr || 1 : Math.max(window.devicePixelRatio * (window.documentZoom || 1), 1)) : 1,
@@ -192,7 +231,7 @@ class t {
 				s = h.speed ?? 1;
 			((e.flipX = h.flipX), (e.flipY = h.flipY), (e.opacity = h.renderOpacity ?? 1), (i.hideSlots = h.hideSlots), i.update((delta / 1e3) * s), i.apply(e), e.updateWorldTransform(), shader.setUniform4x4f(spine.webgl.Shader.MVP_MATRIX, h.mvp.values), batcher.begin(shader), (renderer.premultipliedAlpha = h.premultipliedAlpha), (renderer.outcropMask = this.outcropMask), (renderer.unpackPremultipliedAlpha = this.unpackPremultipliedAlpha), renderer.outcropMask && ((renderer.outcropX = h.renderX), (renderer.outcropY = h.renderY), (renderer.outcropScale = h.renderScale), (renderer.outcropAngle = h.renderAngle), (renderer.clipSlots = h.clipSlots)), (renderer.hideSlots = h.hideSlots), (renderer.disableMask = h.disableMask), renderer.draw(batcher, e), batcher.end(), gl.clipping && ((gl.clipping = void 0), gl.scissor(0, 0, canvas.width, canvas.height)));
 		}
-		(gl.disable(gl.SCISSOR_TEST), (this.requestId = requestAnimationFrame(this.render.bind(this))));
+		(gl.disable(gl.SCISSOR_TEST), this.offscreen || (this.canvas.style.visibility = "visible"), (this.requestId = requestAnimationFrame(this.render.bind(this))));
 	}
 }
 export { t as AnimationPlayer };

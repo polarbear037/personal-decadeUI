@@ -490,6 +490,12 @@ animation: player-hurt 0.3s ease-out forwards;
 	pointer-events: none;
 }
 
+/* OL 的 MUt.onAnimateLoadComplete 为左右两段技能名使用 HYF3GJM。 */
+body[data-style="onlineUI"] #arena>.damage.skill-popup,
+body[data-style="onlineUI"] #arena>.player>.damage.skill-popup {
+	font-family: "HYF3GJM", "HYXLSJ";
+}
+
 /* 字符样式 - 通用 */
 .damage.skill-popup>span {
 	display: inline-block;

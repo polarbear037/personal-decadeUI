@@ -1848,6 +1848,14 @@
 	animation: player-hurt 1.8s linear forwards;
 }
 
+/* 其他座位占位16px、margin共10px；图标含透明留白，可见宽约35px，按38px步长紧排。 */
+body[data-style="onlineUI"] #arena > .player:not([data-position="0"]) > .judges {
+	column-gap: 12px;
+}
+body[data-style="onlineUI"] #arena > .player:not([data-position="0"]) > .judges > .card {
+	flex-shrink: 0;
+}
+
 /* 主视角官方判定队列。data标记仅由Online布局模块设置，覆盖Nova的旧偏移。 */
 #arena > .player[data-position="0"]:not(.minskin) > .judges[data-online-judge-layout="true"] {
 	display: block;

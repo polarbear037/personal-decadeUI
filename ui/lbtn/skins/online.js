@@ -4,12 +4,14 @@
  */
 import { lib, game, ui, get, ai, _status } from "noname";
 import { createBaseLbtnPlugin } from "./base.js";
+import { createOnlineBackgroundSelector } from "./online-background-selector.js";
 import { attachOnlineRecastButton, initOnlineActionButtons, syncOnlineActionButtons } from "../../../src/ui/online-action-buttons.js";
 import { installOnlineProps } from "../../../src/ui/online-props.js";
 
 export function createOnlineLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 	const base = createBaseLbtnPlugin(lib, game, ui, get, ai, _status, app);
 	const assetPath = "extension/十周年UI/ui/assets/lbtn/";
+	const backgrounds = createOnlineBackgroundSelector(lib, game, ui, get, _status);
 
 	//为元素添加点击缩放效果
 	function addScaleEffect(el, scale = 0.85) {
@@ -314,6 +316,8 @@ export function createOnlineLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 		initArenaReady() {
 			const self = this;
 			lib.arenaReady.push(() => {
+				backgrounds.restore();
+				if (_status.connectMode) lib.hooks.gameStart.add(backgrounds.restore);
 				self.initAutoNode();
 				self.initIdentityShow();
 				self.createMenuButton();
@@ -481,7 +485,7 @@ export function createOnlineLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 			});
 			// 背景
 			createMenuItem("背景", "beijing", 122, 38, () => {
-				self.openBackgroundSelector();
+				backgrounds.open();
 			});
 			// 托管按钮（不关闭菜单，缩放动画，点击切换图标）
 			const getAutoState = () => game.me?.isAuto?.() ?? _status.auto ?? false;

@@ -21,7 +21,9 @@ body[data-style="onlineUI"] #window > .online-general-tool {
 	width: 1324px;
 	height: 600px;
 	transform: translate(-50%, -50%) scale(var(--general-tool-scale, 1));
+	transition: none;
 	pointer-events: none;
+	font-family: "GeneralToolTitle", serif;
 	text-shadow: none;
 }
 
@@ -68,7 +70,8 @@ body[data-style="onlineUI"] #window > .online-general-tool {
 	scrollbar-width: none;
 	pointer-events: auto;
 	color: #674f2c;
-	font: 30px/1.2 Arial, "Microsoft YaHei", sans-serif;
+	font-size: 30px;
+	line-height: 34px;
 }
 
 .online-general-tool-list::-webkit-scrollbar {
@@ -100,11 +103,24 @@ body[data-style="onlineUI"] #window > .online-general-tool {
 	color: #f2e4c0;
 }
 
-.online-general-tool-list-content > .xskill > div,
+.online-general-tool-list-content > .xskill > div:not(.online-general-tool-derived),
 .online-general-tool-list-content > .xskillx > div {
 	width: 490px;
 	margin-left: 5px;
 	overflow-wrap: anywhere;
+}
+
+.online-general-tool-skill {
+	padding-bottom: 8px;
+}
+
+.online-general-tool-skill:has(> .online-general-tool-derived) {
+	padding-bottom: 4px;
+}
+
+.online-general-tool-skill > div,
+.online-general-tool-derived > div {
+	letter-spacing: 1px;
 }
 
 .online-general-tool-skill > header {
@@ -114,6 +130,7 @@ body[data-style="onlineUI"] #window > .online-general-tool {
 	min-height: 55px;
 	margin: 0 0 13px 1px;
 	font-size: 32px;
+	line-height: 55px;
 	color: #d87103;
 }
 
@@ -124,12 +141,14 @@ body[data-style="onlineUI"] #window > .online-general-tool {
 	min-height: 55px;
 	background: url("../../assets/character/online/general-tool/generaldetail_bgskill.png") center / 100% 100% no-repeat;
 	color: #fffbcb;
-	font: 32px/1 "GeneralToolTitle", serif;
-	text-shadow: 1px 1px #b08337, -1px -1px #b08337;
+	font-size: 32px;
+	-webkit-text-stroke: 2px #b08337;
+	paint-order: stroke fill;
 }
 
-.online-general-tool-list-content > .online-general-tool-derived {
+.online-general-tool-derived {
 	box-sizing: border-box;
+	padding-bottom: 8px;
 	padding-left: 54px;
 	background: url("../../assets/character/online/general-tool/generaldetail_skill1.png") 25px 14px no-repeat;
 }
@@ -137,12 +156,15 @@ body[data-style="onlineUI"] #window > .online-general-tool {
 .online-general-tool-derived > header {
 	font-size: 32px;
 	line-height: 42px;
+	padding-top: 2px;
+	box-sizing: border-box;
+	height: 42px;
 	color: #d87103;
 }
 
-.online-general-tool-list-content > .online-general-tool-derived > div {
-	width: auto;
-	margin-left: 0;
+.online-general-tool-derived > div {
+	width: 457px;
+	overflow-wrap: anywhere;
 }
 
 .online-general-tool-sealed {
@@ -186,26 +208,109 @@ body[data-style="onlineUI"] #window > .online-general-tool {
 	height: 227px;
 	background-size: 100% 100%;
 	color: #fff;
-	text-shadow: 1px 1px 2px #3b2322, -1px -1px 2px #3b2322;
+	background-repeat: no-repeat;
 }
 
-.online-general-tool-nameplate > span {
+.online-general-tool-country,
+.online-general-tool-name {
 	position: absolute;
-	left: 3px;
-	width: 30px;
+	left: 2px;
 	text-align: center;
+	-webkit-text-stroke: 2px #3b2322;
+	paint-order: stroke fill;
 }
 
-.online-general-tool-nameplate > span:first-child {
-	top: 8px;
-	font: 26px "GeneralToolTitle", serif;
-	color: #f4d6a0;
+.online-general-tool-country {
+	top: 6px;
+	width: 28px;
+	font-size: 26px;
+	line-height: 29px;
 }
 
-.online-general-tool-nameplate > span:last-child {
+.online-general-tool-name {
 	top: 35px;
-	font: 22px/1.1 "GeneralToolTitle", serif;
+	width: 30px;
+	max-height: 108px;
+	overflow: hidden;
+	font-size: 22px;
+	line-height: 22px;
+	letter-spacing: 1px;
 	word-break: break-all;
+}
+
+.online-general-tool-health {
+	position: absolute;
+	left: 4px;
+	top: 122px;
+	width: 24px;
+	height: 90px;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.online-general-tool-health > span {
+	position: relative;
+	height: 18px;
+	flex-shrink: 0;
+}
+
+.online-general-tool-health img {
+	display: block;
+	width: 19.2px;
+	height: 19.2px;
+}
+
+.online-general-tool-health.is-guozhan {
+	left: 3px;
+	top: 113px;
+	height: 100px;
+}
+
+.online-general-tool-health.is-guozhan > span {
+	height: 20px;
+}
+
+.online-general-tool-health.is-guozhan img {
+	position: absolute;
+	width: 16.2px;
+	height: 20.4px;
+}
+
+.online-general-tool-health.is-guozhan img[data-side="R"] {
+	left: 5px;
+}
+
+.online-general-tool-health.is-compact {
+	left: 2px;
+	top: 133px;
+	height: 85px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.online-general-tool-health.is-compact > .online-general-tool-health-value {
+	height: auto;
+	color: #fff;
+	font-size: 24px;
+	line-height: 18px;
+	text-align: center;
+	white-space: pre-line;
+	-webkit-text-stroke: 1px #3b2322;
+	paint-order: stroke fill;
+}
+
+.online-general-tool-seal-label {
+	position: absolute;
+	left: 27px;
+	top: 97px;
+	width: 142px;
+	color: #bcbcd4;
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	-webkit-text-stroke: 1px #2424bd;
+	paint-order: stroke fill;
 }
 
 .online-general-tool-player {
@@ -215,7 +320,9 @@ body[data-style="onlineUI"] #window > .online-general-tool {
 	width: 429px;
 	height: 42px;
 	text-align: center;
-	font: 30px/42px Arial, "Microsoft YaHei", sans-serif;
+	font-size: 30px;
+	line-height: 42px;
+	letter-spacing: -2px;
 	color: #674f2c;
 }
 
@@ -225,8 +332,6 @@ body[data-style="onlineUI"] #window > .online-general-tool {
 	top: 435px;
 	width: 429px;
 	height: 135px;
-	display: grid;
-	grid-template-columns: 136px 155px 138px;
 	background:
 		url("../../assets/character/online/general-tool/wjxq_titlezhuangshi.png") 39px 0 no-repeat,
 		url("../../assets/character/online/general-tool/wjxq_titlezhuangshi_1.png") 377px 0 no-repeat,
@@ -235,17 +340,31 @@ body[data-style="onlineUI"] #window > .online-general-tool {
 		url("../../assets/character/online/general-tool/wjxq_line.png") 291px 29px no-repeat,
 		url("../../assets/character/online/general-tool/nei_rong_di_kao_bei_2.png") 0 28px no-repeat;
 	color: #674f2c;
-	font: 30px/34px Arial, "Microsoft YaHei", sans-serif;
+	font-size: 30px;
+	line-height: 34px;
 }
 
-.online-general-tool-rates > section {
-	display: grid;
-	grid-template-rows: 35px 34px;
-	justify-items: center;
-	align-items: start;
-	gap: 16px;
-	padding-top: 40px;
+.online-general-tool-rates img,
+.online-general-tool-rates span {
+	position: absolute;
 }
+
+.online-general-tool-rates img {
+	top: 40px;
+}
+
+.online-general-tool-rates span {
+	top: 91px;
+	width: 136px;
+	text-align: center;
+}
+
+.online-general-tool-rates > :nth-child(1) img { left: 33px; }
+.online-general-tool-rates > :nth-child(2) img { left: 168px; }
+.online-general-tool-rates > :nth-child(3) img { left: 326px; }
+.online-general-tool-rates > :nth-child(1) span { left: 1px; }
+.online-general-tool-rates > :nth-child(2) span { left: 138px; top: 90px; width: 152px; }
+.online-general-tool-rates > :nth-child(3) span { left: 292px; }
 
 .online-general-tool-window > button {
 	position: absolute;
@@ -257,15 +376,17 @@ body[data-style="onlineUI"] #window > .online-general-tool {
 }
 
 .online-general-tool-window > .online-general-tool-close {
+	/* Yki.addCloseBtn 定位的是 vOi 的中心锚点。 */
 	left: 1160px;
 	top: 25px;
+	transform: translate(-50%, -50%);
 	width: 36px;
 	height: 35px;
 	background-image: url("../../assets/character/online/general-tool/wnd_cls.png");
 }
 
 .online-general-tool-window > .online-general-tool-info {
-	left: 1205px;
+	left: 1207px;
 	top: 507px;
 	width: 94px;
 	height: 94px;

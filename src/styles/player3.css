@@ -278,6 +278,56 @@
 	background-image: url("../../image/styles/xinsha/new_border_camp.png");
 }
 
+/* 五阶龙框动态遮罩：原始 APNG 自带循环，随边框隐藏，无需独立画布或定时器。
+ * 素材和调色沿用雷霆 famous；尺寸按本项目各静态框的透明留白适配。
+ * 玩家等级优先于 arena，兼容随机等阶，避免低阶角色继承五阶特效。 */
+body[data-style="othersOff"] #arena.decadeUI .player>.camp-wrap>.camp-border::after {
+	content: none;
+	position: absolute;
+	left: var(--dragon-mask-left, 9%);
+	top: var(--dragon-mask-top, 0);
+	width: var(--dragon-mask-width, 82%);
+	height: var(--dragon-mask-height, 100%);
+	background-image: var(--dragon-mask);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	filter: var(--dragon-mask-filter);
+	pointer-events: none;
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-level="five"] .player:not([data-border-level])>.camp-wrap>.camp-border::after,
+body[data-style="othersOff"] #arena.decadeUI .player[data-border-level="five"]>.camp-wrap>.camp-border::after {
+	content: "";
+}
+
+body[data-style="othersOff"] #arena.decadeUI {
+	--dragon-mask: url("../../image/styles/xinsha/SF_paiju_jie_zuowei5_play2_dynamic.png");
+	--dragon-mask-filter: brightness(1.2) contrast(1.1) sepia(0.4) saturate(1.6);
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon2"] {
+	--dragon-mask: url("../../image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png");
+	--dragon-mask-left: 18%;
+	--dragon-mask-width: 79%;
+	--dragon-mask-filter: brightness(1.1) contrast(1.1) saturate(1.5) sepia(0.2);
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon3"] {
+	--dragon-mask: url("../../image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png");
+	--dragon-mask-left: 10%;
+	--dragon-mask-width: 89%;
+	--dragon-mask-filter: brightness(1.1) contrast(1.7) saturate(1.5) sepia(0.3);
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] {
+	--dragon-mask: url("../../image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png");
+	--dragon-mask-left: 15%;
+	--dragon-mask-top: 6%;
+	--dragon-mask-width: 70%;
+	--dragon-mask-height: 88%;
+	--dragon-mask-filter: brightness(1.1) contrast(1.2);
+}
+
 /** 武将名称 */
 .player>.camp-wrap>.avatar-name,
 .player>.camp-wrap>.avatar-name-default,

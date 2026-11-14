@@ -1,0 +1,415 @@
+{
+  "results": [
+    {
+      "style": "xinsha",
+      "name": "SF_paiju_jie_zuowei5_play2_dynamic",
+      "levels": [
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/SF_paiju_jie_zuowei5_play2_dynamic.png\")",
+          "filter": "brightness(1.2) contrast(1.1) sepia(0.4) saturate(1.6)",
+          "pointerEvents": "none",
+          "width": "82%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/SF_paiju_jie_zuowei5_play2_dynamic.png\")",
+          "filter": "brightness(1.2) contrast(1.1) sepia(0.4) saturate(1.6)",
+          "pointerEvents": "none",
+          "width": "82%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/SF_paiju_jie_zuowei5_play2_dynamic.png\")",
+          "filter": "brightness(1.2) contrast(1.1) sepia(0.4) saturate(1.6)",
+          "pointerEvents": "none",
+          "width": "82%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/SF_paiju_jie_zuowei5_play2_dynamic.png\")",
+          "filter": "brightness(1.2) contrast(1.1) sepia(0.4) saturate(1.6)",
+          "pointerEvents": "none",
+          "width": "82%",
+          "height": "100%"
+        },
+        {
+          "content": "\"\"",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/SF_paiju_jie_zuowei5_play2_dynamic.png\")",
+          "filter": "brightness(1.2) contrast(1.1) sepia(0.4) saturate(1.6)",
+          "pointerEvents": "none",
+          "width": "45.0938px",
+          "height": "187px"
+        }
+      ],
+      "random": [
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/SF_paiju_jie_zuowei5_play2_dynamic.png\")",
+          "filter": "brightness(1.2) contrast(1.1) sepia(0.4) saturate(1.6)",
+          "pointerEvents": "none",
+          "width": "82%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/SF_paiju_jie_zuowei5_play2_dynamic.png\")",
+          "filter": "brightness(1.2) contrast(1.1) sepia(0.4) saturate(1.6)",
+          "pointerEvents": "none",
+          "width": "82%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/SF_paiju_jie_zuowei5_play2_dynamic.png\")",
+          "filter": "brightness(1.2) contrast(1.1) sepia(0.4) saturate(1.6)",
+          "pointerEvents": "none",
+          "width": "82%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/SF_paiju_jie_zuowei5_play2_dynamic.png\")",
+          "filter": "brightness(1.2) contrast(1.1) sepia(0.4) saturate(1.6)",
+          "pointerEvents": "none",
+          "width": "82%",
+          "height": "100%"
+        },
+        {
+          "content": "\"\"",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/SF_paiju_jie_zuowei5_play2_dynamic.png\")",
+          "filter": "brightness(1.2) contrast(1.1) sepia(0.4) saturate(1.6)",
+          "pointerEvents": "none",
+          "width": "45.0938px",
+          "height": "187px"
+        }
+      ],
+      "inherited": {
+        "content": "\"\"",
+        "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/SF_paiju_jie_zuowei5_play2_dynamic.png\")",
+        "filter": "brightness(1.2) contrast(1.1) sepia(0.4) saturate(1.6)",
+        "pointerEvents": "none",
+        "width": "45.0938px",
+        "height": "187px"
+      },
+      "image": [
+        69,
+        277
+      ],
+      "animated": true
+    },
+    {
+      "style": "dragon2",
+      "name": "sgs_paiju_heilongkuang_play_dynamic",
+      "levels": [
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.1) saturate(1.5) sepia(0.2)",
+          "pointerEvents": "none",
+          "width": "79%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.1) saturate(1.5) sepia(0.2)",
+          "pointerEvents": "none",
+          "width": "79%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.1) saturate(1.5) sepia(0.2)",
+          "pointerEvents": "none",
+          "width": "79%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.1) saturate(1.5) sepia(0.2)",
+          "pointerEvents": "none",
+          "width": "79%",
+          "height": "100%"
+        },
+        {
+          "content": "\"\"",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.1) saturate(1.5) sepia(0.2)",
+          "pointerEvents": "none",
+          "width": "85.3125px",
+          "height": "226px"
+        }
+      ],
+      "random": [
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.1) saturate(1.5) sepia(0.2)",
+          "pointerEvents": "none",
+          "width": "79%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.1) saturate(1.5) sepia(0.2)",
+          "pointerEvents": "none",
+          "width": "79%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.1) saturate(1.5) sepia(0.2)",
+          "pointerEvents": "none",
+          "width": "79%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.1) saturate(1.5) sepia(0.2)",
+          "pointerEvents": "none",
+          "width": "79%",
+          "height": "100%"
+        },
+        {
+          "content": "\"\"",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.1) saturate(1.5) sepia(0.2)",
+          "pointerEvents": "none",
+          "width": "85.3125px",
+          "height": "226px"
+        }
+      ],
+      "inherited": {
+        "content": "\"\"",
+        "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png\")",
+        "filter": "brightness(1.1) contrast(1.1) saturate(1.5) sepia(0.2)",
+        "pointerEvents": "none",
+        "width": "85.3125px",
+        "height": "226px"
+      },
+      "image": [
+        121,
+        311
+      ],
+      "animated": true
+    },
+    {
+      "style": "dragon3",
+      "name": "sgs_paiju_jinlongkuang_play_dynamic",
+      "levels": [
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.7) saturate(1.5) sepia(0.3)",
+          "pointerEvents": "none",
+          "width": "89%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.7) saturate(1.5) sepia(0.3)",
+          "pointerEvents": "none",
+          "width": "89%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.7) saturate(1.5) sepia(0.3)",
+          "pointerEvents": "none",
+          "width": "89%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.7) saturate(1.5) sepia(0.3)",
+          "pointerEvents": "none",
+          "width": "89%",
+          "height": "100%"
+        },
+        {
+          "content": "\"\"",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.7) saturate(1.5) sepia(0.3)",
+          "pointerEvents": "none",
+          "width": "96.1094px",
+          "height": "226px"
+        }
+      ],
+      "random": [
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.7) saturate(1.5) sepia(0.3)",
+          "pointerEvents": "none",
+          "width": "89%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.7) saturate(1.5) sepia(0.3)",
+          "pointerEvents": "none",
+          "width": "89%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.7) saturate(1.5) sepia(0.3)",
+          "pointerEvents": "none",
+          "width": "89%",
+          "height": "100%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.7) saturate(1.5) sepia(0.3)",
+          "pointerEvents": "none",
+          "width": "89%",
+          "height": "100%"
+        },
+        {
+          "content": "\"\"",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.7) saturate(1.5) sepia(0.3)",
+          "pointerEvents": "none",
+          "width": "96.1094px",
+          "height": "226px"
+        }
+      ],
+      "inherited": {
+        "content": "\"\"",
+        "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png\")",
+        "filter": "brightness(1.1) contrast(1.7) saturate(1.5) sepia(0.3)",
+        "pointerEvents": "none",
+        "width": "96.1094px",
+        "height": "226px"
+      },
+      "image": [
+        140,
+        320
+      ],
+      "animated": true
+    },
+    {
+      "style": "dragon4",
+      "name": "sgs_paiju_laolongkuang_play_dynamic",
+      "levels": [
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.2)",
+          "pointerEvents": "none",
+          "width": "70%",
+          "height": "88%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.2)",
+          "pointerEvents": "none",
+          "width": "70%",
+          "height": "88%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.2)",
+          "pointerEvents": "none",
+          "width": "70%",
+          "height": "88%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.2)",
+          "pointerEvents": "none",
+          "width": "70%",
+          "height": "88%"
+        },
+        {
+          "content": "\"\"",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.2)",
+          "pointerEvents": "none",
+          "width": "55.6719px",
+          "height": "163.312px"
+        }
+      ],
+      "random": [
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.2)",
+          "pointerEvents": "none",
+          "width": "70%",
+          "height": "88%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.2)",
+          "pointerEvents": "none",
+          "width": "70%",
+          "height": "88%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.2)",
+          "pointerEvents": "none",
+          "width": "70%",
+          "height": "88%"
+        },
+        {
+          "content": "none",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.2)",
+          "pointerEvents": "none",
+          "width": "70%",
+          "height": "88%"
+        },
+        {
+          "content": "\"\"",
+          "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png\")",
+          "filter": "brightness(1.1) contrast(1.2)",
+          "pointerEvents": "none",
+          "width": "55.6719px",
+          "height": "163.312px"
+        }
+      ],
+      "inherited": {
+        "content": "\"\"",
+        "image": "url(\"http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png\")",
+        "filter": "brightness(1.1) contrast(1.2)",
+        "pointerEvents": "none",
+        "width": "55.6719px",
+        "height": "163.312px"
+      },
+      "image": [
+        80,
+        217
+      ],
+      "animated": true
+    }
+  ],
+  "otherStylesIsolated": true,
+  "knownMissingAsset": [
+    "404 http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/new_border_camp1.png",
+    "404 http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/new_border_camp1.png",
+    "404 http://127.0.0.1:57709/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/new_border_camp1.png"
+  ],
+  "unexpectedErrors": []
+}

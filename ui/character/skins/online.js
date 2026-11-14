@@ -22,6 +22,8 @@ export function createOnlineCharacterPlugin(lib, game, ui, get, ai, _status, app
 	const IMAGE_PATH = "extension/十周年UI/ui/assets/character/online/";
 	const TOOL_PATH = IMAGE_PATH + "general-tool/";
 	const AUDIO_PATH = "../extension/十周年UI/ui/assets/lbtn/shousha/caidan.mp3";
+	let playerRates = new WeakMap();
+	lib.announce.subscribe("gameStart", () => { playerRates = new WeakMap(); });
 
 	/**
 	 * 常量配置
@@ -59,6 +61,17 @@ export function createOnlineCharacterPlugin(lib, game, ui, get, ai, _status, app
 			diamond: { symbol: "♦", color: "#e03c3c", image: "diamond.png" },
 		},
 		EQUIP_TYPE_ICONS: { equip1: "equip1.png", equip2: "equip2.png", equip3: "equip3.png", equip4: "equip4.png", equip5: "equip5.png" },
+		COUNTRY_COLORS: {
+			wei: ["#C4D1F0", "#0D2E4D"],
+			shu: ["#F4B39C", "#462309"],
+			wu: ["#B9F2A1", "#0E3006"],
+			qun: ["#F3D79D", "#7C7925"],
+			shen: ["#FFE555", "#BEA350"],
+			jin: ["#FCBDFD", "#4E1D5A"],
+			yao: ["#FFED71", "#B7A933"],
+			xie: ["#FF8FE9", "#CD5498"],
+			ye: ["#FCF3FF", "#E067EB"],
+		},
 	};
 
 	return {
@@ -82,17 +95,27 @@ export function createOnlineCharacterPlugin(lib, game, ui, get, ai, _status, app
 		 */
 		generateRandomData(player) {
 			const guanjieLevel = Math.floor(Math.random() * 13 + 1);
-			const winRate = get.SL ? get.SL(player) * 100 + "%" : Math.floor(Math.random() * 45 + 50) + "%";
 			return {
-				winRate,
+				...this.getPlayerRates(player),
 				guanjieLevel,
-				popularity: Math.floor(Math.random() * 10000 + 1),
-				escapeRate: Math.floor(Math.random() * 11),
 				rankLevel: Math.floor(Math.random() * 6 + 1),
 				level: [Math.floor(Math.random() * 21) + 180, 200, 200].randomGet(),
 				vipLevel: Math.min(guanjieLevel + 1, 10),
 				mvpCount: Math.floor(Math.random() * 41 + 20),
 			};
+		},
+
+		getPlayerRates(player) {
+			let rates = playerRates.get(player);
+			if (!rates) {
+				rates = {
+					popularity: 10 + Math.floor(Math.random() * 9990),
+					winRate: ((300 + Math.floor(Math.random() * 401)) / 10).toFixed(1) + "%",
+					escapeRate: (Math.floor(Math.random() * 101) / 10).toFixed(1) + "%",
+				};
+				playerRates.set(player, rates);
+			}
+			return rates;
 		},
 
 		/**
@@ -148,21 +171,22 @@ export function createOnlineCharacterPlugin(lib, game, ui, get, ai, _status, app
 			const artwork = ui.create.div(".online-general-tool-artwork", portrait);
 			ui.create.div(".online-general-tool-frame", portrait);
 			const namePlate = ui.create.div(".online-general-tool-nameplate", portrait);
-			const groupLabel = document.createElement("span");
-			const nameLabel = document.createElement("span");
-			namePlate.append(groupLabel, nameLabel);
+			const groupLabel = ui.create.div(".online-general-tool-country", namePlate);
+			const nameLabel = ui.create.div(".online-general-tool-name", namePlate);
+			const health = ui.create.div(".online-general-tool-health", portrait);
+			const sealLabel = ui.create.div(".online-general-tool-seal-label", portrait);
 			const nickname = ui.create.div(".online-general-tool-player", dialog);
 			nickname.textContent = player.nickname || "";
 
-			// 无名杀没有 OL 的账户统计，沿用资料入口，主面板留空的统计以横线表示。
 			const rates = ui.create.div(".online-general-tool-rates", dialog);
-			for (const [index, label] of ["人气值", "胜率", "逃跑率"].entries()) {
+			const { popularity, winRate, escapeRate } = this.getPlayerRates(player);
+			for (const [index, [label, stat]] of [["人气值", popularity], ["百场胜率", winRate], ["逃跑率", escapeRate]].entries()) {
 				const cell = document.createElement("section");
 				const title = new Image();
 				title.src = lib.assetURL + TOOL_PATH + `wjxq_txt${3 - index}.png`;
 				title.alt = label;
 				const value = document.createElement("span");
-				value.textContent = "—";
+				value.textContent = stat;
 				cell.append(title, value);
 				rates.append(cell);
 			}
@@ -195,8 +219,16 @@ export function createOnlineCharacterPlugin(lib, game, ui, get, ai, _status, app
 				const supported = ["wei", "shu", "wu", "qun", "jin", "shen", "xie", "yao", "yeXin"];
 				namePlate.setBackgroundImage(TOOL_PATH + `general_bigSkin_icon_${supported.includes(textureGroup) ? textureGroup : "gary"}_bg_new.png`);
 				artwork.setBackground(hidden ? "unknown" : name, "character");
+				namePlate.hidden = !character;
+				sealLabel.textContent = hidden ? "武将暗置" : "";
 				groupLabel.textContent = group ? get.translation(group) : "";
-				nameLabel.textContent = hidden ? "未知" : get.slimNameHorizontal(name);
+				const [countryColor, countryStroke] = CONSTANTS.COUNTRY_COLORS[group] || CONSTANTS.COUNTRY_COLORS.qun;
+				groupLabel.style.color = countryColor;
+				groupLabel.style.webkitTextStrokeColor = countryStroke;
+				const translatedName = document.createElement("template");
+				translatedName.innerHTML = character ? get.slimNameHorizontal(name) : "";
+				nameLabel.textContent = translatedName.content.textContent;
+				this.renderGeneralToolHealth(health, character);
 				this.createRightPanel(rightPane, player, second, hidden);
 			};
 			if (player.name2) {
@@ -238,6 +270,46 @@ export function createOnlineCharacterPlugin(lib, game, ui, get, ai, _status, app
 			}
 			game.playAudio(AUDIO_PATH);
 			game.pause2();
+		},
+		renderGeneralToolHealth(health, character) {
+			health.replaceChildren();
+			health.removeAttribute("aria-label");
+			if (!character) return;
+			const maxHp = character.maxHp ?? get.infoMaxHp(character[2]);
+			const hp = character.hp ?? get.infoHp(character[2]);
+			const guozhan = get.mode() === "guozhan";
+			const maxPips = guozhan ? Math.ceil(maxHp / 2) : maxHp;
+			const compact = maxPips > 5;
+			health.classList.toggle("is-compact", compact);
+			health.classList.toggle("is-guozhan", guozhan);
+			health.setAttribute("aria-label", `体力 ${hp}/${maxHp}`);
+			for (let pip = 0; pip < (compact ? 1 : maxPips); pip++) {
+				const slot = document.createElement("span");
+				if (guozhan) {
+					for (const [half, side] of ["R", "L"].entries()) {
+						const lastHalf = pip * 2 + 1 === maxHp;
+						if (!compact && lastHalf && side === "R") continue;
+						const point = pip * 2 + (lastHalf ? 0 : half);
+						const icon = new Image();
+						icon.alt = "";
+						icon.dataset.side = side;
+						icon.src = lib.assetURL + TOOL_PATH + `${compact || point < hp ? "bigSkin_wu_hp_country" : "bigSkin_empty_country"}_${side}.png`;
+						slot.append(icon);
+					}
+				} else {
+					const icon = new Image();
+					icon.alt = "";
+					icon.src = lib.assetURL + TOOL_PATH + (compact || pip < hp ? "blood_green_s_new.png" : "bigSkin_empty.png");
+					slot.append(icon);
+				}
+				health.append(slot);
+			}
+			if (compact) {
+				const value = document.createElement("span");
+				value.className = "online-general-tool-health-value";
+				value.textContent = guozhan ? `${hp / 2}\n/\n${maxHp / 2}` : `${hp}\n/\n${maxHp}`;
+				health.append(value);
+			}
 		},
 		createRightPanel(rightPane, player, second, hidden) {
 			rightPane.replaceChildren();
@@ -282,7 +354,7 @@ export function createOnlineCharacterPlugin(lib, game, ui, get, ai, _status, app
 				return info.enable ? "主动" : "被动";
 			};
 			const typeText = getTypeText();
-			const typeTag = `<span class="skill-type-tag">(${typeText})</span>`;
+			const typeTag = `<span class="skill-type-tag">（${typeText}）</span>`;
 			hasSkills.add(name);
 
 			const skillName = lib.translate[name];
@@ -290,7 +362,7 @@ export function createOnlineCharacterPlugin(lib, game, ui, get, ai, _status, app
 			const rawSkillInfo = skillButtonTooltip.getSkillDescription(name, player);
 			const skillInfo = skillButtonTooltip.formatSkillDescription(rawSkillInfo);
 
-			ui.create.div(".xskill.online-general-tool-skill", `<header><span>${skillName}</span>${typeTag}</header><div>${skillInfo}</div>`, container);
+			const skillItem = ui.create.div(".xskill.online-general-tool-skill", `<header><span>${skillName}</span>${typeTag}</header><div>${skillInfo}</div>`, container);
 
 			if (info.derivation) {
 				const derivations = Array.isArray(info.derivation) ? info.derivation : [info.derivation];
@@ -307,7 +379,7 @@ export function createOnlineCharacterPlugin(lib, game, ui, get, ai, _status, app
 						has = player.hasSkill(skill) ? "已生效" : "未生效";
 					}
 					const color = has === "未生效" ? 'style="color:#978a81;"' : "";
-					ui.create.div(".xskill.online-general-tool-derived", `<header ${color}>${ysName}（${has}）</header><div>${ysDesc}</div>`, container);
+					ui.create.div(".online-general-tool-derived", `<header ${color}>${ysName}（${has}）</header><div>${ysDesc}</div>`, skillItem);
 				});
 			}
 		},

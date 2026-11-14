@@ -12,7 +12,7 @@ class t {
 	}
 }
 function i(i, n) {
-	const player = ui.create.div(".player", i),
+	const player = ui.create.div(".player.decade-uninitialized", i),
 		a = {
 			node: { avatar: ui.create.div(".primary-avatar", player, ui.click.avatar).hide(), avatar2: ui.create.div(".deputy-avatar", player, ui.click.avatar2).hide(), turnedover: element.create("turned-over", player), framebg: ui.create.div(".framebg", player), intro: ui.create.div(".intro", player), identity: ui.create.div(".identity", player), hp: ui.create.div(".hp", player), long: ui.create.div(".long", player), wei: ui.create.div(".wei", player), name: ui.create.div(".name", player), name2: ui.create.div(".name.name2", player), nameol: ui.create.div(".nameol", player), count: ui.create.div(".card-count", player), equips: ui.create.div(".equips", player).hide(), judges: ui.create.div(".judges", player), marks: element.create("dui-marks", player), chain: element.create("chain", player), handcards1: ui.create.div(".handcards"), handcards2: ui.create.div(".handcards"), expansions: ui.create.div(".expansions") },
 			phaseNumber: 0,

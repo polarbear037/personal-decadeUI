@@ -1,0 +1,458 @@
+{
+  "apk": {
+    "name": "yoka.game_g_android_4.0.2.apk",
+    "sha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+    "members": {
+      "b8a457d7": {
+        "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/b8a457d7",
+        "sha256": "e5ac1d1d6e98b10b5fdb81c426af60b9da33548f5633cbfc80b43dc1b5a6e512"
+      },
+      "8a3d641a": {
+        "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/8a3d641a",
+        "sha256": "34cca3ff4ed5130ef0e702b0a37bc98c6d8a72abf2b45b7c7b5973e2f63bc03c"
+      },
+      "71445296": {
+        "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/71445296",
+        "sha256": "98e13074fd217a6ce182502f81970d43cad43f2aee019efe6ae21d6091267b05"
+      },
+      "6618a369": {
+        "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/6618a369",
+        "sha256": "873c9e364e12766c643aa5011e671d254047475d26c196caa9c8924832c39c3f"
+      },
+      "8d86a0d1": {
+        "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/8d86a0d1",
+        "sha256": "848c1a38d9ba1dd5d66946697c8e5b30b476af46308f93cbbd6949b7ddf8871d"
+      },
+      "f8731f6f": {
+        "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/f8731f6f",
+        "sha256": "6841c3892a132949426d63333df6aee826e11b3897288fad715e87ae9d71eff7"
+      },
+      "3500d4d4": {
+        "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3500d4d4",
+        "sha256": "1a6f32904f2edf7ade32c78cece935eefd518142da08e1da0295581d17d81efd"
+      }
+    }
+  },
+  "rea_evidence": {
+    "inventory": "ev_edcf0b916ee34807938588035c3ed96b6f776080202e0b1ddb6b950602425eab",
+    "ui_members": "ev_5b046a0f22f9456f1d9c944555f95c213d2b10b6df5c6a0cb3802deeaa174441"
+  },
+  "android_typography": {
+    "script_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb!main.sgs",
+    "script_sha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+    "font_resource": "res/assets/fontApp/FZLBGBK.ttf",
+    "font_member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/d54ce33c",
+    "font_sha256": "19e6426eee18e655f4d247976a73fd51cefc03e599667e224497c73d598762b8",
+    "font_target": "ui/assets/fonts/FZLBGBK.ttf",
+    "tabs": "v_s.initTab -> cb.SetCommonBtnStyle(TAB_SMALL): hB.SemiBold, 32px at width 158, bold",
+    "tile_names": "ZJi.createChild -> yxt.Create: hB.SemiBold, 24px, regular, 1px letter spacing",
+    "apply_all": "v_s.initCheckBox -> qrs -> iki -> fxt creates sB with the Android Laya.Text.defaultFont (hB.SemiBold), 28px, regular"
+  },
+  "runtime_cache": {
+    "main.sgs": {
+      "cache_member": "217defbb",
+      "sha256": "e3d601e5b1beb298db3cd5bb79214300ea83129d5189cfa355416083b8e023fb",
+      "main_js_sha256": "f35b52843d72d99957e38d4d1ac6f1074bbbe7790b8e929d7527b4a91bcf9377"
+    },
+    "res/config/list5.sgs": {
+      "cache_member": "38da5841",
+      "sha256": "bdd63fb4732acfef0c3d2018e78171d9729b49ac24029b62b9b60191eb52dd07",
+      "table": "gn_WallPaper.WallPapers"
+    },
+    "classes": [
+      "M2t",
+      "z5i",
+      "q5i",
+      "jLs",
+      "iVt",
+      "rg",
+      "lg",
+      "ng"
+    ],
+    "layout": {
+      "base": [
+        1450,
+        750
+      ],
+      "list": [
+        244,
+        149,
+        1030,
+        504
+      ],
+      "tile": [
+        340,
+        218
+      ],
+      "gap": [
+        2,
+        15
+      ],
+      "tabs": [
+        153,
+        182,
+        158,
+        60
+      ],
+      "close_center": [
+        1252,
+        92
+      ],
+      "footer": [
+        1184,
+        687
+      ]
+    },
+    "entries": {
+      "theme": 26,
+      "skin": 59,
+      "live": 3
+    },
+    "theme_records_without_Source": 12,
+    "duplicate_theme_id": 36
+  },
+  "assets": {
+    "directory": "ui/assets/lbtn/OL_line/background",
+    "ui": {
+      "wallpaper_item_bg.png": {
+        "sheet": "8a3d641a",
+        "atlas": "b8a457d7",
+        "rect": [
+          0,
+          0,
+          340,
+          218
+        ],
+        "sha256": "5c52565568135223d351bf94db7713a44ca4de06b4fb4ec813a0d7d6c6e27e5e"
+      },
+      "wallpaper_title.png": {
+        "sheet": "8a3d641a",
+        "atlas": "b8a457d7",
+        "rect": [
+          666,
+          62,
+          136,
+          34
+        ],
+        "sha256": "8f6967e70ab085defa2ce1e719a71f10f67661949bd354025c44ff86affee22a"
+      },
+      "wallpaper_xuan_zhong.png": {
+        "sheet": "8a3d641a",
+        "atlas": "b8a457d7",
+        "rect": [
+          0,
+          220,
+          340,
+          218
+        ],
+        "sha256": "1a3e01ba5d9e054def4ca11f5bfc5dac5635f7838f3a85a88376d5268c9f2746"
+      },
+      "wallpaper_zhe_zhao.png": {
+        "sheet": "8a3d641a",
+        "atlas": "b8a457d7",
+        "rect": [
+          666,
+          0,
+          322,
+          34
+        ],
+        "sha256": "194d967b0b0b162782b660b5c74a2f98bed5c478becd67ebe3b2ed428568c426"
+      },
+      "close1.png": {
+        "sheet": "6618a369",
+        "atlas": "71445296",
+        "rect": [
+          1474,
+          1034,
+          36,
+          35
+        ],
+        "sha256": "f0796cbbd9aae60d071edbebb297a904e70660a2d7d798890310d8ceec3ee518"
+      },
+      "sectab_nrm.png": {
+        "sheet": "6618a369",
+        "atlas": "71445296",
+        "rect": [
+          799,
+          770,
+          158,
+          50
+        ],
+        "sha256": "6c500f9ffeaad5baa53cfaabe75b49d4ecf3e1a5fd60005d475ee965e5b0ac49"
+      },
+      "sectab_sel.png": {
+        "sheet": "6618a369",
+        "atlas": "71445296",
+        "rect": [
+          242,
+          685,
+          158,
+          54
+        ],
+        "sha256": "133621c8399e4c3314684baf60f760ff6efd113cda8ce14577af38c6000ba656"
+      },
+      "check_box_normal.png": {
+        "sheet": "6618a369",
+        "atlas": "71445296",
+        "rect": [
+          1681,
+          1017,
+          40,
+          40
+        ],
+        "sha256": "a5e2003bc6858e770f62ad246b442f24e29fd11d99a4611217d6934aab2d138d"
+      },
+      "check_box_light.png": {
+        "sheet": "6618a369",
+        "atlas": "71445296",
+        "rect": [
+          1536,
+          990,
+          40,
+          40
+        ],
+        "sha256": "3ceb4390d6f6cd91946c04ef64cb7a11bd6d25cb1eaa5ead0968476f23711fb7"
+      },
+      "shi_yong_zhong.png": {
+        "sheet": "6618a369",
+        "atlas": "71445296",
+        "rect": [
+          100,
+          707,
+          135,
+          56
+        ],
+        "sha256": "d120daed2fea96920aa50d74111bffc1fc8d2047e7d78af23e23e20be6e6d085"
+      },
+      "scroll_tips_dn.png": {
+        "sheet": "6618a369",
+        "atlas": "71445296",
+        "rect": [
+          1681,
+          931,
+          48,
+          40
+        ],
+        "sha256": "980c522d3df32420884dfe29684ec1df3a14941fef606f11c4e3a8e768073dfe"
+      },
+      "bigbg_trans_half.png": {
+        "apk": "8d86a0d1",
+        "sha256": "848c1a38d9ba1dd5d66946697c8e5b30b476af46308f93cbbd6949b7ddf8871d"
+      },
+      "zhuang_shi_xian.png": {
+        "apk": "f8731f6f",
+        "sha256": "6841c3892a132949426d63333df6aee826e11b3897288fad715e87ae9d71eff7"
+      },
+      "SemiBoldCN.ttf": {
+        "apk": "3500d4d4",
+        "sha256": "1a6f32904f2edf7ade32c78cece935eefd518142da08e1da0295581d17d81efd"
+      }
+    },
+    "wallpaper_base_url": "https://web.sanguosha.com/220/sgsolApp/res/runtime/m/wallpaper/",
+    "wallpaper_sha256_by_relative_path": {
+      "small/small_26.png": "1626c9d36fa3c365c792b9ad8ae3dfbddb61c19db095edc42dec27ea13487115",
+      "bg/big_26.png": "d6602ba5c422854fc2dc95d6e0d714b41692f9ead55f7dda01b6158136fe1b8d",
+      "small/xiaoxuexuncai.png": "14f78005711d1a066db6b0e5c90e2c58952ef3d87df9b79a3f75f5d465146122",
+      "bg/xiaoxuexuncai.png": "b37c58ace3b768a4c9a89dec32d90853e3e3083dd843a98a4aecca42926c0a33",
+      "small/xinchunxunyu.png": "8cb1707fb4d50d53692678f24e88fb7a3a1584daa35db4aa6277704682aec16d",
+      "bg/xinchunxunyu.png": "0721f00f495dd19c9f0c4807f3eae17f456e96b2deafe70066222a6afae6b7f3",
+      "small/dahanyanghuiyu.png": "f43d9301f070cbef540a0b34d42a0fbc90b36c2ddf321e0566646fb278fb659d",
+      "bg/dahanyanghuiyu.png": "81d07e7ab1889c45946c4c69a18a7e07c78bd429f586bb890581b094ab8472ce",
+      "small/chunfenxuelingyun.png": "5b951d412fcac51f4d876b0dac0eed7c40dafe4b684425d7231cdee30e3379bd",
+      "bg/chunfenxuelingyun.png": "0f2e9b376dae372d77343048271d3b52c69e9dce785c6b567ddc06b86801239a",
+      "small/kaiheijimozhangfei.png": "083ed3d2639c376ced17aff39c903f00eba1c590a042807fda951fdcd6eb81fc",
+      "bg/kaiheijimozhangfei.png": "6985566700fc622a18680c454ea0057f19040cbc9bb57a5f26b4e7cc9499aa39",
+      "small/xiaoshuliwan.png": "cc0e09dd8d9848c4b2e3d83e1cfe13549fa36cff62267d8319f39e3a663d26e1",
+      "bg/xiaoshuliwan.png": "1125444ac5a6cc2d1fbde11b11e910c02bc232aeb8fbc1566f227ffcb94a3979",
+      "small/xiarimoujiaxu.png": "6010dffe8e3e8ef1cb3190e2719fc1437442916a510f7162cfa19f2be939acb6",
+      "bg/xiarimoujiaxu.png": "f20891e1d96371a476a9aa7c038e629c5858c91ef8a0277849dcdac0f1e96721",
+      "small/zhongyijizhouyu.png": "241b59ead91d1c0ce426366386a21ee2fab68a070d406d5a08edd6e08044840b",
+      "bg/zhongyijizhouyu.png": "3dd48ff6645898883c4d1b49d0d0f2773ed56c6f91b2d0cbd7fde63aea5f3159",
+      "small/lidongcaoying.png": "e05c0a12e8e37e75f266b873b6a7dd14063c2c650919a1e0ce18dfedc6c00298",
+      "bg/lidongcaoying.png": "7660cefd7e55f372072441ec39d4148e69437e4dc314a3df994e556d283df0a9",
+      "small/small_ddz.png": "a91917e231b682e8a0d37a8818f823ab2ec2393acf3e8cd8485ac1c6af0625c9",
+      "bg/ddz.png": "c36fcd3cdbc14bb354f401799f03c3ed1860372af3e1c8fcf547cd24885c4775",
+      "small/small_1.png": "9f24ff42341d0e34a0442c69804632d1a8d9c611e3fb62ff4ed2e78bfac6025e",
+      "bg/big_1.jpg": "7e55b07dfb6ae4bcac204db63e35e7af46ca18d655a1becb6d771c4b02f2ce95",
+      "small/small_28.png": "b36f98a751d8a6436524a58cca59260b68c99fc48ae724870cef992e9e32ba7a",
+      "bg/big_28.png": "2485c5b1f6d2fad98c09ee33807b2e0830e59d0fe43417ca480e37e4e768bcdf",
+      "small/small_27.png": "65edcd8c4535256470833b3ec9ac54fbe6608a309a1a4bcd3f3b3d1deec9462e",
+      "bg/big_27.png": "9033abe06201670df79c642f08b1ea210e8aad9ec21a28d97b7fd5828e9db9d4",
+      "small/small_3.png": "efdce68a4db7fc1f5a022355e43ad72d5a7f0aadc3775e5eeeeb00441f6cbb9d",
+      "bg/big_3.jpg": "f2f5740845dddd8c712f418f615abf19a9d6283612366c48726bea2f65eaaa3f",
+      "small/small_4.png": "53a1ac7265945a9b823908fc1edd36c8eb58071a437d49effc79665e95319a54",
+      "bg/big_4.jpg": "918a75b336ec0049748cb2700056ac03486f6eea22af82ac51b7609c58b77c92",
+      "small/small_5.png": "7b94275f9bc86a113a1108cdf82f727bfdeea6cdeda90d10c52d1586ea49486d",
+      "bg/big_5.jpg": "4186e8f5fe7151977fec75fb3f197bfd4e37b0285c93c283a86c9c1564823a2a",
+      "small/small_6.png": "1720b49dea08f0d15918c9aaef1dcc71ad9a4e1bcd5da886591b163386219b1d",
+      "bg/big_6.jpg": "5449e61d390e9ba0b0195c047d2e8c39722d2f43a52da79f36c241d96ba87abf",
+      "small/small_scl.png": "c53231003dec8ddcc245fa047f00a303d457d6961e87bec4b71931986e38f720",
+      "bg/scl.jpg": "adec424b2cf6113715672a2b62bfce7376fe45c1a3831b63bf9c8818b4e7471e",
+      "small/small_9.png": "7d6c616ba8711f3c86675684441ac92efdcfd9dadb48d87a022638c6ab5fae0d",
+      "ani/wei/beijingwei.skel": "e4167f62d9538b5bf71adb8a51f6db9ac86975b9bc1cfc67ece3531b9611edf6",
+      "ani/wei/beijingwei.atlas.txt": "c09af05bc4197f8839f64e1d946939e625846859521552decbe115f839581192",
+      "ani/wei/beijing.png": "deb5179032baea5313999656d47370ce7a64bd91135fb22d409765c05b24b50a",
+      "ani/wei/bg.png": "d6d6ae3e9019d210fa451980b5ec0c4a3f1874797d0db60cd912f523ed334389",
+      "small/small_10.png": "74478800754559ff1ca100a2faf2d36aa1988ee338b9374bdca6624aecbcc02c",
+      "ani/shu/beijingshu.skel": "16e87c542ff05dca71116472ed15ba73d62a3c6b416e1d810e4baecb81e5bfed",
+      "ani/shu/beijingshu.atlas.txt": "4128c94d7f34026136373d4c59aebc8c0aaff233b4e26bcc9a558db1a2b31b0c",
+      "ani/shu/beijing.png": "e77802c47ecac4f572eb72f43e1b78f58f7bfdc082ddbd5385dbd5bda9fcc845",
+      "ani/shu/bg.png": "70523d665e2f7cec4af22fec99eb127f7deef82289de22fffad2d67d46808719",
+      "small/small_11.png": "afb7a5eb4e0f92cdda9402c6bfedc285c84ac1a1a43e6253cf88f3ed21cfbefe",
+      "ani/wu/beijingwu.skel": "e6c27e1472b82d9d22924152bb385d6e6737fb286058408f632b407a3f13b30f",
+      "ani/wu/beijingwu.atlas.txt": "47feca00f749f7dcbca9e3352c1c91f5e20e8952c882813cd39d30e34e46de0c",
+      "ani/wu/beijing.png": "b67ec7641171e1abdb5772e56386bf6ab642198a3ef0ad915b06641260354f29",
+      "ani/wu/bg.png": "eeb47178d245e6a5afdd947bbea2a26d33721cdeba7f08fd9f44b3c52c378ce1",
+      "small/small_12.png": "1e665642d54c7c4899d5f93de35db0266b71f4b003f02ffeb121d5b4211e5763",
+      "ani/qun/beijingqun.skel": "003811c3c87b48da399343ac54786c045d77b35ee037b88af3591d1bf06b3e97",
+      "ani/qun/beijingqun.atlas.txt": "e6a33b2b42dbb64c65132fd0915fd2a56a1914b3aecf1ecfce5c660683d8190d",
+      "ani/qun/beijing.png": "4d65cfff3b3a71b6f760e424fdc67f85fcd61a4676d6126afb273ad360ee4eee",
+      "ani/qun/bg.png": "9670571fb60441e1781821e655de382bae70482b688fdcc2220639411df457e5",
+      "small/small_swjg_27.png": "200ae4d4b477765bca5b35c241e8d6d1598b7b19630fbc0d461d24125e2adb4f",
+      "bg/big_swjg_27.png": "0ef124965162b9bf7640ade009377f21835d9be20780a30e1993a255e3441c6c",
+      "small/small_2.png": "6db4d0fef9356dabc4c2d85461287dc505e25e692f0f37ecbac0f61800f262c8",
+      "bg/big_2.jpg": "25618e9138f3727d76347ccd070b9ff93073e8cf28e92d8c989f94a2ca5eddb0",
+      "small/22104_1.png": "694143faa93db0626fec5225c53556403875a61b4d21969251e2d5a73fc52723",
+      "bg/22104_1.png": "bdba82c14a7285381e8ba764f0a60c73b862cbd6b5bf1ea78cd486eee8b164eb",
+      "small/22104_2.png": "72f8300e09dc540f92e00b497fc7279f6a917dff38bc3a8534903cdef7a75d81",
+      "bg/22104_2.png": "4b1a3b7cad102ce65a5b3af418d2a24c6db6d6fed75aa21bf7056ce4d3b8c6f9",
+      "small/23001.png": "fae02a335ab696fee955bca2ea699266b8f9380c1fc755cd156801b935469fb5",
+      "bg/23001.png": "d5a160a0bae6adfbd16af0eee27b3bc29334e8dc76922d7003b2548c1fd13f8c",
+      "small/30707.png": "ce26f6eed06341740e49f9b423cc504ee5c156b60272702f6f10b9256428e781",
+      "bg/30707.png": "cc3f23134d1f6d3202f0f2922a3caf75f2c91773609d43eab2f7c28feafa78dc",
+      "small/34405.png": "aa024e9cac4a16fbce0b0e0a878c99a80f0f132ab42d4d0a28096d7b384049f0",
+      "bg/34405.png": "0c58abb4977ed3b28dd89516f52cefde1b89abcb8b410d0ab559f6812d01a95e",
+      "small/34404.png": "a0731ff873eefb1df1eece79ba189c223f02aaa8302de4b7b0024cd14dcdcd2d",
+      "bg/34404.png": "158ce90e09f148ebc03d76f483a4c676abd00c7953dc8b2fbf7b32ab9c47c901",
+      "small/35103.png": "be2b9e6916405806921b7f94472c64b0a527cd87c8ccc5921dab99d71d2c1128",
+      "bg/35103.png": "103b9afee7bb132810a414e7ebc734f2c36874d3491ec7975725f6b67170aef2",
+      "small/41108.png": "ebe7037e0caf1199ebb12208470f2a5224dba181959d13cb0976e3a6a8a9e7d5",
+      "bg/41108.png": "a36932274e09adfa87f9cb2615a87bbe9f8a5198dd89a950263daee1b2258337",
+      "small/41506.png": "44e8b8f44ba3400d0594d352436b3fb3bb7386dca78cd8cc9337bf41f7a83af0",
+      "bg/41506.png": "bb384dc1dbcd94eaab1032a0de485448f7c71c00d38a4e9bb51735131c228910",
+      "small/42605.png": "a17a3dd5370055d9ba3a6af01c791118e263d68e826113ea19a47bb29ce69a3f",
+      "bg/42605.png": "7178c5f811490c17464440bbc9c66e673a805d1f92060bc4750b569af6618075",
+      "small/44307.png": "65a3ca39d7f0b2fc3ca0197e13de27d7d8202bc35beb1e73733636ace2e26116",
+      "bg/44307.png": "43a25d3fa655823bba635fe733768913ab977815e2f1744ba66384c710f948e1",
+      "small/45605.png": "75f8c1d9f0e3b218cc8c24f707bcc5258e9532122f39069270227e89d3aa592d",
+      "bg/45605.png": "83639f52bed435385b2c990fde5f109cdd4775ffdc956293a1f93564d3d56e8b",
+      "small/46607.png": "07912b94c59e872a22e36e0ec8be9ebc4970910603abc000851da5a7e4360341",
+      "bg/46607.png": "24877c4b92a528a32775a903a15cc8c7350b041e46400979c8e273e328094d04",
+      "small/47503_1.png": "4fbf7491b0ceff56a0a84014abf368a6a7873dc867ea36f2c21219282fd3a595",
+      "bg/47503_1.png": "2ff264b2c6c66512d88a270a835b896455d8fbb35cab3566be6a652ce990ccdc",
+      "small/47503_2.png": "c5112bd3ee3fe16fa8b2aec17d2482f954e3e775ea2d8872987f56cdd3da20e2",
+      "bg/47503_2.png": "256cd2cde2019644540cdf10bd1ff8386dfb98ec9d12481ed8e6dba3f002b013",
+      "small/49904.png": "5229502a357f938b6fdf6cead5190f9b93f54f16d34469544cea6e3f5d7e2e63",
+      "bg/49904.png": "5385ab9f0cacba181a4f4b6cbea11638057c8875db2d877141ee27683fa25361",
+      "small/skin3_1.png": "2f798730551c69c3afa9d161f0d6ae25dba7fa972e5c39a18cf9807724895b61",
+      "bg/skin3_2.png": "cdff92cd4faceb5bd238294b48f9dc5d65726f8bcd4f2c58ac102db42dd77e76",
+      "small/skin4_1.png": "e31a3c46814539b816c05877c5ad441201a540601412acbae4b6172f1072ae84",
+      "bg/skin4_2.png": "db513589ce6d7101c8a7da05b4b73a25977e95c3e7459bde4fe53d2f70e7ecbb",
+      "small/51603.png": "691632534b8ed1e81365d49a9f839c1c4711d1b18b165ad1929dd5ecb2b5f75d",
+      "bg/51603.png": "1a91bb1ded7717102fea5ea3480f05e3afd9cd88cdbd75c0c49b6c10aba25ba6",
+      "small/51703.png": "2a63509121e0695544d6523eb6240f3130d79e97c766d6e3e98ad8346c44e828",
+      "bg/51703.png": "0254cd2e82294a2cc8bb6f1e32b7d2889871fe86a48d84f6027663de49204617",
+      "small/51902.png": "9c2bf3e99ac48f6ba18377e1b73caa95fb82a5a74242a3275f9dcdc0ddd66513",
+      "bg/51902.png": "9ab1043036459ca5534c2ab677415867f80152c16429f4883f7f391ed41df37c",
+      "small/52402.png": "c3f8bff20694fc7b01b211cda1336a50098fa71fe52d0eb7dd1417e9adc1de72",
+      "bg/52402.png": "e8859cb865c00421e2920a7090229fc5146cfd373df3410fe59ed272639165b8",
+      "small/54402.png": "3688cd451e07fe72403c342b984407947ac21bf686b2782a319204153c90779a",
+      "bg/54402.png": "7d4ef91e6632121e298197426f4ad6bc8380910f55824aff25f50e38e6ea9e5b",
+      "small/54802.png": "757901b62af8a60525b202ab765192077a96d4cb8552e687ba290487707e6212",
+      "bg/54802.png": "cca63eee6ee5418cd17463b46d2fd2529f50b1999fbdf0b9a84484c6080103a4",
+      "small/56903.png": "9be4a392dccb008182b8c1ad796603011d18b3199be1ae9add5d2464614cf354",
+      "bg/56903.png": "0d3847e724babcfe5070b6f8591137887e8ef0b35a26f56393c2a7d4bbc8e623",
+      "small/59302.png": "89a1cf96cfdd07ee1002d090708515c1f8a9333c129f1143268a65c14056f9b7",
+      "bg/59302.png": "d282b0373a0bedf9b05a6f19c4d58a5c06c9cbd20b3199e2cd922a90d972a931",
+      "small/59406.png": "678f4ac511f7e35b21e04845cd2159f2b25fb5d865ac6e1e6a3c309b1f3a1a49",
+      "bg/59406.png": "32d231090df35e8f010134b1c25330de45b75b7887050b869a48de4f51357c9c",
+      "small/60901.png": "79fc6c363b89dfab4c5778813b677ad2054c0d0820dee433c3f602f2a49b7a7f",
+      "bg/60901.png": "c0864878bc4109221159b9d37f7b28e6d5f1e582f36faf4d237a5747efd2e98a",
+      "small/62101.png": "67b07d461eb2445073cc4ebba89c840fe580208f4eb354de51cd6226b9f474ac",
+      "bg/62101.png": "25224b4d206144845c745abb316b61045c8b76beabc753ed8d5bc6a1b2da60b2",
+      "small/62203.png": "f1156784744f286bf73b06a1073dd2126d5d59b5b22ec4c82b5a2a5fa13a3695",
+      "bg/62203.png": "4e7fa6e9c8ea503d9aedc1b279bfa00494624c551102675ee40235169eb92792",
+      "small/63208.png": "c0ce1c99f36b9ff449d949ed0c124a329e5721f178c6f83394457a994d18c9b4",
+      "bg/63208.png": "aa05bcd236e87fd9daab33530205f5a1e1fff9c116c09c246836b750474eeef2",
+      "small/64401.png": "21e05a55daa179d200bd5c05f453c66f1b85e8ea2c29c7527239f0145d91398e",
+      "bg/64401.png": "b8792fee1eeb58d60362ce60d39c5dc45a14403cbcc943bf06619b1a72ff81f3",
+      "small/65303.png": "d3c0e89c30670edc9250769383728281048fede400e838bba72e8a89404049d3",
+      "bg/65303.png": "00156f4b022d135ac78647df43e08e6c8743b2941fac1171fe100ebaca50db64",
+      "small/65604.png": "7e5eb1c5123ea62fbccc58b57ad936b6bd9d94bd229a71b07d77dfb9b8781d19",
+      "bg/65604.png": "b4705ce7e423124d69bf8bdb830f9dbe59a64d5892975feecc0ec9ce371c3511",
+      "small/66103_1.png": "985d95d869e41dc8df68f653aeb6c272829bed72c28941cde9622903aaa4832b",
+      "bg/66103_1.png": "b0ff3781aeb66b05a0956c2a5493a3edf6a78975335a44c2ce9f2c40201da0c0",
+      "small/66103_2.png": "a53369c26a2a9929c0d7ea24b25d78afbf3104ff299fabbf6d83da22f61d1693",
+      "bg/66103_2.png": "1b5f0a1e48307be2f9d83469e8de66da3c69330efe57b13e9ffdf811bee68a35",
+      "small/66301.png": "cdeb3702b2449459f4312fc80ed92334fcdd578082f14371cb03c459f241cccc",
+      "bg/66301.png": "2ea0b13410d589ee9b445cff1a9fd96bd6f6b8d09e1b8d35c5c6e25a386fd2c0",
+      "small/66402.png": "e8bf6af6199cfcae1d3c9c6ff428e9d0f1ff3ed27e727ec3db60ece8655034ce",
+      "bg/66402.png": "1403e3cd6ff8ba036c15a045a4dfd989a7dddc27ff30897a0dbf3d824ea5c478",
+      "small/68101.png": "b58d9d774ddb3164ea49aba75001256e87bb993b5c332dd524acf43ac6f16aaa",
+      "bg/68101.png": "adc0a1b722a96ebc59f1397c64f0efaee8816d81c9eb1c25d63839b88efeacd0",
+      "small/68801.png": "15442b048f12aacdbad06b1db93c93d6ac67635797a97df092dd371b6dc1801b",
+      "bg/68801.png": "0168faf1b02b0ee258c6e28f70f9ed338e54bdbce46714d6405fbdcec131ee8f",
+      "small/69701_1.png": "dce857854cdcaf7aefe4fc0b9e96e5cf7395d2417e0d0eb612f211b588c0af04",
+      "bg/69701_1.png": "55d8e75627a89681b5ce00ecf6d403797793c99e18af301fa23022dd7c7627df",
+      "small/69701_2.png": "0afe1a24f81493b79963adeeeb773d2c4abdb7e653eeeec79845dacf11dfd9dd",
+      "bg/69701_2.png": "c6bfd28ae2ac57b3668a249c454f528c316ddc606a29bc787b00a2e190077724",
+      "small/70401.png": "765e7f23e6d1f8b093b545adcb691c02c2cdaca2cf5fabc1e7a58c941f478dd9",
+      "bg/70401.png": "76d8640fdd8ac6be783147fad90c483baa3f6a756ac8559206bc2c9140f47a39",
+      "small/70501.png": "c880833f09495d95fc91c190f790cb1c1b9b99aaac46c67e2f0ae9d4d6d2b913",
+      "bg/70501.png": "f9cd929dc15062d1b5c4cb645babb02ae733dc115a8ff03c1290928cb324eb61",
+      "small/70901.png": "20df37fb611073bdaf3c325fd36cc3c51629f4f9d1ce70a7ffad6e9d7ee0f9f3",
+      "bg/70901.png": "5035e092170cd3ed5b3d4af26401d109945a09e0469512380d687ce127965e65",
+      "small/skin11_1.png": "afcaf2b488eb1c734ced3d99e199ee49558945ef1f75ef69ef1f0e52939890e1",
+      "bg/skin11_2.png": "231763eead4e7088f4af60038ddb2a630472fcaf294bb6573dc5d61d49850d68",
+      "small/71201.png": "77152e97dfbbd18069d9992c409a5902e1bfb0eb81f034ad9593084b3988e8a7",
+      "bg/71201.png": "983d1b99c6345c957da3049e8a9e57dfa6df927e4a250cdf79d732f03672c901",
+      "small/skin34_1.png": "5a8fd66969d7a5d3c730c5dde754385b0e2a697c04d033194af6fc58ad0359f9",
+      "bg/skin34_2.png": "28fb2dd3e334ff5b690c80a752b28991b8f32ad009481aff3b323f9d7f3cd89e",
+      "small/71401.png": "03755ef266636dc4fd9fd5c10072f9bb0f7dcf8d9f23f8808120d3d87911cbce",
+      "bg/71401.png": "205b5ec0bcd79d6475b3678f34f81061d16385fe0945f067ee0ab89e66c72c62",
+      "small/71502.png": "d14d0623b93e92669e327b99906f4263c5df87875575f8184474cebfea9b0c04",
+      "bg/71502.png": "d1398a184232766c1028ac37f551d944978249f16abf45ad428d32860c54eccd",
+      "small/31.png": "c3ffe5bbf4a5a1ca8df966a7a8f88e65c223c29940dcc074db8347425a61043d",
+      "bg/31.png": "1c154406b4a45f6b64cc440e63df807bc723529cb1b7df2a40f0a8f376984dfe",
+      "small/71602.png": "2564621c82c7743ffa0f1cfe9b0c6feb15cc8c8d446f28887463e5002481c5a0",
+      "bg/71602.png": "cea98e94707ab483e4804b36487ded8cf58ba20e50312c8fbb1252930c7a9d16",
+      "small/71702.png": "c872f071b2a15dd01702bfef32ddc5a6195553890fbfed51c21c4f92d292b599",
+      "bg/71702.png": "5bd09c3eac3ebb1f7227ab5b144f0ce44d238ea54553f33bce4d389a8d6e6e27",
+      "small/skin35_1.png": "afed19946cb3d7d03038fdc58953e7a6bea3ec1afc9ad5b4e8fdb69d0672f46c",
+      "bg/skin35_2.png": "845dd4fb56d13b08f3a705a989d1666fa7153167ac8b3c50f0e6176e7cea3ab6",
+      "small/74002.png": "eaac6a4cae1dc3b66eb4d064a2406dbf0b0c0d5f2bf78a4b321bed21bc827dd5",
+      "bg/74002.png": "8bac3ad4eb4576b17333c0431acf9be91b3f37f18c07fcf4c562b4f2830d0db1",
+      "small/75001.png": "00f7f6314fa70521b2eda536e3b7feabf0735e0ce0a099b18897ff350d7157a2",
+      "bg/75001.png": "f88259954bb59fb4fe194c68c2511fe82887d10fa1e15242a7641ad03866a043",
+      "small/76901.png": "66e468b0cfc5a4205badb91590758d41346e3ba3739f97e82de2583391e654a1",
+      "bg/76901.png": "bfc8f3c4f0013008bb4d548937c6b37c7b3237f000cb6320e8c74a9d706a6f40",
+      "small/700804.png": "e9720c9ef2f491a63a40fb0044438f1f3002fe18e10672ecb01b589ad2d45185",
+      "bg/700804.png": "39213d241d69ea1122b2b85afdb6239cd15b2a46068245a720c5699ee9bf9e34",
+      "small/701705.png": "7e2eff0c9f89e2450ddcd0380d475093d3f8e4629bf639405f80ebab3ea7698b",
+      "bg/701705.png": "63493dee9dfe5d9a02787fb5f4bf3f2c5468c2add74d7f8d16b1cfbc326c6667",
+      "small/small_44.png": "466cc10891a73a2ddce9abe3eb2cf6672859656cde1ee1344fc2a0cd7b44d147",
+      "ani/mosunquan/beijingmosunquan.skel": "deeb4066709306e0f963eb92c9dd1485613be07edc4b0275459c6130125f3ed6",
+      "ani/mosunquan/beijingmosunquan.atlas.txt": "1e9680980da62ac065794f8a05822a3e9fc2d710bfd4f27a3a8f5d1aeb532083",
+      "ani/mosunquan/beijingmosunquan.png": "28ca381aa40f2f36c383b995b1d0003b2aa7be9281aead8d14d88dbc96608d8b",
+      "ani/mosunquan/beijingmosunquan_2.png": "70bda0444f749566286594deb6d5055b6c554e766f4343a08b1b798d6f195962",
+      "small/small_42.png": "7aea2a132e6bf567faaeab8aadca05a81e962fad63ffc1dd2ca8999066fd57a0",
+      "ani/zhonghui01/beijingzhonghui01.skel": "6f519f9965b6b6a1b1d1140db38cd79f0aa122b2f3af4e92b84b14d12d9bbdad",
+      "ani/zhonghui01/beijingzhonghui01.atlas.txt": "50b8ecd2c6fed84d4d9e128f134980994ad323ae27d9d154c864ebcb3acbe9d5",
+      "ani/zhonghui01/beijingzhonghui01.png": "255603159f9e0f8652ad134af32e26d2dee521b527469a6964183ff68fc93b15",
+      "ani/zhonghui01/beijingzhonghui01_2.png": "fd88b487157a6bae09f17e57ae215c6fe24a873b2f2986e13f21e34600094f9f",
+      "small/small_43.png": "d4461964df43bbd0f7703832e791c59fc1509460892cfb97f1cde51f3ebe12e9",
+      "ani/zhonghui02/beijingzhonghui02.skel": "3aabc45a9d3198babf34f788b41981381f5f915a46d692cae77f280429a92699",
+      "ani/zhonghui02/beijingzhonghui02.atlas.txt": "587d08b0d3c2f9fbf8c88ded45af0b1f5585c7ea624c8eda1e649c1fae8e147e",
+      "ani/zhonghui02/beijingzhonghui02.png": "bb9188f88a095c961a5a99f1495fae624c229889a4810a2fcab18afecaec2bd4",
+      "ani/zhonghui02/beijingzhonghui02_2.png": "1510d11a61bfd518678763144e9ad8441fe9d1436ec804f1bea774fc059b38fb"
+    }
+  },
+  "spine_runtime": {
+    "target": "src/libs/spine-wallpaper.js",
+    "source": "皮肤切换/spine-lib/spine_4_0.js",
+    "source_sha256": "524e06fe1d21dd3ae977fa73d70575cfb7517d74e2527316e854e01499dc9a0c",
+    "target_sha256": "019ed97c85f073bf1057bfdf912d8d5c01d1d43308ef10f7d891740eb9239a6d",
+    "adaptation": "ES module export for lazy loading, with no global Spine binding.",
+    "official_skeleton_version": "4.0.56"
+  }
+}

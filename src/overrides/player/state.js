@@ -41,6 +41,7 @@ function o() {
 	const hujiat = this.querySelector(":scope > .hujia") || this.node.hpWrap.querySelector(".hujia");
 	(hujiat && hujiat.remove(), this.node.showCards?.hide());
 	getBasePlayerMethods().$uninit.apply(this, arguments);
+	this.classList.add("decade-uninitialized");
 	clearOnlineJudgeLayout(this);
 	return this;
 }

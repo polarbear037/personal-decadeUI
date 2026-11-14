@@ -1,0 +1,105 @@
+{
+  "reports": [
+    {
+      "mobile": false,
+      "initial": {
+        "contexts": 5,
+        "slots": 4,
+        "capacity": 4,
+        "lazy": false,
+        "visibility": "hidden"
+      },
+      "first": {
+        "visibility": "hidden",
+        "opaque": 0,
+        "glError": 0
+      },
+      "losses": [
+        {
+          "guard": false,
+          "lost": {
+            "visibility": "hidden",
+            "running": false,
+            "frame": true
+          },
+          "restored": {
+            "same": true,
+            "visibility": "visible",
+            "first": {
+              "visibility": "hidden",
+              "opaque": 85504,
+              "glError": 0
+            },
+            "glError": 0
+          }
+        }
+      ],
+      "concurrent": {
+        "slots": 4,
+        "unique": 4,
+        "contexts": 5
+      },
+      "errors": []
+    },
+    {
+      "mobile": true,
+      "initial": {
+        "contexts": 2,
+        "slots": 1,
+        "capacity": 4,
+        "lazy": true,
+        "visibility": "hidden"
+      },
+      "first": {
+        "visibility": "hidden",
+        "opaque": 0,
+        "glError": 0
+      },
+      "losses": [
+        {
+          "guard": false,
+          "lost": {
+            "visibility": "hidden",
+            "running": false,
+            "frame": true
+          },
+          "restored": {
+            "same": true,
+            "visibility": "visible",
+            "first": {
+              "visibility": "hidden",
+              "opaque": 87523,
+              "glError": 0
+            },
+            "glError": 0
+          }
+        },
+        {
+          "guard": true,
+          "lost": {
+            "visibility": "hidden",
+            "running": false,
+            "frame": true
+          },
+          "restored": {
+            "same": true,
+            "visibility": "visible",
+            "first": {
+              "visibility": "hidden",
+              "opaque": 98352,
+              "glError": 0
+            },
+            "glError": 0
+          }
+        }
+      ],
+      "concurrent": {
+        "slots": 4,
+        "unique": 4,
+        "contexts": 5
+      },
+      "errors": []
+    }
+  ],
+  "scope": "Isolated Edge real WebGL/Spine; forced loss, first-frame pixels, Android UA lazy allocation and both owner-only/Jiang0 guard; not full native-game cold start"
+}

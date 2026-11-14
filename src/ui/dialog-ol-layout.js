@@ -166,7 +166,6 @@ export function clearDialogOlLayout(dialog) {
 	dialog.classList.remove(DIALOG_OL_LAYOUT_CLASS);
 	clearSkillPrompt(dialog);
 	dialog.style.removeProperty("--dialog-ol-content-height");
-	dialog.style.removeProperty("--dialog-ol-content-limit");
 	dialog.style.removeProperty("--dialog-ol-frame-padding");
 	dialog.style.removeProperty("--dialog-ol-top-limit");
 	dialog.style.removeProperty("--dialog-ol-width");
@@ -191,7 +190,7 @@ function hasDialogOlFramePadding(dialog, content) {
 	return content.children.length > 1 || Array.from(content.children).some(child => !child.classList.contains("caption"));
 }
 
-function measureDialogOlLayout(dialog, content, bodyHeight, mobile, arena) {
+function measureDialogOlLayout(dialog, content, arena) {
 	// 将游戏窗口边界换算到 arena 的布局坐标。
 	const viewport = arena.parentElement;
 	const arenaRect = arena.getBoundingClientRect();
@@ -210,22 +209,18 @@ function measureDialogOlLayout(dialog, content, bodyHeight, mobile, arena) {
 	dialog.style.setProperty("--dialog-ol-frame-padding", hasDialogOlFramePadding(dialog, content) ? "var(--dialog-ol-edge-bottom)" : "0px");
 	const footer = skillPromptStates.get(dialog)?.footer;
 	if (footer) dialog.style.setProperty("--dialog-ol-footer-height", `${footer.offsetHeight}px`);
-	const contentLimit = mobile ? 0.75 * bodyHeight - 80 : 0.45 * bodyHeight;
-	dialog.style.setProperty("--dialog-ol-content-limit", `${Math.max(0, contentLimit)}px`);
 	dialog.style.setProperty("--dialog-ol-content-height", `${contentHeight}px`);
 }
 
-function observeDialogOlContent(dialog, arena, content, bodyHeight, mobile) {
+function observeDialogOlContent(dialog, arena, content) {
 	const footer = skillPromptStates.get(dialog)?.footer;
 	if (activeLayoutObserver?.dialog === dialog && activeLayoutObserver.content === content && activeLayoutObserver.footer === footer && activeLayoutObserver.viewport === arena.parentElement) {
-		activeLayoutObserver.bodyHeight = bodyHeight;
-		activeLayoutObserver.mobile = mobile;
 		activeLayoutObserver.arena = arena;
 		return;
 	}
 	disconnectLayoutObserver();
 	if (typeof ResizeObserver !== "function") return;
-	const state = { dialog, content, footer, bodyHeight, mobile, arena, viewport: arena.parentElement, frame: 0, observer: null };
+	const state = { dialog, content, footer, arena, viewport: arena.parentElement, frame: 0, observer: null };
 	state.observer = new ResizeObserver(() => {
 		if (state.frame) return;
 		state.frame = requestAnimationFrame(() => {
@@ -235,7 +230,7 @@ function observeDialogOlContent(dialog, arena, content, bodyHeight, mobile) {
 				disconnectLayoutObserver(state.dialog);
 				return;
 			}
-			measureDialogOlLayout(state.dialog, state.content, state.bodyHeight, state.mobile, state.arena);
+			measureDialogOlLayout(state.dialog, state.content, state.arena);
 		});
 	});
 	activeLayoutObserver = state;
@@ -245,7 +240,7 @@ function observeDialogOlContent(dialog, arena, content, bodyHeight, mobile) {
 	if (state.viewport) state.observer.observe(state.viewport);
 }
 
-export function updateDialogOlLayout(dialog, arena, bodyHeight, mobile) {
+export function updateDialogOlLayout(dialog, arena) {
 	syncDialogOlLayoutMarker(dialog, arena);
 	if (!isDialogOlLayout(dialog, arena)) {
 		disconnectLayoutObserver();
@@ -262,8 +257,8 @@ export function updateDialogOlLayout(dialog, arena, bodyHeight, mobile) {
 		clearDialogOlLayout(dialog);
 		return true;
 	}
-	observeDialogOlContent(dialog, arena, content, bodyHeight, mobile);
-	measureDialogOlLayout(dialog, content, bodyHeight, mobile, arena);
+	observeDialogOlContent(dialog, arena, content);
+	measureDialogOlLayout(dialog, content, arena);
 	return true;
 }
 

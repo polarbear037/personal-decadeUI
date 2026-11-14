@@ -12,6 +12,18 @@
       "sha256": "d24c0a96c53eae2da5e1a249701aa6fc36a0760260de82fc59b6777304d9bd9f"
     },
     {
+      "anchor": "class vOi extends",
+      "start": 14203229,
+      "end": 14210438,
+      "sha256": "9a33042e926c025152130e9d439fc27762670376c5efefd2cf2ce6c65b90e9b4"
+    },
+    {
+      "anchor": "class mxt extends",
+      "start": 7994807,
+      "end": 8010518,
+      "sha256": "10971dd590effca547d2077e1d789a28e79a8f7d7737b5b320d6ca71c0ffbf9b"
+    },
+    {
       "anchor": "class BFi extends",
       "start": 15050187,
       "end": 15058006,
@@ -52,6 +64,60 @@
       "start": 14120939,
       "end": 14133616,
       "sha256": "d9c2f7205185ac7bde50ebfd22dbdcc1b2b5dbeb03ece0428af19361b17cce59"
+    },
+    {
+      "anchor": "class xns extends",
+      "start": 19478445,
+      "end": 19490942,
+      "sha256": "d2473e275c9d7854f5448702cb99e79ff3b4cfb5021e47483c707ac6801074aa"
+    },
+    {
+      "anchor": "class Hns extends",
+      "start": 19499455,
+      "end": 19507793,
+      "sha256": "a2d67b00531d968937d5db586a288ecaa0f958f2d0bd6a106ea03e0a46a6268a"
+    },
+    {
+      "anchor": "class yxt extends",
+      "start": 8018638,
+      "end": 8019957,
+      "sha256": "1a12a1191c6782f26f37e2982122eddfbc9c69b09dbf5d1e47b4f47eb1479aeb"
+    },
+    {
+      "anchor": "class Qx extends",
+      "start": 2525563,
+      "end": 2537516,
+      "sha256": "62cbdba766665a52632bcd55a9c1c44131b8e636ff14f47b59de8e332a7c8887"
+    },
+    {
+      "anchor": "class hB",
+      "start": 2577110,
+      "end": 2577344,
+      "sha256": "e4030df9dfeb88d22a2ae248ba0e57083709e320ccbce9531a022199eee3eb6d"
+    },
+    {
+      "anchor": "class wYt extends",
+      "start": 9575426,
+      "end": 9576136,
+      "sha256": "2b64fc4d895d65eb68375f89377d49df6f96216ffd9901961c96775c824aa5bb"
+    },
+    {
+      "anchor": "Vwt.WinRateStr",
+      "start": 5534828,
+      "end": 5535532,
+      "sha256": "d5ab2ad61b66e58174d0efe8b6f84097e4f42393d91d1b0f0680ca47f3b4f37c"
+    },
+    {
+      "anchor": "y.WinRate",
+      "start": 36046,
+      "end": 36238,
+      "sha256": "be41ab9e21d62e1920ac8c26ed6be4a6effcd70ef3f8a201d1c20e326820565c"
+    },
+    {
+      "anchor": "O.RunNormalRateDesc",
+      "start": 61246,
+      "end": 61311,
+      "sha256": "c09d8acc6d975ec1857a0e0f790c455b4ca8ae2dd32a6361243935081cb2f099"
     }
   ],
   "assets": [
@@ -881,6 +947,168 @@
           16
         ]
       ]
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/blood_green_s_new.png",
+      "sha256": "eb42d55ecb25e2050921e89537335dc9f01cd4e6bc4dbb40fe24160a0a3d2dbd",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 24,
+          "idx": 0,
+          "w": 22,
+          "x": 1397,
+          "y": 956
+        },
+        "sourceSize": {
+          "h": 24,
+          "w": 22
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "eb42d55ecb25e2050921e89537335dc9f01cd4e6bc4dbb40fe24160a0a3d2dbd",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/bigSkin_empty.png",
+      "sha256": "bb910d05e84af4f93c32d7c807bf22a4b5162bf02854061a289888d533631532",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 34,
+          "idx": 0,
+          "w": 33,
+          "x": 1928,
+          "y": 282
+        },
+        "sourceSize": {
+          "h": 34,
+          "w": 33
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "bb910d05e84af4f93c32d7c807bf22a4b5162bf02854061a289888d533631532",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/bigSkin_empty_country_L.png",
+      "sha256": "a18086f06926637562519714bdf02bc6a61bf3418219ba1681306142fd9d0b59",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 34,
+          "idx": 0,
+          "w": 25,
+          "x": 1516,
+          "y": 100
+        },
+        "sourceSize": {
+          "h": 34,
+          "w": 25
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "a18086f06926637562519714bdf02bc6a61bf3418219ba1681306142fd9d0b59",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/bigSkin_empty_country_R.png",
+      "sha256": "23c976a45d97b95a1b3fa01b2307b9bd0c0ca1977ea90919ddd07450c29bb1a6",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 34,
+          "idx": 0,
+          "w": 25,
+          "x": 1394,
+          "y": 398
+        },
+        "sourceSize": {
+          "h": 34,
+          "w": 25
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "23c976a45d97b95a1b3fa01b2307b9bd0c0ca1977ea90919ddd07450c29bb1a6",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/bigSkin_wu_hp_country_L.png",
+      "sha256": "92222d981ab18426030464fa5eea55a1fbb2ef587168c4bc80b20c9b285affd9",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 34,
+          "idx": 0,
+          "w": 25,
+          "x": 2010,
+          "y": 165
+        },
+        "sourceSize": {
+          "h": 34,
+          "w": 25
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "92222d981ab18426030464fa5eea55a1fbb2ef587168c4bc80b20c9b285affd9",
+      "composed": null
+    },
+    {
+      "file": "ui/assets/character/online/general-tool/bigSkin_wu_hp_country_R.png",
+      "sha256": "5f7622e2ff3e47687eabd783b541bf40c0d611b0ef6de86add58207099a0b202",
+      "atlasMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/3f85e658",
+      "atlasSha256": "8ca625be10ab9bd3ec0eb2c186fc79352cc28635951e01620086d34a9d3e7b34",
+      "textureMember": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/0a82b4f5",
+      "textureSha256": "d67f3a61cf29079c053b5e5cfee3e58ecd8b3988805f59bbf38cfb3467e039cb",
+      "frame": {
+        "frame": {
+          "h": 34,
+          "idx": 0,
+          "w": 25,
+          "x": 1983,
+          "y": 169
+        },
+        "sourceSize": {
+          "h": 34,
+          "w": 25
+        },
+        "spriteSourceSize": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cropSha256": "5f7622e2ff3e47687eabd783b541bf40c0d611b0ef6de86add58207099a0b202",
+      "composed": null
     }
   ]
 }

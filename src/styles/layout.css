@@ -12,6 +12,23 @@
 
 /** 基础样式 */
 
+/* 手杀样式未单独配置座位底图，未选将时补用已有的“将”字背景。 */
+body[data-style="off"] .player.decade-uninitialized {
+	background: url("../../image/ui/player-bg/bj1.png") no-repeat center / 100% 100% !important;
+}
+
+body[data-style="off"] [data-mode="guozhan"] .player.decade-uninitialized,
+body[data-style="off"] .player.decade-uninitialized[data-mode="guozhan"] {
+	background-image: url("../../image/ui/player-bg/bj2.png") !important;
+}
+
+/* 尚未确定武将时只保留座位底图；暗置武将仍由正常初始化恢复这些区域。 */
+.player.decade-uninitialized > *,
+#arena > .player.decade-uninitialized > *,
+#arena > .player.decade-uninitialized:not(.minskin) > .name.name2 {
+	display: none !important;
+}
+
 html {
 	background: rgb(60, 60, 60);
 }

@@ -73,8 +73,10 @@ async function run() {
           const edge = parseFloat(getComputedStyle(probe).height);
           probe.remove();
           const contentHeight = dialog.content.scrollHeight;
-          const expected = Math.min(contentHeight, .45 * decadeUI.get.bodySize().height) + (count ? edge : 0);
-          const data = { count, height: dialog.offsetHeight, initialHeight, contentHeight, expected, edge, maxHeight: parseFloat(getComputedStyle(dialog).maxHeight), captions: dialog.content.children.length };
+          const scale = ui.arena.getBoundingClientRect().height / ui.arena.offsetHeight;
+          const available = (dialog.getBoundingClientRect().bottom - ui.window.getBoundingClientRect().top) / scale;
+          const expected = Math.min(contentHeight + (count ? edge : 0), available);
+          const data = { count, height: dialog.offsetHeight, initialHeight, contentHeight, expected, edge, available, captions: dialog.content.children.length };
           if (count === 14) {
             dialog.contentContainer.scrollTop = dialog.contentContainer.scrollHeight;
             const last = dialog.content.lastElementChild.getBoundingClientRect();
@@ -84,7 +86,7 @@ async function run() {
           window.captionDialog = dialog;
           return data;
         }, count);
-        assert.ok(Math.abs(result.height - result.expected) <= 1, 'only the bottom edge adds space beyond the caption content: ' + JSON.stringify({ zoom, ...result }));
+        assert.ok(Math.abs(result.height - result.expected) <= 1, 'the dialog fits the content and bottom edge within the game window: ' + JSON.stringify({ zoom, ...result }));
         assert.equal(result.captions, count + 1);
         if (count === 14) assert.equal(result.lastOptionVisible, true, 'long lists can scroll to the last option');
         if (count) assert.ok(result.height > result.initialHeight + result.edge, 'options must grow the dialog');

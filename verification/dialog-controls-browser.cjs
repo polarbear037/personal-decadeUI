@@ -34,7 +34,7 @@ const html = `<!doctype html>
 import { syncDialogOlControls } from "/src/ui/dialog-ol-controls.js";
 import { updateDialogOlLayout } from "/src/ui/dialog-ol-layout.js";
 window.syncDialogOlControls = syncDialogOlControls;
-window.updateDialogOlLayout = (dialog, bodyHeight = 600, mobile = false) => updateDialogOlLayout(dialog, document.querySelector("#arena"), bodyHeight, mobile);
+window.updateDialogOlLayout = dialog => updateDialogOlLayout(dialog, document.querySelector("#arena"));
 window.controlsReady = true;
 window.setTheme = theme => {
 	const arena = document.querySelector("#arena");
@@ -250,7 +250,7 @@ const server = http.createServer((request, response) => {
 		const afterMeasure = await measureFrameLayout(measuredDialog);
 		assert.ok(afterMeasure.edgeY > 0, "theme frame edge resolves from --dialog-ol-edge-bottom");
 		assert.ok(afterMeasure.height > beforeMeasure.height, "measured height preserves frame padding after content-container starts at zero");
-		assert.ok(Math.abs(afterMeasure.height - Math.min(afterMeasure.contentHeight, 270) - afterMeasure.edgeY) <= 1, "measured dialog adds only the bottom frame edge to the content height " + JSON.stringify(afterMeasure));
+		assert.ok(Math.abs(afterMeasure.height - afterMeasure.contentHeight - afterMeasure.edgeY) <= 1, "measured dialog adds only the bottom frame edge to the content height " + JSON.stringify(afterMeasure));
 		assert.equal(afterMeasure.position, "relative");
 		assert.ok(Math.abs(afterMeasure.captionTop - afterMeasure.captionMarginTop) <= 0.1, "layout measurement keeps current theme caption spacing");
 		assert.ok(afterMeasure.bodyTop >= afterMeasure.captionBottom, "long caption naturally pushes body down after measurement");
@@ -268,7 +268,7 @@ const server = http.createServer((request, response) => {
 		assert.equal(await noFrameMeasureDialog.evaluate(node => window.updateDialogOlLayout(node)), true);
 		const noFrameGeometry = await measureFrameLayout(noFrameMeasureDialog);
 		assert.equal(noFrameGeometry.edgeY, 0, "hidden frame does not add decorative edge space " + JSON.stringify(noFrameGeometry));
-		assert.ok(noFrameGeometry.height <= Math.min(noFrameGeometry.contentHeight, 270) + 1, "no-frame layout does not add exaggerated edge padding");
+		assert.ok(Math.abs(noFrameGeometry.height - noFrameGeometry.contentHeight) <= 1, "no-frame dialog fits the content height without edge padding");
 		await noFrameMeasureDialog.evaluate(node => node.delete());
 
 		const titleOnlyMeasureDialog = await create({ id: "measured-title-only-dialog", caption: "nested-only", addNewRow: true, withButtons: false, height: 120 });

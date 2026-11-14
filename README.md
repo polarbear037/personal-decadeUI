@@ -2,6 +2,8 @@
 
 无名杀游戏的界面美化扩展
 
+Online 判定生效/失效动画通过 `animation.cap.playSpineTo` 直接挂在卡牌上，复用皮肤切换的 Spine 4.0 运行库及有上限的卡牌播放器池。按官方 `126×174` 卡牌、原点 `(63,87)`、实际逻辑卡宽 `/126` 绘制，不使用共享 Worker 跟随或调整共享画布层级。结束、取消或卡牌移除后回收画布；其他风格保留 `effect_panding` 原路径。`node ../雷的ol/verification/judge-on-card-browser.cjs` 验证真实绘制、官方 GPU 变换、桌面/手机仿真、缩放和清理；完整 Electron 实局与手机实机待验证。
+
 Online 样式的乐不思蜀、兵粮寸断、闪电判定区标记使用 `image/ui/judge-mark/FX_LBSS_icon_play_dynamic.png`、`FX_BLCD_icon_play_dynamic.png`、`FX_SD_icon_play_dynamic.png`。三种图标统一 `background-size: 95%`、`background-position: 50% 80%`；失败回退原图，其他样式保持原图。`node tests/judge-mark-online-browser.cjs` 检查指定参数、原图回退、节点复用和实际广播挂入入口，并保存新旧对照截图。
 
 Online 可发动的主动/被动技能按钮分别叠加 `fx_UI_AnNIu_ZhuDong_play_dynamic.png` / `fx_UI_AnNIu_BeiDong_new_play_dynamic.png` APNG，按亮矩形区域缩放至按钮边缘，不拦截点击。已进入本地技能触发/结算流程后，即使 `.usable` 消失或次数被扣除，也保持对应动态框；主动技能全程使用 `btnnOL42.png` 且不套灰度滤镜，结束或取消后恢复。阴阳图标为按钮直接子元素，固定左上角 `3px / 3px`，使用 `skillitem_yinyang_bg.png` / `skillitem_yinyang_bg_1.png`；本地实际状态改变时通过 `decadeui:conversion-icon-change` 提供 skill、state 和实际 icon，供雷的 ol 按钮特效定位。首次创建和重复刷新不发送，远端同名技能不改变本地按钮。

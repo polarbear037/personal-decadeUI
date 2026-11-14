@@ -1,0 +1,717 @@
+{
+  "skinId": "49102",
+  "expected": {
+    "x": 0.9800646551724138,
+    "y": 0.26293103448275856,
+    "scale": 0.8783405172413793,
+    "eventScale": 0.8321120689655173
+  },
+  "cases": [
+    {
+      "mobile": false,
+      "initial": [
+        {
+          "type": "fengyuSample",
+          "id": 1,
+          "phase": "start",
+          "main": {
+            "x": [
+              62.408405172413794,
+              0.5
+            ],
+            "y": [
+              -41.60560344827587,
+              0.5
+            ],
+            "scale": 0.8783405172413794,
+            "flipX": false,
+            "action": "ChuChang",
+            "loop": false,
+            "time": 0,
+            "next": "DaiJi",
+            "duration": 4.099999904632568
+          },
+          "beijing": {
+            "x": [
+              62.408405172413794,
+              0.5
+            ],
+            "y": [
+              -41.60560344827587,
+              0.5
+            ],
+            "scale": 0.8783405172413794,
+            "flipX": false,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0,
+            "duration": 7
+          },
+          "qianjing": {
+            "x": [
+              62.408405172413794,
+              0.5
+            ],
+            "y": [
+              -41.60560344827587,
+              0.5
+            ],
+            "scale": 0.8783405172413794,
+            "flipX": false,
+            "action": "ChuChang",
+            "loop": false,
+            "time": 0,
+            "next": "DaiJi",
+            "duration": 4.099999904632568
+          }
+        },
+        {
+          "type": "fengyuSample",
+          "id": 3,
+          "phase": "start",
+          "main": {
+            "x": [
+              0,
+              0.980065
+            ],
+            "y": [
+              0,
+              0.262931
+            ],
+            "scale": 0.878341,
+            "flipX": false,
+            "action": "ChuChang",
+            "loop": false,
+            "time": 0,
+            "next": "DaiJi",
+            "duration": 4.099999904632568
+          },
+          "beijing": {
+            "x": [
+              0,
+              0.980065
+            ],
+            "y": [
+              0,
+              0.262931
+            ],
+            "scale": 0.878341,
+            "flipX": false,
+            "action": "ChuChang",
+            "loop": false,
+            "time": 0,
+            "next": "DaiJi",
+            "duration": 4.099999904632568
+          },
+          "qianjing": {
+            "x": [
+              0,
+              0.980065
+            ],
+            "y": [
+              0,
+              0.262931
+            ],
+            "scale": 0.878341,
+            "flipX": false,
+            "action": "ChuChang",
+            "loop": false,
+            "time": 0,
+            "next": "DaiJi",
+            "duration": 4.099999904632568
+          }
+        },
+        {
+          "type": "fengyuSample",
+          "id": 2,
+          "phase": "start",
+          "main": {
+            "x": [
+              -82.5,
+              0.5
+            ],
+            "y": [
+              -55.00000000000001,
+              0.5
+            ],
+            "scale": 1.2833333333333334,
+            "flipX": true,
+            "action": "ChuChang",
+            "loop": false,
+            "time": 0,
+            "next": "DaiJi",
+            "duration": 4.099999904632568
+          },
+          "beijing": {
+            "x": [
+              -82.5,
+              0.5
+            ],
+            "y": [
+              -55.00000000000001,
+              0.5
+            ],
+            "scale": 1.2833333333333334,
+            "flipX": true,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0,
+            "duration": 7
+          },
+          "qianjing": {
+            "x": [
+              -82.5,
+              0.5
+            ],
+            "y": [
+              -55.00000000000001,
+              0.5
+            ],
+            "scale": 1.2833333333333334,
+            "flipX": true,
+            "action": "ChuChang",
+            "loop": false,
+            "time": 0,
+            "next": "DaiJi",
+            "duration": 4.099999904632568
+          }
+        }
+      ],
+      "idle": [
+        {
+          "type": "fengyuSample",
+          "id": 1,
+          "phase": "idle",
+          "main": {
+            "x": [
+              62.408405172413794,
+              0.5
+            ],
+            "y": [
+              -41.60560344827587,
+              0.5
+            ],
+            "scale": 0.8783405172413794,
+            "flipX": false,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0.32790009536742687,
+            "duration": 7
+          },
+          "beijing": {
+            "x": [
+              62.408405172413794,
+              0.5
+            ],
+            "y": [
+              -41.60560344827587,
+              0.5
+            ],
+            "scale": 0.8783405172413794,
+            "flipX": false,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 4.427899999999986,
+            "duration": 7
+          },
+          "qianjing": {
+            "x": [
+              62.408405172413794,
+              0.5
+            ],
+            "y": [
+              -41.60560344827587,
+              0.5
+            ],
+            "scale": 0.8783405172413794,
+            "flipX": false,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0.32790009536742687,
+            "duration": 7
+          }
+        },
+        {
+          "type": "fengyuSample",
+          "id": 3,
+          "phase": "idle",
+          "main": {
+            "x": [
+              0,
+              0.980065
+            ],
+            "y": [
+              0,
+              0.262931
+            ],
+            "scale": 0.878341,
+            "flipX": false,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0.31560009536742484,
+            "duration": 7
+          },
+          "beijing": {
+            "x": [
+              0,
+              0.980065
+            ],
+            "y": [
+              0,
+              0.262931
+            ],
+            "scale": 0.878341,
+            "flipX": false,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0.31560009536742484,
+            "duration": 7
+          },
+          "qianjing": {
+            "x": [
+              0,
+              0.980065
+            ],
+            "y": [
+              0,
+              0.262931
+            ],
+            "scale": 0.878341,
+            "flipX": false,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0.31560009536742484,
+            "duration": 7
+          }
+        },
+        {
+          "type": "fengyuSample",
+          "id": 2,
+          "phase": "idle",
+          "main": {
+            "x": [
+              -82.5,
+              0.5
+            ],
+            "y": [
+              -55.00000000000001,
+              0.5
+            ],
+            "scale": 1.2833333333333334,
+            "flipX": true,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0.3056000953674228,
+            "duration": 7
+          },
+          "beijing": {
+            "x": [
+              -82.5,
+              0.5
+            ],
+            "y": [
+              -55.00000000000001,
+              0.5
+            ],
+            "scale": 1.2833333333333334,
+            "flipX": true,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 4.40559999999998,
+            "duration": 7
+          },
+          "qianjing": {
+            "x": [
+              -82.5,
+              0.5
+            ],
+            "y": [
+              -55.00000000000001,
+              0.5
+            ],
+            "scale": 1.2833333333333334,
+            "flipX": true,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0.3056000953674228,
+            "duration": 7
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "GongJi",
+          "duration": 1.666700005531311
+        },
+        {
+          "name": "HuDong",
+          "duration": 2.6666998863220215
+        },
+        {
+          "name": "JiNeng",
+          "duration": 2.3333001136779785
+        }
+      ]
+    },
+    {
+      "mobile": true,
+      "initial": [
+        {
+          "type": "fengyuSample",
+          "id": 3,
+          "phase": "start",
+          "main": {
+            "x": [
+              0,
+              0.980065
+            ],
+            "y": [
+              0,
+              0.262931
+            ],
+            "scale": 0.878341,
+            "flipX": false,
+            "action": "ChuChang",
+            "loop": false,
+            "time": 0,
+            "next": "DaiJi",
+            "duration": 4.099999904632568
+          },
+          "beijing": {
+            "x": [
+              0,
+              0.980065
+            ],
+            "y": [
+              0,
+              0.262931
+            ],
+            "scale": 0.878341,
+            "flipX": false,
+            "action": "ChuChang",
+            "loop": false,
+            "time": 0,
+            "next": "DaiJi",
+            "duration": 4.099999904632568
+          },
+          "qianjing": {
+            "x": [
+              0,
+              0.980065
+            ],
+            "y": [
+              0,
+              0.262931
+            ],
+            "scale": 0.878341,
+            "flipX": false,
+            "action": "ChuChang",
+            "loop": false,
+            "time": 0,
+            "next": "DaiJi",
+            "duration": 4.099999904632568
+          }
+        },
+        {
+          "type": "fengyuSample",
+          "id": 1,
+          "phase": "start",
+          "main": {
+            "x": [
+              62.408405172413794,
+              0.5
+            ],
+            "y": [
+              -41.60560344827587,
+              0.5
+            ],
+            "scale": 0.8783405172413794,
+            "flipX": false,
+            "action": "ChuChang",
+            "loop": false,
+            "time": 0,
+            "next": "DaiJi",
+            "duration": 4.099999904632568
+          },
+          "beijing": {
+            "x": [
+              62.408405172413794,
+              0.5
+            ],
+            "y": [
+              -41.60560344827587,
+              0.5
+            ],
+            "scale": 0.8783405172413794,
+            "flipX": false,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0,
+            "duration": 7
+          },
+          "qianjing": {
+            "x": [
+              62.408405172413794,
+              0.5
+            ],
+            "y": [
+              -41.60560344827587,
+              0.5
+            ],
+            "scale": 0.8783405172413794,
+            "flipX": false,
+            "action": "ChuChang",
+            "loop": false,
+            "time": 0,
+            "next": "DaiJi",
+            "duration": 4.099999904632568
+          }
+        },
+        {
+          "type": "fengyuSample",
+          "id": 2,
+          "phase": "start",
+          "main": {
+            "x": [
+              -82.5,
+              0.5
+            ],
+            "y": [
+              -55.00000000000001,
+              0.5
+            ],
+            "scale": 1.2833333333333334,
+            "flipX": true,
+            "action": "ChuChang",
+            "loop": false,
+            "time": 0,
+            "next": "DaiJi",
+            "duration": 4.099999904632568
+          },
+          "beijing": {
+            "x": [
+              -82.5,
+              0.5
+            ],
+            "y": [
+              -55.00000000000001,
+              0.5
+            ],
+            "scale": 1.2833333333333334,
+            "flipX": true,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0,
+            "duration": 7
+          },
+          "qianjing": {
+            "x": [
+              -82.5,
+              0.5
+            ],
+            "y": [
+              -55.00000000000001,
+              0.5
+            ],
+            "scale": 1.2833333333333334,
+            "flipX": true,
+            "action": "ChuChang",
+            "loop": false,
+            "time": 0,
+            "next": "DaiJi",
+            "duration": 4.099999904632568
+          }
+        }
+      ],
+      "idle": [
+        {
+          "type": "fengyuSample",
+          "id": 2,
+          "phase": "idle",
+          "main": {
+            "x": [
+              -82.5,
+              0.5
+            ],
+            "y": [
+              -55.00000000000001,
+              0.5
+            ],
+            "scale": 1.2833333333333334,
+            "flipX": true,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0.3169000953674254,
+            "duration": 7
+          },
+          "beijing": {
+            "x": [
+              -82.5,
+              0.5
+            ],
+            "y": [
+              -55.00000000000001,
+              0.5
+            ],
+            "scale": 1.2833333333333334,
+            "flipX": true,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 4.416899999999983,
+            "duration": 7
+          },
+          "qianjing": {
+            "x": [
+              -82.5,
+              0.5
+            ],
+            "y": [
+              -55.00000000000001,
+              0.5
+            ],
+            "scale": 1.2833333333333334,
+            "flipX": true,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0.3169000953674254,
+            "duration": 7
+          }
+        },
+        {
+          "type": "fengyuSample",
+          "id": 1,
+          "phase": "idle",
+          "main": {
+            "x": [
+              62.408405172413794,
+              0.5
+            ],
+            "y": [
+              -41.60560344827587,
+              0.5
+            ],
+            "scale": 0.8783405172413794,
+            "flipX": false,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0.3221000953674293,
+            "duration": 7
+          },
+          "beijing": {
+            "x": [
+              62.408405172413794,
+              0.5
+            ],
+            "y": [
+              -41.60560344827587,
+              0.5
+            ],
+            "scale": 0.8783405172413794,
+            "flipX": false,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 4.422099999999987,
+            "duration": 7
+          },
+          "qianjing": {
+            "x": [
+              62.408405172413794,
+              0.5
+            ],
+            "y": [
+              -41.60560344827587,
+              0.5
+            ],
+            "scale": 0.8783405172413794,
+            "flipX": false,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0.3221000953674293,
+            "duration": 7
+          }
+        },
+        {
+          "type": "fengyuSample",
+          "id": 3,
+          "phase": "idle",
+          "main": {
+            "x": [
+              0,
+              0.980065
+            ],
+            "y": [
+              0,
+              0.262931
+            ],
+            "scale": 0.878341,
+            "flipX": false,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0.37680009536742315,
+            "duration": 7
+          },
+          "beijing": {
+            "x": [
+              0,
+              0.980065
+            ],
+            "y": [
+              0,
+              0.262931
+            ],
+            "scale": 0.878341,
+            "flipX": false,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0.37680009536742315,
+            "duration": 7
+          },
+          "qianjing": {
+            "x": [
+              0,
+              0.980065
+            ],
+            "y": [
+              0,
+              0.262931
+            ],
+            "scale": 0.878341,
+            "flipX": false,
+            "action": "DaiJi",
+            "loop": true,
+            "time": 0.37680009536742315,
+            "duration": 7
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "GongJi",
+          "duration": 1.666700005531311
+        },
+        {
+          "name": "HuDong",
+          "duration": 2.6666998863220215
+        },
+        {
+          "name": "JiNeng",
+          "duration": 2.3333001136779785
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "httpErrors": [],
+  "passed": true,
+  "source": {
+    "parameterFile": "动皮参数.txt",
+    "skinId": "49102",
+    "parameterSha256": "4102f798644a23557109a542d457a7818cf0e502741aa64e9a8b02d5277405bc",
+    "apk": "yoka.game_g_android_4.0.2.apk",
+    "apkSha256": "38d46c46f91796e6006776354a9b3da4cf19832d9a89a0668510e7906ba2011d",
+    "member": "assets/cache/https.__web.sanguosha.com_220_sgsolApp/217defbb!main.sgs",
+    "mainSha256": "dfd781ab2ed667c2576da52f77170244704a525ab28daf3139a2c1a50e4440ad",
+    "conversionSource": "皮肤切换/dynamicWorker.js:playOnlineEntrance; js/worker/online-playback.js:ckPlayOnlineSpine",
+    "limitations": "真实Worker夹具和Android用户代理/DPR3仿真已验证；未完成Electron完整实局、手机真机和官方画面视觉对照。"
+  }
+}

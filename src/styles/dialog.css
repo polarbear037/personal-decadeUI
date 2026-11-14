@@ -179,8 +179,7 @@
 	transform-origin: 0 50%;
 	box-sizing: border-box;
 	height: calc(var(--dialog-ol-content-height, 24cqh) + var(--dialog-ol-frame-padding) + var(--dialog-ol-footer-space, 0px)) !important;
-	max-height: max(0px, min(calc(var(--dialog-ol-content-limit, var(--dialog-ol-content-limit-fallback)) + var(--dialog-ol-frame-padding) + var(--dialog-ol-footer-space, 0px)),
-				calc(100% - var(--dialog-ol-anchor-bottom) - var(--dialog-ol-top-limit, 0px)))) !important;
+	max-height: max(0px, calc(100% - var(--dialog-ol-anchor-bottom) - var(--dialog-ol-top-limit, 0px))) !important;
 	min-height: 0 !important;
 	isolation: isolate;
 	overflow: visible;
@@ -195,7 +194,6 @@
 	--dialog-ol-frame-padding: var(--dialog-ol-edge-bottom);
 	--dialog-ol-bottom: calc(20% + 85px);
 	--dialog-ol-anchor-bottom: calc(var(--dialog-ol-bottom) + var(--dialog-ol-footer-lift, 0px));
-	--dialog-ol-content-limit-fallback: 45cqh;
 	--dialog-ol-caption-top: 2.3cqh;
 	/* 只调整中央装饰标题的横向比例，底图与两侧半透明区域保持原样。 */
 	--dialog-ol-title-scale: 0.8;
@@ -211,7 +209,6 @@
 
 #arena.decadeUI.dui-mobile[data-loading-style="dialog_ol"]>.dialog.dialog-ol-layout:not(.dclieqiong):not(.online-faction-dialog):not(.bosscharacter) {
 	--dialog-ol-bottom: calc(23% + 86px);
-	--dialog-ol-content-limit-fallback: calc(75cqh - 80px);
 }
 
 #arena.decadeUI.choose-character[data-loading-style="dialog_ol"]>.dialog.dialog-ol-layout:not(.dclieqiong):not(.online-faction-dialog):not(.bosscharacter) {
@@ -415,7 +412,7 @@
 
 .dialog-ol-restore {
 	position: fixed;
-	z-index: 10000;
+	z-index: 130;
 	top: 61cqh;
 	left: 6cqw;
 	width: 10cqw;

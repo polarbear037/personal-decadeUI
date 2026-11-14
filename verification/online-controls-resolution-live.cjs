@@ -59,7 +59,15 @@ seed.hp_style = 'default';
      controlsLive.card = card;
      controlsLive.stage = 'first-choice';
      controlsLive.first = await game.me.chooseToUse({ type: 'phase' }).forResult();
+     controlsLive.cancelCard = game.createCard('sha', 'heart', 6);
+     await game.me.gain(controlsLive.cancelCard, 'gain2');
+     game.me.addSkill('wusheng');
      controlsLive.stage = 'next-choice';
+     await game.me.chooseToUse({ type: 'phase' });
+     controlsLive.stage = 'turn-ended';
+     await game.delay(1);
+     controlsLive.read('turn-ended');
+     controlsLive.stage = 'after-end-choice';
      await game.me.chooseToUse({ type: 'phase' });
      controlsLive.stage = 'done'; game.pause();
     },
@@ -85,6 +93,38 @@ seed.hp_style = 'default';
   await waitChoice('next-choice');
   const after = await page.evaluate(() => controlsLive.read('next-choice'));
   assert.notEqual(after.display, 'none');
+  const cancelSelection = await page.evaluate(() => {
+   const { ui, _status } = controlsLive;
+   _status.clicked = false; ui.click.card.call(controlsLive.cancelCard);
+   return { selected: ui.selected.cards.length, event: _status.event.name };
+  });
+  assert.equal(cancelSelection.selected, 1);
+  await page.locator('#dui-controls .lbtn-confirm .primary2').click();
+  const cancelledCard = await page.evaluate(() => ({ ...controlsLive.read('cancel-card'), selected: controlsLive.ui.selected.cards.length }));
+  assert.equal(cancelledCard.selected, 0);
+  assert.equal(cancelledCard.result, undefined);
+  assert.notEqual(cancelledCard.display, 'none', '取消选牌后仍可继续操作');
+  await page.evaluate(() => controlsLive.ui.click.skill('wusheng'));
+  assert.equal(await page.evaluate(() => controlsLive._status.event.skill), 'wusheng');
+  await page.locator('#dui-controls .lbtn-confirm .primary2').click();
+  const cancelledSkill = await page.evaluate(() => ({ ...controlsLive.read('cancel-skill'), skill: controlsLive._status.event.skill }));
+  assert.equal(cancelledSkill.skill, undefined);
+  assert.notEqual(cancelledSkill.display, 'none', '取消技能后仍可继续操作');
+  // 结束回合走 result.bool=false；验证点击当下和离开 chooseToUse 后均隐藏。
+  await page.evaluate(() => {
+   const { lib } = controlsLive;
+   lib.hooks.uncheckEnd.add(() => {
+    if (controlsLive.stage === 'next-choice' && controlsLive._status.event.result?.confirm === 'cancel') controlsLive.read('end-click');
+   });
+  });
+  await page.locator('#dui-controls .lbtn-confirm .primary2').click();
+  await page.waitForFunction(() => controlsLive.stage === 'turn-ended');
+  const ended = await page.evaluate(() => controlsLive.read('after-end-click'));
+  assert.equal(ended.display, 'none', '结束回合后整个按钮区隐藏');
+  assert.equal(await page.evaluate(() => controlsLive.samples.find(sample => sample.label === 'end-click')?.display), 'none', '点击时立即隐藏');
+  await waitChoice('after-end-choice');
+  const restoredAfterEnd = await page.evaluate(() => controlsLive.read('after-end-choice'));
+  assert.notEqual(restoredAfterEnd.display, 'none', '后续本人操作恢复按钮区');
   // 选择事件取消后重新选择不应锁住按钮；并回归其他风格、结束和选将状态。
   const scopes = await page.evaluate(() => {
    const { ui, lib, game, _status } = controlsLive;
@@ -107,7 +147,7 @@ seed.hp_style = 'default';
   const samples = await page.evaluate(() => controlsLive.samples);
   for (const label of ['settling', 'settling-again']) assert.equal(samples.find(sample => sample.label === label)?.display, 'none', label);
   assert.deepEqual(errors, []);
-  fs.writeFileSync(path.join(__dirname, 'online-controls-resolution-live-results.json'), JSON.stringify({ before, nested, after, samples, scopes, errors }, null, 2));
+  fs.writeFileSync(path.join(__dirname, 'online-controls-resolution-live-results.json'), JSON.stringify({ before, nested, after, ended, restoredAfterEnd, samples, scopes, errors }, null, 2));
   console.log('ONLINE_CONTROLS_RESOLUTION_LIVE_OK', JSON.stringify({ samples, scopes, errors }));
  } catch (error) {
   console.error('CONTROL_STATE', await page.evaluate(() => {

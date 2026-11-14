@@ -51,6 +51,7 @@ function u(lib, game, ui, get, ai, _status) {
 			}),
 			(animation.cap.playSpineTo = function (element, anim, position) {
 				if (!anim) return;
+				if (anim.version === "4.0") return originalCapPlaySpineTo.call(this, element, anim, position);
 				const name = "string" == typeof anim ? anim : anim.name;
 				return name ? (capHasSpine(name) ? originalCapPlaySpineTo.call(this, element, anim, position) : void ensureLoaded(name, null, !0, () => originalCapPlaySpineTo.call(this, element, anim, position))) : originalCapPlaySpineTo.call(this, element, anim, position);
 			}));

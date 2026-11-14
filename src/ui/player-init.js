@@ -6,6 +6,7 @@ import { openOnlineHandCards } from "./online-hand-cards.js";
 function i(base) {
 	return function (character, character2) {
 		(base.lib.element.player.$init.apply(this, arguments), (this.doubleAvatar = void 0 !== (character2 && lib.character[character2])));
+		this.classList.remove("decade-uninitialized");
 		const info = lib.character[character];
 		(info && get.is.newLayout && (game.minskin || !get.is.newLayout() || info.isMinskin ? (info.isMinskin || game.minskin) && this.classList.add("minskin") : this.classList.remove("minskin")), this.node.name && this.group && (this.node.name.dataset.nature = get.groupnature(this.group)), "othersOff" === lib.config.extension_十周年UI_newDecadeStyle && (this.checkAndAddExperienceSuffix(character), character2 && this.checkAndAddExperienceSuffix(character2, !0)));
 		if ("random" === lib.config.extension_十周年UI_borderLevel)

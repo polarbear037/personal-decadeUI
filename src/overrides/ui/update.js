@@ -45,7 +45,7 @@ function l() {
 		dialog.forcebutton || dialog._scrollset ? (dialog.classList.add("scroll1"), dialog.classList.add("scroll2")) : (dialog.classList.remove("scroll1"), dialog.classList.remove("scroll2"));
 	}
 	syncDialogOlControls(ui.dialog, ui.arena, ui.window, ui.update);
-	updateDialogOlLayout(dialog, ui.arena, decadeUI.get.bodySize().height, decadeUI.isMobile());
+	updateDialogOlLayout(dialog, ui.arena);
 	if (dialogOl || null == ui.dialog || noupdate) return;
 	if ((ui.dialog.buttons && ui.dialog.buttons.length) || ui.dialog.forcebutton || !1 !== ui.dialog.classList.contains("fullheight") || "stone" === get.mode()) {
 		ui.dialog.classList.remove("prompt");

@@ -1401,3 +1401,237 @@ body[data-style="onlineUI"] #arena>#dui-controls>:is(.online-quick-select, .onli
 #arena>#dui-controls>.lbtn-confirm>.online-recast-button:active {
 	filter: brightness(0.85);
 }
+@font-face {
+	font-family: "OL Wallpaper";
+	src: url("../../assets/fonts/FZLBGBK.ttf") format("truetype");
+	font-display: swap;
+}
+
+body[data-style="onlineUI"] #window > .online-wallpaper-overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, .85);
+}
+
+body[data-style="onlineUI"] .online-wallpaper-panel {
+	--wallpaper-scale: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 1450px;
+	height: 750px;
+	transform: translate(-50%, -50%) scale(var(--wallpaper-scale));
+	pointer-events: none;
+	font-family: "OL Wallpaper", serif;
+	font-weight: 400;
+	text-shadow: none;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-panel::before,
+body[data-style="onlineUI"] .online-wallpaper-panel::after {
+	content: "";
+	position: absolute;
+	top: 126px;
+	width: 765px;
+	height: 564px;
+	background: url("../../assets/lbtn/OL_line/background/bigbg_trans_half.png") no-repeat;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-panel::before {
+	left: -60px;
+	transform: scaleX(-1);
+}
+
+body[data-style="onlineUI"] .online-wallpaper-panel::after {
+	left: 705px;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-panel > * {
+	z-index: 1;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-panel button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-shadow: none;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-panel button:focus-visible {
+	outline: 2px solid #f4cf69;
+	outline-offset: 2px;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-title {
+	position: absolute;
+	left: 634px;
+	top: 75px;
+	width: 136px;
+	height: 34px;
+	background: url("../../assets/lbtn/OL_line/background/wallpaper_title.png") no-repeat;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-title::after {
+	content: "";
+	position: absolute;
+	left: -483px;
+	top: 41px;
+	width: 1108px;
+	height: 19px;
+	background: url("../../assets/lbtn/OL_line/background/zhuang_shi_xian.png") no-repeat;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-panel .online-wallpaper-close {
+	position: absolute;
+	left: 1234px;
+	top: 74.5px;
+	width: 36px;
+	height: 35px;
+	background: url("../../assets/lbtn/OL_line/background/close1.png") no-repeat;
+	pointer-events: auto;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-tabs {
+	position: absolute;
+	left: 28px;
+	top: 161px;
+	display: grid;
+	gap: 18px;
+	pointer-events: auto;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-panel .online-wallpaper-tab {
+	width: 158px;
+	height: 42px;
+	font-size: 32px;
+	font-weight: 700;
+	color: #dfca96;
+	background: url("../../assets/lbtn/OL_line/background/sectab_nrm.png") center / 100% 100%;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-panel .online-wallpaper-tab[aria-pressed="true"] {
+	color: #3e351a;
+	background-image: url("../../assets/lbtn/OL_line/background/sectab_sel.png");
+}
+
+body[data-style="onlineUI"] .online-wallpaper-list {
+	position: absolute;
+	left: 244px;
+	top: 149px;
+	width: 1030px;
+	height: 504px;
+	overflow: hidden auto;
+	scrollbar-width: none;
+	overscroll-behavior: contain;
+	touch-action: pan-y;
+	pointer-events: auto;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-list::-webkit-scrollbar {
+	display: none;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-grid {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3, 340px);
+	gap: 15px 2px;
+	padding-bottom: 15px;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-panel .online-wallpaper-tile {
+	position: relative;
+	width: 340px;
+	height: 218px;
+	background: url("../../assets/lbtn/OL_line/background/wallpaper_item_bg.png") 2px 4px no-repeat;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-thumb {
+	position: absolute;
+	left: 9px;
+	top: 10px;
+	width: 322px;
+	height: 200px;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-name {
+	position: absolute;
+	left: 8px;
+	top: 177px;
+	width: 322px;
+	height: 34px;
+	box-sizing: border-box;
+	padding-top: 4px;
+	background: url("../../assets/lbtn/OL_line/background/wallpaper_zhe_zhao.png") no-repeat;
+	color: #f2e4c0;
+	font-size: 24px;
+	letter-spacing: 1px;
+	line-height: 26px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-tile[aria-pressed="true"]::before,
+body[data-style="onlineUI"] .online-wallpaper-tile[aria-pressed="true"]::after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	pointer-events: none;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-tile[aria-pressed="true"]::before {
+	inset: -1px 0 1px;
+	background: url("../../assets/lbtn/OL_line/background/wallpaper_xuan_zhong.png") no-repeat;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-tile[aria-pressed="true"]::after {
+	left: -22px;
+	top: -21px;
+	width: 135px;
+	height: 56px;
+	background: url("../../assets/lbtn/OL_line/background/shi_yong_zhong.png") no-repeat;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-panel .online-wallpaper-arrow {
+	position: absolute;
+	left: 735px;
+	top: 653px;
+	width: 48px;
+	height: 40px;
+	background: url("../../assets/lbtn/OL_line/background/scroll_tips_dn.png") center / 100% 100%;
+	pointer-events: auto;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-all {
+	position: absolute;
+	left: 1148px;
+	top: 687px;
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	color: #d1b877;
+	font-size: 28px;
+	line-height: 40px;
+	white-space: nowrap;
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-checkbox {
+	appearance: none;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	background: url("../../assets/lbtn/OL_line/background/check_box_normal.png") center no-repeat;
+	cursor: inherit;
+}
+
+body[data-style="onlineUI"] .online-wallpaper-checkbox:checked {
+	background-image: url("../../assets/lbtn/OL_line/background/check_box_light.png");
+}

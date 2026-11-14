@@ -3,17 +3,22 @@ import { lib, game, ui, _status } from "noname";
 function syncOnlineControlVisibility() {
 	let resolving = false;
 	if (lib.config.extension_十周年UI_newDecadeStyle === "onlineUI" && _status.gameStarted && !_status.over && !ui.arena?.classList.contains("choose-character")) {
+		// 结束回合没有 useCard 等结算事件；空闲阶段也收起按钮，直到下一次本人操作。
+		resolving = true;
 		const visited = new Set();
 		for (let event = _status.event; event && !visited.has(event); event = event.parent) {
 			visited.add(event);
-			if (/^chooseCharacter/.test(event.name)) break;
-			// 本体的当前操作优先：顺拆取牌为 gainPlayerCard/discardPlayerCard，不能只认 choose 前缀。
-			// backup 后的事件可能保留旧 result；最终提交的完整 uncheck 才会清除 imchoosing。
-			if (event.isMine?.() && ((event === _status.event && _status.imchoosing) || (/^choose/.test(event.name) && !event.result))) break;
-			if (["useCard", "respond", "useSkill"].includes(event.name) || (["chooseToUse", "chooseToRespond"].includes(event.name) && event.result?.bool)) {
-				resolving = true;
+			if (/^chooseCharacter/.test(event.name)) {
+				resolving = false;
 				break;
 			}
+			// 本体的当前操作优先：顺拆取牌为 gainPlayerCard/discardPlayerCard，不能只认 choose 前缀。
+			// backup 后的事件可能保留旧 result；最终提交的完整 uncheck 才会清除 imchoosing。
+			if (event.isMine?.() && ((event === _status.event && _status.imchoosing) || (/^choose/.test(event.name) && !event.result))) {
+				resolving = false;
+				break;
+			}
+			if (["useCard", "respond", "useSkill"].includes(event.name) || (["chooseToUse", "chooseToRespond"].includes(event.name) && typeof event.result?.bool === "boolean")) break;
 		}
 	}
 	ui.control?.classList.toggle("online-controls-resolving", resolving);
