@@ -147,7 +147,7 @@ class t {
 		return (
 			(skeleton.name = filename),
 			(skeleton.completed = !0),
-			skeleton.setSkinByName("default"),
+			(data.defaultSkin || data.skins?.length) && skeleton.setSkin(data.defaultSkin || data.skins[0]),
 			skeleton.setToSetupPose(),
 			skeleton.updateWorldTransform(),
 			(skeleton.state = new spine.AnimationState(new spine.AnimationStateData(skeleton.data))),
@@ -221,9 +221,18 @@ class t {
 			e.completed ? this.nodes.splice(h, 1) : e.update(eventArgs);
 		}
 		const gl = this.gl;
-		if ((gl.viewport(0, 0, canvas.width, canvas.height), erase && (gl.clearColor(0, 0, 0, 0), gl.clear(gl.COLOR_BUFFER_BIT)), 0 === this.nodes.length)) return ((this.frameTime = this.requestId = void 0), (this.running = !1), void (offscreen || (this.canvas.style.visibility = "hidden")));
+		const sharedActive = this.sharedManager && Object.values(this.sharedManager.animations).some(renderer => renderer !== this && renderer.nodes.some(node => !node.completed));
+		if (this.sharedManager && gl.renderAni == null) gl.renderAni = this;
+		if ((gl.viewport(0, 0, canvas.width, canvas.height), erase && (!this.sharedManager || gl.renderAni === this) && (gl.clearColor(0, 0, 0, 0), gl.clear(gl.COLOR_BUFFER_BIT)), 0 === this.nodes.length)) {
+			this.frameTime = this.requestId = undefined;
+			this.running = false;
+			if (gl.renderAni === this) gl.renderAni = null;
+			if (!offscreen && !sharedActive) this.canvas.style.visibility = "hidden";
+			return;
+		}
 		const { shader: shader, batcher: batcher, skeletonRenderer: renderer } = this.spine;
 		(gl.enable(gl.SCISSOR_TEST), gl.scissor(0, 0, canvas.width, canvas.height), this.bindShader || ((this.bindShader = shader), shader.bind(), shader.setUniformi(spine.webgl.Shader.SAMPLER, 0)));
+		if (this.sharedManager) shader.bind();
 		for (const h of this.nodes) {
 			h.renderClip && ((gl.clipping = h.renderClip), gl.scissor(gl.clipping.x, gl.clipping.y, gl.clipping.width, gl.clipping.height));
 			const e = h.skeleton,

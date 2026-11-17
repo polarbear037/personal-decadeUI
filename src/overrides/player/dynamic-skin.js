@@ -66,7 +66,7 @@ function t() {
 		const s = r[o[0]];
 		if (!s?.name) return;
 		const d = (function (skin) {
-			const animation = { name: skin.name, action: skin.action, loop: !0, loopCount: -1, speed: skin.speed ?? 1, filpX: skin.filpX, filpY: skin.filpY, opacity: skin.opacity, x: skin.x, y: skin.y, scale: skin.scale, angle: skin.angle, hideSlots: skin.hideSlots, clipSlots: skin.clipSlots };
+			const animation = { json: skin.json, skelType: skin.skelType, version: skin.version, name: skin.name, action: skin.action, loop: !0, loopCount: -1, speed: skin.speed ?? 1, filpX: skin.filpX, filpY: skin.filpY, opacity: skin.opacity, x: skin.x, y: skin.y, scale: skin.scale, angle: skin.angle, hideSlots: skin.hideSlots, clipSlots: skin.clipSlots };
 			void 0 !== skin.alpha && (animation.alpha = skin.alpha);
 			void 0 !== skin.unpackPremultipliedAlpha && (animation.unpackPremultipliedAlpha = skin.unpackPremultipliedAlpha);
 			(skin.player || void 0 !== skin._transform) && (animation.player = { ...(skin.player || {}), ...(void 0 !== skin._transform && { _transform: skin._transform }) });

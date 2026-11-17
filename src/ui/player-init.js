@@ -32,7 +32,7 @@ function i(base) {
 					continue;
 				}
 				const d = o[s[0]];
-				(void 0 === d.speed && (d.speed = 1), this.playDynamic({ name: d.name, action: d.action, loop: !0, loopCount: -1, speed: d.speed, filpX: void 0, filpY: void 0, opacity: void 0, x: d.x, y: d.y, scale: d.scale, angle: d.angle, hideSlots: d.hideSlots, clipSlots: d.clipSlots }, 1 === n), d.background ? this.$dynamicWrap.style.setProperty("--dynamic-skin-background", `url("${getResourceUrl("动态皮肤文件", d.background)}")`) : this.$dynamicWrap.style.removeProperty("--dynamic-skin-background"), i || ((i = !0), decadeUI.CUR_DYNAMIC++));
+				(void 0 === d.speed && (d.speed = 1), this.playDynamic({ json: d.json, skelType: d.skelType, version: d.version, name: d.name, action: d.action, loop: !0, loopCount: -1, speed: d.speed, filpX: void 0, filpY: void 0, opacity: void 0, x: d.x, y: d.y, scale: d.scale, angle: d.angle, hideSlots: d.hideSlots, clipSlots: d.clipSlots }, 1 === n), d.background ? this.$dynamicWrap.style.setProperty("--dynamic-skin-background", `url("${getResourceUrl("动态皮肤文件", d.background)}")`) : this.$dynamicWrap.style.removeProperty("--dynamic-skin-background"), i || ((i = !0), decadeUI.CUR_DYNAMIC++));
 			}
 		}
 		if (!this.node.showCards) {

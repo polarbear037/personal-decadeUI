@@ -66,7 +66,7 @@ function getResourcePath(key) {
 function getResourceUrl(key, file = "") {
 	const directory = getResourcePath(key);
 	const suffix = file ? `/${file.replace(/^\/+/, "")}` : "/";
-	return `${getExtensionPath()}${directory}${suffix}`;
+	return new URL(`${getExtensionPath()}${directory}${suffix}`, new URL("../../../../", import.meta.url)).href;
 }
 
 export { getResourcePath, getResourceUrl, loadResourcePaths };

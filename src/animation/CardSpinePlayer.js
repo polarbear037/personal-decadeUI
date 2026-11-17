@@ -8,6 +8,8 @@ async function loadCardSpineRuntime(doc) {
 		const root = `${lib.assetURL || ""}extension/皮肤切换/`;
 		for (const [file, available] of [
 			["spine.js", () => win.spine], ["spine-lib/spine_4_0_64.js", () => win.spine_4],
+			["spine-lib/spine_3_5_35.js", () => win.spine_3_5_35], ["spine-lib/spine_3_7.js", () => win.spine3_7],
+			["spine-lib/spine_3_8.js", () => win.spine3_8], ["spine-lib/spine_4_1.js", () => win.spine_4_1],
 			["animation.js", () => win.newDuilib], ["settings.js", () => false], ["animations.js", () => win.AnimationManager],
 		]) {
 			if (available()) continue;
@@ -23,6 +25,7 @@ async function loadCardSpineRuntime(doc) {
 	})().catch(error => { runtimeLoads.delete(doc); throw error; }));
 	return runtimeLoads.get(doc);
 }
+export { loadCardSpineRuntime };
 
 // 高版本骨骼仍走卡牌播放池；复用皮切运行库，不使用全屏 Worker 和坐标跟随。
 export function playCardSpineTo(pool, element, animation, position) {
