@@ -152,6 +152,43 @@ const results = {};
         assert.equal(await page.locator('.yjcm-seat-info .xskill').count(),3);
         const caoScroller=page.locator('.yjcm-seat-info .right > div');
         assert.equal(await caoScroller.evaluate(n=>getComputedStyle(n).scrollbarWidth),'none');
+        results.dragScroll = [];
+        const touchSession = await page.context().newCDPSession(page);
+        await touchSession.send('Emulation.setTouchEmulationEnabled', {enabled:true,maxTouchPoints:1});
+        for (const zoom of [1,1.5]) {
+            await page.evaluate(zoom=>{document.body.style.zoom=zoom;document.querySelector('.yjcm-seat-info .right > div').scrollTop=0;},zoom);
+            await page.waitForTimeout(100);
+            let rect=await caoScroller.boundingBox();
+            const x=rect.x+rect.width*.75, y=rect.y+rect.height*.75, delta=Math.min(100,rect.height*.4);
+            const metrics=await caoScroller.evaluate(n=>({scale:Element.prototype.getBoundingClientRect.call(n).height/n.clientHeight,max:n.scrollHeight-n.clientHeight}));
+            await page.mouse.move(x,y);await page.mouse.down();await page.mouse.move(x,y-delta,{steps:12});await page.mouse.up();
+            const mouse=await caoScroller.evaluate(n=>n.scrollTop);
+            assert.ok(Math.abs(mouse-Math.min(metrics.max,delta/metrics.scale))<2,`mouse drag zoom=${zoom}: ${mouse}`);
+            await page.mouse.move(x,y-delta);await page.mouse.down();await page.mouse.move(x,y,{steps:12});await page.mouse.up();
+            assert.ok(await caoScroller.evaluate(n=>n.scrollTop)<2,'mouse reverse drag returns to top');
+            await touchSession.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});
+            for(let step=1;step<=12;step++)await touchSession.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x,y:y-delta*step/12}]});
+            await touchSession.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+            const touch=await caoScroller.evaluate(n=>n.scrollTop);
+            assert.ok(Math.abs(touch-Math.min(metrics.max,delta/metrics.scale))<2,`touch drag zoom=${zoom}: ${touch}`);
+            assert.equal(await page.locator('.yjcm-seat-info').locator('..').evaluate(n=>n.classList.contains('hidden')),false,'drag does not close dialog');
+            results.dragScroll.push({zoom,mouse,touch,metrics});
+        }
+        await page.evaluate(()=>{document.body.style.zoom=1;document.querySelector('.yjcm-seat-info .right > div').scrollTop=0;});
+        await page.waitForTimeout(100);
+        // 保留技能描述内链接的点按，不把点击误判为拖动。
+        await caoScroller.evaluate(n=>{const a=document.createElement('a');a.textContent='测试技能链接';a.href='#';a.id='yjcm-drag-link';a.style.cssText='position:relative;display:block;';a.onclick=e=>{e.preventDefault();window.infoLinkClicks=(window.infoLinkClicks||0)+1;};n.prepend(a);});
+        await page.locator('#yjcm-drag-link').click();
+        assert.equal(await page.evaluate(()=>infoLinkClicks),1);
+        await page.locator('#yjcm-drag-link').evaluate(n=>n.remove());
+        // 关闭中断拖动时释放捕获，重新打开后仍能滚动。
+        const cancelRect=await caoScroller.boundingBox();
+        await page.mouse.move(cancelRect.x+cancelRect.width*.7,cancelRect.y+cancelRect.height*.7);await page.mouse.down();
+        await page.mouse.move(cancelRect.x+cancelRect.width*.7,cancelRect.y+cancelRect.height*.4,{steps:5});
+        await page.evaluate(()=>characterPlugin.playerDialog.hide());await page.mouse.up();
+        assert.equal(await page.evaluate(()=>_status.paused2),false);
+        await page.evaluate(()=>characterPlugin.playerDialog.show(game.me,true));
+        assert.equal(await caoScroller.evaluate(n=>n.hasPointerCapture(1)),false);
         await page.screenshot({path:path.join(__dirname,'yjcm-character-caojinyu.png')});
         await caoScroller.hover();await page.mouse.wheel(0,650);await page.waitForTimeout(150);
         results.caojinyu=await caoScroller.evaluate(n=>({text:n.textContent,scrollTop:n.scrollTop,scrollHeight:n.scrollHeight,clientHeight:n.clientHeight,gutter:n.offsetWidth-n.clientWidth}));

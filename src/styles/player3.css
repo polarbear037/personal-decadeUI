@@ -431,8 +431,8 @@ body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] {
 .player>.camp-wrap>.avatar-name-default {
 	position: absolute !important;
 	left: 26% !important;
-	top: 40% !important;
-	right: 22% !important;
+	top: var(--yjcm-name-top, 40%) !important;
+	right: var(--yjcm-name-right, 22%) !important;
 	bottom: 1% !important;
 	text-align: left !important;
 	white-space: nowrap;
@@ -457,6 +457,7 @@ body[data-style="othersOff"] #arena>.player:not(.minskin)>.name.name2:not(:empty
 body[data-style="othersOff"] .player>.camp-wrap>.avatar-name {
 	left: auto !important;
 	width: max-content;
+	text-align: center !important;
 }
 
 /* 主将名 */
@@ -1993,10 +1994,9 @@ body[data-style="othersOff"] .player>.hp-wrap>.hp>div:not(.shield) {
 
 
 
-#arena.decadeUI[data-border-style="dragon4"] .player>.camp-wrap>.avatar-name,
-#arena.decadeUI[data-border-style="dragon4"] .player>.camp-wrap>.avatar-name-default {
-	top: 35% !important;
-	right: 40.5% !important;
+#arena.decadeUI[data-border-style="dragon4"] .player>.camp-wrap {
+	--yjcm-name-top: 35%;
+	--yjcm-name-right: 40.5%;
 }
 
 

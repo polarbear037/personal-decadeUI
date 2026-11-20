@@ -1061,6 +1061,8 @@ body[data-style="othersOff"] #window .yjcm-seat-info > .right > div {
 	scrollbar-width: none !important;
 	box-sizing: border-box;
 	overscroll-behavior: contain;
+	touch-action: none;
+	user-select: none;
 }
 
 body[data-style="othersOff"] #window .yjcm-seat-info .right::-webkit-scrollbar,

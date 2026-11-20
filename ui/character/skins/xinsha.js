@@ -11,6 +11,55 @@ const AUDIO_PATH = "../extension/十周年UI/ui/assets/lbtn/shousha/";
 
 const NICKNAMES = ["缘之空", "小小恐龙", "自然萌", "海边的ebao", "小云云", "无语", "点点", "猫猫虫", "小爱莉", "冰佬", "鹿鹿", "黎佬", "小曦", "浮牢师", "U佬", "蓝宝", "影宝", "柳下跖", "k9", "扶苏", "皇叔"];
 
+function bindInfoPaneDrag(scroller) {
+	const controller = new AbortController();
+	let drag = null;
+	let suppressClick = false;
+	const cancel = () => {
+		const pointerId = drag?.pointerId;
+		drag = null;
+		if (pointerId != null && scroller.hasPointerCapture(pointerId)) scroller.releasePointerCapture(pointerId);
+	};
+	scroller.addEventListener("pointerdown", event => {
+		if (!event.isPrimary || event.button !== 0) return;
+		cancel();
+		suppressClick = false;
+		if (scroller.scrollHeight <= scroller.clientHeight) return;
+		if (event.target.closest?.("a, button, input, textarea, select, [role=button]")) return;
+		// 原生视口尺寸包含窗口缩放，绕过第三方 HTMLElement 矩形补丁。
+		const rect = Element.prototype.getBoundingClientRect.call(scroller);
+		drag = { pointerId: event.pointerId, y: event.clientY, top: scroller.scrollTop, scale: rect.height / scroller.clientHeight || 1, moved: false };
+		scroller.setPointerCapture(event.pointerId);
+		event.stopPropagation();
+	}, { signal: controller.signal });
+	scroller.addEventListener("pointermove", event => {
+		if (!drag || event.pointerId !== drag.pointerId) return;
+		const distance = event.clientY - drag.y;
+		if (!drag.moved && Math.abs(distance) < 5) return;
+		drag.moved = true;
+		suppressClick = true;
+		scroller.scrollTop = drag.top - distance / drag.scale;
+		event.preventDefault();
+		event.stopPropagation();
+	}, { passive: false, signal: controller.signal });
+	for (const type of ["pointerup", "pointercancel", "lostpointercapture"]) {
+		scroller.addEventListener(type, event => {
+			if (drag?.pointerId === event.pointerId) cancel();
+		}, { signal: controller.signal });
+	}
+	// 不把内容区的拖动交给牌局拖选、窗口手势或外层关闭处理。
+	for (const type of ["mousedown", "touchstart", "touchmove"]) {
+		scroller.addEventListener(type, event => event.stopPropagation(), { passive: true, signal: controller.signal });
+	}
+	scroller.addEventListener("click", event => {
+		if (!suppressClick || event.detail === 0) return;
+		suppressClick = false;
+		event.preventDefault();
+		event.stopImmediatePropagation();
+	}, { capture: true, signal: controller.signal });
+	return { cancel() { cancel(); suppressClick = false; }, destroy() { cancel(); controller.abort(); } };
+}
+
 /**
  * 创建新杀风格角色插件
  */
@@ -90,10 +139,12 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 			const observer = new ResizeObserver(resize);
 			const remove = container.remove.bind(container);
 			container.remove = () => {
+				container._infoPaneDrag?.destroy();
 				observer.disconnect();
 				remove();
 			};
 			container.show = (player, bool) => {
+				container._infoPaneDrag?.cancel();
 				this._showContent(player, rightPane, bool, dialog);
 				container.classList.remove("hidden");
 				resize();
@@ -102,6 +153,7 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 			};
 
 			container.hide = () => {
+				container._infoPaneDrag?.cancel();
 				container.classList.add("hidden");
 				observer.disconnect();
 				game.resume2();
@@ -125,6 +177,7 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 
 			rightPane.innerHTML = "<div></div>";
 			lib.setScroll(rightPane.firstChild);
+			dialog.parentElement._infoPaneDrag = bindInfoPaneDrag(rightPane.firstChild);
 		},
 
 		/**
