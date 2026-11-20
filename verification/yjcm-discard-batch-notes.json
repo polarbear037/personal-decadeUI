@@ -1,0 +1,109 @@
+{
+  "behaviorBasis": "User-requested batch order, not a new claim of official-client behavior.",
+  "scope": "othersOff -> xinsha; only playerThrow and playerGain2 in src/overrides/player/card-movement-xinsha.js",
+  "discard": {
+    "before": [
+      5,
+      4,
+      3,
+      1,
+      2
+    ],
+    "after": [
+      3,
+      4,
+      5,
+      1,
+      2
+    ],
+    "laterBatch": [
+      6,
+      7,
+      3,
+      4,
+      5,
+      1,
+      2
+    ],
+    "laterSingleCards": [
+      9,
+      8,
+      6,
+      7,
+      3,
+      4,
+      5,
+      1,
+      2
+    ],
+    "implementation": "Iterate this throw batch backwards when registering clones through the existing per-card unshift; retain original broadcast/video data and return value. Existing batched layout starts all flights together."
+  },
+  "gain": {
+    "displayOrder": [
+      6,
+      7,
+      8
+    ],
+    "ruleInputUnchanged": [
+      8,
+      6,
+      7
+    ],
+    "beforeDestination": [
+      8,
+      6,
+      7
+    ],
+    "afterDestination": [
+      6,
+      7,
+      8
+    ],
+    "implementation": "Read displayed source clones current computed transform before copying. Sort only local flight clones by their source x before assigning player destinations; keep broadcasts, video records and actual ownership list unchanged."
+  },
+  "validation": {
+    "command": "node verification/yjcm-discard-batch-browser.cjs",
+    "baselineCommand": "node verification/yjcm-discard-batch-browser.cjs --baseline",
+    "passed": true,
+    "cases": [
+      {
+        "style": "othersOff",
+        "discardCases": 4,
+        "gainCases": 8,
+        "pageErrors": []
+      },
+      {
+        "style": "onlineUI",
+        "discardCases": 4,
+        "gainCases": 4,
+        "pageErrors": []
+      },
+      {
+        "style": "on",
+        "discardCases": 4,
+        "gainCases": 4,
+        "pageErrors": []
+      }
+    ],
+    "covers": [
+      "self and other seats",
+      "CSS zoom 1 and 1.5",
+      "multiple batches and consecutive single cards",
+      "screen coordinates sampled throughout flight; no crossings",
+      "gain2 with shuffled rule input",
+      "production createContentGain step; entity ownership verified",
+      "Online and default decade style discard order unchanged and gain routes functioning"
+    ],
+    "checks": [
+      "node --check src/overrides/player/card-movement-xinsha.js",
+      "node --check verification/yjcm-discard-batch-browser.cjs",
+      "git diff --check"
+    ],
+    "notVerified": [
+      "Full current Electron match",
+      "Cordova hardware",
+      "Real network session"
+    ]
+  },
+  "workingCopyPreservation": "Exact inverse of this task patch matches the pre-task working copy; commit stages only the same two-function patch against HEAD, leaving existing edits unstaged."
+}
