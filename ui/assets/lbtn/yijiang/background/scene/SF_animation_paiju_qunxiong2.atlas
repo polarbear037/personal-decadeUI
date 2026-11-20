@@ -1,0 +1,69 @@
+
+SF_animation_paiju_qunxiong2.png
+size: 766,766
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+beijlantian
+  rotate: false
+  xy: 463, 423
+  size: 16, 214
+  orig: 16, 214
+  offset: 0, 0
+  index: -1
+yun001
+  rotate: false
+  xy: 2, 418
+  size: 459, 219
+  orig: 459, 219
+  offset: 0, 0
+  index: -1
+yun002
+  rotate: false
+  xy: 2, 301
+  size: 470, 115
+  orig: 470, 115
+  offset: 0, 0
+  index: -1
+yun003
+  rotate: false
+  xy: 2, 639
+  size: 762, 125
+  orig: 762, 125
+  offset: 0, 0
+  index: -1
+yun005
+  rotate: false
+  xy: 2, 263
+  size: 220, 36
+  orig: 220, 36
+  offset: 0, 0
+  index: -1
+yun006
+  rotate: false
+  xy: 481, 612
+  size: 104, 25
+  orig: 104, 25
+  offset: 0, 0
+  index: -1
+yun007
+  rotate: false
+  xy: 2, 152
+  size: 76, 30
+  orig: 77, 31
+  offset: 0, 1
+  index: -1
+yun008
+  rotate: false
+  xy: 224, 276
+  size: 126, 23
+  orig: 126, 23
+  offset: 0, 0
+  index: -1
+yun009
+  rotate: false
+  xy: 2, 184
+  size: 112, 77
+  orig: 113, 78
+  offset: 0, 0
+  index: -1

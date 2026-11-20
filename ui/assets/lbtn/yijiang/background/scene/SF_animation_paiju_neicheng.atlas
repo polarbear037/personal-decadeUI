@@ -1,0 +1,496 @@
+
+SF_animation_paiju_neicheng.png
+size: 777,777
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SF_animation_paiju_neichegn_glow_001
+  rotate: true
+  xy: 730, 583
+  size: 192, 45
+  orig: 228, 64
+  offset: 24, 11
+  index: -1
+SF_animation_paiju_neichegn_lizi_001
+  rotate: false
+  xy: 500, 635
+  size: 227, 63
+  orig: 256, 100
+  offset: 19, 8
+  index: -1
+SF_animation_paiju_neichegn_lizi_002
+  rotate: false
+  xy: 258, 587
+  size: 227, 65
+  orig: 256, 100
+  offset: 20, 9
+  index: -1
+SF_animation_paiju_neichegn_lizi_003
+  rotate: false
+  xy: 227, 361
+  size: 225, 66
+  orig: 256, 100
+  offset: 21, 11
+  index: -1
+SF_animation_paiju_neichegn_lizi_004
+  rotate: false
+  xy: 227, 508
+  size: 223, 77
+  orig: 256, 100
+  offset: 22, 2
+  index: -1
+SF_animation_paiju_neichegn_lizi_005
+  rotate: false
+  xy: 227, 429
+  size: 222, 77
+  orig: 256, 100
+  offset: 23, 4
+  index: -1
+SF_animation_paiju_neichegn_lizi_006
+  rotate: false
+  xy: 487, 557
+  size: 220, 76
+  orig: 256, 100
+  offset: 24, 7
+  index: -1
+SF_animation_paiju_neichegn_lizi_007
+  rotate: true
+  xy: 116, 142
+  size: 217, 73
+  orig: 256, 100
+  offset: 25, 11
+  index: -1
+SF_animation_paiju_neichegn_lizi_008
+  rotate: false
+  xy: 454, 330
+  size: 209, 72
+  orig: 256, 100
+  offset: 25, 15
+  index: -1
+SF_animation_paiju_neichegn_lizi_009
+  rotate: false
+  xy: 454, 404
+  size: 209, 80
+  orig: 256, 100
+  offset: 27, 9
+  index: -1
+SF_animation_paiju_neichegn_lizi_010
+  rotate: false
+  xy: 191, 184
+  size: 210, 87
+  orig: 256, 100
+  offset: 27, 5
+  index: -1
+SF_animation_paiju_neichegn_lizi_011
+  rotate: false
+  xy: 191, 273
+  size: 212, 86
+  orig: 256, 100
+  offset: 28, 10
+  index: -1
+SF_animation_paiju_neichegn_lizi_012
+  rotate: false
+  xy: 191, 99
+  size: 211, 83
+  orig: 256, 100
+  offset: 30, 13
+  index: -1
+SF_animation_paiju_neichegn_lizi_013
+  rotate: false
+  xy: 452, 486
+  size: 212, 69
+  orig: 256, 100
+  offset: 31, 15
+  index: -1
+SF_animation_paiju_neichegn_lizi_014
+  rotate: true
+  xy: 149, 389
+  size: 227, 76
+  orig: 256, 100
+  offset: 17, 10
+  index: -1
+SF_animation_paiju_neichegn_lizi_015
+  rotate: false
+  xy: 500, 700
+  size: 228, 75
+  orig: 256, 100
+  offset: 18, 13
+  index: -1
+SF_animation_paiju_neichegn_qizi01_001
+  rotate: true
+  xy: 662, 265
+  size: 33, 55
+  orig: 40, 64
+  offset: 3, 3
+  index: -1
+SF_animation_paiju_neichegn_qizi01_002
+  rotate: false
+  xy: 659, 208
+  size: 34, 55
+  orig: 40, 64
+  offset: 2, 3
+  index: -1
+SF_animation_paiju_neichegn_qizi01_003
+  rotate: false
+  xy: 659, 151
+  size: 34, 55
+  orig: 40, 64
+  offset: 2, 3
+  index: -1
+SF_animation_paiju_neichegn_qizi01_004
+  rotate: true
+  xy: 2, 10
+  size: 35, 55
+  orig: 40, 64
+  offset: 2, 3
+  index: -1
+SF_animation_paiju_neichegn_qizi01_005
+  rotate: false
+  xy: 632, 22
+  size: 34, 55
+  orig: 40, 64
+  offset: 3, 3
+  index: -1
+SF_animation_paiju_neichegn_qizi01_006
+  rotate: true
+  xy: 59, 10
+  size: 35, 55
+  orig: 40, 64
+  offset: 3, 3
+  index: -1
+SF_animation_paiju_neichegn_qizi01_007
+  rotate: false
+  xy: 695, 152
+  size: 35, 54
+  orig: 40, 64
+  offset: 4, 4
+  index: -1
+SF_animation_paiju_neichegn_qizi01_008
+  rotate: false
+  xy: 695, 96
+  size: 35, 54
+  orig: 40, 64
+  offset: 4, 4
+  index: -1
+SF_animation_paiju_neichegn_qizi01_009
+  rotate: false
+  xy: 668, 38
+  size: 35, 54
+  orig: 40, 64
+  offset: 4, 4
+  index: -1
+SF_animation_paiju_neichegn_qizi01_010
+  rotate: false
+  xy: 705, 40
+  size: 35, 54
+  orig: 40, 64
+  offset: 4, 4
+  index: -1
+SF_animation_paiju_neichegn_qizi01_011
+  rotate: false
+  xy: 727, 441
+  size: 35, 54
+  orig: 40, 64
+  offset: 4, 4
+  index: -1
+SF_animation_paiju_neichegn_qizi01_012
+  rotate: true
+  xy: 668, 2
+  size: 34, 54
+  orig: 40, 64
+  offset: 4, 4
+  index: -1
+SF_animation_paiju_neichegn_qizi01_013
+  rotate: false
+  xy: 727, 385
+  size: 34, 54
+  orig: 40, 64
+  offset: 4, 4
+  index: -1
+SF_animation_paiju_neichegn_qizi01_014
+  rotate: false
+  xy: 660, 94
+  size: 33, 55
+  orig: 40, 64
+  offset: 4, 3
+  index: -1
+SF_animation_paiju_neichegn_qizi01_015
+  rotate: false
+  xy: 695, 208
+  size: 33, 55
+  orig: 40, 64
+  offset: 3, 3
+  index: -1
+SF_animation_paiju_neichegn_qizi02_001
+  rotate: true
+  xy: 452, 558
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_qizi02_002
+  rotate: true
+  xy: 405, 332
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_qizi02_003
+  rotate: false
+  xy: 719, 266
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_qizi02_004
+  rotate: false
+  xy: 730, 232
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_qizi02_005
+  rotate: false
+  xy: 724, 6
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_qizi02_006
+  rotate: false
+  xy: 748, 351
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_qizi02_007
+  rotate: false
+  xy: 748, 317
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_qizi02_008
+  rotate: false
+  xy: 748, 283
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_qizi02_009
+  rotate: false
+  xy: 747, 549
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_qizi02_010
+  rotate: false
+  xy: 747, 515
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_qizi02_011
+  rotate: false
+  xy: 732, 198
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_qizi02_012
+  rotate: false
+  xy: 732, 164
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_qizi02_013
+  rotate: false
+  xy: 732, 130
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_qizi02_014
+  rotate: false
+  xy: 732, 96
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_qizi02_015
+  rotate: false
+  xy: 742, 62
+  size: 27, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_shuiliu01_001
+  rotate: false
+  xy: 130, 61
+  size: 58, 79
+  orig: 100, 100
+  offset: 21, 16
+  index: -1
+SF_animation_paiju_neichegn_shuiliu01_002
+  rotate: true
+  xy: 130, 2
+  size: 57, 79
+  orig: 100, 100
+  offset: 21, 16
+  index: -1
+SF_animation_paiju_neichegn_shuiliu01_003
+  rotate: false
+  xy: 271, 18
+  size: 57, 79
+  orig: 100, 100
+  offset: 21, 16
+  index: -1
+SF_animation_paiju_neichegn_shuiliu01_004
+  rotate: false
+  xy: 330, 18
+  size: 57, 79
+  orig: 100, 100
+  offset: 21, 16
+  index: -1
+SF_animation_paiju_neichegn_shuiliu01_005
+  rotate: true
+  xy: 470, 21
+  size: 56, 79
+  orig: 100, 100
+  offset: 22, 16
+  index: -1
+SF_animation_paiju_neichegn_shuiliu01_006
+  rotate: true
+  xy: 665, 300
+  size: 56, 78
+  orig: 100, 100
+  offset: 23, 16
+  index: -1
+SF_animation_paiju_neichegn_shuiliu01_007
+  rotate: true
+  xy: 551, 21
+  size: 56, 79
+  orig: 100, 100
+  offset: 23, 16
+  index: -1
+SF_animation_paiju_neichegn_shuiliu01_008
+  rotate: true
+  xy: 389, 20
+  size: 57, 79
+  orig: 100, 100
+  offset: 22, 16
+  index: -1
+SF_animation_paiju_neichegn_shuiliu01_009
+  rotate: true
+  xy: 666, 497
+  size: 58, 79
+  orig: 100, 100
+  offset: 21, 16
+  index: -1
+SF_animation_paiju_neichegn_shuiliu01_010
+  rotate: false
+  xy: 211, 18
+  size: 58, 79
+  orig: 100, 100
+  offset: 21, 16
+  index: -1
+SF_animation_paiju_neichegn_shuiliu02_001
+  rotate: true
+  xy: 404, 79
+  size: 60, 126
+  orig: 64, 128
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_shuiliu02_002
+  rotate: true
+  xy: 532, 79
+  size: 60, 126
+  orig: 64, 128
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_shuiliu02_003
+  rotate: false
+  xy: 665, 358
+  size: 60, 126
+  orig: 64, 128
+  offset: 1, 0
+  index: -1
+SF_animation_paiju_neichegn_shuiliu02_004
+  rotate: true
+  xy: 405, 267
+  size: 61, 127
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+SF_animation_paiju_neichegn_shuiliu02_005
+  rotate: true
+  xy: 534, 267
+  size: 61, 126
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+SF_animation_paiju_neichegn_shuiliu02_006
+  rotate: true
+  xy: 403, 204
+  size: 61, 126
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+SF_animation_paiju_neichegn_shuiliu02_007
+  rotate: true
+  xy: 532, 141
+  size: 61, 125
+  orig: 64, 128
+  offset: 0, 1
+  index: -1
+SF_animation_paiju_neichegn_shuiliu02_008
+  rotate: true
+  xy: 2, 47
+  size: 62, 126
+  orig: 64, 128
+  offset: 0, 1
+  index: -1
+SF_animation_paiju_neichegn_shuiliu02_009
+  rotate: true
+  xy: 531, 204
+  size: 61, 126
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+SF_animation_paiju_neichegn_shuiliu02_010
+  rotate: true
+  xy: 404, 141
+  size: 61, 126
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+SF_animation_paiju_neichegn_yun_001
+  rotate: false
+  xy: 258, 654
+  size: 240, 121
+  orig: 256, 129
+  offset: 16, 7
+  index: -1
+SF_animation_paiju_neichegn_yun_002
+  rotate: true
+  xy: 2, 361
+  size: 255, 145
+  orig: 256, 145
+  offset: 0, 0
+  index: -1
+SF_animation_paiju_neichegn_yun_003
+  rotate: true
+  xy: 2, 111
+  size: 248, 112
+  orig: 256, 112
+  offset: 8, 0
+  index: -1
+SF_animation_paiju_neichegn_yun_004
+  rotate: false
+  xy: 2, 618
+  size: 254, 157
+  orig: 256, 157
+  offset: 0, 0
+  index: -1

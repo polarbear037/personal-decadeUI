@@ -1,0 +1,253 @@
+/* 一将成名原版 skill_window_bg_2；与 dialog_ol 共用窗口边界及内容测量。 */
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout:not(.dclieqiong):not(.online-faction-dialog):not(.bosscharacter) {
+	position: absolute !important;
+	z-index: 101 !important;
+	top: auto !important;
+	right: auto !important;
+	bottom: var(--dialog-ol-anchor-bottom) !important;
+	left: var(--dialog-ol-center-x, 50%) !important;
+	width: var(--dialog-ol-width, 100%) !important;
+	height: calc(var(--dialog-ol-content-height, 200px) + var(--dialog-ol-frame-padding) + var(--dialog-ol-footer-space, 0px)) !important;
+	max-height: max(0px, calc(100% - var(--dialog-ol-anchor-bottom) - var(--dialog-ol-top-limit, 0px))) !important;
+	min-height: 0 !important;
+	transform: translateX(-50%) !important;
+	transform-origin: 0 50%;
+	box-sizing: border-box;
+	isolation: isolate;
+	overflow: visible;
+	background: none !important;
+	border: 0;
+	box-shadow: none !important;
+	white-space: normal;
+	animation-name: open-dialog-xinsha !important;
+	transition-property: opacity !important;
+	--dialog-ol-anchor-bottom: calc(20% + 85px);
+	--dialog-ol-edge-bottom: 24px;
+	--dialog-ol-frame-padding: var(--dialog-ol-edge-bottom);
+	--dialog-xinsha-title-width: clamp(177px, calc(var(--dialog-ol-width, 100vw) * 295 / 1696), 295px);
+	--dialog-xinsha-title-height: calc(var(--dialog-xinsha-title-width) * 37 / 295);
+}
+
+#arena.decadeUI.dui-mobile[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout {
+	--dialog-ol-anchor-bottom: calc(23% + 86px);
+}
+
+#arena.decadeUI.choose-character[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout {
+	--dialog-ol-anchor-bottom: 70px;
+}
+
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout:not(.dclieqiong):not(.online-faction-dialog):not(.bosscharacter)::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	pointer-events: none;
+	border: 1px solid transparent;
+	border-image-source: url("../../image/ui/dialog/dialog_xinsha.png");
+	border-image-slice: 24 0 fill;
+	border-image-width: 16px 0;
+	border-image-repeat: stretch;
+}
+
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content-container {
+	position: absolute;
+	inset: 0 0 calc(var(--dialog-ol-frame-padding) + var(--dialog-ol-footer-space, 0px));
+	width: auto;
+	height: auto;
+	z-index: 1;
+	overflow: auto;
+	box-sizing: border-box;
+	margin-top: 0;
+	transition-property: opacity !important;
+}
+
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content-container > .content,
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content {
+	position: relative;
+	/* 卡牌动画临时解除 overflow 裁切时仍保持格式化上下文，避免标题 margin 折叠后再跳回。 */
+	display: flow-root;
+	width: 100%;
+	min-height: 0;
+	box-sizing: border-box;
+	color: #f3debb;
+	transition-property: opacity !important;
+}
+
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout .caption {
+	color: #ffecbb;
+}
+
+/* 首个 caption 是标题，原生移牌的行名及操作说明也使用 caption，不能一起套标题栏。 */
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content-container > .content > .caption,
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content > .caption {
+	position: relative !important;
+	top: auto !important;
+	left: auto !important;
+	right: auto !important;
+	bottom: auto !important;
+	width: 100% !important;
+	box-sizing: border-box;
+	text-align: center;
+	/* 布局测量会更新标题宽度和行高，不能继承本体 div 的 all .5s 过渡。 */
+	transition-property: opacity !important;
+}
+
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content-container > .content > .caption:first-child:not(.choosetomove),
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content > .caption:first-child:not(.choosetomove) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--dialog-xinsha-title-width) !important;
+	min-height: var(--dialog-xinsha-title-height);
+	height: auto !important;
+	margin: 2px auto 14px !important;
+	padding: 0 22px !important;
+	font-size: 20px;
+	line-height: var(--dialog-xinsha-title-height);
+	background: url("../../image/ui/dialog/dialog_xinsha_title.png") center / 100% 100% no-repeat !important;
+}
+
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout .caption > .text,
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout .caption > .lei-ol-move-caption-text {
+	position: relative !important;
+	top: auto !important;
+	left: auto !important;
+	width: auto;
+	text-align: center !important;
+	color: inherit;
+}
+
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout.dialog-ol-skill-prompt {
+	--dialog-ol-footer-space: calc(var(--dialog-ol-footer-height, 26px) + 12px);
+}
+
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .dialog-ol-footer {
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	bottom: var(--dialog-ol-frame-padding);
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+	font-size: 18px;
+	line-height: 1.4;
+	color: #f3debb;
+	text-align: center;
+	white-space: normal;
+	overflow-wrap: anywhere;
+	pointer-events: none;
+}
+
+#arena.decadeUI[data-loading-style="dialog_xinsha"] .dialog-ol-footer > .dialog-xinsha-description,
+body[data-style="othersOff"] .dialog-xinsha-prompt-overlay > .dialog-xinsha-description {
+	position: relative;
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 0;
+	font: inherit;
+	color: inherit;
+	transition-property: opacity;
+}
+
+
+/* 自由选将仅换背景，noupdate 的搜索、筛选、列表和分页不套通用标题/内容布局。 */
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-xinsha-character-frame {
+	z-index: 101 !important;
+	isolation: isolate;
+	overflow: visible !important;
+	background: none !important;
+	box-shadow: none !important;
+	border-radius: 0;
+}
+
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-xinsha-character-frame::before {
+	content: "";
+	position: absolute;
+	left: var(--dialog-xinsha-frame-left, 0px);
+	top: 0;
+	width: var(--dialog-xinsha-frame-width, 100%);
+	height: 100%;
+	box-sizing: border-box;
+	z-index: 0;
+	pointer-events: none;
+	border: 1px solid transparent;
+	border-image-source: url("../../image/ui/dialog/dialog_xinsha.png");
+	border-image-slice: 24 0 fill;
+	border-image-width: 16px 0;
+	border-image-repeat: stretch;
+}
+
+#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-xinsha-character-frame > .content-container {
+	z-index: 1;
+}
+
+:is(#window, #arena) > .dialog-ol-collapse.dialog-xinsha-hide,
+:is(#window, #arena) > .dialog-ol-restore.dialog-xinsha-restore {
+	position: absolute;
+	z-index: 130;
+	right: auto;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	transform: none;
+	font-size: 0;
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	cursor: pointer;
+	pointer-events: auto !important;
+}
+
+:is(#window, #arena) > .dialog-ol-collapse.dialog-xinsha-hide {
+	background-image: url("../../image/ui/dialog/game_ui_btn_hide.png");
+}
+
+:is(#window, #arena) > .dialog-ol-restore.dialog-xinsha-restore {
+	background-image: url("../../image/ui/dialog/game_ui_btn_show.png");
+}
+
+.dialog-xinsha-hide[hidden],
+.dialog-xinsha-restore[hidden] {
+	display: none !important;
+}
+
+/* 本体菜单原为8/10；场景弹窗101和隐藏控件130不能盖住设置、快捷菜单及下拉项。 */
+#window:has(> #arena.decadeUI[data-loading-style="dialog_xinsha"]) > #system {
+	z-index: 132;
+}
+
+#window:has(> #arena.decadeUI[data-loading-style="dialog_xinsha"]) > :is(.caidanbutton, .yjcm-menu) {
+	z-index: 133;
+}
+
+body[data-style="othersOff"] #window > .menu-container,
+#window:has(> #arena.decadeUI[data-loading-style="dialog_xinsha"]) > .menu-container {
+	z-index: 140;
+	transition-property: opacity;
+}
+
+body[data-style="othersOff"] #window > .popup-container,
+#window:has(> #arena.decadeUI[data-loading-style="dialog_xinsha"]) > .popup-container {
+	z-index: 141;
+	transition-property: opacity;
+}
+
+body[data-style="othersOff"] #window > .poplayer,
+#window:has(> #arena.decadeUI[data-loading-style="dialog_xinsha"]) > .poplayer {
+	/* 本体 iframe 弹层以内联 z-index:100 创建。 */
+	z-index: 142 !important;
+}
+
+/* 顺拆/移牌保留原留白，普通框按提示实高为进度条与正文预留空间。 */
+body[data-style="othersOff"] #arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-prompt-layout {
+	--dialog-ol-footer-space: var(--dialog-xinsha-prompt-space, calc(150 * var(--dialog-xinsha-prompt-unit, 1px)));
+	transition-property: opacity !important;
+}
+
+body[data-style="othersOff"] #arena.decadeUI > .dialog.dialog-xinsha-prompt-layout > .content-container {
+	transition-property: opacity !important;
+}

@@ -23,7 +23,7 @@ const e = [
 	{ name: "effect_shoujidonghua" },
 	//回血扣血
 	{ name: "kouxuedonghua" },
-	{ name: "FX_MatchGame_diaoxie", fileType: "json" },
+	// FX_MatchGame_diaoxie 为新版骨骼，由出框 Worker 按版本加载。
 
 	{ name: "skeleton" },
 	{ name: "skeletonxHp" },
@@ -33,10 +33,8 @@ const e = [
 	{ name: "effect_zhangbashemao" },
 	{ name: "effect_zhiliao" },
 	{ name: "effect_loseHp" },
-	{ name: "globaltexiao/huifushuzi/shuzi2" },
 	{ name: "globaltexiao/xunishuzi/SS_PaiJu_xunishanghai" },
 	{ name: "globaltexiao/shanghaishuzi/shuzi" },
-	{ name: "globaltexiao/shanghaishuzi/SZN_shuzi" },
 	{ name: "effect_zhugeliannu" },
 	{ name: "effect_zhuqueyushan" },
 	{ name: "effect_jinhe" },

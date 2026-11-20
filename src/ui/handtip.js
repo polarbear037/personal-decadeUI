@@ -35,7 +35,11 @@ function t(t, n) {
 						return ((span.textContent = text), (span.dataset.type = type), this.appendChild(span));
 					}),
 					(tip.strokeText = function () {
-						this.dataset.text = this.innerText;
+						// 一将优化提示直接给各行描边，不使用伪元素；innerText 会在每次选牌时强制排版。
+						const text = this.dataset.optimizedPromptStyle === "xinsha"
+							? Array.from(this.children, line => line.textContent).join("\n")
+							: this.innerText;
+						if (this.dataset.text !== text) this.dataset.text = text;
 					}),
 					(tip.show = function () {
 						// 连续战斗清场会移除 DOM，缓存提示再次显示时须挂回当前场景。

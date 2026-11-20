@@ -10,7 +10,7 @@ function isHandCardAvailable(card, event) {
 	const targets = canReplace ? ui.selected.targets.splice(0) : [];
 	try {
 		// 单选换牌与点击共用取消旧牌后的条件，避免选中牌和旧目标影响判断。
-		return lib.filter.cardRespondable(card, player) && event.filterCard(card, player);
+		return !!(lib.filter.cardRespondable(card, player) && event.filterCard(card, player));
 	} finally {
 		if (canReplace) {
 			ui.selected.cards.push(...selected);

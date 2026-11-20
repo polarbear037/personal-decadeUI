@@ -2,6 +2,7 @@ import { game, lib, _status, ui, get } from "noname";
 import { initGTBB as initGTBB } from "./gtbb.js";
 import { initPhaseTipsSkills as initPhaseTipsSkills } from "./phase-tips.js";
 import { initOnlinePlayerTips } from "./online-player-tips.js";
+import { initXinshaPlayerTips, refreshXinshaPlayerTips } from "./xinsha-player-tips.js";
 
 const a = "jindutiaopl";
 const i = [0, 0, 100, 100];
@@ -69,6 +70,7 @@ function m() {
 
 		const e = document.createElement("div");
 		e.id = barId;
+		e.dataset.yjcmProgress = String(lib.config.extension_十周年UI_jindutiaoYangshi);
 		const dispose = () => {
 			if (disposed) return;
 			disposed = true;
@@ -162,19 +164,28 @@ function m() {
 				},
 				4: {
 					container: {
-						width: "450px",
+						width: "var(--yjcm-progress-width, 582px)",
 						height: "13px",
 						display: "block",
 						margin: "0 0 !important",
 						position: "fixed",
-						left: "calc(50% - 220px)",
+						left: "50%",
+						transform: "translateX(-50%)",
+						transitionProperty: "opacity",
 						bottom: bottom,
 						backgroundColor: "#4B3621",
 						borderRadius: "6px",
 					},
 					progressBar: {
 						data: 449,
-						style: "z-index:1;width:449px;height:12px;margin:0;background-color:rgb(230,151,91);position:absolute;top:1px;border-radius:6px;",
+						proportionalWidth: true,
+						style: "z-index:1;width:100%;height:12px;margin:0;position:absolute;top:1px;overflow:hidden;transition:none;",
+						image: "extension/十周年UI/image/ui/progress/xinsha/xf_newTimeBar_2.png",
+						warningImage: "extension/十周年UI/image/ui/progress/xinsha/xf_newTimeBar_red_2.png",
+					},
+					moonBar: {
+						image: "extension/十周年UI/image/ui/progress/xinsha/newTimeBar.png",
+						backgroundImage: "extension/十周年UI/image/ui/progress/xinsha/newTimeBarBg.png",
 					},
 					clearSpecial: true,
 				},
@@ -217,6 +228,20 @@ function m() {
 		Object.assign(e.style, t.container);
 		const i = c(t.progressBar.data, t.progressBar.style);
 		e.appendChild(i);
+		// 原版 UILoadingBar 裁切整张渐变图，倒计时不能把剩余部分重新拉伸。
+		const progressImage = t.progressBar.image ? d(t.progressBar.image, "position:absolute;left:0;top:0;width:var(--yjcm-progress-width, 582px);height:100%;pointer-events:none;") : null;
+		if (progressImage) {
+			// 普通条和技能窗口条共用纹理节点，明度也由同一处调整，原图保留。
+			if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff") progressImage.style.filter = "brightness(1.1)";
+			i.appendChild(progressImage);
+		}
+		let warning = false;
+		// 官方 moonTimeBar 使用独立贴图；提前加载，普通倒计时耗尽时直接接续。
+		const moonImage = t.moonBar ? d(t.moonBar.image, "position:absolute;left:0;top:0;width:var(--yjcm-progress-width, 582px);height:100%;pointer-events:none;") : null;
+		const moonBackground = t.moonBar ? d(t.moonBar.backgroundImage, "position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:0;display:none;") : null;
+		if (moonBackground) e.appendChild(moonBackground);
+		let moonTicks = 0;
+		let moonStopped = false;
 
 		/*新增火焰头样式与dom*/
 		if (!document.getElementById("flame-style")) {
@@ -249,10 +274,37 @@ function m() {
 		const p = parseFloat(lib.config.extension_十周年UI_jindutiaoST);
 
 		const updateProgress = () => {
-			if (disposed) return;
-			i.style.width = `${i.data}px`;
-			i.style.backgroundColor = i.data <= s ? "rgba(230,56,65,0.88)" : "rgb(230,151,91)";
+			if (disposed || moonStopped) return;
+			if (e.dataset.yjcmMoonProgress === "true") {
+				// 同一倒计时间隔，每次只消耗原来的1/5，最后精确停在剩余5%。
+				i.data = Math.max(t.progressBar.data * 0.05, t.progressBar.data - ++moonTicks / 5);
+				i.style.width = `${i.data / t.progressBar.data * 100}%`;
+				if (i.data <= t.progressBar.data * 0.05) {
+					moonStopped = true;
+					if (isolated) {
+						clearInterval(isolatedTimer);
+						isolatedTimer = null;
+					} else n("timer");
+				}
+				return;
+			}
+			// 一将条的视觉宽度随原版画幅缩放，倒计时仍沿用449步，避免加宽后延长时长。
+			i.style.width = t.progressBar.proportionalWidth ? `${i.data / t.progressBar.data * 100}%` : `${i.data}px`;
+			if (progressImage) {
+				if (!warning && i.data <= s) {
+					warning = true;
+					progressImage.src = `${lib.assetURL}${t.progressBar.warningImage}`;
+				}
+			} else i.style.backgroundColor = i.data <= s ? "rgba(230,56,65,0.88)" : "rgb(230,151,91)";
 			if (0 === --i.data) {
+				if (moonImage) {
+					e.dataset.yjcmMoonProgress = "true";
+					i.data = t.progressBar.data;
+					i.style.width = "100%";
+					progressImage.replaceWith(moonImage);
+					moonBackground.style.display = "";
+					return;
+				}
 				if (isolated) {
 					isolatedTimer && clearInterval(isolatedTimer);
 					isolatedTimer = null;
@@ -402,10 +454,15 @@ const u = e => {
 		})(_status.currentPhase === player);
 
 		player.appendChild(e);
+		if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff") refreshXinshaPlayerTips();
 		const timerKey = `timerai_${player.playerid}`;
 		window[timerKey] = setInterval(() => {
 			t.style.width = --t.data + "px";
-			0 === t.data && (n(timerKey), e.remove());
+			if (t.data === 0) {
+				n(timerKey);
+				e.remove();
+				if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff") refreshXinshaPlayerTips();
+			}
 		}, 150);
 	};
 
@@ -418,6 +475,7 @@ const u = e => {
 				p(player, "timePhase");
 			});
 			s = [];
+			if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff") refreshXinshaPlayerTips();
 		}
 	};
 
@@ -484,6 +542,7 @@ function g(a) {
 
 	initPhaseTipsSkills();
 	initOnlinePlayerTips();
+	initXinshaPlayerTips();
 
 	if ("connect" !== get.mode()) {
 		u();
@@ -492,7 +551,7 @@ function g(a) {
 			let t = null;
 			const a = () => {
 				if (!_status.gameStarted || !game.players) return;
-				if (lib.config.extension_十周年UI_newDecadeStyle === "onlineUI") {
+				if (["onlineUI", "othersOff"].includes(lib.config.extension_十周年UI_newDecadeStyle)) {
 					e && (p(e, "playertip"), (e = null));
 					t && (p(t, "playertipQP"), (t = null));
 					return;

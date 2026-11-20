@@ -1,32 +1,65 @@
 import { lib, ui, game } from "noname";
-const e = ["handcards1", "handcards2"],
-	a = () => e.map(name => game.me?.node?.[name]).filter(Boolean),
-	r = () => {
-		const e = !1 !== lib.config.extension_十周年UI_cardAlternateName;
-		const n = a();
-		const t = n.reduce((e, a) => e + a.childElementCount, 0);
-		const d = e && t >= 15 ? "on" : "off";
-		n.forEach(zone => {
-			zone.dataset.cardAlternateNameVisible = d;
+import { updateXinshaCardName, clearXinshaCardName } from "./cardAlternateName-xinsha.js";
+
+const handKeys = ["handcards1", "handcards2"];
+let observedZones = [], observers = [];
+const taggedCards = new Set();
+
+function updateVisibility() {
+	const zones = handKeys.map(key => game.me?.node?.[key]).filter(Boolean);
+	if (zones.length !== observedZones.length || zones.some((zone, index) => zone !== observedZones[index])) {
+		observers.forEach(observer => observer.disconnect());
+		for (const zone of observedZones) {
+			delete zone.dataset.cardAlternateNameVisible;
+			delete zone.dataset.cardAlternateNameStyle;
+		}
+		observedZones = zones;
+		observers = zones.map(zone => {
+			const observer = new MutationObserver(updateVisibility);
+			observer.observe(zone, { childList: true });
+			return observer;
 		});
-	};
-function n() {
-	window._cardAlternateNameVisibleTimer && (clearInterval(window._cardAlternateNameVisibleTimer), (window._cardAlternateNameVisibleTimer = null));
-	const e = () => {
-		(() => {
-			const zones = a();
-			return (
-				!!zones.length &&
-				(ui.window._cardAlternateNameVisibleObservers?.forEach(ob => ob.disconnect()),
-				(ui.window._cardAlternateNameVisibleObservers = zones.map(e => {
-					const a = new MutationObserver(r);
-					return (a.observe(e, { childList: !0 }), a);
-				})),
-				r(),
-				!0)
-			);
-		})() && (clearInterval(window._cardAlternateNameVisibleTimer), (window._cardAlternateNameVisibleTimer = null));
-	};
-	((window._cardAlternateNameVisibleTimer = setInterval(e, 500)), e(), window.decadeUI && (window.decadeUI.cardAlternateName || (window.decadeUI.cardAlternateName = {}), (window.decadeUI.cardAlternateName.updateVisibility = r)));
+	}
+	const enabled = lib.config.extension_十周年UI_cardAlternateName !== false,
+		style = window.decadeUI?.config?.newDecadeStyle ?? lib.config.extension_十周年UI_newDecadeStyle,
+		xinsha = style === "othersOff",
+		cardsByZone = zones.map(zone => [...zone.children].filter(card => card.classList.contains("card") && !card.classList.contains("removing"))),
+		count = zones.reduce((sum, zone) => sum + zone.childElementCount, 0),
+		activeTags = new Set();
+	zones.forEach((zone, index) => {
+		// 原版 SelfCardsArea 按当前页 >=15 张；其他风格沿用原有总数门槛与样式。
+		const visible = enabled && (xinsha ? cardsByZone[index].length : count) >= 15 ? "on" : "off";
+		if (zone.dataset.cardAlternateNameVisible !== visible) zone.dataset.cardAlternateNameVisible = visible;
+		if (xinsha && enabled) {
+			if (zone.dataset.cardAlternateNameStyle !== "xinsha") zone.dataset.cardAlternateNameStyle = "xinsha";
+			if (visible === "on") for (const card of cardsByZone[index]) {
+				updateXinshaCardName(card);
+				activeTags.add(card);
+			}
+		} else delete zone.dataset.cardAlternateNameStyle;
+	});
+	for (const card of taggedCards) if (!activeTags.has(card)) clearXinshaCardName(card);
+	taggedCards.clear();
+	for (const card of activeTags) taggedCards.add(card);
+	return zones.length > 0;
 }
-export { n as initCardAlternateNameVisible };
+
+function initCardAlternateNameVisible() {
+	clearInterval(window._cardAlternateNameVisibleTimer);
+	ui.window?._cardAlternateNameVisibleObservers?.forEach(observer => observer.disconnect());
+	if (ui.window) delete ui.window._cardAlternateNameVisibleObservers;
+	if (window.decadeUI) {
+		window.decadeUI.cardAlternateName ||= {};
+		window.decadeUI.cardAlternateName.updateVisibility = updateVisibility;
+	}
+	const attach = () => {
+		if (updateVisibility()) {
+			clearInterval(window._cardAlternateNameVisibleTimer);
+			window._cardAlternateNameVisibleTimer = null;
+		}
+	};
+	window._cardAlternateNameVisibleTimer = setInterval(attach, 500);
+	attach();
+}
+
+export { initCardAlternateNameVisible };

@@ -1,0 +1,150 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "lua_member": "assets/res/lib/game.zip",
+    "lua_member_sha256": "df9af4ec01e45b7a2bca47b4fa22c1537c8c8365199b8ba2f764224d5e696d04",
+    "decoded_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28",
+    "packed_cache_matches_apk": true
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_587eee0cd61874d39939f356205cbe0c89e572f379ed157b8a88242b54d63070"
+  ],
+  "modules": [
+    {
+      "member": "app.view.game.dlg.windowShowCard",
+      "sha256": "f72339a295806f20f001c1a1585cb1c5720176e3921a2827788e3d9358b7fed2"
+    },
+    {
+      "member": "app.view.game.dlg.SkillNewStyleBaseWindow",
+      "sha256": "bc761bac3d2ec8ae795aec07ce4d161a9e2d7af0cae5b78dee55806d2e4e4902"
+    },
+    {
+      "member": "app.manager.game.WindowManager",
+      "sha256": "193474362395ed9b3e5f9b0d091a78d4f8d3fcd68a15182ec36356dd7f7c6f7f"
+    },
+    {
+      "member": "framework_extend.ui.windows.BaseWindow",
+      "sha256": "a9dacc0a78265dd7723d53e8e704311a7af31c99ddf7da54c3ab1001560c8a72"
+    },
+    {
+      "member": "framework.display",
+      "sha256": "83350b660ba584d72fcd96b13dd8ad8765e9961c781cbca1010af69dc07fadd8"
+    }
+  ],
+  "observations": [
+    "windowShowCard imports .SkillNewStyleBaseWindow.",
+    "SkillNewStyleBaseWindow 0.6 getBgRes returns skill_window_bg_2.png by default; 0.5 isShowBigBg returns false; big variant is skill_window_bg_1.png.",
+    "0.3 createSkillBg uses display.newScale9Sprite(getBgRes()), width multiplied by getBgScale(), height unchanged, centered at z=-1.",
+    "SkillNewStyleBaseWindow.createChilden (0.4) creates skill_window_title.png separately at (width/2,height-20), CENTER anchor, original size 295x37; title label size32, color(255,236,187)."
+  ],
+  "source": {
+    "plist": "assets/res/new/tex/plist/skill_window.plist",
+    "plist_sha256": "6f658659d728ad65d7f2cbcb0e83712e5b2ffd371ce1b9d5208428c3cfb177da",
+    "texture": "assets/res/new/tex/plist/skill_window.pvr.ccz",
+    "texture_sha256": "a215c8430707421d61cef3d4cfff2dd758cbbe13de590446838c50c3939dcd56",
+    "alpha": "assets/res/new/tex/plist/skill_window.pvr.ccz@alpha",
+    "alpha_sha256": "8c88455b99b87c15b2ad115663ee480fbf7cfad0fa484488b55f25c0019e3ff3",
+    "frame": "skill_window_bg_2.png",
+    "frame_metadata": {
+      "frame": "{{592,2},{1696,392}}",
+      "offset": "{0,0}",
+      "rotated": true,
+      "sourceColorRect": "{{0,0},{1696,392}}",
+      "sourceSize": "{1696,392}"
+    }
+  },
+  "conversion": "Decode ETC1 RGB + separate ETC1 alpha red channel, undo atlas rotation; no resizing or lossy re-encoding.",
+  "destination": {
+    "path": "image/ui/dialog/dialog_xinsha.png",
+    "size": [
+      1696,
+      392
+    ],
+    "sha256": "8255edd7bffdae4582088c03a0cb6022b52c8ed9b624a9952bd63b0ffeb866e0"
+  },
+  "scope": "Static APK/Lua resource inspection; browser fixture is separate. No official-client or noname Electron in-game visual comparison.",
+  "title": {
+    "frame": "skill_window_title.png",
+    "frame_metadata": {
+      "frame": "{{1129,612},{295,37}}",
+      "offset": "{0,0}",
+      "rotated": true,
+      "sourceColorRect": "{{0,0},{295,37}}",
+      "sourceSize": "{295,37}"
+    },
+    "path": "image/ui/dialog/dialog_xinsha_title.png",
+    "size": [
+      295,
+      37
+    ],
+    "sha256": "c099a77a13d109be8d2d9cfac318577ff21aa1e7dcca58dc1cdbedb5f7888093"
+  },
+  "window_controls": {
+    "source": {
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "plist_sha256": "2d23c6a2d9d8254115ce892f1895db16cd6f9fb30e6dd512ab835e8b6c4b7731",
+      "texture": "assets/res/new/tex/plist/gameinfo.pvr.ccz",
+      "texture_sha256": "6ff05a3dbacc2a1cef5e05b67cc24490133dfffd7b9d3aeac9f3eb06744bc0f5",
+      "alpha": "assets/res/new/tex/plist/gameinfo.pvr.ccz@alpha",
+      "alpha_sha256": "91c659e96274aa2d2ea762b78eb94a89fa0cebbdca610e1fe770dc0a55a98be3"
+    },
+    "frames": [
+      {
+        "frame": "game_ui_btn_hide.png",
+        "metadata": {
+          "frame": "{{1924,695},{84,84}}",
+          "offset": "{0,1}",
+          "rotated": false,
+          "sourceColorRect": "{{1,0},{84,84}}",
+          "sourceSize": "{86,86}"
+        },
+        "path": "image/ui/dialog/game_ui_btn_hide.png",
+        "size": [
+          86,
+          86
+        ],
+        "sha256": "48aed3b9d71656a476e6ddc1037b24f0681945bcd4d935ac2aa5d4d00771b003"
+      },
+      {
+        "frame": "game_ui_btn_show.png",
+        "metadata": {
+          "frame": "{{1924,609},{84,84}}",
+          "offset": "{0,0}",
+          "rotated": false,
+          "sourceColorRect": "{{1,1},{84,84}}",
+          "sourceSize": "{86,86}"
+        },
+        "path": "image/ui/dialog/game_ui_btn_show.png",
+        "size": [
+          86,
+          86
+        ],
+        "sha256": "9f75b1683b89a1b852051377569d0d6c664de6c5aeba23ce0cde98e5170fe266"
+      }
+    ],
+    "source_functions": {
+      "setHideBtn": "WindowManager 0.81, source line696: x=display.width/2-display.USE_WIDTH/2+39, y=258, LEFT_BOTTOM, parent runningScene, z=ZORDER_MARQUEE.",
+      "hideAllWindows": "WindowManager 0.79, line678: hide windows with canHide(), setHideBtn(false).",
+      "showAllWindows": "WindowManager 0.80, line687: show windows with canHide(), setHideBtn(true).",
+      "canHide": "framework_extend.ui.windows.BaseWindow 0.23: returns hideBtnEnable.",
+      "display": "framework.display 0.55: default DESIGN_HEIGHT=750, DESIGN_WIDTH=1334, MAX_SHOW_WIDTH=1750."
+    },
+    "adaptation": "Use game-window layout dimensions / 750 for position and size, max usable width1750 design units; one active noname dialog reuses original hide/show hooks and closing cleanup."
+  },
+  "validation": {
+    "commands": [
+      "node --check src/ui/dialog-ol-controls.js",
+      "node --check src/ui/dialog-ol-layout.js",
+      "node verification/dialog-xinsha-browser.cjs",
+      "node verification/dialog-xinsha-native-browser.cjs",
+      "git diff --check -- src/ui/dialog-ol-controls.js src/ui/dialog-ol-layout.js src/config/definitions/component.js"
+    ],
+    "browser": "Edge headless: six style routes/36 common-frame width-zoom-sidebar cases; engine Dialog and chooseToMove Qianlong; official title and scene hide/show controls, hidden resize and close cleanup; native characterDialog plus decade search enhancement, separate xinsha background painted across window at zoom1/1.5 and three sidebars, ResizeObserver-only viewport resize, original search/card geometry retained, real Pagination previous/next and search interaction; theme-off cleanup; OL title/hide/show regression. No official-client or live Electron game run.",
+    "page_errors": 0,
+    "failed_requests": 0,
+    "official_client_runtime": false,
+    "noname_electron_live_game": false
+  }
+}

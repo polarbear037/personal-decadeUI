@@ -7,7 +7,8 @@ function a(num, nature = "soil", font, nobroadcast) {
 	if ("string" == typeof num) {
 		(game.addVideo("damagepop", player, [num, nature, font]), !1 !== nobroadcast && game.broadcast((e, t, na, n) => e.$damagepop(t, na, n), player, num, nature, font));
 		syncOfficialPlayerPopups();
-		if (lib.config.extension_十周年UI_optimizePrompt && !isOfficialPlayerPopup(num)) return;
+		// 所有界面样式共用技能名过滤，不随优化提示的样式或开关变化。
+		if (!isOfficialPlayerPopup(num)) return;
 		const e = ui.create.div(".damage.skill-popup", ui.arena);
 		e.dataset.nature = nature || "soil";
 		let t = 0,

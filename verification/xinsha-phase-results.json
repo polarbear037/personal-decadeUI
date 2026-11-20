@@ -1,0 +1,790 @@
+{
+  "othersOff": {
+    "stages": [
+      {
+        "className": "decade-xinsha-phase-tip",
+        "phase": "hhks",
+        "label": "回合开始",
+        "text": "",
+        "bg": "url(\"http://127.0.0.1:60934/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/phase/xinsha/phase1.png\")",
+        "rect": {
+          "x": 242,
+          "y": 505.5,
+          "width": 116,
+          "height": 35,
+          "top": 505.5,
+          "right": 358,
+          "bottom": 540.5,
+          "left": 242
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": 1,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "className": "decade-xinsha-phase-tip",
+        "phase": "zbjd",
+        "label": "回合开始",
+        "text": "",
+        "bg": "url(\"http://127.0.0.1:60934/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/phase/xinsha/phase1.png\")",
+        "rect": {
+          "x": 242,
+          "y": 505.5,
+          "width": 116,
+          "height": 35,
+          "top": 505.5,
+          "right": 358,
+          "bottom": 540.5,
+          "left": 242
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": 1,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "className": "decade-xinsha-phase-tip",
+        "phase": "pdjd",
+        "label": "判定阶段",
+        "text": "",
+        "bg": "url(\"http://127.0.0.1:60934/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/phase/xinsha/phase2.png\")",
+        "rect": {
+          "x": 242,
+          "y": 505.5,
+          "width": 116,
+          "height": 35,
+          "top": 505.5,
+          "right": 358,
+          "bottom": 540.5,
+          "left": 242
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": 1,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "className": "decade-xinsha-phase-tip",
+        "phase": "mpjd",
+        "label": "摸牌阶段",
+        "text": "",
+        "bg": "url(\"http://127.0.0.1:60934/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/phase/xinsha/phase3.png\")",
+        "rect": {
+          "x": 242,
+          "y": 505.5,
+          "width": 116,
+          "height": 35,
+          "top": 505.5,
+          "right": 358,
+          "bottom": 540.5,
+          "left": 242
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": 1,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "className": "decade-xinsha-phase-tip",
+        "phase": "cpjd",
+        "label": "出牌阶段",
+        "text": "",
+        "bg": "url(\"http://127.0.0.1:60934/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/phase/xinsha/phase4.png\")",
+        "rect": {
+          "x": 242,
+          "y": 505.5,
+          "width": 116,
+          "height": 35,
+          "top": 505.5,
+          "right": 358,
+          "bottom": 540.5,
+          "left": 242
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": 1,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "className": "decade-xinsha-phase-tip",
+        "phase": "qpjd",
+        "label": "弃牌阶段",
+        "text": "",
+        "bg": "url(\"http://127.0.0.1:60934/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/phase/xinsha/phase5.png\")",
+        "rect": {
+          "x": 242,
+          "y": 505.5,
+          "width": 116,
+          "height": 35,
+          "top": 505.5,
+          "right": 358,
+          "bottom": 540.5,
+          "left": 242
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": 1,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "className": "decade-xinsha-phase-tip",
+        "phase": "jsjd",
+        "label": "回合结束",
+        "text": "",
+        "bg": "url(\"http://127.0.0.1:60934/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/phase/xinsha/phase6.png\")",
+        "rect": {
+          "x": 242,
+          "y": 505.5,
+          "width": 116,
+          "height": 35,
+          "top": 505.5,
+          "right": 358,
+          "bottom": 540.5,
+          "left": 242
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": 1,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "className": "decade-xinsha-phase-tip",
+        "phase": "hhjs",
+        "label": "回合结束",
+        "text": "",
+        "bg": "url(\"http://127.0.0.1:60934/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/phase/xinsha/phase6.png\")",
+        "rect": {
+          "x": 242,
+          "y": 505.5,
+          "width": 116,
+          "height": 35,
+          "top": 505.5,
+          "right": 358,
+          "bottom": 540.5,
+          "left": 242
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": 1,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      }
+    ],
+    "phaseOption2": {
+      "className": "decade-xinsha-phase-tip",
+      "phase": "zbjd",
+      "label": "回合开始",
+      "text": "",
+      "bg": "url(\"http://127.0.0.1:60934/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/phase/xinsha/phase1.png\")",
+      "rect": {
+        "x": 242,
+        "y": 505.5,
+        "width": 116,
+        "height": 35,
+        "top": 505.5,
+        "right": 358,
+        "bottom": 540.5,
+        "left": 242
+      },
+      "host": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 750,
+        "top": 0,
+        "right": 1500,
+        "bottom": 750,
+        "left": 0
+      },
+      "height": 750,
+      "unit": 1,
+      "transition": "none",
+      "zIndex": "6",
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    "animation": {
+      "samples": [
+        {
+          "t": 0,
+          "opacity": 1,
+          "x": 0
+        },
+        {
+          "t": 50,
+          "opacity": 0.5,
+          "x": -10
+        },
+        {
+          "t": 100,
+          "opacity": 0,
+          "x": -20
+        }
+      ],
+      "incoming": [
+        {
+          "t": 0,
+          "opacity": 0,
+          "x": -20
+        },
+        {
+          "t": 50,
+          "opacity": 0.5,
+          "x": -10
+        },
+        {
+          "t": 100,
+          "opacity": 1,
+          "x": 0
+        }
+      ]
+    },
+    "lifecycle": {
+      "response": {
+        "className": "decade-xinsha-phase-tip",
+        "phase": "ddxy",
+        "label": "等待我响应",
+        "text": "",
+        "bg": "url(\"http://127.0.0.1:60934/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/phase/xinsha/phase99.png\")",
+        "rect": {
+          "x": 232,
+          "y": 505.5,
+          "width": 136,
+          "height": 35,
+          "top": 505.5,
+          "right": 368,
+          "bottom": 540.5,
+          "left": 232
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": 1,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "restored": {
+        "className": "decade-xinsha-phase-tip",
+        "phase": "cpjd",
+        "label": "出牌阶段",
+        "text": "",
+        "bg": "url(\"http://127.0.0.1:60934/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/phase/xinsha/phase4.png\")",
+        "rect": {
+          "x": 242,
+          "y": 505.5,
+          "width": 116,
+          "height": 35,
+          "top": 505.5,
+          "right": 358,
+          "bottom": 540.5,
+          "left": 242
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": 1,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "phaseAfter": null,
+      "aliasReused": true,
+      "race": {
+        "className": "decade-xinsha-phase-tip",
+        "phase": "cpjd",
+        "label": "出牌阶段",
+        "text": "",
+        "bg": "url(\"http://127.0.0.1:60934/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/phase/xinsha/phase4.png\")",
+        "rect": {
+          "x": 242,
+          "y": 505.5,
+          "width": 116,
+          "height": 35,
+          "top": 505.5,
+          "right": 358,
+          "bottom": 540.5,
+          "left": 242
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": 1,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "nodes": 1,
+      "repeated": true,
+      "expired": null,
+      "disabled": null,
+      "offNodes": 0,
+      "overNodes": 0,
+      "onlineNodes": 0
+    },
+    "pageErrors": [],
+    "failedRequests": []
+  },
+  "onlineUI": {
+    "stages": [
+      {
+        "className": "decade-online-phase-tip",
+        "phase": "hhks",
+        "label": null,
+        "text": "回合开始",
+        "bg": "none",
+        "rect": {
+          "x": 87,
+          "y": 476.20428466796875,
+          "width": 120,
+          "height": 26.763275146484375,
+          "top": 476.20428466796875,
+          "right": 207,
+          "bottom": 502.9675598144531,
+          "left": 87
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": null,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "0.975829",
+        "transform": "matrix(1, 0, 0, 1, -0.435077, 0)"
+      },
+      {
+        "className": "decade-online-phase-tip",
+        "phase": "zbjd",
+        "label": null,
+        "text": "准备阶段",
+        "bg": "none",
+        "rect": {
+          "x": 87,
+          "y": 476.20428466796875,
+          "width": 120,
+          "height": 26.763275146484375,
+          "top": 476.20428466796875,
+          "right": 207,
+          "bottom": 502.9675598144531,
+          "left": 87
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": null,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "0.999963",
+        "transform": "matrix(1, 0, 0, 1, -0.000661445, 0)"
+      },
+      {
+        "className": "decade-online-phase-tip",
+        "phase": "pdjd",
+        "label": null,
+        "text": "判定阶段",
+        "bg": "none",
+        "rect": {
+          "x": 87,
+          "y": 476.20428466796875,
+          "width": 120,
+          "height": 26.763275146484375,
+          "top": 476.20428466796875,
+          "right": 207,
+          "bottom": 502.9675598144531,
+          "left": 87
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": null,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "0.975886",
+        "transform": "matrix(1, 0, 0, 1, -0.434053, 0)"
+      },
+      {
+        "className": "decade-online-phase-tip",
+        "phase": "mpjd",
+        "label": null,
+        "text": "摸牌阶段",
+        "bg": "none",
+        "rect": {
+          "x": 87,
+          "y": 476.20428466796875,
+          "width": 120,
+          "height": 26.763275146484375,
+          "top": 476.20428466796875,
+          "right": 207,
+          "bottom": 502.9675598144531,
+          "left": 87
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": null,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "0.998576",
+        "transform": "matrix(1, 0, 0, 1, -0.0256268, 0)"
+      },
+      {
+        "className": "decade-online-phase-tip",
+        "phase": "cpjd",
+        "label": null,
+        "text": "出牌阶段",
+        "bg": "none",
+        "rect": {
+          "x": 87,
+          "y": 476.20428466796875,
+          "width": 120,
+          "height": 26.763275146484375,
+          "top": 476.20428466796875,
+          "right": 207,
+          "bottom": 502.9675598144531,
+          "left": 87
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": null,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "0.998636",
+        "transform": "matrix(1, 0, 0, 1, -0.0245587, 0)"
+      },
+      {
+        "className": "decade-online-phase-tip",
+        "phase": "qpjd",
+        "label": null,
+        "text": "弃牌阶段",
+        "bg": "none",
+        "rect": {
+          "x": 87,
+          "y": 476.20428466796875,
+          "width": 120,
+          "height": 26.763275146484375,
+          "top": 476.20428466796875,
+          "right": 207,
+          "bottom": 502.9675598144531,
+          "left": 87
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": null,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "0.998616",
+        "transform": "matrix(1, 0, 0, 1, -0.0249148, 0)"
+      },
+      {
+        "className": "decade-online-phase-tip",
+        "phase": "jsjd",
+        "label": null,
+        "text": "回合结束",
+        "bg": "none",
+        "rect": {
+          "x": 87,
+          "y": 476.20428466796875,
+          "width": 120,
+          "height": 26.763275146484375,
+          "top": 476.20428466796875,
+          "right": 207,
+          "bottom": 502.9675598144531,
+          "left": 87
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": null,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "0.990461",
+        "transform": "matrix(1, 0, 0, 1, -0.17171, 0)"
+      },
+      {
+        "className": "decade-online-phase-tip",
+        "phase": "hhjs",
+        "label": null,
+        "text": "回合结束",
+        "bg": "none",
+        "rect": {
+          "x": 87,
+          "y": 476.20428466796875,
+          "width": 120,
+          "height": 26.763275146484375,
+          "top": 476.20428466796875,
+          "right": 207,
+          "bottom": 502.9675598144531,
+          "left": 87
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": null,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "0.975809",
+        "transform": "matrix(1, 0, 0, 1, -0.435447, 0)"
+      }
+    ],
+    "isolation": {
+      "before": {
+        "className": "decade-online-phase-tip",
+        "phase": "hhjs",
+        "label": null,
+        "text": "回合结束",
+        "bg": "none",
+        "rect": {
+          "x": 87,
+          "y": 476.20428466796875,
+          "width": 120,
+          "height": 26.763275146484375,
+          "top": 476.20428466796875,
+          "right": 207,
+          "bottom": 502.9675598144531,
+          "left": 87
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": null,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "0.990411",
+        "transform": "matrix(1, 0, 0, 1, -0.172606, 0)"
+      },
+      "after": {
+        "className": "decade-online-phase-tip",
+        "phase": "hhjs",
+        "label": null,
+        "text": "回合结束",
+        "bg": "none",
+        "rect": {
+          "x": 87,
+          "y": 476.20428466796875,
+          "width": 120,
+          "height": 26.763275146484375,
+          "top": 476.20428466796875,
+          "right": 207,
+          "bottom": 502.9675598144531,
+          "left": 87
+        },
+        "host": {
+          "x": 0,
+          "y": 0,
+          "width": 1500,
+          "height": 750,
+          "top": 0,
+          "right": 1500,
+          "bottom": 750,
+          "left": 0
+        },
+        "height": 750,
+        "unit": null,
+        "transition": "none",
+        "zIndex": "6",
+        "opacity": "0.990411",
+        "transform": "matrix(1, 0, 0, 1, -0.172606, 0)"
+      },
+      "rejected": false
+    },
+    "pageErrors": [],
+    "failedRequests": []
+  }
+}

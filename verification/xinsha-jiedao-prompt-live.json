@@ -1,0 +1,55 @@
+{
+  "skill": "spjiedao",
+  "meaning": "一、二、三分别表示本次伤害增加1、2、3点；目标未阵亡时，结算后弃置等量牌。",
+  "source": [
+    "character/sp2.js:spjiedao.cost builds controls with get.cnNumber(i,true) and maps selection to cost_data",
+    "character/sp2.js:spjiedao.content adds cost_data to trigger.num and registers damageEnd discard",
+    "src/ui/xinshaPromptData.js:spell829.ActiveTip"
+  ],
+  "cause": "Numeric chooseControl did not use the existing ActiveTip; the generic skill description was hidden, leaving no explanation of the numbers.",
+  "change": "For the exact native spjiedao numeric choice, use existing spell829.ActiveTip. Keep numeric links, cancellation, result and damage settlement untouched.",
+  "live": {
+    "applied": true,
+    "player": "lvdai",
+    "hp": 3,
+    "maxHp": 4,
+    "before": {
+      "text": "是否对邓贤（群）发动【截刀】？",
+      "controls": [
+        "一",
+        "cancel2"
+      ],
+      "links": [
+        "一",
+        "cancel2"
+      ]
+    },
+    "after": {
+      "text": "发动“截刀”，请选择增加的伤害值",
+      "controls": [
+        "一",
+        "cancel2"
+      ],
+      "links": [
+        "一",
+        "cancel2"
+      ]
+    },
+    "sameEvent": true,
+    "sameControls": true,
+    "sameLinks": true
+  },
+  "validation": {
+    "passed": [
+      "node verification/xinsha-jiedao-prompt-engine.cjs",
+      "node --check src/ui/xinshaPrompt.js",
+      "node --check verification/xinsha-jiedao-prompt-engine.cjs"
+    ],
+    "browserScope": "Real spjiedao.cost and native chooseControl at missingHP1/2/3; custom conditions retained; Online original prompt retained; no gameplay choice submitted.",
+    "desktopScope": "Current real Electron hint redrawn through background eval only; same event, controls and links confirmed. No damage/card decision submitted.",
+    "notVerified": [
+      "Full current-game damage settlement after user confirmation",
+      "Mobile device"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+/* 一将成名 6.4.5：通用文字 fzbw，技能按钮 FZSHENGSKSJW。 */
+@font-face {
+	font-family: "dui-yjcm-label";
+	src: url("../assets/fonts/fzbw.ttf") format("truetype");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "dui-yjcm-skill";
+	src: url("../assets/fonts/FZSHENGSKSJW.ttf") format("truetype");
+	font-display: swap;
+}
+
+/* 覆盖本体、旧皮肤和行内字体；窗口外的提示、原生菜单及表单也使用原版字体。 */
+body[data-style="othersOff"],
+body[data-style="othersOff"] *,
+body[data-style="othersOff"] #window *,
+body[data-style="othersOff"] #window #arena * {
+	font-family: "dui-yjcm-label", serif !important;
+}
+
+body[data-style="othersOff"] *::before,
+body[data-style="othersOff"] *::after {
+	font-family: inherit !important;
+}
+
+/* 原版主动、被动、限定及全局技能按钮共用盛世楷书，按钮内的文字节点同步。 */
+body[data-style="othersOff"] #window #arena :is(.skill-control, .skill-controlzuoshou, .gskill-control) :is(.skillitem, .xiandingji),
+body[data-style="othersOff"] #window #arena :is(.skill-control, .skill-controlzuoshou, .gskill-control) :is(.skillitem, .xiandingji) * {
+	font-family: "dui-yjcm-skill", serif !important;
+}
+/* SpellPassiveItem用ui.newLabel的默认fzbw；主动技能才指定盛世楷书。 */
+body[data-style="othersOff"] #window #arena :is(.skill-control, .skill-controlzuoshou, .gskill-control) [data-yjcm-passive="true"],
+body[data-style="othersOff"] #window #arena :is(.skill-control, .skill-controlzuoshou, .gskill-control) [data-yjcm-passive="true"] * {
+	font-family: "dui-yjcm-label", serif !important;
+}

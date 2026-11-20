@@ -1,0 +1,3766 @@
+{
+  "setup": {
+    "style": "othersOff",
+    "startEvent": "game",
+    "auto": true
+  },
+  "painted": {
+    "text": "摸牌阶段",
+    "display": "block",
+    "visibility": "visible",
+    "opacity": "1",
+    "zIndex": "92",
+    "visibleOnTop": true,
+    "rect": {
+      "x": 706.96875,
+      "y": 211.1044921875,
+      "width": 104,
+      "height": 21.890625,
+      "top": 211.1044921875,
+      "right": 810.96875,
+      "bottom": 232.9951171875,
+      "left": 706.96875
+    }
+  },
+  "result": {
+    "done": false,
+    "used": [
+      {
+        "player": "763506810",
+        "cards": {}
+      },
+      {
+        "player": "137569911",
+        "cards": {
+          "wuzhong": 1,
+          "cixiong": 1
+        }
+      }
+    ],
+    "samples": [
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gameDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "phase",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseLoop",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "phase",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseLoop",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "phase",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseLoop",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "phase",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseLoop",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "phase",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseLoop",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "phase",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseLoop",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "phase",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseLoop",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "phaseDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phase",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseLoop",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "摸牌阶段",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "摸牌阶段"
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "phaseDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phase",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseLoop",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "摸牌阶段",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "摸牌阶段"
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "phaseDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phase",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseLoop",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "摸牌阶段",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "摸牌阶段"
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "phaseDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phase",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseLoop",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "摸牌阶段",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "摸牌阶段"
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "phaseDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phase",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseLoop",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "摸牌阶段",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "摸牌阶段"
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "phaseDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phase",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseLoop",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "摸牌阶段",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "摸牌阶段"
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "phaseDraw",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phase",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseLoop",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "game",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "摸牌阶段",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "摸牌阶段"
+      },
+      {
+        "chain": [
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "zhiheng",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "zhiheng",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "制衡思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "制衡思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "zhiheng",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "制衡思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "制衡思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "zhiheng",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "制衡思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "制衡思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "zhiheng",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "制衡思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "制衡思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useSkill",
+            "player": "137569911",
+            "skill": "zhiheng",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "wuzhong",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "wuzhong",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "wuzhong",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "wuzhong",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "gain",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "draw",
+            "player": "137569911",
+            "finished": false,
+            "result": "object"
+          },
+          {
+            "name": "wuzhong",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "无中生有思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "无中生有思考中"
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "wuzhong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "_online_tip_subjects",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "trigger",
+            "player": "137569911",
+            "skill": "_online_tip_subjects",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "arrangeTrigger",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "",
+            "tip": false,
+            "progress": false,
+            "seatDisplay": "block",
+            "display": null
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": ""
+      },
+      {
+        "chain": [
+          {
+            "name": "useCard",
+            "player": "137569911",
+            "card": "cixiong",
+            "finished": false,
+            "result": "undefined"
+          },
+          {
+            "name": "chooseToUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "object",
+            "bool": true
+          },
+          {
+            "name": "phaseUse",
+            "player": "137569911",
+            "finished": false,
+            "result": "undefined"
+          }
+        ],
+        "nodes": [
+          {
+            "player": "137569911",
+            "text": "雌雄双股剑思考中",
+            "tip": true,
+            "progress": true,
+            "seatDisplay": "none",
+            "display": "block",
+            "rect": {
+              "x": 706.96875,
+              "y": 211.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 211.1044921875,
+              "right": 810.96875,
+              "bottom": 232.9951171875,
+              "left": 706.96875
+            }
+          }
+        ],
+        "currentPhase": "137569911",
+        "text": "雌雄双股剑思考中"
+      }
+    ],
+    "changes": [
+      "chooseCharacter",
+      "chooseButton",
+      "chooseCharacter",
+      "chooseButton",
+      "chooseCharacter",
+      "game",
+      "changeSkills",
+      "game",
+      "changeSkills",
+      "game",
+      "arrangeTrigger",
+      "trigger",
+      "_wjBackground",
+      "trigger",
+      "arrangeTrigger",
+      "trigger",
+      "_wjBackground",
+      "trigger",
+      "arrangeTrigger",
+      "game",
+      "gameDraw",
+      "arrangeTrigger",
+      "trigger",
+      "mx_start",
+      "trigger",
+      "arrangeTrigger",
+      "gameDraw",
+      "game",
+      "phaseLoop",
+      "phase",
+      "arrangeTrigger",
+      "phase",
+      "arrangeTrigger",
+      "phase",
+      "arrangeTrigger",
+      "trigger",
+      "_jdts_dfsk",
+      "trigger",
+      "arrangeTrigger",
+      "trigger",
+      "_jdts_dfsk",
+      "trigger",
+      "arrangeTrigger",
+      "phase",
+      "phaseZhunbei",
+      "arrangeTrigger",
+      "phaseZhunbei",
+      "arrangeTrigger",
+      "phaseZhunbei",
+      "phase",
+      "phaseJudge",
+      "arrangeTrigger",
+      "phaseJudge",
+      "arrangeTrigger",
+      "trigger",
+      "_jdts_dfsk",
+      "trigger",
+      "arrangeTrigger",
+      "trigger",
+      "_jdts_dfsk",
+      "trigger",
+      "arrangeTrigger",
+      "phaseJudge",
+      "arrangeTrigger",
+      "phaseJudge",
+      "arrangeTrigger",
+      "phaseJudge",
+      "phase",
+      "phaseDraw",
+      "arrangeTrigger",
+      "phaseDraw",
+      "arrangeTrigger",
+      "trigger",
+      "_jdts_dfsk",
+      "trigger",
+      "arrangeTrigger",
+      "trigger",
+      "_jdts_dfsk",
+      "trigger",
+      "arrangeTrigger",
+      "phaseDraw",
+      "arrangeTrigger",
+      "trigger",
+      "chooseBool",
+      "trigger",
+      "logSkillBegin",
+      "trigger",
+      "yingzi",
+      "trigger",
+      "logSkill",
+      "trigger",
+      "arrangeTrigger",
+      "phaseDraw",
+      "draw",
+      "gain",
+      "arrangeTrigger",
+      "gain",
+      "draw",
+      "phaseDraw",
+      "arrangeTrigger",
+      "phaseDraw",
+      "phase",
+      "phaseUse",
+      "arrangeTrigger",
+      "phaseUse",
+      "arrangeTrigger",
+      "trigger",
+      "logSkillBegin",
+      "trigger",
+      "_online_tip_subjects",
+      "useSkill",
+      "discard",
+      "lose",
+      "arrangeTrigger",
+      "lose",
+      "discard",
+      "arrangeTrigger",
+      "trigger",
+      "_discard",
+      "trigger",
+      "arrangeTrigger",
+      "discard",
+      "useSkill",
+      "zhiheng",
+      "draw",
+      "gain",
+      "arrangeTrigger",
+      "gain",
+      "draw",
+      "zhiheng",
+      "useSkill",
+      "_online_tip_subjects",
+      "useCard",
+      "arrangeTrigger",
+      "trigger",
+      "decadeUI_usecardBegin",
+      "trigger",
+      "arrangeTrigger",
+      "useCard",
+      "lose",
+      "useCard",
+      "lose",
+      "arrangeTrigger",
+      "lose",
+      "useCard",
+      "arrangeTrigger",
+      "useCard",
+      "arrangeTrigger",
+      "useCard",
+      "useCardToPlayer",
+      "useCard",
+      "useCardToTarget",
+      "useCard",
+      "useCardToPlayered",
+      "useCard",
+      "useCardToTargeted",
+      "useCard",
+      "wuzhong",
+      "arrangeTrigger",
+      "trigger",
+      "_wuxie",
+      "trigger",
+      "arrangeTrigger",
+      "wuzhong",
+      "draw",
+      "gain",
+      "arrangeTrigger",
+      "gain",
+      "draw",
+      "wuzhong",
+      "arrangeTrigger",
+      "wuzhong",
+      "useCard",
+      "arrangeTrigger",
+      "trigger",
+      "_jdts_clear",
+      "trigger",
+      "arrangeTrigger",
+      "trigger",
+      "_usecard",
+      "trigger",
+      "arrangeTrigger",
+      "useCard",
+      "orderingDiscard",
+      "cardsDiscard",
+      "orderingDiscard",
+      "useCard",
+      "_online_tip_subjects",
+      "trigger",
+      "logSkill",
+      "trigger",
+      "arrangeTrigger",
+      "trigger",
+      "_jdts_dfsk",
+      "trigger",
+      "arrangeTrigger",
+      "trigger",
+      "_jdts_dfsk",
+      "trigger",
+      "arrangeTrigger",
+      "phaseUse",
+      "chooseToUse",
+      "useCard",
+      "arrangeTrigger",
+      "trigger",
+      "decadeUI_usecardBegin",
+      "trigger",
+      "arrangeTrigger",
+      "useCard",
+      "lose",
+      "useCard",
+      "lose",
+      "arrangeTrigger",
+      "lose",
+      "useCard",
+      "arrangeTrigger",
+      "useCard",
+      "arrangeTrigger",
+      "useCard",
+      "useCardToPlayer",
+      "useCard",
+      "useCardToTarget",
+      "useCard"
+    ],
+    "gameStarted": true,
+    "lastEvent": "useCard",
+    "paused": [
+      true,
+      false,
+      false
+    ],
+    "body": "选项暂停托管♫\n牌堆显示身份关闭其他扩展\n托管中...\n确定\n4/3\n伊籍\n4\n二\n孙权\n9\n英姿\n且慢。\n雌雄双股剑\n思考中\n机捷\n急援\n制\n衡\n无\n中\n生\n有\n孙权\n使用\n雌\n雄\n双\n股\n剑\n重来\n退出\n记录\n托管\n整理手牌\n147\n第1轮\n00:03\n开始选项武将卡牌扩展其它\n身份国战对决联机挑战斗地主单挑战棋塔防乱斗炉石\n游戏模式\n标准\n游戏人数\n两人\n双内奸\n神武将选择势力\n双将模式\n特殊身份\n明忠卡牌替换\n主内单挑特效\n双将体力上限\n平均值\n自动显示身份\n关闭\n自动标记身份\n加强主公\n关闭\n自由选将\n自由选择身份和座位\n开启换将卡\n开启手气卡\n禁用\n开启首轮强化卡牌\n内奸自动标记伪装反贼\n显示再战\n死亡后显示重来\n死亡后显示复活\n屏蔽身份\n关闭\n屏蔽身份2\n关闭\n屏蔽身份3\n关闭\n内奸策略\n均衡\nAI对人类态度\n一般\n主公候选武将数\n3\n常备主候选武将数\n按势力筛选\n忠臣候选武将数\n4\n内奸候选武将数\n6\n反贼候选武将数\n3\n启用平民\n平民候选武将数\n4\n启用年机制\n启用明察\n上移↑下移↓\n隐藏此模式\n启",
+    "phaseNodes": 1
+  },
+  "errors": []
+}

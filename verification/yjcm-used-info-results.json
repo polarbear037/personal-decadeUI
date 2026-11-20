@@ -1,0 +1,1374 @@
+[
+  {
+    "style": "othersOff",
+    "file": "card-xinsha.css",
+    "state": [
+      {
+        "text": "吕岱使用",
+        "html": "<span class=\"dui-yjcm-used-text\">吕岱使用</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "吕岱对曹操",
+        "html": "<span class=\"dui-yjcm-used-text\">吕岱对曹操</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "吕岱对曹操、张飞",
+        "html": "<span class=\"dui-yjcm-used-text\">吕岱对曹操、张飞</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "吕岱打出",
+        "html": "<span class=\"dui-yjcm-used-text\">吕岱打出</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "武圣",
+        "html": "<span class=\"dui-yjcm-used-text\">武圣</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "吕岱装备",
+        "html": "<span class=\"dui-yjcm-used-text\">吕岱装备</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "吕岱弃置",
+        "html": "<span class=\"dui-yjcm-used-text\">吕岱弃置</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "吕岱重铸",
+        "html": "<span class=\"dui-yjcm-used-text\">吕岱重铸</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "乐不思蜀判定牌",
+        "html": "<span class=\"dui-yjcm-used-text\">乐不思蜀判定牌</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "吕岱展示",
+        "html": "<span class=\"dui-yjcm-used-text\">吕岱展示</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "吕岱展示",
+        "html": "<span class=\"dui-yjcm-used-text\">吕岱展示</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "吕岱展示",
+        "html": "<span class=\"dui-yjcm-used-text\">吕岱展示</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "吕岱清俭展示",
+        "html": "<span class=\"dui-yjcm-used-text\">吕岱清俭展示</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "吕岱展示",
+        "html": "<span class=\"dui-yjcm-used-text\">吕岱展示</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "吕岱武圣展示",
+        "html": "<span class=\"dui-yjcm-used-text\">吕岱武圣展示</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      },
+      {
+        "text": "吕岱展示",
+        "html": "<span class=\"dui-yjcm-used-text\">吕岱展示</span>",
+        "color": "rgb(255, 255, 255)",
+        "font": "dui-yjcm-card-tag, serif",
+        "size": "18.8571px",
+        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "left": -0.015769675925925927,
+        "height": 0.35052083333333334,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 255)",
+          "outline": "rgb(63, 51, 24)",
+          "font": "dui-yjcm-card-tag, serif"
+        }
+      }
+    ]
+  },
+  {
+    "style": "onlineUI",
+    "file": "card-online.css",
+    "state": [
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱打出",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>打出</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱武圣使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\">武圣</span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "lebu的判定牌",
+        "html": "lebu的判定牌",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      }
+    ]
+  },
+  {
+    "style": "on",
+    "file": "card.css",
+    "state": [
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱打出",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>打出</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱武圣使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\">武圣</span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "lebu的判定牌",
+        "html": "lebu的判定牌",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      }
+    ]
+  },
+  {
+    "style": "off",
+    "file": "card.css",
+    "state": [
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱打出",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>打出</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱武圣使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\">武圣</span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "lebu的判定牌",
+        "html": "lebu的判定牌",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      }
+    ]
+  },
+  {
+    "style": "babysha",
+    "file": "card.css",
+    "state": [
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱打出",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>打出</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱武圣使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\">武圣</span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "lebu的判定牌",
+        "html": "lebu的判定牌",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      }
+    ]
+  },
+  {
+    "style": "codename",
+    "file": "card.css",
+    "state": [
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱打出",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>打出</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱武圣使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\">武圣</span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "吕岱使用",
+        "html": "<span style=\"font-weight:700\"><span data-nature=\"wood\"><span style=\"letter-spacing:0.1em\">吕岱</span></span><br><span style=\"color:#FFD700\"></span>使用</span>",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": {
+          "color": "rgb(255, 255, 200)",
+          "outline": "rgb(255, 255, 200)",
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+        }
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "lebu的判定牌",
+        "html": "lebu的判定牌",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "1",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      },
+      {
+        "text": "",
+        "html": "",
+        "color": "rgb(255, 255, 200)",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+        "size": "17px",
+        "background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1) 100%)",
+        "left": 0,
+        "height": 0.33,
+        "opacity": "0",
+        "label": null
+      }
+    ]
+  }
+]

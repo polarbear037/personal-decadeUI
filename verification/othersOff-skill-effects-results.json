@@ -1,0 +1,1080 @@
+{
+  "states": {
+    "availableOnly": [],
+    "activeSelected": [
+      {
+        "id": "rende",
+        "type": "active"
+      }
+    ],
+    "reused": true,
+    "activeResolving": [
+      {
+        "id": "rende",
+        "type": "active"
+      }
+    ],
+    "activeFinished": [],
+    "passiveAutomatic": [],
+    "passiveAsk": [
+      {
+        "id": "jianxiong",
+        "type": "passive"
+      }
+    ],
+    "pendingWithOldResult": [
+      {
+        "id": "jianxiong",
+        "type": "passive"
+      }
+    ],
+    "passiveCost": [
+      {
+        "id": "jianxiong",
+        "type": "passive"
+      }
+    ],
+    "passiveTargets": [
+      {
+        "id": "jianxiong",
+        "type": "passive"
+      }
+    ],
+    "passiveAccepted": [
+      {
+        "id": "jianxiong",
+        "type": "passive"
+      }
+    ],
+    "remoteChoice": [],
+    "passiveSettlement": [],
+    "autoControl": [],
+    "cancelled": [],
+    "conversion": [
+      {
+        "id": "wusheng",
+        "type": "active"
+      }
+    ],
+    "isolation": [
+      {
+        "style": "onlineUI",
+        "count": 0
+      },
+      {
+        "style": "on",
+        "count": 0
+      },
+      {
+        "style": "off",
+        "count": 0
+      },
+      {
+        "style": "babysha",
+        "count": 0
+      },
+      {
+        "style": "codename",
+        "count": 0
+      }
+    ]
+  },
+  "geometry": [
+    {
+      "zoom": 0.75,
+      "side": "right",
+      "passive": false,
+      "edges": [
+        0.00905490172570167,
+        0.9817225520616312,
+        0.02224265897416544,
+        0.9555360693502141
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:117.328px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        117.328,
+        48
+      ],
+      "widthRatio": 1.4362755958231483,
+      "heightRatio": 2.0221357224814387,
+      "left": -0.21820389508175853,
+      "top": -0.5110678612407195,
+      "pointer": "none",
+      "natural": [
+        158,
+        91
+      ],
+      "hit": "rende",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的一将/animation/skill-button/zhudong_xuanzhong",
+          "id": "skill-button-../../../雷的一将/animation/skill-button/zhudong_xuanzhong-2",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0012087607756257057,
+            0,
+            0,
+            0,
+            0,
+            0.0022665690630674362,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0.49563857913017273,
+            -0.5474199652671814,
+            -1,
+            1
+          ],
+          "canvas": [
+            1500,
+            800
+          ],
+          "rect": {
+            "left": 1050.10986328125,
+            "top": 577.7164306640625,
+            "right": 1193.3480224609375,
+            "bottom": 660.2195434570312,
+            "width": 143.2381591796875,
+            "height": 82.50311279296875,
+            "canvasWidth": 1500,
+            "canvasHeight": 800,
+            "x": 1050.10986328125,
+            "y": 577.7164306640625,
+            "bottomInBody": 139.78045654296875,
+            "canvasBottomInBody": 0
+          }
+        },
+        "expected": [
+          0.0012087608369593882,
+          0.0022665690327738665,
+          0.49563859049479175,
+          -0.5474199676513671
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "8"
+      }
+    },
+    {
+      "zoom": 0.75,
+      "side": "right",
+      "passive": true,
+      "edges": [
+        0.05315173796791445,
+        0.9344358103089719,
+        -0.019298384991658257,
+        0.903656751143444
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:103.125px;height:36.9792px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\");background-size:auto;background-position:0% 0%;background-repeat:repeat;border-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_beidong_btn.png\") 1 14 5 10 fill / 1.42267px 19.9173px 7.11333px 14.2267px / 0 stretch;border-width:0px;border-style:solid;border-radius:50px",
+      "staticSize": [
+        103.125,
+        36.9792
+      ],
+      "widthRatio": 1.4894942067736185,
+      "heightRatio": 2.8073218724109363,
+      "left": -0.24474710338680927,
+      "top": -0.9422535211267605,
+      "pointer": "none",
+      "natural": [
+        120,
+        73
+      ],
+      "hit": "jianxiong",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的一将/animation/skill-button/beidong_xuanzhong",
+          "id": "skill-button-../../../雷的一将/animation/skill-button/beidong_xuanzhong-3",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0010880290064960718,
+            0,
+            0,
+            0,
+            0,
+            0.0022664526477456093,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0.5185000896453857,
+            -0.6550312638282776,
+            -1,
+            1
+          ],
+          "canvas": [
+            2000,
+            1066
+          ],
+          "rect": {
+            "left": 1089.9136962890625,
+            "top": 628.9223022460938,
+            "right": 1187.8363037109375,
+            "bottom": 695.1027221679688,
+            "width": 97.922607421875,
+            "height": 66.180419921875,
+            "canvasWidth": 1500,
+            "canvasHeight": 800,
+            "x": 1089.9136962890625,
+            "y": 628.9223022460938,
+            "bottomInBody": 371.89727783203125,
+            "canvasBottomInBody": 267
+          }
+        },
+        "expected": [
+          0.0010880289713541666,
+          0.002266452737050514,
+          0.5185,
+          -0.6550312805175782
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "8"
+      }
+    },
+    {
+      "zoom": 0.75,
+      "side": "left",
+      "passive": false,
+      "edges": [
+        0.009048548737196016,
+        0.9817282161180116,
+        0.02224265897416544,
+        0.9555360693502141
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:156.479px;height:64px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        156.479,
+        64
+      ],
+      "widthRatio": 1.4362933406184006,
+      "heightRatio": 2.0221357224814387,
+      "left": -0.21821305579103195,
+      "top": -0.5110678612407195,
+      "pointer": "none",
+      "natural": [
+        158,
+        91
+      ],
+      "hit": "rende",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的一将/animation/skill-button/zhudong_xuanzhong",
+          "id": "skill-button-../../../雷的一将/animation/skill-button/zhudong_xuanzhong-4",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0012090980308130383,
+            0,
+            0,
+            0,
+            0,
+            0.0022665690630674362,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            -0.49583327770233154,
+            -0.5473535656929016,
+            -1,
+            1
+          ],
+          "canvas": [
+            2000,
+            1066
+          ],
+          "rect": {
+            "left": 306.4859619140625,
+            "top": 577.6898803710938,
+            "right": 449.7640686035156,
+            "bottom": 660.1929931640625,
+            "width": 143.27810668945312,
+            "height": 82.50311279296875,
+            "canvasWidth": 1500,
+            "canvasHeight": 800,
+            "x": 306.4859619140625,
+            "y": 577.6898803710938,
+            "bottomInBody": 406.8070068359375,
+            "canvasBottomInBody": 267
+          }
+        },
+        "expected": [
+          0.0012090979467464398,
+          0.0022665690327738665,
+          -0.49583331298828126,
+          -0.5473535919189454
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "8"
+      }
+    },
+    {
+      "zoom": 0.75,
+      "side": "left",
+      "passive": true,
+      "edges": [
+        0.05315183080808078,
+        0.9344361778012972,
+        -0.019298384991658257,
+        0.903656751143444
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:103.125px;height:36.9792px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\");background-size:auto;background-position:0% 0%;background-repeat:repeat;border-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_beidong_btn.png\") 1 14 5 10 fill / 1.42267px 19.9173px 7.11333px 14.2267px / 0 stretch;border-width:0px;border-style:solid;border-radius:50px",
+      "staticSize": [
+        103.125,
+        36.9792
+      ],
+      "widthRatio": 1.4894946709744503,
+      "heightRatio": 2.8073218724109363,
+      "left": -0.24474710338680927,
+      "top": -0.9422535211267605,
+      "pointer": "none",
+      "natural": [
+        120,
+        73
+      ],
+      "hit": "jianxiong",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的一将/animation/skill-button/beidong_xuanzhong",
+          "id": "skill-button-../../../雷的一将/animation/skill-button/beidong_xuanzhong-5",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0010880293557420373,
+            0,
+            0,
+            0,
+            0,
+            0.0022664526477456093,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            -0.5184999704360962,
+            -0.6550312638282776,
+            -1,
+            1
+          ],
+          "canvas": [
+            2000,
+            1066
+          ],
+          "rect": {
+            "left": 312.1636962890625,
+            "top": 628.9223022460938,
+            "right": 410.0863342285156,
+            "bottom": 695.1027221679688,
+            "width": 97.92263793945312,
+            "height": 66.180419921875,
+            "canvasWidth": 1500,
+            "canvasHeight": 800,
+            "x": 312.1636962890625,
+            "y": 628.9223022460938,
+            "bottomInBody": 371.89727783203125,
+            "canvasBottomInBody": 267
+          }
+        },
+        "expected": [
+          0.001088029310438368,
+          0.002266452737050514,
+          -0.5184999796549479,
+          -0.6550312805175782
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "8"
+      }
+    },
+    {
+      "zoom": 1,
+      "side": "right",
+      "passive": false,
+      "edges": [
+        0.009054113966194155,
+        0.9817223551147904,
+        0.022242731227106183,
+        0.9555360004578753
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:117.328px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        117.328,
+        48
+      ],
+      "widthRatio": 1.4362764682381142,
+      "heightRatio": 2.0221354166666665,
+      "left": -0.21820482088160872,
+      "top": -0.5110677083333334,
+      "pointer": "none",
+      "natural": [
+        158,
+        91
+      ],
+      "hit": "rende",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的一将/animation/skill-button/zhudong_xuanzhong",
+          "id": "skill-button-../../../雷的一将/animation/skill-button/zhudong_xuanzhong-6",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0014220727607607841,
+            0,
+            0,
+            0,
+            0,
+            0.00266655208542943,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0.583104133605957,
+            -0.6440234184265137,
+            -1,
+            1
+          ],
+          "canvas": [
+            1500,
+            800
+          ],
+          "rect": {
+            "left": 1103.0703125,
+            "top": 609.078125,
+            "right": 1271.5859375,
+            "bottom": 706.140625,
+            "width": 168.515625,
+            "height": 97.0625,
+            "canvasWidth": 1500,
+            "canvasHeight": 800,
+            "x": 1103.0703125,
+            "y": 609.078125,
+            "bottomInBody": 93.859375,
+            "canvasBottomInBody": 0
+          }
+        },
+        "expected": [
+          0.0014220727848101267,
+          0.0026665521978021978,
+          0.5831041666666668,
+          -0.6440234375
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "8"
+      }
+    },
+    {
+      "zoom": 1,
+      "side": "right",
+      "passive": true,
+      "edges": [
+        0.05302081228531019,
+        0.93436384454772,
+        -0.019582709147349164,
+        0.9033374001945914
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:77.3281px;height:27.7188px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\");background-size:auto;background-position:0% 0%;background-repeat:repeat;border-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_beidong_btn.png\") 1 14 5 10 fill / 1.06667px 14.9333px 5.33333px 10.6667px / 0 stretch;border-width:0px;border-style:solid;border-radius:50px",
+      "staticSize": [
+        77.3281,
+        27.7188
+      ],
+      "widthRatio": 1.4895938573449181,
+      "heightRatio": 2.807215332581736,
+      "left": -0.24489795918367346,
+      "top": -0.9425028184892897,
+      "pointer": "none",
+      "natural": [
+        120,
+        73
+      ],
+      "hit": "jianxiong",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的一将/animation/skill-button/beidong_xuanzhong",
+          "id": "skill-button-../../../雷的一将/animation/skill-button/beidong_xuanzhong-7",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0012798610841855407,
+            0,
+            0,
+            0,
+            0,
+            0.0026648116763681173,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0.6097708344459534,
+            -0.7706640958786011,
+            -1,
+            1
+          ],
+          "canvas": [
+            1500,
+            800
+          ],
+          "rect": {
+            "left": 1149.734375,
+            "top": 669.359375,
+            "right": 1264.921875,
+            "bottom": 747.171875,
+            "width": 115.1875,
+            "height": 77.8125,
+            "canvasWidth": 1500,
+            "canvasHeight": 800,
+            "x": 1149.734375,
+            "y": 669.359375,
+            "bottomInBody": 52.828125,
+            "canvasBottomInBody": 0
+          }
+        },
+        "expected": [
+          0.001279861111111111,
+          0.0026648116438356163,
+          0.6097708333333334,
+          -0.7706640625000001
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "8"
+      }
+    },
+    {
+      "zoom": 1,
+      "side": "left",
+      "passive": false,
+      "edges": [
+        0.009054113966194155,
+        0.9817223551147904,
+        0.022242731227106183,
+        0.9555360004578753
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:117.328px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        117.328,
+        48
+      ],
+      "widthRatio": 1.4362764682381142,
+      "heightRatio": 2.0221354166666665,
+      "left": -0.21820482088160872,
+      "top": -0.5110677083333334,
+      "pointer": "none",
+      "natural": [
+        158,
+        91
+      ],
+      "hit": "rende",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的一将/animation/skill-button/zhudong_xuanzhong",
+          "id": "skill-button-../../../雷的一将/animation/skill-button/zhudong_xuanzhong-8",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0014220727607607841,
+            0,
+            0,
+            0,
+            0,
+            0.00266655208542943,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            -0.5831249952316284,
+            -0.6440234184265137,
+            -1,
+            1
+          ],
+          "canvas": [
+            1500,
+            800
+          ],
+          "rect": {
+            "left": 228.3984375,
+            "top": 609.078125,
+            "right": 396.9140625,
+            "bottom": 706.140625,
+            "width": 168.515625,
+            "height": 97.0625,
+            "canvasWidth": 1500,
+            "canvasHeight": 800,
+            "x": 228.3984375,
+            "y": 609.078125,
+            "bottomInBody": 93.859375,
+            "canvasBottomInBody": 0
+          }
+        },
+        "expected": [
+          0.0014220727848101267,
+          0.0026665521978021978,
+          -0.583125,
+          -0.6440234375
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "8"
+      }
+    },
+    {
+      "zoom": 1,
+      "side": "left",
+      "passive": true,
+      "edges": [
+        0.05302081228531019,
+        0.93436384454772,
+        -0.019582709147349164,
+        0.9033374001945914
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:77.3281px;height:27.7188px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\");background-size:auto;background-position:0% 0%;background-repeat:repeat;border-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_beidong_btn.png\") 1 14 5 10 fill / 1.06667px 14.9333px 5.33333px 10.6667px / 0 stretch;border-width:0px;border-style:solid;border-radius:50px",
+      "staticSize": [
+        77.3281,
+        27.7188
+      ],
+      "widthRatio": 1.4895938573449181,
+      "heightRatio": 2.807215332581736,
+      "left": -0.24489795918367346,
+      "top": -0.9425028184892897,
+      "pointer": "none",
+      "natural": [
+        120,
+        73
+      ],
+      "hit": "jianxiong",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的一将/animation/skill-button/beidong_xuanzhong",
+          "id": "skill-button-../../../雷的一将/animation/skill-button/beidong_xuanzhong-9",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0012798610841855407,
+            0,
+            0,
+            0,
+            0,
+            0.0026648116763681173,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            -0.6097916960716248,
+            -0.7706640958786011,
+            -1,
+            1
+          ],
+          "canvas": [
+            1500,
+            800
+          ],
+          "rect": {
+            "left": 235.0625,
+            "top": 669.359375,
+            "right": 350.25,
+            "bottom": 747.171875,
+            "width": 115.1875,
+            "height": 77.8125,
+            "canvasWidth": 1500,
+            "canvasHeight": 800,
+            "x": 235.0625,
+            "y": 669.359375,
+            "bottomInBody": 52.828125,
+            "canvasBottomInBody": 0
+          }
+        },
+        "expected": [
+          0.001279861111111111,
+          0.0026648116438356163,
+          -0.6097916666666667,
+          -0.7706640625000001
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "8"
+      }
+    },
+    {
+      "zoom": 1.5,
+      "side": "right",
+      "passive": false,
+      "edges": [
+        0.009112439610266948,
+        0.9817970500121456,
+        0.022239324193721655,
+        0.9555392490245912
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:78.1667px;height:31.9792px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        78.1667,
+        31.9792
+      ],
+      "widthRatio": 1.4363006396588487,
+      "heightRatio": 2.0221498371335507,
+      "left": -0.21815031982942432,
+      "top": -0.5110749185667752,
+      "pointer": "none",
+      "natural": [
+        158,
+        91
+      ],
+      "hit": "rende",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的一将/animation/skill-button/zhudong_xuanzhong",
+          "id": "skill-button-../../../雷的一将/animation/skill-button/zhudong_xuanzhong-10",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0014211498200893402,
+            0,
+            0,
+            0,
+            0,
+            0.0026648351922631264,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0.5827292203903198,
+            -0.6442577838897705,
+            -1,
+            1
+          ],
+          "canvas": [
+            1000,
+            533
+          ],
+          "rect": {
+            "left": 1102.84375,
+            "top": 609.203125,
+            "right": 1271.25,
+            "bottom": 706.203125,
+            "width": 168.40625,
+            "height": 97,
+            "canvasWidth": 1500,
+            "canvasHeight": 800,
+            "x": 1102.84375,
+            "y": 609.203125,
+            "bottomInBody": -173.203125,
+            "canvasBottomInBody": -267
+          }
+        },
+        "expected": [
+          0.001421149789029536,
+          0.0026648351648351646,
+          0.5827291666666667,
+          -0.6442578125
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "8"
+      }
+    },
+    {
+      "zoom": 1.5,
+      "side": "right",
+      "passive": true,
+      "edges": [
+        0.05315406389001209,
+        0.9344335489958213,
+        -0.019400598011264814,
+        0.9036691931483671
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:51.5208px;height:18.4688px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\");background-size:auto;background-position:0% 0%;background-repeat:repeat;border-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_beidong_btn.png\") 1 14 5 10 fill / 0.710667px 9.94933px 3.55333px 7.10667px / 0 stretch;border-width:0px;border-style:solid;border-radius:50px",
+      "staticSize": [
+        51.5208,
+        18.4688
+      ],
+      "widthRatio": 1.4894864536999595,
+      "heightRatio": 2.807670614777214,
+      "left": -0.2447432268499798,
+      "top": -0.9424703891708968,
+      "pointer": "none",
+      "natural": [
+        120,
+        73
+      ],
+      "hit": "jianxiong",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的一将/animation/skill-button/beidong_xuanzhong",
+          "id": "skill-button-../../../雷的一将/animation/skill-button/beidong_xuanzhong-11",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.001278993091545999,
+            0,
+            0,
+            0,
+            0,
+            0.0026637413538992405,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0.6093750596046448,
+            -0.7708203196525574,
+            -1,
+            1
+          ],
+          "canvas": [
+            1000,
+            533
+          ],
+          "rect": {
+            "left": 1149.4765625,
+            "top": 669.4375,
+            "right": 1264.5859375,
+            "bottom": 747.21875,
+            "width": 115.109375,
+            "height": 77.78125,
+            "canvasWidth": 1500,
+            "canvasHeight": 800,
+            "x": 1149.4765625,
+            "y": 669.4375,
+            "bottomInBody": -214.21875,
+            "canvasBottomInBody": -267
+          }
+        },
+        "expected": [
+          0.0012789930555555556,
+          0.0026637414383561646,
+          0.609375,
+          -0.7708203124999999
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "8"
+      }
+    },
+    {
+      "zoom": 1.5,
+      "side": "left",
+      "passive": false,
+      "edges": [
+        0.009112439610266948,
+        0.9817970500121456,
+        0.022239324193721655,
+        0.9555392490245912
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:78.1667px;height:31.9792px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        78.1667,
+        31.9792
+      ],
+      "widthRatio": 1.4363006396588487,
+      "heightRatio": 2.0221498371335507,
+      "left": -0.21815031982942432,
+      "top": -0.5110749185667752,
+      "pointer": "none",
+      "natural": [
+        158,
+        91
+      ],
+      "hit": "rende",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的一将/animation/skill-button/zhudong_xuanzhong",
+          "id": "skill-button-../../../雷的一将/animation/skill-button/zhudong_xuanzhong-12",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0014211498200893402,
+            0,
+            0,
+            0,
+            0,
+            0.0026648351922631264,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            -0.582729160785675,
+            -0.6442577838897705,
+            -1,
+            1
+          ],
+          "canvas": [
+            1000,
+            533
+          ],
+          "rect": {
+            "left": 228.75,
+            "top": 609.203125,
+            "right": 397.15625,
+            "bottom": 706.203125,
+            "width": 168.40625,
+            "height": 97,
+            "canvasWidth": 1500,
+            "canvasHeight": 800,
+            "x": 228.75,
+            "y": 609.203125,
+            "bottomInBody": -173.203125,
+            "canvasBottomInBody": -267
+          }
+        },
+        "expected": [
+          0.001421149789029536,
+          0.0026648351648351646,
+          -0.5827291666666667,
+          -0.6442578125
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "8"
+      }
+    },
+    {
+      "zoom": 1.5,
+      "side": "left",
+      "passive": true,
+      "edges": [
+        0.05315406389001209,
+        0.9344335489958213,
+        -0.019400598011264814,
+        0.9036691931483671
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:51.5208px;height:18.4688px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\");background-size:auto;background-position:0% 0%;background-repeat:repeat;border-image:url(\"http://127.0.0.1:52914/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_beidong_btn.png\") 1 14 5 10 fill / 0.710667px 9.94933px 3.55333px 7.10667px / 0 stretch;border-width:0px;border-style:solid;border-radius:50px",
+      "staticSize": [
+        51.5208,
+        18.4688
+      ],
+      "widthRatio": 1.4894864536999595,
+      "heightRatio": 2.807670614777214,
+      "left": -0.2447432268499798,
+      "top": -0.9424703891708968,
+      "pointer": "none",
+      "natural": [
+        120,
+        73
+      ],
+      "hit": "jianxiong",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的一将/animation/skill-button/beidong_xuanzhong",
+          "id": "skill-button-../../../雷的一将/animation/skill-button/beidong_xuanzhong-13",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.001278993091545999,
+            0,
+            0,
+            0,
+            0,
+            0.0026637413538992405,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            -0.609375,
+            -0.7708203196525574,
+            -1,
+            1
+          ],
+          "canvas": [
+            1000,
+            533
+          ],
+          "rect": {
+            "left": 235.4140625,
+            "top": 669.4375,
+            "right": 350.5234375,
+            "bottom": 747.21875,
+            "width": 115.109375,
+            "height": 77.78125,
+            "canvasWidth": 1500,
+            "canvasHeight": 800,
+            "x": 235.4140625,
+            "y": 669.4375,
+            "bottomInBody": -214.21875,
+            "canvasBottomInBody": -267
+          }
+        },
+        "expected": [
+          0.0012789930555555556,
+          0.0026637414383561646,
+          -0.609375,
+          -0.7708203124999999
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "8"
+      }
+    }
+  ],
+  "animation": [
+    {
+      "passive": false,
+      "changed": true
+    },
+    {
+      "passive": true,
+      "changed": true
+    }
+  ],
+  "disabled": {
+    "markers": 0,
+    "playing": 0,
+    "follow": 0
+  },
+  "cleanup": {
+    "markers": 0,
+    "playing": 0,
+    "shared": true,
+    "follow": 0,
+    "parents": 0
+  },
+  "errors": [],
+  "failures": []
+}

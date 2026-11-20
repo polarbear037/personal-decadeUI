@@ -1,0 +1,242 @@
+[
+  {
+    "border": "xinsha",
+    "state": "hidden-white",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "xinsha",
+    "state": "hidden-gold",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "xinsha",
+    "state": "hidden-red",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "xinsha",
+    "state": "hidden-green",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "xinsha",
+    "state": "dynamic-white",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "xinsha",
+    "state": "dynamic-gold",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "xinsha",
+    "state": "dynamic-red",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "xinsha",
+    "state": "dynamic-green",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "xinsha",
+    "state": "static-white",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "xinsha",
+    "state": "static-gold",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "xinsha",
+    "state": "static-red",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "xinsha",
+    "state": "static-green",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "dragon2",
+    "state": "hidden-white",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "dragon2",
+    "state": "hidden-gold",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "dragon2",
+    "state": "hidden-red",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon2",
+    "state": "hidden-green",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon2",
+    "state": "dynamic-white",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "dragon2",
+    "state": "dynamic-gold",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "dragon2",
+    "state": "dynamic-red",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon2",
+    "state": "dynamic-green",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon2",
+    "state": "static-white",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "dragon2",
+    "state": "static-gold",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "dragon2",
+    "state": "static-red",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon2",
+    "state": "static-green",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon3",
+    "state": "hidden-white",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon3",
+    "state": "hidden-gold",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon3",
+    "state": "hidden-red",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "dragon3",
+    "state": "hidden-green",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "dragon3",
+    "state": "dynamic-white",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon3",
+    "state": "dynamic-gold",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon3",
+    "state": "dynamic-red",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "dragon3",
+    "state": "dynamic-green",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "dragon3",
+    "state": "static-white",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon3",
+    "state": "static-gold",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon3",
+    "state": "static-red",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "dragon3",
+    "state": "static-green",
+    "interior_max_rgb_difference": 1
+  },
+  {
+    "border": "dragon4",
+    "state": "hidden-white",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon4",
+    "state": "hidden-gold",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon4",
+    "state": "hidden-red",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon4",
+    "state": "hidden-green",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon4",
+    "state": "dynamic-white",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon4",
+    "state": "dynamic-gold",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon4",
+    "state": "dynamic-red",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon4",
+    "state": "dynamic-green",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon4",
+    "state": "static-white",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon4",
+    "state": "static-gold",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon4",
+    "state": "static-red",
+    "interior_max_rgb_difference": 0
+  },
+  {
+    "border": "dragon4",
+    "state": "static-green",
+    "interior_max_rgb_difference": 0
+  }
+]

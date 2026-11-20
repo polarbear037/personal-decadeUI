@@ -1,0 +1,100 @@
+{
+  "client": {
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "version": "6.4.5",
+    "decoded_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28"
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_8a72e32c34675ee63afb8842348a359d1e11de76b120394a47bae68bd545c346"
+  ],
+  "source": {
+    "plist": "assets/res/new/tex/plist/gameinfo.plist",
+    "plist_sha256": "2d23c6a2d9d8254115ce892f1895db16cd6f9fb30e6dd512ab835e8b6c4b7731",
+    "texture_sha256": "6ff05a3dbacc2a1cef5e05b67cc24490133dfffd7b9d3aeac9f3eb06744bc0f5",
+    "alpha_sha256": "91c659e96274aa2d2ea762b78eb94a89fa0cebbdca610e1fe770dc0a55a98be3"
+  },
+  "assets": [
+    {
+      "frame": "xf_newTimeBar_1.png",
+      "metadata": {
+        "frame": "{{91,272},{560,17}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{560,17}}",
+        "sourceSize": "{560,17}"
+      },
+      "destination": "image/ui/progress/xinsha/xf_newTimeBar_1.png",
+      "size": [
+        560,
+        17
+      ],
+      "sha256": "55a80675aa38df3120bea65f7cd749f41139980025364e564fc35193e9605f8a"
+    },
+    {
+      "frame": "xf_newTimeBar_red_1.png",
+      "metadata": {
+        "frame": "{{692,107},{560,17}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{560,17}}",
+        "sourceSize": "{560,17}"
+      },
+      "destination": "image/ui/progress/xinsha/xf_newTimeBar_red_1.png",
+      "size": [
+        560,
+        17
+      ],
+      "sha256": "3e8b9150e1439976db55d52b7ada83f7db5859017d0a32568885ca6fb658dbdc"
+    },
+    {
+      "frame": "xf_newTimeBar_bg_1.png",
+      "metadata": {
+        "frame": "{{91,252},{562,18}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{2,2},{562,18}}",
+        "sourceSize": "{566,22}"
+      },
+      "destination": "image/ui/progress/xinsha/xf_newTimeBar_bg_1.png",
+      "size": [
+        566,
+        22
+      ],
+      "sha256": "51a580fc44d85983a398e25208b07131273606170a98a37238bf316d576cb9a1"
+    }
+  ],
+  "layout": {
+    "SkillNewStyleBaseWindow": {
+      "sha256": "bc761bac3d2ec8ae795aec07ce4d161a9e2d7af0cae5b78dee55806d2e4e4902",
+      "function": "0.4 line43 PC46..103",
+      "bar": "xf_newTimeBar_1.png, 560x17, CENTER_BOTTOM y113",
+      "prompt": "CENTER_BOTTOM y120, fnt/fzbw.ttf size30 color255,243,222"
+    },
+    "windowSnitch": {
+      "sha256": "4a65d0ab8bf1c55f2ae79988c1e090db6560c802ee908dbcf295ea786f98658f",
+      "function": "0.6 line250 PC162..187",
+      "with_buttons": {
+        "bar_y": 108,
+        "prompt_y": 120
+      },
+      "without_buttons": {
+        "bar_y": 73,
+        "prompt_y": 80
+      }
+    },
+    "WindowManager": {
+      "sha256": "193474362395ed9b3e5f9b0d091a78d4f8d3fcd68a15182ec36356dd7f7c6f7f",
+      "function": "0.81 line696 PC8..41 and PC55..73",
+      "button": "parent runningScene; LEFT_BOTTOM((display.width-USE_WIDTH)/2+39,258); 86x86"
+    }
+  },
+  "scope": "Static APK resource and modified-opcode Lua inspection; local browser verification is separate; no official-client runtime capture.",
+  "adaptation": "Keep the original countdown and current noname card/dialog scale. Override only displayed xinsha dialogs; use each overlay node's measured containing-block scale for body zoom and transformed parents. Paint noninteractive text copies in the body at z104 above progress z103, retaining original nodes for native lifecycle/accessibility. Remove copies and restore only changed inline properties on hide/close. Both normal and dialog progress share brightness(1.1) on the same texture node, as a user-requested display adjustment, not an observed official source parameter; original asset pixels remain unchanged.",
+  "validation": {
+    "command": "node verification/dialog-xinsha-prompts-browser.cjs",
+    "results": "verification/dialog-xinsha-prompts-results.json",
+    "official_client_runtime": false,
+    "electron_live": false
+  }
+}

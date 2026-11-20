@@ -1,0 +1,62 @@
+
+SF_bianta_eff_caiye.png
+size: 409,409
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bao/bao_00001
+  rotate: true
+  xy: 295, 108
+  size: 90, 98
+  orig: 100, 100
+  offset: 1, 2
+  index: -1
+bao/bao_00002
+  rotate: false
+  xy: 205, 3
+  size: 95, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+bao/bao_00003
+  rotate: false
+  xy: 104, 3
+  size: 99, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+bao/bao_00004
+  rotate: false
+  xy: 2, 3
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+bao/bao_00005
+  rotate: false
+  xy: 295, 307
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+cai
+  rotate: true
+  xy: 295, 200
+  size: 105, 92
+  orig: 106, 92
+  offset: 0, 0
+  index: -1
+caiye
+  rotate: true
+  xy: 302, 2
+  size: 104, 84
+  orig: 105, 84
+  offset: 1, 0
+  index: -1
+glow
+  rotate: false
+  xy: 2, 105
+  size: 291, 302
+  orig: 291, 302
+  offset: 0, 0
+  index: -1

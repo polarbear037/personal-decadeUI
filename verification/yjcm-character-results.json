@@ -1,0 +1,165 @@
+{
+  "initial": {
+    "window": {
+      "x": 234.5,
+      "y": 145,
+      "width": 1031,
+      "height": 460,
+      "top": 145,
+      "right": 1265.5,
+      "bottom": 605,
+      "left": 234.5
+    },
+    "close": {
+      "x": 969.5,
+      "y": 0,
+      "w": 53,
+      "h": 53
+    },
+    "mini": {
+      "x": 78,
+      "y": 391,
+      "w": 48,
+      "h": 48
+    },
+    "pane": {
+      "x": 387,
+      "y": 21,
+      "w": 559,
+      "h": 378
+    },
+    "card": {
+      "x": 82.5,
+      "y": 44.390625,
+      "w": 209,
+      "h": 277.20001220703125
+    },
+    "tab": {
+      "x": 965,
+      "y": 53,
+      "w": 52,
+      "h": 126
+    },
+    "text": "密运被锁定技。①每轮开始时，你正面向上获得一名其他角色的一张牌，称为“安”。②每轮结束时，若你有“安”，你将包括“安”的在内的任意张手牌交给一名其他角色，然后你将手牌补至体力上限。③当你不因〖密运②〗失去“安”后，你失去1点体力。胆迎主每回合限一次。你可以展示“安”，然后视为使用或打出一张【杀】或【闪】。然后当你于本回合下一次成为牌的目标后，使用者弃置你的一张牌。",
+    "skillCount": 2,
+    "titleFont": "32px",
+    "textFont": "24px",
+    "skillBg": "url(\"http://127.0.0.1:55469/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/xinsha/game_playinfo_skillbg.png\")",
+    "scrollHeight": 449,
+    "clientHeight": 378,
+    "paused": true
+  },
+  "miniAvailability": {
+    "sameButton": true,
+    "calls": [
+      "self",
+      "self"
+    ]
+  },
+  "cardDetails": {
+    "portrait": [
+      10,
+      -3,
+      180,
+      245
+    ],
+    "mask": "url(\"http://127.0.0.1:55469/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/character/xinsha/official/skin_clip.png\")",
+    "hp": [
+      146,
+      139,
+      36,
+      105
+    ],
+    "background": "url(\"http://127.0.0.1:55469/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/character/xinsha/official/yjcm_general_hp_bg.png\")",
+    "backgroundHeight": 216,
+    "gutter": 0,
+    "scrollbar": "none",
+    "webkitScrollbar": "none",
+    "miniParent": "yjcm-info-footer"
+  },
+  "caojinyu": {
+    "text": "隅泣被每回合限两次。当有角色受到伤害后，若你至其的距离不大于0，则你可以观看牌堆顶的3张牌。你将其中至多1张牌交给受伤角色，然后可以获得剩余牌中的至多1张牌，并将其余牌以原顺序放回牌堆顶。（所有具有颜色的数字至多为5）善身被当有角色死亡时，你可令你的〖隅泣〗中的一个具有颜色的数字+2。然后若你未对该角色造成过伤害，则你回复1点体力。娴静被准备阶段，你可令你的〖隅泣〗中的一个具有颜色的数字+1。若你的体力值等于体力上限，则你可以重复一次此流程。",
+    "scrollTop": 147,
+    "scrollHeight": 525,
+    "clientHeight": 378,
+    "gutter": 0
+  },
+  "scales": [
+    {
+      "width": 1690,
+      "height": 810,
+      "zoom": 1,
+      "size": {
+        "x": 288.25994873046875,
+        "y": 156.59999084472656,
+        "width": 1113.4800415039062,
+        "height": 496.80003356933594
+      }
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "zoom": 1,
+      "size": {
+        "x": 145.36734008789062,
+        "y": 139.3103485107422,
+        "width": 989.2653503417969,
+        "height": 441.37928771972656
+      }
+    },
+    {
+      "width": 1600,
+      "height": 900,
+      "zoom": 1.5,
+      "size": {
+        "x": 181.70916748046875,
+        "y": 174.137939453125,
+        "width": 1236.5816040039062,
+        "height": 551.72412109375
+      }
+    }
+  ],
+  "doubleGeneral": {
+    "general": "secondary",
+    "name": "关羽"
+  },
+  "jin": "url(\"extension/十周年UI/ui/assets/character/xinsha/official/yjcm_general_gradation_bg_20.png\")",
+  "opponent": {
+    "mainName": "未知",
+    "secondary": "未知",
+    "calls": [
+      "self",
+      "self",
+      "other"
+    ]
+  },
+  "disabled": true,
+  "otherStyles": [
+    {
+      "style": "onlineUI",
+      "created": false
+    },
+    {
+      "style": "on",
+      "created": false
+    },
+    {
+      "style": "off",
+      "created": false
+    },
+    {
+      "style": "babysha",
+      "created": false
+    },
+    {
+      "style": "codename",
+      "created": false
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "limitations": [
+    "Mini skin open() is a spy; actual external skin chooser is not loaded in this browser fixture.",
+    "No fresh Electron game or official client runtime visual comparison."
+  ]
+}

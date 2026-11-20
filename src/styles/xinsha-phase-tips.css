@@ -1,0 +1,29 @@
+/* GameSelfSeatUi.changeRoundShow：中心(width/2-450, 227)，750高设计坐标。 */
+body[data-style="othersOff"] #window > .decade-xinsha-phase-tip {
+	--phase-unit: var(--yjcm-unit, min(calc(100vw / 1334), calc(100vh / 750)));
+	position: absolute;
+	left: calc(50% - 450 * var(--phase-unit));
+	top: auto;
+	bottom: calc(var(--yjcm-scene-y, 0px) + 227 * var(--phase-unit));
+	width: calc(116 * var(--phase-unit));
+	height: calc(35 * var(--phase-unit));
+	transform: translate(-50%, 50%);
+	margin: 0;
+	z-index: 6;
+	pointer-events: none;
+	transition: none;
+}
+
+body[data-style="othersOff"] #window > .decade-xinsha-phase-tip[data-wide="true"] {
+	width: calc(136 * var(--phase-unit));
+}
+
+body[data-style="othersOff"] .decade-xinsha-phase-tip > .decade-xinsha-phase-banner {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background: center / 100% 100% no-repeat;
+	transition: none;
+}

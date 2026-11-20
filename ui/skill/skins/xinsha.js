@@ -9,6 +9,68 @@ import { skillButtonTooltip } from "../../../src/ui/skillButtonTooltip.js";
 
 export function createXinshaSkillPlugin(lib, game, ui, get, ai, _status, app) {
 	const base = createBaseSkillPlugin(lib, game, ui, get, ai, _status, app);
+	const watchedSkillEvents = new WeakSet();
+	const syncSkillEffects = () => {
+		const enabled = lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && !_status.over;
+		const activeSkills = new Set();
+		const chain = [];
+		for (let event = _status.event; event && chain.length < 32 && !chain.includes(event); event = event.getParent?.() || event.parent) chain.push(event);
+		let localOwner = false;
+		let finished = false;
+		let pendingPassiveSkill;
+		if (enabled) for (const event of chain.reverse()) {
+			if (event.player != null) localOwner = event.player === game.me;
+			else if (event.source != null) localOwner = event.source === game.me;
+			finished ||= event.finished === true || event.cancelled === true || event._cancelled === true || event._finished === true;
+			if (finished) activeSkills.clear();
+			if (!localOwner || finished) continue;
+			let hasSkill = false;
+			for (const id of [event.skill, event.sourceSkill, event.name]) {
+				if (typeof id !== "string" || !lib.skill[id]) continue;
+				activeSkills.add(id);
+				const source = get.sourceSkillFor?.(id) || get.info(id).sourceSkill;
+				if (source) activeSkills.add(source);
+				pendingPassiveSkill = get.info(id).enable ? undefined : source || id;
+				hasSkill = true;
+			}
+			// 结束后即使没有下一次 game.loop，也立即移除残留光效。
+			if (hasSkill && typeof event.then === "function" && !watchedSkillEvents.has(event)) {
+				watchedSkillEvents.add(event);
+				event.then(syncSkillEffects, syncSkillEffects)?.catch?.(() => {});
+			}
+		}
+		// SpellPassiveItem.setActive 跟随可操作的询问/选择状态，自动触发和纯结算不点亮。
+		const passiveChoosing = enabled && !finished && localOwner && _status.imchoosing === true && !_status.auto && _status.event?.player === game.me;
+		for (const root of [ui.skillControl, ui.gskillControl]) {
+			if (!root?.isConnected) continue;
+			for (const node of root.querySelectorAll("[data-id]")) {
+				const isActiveSkill = !!get.info(node.dataset.id)?.enable;
+				const active = enabled && (isActiveSkill
+					? (!finished && localOwner && node.classList.contains("select") || activeSkills.has(node.dataset.id))
+					: passiveChoosing && pendingPassiveSkill === node.dataset.id);
+				node.classList.toggle("yjcm-skill-resolving", active && isActiveSkill);
+				// 状态由宿主选择引擎提供，素材与播放交给对应的美化扩展。
+				const effect = active ? (isActiveSkill ? "active" : "passive") : "";
+				if (node.dataset.skillButtonEffect !== effect) node.dataset.skillButtonEffect = effect;
+			}
+		}
+	};
+	const markOfficialSkills = control => {
+		const active = [], passive = [];
+		const roots = new Set([ui.skillControl, ui.gskillControl, control].filter(root => root?.isConnected));
+		for (const root of roots) for (const node of root.querySelectorAll("[data-id]")) {
+			node.dataset.yjcmPassive = String(!get.info(node.dataset.id)?.enable);
+			(node.dataset.yjcmPassive === "true" ? passive : active).push(node);
+		}
+		// SpellAreaNew.initSpellBtns：被动三列在下，主动两列在上，全局技能共用网格。
+		const place = (nodes, columns, stepX, stepY, baseY) => nodes.forEach((node, index) => {
+			node.style.setProperty("--yjcm-skill-x", index % columns * stepX);
+			node.style.setProperty("--yjcm-skill-y", baseY + Math.floor(index / columns) * stepY);
+		});
+		place(passive, 3, 79, 32, 0);
+		place(active, 2, 116, 50, passive.length ? Math.ceil(passive.length / 3) * 32 + 7 : 0);
+		syncSkillEffects();
+	};
 
 	const plugin = {
 		...base,
@@ -279,12 +341,6 @@ export function createXinshaSkillPlugin(lib, game, ui, get, ai, _status, app) {
 					}
 
 					if (game.me && get.is.locked(skillId, game.me)) node.classList.add("locked");
-
-					node.addEventListener(lib.config.touchscreen ? "touchend" : "click", () => {
-						if (lib.config["extension_十周年UI_bettersound"]) {
-							game.playAudio("..", "extension", "十周年UI", "audio/SkillBtn");
-						}
-					});
 					app.listen(node, plugin.clickSkill);
 
 					// 添加悬浮提示
@@ -309,6 +365,7 @@ export function createXinshaSkillPlugin(lib, game, ui, get, ai, _status, app) {
 					if (mark) plugin.updateZhuanhuanjiMark(mark, skillId);
 					if (item.classList.contains("xiandingji")) plugin.updateXiandingjiMark(item, skillId);
 				});
+				markOfficialSkills(this);
 			},
 		},
 
@@ -351,12 +408,6 @@ export function createXinshaSkillPlugin(lib, game, ui, get, ai, _status, app) {
 					}
 
 					if (game.me && get.is.locked(skillId, game.me)) node.classList.add("locked");
-
-					node.addEventListener(lib.config.touchscreen ? "touchend" : "click", () => {
-						if (lib.config["extension_十周年UI_bettersound"]) {
-							game.playAudio("..", "extension", "十周年UI", "audio/SkillBtn");
-						}
-					});
 					app.listen(node, plugin.clickSkill);
 
 					// 添加悬浮提示
@@ -428,12 +479,6 @@ export function createXinshaSkillPlugin(lib, game, ui, get, ai, _status, app) {
 						}
 
 						if (get.is.locked(item.id, game.me)) node.classList.add("locked");
-
-						node.addEventListener(lib.config.touchscreen ? "touchend" : "click", () => {
-							if (lib.config["extension_十周年UI_bettersound"]) {
-								game.playAudio("..", "extension", "十周年UI", "audio/SkillBtn");
-							}
-						});
 						app.listen(node, plugin.clickSkill);
 
 						// 添加悬浮提示
@@ -482,6 +527,7 @@ export function createXinshaSkillPlugin(lib, game, ui, get, ai, _status, app) {
 				});
 
 				const level1 = Math.min(4, this.node.trigger.childNodes.length);
+				markOfficialSkills(this);
 				const count = this.node.enable.childNodes.length;
 				const level2 = count > 2 ? 4 : count > 0 ? 2 : 0;
 				ui.arena.dataset.sclevel = Math.max(level1, level2);
@@ -700,6 +746,10 @@ export function createXinshaSkillPlugin(lib, game, ui, get, ai, _status, app) {
 
 		initEventListeners() {
 			app.on("playerUpdateE", player => plugin.updateMark(player));
+			lib.announce.subscribe("Noname.Game.Event.Changed", syncSkillEffects);
+			lib.hooks.checkEnd.add(syncSkillEffects);
+			lib.hooks.uncheckEnd.add(syncSkillEffects);
+			lib.onover.push(syncSkillEffects);
 		},
 
 		initTimer() {

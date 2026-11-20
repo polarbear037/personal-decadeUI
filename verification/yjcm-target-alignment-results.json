@@ -1,0 +1,2486 @@
+[
+  {
+    "border": "xinsha",
+    "records": [
+      {
+        "id": "hidden-idle",
+        "rect": {
+          "x": 40,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "hidden-white",
+        "rect": {
+          "x": 270,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "hidden-gold",
+        "rect": {
+          "x": 500,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "w": 169.625,
+          "h": 221.172,
+          "x": 65.5469,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.2845546943231554,
+          3.211719868995658,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "hidden-red",
+        "rect": {
+          "x": 730,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "w": 180.734,
+          "h": 231.875,
+          "x": 65.1719,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9663367213114853,
+          1.9286694672130977,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "hidden-green",
+        "rect": {
+          "x": 960,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9710793013100556,
+          1.924760218340623,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      },
+      {
+        "id": "dynamic-idle",
+        "rect": {
+          "x": 40,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "dynamic-white",
+        "rect": {
+          "x": 270,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "dynamic-gold",
+        "rect": {
+          "x": 500,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "w": 169.625,
+          "h": 221.172,
+          "x": 65.5469,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.2845546943231554,
+          3.211719868995658,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "dynamic-red",
+        "rect": {
+          "x": 730,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "w": 180.734,
+          "h": 231.875,
+          "x": 65.1719,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9663367213114853,
+          1.9286694672130977,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "dynamic-green",
+        "rect": {
+          "x": 960,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9710793013100556,
+          1.924760218340623,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      },
+      {
+        "id": "static-idle",
+        "rect": {
+          "x": 40,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "static-white",
+        "rect": {
+          "x": 270,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "static-gold",
+        "rect": {
+          "x": 500,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "w": 169.625,
+          "h": 221.172,
+          "x": 65.5469,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.2845546943231554,
+          3.211719868995658,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "static-red",
+        "rect": {
+          "x": 730,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "w": 180.734,
+          "h": 231.875,
+          "x": 65.1719,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9663367213114853,
+          1.9286694672130977,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "static-green",
+        "rect": {
+          "x": 960,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9710793013100556,
+          1.924760218340623,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      },
+      {
+        "id": "outcrop-idle",
+        "rect": {
+          "x": 40,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "outcrop-white",
+        "rect": {
+          "x": 270,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "outcrop-gold",
+        "rect": {
+          "x": 500,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "w": 169.625,
+          "h": 221.172,
+          "x": 65.5469,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.2845546943231554,
+          3.211719868995658,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "outcrop-red",
+        "rect": {
+          "x": 730,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "w": 180.734,
+          "h": 231.875,
+          "x": 65.1719,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9663367213114853,
+          1.9286694672130977,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "outcrop-green",
+        "rect": {
+          "x": 960,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9710793013100556,
+          1.924760218340623,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      }
+    ]
+  },
+  {
+    "border": "dragon2",
+    "records": [
+      {
+        "id": "hidden-idle",
+        "rect": {
+          "x": 40,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 169.484,
+          "h": 221.172,
+          "x": 65.4062,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "hidden-white",
+        "rect": {
+          "x": 270,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "hidden-gold",
+        "rect": {
+          "x": 500,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m2_play_dynamic.png\")",
+          "w": 169.484,
+          "h": 221.172,
+          "x": 65.4062,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.271843203883499,
+          3.2203684466019524,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "hidden-red",
+        "rect": {
+          "x": 730,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m2_play_dynamic.png\")",
+          "w": 181.578,
+          "h": 231.875,
+          "x": 65.2031,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9559993636363586,
+          1.9371417727272728,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "hidden-green",
+        "rect": {
+          "x": 960,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m2_play_dynamic.png\")",
+          "w": 169.484,
+          "h": 221.172,
+          "x": 65.4062,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9636900000000033,
+          1.928670000000011,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      },
+      {
+        "id": "dynamic-idle",
+        "rect": {
+          "x": 40,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 169.484,
+          "h": 221.172,
+          "x": 65.4062,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "dynamic-white",
+        "rect": {
+          "x": 270,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "dynamic-gold",
+        "rect": {
+          "x": 500,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m2_play_dynamic.png\")",
+          "w": 169.484,
+          "h": 221.172,
+          "x": 65.4062,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.271843203883499,
+          3.2203684466019524,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "dynamic-red",
+        "rect": {
+          "x": 730,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m2_play_dynamic.png\")",
+          "w": 181.578,
+          "h": 231.875,
+          "x": 65.2031,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9559993636363586,
+          1.9371417727272728,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "dynamic-green",
+        "rect": {
+          "x": 960,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m2_play_dynamic.png\")",
+          "w": 169.484,
+          "h": 221.172,
+          "x": 65.4062,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9636900000000033,
+          1.928670000000011,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      },
+      {
+        "id": "static-idle",
+        "rect": {
+          "x": 40,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 169.484,
+          "h": 221.172,
+          "x": 65.4062,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "static-white",
+        "rect": {
+          "x": 270,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "static-gold",
+        "rect": {
+          "x": 500,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m2_play_dynamic.png\")",
+          "w": 169.484,
+          "h": 221.172,
+          "x": 65.4062,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.271843203883499,
+          3.2203684466019524,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "static-red",
+        "rect": {
+          "x": 730,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m2_play_dynamic.png\")",
+          "w": 181.578,
+          "h": 231.875,
+          "x": 65.2031,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9559993636363586,
+          1.9371417727272728,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "static-green",
+        "rect": {
+          "x": 960,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m2_play_dynamic.png\")",
+          "w": 169.484,
+          "h": 221.172,
+          "x": 65.4062,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9636900000000033,
+          1.928670000000011,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      },
+      {
+        "id": "outcrop-idle",
+        "rect": {
+          "x": 40,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 169.484,
+          "h": 221.172,
+          "x": 65.4062,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "outcrop-white",
+        "rect": {
+          "x": 270,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "outcrop-gold",
+        "rect": {
+          "x": 500,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m2_play_dynamic.png\")",
+          "w": 169.484,
+          "h": 221.172,
+          "x": 65.4062,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.271843203883499,
+          3.2203684466019524,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "outcrop-red",
+        "rect": {
+          "x": 730,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m2_play_dynamic.png\")",
+          "w": 181.578,
+          "h": 231.875,
+          "x": 65.2031,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9559993636363586,
+          1.9371417727272728,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "outcrop-green",
+        "rect": {
+          "x": 960,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m2_play_dynamic.png\")",
+          "w": 169.484,
+          "h": 221.172,
+          "x": 65.4062,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9636900000000033,
+          1.928670000000011,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      }
+    ]
+  },
+  {
+    "border": "dragon3",
+    "records": [
+      {
+        "id": "hidden-idle",
+        "rect": {
+          "x": 40,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "hidden-white",
+        "rect": {
+          "x": 270,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "hidden-gold",
+        "rect": {
+          "x": 500,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "w": 169.625,
+          "h": 221.172,
+          "x": 65.5469,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.2845546943231554,
+          3.211719868995658,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "hidden-red",
+        "rect": {
+          "x": 730,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "w": 180.734,
+          "h": 231.875,
+          "x": 65.1719,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9663367213114853,
+          1.9286694672130977,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "hidden-green",
+        "rect": {
+          "x": 960,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9710793013100556,
+          1.924760218340623,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      },
+      {
+        "id": "dynamic-idle",
+        "rect": {
+          "x": 40,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "dynamic-white",
+        "rect": {
+          "x": 270,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "dynamic-gold",
+        "rect": {
+          "x": 500,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "w": 169.625,
+          "h": 221.172,
+          "x": 65.5469,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.2845546943231554,
+          3.211719868995658,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "dynamic-red",
+        "rect": {
+          "x": 730,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "w": 180.734,
+          "h": 231.875,
+          "x": 65.1719,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9663367213114853,
+          1.9286694672130977,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "dynamic-green",
+        "rect": {
+          "x": 960,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9710793013100556,
+          1.924760218340623,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      },
+      {
+        "id": "static-idle",
+        "rect": {
+          "x": 40,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "static-white",
+        "rect": {
+          "x": 270,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "static-gold",
+        "rect": {
+          "x": 500,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "w": 169.625,
+          "h": 221.172,
+          "x": 65.5469,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.2845546943231554,
+          3.211719868995658,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "static-red",
+        "rect": {
+          "x": 730,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "w": 180.734,
+          "h": 231.875,
+          "x": 65.1719,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9663367213114853,
+          1.9286694672130977,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "static-green",
+        "rect": {
+          "x": 960,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9710793013100556,
+          1.924760218340623,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      },
+      {
+        "id": "outcrop-idle",
+        "rect": {
+          "x": 40,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "outcrop-white",
+        "rect": {
+          "x": 270,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "outcrop-gold",
+        "rect": {
+          "x": 500,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "w": 169.625,
+          "h": 221.172,
+          "x": 65.5469,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.2845546943231554,
+          3.211719868995658,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "outcrop-red",
+        "rect": {
+          "x": 730,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "w": 180.734,
+          "h": 231.875,
+          "x": 65.1719,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9663367213114853,
+          1.9286694672130977,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "outcrop-green",
+        "rect": {
+          "x": 960,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9710793013100556,
+          1.924760218340623,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      }
+    ]
+  },
+  {
+    "border": "dragon4",
+    "records": [
+      {
+        "id": "hidden-idle",
+        "rect": {
+          "x": 40,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "hidden-white",
+        "rect": {
+          "x": 270,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "hidden-gold",
+        "rect": {
+          "x": 500,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "w": 169.625,
+          "h": 221.172,
+          "x": 65.5469,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.2845546943231554,
+          3.211719868995658,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "hidden-red",
+        "rect": {
+          "x": 730,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "w": 180.734,
+          "h": 231.875,
+          "x": 65.1719,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9663367213114853,
+          1.9286694672130977,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "hidden-green",
+        "rect": {
+          "x": 960,
+          "y": 45,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9710793013100556,
+          1.924760218340623,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      },
+      {
+        "id": "dynamic-idle",
+        "rect": {
+          "x": 40,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "dynamic-white",
+        "rect": {
+          "x": 270,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "dynamic-gold",
+        "rect": {
+          "x": 500,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "w": 169.625,
+          "h": 221.172,
+          "x": 65.5469,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.2845546943231554,
+          3.211719868995658,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "dynamic-red",
+        "rect": {
+          "x": 730,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "w": 180.734,
+          "h": 231.875,
+          "x": 65.1719,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9663367213114853,
+          1.9286694672130977,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "dynamic-green",
+        "rect": {
+          "x": 960,
+          "y": 355,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9710793013100556,
+          1.924760218340623,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      },
+      {
+        "id": "static-idle",
+        "rect": {
+          "x": 40,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "static-white",
+        "rect": {
+          "x": 270,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "static-gold",
+        "rect": {
+          "x": 500,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "w": 169.625,
+          "h": 221.172,
+          "x": 65.5469,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.2845546943231554,
+          3.211719868995658,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "static-red",
+        "rect": {
+          "x": 730,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "w": 180.734,
+          "h": 231.875,
+          "x": 65.1719,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9663367213114853,
+          1.9286694672130977,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "static-green",
+        "rect": {
+          "x": 960,
+          "y": 665,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9710793013100556,
+          1.924760218340623,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      },
+      {
+        "id": "outcrop-idle",
+        "rect": {
+          "x": 40,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "none",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        }
+      },
+      {
+        "id": "outcrop-white",
+        "rect": {
+          "x": 270,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "w": 147.328,
+          "h": 196.5,
+          "x": 65.4219,
+          "y": 90.3906,
+          "z": "-1",
+          "scale": 1
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.0115201183432028,
+          2.9835568047337233,
+          -3.0075481481481416,
+          2.9801061728394984
+        ]
+      },
+      {
+        "id": "outcrop-gold",
+        "rect": {
+          "x": 500,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "w": 169.625,
+          "h": 221.172,
+          "x": 65.5469,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.05
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -3.2845546943231554,
+          3.211719868995658,
+          -4.516468085106386,
+          4.479711702127645
+        ]
+      },
+      {
+        "id": "outcrop-red",
+        "rect": {
+          "x": 730,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "w": 180.734,
+          "h": 231.875,
+          "x": 65.1719,
+          "y": 90.7812,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9663367213114853,
+          1.9286694672130977,
+          -2.7273063559322104,
+          2.6705114406779558
+        ]
+      },
+      {
+        "id": "outcrop-green",
+        "rect": {
+          "x": 960,
+          "y": 975,
+          "width": 169,
+          "height": 234
+        },
+        "root": {
+          "w": 130,
+          "h": 180
+        },
+        "effect": {
+          "url": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "w": 170.109,
+          "h": 221.172,
+          "x": 65.3594,
+          "y": 90.1875,
+          "z": "-1",
+          "scale": 1.03
+        },
+        "backdrop": {
+          "image": "url(\"http://127.0.0.1:61438/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+          "z": "0"
+        },
+        "ridgeErrors": [
+          -1.9710793013100556,
+          1.924760218340623,
+          -2.7125829787234075,
+          2.683669574468098
+        ]
+      }
+    ]
+  }
+]

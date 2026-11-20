@@ -1,0 +1,147 @@
+{
+  "othersOff": {
+    "style": "othersOff",
+    "noTargets": {
+      "label": "确定",
+      "disabled": false,
+      "cards": [
+        "tiesuo"
+      ],
+      "targets": 0,
+      "submitted": false
+    },
+    "blank": {
+      "label": "确定",
+      "disabled": true,
+      "cards": [],
+      "targets": 0,
+      "submitted": false
+    },
+    "target": {
+      "label": "确定",
+      "disabled": false,
+      "cards": [
+        "tiesuo"
+      ],
+      "targets": 1,
+      "submitted": false
+    },
+    "used": {
+      "bool": true,
+      "targets": 1,
+      "name": "tiesuo"
+    },
+    "recast": {
+      "bool": true,
+      "targets": 0,
+      "name": "tiesuo",
+      "filter": true
+    },
+    "otherCard": {
+      "label": "确定",
+      "disabled": true,
+      "cards": [
+        "sha"
+      ],
+      "targets": 0,
+      "submitted": false
+    },
+    "errors": []
+  },
+  "onlineUI": {
+    "style": "onlineUI",
+    "noTargets": {
+      "label": "确定",
+      "disabled": true,
+      "cards": [
+        "tiesuo"
+      ],
+      "targets": 0,
+      "submitted": false,
+      "recastButton": "重铸"
+    },
+    "blank": {
+      "label": "确定",
+      "disabled": true,
+      "cards": [],
+      "targets": 0,
+      "submitted": false,
+      "recastButton": "重铸"
+    },
+    "target": {
+      "label": "确定",
+      "disabled": false,
+      "cards": [
+        "tiesuo"
+      ],
+      "targets": 1,
+      "submitted": false,
+      "recastButton": "重铸"
+    },
+    "used": {
+      "bool": true,
+      "targets": 1,
+      "name": "tiesuo"
+    },
+    "otherCard": {
+      "label": "确定",
+      "disabled": true,
+      "cards": [
+        "sha"
+      ],
+      "targets": 0,
+      "submitted": false,
+      "recastButton": "重铸"
+    },
+    "errors": []
+  },
+  "on": {
+    "style": "on",
+    "noTargets": {
+      "label": "重铸",
+      "disabled": false,
+      "cards": [
+        "tiesuo"
+      ],
+      "targets": 0,
+      "submitted": false
+    },
+    "blank": {
+      "label": "确定",
+      "disabled": true,
+      "cards": [],
+      "targets": 0,
+      "submitted": false
+    },
+    "target": {
+      "label": "确定",
+      "disabled": false,
+      "cards": [
+        "tiesuo"
+      ],
+      "targets": 1,
+      "submitted": false
+    },
+    "used": {
+      "bool": true,
+      "targets": 1,
+      "name": "tiesuo"
+    },
+    "recast": {
+      "bool": true,
+      "targets": 0,
+      "name": "tiesuo",
+      "filter": true
+    },
+    "otherCard": {
+      "label": "确定",
+      "disabled": true,
+      "cards": [
+        "sha"
+      ],
+      "targets": 0,
+      "submitted": false
+    },
+    "errors": []
+  }
+}

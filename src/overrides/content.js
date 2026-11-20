@@ -1,5 +1,6 @@
 import { ui, get, lib, _status, game } from "noname";
 import { hasPendingWuguGain, playPendingWuguGain } from "./player/card-movement-online.js";
+import { captureHandCardPosition } from "../utils/hand-card-position.js";
 function e(methods) {}
 function a(baseGain) {
 	return [
@@ -16,8 +17,9 @@ function a(baseGain) {
 				} else cards.splice(d--, 1);
 			}
 			const _dui = window.decadeUI,
-				gainTo = function (cards, nodelay) {
-					const pendingWugu = lib.config.extension_十周年UI_newDecadeStyle == "onlineUI" && hasPendingWuguGain(cards, event, undefined, player);
+				gainTo = function (cards) {
+					const famousWugu = lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && window.leiYijiangTableUI?.hasWuguGain(cards, player);
+					const pendingWugu = famousWugu || lib.config.extension_十周年UI_newDecadeStyle == "onlineUI" && hasPendingWuguGain(cards, event, undefined, player);
 					cards.duiMod = event.source;
 					if (player == game.me) {
 						if (!pendingWugu) {
@@ -28,7 +30,7 @@ function a(baseGain) {
 					}
 					const d = player.getCards("s");
 					(d.length ? handcards.insertBefore(fragment, d[0]) : handcards.appendChild(fragment),
-						pendingWugu && playPendingWuguGain(cards, player, event),
+						famousWugu ? window.leiYijiangTableUI.playWuguGain(cards, player) : pendingWugu && playPendingWuguGain(cards, player, event),
 						game.broadcast(
 							function (player, cards, num, gaintag) {
 								(player.directgain(cards, null, gaintag), (_status.cardPileNum = num));
@@ -38,21 +40,14 @@ function a(baseGain) {
 							ui.cardPile.childNodes.length,
 							gaintag
 						),
-						!0 !== nodelay
-							? setTimeout(
-									function (player) {
-										(player.update(), game.resume());
-									},
-									get.delayx(400, 400) + 66,
-									player
-								)
-							: player.update());
+						player.update());
 				};
-			if ("draw" == event.animate) (game.pause(), gainTo(cards), player.$draw(cards.length));
-			else if ("gain" == event.animate) (game.pause(), gainTo(cards), player.$gain(cards, event.log));
-			else if ("gain2" == event.animate || "draw2" == event.animate) (game.pause(), gainTo(cards), player.$gain2(cards, event.log));
+			// 卡牌归属与状态当步生效；飞行、淡出及布局由原有动画异步完成。
+			if ("draw" == event.animate) (gainTo(cards), player.$draw(cards.length));
+			else if ("gain" == event.animate) (gainTo(cards), player.$gain(cards, event.log));
+			else if ("gain2" == event.animate || "draw2" == event.animate) (gainTo(cards), player.$gain2(cards, event.log));
 			else if ("give" == event.animate || "giveAuto" == event.animate) {
-				(game.pause(), gainTo(cards));
+				gainTo(cards);
 				const a = event.losing_map;
 				if ("give" == event.animate)
 					for (const e in a) {
@@ -64,15 +59,9 @@ function a(baseGain) {
 						(a[e][1].length && i.$giveAuto(a[e][1], player, event.log), a[e][2].length && i.$give(a[e][2], player, event.log));
 					}
 			} else if ("function" == typeof event.animate) {
-				const a = event.animate(event);
-				(game.pause(),
-					setTimeout(
-						function () {
-							(gainTo(cards, !0), game.resume());
-						},
-						get.delayx(a, a)
-					));
-			} else gainTo(cards, !0);
+				event.animate(event);
+				gainTo(cards);
+			} else gainTo(cards);
 		},
 		async (event, trigger, player) => {
 			event.updatePile && game.updateRoundNumber();
@@ -140,6 +129,8 @@ function t(baseLose) {
 		async (event, trigger, player) => {
 			const evt = event.getParent();
 			("discard" == evt.name && "discard" == event.type) || ("loseToDiscardpile" == evt.name && "loseToDiscardpile" == event.type) ? (!1 === evt.delay && (event.delay = !1), null == event.animate && (event.animate = evt.animate)) : ((event.delay = !1), null == event.blameEvent && (event.animate = !1));
+			// 弃牌仍播放副本动画，但不让本体后续步骤等待过渡或固定展示时长。
+			event.delay = false;
 		},
 		async (event, trigger, player) => {
 			let { cards: cards } = event;
@@ -187,6 +178,7 @@ function t(baseLose) {
 							}
 						} else cards[l].parentNode.classList.contains("expansions") ? ((cards[l].throwWith = cards[l].original = "x"), xs.push(cards[l]), event.vcard_map.set(cards[l], get.autoViewAs(cards[l], void 0, !1)), cards[l].gaintag && cards[l].gaintag.length && unmarks.addArray(cards[l].gaintag)) : cards[l].parentNode.classList.contains("handcards") ? (cards[l].classList.contains("glows") ? ((cards[l].throwWith = cards[l].original = "s"), ss.push(cards[l]), event.vcard_map.set(cards[l], get.autoViewAs(cards[l], void 0, !1))) : ((cards[l].throwWith = cards[l].original = "h"), hs.push(cards[l]), event.vcard_map.set(cards[l], get.autoViewAs(cards[l], void 0, player)))) : (cards[l].throwWith = cards[l].original = null);
 					for (let e = 0; e < o.length; e++) {
+						captureHandCardPosition(o[e], player);
 						if (o[e].gaintag && o[e].gaintag.length) {
 							event.gaintag_map[o[e].cardid] = o[e].gaintag.slice(0);
 							o[e].gaintag.filter(tag => !tag.startsWith("eternal_")).forEach(tag => o[e].removeGaintag(tag));
@@ -246,7 +238,7 @@ function t(baseLose) {
 						a.discardid,
 						event.visible
 					),
-					lib.config.sync_speed && cards[0]?.clone)
+					event.delay !== false && lib.config.sync_speed && cards[0]?.clone)
 				)
 					if (0 != a.delay) {
 						const i = get.time();

@@ -103,6 +103,13 @@ export function createBaseSkillPlugin(lib, game, ui, get, ai, _status, app) {
 			});
 
 			app.reWriteFunction(lib.element.player, {
+				addTip: [
+					function (args, index) {
+						// 悖逆的 AI 试算会逐对添加、移除此状态，不能反复创建提示并强制布局。
+						// 正式结算使用 dcbeini_fengyin，仍由本体正常显示提示。
+						if (index === "dcbeini_fengyin2") return this;
+					},
+				],
 				awakenSkill: [
 					null,
 					function () {

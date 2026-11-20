@@ -1,0 +1,212 @@
+{
+  "results": [
+    {
+      "border": "off",
+      "layers": [
+        {
+          "source": "none",
+          "frame": "none",
+          "width": "16px",
+          "rootWidth": "0",
+          "z": 2,
+          "faceZ": 1,
+          "pointer": "none",
+          "hit": true,
+          "rect": {
+            "x": 27,
+            "y": 16.5,
+            "width": 162,
+            "height": 225,
+            "top": 16.5,
+            "right": 189,
+            "bottom": 241.5,
+            "left": 27
+          },
+          "edgePixels": 0
+        },
+        {
+          "source": "none",
+          "frame": "none",
+          "width": "20px",
+          "rootWidth": "0",
+          "z": 2,
+          "faceZ": 1,
+          "pointer": "none",
+          "hit": true,
+          "rect": {
+            "x": 323,
+            "y": 22.5,
+            "width": 162,
+            "height": 225,
+            "top": 22.5,
+            "right": 485,
+            "bottom": 247.5,
+            "left": 323
+          },
+          "edgePixels": 0
+        }
+      ]
+    },
+    {
+      "border": "kuang1",
+      "layers": [
+        {
+          "source": "url(\"http://127.0.0.1:57809/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/kuang1.png\")",
+          "frame": "url(\"http://127.0.0.1:57809/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/kuang1.png\")",
+          "width": "16px",
+          "rootWidth": "0",
+          "z": 2,
+          "faceZ": 1,
+          "pointer": "none",
+          "hit": true,
+          "rect": {
+            "x": 26.5,
+            "y": 16,
+            "width": 165,
+            "height": 228,
+            "top": 16,
+            "right": 191.5,
+            "bottom": 244,
+            "left": 26.5
+          },
+          "edgePixels": 1207
+        },
+        {
+          "source": "url(\"http://127.0.0.1:57809/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/kuang1.png\")",
+          "frame": "url(\"http://127.0.0.1:57809/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/kuang1.png\")",
+          "width": "20px",
+          "rootWidth": "0",
+          "z": 2,
+          "faceZ": 1,
+          "pointer": "none",
+          "hit": true,
+          "rect": {
+            "x": 322.5,
+            "y": 22,
+            "width": 165,
+            "height": 228,
+            "top": 22,
+            "right": 487.5,
+            "bottom": 250,
+            "left": 322.5
+          },
+          "edgePixels": 1621
+        }
+      ]
+    },
+    {
+      "border": "kuang2",
+      "layers": [
+        {
+          "source": "url(\"http://127.0.0.1:57809/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/kuang2.png\")",
+          "frame": "url(\"http://127.0.0.1:57809/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/kuang2.png\")",
+          "width": "16px",
+          "rootWidth": "0",
+          "z": 2,
+          "faceZ": 1,
+          "pointer": "none",
+          "hit": true,
+          "rect": {
+            "x": 26.5,
+            "y": 16,
+            "width": 165,
+            "height": 228,
+            "top": 16,
+            "right": 191.5,
+            "bottom": 244,
+            "left": 26.5
+          },
+          "edgePixels": 1060
+        },
+        {
+          "source": "url(\"http://127.0.0.1:57809/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/kuang2.png\")",
+          "frame": "url(\"http://127.0.0.1:57809/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/kuang2.png\")",
+          "width": "20px",
+          "rootWidth": "0",
+          "z": 2,
+          "faceZ": 1,
+          "pointer": "none",
+          "hit": true,
+          "rect": {
+            "x": 322.5,
+            "y": 22,
+            "width": 165,
+            "height": 228,
+            "top": 22,
+            "right": 487.5,
+            "bottom": 250,
+            "left": 322.5
+          },
+          "edgePixels": 1474
+        }
+      ]
+    },
+    {
+      "border": "kuang3",
+      "layers": [
+        {
+          "source": "url(\"http://127.0.0.1:57809/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/kuang3.png\")",
+          "frame": "url(\"http://127.0.0.1:57809/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/kuang3.png\")",
+          "width": "16px",
+          "rootWidth": "0",
+          "z": 2,
+          "faceZ": 1,
+          "pointer": "none",
+          "hit": true,
+          "rect": {
+            "x": 26.5,
+            "y": 16,
+            "width": 165,
+            "height": 228,
+            "top": 16,
+            "right": 191.5,
+            "bottom": 244,
+            "left": 26.5
+          },
+          "edgePixels": 1082
+        },
+        {
+          "source": "url(\"http://127.0.0.1:57809/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/kuang3.png\")",
+          "frame": "url(\"http://127.0.0.1:57809/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/kuang3.png\")",
+          "width": "20px",
+          "rootWidth": "0",
+          "z": 2,
+          "faceZ": 1,
+          "pointer": "none",
+          "hit": true,
+          "rect": {
+            "x": 322.5,
+            "y": 22,
+            "width": 165,
+            "height": 228,
+            "top": 22,
+            "right": 487.5,
+            "bottom": 250,
+            "left": 322.5
+          },
+          "edgePixels": 1479
+        }
+      ]
+    }
+  ],
+  "selected": [
+    {
+      "before": "1",
+      "after": "1",
+      "shadow": "none"
+    },
+    {
+      "before": "1",
+      "after": "1",
+      "shadow": "none"
+    }
+  ],
+  "isolated": [
+    "onlineUI",
+    "on",
+    "off",
+    "babysha",
+    "codename"
+  ],
+  "errors": []
+}

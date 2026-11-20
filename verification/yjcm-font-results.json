@@ -1,0 +1,462 @@
+{
+  "samples": [
+    {
+      "selector": ".dialog .caption",
+      "family": "dui-yjcm-label, serif",
+      "fonts": [
+        {
+          "familyName": "FZBeiWeiKaiShu-S19_GBK",
+          "postScriptName": "FZBeiWeiKaiShu-S19_GBK",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "selector": ".dialog .text",
+      "family": "dui-yjcm-label, serif",
+      "fonts": [
+        {
+          "familyName": "FZBeiWeiKaiShu-S19_GBK",
+          "postScriptName": "FZBeiWeiKaiShu-S19_GBK",
+          "isCustomFont": true,
+          "glyphCount": 21
+        }
+      ]
+    },
+    {
+      "selector": "#yjcm-font-input",
+      "family": "dui-yjcm-label, serif",
+      "fonts": [
+        {
+          "familyName": "FZBeiWeiKaiShu-S19_GBK",
+          "postScriptName": "FZBeiWeiKaiShu-S19_GBK",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "selector": "#yjcm-font-inline",
+      "family": "dui-yjcm-label, serif",
+      "fonts": [
+        {
+          "familyName": "FZBeiWeiKaiShu-S19_GBK",
+          "postScriptName": "FZBeiWeiKaiShu-S19_GBK",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "selector": ".lbtn-confirm > .primary",
+      "family": "dui-yjcm-label, serif",
+      "fonts": [
+        {
+          "familyName": "FZBeiWeiKaiShu-S19_GBK",
+          "postScriptName": "FZBeiWeiKaiShu-S19_GBK",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ]
+    },
+    {
+      "selector": ".lbtn-confirm > .primary2",
+      "family": "dui-yjcm-label, serif",
+      "fonts": [
+        {
+          "familyName": "FZBeiWeiKaiShu-S19_GBK",
+          "postScriptName": "FZBeiWeiKaiShu-S19_GBK",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ]
+    },
+    {
+      "selector": ".skill-control [data-id]",
+      "family": "dui-yjcm-skill, serif",
+      "fonts": [
+        {
+          "familyName": "FZShengShiKaiShuS-EB-GB",
+          "postScriptName": "FZShengShiKaiShuS-EB-GB",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ]
+    }
+  ],
+  "menuFonts": [
+    {
+      "text": "开始",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "选项",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "武将",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "卡牌",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "扩展",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "其它",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "身份",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "国战",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "对决",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "联机",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "挑战",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "斗地主",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "单挑",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "战棋",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "塔防",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "乱斗",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "炉石",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "游戏模式标准",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "标准",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "游戏人数八人",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "八人",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "双内奸",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "神武将选择势力",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "双将模式",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "特殊身份",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "明忠卡牌替换",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "主内单挑特效",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "双将体力上限平均值",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "平均值",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "自动显示身份关闭",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "关闭",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "自动标记身份",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "加强主公关闭",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "关闭",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "自由选将",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "自由选择身份和座位",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "开启换将卡",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "开启手气卡禁用",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "禁用",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "开启首轮强化卡牌",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "内奸自动标记伪装反贼",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "显示再战",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "死亡后显示重来",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "死亡后显示复活",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "屏蔽身份关闭",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "关闭",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "屏蔽身份2关闭",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "关闭",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "屏蔽身份3关闭",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "关闭",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "内奸策略均衡",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "均衡",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "AI对人类态度一般",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "一般",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "主公候选武将数3",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "常备主候选武将数按势力筛选",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "按势力筛选",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "忠臣候选武将数4",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "内奸候选武将数6",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "反贼候选武将数3",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "启用平民",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "平民候选武将数4",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "启用年机制",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "启用明察",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "上移↑",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "下移↓",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "隐藏此模式",
+      "family": "dui-yjcm-label, serif"
+    },
+    {
+      "text": "启",
+      "family": "dui-yjcm-label, serif"
+    }
+  ],
+  "isolation": {
+    "on": {
+      "before": [
+        "BKJT",
+        "BKJT",
+        "BKJT",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif"
+      ],
+      "after": [
+        "BKJT",
+        "BKJT",
+        "BKJT",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif"
+      ]
+    },
+    "off": {
+      "before": [
+        "BKJT",
+        "BKJT",
+        "BKJT",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif"
+      ],
+      "after": [
+        "BKJT",
+        "BKJT",
+        "BKJT",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif"
+      ]
+    },
+    "onlineUI": {
+      "before": [
+        "BKJT",
+        "BKJT",
+        "BKJT",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif"
+      ],
+      "after": [
+        "BKJT",
+        "BKJT",
+        "BKJT",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif"
+      ]
+    },
+    "babysha": {
+      "before": [
+        "BKJT",
+        "BKJT",
+        "BKJT",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif"
+      ],
+      "after": [
+        "BKJT",
+        "BKJT",
+        "BKJT",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif"
+      ]
+    },
+    "codename": {
+      "before": [
+        "BKJT",
+        "BKJT",
+        "BKJT",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif"
+      ],
+      "after": [
+        "BKJT",
+        "BKJT",
+        "BKJT",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif"
+      ]
+    }
+  },
+  "decoded": [
+    "fzbw.ttf",
+    "FZSHENGSKSJW.ttf",
+    "yjcm-hyxlsj.ttf",
+    "sy.ttf"
+  ],
+  "errors": [],
+  "failed": []
+}

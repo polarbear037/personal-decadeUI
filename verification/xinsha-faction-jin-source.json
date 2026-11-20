@@ -1,0 +1,25 @@
+{
+  "request": "参考十周年UI自制晋势力图适配一将成名竖牌；用户要求使用一将成名字体。",
+  "mode": "built-in image_gen：参考已有晋图与原版魏牌制作紫色竖牌，再移除生成字形；不改写输入图。",
+  "rendering": "空白紫色牌底使用PNG；晋字由CSS以dui-yjcm-label（fzbw.ttf）100设计单位渲染，沿用原有紫色发光特点。并非官方晋选势力图片。",
+  "assets": [
+    {
+      "path": "ui/assets/lbtn/OL_line/uibutton/select_country_jin.png",
+      "sha256": "97a6515344a29629be1432a11a2c8bce505e6938a8f203993abdbc16f69049a7"
+    },
+    {
+      "path": "image/ui/faction/xinsha/skill_window_select_country_1.png",
+      "sha256": "8e5c7b5dd41e89ad126d372716e252b8b674f50bf51ceb1268328001bef420b7"
+    },
+    {
+      "path": "image/ui/faction/xinsha/select_country_jin_bg.png",
+      "sha256": "cb0794c28f1601fc7ede40a7bebd8119666d4861627c36c742e5ad2bb9626b4a"
+    },
+    {
+      "path": "ui/assets/fonts/fzbw.ttf",
+      "sha256": "9d8c656395e0cae765a2292c403ec2aaaa55ee551ab37ab330bf1ce5c3c2d9cc"
+    }
+  ],
+  "prompt": "保留原版151:182竖牌比例、内凹角边框和细波纹，把蓝色改为低饱和紫色，中心留空且不绘制文字，外侧透明；晋字由实际一将字体文件渲染。",
+  "original_ol_asset_preserved": true
+}

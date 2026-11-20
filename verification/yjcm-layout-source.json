@@ -1,0 +1,103 @@
+{
+  "client": {
+    "apk": "D:/yoka_sgs.x_g_android_6.4.5.apk",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "decoded_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28",
+    "rea_inventory": "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965"
+  },
+  "style": {
+    "value": "othersOff",
+    "skin": "xinsha"
+  },
+  "derivation_before_reference_view": true,
+  "reference_use": "duibi.png is a post-implementation comparison only; no coordinates fitted to reference pixels.",
+  "modules": [
+    {
+      "path": "framework.display",
+      "sha256": "83350b660ba584d72fcd96b13dd8ad8765e9961c781cbca1010af69dc07fadd8"
+    },
+    {
+      "path": "app.view.game.GameLayer",
+      "sha256": "54c6177278f081c2af8987503015af449862ec3a5c25c5c5718ad688995c3c75"
+    },
+    {
+      "path": "app.view.game.GameSelfSeatUi",
+      "sha256": "e7c812fcb76fc79acfa3faf81ba1715cf3ee137737cc3a424f0f4d2209d317bf"
+    },
+    {
+      "path": "app.view.game.GameButtonBar",
+      "sha256": "6d3716462c6ac2617d32bc93dc010fdda80989519100c8b00356cd0163e70ad2"
+    },
+    {
+      "path": "app.view.game.LuckCardView",
+      "sha256": "786279068c69c425eb4b8b7e2e8cae90d47d6aba9f31c34357f33a164baf9239"
+    },
+    {
+      "path": "app.view.game.card.SelfCardsArea",
+      "sha256": "07e9f8984ad0145e4faa1dbf890f0418f0ae2f6c75692a63757babf94d398481"
+    },
+    {
+      "path": "app.view.game.card.CardsArea",
+      "sha256": "3b0d2e4842091050ff66ab31e310bc38a00a55fd40b233de028c4b14aef29120"
+    },
+    {
+      "path": "app.view.game.card.CardUiNew",
+      "sha256": "27c48e1767310c28e76c3215961ea3883806b53cf339c6bd9da9177161b4646e"
+    },
+    {
+      "path": "app.view.game.seat.GameAllSeatView",
+      "sha256": "17e42f82a6fdeceb55fda0ee29ab3c293d8a247638c73fa31516463b7d8dd793"
+    },
+    {
+      "path": "app.view.game.seat.SelfSeatView",
+      "sha256": "c133d73c8e9fe369d5fbd2edae09aef804263d4614010e27cffb16b2740b14b7"
+    },
+    {
+      "path": "app.view.game.spell.SpellAreaNew",
+      "sha256": "d3d4d38f82caf525ea7abb1a25ed7bb259e179d09b4b14d4650bcc3681df0ad3"
+    }
+  ],
+  "observations": {
+    "scene": "framework.display.resetScreen0.55: FIXED_AUTO1334x750, USE_WIDTH=clamp(screenLogicalWidth-2*getScreenBangsWidth(),1334,1750), USE_HEIGHT750. getScreenBangsWidth_0.49: Windows60, unknown wide phones60, ordinary phones0. Derive unit=min(windowWidth/1334,windowHeight/750), centered scene width=clamp(windowWidth/unit-2*safeWidth,1334,1750). Keep device model-specific notch data unverified instead of inventing it.",
+    "hand": "GameSelfSeatUi.createChildren0.120: SelfCardsArea(width=self.width-40-560,isHandCard=true), align CENTER(40,0); CardsArea.ctor0.1: rect(0,0,width,200), left=card_width/2. SelfCardsArea.adjustCardPos0.25 places first card at left then min(card_width+spacing, (width-left)/count) increments. Source CardUiNew.CARD_WIDTH126/CARD_HEIGHT174; do not hardcode that into card scaling. Existing cardScale configuration controls the actual cards; use half of the actual card width as initial inset. Keep selection/folding and current card dimensions. The region height is200 design units; actual cards bottom-align within it. Scroll mode includes the added half-card start inset in its content width so the last card remains reachable.",
+    "controls": "GameSelfSeatUi.createChildren0.120: bar CENTER_BOTTOM(width/2,194). GameButtonBar height100, child centerY100-36=64 => center258, visual207.9x60.5, centers280. LuckCardView.createChildren0.11 center254.5, centers257. Scene offset must include arena offsets.",
+    "sort": "GameSelfSeatUi.checkBtnState0.87 overrides constructor positioning. Active slots from right:380-30=350 then510-30=480, both centerY50; visible sort goes into slot1 when it is the only visible button. Image106x38 => slot1 right297,bottom31; with two visible controls second slot right427. Native order is sort then selectAll.",
+    "handcount": "GameAllSeatView.initUI0.6 self seat CENTER_BOTTOM(DESIGN_WIDTH-7-CCBWIDTH/2+XOrderMoveOff,7), CCBWIDTH190. SelfSeatView.initUI0.1 label CENTER(-39,44), handNum88x34 => global center(W-236,51), right192,bottom34.",
+    "skills": "GameSelfSeatUi.createChildren0.120 right anchor W-202,y72; SpellAreaNew.initSpellBtns0.25: normal origin(0,0); passive RIGHT_BOTTOM(-column*79,row*32), three columns; active RIGHT_BOTTOM(-column*116,ceil(passiveCount/3)*32+7+row*50), two columns. When no passive skills active baseY0. Active110x45, passive72.5x26. Compute main/global nodes together without changing their callbacks.",
+    "hud": "GameMenuLayer menu center(W-42.5,H-43.5), main56x51; question center(W-110,H-41),43x43 scale0.8; pile LEFT_TOP(17,H-21),92x112. Group CENTER_BOTTOM(53,10),73x72 buttons separated by10. Apply the same scene mapping.",
+    "skill_images": "SpellActiveItem.initUI0.2 uses btn_skill_item_normal.png and disabled btn_skill_normal_gray.png. SpellPassiveItem.initUI0.2 uses skill_beidong_btn.png with capInsets(10,1,26,28). SpellActiveItem.updateStatusNode0.17 places limited24x24 at LEFT_BOTTOM(1,24), conversion35x35 at LEFT_BOTTOM(-6,17), with separate gray images. Replace previous online limited mark and yijiang approximation marks; keep noname usable/used/yin-yang logic."
+  },
+  "reference_followup": "Initial code-derived positioning was implemented before opening duibi.png. Comparison showed a common horizontal offset; followed the already identified getScreenBangsWidth_ function to its explicit Windows60 branch. No offset was fitted from pixels.",
+  "validation": {
+    "commands": [
+      "node verification/yjcm-buttons-browser.cjs",
+      "python verification/compare-yjcm-layout.py"
+    ],
+    "results": "verification/yjcm-buttons-results.json",
+    "comparison": "verification/yjcm-layout-comparison.json",
+    "screenshot": "verification/yjcm-layout-comparison.png",
+    "checks": [
+      "othersOff/xinsha route",
+      "11 source-derived positions/sizes",
+      "passive below active and shared global grid",
+      "native updater skill images enabled/disabled/limited-used/conversion",
+      "cardScale config retains actual card scaling",
+      "select-all second slot",
+      "left/right layout,sidebar,documentZoom1.25/1.5",
+      "other five style isolation",
+      "large hand scroll width includes half-card inset"
+    ],
+    "not_verified": [
+      "fresh Electron session",
+      "physical Android device",
+      "model-specific mobile notch configuration"
+    ]
+  },
+  "production_files": {
+    "ui/lbtn/skins/xinsha.js": "a263abc6f2f72d6100008a39ca290723b90f9620bd19097f57dba94d6128b6f2",
+    "ui/skill/skins/xinsha.js": "e6c3a2fc98f63bcd85467c55057c0292142c816c8671b8f13dbb42c130a9587e",
+    "ui/styles/lbtn/xinsha-official.css": "363c8df54005d79568d735cdb76bcef066356b6186513e9fb907823671825abf",
+    "src/styles/layout-xinsha.css": "eb6024fac6d2e08b911cee6e12572796d9825286db9da622de8d0f059a37e782",
+    "src/core/layout.js": "5d5c1f76d79554bde2170da152a9dbfbd3b2fb3e97f91def74138c4c5f6d88af"
+  }
+}

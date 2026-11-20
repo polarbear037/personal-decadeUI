@@ -336,21 +336,6 @@
 	pointer-events: none;
 }
 
-/* 可发动技能提示动画：使用 img 保留 APNG 帧动画，位于文字下方且不拦截点击。 */
-.skill-usability-fx {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	width: var(--skill-usability-fx-width, 100%);
-	height: var(--skill-usability-fx-height, 100%);
-	transform: translate(-50%, -50%);
-	object-fit: fill;
-	object-position: center;
-	z-index: 1;
-	pointer-events: none;
-	user-select: none;
-}
-
 .skill-label-content {
 	position: relative;
 	z-index: 2;
@@ -371,13 +356,6 @@
 .skill-control>.combined>.skillitem.enable-skill.skill-actively-resolving,
 .skill-control>.combined>.xiandingji.enable-skill.skill-actively-resolving {
 	filter: none !important;
-}
-
-.skill-control>.combined>.skillitem.enable-skill>.skill-usability-fx,
-.skill-control>.combined>.xiandingji.enable-skill>.skill-usability-fx,
-.skill-control>.combined>.skillitem.trigger-skill>.skill-usability-fx {
-	/* 文本节点保持在动画之上；img 只负责描边/闪光。 */
-	mix-blend-mode: screen;
 }
 
 /* 滚动指示器样式 */

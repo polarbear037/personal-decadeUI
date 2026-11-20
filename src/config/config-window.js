@@ -67,7 +67,8 @@ function i(t, n) {
 					{ key: "dynamicSkin", name: "动态皮肤", type: "toggle" },
 					{ key: "dynamicSkinOutcrop", name: "动皮露头", type: "toggle" },
 					{ key: "killEffect", name: "击杀特效", type: "toggle" },
-					{ key: "optimizePrompt", name: "优化提示", type: "toggle" },
+					{ key: "optimizePrompt", name: "优化提示", type: "select" },
+					{ key: "simplifySkillPrompt", name: "简化技能提示", type: "toggle" },
 				],
 				card: [
 					{ isTitle: !0, name: "卡牌效果" },

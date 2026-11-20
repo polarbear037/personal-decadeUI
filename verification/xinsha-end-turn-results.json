@@ -1,0 +1,366 @@
+{
+  "othersOff": {
+    "idle": {
+      "ok": {
+        "x": 489.796875,
+        "y": 492.546875,
+        "width": 221.75,
+        "height": 64.53125,
+        "top": 492.546875,
+        "right": 711.546875,
+        "bottom": 557.078125,
+        "left": 489.796875
+      },
+      "cancel": {
+        "x": 788.453125,
+        "y": 490.75,
+        "width": 221.75,
+        "height": 64.53125,
+        "top": 490.75,
+        "right": 1010.203125,
+        "bottom": 555.28125,
+        "left": 788.453125
+      },
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "cancelLabel": "回合结束",
+      "cards": 0,
+      "targets": 0,
+      "endDisplay": "none",
+      "endConnected": true,
+      "marked": true,
+      "unit": 1.0666666666666667
+    },
+    "selected": {
+      "ok": {
+        "x": 489.796875,
+        "y": 492.546875,
+        "width": 221.75,
+        "height": 64.53125,
+        "top": 492.546875,
+        "right": 711.546875,
+        "bottom": 557.078125,
+        "left": 489.796875
+      },
+      "cancel": {
+        "x": 788.453125,
+        "y": 490.75,
+        "width": 221.75,
+        "height": 64.53125,
+        "top": 490.75,
+        "right": 1010.203125,
+        "bottom": 555.28125,
+        "left": 788.453125
+      },
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "cancelLabel": "取消",
+      "cards": 1,
+      "targets": 1,
+      "endDisplay": "none",
+      "endConnected": true,
+      "marked": true,
+      "unit": 1.0666666666666667
+    },
+    "cleared": {
+      "ok": {
+        "x": 489.796875,
+        "y": 492.546875,
+        "width": 221.75,
+        "height": 64.53125,
+        "top": 492.546875,
+        "right": 711.546875,
+        "bottom": 557.078125,
+        "left": 489.796875
+      },
+      "cancel": {
+        "x": 788.453125,
+        "y": 490.75,
+        "width": 221.75,
+        "height": 64.53125,
+        "top": 490.75,
+        "right": 1010.203125,
+        "bottom": 555.28125,
+        "left": 788.453125
+      },
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "cancelLabel": "回合结束",
+      "cards": 0,
+      "targets": 0,
+      "endDisplay": "none",
+      "endConnected": true,
+      "marked": true,
+      "unit": 1.0666666666666667
+    },
+    "resized": {
+      "ok": {
+        "x": 867.46875,
+        "y": 671.09375,
+        "width": 302.140625,
+        "height": 87.921875,
+        "top": 671.09375,
+        "right": 1169.609375,
+        "bottom": 759.015625,
+        "left": 867.46875
+      },
+      "cancel": {
+        "x": 1274.390625,
+        "y": 669.296875,
+        "width": 302.140625,
+        "height": 87.921875,
+        "top": 669.296875,
+        "right": 1576.53125,
+        "bottom": 757.21875,
+        "left": 1274.390625
+      },
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 2444,
+        "height": 1090,
+        "top": 0,
+        "right": 2444,
+        "bottom": 1090,
+        "left": 0
+      },
+      "cancelLabel": "回合结束",
+      "cards": 0,
+      "targets": 0,
+      "endDisplay": "none",
+      "endConnected": true,
+      "marked": true,
+      "unit": 1.4533333333333334
+    },
+    "zoomed": {
+      "ok": {
+        "x": 867.3046875,
+        "y": 670.90625,
+        "width": 302.28125,
+        "height": 87.953125,
+        "top": 670.90625,
+        "right": 1169.5859375,
+        "bottom": 758.859375,
+        "left": 867.3046875
+      },
+      "cancel": {
+        "x": 1274.4140625,
+        "y": 668.21875,
+        "width": 302.28125,
+        "height": 87.953125,
+        "top": 668.21875,
+        "right": 1576.6953125,
+        "bottom": 756.171875,
+        "left": 1274.4140625
+      },
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 2444,
+        "height": 1090,
+        "top": 0,
+        "right": 2444,
+        "bottom": 1090,
+        "left": 0
+      },
+      "cancelLabel": "回合结束",
+      "cards": 0,
+      "targets": 0,
+      "endDisplay": "none",
+      "endConnected": true,
+      "marked": true,
+      "unit": 0.9693333333333334
+    },
+    "cancelAndEnd": true,
+    "confirmUse": true,
+    "errors": []
+  },
+  "onlineUI": {
+    "idle": {
+      "ok": {
+        "x": 570.5,
+        "y": 502.25,
+        "width": 158,
+        "height": 54,
+        "top": 502.25,
+        "right": 728.5,
+        "bottom": 556.25,
+        "left": 570.5
+      },
+      "cancel": {
+        "x": 785.5,
+        "y": 505.75,
+        "width": 134,
+        "height": 47,
+        "top": 505.75,
+        "right": 919.5,
+        "bottom": 552.75,
+        "left": 785.5
+      },
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "cancelLabel": "取消",
+      "cards": 0,
+      "targets": 0,
+      "endDisplay": "flex",
+      "endConnected": true,
+      "marked": false,
+      "unit": null
+    },
+    "selected": {
+      "ok": {
+        "x": 570.5,
+        "y": 502.25,
+        "width": 158,
+        "height": 54,
+        "top": 502.25,
+        "right": 728.5,
+        "bottom": 556.25,
+        "left": 570.5
+      },
+      "cancel": {
+        "x": 785.5,
+        "y": 505.75,
+        "width": 134,
+        "height": 47,
+        "top": 505.75,
+        "right": 919.5,
+        "bottom": 552.75,
+        "left": 785.5
+      },
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "cancelLabel": "取消",
+      "cards": 1,
+      "targets": 1,
+      "endDisplay": "flex",
+      "endConnected": true,
+      "marked": false,
+      "unit": null
+    },
+    "isolated": true,
+    "errors": []
+  },
+  "on": {
+    "idle": {
+      "ok": {
+        "x": 575,
+        "y": 557.171875,
+        "width": 150,
+        "height": 41.28125,
+        "top": 557.171875,
+        "right": 725,
+        "bottom": 598.453125,
+        "left": 575
+      },
+      "cancel": {
+        "x": 765,
+        "y": 557.171875,
+        "width": 150,
+        "height": 41.28125,
+        "top": 557.171875,
+        "right": 915,
+        "bottom": 598.453125,
+        "left": 765
+      },
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "cancelLabel": "回合结束",
+      "cards": 0,
+      "targets": 0,
+      "endDisplay": "flex",
+      "endConnected": true,
+      "marked": false,
+      "unit": null
+    },
+    "selected": {
+      "ok": {
+        "x": 575,
+        "y": 557.171875,
+        "width": 150,
+        "height": 41.28125,
+        "top": 557.171875,
+        "right": 725,
+        "bottom": 598.453125,
+        "left": 575
+      },
+      "cancel": {
+        "x": 765,
+        "y": 557.171875,
+        "width": 150,
+        "height": 41.28125,
+        "top": 557.171875,
+        "right": 915,
+        "bottom": 598.453125,
+        "left": 765
+      },
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "cancelLabel": "取消",
+      "cards": 1,
+      "targets": 1,
+      "endDisplay": "flex",
+      "endConnected": true,
+      "marked": false,
+      "unit": null
+    },
+    "isolated": true,
+    "errors": []
+  }
+}

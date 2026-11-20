@@ -1,0 +1,320 @@
+[
+  {
+    "style": "othersOff",
+    "files": [
+      "/extension/十周年UI/src/styles/card-xinsha.css",
+      "/extension/十周年UI/src/styles/meihua-xinsha.css",
+      "/extension/十周年UI/src/styles/equip-xinsha.css"
+    ],
+    "presentation": [
+      {
+        "text": "已装备",
+        "background": "url(\"http://127.0.0.1:65316/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "pointer": "none",
+        "display": "flex",
+        "font": "dui-yjcm-card-tag, serif",
+        "fontSize": "18.8571px",
+        "color": "rgb(255, 255, 255)",
+        "stroke": "rgb(63, 51, 24)",
+        "strokeWidth": "0.857143px",
+        "left": -0.015769675925925927,
+        "bottom": 0,
+        "width": 1.0316840277777777,
+        "height": 0.35052083333333334,
+        "textCenterX": 0.48423032407407407,
+        "textCenterBottom": 0.16385416666666666,
+        "aboveFace": true
+      },
+      {
+        "text": "已装备",
+        "background": "url(\"http://127.0.0.1:65316/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "pointer": "none",
+        "display": "flex",
+        "font": "dui-yjcm-card-tag, serif",
+        "fontSize": "18.8571px",
+        "color": "rgb(255, 255, 255)",
+        "stroke": "rgb(63, 51, 24)",
+        "strokeWidth": "0.857143px",
+        "left": -0.015769675925925927,
+        "bottom": 0,
+        "width": 1.0316840277777777,
+        "height": 0.35052083333333334,
+        "textCenterX": 0.48423032407407407,
+        "textCenterBottom": 0.16385416666666666,
+        "aboveFace": true
+      }
+    ],
+    "selectionSync": true,
+    "resultOriginal": true,
+    "cleanup": true,
+    "reentry": true,
+    "cancel": true,
+    "disabledAndAlone": true,
+    "errors": []
+  },
+  {
+    "style": "onlineUI",
+    "files": [
+      "/extension/十周年UI/src/styles/card-online.css",
+      "/extension/十周年UI/src/styles/meihua-online.css",
+      "/extension/十周年UI/src/styles/equip-online.css"
+    ],
+    "presentation": [
+      {
+        "text": "已装备",
+        "background": "url(\"http://127.0.0.1:65316/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/Equip_Card_Cover.png\")",
+        "pointer": "none",
+        "display": "block",
+        "font": "HYXLSJ, sans-serif",
+        "fontSize": "26px",
+        "color": "rgb(233, 211, 187)",
+        "stroke": "rgb(233, 211, 187)",
+        "strokeWidth": "0px",
+        "left": 0,
+        "bottom": 0.36,
+        "width": 1,
+        "height": 0.25333333333333335,
+        "textCenterX": 0.5,
+        "textCenterBottom": 0.49666666666666665,
+        "aboveFace": true
+      },
+      {
+        "text": "已装备",
+        "background": "url(\"http://127.0.0.1:65316/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/Equip_Card_Cover.png\")",
+        "pointer": "none",
+        "display": "block",
+        "font": "HYXLSJ, sans-serif",
+        "fontSize": "26px",
+        "color": "rgb(233, 211, 187)",
+        "stroke": "rgb(233, 211, 187)",
+        "strokeWidth": "0px",
+        "left": 0,
+        "bottom": 0.36,
+        "width": 1,
+        "height": 0.25333333333333335,
+        "textCenterX": 0.5,
+        "textCenterBottom": 0.49666666666666665,
+        "aboveFace": true
+      }
+    ],
+    "selectionSync": true,
+    "resultOriginal": true,
+    "cleanup": true,
+    "reentry": true,
+    "cancel": true,
+    "disabledAndAlone": true,
+    "errors": []
+  },
+  {
+    "style": "on",
+    "files": [
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/meihua.css",
+      "/extension/十周年UI/src/styles/equip.css"
+    ],
+    "presentation": [
+      {
+        "text": "已装备",
+        "background": "none",
+        "pointer": "auto",
+        "display": "block",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "color": "rgba(0, 0, 0, 0.3)",
+        "stroke": "rgba(0, 0, 0, 0.3)",
+        "strokeWidth": "0px",
+        "left": 0,
+        "bottom": 0.88,
+        "width": 0.4444444444444444,
+        "height": 0.12,
+        "textCenterX": 0.2222222222222222,
+        "textCenterBottom": 0.94,
+        "aboveFace": true
+      },
+      {
+        "text": "已装备",
+        "background": "none",
+        "pointer": "auto",
+        "display": "block",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "color": "rgba(0, 0, 0, 0.3)",
+        "stroke": "rgba(0, 0, 0, 0.3)",
+        "strokeWidth": "0px",
+        "left": 0,
+        "bottom": 0.88,
+        "width": 0.4444444444444444,
+        "height": 0.12,
+        "textCenterX": 0.2222222222222222,
+        "textCenterBottom": 0.94,
+        "aboveFace": true
+      }
+    ],
+    "selectionSync": true,
+    "resultOriginal": true,
+    "cleanup": true,
+    "reentry": true,
+    "cancel": true,
+    "disabledAndAlone": true,
+    "errors": []
+  },
+  {
+    "style": "off",
+    "files": [
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/meihua.css",
+      "/extension/十周年UI/src/styles/equip.css"
+    ],
+    "presentation": [
+      {
+        "text": "已装备",
+        "background": "none",
+        "pointer": "auto",
+        "display": "block",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "color": "rgba(0, 0, 0, 0.3)",
+        "stroke": "rgba(0, 0, 0, 0.3)",
+        "strokeWidth": "0px",
+        "left": 0,
+        "bottom": 0.88,
+        "width": 0.4444444444444444,
+        "height": 0.12,
+        "textCenterX": 0.2222222222222222,
+        "textCenterBottom": 0.94,
+        "aboveFace": true
+      },
+      {
+        "text": "已装备",
+        "background": "none",
+        "pointer": "auto",
+        "display": "block",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "color": "rgba(0, 0, 0, 0.3)",
+        "stroke": "rgba(0, 0, 0, 0.3)",
+        "strokeWidth": "0px",
+        "left": 0,
+        "bottom": 0.88,
+        "width": 0.4444444444444444,
+        "height": 0.12,
+        "textCenterX": 0.2222222222222222,
+        "textCenterBottom": 0.94,
+        "aboveFace": true
+      }
+    ],
+    "selectionSync": true,
+    "resultOriginal": true,
+    "cleanup": true,
+    "reentry": true,
+    "cancel": true,
+    "disabledAndAlone": true,
+    "errors": []
+  },
+  {
+    "style": "babysha",
+    "files": [
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/meihua.css",
+      "/extension/十周年UI/src/styles/equip.css"
+    ],
+    "presentation": [
+      {
+        "text": "已装备",
+        "background": "none",
+        "pointer": "auto",
+        "display": "block",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "color": "rgba(0, 0, 0, 0.3)",
+        "stroke": "rgba(0, 0, 0, 0.3)",
+        "strokeWidth": "0px",
+        "left": 0,
+        "bottom": 0.88,
+        "width": 0.4444444444444444,
+        "height": 0.12,
+        "textCenterX": 0.2222222222222222,
+        "textCenterBottom": 0.94,
+        "aboveFace": true
+      },
+      {
+        "text": "已装备",
+        "background": "none",
+        "pointer": "auto",
+        "display": "block",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "color": "rgba(0, 0, 0, 0.3)",
+        "stroke": "rgba(0, 0, 0, 0.3)",
+        "strokeWidth": "0px",
+        "left": 0,
+        "bottom": 0.88,
+        "width": 0.4444444444444444,
+        "height": 0.12,
+        "textCenterX": 0.2222222222222222,
+        "textCenterBottom": 0.94,
+        "aboveFace": true
+      }
+    ],
+    "selectionSync": true,
+    "resultOriginal": true,
+    "cleanup": true,
+    "reentry": true,
+    "cancel": true,
+    "disabledAndAlone": true,
+    "errors": []
+  },
+  {
+    "style": "codename",
+    "files": [
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/meihua.css",
+      "/extension/十周年UI/src/styles/equip.css"
+    ],
+    "presentation": [
+      {
+        "text": "已装备",
+        "background": "none",
+        "pointer": "auto",
+        "display": "block",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "color": "rgba(0, 0, 0, 0.3)",
+        "stroke": "rgba(0, 0, 0, 0.3)",
+        "strokeWidth": "0px",
+        "left": 0,
+        "bottom": 0.88,
+        "width": 0.4444444444444444,
+        "height": 0.12,
+        "textCenterX": 0.2222222222222222,
+        "textCenterBottom": 0.94,
+        "aboveFace": true
+      },
+      {
+        "text": "已装备",
+        "background": "none",
+        "pointer": "auto",
+        "display": "block",
+        "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Suits, Helvetica, Arial, sans-serif",
+        "fontSize": "16px",
+        "color": "rgba(0, 0, 0, 0.3)",
+        "stroke": "rgba(0, 0, 0, 0.3)",
+        "strokeWidth": "0px",
+        "left": 0,
+        "bottom": 0.88,
+        "width": 0.4444444444444444,
+        "height": 0.12,
+        "textCenterX": 0.2222222222222222,
+        "textCenterBottom": 0.94,
+        "aboveFace": true
+      }
+    ],
+    "selectionSync": true,
+    "resultOriginal": true,
+    "cleanup": true,
+    "reentry": true,
+    "cancel": true,
+    "disabledAndAlone": true,
+    "errors": []
+  }
+]

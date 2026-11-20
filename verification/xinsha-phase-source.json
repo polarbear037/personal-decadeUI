@@ -1,0 +1,445 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "member": "assets/res/lib/game.zip",
+    "packed_sha256": "df9af4ec01e45b7a2bca47b4fa22c1537c8c8365199b8ba2f764224d5e696d04",
+    "decoded_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28"
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_4cf7c768dce378a1181903c2346dd6aab95189ff8eb252e7a5b3edcd0e749488"
+  ],
+  "source": {
+    "plist": "assets/res/new/tex/plist/gameinfo.plist",
+    "plist_sha256": "2d23c6a2d9d8254115ce892f1895db16cd6f9fb30e6dd512ab835e8b6c4b7731",
+    "texture_sha256": "6ff05a3dbacc2a1cef5e05b67cc24490133dfffd7b9d3aeac9f3eb06744bc0f5",
+    "alpha_sha256": "91c659e96274aa2d2ea762b78eb94a89fa0cebbdca610e1fe770dc0a55a98be3"
+  },
+  "conversion": "ETC1 color + ETC1 alpha red channel; undo atlas rotation, restore sourceSize/offset. Original dimensions, no resizing.",
+  "frames": [
+    {
+      "frame": "phase1.png",
+      "metadata": {
+        "frame": "{{957,1728},{116,35}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{116,35}}",
+        "sourceSize": "{116,35}"
+      },
+      "destination": "image/ui/phase/xinsha/phase1.png",
+      "size": [
+        116,
+        35
+      ],
+      "sha256": "33b25724befd6a0ddd2f4eba7ad57afbfc09d4ace4b29ea8bf5b65cdd696fb30"
+    },
+    {
+      "frame": "phase2.png",
+      "metadata": {
+        "frame": "{{957,1691},{116,35}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{116,35}}",
+        "sourceSize": "{116,35}"
+      },
+      "destination": "image/ui/phase/xinsha/phase2.png",
+      "size": [
+        116,
+        35
+      ],
+      "sha256": "a2e8a85e45422e013c862e1a8c6d5ba74320eacf191d07ec31e03c186056e4f3"
+    },
+    {
+      "frame": "phase3.png",
+      "metadata": {
+        "frame": "{{1632,1440},{116,35}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{116,35}}",
+        "sourceSize": "{116,35}"
+      },
+      "destination": "image/ui/phase/xinsha/phase3.png",
+      "size": [
+        116,
+        35
+      ],
+      "sha256": "cf75a35970f9f823825c9ced0d99bfbc86171962dd9f3fa92de324f9ffa25796"
+    },
+    {
+      "frame": "phase4.png",
+      "metadata": {
+        "frame": "{{1827,1303},{116,35}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{116,35}}",
+        "sourceSize": "{116,35}"
+      },
+      "destination": "image/ui/phase/xinsha/phase4.png",
+      "size": [
+        116,
+        35
+      ],
+      "sha256": "1134b70d1e6bc6f08b30c57b02e11359abef96f2e1aa8e8faa898672d6a5663c"
+    },
+    {
+      "frame": "phase5.png",
+      "metadata": {
+        "frame": "{{2010,748},{116,35}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{116,35}}",
+        "sourceSize": "{116,35}"
+      },
+      "destination": "image/ui/phase/xinsha/phase5.png",
+      "size": [
+        116,
+        35
+      ],
+      "sha256": "1bc493264d874ac97dd2f046ea294151625a9074a58b1d7f33e0ff810c693298"
+    },
+    {
+      "frame": "phase6.png",
+      "metadata": {
+        "frame": "{{2010,630},{116,35}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{116,35}}",
+        "sourceSize": "{116,35}"
+      },
+      "destination": "image/ui/phase/xinsha/phase6.png",
+      "size": [
+        116,
+        35
+      ],
+      "sha256": "ce3c6876da52f8a05f5f3927050c441970031a1ba8f8e668190214a0b69441e4"
+    },
+    {
+      "frame": "phase99.png",
+      "metadata": {
+        "frame": "{{1364,1515},{136,35}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{136,35}}",
+        "sourceSize": "{136,35}"
+      },
+      "destination": "image/ui/phase/xinsha/phase99.png",
+      "size": [
+        136,
+        35
+      ],
+      "sha256": "9b87029396bbbc23a380872d91553da26d8036d284241d3d6cc044f6936bddf2"
+    },
+    {
+      "frame": "phase100.png",
+      "metadata": {
+        "frame": "{{1840,401},{136,35}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{136,35}}",
+        "sourceSize": "{136,35}"
+      },
+      "destination": "image/ui/phase/xinsha/phase100.png",
+      "size": [
+        136,
+        35
+      ],
+      "sha256": "db63c5ce3d06995631313a80725d8ae8dd87b9ba824deca428b3f4df1cb84613"
+    }
+  ],
+  "module": {
+    "member": "app.view.game.GameSelfSeatUi",
+    "sha256": "e7c812fcb76fc79acfa3faf81ba1715cf3ee137737cc3a424f0f4d2209d317bf",
+    "functions": [
+      {
+        "id": "0.42",
+        "offset": 47438,
+        "source": null,
+        "line": 1067,
+        "last": 1094,
+        "flags": [
+          0,
+          1,
+          0,
+          5
+        ],
+        "code": [
+          4194400,
+          16793676,
+          4210784,
+          16793676,
+          32833,
+          12632132,
+          12648544,
+          16793676,
+          4276320,
+          16793676,
+          4292676,
+          12697696,
+          16810060,
+          91,
+          2147893284,
+          4325444,
+          16475,
+          2147647524,
+          147521,
+          12746820,
+          8421452,
+          12763232,
+          196805,
+          213253,
+          33587276,
+          12812384,
+          207,
+          25198668,
+          2214608926,
+          245829,
+          4292740,
+          21233796,
+          278725,
+          8437835,
+          4489376,
+          8388879,
+          25182348,
+          4325508,
+          21282976,
+          16793740,
+          2147647524,
+          4325444,
+          91,
+          2147598372,
+          4522052,
+          12927072,
+          16810060,
+          16475,
+          2147516452,
+          4489312,
+          360645,
+          25182284,
+          8388618
+        ],
+        "constants": [
+          "hideTimeBar",
+          "endSelector",
+          "app",
+          "windowManager",
+          "closeAllWindows",
+          "clearJudeNode",
+          "seat",
+          "inOwnRound",
+          "roundSprite",
+          "display",
+          "newSprite",
+          "pos",
+          200.0,
+          240.0,
+          "addTo",
+          "#phase",
+          "roundState",
+          ".png",
+          "changeRoundShow",
+          "show",
+          "buttonBar",
+          "isVisible",
+          "#phase100.png"
+        ],
+        "children": 0
+      },
+      {
+        "id": "0.110",
+        "offset": 110917,
+        "source": null,
+        "line": 2940,
+        "last": 2966,
+        "flags": [
+          0,
+          2,
+          0,
+          12
+        ],
+        "code": [
+          8388738,
+          16777354,
+          4194436,
+          20988036,
+          16793603,
+          2147483684,
+          8388618,
+          32901,
+          49349,
+          65793,
+          37830916,
+          8421644,
+          283,
+          2147549220,
+          4292868,
+          37863714,
+          37880081,
+          37896338,
+          164037,
+          4194564,
+          37929248,
+          16777615,
+          25166287,
+          33571084,
+          4194564,
+          37945632,
+          213381,
+          25182476,
+          4194564,
+          37978400,
+          16793868,
+          289,
+          33554766,
+          46383442,
+          262529,
+          54804868,
+          8389089,
+          262657,
+          71598596,
+          311877,
+          21299857,
+          25166543,
+          33587724,
+          262721,
+          80036420,
+          311941,
+          16777804,
+          16861,
+          16810380,
+          42041630,
+          33554766,
+          46383442,
+          262529,
+          54886788,
+          455,
+          15,
+          8388623,
+          16810380,
+          42041630,
+          33554766,
+          46383442,
+          262529,
+          54804868,
+          8389089,
+          262657,
+          71598596,
+          311877,
+          16777871,
+          25166543,
+          33587724,
+          262721,
+          80069188,
+          311941,
+          16777804,
+          16861,
+          16810380,
+          42041630,
+          4194628,
+          46530912,
+          262593,
+          63324612,
+          33554959,
+          16777676,
+          16716,
+          8388618
+        ],
+        "constants": [
+          "roundSprite",
+          "fileName",
+          200.0,
+          240.0,
+          "device",
+          "isYjcm",
+          "width",
+          2.0,
+          502.0,
+          52.0,
+          227.0,
+          "pos",
+          "setOpacity",
+          255.0,
+          "stopAllActions",
+          1.0,
+          "cca",
+          "spawn",
+          "moveTo",
+          0.1,
+          20.0,
+          "fadeOut",
+          "callFunc",
+          "fadeIn",
+          "runAction",
+          "seq"
+        ],
+        "children": 1
+      },
+      {
+        "id": "0.110.0",
+        "offset": 111581,
+        "source": null,
+        "line": 2957,
+        "last": 2960,
+        "flags": [
+          2,
+          0,
+          0,
+          3
+        ],
+        "code": [
+          1,
+          4210692,
+          99,
+          12615748,
+          8388771,
+          25182220,
+          35,
+          4227076,
+          8388707,
+          2172665886,
+          8388618
+        ],
+        "constants": [
+          "display",
+          "setImage",
+          "roundSprite",
+          "fileName"
+        ],
+        "children": 0
+      }
+    ]
+  },
+  "observations": [
+    "onRoundChanged 0.42 creates roundSprite and selects #phase{roundState}.png.",
+    "changeRoundShow 0.110 starts with LOADBOOL r2,true / RETURN r2; preserved animation body is unreachable in this build. This restoration deliberately enables that preserved body.",
+    "YJCM center: x=self.width/2-502+52=self.width/2-450, y=227 from bottom, CENTER sprite anchor.",
+    "Preserved action: reset position/opacity, stopAllActions; spawn(moveTo(.1,x-20,y),fadeOut(.1)); setImage; spawn(moveTo(.1,x,y),fadeIn(.1)).",
+    "showButtonBar uses phase99 outside own turn; hideTimeBar/onRoundChanged use phase100 outside own turn."
+  ],
+  "stage_mapping": {
+    "START": 1,
+    "JUDGE": 2,
+    "DESKTOP_DEAL": 3,
+    "DEAL": 4,
+    "DISCARD": 5,
+    "OVER": 6,
+    "response": 99,
+    "opponent": 100
+  },
+  "configuration_scope": "othersOff with JDTSYangshi=2 or 3 uses xinsha assets; onlineUI=3 keeps existing online renderer; explicit hand/happy choices retain their image route.",
+  "validation": {
+    "commands": [
+      "node --check src/ui/phase-tips.js",
+      "node --check src/ui/xinsha-phase-tips.js",
+      "node --check verification/xinsha-phase-browser.cjs",
+      "node verification/xinsha-phase-browser.cjs",
+      "git diff --check -- src/ui/phase-tips.js 开发前必看.md"
+    ],
+    "browser": "Edge headless, actual noname entry and style loaders; invoke installed phase/response hooks, verify eight stages, response restore and phaseAfter, timer races, repeated/aliased frames, disable/gameover cleanup, 1280x576 and 1500x750 geometry, animation samples, options2/3 and Online isolation. Exit code0.",
+    "results": "verification/xinsha-phase-results.json",
+    "screenshot": "verification/xinsha-phase-final.png",
+    "official_client_runtime": false,
+    "noname_electron_live_game": false,
+    "mobile_device": false
+  }
+}

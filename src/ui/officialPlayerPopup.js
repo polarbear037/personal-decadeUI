@@ -1,5 +1,6 @@
 import { lib, ui } from "noname";
 import { officialSkillPrompts } from "./officialSkillPromptData.js";
+import { getOptimizedPromptStyle } from "./promptStyle.js";
 
 // 官方 MUt.labelHandler 只显示 skill.Name；AniType=NONE 不创建通用技能名动画。
 // 同名版本的广播文字相同：任一官方武将技能版本有此动画即可保留该名字。
@@ -12,7 +13,7 @@ function isOfficialPlayerPopup(text) {
 function syncOfficialPlayerPopups() {
 	const arena = ui.arena;
 	if (!arena) return;
-	const enabled = !!lib.config.extension_十周年UI_optimizePrompt;
+	const enabled = getOptimizedPromptStyle() === "online";
 	if (enabled) arena.dataset.decadeOfficialPlayerPopups = "true";
 	else delete arena.dataset.decadeOfficialPlayerPopups;
 	// 开关切换也处理尚未退场的文字，不改伤害数字、录像或联机消息。

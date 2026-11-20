@@ -1,0 +1,69 @@
+{
+  "style": "othersOff",
+  "players": [
+    {
+      "position": "0",
+      "classes": "player fullskin d-skin",
+      "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+      "opacity": "1",
+      "scale": 1.05,
+      "z": "-1"
+    },
+    {
+      "position": "1",
+      "classes": "player fullskin glow_phase",
+      "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+      "opacity": "1",
+      "scale": 1.05,
+      "z": "-1"
+    },
+    {
+      "position": "2",
+      "classes": "player fullskin",
+      "image": "none",
+      "opacity": "0",
+      "scale": 1,
+      "z": "-1"
+    },
+    {
+      "position": "3",
+      "classes": "player fullskin",
+      "image": "none",
+      "opacity": "0",
+      "scale": 1,
+      "z": "-1"
+    },
+    {
+      "position": "7",
+      "classes": "player fullskin d-skin",
+      "image": "none",
+      "opacity": "0",
+      "scale": 1,
+      "z": "-1"
+    },
+    {
+      "position": "5",
+      "classes": "player fullskin",
+      "image": "none",
+      "opacity": "0",
+      "scale": 1,
+      "z": "-1"
+    },
+    {
+      "position": "6",
+      "classes": "player fullskin",
+      "image": "none",
+      "opacity": "0",
+      "scale": 1,
+      "z": "-1"
+    },
+    {
+      "position": "4",
+      "classes": "player fullskin",
+      "image": "none",
+      "opacity": "0",
+      "scale": 1,
+      "z": "-1"
+    }
+  ]
+}

@@ -1,5 +1,9 @@
 ## 扩展介绍
 
+一将成名底部「互动道具」按钮使用独立的 `src/ui/xinsha-props.js`，参照Online的选道具、点击角色和长按连续赠送交互，保留本体投掷广播与录像。原版四种道具为鲜花、菜叶、鸡腿、水桶，对应本体 `flower/egg/wine/shoe` 协议；不接入虚构库存或货币。按钮和图标使用官方素材，飞行静图保留比例，等待资源就绪后播放300ms，命中衔接原版Spine及音效；水桶按官方上边界判断分别处理飞行落点和骨骼偏移。Spine复用十周年已有3.6画布，收起面板清理选择和长按状态，换风格和结算回收本功能演出，其他风格保留原流程。面板布局为本地适配，不宣称与原客户端逐像素一致。
+
+资源位于 `assets/animation/xinsha-props/`、`image/ui/xinsha-props/`、`audio/xinsha-props/`。一将成名6.4.5 APK、`GameAniLayer.onPlaySendItemAni`、图集裁切、原始骨骼/独立alpha与哈希记录保存在 `../雷的一将/tests/ai-interaction-source.json` 和 `ai-interaction-assets.json`。验证入口 `node ../雷的一将/tests/ai-interaction-browser.cjs`；自动互动的三个开关位于雷的一将「AI互动」。浏览器夹具不替代完整Electron实局、手机实机及真实多客户端联机。
+
 无名杀游戏的界面美化扩展
 
 Online 判定生效/失效动画通过 `animation.cap.playSpineTo` 直接挂在卡牌上，复用皮肤切换的 Spine 4.0 运行库及有上限的卡牌播放器池。按官方 `126×174` 卡牌、原点 `(63,87)`、实际逻辑卡宽 `/126` 绘制，不使用共享 Worker 跟随或调整共享画布层级。结束、取消或卡牌移除后回收画布；其他风格保留 `effect_panding` 原路径。`node ../雷的ol/verification/judge-on-card-browser.cjs` 验证真实绘制、官方 GPU 变换、桌面/手机仿真、缩放和清理；完整 Electron 实局与手机实机待验证。
@@ -62,3 +66,6 @@ pnpm dev
 ## 许可证
 
 GPL-3.0
+
+
+神武将选势力美化已接入一将成名分支（`othersOff → xinsha`），由 `src/ui/xinsha-faction-dialog.js` 和同名专用 CSS 承载，运行不依赖雷的ol或雷的一将。沿用本体势力伪卡、原选择顺序、直接确认、取消与结算；本地 `chooseControl` 势力询问复用现有转接，AI和远端仍走原流程，普通武将的唯一势力不弹窗。魏蜀吴群使用当前6.4.5 APK原版151×182竖牌，392高窗口、50间距和65顶距来自 `windowSelectCountry`；布局、图集和字节码见 `verification/xinsha-faction-source.json`。晋参照既有自制图片制作独立紫色牌底，文字使用原版 `fzbw.ttf`，不覆盖OL晋图片；该晋牌属于本地适配，来源见 `verification/xinsha-faction-jin-source.json`。保留通用隐藏恢复及现有倒计时，可取消询问保留原生取消栏。`node verification/xinsha-faction-browser.cjs` 检查真实Dialog/十周年创建与open、三种风格、三档缩放、禁用、键盘/鼠标/触屏、隐藏恢复和关闭清理；选择回传另由 `faction-control-choice.mjs` 与 `faction-control-browser.cjs` 检查。浏览器夹具通过不代表完整Electron实局、手机实机或真实联机验证。

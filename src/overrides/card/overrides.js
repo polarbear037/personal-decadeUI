@@ -4,6 +4,8 @@ import { applyCardSkin as applyCardSkin, handleSkinFallback as handleSkinFallbac
 import { isSkinPreloaded as isSkinPreloaded, getSkinCache as getSkinCache, generateSkinFilename as generateSkinFilename, getFallbackKey as getFallbackKey, getFallbackSkinUrl as getFallbackSkinUrl } from "./skin-loader.js";
 import { CARD_ANIMATION as CARD_ANIMATION, LAYOUT as LAYOUT } from "../../constants.js";
 import { restoreEquipPresentation } from "../../ui/equip-layout.js";
+import { preserveConfirmedHandCard } from "../../utils/hand-card-position.js";
+import { updateXinshaHandMotion, clearXinshaHandMotion, restoreXinshaHandMotionCopy } from "../../ui/handcard-motion-xinsha.js";
 import { ensureChixuerenCardDefinition as ensureChixuerenCardDefinition, getChixuerenSkinFilename as getChixuerenSkinFilename } from "./chixueren.js";
 let h = null,
 	u = null;
@@ -13,6 +15,7 @@ function l(init, copy) {
 function m() {
 	ensureChixuerenCardDefinition();
 	const clone = u.apply(this, arguments);
+	restoreXinshaHandMotionCopy(this, clone);
 	// 推荐属于当前手牌，不能随出牌/移牌副本带走。
 	clone.querySelectorAll(".dui-mate-recommend-badge").forEach(badge => badge.remove());
 	clone.classList.remove("dui-mate-recommended", "dui-mate-card-selected");
@@ -23,6 +26,7 @@ function m() {
 		clone._decadeChixuerenSkinClone = true;
 		clone._decadeChixuerenSkinFilename = this._decadeChixuerenSkinFilename;
 	}
+	if (applyCardSkin(clone, clone, { providerOnly: true })) return clone;
 	const skinKey = lib.config.extension_十周年UI_cardPrettify;
 	if (!skinKey || "off" === skinKey) return clone;
 	if (!isSkinPreloaded(skinKey)) return clone;
@@ -115,14 +119,24 @@ function p(bool, delay, baseTransform) {
 		return void setTimeout(() => {
 			this.updateTransform(this.classList.contains("selected"));
 		}, delay);
+	if (preserveConfirmedHandCard(this)) { clearXinshaHandMotion(this); return; }
 	if (baseTransform !== undefined) this._transform = baseTransform;
 	let transform = baseTransform;
-	if (_status.event.player == game.me && this._transform && this.parentNode?.parentNode?.parentNode == ui.me && (!_status.mousedown || _status.mouseleft))
+	const xinsha = (window.decadeUI?.config?.newDecadeStyle ?? lib.config.extension_十周年UI_newDecadeStyle) === "othersOff",
+		hovered = xinsha && lib.config.spread_card && ui._handcardHover === this;
+	// 布局传入基础位置时仍须合成选中抬升，按住其他牌不能让已选牌先落下。
+	if ((_status.event.player == game.me || hovered) && this._transform && this.parentNode?.parentNode?.parentNode == ui.me && (baseTransform !== undefined || !_status.mousedown || _status.mouseleft))
 		if (bool) {
-			const offset = window.decadeUI?.isMobile?.() ? LAYOUT.CARD_SELECT_OFFSET_MOBILE : LAYOUT.CARD_SELECT_OFFSET_DESKTOP;
+			const offset = xinsha ? (this.clientWidth || 108) * 21 / 126 : window.decadeUI?.isMobile?.() ? LAYOUT.CARD_SELECT_OFFSET_MOBILE : LAYOUT.CARD_SELECT_OFFSET_DESKTOP;
 			transform = `${this._transform} translateY(-${offset}px)`;
 		} else transform = this._transform || "";
-	if (transform !== undefined && this.style.transform !== transform) this.style.transform = transform;
+	if (transform !== undefined) {
+		if (xinsha && this.parentNode === ui.handcards1 && this.animate && (!hovered || this.classList.contains("selected"))) updateXinshaHandMotion(this, transform, !!bool);
+		else {
+			clearXinshaHandMotion(this);
+			if (this.style.transform !== transform) this.style.transform = transform;
+		}
+	}
 }
 function g(player) {
 	if (!player) return;

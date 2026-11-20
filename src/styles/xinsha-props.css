@@ -1,0 +1,54 @@
+/* GameGiveItemView：362×185，缩放148/185；场景安全边距与左下菜单共用。 */
+body[data-style="othersOff"] .xinsha-prop-panel {
+ position:absolute; left:calc(var(--yjcm-scene-x, 0px) + 89 * var(--yjcm-unit, 1px));
+ bottom:calc(var(--yjcm-scene-y, 0px) + 176 * var(--yjcm-unit, 1px));
+ width:362px; height:185px; box-sizing:border-box; padding:0;
+ border:10px solid transparent; border-image:url("../../image/ui/xinsha-props/gi_sl_all_item_bg.png") 10 fill / 10px;
+ transform-origin:left bottom; z-index:110; overflow:visible; touch-action:none;
+ color:#fffac7; font:20px / 1 "dui-yjcm-label",serif; text-shadow:none; box-shadow:none; border-radius:0;
+}
+body[data-style="othersOff"] .xinsha-prop-panel,
+body[data-style="othersOff"] .xinsha-prop-panel * { transition:none; box-sizing:border-box; }
+body[data-style="othersOff"] .xinsha-prop-grid {
+ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+ display:grid; grid-template-columns:repeat(4,88.74px); grid-template-rows:repeat(2,88.74px); column-gap:2px; row-gap:0;
+}
+body[data-style="othersOff"] .xinsha-prop-panel button {
+ position:relative; display:block; width:88.74px; height:88.74px; padding:0; margin:0;
+ border:0; border-radius:0; background:url("../../image/ui/xinsha-props/gi_sl_item_bg.png") center / 100% 100% no-repeat;
+ box-shadow:none; color:inherit; font:inherit; cursor:pointer; appearance:none; overflow:visible; isolation:isolate;
+}
+body[data-style="othersOff"] .xinsha-prop-panel button:nth-child(n+5) { top:-2px; }
+body[data-style="othersOff"] .xinsha-prop-panel button::after {
+ content:""; position:absolute; box-sizing:border-box; left:50%; top:calc(50% + 1.02px); width:105.06px; height:102px; z-index:0;
+ transform:translate(-50%,-50%); border:10px solid transparent;
+ border-image:url("../../image/ui/xinsha-props/gi_sl_item_select.png") 10 fill / 10px;
+ opacity:0; pointer-events:none; border-radius:0;
+}
+body[data-style="othersOff"] .xinsha-prop-panel button.xinsha-prop-selected::after { opacity:1; }
+body[data-style="othersOff"] .xinsha-prop-panel button:focus-visible { outline:1px solid #fffac7; }
+body[data-style="othersOff"] .xinsha-prop-icon {
+ position:absolute; left:50%; top:calc(50% - 8.16px); width:51px; height:51px;
+ transform:translate(-50%,-50%); object-fit:contain; pointer-events:none; max-width:none; z-index:1;
+}
+body[data-style="othersOff"] .xinsha-prop-small-icon > .xinsha-prop-icon { width:auto; height:auto; transform:translate(-50%,-50%) scale(1.02); }
+body[data-style="othersOff"] .xinsha-prop-cost {
+ position:absolute; left:4.08px; bottom:3.06px; width:79.56px; height:21.42px;
+ display:flex; align-items:center; justify-content:center; gap:10.2px;
+ border:6px solid transparent; border-image:url("../../image/ui/xinsha-props/gi_sl_item_numbg.png") 6 fill / 6px;
+ font:inherit; line-height:21.42px; pointer-events:none; z-index:1;
+}
+body[data-style="othersOff"] .xinsha-prop-cost img { position:relative; display:block; width:18.87px; height:16.32px; flex-shrink:0; }
+body[data-style="othersOff"] .xinsha-prop-cost span { position:relative; display:block; }
+body[data-style="othersOff"] .xinsha-prop-balance {
+ position:absolute; left:calc(50% + 6px); bottom:100%; transform:translateX(-50%); width:229px; height:31px;
+ background:url("../../image/ui/xinsha-props/gi_sl_gift_cnt_bg.png") center / 100% 100% no-repeat;
+ display:flex; align-items:center; justify-content:center; gap:5px; font-size:26px;
+}
+body[data-style="othersOff"] .xinsha-prop-balance img { position:relative; width:29.6px; height:25.6px; }
+body[data-style="othersOff"] .xinsha-prop-balance span { position:relative; }
+body[data-style="othersOff"] .player > .xinsha-prop-target {
+ position:absolute; left:50%; bottom:calc(100% - 10px); width:60px; height:52px; transform:translateX(-50%);
+ background:url("../../image/ui/xinsha-props/gi_sl_can_select_arrow.png") center / contain no-repeat; z-index:100; pointer-events:none;
+}
+body[data-style="othersOff"] .xinsha-prop-flight { pointer-events:none; max-width:none; max-height:none; transition:none; object-fit:contain; }

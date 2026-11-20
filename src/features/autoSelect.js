@@ -1,4 +1,4 @@
-import { _status, ui, lib, game } from "noname";
+import { _status, ui, lib, game, get } from "noname";
 import { wrapAround as wrapAround } from "../utils/safeOverride.js";
 const t = /* @__PURE__ */ new WeakMap(),
 	n = () => !1 !== lib.config.extension_十周年UI_autoSelect,
@@ -81,6 +81,26 @@ const t = /* @__PURE__ */ new WeakMap(),
 			!0)
 		);
 	};
+
+function selectQinglongTarget(event) {
+	// 原版追刀的 roleOpt 固定原目标；复杂选牌不应让玩家再次指定这名角色。
+	if (lib.config.extension_十周年UI_newDecadeStyle !== "othersOff" || event.name !== "chooseToUse" || event.logSkill !== "qinglong_skill" || _status.auto || _status.video) return false;
+	const target = event.sourcex;
+	const card = get.card();
+	if (!target || !card || get.name(card) !== "sha") return false;
+	if (event.filterCard && ui.selected.cards.length < get.select(event.selectCard)[0]) return false;
+	if (ui.selected.targets.includes(target)) {
+		// 固定目标不提供取消选择入口；额外目标仍由本体检查和点击流程维护。
+		target.classList.remove("selectable");
+		return false;
+	}
+	const max = get.select(event.selectTarget)[1];
+	if (max === 0 || max > 0 && ui.selected.targets.length >= max || !target.classList.contains("selectable")) return false;
+	target.classList.add("selected");
+	ui.selected.targets.add(target);
+	return true;
+}
+
 function i() {
 	(wrapAround(ui.click, "cancel", function (e, ...n) {
 		return (t.delete(_status.event), e.apply(this, n));
@@ -105,7 +125,12 @@ function i() {
 			return original.apply(this, args);
 		}),
 		lib.hooks?.checkEnd?.add("_decadeUI_autoSelect", (event, { ok: e }) => {
-			if (e || _status.event !== event || !event.isMine() || (_status.paused && !_status.imchoosing)) return;
+			if (_status.event !== event || !event.isMine() || (_status.paused && !_status.imchoosing)) return;
+			if (selectQinglongTarget(event)) {
+				game.check();
+				return;
+			}
+			if (e) return;
 			const t =
 				(() => {
 					const event = _status.event;

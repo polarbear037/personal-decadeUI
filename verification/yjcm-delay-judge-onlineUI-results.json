@@ -1,0 +1,114 @@
+{
+  "result": {
+    "style": "onlineUI",
+    "operations": [
+      {
+        "own": true,
+        "name": "lebu",
+        "id": "1897647310"
+      },
+      {
+        "own": true,
+        "name": "bingliang",
+        "id": "8546735315"
+      },
+      {
+        "own": false,
+        "name": "lebu",
+        "id": "7192242320"
+      },
+      {
+        "own": false,
+        "name": "bingliang",
+        "id": "6844057325"
+      },
+      {
+        "own": true,
+        "name": "bingliang",
+        "id": "3511023330",
+        "virtual": true
+      }
+    ],
+    "samples": [],
+    "remaining": 0,
+    "completion": [
+      {
+        "id": "1897647310",
+        "judges": [
+          {
+            "name": "bingliang",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          {
+            "name": "lebu",
+            "visibility": "visible",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "id": "8546735315",
+        "judges": [
+          {
+            "name": "bingliang",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          {
+            "name": "lebu",
+            "visibility": "visible",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "id": "7192242320",
+        "judges": [
+          {
+            "name": "bingliang",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          {
+            "name": "lebu",
+            "visibility": "visible",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "id": "6844057325",
+        "judges": [
+          {
+            "name": "bingliang",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          {
+            "name": "lebu",
+            "visibility": "visible",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "id": "3511023330",
+        "virtual": true,
+        "judges": [
+          {
+            "name": "bingliang",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          {
+            "name": "lebu",
+            "visibility": "visible",
+            "opacity": "1"
+          }
+        ]
+      }
+    ]
+  },
+  "errors": []
+}

@@ -1,0 +1,516 @@
+{
+  "card": {
+    "host": {
+      "x": 5,
+      "y": 410.0625,
+      "width": 518,
+      "height": 178,
+      "top": 410.0625,
+      "right": 523,
+      "bottom": 588.0625,
+      "left": 5
+    },
+    "panel": {
+      "x": 5,
+      "y": 410.0625,
+      "width": 518,
+      "height": 178.390625,
+      "top": 410.0625,
+      "right": 523,
+      "bottom": 588.453125,
+      "left": 5
+    },
+    "title": {
+      "x": 24,
+      "y": 421.0625,
+      "width": 463,
+      "height": 34,
+      "top": 421.0625,
+      "right": 487,
+      "bottom": 455.0625,
+      "left": 24
+    },
+    "body": {
+      "x": 24,
+      "y": 469.0625,
+      "width": 463,
+      "height": 86.390625,
+      "top": 469.0625,
+      "right": 487,
+      "bottom": 555.453125,
+      "left": 24
+    },
+    "text": "杀基本牌出牌阶段，对你攻击范围内的一名角色使用。其须使用一张【闪】，否则你对其造成1点伤害。",
+    "color": "rgb(85, 207, 48)",
+    "bodyFont": "24px",
+    "frame": "url(\"http://127.0.0.1:54857/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/xinsha/item_tips_bg.png\")",
+    "unit": 1,
+    "source": "handcards",
+    "font": "dui-yjcm-label, serif"
+  },
+  "cardLayer": {
+    "tooltipZ": 103,
+    "controlsZ": 102,
+    "overlaps": true,
+    "tooltipOnTop": true
+  },
+  "skill": {
+    "rect": {
+      "x": 983,
+      "y": 484,
+      "width": 400,
+      "height": 139,
+      "top": 484,
+      "right": 1383,
+      "bottom": 623,
+      "left": 983
+    },
+    "title": {
+      "x": 1004,
+      "y": 500,
+      "width": 87,
+      "height": 41,
+      "top": 500,
+      "right": 1091,
+      "bottom": 541,
+      "left": 1004
+    },
+    "badge": {
+      "x": 1104,
+      "y": 502,
+      "width": 38,
+      "height": 38,
+      "top": 502,
+      "right": 1142,
+      "bottom": 540,
+      "left": 1104
+    },
+    "name": "制衡",
+    "active": "true",
+    "body": "出牌阶段限一次，你可以弃置任意张牌，然后摸等量的牌。",
+    "font": "dui-yjcm-skill, serif",
+    "size": "34px",
+    "bodySize": "22px",
+    "bodyRect": {
+      "x": 1002,
+      "y": 553,
+      "width": 360,
+      "height": 56,
+      "top": 553,
+      "right": 1362,
+      "bottom": 609,
+      "left": 1002
+    },
+    "frame": "url(\"http://127.0.0.1:54857/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/xinsha/new_skill_bg.png\")",
+    "unit": 1
+  },
+  "skillLayer": {
+    "tooltipZ": 103,
+    "controlsZ": 102,
+    "overlaps": true,
+    "tooltipOnTop": true
+  },
+  "userCard": {
+    "title": "无中生有",
+    "visibleText": "",
+    "size": {
+      "x": 131.09375,
+      "y": 460.40625,
+      "width": 518,
+      "height": 121,
+      "top": 460.40625,
+      "right": 649.09375,
+      "bottom": 581.40625,
+      "left": 131.09375
+    },
+    "types": [
+      {
+        "text": "锦囊牌",
+        "display": "block"
+      }
+    ],
+    "body": {
+      "x": 150.09375,
+      "y": 519.40625,
+      "width": 463,
+      "height": 28.796875,
+      "top": 519.40625,
+      "right": 613.09375,
+      "bottom": 548.203125,
+      "left": 150.09375
+    }
+  },
+  "appearanceFrames": [
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    }
+  ],
+  "long": {
+    "height": 730,
+    "view": 750,
+    "scrollHeight": 3247,
+    "clientHeight": 730,
+    "scrollTop": 100,
+    "dynamic": true
+  },
+  "exclusions": {
+    "infohidden": true,
+    "infoflip": true,
+    "blank": true,
+    "outsideHand": true
+  },
+  "scaling": [
+    {
+      "host": {
+        "x": 69.875,
+        "y": 472.109375,
+        "width": 497.03125,
+        "height": 116.09375,
+        "top": 472.109375,
+        "right": 566.90625,
+        "bottom": 588.203125,
+        "left": 69.875
+      },
+      "panel": {
+        "x": 69.875,
+        "y": 472.109375,
+        "width": 497.031494140625,
+        "height": 115.90704345703125,
+        "top": 472.109375,
+        "right": 566.906494140625,
+        "bottom": 588.0164184570312,
+        "left": 69.875
+      },
+      "title": {
+        "x": 88.10588073730469,
+        "y": 482.6640930175781,
+        "width": 444.25787353515625,
+        "height": 32.623687744140625,
+        "top": 482.6640930175781,
+        "right": 532.3637542724609,
+        "bottom": 515.2877807617188,
+        "left": 88.10588073730469
+      },
+      "body": {
+        "x": 88.10588073730469,
+        "y": 528.7210693359375,
+        "width": 444.25787353515625,
+        "height": 27.63116455078125,
+        "top": 528.7210693359375,
+        "right": 532.3637542724609,
+        "bottom": 556.3522338867188,
+        "left": 88.10588073730469
+      },
+      "text": "无中生有锦囊牌出牌阶段，对你使用。你摸两张牌。",
+      "color": "rgb(85, 207, 48)",
+      "bodyFont": "24px",
+      "frame": "url(\"http://127.0.0.1:54857/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/xinsha/item_tips_bg.png\")",
+      "unit": 0.95952023988006,
+      "source": "handcards",
+      "font": "dui-yjcm-label, serif"
+    },
+    {
+      "host": {
+        "x": 135,
+        "y": 411.25,
+        "width": 414.390625,
+        "height": 96.796875,
+        "top": 411.25,
+        "right": 549.390625,
+        "bottom": 508.046875,
+        "left": 135
+      },
+      "panel": {
+        "x": 135,
+        "y": 411.25,
+        "width": 414.4000244140625,
+        "height": 96.63751220703125,
+        "top": 411.25,
+        "right": 549.4000244140625,
+        "bottom": 507.88751220703125,
+        "left": 135
+      },
+      "title": {
+        "x": 150.1999969482422,
+        "y": 420.04998779296875,
+        "width": 370.39996337890625,
+        "height": 27.20001220703125,
+        "top": 420.04998779296875,
+        "right": 520.5999603271484,
+        "bottom": 447.25,
+        "left": 150.1999969482422
+      },
+      "body": {
+        "x": 150.1999969482422,
+        "y": 458.45001220703125,
+        "width": 370.39996337890625,
+        "height": 23.0374755859375,
+        "top": 458.45001220703125,
+        "right": 520.5999603271484,
+        "bottom": 481.48748779296875,
+        "left": 150.1999969482422
+      },
+      "text": "无中生有锦囊牌出牌阶段，对你使用。你摸两张牌。",
+      "color": "rgb(85, 207, 48)",
+      "bodyFont": "24px",
+      "frame": "url(\"http://127.0.0.1:54857/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/xinsha/item_tips_bg.png\")",
+      "unit": 1,
+      "source": "handcards",
+      "font": "dui-yjcm-label, serif"
+    }
+  ],
+  "isolation": [
+    {
+      "style": "onlineUI",
+      "xinsha": false,
+      "online": true,
+      "text": "无中生有♥ J锦囊牌出牌阶段，对你使用。你摸两张牌。",
+      "skill": {
+        "xinsha": false,
+        "online": true,
+        "background": "none"
+      }
+    },
+    {
+      "style": "on",
+      "xinsha": false,
+      "online": false,
+      "text": "无中生有【♥︎J】锦囊牌出牌阶段，对你使用。你摸两张牌。",
+      "skill": {
+        "xinsha": false,
+        "online": false,
+        "background": "none"
+      }
+    },
+    {
+      "style": "off",
+      "xinsha": false,
+      "online": false,
+      "text": "无中生有【♥︎J】锦囊牌出牌阶段，对你使用。你摸两张牌。",
+      "skill": {
+        "xinsha": false,
+        "online": false,
+        "background": "none"
+      }
+    },
+    {
+      "style": "babysha",
+      "xinsha": false,
+      "online": false,
+      "text": "无中生有【♥︎J】锦囊牌出牌阶段，对你使用。你摸两张牌。",
+      "skill": {
+        "xinsha": false,
+        "online": false,
+        "background": "none"
+      }
+    },
+    {
+      "style": "codename",
+      "xinsha": false,
+      "online": false,
+      "text": "无中生有【♥︎J】锦囊牌出牌阶段，对你使用。你摸两张牌。",
+      "skill": {
+        "xinsha": false,
+        "online": false,
+        "background": "none"
+      }
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

@@ -1,0 +1,175 @@
+{
+  "geometry": [
+    {
+      "width": 1280,
+      "zoom": 1,
+      "expected": 558.4407796101949,
+      "actual": 558.438,
+      "centerError": 0,
+      "fill": 558.438,
+      "image": 558.438
+    },
+    {
+      "width": 1280,
+      "zoom": 1.25,
+      "expected": 698.0509745127437,
+      "actual": 698.047,
+      "centerError": 0,
+      "fill": 698.047,
+      "image": 698.047
+    },
+    {
+      "width": 1920,
+      "zoom": 1,
+      "expected": 732.9535232383807,
+      "actual": 732.953,
+      "centerError": 0,
+      "fill": 732.953,
+      "image": 732.953
+    },
+    {
+      "width": 1920,
+      "zoom": 1.25,
+      "expected": 916.191904047976,
+      "actual": 916.191,
+      "centerError": 0,
+      "fill": 916.191,
+      "image": 916.191
+    }
+  ],
+  "isolation": [
+    "1",
+    "2",
+    "3",
+    "5"
+  ],
+  "errors": [],
+  "states": [
+    {
+      "data": 449,
+      "percent": 100,
+      "visibleWidth": 558.4375,
+      "imageWidth": 558.4375,
+      "barWidth": 558.4375,
+      "src": "http://127.0.0.1:54565/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_2.png",
+      "delay": 200
+    },
+    {
+      "data": 224,
+      "percent": 49.8886,
+      "visibleWidth": 278.59375,
+      "imageWidth": 558.4375,
+      "barWidth": 558.4375,
+      "src": "http://127.0.0.1:54565/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_2.png",
+      "delay": 200
+    },
+    {
+      "data": 132,
+      "percent": 29.3987,
+      "visibleWidth": 164.171875,
+      "imageWidth": 558.4375,
+      "barWidth": 558.4375,
+      "src": "http://127.0.0.1:54565/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_2.png",
+      "delay": 200
+    },
+    {
+      "data": 131,
+      "percent": 29.1759,
+      "visibleWidth": 162.921875,
+      "imageWidth": 558.4375,
+      "barWidth": 558.4375,
+      "src": "http://127.0.0.1:54565/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_red_2.png",
+      "delay": 200
+    }
+  ],
+  "countdown": {
+    "before": true,
+    "after": true,
+    "moon": true,
+    "normal": {
+      "percent": "100%",
+      "image": true
+    }
+  },
+  "moon": [
+    {
+      "isolated": true,
+      "initial": {
+        "data": 449,
+        "width": "100%",
+        "src": "http://127.0.0.1:54565/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/newTimeBar.png",
+        "connected": true
+      },
+      "afterFive": 448,
+      "beforeStop": 22.600000000000023,
+      "stopped": {
+        "data": 22.450000000000003,
+        "width": "5%",
+        "connected": true,
+        "timer": null
+      },
+      "held": true,
+      "removed": true
+    },
+    {
+      "isolated": false,
+      "initial": {
+        "data": 449,
+        "width": "100%",
+        "src": "http://127.0.0.1:54565/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/newTimeBar.png",
+        "connected": true
+      },
+      "afterFive": 448,
+      "beforeStop": 22.600000000000023,
+      "stopped": {
+        "data": 22.450000000000003,
+        "width": "5%",
+        "connected": true,
+        "timer": null
+      },
+      "held": true,
+      "removed": true
+    }
+  ],
+  "moonRealTimer": {
+    "switched": true,
+    "advanced": true,
+    "stopped": true,
+    "removed": true,
+    "timer": null
+  },
+  "moonRendering": [
+    {
+      "remaining": 100,
+      "percent": 100,
+      "barWidth": 558.4375,
+      "fillWidth": 558.4375,
+      "imageWidth": 558.4375,
+      "naturalWidth": 520,
+      "backgroundWidth": 522
+    },
+    {
+      "remaining": 50,
+      "percent": 49.9777,
+      "barWidth": 558.4375,
+      "fillWidth": 279.09375,
+      "imageWidth": 558.4375,
+      "naturalWidth": 520,
+      "backgroundWidth": 522
+    },
+    {
+      "remaining": 5,
+      "percent": 5,
+      "barWidth": 558.4375,
+      "fillWidth": 27.921875,
+      "imageWidth": 558.4375,
+      "naturalWidth": 520,
+      "backgroundWidth": 522
+    }
+  ],
+  "timer": {
+    "advanced": true,
+    "stopped": true,
+    "removed": true
+  }
+}

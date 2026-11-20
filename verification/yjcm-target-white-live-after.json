@@ -1,0 +1,250 @@
+{
+  "style": "othersOff",
+  "config": "othersOff",
+  "border": "dragon4",
+  "event": "chooseTarget",
+  "selecting": "oblongcard phone decadeUI outcrop-skin-enabled selecting tempnoe menupaused",
+  "selectedTargets": [],
+  "players": [
+    {
+      "position": "0",
+      "classes": "player fullskin d-skin un-selectable",
+      "rect": {
+        "x": 1141.012369791667,
+        "y": 497.1484375000001,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+        "opacity": "1",
+        "width": "180.739px",
+        "height": "231.867px",
+        "left": "65.1777px",
+        "top": "90.7799px",
+        "z": "-1",
+        "animation": "none"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "z": "0",
+        "animation": "none"
+      }
+    },
+    {
+      "position": "1",
+      "classes": "player fullskin d-skin selectable",
+      "rect": {
+        "x": 1143.0097656250002,
+        "y": 236.5983072916667,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+        "opacity": "0.0667",
+        "width": "147.333px",
+        "height": "196.507px",
+        "left": "65.4316px",
+        "top": "90.3991px",
+        "z": "-1",
+        "animation": "yjcm-target-enter, yjcm-target-breathe"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "z": "0",
+        "animation": "none"
+      }
+    },
+    {
+      "position": "2",
+      "classes": "player fullskin selectable",
+      "rect": {
+        "x": 961.3059895833335,
+        "y": 139.90234375000003,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+        "opacity": "0.0667",
+        "width": "147.333px",
+        "height": "196.507px",
+        "left": "65.4316px",
+        "top": "90.3991px",
+        "z": "-1",
+        "animation": "yjcm-target-enter, yjcm-target-breathe"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "z": "0",
+        "animation": "none"
+      }
+    },
+    {
+      "position": "3",
+      "classes": "player fullskin selectable",
+      "rect": {
+        "x": 782.2428385416669,
+        "y": 107.91015625000001,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+        "opacity": "0.0667",
+        "width": "147.333px",
+        "height": "196.507px",
+        "left": "65.4316px",
+        "top": "90.3991px",
+        "z": "-1",
+        "animation": "yjcm-target-enter, yjcm-target-breathe"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "z": "0",
+        "animation": "none"
+      }
+    },
+    {
+      "position": "4",
+      "classes": "player fullskin selectable",
+      "rect": {
+        "x": 606.4550781250001,
+        "y": 107.91015625000001,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+        "opacity": "0.0667",
+        "width": "147.333px",
+        "height": "196.507px",
+        "left": "65.4316px",
+        "top": "90.3991px",
+        "z": "-1",
+        "animation": "yjcm-target-enter, yjcm-target-breathe"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "z": "0",
+        "animation": "none"
+      }
+    },
+    {
+      "position": "5",
+      "classes": "player fullskin d-skin selectable",
+      "rect": {
+        "x": 426.11393229166674,
+        "y": 107.91015625000001,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+        "opacity": "0.0667",
+        "width": "147.333px",
+        "height": "196.507px",
+        "left": "65.4316px",
+        "top": "90.3991px",
+        "z": "-1",
+        "animation": "yjcm-target-enter, yjcm-target-breathe"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "z": "0",
+        "animation": "none"
+      }
+    },
+    {
+      "position": "6",
+      "classes": "player fullskin selectable",
+      "rect": {
+        "x": 245.77278645833337,
+        "y": 139.90234375000003,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+        "opacity": "0.0667",
+        "width": "147.333px",
+        "height": "196.507px",
+        "left": "65.4316px",
+        "top": "90.3991px",
+        "z": "-1",
+        "animation": "yjcm-target-enter, yjcm-target-breathe"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "z": "0",
+        "animation": "none"
+      }
+    },
+    {
+      "position": "7",
+      "classes": "player fullskin selectable",
+      "rect": {
+        "x": 73.99674479166669,
+        "y": 236.5983072916667,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+        "opacity": "0.0667",
+        "width": "147.333px",
+        "height": "196.507px",
+        "left": "65.4316px",
+        "top": "90.3991px",
+        "z": "-1",
+        "animation": "yjcm-target-enter, yjcm-target-breathe"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "z": "0",
+        "animation": "none"
+      }
+    }
+  ]
+}

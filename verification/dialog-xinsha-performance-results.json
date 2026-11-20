@@ -1,0 +1,62 @@
+{
+  "cases": [
+    {
+      "zoom": 1,
+      "fixed": false,
+      "stableWrites": 0,
+      "stableKeys": {},
+      "unrelatedUpdates": 0,
+      "promptUpdated": true
+    },
+    {
+      "zoom": 1,
+      "fixed": true,
+      "stableWrites": 0,
+      "stableKeys": {},
+      "unrelatedUpdates": 0,
+      "promptUpdated": true
+    },
+    {
+      "zoom": 1.5,
+      "fixed": false,
+      "stableWrites": 0,
+      "stableKeys": {},
+      "unrelatedUpdates": 0,
+      "promptUpdated": true
+    },
+    {
+      "zoom": 1.5,
+      "fixed": true,
+      "stableWrites": 0,
+      "stableKeys": {},
+      "unrelatedUpdates": 0,
+      "promptUpdated": true
+    }
+  ],
+  "errors": [],
+  "lifecycle": {
+    "cycles": 40,
+    "replacements": 320,
+    "maxRetained": 6,
+    "cleared": true,
+    "removedCleaned": true,
+    "overlays": 0,
+    "baseline": {
+      "mutations": 0,
+      "resizes": 0
+    },
+    "remaining": {
+      "mutations": 0,
+      "resizes": 0
+    }
+  },
+  "resizeAndStyleExit": {
+    "centerError": -0.0078125,
+    "released": true,
+    "overlays": 0,
+    "remaining": {
+      "mutations": 0,
+      "resizes": 0
+    }
+  }
+}

@@ -1,0 +1,1014 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202"
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_25ba7c7f5ace3de215d28d32c3a1b9587e376cd88926fbeddecd3f03da38fa9e"
+  ],
+  "sources": [
+    {
+      "plist": "assets/res/new/tex/plist/equip_card.plist",
+      "plist_sha256": "eed1e0926716b765e8ec50f286bea7b0f623193884fde825b48f168880c0014c",
+      "texture_sha256": "7a94fdb4d78b973a1328f866340c87234bad260cb55d10f51a3aebaac9ed1c71",
+      "alpha_sha256": "9c5ac92927e59ee5ddc26eda4228bcbcbda60aa243880d0e8ef8f0f6e4abd474"
+    },
+    {
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "plist_sha256": "031f6121a645f29a55fc352e7e609133cee79ab5b6b0af777a76e7059bff75f9",
+      "texture_sha256": "3c391db08003feca84483774d2dc80f76397657670875999b0da83705b570927",
+      "alpha_sha256": "09a328622ed44ad4730496dadca631604ee119a247399c91a94b6599f2cb5c46"
+    },
+    {
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "plist_sha256": "2d23c6a2d9d8254115ce892f1895db16cd6f9fb30e6dd512ab835e8b6c4b7731",
+      "texture_sha256": "6ff05a3dbacc2a1cef5e05b67cc24490133dfffd7b9d3aeac9f3eb06744bc0f5",
+      "alpha_sha256": "91c659e96274aa2d2ea762b78eb94a89fa0cebbdca610e1fe770dc0a55a98be3"
+    }
+  ],
+  "frames": [
+    {
+      "frame": "equip_2767.png",
+      "plist": "assets/res/new/tex/plist/equip_card.plist",
+      "frame_metadata": {
+        "frame": "{{1050,2},{129,23}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{129,23}}",
+        "sourceSize": "{129,23}"
+      },
+      "decoded_sha256": "5e36e2dfb8857fbf117db9bc9d29bffd50dd38178cd11f806504062f08428512"
+    },
+    {
+      "frame": "equip_84.png",
+      "plist": "assets/res/new/tex/plist/equip_card.plist",
+      "frame_metadata": {
+        "frame": "{{133,77},{129,23}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{129,23}}",
+        "sourceSize": "{129,23}"
+      },
+      "decoded_sha256": "19062f0e0cd948d49ebbc39f4e6da04010e55ef4147edff1fde77771cd1e6bd6"
+    },
+    {
+      "frame": "equip_67.png",
+      "plist": "assets/res/new/tex/plist/equip_card.plist",
+      "frame_metadata": {
+        "frame": "{{264,102},{129,23}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{129,23}}",
+        "sourceSize": "{129,23}"
+      },
+      "decoded_sha256": "3a85f739b60b49b16be74f3788b46566c8ccd2c396559f34202f5b001e789b40"
+    },
+    {
+      "frame": "equip_70.png",
+      "plist": "assets/res/new/tex/plist/equip_card.plist",
+      "frame_metadata": {
+        "frame": "{{264,77},{129,23}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{129,23}}",
+        "sourceSize": "{129,23}"
+      },
+      "decoded_sha256": "4255704e00dbfb84371b64576f8c62451622b7ff695847905909489674f53186"
+    },
+    {
+      "frame": "equip_31.png",
+      "plist": "assets/res/new/tex/plist/equip_card.plist",
+      "frame_metadata": {
+        "frame": "{{919,27},{129,23}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{129,23}}",
+        "sourceSize": "{129,23}"
+      },
+      "decoded_sha256": "f364aff041f2b42b8f577c4f444f9c6ee49491ad75070bd9e1388e86a143b688"
+    },
+    {
+      "frame": "equip_370.png",
+      "plist": "assets/res/new/tex/plist/equip_card.plist",
+      "frame_metadata": {
+        "frame": "{{657,77},{129,23}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{129,23}}",
+        "sourceSize": "{129,23}"
+      },
+      "decoded_sha256": "615dc3847ba4b13e7480f24e1fb3a127157253d1a3144a37cd5f5a6702b75301"
+    },
+    {
+      "frame": "cflag0.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{485,429},{23,24}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{23,24}}",
+        "sourceSize": "{23,24}"
+      },
+      "decoded_sha256": "3f3de17776e2b2c8f8f9392151378061dcf53a235dee6687b0dca6a732f8aeb9"
+    },
+    {
+      "frame": "cflag1.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{480,376},{23,24}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{23,24}}",
+        "sourceSize": "{23,24}"
+      },
+      "decoded_sha256": "19e1304d4ce3577e08e71ecf3931805912fb13a9a31d35927cab32bc40885f03"
+    },
+    {
+      "frame": "cflag2.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{462,455},{23,24}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{23,24}}",
+        "sourceSize": "{23,24}"
+      },
+      "decoded_sha256": "8cde5d049679a5df59570b7be1aa708089e27b721c8b21c02db5dbfc21c73b53"
+    },
+    {
+      "frame": "cflag3.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{470,130},{23,24}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{23,24}}",
+        "sourceSize": "{23,24}"
+      },
+      "decoded_sha256": "fc96eceda3501ade732657a1cf6fcd5e2c6e6fe6cd1d1a3df4a26036a44edb66"
+    },
+    {
+      "frame": "red1.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{457,404},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "6345b7a65b397cf2ad7f746297bd723ea40bb4787f982ded6d88bd171a3d4aa3"
+    },
+    {
+      "frame": "red2.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{434,478},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "a675720148f204db8eddbf85244ab825dee53b537f7ff9edc3c6efa2589e34c3"
+    },
+    {
+      "frame": "red3.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{434,455},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "2cddceb1fae18199c9b50c442b0680cdd4a44b428b0c4d43c3d67f1cadb0cc1b"
+    },
+    {
+      "frame": "red4.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{434,432},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "db060e859f38f4c5228cd2137f76d201abfad3f36aaddb2198e6277f8656a6fd"
+    },
+    {
+      "frame": "red5.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{434,404},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "231e67c4861058d14128efb5b00c6e428c37d524a9e251dcfa41090c50d016d7"
+    },
+    {
+      "frame": "red6.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{434,376},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "1c181a57bb397ce3deaceda9a01b56c4bc09c4f015b2d6df3870615efbfd3719"
+    },
+    {
+      "frame": "red7.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{434,348},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "6805dec412a6e3ade51aca23601c5afb5b37a4da3cd9d0a9962e739597129110"
+    },
+    {
+      "frame": "red8.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{434,320},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "36c718d58b6b27e478dafe5a3a25f8d2ca177c701db9fd415f4292f17ebd664b"
+    },
+    {
+      "frame": "red9.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{442,130},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "4890cc0cd8944c96ab811d7d04e70224766446841e45bc1fef1bb5bb8aa78ddd"
+    },
+    {
+      "frame": "red10.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{130,143},{23,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{23,26}}",
+        "sourceSize": "{23,26}"
+      },
+      "decoded_sha256": "6d58cce07ef710b3577025612c60a14fc409d939a52032d63b1f0ab682eded04"
+    },
+    {
+      "frame": "red11.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{457,376},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "455771f5d2cf8679a6c98ef12924cebc4276f283d022499679f8a0ee1f476bbd"
+    },
+    {
+      "frame": "red12.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{457,348},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "4a70dc0143505e5382214e8ab2dc81f6db5453dfe037390876f8e17de1309517"
+    },
+    {
+      "frame": "red13.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{457,320},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "47c67e48ab44d2d4a9380a5dbb1798de17c9ef351e1d272529af9bf9d3af3e51"
+    },
+    {
+      "frame": "black1.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{298,482},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "6c83bfc84b52279c476995b623a4b897f225d95f7f5459a5a716b3f697ddbcce"
+    },
+    {
+      "frame": "black2.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{186,482},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "dcad0eea3e22db806c8ce6cf94c7eb75bffcbb08b45c1379a0afd55e5d649f45"
+    },
+    {
+      "frame": "black3.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{158,482},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "d31dbb52f9efa62874c909a666786a65094fb9c560e9a6029db6cab273506fc4"
+    },
+    {
+      "frame": "black4.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{130,482},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "980a5f1024ef31f74f20eba31293d01f60cad90a490c9cd6d77ce1347c034adf"
+    },
+    {
+      "frame": "black5.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{485,401},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "4ad7bc274eaeaa0c717a738219450e04d92ca9f2339bc2dfb912c369fcd2c7ff"
+    },
+    {
+      "frame": "black6.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{480,348},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "743cff2addd003715fa389858c327229ed3462be6ba9290b3238daff8be4ddf9"
+    },
+    {
+      "frame": "black7.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{480,320},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "8dd5d9bfb962585faa643bf2bb0706a680329cade5142778bb7212218f458ea2"
+    },
+    {
+      "frame": "black8.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{462,481},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "cd3af356ab478de55e49a9738b7c4eddcd597f1aea0fecc374246e89a40caff9"
+    },
+    {
+      "frame": "black9.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{462,427},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "222476a9cd8d9e44db08f52363b0c18cd7aac547fc3286ede17b3c654e0ec570"
+    },
+    {
+      "frame": "black10.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{158,143},{23,26}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{23,26}}",
+        "sourceSize": "{23,26}"
+      },
+      "decoded_sha256": "ec56c971f97a26eaaeaba2c22188e7dfafdec8447ea52cea386991ecea605fd9"
+    },
+    {
+      "frame": "black11.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{270,482},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "efe49faa779418b92e98b0084f869d3b36dfd46ef7fbea5776808e4c67010166"
+    },
+    {
+      "frame": "black12.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{242,482},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "607404a68c5f67a42427aef170d28f0391d2015d6d72a9e1ab58cdc5002df03e"
+    },
+    {
+      "frame": "black13.png",
+      "plist": "assets/res/new/tex/plist/playcard_2.plist",
+      "frame_metadata": {
+        "frame": "{{214,482},{21,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{21,26}}",
+        "sourceSize": "{21,26}"
+      },
+      "decoded_sha256": "2482fea0da396e4cbfb915f18b43b5c25f0131a8772c334e84e8ce80e5ba88f4"
+    },
+    {
+      "frame": "cardbg.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{1046,803},{164,236}}",
+        "offset": "{6,-2}",
+        "rotated": true,
+        "sourceColorRect": "{{21,12},{164,236}}",
+        "sourceSize": "{194,256}"
+      },
+      "decoded_sha256": "16491cc1d163ab8949ced93a1db6ecb5e5801c434933dc091df1fe08389eaf81"
+    },
+    {
+      "frame": "game_abolish_equip_label.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{1364,1486},{133,27}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{133,27}}",
+        "sourceSize": "{133,27}"
+      },
+      "decoded_sha256": "6a1a514f65b71c941d1c7c9fa071b5fc97babc13c4ceeadcc77a637ab2f8ae34"
+    },
+    {
+      "frame": "game_abolish_equip_weapon.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{1537,1891},{20,23}}",
+        "offset": "{-8,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,2},{20,23}}",
+        "sourceSize": "{36,27}"
+      },
+      "decoded_sha256": "7f8be07d33ecf9493e6000078b00a98d9192b7004f010238a913bd47b14caf69"
+    },
+    {
+      "frame": "game_abolish_equip_armor.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{596,1407},{18,21}}",
+        "offset": "{-8,0}",
+        "rotated": true,
+        "sourceColorRect": "{{1,3},{18,21}}",
+        "sourceSize": "{36,27}"
+      },
+      "decoded_sha256": "976403183b25b7e67eb6a74aa909be4bcc1e5cf65c7b53c9efd0548d0e6b3545"
+    },
+    {
+      "frame": "game_abolish_equip_def_horse.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{937,1887},{36,23}}",
+        "offset": "{0,1}",
+        "rotated": false,
+        "sourceColorRect": "{{0,1},{36,23}}",
+        "sourceSize": "{36,27}"
+      },
+      "decoded_sha256": "56cc71a2c0bf4469e89143fed2c8eb5be777906c4f6b693aae948eac57beaf5f"
+    },
+    {
+      "frame": "game_abolish_equip_att_horse.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{975,1888},{36,23}}",
+        "offset": "{0,1}",
+        "rotated": false,
+        "sourceColorRect": "{{0,1},{36,23}}",
+        "sourceSize": "{36,27}"
+      },
+      "decoded_sha256": "f233f5c5e9cb0d110c047446aba475963665ac1a4a5baed1caa51643e24fb619"
+    },
+    {
+      "frame": "game_abolish_equip_treasure.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{328,1178},{20,17}}",
+        "offset": "{-6,0}",
+        "rotated": false,
+        "sourceColorRect": "{{2,5},{20,17}}",
+        "sourceSize": "{36,27}"
+      },
+      "decoded_sha256": "628f7d9ccb74b416fdac5261eb523eef81af426003cfb3e8b6f99e2787f40691"
+    }
+  ],
+  "modules": [
+    {
+      "package": "game",
+      "member": "app.view.game.card.EquipArea",
+      "sha256": "8a937dc55a16cc35f46cbc29cfccbbca1a33dacf925bcd24eec3b795a248f7f7"
+    },
+    {
+      "package": "game",
+      "member": "app.view.game.card.EquipCardUi",
+      "sha256": "c0c9615a0e4d0ee5330224d2c0a99e8f0c969712736ae9396eb69cc7f54959b4"
+    },
+    {
+      "package": "game",
+      "member": "app.controller.game.MoveCardController",
+      "sha256": "eb444f5f75747887ab02f69544b1cd9cb5dc7eed621efd822635fea62c0177e1"
+    },
+    {
+      "package": "game",
+      "member": "app.view.game.GameSeatCcb",
+      "sha256": "0f54477bcff860404681e61cba1677bfd409234cf8abc44b136061ea98e35ff5"
+    },
+    {
+      "package": "config",
+      "member": "app.config.UseSpellAnimConfig",
+      "sha256": "90ae5300bc1f2059d5e23c1d05e61017cb78db6fe543cf6c6c5b234d79941ad3"
+    }
+  ],
+  "layout": {
+    "seat": [
+      190,
+      252
+    ],
+    "card": [
+      125,
+      23
+    ],
+    "source_card": [
+      129,
+      23
+    ],
+    "x": 37,
+    "bottoms": {
+      "treasure": 104,
+      "weapon": 81,
+      "armor": 58,
+      "def_horse": 35,
+      "att_horse": 12
+    },
+    "order": [
+      "treasure",
+      "weapon",
+      "armor",
+      "def_horse",
+      "att_horse"
+    ],
+    "empty": "fixed positions, no compression",
+    "extra_weapon": "type8 uses armor bottom58",
+    "visible_frame_mapping": {
+      "source": "cardbg.plist sourceColorRect in194x256; CCB sprite at(0,0), anchorLEFT_BOTTOM",
+      "trim_top_left": [
+        21,
+        12,
+        164,
+        236
+      ],
+      "trim_cocos_left_bottom": [
+        21,
+        8
+      ],
+      "decoded_alpha_bbox": [
+        24,
+        14,
+        183,
+        246
+      ],
+      "local_reference": "Local .player visible frame, not the whole190x252 Cocos node",
+      "left": "(37-21)/164",
+      "width": "125/164",
+      "row_height": "23/236",
+      "bottom": "(12-8)/236",
+      "interpretation": "Derived adaptation from official layout and atlas trim. Trim rectangle is not the exact alpha contour of rounded corners."
+    }
+  },
+  "composition": {
+    "background": "Derived from equip_2767: retain x0..7 and121..128, repeat empty x8 in center. Original beige RGBA, no recolor; central alpha204/255.",
+    "icons": "Crop x0..19,y0..22 from native strips, invert source-over against background to remove duplicate backdrop. alphaForeground=(alphaSource-alphaBackground)/(1-alphaBackground).",
+    "points": "Official playcard_2 cflag/red/black frames; EquipCardUi.updateGongQiaoEquip uses number RIGHT_CENTER(110,12), flower RIGHT_CENTER(128,12), children of equImg scaledX125/129",
+    "point_fit": "Native equip_84 digit dark bounds x102..112,y4..17 and suit x113..124,y3..16; playcard glyphs are larger. Use .75 number and .65 suit scale with right anchors114/128, centerY12, to match ordinary prepainted strips. These are derived composition parameters, not a literal Lua scale.",
+    "name": "Local composited text uses original fzbw 20px and #3d1c0c; normal official cards bake text and distance into the strip, so typography can differ slightly",
+    "adaptation": "Retain noname composed type/range/name/number/suit; no complete baked per-card strip at runtime. Independent-equipment preference keeps a separate 5-row column."
+  },
+  "animation": {
+    "observed": "EquipArea.addCard creates EquipCardUi and moves to its fixed slot in0.2s. MoveCardController performs previously restored full-card flight; neither method invokes Spine for generic equip entry.",
+    "not_entry": "GameSeatCcb.updateEquipAni SF_paiju_eff_zbtishi is attack equipment prompting; UseSpellAnimConfig.equip is equipment SKILL activation. SF_zhuangbei_eff_xuanzhong02 is spell-button selection. None is generic equipping.",
+    "local": "Suppress only FX_PaiJu_ZhuangBei_saoguang when othersOff; preserve Online and other effects. No unrelated Spine substituted. Suppress base card_start2x on equipped rows; full-card flight remains active."
+  },
+  "limitations": [
+    "Static shipped bytecode and artwork; no official-client runtime observation.",
+    "Normal official strips contain prepainted names/numbers. Dynamic components deliberately follow the requested noname composition."
+  ],
+  "outputs": [
+    {
+      "path": "image/ui/equip/xinsha/background.png",
+      "sha256": "5802624f3dff398d667d30bc9e614728064b95c8823fd44f078dcd1755d77169",
+      "size": [
+        129,
+        23
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/black1.png",
+      "sha256": "3d08a1b1e55860992ca948e75f5b178442fe80d783448c143a6721c0fa824d82",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/black10.png",
+      "sha256": "2d9e5165bd466fb7529e232e2fb5871d66066cbee43fda3ff73265517087f835",
+      "size": [
+        23,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/black11.png",
+      "sha256": "406073c3fd38d3c3c5015c4fcd824edc2ed189fcc25f6b8eb60b8450faab918a",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/black12.png",
+      "sha256": "f1ed87c165a51753f80a425b2840b69ce824f06a0315e2165a869f612e3b3089",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/black13.png",
+      "sha256": "dd99c9ba2e0b830022f33ceecfdbd7d675a153d80f44efae13d55186e89ec92b",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/black2.png",
+      "sha256": "6fd75816ab0c63d14847116611fe7e7e6b65cc18f201e439ac071d537c2b9514",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/black3.png",
+      "sha256": "5b5bbda94f84c3992ece2a6d8c35ca91e3fb99435603e70f226c76281558c6a5",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/black4.png",
+      "sha256": "a5f924a4bd3a9c98bf6d9653be1e1d6e5c1c3f3319455d2d935fcd025444fd65",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/black5.png",
+      "sha256": "5635cc2a2c826483c8ebf7b326a6ce35ecc52c96b62dedb81e21bde8e1977a2a",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/black6.png",
+      "sha256": "40647272afaa6271a34823a1e6daf850c2459c7cf020c739436112db8f790336",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/black7.png",
+      "sha256": "ed25540a4e43a57e612f53d8f01dd129cf30ea41f7e092e1851122d426d60dd8",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/black8.png",
+      "sha256": "eff784a89a9876d74e53d578c38265143d1f7e58ad5531da543f29e52f5310d4",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/black9.png",
+      "sha256": "584b443ac20af8139dab3c82e48c920099e32e59602514dce0eab927a449e7ab",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/cflag0.png",
+      "sha256": "158a41d7ee67dda4b4bed8698301731e1e8d86dec84a3c0f5bcd289b9901bad6",
+      "size": [
+        23,
+        24
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/cflag1.png",
+      "sha256": "c3d1988efcceb6ab77d86c769185acf1daf9bcb88146892ce69641ca537f5749",
+      "size": [
+        23,
+        24
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/cflag2.png",
+      "sha256": "b9bc413309030d2863cef394d903df4a976b0b0eeaa226270b066700621b2ac2",
+      "size": [
+        23,
+        24
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/cflag3.png",
+      "sha256": "d73796ba91e67a836d28bd8a51eec607272acfc0a769dc8f2f7f9bb1bf856252",
+      "size": [
+        23,
+        24
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/game_abolish_equip_armor.png",
+      "sha256": "312a35ad909ea2016b115ebd91e0f8a151f146c50b7ebc6864d78bb4e03c251b",
+      "size": [
+        36,
+        27
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/game_abolish_equip_att_horse.png",
+      "sha256": "ceb4e1e1537b888b26f2a67a9d7b690a1d90266ed9ad3568eef1cb499955a1d1",
+      "size": [
+        36,
+        27
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/game_abolish_equip_def_horse.png",
+      "sha256": "6185f83ab84c49bef642eecb3adc2efbe14bf22c0150d6c2ab0507f3e937e8ef",
+      "size": [
+        36,
+        27
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/game_abolish_equip_label.png",
+      "sha256": "c3f18955ab98a398fd118895d47c50648bd3d980309b43a522b3400a579270bf",
+      "size": [
+        133,
+        27
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/game_abolish_equip_treasure.png",
+      "sha256": "c86105b994b7f1790ea4754808a9382b5ee6c52e16bf92e2baa8beaf4f4f3dd0",
+      "size": [
+        36,
+        27
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/game_abolish_equip_weapon.png",
+      "sha256": "ac58df214f23a3887674d2b6f2d6d0519960e9a4fd75e1498ba96d234c1e502d",
+      "size": [
+        36,
+        27
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/red1.png",
+      "sha256": "bf10f45160416e0db2ff1ccaa1935518c391d8fc5fa3ea810261803cc07d1236",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/red10.png",
+      "sha256": "a37a25464e74fa5a9dc32d7c167a341fe1f3575b9bfe9521db399ca1b197de07",
+      "size": [
+        23,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/red11.png",
+      "sha256": "339e8aeeafa409c7bd321eaec70a6985732ffbb28c63f6e9cbdd4b1fcded44fd",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/red12.png",
+      "sha256": "7c708845be5c82fda7008c9499d9740a199c3bed436518fb033fecd13a7587fd",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/red13.png",
+      "sha256": "41e17b7e4b809a2b172235e8a31faa55ac5b38649bd01a06ad6d0e6b57ca636f",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/red2.png",
+      "sha256": "be54017573c7ba273e1c89c74f67c3f178b1c596e335656e22123eb3f6fc45bc",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/red3.png",
+      "sha256": "3a665a4d5f21b81f7fa49c778840e6af3358fa179fa98ea30073df29e1554ee2",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/red4.png",
+      "sha256": "5e4e7a80502a8e0e981de2ba40dc9e6066532abb0e0f43dcc654fdbe4ef5a0f4",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/red5.png",
+      "sha256": "e4b2cb9ff9e705957d20aad71654aa07a136250b1c2aac90a05d90260fc2adc7",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/red6.png",
+      "sha256": "925a46a64300221a3551aeea9b2cdf3b04f4e58f933a0035bbe1c823e40430ba",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/red7.png",
+      "sha256": "a582ac9770beee1cf7bf604f1b59204ee4993d3418dfe39b26454762e54d0a28",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/red8.png",
+      "sha256": "900400a79c72cbd6acb802e7d8520e5db249eff166390aa2abe4eaa9c3d2f019",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/red9.png",
+      "sha256": "2e23d0f15194aa83899751857c0de37f8b7e8a078e5b08c4387892c9dc957b6f",
+      "size": [
+        21,
+        26
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/type1.png",
+      "sha256": "6389888efec810d74a1e12ecddce6a57520bb7cd6f76fe4f90bf4db75fca19dd",
+      "size": [
+        20,
+        23
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/type2.png",
+      "sha256": "8cc56a323073a5d0196a329d1fa7cfe8e3593f2cbf2487b2267cd3779d2308ae",
+      "size": [
+        20,
+        23
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/type3.png",
+      "sha256": "2fd68d25804488e58e868e3cbb32ba5f9b94db502043854825a3c0158c0f0e44",
+      "size": [
+        20,
+        23
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/type4.png",
+      "sha256": "878ca212d863c412002ed5c2d2ab7d75b4a3149dab20fdbe5bd93a6330939897",
+      "size": [
+        20,
+        23
+      ]
+    },
+    {
+      "path": "image/ui/equip/xinsha/type5.png",
+      "sha256": "cf74846890ae16895f1b091a402d8a0b3a87f148c5060a956860c160f623fe84",
+      "size": [
+        20,
+        23
+      ]
+    }
+  ],
+  "opacity_correction": {
+    "source_alpha": 204,
+    "source_alpha_fraction": 0.8,
+    "local_native_selection_opacity": 0.6,
+    "old_combined_alpha": 0.48,
+    "current_label_opacity": 1,
+    "scope": "othersOff equipped.name2 only; original texture alpha and selection eligibility retained",
+    "live_evidence": "verification/yjcm-equip-correction-electron.json; cloned self portrait in current Electron selecting state; no equipment-rule mutation"
+  },
+  "validation": {
+    "commands": [
+      "node --check src/overrides/player/card-movement-xinsha.js",
+      "python -m py_compile verification/extract-yjcm-equip-layout.py",
+      "node verification/yjcm-equip-layout-browser.cjs",
+      "node verification/yjcm-equip-animation-browser.cjs",
+      "node verification/yjcm-equip-animation-live.cjs",
+      "git diff --check"
+    ],
+    "browser": "5 fixed slots mapped relative to native cardbg trim;52 suit/number cases;self selection/current_action opacity1;native abolished slots, expanded extra weapon, copy/leave;independent equipment column and Online isolation. Passed.",
+    "electron": "Current Electron selecting styles reproduced with temporary cloned self portrait; native name2 opacity0.6 before,1 after.130px frame: left gap25.314->12.678;width85.524->99.083. Preview removed; actual equipment state and rules untouched.",
+    "animation": "Browser real useCard/equip pipeline plus10 self/other cases; source lower-center point visible before slot flight; no portrait-center detour; delayed insertion/removal/copy and0.8 arena transform. Passed.",
+    "initial_test_failure": "Live fixture once used an unnamed character: Cannot read properties of undefined (reading groupBorder). Ensure valid liubei/caocao in fixture before useCard; no product change for this unrelated setup error. Subsequent live regression passed.",
+    "limitations": [
+      "No official-client runtime side-by-side",
+      "No physical Android",
+      "Current running Electron animation module not reloaded or exercised; normal game reload loads saved code"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "position": "1",
+  "classes": "player fullskin glow_phase",
+  "rect": {
+    "x": 1055.0859375,
+    "y": 218.3984375,
+    "width": 120,
+    "height": 166.1484375
+  },
+  "dpr": 2,
+  "productionTransform": "matrix(1.05, 0, 0, 1.05, -85.0544, -110.585)",
+  "samples": [
+    {
+      "scale": 1,
+      "actual": "matrix(1, 0, 0, 1, -85.0544, -110.585)"
+    },
+    {
+      "scale": 1.05,
+      "actual": "matrix(1.05, 0, 0, 1.05, -85.0544, -110.585)"
+    }
+  ]
+}

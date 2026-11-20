@@ -3,6 +3,24 @@
  * 注：不要重新定义本体已有的字体，避免覆盖
  */
 
+/* 未选将状态由角色创建、$init 和 $uninit 维护，所有风格共用。 */
+/* 手杀样式未单独配置座位底图，未选将时补用已有的“将”字背景。 */
+body[data-style="off"] .player.decade-uninitialized {
+	background: url("../../image/ui/player-bg/bj1.png") no-repeat center / 100% 100% !important;
+}
+
+body[data-style="off"] [data-mode="guozhan"] .player.decade-uninitialized,
+body[data-style="off"] .player.decade-uninitialized[data-mode="guozhan"] {
+	background-image: url("../../image/ui/player-bg/bj2.png") !important;
+}
+
+/* 尚未确定武将时只保留座位底图；暗置武将仍由正常初始化恢复这些区域。 */
+.player.decade-uninitialized > *,
+#arena > .player.decade-uninitialized > *,
+#arena > .player.decade-uninitialized:not(.minskin) > .name.name2 {
+	display: none !important;
+}
+
 /** 字体定义 */
 
 /* 扩展专用字体 */

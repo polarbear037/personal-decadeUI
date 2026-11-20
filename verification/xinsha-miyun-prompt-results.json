@@ -1,0 +1,540 @@
+{
+  "othersOff": {
+    "chooseTarget": {
+      "text": "请选择一名其他角色获得其一张牌",
+      "colors": []
+    },
+    "initial": {
+      "event": "gainPlayerCard",
+      "native": "获得界曹叡一张牌",
+      "title": "密运",
+      "footer": "请选择界曹叡的1张牌",
+      "overlay": "请选择界曹叡的1张牌",
+      "color": "rgb(255, 225, 0)",
+      "count": 4,
+      "scope": "othersOff",
+      "loading": "dialog_xinsha",
+      "classes": "dialog dialog-ol-layout dialog-ol-skill-prompt scroll1 scroll2 dialog-xinsha-prompt-layout"
+    },
+    "frames": [
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      },
+      {
+        "y": 465.890625,
+        "height": 35.984375,
+        "dialogY": 185.90625
+      }
+    ],
+    "collapsed": {
+      "text": "请选择界曹叡的1张牌",
+      "color": "rgb(255, 225, 0)"
+    },
+    "shown": {
+      "event": "gainPlayerCard",
+      "native": "获得界曹叡一张牌",
+      "title": "密运",
+      "footer": "请选择界曹叡的1张牌",
+      "overlay": "请选择界曹叡的1张牌",
+      "color": "rgb(255, 225, 0)",
+      "count": 4,
+      "scope": "othersOff",
+      "loading": "dialog_xinsha",
+      "classes": "dialog dialog-ol-layout dialog-ol-skill-prompt scroll1 scroll2 dialog-xinsha-prompt-layout"
+    },
+    "shunchai": {
+      "value": {
+        "event": "gainPlayerCard",
+        "native": "获得界曹叡一张牌",
+        "title": "密运",
+        "footer": "请选择界曹叡的1张牌",
+        "overlay": "请选择界曹叡的1张牌",
+        "color": "rgb(255, 225, 0)",
+        "count": 4,
+        "scope": "othersOff",
+        "loading": "dialog_xinsha",
+        "classes": "dialog lei-yijiang-shunchai fullwidth lei-yijiang-sc-big fullheight dialog-ol-layout dialog-ol-skill-prompt scroll1 scroll2"
+      },
+      "frames": [
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        },
+        {
+          "y": 623.578125,
+          "height": 28.296875,
+          "dialogY": 172.64151000976562
+        }
+      ],
+      "collapsed": {
+        "text": "请选择界曹叡的1张牌",
+        "color": "rgb(255, 225, 0)"
+      },
+      "shown": {
+        "event": "gainPlayerCard",
+        "native": "获得界曹叡一张牌",
+        "title": "密运",
+        "footer": "请选择界曹叡的1张牌",
+        "overlay": "请选择界曹叡的1张牌",
+        "color": "rgb(255, 225, 0)",
+        "count": 4,
+        "scope": "othersOff",
+        "loading": "dialog_xinsha",
+        "classes": "dialog lei-yijiang-shunchai fullwidth lei-yijiang-sc-big fullheight dialog-ol-layout dialog-ol-skill-prompt scroll1 scroll2"
+      }
+    },
+    "disabled": {
+      "event": "gainPlayerCard",
+      "native": "获得界曹叡一张牌",
+      "title": "密运",
+      "footer": "获得界曹叡一张牌",
+      "color": null,
+      "count": 4,
+      "scope": "othersOff",
+      "loading": "dialog_xinsha",
+      "classes": "dialog lei-yijiang-shunchai fullwidth lei-yijiang-sc-big fullheight dialog-ol-layout dialog-ol-skill-prompt scroll1 scroll2"
+    },
+    "restored": {
+      "event": "gainPlayerCard",
+      "native": "获得界曹叡一张牌",
+      "title": "密运",
+      "footer": "请选择界曹叡的1张牌",
+      "overlay": "请选择界曹叡的1张牌",
+      "color": "rgb(255, 225, 0)",
+      "count": 4,
+      "scope": "othersOff",
+      "loading": "dialog_xinsha",
+      "classes": "dialog lei-yijiang-shunchai fullwidth lei-yijiang-sc-big fullheight dialog-ol-layout dialog-ol-skill-prompt scroll1 scroll2"
+    },
+    "custom": {
+      "event": "gainPlayerCard",
+      "native": "密运：只能选择这轮尚未选过的牌",
+      "title": "密运",
+      "footer": "只能选择这轮尚未选过的牌",
+      "overlay": "只能选择这轮尚未选过的牌",
+      "color": null,
+      "count": 4,
+      "scope": "othersOff",
+      "loading": "dialog_xinsha",
+      "classes": "dialog lei-yijiang-shunchai fullwidth lei-yijiang-sc-big fullheight dialog-ol-layout dialog-ol-skill-prompt scroll1 scroll2"
+    },
+    "two": {
+      "event": "gainPlayerCard",
+      "native": "获得界曹叡两张牌",
+      "title": "密运",
+      "footer": "请选择界曹叡的2张牌",
+      "overlay": "请选择界曹叡的2张牌",
+      "color": "rgb(255, 225, 0)",
+      "count": 4,
+      "scope": "othersOff",
+      "loading": "dialog_xinsha",
+      "classes": "dialog lei-yijiang-shunchai fullwidth lei-yijiang-sc-big fullheight dialog-ol-layout dialog-ol-skill-prompt scroll1 scroll2"
+    },
+    "errors": []
+  },
+  "onlineUI": {
+    "chooseTarget": {
+      "text": "密运：获得一名其他角色的一张牌，称为“安”",
+      "colors": [
+        [
+          "密运",
+          "rgb(255, 216, 0)"
+        ],
+        [
+          "获得",
+          "rgb(145, 244, 126)"
+        ]
+      ]
+    },
+    "initial": {
+      "event": "gainPlayerCard",
+      "native": "获得界曹叡一张牌",
+      "title": "密运",
+      "footer": "获得界曹叡一张牌",
+      "color": null,
+      "count": 4,
+      "scope": "onlineUI",
+      "loading": "dialog_ol",
+      "classes": "dialog dialog-ol-layout dialog-ol-skill-prompt scroll1 scroll2"
+    },
+    "frames": [],
+    "disabled": {
+      "event": "gainPlayerCard",
+      "native": "获得界曹叡一张牌",
+      "title": "密运",
+      "footer": "获得界曹叡一张牌",
+      "color": null,
+      "count": 4,
+      "scope": "onlineUI",
+      "loading": "dialog_ol",
+      "classes": "dialog dialog-ol-layout dialog-ol-skill-prompt scroll1 scroll2"
+    },
+    "restored": {
+      "event": "gainPlayerCard",
+      "native": "获得界曹叡一张牌",
+      "title": "密运",
+      "footer": "获得界曹叡一张牌",
+      "color": null,
+      "count": 4,
+      "scope": "onlineUI",
+      "loading": "dialog_ol",
+      "classes": "dialog dialog-ol-layout dialog-ol-skill-prompt scroll1 scroll2"
+    },
+    "custom": {
+      "event": "gainPlayerCard",
+      "native": "密运：只能选择这轮尚未选过的牌",
+      "title": "密运",
+      "footer": "只能选择这轮尚未选过的牌",
+      "color": null,
+      "count": 4,
+      "scope": "onlineUI",
+      "loading": "dialog_ol",
+      "classes": "dialog dialog-ol-layout dialog-ol-skill-prompt scroll1 scroll2"
+    },
+    "two": {
+      "event": "gainPlayerCard",
+      "native": "获得界曹叡两张牌",
+      "title": "密运",
+      "footer": "获得界曹叡两张牌",
+      "color": null,
+      "count": 4,
+      "scope": "onlineUI",
+      "loading": "dialog_ol",
+      "classes": "dialog dialog-ol-layout dialog-ol-skill-prompt scroll1 scroll2"
+    },
+    "errors": []
+  }
+}

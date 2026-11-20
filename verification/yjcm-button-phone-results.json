@@ -1,0 +1,180 @@
+{
+  "device": "e1143408",
+  "package": "com.noname.shijian",
+  "style": "othersOff",
+  "zoom": 0.56,
+  "cause": "HTMLElement.getBoundingClientRect is compensated by skin-switch chrome-fix, while Touch.clientX/Y remain viewport coordinates",
+  "before": {
+    "calls": [],
+    "touches": [
+      {
+        "type": "touchstart",
+        "x": 330,
+        "y": 232.2857208251953,
+        "target": "control primary"
+      },
+      {
+        "type": "touchend",
+        "x": 330,
+        "y": 232.2857208251953,
+        "target": "control primary"
+      }
+    ],
+    "event": "chooseToRespond",
+    "zoom": 0.56
+  },
+  "after": {
+    "calls": [
+      {
+        "link": "ok",
+        "event": "chooseToRespond"
+      },
+      {
+        "link": "ok",
+        "event": "chooseToRespond"
+      },
+      {
+        "link": "ok",
+        "event": "chooseToRespond"
+      },
+      {
+        "link": "ok",
+        "event": "chooseToRespond"
+      }
+    ],
+    "touches": [
+      {
+        "type": "touchstart",
+        "x": 330,
+        "y": 232.2857208251953,
+        "target": "control primary"
+      },
+      {
+        "type": "touchend",
+        "x": 330,
+        "y": 232.2857208251953,
+        "target": "control primary"
+      },
+      {
+        "type": "touchstart",
+        "x": 330,
+        "y": 232.2857208251953,
+        "target": "control primary"
+      },
+      {
+        "type": "touchend",
+        "x": 330,
+        "y": 232.2857208251953,
+        "target": "control primary"
+      },
+      {
+        "type": "touchstart",
+        "x": 330,
+        "y": 232.2857208251953,
+        "target": "control primary"
+      },
+      {
+        "type": "touchend",
+        "x": 334,
+        "y": 232.2857208251953,
+        "target": "control primary"
+      },
+      {
+        "type": "touchstart",
+        "x": 330,
+        "y": 232.2857208251953,
+        "target": "control primary"
+      },
+      {
+        "type": "touchend",
+        "x": 342.00006103515625,
+        "y": 232.2857208251953,
+        "target": "control primary"
+      },
+      {
+        "type": "touchstart",
+        "x": 330,
+        "y": 232.2857208251953,
+        "target": "control primary"
+      },
+      {
+        "type": "touchend",
+        "x": 354.00006103515625,
+        "y": 232.2857208251953,
+        "target": "control primary"
+      },
+      {
+        "type": "touchstart",
+        "x": 330,
+        "y": 232.2857208251953,
+        "target": "control primary"
+      },
+      {
+        "type": "touchend",
+        "x": 270,
+        "y": 232.2857208251953,
+        "target": "control primary"
+      }
+    ],
+    "event": "chooseToRespond",
+    "dragged": false
+  },
+  "nativeResult": {
+    "submitted": true,
+    "responseCards": [
+      "sha"
+    ],
+    "finished": true,
+    "currentEvent": "damage",
+    "sameEvent": false,
+    "selected": [],
+    "pause": false,
+    "cardParent": ""
+  },
+  "sha256": {
+    "computer": "22ffaec79ca37ba7bfe39a86cf0e491d26b7c400d7991f7bf80f40ccc48352dd",
+    "phoneDisk": "22ffaec79ca37ba7bfe39a86cf0e491d26b7c400d7991f7bf80f40ccc48352dd",
+    "phoneLoaded": "22ffaec79ca37ba7bfe39a86cf0e491d26b7c400d7991f7bf80f40ccc48352dd"
+  },
+  "syncedFiles": [
+    "src/ui/xinsha-button-input.js"
+  ],
+  "activation": "Debugger.setScriptSource updated existing module closures without restarting current game",
+  "validation": {
+    "commands": [
+      {
+        "command": "node --check src/ui/xinsha-button-input.js",
+        "result": "passed"
+      },
+      {
+        "command": "node verification/yjcm-button-movement-browser.cjs",
+        "result": "YJCM_BUTTON_MOVEMENT_OK, 9 zoom/action cases, errors=[]"
+      },
+      {
+        "command": "node verification/yjcm-button-hitbox-browser.cjs",
+        "result": "YJCM_BUTTON_HITBOX_OK, errors=[]"
+      },
+      {
+        "command": "git diff --check",
+        "result": "passed, existing LF/CRLF warnings"
+      }
+    ],
+    "phoneInput": "adb -s e1143408 shell input tap / input swipe",
+    "phoneChecks": {
+      "centerTap": true,
+      "insideMovementCSSPixels": [
+        4,
+        12,
+        24
+      ],
+      "outsideMovementCancelled": true,
+      "nativeNanmanResponse": "chooseToRespond submitted sha, result.bool=true, finished=true, selected cleared, settlement resumed"
+    },
+    "knownHistoricalError": "ReferenceError: cordova is not defined from a pre-existing Cordova native callback at timestamp 1795138526725, before test interaction; not caused by repair",
+    "limits": [
+      "未完成完整手机对局",
+      "未完成真实联机验证",
+      "未完成本机Electron实局验证（后台接口未开启）"
+    ]
+  }
+}

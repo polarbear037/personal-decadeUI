@@ -1,0 +1,1016 @@
+{
+  "othersOff": {
+    "cases": [
+      {
+        "which": 0,
+        "slot": 1,
+        "test": [
+          {
+            "name": "八阵 青釭剑",
+            "skill": "bazhen",
+            "equip": "qinggang",
+            "row": "2",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 112,
+              "y": 650.5,
+              "width": 125,
+              "height": 23,
+              "top": 650.5,
+              "right": 237,
+              "bottom": 673.5,
+              "left": 112
+            },
+            "label": {
+              "x": 112,
+              "y": 652.5,
+              "width": 121,
+              "height": 19,
+              "top": 652.5,
+              "right": 233,
+              "bottom": 671.5,
+              "left": 112
+            },
+            "fontSize": "16px",
+            "html": "八阵 青釭剑",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 0,
+        "slot": 2,
+        "test": [
+          {
+            "name": "八阵 八卦阵",
+            "skill": "bazhen",
+            "equip": "bagua",
+            "row": "3",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 112,
+              "y": 673.5,
+              "width": 125,
+              "height": 23,
+              "top": 673.5,
+              "right": 237,
+              "bottom": 696.5,
+              "left": 112
+            },
+            "label": {
+              "x": 112,
+              "y": 675.5,
+              "width": 121,
+              "height": 19,
+              "top": 675.5,
+              "right": 233,
+              "bottom": 694.5,
+              "left": 112
+            },
+            "fontSize": "16px",
+            "html": "八阵 八卦阵",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 0,
+        "slot": 3,
+        "test": [
+          {
+            "name": "八阵 绝影",
+            "skill": "bazhen",
+            "equip": "jueying",
+            "row": "4",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 112,
+              "y": 696.5,
+              "width": 125,
+              "height": 23,
+              "top": 696.5,
+              "right": 237,
+              "bottom": 719.5,
+              "left": 112
+            },
+            "label": {
+              "x": 112,
+              "y": 698.5,
+              "width": 121,
+              "height": 19,
+              "top": 698.5,
+              "right": 233,
+              "bottom": 717.5,
+              "left": 112
+            },
+            "fontSize": "16px",
+            "html": "八阵 绝影",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 0,
+        "slot": 4,
+        "test": [
+          {
+            "name": "八阵 赤兔",
+            "skill": "bazhen",
+            "equip": "chitu",
+            "row": "5",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 112,
+              "y": 719.5,
+              "width": 125,
+              "height": 23,
+              "top": 719.5,
+              "right": 237,
+              "bottom": 742.5,
+              "left": 112
+            },
+            "label": {
+              "x": 112,
+              "y": 721.5,
+              "width": 121,
+              "height": 19,
+              "top": 721.5,
+              "right": 233,
+              "bottom": 740.5,
+              "left": 112
+            },
+            "fontSize": "16px",
+            "html": "八阵 赤兔",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 0,
+        "slot": 5,
+        "test": [
+          {
+            "name": "八阵 木牛流马",
+            "skill": "bazhen",
+            "equip": "muniu",
+            "row": "1",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 112,
+              "y": 627.5,
+              "width": 125,
+              "height": 23,
+              "top": 627.5,
+              "right": 237,
+              "bottom": 650.5,
+              "left": 112
+            },
+            "label": {
+              "x": 112,
+              "y": 629.5,
+              "width": 121,
+              "height": 19,
+              "top": 629.5,
+              "right": 233,
+              "bottom": 648.5,
+              "left": 112
+            },
+            "fontSize": "16px",
+            "html": "八阵 木牛流马",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 1,
+        "slot": 1,
+        "test": [
+          {
+            "name": "八阵 青釭剑",
+            "skill": "bazhen",
+            "equip": "qinggang",
+            "row": "2",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 1329.671875,
+              "y": 328.625,
+              "width": 99.078125,
+              "height": 17.546875,
+              "top": 328.625,
+              "right": 1428.75,
+              "bottom": 346.171875,
+              "left": 1329.671875
+            },
+            "label": {
+              "x": 1329.671875,
+              "y": 328.625,
+              "width": 99.078125,
+              "height": 17.546875,
+              "top": 328.625,
+              "right": 1428.75,
+              "bottom": 346.171875,
+              "left": 1329.671875
+            },
+            "fontSize": "13px",
+            "html": "八阵 青釭剑",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 1,
+        "slot": 2,
+        "test": [
+          {
+            "name": "八阵 八卦阵",
+            "skill": "bazhen",
+            "equip": "bagua",
+            "row": "3",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 1329.671875,
+              "y": 299.375,
+              "width": 99.078125,
+              "height": 17.53125,
+              "top": 299.375,
+              "right": 1428.75,
+              "bottom": 316.90625,
+              "left": 1329.671875
+            },
+            "label": {
+              "x": 1329.671875,
+              "y": 299.375,
+              "width": 99.078125,
+              "height": 17.53125,
+              "top": 299.375,
+              "right": 1428.75,
+              "bottom": 316.90625,
+              "left": 1329.671875
+            },
+            "fontSize": "13px",
+            "html": "八阵 八卦阵",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 1,
+        "slot": 3,
+        "test": [
+          {
+            "name": "八阵 绝影",
+            "skill": "bazhen",
+            "equip": "jueying",
+            "row": "4",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 1329.671875,
+              "y": 316.90625,
+              "width": 99.078125,
+              "height": 17.546875,
+              "top": 316.90625,
+              "right": 1428.75,
+              "bottom": 334.453125,
+              "left": 1329.671875
+            },
+            "label": {
+              "x": 1329.671875,
+              "y": 316.90625,
+              "width": 99.078125,
+              "height": 17.546875,
+              "top": 316.90625,
+              "right": 1428.75,
+              "bottom": 334.453125,
+              "left": 1329.671875
+            },
+            "fontSize": "13px",
+            "html": "八阵 绝影",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 1,
+        "slot": 4,
+        "test": [
+          {
+            "name": "八阵 赤兔",
+            "skill": "bazhen",
+            "equip": "chitu",
+            "row": "5",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 1329.671875,
+              "y": 334.453125,
+              "width": 99.078125,
+              "height": 17.53125,
+              "top": 334.453125,
+              "right": 1428.75,
+              "bottom": 351.984375,
+              "left": 1329.671875
+            },
+            "label": {
+              "x": 1329.671875,
+              "y": 334.453125,
+              "width": 99.078125,
+              "height": 17.53125,
+              "top": 334.453125,
+              "right": 1428.75,
+              "bottom": 351.984375,
+              "left": 1329.671875
+            },
+            "fontSize": "13px",
+            "html": "八阵 赤兔",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 1,
+        "slot": 5,
+        "test": [
+          {
+            "name": "八阵 木牛流马",
+            "skill": "bazhen",
+            "equip": "muniu",
+            "row": "1",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 1329.671875,
+              "y": 264.296875,
+              "width": 99.078125,
+              "height": 17.53125,
+              "top": 264.296875,
+              "right": 1428.75,
+              "bottom": 281.828125,
+              "left": 1329.671875
+            },
+            "label": {
+              "x": 1329.671875,
+              "y": 264.296875,
+              "width": 99.078125,
+              "height": 17.53125,
+              "top": 264.296875,
+              "right": 1428.75,
+              "bottom": 281.828125,
+              "left": 1329.671875
+            },
+            "fontSize": "13px",
+            "html": "八阵 木牛流马",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "disabled": false,
+        "test": [
+          {
+            "name": "八阵 八卦阵",
+            "skill": "bazhen",
+            "equip": "bagua",
+            "row": "3",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 1329.671875,
+              "y": 299.375,
+              "width": 99.078125,
+              "height": 17.53125,
+              "top": 299.375,
+              "right": 1428.75,
+              "bottom": 316.90625,
+              "left": 1329.671875
+            },
+            "label": {
+              "x": 1329.671875,
+              "y": 299.375,
+              "width": 99.078125,
+              "height": 17.53125,
+              "top": 299.375,
+              "right": 1428.75,
+              "bottom": 316.90625,
+              "left": 1329.671875
+            },
+            "fontSize": "13px",
+            "html": "八阵 八卦阵",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "disabled": true,
+        "test": [
+          {
+            "name": "八阵 八卦阵",
+            "skill": "bazhen",
+            "equip": "bagua",
+            "row": "3",
+            "background": "url(\"http://127.0.0.1:51249/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/equip/xinsha/game_abolish_equip_label.png\")",
+            "opacity": "1",
+            "rect": {
+              "x": 1329.671875,
+              "y": 299.375,
+              "width": 99.078125,
+              "height": 17.53125,
+              "top": 299.375,
+              "right": 1428.75,
+              "bottom": 316.90625,
+              "left": 1329.671875
+            },
+            "label": {
+              "x": 1329.671875,
+              "y": 299.375,
+              "width": 99.078125,
+              "height": 17.53125,
+              "top": 299.375,
+              "right": 1428.75,
+              "bottom": 316.90625,
+              "left": 1329.671875
+            },
+            "fontSize": "0px",
+            "html": "八阵 八卦阵",
+            "disabled": true,
+            "markers": 0
+          }
+        ]
+      }
+    ],
+    "restored": {
+      "extras": [],
+      "labels": [
+        {
+          "bg": "url(\"http://127.0.0.1:51249/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/equip/xinsha/game_abolish_equip_label.png\")",
+          "markers": 1
+        }
+      ]
+    },
+    "preserved": {
+      "shown": [
+        {
+          "name": "八阵 八卦阵",
+          "skill": "bazhen",
+          "equip": "bagua",
+          "row": "3",
+          "background": "none",
+          "opacity": "1",
+          "rect": {
+            "x": 1329.671875,
+            "y": 299.375,
+            "width": 99.078125,
+            "height": 17.53125,
+            "top": 299.375,
+            "right": 1428.75,
+            "bottom": 316.90625,
+            "left": 1329.671875
+          },
+          "label": {
+            "x": 1329.671875,
+            "y": 299.375,
+            "width": 99.078125,
+            "height": 17.53125,
+            "top": 299.375,
+            "right": 1428.75,
+            "bottom": 316.90625,
+            "left": 1329.671875
+          },
+          "fontSize": "13px",
+          "html": "八阵 八卦阵",
+          "disabled": false,
+          "markers": 0
+        }
+      ],
+      "hidden": [],
+      "stale": 0
+    },
+    "errors": [],
+    "failed": []
+  },
+  "onlineUI": {
+    "cases": [
+      {
+        "which": 0,
+        "slot": 1,
+        "test": [
+          {
+            "name": "八阵 青釭剑",
+            "skill": "bazhen",
+            "equip": "qinggang",
+            "row": "",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": -18,
+              "y": 625.5,
+              "width": 130,
+              "height": 27,
+              "top": 625.5,
+              "right": 112,
+              "bottom": 652.5,
+              "left": -18
+            },
+            "label": {
+              "x": -16,
+              "y": 627.5,
+              "width": 126,
+              "height": 23,
+              "top": 627.5,
+              "right": 110,
+              "bottom": 650.5,
+              "left": -16
+            },
+            "fontSize": "16px",
+            "html": "八阵 青釭剑",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 0,
+        "slot": 2,
+        "test": [
+          {
+            "name": "八阵 八卦阵",
+            "skill": "bazhen",
+            "equip": "bagua",
+            "row": "",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": -18,
+              "y": 655.5,
+              "width": 130,
+              "height": 27,
+              "top": 655.5,
+              "right": 112,
+              "bottom": 682.5,
+              "left": -18
+            },
+            "label": {
+              "x": -16,
+              "y": 657.5,
+              "width": 126,
+              "height": 23,
+              "top": 657.5,
+              "right": 110,
+              "bottom": 680.5,
+              "left": -16
+            },
+            "fontSize": "16px",
+            "html": "八阵 八卦阵",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 0,
+        "slot": 3,
+        "test": [
+          {
+            "name": "八阵 绝影",
+            "skill": "bazhen",
+            "equip": "jueying",
+            "row": "",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": -18,
+              "y": 685.5,
+              "width": 130,
+              "height": 27,
+              "top": 685.5,
+              "right": 112,
+              "bottom": 712.5,
+              "left": -18
+            },
+            "label": {
+              "x": -16,
+              "y": 687.5,
+              "width": 126,
+              "height": 23,
+              "top": 687.5,
+              "right": 110,
+              "bottom": 710.5,
+              "left": -16
+            },
+            "fontSize": "16px",
+            "html": "八阵 绝影",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 0,
+        "slot": 4,
+        "test": [
+          {
+            "name": "八阵 赤兔",
+            "skill": "bazhen",
+            "equip": "chitu",
+            "row": "",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": -18,
+              "y": 715.5,
+              "width": 130,
+              "height": 27,
+              "top": 715.5,
+              "right": 112,
+              "bottom": 742.5,
+              "left": -18
+            },
+            "label": {
+              "x": -16,
+              "y": 717.5,
+              "width": 126,
+              "height": 23,
+              "top": 717.5,
+              "right": 110,
+              "bottom": 740.5,
+              "left": -16
+            },
+            "fontSize": "16px",
+            "html": "八阵 赤兔",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 0,
+        "slot": 5,
+        "test": [
+          {
+            "name": "八阵 木牛流马",
+            "skill": "bazhen",
+            "equip": "muniu",
+            "row": "",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": -18,
+              "y": 715.5,
+              "width": 130,
+              "height": 27,
+              "top": 715.5,
+              "right": 112,
+              "bottom": 742.5,
+              "left": -18
+            },
+            "label": {
+              "x": -16,
+              "y": 717.5,
+              "width": 126,
+              "height": 23,
+              "top": 717.5,
+              "right": 110,
+              "bottom": 740.5,
+              "left": -16
+            },
+            "fontSize": "16px",
+            "html": "八阵 木牛流马",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 1,
+        "slot": 1,
+        "test": [
+          {
+            "name": "八阵 青釭剑",
+            "skill": "bazhen",
+            "equip": "qinggang",
+            "row": "",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 1296.625,
+              "y": 331.234375,
+              "width": 109.578125,
+              "height": 20,
+              "top": 331.234375,
+              "right": 1406.203125,
+              "bottom": 351.234375,
+              "left": 1296.625
+            },
+            "label": {
+              "x": 1298.125,
+              "y": 332.234375,
+              "width": 109.578125,
+              "height": 19,
+              "top": 332.234375,
+              "right": 1407.703125,
+              "bottom": 351.234375,
+              "left": 1298.125
+            },
+            "fontSize": "17px",
+            "html": "八阵 青釭剑",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 1,
+        "slot": 2,
+        "test": [
+          {
+            "name": "八阵 八卦阵",
+            "skill": "bazhen",
+            "equip": "bagua",
+            "row": "",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 1296.625,
+              "y": 351.234375,
+              "width": 109.578125,
+              "height": 20,
+              "top": 351.234375,
+              "right": 1406.203125,
+              "bottom": 371.234375,
+              "left": 1296.625
+            },
+            "label": {
+              "x": 1298.125,
+              "y": 352.234375,
+              "width": 109.578125,
+              "height": 19,
+              "top": 352.234375,
+              "right": 1407.703125,
+              "bottom": 371.234375,
+              "left": 1298.125
+            },
+            "fontSize": "17px",
+            "html": "八阵 八卦阵",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 1,
+        "slot": 3,
+        "test": [
+          {
+            "name": "八阵 绝影",
+            "skill": "bazhen",
+            "equip": "jueying",
+            "row": "",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 1296.625,
+              "y": 371.234375,
+              "width": 109.578125,
+              "height": 20,
+              "top": 371.234375,
+              "right": 1406.203125,
+              "bottom": 391.234375,
+              "left": 1296.625
+            },
+            "label": {
+              "x": 1298.125,
+              "y": 372.234375,
+              "width": 109.578125,
+              "height": 19,
+              "top": 372.234375,
+              "right": 1407.703125,
+              "bottom": 391.234375,
+              "left": 1298.125
+            },
+            "fontSize": "17px",
+            "html": "八阵 绝影",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 1,
+        "slot": 4,
+        "test": [
+          {
+            "name": "八阵 赤兔",
+            "skill": "bazhen",
+            "equip": "chitu",
+            "row": "",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 1296.625,
+              "y": 391.234375,
+              "width": 109.578125,
+              "height": 20,
+              "top": 391.234375,
+              "right": 1406.203125,
+              "bottom": 411.234375,
+              "left": 1296.625
+            },
+            "label": {
+              "x": 1298.125,
+              "y": 392.234375,
+              "width": 109.578125,
+              "height": 19,
+              "top": 392.234375,
+              "right": 1407.703125,
+              "bottom": 411.234375,
+              "left": 1298.125
+            },
+            "fontSize": "17px",
+            "html": "八阵 赤兔",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "which": 1,
+        "slot": 5,
+        "test": [
+          {
+            "name": "八阵 木牛流马",
+            "skill": "bazhen",
+            "equip": "muniu",
+            "row": "",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 1296.625,
+              "y": 345.84375,
+              "width": 109.578125,
+              "height": 20,
+              "top": 345.84375,
+              "right": 1406.203125,
+              "bottom": 365.84375,
+              "left": 1296.625
+            },
+            "label": {
+              "x": 1298.125,
+              "y": 346.84375,
+              "width": 109.578125,
+              "height": 19,
+              "top": 346.84375,
+              "right": 1407.703125,
+              "bottom": 365.84375,
+              "left": 1298.125
+            },
+            "fontSize": "14px",
+            "html": "八阵 木牛流马",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "disabled": false,
+        "test": [
+          {
+            "name": "八阵 八卦阵",
+            "skill": "bazhen",
+            "equip": "bagua",
+            "row": "",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 1296.625,
+              "y": 305.84375,
+              "width": 109.578125,
+              "height": 20,
+              "top": 305.84375,
+              "right": 1406.203125,
+              "bottom": 325.84375,
+              "left": 1296.625
+            },
+            "label": {
+              "x": 1298.125,
+              "y": 306.84375,
+              "width": 109.578125,
+              "height": 19,
+              "top": 306.84375,
+              "right": 1407.703125,
+              "bottom": 325.84375,
+              "left": 1298.125
+            },
+            "fontSize": "17px",
+            "html": "八阵 八卦阵",
+            "disabled": false,
+            "markers": 0
+          }
+        ]
+      },
+      {
+        "disabled": true,
+        "test": [
+          {
+            "name": "八阵 八卦阵",
+            "skill": "bazhen",
+            "equip": "bagua",
+            "row": "",
+            "background": "none",
+            "opacity": "1",
+            "rect": {
+              "x": 1296.625,
+              "y": 305.84375,
+              "width": 109.578125,
+              "height": 20,
+              "top": 305.84375,
+              "right": 1406.203125,
+              "bottom": 325.84375,
+              "left": 1296.625
+            },
+            "label": {
+              "x": 1298.125,
+              "y": 306.84375,
+              "width": 109.578125,
+              "height": 19,
+              "top": 306.84375,
+              "right": 1407.703125,
+              "bottom": 325.84375,
+              "left": 1298.125
+            },
+            "fontSize": "17px",
+            "html": "八阵 八卦阵",
+            "disabled": true,
+            "markers": 0
+          }
+        ]
+      }
+    ],
+    "restored": {
+      "extras": [],
+      "labels": [
+        {
+          "bg": "none",
+          "markers": 1
+        }
+      ]
+    },
+    "preserved": {
+      "shown": [
+        {
+          "name": "八阵 八卦阵",
+          "skill": "bazhen",
+          "equip": "bagua",
+          "row": "",
+          "background": "none",
+          "opacity": "1",
+          "rect": {
+            "x": 1296.625,
+            "y": 305.84375,
+            "width": 109.578125,
+            "height": 20,
+            "top": 305.84375,
+            "right": 1406.203125,
+            "bottom": 325.84375,
+            "left": 1296.625
+          },
+          "label": {
+            "x": 1298.125,
+            "y": 306.84375,
+            "width": 109.578125,
+            "height": 19,
+            "top": 306.84375,
+            "right": 1407.703125,
+            "bottom": 325.84375,
+            "left": 1298.125
+          },
+          "fontSize": "17px",
+          "html": "八阵 八卦阵",
+          "disabled": false,
+          "markers": 0
+        }
+      ],
+      "hidden": [],
+      "stale": 0
+    },
+    "errors": [],
+    "failed": []
+  }
+}

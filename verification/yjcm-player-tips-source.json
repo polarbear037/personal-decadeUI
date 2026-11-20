@@ -1,0 +1,237 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "member": "assets/res/lib/game.zip",
+    "packed_sha256": "df9af4ec01e45b7a2bca47b4fa22c1537c8c8365199b8ba2f764224d5e696d04",
+    "decoded_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28",
+    "packed_cache_matches_apk": true
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_9c5d0ada064eb4df0e69550e647832f45a7c91a83828969b6e7b0219840bc0e9"
+  ],
+  "modules": [
+    {
+      "member": "app.view.game.GameSeatCcb",
+      "sha256": "0f54477bcff860404681e61cba1677bfd409234cf8abc44b136061ea98e35ff5"
+    },
+    {
+      "member": "app.module.game.seat.PlayerSeat",
+      "sha256": "667d131e48095c759f6feb3945c329d5be6051524e614f2a4b88b85e5c5d45b6"
+    },
+    {
+      "member": "app.module.game.spell.SpellData",
+      "sha256": "20f80048bb86e7c6af6b777725124e81b801d0cdd29a4e4d6ee973853580106c"
+    },
+    {
+      "member": "app.skill.spell",
+      "sha256": "5550e92ed9367963d41edfbdd09f76b147bf517bbcb462385cc939a6fc0988dc"
+    },
+    {
+      "member": "app.cfg.CfgText",
+      "sha256": "448d085b4c5b749be66e9b111256c0382b3ceecf758563abac12601b81094a19"
+    }
+  ],
+  "asset": {
+    "plist": "assets/res/new/tex/plist/gameinfo.plist",
+    "plist_sha256": "2d23c6a2d9d8254115ce892f1895db16cd6f9fb30e6dd512ab835e8b6c4b7731",
+    "texture_sha256": "6ff05a3dbacc2a1cef5e05b67cc24490133dfffd7b9d3aeac9f3eb06744bc0f5",
+    "alpha_sha256": "91c659e96274aa2d2ea762b78eb94a89fa0cebbdca610e1fe770dc0a55a98be3",
+    "frame": "gamestatus_bar.png",
+    "metadata": {
+      "frame": "{{1823,33},{152,24}}",
+      "offset": "{0,0}",
+      "rotated": true,
+      "sourceColorRect": "{{0,0},{152,24}}",
+      "sourceSize": "{152,24}"
+    },
+    "destination": "image/ui/tip/xinsha/gamestatus_bar.png",
+    "sha256": "1c04af90a1269f8f5e9000bbc54cee5766578f0f13a85839bdef7ff4fb4742e8",
+    "conversion": "ETC1 RGB + alpha red channel, reverse atlas rotation, original 152x24 size"
+  },
+  "observations": [
+    "GameSeatCcb.createStatusBar 0.3 lines401..424: gamestatus_bar.png, RichLabel fnt/fzbw.ttf size16 color c3b(247,226,201), addToCenter.",
+    "GameSeatCcb.ctor 0.0: seat190x252, statusBar CENTER(94,-18). layoutYJCM 0.1 does not reposition statusBar.",
+    "GameSeatCcb.updateTimeBar 0.66.0 lines2129..2157: countdownTip override; inAskState/tempRoleOptTargetData -> getLastAskSkill/getSkill -> <font color=#F5DE43>getShortName()</font> + Lang(TXT_SIKAO); otherwise round1..6 or preparation.",
+    "SpellData.getShortName 0.7: cfg.ShortName if supplied/nonempty, otherwise getName. app.skill.spell has no ShortName values: use full Name, including 无懈可击.",
+    "CfgText: 思考中; 回合开始; 判定阶段; 摸牌阶段; 出牌阶段; 弃牌阶段; 结束阶段; 准备阶段."
+  ],
+  "adaptation": "Use noname actual choice/response/skill/phase events, preserve all game rules; no inference of card ownership from hidden hands. Limit DOM, CSS and old renderer exclusion to othersOff.",
+  "scope": "Static shipped Lua instruction/constant and atlas inspection; official client runtime not observed.",
+  "font": {
+    "member": "assets/res/fnt/fzbw.ttf",
+    "destination": "ui/assets/lbtn/yijiang/fnt/fzbw.ttf",
+    "sha256": "9d8c656395e0cae765a2292c403ec2aaaa55ee551ab37ab330bf1ce5c3c2d9cc"
+  },
+  "validation": {
+    "commands": [
+      "node --check src/ui/xinsha-player-tips.js",
+      "node --check src/ui/progress-bar.js",
+      "node --check verification/yjcm-player-tips-browser.cjs",
+      "node --check verification/yjcm-player-tips-live.cjs",
+      "node verification/yjcm-player-tips-browser.cjs",
+      "node verification/yjcm-player-tips-live.cjs",
+      "git diff --check -- src/ui/progress-bar.js src/styles/layout-xinsha.css"
+    ],
+    "browser": "Edge headless, real noname entry/style loading; native chooseToUse content; seven response/action cases; six phases; original geometry/color/font; chooseCharacter/style switch/gameover cleanup; Online isolation. All passed.",
+    "live_ai": "Real auto character selection and noname AI turn without replacing event stack or manually refreshing tips; actual useSkill zhiheng and useCard wuzhong observed. 56 samples, 42 with visible tips; no page errors. Hit test confirms visible above other nodes.",
+    "results": [
+      "verification/yjcm-player-tips-results.json",
+      "verification/yjcm-player-tips-subjects-results.json"
+    ],
+    "screenshots": [
+      "verification/yjcm-player-tips-browser.png",
+      "verification/yjcm-player-tips-live.png"
+    ],
+    "official_client_runtime": false,
+    "current_electron_game": false,
+    "mobile_device": false
+  },
+  "local_position_adaptation": {
+    "reason": "Original statusBar anchor alone overlapped noname timeai/timePhase, whose container uses bottom:-14px. The original client and local progress bar have different seat-relative layouts.",
+    "css": "othersOff tip top=calc(100% + 14px), translateY(18.75% of the 32-unit tip height) retains the same 6-unit source-scaled gap below the progress bar.",
+    "validation_command": "node verification/yjcm-player-tips-browser.cjs",
+    "checks": "Real progress-bar.js timePhase and timeai DOM simultaneously with the wuxie tip; viewport1500/1280 and requested body zoom1/1.25; assert entire tip top below bar bottom. Native choices/content and Online isolation pass.",
+    "current_electron_game": false,
+    "mobile_device": false,
+    "measurements": [
+      {
+        "viewport": 1500,
+        "requested_zoom": 1,
+        "gaps": [
+          {
+            "bar": "timePhase",
+            "gap": 4.102
+          },
+          {
+            "bar": "timeai",
+            "gap": 4.102
+          }
+        ]
+      },
+      {
+        "viewport": 1500,
+        "requested_zoom": 1.25,
+        "gaps": [
+          {
+            "bar": "timePhase",
+            "gap": 5.129
+          },
+          {
+            "bar": "timeai",
+            "gap": 5.129
+          }
+        ]
+      },
+      {
+        "viewport": 1280,
+        "requested_zoom": 1,
+        "gaps": [
+          {
+            "bar": "timePhase",
+            "gap": 4.102
+          },
+          {
+            "bar": "timeai",
+            "gap": 4.102
+          }
+        ]
+      },
+      {
+        "viewport": 1280,
+        "requested_zoom": 1.25,
+        "gaps": [
+          {
+            "bar": "timePhase",
+            "gap": 4.102
+          },
+          {
+            "bar": "timeai",
+            "gap": 4.102
+          }
+        ]
+      }
+    ]
+  },
+  "reference_height_adaptation": {
+    "request": "User-provided first image current client, second image original 出牌阶段: increase visible background height and vertical padding.",
+    "original_asset": "152x24 unchanged, alpha bounds(2,2)-(150,22)",
+    "local_display": "152x32, +33.333% height; font remains16; width/horizontal anchor unchanged. Vertical translate6/32 keeps the progress-bar gap unchanged.",
+    "evidence_type": "User-provided visual reference and local bitmap alpha inspection; local display adjustment, not a newly observed official code constant.",
+    "validation": "node verification/yjcm-player-tips-browser.cjs passed: text/font/color, increased background height, two progress bar classes and multiple sizes/zoom, Online isolation.",
+    "current_electron_game": false
+  },
+  "progress_lifecycle_binding": {
+    "behavior": "Only render when the same player has a direct timeai/timePhase progress node. Retain existing text during event turnover while the progress bar still exists. Progress creation, clearAiTimer and countdown-zero removal synchronously refresh the xinsha renderer. CSS uses the same no-progress condition as the seat-number visibility to prevent a painted orphan when a node is removed externally.",
+    "scope": "othersOff only; Online progress, tips, timing and events retain their original paths.",
+    "validation_commands": [
+      "node --check src/ui/xinsha-player-tips.js",
+      "node --check src/ui/progress-bar.js",
+      "node verification/yjcm-player-tips-browser.cjs",
+      "node verification/yjcm-player-tips-live.cjs"
+    ],
+    "browser": {
+      "painted_frames": 67,
+      "progress_callbacks": 1,
+      "after_exit": [
+        {
+          "bar": false,
+          "tip": false,
+          "seat": "block"
+        },
+        {
+          "bar": false,
+          "tip": false,
+          "seat": "block"
+        }
+      ],
+      "after_enter": [
+        {
+          "bar": true,
+          "tip": true,
+          "seat": "none"
+        },
+        {
+          "bar": false,
+          "tip": false,
+          "seat": "block"
+        }
+      ],
+      "on_timeout": [
+        {
+          "bar": false,
+          "tip": false,
+          "seat": "block"
+        },
+        {
+          "bar": false,
+          "tip": false,
+          "seat": "block"
+        }
+      ],
+      "after_timeout_with_event_still_present": [
+        {
+          "bar": false,
+          "tip": false,
+          "seat": "block"
+        },
+        {
+          "bar": false,
+          "tip": false,
+          "seat": "block"
+        }
+      ],
+      "event_after_timeout": "phaseUse",
+      "online_isolation_passed": true
+    },
+    "live_ai": {
+      "samples": 73,
+      "mismatches": 0,
+      "page_errors": [],
+      "actual_useCard_and_useSkill_observed": true
+    },
+    "current_electron_game": false,
+    "mobile_device": false
+  }
+}

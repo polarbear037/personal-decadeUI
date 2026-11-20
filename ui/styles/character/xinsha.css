@@ -953,3 +953,361 @@
 	text-shadow: 0.1px 0.1px 0.25px rgba(0, 0, 0, 0.1);
 	z-index: 99;
 }
+
+/* 一将成名 6.4.5 GameSeatInfoDlgYjcm。关闭控件收进边框，无官阶数据的底栏收拢按钮。 */
+body[data-style="othersOff"] #window .xinsha-character-dialog.yjcm-seat-info {
+	width: 1031px;
+	height: 460px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(var(--yjcm-info-scale, 1));
+	background: none;
+	opacity: 1;
+	box-shadow: none;
+	border: 0;
+	border-radius: 0;
+	text-shadow: none;
+	animation: none;
+	transition: none;
+	overflow: visible;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info::before { content: none; }
+
+body[data-style="othersOff"] #window .yjcm-seat-info > .yjcm-info-frame {
+	z-index: 0;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 99px 20px 58px;
+	border-image: url("../../assets/character/xinsha/official/game_playerinfonew_bg.png") 99 20 58 20 fill / 99px 20px 58px 20px stretch;
+	pointer-events: none;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info > .yjcm-info-split {
+	left: 376px;
+	top: 23px;
+	width: 1px;
+	height: 413px;
+	background: url("../../assets/character/xinsha/official/game_playinfo_split.png") center / 100% 100%;
+	pointer-events: none;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info > .yjcm-info-footer {
+	left: 1px;
+	top: 358px;
+	width: 360px;
+	height: 101px;
+	background: url("../../assets/character/xinsha/official/game_playerinfonew_btnbar_yjcm.png") center / 100% 100%;
+	pointer-events: none;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info > .diaozhui {
+	left: 996px;
+	top: 26.5px;
+	right: auto;
+	width: 53px;
+	height: 53px;
+	opacity: 1;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info > :is(.skillx, .equip) {
+	left: 965px;
+	top: 53px;
+	right: auto !important;
+	width: 52px;
+	height: 126px;
+	background: url("../../assets/character/xinsha/official/game_playerinfonew_tabbg.png") center / 100% 100%;
+	color: #fee9bd;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 1.1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	writing-mode: vertical-rl;
+	letter-spacing: 4px;
+	cursor: pointer;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info > .equip { top: 183px; }
+
+body[data-style="othersOff"] #window .yjcm-seat-info > :is(.skillx, .equip).active {
+	background-image: url("../../assets/character/xinsha/official/game_playerinfonew_tabselected.png");
+	color: #4f3427;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info > .right {
+	z-index: 2;
+	left: 387px;
+	top: 21px;
+	width: 559px;
+	height: 378px;
+	padding: 0;
+	overflow: hidden;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info > .right > div {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	scrollbar-width: none !important;
+	box-sizing: border-box;
+	overscroll-behavior: contain;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info .right::-webkit-scrollbar,
+body[data-style="othersOff"] #window .yjcm-seat-info .right ::-webkit-scrollbar {
+	display: none !important;
+	width: 0 !important;
+	height: 0 !important;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info .right :is(.xskill, .xskillx) {
+	position: relative;
+	width: 549px;
+	margin: 0 0 20px;
+	padding: 0;
+	text-align: left;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info .right :is(.xskill, .xskillx) > div {
+	display: block;
+	width: 538px;
+	height: auto;
+	margin: 15px 0 0 6px !important;
+	padding: 0;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 27px;
+	color: #fff0d5;
+	text-shadow: none;
+	white-space: normal;
+	overflow-wrap: anywhere;
+	box-sizing: border-box;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info .right :is(.xskill, .xskillx) > [data-color] {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: max-content;
+	min-width: 87px;
+	max-width: 538px;
+	height: 41px;
+	margin: 0 !important;
+	padding: 0 5px;
+	border: 0;
+	border-image: none;
+	border-radius: 0;
+	background: url("../../../image/ui/tooltip/xinsha/game_playinfo_skillbg.png") center / 100% 100%;
+	color: #fcf4bc;
+	font-size: 32px;
+	line-height: 41px;
+	white-space: nowrap;
+	overflow: visible;
+	text-overflow: clip;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info .right .xskill > [data-color],
+body[data-style="othersOff"] #window .yjcm-seat-info .right .xskill > [data-color] * {
+	font-family: "dui-yjcm-skill", serif !important;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info .right .yjcm-skill-kind {
+	position: absolute;
+	left: 100px;
+	top: 3px;
+	width: 38px;
+	height: 38px;
+	font-size: 26px;
+	line-height: 38px;
+	color: #fff0d5;
+	background: url("../../../image/ui/tooltip/xinsha/cmn_passive_skill_bg.png") center / 100% 100%;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info .right .yjcm-skill-kind.active {
+	background-image: url("../../../image/ui/tooltip/xinsha/cmn_activite_skill_bg.png");
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info .right .noxcaption {
+	position: relative;
+	left: 100px;
+	top: 159px;
+	width: 349px;
+	height: 42px;
+	background: url("../../assets/character/xinsha/official/game_playerinfonew_empty_equip_tip_bg.png") center / 100% 100%;
+	font-size: 28px;
+	line-height: 42px;
+	color: #c1ae8e;
+	text-align: center;
+}
+
+body[data-style="othersOff"] #window .yjcm-info-footer > .wanjiaming2 {
+	position: absolute;
+	left: 27px;
+	top: 7px;
+	width: 320px;
+	height: 29px;
+	font-size: 24px;
+	line-height: 29px;
+	color: #fff0d5;
+	text-align: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+body[data-style="othersOff"] #window .yjcm-info-footer > :is(.caizhu, .miniChange) {
+	position: absolute;
+	left: 15px;
+	top: auto;
+	bottom: 20px;
+	width: 48px;
+	height: 48px;
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	background: url("../../assets/character/xinsha/official/game_playerinfonew_detail.png") center / 100% 100% no-repeat;
+	cursor: pointer;
+	z-index: 100;
+	pointer-events: auto;
+}
+
+body[data-style="othersOff"] #window .yjcm-info-footer > .miniChange {
+	left: 77px;
+	background-image: url("../../assets/character/xinsha/official/game_playerinfonew_change_skin.png");
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info > .yjcm-general-card {
+	left: 82.5px;
+	top: 44.4px;
+	width: 190px;
+	height: 252px;
+	transform: scale(1.1);
+	transform-origin: top left;
+	background: url("../../assets/character/xinsha/official/cardbg.png") left bottom / 194px 256px no-repeat;
+}
+
+body[data-style="othersOff"] #window .yjcm-general-card > div { position: absolute; }
+
+body[data-style="othersOff"] #window .yjcm-seat-info.yjcm-double-general > .yjcm-general-card {
+	left: 96.75px;
+	top: 10.3px;
+	transform: scale(.95);
+}
+
+body[data-style="othersOff"] #window .yjcm-general-portrait {
+	left: 10px;
+	bottom: 10px;
+	width: 180px;
+	height: 245px;
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	mask: url("../../assets/character/xinsha/official/skin_clip.png") center / 100% 100% no-repeat;
+}
+
+body[data-style="othersOff"] #window .yjcm-general-country {
+	left: 5px;
+	bottom: 10.5px;
+	width: 32px;
+	height: 230px;
+	background-position: center calc(50% + .5px);
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+body[data-style="othersOff"] #window :is(.yjcm-general-emblem, .yjcm-general-country-bg) {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: -9px;
+	top: 3px;
+	background-position: center;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+body[data-style="othersOff"] #window .yjcm-general-name {
+	position: absolute;
+	left: 0;
+	top: 112px;
+	width: 32px;
+	transform: translateY(-50%);
+	font-size: 24px;
+	line-height: 26px;
+	color: #fff0d5;
+	text-align: center;
+	word-break: break-all;
+}
+
+body[data-style="othersOff"] #window .yjcm-general-hp {
+	left: 146px;
+	bottom: 8px;
+	width: 36px;
+	height: 105px;
+	font-size: 24px;
+	color: #7ce470;
+	pointer-events: none;
+}
+
+body[data-style="othersOff"] #window .yjcm-general-hp-bg {
+	position: absolute;
+	left: -97px;
+	bottom: -7px;
+	width: 139px;
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 146px 0 30px;
+	border-image: url("../../assets/character/xinsha/official/yjcm_general_hp_bg.png") 146 0 30 0 fill / 146px 0 30px 0 stretch;
+}
+
+body[data-style="othersOff"] #window .yjcm-general-hp-pip {
+	position: absolute;
+	left: 15px;
+	width: 20px;
+	height: 20px;
+	background: url("../../assets/character/xinsha/official/yjcm_general_hp_1.png") center / 18px 20px no-repeat;
+}
+
+body[data-style="othersOff"] #window .yjcm-general-hp-count {
+	position: absolute;
+	left: 15px;
+	bottom: 40px;
+	width: 20px;
+	line-height: 24px;
+	text-align: center;
+}
+
+body[data-style="othersOff"] #window .yjcm-seat-info > .yjcm-general-switch {
+	left: 109px;
+	top: 310px;
+	width: 156px;
+	height: 43px;
+	display: flex;
+	background: url("../../assets/character/xinsha/official/game_playerinfonew_general_change_bg.png") center / 100% 100%;
+}
+
+body[data-style="othersOff"] #window .yjcm-general-switch-button {
+	position: relative;
+	width: 78px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	font-size: 22px;
+	color: #c1ae8e;
+	cursor: pointer;
+}
+
+body[data-style="othersOff"] #window .yjcm-general-switch-button.active {
+	background: url("../../assets/character/xinsha/official/game_playerinfonew_general_change.png") center / 100% 100%;
+	color: #542d18;
+}

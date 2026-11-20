@@ -1,0 +1,18 @@
+{
+  "style": "othersOff",
+  "styles": [
+    {
+      "href": "http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/styles/player3.css?v=1.3.1&t=1794740476610&targetAlignment=1794741200226",
+      "loaded": true
+    }
+  ],
+  "root": "oblongcard phone decadeUI outcrop-skin-enabled selecting tempnoe",
+  "frame": [
+    {
+      "before": "-1",
+      "after": "0",
+      "url": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+      "bg": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")"
+    }
+  ]
+}

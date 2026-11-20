@@ -1,0 +1,1322 @@
+{
+  "othersOff": {
+    "setting": {
+      "name": "简化技能提示",
+      "init": true
+    },
+    "zhiheng": {
+      "skill": "zhiheng",
+      "resumes": 0,
+      "dialog": false,
+      "text": "弃置任意张牌并摸等量的牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "zhihengSelected": {
+      "skill": "zhiheng",
+      "resumes": 0,
+      "dialog": false,
+      "text": "弃置任意张牌并摸等量的牌",
+      "selected": 1,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "cancelled": {
+      "resumes": 0,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定回合结束"
+    },
+    "kurou": {
+      "skill": "kurou",
+      "resumes": 0,
+      "dialog": false,
+      "text": "失去1点体力并摸两张牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "direct": {
+      "result": {
+        "buttons": [],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "simplify_direct_test"
+      },
+      "resumes": 1,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "rende": {
+      "skill": "rende",
+      "resumes": 1,
+      "dialog": false,
+      "text": "选择任意张手牌及一名角色，点确定将手牌交给之",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "rendeSelected": {
+      "skill": "rende",
+      "resumes": 1,
+      "dialog": false,
+      "text": "选择任意张手牌及一名角色，点确定将手牌交给之",
+      "selected": 1,
+      "targets": 1,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "rendeConfirmed": {
+      "result": {
+        "buttons": [],
+        "cards": [
+          "ref: <Node>"
+        ],
+        "targets": [
+          "ref: <Node>"
+        ],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "rende"
+      },
+      "resumes": 2,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "optional": {
+      "skill": "simplify_optional_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "发动“可选测试”，请选择0至2张牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "manual": {
+      "skill": "simplify_manual_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "发动“确认测试”",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "customPrompt": {
+      "skill": "simplify_prompt_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "请选择一名角色，记录当前4点体力",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "buttons": {
+      "count": 2,
+      "visible": true,
+      "result": {
+        "buttons": [
+          "ref: <Node>"
+        ],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [
+          "杀"
+        ]
+      }
+    },
+    "trigger": {
+      "resumes": 3,
+      "dialog": false,
+      "text": "是否发动奸雄获得伤害牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消",
+      "hiddenDescription": true,
+      "hiddenDialog": true
+    },
+    "triggerCancelled": {
+      "result": {
+        "confirm": "cancel",
+        "bool": false
+      },
+      "resumes": 4,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "disabled": {
+      "skill": "zhiheng",
+      "resumes": 4,
+      "dialog": true,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消",
+      "description": "制衡弃置任意张牌并摸等量的牌"
+    },
+    "optimizedOnly": {
+      "skill": "zhiheng",
+      "resumes": 4,
+      "dialog": true,
+      "text": "请选任意手牌或装备弃置，并摸等量牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "reenabled": {
+      "result": {
+        "buttons": [],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "simplify_direct_test"
+      },
+      "resumes": 5,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "menu": {
+      "initial": true,
+      "disabled": true,
+      "enabled": true
+    },
+    "errors": []
+  },
+  "onlineUI": {
+    "setting": {
+      "name": "简化技能提示",
+      "init": true
+    },
+    "zhiheng": {
+      "skill": "zhiheng",
+      "resumes": 0,
+      "dialog": false,
+      "text": "弃置任意张牌并摸等量的牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定重铸取消"
+    },
+    "zhihengSelected": {
+      "skill": "zhiheng",
+      "resumes": 0,
+      "dialog": false,
+      "text": "弃置任意张牌并摸等量的牌",
+      "selected": 1,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定重铸取消"
+    },
+    "cancelled": {
+      "resumes": 0,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定重铸取消"
+    },
+    "kurou": {
+      "skill": "kurou",
+      "resumes": 0,
+      "dialog": false,
+      "text": "失去1点体力并摸两张牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定重铸取消"
+    },
+    "direct": {
+      "result": {
+        "buttons": [],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "simplify_direct_test"
+      },
+      "resumes": 1,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定重铸取消"
+    },
+    "rende": {
+      "skill": "rende",
+      "resumes": 1,
+      "dialog": false,
+      "text": "选择任意张手牌及一名角色，点确定将手牌交给之",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定重铸取消"
+    },
+    "rendeSelected": {
+      "skill": "rende",
+      "resumes": 1,
+      "dialog": false,
+      "text": "选择任意张手牌及一名角色，点确定将手牌交给之",
+      "selected": 1,
+      "targets": 1,
+      "selectableCard": true,
+      "confirm": "确定重铸取消"
+    },
+    "rendeConfirmed": {
+      "result": {
+        "buttons": [],
+        "cards": [
+          "ref: <Node>"
+        ],
+        "targets": [
+          "ref: <Node>"
+        ],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "rende"
+      },
+      "resumes": 2,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定重铸取消"
+    },
+    "optional": {
+      "skill": "simplify_optional_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "发动“可选测试”，请选择0至2张牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定重铸取消"
+    },
+    "manual": {
+      "skill": "simplify_manual_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "发动“确认测试”",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定重铸取消"
+    },
+    "customPrompt": {
+      "skill": "simplify_prompt_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "请选择一名角色，记录当前4点体力",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定重铸取消"
+    },
+    "buttons": {
+      "count": 2,
+      "visible": true,
+      "result": {
+        "buttons": [
+          "ref: <Node>"
+        ],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [
+          "杀"
+        ]
+      }
+    },
+    "trigger": {
+      "resumes": 3,
+      "dialog": false,
+      "text": "是否发动奸雄获得伤害牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定重铸取消",
+      "hiddenDescription": true,
+      "hiddenDialog": true
+    },
+    "triggerCancelled": {
+      "result": {
+        "confirm": "cancel",
+        "bool": false
+      },
+      "resumes": 4,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定重铸取消"
+    },
+    "disabled": {
+      "skill": "zhiheng",
+      "resumes": 4,
+      "dialog": true,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定重铸取消",
+      "description": "制衡弃置任意张牌并摸等量的牌"
+    },
+    "optimizedOnly": {
+      "skill": "zhiheng",
+      "resumes": 4,
+      "dialog": true,
+      "text": "请选任意手牌或装备弃置，并摸等量牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定重铸取消"
+    },
+    "reenabled": {
+      "result": {
+        "buttons": [],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "simplify_direct_test"
+      },
+      "resumes": 5,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定重铸取消"
+    },
+    "menu": {
+      "initial": true,
+      "disabled": true,
+      "enabled": true
+    },
+    "errors": []
+  },
+  "on": {
+    "setting": {
+      "name": "简化技能提示",
+      "init": true
+    },
+    "zhiheng": {
+      "skill": "zhiheng",
+      "resumes": 0,
+      "dialog": false,
+      "text": "弃置任意张牌并摸等量的牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "zhihengSelected": {
+      "skill": "zhiheng",
+      "resumes": 0,
+      "dialog": false,
+      "text": "弃置任意张牌并摸等量的牌",
+      "selected": 1,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "cancelled": {
+      "resumes": 0,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定回合结束"
+    },
+    "kurou": {
+      "skill": "kurou",
+      "resumes": 0,
+      "dialog": false,
+      "text": "失去1点体力并摸两张牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "direct": {
+      "result": {
+        "buttons": [],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "simplify_direct_test"
+      },
+      "resumes": 1,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "rende": {
+      "skill": "rende",
+      "resumes": 1,
+      "dialog": false,
+      "text": "选择任意张手牌及一名角色，点确定将手牌交给之",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "rendeSelected": {
+      "skill": "rende",
+      "resumes": 1,
+      "dialog": false,
+      "text": "选择任意张手牌及一名角色，点确定将手牌交给之",
+      "selected": 1,
+      "targets": 1,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "rendeConfirmed": {
+      "result": {
+        "buttons": [],
+        "cards": [
+          "ref: <Node>"
+        ],
+        "targets": [
+          "ref: <Node>"
+        ],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "rende"
+      },
+      "resumes": 2,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "optional": {
+      "skill": "simplify_optional_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "发动“可选测试”，请选择0至2张牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "manual": {
+      "skill": "simplify_manual_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "发动“确认测试”",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "customPrompt": {
+      "skill": "simplify_prompt_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "请选择一名角色，记录当前4点体力",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "buttons": {
+      "count": 2,
+      "visible": true,
+      "result": {
+        "buttons": [
+          "ref: <Node>"
+        ],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [
+          "杀"
+        ]
+      }
+    },
+    "trigger": {
+      "resumes": 3,
+      "dialog": false,
+      "text": "是否发动奸雄获得伤害牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消",
+      "hiddenDescription": true,
+      "hiddenDialog": true
+    },
+    "triggerCancelled": {
+      "result": {
+        "confirm": "cancel",
+        "bool": false
+      },
+      "resumes": 4,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "disabled": {
+      "skill": "zhiheng",
+      "resumes": 4,
+      "dialog": true,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消",
+      "description": "制衡弃置任意张牌并摸等量的牌"
+    },
+    "optimizedOnly": {
+      "skill": "zhiheng",
+      "resumes": 4,
+      "dialog": true,
+      "text": "请选任意手牌或装备弃置，并摸等量牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "reenabled": {
+      "result": {
+        "buttons": [],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "simplify_direct_test"
+      },
+      "resumes": 5,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "menu": {
+      "initial": true,
+      "disabled": true,
+      "enabled": true
+    },
+    "errors": []
+  },
+  "off": {
+    "setting": {
+      "name": "简化技能提示",
+      "init": true
+    },
+    "zhiheng": {
+      "skill": "zhiheng",
+      "resumes": 0,
+      "dialog": false,
+      "text": "弃置任意张牌并摸等量的牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": ""
+    },
+    "zhihengSelected": {
+      "skill": "zhiheng",
+      "resumes": 0,
+      "dialog": false,
+      "text": "弃置任意张牌并摸等量的牌",
+      "selected": 1,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": ""
+    },
+    "cancelled": {
+      "resumes": 0,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": ""
+    },
+    "kurou": {
+      "skill": "kurou",
+      "resumes": 0,
+      "dialog": false,
+      "text": "失去1点体力并摸两张牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": ""
+    },
+    "direct": {
+      "result": {
+        "buttons": [],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "simplify_direct_test"
+      },
+      "resumes": 1,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": ""
+    },
+    "rende": {
+      "skill": "rende",
+      "resumes": 1,
+      "dialog": false,
+      "text": "选择任意张手牌及一名角色，点确定将手牌交给之",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": ""
+    },
+    "rendeSelected": {
+      "skill": "rende",
+      "resumes": 1,
+      "dialog": false,
+      "text": "选择任意张手牌及一名角色，点确定将手牌交给之",
+      "selected": 1,
+      "targets": 1,
+      "selectableCard": true,
+      "confirm": ""
+    },
+    "rendeConfirmed": {
+      "result": {
+        "buttons": [],
+        "cards": [
+          "ref: <Node>"
+        ],
+        "targets": [
+          "ref: <Node>"
+        ],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "rende"
+      },
+      "resumes": 2,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": ""
+    },
+    "optional": {
+      "skill": "simplify_optional_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "发动“可选测试”，请选择0至2张牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": ""
+    },
+    "manual": {
+      "skill": "simplify_manual_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "发动“确认测试”",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": ""
+    },
+    "customPrompt": {
+      "skill": "simplify_prompt_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "请选择一名角色，记录当前4点体力",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": ""
+    },
+    "buttons": {
+      "count": 2,
+      "visible": true,
+      "result": {
+        "buttons": [
+          "ref: <Node>"
+        ],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [
+          "杀"
+        ]
+      }
+    },
+    "trigger": {
+      "resumes": 3,
+      "dialog": false,
+      "text": "是否发动奸雄获得伤害牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "",
+      "hiddenDescription": true,
+      "hiddenDialog": true
+    },
+    "triggerCancelled": {
+      "result": {
+        "confirm": "cancel",
+        "bool": false
+      },
+      "resumes": 4,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": ""
+    },
+    "disabled": {
+      "skill": "zhiheng",
+      "resumes": 4,
+      "dialog": true,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "",
+      "description": "制衡弃置任意张牌并摸等量的牌"
+    },
+    "optimizedOnly": {
+      "skill": "zhiheng",
+      "resumes": 4,
+      "dialog": true,
+      "text": "请选任意手牌或装备弃置，并摸等量牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": ""
+    },
+    "reenabled": {
+      "result": {
+        "buttons": [],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "simplify_direct_test"
+      },
+      "resumes": 5,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": ""
+    },
+    "menu": {
+      "initial": true,
+      "disabled": true,
+      "enabled": true
+    },
+    "errors": []
+  },
+  "babysha": {
+    "setting": {
+      "name": "简化技能提示",
+      "init": true
+    },
+    "zhiheng": {
+      "skill": "zhiheng",
+      "resumes": 0,
+      "dialog": false,
+      "text": "弃置任意张牌并摸等量的牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "zhihengSelected": {
+      "skill": "zhiheng",
+      "resumes": 0,
+      "dialog": false,
+      "text": "弃置任意张牌并摸等量的牌",
+      "selected": 1,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "cancelled": {
+      "resumes": 0,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定回合结束"
+    },
+    "kurou": {
+      "skill": "kurou",
+      "resumes": 0,
+      "dialog": false,
+      "text": "失去1点体力并摸两张牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "direct": {
+      "result": {
+        "buttons": [],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "simplify_direct_test"
+      },
+      "resumes": 1,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "rende": {
+      "skill": "rende",
+      "resumes": 1,
+      "dialog": false,
+      "text": "选择任意张手牌及一名角色，点确定将手牌交给之",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "rendeSelected": {
+      "skill": "rende",
+      "resumes": 1,
+      "dialog": false,
+      "text": "选择任意张手牌及一名角色，点确定将手牌交给之",
+      "selected": 1,
+      "targets": 1,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "rendeConfirmed": {
+      "result": {
+        "buttons": [],
+        "cards": [
+          "ref: <Node>"
+        ],
+        "targets": [
+          "ref: <Node>"
+        ],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "rende"
+      },
+      "resumes": 2,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "optional": {
+      "skill": "simplify_optional_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "发动“可选测试”，请选择0至2张牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "manual": {
+      "skill": "simplify_manual_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "发动“确认测试”",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "customPrompt": {
+      "skill": "simplify_prompt_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "请选择一名角色，记录当前4点体力",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "buttons": {
+      "count": 2,
+      "visible": true,
+      "result": {
+        "buttons": [
+          "ref: <Node>"
+        ],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [
+          "杀"
+        ]
+      }
+    },
+    "trigger": {
+      "resumes": 3,
+      "dialog": false,
+      "text": "是否发动奸雄获得伤害牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消",
+      "hiddenDescription": true,
+      "hiddenDialog": true
+    },
+    "triggerCancelled": {
+      "result": {
+        "confirm": "cancel",
+        "bool": false
+      },
+      "resumes": 4,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "disabled": {
+      "skill": "zhiheng",
+      "resumes": 4,
+      "dialog": true,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消",
+      "description": "制衡弃置任意张牌并摸等量的牌"
+    },
+    "optimizedOnly": {
+      "skill": "zhiheng",
+      "resumes": 4,
+      "dialog": true,
+      "text": "请选任意手牌或装备弃置，并摸等量牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "reenabled": {
+      "result": {
+        "buttons": [],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "simplify_direct_test"
+      },
+      "resumes": 5,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "menu": {
+      "initial": true,
+      "disabled": true,
+      "enabled": true
+    },
+    "errors": []
+  },
+  "codename": {
+    "setting": {
+      "name": "简化技能提示",
+      "init": true
+    },
+    "zhiheng": {
+      "skill": "zhiheng",
+      "resumes": 0,
+      "dialog": false,
+      "text": "弃置任意张牌并摸等量的牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "zhihengSelected": {
+      "skill": "zhiheng",
+      "resumes": 0,
+      "dialog": false,
+      "text": "弃置任意张牌并摸等量的牌",
+      "selected": 1,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "cancelled": {
+      "resumes": 0,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定回合结束"
+    },
+    "kurou": {
+      "skill": "kurou",
+      "resumes": 0,
+      "dialog": false,
+      "text": "失去1点体力并摸两张牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "direct": {
+      "result": {
+        "buttons": [],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "simplify_direct_test"
+      },
+      "resumes": 1,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "rende": {
+      "skill": "rende",
+      "resumes": 1,
+      "dialog": false,
+      "text": "选择任意张手牌及一名角色，点确定将手牌交给之",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "rendeSelected": {
+      "skill": "rende",
+      "resumes": 1,
+      "dialog": false,
+      "text": "选择任意张手牌及一名角色，点确定将手牌交给之",
+      "selected": 1,
+      "targets": 1,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "rendeConfirmed": {
+      "result": {
+        "buttons": [],
+        "cards": [
+          "ref: <Node>"
+        ],
+        "targets": [
+          "ref: <Node>"
+        ],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "rende"
+      },
+      "resumes": 2,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "optional": {
+      "skill": "simplify_optional_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "发动“可选测试”，请选择0至2张牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "manual": {
+      "skill": "simplify_manual_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "发动“确认测试”",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "customPrompt": {
+      "skill": "simplify_prompt_test",
+      "resumes": 2,
+      "dialog": false,
+      "text": "请选择一名角色，记录当前4点体力",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "buttons": {
+      "count": 2,
+      "visible": true,
+      "result": {
+        "buttons": [
+          "ref: <Node>"
+        ],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [
+          "杀"
+        ]
+      }
+    },
+    "trigger": {
+      "resumes": 3,
+      "dialog": false,
+      "text": "是否发动奸雄获得伤害牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消",
+      "hiddenDescription": true,
+      "hiddenDialog": true
+    },
+    "triggerCancelled": {
+      "result": {
+        "confirm": "cancel",
+        "bool": false
+      },
+      "resumes": 4,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "disabled": {
+      "skill": "zhiheng",
+      "resumes": 4,
+      "dialog": true,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消",
+      "description": "制衡弃置任意张牌并摸等量的牌"
+    },
+    "optimizedOnly": {
+      "skill": "zhiheng",
+      "resumes": 4,
+      "dialog": true,
+      "text": "请选任意手牌或装备弃置，并摸等量牌",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": true,
+      "confirm": "确定取消"
+    },
+    "reenabled": {
+      "result": {
+        "buttons": [],
+        "cards": [],
+        "targets": [],
+        "confirm": "ok",
+        "bool": true,
+        "links": [],
+        "skill": "simplify_direct_test"
+      },
+      "resumes": 5,
+      "dialog": false,
+      "text": "",
+      "selected": 0,
+      "targets": 0,
+      "selectableCard": false,
+      "confirm": "确定取消"
+    },
+    "menu": {
+      "initial": true,
+      "disabled": true,
+      "enabled": true
+    },
+    "errors": []
+  }
+}

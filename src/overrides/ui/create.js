@@ -2,6 +2,7 @@ import { game, ui, lib, get, _status } from "noname";
 import { getBaseUiCreateCharacterDialog as getBaseUiCreateCharacterDialog, getBaseUiCreatePause as getBaseUiCreatePause, getBaseUiCreateArena as getBaseUiCreateArena, getBaseUiCreateButton as getBaseUiCreateButton } from "./base.js";
 import { uiUpdatez as uiUpdatez } from "./update.js";
 import { applyOnlineFactionDialog as applyOnlineFactionDialog } from "../../ui/online-faction-dialog.js";
+import { applyXinshaFactionDialog } from "../../ui/xinsha-faction-dialog.js";
 import { applyFactionDialogInteraction as applyFactionDialogInteraction } from "../../ui/faction-dialog-interaction.js";
 import { applyHuarenDialogInteraction as applyHuarenDialogInteraction } from "../../ui/huaren-dialog-interaction.js";
 import { refreshEquipLayout as refreshEquipLayout } from "../../ui/equip-layout.js";
@@ -47,7 +48,7 @@ function s(...args) {
 	((dialog.supportsPagination = !1), (dialog.paginationMap = /* @__PURE__ */ new Map()), (dialog.paginationMaxCount = /* @__PURE__ */ new Map()), (dialog.contentContainer = decadeUI.element.create("content-container", dialog)), (dialog.content = decadeUI.element.create("content", dialog.contentContainer)), (dialog.buttons = []), Object.setPrototypeOf(dialog, lib.element.Dialog.prototype));
 	for (let c = 0; c < args.length; c++) "boolean" == typeof args[c] ? (dialog.static = args[c]) : "hidden" == args[c] ? (hidden = !0) : "notouchscroll" == args[c] ? (notouchscroll = !0) : "forcebutton" == args[c] ? (forcebutton = !0) : "noforcebutton" == args[c] ? (noforcebutton = !0) : "peaceDialog" == args[c] ? (peaceDialog = !0) : dialog.add(args[c]);
 	(hidden || dialog.open(), lib.config.touchscreen || (dialog.contentContainer.onscroll = ui.update), notouchscroll || ((dialog.contentContainer.ontouchstart = ui.click.dialogtouchStart), (dialog.contentContainer.ontouchmove = ui.click.touchScroll), (dialog.contentContainer.style.WebkitOverflowScrolling = "touch"), (dialog.ontouchstart = ui.click.dragtouchdialog)), noforcebutton ? (dialog.noforcebutton = !0) : forcebutton && ((dialog.forcebutton = !0), dialog.classList.add("forcebutton")), peaceDialog && (dialog.peaceDialog = !0));
-	return applyHuarenDialogInteraction(applyFactionDialogInteraction(applyOnlineFactionDialog(dialog)));
+	return applyHuarenDialogInteraction(applyFactionDialogInteraction(applyXinshaFactionDialog(applyOnlineFactionDialog(dialog))));
 }
 function d(list, init, position, onchange) {
 	const select = document.createElement("select");

@@ -33,6 +33,13 @@ function isLocalFactionSelection(dialog) {
 	return dialog.parentNode === ui?.arena;
 }
 
+function isDirectFactionSelection(dialog) {
+	const event = get.event?.();
+	if (!event || event.name !== "chooseButton" || event.dialog !== dialog || !event.direct || !event.isMine?.()) return false;
+	if (dialog.buttons?.length !== 1 || get.select?.(event.selectButton)?.[0] !== 1) return false;
+	return typeof event.filterButton !== "function" || event.filterButton(dialog.buttons[0], event.player);
+}
+
 function removeFromSelection(button) {
 	const selectedButtons = ui.selected?.buttons;
 	if (!selectedButtons) return;
@@ -164,7 +171,9 @@ function ensureButtonWrapper() {
 }
 
 function syncControls(dialog, state) {
-	setControlsHidden(state, state.ready && isLocalFactionSelection(dialog));
+	// 一将的可取消询问仍保留本体取消入口；点击势力继续直接确认。
+	const cancellable = dialog.classList.contains("xinsha-faction-dialog") && get.event?.()?.forced === false;
+	setControlsHidden(state, state.ready && isLocalFactionSelection(dialog) && !cancellable);
 }
 
 function applyFactionDialogInteraction(dialog) {
@@ -179,6 +188,8 @@ function applyFactionDialogInteraction(dialog) {
 	const close = dialog.close;
 	if (typeof open === "function") {
 		dialog.open = function (...args) {
+			// 本体先 open 再判断 direct；普通武将的唯一势力应直接确认，不启动弹窗与提示。
+			if (isDirectFactionSelection(this)) return this;
 			state.closed = false;
 			state.ready = ensureButtonWrapper();
 			const result = open.apply(this, args);

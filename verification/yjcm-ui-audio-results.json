@@ -1,0 +1,13 @@
+{
+  "xinshaPlayed": 18,
+  "played": 24,
+  "decoded": 8,
+  "isolationStyles": [
+    "onlineUI",
+    "on",
+    "othersOn"
+  ],
+  "errors": [],
+  "currentElectron": false,
+  "officialClientRuntime": false
+}

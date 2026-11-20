@@ -1,0 +1,2874 @@
+{
+  "othersOff": {
+    "exact": [
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      },
+      {
+        "main": "选择1名目标角色",
+        "detail": "",
+        "tip": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false,
+        "field": "ActiveTip"
+      }
+    ],
+    "custom": {
+      "main": "请选择距离为1的角色",
+      "detail": "视为使用一张【杀】（无距离限制）",
+      "tip": {
+        "x": 46,
+        "y": 406.453125,
+        "width": 1405,
+        "height": 74.625,
+        "top": 406.453125,
+        "right": 1451,
+        "bottom": 481.078125,
+        "left": 46
+      },
+      "controls": {
+        "x": 489.796875,
+        "y": 492.546875,
+        "width": 520.40625,
+        "height": 64.53125,
+        "top": 492.546875,
+        "right": 1010.203125,
+        "bottom": 557.078125,
+        "left": 489.796875
+      },
+      "position": "absolute",
+      "empty": "true",
+      "className": "dialog prompt",
+      "layout": false
+    },
+    "heightSamples": [
+      {
+        "value": 0,
+        "main": "请选择距离为1的角色",
+        "detail": "视为使用一张【杀】（无距离限制）",
+        "tip": {
+          "x": 46,
+          "y": 548.84375,
+          "width": 1405,
+          "height": 74.625,
+          "top": 548.84375,
+          "right": 1451,
+          "bottom": 623.46875,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "value": 5,
+        "main": "请选择距离为1的角色",
+        "detail": "视为使用一张【杀】（无距离限制）",
+        "tip": {
+          "x": 46,
+          "y": 513.25,
+          "width": 1405,
+          "height": 74.625,
+          "top": 513.25,
+          "right": 1451,
+          "bottom": 587.875,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "value": 10,
+        "main": "请选择距离为1的角色",
+        "detail": "视为使用一张【杀】（无距离限制）",
+        "tip": {
+          "x": 46,
+          "y": 477.65625,
+          "width": 1405,
+          "height": 74.625,
+          "top": 477.65625,
+          "right": 1451,
+          "bottom": 552.28125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "value": 15,
+        "main": "请选择距离为1的角色",
+        "detail": "视为使用一张【杀】（无距离限制）",
+        "tip": {
+          "x": 46,
+          "y": 442.046875,
+          "width": 1405,
+          "height": 74.625,
+          "top": 442.046875,
+          "right": 1451,
+          "bottom": 516.671875,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "value": 20,
+        "main": "请选择距离为1的角色",
+        "detail": "视为使用一张【杀】（无距离限制）",
+        "tip": {
+          "x": 46,
+          "y": 406.453125,
+          "width": 1405,
+          "height": 74.625,
+          "top": 406.453125,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "value": 30,
+        "main": "请选择距离为1的角色",
+        "detail": "视为使用一张【杀】（无距离限制）",
+        "tip": {
+          "x": 46,
+          "y": 335.25,
+          "width": 1405,
+          "height": 74.625,
+          "top": 335.25,
+          "right": 1451,
+          "bottom": 409.875,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "value": 40,
+        "main": "请选择距离为1的角色",
+        "detail": "视为使用一张【杀】（无距离限制）",
+        "tip": {
+          "x": 46,
+          "y": 264.046875,
+          "width": 1405,
+          "height": 74.625,
+          "top": 264.046875,
+          "right": 1451,
+          "bottom": 338.671875,
+          "left": 46
+        },
+        "controls": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      }
+    ],
+    "raised": {
+      "value": 40,
+      "main": "请选择距离为1的角色",
+      "detail": "视为使用一张【杀】（无距离限制）",
+      "tip": {
+        "x": 46,
+        "y": 264.046875,
+        "width": 1405,
+        "height": 74.625,
+        "top": 264.046875,
+        "right": 1451,
+        "bottom": 338.671875,
+        "left": 46
+      },
+      "controls": {
+        "x": 489.796875,
+        "y": 492.546875,
+        "width": 520.40625,
+        "height": 64.53125,
+        "top": 492.546875,
+        "right": 1010.203125,
+        "bottom": 557.078125,
+        "left": 489.796875
+      },
+      "position": "absolute",
+      "empty": "true",
+      "className": "dialog prompt",
+      "layout": false
+    },
+    "resized": {
+      "value": 0,
+      "main": "请选择距离为1的角色",
+      "detail": "视为使用一张【杀】（无距离限制）",
+      "tip": {
+        "x": 46,
+        "y": 493.96875,
+        "width": 1185,
+        "height": 67.125,
+        "top": 493.96875,
+        "right": 1231,
+        "bottom": 561.09375,
+        "left": 46
+      },
+      "controls": {
+        "x": 405.9453125,
+        "y": 443.25,
+        "width": 468.109375,
+        "height": 58.046875,
+        "top": 443.25,
+        "right": 874.0546875,
+        "bottom": 501.296875,
+        "left": 405.9453125
+      },
+      "position": "absolute",
+      "empty": "true",
+      "className": "dialog prompt",
+      "layout": false
+    },
+    "errors": []
+  },
+  "onlineUI": {
+    "exact": [
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      }
+    ],
+    "custom": {
+      "main": "请选择距离为1的角色",
+      "detail": "视为使用一张【杀】（无距离限制）",
+      "tip": {
+        "x": 46,
+        "y": 557.125,
+        "width": 1405,
+        "height": 52,
+        "top": 557.125,
+        "right": 1451,
+        "bottom": 609.125,
+        "left": 46
+      },
+      "controls": {
+        "x": 165,
+        "y": 520.890625,
+        "width": 1160,
+        "height": 46,
+        "top": 520.890625,
+        "right": 1325,
+        "bottom": 566.890625,
+        "left": 165
+      },
+      "position": "absolute",
+      "empty": "true",
+      "className": "dialog prompt",
+      "layout": false
+    },
+    "heightSamples": [
+      {
+        "value": 0,
+        "main": "请选择距离为1的角色",
+        "detail": "视为使用一张【杀】（无距离限制）",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "value": 5,
+        "main": "请选择距离为1的角色",
+        "detail": "视为使用一张【杀】（无距离限制）",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "value": 10,
+        "main": "请选择距离为1的角色",
+        "detail": "视为使用一张【杀】（无距离限制）",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "value": 15,
+        "main": "请选择距离为1的角色",
+        "detail": "视为使用一张【杀】（无距离限制）",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "value": 20,
+        "main": "请选择距离为1的角色",
+        "detail": "视为使用一张【杀】（无距离限制）",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "value": 30,
+        "main": "请选择距离为1的角色",
+        "detail": "视为使用一张【杀】（无距离限制）",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      },
+      {
+        "value": 40,
+        "main": "请选择距离为1的角色",
+        "detail": "视为使用一张【杀】（无距离限制）",
+        "tip": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "controls": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "position": "absolute",
+        "empty": "true",
+        "className": "dialog prompt",
+        "layout": false
+      }
+    ],
+    "raised": {
+      "value": 40,
+      "main": "请选择距离为1的角色",
+      "detail": "视为使用一张【杀】（无距离限制）",
+      "tip": {
+        "x": 46,
+        "y": 557.125,
+        "width": 1405,
+        "height": 52,
+        "top": 557.125,
+        "right": 1451,
+        "bottom": 609.125,
+        "left": 46
+      },
+      "controls": {
+        "x": 165,
+        "y": 520.890625,
+        "width": 1160,
+        "height": 46,
+        "top": 520.890625,
+        "right": 1325,
+        "bottom": 566.890625,
+        "left": 165
+      },
+      "position": "absolute",
+      "empty": "true",
+      "className": "dialog prompt",
+      "layout": false
+    },
+    "resized": {
+      "value": 0,
+      "main": "请选择距离为1的角色",
+      "detail": "视为使用一张【杀】（无距离限制）",
+      "tip": {
+        "x": 46,
+        "y": 495.03125,
+        "width": 1185,
+        "height": 52,
+        "top": 495.03125,
+        "right": 1231,
+        "bottom": 547.03125,
+        "left": 46
+      },
+      "controls": {
+        "x": 165,
+        "y": 460.203125,
+        "width": 940,
+        "height": 46,
+        "top": 460.203125,
+        "right": 1105,
+        "bottom": 506.203125,
+        "left": 165
+      },
+      "position": "absolute",
+      "empty": "true",
+      "className": "dialog prompt",
+      "layout": false
+    },
+    "errors": []
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "node": {
+    "name": "../../../雷的一将/animation/skill-button/beidong_xuanzhong",
+    "id": "skill-button-../../../雷的一将/animation/skill-button/beidong_xuanzhong-13",
+    "completed": false,
+    "opacity": 1,
+    "mvp": [
+      0.001346415258012712,
+      0,
+      0,
+      0,
+      0,
+      0.002658452605828643,
+      0,
+      0,
+      0,
+      0,
+      -2,
+      0,
+      -0.6430937647819519,
+      -0.7676630616188049,
+      -1,
+      1
+    ],
+    "canvas": [
+      1959,
+      1101
+    ],
+    "rect": {
+      "left": 135.4375,
+      "top": 461.09375,
+      "right": 214.6875,
+      "bottom": 514.65625,
+      "width": 79.25,
+      "height": 53.5625,
+      "canvasWidth": 981,
+      "canvasHeight": 552,
+      "x": 135.4375,
+      "y": 461.09375,
+      "bottomInBody": -147.65625,
+      "canvasBottomInBody": -185
+    }
+  },
+  "hit": "jianxiong",
+  "hitTrace": {
+    "rect": [
+      148.46875,
+      479.078125,
+      53.203125,
+      19.078125
+    ],
+    "element": "<div class=\"skillitem\" data-id=\"jianxiong\" data-tooltip-attached=\"true\" data-yjcm-passive=\"true\" style=\"--yjcm-skill-x: 0; --yjcm-skill-y: 0;\" data-skill-button-effect=\"passive\">奸雄<div data-skill-button-spine=\"passive\" data-spine-width=\"120\" data-spi",
+    "zoom": 1,
+    "inner": [
+      981,
+      552
+    ]
+  },
+  "expected": [
+    0.0013464152225620115,
+    0.0026584524518562633,
+    -0.6430937818552498,
+    -0.767663043478261
+  ],
+  "workerErrors": [],
+  "canvasZ": "100",
+  "buttonZ": "8"
+}

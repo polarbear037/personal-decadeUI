@@ -3,6 +3,7 @@ import { setupEquipCopy } from "./equipCopy.js";
 import { setupEquipAlone } from "./equipAlone.js";
 import { wrapAround } from "../utils/safeOverride.js";
 import { installEquipSweepCompatibility } from "../ui/equip-effects.js";
+import { getStyleFile } from "../styles/style-route.js";
 
 function loadLateEquipStyle() {
 	const id = "decade-equip-style-override";
@@ -10,7 +11,8 @@ function loadLateEquipStyle() {
 	const link = document.createElement("link");
 	link.id = id;
 	link.rel = "stylesheet";
-	link.href = `${lib.assetURL}extension/十周年UI/src/styles/equip.css?v=${lib.extensionPack.十周年UI.version}&late=${Date.now()}`;
+	const file = getStyleFile("equip", lib.config.extension_十周年UI_newDecadeStyle);
+	link.href = `${lib.assetURL}extension/十周年UI/src/styles/${file}?v=${lib.extensionPack.十周年UI.version}&late=${Date.now()}`;
 	document.head.appendChild(link);
 }
 

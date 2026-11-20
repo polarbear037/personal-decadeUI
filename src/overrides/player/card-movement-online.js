@@ -1,6 +1,7 @@
 import { game, get, _status, ui, lib } from "noname";
 import { applyCardBorder as applyCardBorder } from "../../ui/cardStyles.js";
 import { getDrawStackStart } from "../../ui/layout-utils.js";
+import { applyHandCardPosition } from "../../utils/hand-card-position.js";
 
 let baseDraw = null;
 let decadeUIInstance = null;
@@ -1826,7 +1827,7 @@ function playerThrow(cards, time, record, nosource) {
 			}
 			if (directEquip) clone._decadeEquipUseAnimation = true;
 			if (directDelayJudge) markDelayJudgeSourceCard(clone);
-			if (duiMod && (card.throwWith == "h" || card.throwWith == "s")) {
+			if (duiMod && (card.throwWith == "h" || card.throwWith == "s") && !applyHandCardPosition(card, clone, player, _dui.boundsCaches.arena)) {
 				clone.tx = Math.round(hand.x + card.tx);
 				clone.ty = Math.round(hand.y + 30 + card.ty);
 				clone.scaled = true;

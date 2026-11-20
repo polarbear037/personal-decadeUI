@@ -1,10 +1,26 @@
 import { ui, lib, get } from "noname";
 import { isOnlineTooltip, createOfficialTooltip, layoutOfficialTooltip } from "./officialTooltip.js";
+import { isXinshaTooltip, createXinshaTooltip, prepareXinshaTooltip, positionXinshaTooltip } from "./xinsha-tooltip.js";
 class t {
 	constructor() {
 		((this.tooltip = null), (this.currentButton = null), (this.hideTimeout = null), (this.showTimeout = null), (this.showDelay = 500));
 	}
 	createTooltip() {
+		if (isXinshaTooltip()) {
+			if (!this.tooltip?.dataset.xinshaTooltip) {
+				this.tooltip?.remove();
+				this.tooltip = document.createElement("div");
+				this.tooltip.className = "skill-button-tooltip xinsha-tooltip-host";
+				this.tooltip.dataset.xinshaTooltip = "skill";
+				this.tooltip.style.cssText = "position:absolute;z-index:99999;display:none;opacity:0";
+				ui.window.append(this.tooltip);
+				this.tooltip.addEventListener("mouseenter", () => clearTimeout(this.hideTimeout));
+				this.tooltip.addEventListener("mouseleave", () => this.hide());
+			}
+			return this.tooltip;
+		}
+		if (this.tooltip?.dataset.xinshaTooltip) { this.tooltip._xinshaTooltipObserver?.disconnect(); this.tooltip.remove(); this.tooltip = null; }
+		this.xinshaButtonObserver?.disconnect();
 		if (isOnlineTooltip()) {
 			if (!this.tooltip?.dataset.decadeTooltip) {
 				this.tooltip?.remove();
@@ -133,7 +149,16 @@ class t {
 					skillInfo = this.getSkillDescription(skillName, player),
 					formattedInfo = this.formatSkillDescription(skillInfo),
 					skillTranslation = lib.translate[skillName] || get.translation(skillName) || skillName;
-				if (isOnlineTooltip()) {
+				if (isXinshaTooltip()) {
+					// 重建技能栏会直接移除按钮，不一定产生 mouseleave。
+					tooltip._xinshaTooltipSource = button;
+					this.xinshaButtonObserver?.disconnect();
+					this.xinshaButtonObserver = new MutationObserver(() => {
+						if (!button.isConnected) this.hide(true);
+					});
+					this.xinshaButtonObserver.observe(ui.window, { childList: true, subtree: true });
+					tooltip.replaceChildren(createXinshaTooltip("skill", skillTranslation, skillInfo, skillName));
+				} else if (isOnlineTooltip()) {
 					tooltip.replaceChildren(createOfficialTooltip("skill", skillTranslation, skillInfo));
 				} else tooltip.innerHTML = `<strong style="font-size: 20px;">${skillTranslation}</strong><br>${formattedInfo}`;
 				(
@@ -141,8 +166,11 @@ class t {
 					(tooltip.style.display = "block"),
 					(tooltip.style.left = "-9999px"),
 					(tooltip.style.top = "-9999px"),
-					requestAnimationFrame(() => {
-						if (this.currentButton !== button || !button.isConnected) return this.hide();
+					requestAnimationFrame(async () => {
+						if (tooltip.dataset.xinshaTooltip) {
+							await prepareXinshaTooltip(tooltip);
+							if (this.currentButton !== button || this.tooltip !== tooltip || !button.isConnected) return;
+						} else if (this.currentButton !== button || !button.isConnected) return this.hide();
 						this.positionTooltip(tooltip, button);
 						document.fonts?.ready.then(() => {
 							if (this.currentButton === button && button.isConnected) this.positionTooltip(tooltip, button);
@@ -151,6 +179,10 @@ class t {
 			}, this.showDelay)));
 	}
 	positionTooltip(tooltip, button) {
+		if (positionXinshaTooltip(tooltip, null, button)) {
+			tooltip.style.opacity = "1";
+			return;
+		}
 		if (tooltip.dataset.decadeTooltip) {
 			layoutOfficialTooltip(tooltip);
 			const parent = tooltip.offsetParent || ui.window;
@@ -174,7 +206,21 @@ class t {
 		const top = buttonPos.top - tooltipHeight - 10;
 		((tooltip.style.left = `${left}px`), (tooltip.style.top = `${top}px`), (tooltip.style.opacity = "1"));
 	}
-	hide() {
+	hide(immediate = false) {
+		if (this.tooltip?.dataset.xinshaTooltip) {
+			clearTimeout(this.showTimeout);
+			clearTimeout(this.hideTimeout);
+			this.currentButton = null;
+			const tooltip = this.tooltip;
+			const finish = () => {
+				this.xinshaButtonObserver?.disconnect();
+				tooltip.style.display = "none";
+				tooltip.style.opacity = "0";
+			};
+			if (immediate) finish();
+			else this.hideTimeout = setTimeout(finish, 200);
+			return;
+		}
 		// 官方长说明允许从按钮移到提示内滚动；进入提示时取消此延时。
 		if (this.tooltip?.dataset.decadeTooltip) {
 			clearTimeout(this.showTimeout);
@@ -209,6 +255,8 @@ class t {
 			(button.dataset.tooltipAttached = "true"));
 	}
 	destroy() {
+		this.xinshaButtonObserver?.disconnect();
+		this.tooltip?._xinshaTooltipObserver?.disconnect();
 		(clearTimeout(this.showTimeout), clearTimeout(this.hideTimeout), this.tooltip && this.tooltip.parentNode && this.tooltip.parentNode.removeChild(this.tooltip), (this.tooltip = null), (this.currentButton = null));
 	}
 }

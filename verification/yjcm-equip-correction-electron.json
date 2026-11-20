@@ -1,0 +1,128 @@
+{
+  "before": {
+    "player": {
+      "x": 221.99023437500003,
+      "y": 329.90039062500006,
+      "left": 221.99023437500003,
+      "top": 329.90039062500006,
+      "right": 351.99023437500006,
+      "bottom": 509.8945312500001,
+      "width": 130.00000000000003,
+      "height": 179.99414062500003
+    },
+    "card": {
+      "x": 247.30468750000006,
+      "y": 435.6184895833334,
+      "left": 247.30468750000006,
+      "top": 435.6184895833334,
+      "right": 332.82877604166674,
+      "bottom": 452.0462239583334,
+      "width": 85.52408854166669,
+      "height": 16.427734375000004
+    },
+    "label": {
+      "x": 247.30468750000006,
+      "y": 435.6184895833334,
+      "left": 247.30468750000006,
+      "top": 435.6184895833334,
+      "right": 332.82877604166674,
+      "bottom": 452.0462239583334,
+      "width": 85.52408854166669,
+      "height": 16.427734375000004
+    },
+    "opacity": "0.6",
+    "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/equip/xinsha/background.png\")",
+    "selecting": true,
+    "position": "0",
+    "ancestorOpacity": [
+      "1",
+      "1",
+      "1"
+    ]
+  },
+  "after": {
+    "player": {
+      "x": 221.99023437500003,
+      "y": 329.90039062500006,
+      "left": 221.99023437500003,
+      "top": 329.90039062500006,
+      "right": 351.99023437500006,
+      "bottom": 509.8945312500001,
+      "width": 130.00000000000003,
+      "height": 179.99414062500003
+    },
+    "card": {
+      "x": 234.6686197916667,
+      "y": 436.67643229166674,
+      "left": 234.6686197916667,
+      "top": 436.67643229166674,
+      "right": 333.75130208333337,
+      "bottom": 454.22135416666674,
+      "width": 99.08268229166669,
+      "height": 17.544921875000004
+    },
+    "label": {
+      "x": 234.6686197916667,
+      "y": 436.67643229166674,
+      "left": 234.6686197916667,
+      "top": 436.67643229166674,
+      "right": 333.75130208333337,
+      "bottom": 454.22135416666674,
+      "width": 99.08268229166669,
+      "height": 17.544921875000004
+    },
+    "opacity": "1",
+    "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/equip/xinsha/background.png\")",
+    "selecting": true,
+    "position": "0",
+    "ancestorOpacity": [
+      "1",
+      "1",
+      "1"
+    ]
+  },
+  "source": "Current Electron styles and cloned self portrait only; no equipment rules changed",
+  "initial_after_transition_sample": {
+    "player": {
+      "x": 221.99023437500003,
+      "y": 329.90039062500006,
+      "left": 221.99023437500003,
+      "top": 329.90039062500006,
+      "right": 351.99023437500006,
+      "bottom": 509.8945312500001,
+      "width": 130.00000000000003,
+      "height": 179.99414062500003
+    },
+    "card": {
+      "x": 234.6686197916667,
+      "y": 436.67643229166674,
+      "left": 234.6686197916667,
+      "top": 436.67643229166674,
+      "right": 333.75130208333337,
+      "bottom": 454.22135416666674,
+      "width": 99.08268229166669,
+      "height": 17.544921875000004
+    },
+    "label": {
+      "x": 234.6686197916667,
+      "y": 436.67643229166674,
+      "left": 234.6686197916667,
+      "top": 436.67643229166674,
+      "right": 333.75130208333337,
+      "bottom": 454.22135416666674,
+      "width": 99.08268229166669,
+      "height": 17.544921875000004
+    },
+    "opacity": "0.997157",
+    "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/equip/xinsha/background.png\")",
+    "selecting": true,
+    "position": "0",
+    "ancestorOpacity": [
+      "1",
+      "1",
+      "1"
+    ]
+  },
+  "preview_removed": true,
+  "animation_in_current_game": "Not replaced or played; current running module remains loaded until normal reload. No game rules or event state altered."
+}

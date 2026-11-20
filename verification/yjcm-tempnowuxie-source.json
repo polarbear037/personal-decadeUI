@@ -1,0 +1,35 @@
+{
+  "client": {
+    "apk": "D:/yoka_sgs.x_g_android_6.4.5.apk",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "member": "assets/res/lib/game.zip",
+    "decoded_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28",
+    "rea_inventory": "ev_229e54696ec7e1268eb03d4586c6bfe650ee8130405d6b2810fec6e459a49243",
+    "rea_summary": "ev_7b06a98b4ce6e89cd974d194d4cb71ad388e73bb785813591433f0c707a6ed13"
+  },
+  "modules": [
+    {
+      "member": "app.view.game.GameButtonBar",
+      "sha256": "6d3716462c6ac2617d32bc93dc010fdda80989519100c8b00356cd0163e70ad2",
+      "functions": ["createChildren 0.8 (line 127)", "createButton 0.9 (line 164)", "layout 0.13 (line 309)"],
+      "observation": "ignoreWuxieBtn uses #game_btn_2.png, label 本轮不出, RGB(247,231,174), size28, scale1.1 and press scale0.75. Initial centerY=height/2+15; bar height100."
+    },
+    {
+      "member": "app.view.game.GameSelfSeatUi",
+      "sha256": "e7c812fcb76fc79acfa3faf81ba1715cf3ee137737cc3a424f0f4d2209d317bf",
+      "function": "createChildren 0.120 (line 3060)",
+      "observation": "Bar CENTER_BOTTOM(self.width/2,194); convertToNodeSpace(cc.p(200,0)) overrides ignoreWuxieBtn centerX. Final center is (sceneLeft+200, sceneBottom+259)."
+    }
+  ],
+  "asset": {
+    "destination": "ui/assets/lbtn/yijiang/game_btn_2.png",
+    "provenance": "Existing unchanged official atlas extraction in verification/yjcm-buttons-source.json; 189x55 at scale1.1 gives 207.9x60.5."
+  },
+  "implementation": "Only othersOff/xinsha is changed. Match the native ui.click.tempnowuxie callback; preserve link, custom, _origin, glow, native cancel and close. Absolute positioning keeps confirm/cancel centered; the same CSS overrides desktop and dui-mobile stayleft rules.",
+  "validation": {
+    "command": "node verification/yjcm-tempnowuxie-browser.cjs",
+    "result": "YJCM_TEMPNOWUXIE_BROWSER_OK",
+    "checks": ["Desktop and simulated mobile layout", "Native mouse and touch callback", "Close and recreate", "Window resize, documentZoom1.5 and left sidebar", "Confirm geometry unchanged", "Online and ten-year style isolation", "No pageerror or failed yijiang resource response"],
+    "not_verified": ["User Electron game session", "Physical Android device", "Official client runtime comparison"]
+  }
+}

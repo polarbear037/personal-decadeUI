@@ -1,0 +1,155 @@
+/* APK 6.4.5：CardUiNew.showTips → TextTips；SpellAreaNew → GeneralSpellTips。 */
+body[data-style="othersOff"] #window .xinsha-tooltip-host {
+	position: absolute !important;
+	/* 说明面板高于局内dui-controls(102)，覆盖本体介绍窗的内联21。 */
+	z-index: 103 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	min-width: 0 !important;
+	min-height: 0 !important;
+	max-width: none !important;
+	max-height: none !important;
+	background: none !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	transform: none !important;
+	transition: none !important;
+	animation: none !important;
+	overflow: visible !important;
+	pointer-events: auto;
+}
+body[data-style="othersOff"] #window .xinsha-tooltip-host::before,
+body[data-style="othersOff"] #window .xinsha-tooltip-host::after,
+body[data-style="othersOff"] #window .xinsha-tooltip-host > .bar { display: none !important; }
+body[data-style="othersOff"] #window .xinsha-tooltip-host > .content-container,
+body[data-style="othersOff"] #window .xinsha-tooltip-host > .content-container > .content {
+	position: absolute !important;
+	inset: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: visible !important;
+	transform: none !important;
+}
+body[data-style="othersOff"] #window .xinsha-tooltip,
+body[data-style="othersOff"] #window .xinsha-tooltip * {
+	box-sizing: border-box;
+	text-shadow: none;
+	font-weight: normal;
+	-webkit-text-stroke: 0;
+	transition: none !important;
+	animation: none !important;
+}
+body[data-style="othersOff"] #window .xinsha-tooltip {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	color: #ebd0aa;
+	text-align: left;
+	transform: scale(var(--xinsha-tooltip-scale, 1));
+	transform-origin: top left;
+	isolation: isolate;
+}
+body[data-style="othersOff"] #window .xinsha-tooltip::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	pointer-events: none;
+	border-style: solid;
+	border-color: transparent;
+}
+/* TextTips capInsets=(130,60,70,60)，原图393×189，左19、顶11。 */
+body[data-style="othersOff"] #window .xinsha-card-tooltip { width: 518px; }
+body[data-style="othersOff"] #window .xinsha-card-tooltip::before {
+	border-width: 60px 193px 69px 130px;
+	border-image: url("../../image/ui/tooltip/xinsha/item_tips_bg.png") 60 193 69 130 fill / 60px 193px 69px 130px stretch;
+}
+body[data-style="othersOff"] #window .xinsha-tooltip-scroll {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 11px 36px 33px 19px;
+	overflow: auto;
+	scrollbar-width: none;
+	overscroll-behavior: contain;
+}
+body[data-style="othersOff"] #window .xinsha-tooltip-scroll::-webkit-scrollbar { display: none; }
+body[data-style="othersOff"] #window .xinsha-tooltip-title,
+body[data-style="othersOff"] #window .xinsha-tooltip-name {
+	position: relative;
+	display: block;
+}
+body[data-style="othersOff"] #window .xinsha-card-tooltip .xinsha-tooltip-title {
+	margin: 0 0 14px;
+	color: #55cf30;
+	font-size: 28px;
+	line-height: 34px;
+}
+body[data-style="othersOff"] #window .xinsha-tooltip-description {
+	position: relative;
+	display: block;
+	font-size: 24px;
+	line-height: 1.2;
+	overflow-wrap: anywhere;
+	white-space: normal;
+}
+body[data-style="othersOff"] #window .xinsha-card-tooltip .xinsha-tooltip-description { text-indent: 2em; }
+body[data-style="othersOff"] #window .xinsha-tooltip-description :is(.text, .caption) {
+	position: relative !important;
+	display: block !important;
+	width: auto !important;
+	height: auto !important;
+	margin: 0 0 14px !important;
+	padding: 0 !important;
+	font-size: inherit !important;
+	line-height: inherit !important;
+	text-align: left !important;
+	background: none !important;
+	color: inherit;
+}
+body[data-style="othersOff"] #window .xinsha-tooltip-description :last-child { margin-bottom: 0 !important; }
+body[data-style="othersOff"] #window .xinsha-tooltip-description > .xinsha-tooltip-card-type { display: none !important; }
+/* GeneralSpellTips：400宽，标题(21,16)，正文(19,69)、360宽、22号字+6行距。 */
+body[data-style="othersOff"] #window .xinsha-skill-tooltip { width: 400px; color: #fff0d5; }
+body[data-style="othersOff"] #window .xinsha-skill-tooltip::before {
+	border-width: 10px;
+	border-image: url("../../image/ui/tooltip/xinsha/new_skill_bg.png") 10 fill / 10px stretch;
+}
+body[data-style="othersOff"] #window .xinsha-skill-tooltip .xinsha-tooltip-scroll { padding: 16px 21px 14px 19px; }
+body[data-style="othersOff"] #window .xinsha-skill-tooltip .xinsha-tooltip-title {
+	width: 87px;
+	height: 41px;
+	margin: 0 0 12px 2px;
+	border: 10px solid transparent;
+	border-image: url("../../image/ui/tooltip/xinsha/game_playinfo_skillbg.png") 13.6667 29 fill / 13.6667px 29px stretch;
+}
+body[data-style="othersOff"] #window .xinsha-skill-tooltip .xinsha-tooltip-name {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+	color: #fcf4bc;
+	font-family: "dui-yjcm-skill", serif !important;
+	font-size: 34px;
+	line-height: 41px;
+}
+body[data-style="othersOff"] #window .xinsha-tooltip-badge {
+	position: absolute;
+	left: calc(100% + 23px);
+	top: -8px;
+	width: 38px;
+	height: 38px;
+	background: url("../../image/ui/tooltip/xinsha/cmn_passive_skill_bg.png") center / 100% 100% no-repeat;
+	color: #fff0d5;
+	font-size: 26px;
+	line-height: 38px;
+	text-align: center;
+}
+body[data-style="othersOff"] #window .xinsha-tooltip-badge[data-active="true"] { background-image: url("../../image/ui/tooltip/xinsha/cmn_activite_skill_bg.png"); }
+body[data-style="othersOff"] #window .xinsha-skill-tooltip .xinsha-tooltip-description { font-size: 22px; line-height: 28px; }

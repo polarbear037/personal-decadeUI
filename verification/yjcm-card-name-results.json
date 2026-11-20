@@ -1,0 +1,342 @@
+[
+  {
+    "style": "othersOff",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout-xinsha.css",
+      "/extension/十周年UI/src/styles/card-xinsha.css",
+      "/extension/十周年UI/src/styles/layout-xinsha.css"
+    ],
+    "thresholds": [
+      {
+        "count": 0,
+        "visible": "off",
+        "tags": 0,
+        "marker": "xinsha"
+      },
+      {
+        "count": 7,
+        "visible": "off",
+        "tags": 0,
+        "marker": "xinsha"
+      },
+      {
+        "count": 14,
+        "visible": "off",
+        "tags": 0,
+        "marker": "xinsha"
+      },
+      {
+        "count": 15,
+        "visible": "on",
+        "tags": 15,
+        "marker": "xinsha"
+      },
+      {
+        "count": 30,
+        "visible": "on",
+        "tags": 30,
+        "marker": "xinsha"
+      },
+      {
+        "count": 80,
+        "visible": "on",
+        "tags": 80,
+        "marker": "xinsha"
+      }
+    ],
+    "normal": {
+      "display": "block",
+      "color": "rgb(193, 174, 142)",
+      "bg": "url(\"http://127.0.0.1:56520/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/game_ui_cards_tag_normal.png\")",
+      "bottom": 4.31034,
+      "height": 25.8594,
+      "font": 18.8571,
+      "nameHidden": "hidden",
+      "texts": [
+        "杀",
+        "闪",
+        "桃",
+        "酒",
+        "无中",
+        "过河",
+        "八卦",
+        "乐",
+        "火杀",
+        "雷杀",
+        "扩展自定义牌名",
+        "杀",
+        "闪",
+        "桃",
+        "酒"
+      ]
+    },
+    "selected": {
+      "selected": true,
+      "color": "rgb(255, 233, 129)",
+      "bg": "url(\"http://127.0.0.1:56520/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/game_ui_cards_tag_select.png\")"
+    },
+    "stableWrites": 0,
+    "copyOutside": "none",
+    "rebind": {
+      "oldTags": 0,
+      "oldMarker": null,
+      "newVisible": "off"
+    }
+  },
+  {
+    "style": "onlineUI",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout-online.css",
+      "/extension/十周年UI/src/styles/card-online.css",
+      "/extension/十周年UI/src/styles/layout-online.css"
+    ],
+    "thresholds": [
+      {
+        "count": 0,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 7,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 14,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 15,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 30,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 80,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      }
+    ],
+    "fallback": {
+      "display": "block",
+      "background": "rgba(0, 0, 0, 0)"
+    }
+  },
+  {
+    "style": "on",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout.css",
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/layout.css"
+    ],
+    "thresholds": [
+      {
+        "count": 0,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 7,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 14,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 15,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 30,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 80,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      }
+    ],
+    "fallback": {
+      "display": "block",
+      "background": "rgb(188, 190, 31)"
+    }
+  },
+  {
+    "style": "off",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout.css",
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/layout.css"
+    ],
+    "thresholds": [
+      {
+        "count": 0,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 7,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 14,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 15,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 30,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 80,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      }
+    ],
+    "fallback": {
+      "display": "block",
+      "background": "rgb(188, 190, 31)"
+    }
+  },
+  {
+    "style": "babysha",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout.css",
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/layout.css"
+    ],
+    "thresholds": [
+      {
+        "count": 0,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 7,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 14,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 15,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 30,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 80,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      }
+    ],
+    "fallback": {
+      "display": "block",
+      "background": "rgb(188, 190, 31)"
+    }
+  },
+  {
+    "style": "codename",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout.css",
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/layout.css"
+    ],
+    "thresholds": [
+      {
+        "count": 0,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 7,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 14,
+        "visible": "off",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 15,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 30,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      },
+      {
+        "count": 80,
+        "visible": "on",
+        "tags": 0,
+        "marker": null
+      }
+    ],
+    "fallback": {
+      "display": "block",
+      "background": "rgb(188, 190, 31)"
+    }
+  }
+]

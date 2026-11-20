@@ -1,0 +1,80 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "game_member": "assets/res/lib/game.zip",
+    "decoded_game_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28"
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_229e54696ec7e1268eb03d4586c6bfe650ee8130405d6b2810fec6e459a49243"
+  ],
+  "source": {
+    "plist": "assets/res/new/tex/plist/gameinfo.plist",
+    "plist_sha256": "2d23c6a2d9d8254115ce892f1895db16cd6f9fb30e6dd512ab835e8b6c4b7731",
+    "texture": "assets/res/new/tex/plist/gameinfo.pvr.ccz",
+    "texture_sha256": "6ff05a3dbacc2a1cef5e05b67cc24490133dfffd7b9d3aeac9f3eb06744bc0f5",
+    "alpha_sha256": "91c659e96274aa2d2ea762b78eb94a89fa0cebbdca610e1fe770dc0a55a98be3",
+    "frame": {
+      "frame": "{{1840,485},{120,40}}",
+      "offset": "{0,0}",
+      "rotated": false,
+      "sourceColorRect": "{{0,0},{120,40}}",
+      "sourceSize": "{120,40}"
+    }
+  },
+  "destination": {
+    "path": "image/ui/card/xinsha/card_turn_text_bg_2.png",
+    "sha256": "c37fa31e5cce07334a8cd1f237236937ad10f250de8195355c40882abd88588c",
+    "size": [
+      120,
+      40
+    ]
+  },
+  "conversion": "ETC1 color + ETC1 alpha red channel; unrotated plist crop; no resizing or recoloring",
+  "layout": {
+    "module": "app.view.game.card.CardUiNew",
+    "prototype": "0.46",
+    "line": 904,
+    "method": "updateSkillText",
+    "data_method": "app.module.game.card.Card.getSkillShowText",
+    "card": [
+      126,
+      174
+    ],
+    "background_anchor": "CENTER",
+    "background_position": [
+      63,
+      74
+    ],
+    "label_parent": "skillTextBg",
+    "label_anchor": "CENTER",
+    "label_position": [
+      60,
+      20
+    ],
+    "font_factory": "framework_extend.ui.init.newLabel -> framework_extend.viewNode.ViewLabel -> display.newTTFLabel",
+    "font_defaults": "app.Constant.DEFAULT_LABEL_FONT",
+    "font": "fnt/fzbw.ttf",
+    "font_size": 24,
+    "color": [
+      255,
+      240,
+      213
+    ],
+    "shadow_color": [
+      99,
+      35,
+      26
+    ],
+    "shadow_position": [
+      60,
+      18
+    ],
+    "outline": false,
+    "fit": "scale=min(1,(card.width-10)/label.contentSize.width); one line"
+  },
+  "mapping": "Native card remains 108x150 and uses existing cardScale. Strip left=3/126, top=80/174, width=120/126, height=40/174. Skill text is centered, cream with a shadow 2 design units below. Only othersOff -> xinsha uses this asset and text fitting.",
+  "correction": "Previous setCardTextLabel/card_text_bg.png implementation was ordinary card-description text, not getSkillShowText. The user supplied the official skill-tag screenshot and exposed the incorrect mapping; geometric assertions of that wrong method were not valid visual acceptance.",
+  "limitation": "Shipped Lua bytecode and assets checked; official client runtime comparison not performed."
+}

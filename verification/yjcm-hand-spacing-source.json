@@ -1,0 +1,106 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "game_member": "assets/res/lib/game.zip",
+    "packed_cache_matches_apk_member": true,
+    "decoded_game_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28",
+    "parsed_module_caches_rechecked_against_decoded_bytes": true
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_980d7fdf13881ff45170b34a7983d23af282e4f3b74924e1c1e39129423dcf85"
+  ],
+  "modules": [
+    {
+      "module": "app.view.game.card.SelfCardsArea",
+      "sha256": "07e9f8984ad0145e4faa1dbf890f0418f0ae2f6c75692a63757babf94d398481",
+      "functions": ["ctor 0.0 line 15", "adjustCardPos 0.25 line 647"],
+      "observations": "ctor sets spacing=2. adjustCardPos computes remaining width=width-left; with no selected-neighbor expansion, step=min(card_width+spacing, remainingWidth/count). Selected-neighbor expansion uses 80 design units; existing noname selection/spread behavior is preserved."
+    },
+    {
+      "module": "app.view.game.card.CardsArea",
+      "sha256": "3b0d2e4842091050ff66ab31e310bc38a00a55fd40b233de028c4b14aef29120",
+      "functions": ["module 0", "ctor 0.1 line 13"],
+      "observations": "CardUi aliases CardUiNew; card_width=CardUi.CARD_WIDTH=126. ctor sets left=touchRect.x+card_width/2. Existing half-card start inset is retained."
+    },
+    {
+      "module": "app.view.game.card.CardUiNew",
+      "sha256": "27c48e1767310c28e76c3215961ea3883806b53cf339c6bd9da9177161b4646e",
+      "functions": ["createChildren 0.16 line 330 PC 31-70", "updateCardFlower 0.17 line 408", "updateCardNumber 0.18 line 422"],
+      "observations": "126x174 card. Number sprite is CENTER at (15,height-14); flower sprite is CENTER at (number.x,number.y-20). Top-down centers are (15,14) and (15,34). Flower uses cflag0..3.png; number uses black1..13.png/red1..13.png."
+    }
+  ],
+  "source_atlas": {
+    "member": "assets/res/new/tex/plist/playcard_2.plist",
+    "number_source_sizes": "21x26; number 10 is 23x26",
+    "flower_source_size": "23x24",
+    "observation": "Official sprite rectangles overlap vertically by 5 design units at center distance 20. A disjoint-image-rectangle assertion does not express the source layout."
+  },
+  "mapping": {
+    "style": "othersOff -> xinsha",
+    "cards": "Keep current 108x150 card faces and cardScale. After the live-game density followup, maximum step=card.clientWidth*cardScale with zero added horizontal gap; clientWidth excludes CSS borders. This is the user's requested tighter visual adjustment, distinct from the shipped client's extra 2 design units. Compressed step=(containerWidth-outerCardWidth/2)/count. Preserve fold minimum, scroll content width, selected lift and noname spread callbacks.",
+    "points": "Keep existing number/suit images and sizes. Map centers with 108/126: x=12.857143px, number y=12px, flower y=29.142857px; center distance=17.142857px before cardScale.",
+    "comparison": "Sparse visible gap changes from 2 CSS pixels to actualCardWidth*2/126. Crowded hands are not uniformly tighter: at container740/card108/count12, source step57.166667 is larger than the prior52.545455. Use source formula rather than assuming all card counts must shrink."
+  },
+  "validation": {
+    "commands": [
+      "node --check src/core/layout.js",
+      "node verification/yjcm-hand-spacing-browser.cjs",
+      "node verification/card-points-route-browser.cjs",
+      "node verification/card-scale-resize-browser.cjs",
+      "git diff --check"
+    ],
+    "results": "verification/yjcm-hand-spacing-results.json",
+    "screenshot": "verification/yjcm-hand-spacing-browser.png",
+    "checks": [
+      "actual style stylesheet route and 12 initialized card faces per style",
+      "180 layouts per style: three container widths, three card scales, five hand counts, fold on/off",
+      "selected card stays raised and folded last card remains reachable",
+      "five other style layouts compare exactly to pre-change snapshot",
+      "both equipment areas in six styles",
+      "width scaling, resize frames and documentZoom regression"
+    ],
+    "not_verified": ["official client runtime comparison", "user's current Electron game", "physical Android device"]
+  },
+  "border_followup": {
+    "trigger": "User supplied local and official four-card screenshots; the prior unbordered placeholder fixture did not reproduce the discrepancy.",
+    "aspect_ratios": {
+      "local_face": [108, 150],
+      "official_card": [126, 174],
+      "local_matching_skin": "image/card-skins/online/shan.jpg is itself 126x174; the desktop mapping has only a 0.571429 percent aspect-ratio difference. The local screenshot is cropped at the bottom and does not establish its complete card height."
+    },
+    "native_frame": "assets/res/new/tex/plist/playcard.plist card_1/card_2/card_7 sourceSize126x174; CardUiNew.createChildren draws within that node, without an additional CSS border box.",
+    "local_cause": "src/ui/cardStyles.js applyCardBorder and updateCardStyles use width108,height150,border1px solid in content-box sizing. Actual browser measurement is clientWidth108,offsetWidth110,offsetHeight152. The former step incorrectly used the 110px border box as a 126-unit native face.",
+    "correction": "Only othersOff uses firstCard.clientWidth for its maximum 128/126 step. Overall card size, the other five styles, and Online stepping remain unchanged.",
+    "observed_example": {
+      "scale": 1.8,
+      "border": "kuang2",
+      "before_x": [143, 344, 545, 746],
+      "after_x": [143, 340, 538, 735],
+      "unrounded_step_before": 201.142857,
+      "unrounded_step_after": 197.485714
+    },
+    "validation": {
+      "command": "node verification/yjcm-hand-border-browser.cjs",
+      "results": "verification/yjcm-hand-border-results.json",
+      "screenshot": "verification/yjcm-hand-border-browser.png",
+      "checks": ["288 real layouts across six styles", "off/kuang1/kuang2/kuang3", "scales1/1.8", "4/12/80 cards", "fold on/off", "unchanged unbordered hands", "unchanged Online and other style layouts", "real card face and border dimensions"],
+      "not_verified": ["user's current Electron game", "official client runtime", "physical Android device"]
+    }
+  },
+  "live_followup": {
+    "runtime": "Existing user Electron game at localhost:8089/app.html; attached to the existing main-process Inspector without restarting or replacing the game. No Windows configuration or project outside 十周年UI was changed.",
+    "branch_observed": "body, lib.config and decadeUI.config all othersOff; actual stylesheets include layout-xinsha.css/card-xinsha.css/player3.css. Importing the already-loaded layout module confirms the prior clientWidth implementation is present. The complaint was not caused by the wrong style branch.",
+    "active_card_renderer": "Actual cards have lei-yijiang-card/lei-yijiang-card-ready; their visible art is extension/雷的一将/image/cards/card_*.png, not the simple OL-background test fixture. 雷的ol handCardRuler wraps updateHand and delegates to its original function.",
+    "observation": "Runtime scale0.944775; clientWidth108; rounded offsetWidth109 under documentZoom; actual visible face102.03077 CSS pixels. Previous step is about103.65, so excluding the CSS border still leaves the extra2/126 face-width gap. Previous fixture success did not prove the user's requested density was achieved.",
+    "change": "Only othersOff removes that extra gap. Card widths and heights remain unchanged. The new production function was loaded into the existing game and run after the original wrapper, preserving the wrapper's hooks and all game state; normal restarts load the persisted module directly.",
+    "results": "verification/yjcm-hand-live-results.json",
+    "before_screenshot": "verification/yjcm-hand-live-before.png",
+    "after_screenshot": "verification/yjcm-hand-live-after.png",
+    "runtime_validation": "Compared stable computed transforms and actual card bounds before/after in the same seven-card game; sizes unchanged and the last card moves9 CSS pixels left. Screenshot captured after transform stabilization.",
+    "not_verified": ["physical Android device", "official client runtime side-by-side"],
+    "prior_conclusion_correction": "The previous border-only diagnosis was incomplete. Actual user-game evidence takes precedence over placeholder and synthetic border fixtures."
+  },
+  "limitations": "REA authenticates the shipped package inventory and Electron fuse identity; the live read/apply/capture was performed by a separate local Inspector probe. Shipped Lua bytecode is not original authoring source. Existing card face images remain unchanged."
+}

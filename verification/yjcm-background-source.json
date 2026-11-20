@@ -1,0 +1,517 @@
+{
+  "client": "6.4.5",
+  "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+  "source": [
+    "app.config.scene_bg",
+    "app.config.spine",
+    "UrlCfg",
+    "app.view.pic.SceneSpineBg",
+    "app.view.skin.remote.SpineDynamicBg",
+    "app.view.game.menu.GameSelectBgDlg",
+    "app.view.game.menu.GameSelectBgItem"
+  ],
+  "resource_authority": "Official external service at the URL template observed in the selected package; exact fetched bytes retained by SHA256.",
+  "layout": {
+    "panel": [
+      1200,
+      573
+    ],
+    "background": [
+      1300,
+      530
+    ],
+    "grid": [
+      1160,
+      445
+    ],
+    "columns": 4,
+    "item": [
+      260,
+      175
+    ],
+    "frame": [
+      274,
+      145
+    ],
+    "name": [
+      262,
+      40
+    ]
+  },
+  "resources": [
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_0.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_0.png",
+      "bytes": 25034,
+      "sha256": "d3ed30e827d453623349d5a2f819b67bb3f8fec14e3b3ba6501032403a5c0048"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/static_bg_0.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/static_bg_0.png",
+      "bytes": 563888,
+      "sha256": "3dd77622da37ac3780a26fcc82595671a20e16c93d63d76fafb6cb13854b2310"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/spine_zhanchangbeijing.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/spine_zhanchangbeijing.jpg",
+      "bytes": 169235,
+      "sha256": "e23692bd6164c9e7d67986cc33329f006746f49c2e2b7d4de293b6b349ff6a54"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/zhanchangbeijing.skel",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/zhanchangbeijing.skel",
+      "bytes": 100960,
+      "sha256": "9ff3813d1d928f016989303e0cf7d131d72761086eb64f5cecd6ba18e1cb2b3c"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/zhanchangbeijing.atlas",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/zhanchangbeijing.atlas",
+      "bytes": 12282,
+      "sha256": "57c26727cf8b1f0e5d2e54aa0e3593bb8163f067d87518022f069ccb1d1064ce"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/zhanchangbeijing.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/zhanchangbeijing.png",
+      "bytes": 233737,
+      "sha256": "94a53b9680d85f52b7af50d82ab97287916904c6446825306eb609c0c94338fa"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_1.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_1.png",
+      "bytes": 20855,
+      "sha256": "208f73f085580c5cd2febda91a9bcde5ff84f7427704642d8ffaeb49d6588d99"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/static_wuguobeijing.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/static_wuguobeijing.png",
+      "bytes": 445512,
+      "sha256": "74db2b20f3e5d003bf95b10ac8e045c7ca62a81994528fc6c3410381ce906cdf"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/spine_wuguobeijing.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/spine_wuguobeijing.jpg",
+      "bytes": 156220,
+      "sha256": "57ecd28ee838222c82659eb284c02d4bf0a7a190c717a00be380b392d1bb49b4"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/wuguobeijing.skel",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/wuguobeijing.skel",
+      "bytes": 50208,
+      "sha256": "9e0b5ee17719722fb6d87353a031217c62e9cf0fc0b756dd8e98a7aa2338a6ee"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/wuguobeijing.atlas",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/wuguobeijing.atlas",
+      "bytes": 6598,
+      "sha256": "dd6e2f19b443049d434ba26c983e6d36a4287c80ec86ad488955269e7a4a3f12"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/wuguobeijing.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/wuguobeijing.png",
+      "bytes": 220875,
+      "sha256": "a4817b2de7e8ea745619e02e811b9d7fe20de8767c54ca09cb99f1f0343492b2"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_2.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_2.png",
+      "bytes": 22590,
+      "sha256": "951177cc673e3b1296ad67739fe59526aed9b601d0924d15b235955ddbe42e43"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/static_bg_2.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/static_bg_2.png",
+      "bytes": 457903,
+      "sha256": "46ce31b7e533b9dd76352eee1af2c506eca06fac8f8985c70019e3bba6277d8b"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/spine_ditushuguo.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/spine_ditushuguo.jpg",
+      "bytes": 147442,
+      "sha256": "4f6d9dfdf11216b070258fd79bd803cd67c5842f6d0fb90a17a16fdf60ddde25"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/shuguobeijing.skel",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/shuguobeijing.skel",
+      "bytes": 20672,
+      "sha256": "2f415ff4cc600c043e16ecfcbef23f5916499a8478e9a41558f32b1e425cc6a3"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/shuguobeijing.atlas",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/shuguobeijing.atlas",
+      "bytes": 2377,
+      "sha256": "467419a77383b4b897b6328f32cbdce0af100b3874cd495ed94d39c64d2b0416"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/shuguobeijing.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/shuguobeijing.png",
+      "bytes": 141146,
+      "sha256": "e0dd25f2210dd87257663d7ff71776b7bd4456399417ef351afe1a741fe9c30e"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_3.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_3.png",
+      "bytes": 25859,
+      "sha256": "68be792118162113f5681ee4a5c75ba631f9351e53521963ce8254571372d601"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/static_bg_3.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/static_bg_3.jpg",
+      "bytes": 168550,
+      "sha256": "6591514026579db19f0896769d41d6b1561ec8273f8acec1908548179919793d"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_animation_paiju_weiguobeijing.skel",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_animation_paiju_weiguobeijing.skel",
+      "bytes": 67458,
+      "sha256": "7bd1226e292e14bb6db52920d0cef942fbadfc0d566ef14eccdaa791718154cc"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_animation_paiju_weiguobeijing.atlas",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_animation_paiju_weiguobeijing.atlas",
+      "bytes": 4415,
+      "sha256": "ae45f9c64a615b4426ee677ecde178f63aad78bfb903feb6bad442d4840d12be"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_animation_paiju_weiguobeijing.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_animation_paiju_weiguobeijing.png",
+      "bytes": 336190,
+      "sha256": "8ad983cfa4a8fb4c779f0245d44f077f832aa4bca24de6d6ec0f50d57a8b8416"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_6.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_6.png",
+      "bytes": 22817,
+      "sha256": "7454b88d7e83464fa07ded821ca7c6e08deb1f4c42c4cc1c85625acae8d8f8ba"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/static_bg_6.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/static_bg_6.jpg",
+      "bytes": 187534,
+      "sha256": "8547930f85a83cf52d00c4b38518b3add01502a5f7d5fd667508f45f1b49741b"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/spine_dituqunxiong.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/spine_dituqunxiong.png",
+      "bytes": 321246,
+      "sha256": "93b0f5df65e95faeb68940220f764bd29de0a58b03ad7528198afb31ea9db69c"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_animation_paiju_qunxiong2.skel",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_animation_paiju_qunxiong2.skel",
+      "bytes": 3304,
+      "sha256": "86f42c6293093dbbd28fe760e55254612196bf21e3c77b5de30f86285b93eb64"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_animation_paiju_qunxiong2.atlas",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_animation_paiju_qunxiong2.atlas",
+      "bytes": 1039,
+      "sha256": "69516d8adc983839635f72305f92cb190d679ecef85353fffe94771948a75ecc"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_animation_paiju_qunxiong2.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_animation_paiju_qunxiong2.png",
+      "bytes": 84291,
+      "sha256": "dd6566f6d3ea9bd4f61f257ae8bb27e3fd7b8e3e3f5db87704439344bc49034f"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_7.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_7.png",
+      "bytes": 29045,
+      "sha256": "9610b4fdb6e4ee47ca8159184e0145178832c1fdce21aebc6824a48cb8a3d9f4"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/static_bg_7.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/static_bg_7.jpg",
+      "bytes": 194617,
+      "sha256": "d0bba7c7b779c7360080bf30687716f803a6f34601627ccf72c087545e38c2e0"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_animation_paiju_neichegn_bg_yd.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_animation_paiju_neichegn_bg_yd.jpg",
+      "bytes": 153756,
+      "sha256": "39be30170df01cc3dbbadfe7d744c771c7221f5b7b50e4ee798accc9ce582728"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_animation_paiju_neicheng.skel",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_animation_paiju_neicheng.skel",
+      "bytes": 88152,
+      "sha256": "70a55de387ab1783594795792b9bf1595d81f9f5767b6ed60264a491a4ee3e0d"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_animation_paiju_neicheng.atlas",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_animation_paiju_neicheng.atlas",
+      "bytes": 9587,
+      "sha256": "e2f202d13130cfb3365162f8c59a4aa49b63afc6cc7130ee70e0c69a0d645b2d"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_animation_paiju_neicheng.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_animation_paiju_neicheng.png",
+      "bytes": 83465,
+      "sha256": "f42834de8d852f4a6a32c1c2a0ba8ae1f6901c4428333bc68683fb97e2f2ba15"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_8.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_8.png",
+      "bytes": 23699,
+      "sha256": "826297331130b984a9e668ef48f344bfeb79bb1e99f43a237d47d6619055a3ef"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/static_bg_8.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/static_bg_8.jpg",
+      "bytes": 198804,
+      "sha256": "817ec7d03e267e8bd8e7a4da954c1da0dc8c8742ecd87c7fc653e84f56cc5e0f"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/spine_zhounianqing.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/spine_zhounianqing.png",
+      "bytes": 374917,
+      "sha256": "4c347a72440dd5c54db30db6f1a11dfe8637f37a6956a0694f3c1d7a4692adf1"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_zhounianqing_eff_paijubeijing.skel",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_zhounianqing_eff_paijubeijing.skel",
+      "bytes": 70203,
+      "sha256": "3a9950909eab392fb82273911c41ae95a9f933c4972e516d86570c812478b0b4"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_zhounianqing_eff_paijubeijing.atlas",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_zhounianqing_eff_paijubeijing.atlas",
+      "bytes": 11024,
+      "sha256": "789987c72287ebc94aa9c861b558269184b3272b582599e264475234f890b896"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_zhounianqing_eff_paijubeijing.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_zhounianqing_eff_paijubeijing.png",
+      "bytes": 240823,
+      "sha256": "a36ed6a8761bc92572988ffdca4da606101bf44af56ee28bd7e83c8050184979"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_auto_chess.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_auto_chess.png",
+      "bytes": 24288,
+      "sha256": "39b395ddcff01bca8b6f6b034fa0c915c6796f3e77917bb7e41ae6bc56efab6c"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/auto_chess.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/auto_chess.png",
+      "bytes": 481797,
+      "sha256": "105e3532d760468c618b2c5a10a75ee4034e434a837757a0594b8ffb18080f3d"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/auto_chess_dymanic_bg.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/auto_chess_dymanic_bg.png",
+      "bytes": 424142,
+      "sha256": "a7a38ea65cc9a49374a845911658b4d49ed7e225155505bc5d17a0936a40a079"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/zizouqibj.skel",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/zizouqibj.skel",
+      "bytes": 130324,
+      "sha256": "3e84e6c10e0f7134f26854a9d8f13acd338a66e6908c5f8d7a7be3733d8acf6a"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/zizouqibj.atlas",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/zizouqibj.atlas",
+      "bytes": 2676,
+      "sha256": "6ec75f3fe102e6b7cf33476f0c96ee1c82417351c3c30a243b5d772ab807cc04"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/zizouqibj.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/zizouqibj.png",
+      "bytes": 174588,
+      "sha256": "a609e84e618ff746117879a2ef683a49173ec144c88c378f8ab5ba9e2391d673"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_19.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_19.png",
+      "bytes": 55708,
+      "sha256": "6e7896a328fd87f1ff1a0dade9eec4de837078f7ebf4feb7878db5cabb93d7f5"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/sbfm_game.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/sbfm_game.png",
+      "bytes": 562895,
+      "sha256": "7ddb89eb063ea066c91166933bff3bd8aee10f7c2f66b120016c13dd6190895d"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_22.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_22.png",
+      "bytes": 44685,
+      "sha256": "0a8a32ec8490b76ef06c07198a14baee5a5c718045eab3ebdeb68b2fb6eb4775"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/static_bg_22.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/static_bg_22.jpg",
+      "bytes": 438550,
+      "sha256": "bf301fd292a8dd3f2d3203cda467b56e4323f7abafbd19a3275c92f186b9c53d"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/small_dragonBoat_bg.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/small_dragonBoat_bg.png",
+      "bytes": 76212,
+      "sha256": "3fa69e1544a962a5ddc6b3ff1f00c1e2607267274300142b5e5eb9cd43b8c6dc"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/dragonBoat_bg.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/dragonBoat_bg.png",
+      "bytes": 436569,
+      "sha256": "f5ce3bac38e18db12b7d51517989f44e349979fd56e9463a930d80a4c24c41e5"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_wenheluanwu_beijing.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_wenheluanwu_beijing.png",
+      "bytes": 64894,
+      "sha256": "10adaa3134716d3e9d24061a7e550bebcc138b387ced625cd13fba3ceeb299bb"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/wenheluanwu_beijing.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/wenheluanwu_beijing.jpg",
+      "bytes": 651878,
+      "sha256": "afdb12eebfd135a7c927d55611b760bd2b753815e73f0b3b3937499d9702268b"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_guanxing_beijing.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_guanxing_beijing.png",
+      "bytes": 52776,
+      "sha256": "9c558088ae3027f490d3553580eced58c7b86d1b5c6884cab316ee90024b0c94"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/guanxing_beijing.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/guanxing_beijing.jpg",
+      "bytes": 476050,
+      "sha256": "0a2d6a05902da7649b1d49e98095e3f062afa6358637b95c051ef02bff11977a"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_tianshuluandou_beijing.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_tianshuluandou_beijing.png",
+      "bytes": 70399,
+      "sha256": "95587018da1f24178ae438e4ca17a805e151702130c34d944b713a918f5a122e"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/tianshuluandou_beijing.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/tianshuluandou_beijing.png",
+      "bytes": 1657624,
+      "sha256": "d8a5a11a4dbf6aeee821c426f7520ac29f3c2a8a7516a15a266046637626fdee"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_paiju_eff_tianshuluandou2.skel",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_paiju_eff_tianshuluandou2.skel",
+      "bytes": 74035,
+      "sha256": "b7c23c6ed213f0f6f40964a62753212e0381b657e0f8fdb88d174e2a18e03759"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_paiju_eff_tianshuluandou2.atlas",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_paiju_eff_tianshuluandou2.atlas",
+      "bytes": 6802,
+      "sha256": "d7a48510767b55b10121ff379c1d6231327e65e336e5ac5ff83dcd7deaca951f"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_paiju_eff_tianshuluandou2.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_paiju_eff_tianshuluandou2.png",
+      "bytes": 854281,
+      "sha256": "ca3434642c305193f0b79edcdc91372667810de8e938c8b8313a634e9c529594"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_paiju_eff_tianshuluandou1.skel",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_paiju_eff_tianshuluandou1.skel",
+      "bytes": 190953,
+      "sha256": "a3940a7a8e01107f8e01a54fd099d8d76de709aabe289572e7231625604b773e"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_paiju_eff_tianshuluandou1.atlas",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_paiju_eff_tianshuluandou1.atlas",
+      "bytes": 23900,
+      "sha256": "fddd6cbbfa1a3a8543a64eedf15b12de496a82ba953c21a8a161f0aa2f4428be"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/SF_paiju_eff_tianshuluandou1.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_paiju_eff_tianshuluandou1.png",
+      "bytes": 464068,
+      "sha256": "a801217210d55bec3e9788adea4850459cc8e393a0b0910ce4cc58bf61bbc697"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_zhengzhanhulao1.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_zhengzhanhulao1.png",
+      "bytes": 67791,
+      "sha256": "95d5cd7bd6cf11fdc0cd6019431d9a2ad01f3c797d6a564c9a5921a726e91632"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/zhengzhanhulao_1.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/zhengzhanhulao_1.jpg",
+      "bytes": 883187,
+      "sha256": "df15d41854c7e0a60ccc84bdb7c941ceb5b0ba19c8e2d83c357a8f25b74b1134"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_taqing_beijing2022.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_taqing_beijing2022.png",
+      "bytes": 68480,
+      "sha256": "7fc1de9304c76bf99eb6b6fe7e8bd22977126388cc2262567b66a7c80656bf85"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/taqing_beijing2022.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/taqing_beijing2022.png",
+      "bytes": 1561451,
+      "sha256": "e4922ff432645f3b382dbd02961a9950c2aed43a6327ac7c16f8be25dbd5ec3d"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/smallbg_qianlidanqi_beijing2022.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/smallbg_qianlidanqi_beijing2022.png",
+      "bytes": 68382,
+      "sha256": "c49de84c0d4a47ec6f3328e0f8bdb06a865e19b3385bec69bba21ec52ab9646f"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/qianlidanqi_beijing2022.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/qianlidanqi_beijing2022.jpg",
+      "bytes": 761651,
+      "sha256": "0a9fded76e441e6ca1abee041254348afb39d3e569e976475569e65e7fe8d3a6"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/jiguan_m.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/small/jiguan_m.jpg",
+      "bytes": 40746,
+      "sha256": "9036fa855921d15d20cb8e1e5e1ce903598971234550d0e9121a1f2f11f03cbb"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/shanglinchulie_caodi.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/shanglinchulie_caodi.jpg",
+      "bytes": 714029,
+      "sha256": "106452eba35fe538c85528856576424e0dd6448ffe03bb62505e7e2ecb0bfe13"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/4399_m.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/4399_m.png",
+      "bytes": 74008,
+      "sha256": "2bc432fad3388f32e1e775f1bc47997eb608099a766885edefd3ffa3e9da641c"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/4399bg.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/4399bg.png",
+      "bytes": 1733259,
+      "sha256": "0fb677c4b3871db6960ae6342e51da644b212d2fee8e2e001b1e891c243c57ac"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/4399_zj.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/4399_zj.png",
+      "bytes": 73611,
+      "sha256": "49b53733dfd0d4fb20fc83fef1c12c7689a24c6af8c277947de8ab44675a6ff9"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/4399zjbg.jpg",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/4399zjbg.jpg",
+      "bytes": 418116,
+      "sha256": "1eb3b4cff674f163f96eaca3f74f71e6ded60084734c74af6a4cd9cd1fe8972f"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/battleBg/smallbg/zhuzhuxia_m.png",
+      "destination": "ui/assets/lbtn/yijiang/background/small/zhuzhuxia_m.png",
+      "bytes": 91365,
+      "sha256": "594553ff6ea9733ae1ebc933c813308d1814aa73ad6f08a0f4521b3964bfeda5"
+    },
+    {
+      "url": "https://web.sanguosha.com/10/mobile/sceneBg/zhuzhuxia.png",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/zhuzhuxia.png",
+      "bytes": 476636,
+      "sha256": "8d1e1a7d4e50cbdf4fed5c7533c5bf164fe9483e203c7be3dd93fed8220dd9ac"
+    }
+  ]
+}

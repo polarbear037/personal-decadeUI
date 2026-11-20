@@ -1,0 +1,2435 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_path": "D:/yoka_sgs.x_g_android_6.4.5.apk",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "game_decoded_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28",
+    "config_decoded_sha256": "954227244cf413b393d4394848ae218b46707c2e340ead266e7e21f85966b0d2",
+    "packed_cache_byte_identity_checked": true
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_9c5d0ada064eb4df0e69550e647832f45a7c91a83828969b6e7b0219840bc0e9"
+  ],
+  "modules": [
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "member": "app.skill.general.tiantong.LiangZhu",
+      "sha256": "583e9d810da4cd199a3740f8812224d2b7e0b44f60b486ebed0eb1b79ca21e36",
+      "functions": [
+        {
+          "id": "0",
+          "line": 0,
+          "last_line": 0
+        },
+        {
+          "id": "0.0",
+          "line": 11,
+          "last_line": 16
+        },
+        {
+          "id": "0.1",
+          "line": 18,
+          "last_line": 24
+        },
+        {
+          "id": "0.2",
+          "line": 26,
+          "last_line": 55
+        },
+        {
+          "id": "0.3",
+          "line": 57,
+          "last_line": 69
+        },
+        {
+          "id": "0.4",
+          "line": 71,
+          "last_line": 73
+        }
+      ]
+    },
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "member": "app.skill.general.jiangling.ShanJiaJL",
+      "sha256": "cfb4ab1400b8518b186429ec76cf508f4e6511289b10e693f72dca0144da380b",
+      "functions": [
+        {
+          "id": "0",
+          "line": 0,
+          "last_line": 0
+        },
+        {
+          "id": "0.0",
+          "line": 11,
+          "last_line": 19
+        },
+        {
+          "id": "0.1",
+          "line": 21,
+          "last_line": 27
+        },
+        {
+          "id": "0.2",
+          "line": 29,
+          "last_line": 31
+        },
+        {
+          "id": "0.3",
+          "line": 33,
+          "last_line": 35
+        },
+        {
+          "id": "0.4",
+          "line": 37,
+          "last_line": 43
+        },
+        {
+          "id": "0.5",
+          "line": 45,
+          "last_line": 47
+        },
+        {
+          "id": "0.6",
+          "line": 49,
+          "last_line": 51
+        }
+      ]
+    },
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "member": "app.skill.Skill",
+      "sha256": "c6d8b455bd502b174f9d95773c39b05f0a7d62f35d2e84515b90dced68e4146a",
+      "functions": [
+        {
+          "id": "0",
+          "line": 0,
+          "last_line": 0
+        },
+        {
+          "id": "0.0",
+          "line": 17,
+          "last_line": 121
+        },
+        {
+          "id": "0.1",
+          "line": 123,
+          "last_line": 125
+        },
+        {
+          "id": "0.2",
+          "line": 128,
+          "last_line": 130
+        },
+        {
+          "id": "0.3",
+          "line": 132,
+          "last_line": 134
+        },
+        {
+          "id": "0.4",
+          "line": 136,
+          "last_line": 138
+        },
+        {
+          "id": "0.5",
+          "line": 140,
+          "last_line": 142
+        },
+        {
+          "id": "0.6",
+          "line": 144,
+          "last_line": 146
+        },
+        {
+          "id": "0.7",
+          "line": 148,
+          "last_line": 150
+        },
+        {
+          "id": "0.8",
+          "line": 152,
+          "last_line": 154
+        },
+        {
+          "id": "0.9",
+          "line": 156,
+          "last_line": 158
+        },
+        {
+          "id": "0.10",
+          "line": 160,
+          "last_line": 162
+        },
+        {
+          "id": "0.11",
+          "line": 164,
+          "last_line": 166
+        },
+        {
+          "id": "0.12",
+          "line": 169,
+          "last_line": 171
+        },
+        {
+          "id": "0.13",
+          "line": 173,
+          "last_line": 175
+        },
+        {
+          "id": "0.14",
+          "line": 177,
+          "last_line": 179
+        },
+        {
+          "id": "0.15",
+          "line": 181,
+          "last_line": 183
+        },
+        {
+          "id": "0.16",
+          "line": 185,
+          "last_line": 187
+        },
+        {
+          "id": "0.17",
+          "line": 189,
+          "last_line": 191
+        },
+        {
+          "id": "0.18",
+          "line": 193,
+          "last_line": 195
+        },
+        {
+          "id": "0.19",
+          "line": 197,
+          "last_line": 199
+        },
+        {
+          "id": "0.20",
+          "line": 201,
+          "last_line": 203
+        },
+        {
+          "id": "0.21",
+          "line": 205,
+          "last_line": 207
+        },
+        {
+          "id": "0.22",
+          "line": 209,
+          "last_line": 211
+        },
+        {
+          "id": "0.23",
+          "line": 214,
+          "last_line": 216
+        },
+        {
+          "id": "0.24",
+          "line": 219,
+          "last_line": 221
+        },
+        {
+          "id": "0.25",
+          "line": 224,
+          "last_line": 226
+        },
+        {
+          "id": "0.26",
+          "line": 229,
+          "last_line": 231
+        },
+        {
+          "id": "0.27",
+          "line": 234,
+          "last_line": 236
+        },
+        {
+          "id": "0.28",
+          "line": 239,
+          "last_line": 241
+        },
+        {
+          "id": "0.29",
+          "line": 244,
+          "last_line": 246
+        },
+        {
+          "id": "0.30",
+          "line": 248,
+          "last_line": 250
+        },
+        {
+          "id": "0.31",
+          "line": 253,
+          "last_line": 274
+        },
+        {
+          "id": "0.32",
+          "line": 277,
+          "last_line": 332
+        },
+        {
+          "id": "0.33",
+          "line": 334,
+          "last_line": 336
+        },
+        {
+          "id": "0.34",
+          "line": 338,
+          "last_line": 348
+        },
+        {
+          "id": "0.35",
+          "line": 350,
+          "last_line": 352
+        },
+        {
+          "id": "0.36",
+          "line": 354,
+          "last_line": 356
+        },
+        {
+          "id": "0.37",
+          "line": 358,
+          "last_line": 360
+        },
+        {
+          "id": "0.38",
+          "line": 363,
+          "last_line": 365
+        },
+        {
+          "id": "0.39",
+          "line": 368,
+          "last_line": 370
+        },
+        {
+          "id": "0.40",
+          "line": 374,
+          "last_line": 376
+        },
+        {
+          "id": "0.41",
+          "line": 379,
+          "last_line": 381
+        },
+        {
+          "id": "0.42",
+          "line": 384,
+          "last_line": 386
+        },
+        {
+          "id": "0.43",
+          "line": 389,
+          "last_line": 391
+        },
+        {
+          "id": "0.44",
+          "line": 394,
+          "last_line": 396
+        },
+        {
+          "id": "0.45",
+          "line": 400,
+          "last_line": 402
+        },
+        {
+          "id": "0.46",
+          "line": 405,
+          "last_line": 407
+        },
+        {
+          "id": "0.47",
+          "line": 410,
+          "last_line": 412
+        },
+        {
+          "id": "0.48",
+          "line": 415,
+          "last_line": 417
+        },
+        {
+          "id": "0.49",
+          "line": 420,
+          "last_line": 422
+        },
+        {
+          "id": "0.50",
+          "line": 425,
+          "last_line": 427
+        },
+        {
+          "id": "0.51",
+          "line": 431,
+          "last_line": 433
+        },
+        {
+          "id": "0.52",
+          "line": 436,
+          "last_line": 438
+        },
+        {
+          "id": "0.53",
+          "line": 440,
+          "last_line": 442
+        },
+        {
+          "id": "0.54",
+          "line": 444,
+          "last_line": 446
+        },
+        {
+          "id": "0.55",
+          "line": 451,
+          "last_line": 453
+        },
+        {
+          "id": "0.56",
+          "line": 456,
+          "last_line": 458
+        },
+        {
+          "id": "0.57",
+          "line": 460,
+          "last_line": 462
+        },
+        {
+          "id": "0.58",
+          "line": 464,
+          "last_line": 466
+        },
+        {
+          "id": "0.59",
+          "line": 469,
+          "last_line": 471
+        },
+        {
+          "id": "0.60",
+          "line": 474,
+          "last_line": 482
+        },
+        {
+          "id": "0.61",
+          "line": 484,
+          "last_line": 497
+        },
+        {
+          "id": "0.62",
+          "line": 499,
+          "last_line": 510
+        },
+        {
+          "id": "0.63",
+          "line": 513,
+          "last_line": 536
+        },
+        {
+          "id": "0.64",
+          "line": 538,
+          "last_line": 540
+        },
+        {
+          "id": "0.65",
+          "line": 542,
+          "last_line": 544
+        },
+        {
+          "id": "0.66",
+          "line": 546,
+          "last_line": 548
+        },
+        {
+          "id": "0.67",
+          "line": 550,
+          "last_line": 552
+        },
+        {
+          "id": "0.68",
+          "line": 554,
+          "last_line": 556
+        },
+        {
+          "id": "0.69",
+          "line": 559,
+          "last_line": 578
+        },
+        {
+          "id": "0.70",
+          "line": 580,
+          "last_line": 590
+        },
+        {
+          "id": "0.71",
+          "line": 592,
+          "last_line": 594
+        },
+        {
+          "id": "0.72",
+          "line": 597,
+          "last_line": 638
+        },
+        {
+          "id": "0.73",
+          "line": 640,
+          "last_line": 642
+        },
+        {
+          "id": "0.74",
+          "line": 644,
+          "last_line": 652
+        },
+        {
+          "id": "0.75",
+          "line": 654,
+          "last_line": 656
+        },
+        {
+          "id": "0.76",
+          "line": 659,
+          "last_line": 661
+        },
+        {
+          "id": "0.77",
+          "line": 666,
+          "last_line": 668
+        },
+        {
+          "id": "0.78",
+          "line": 671,
+          "last_line": 673
+        },
+        {
+          "id": "0.79",
+          "line": 676,
+          "last_line": 678
+        },
+        {
+          "id": "0.80",
+          "line": 681,
+          "last_line": 684
+        },
+        {
+          "id": "0.81",
+          "line": 687,
+          "last_line": 689
+        },
+        {
+          "id": "0.82",
+          "line": 692,
+          "last_line": 695
+        },
+        {
+          "id": "0.83",
+          "line": 698,
+          "last_line": 700
+        },
+        {
+          "id": "0.84",
+          "line": 703,
+          "last_line": 705
+        },
+        {
+          "id": "0.85",
+          "line": 707,
+          "last_line": 709
+        },
+        {
+          "id": "0.86",
+          "line": 711,
+          "last_line": 713
+        },
+        {
+          "id": "0.87",
+          "line": 716,
+          "last_line": 718
+        },
+        {
+          "id": "0.88",
+          "line": 720,
+          "last_line": 722
+        },
+        {
+          "id": "0.89",
+          "line": 724,
+          "last_line": 726
+        },
+        {
+          "id": "0.90",
+          "line": 729,
+          "last_line": 731
+        },
+        {
+          "id": "0.91",
+          "line": 733,
+          "last_line": 740
+        },
+        {
+          "id": "0.92",
+          "line": 742,
+          "last_line": 750
+        },
+        {
+          "id": "0.93",
+          "line": 752,
+          "last_line": 762
+        },
+        {
+          "id": "0.94",
+          "line": 764,
+          "last_line": 781
+        },
+        {
+          "id": "0.95",
+          "line": 783,
+          "last_line": 788
+        },
+        {
+          "id": "0.96",
+          "line": 790,
+          "last_line": 802
+        },
+        {
+          "id": "0.97",
+          "line": 815,
+          "last_line": 817
+        },
+        {
+          "id": "0.98",
+          "line": 819,
+          "last_line": 821
+        },
+        {
+          "id": "0.99",
+          "line": 823,
+          "last_line": 825
+        },
+        {
+          "id": "0.100",
+          "line": 827,
+          "last_line": 829
+        },
+        {
+          "id": "0.101",
+          "line": 831,
+          "last_line": 833
+        },
+        {
+          "id": "0.102",
+          "line": 835,
+          "last_line": 837
+        },
+        {
+          "id": "0.103",
+          "line": 839,
+          "last_line": 841
+        },
+        {
+          "id": "0.104",
+          "line": 843,
+          "last_line": 845
+        },
+        {
+          "id": "0.105",
+          "line": 847,
+          "last_line": 849
+        },
+        {
+          "id": "0.106",
+          "line": 851,
+          "last_line": 853
+        },
+        {
+          "id": "0.107",
+          "line": 855,
+          "last_line": 857
+        },
+        {
+          "id": "0.108",
+          "line": 859,
+          "last_line": 861
+        },
+        {
+          "id": "0.109",
+          "line": 864,
+          "last_line": 866
+        },
+        {
+          "id": "0.110",
+          "line": 868,
+          "last_line": 870
+        },
+        {
+          "id": "0.111",
+          "line": 872,
+          "last_line": 874
+        },
+        {
+          "id": "0.112",
+          "line": 876,
+          "last_line": 878
+        },
+        {
+          "id": "0.113",
+          "line": 880,
+          "last_line": 882
+        },
+        {
+          "id": "0.114",
+          "line": 884,
+          "last_line": 892
+        },
+        {
+          "id": "0.115",
+          "line": 895,
+          "last_line": 910
+        },
+        {
+          "id": "0.116",
+          "line": 912,
+          "last_line": 917
+        },
+        {
+          "id": "0.117",
+          "line": 919,
+          "last_line": 921
+        },
+        {
+          "id": "0.118",
+          "line": 923,
+          "last_line": 925
+        },
+        {
+          "id": "0.119",
+          "line": 928,
+          "last_line": 930
+        },
+        {
+          "id": "0.120",
+          "line": 932,
+          "last_line": 934
+        },
+        {
+          "id": "0.121",
+          "line": 936,
+          "last_line": 943
+        },
+        {
+          "id": "0.122",
+          "line": 945,
+          "last_line": 954
+        },
+        {
+          "id": "0.123",
+          "line": 956,
+          "last_line": 958
+        },
+        {
+          "id": "0.124",
+          "line": 961,
+          "last_line": 963
+        },
+        {
+          "id": "0.125",
+          "line": 965,
+          "last_line": 967
+        },
+        {
+          "id": "0.126",
+          "line": 969,
+          "last_line": 971
+        },
+        {
+          "id": "0.127",
+          "line": 973,
+          "last_line": 975
+        },
+        {
+          "id": "0.128",
+          "line": 977,
+          "last_line": 979
+        },
+        {
+          "id": "0.129",
+          "line": 981,
+          "last_line": 983
+        },
+        {
+          "id": "0.130",
+          "line": 985,
+          "last_line": 987
+        },
+        {
+          "id": "0.131",
+          "line": 989,
+          "last_line": 994
+        },
+        {
+          "id": "0.132",
+          "line": 997,
+          "last_line": 999
+        },
+        {
+          "id": "0.133",
+          "line": 1001,
+          "last_line": 1003
+        },
+        {
+          "id": "0.134",
+          "line": 1005,
+          "last_line": 1007
+        },
+        {
+          "id": "0.135",
+          "line": 1009,
+          "last_line": 1011
+        },
+        {
+          "id": "0.136",
+          "line": 1013,
+          "last_line": 1015
+        },
+        {
+          "id": "0.137",
+          "line": 1018,
+          "last_line": 1020
+        },
+        {
+          "id": "0.138",
+          "line": 1022,
+          "last_line": 1024
+        },
+        {
+          "id": "0.139",
+          "line": 1026,
+          "last_line": 1028
+        },
+        {
+          "id": "0.140",
+          "line": 1030,
+          "last_line": 1059
+        },
+        {
+          "id": "0.141",
+          "line": 1061,
+          "last_line": 1063
+        },
+        {
+          "id": "0.142",
+          "line": 1065,
+          "last_line": 1067
+        },
+        {
+          "id": "0.143",
+          "line": 1069,
+          "last_line": 1071
+        },
+        {
+          "id": "0.144",
+          "line": 1073,
+          "last_line": 1075
+        },
+        {
+          "id": "0.145",
+          "line": 1078,
+          "last_line": 1080
+        },
+        {
+          "id": "0.146",
+          "line": 1083,
+          "last_line": 1085
+        },
+        {
+          "id": "0.147",
+          "line": 1088,
+          "last_line": 1090
+        },
+        {
+          "id": "0.148",
+          "line": 1093,
+          "last_line": 1099
+        },
+        {
+          "id": "0.149",
+          "line": 1102,
+          "last_line": 1104
+        },
+        {
+          "id": "0.150",
+          "line": 1106,
+          "last_line": 1108
+        },
+        {
+          "id": "0.151",
+          "line": 1110,
+          "last_line": 1112
+        },
+        {
+          "id": "0.152",
+          "line": 1115,
+          "last_line": 1117
+        },
+        {
+          "id": "0.153",
+          "line": 1119,
+          "last_line": 1121
+        },
+        {
+          "id": "0.154",
+          "line": 1124,
+          "last_line": 1126
+        },
+        {
+          "id": "0.155",
+          "line": 1128,
+          "last_line": 1138
+        },
+        {
+          "id": "0.156",
+          "line": 1140,
+          "last_line": 1150
+        },
+        {
+          "id": "0.157",
+          "line": 1152,
+          "last_line": 1161
+        },
+        {
+          "id": "0.158",
+          "line": 1163,
+          "last_line": 1165
+        },
+        {
+          "id": "0.159",
+          "line": 1167,
+          "last_line": 1169
+        },
+        {
+          "id": "0.160",
+          "line": 1171,
+          "last_line": 1173
+        },
+        {
+          "id": "0.161",
+          "line": 1175,
+          "last_line": 1179
+        },
+        {
+          "id": "0.162",
+          "line": 1181,
+          "last_line": 1185
+        },
+        {
+          "id": "0.163",
+          "line": 1187,
+          "last_line": 1192
+        },
+        {
+          "id": "0.164",
+          "line": 1194,
+          "last_line": 1199
+        },
+        {
+          "id": "0.165",
+          "line": 1201,
+          "last_line": 1206
+        },
+        {
+          "id": "0.166",
+          "line": 1208,
+          "last_line": 1211
+        },
+        {
+          "id": "0.167",
+          "line": 1213,
+          "last_line": 1215
+        },
+        {
+          "id": "0.168",
+          "line": 1217,
+          "last_line": 1222
+        },
+        {
+          "id": "0.169",
+          "line": 1224,
+          "last_line": 1229
+        },
+        {
+          "id": "0.170",
+          "line": 1231,
+          "last_line": 1234
+        },
+        {
+          "id": "0.171",
+          "line": 1236,
+          "last_line": 1239
+        },
+        {
+          "id": "0.172",
+          "line": 1241,
+          "last_line": 1244
+        },
+        {
+          "id": "0.173",
+          "line": 1246,
+          "last_line": 1249
+        },
+        {
+          "id": "0.174",
+          "line": 1252,
+          "last_line": 1279
+        },
+        {
+          "id": "0.175",
+          "line": 1282,
+          "last_line": 1305
+        },
+        {
+          "id": "0.176",
+          "line": 1308,
+          "last_line": 1310
+        },
+        {
+          "id": "0.177",
+          "line": 1312,
+          "last_line": 1320
+        },
+        {
+          "id": "0.178",
+          "line": 1322,
+          "last_line": 1324
+        },
+        {
+          "id": "0.179",
+          "line": 1326,
+          "last_line": 1328
+        },
+        {
+          "id": "0.180",
+          "line": 1330,
+          "last_line": 1332
+        },
+        {
+          "id": "0.181",
+          "line": 1334,
+          "last_line": 1336
+        },
+        {
+          "id": "0.182",
+          "line": 1339,
+          "last_line": 1341
+        },
+        {
+          "id": "0.183",
+          "line": 1346,
+          "last_line": 1348
+        },
+        {
+          "id": "0.184",
+          "line": 1350,
+          "last_line": 1352
+        },
+        {
+          "id": "0.185",
+          "line": 1355,
+          "last_line": 1357
+        },
+        {
+          "id": "0.186",
+          "line": 1360,
+          "last_line": 1362
+        },
+        {
+          "id": "0.187",
+          "line": 1365,
+          "last_line": 1367
+        },
+        {
+          "id": "0.188",
+          "line": 1369,
+          "last_line": 1371
+        },
+        {
+          "id": "0.189",
+          "line": 1373,
+          "last_line": 1376
+        },
+        {
+          "id": "0.190",
+          "line": 1378,
+          "last_line": 1381
+        },
+        {
+          "id": "0.191",
+          "line": 1383,
+          "last_line": 1385
+        },
+        {
+          "id": "0.192",
+          "line": 1387,
+          "last_line": 1388
+        },
+        {
+          "id": "0.193",
+          "line": 1390,
+          "last_line": 1392
+        },
+        {
+          "id": "0.194",
+          "line": 1394,
+          "last_line": 1432
+        },
+        {
+          "id": "0.195",
+          "line": 1434,
+          "last_line": 1439
+        },
+        {
+          "id": "0.196",
+          "line": 1441,
+          "last_line": 1446
+        },
+        {
+          "id": "0.197",
+          "line": 1448,
+          "last_line": 1450
+        },
+        {
+          "id": "0.198",
+          "line": 1453,
+          "last_line": 1455
+        },
+        {
+          "id": "0.199",
+          "line": 1457,
+          "last_line": 1459
+        },
+        {
+          "id": "0.200",
+          "line": 1462,
+          "last_line": 1464
+        },
+        {
+          "id": "0.201",
+          "line": 1467,
+          "last_line": 1469
+        },
+        {
+          "id": "0.202",
+          "line": 1473,
+          "last_line": 1475
+        },
+        {
+          "id": "0.203",
+          "line": 1478,
+          "last_line": 1480
+        },
+        {
+          "id": "0.204",
+          "line": 1483,
+          "last_line": 1485
+        },
+        {
+          "id": "0.205",
+          "line": 1488,
+          "last_line": 1490
+        },
+        {
+          "id": "0.206",
+          "line": 1493,
+          "last_line": 1516
+        },
+        {
+          "id": "0.207",
+          "line": 1518,
+          "last_line": 1520
+        },
+        {
+          "id": "0.208",
+          "line": 1522,
+          "last_line": 1524
+        },
+        {
+          "id": "0.209",
+          "line": 1534,
+          "last_line": 1536
+        },
+        {
+          "id": "0.210",
+          "line": 1539,
+          "last_line": 1561
+        },
+        {
+          "id": "0.211",
+          "line": 1564,
+          "last_line": 1584
+        },
+        {
+          "id": "0.212",
+          "line": 1586,
+          "last_line": 1588
+        },
+        {
+          "id": "0.213",
+          "line": 1590,
+          "last_line": 1591
+        },
+        {
+          "id": "0.214",
+          "line": 1593,
+          "last_line": 1595
+        },
+        {
+          "id": "0.215",
+          "line": 1598,
+          "last_line": 1640
+        },
+        {
+          "id": "0.216",
+          "line": 1643,
+          "last_line": 1645
+        },
+        {
+          "id": "0.217",
+          "line": 1647,
+          "last_line": 1649
+        },
+        {
+          "id": "0.218",
+          "line": 1651,
+          "last_line": 1657
+        },
+        {
+          "id": "0.219",
+          "line": 1660,
+          "last_line": 1666
+        },
+        {
+          "id": "0.220",
+          "line": 1670,
+          "last_line": 1672
+        },
+        {
+          "id": "0.221",
+          "line": 1676,
+          "last_line": 1678
+        },
+        {
+          "id": "0.222",
+          "line": 1681,
+          "last_line": 1683
+        },
+        {
+          "id": "0.223",
+          "line": 1685,
+          "last_line": 1687
+        },
+        {
+          "id": "0.224",
+          "line": 1689,
+          "last_line": 1691
+        },
+        {
+          "id": "0.225",
+          "line": 1694,
+          "last_line": 1696
+        },
+        {
+          "id": "0.226",
+          "line": 1699,
+          "last_line": 1701
+        },
+        {
+          "id": "0.227",
+          "line": 1704,
+          "last_line": 1706
+        },
+        {
+          "id": "0.228",
+          "line": 1708,
+          "last_line": 1710
+        },
+        {
+          "id": "0.229",
+          "line": 1713,
+          "last_line": 1715
+        },
+        {
+          "id": "0.230",
+          "line": 1718,
+          "last_line": 1720
+        },
+        {
+          "id": "0.231",
+          "line": 1722,
+          "last_line": 1728
+        },
+        {
+          "id": "0.232",
+          "line": 1730,
+          "last_line": 1732
+        },
+        {
+          "id": "0.233",
+          "line": 1734,
+          "last_line": 1736
+        },
+        {
+          "id": "0.234",
+          "line": 1738,
+          "last_line": 1746
+        },
+        {
+          "id": "0.235",
+          "line": 1748,
+          "last_line": 1757
+        },
+        {
+          "id": "0.236",
+          "line": 1759,
+          "last_line": 1761
+        },
+        {
+          "id": "0.237",
+          "line": 1763,
+          "last_line": 1765
+        },
+        {
+          "id": "0.238",
+          "line": 1767,
+          "last_line": 1769
+        },
+        {
+          "id": "0.239",
+          "line": 1771,
+          "last_line": 1773
+        },
+        {
+          "id": "0.240",
+          "line": 1775,
+          "last_line": 1776
+        },
+        {
+          "id": "0.241",
+          "line": 1779,
+          "last_line": 1781
+        },
+        {
+          "id": "0.242",
+          "line": 1784,
+          "last_line": 1786
+        },
+        {
+          "id": "0.243",
+          "line": 1789,
+          "last_line": 1791
+        },
+        {
+          "id": "0.244",
+          "line": 1794,
+          "last_line": 1796
+        },
+        {
+          "id": "0.245",
+          "line": 1798,
+          "last_line": 1799
+        },
+        {
+          "id": "0.246",
+          "line": 1802,
+          "last_line": 1803
+        },
+        {
+          "id": "0.247",
+          "line": 1805,
+          "last_line": 1807
+        },
+        {
+          "id": "0.248",
+          "line": 1809,
+          "last_line": 1811
+        },
+        {
+          "id": "0.249",
+          "line": 1814,
+          "last_line": 1816
+        },
+        {
+          "id": "0.250",
+          "line": 1819,
+          "last_line": 1821
+        },
+        {
+          "id": "0.251",
+          "line": 1823,
+          "last_line": 1825
+        },
+        {
+          "id": "0.252",
+          "line": 1827,
+          "last_line": 1829
+        },
+        {
+          "id": "0.253",
+          "line": 1831,
+          "last_line": 1833
+        },
+        {
+          "id": "0.254",
+          "line": 1835,
+          "last_line": 1837
+        },
+        {
+          "id": "0.255",
+          "line": 1839,
+          "last_line": 1841
+        },
+        {
+          "id": "0.256",
+          "line": 1843,
+          "last_line": 1845
+        },
+        {
+          "id": "0.257",
+          "line": 1847,
+          "last_line": 1849
+        },
+        {
+          "id": "0.258",
+          "line": 1851,
+          "last_line": 1853
+        },
+        {
+          "id": "0.259",
+          "line": 1855,
+          "last_line": 1857
+        },
+        {
+          "id": "0.260",
+          "line": 1859,
+          "last_line": 1861
+        },
+        {
+          "id": "0.261",
+          "line": 1863,
+          "last_line": 1864
+        },
+        {
+          "id": "0.262",
+          "line": 1866,
+          "last_line": 1869
+        },
+        {
+          "id": "0.263",
+          "line": 1871,
+          "last_line": 1873
+        },
+        {
+          "id": "0.264",
+          "line": 1876,
+          "last_line": 1878
+        },
+        {
+          "id": "0.265",
+          "line": 1880,
+          "last_line": 1882
+        },
+        {
+          "id": "0.266",
+          "line": 1886,
+          "last_line": 1888
+        },
+        {
+          "id": "0.267",
+          "line": 1890,
+          "last_line": 1892
+        },
+        {
+          "id": "0.268",
+          "line": 1894,
+          "last_line": 1896
+        },
+        {
+          "id": "0.269",
+          "line": 1898,
+          "last_line": 1900
+        },
+        {
+          "id": "0.270",
+          "line": 1902,
+          "last_line": 1904
+        },
+        {
+          "id": "0.271",
+          "line": 1907,
+          "last_line": 1909
+        },
+        {
+          "id": "0.272",
+          "line": 1912,
+          "last_line": 1914
+        },
+        {
+          "id": "0.273",
+          "line": 1917,
+          "last_line": 1919
+        },
+        {
+          "id": "0.274",
+          "line": 1922,
+          "last_line": 1924
+        },
+        {
+          "id": "0.275",
+          "line": 1926,
+          "last_line": 1928
+        },
+        {
+          "id": "0.276",
+          "line": 1930,
+          "last_line": 1932
+        },
+        {
+          "id": "0.277",
+          "line": 1936,
+          "last_line": 1938
+        },
+        {
+          "id": "0.278",
+          "line": 1941,
+          "last_line": 1943
+        },
+        {
+          "id": "0.279",
+          "line": 1946,
+          "last_line": 1948
+        },
+        {
+          "id": "0.280",
+          "line": 1951,
+          "last_line": 1953
+        },
+        {
+          "id": "0.281",
+          "line": 1955,
+          "last_line": 1968
+        },
+        {
+          "id": "0.282",
+          "line": 1972,
+          "last_line": 1982
+        },
+        {
+          "id": "0.283",
+          "line": 1984,
+          "last_line": 1986
+        },
+        {
+          "id": "0.284",
+          "line": 1988,
+          "last_line": 1990
+        },
+        {
+          "id": "0.285",
+          "line": 1992,
+          "last_line": 1994
+        },
+        {
+          "id": "0.286",
+          "line": 1996,
+          "last_line": 1998
+        },
+        {
+          "id": "0.287",
+          "line": 2001,
+          "last_line": 2003
+        },
+        {
+          "id": "0.288",
+          "line": 2006,
+          "last_line": 2008
+        },
+        {
+          "id": "0.289",
+          "line": 2011,
+          "last_line": 2013
+        },
+        {
+          "id": "0.290",
+          "line": 2015,
+          "last_line": 2017
+        },
+        {
+          "id": "0.291",
+          "line": 2020,
+          "last_line": 2023
+        },
+        {
+          "id": "0.292",
+          "line": 2025,
+          "last_line": 2036
+        },
+        {
+          "id": "0.293",
+          "line": 2039,
+          "last_line": 2041
+        },
+        {
+          "id": "0.294",
+          "line": 2044,
+          "last_line": 2046
+        },
+        {
+          "id": "0.295",
+          "line": 2049,
+          "last_line": 2051
+        },
+        {
+          "id": "0.296",
+          "line": 2053,
+          "last_line": 2055
+        },
+        {
+          "id": "0.297",
+          "line": 2058,
+          "last_line": 2060
+        },
+        {
+          "id": "0.298",
+          "line": 2063,
+          "last_line": 2065
+        },
+        {
+          "id": "0.299",
+          "line": 2068,
+          "last_line": 2070
+        },
+        {
+          "id": "0.300",
+          "line": 2073,
+          "last_line": 2075
+        },
+        {
+          "id": "0.301",
+          "line": 2077,
+          "last_line": 2085
+        },
+        {
+          "id": "0.302",
+          "line": 2087,
+          "last_line": 2095
+        },
+        {
+          "id": "0.303",
+          "line": 2097,
+          "last_line": 2099
+        },
+        {
+          "id": "0.304",
+          "line": 2101,
+          "last_line": 2103
+        },
+        {
+          "id": "0.305",
+          "line": 2107,
+          "last_line": 2109
+        },
+        {
+          "id": "0.306",
+          "line": 2112,
+          "last_line": 2114
+        },
+        {
+          "id": "0.307",
+          "line": 2116,
+          "last_line": 2118
+        },
+        {
+          "id": "0.308",
+          "line": 2120,
+          "last_line": 2122
+        },
+        {
+          "id": "0.309",
+          "line": 2124,
+          "last_line": 2126
+        },
+        {
+          "id": "0.310",
+          "line": 2128,
+          "last_line": 2130
+        },
+        {
+          "id": "0.311",
+          "line": 2132,
+          "last_line": 2134
+        },
+        {
+          "id": "0.312",
+          "line": 2136,
+          "last_line": 2138
+        },
+        {
+          "id": "0.313",
+          "line": 2140,
+          "last_line": 2142
+        },
+        {
+          "id": "0.314",
+          "line": 2145,
+          "last_line": 2147
+        },
+        {
+          "id": "0.315",
+          "line": 2149,
+          "last_line": 2151
+        },
+        {
+          "id": "0.316",
+          "line": 2153,
+          "last_line": 2155
+        },
+        {
+          "id": "0.317",
+          "line": 2158,
+          "last_line": 2160
+        },
+        {
+          "id": "0.318",
+          "line": 2162,
+          "last_line": 2168
+        },
+        {
+          "id": "0.319",
+          "line": 2171,
+          "last_line": 2173
+        },
+        {
+          "id": "0.320",
+          "line": 2176,
+          "last_line": 2178
+        },
+        {
+          "id": "0.321",
+          "line": 2180,
+          "last_line": 2182
+        },
+        {
+          "id": "0.322",
+          "line": 2185,
+          "last_line": 2187
+        },
+        {
+          "id": "0.323",
+          "line": 2190,
+          "last_line": 2192
+        },
+        {
+          "id": "0.324",
+          "line": 2194,
+          "last_line": 2196
+        },
+        {
+          "id": "0.325",
+          "line": 2198,
+          "last_line": 2200
+        },
+        {
+          "id": "0.326",
+          "line": 2203,
+          "last_line": 2204
+        },
+        {
+          "id": "0.327",
+          "line": 2207,
+          "last_line": 2209
+        },
+        {
+          "id": "0.328",
+          "line": 2212,
+          "last_line": 2214
+        },
+        {
+          "id": "0.329",
+          "line": 2217,
+          "last_line": 2219
+        },
+        {
+          "id": "0.330",
+          "line": 2221,
+          "last_line": 2223
+        },
+        {
+          "id": "0.331",
+          "line": 2226,
+          "last_line": 2228
+        },
+        {
+          "id": "0.332",
+          "line": 2234,
+          "last_line": 2236
+        },
+        {
+          "id": "0.333",
+          "line": 2239,
+          "last_line": 2241
+        },
+        {
+          "id": "0.334",
+          "line": 2243,
+          "last_line": 2245
+        },
+        {
+          "id": "0.335",
+          "line": 2247,
+          "last_line": 2249
+        },
+        {
+          "id": "0.336",
+          "line": 2251,
+          "last_line": 2253
+        },
+        {
+          "id": "0.337",
+          "line": 2256,
+          "last_line": 2258
+        },
+        {
+          "id": "0.338",
+          "line": 2260,
+          "last_line": 2261
+        },
+        {
+          "id": "0.339",
+          "line": 2263,
+          "last_line": 2265
+        }
+      ]
+    },
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "member": "app.view.game.dlg.SpellMultiSelectorWindow",
+      "sha256": "cee3c60d035589249a27eb9e861066c06c7d942e564a6407b482d17c46190e95",
+      "functions": [
+        {
+          "id": "0",
+          "line": 0,
+          "last_line": 0
+        },
+        {
+          "id": "0.0",
+          "line": 10,
+          "last_line": 16
+        },
+        {
+          "id": "0.1",
+          "line": 18,
+          "last_line": 33
+        },
+        {
+          "id": "0.2",
+          "line": 35,
+          "last_line": 43
+        },
+        {
+          "id": "0.3",
+          "line": 45,
+          "last_line": 91
+        },
+        {
+          "id": "0.4",
+          "line": 93,
+          "last_line": 137
+        },
+        {
+          "id": "0.5",
+          "line": 139,
+          "last_line": 146
+        },
+        {
+          "id": "0.6",
+          "line": 148,
+          "last_line": 178
+        },
+        {
+          "id": "0.7",
+          "line": 180,
+          "last_line": 207
+        },
+        {
+          "id": "0.8",
+          "line": 209,
+          "last_line": 237
+        }
+      ]
+    },
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "member": "app.manager.game.WindowManager",
+      "sha256": "193474362395ed9b3e5f9b0d091a78d4f8d3fcd68a15182ec36356dd7f7c6f7f",
+      "functions": [
+        {
+          "id": "0",
+          "line": 0,
+          "last_line": 0
+        },
+        {
+          "id": "0.0",
+          "line": 10,
+          "last_line": 16
+        },
+        {
+          "id": "0.1",
+          "line": 18,
+          "last_line": 21
+        },
+        {
+          "id": "0.2",
+          "line": 23,
+          "last_line": 26
+        },
+        {
+          "id": "0.3",
+          "line": 28,
+          "last_line": 31
+        },
+        {
+          "id": "0.4",
+          "line": 33,
+          "last_line": 36
+        },
+        {
+          "id": "0.5",
+          "line": 38,
+          "last_line": 41
+        },
+        {
+          "id": "0.6",
+          "line": 43,
+          "last_line": 54
+        },
+        {
+          "id": "0.7",
+          "line": 56,
+          "last_line": 59
+        },
+        {
+          "id": "0.8",
+          "line": 61,
+          "last_line": 78
+        },
+        {
+          "id": "0.9",
+          "line": 80,
+          "last_line": 84
+        },
+        {
+          "id": "0.10",
+          "line": 86,
+          "last_line": 90
+        },
+        {
+          "id": "0.11",
+          "line": 92,
+          "last_line": 96
+        },
+        {
+          "id": "0.12",
+          "line": 98,
+          "last_line": 105
+        },
+        {
+          "id": "0.13",
+          "line": 107,
+          "last_line": 111
+        },
+        {
+          "id": "0.14",
+          "line": 113,
+          "last_line": 116
+        },
+        {
+          "id": "0.15",
+          "line": 118,
+          "last_line": 121
+        },
+        {
+          "id": "0.16",
+          "line": 123,
+          "last_line": 127
+        },
+        {
+          "id": "0.17",
+          "line": 129,
+          "last_line": 133
+        },
+        {
+          "id": "0.18",
+          "line": 135,
+          "last_line": 139
+        },
+        {
+          "id": "0.19",
+          "line": 141,
+          "last_line": 145
+        },
+        {
+          "id": "0.20",
+          "line": 147,
+          "last_line": 151
+        },
+        {
+          "id": "0.21",
+          "line": 153,
+          "last_line": 157
+        },
+        {
+          "id": "0.22",
+          "line": 159,
+          "last_line": 163
+        },
+        {
+          "id": "0.23",
+          "line": 165,
+          "last_line": 173
+        },
+        {
+          "id": "0.24",
+          "line": 175,
+          "last_line": 182
+        },
+        {
+          "id": "0.25",
+          "line": 184,
+          "last_line": 188
+        },
+        {
+          "id": "0.26",
+          "line": 190,
+          "last_line": 194
+        },
+        {
+          "id": "0.27",
+          "line": 196,
+          "last_line": 200
+        },
+        {
+          "id": "0.28",
+          "line": 202,
+          "last_line": 206
+        },
+        {
+          "id": "0.29",
+          "line": 208,
+          "last_line": 212
+        },
+        {
+          "id": "0.30",
+          "line": 214,
+          "last_line": 218
+        },
+        {
+          "id": "0.31",
+          "line": 220,
+          "last_line": 224
+        },
+        {
+          "id": "0.32",
+          "line": 226,
+          "last_line": 230
+        },
+        {
+          "id": "0.33",
+          "line": 232,
+          "last_line": 236
+        },
+        {
+          "id": "0.34",
+          "line": 238,
+          "last_line": 244
+        },
+        {
+          "id": "0.35",
+          "line": 246,
+          "last_line": 251
+        },
+        {
+          "id": "0.36",
+          "line": 253,
+          "last_line": 258
+        },
+        {
+          "id": "0.37",
+          "line": 260,
+          "last_line": 264
+        },
+        {
+          "id": "0.38",
+          "line": 266,
+          "last_line": 270
+        },
+        {
+          "id": "0.39",
+          "line": 272,
+          "last_line": 276
+        },
+        {
+          "id": "0.40",
+          "line": 278,
+          "last_line": 282
+        },
+        {
+          "id": "0.41",
+          "line": 284,
+          "last_line": 288
+        },
+        {
+          "id": "0.42",
+          "line": 291,
+          "last_line": 295
+        },
+        {
+          "id": "0.43",
+          "line": 297,
+          "last_line": 301
+        },
+        {
+          "id": "0.44",
+          "line": 303,
+          "last_line": 309
+        },
+        {
+          "id": "0.45",
+          "line": 311,
+          "last_line": 315
+        },
+        {
+          "id": "0.46",
+          "line": 317,
+          "last_line": 325
+        },
+        {
+          "id": "0.47",
+          "line": 327,
+          "last_line": 331
+        },
+        {
+          "id": "0.48",
+          "line": 333,
+          "last_line": 337
+        },
+        {
+          "id": "0.49",
+          "line": 339,
+          "last_line": 343
+        },
+        {
+          "id": "0.50",
+          "line": 345,
+          "last_line": 349
+        },
+        {
+          "id": "0.51",
+          "line": 351,
+          "last_line": 355
+        },
+        {
+          "id": "0.52",
+          "line": 357,
+          "last_line": 361
+        },
+        {
+          "id": "0.53",
+          "line": 364,
+          "last_line": 370
+        },
+        {
+          "id": "0.54",
+          "line": 372,
+          "last_line": 381
+        },
+        {
+          "id": "0.55",
+          "line": 385,
+          "last_line": 393
+        },
+        {
+          "id": "0.56",
+          "line": 396,
+          "last_line": 400
+        },
+        {
+          "id": "0.57",
+          "line": 403,
+          "last_line": 416
+        },
+        {
+          "id": "0.58",
+          "line": 423,
+          "last_line": 444
+        },
+        {
+          "id": "0.59",
+          "line": 446,
+          "last_line": 454
+        },
+        {
+          "id": "0.60",
+          "line": 457,
+          "last_line": 462
+        },
+        {
+          "id": "0.61",
+          "line": 466,
+          "last_line": 470
+        },
+        {
+          "id": "0.62",
+          "line": 473,
+          "last_line": 477
+        },
+        {
+          "id": "0.63",
+          "line": 480,
+          "last_line": 485
+        },
+        {
+          "id": "0.64",
+          "line": 488,
+          "last_line": 492
+        },
+        {
+          "id": "0.65",
+          "line": 495,
+          "last_line": 499
+        },
+        {
+          "id": "0.66",
+          "line": 502,
+          "last_line": 506
+        },
+        {
+          "id": "0.67",
+          "line": 508,
+          "last_line": 513
+        },
+        {
+          "id": "0.68",
+          "line": 515,
+          "last_line": 521
+        },
+        {
+          "id": "0.69",
+          "line": 525,
+          "last_line": 532
+        },
+        {
+          "id": "0.70",
+          "line": 535,
+          "last_line": 537
+        },
+        {
+          "id": "0.71",
+          "line": 539,
+          "last_line": 548
+        },
+        {
+          "id": "0.72",
+          "line": 550,
+          "last_line": 556
+        },
+        {
+          "id": "0.73",
+          "line": 564,
+          "last_line": 583
+        },
+        {
+          "id": "0.74",
+          "line": 592,
+          "last_line": 617
+        },
+        {
+          "id": "0.74.0",
+          "line": 596,
+          "last_line": 603
+        },
+        {
+          "id": "0.75",
+          "line": 619,
+          "last_line": 626
+        },
+        {
+          "id": "0.76",
+          "line": 628,
+          "last_line": 639
+        },
+        {
+          "id": "0.76.0",
+          "line": 634,
+          "last_line": 634
+        },
+        {
+          "id": "0.77",
+          "line": 641,
+          "last_line": 668
+        },
+        {
+          "id": "0.77.0",
+          "line": 648,
+          "last_line": 648
+        },
+        {
+          "id": "0.78",
+          "line": 670,
+          "last_line": 676
+        },
+        {
+          "id": "0.79",
+          "line": 678,
+          "last_line": 685
+        },
+        {
+          "id": "0.80",
+          "line": 687,
+          "last_line": 694
+        },
+        {
+          "id": "0.81",
+          "line": 696,
+          "last_line": 746
+        },
+        {
+          "id": "0.81.0",
+          "line": 707,
+          "last_line": 709
+        },
+        {
+          "id": "0.81.1",
+          "line": 713,
+          "last_line": 717
+        },
+        {
+          "id": "0.81.2",
+          "line": 723,
+          "last_line": 725
+        },
+        {
+          "id": "0.81.3",
+          "line": 729,
+          "last_line": 733
+        },
+        {
+          "id": "0.82",
+          "line": 748,
+          "last_line": 771
+        },
+        {
+          "id": "0.83",
+          "line": 773,
+          "last_line": 779
+        }
+      ]
+    }
+  ],
+  "official_observations": [
+    "LiangZhu.use opens showMultiSelWindow and passes getMultiSelectDatas into showDatas. The options are draw1, let the recovered seat draw2, and cancel. isTriggerAutoUse returns true.",
+    "WindowManager.showMultiSelWindow uses SpellMultiSelectorWindow for skill250. SpellMultiSelectorWindow.showDatas calls setSkillTitle(skill:getName()) and displays the supplied option message. It is not a nameless target-only prompt.",
+    "ShanJiaJL uses ShaTargetSelector and regards the card as SHA. spell1762.ActiveTip is 请选择一个目标视为对其使用一张杀. Its AskTip is 发动将灵技能：{Skill}.",
+    "Skill.getAskTip falls back to 是否发动%s when AskTip is absent. ActiveTip absence does not instruct an adapter to discard the skill name."
+  ],
+  "local_causes": [
+    "The generic classifier includes 是否发动【技能】. The unmatched ActiveTip fallback replaced that heading with a target/card instruction without the skill name. The normal skill-description detail was also filtered out.",
+    "chooseUseTarget creates chooseTarget with _get_card and a default title translating the entire VCard. The previous adapter recognized only a generic title plus a specific prompt2; therefore titles like 选择杀【◈】的目标 bypassed official adaptation.",
+    "jiang0_rule_<id> is a protected global rule without lib.translate. Its active loadout context provides GameSkillID and SkillName; matching by the normal translated name failed and could not distinguish the official JiangLing version.",
+    "ActiveTip can describe a different choice phase or fixed count. Previous matching did not reject most card-versus-target or count conflicts."
+  ],
+  "adaptation": [
+    "All unmatched generic skill choices retain the known skill name. Choice controls keep their original skill question.",
+    "Read only the actual active jiangling row and validate both official ID and name. Preserve custom prompts; normalize only exact native chooseUseTarget defaults. No rule, target filter, result, or foreign extension is rewritten.",
+    "Reject templates incompatible with the local choice kind and explicit counts. Preserve unresolved multi-branch templates and unknown parameters as native text rather than guessing a branch.",
+    "A specific native instruction containing additional restrictions is retained. Native details with extra conditions remain visible.",
+    "Zero-card/zero-target costs are omitted from combined choices. Infinite upper ranges retain their actual meaning instead of falling back to one target. Choice controls request an option rather than a card."
+  ],
+  "verification": {
+    "command": "node verification/xinsha-prompt-audit-engine.cjs",
+    "results": "verification/xinsha-prompt-audit-results.json",
+    "baseline_command": "node verification/xinsha-prompt-audit-engine.cjs --baseline",
+    "baseline_results": "verification/xinsha-prompt-audit-before.json",
+    "scope": "Headless Edge, actual noname entry and choice content; actual sp liangzhu content; actual jiang0 active-loadout context and ShanJia rule, with drawing/activation presentation excluded and card settlement paused at the target choice. All3732 prompt entries are inventoried, with3420 skill entries checked across8 synthetic event kinds for fallback identity, template residue and custom-condition preservation. This is not a claim that all skills were played or every official dynamic protocol branch was reproduced.",
+    "not_verified": [
+      "Current user Electron gameplay",
+      "Official client runtime visual comparison",
+      "Mobile device",
+      "Live multiplayer"
+    ],
+    "passed_commands": [
+      "node --check src/ui/xinshaPrompt.js",
+      "node --check verification/xinsha-prompt-audit-engine.cjs",
+      "node verification/xinsha-prompt-audit-engine.cjs",
+      "node verification/xinsha-prompt-browser.cjs",
+      "node verification/xinsha-prompt-engine.cjs",
+      "node verification/xinsha-virtual-prompt-engine.cjs",
+      "node verification/xinsha-qinglong-prompt-engine.cjs",
+      "node verification/xinsha-miyun-prompt-engine.cjs",
+      "node verification/optimized-prompt-browser.cjs",
+      "node verification/official-prompt-browser.cjs"
+    ],
+    "legacy_fixture_failure": {
+      "command": "node verification/dialog-xinsha-prompts-browser.cjs",
+      "error": "ReferenceError: installChoosePlayerSelection is not defined",
+      "boundary": "The script strips imports while injecting the external Lei Yi Jiang shunchai module. Actual import-based gainPlayerCard/miyun engine verification passed. This fixture is not counted as passing."
+    },
+    "synthetic_cases": {
+      "skill_entries": 3420,
+      "event_types": 8,
+      "combinations": 27360,
+      "inputs_per_combination": [
+        "native skill question",
+        "empty generic prompt",
+        "specific custom instruction also assigned to skill.prompt"
+      ],
+      "limitations": "These are exhaustive routing/retention cases for the bundled skill table, not27360 completed skill settlements or official dynamic branches."
+    },
+    "final_results": {
+      "othersOff": {
+        "checked": 27360,
+        "failure_count": 0,
+        "page_errors": [],
+        "liangzhu": "“良助”：请选择1名角色",
+        "caochun": "请选择一个目标视为对其使用一张杀"
+      },
+      "onlineUI": {
+        "checked": 27360,
+        "failure_count": 0,
+        "page_errors": [],
+        "liangzhu": "是否发动【良助】？",
+        "caochun": "选择杀【◈】的目标"
+      }
+    }
+  },
+  "changed_runtime_files": [
+    "src/ui/xinshaPrompt.js"
+  ],
+  "repeat_card_detail_bridge": {
+    "native_source": [
+      "character/xianding.js:dcchanjuan.content creates chooseUseTarget with prompt=get.prompt(dcchanjuan), prompt2=视为再使用一张+get.translation(card), addCount=false",
+      "noname/get/index.js:Get.translation appends suit/number for isCard even when a virtual card has no physical suit",
+      "noname/library/element/content.js:Content.chooseUseTarget creates either chooseTarget or chooseBool and forwards prompt2"
+    ],
+    "cause": "Previous matching covered an automatic target title and pure 视为使用一张【杀】 only. A custom skill heading plus 视为再使用一张雷杀【◈】 bypassed it.",
+    "change": "Only known generated details under a real chooseUseTarget parent use a logical name/nature object without isCard, suit or number. Preserve repeated-use meaning, nature, target names and extra instructions. The default chooseBool confirmation is normalized by the same rule. Native events are unchanged.",
+    "commands": [
+      "node verification/xinsha-repeat-prompt-engine.cjs --baseline",
+      "node verification/xinsha-repeat-prompt-engine.cjs",
+      "node verification/xinsha-prompt-audit-engine.cjs",
+      "node --check src/ui/xinshaPrompt.js",
+      "node --check verification/xinsha-repeat-prompt-engine.cjs"
+    ],
+    "baseline": "verification/xinsha-repeat-prompt-before.json",
+    "results": "verification/xinsha-repeat-prompt-results.json",
+    "scope": "Headless Edge running real noname modules, real dcchanjuan content and native chooseUseTarget/chooseTarget/chooseBool. Pause before confirmation/settlement. Online remains on the original route.",
+    "current_desktop_runtime": "The existing Electron process has no reachable remote debugging endpoint; stored port9333 is stale (endpoint_unreachable). No reload or game choice was performed. Screenshot and native browser reproduction establish this branch; current Electron module refresh remains unverified."
+  }
+}

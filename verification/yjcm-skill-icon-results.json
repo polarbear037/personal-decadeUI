@@ -1,0 +1,445 @@
+{
+  "before": {
+    "limited": {
+      "classes": "xiandingji",
+      "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+      "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic.png\")"
+    },
+    "conversion": {
+      "classes": "skillitem zhuanhuanji",
+      "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+      "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+    }
+  },
+  "states": [
+    {
+      "phone": true,
+      "side": "on",
+      "name": "disabled",
+      "limited": {
+        "classes": "xiandingji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": true,
+      "side": "on",
+      "name": "enabled",
+      "limited": {
+        "classes": "xiandingji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic.png\")"
+      }
+    },
+    {
+      "phone": true,
+      "side": "on",
+      "name": "selected",
+      "limited": {
+        "classes": "xiandingji select",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": true,
+      "side": "on",
+      "name": "used",
+      "limited": {
+        "classes": "xiandingji used",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": true,
+      "side": "on",
+      "name": "yin-disabled",
+      "limited": {
+        "classes": "xiandingji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_ying_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": true,
+      "side": "on",
+      "name": "yin-enabled",
+      "limited": {
+        "classes": "xiandingji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_ying_pic.png\")"
+      }
+    },
+    {
+      "phone": true,
+      "side": "on",
+      "name": "disabled-again",
+      "limited": {
+        "classes": "xiandingji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": true,
+      "side": "off",
+      "name": "disabled",
+      "limited": {
+        "classes": "xiandingji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": true,
+      "side": "off",
+      "name": "enabled",
+      "limited": {
+        "classes": "xiandingji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic.png\")"
+      }
+    },
+    {
+      "phone": true,
+      "side": "off",
+      "name": "selected",
+      "limited": {
+        "classes": "xiandingji select",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": true,
+      "side": "off",
+      "name": "used",
+      "limited": {
+        "classes": "xiandingji used",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": true,
+      "side": "off",
+      "name": "yin-disabled",
+      "limited": {
+        "classes": "xiandingji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_ying_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": true,
+      "side": "off",
+      "name": "yin-enabled",
+      "limited": {
+        "classes": "xiandingji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_ying_pic.png\")"
+      }
+    },
+    {
+      "phone": true,
+      "side": "off",
+      "name": "disabled-again",
+      "limited": {
+        "classes": "xiandingji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": false,
+      "side": "on",
+      "name": "disabled",
+      "limited": {
+        "classes": "xiandingji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": false,
+      "side": "on",
+      "name": "enabled",
+      "limited": {
+        "classes": "xiandingji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic.png\")"
+      }
+    },
+    {
+      "phone": false,
+      "side": "on",
+      "name": "selected",
+      "limited": {
+        "classes": "xiandingji select",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": false,
+      "side": "on",
+      "name": "used",
+      "limited": {
+        "classes": "xiandingji used",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": false,
+      "side": "on",
+      "name": "yin-disabled",
+      "limited": {
+        "classes": "xiandingji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_ying_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": false,
+      "side": "on",
+      "name": "yin-enabled",
+      "limited": {
+        "classes": "xiandingji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_ying_pic.png\")"
+      }
+    },
+    {
+      "phone": false,
+      "side": "on",
+      "name": "disabled-again",
+      "limited": {
+        "classes": "xiandingji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": false,
+      "side": "off",
+      "name": "disabled",
+      "limited": {
+        "classes": "xiandingji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": false,
+      "side": "off",
+      "name": "enabled",
+      "limited": {
+        "classes": "xiandingji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic.png\")"
+      }
+    },
+    {
+      "phone": false,
+      "side": "off",
+      "name": "selected",
+      "limited": {
+        "classes": "xiandingji select",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": false,
+      "side": "off",
+      "name": "used",
+      "limited": {
+        "classes": "xiandingji used",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": false,
+      "side": "off",
+      "name": "yin-disabled",
+      "limited": {
+        "classes": "xiandingji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_ying_pic_gray.png\")"
+      }
+    },
+    {
+      "phone": false,
+      "side": "off",
+      "name": "yin-enabled",
+      "limited": {
+        "classes": "xiandingji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji usable",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_ying_pic.png\")"
+      }
+    },
+    {
+      "phone": false,
+      "side": "off",
+      "name": "disabled-again",
+      "limited": {
+        "classes": "xiandingji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")"
+      },
+      "conversion": {
+        "classes": "skillitem zhuanhuanji",
+        "button": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+        "mark": "url(\"http://127.0.0.1:57942/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+      }
+    }
+  ],
+  "isolation": [
+    "onlineUI",
+    "on",
+    "off",
+    "babysha",
+    "codename"
+  ],
+  "errors": [],
+  "failed": []
+}

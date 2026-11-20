@@ -3,6 +3,7 @@ import { config } from "./src/config/index.js";
 import { content } from "./src/content.js";
 import { precontent } from "./src/precontent.js";
 import { mainpackage } from "./src/package.js";
+import { migrateOptimizedPromptConfig } from "./src/ui/promptStyle.js";
 
 const type = "extension";
 
@@ -11,6 +12,7 @@ const type = "extension";
  * @returns {Promise<import("noname").ExtensionInfo>} 扩展配置对象
  */
 async function extensionEntry() {
+	migrateOptimizedPromptConfig();
 	const infoUrl = `${lib.assetURL}extension/十周年UI/info.json`;
 	const { name: extensionName, ...otherInfo } = await lib.init.promises.json(infoUrl);
 

@@ -1,0 +1,103 @@
+{
+  "scope": "Actual Electron game; same official glow frame20 held fixed for each comparison; temporary CSS audit removed in finally; production remains105%.",
+  "colors": [
+    {
+      "color": "red",
+      "position": "0",
+      "classes": "player fullskin d-skin",
+      "rect": {
+        "x": 1053.2421875,
+        "y": 458.90625,
+        "width": 120,
+        "height": 166.1484375
+      },
+      "dpr": 2,
+      "productionTransform": "matrix(1.05, 0, 0, 1.05, -90.3695, -115.934)",
+      "samples": [
+        {
+          "scale": 1,
+          "actual": "matrix(1, 0, 0, 1, -90.3695, -115.934)"
+        },
+        {
+          "scale": 1.05,
+          "actual": "matrix(1.05, 0, 0, 1.05, -90.3695, -115.934)"
+        }
+      ],
+      "right_edge_measurements": [
+        {
+          "fraction": 0.2,
+          "edge100": 2355,
+          "edge105": 2362,
+          "outward_pixels": 7
+        },
+        {
+          "fraction": 0.3,
+          "edge100": 2352,
+          "edge105": 2359,
+          "outward_pixels": 7
+        },
+        {
+          "fraction": 0.4,
+          "edge100": 2352,
+          "edge105": 2359,
+          "outward_pixels": 7
+        },
+        {
+          "fraction": 0.5,
+          "edge100": 2352,
+          "edge105": 2358,
+          "outward_pixels": 6
+        }
+      ]
+    },
+    {
+      "color": "green",
+      "position": "1",
+      "classes": "player fullskin glow_phase",
+      "rect": {
+        "x": 1055.0859375,
+        "y": 218.3984375,
+        "width": 120,
+        "height": 166.1484375
+      },
+      "dpr": 2,
+      "productionTransform": "matrix(1.05, 0, 0, 1.05, -85.0544, -110.585)",
+      "samples": [
+        {
+          "scale": 1,
+          "actual": "matrix(1, 0, 0, 1, -85.0544, -110.585)"
+        },
+        {
+          "scale": 1.05,
+          "actual": "matrix(1.05, 0, 0, 1.05, -85.0544, -110.585)"
+        }
+      ],
+      "right_edge_measurements": [
+        {
+          "fraction": 0.2,
+          "edge100": 2355,
+          "edge105": 2361,
+          "outward_pixels": 6
+        },
+        {
+          "fraction": 0.3,
+          "edge100": 2354,
+          "edge105": 2361,
+          "outward_pixels": 7
+        },
+        {
+          "fraction": 0.4,
+          "edge100": 2354,
+          "edge105": 2361,
+          "outward_pixels": 7
+        },
+        {
+          "fraction": 0.5,
+          "edge100": 2355,
+          "edge105": 2361,
+          "outward_pixels": 6
+        }
+      ]
+    }
+  ]
+}

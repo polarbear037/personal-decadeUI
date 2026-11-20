@@ -1,0 +1,823 @@
+﻿/**
+ * 十周年UI - 装备栏样式
+ */
+
+/** CSS 变量 */
+
+:root {
+	/* 默认样式 */
+	--equip-right: 86px;
+	--equip-right-layout-left: 90px;
+	--player-equips-left: 10%;
+	--player-equips-right: 16%;
+
+	/* babysha 样式 */
+	--equip-right-baby: 66px;
+	--equip-right-layout-left-baby: 108px;
+	--player-equips-left-baby: 12%;
+
+	/* new 样式 */
+	--equip-right-new: 86px;
+	--equip-right-layout-left-new: 90px;
+	--player-equips-left-new: 17%;
+	--player-equips-right-new: 0%;
+
+	/* new-new 样式 */
+	--equip-right-new-new: 66px;
+	--equip-right-layout-left-new-new: 108px;
+	--player-equips-left-new-new: 15%;
+	--player-equips-right-new-new: 16%;
+
+	/* onlineUI 样式 */
+	--equip-right-ol: 160px;
+	--equip-right-layout-left-ol: 90px;
+	--player-equips-left-ol: 17%;
+	--player-equips-right-ol: 5%;
+}
+
+/** 装备栏容器 */
+
+#arena > .equips-wrap {
+	min-width: 130px;
+	height: 100%;
+	top: auto;
+	bottom: 0%;
+	left: auto;
+	right: var(--equip-right);
+}
+
+/* 右手布局 */
+#arena[data-right-layout="on"] > .equips-wrap {
+	left: var(--equip-right-layout-left);
+	right: auto;
+}
+
+/* 隐藏装备栏 */
+#arena[data-alone-equip="off"] > .equips-wrap {
+	left: auto;
+	opacity: 0;
+}
+
+/* 十周年样式 - 关闭触屏布局 */
+#arena[data-new-decade-style="on"][data-phonelayout="off"][data-right-layout="on"] > .equips-wrap {
+	left: 1%;
+	right: auto;
+}
+
+/* othersOff 样式 - 关闭触屏布局 */
+#arena[data-new-decade-style="othersOff"][data-phonelayout="off"][data-right-layout="on"] > .equips-wrap {
+	left: 1%;
+	right: auto;
+}
+
+/* othersOff 样式 - 其他玩家装备右移 */
+#arena[data-new-decade-style="othersOff"] .player > .equips,
+#arena[data-new-decade-style="othersOff"] > .player:not(.minskin) > .equips {
+	left: calc(var(--player-equips-left) + 5%);
+}
+
+/** 装备栏背景 */
+
+.equips-wrap > .equips-back {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: flex-end;
+	width: 100%;
+	height: 100%;
+	row-gap: 3px;
+}
+
+.equips-wrap > .equips-back > div {
+	position: initial;
+	width: 100%;
+	height: 27px;
+	left: 3px;
+	right: 3px;
+}
+
+/* 装备槽背景图 */
+.equips-wrap > .equips-back > div[data-type="0"] {
+	background-image: url("../../image/styles/decade/equip1.png");
+}
+
+.equips-wrap > .equips-back > div[data-type="1"] {
+	background-image: url("../../image/styles/decade/equip2.png");
+}
+
+.equips-wrap > .equips-back > div[data-type="2"] {
+	background-image: url("../../image/styles/decade/equip3.png");
+}
+
+.equips-wrap > .equips-back > div[data-type="3"] {
+	background-image: url("../../image/styles/decade/equip4.png");
+}
+
+.equips-wrap > .equips-back > div[data-type="4"] {
+	background-image: url("../../image/styles/decade/equip5.png");
+}
+
+/** 装备栏内容 */
+
+.equips-wrap > .equips {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	row-gap: 3px;
+}
+
+/* 装备卡牌槽 */
+.equips-wrap > .equips > div {
+	position: initial;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+	height: 27px;
+	left: 3px;
+	right: 3px;
+	background: rgb(53, 38, 32) !important;
+	border-radius: 0;
+	box-shadow: none;
+	-webkit-text-size-adjust: none;
+	z-index: 1;
+}
+
+.equips-wrap > .equips > div::before {
+	width: inherit;
+	height: inherit;
+	top: auto;
+	left: auto;
+	border: initial;
+}
+
+/* 装备槽边框 */
+.equips-wrap > .equips > div::after {
+	display: block;
+	width: inherit;
+	height: inherit;
+	top: auto;
+	left: auto;
+	border-radius: 0;
+	box-shadow: none;
+	opacity: 1;
+	z-index: auto;
+	background:
+		linear-gradient(to left, yellow, yellow) left top no-repeat,
+		linear-gradient(to bottom, yellow, yellow) left top no-repeat,
+		linear-gradient(to left, yellow, yellow) right top no-repeat,
+		linear-gradient(to bottom, yellow, yellow) right top no-repeat,
+		linear-gradient(to left, yellow, yellow) left bottom no-repeat,
+		linear-gradient(to bottom, yellow, yellow) left bottom no-repeat,
+		linear-gradient(to left, yellow, yellow) right bottom no-repeat,
+		linear-gradient(to left, yellow, yellow) right bottom no-repeat !important;
+	background-size:
+		2px 8px,
+		10px 2px,
+		2px 8px,
+		10px 2px !important;
+}
+
+/** 装备选中状态 */
+
+.equips-wrap > .equips > div.selected {
+	box-shadow: 0 0 10px yellow;
+}
+
+.equips-wrap > .equips > div.selectable {
+	cursor: pointer;
+	transform: translateX(-10px);
+}
+
+.equips-wrap > .equips > div.selectable::before {
+	animation: none;
+}
+
+.equips-wrap > .equips > div.selected::before {
+	animation: fade-in-out-selectable 1s infinite;
+}
+
+#arena[data-right-layout="on"] > .equips-wrap > .equips > div.selectable {
+	transform: translateX(10px);
+}
+
+.mobile-phone .equips-wrap > .equips > div.selected {
+	box-shadow:
+		0 0 2px yellow,
+		0 0 4px yellow,
+		0 0 8px yellow;
+}
+
+/** 装备图标 */
+
+.equips-wrap > .equips-back > div > .icon,
+.equips-wrap > .equips > div > .icon {
+	display: block;
+	width: 20px;
+	height: 20px;
+	top: 4px;
+	left: 2px;
+	transition: opacity 0.5s;
+}
+
+/** 装备牌内容 */
+
+.equips-wrap > .equips > .card > div {
+	position: absolute;
+	text-shadow: none;
+}
+
+.equips-wrap > .equips > .card > .name2 {
+	position: static;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
+	margin: 0;
+	font-family: "yuanli" !important;
+	font-weight: bold;
+	white-space: pre-wrap;
+	background-color: rgb(228, 207, 166);
+	border: 1px solid rgb(90, 50, 33);
+	border-radius: 0;
+	box-sizing: border-box;
+	pointer-events: none;
+	z-index: 1;
+}
+
+/* 红色花色 */
+.equips-wrap > .equips > .card[data-suit="heart"] > .name2,
+.equips-wrap > .equips > .card[data-suit="diamond"] > .name2 {
+	color: #8b0000;
+}
+
+/* 黑色花色 */
+.equips-wrap > .equips > .card[data-suit="spade"] > .name2,
+.equips-wrap > .equips > .card[data-suit="club"] > .name2 {
+	color: #181818;
+}
+
+/* 无色 */
+.equips-wrap > .equips > .card[data-suit="none"] > .name2 {
+	color: white;
+	background-color: black;
+}
+
+/* 废除状态 */
+.equips-wrap > .equips > .card.feichu > .name2 {
+	color: white;
+	font-weight: normal;
+	background-color: rgb(57, 48, 33);
+}
+
+/* 装备图片 */
+.equips-wrap > .equips > .card > .image {
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 20px;
+	left: 3px;
+	bottom: auto;
+	visibility: visible !important;
+	z-index: 2;
+}
+
+.equips-wrap > .equips > .card:not(.fullskin) > .image {
+	display: block !important;
+}
+
+/** 其他玩家装备栏 */
+
+.player > .equips,
+#arena > .player:not(.minskin) > .equips {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	height: 80px;
+	left: var(--player-equips-left);
+	right: var(--player-equips-right);
+	bottom: 3%;
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+	transform: none;
+	transform-origin: center;
+	pointer-events: none;
+	z-index: 88;
+}
+
+/* 未翻面玩家装备栏 */
+#arena.decadeUI:not(.long).mobile:not(.oldlayout) .player.unseen:not([data-position="0"]) .equips:not(*:empty),
+#arena.decadeUI:not(.long):not(.mobile):not(.oldlayout) .player.unseen .equips:not(*:empty),
+#arena.decadeUI.long.mobile:not(.oldlayout) .player.unseen2:not([data-position="0"]) .equips:not(*:empty),
+#arena.decadeUI.long:not(.mobile):not(.oldlayout) .player.unseen2 .equips:not(*:empty) {
+	overflow: hidden;
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+/* 其他玩家装备牌 */
+.player > .equips > .card,
+.player.unseen > .equips > .card,
+.player.unseen2 > .equips > .card {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+	height: 16px;
+	background: rgba(228, 207, 166, 0.8) !important;
+	border: 1px solid rgb(95, 55, 45);
+	border-image: none !important;
+	border-radius: 1px;
+	box-sizing: border-box;
+	text-shadow: none;
+}
+
+#arena.decadeUI:not(.long).mobile:not(.oldlayout) .player.unseen:not([data-position="0"]) .equips:not(*:empty) > .card,
+#arena.decadeUI:not(.long):not(.mobile):not(.oldlayout) .player.unseen .equips:not(*:empty) > .card:not(.selected),
+#arena.decadeUI.long.mobile:not(.oldlayout) .player.unseen2:not([data-position="0"]) .equips:not(*:empty) > .card,
+#arena.decadeUI.long:not(.mobile):not(.oldlayout) .player.unseen2 .equips:not(*:empty) > .card:not(.selected) {
+	background: rgba(228, 207, 166, 0.8) !important;
+}
+
+.player:not(.selectable) > .equips > .card,
+.player:not(.selectable) > .equips > .card > div {
+	pointer-events: auto;
+}
+
+.player > .equips > .card > div {
+	position: static;
+}
+
+.player > .equips > .card > .name2 {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	margin: 0;
+	line-height: 15px;
+	font-size: 13px;
+	font-family: yuanli;
+	font-weight: bold;
+	color: #181818;
+	text-align: center;
+	text-shadow: none;
+	pointer-events: none;
+}
+
+.player > .equips > .card[data-suit="heart"] > .name2,
+.player > .equips > .card[data-suit="diamond"] > .name2 {
+	color: #8b0000;
+}
+
+/** 样式变量覆盖 */
+
+body[data-style="babysha"] {
+	--equip-right: var(--equip-right-baby);
+	--equip-right-layout-left: var(--equip-right-layout-left-baby);
+	--player-equips-left: var(--player-equips-left-baby);
+	--player-equips-right: 16%;
+}
+
+body[data-style="onlineUI"] {
+	--equip-right: var(--equip-right-ol);
+	--equip-right-layout-left: var(--equip-right-layout-left-ol);
+	--player-equips-left: var(--player-equips-left-ol);
+	--player-equips-right: var(--player-equips-right-ol);
+}
+
+body[data-style="off"] {
+	--equip-right: var(--equip-right-new);
+	--equip-right-layout-left: var(--equip-right-layout-left-new);
+	--player-equips-left: var(--player-equips-left-new);
+	--player-equips-right: var(--player-equips-right-new);
+}
+
+body[data-style="codename"] .equips-wrap > .equips-back > div {
+	opacity: 0.5;
+}
+
+/** 技能选择装备牌 */
+
+/* 默认不突出 */
+.equips-wrap > .equips > div.equip-card-selectable {
+	transform: none;
+}
+
+#arena[data-right-layout="on"] > .equips-wrap > .equips > div.equip-card-selectable {
+	transform: none;
+}
+
+/* 可选时突出 */
+.equips-wrap > .equips > div.equip-card-selectable.selectable {
+	transform: translateX(-10px);
+}
+
+#arena[data-right-layout="on"] > .equips-wrap > .equips > div.equip-card-selectable.selectable {
+	transform: translateX(10px);
+}
+
+/* 选中时突出 */
+.equips-wrap > .equips > div.equip-card-selectable.selected {
+	transform: translateX(-10px);
+}
+
+#arena[data-right-layout="on"] > .equips-wrap > .equips > div.equip-card-selectable.selected {
+	transform: translateX(10px);
+}
+
+/* 选中特效边框 */
+.equips-wrap > .equips > div.equip-card-selectable::before {
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	right: -4px;
+	bottom: -4px;
+	border-width: 4px;
+	border-style: solid;
+	border-image-source: url("../../image/ui/card/card_select.png");
+	border-image-slice: 8 7 7 8;
+	border-image-width: 4px;
+	border-radius: inherit;
+	box-shadow: none;
+	opacity: 0;
+	transition: opacity 0.3s linear;
+	pointer-events: none;
+	z-index: 2;
+}
+
+.equips-wrap > .equips > div.equip-card-selectable.selected::before {
+	opacity: 1;
+}
+
+/* 与共享 equip-layout.js 生成的图片节点配套，保留本风格装备栏底图和槽位。 */
+.player > .equips > .card {
+	position: relative;
+	left: auto;
+	top: auto;
+	flex-shrink: 0;
+	margin: 0;
+}
+
+.equips > .card > .name2[data-decade-equip] {
+	--equip-point-size: 10px;
+	--equip-type-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1px;
+	padding: 0 2px;
+	min-width: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.equips-wrap > .equips > .card > .name2[data-decade-equip] {
+	--equip-point-size: 14px;
+	--equip-type-size: 18px;
+}
+
+.equips > .card > .name2[data-decade-equip] > img {
+	position: static;
+	flex: 0 0 auto;
+	width: var(--equip-point-size);
+	height: calc(var(--equip-point-size) + 2px);
+	margin: 0;
+	object-fit: contain;
+}
+
+.equips > .card > .name2[data-decade-equip] > .decade-equip-type-icon {
+	width: var(--equip-type-size);
+	height: var(--equip-type-size);
+}
+
+.equips > .card > .name2[data-decade-equip] > .decade-equip-name {
+	position: static;
+	flex: 1 1 auto;
+	min-width: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.equips > .card > .name2[data-decade-horse] > :not(.decade-equip-horse) {
+	display: none !important;
+}
+
+.equips > .card > .name2 > .decade-equip-horse {
+	position: static;
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	width: 100%;
+	height: 100%;
+	min-width: 0;
+	font-size: 13px;
+	line-height: 1;
+}
+
+.decade-equip-horse > span {
+	position: static;
+	flex: 0 0 auto;
+}
+
+.decade-equip-horse-icon {
+	width: var(--equip-type-size, 12px);
+	height: var(--equip-type-size, 12px);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.decade-equip-horse[data-slot="3"] > .decade-equip-horse-icon {
+	background-image: url("../../image/ui/equip/official/new_equip_type_5_new.png");
+}
+
+.decade-equip-horse[data-slot="4"] > .decade-equip-horse-icon {
+	background-image: url("../../image/ui/equip/official/new_equip_type_6_new.png");
+}
+
+.decade-equip-horse-suit > img,
+.decade-equip-horse-number > img {
+	position: static;
+	display: block;
+	width: var(--equip-point-size, 10px);
+	height: calc(var(--equip-point-size, 10px) + 2px);
+	object-fit: contain;
+}
+
+/* 装备区只展示横条；卡面上的花色点数、牌名和图片仍供离区恢复。 */
+body[data-style="othersOff"] .equips > .card[data-xinsha-equip] > :not(.name2) {
+	display: none !important;
+}
+
+/* MoveCardController 使用完整牌面飞行，装备横条只在副本消失后直接显示。 */
+body[data-style="othersOff"] #arena > .card.decade-xinsha-equip-flight {
+	transition: none !important;
+	animation: none !important;
+	transform-origin: center;
+	pointer-events: none;
+	will-change: transform, opacity;
+	z-index: 130;
+}
+
+body[data-style="othersOff"] #arena > .card.decade-xinsha-equip-flight > .used-info {
+	display: none;
+}
+
+/* EquipArea.YjcmLayout，逻辑座位190×252；宝物104、武器81、防具58、防马35、攻马12。
+ * 本地人物框对应cardbg可见区：原图194×256，裁切(21,12,164,236)，Cocos左下(21,8)。
+ * 先扣透明留白，再映射可见框；不能把整座位190×252当成本地可见框。
+ * 不能沿用 Online 的4行/并排坐骑，也不能按已穿装备数量压缩空栏。 */
+body[data-style="othersOff"] #arena .player > .equips,
+body[data-style="othersOff"] #arena[data-new-decade-style="othersOff"] > .player:not(.minskin) > .equips {
+	position: absolute;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--equip-rows, 5), 1fr);
+	width: 76.219512%;
+	height: calc(9.745763% * var(--equip-rows, 5));
+	left: 9.756098%;
+	right: auto;
+	top: auto;
+	bottom: 1.694915%;
+	gap: 0;
+	padding: 0;
+	margin: 0;
+	transform: none;
+	background: none;
+	overflow: visible;
+}
+
+body[data-style="othersOff"] #arena > .equips-wrap {
+	width: 125px;
+	min-width: 125px;
+	height: calc(23px * var(--equip-rows, 5));
+}
+
+body[data-style="othersOff"] #arena > .equips-wrap > :is(.equips, .equips-back) {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--equip-rows, 5), 1fr);
+	gap: 0;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	padding: 0;
+}
+
+/* 原版未装备的栏位为空，不绘制旧十周年/OL空槽。独立栏仍保留原来的设置位置。 */
+body[data-style="othersOff"] .equips-wrap > .equips-back > div {
+	grid-row: var(--equip-row);
+	grid-column: 1;
+	background: none;
+	visibility: hidden;
+}
+
+body[data-style="othersOff"] #arena :is(.player, .equips-wrap) > .equips > .card {
+	position: relative;
+	grid-row: var(--equip-row);
+	grid-column: 1;
+	display: block;
+	width: 100%;
+	height: 100%;
+	min-height: 0;
+	left: auto;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	background: none !important;
+	overflow: visible;
+	transition: transform 0.2s, opacity 0.2s;
+	/* 入栏由完整牌飞行接管，横条不再叠加本体 card_start2x 的上浮动画。 */
+	animation: none;
+}
+
+body[data-style="othersOff"] #arena :is(.player, .equips-wrap) > .equips > .card > .name2:is([data-xinsha-equip], [data-xinsha-extra-equip]) {
+	position: absolute;
+	display: block;
+	container-type: size;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 0;
+	background: url("../../image/ui/equip/xinsha/background.png") center / 100% 100% no-repeat;
+	/* 原图底色alpha约204/255，不能再叠加本体selecting/current_action的0.6。 */
+	opacity: 1 !important;
+	transition: none;
+	color: #3d1c0c;
+	font-weight: normal;
+	text-shadow: none;
+	line-height: 1;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+body[data-style="othersOff"] #arena .equips > .card > .name2[data-xinsha-equip] > :is(img, span) {
+	position: absolute;
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	max-width: none;
+	object-fit: fill;
+	transform: none;
+}
+
+body[data-style="othersOff"] #arena .equips > .card > .name2[data-xinsha-equip] > [hidden] {
+	display: none !important;
+}
+
+/* equImg 的原始129×23横向缩为125；所有小元素共用这个坐标系。 */
+body[data-style="othersOff"] #arena .equips > .card > .name2[data-xinsha-equip] > .decade-equip-type-icon {
+	left: 0;
+	top: 0;
+	width: 15.503876%;
+	height: 100%;
+}
+
+body[data-style="othersOff"] #arena .equips > .card > .name2[data-xinsha-equip] > .decade-equip-range {
+	left: 13.953488%;
+	top: 0;
+	width: 13.178295%;
+	height: 100%;
+	font-size: 13.953488cqw;
+	line-height: 100cqh;
+	text-align: center;
+}
+
+body[data-style="othersOff"] #arena .equips > .card > .name2[data-xinsha-equip] > .decade-equip-name {
+	left: 27.131783%;
+	top: 0;
+	width: 48.062016%;
+	height: 100%;
+	font-size: calc(var(--xinsha-equip-name-size, 20) * 100cqw / 129);
+	line-height: 100cqh;
+	text-align: center;
+	text-overflow: clip;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+body[data-style="othersOff"] #arena .equips > .card:is([data-equip-slot="2"], [data-equip-slot="5"]) > .name2[data-xinsha-equip] > .decade-equip-name {
+	left: 16.279070%;
+	width: 58.914729%;
+}
+
+body[data-style="othersOff"] #arena .equips > .card > .name2[data-xinsha-equip] > .decade-equip-number {
+	left: auto;
+	right: 11.627907%;
+	top: 5.434783%;
+	width: 12.209302%;
+	height: 84.782609%;
+}
+
+body[data-style="othersOff"] #arena .equips > .card > .name2[data-xinsha-equip] > .decade-equip-number[alt="10"] {
+	width: 13.372093%;
+}
+
+body[data-style="othersOff"] #arena .equips > .card > .name2[data-xinsha-equip] > .decade-equip-suit {
+	left: auto;
+	right: 0.775194%;
+	top: 11.739130%;
+	width: 11.589147%;
+	height: 67.826087%;
+}
+
+body[data-style="othersOff"] #arena .equips > .card.feichu > .name2 {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-size: 0;
+	color: transparent;
+	text-shadow: none;
+	transition: none;
+	background: url("../../image/ui/equip/xinsha/game_abolish_equip_label.png") center / 100% 100% no-repeat;
+}
+
+body[data-style="othersOff"] #arena .equips > .card.feichu .decade-equip-feichu {
+	position: absolute;
+	display: flex;
+	inset: 0;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+	font-size: 12px;
+}
+
+body[data-style="othersOff"] #arena .equips > .card.feichu > .name2[data-decade-feichu] > :not(.decade-equip-feichu) {
+	display: none;
+}
+
+body[data-style="othersOff"] #arena .equips > .card.feichu > :not(.name2),
+body[data-style="othersOff"] #arena .equips > .card.feichu .decade-equip-feichu > :not(.decade-equip-feichu-icon) {
+	display: none !important;
+}
+
+body[data-style="othersOff"] #arena .equips > .card.feichu .decade-equip-feichu-icon {
+	position: absolute;
+	left: 0;
+	top: -8.695652%;
+	width: 27.906977%;
+	height: 117.391304%;
+	background: var(--xinsha-abolish-icon) center / 100% 100% no-repeat;
+}
+
+body[data-style="othersOff"] .equips > .card[data-equip-slot="1"] { --xinsha-abolish-icon: url("../../image/ui/equip/xinsha/game_abolish_equip_weapon.png"); }
+body[data-style="othersOff"] .equips > .card[data-equip-slot="2"] { --xinsha-abolish-icon: url("../../image/ui/equip/xinsha/game_abolish_equip_armor.png"); }
+body[data-style="othersOff"] .equips > .card[data-equip-slot="3"] { --xinsha-abolish-icon: url("../../image/ui/equip/xinsha/game_abolish_equip_def_horse.png"); }
+body[data-style="othersOff"] .equips > .card[data-equip-slot="4"] { --xinsha-abolish-icon: url("../../image/ui/equip/xinsha/game_abolish_equip_att_horse.png"); }
+body[data-style="othersOff"] .equips > .card[data-equip-slot="5"] { --xinsha-abolish-icon: url("../../image/ui/equip/xinsha/game_abolish_equip_treasure.png"); }
+
+body[data-style="othersOff"] #arena .equips > .card[data-equip-replaced="true"] {
+	display: none !important;
+}
+
+/* 技能视为装备沿用本体文字，空槽及废除槽复用相同横条底图。 */
+body[data-style="othersOff"] #arena .equips > .card[data-xinsha-extra-equip] {
+	container-type: size;
+}
+
+body[data-style="othersOff"] #arena :is(.player, .equips-wrap) > .equips > .card > .name2[data-xinsha-extra-equip] {
+	font-size: calc(var(--xinsha-extra-equip-size, 20) * 100cqw / 129);
+	line-height: 100cqh;
+	text-align: center;
+}
+
+body[data-style="othersOff"] #arena .equips > .card[data-xinsha-extra-equip] > :not(.name2) {
+	display: none !important;
+}

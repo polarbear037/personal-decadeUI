@@ -1,0 +1,86 @@
+[
+  {
+    "mobile": false,
+    "dpr": 1,
+    "style": "on",
+    "pass": true,
+    "playback": "recording stubs; real DOM observer and both extension modules"
+  },
+  {
+    "mobile": false,
+    "dpr": 1,
+    "style": "off",
+    "pass": true,
+    "playback": "recording stubs; real DOM observer and both extension modules"
+  },
+  {
+    "mobile": false,
+    "dpr": 1,
+    "style": "othersOff",
+    "pass": true,
+    "playback": "recording stubs; real DOM observer and both extension modules"
+  },
+  {
+    "mobile": false,
+    "dpr": 1,
+    "style": "onlineUI",
+    "pass": true,
+    "playback": "recording stubs; real DOM observer and both extension modules"
+  },
+  {
+    "mobile": false,
+    "dpr": 1,
+    "style": "babysha",
+    "pass": true,
+    "playback": "recording stubs; real DOM observer and both extension modules"
+  },
+  {
+    "mobile": false,
+    "dpr": 1,
+    "style": "codename",
+    "pass": true,
+    "playback": "recording stubs; real DOM observer and both extension modules"
+  },
+  {
+    "mobile": true,
+    "dpr": 3,
+    "style": "on",
+    "pass": true,
+    "playback": "recording stubs; real DOM observer and both extension modules"
+  },
+  {
+    "mobile": true,
+    "dpr": 3,
+    "style": "off",
+    "pass": true,
+    "playback": "recording stubs; real DOM observer and both extension modules"
+  },
+  {
+    "mobile": true,
+    "dpr": 3,
+    "style": "othersOff",
+    "pass": true,
+    "playback": "recording stubs; real DOM observer and both extension modules"
+  },
+  {
+    "mobile": true,
+    "dpr": 3,
+    "style": "onlineUI",
+    "pass": true,
+    "playback": "recording stubs; real DOM observer and both extension modules"
+  },
+  {
+    "mobile": true,
+    "dpr": 3,
+    "style": "babysha",
+    "pass": true,
+    "playback": "recording stubs; real DOM observer and both extension modules"
+  },
+  {
+    "mobile": true,
+    "dpr": 3,
+    "style": "codename",
+    "pass": true,
+    "playback": "recording stubs; real DOM observer and both extension modules"
+  }
+]

@@ -1,4 +1,5 @@
 import { get, lib } from "noname";
+import { updateXinshaEquipPresentation, updateXinshaExtraEquipPresentation, updateXinshaEquipLayout } from "./equip-xinsha.js";
 
 const equipPresentations = new WeakMap();
 
@@ -80,9 +81,14 @@ function restoreEquipPresentation(card, source = card) {
 		delete name2.dataset.decadeEquip;
 		delete name2.dataset.decadeHorse;
 		delete name2.dataset.decadeFeichu;
+		delete name2.dataset.xinshaEquip;
+		delete name2.dataset.xinshaExtraEquip;
+		name2.style.removeProperty("--xinsha-extra-equip-size");
 	}
 	delete card.dataset.equipSlot;
 	delete card.dataset.equipReplaced;
+	delete card.dataset.xinshaEquip;
+	delete card.dataset.xinshaExtraEquip;
 	card.style.removeProperty("--equip-row");
 	card.style.removeProperty("--equip-column");
 	delete card.dataset.decadeHorse;
@@ -102,6 +108,16 @@ function updateEquipPresentation(card, virtualCard = card) {
 	const info = get.info?.(virtualCard, false);
 	if (info?.type !== "equip") return;
 	rememberEquipPresentation(card);
+	const translated = get.translation(virtualCard.name);
+	if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && updateXinshaEquipPresentation(card, virtualCard, EQUIP_NAMES[translated] || translated)) {
+		name2.dataset.decadeEquip = "1";
+		return;
+	}
+	if (name2.dataset.xinshaEquip) {
+		delete card.dataset.xinshaEquip;
+		delete name2.dataset.xinshaEquip;
+		delete name2.dataset.decadeEquip;
+	}
 	if (!name2.dataset.decadeEquip) {
 		name2.replaceChildren();
 		for (const className of ["decade-equip-type-icon", "decade-equip-suit", "decade-equip-number", "decade-equip-name"]) {
@@ -135,7 +151,6 @@ function updateEquipPresentation(card, virtualCard = card) {
 	const number = Number(({ A: 1, J: 11, Q: 12, K: 13 })[numberLabel] || numberLabel);
 	const color = suit === "heart" || suit === "diamond" ? "r" : "b";
 	setImage(numberNode, Number.isInteger(number) && number >= 1 && number <= 13 ? `number/${color}${number}` : "", numberLabel);
-	const translated = get.translation(virtualCard.name);
 	const label = name2.querySelector(".decade-equip-name");
 	const text = (EQUIP_NAMES[translated] || translated).replace(/&nbsp;/g, "\u00a0");
 	if (label.textContent !== text) label.textContent = text;
@@ -344,6 +359,7 @@ function refreshEquipLayout(player) {
 	const activeSlots = new Set();
 	for (const card of Array.from(equips.children)) {
 		const slot = getEquipSlot(card);
+		updateXinshaExtraEquipPresentation(card);
 		if (slot) {
 			card.dataset.equipSlot = String(slot);
 			updateEquipPresentation(card, card[card.cardSymbol] || card);
@@ -352,6 +368,12 @@ function refreshEquipLayout(player) {
 			delete card.dataset.equipSlot;
 		}
 		if (slot && isLayoutEquipCard(card)) activeSlots.add(slot);
+	}
+	const wrapper = equips.parentElement?.classList?.contains("equips-wrap") ? equips.parentElement : null;
+	if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff") {
+		for (const card of Array.from(equips.children)) updateCompactHorsePresentation(card, Number(card.dataset.equipSlot || 0), "xinsha");
+		updateXinshaEquipLayout(player, Array.from(equips.children), wrapper);
+		return "xinsha";
 	}
 	const hasTreasure = activeSlots.has(5);
 	const hasAttackHorse = activeSlots.has(4);
@@ -364,7 +386,6 @@ function refreshEquipLayout(player) {
 	}
 	equips.dataset.equipLayout = layout;
 	equips.dataset.loneAttackHorse = String(loneAttackHorse);
-	const wrapper = equips.parentElement?.classList?.contains("equips-wrap") ? equips.parentElement : null;
 	if (wrapper) {
 		wrapper.dataset.equipLayout = layout;
 		wrapper.dataset.loneAttackHorse = String(loneAttackHorse);

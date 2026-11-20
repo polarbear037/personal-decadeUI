@@ -1,0 +1,1090 @@
+{
+  "othersOff": {
+    "liangzhu": {
+      "main": "请选择1名角色",
+      "detail": "",
+      "native": "是否发动【良助】？",
+      "nativeDetail": "当一名角色于其出牌阶段内回复体力时，你可以选择一项：1、摸一张牌；2、令该角色摸两张牌。"
+    },
+    "caochun": {
+      "main": "选择杀【◈】的目标",
+      "detail": "",
+      "native": "选择杀【◈】的目标",
+      "nativeDetail": ""
+    },
+    "custom": {
+      "main": "缮甲：只能选择距离为1的角色",
+      "detail": "",
+      "native": "缮甲：只能选择距离为1的角色",
+      "nativeDetail": ""
+    },
+    "ordinaryVirtual": {
+      "main": "选择杀【◈】的目标",
+      "detail": "",
+      "native": "选择杀【◈】的目标",
+      "nativeDetail": ""
+    },
+    "stageCases": {
+      "targetAfterCost": {
+        "main": "请选择1张红牌和【杀】的目标",
+        "detail": "",
+        "skill": "武圣",
+        "official": {
+          "richMain": "请选择1张红牌和<font color=#FFD979>【杀】</font>的目标",
+          "entryId": 33,
+          "field": "ActiveTip"
+        }
+      },
+      "cardBeforeTarget": {
+        "main": "请选择1张手牌和1名受伤角色",
+        "detail": "",
+        "skill": "青囊",
+        "official": {
+          "richMain": "请选择1张手牌和1名受伤角色",
+          "entryId": 65,
+          "field": "ActiveTip"
+        }
+      },
+      "modifiedTargetCount": {
+        "main": "请选择2名角色",
+        "detail": "",
+        "skill": "节命",
+        "official": null
+      },
+      "discardInsteadOfUse": {
+        "main": "请弃置2张牌",
+        "detail": "",
+        "skill": "武圣",
+        "official": null
+      },
+      "noCardCost": {
+        "main": "请选择0张牌和1名角色",
+        "detail": "",
+        "skill": "良助",
+        "official": null
+      },
+      "noTargetCost": {
+        "main": "请选择1张牌和0名角色",
+        "detail": "",
+        "skill": "良助",
+        "official": null
+      },
+      "zeroCostTemplate": {
+        "main": "请选择1张手牌和1名受伤角色",
+        "detail": "",
+        "skill": "青囊",
+        "official": {
+          "richMain": "请选择1张手牌和1名受伤角色",
+          "entryId": 65,
+          "field": "ActiveTip"
+        }
+      },
+      "unlimitedTargets": {
+        "main": "请选择1名角色",
+        "detail": "",
+        "skill": "良助",
+        "official": null
+      },
+      "multipleVirtual": {
+        "main": "请选择1至2名角色",
+        "detail": "视为使用一张【杀】",
+        "native": "请选择一名角色",
+        "nativeDetail": "视为使用一张【杀】"
+      }
+    },
+    "loadout": {
+      "name": "缮甲",
+      "id": 1762,
+      "itemId": 7161
+    },
+    "audit": {
+      "entries": 3732,
+      "checked": 27360,
+      "official": 6206,
+      "fallback": 21154,
+      "failureCount": 54332,
+      "failures": [
+        [
+          31,
+          "chooseBool",
+          "custom_overwritten",
+          {
+            "main": "是否发动“仁德”",
+            "detail": "必须保留的独立条件",
+            "skill": "仁德",
+            "official": {
+              "richMain": "是否发动<font color=\"#A3F030\">“仁德”</font>",
+              "entryId": 31,
+              "field": "AskTip"
+            }
+          }
+        ],
+        [
+          31,
+          "chooseControl",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          31,
+          "chooseControl",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          31,
+          "chooseControl",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          31,
+          "chooseButton",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          31,
+          "chooseButton",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          31,
+          "chooseButton",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          31,
+          "chooseCard",
+          "custom_overwritten",
+          {
+            "main": "请选任意张手牌交给1名角色",
+            "detail": "必须保留的独立条件",
+            "skill": "仁德",
+            "official": {
+              "richMain": "请选任意张手牌交给1名角色",
+              "entryId": 31,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          31,
+          "chooseTarget",
+          "lost_skill",
+          "请选择1名角色"
+        ],
+        [
+          31,
+          "chooseTarget",
+          "empty_lost_skill",
+          "请选择1名角色"
+        ],
+        [
+          31,
+          "chooseCardTarget",
+          "custom_overwritten",
+          {
+            "main": "请选任意张手牌交给1名角色",
+            "detail": "必须保留的独立条件",
+            "skill": "仁德",
+            "official": {
+              "richMain": "请选任意张手牌交给1名角色",
+              "entryId": 31,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          31,
+          "chooseToDiscard",
+          "lost_skill",
+          "请弃置1张牌"
+        ],
+        [
+          31,
+          "chooseToDiscard",
+          "empty_lost_skill",
+          "请弃置1张牌"
+        ],
+        [
+          31,
+          "chooseToUse",
+          "custom_overwritten",
+          {
+            "main": "请选任意张手牌交给1名角色",
+            "detail": "必须保留的独立条件",
+            "skill": "仁德",
+            "official": {
+              "richMain": "请选任意张手牌交给1名角色",
+              "entryId": 31,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          32,
+          "chooseBool",
+          "custom_overwritten",
+          {
+            "main": "是否发动“激将”",
+            "detail": "必须保留的独立条件",
+            "skill": "激将",
+            "official": {
+              "richMain": "是否发动<font color=\"#A3F030\">“激将”</font>",
+              "entryId": 32,
+              "field": "AskTip"
+            }
+          }
+        ],
+        [
+          32,
+          "chooseControl",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          32,
+          "chooseControl",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          32,
+          "chooseControl",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          32,
+          "chooseButton",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          32,
+          "chooseButton",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          32,
+          "chooseButton",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          32,
+          "chooseCard",
+          "custom_overwritten",
+          {
+            "main": "请选择要【杀】的角色，蜀将可替你出【杀】",
+            "detail": "必须保留的独立条件",
+            "skill": "激将",
+            "official": {
+              "richMain": "请选择要<font color=#FFD979>【杀】</font>的角色，蜀将可替你出<font color=#FFD979>【杀】</font>",
+              "entryId": 32,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          32,
+          "chooseTarget",
+          "custom_overwritten",
+          {
+            "main": "请选择要【杀】的角色，蜀将可替你出【杀】",
+            "detail": "必须保留的独立条件",
+            "skill": "激将",
+            "official": {
+              "richMain": "请选择要<font color=#FFD979>【杀】</font>的角色，蜀将可替你出<font color=#FFD979>【杀】</font>",
+              "entryId": 32,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          32,
+          "chooseCardTarget",
+          "custom_overwritten",
+          {
+            "main": "请选择要【杀】的角色，蜀将可替你出【杀】",
+            "detail": "必须保留的独立条件",
+            "skill": "激将",
+            "official": {
+              "richMain": "请选择要<font color=#FFD979>【杀】</font>的角色，蜀将可替你出<font color=#FFD979>【杀】</font>",
+              "entryId": 32,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          32,
+          "chooseToDiscard",
+          "lost_skill",
+          "请弃置1张牌"
+        ],
+        [
+          32,
+          "chooseToDiscard",
+          "empty_lost_skill",
+          "请弃置1张牌"
+        ],
+        [
+          32,
+          "chooseToUse",
+          "custom_overwritten",
+          {
+            "main": "请选择要【杀】的角色，蜀将可替你出【杀】",
+            "detail": "必须保留的独立条件",
+            "skill": "激将",
+            "official": {
+              "richMain": "请选择要<font color=#FFD979>【杀】</font>的角色，蜀将可替你出<font color=#FFD979>【杀】</font>",
+              "entryId": 32,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          33,
+          "chooseBool",
+          "custom_overwritten",
+          {
+            "main": "是否发动“武圣”",
+            "detail": "必须保留的独立条件",
+            "skill": "武圣",
+            "official": {
+              "richMain": "是否发动<font color=\"#A3F030\">“武圣”</font>",
+              "entryId": 33,
+              "field": "AskTip"
+            }
+          }
+        ],
+        [
+          33,
+          "chooseControl",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          33,
+          "chooseControl",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          33,
+          "chooseControl",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          33,
+          "chooseButton",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          33,
+          "chooseButton",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          33,
+          "chooseButton",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          33,
+          "chooseCard",
+          "custom_overwritten",
+          {
+            "main": "请选择1张红牌和【杀】的目标",
+            "detail": "必须保留的独立条件",
+            "skill": "武圣",
+            "official": {
+              "richMain": "请选择1张红牌和<font color=#FFD979>【杀】</font>的目标",
+              "entryId": 33,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          33,
+          "chooseTarget",
+          "custom_overwritten",
+          {
+            "main": "请选择1张红牌和【杀】的目标",
+            "detail": "必须保留的独立条件",
+            "skill": "武圣",
+            "official": {
+              "richMain": "请选择1张红牌和<font color=#FFD979>【杀】</font>的目标",
+              "entryId": 33,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          33,
+          "chooseCardTarget",
+          "custom_overwritten",
+          {
+            "main": "请选择1张红牌和【杀】的目标",
+            "detail": "必须保留的独立条件",
+            "skill": "武圣",
+            "official": {
+              "richMain": "请选择1张红牌和<font color=#FFD979>【杀】</font>的目标",
+              "entryId": 33,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          33,
+          "chooseToDiscard",
+          "lost_skill",
+          "请弃置1张牌"
+        ],
+        [
+          33,
+          "chooseToDiscard",
+          "empty_lost_skill",
+          "请弃置1张牌"
+        ],
+        [
+          33,
+          "chooseToUse",
+          "custom_overwritten",
+          {
+            "main": "请选择1张红牌和【杀】的目标",
+            "detail": "必须保留的独立条件",
+            "skill": "武圣",
+            "official": {
+              "richMain": "请选择1张红牌和<font color=#FFD979>【杀】</font>的目标",
+              "entryId": 33,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          34,
+          "chooseBool",
+          "custom_overwritten",
+          {
+            "main": "是否发动“咆哮”",
+            "detail": "必须保留的独立条件",
+            "skill": "咆哮",
+            "official": {
+              "richMain": "是否发动<font color=\"#A3F030\">“咆哮”</font>",
+              "entryId": 34,
+              "field": "AskTip"
+            }
+          }
+        ],
+        [
+          34,
+          "chooseControl",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseControl",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseControl",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseButton",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseButton",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseButton",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseCard",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseCard",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseTarget",
+          "lost_skill",
+          "请选择1名角色"
+        ]
+      ]
+    },
+    "errors": []
+  },
+  "onlineUI": {
+    "liangzhu": {
+      "main": "是否发动【良助】？",
+      "detail": "",
+      "native": "是否发动【良助】？",
+      "nativeDetail": "当一名角色于其出牌阶段内回复体力时，你可以选择一项：1、摸一张牌；2、令该角色摸两张牌。"
+    },
+    "caochun": {
+      "main": "选择杀【◈】的目标",
+      "detail": "",
+      "native": "选择杀【◈】的目标",
+      "nativeDetail": ""
+    },
+    "custom": {
+      "main": "缮甲：只能选择距离为1的角色",
+      "detail": "",
+      "native": "缮甲：只能选择距离为1的角色",
+      "nativeDetail": ""
+    },
+    "ordinaryVirtual": {
+      "main": "选择杀【◈】的目标",
+      "detail": "",
+      "native": "选择杀【◈】的目标",
+      "nativeDetail": ""
+    },
+    "stageCases": {
+      "targetAfterCost": {
+        "main": "请选择1张红牌和【杀】的目标",
+        "detail": "",
+        "skill": "武圣",
+        "official": {
+          "richMain": "请选择1张红牌和<font color=#FFD979>【杀】</font>的目标",
+          "entryId": 33,
+          "field": "ActiveTip"
+        }
+      },
+      "cardBeforeTarget": {
+        "main": "请选择1张手牌和1名受伤角色",
+        "detail": "",
+        "skill": "青囊",
+        "official": {
+          "richMain": "请选择1张手牌和1名受伤角色",
+          "entryId": 65,
+          "field": "ActiveTip"
+        }
+      },
+      "modifiedTargetCount": {
+        "main": "请选择2名角色",
+        "detail": "",
+        "skill": "节命",
+        "official": null
+      },
+      "discardInsteadOfUse": {
+        "main": "请弃置2张牌",
+        "detail": "",
+        "skill": "武圣",
+        "official": null
+      },
+      "noCardCost": {
+        "main": "请选择0张牌和1名角色",
+        "detail": "",
+        "skill": "良助",
+        "official": null
+      },
+      "noTargetCost": {
+        "main": "请选择1张牌和0名角色",
+        "detail": "",
+        "skill": "良助",
+        "official": null
+      },
+      "zeroCostTemplate": {
+        "main": "请选择1张手牌和1名受伤角色",
+        "detail": "",
+        "skill": "青囊",
+        "official": {
+          "richMain": "请选择1张手牌和1名受伤角色",
+          "entryId": 65,
+          "field": "ActiveTip"
+        }
+      },
+      "unlimitedTargets": {
+        "main": "请选择1名角色",
+        "detail": "",
+        "skill": "良助",
+        "official": null
+      },
+      "multipleVirtual": {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "native": "请选择一名角色",
+        "nativeDetail": "视为使用一张【杀】"
+      }
+    },
+    "loadout": {
+      "name": "缮甲",
+      "id": 1762,
+      "itemId": 7161
+    },
+    "audit": {
+      "entries": 3732,
+      "checked": 27360,
+      "official": 6206,
+      "fallback": 21154,
+      "failureCount": 54332,
+      "failures": [
+        [
+          31,
+          "chooseBool",
+          "custom_overwritten",
+          {
+            "main": "是否发动“仁德”",
+            "detail": "必须保留的独立条件",
+            "skill": "仁德",
+            "official": {
+              "richMain": "是否发动<font color=\"#A3F030\">“仁德”</font>",
+              "entryId": 31,
+              "field": "AskTip"
+            }
+          }
+        ],
+        [
+          31,
+          "chooseControl",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          31,
+          "chooseControl",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          31,
+          "chooseControl",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          31,
+          "chooseButton",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          31,
+          "chooseButton",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          31,
+          "chooseButton",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          31,
+          "chooseCard",
+          "custom_overwritten",
+          {
+            "main": "请选任意张手牌交给1名角色",
+            "detail": "必须保留的独立条件",
+            "skill": "仁德",
+            "official": {
+              "richMain": "请选任意张手牌交给1名角色",
+              "entryId": 31,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          31,
+          "chooseTarget",
+          "lost_skill",
+          "请选择1名角色"
+        ],
+        [
+          31,
+          "chooseTarget",
+          "empty_lost_skill",
+          "请选择1名角色"
+        ],
+        [
+          31,
+          "chooseCardTarget",
+          "custom_overwritten",
+          {
+            "main": "请选任意张手牌交给1名角色",
+            "detail": "必须保留的独立条件",
+            "skill": "仁德",
+            "official": {
+              "richMain": "请选任意张手牌交给1名角色",
+              "entryId": 31,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          31,
+          "chooseToDiscard",
+          "lost_skill",
+          "请弃置1张牌"
+        ],
+        [
+          31,
+          "chooseToDiscard",
+          "empty_lost_skill",
+          "请弃置1张牌"
+        ],
+        [
+          31,
+          "chooseToUse",
+          "custom_overwritten",
+          {
+            "main": "请选任意张手牌交给1名角色",
+            "detail": "必须保留的独立条件",
+            "skill": "仁德",
+            "official": {
+              "richMain": "请选任意张手牌交给1名角色",
+              "entryId": 31,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          32,
+          "chooseBool",
+          "custom_overwritten",
+          {
+            "main": "是否发动“激将”",
+            "detail": "必须保留的独立条件",
+            "skill": "激将",
+            "official": {
+              "richMain": "是否发动<font color=\"#A3F030\">“激将”</font>",
+              "entryId": 32,
+              "field": "AskTip"
+            }
+          }
+        ],
+        [
+          32,
+          "chooseControl",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          32,
+          "chooseControl",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          32,
+          "chooseControl",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          32,
+          "chooseButton",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          32,
+          "chooseButton",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          32,
+          "chooseButton",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          32,
+          "chooseCard",
+          "custom_overwritten",
+          {
+            "main": "请选择要【杀】的角色，蜀将可替你出【杀】",
+            "detail": "必须保留的独立条件",
+            "skill": "激将",
+            "official": {
+              "richMain": "请选择要<font color=#FFD979>【杀】</font>的角色，蜀将可替你出<font color=#FFD979>【杀】</font>",
+              "entryId": 32,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          32,
+          "chooseTarget",
+          "custom_overwritten",
+          {
+            "main": "请选择要【杀】的角色，蜀将可替你出【杀】",
+            "detail": "必须保留的独立条件",
+            "skill": "激将",
+            "official": {
+              "richMain": "请选择要<font color=#FFD979>【杀】</font>的角色，蜀将可替你出<font color=#FFD979>【杀】</font>",
+              "entryId": 32,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          32,
+          "chooseCardTarget",
+          "custom_overwritten",
+          {
+            "main": "请选择要【杀】的角色，蜀将可替你出【杀】",
+            "detail": "必须保留的独立条件",
+            "skill": "激将",
+            "official": {
+              "richMain": "请选择要<font color=#FFD979>【杀】</font>的角色，蜀将可替你出<font color=#FFD979>【杀】</font>",
+              "entryId": 32,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          32,
+          "chooseToDiscard",
+          "lost_skill",
+          "请弃置1张牌"
+        ],
+        [
+          32,
+          "chooseToDiscard",
+          "empty_lost_skill",
+          "请弃置1张牌"
+        ],
+        [
+          32,
+          "chooseToUse",
+          "custom_overwritten",
+          {
+            "main": "请选择要【杀】的角色，蜀将可替你出【杀】",
+            "detail": "必须保留的独立条件",
+            "skill": "激将",
+            "official": {
+              "richMain": "请选择要<font color=#FFD979>【杀】</font>的角色，蜀将可替你出<font color=#FFD979>【杀】</font>",
+              "entryId": 32,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          33,
+          "chooseBool",
+          "custom_overwritten",
+          {
+            "main": "是否发动“武圣”",
+            "detail": "必须保留的独立条件",
+            "skill": "武圣",
+            "official": {
+              "richMain": "是否发动<font color=\"#A3F030\">“武圣”</font>",
+              "entryId": 33,
+              "field": "AskTip"
+            }
+          }
+        ],
+        [
+          33,
+          "chooseControl",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          33,
+          "chooseControl",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          33,
+          "chooseControl",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          33,
+          "chooseButton",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          33,
+          "chooseButton",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          33,
+          "chooseButton",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          33,
+          "chooseCard",
+          "custom_overwritten",
+          {
+            "main": "请选择1张红牌和【杀】的目标",
+            "detail": "必须保留的独立条件",
+            "skill": "武圣",
+            "official": {
+              "richMain": "请选择1张红牌和<font color=#FFD979>【杀】</font>的目标",
+              "entryId": 33,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          33,
+          "chooseTarget",
+          "custom_overwritten",
+          {
+            "main": "请选择1张红牌和【杀】的目标",
+            "detail": "必须保留的独立条件",
+            "skill": "武圣",
+            "official": {
+              "richMain": "请选择1张红牌和<font color=#FFD979>【杀】</font>的目标",
+              "entryId": 33,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          33,
+          "chooseCardTarget",
+          "custom_overwritten",
+          {
+            "main": "请选择1张红牌和【杀】的目标",
+            "detail": "必须保留的独立条件",
+            "skill": "武圣",
+            "official": {
+              "richMain": "请选择1张红牌和<font color=#FFD979>【杀】</font>的目标",
+              "entryId": 33,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          33,
+          "chooseToDiscard",
+          "lost_skill",
+          "请弃置1张牌"
+        ],
+        [
+          33,
+          "chooseToDiscard",
+          "empty_lost_skill",
+          "请弃置1张牌"
+        ],
+        [
+          33,
+          "chooseToUse",
+          "custom_overwritten",
+          {
+            "main": "请选择1张红牌和【杀】的目标",
+            "detail": "必须保留的独立条件",
+            "skill": "武圣",
+            "official": {
+              "richMain": "请选择1张红牌和<font color=#FFD979>【杀】</font>的目标",
+              "entryId": 33,
+              "field": "ActiveTip"
+            }
+          }
+        ],
+        [
+          34,
+          "chooseBool",
+          "custom_overwritten",
+          {
+            "main": "是否发动“咆哮”",
+            "detail": "必须保留的独立条件",
+            "skill": "咆哮",
+            "official": {
+              "richMain": "是否发动<font color=\"#A3F030\">“咆哮”</font>",
+              "entryId": 34,
+              "field": "AskTip"
+            }
+          }
+        ],
+        [
+          34,
+          "chooseControl",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseControl",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseControl",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseButton",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseButton",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseButton",
+          "wrong_control_action",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseCard",
+          "lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseCard",
+          "empty_lost_skill",
+          "请选择1张牌"
+        ],
+        [
+          34,
+          "chooseTarget",
+          "lost_skill",
+          "请选择1名角色"
+        ]
+      ]
+    },
+    "errors": []
+  }
+}

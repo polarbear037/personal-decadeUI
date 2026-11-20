@@ -1,0 +1,30 @@
+{
+  "position": "0",
+  "classes": "player fullskin d-skin",
+  "rect": {
+    "x": 1053.2421875,
+    "y": 458.90625,
+    "width": 120,
+    "height": 166.1484375
+  },
+  "dpr": 2,
+  "productionTransform": "matrix(1.05, 0, 0, 1.05, -90.3695, -115.934)",
+  "samples": [
+    {
+      "scale": 0,
+      "actual": "matrix(0, 0, 0, 0, -90.3695, -115.934)"
+    },
+    {
+      "scale": 1,
+      "actual": "matrix(1, 0, 0, 1, -90.3695, -115.934)"
+    },
+    {
+      "scale": 1.05,
+      "actual": "matrix(1.05, 0, 0, 1.05, -90.3695, -115.934)"
+    },
+    {
+      "scale": 2,
+      "actual": "matrix(2, 0, 0, 2, -90.3695, -115.934)"
+    }
+  ]
+}

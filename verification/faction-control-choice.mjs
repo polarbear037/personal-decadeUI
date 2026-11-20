@@ -96,6 +96,18 @@ function makeEvent({ controls = ["wei", "shu", "cancel2"], prompt = "", parent =
 	assert.equal(event.result.index, 1);
 }
 
+for (const style of ["othersOff"]) {
+	for (const result of [{ bool: true, links: [["", "", "group_shu"]] }, { bool: false, links: [] }]) {
+		const harness = createHarness(style, "doudizhu");
+		const event = makeEvent({ parent: { name: "_shengroup_choice" } });
+		await harness.lib.element.content.chooseControl[0](event, {}, harness.makePlayer(result));
+		assert.equal(harness.calls.chooseButton.length, 1, "一将成名接入势力选择");
+		assert.equal(event.result.control, result.bool ? "shu" : "cancel2");
+		assert.equal(event.result.index, result.bool ? 1 : 2);
+		assert.equal(event.finishCount, 1);
+	}
+}
+
 for (const testCase of [
 	{ name: "非onlineUI样式", style: "on", parent: { skill: "_shengroup_choice" } },
 	{ name: "AI或联机来源", style: "onlineUI", mine: false, parent: { skill: "_shengroup_choice" } },
@@ -103,6 +115,8 @@ for (const testCase of [
 	{ name: "非势力控件", style: "onlineUI", parent: { skill: "_shengroup_choice" }, controls: ["yes", "no"] },
 	{ name: "choiceList事件", style: "onlineUI", parent: { skill: "_shengroup_choice" }, extra: { choiceList: ["甲", "乙"] } },
 	{ name: "sortcard事件", style: "onlineUI", parent: { skill: "_shengroup_choice" }, extra: { sortcard: [{}] } },
+	{ name: "一将AI或联机来源", style: "othersOff", mine: false, parent: { skill: "_shengroup_choice" } },
+	{ name: "一将普通技能势力控件", style: "othersOff", parent: { skill: "some_other_skill" } },
 ]) {
 	const harness = createHarness(testCase.style, testCase.mode || "identity");
 	const event = makeEvent(testCase);

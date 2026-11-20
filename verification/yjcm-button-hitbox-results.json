@@ -1,0 +1,73 @@
+{
+  "cases": [
+    {
+      "zoom": 1,
+      "action": "normal",
+      "edgeClicks": 12,
+      "moveInside": true,
+      "moveOutsideCancelled": true
+    },
+    {
+      "zoom": 1,
+      "action": "window",
+      "edgeClicks": 12,
+      "moveInside": true,
+      "moveOutsideCancelled": true
+    },
+    {
+      "zoom": 1,
+      "action": "multi",
+      "edgeClicks": 12,
+      "moveInside": true,
+      "moveOutsideCancelled": true
+    },
+    {
+      "zoom": 1.5,
+      "action": "normal",
+      "edgeClicks": 12,
+      "moveInside": true,
+      "moveOutsideCancelled": true
+    },
+    {
+      "zoom": 1.5,
+      "action": "window",
+      "edgeClicks": 12,
+      "moveInside": true,
+      "moveOutsideCancelled": true
+    },
+    {
+      "zoom": 1.5,
+      "action": "multi",
+      "edgeClicks": 12,
+      "moveInside": true,
+      "moveOutsideCancelled": true
+    },
+    {
+      "standalone": false,
+      "cancelEdge": true,
+      "synchronizedTransition": true
+    },
+    {
+      "standalone": true,
+      "cancelEdge": true,
+      "synchronizedTransition": true
+    },
+    {
+      "style": "onlineUI",
+      "noHitLayer": true
+    },
+    {
+      "style": "on",
+      "noHitLayer": true
+    }
+  ],
+  "errors": [],
+  "reproducedOldMiss": true,
+  "reproducedTransitionMismatch": true,
+  "fastConfirmationClicks": 4,
+  "touch": {
+    "edge": true,
+    "cancel": true
+  },
+  "disabled": true
+}

@@ -1,0 +1,153 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "decoded_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28",
+    "packed_cache_matches_apk": true
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965"
+  ],
+  "modules": [
+    {
+      "member": "app.view.game.GameSelfSeatUi",
+      "sha256": "e7c812fcb76fc79acfa3faf81ba1715cf3ee137737cc3a424f0f4d2209d317bf"
+    },
+    {
+      "member": "app.view.game.GameTimeBar",
+      "sha256": "d7a3da1437335cfdc3d3fb850eaa86667fb19f3673f158eec87676fcd96e183f"
+    },
+    {
+      "member": "app.ui.TimeBar",
+      "sha256": "fa2f8fd9559d38408cad2c46579fc22bde2da346fe3d48730c04d3c15ad4e5ae"
+    },
+    {
+      "member": "app.ui.ui",
+      "sha256": "bd610753d835f471559ef726209dd61f2202fc449574d3bea6aaf5b88031fc1c"
+    },
+    {
+      "member": "framework.display",
+      "sha256": "83350b660ba584d72fcd96b13dd8ad8765e9961c781cbca1010af69dc07fadd8"
+    }
+  ],
+  "source_frame": {
+    "plist": "assets/res/new/tex/plist/gameinfo.plist",
+    "plist_sha256": "2d23c6a2d9d8254115ce892f1895db16cd6f9fb30e6dd512ab835e8b6c4b7731",
+    "frame": "xf_newTimeBar_3.png",
+    "metadata": {
+      "frame": "{{120,842},{501,17}}",
+      "offset": "{0,0}",
+      "rotated": true,
+      "sourceColorRect": "{{0,0},{501,17}}",
+      "sourceSize": "{501,17}"
+    }
+  },
+  "observations": [
+    "GameSelfSeatUi.createChildren 0.120 PC310..348: GameTimeBar(bar=#xf_newTimeBar_3.png,bgScale9=new_timebar_bg_scale9), CENTER_BOTTOM(width/2,195), setScaleX(ui.factorX(1)).",
+    "TimeBar.ctor 0.1 PC29..39 obtains width/height from ui.getFrameSize(barFrame). Frame metadata is 501x17.",
+    "app.ui.ui.factorX 0.1 returns input * display.FactorX; framework.display.resetScreen assigns FactorX=USE_WIDTH/DESIGN_WIDTH, DESIGN_WIDTH1334.",
+    "Initial501-width implementation used GameSelfSeatUi. The current user overlay requests the wider LuckCardView582-width variant; see restoration for its source and inference boundary.",
+    "Current restoration uses original gold/red textures with native-style clipping, while retaining local13px container height, configured vertical position, interval,449 ticks and warning threshold. Other progress styles retain their previous rendering."
+  ],
+  "scope": "Static official package/Lua inspection plus local noname browser validation; not official-client runtime or current Electron click verification.",
+  "validation": {
+    "command": "node verification/yjcm-progress-browser.cjs",
+    "results": "verification/yjcm-progress-results.json",
+    "page_errors": 0,
+    "cases": [
+      "1280/1920 and zoom1/1.25 geometry and centering",
+      "full/half/warning-boundary texture cropping",
+      "449-callback removal and200ms configuration",
+      "normal and isolated progress paths",
+      "styles2/3/5 and onlineUI isolation",
+      "real10ms interval advances and dispose stops timer"
+    ],
+    "official_client_runtime": false,
+    "electron_live": false
+  },
+  "restoration": {
+    "rea_inventory": "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "rea_summary": "ev_9c5d0ada064eb4df0e69550e647832f45a7c91a83828969b6e7b0219840bc0e9",
+    "observed": "LuckCardView.createChildren0.11 uses GameTimeBar(bar=#xf_newTimeBar_2.png,bg=#xf_newTimeBar_bg_2.png), setScaleX(ui.factorX(1)). The bar frame is582x17; GameSelfSeatUi uses the distinct501x17 _3 variant. framework.cc.ui.UILoadingBar.setPercent0.2 clips viewRect width by percent/100 instead of rescaling the texture.",
+    "user_reference_inference": "The supplied redraw overlay shows an approximately1.16 width ratio, consistent with582/501. Apply the requested wider582 variant to progress style4 in both normal and isolated paths.",
+    "timing": "Retain local449 callbacks, configured interval and existing warning i.data<=395/3. No claim that this warning threshold matches the official GameTimeBar: its inspected setPercent delegates to UILoadingBar without a red-frame switch. The20% switch in TimeBarXf belongs to a separate selection widget and is not copied.",
+    "texture_conversion": "Read APK ETC1 color and alpha-red channel, undo atlas rotation, preserve582x17 source pixels; no recoloring/resizing. Render at existing12px height and clip the full-width image as countdown decreases.",
+    "assets": [
+      {
+        "plist": "assets/res/new/tex/plist/gameinfo.plist",
+        "plist_sha256": "2d23c6a2d9d8254115ce892f1895db16cd6f9fb30e6dd512ab835e8b6c4b7731",
+        "texture_sha256": "6ff05a3dbacc2a1cef5e05b67cc24490133dfffd7b9d3aeac9f3eb06744bc0f5",
+        "alpha_sha256": "91c659e96274aa2d2ea762b78eb94a89fa0cebbdca610e1fe770dc0a55a98be3",
+        "frame": "xf_newTimeBar_2.png",
+        "metadata": {
+          "frame": "{{83,233},{582,17}}",
+          "offset": "{0,0}",
+          "rotated": false,
+          "sourceColorRect": "{{0,0},{582,17}}",
+          "sourceSize": "{582,17}"
+        },
+        "destination": "image/ui/progress/xinsha/xf_newTimeBar_2.png",
+        "sha256": "4624cc2a60687876e17f3827cae40f7a3286d0fa955fd3819e40318f87ef9c08"
+      },
+      {
+        "plist": "assets/res/new/tex/plist/gameinfo.plist",
+        "plist_sha256": "2d23c6a2d9d8254115ce892f1895db16cd6f9fb30e6dd512ab835e8b6c4b7731",
+        "texture_sha256": "6ff05a3dbacc2a1cef5e05b67cc24490133dfffd7b9d3aeac9f3eb06744bc0f5",
+        "alpha_sha256": "91c659e96274aa2d2ea762b78eb94a89fa0cebbdca610e1fe770dc0a55a98be3",
+        "frame": "xf_newTimeBar_red_2.png",
+        "metadata": {
+          "frame": "{{692,67},{582,17}}",
+          "offset": "{0,0}",
+          "rotated": false,
+          "sourceColorRect": "{{0,0},{582,17}}",
+          "sourceSize": "{582,17}"
+        },
+        "destination": "image/ui/progress/xinsha/xf_newTimeBar_red_2.png",
+        "sha256": "6b29aacdf10b09038f292ad596b9e233a644aea9a191e6138fd62170832db7d7"
+      }
+    ],
+    "validation": {
+      "command": "node verification/yjcm-progress-browser.cjs",
+      "results": "verification/yjcm-progress-results.json",
+      "page_errors": 0,
+      "cases": [
+        "1280/1920 and zoom1/1.25 geometry and centering",
+        "full/half/warning-boundary texture cropping",
+        "449-callback removal and200ms configuration",
+        "normal and isolated progress paths",
+        "styles2/3/5 and onlineUI isolation",
+        "real10ms interval advances and dispose stops timer"
+      ],
+      "official_client_runtime": false,
+      "electron_live": false
+    },
+    "module_hashes": {
+      "app.view.game.LuckCardView": "786279068c69c425eb4b8b7e2e8cae90d47d6aba9f31c34357f33a164baf9239",
+      "framework.cc.ui.UILoadingBar": "3e2f7e974c3c092498a84c08a09f888292428d46f11aee3bf956b6859cf98868",
+      "app.ui.TimeBarXf": "a6d04a76688c59f438d95a8524c05977aae2bfb2de99f561dbde22f61a024f60"
+    }
+  },
+  "validation_before_wider_restoration": {
+    "command": "node verification/xinsha-native-menu-layer-browser.cjs",
+    "progress_cases": 4,
+    "viewports": [
+      1280,
+      1920
+    ],
+    "zoom": [
+      1,
+      1.25
+    ],
+    "original_width_formula": "501 * clamp(windowLogicalWidth/unit - 2*safeWidth,1334,1750) / 1334 * unit",
+    "checks": [
+      "original width and viewport centering",
+      "fill remains full width after resizing",
+      "449 countdown callbacks remove the node on the same final step",
+      "200ms configured interval retained",
+      "styles2/3/5 initial and tick widths unchanged"
+    ],
+    "page_errors": 0,
+    "current_electron_click_validation": false,
+    "current_electron_ui_tool_error": "failed to activate captured window"
+  }
+}

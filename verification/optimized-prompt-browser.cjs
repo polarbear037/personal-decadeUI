@@ -4,6 +4,8 @@ const { bootstrap, server, chromium, assert, script } = require('../../雷的ol/
 
 async function installNativeHarness(page, origin, cardPrompt = true) {
   await bootstrap(page, origin, false);
+  await page.addStyleTag({ url: `${origin}/extension/十周年UI/src/styles/dialog-online.css` });
+  await page.addStyleTag({ url: `${origin}/extension/十周年UI/src/styles/skill-prompt.css` });
   await page.evaluate(() => {
     if (!Array.prototype.remove) Array.prototype.remove = function (item) { const index = this.indexOf(item); if (index >= 0) this.splice(index, 1); return item; };
     HTMLDivElement.prototype.show = function () { this.style.display = ''; this.classList.remove('hidden'); return this; };
@@ -26,6 +28,7 @@ async function installNativeHarness(page, origin, cardPrompt = true) {
       return node;
     };
     lib.config.extension_十周年UI_optimizePrompt = true;
+    lib.config.extension_十周年UI_simplifySkillPrompt = false;
     lib.skill = { test_skill: {}, named_skill: {} };
     game.me = { id: 'local' };
     window.decadeUI = { statics: { handTips: [] }, element: { create: (name, parent) => ui.create.div(name, parent) } };
@@ -35,6 +38,7 @@ async function installNativeHarness(page, origin, cardPrompt = true) {
     window.getBaseUiCreateArena = () => null;
     window.getBaseUiCreateButton = () => null;
     window.applyOnlineFactionDialog = value => value;
+    window.applyXinshaFactionDialog = value => value;
     window.applyFactionDialogInteraction = value => value;
     window.applyHuarenDialogInteraction = value => value;
     window.prepareDialogOlOpen = () => null;
@@ -60,12 +64,19 @@ async function installNativeHarness(page, origin, cardPrompt = true) {
   await page.addScriptTag({ content: script('extension/十周年UI/src/ui/handtip.js', 'window.showHandTip=t;') });
   await page.addScriptTag({ content: script('extension/十周年UI/src/ui/officialPromptText.js', 'window.officialPromptText=officialPromptText;') });
   await page.addScriptTag({ content: script('extension/十周年UI/src/ui/officialSkillPromptData.js', 'window.officialSkillPrompts=officialSkillPrompts;') });
+  await page.addScriptTag({ content: script('extension/十周年UI/src/ui/promptStyle.js', 'Object.assign(window,{optimizePromptKey,normalizePromptStyle,getOptimizedPromptStyle,migrateOptimizedPromptConfig});') });
+  await page.addScriptTag({ content: script('extension/十周年UI/src/ui/xinshaPlayerCardPrompt.js', 'window.getXinshaPlayerCardPrompt=getXinshaPlayerCardPrompt;') });
   await page.addScriptTag({ content: script('extension/十周年UI/src/ui/officialPlayerPopup.js', 'Object.assign(window,{isOfficialPlayerPopup,syncOfficialPlayerPopups});') });
   await page.addScriptTag({ content: script('extension/十周年UI/src/ui/officialPromptBridge.js', 'Object.assign(window,{getOfficialScenePrompt,findOfficialPromptEntry,formatOfficialTemplate});') });
-  await page.addScriptTag({ content: script('extension/十周年UI/src/ui/officialPrompt.js', 'window.officialPrompt={officialColors,officialText,plainPrompt,skillNameForPrompt,buildOfficialPrompt,renderOfficialPrompt};') });
+  await page.addScriptTag({ content: script('extension/十周年UI/src/ui/officialPrompt.js', 'window.officialPrompt={officialColors,officialText,plainPrompt,skillNameForPrompt,selectionRange,cardForPrompt,targetRangeForPrompt,buildOfficialPrompt,renderOfficialPrompt};') });
   await page.evaluate(() => Object.assign(window, officialPrompt));
+  await page.addScriptTag({ content: script('extension/十周年UI/src/ui/xinshaPromptData.js', 'Object.assign(window,{xinshaPromptEntries,xinshaPhasePrompt});') });
+  await page.addScriptTag({ content: script('extension/十周年UI/src/ui/xinshaPrompt.js', 'Object.assign(window,{xinshaPromptColors,findXinshaPromptEntry,buildXinshaPrompt,renderXinshaPrompt});') });
+  await page.addScriptTag({ content: script('extension/十周年UI/src/ui/simplifiedSkillPrompt.js', 'Object.assign(window,{isSkillPromptSimplified,getSimplifiedSkillPrompt});') });
+  await page.addScriptTag({ content: script('extension/十周年UI/src/ui/dialog-ol-layout.js', 'Object.assign(window,{syncDialogOlLayoutMarker});') });
   await page.addScriptTag({ content: script('extension/十周年UI/src/ui/optimizedPrompt.js', 'window.optimizedPrompt={configKey,addOptimizedPrompt,addOptimizedPromptText,prepareOptimizedPrompt,refreshOptimizedPrompt,closeOptimizedPrompt,clearOptimizedPrompts,initOptimizedPromptHooks};') });
   await page.addScriptTag({ content: script('extension/十周年UI/src/overrides/ui/create.js', 'window.uiCreateDialog=s;') });
+  await page.addScriptTag({ content: script('extension/十周年UI/src/ui/dialog-card-animations-xinsha.js', 'window.xinshaDialogCardAnimations=xinshaDialogCardAnimations;') });
   await page.addScriptTag({ content: script('extension/十周年UI/src/overrides/dialog.js', 'window.applyDialogOverrides=t;window.dialogOpen=s;') });
   await page.evaluate(cardPrompt => {
     const makeHook = () => ({ handlers: [], add(handler) { this.handlers.push(handler); } });

@@ -2,8 +2,7 @@ import { lib, _status, get, ui, game } from "noname";
 import { isHandCardAvailable } from "../ui/handcard-selection.js";
 function e() {
 	lib.hooks.checkCard.push(function (card, event) {
-		if (lib.config.extension_十周年UI_newDecadeStyle !== "onlineUI") return;
-		card.classList.toggle("dui-handcard-available", card.classList.contains("selectable") || card.classList.contains("selected") || isHandCardAvailable(card, event));
+		card.classList.toggle("dui-handcard-available", !!(card.classList.contains("selectable") || card.classList.contains("selected") || isHandCardAvailable(card, event)));
 	});
 	lib.hooks.uncheckCard.push(function (card) {
 		card.classList.remove("dui-handcard-available");
@@ -28,8 +27,8 @@ function e() {
 		lib.hooks.checkEnd.push(function () {
 			if ("chooseToUse" !== _status.event?.name || "phase" !== _status.event.type || "cancel" !== ui.confirm?.lastChild.link) return;
 			const e = lib.config.extension_十周年UI_newDecadeStyle;
-			let t = "othersOff" !== e || "on" === e ? "回合结束" : "结束出牌";
-			("onlineUI" === e ? (t = "取消") : _status.event.skill || (ui.selected?.cards ?? []).length > 0 ? (t = "off" === e ? `<img draggable='false' src=${lib.assetURL}extension/十周年UI/ui/assets/lbtn/uibutton/QX.png>` : "取消") : "off" === e && (t = `<img draggable='false' src=${lib.assetURL}extension/十周年UI/ui/assets/lbtn/uibutton/jscp.png>`), (ui.confirm.lastChild.innerHTML = t));
+			let t = "回合结束";
+			("onlineUI" === e ? (t = "取消") : _status.event.skill || (ui.selected?.cards ?? []).length > 0 || (e === "othersOff" && (ui.selected.targets.length || ui.selected.buttons.length)) ? (t = "off" === e ? `<img draggable='false' src=${lib.assetURL}extension/十周年UI/ui/assets/lbtn/uibutton/QX.png>` : "取消") : "off" === e && (t = `<img draggable='false' src=${lib.assetURL}extension/十周年UI/ui/assets/lbtn/uibutton/jscp.png>`), (ui.confirm.lastChild.innerHTML = t));
 			const n = ui.confirm.custom;
 			ui.confirm.custom = function (...args) {
 				("function" == typeof n && n(...args), ui.cardDialog && (ui.cardDialog.close(), delete ui.cardDialog));

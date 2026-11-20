@@ -1,0 +1,185 @@
+{
+  "on": {
+    "style": "on",
+    "players": 8,
+    "elapsed": 79.59999996423721,
+    "counts": {
+      "addSkill": 112,
+      "addSkillTrigger": 112,
+      "addSkillBlocker": 112,
+      "addTip": 112,
+      "updateSkillControl": 448,
+      "showCards": 1792,
+      "removeSkill": 112,
+      "removeTip": 112,
+      "removeSkillTrigger": 112
+    },
+    "times": {
+      "addSkillBlocker": 0.30000001192092896,
+      "addTip": 0.19999998807907104,
+      "updateSkillControl": 15.699999928474426,
+      "addSkillTrigger": 5.800000011920929,
+      "showCards": 11.5,
+      "addSkill": 22.900000154972076,
+      "removeTip": 0.40000003576278687,
+      "removeSkillTrigger": 5.000000238418579,
+      "removeSkill": 29.70000022649765
+    },
+    "choice": "chooseTarget",
+    "aiTargets": [
+      0,
+      7
+    ],
+    "leakedSeal": false,
+    "simulated": {
+      "blocked": true,
+      "tip": false
+    },
+    "formal": {
+      "blocked": true,
+      "tip": "非锁定技失效"
+    },
+    "removed": {
+      "blocked": false,
+      "tip": false
+    },
+    "ordinaryTip": "普通提示",
+    "errors": [],
+    "engine": {
+      "stage": "done",
+      "started": true,
+      "afterDraw": 3,
+      "maxHp": 3,
+      "computeStart": 4466,
+      "sha": true,
+      "sealedAtSha": 2,
+      "tipsAtSha": 2,
+      "sealed": 2,
+      "formalTips": 2,
+      "leakedSeal": false,
+      "errors": []
+    }
+  },
+  "othersOff": {
+    "style": "othersOff",
+    "players": 8,
+    "elapsed": 60.10000002384186,
+    "counts": {
+      "addSkill": 112,
+      "addSkillTrigger": 112,
+      "addSkillBlocker": 112,
+      "addTip": 112,
+      "updateSkillControl": 448,
+      "showCards": 1792,
+      "removeSkill": 112,
+      "removeTip": 112,
+      "removeSkillTrigger": 112
+    },
+    "times": {
+      "addSkillBlocker": 0,
+      "addTip": 0.30000001192092896,
+      "updateSkillControl": 11.70000010728836,
+      "addSkillTrigger": 4.600000083446503,
+      "showCards": 9.999999821186066,
+      "addSkill": 19.100000202655792,
+      "removeTip": 0.19999998807907104,
+      "removeSkillTrigger": 3.1000000834465027,
+      "removeSkill": 20.399999976158142
+    },
+    "choice": "chooseTarget",
+    "aiTargets": [
+      0,
+      7
+    ],
+    "leakedSeal": false,
+    "simulated": {
+      "blocked": true,
+      "tip": false
+    },
+    "formal": {
+      "blocked": true,
+      "tip": "非锁定技失效"
+    },
+    "removed": {
+      "blocked": false,
+      "tip": false
+    },
+    "ordinaryTip": "普通提示",
+    "errors": [],
+    "engine": {
+      "stage": "done",
+      "started": true,
+      "afterDraw": 3,
+      "maxHp": 3,
+      "computeStart": 4709.299999952316,
+      "sha": true,
+      "sealedAtSha": 2,
+      "tipsAtSha": 2,
+      "sealed": 2,
+      "formalTips": 2,
+      "leakedSeal": false,
+      "errors": []
+    }
+  },
+  "onlineUI": {
+    "style": "onlineUI",
+    "players": 8,
+    "elapsed": 74.30000001192093,
+    "counts": {
+      "addSkill": 112,
+      "addSkillTrigger": 112,
+      "addSkillBlocker": 112,
+      "addTip": 112,
+      "updateSkillControl": 448,
+      "showCards": 1792,
+      "removeSkill": 112,
+      "removeTip": 112,
+      "removeSkillTrigger": 112
+    },
+    "times": {
+      "addSkillBlocker": 0.20000004768371582,
+      "addTip": 0,
+      "updateSkillControl": 15.800000071525574,
+      "addSkillTrigger": 5.400000035762787,
+      "showCards": 10.400000214576721,
+      "addSkill": 23.40000009536743,
+      "removeTip": 0.19999992847442627,
+      "removeSkillTrigger": 4.5,
+      "removeSkill": 26.30000001192093
+    },
+    "choice": "chooseTarget",
+    "aiTargets": [
+      0,
+      7
+    ],
+    "leakedSeal": false,
+    "simulated": {
+      "blocked": true,
+      "tip": false
+    },
+    "formal": {
+      "blocked": true,
+      "tip": "非锁定技失效"
+    },
+    "removed": {
+      "blocked": false,
+      "tip": false
+    },
+    "ordinaryTip": "普通提示",
+    "errors": [],
+    "engine": {
+      "stage": "done",
+      "started": true,
+      "afterDraw": 3,
+      "maxHp": 3,
+      "computeStart": 4423.600000023842,
+      "sha": true,
+      "sealedAtSha": 2,
+      "tipsAtSha": 2,
+      "sealed": 2,
+      "formalTips": 2,
+      "leakedSeal": false,
+      "errors": []
+    }
+  }
+}

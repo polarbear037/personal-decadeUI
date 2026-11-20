@@ -1,206 +1,1112 @@
 {
-  "idle": [
-    {
-      "selected": false,
-      "selectable": true,
-      "mask": 0
-    },
-    {
-      "selected": false,
-      "selectable": true,
-      "mask": 0
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 1
-    },
-    {
-      "selected": false,
-      "selectable": true,
-      "mask": 0
-    }
-  ],
-  "selected": [
-    {
-      "selected": true,
-      "selectable": true,
-      "mask": 0
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 0
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 1
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 0
-    }
-  ],
-  "withTarget": {
-    "cards": [
-      0
+  "onlineUI": {
+    "layoutFile": "layout-online.css",
+    "idle": [
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      }
     ],
-    "targetRetained": true
+    "selected": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "withTarget": {
+      "cards": [
+        0
+      ],
+      "targetRetained": true
+    },
+    "switched": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "cancelled": [
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      }
+    ],
+    "multiFull": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "dependentFilter": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      }
+    ],
+    "response": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      }
+    ],
+    "finished": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ]
   },
-  "switched": [
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 0
+  "on": {
+    "layoutFile": "layout.css",
+    "idle": [
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      }
+    ],
+    "selected": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "withTarget": {
+      "cards": [
+        0
+      ],
+      "targetRetained": true
     },
-    {
-      "selected": true,
-      "selectable": true,
-      "mask": 0
+    "switched": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "cancelled": [
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      }
+    ],
+    "multiFull": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "dependentFilter": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      }
+    ],
+    "response": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      }
+    ],
+    "finished": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ]
+  },
+  "othersOff": {
+    "layoutFile": "layout-xinsha.css",
+    "idle": [
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      }
+    ],
+    "selected": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "withTarget": {
+      "cards": [
+        0
+      ],
+      "targetRetained": true
     },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 1
+    "switched": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "cancelled": [
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      }
+    ],
+    "multiFull": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "dependentFilter": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      }
+    ],
+    "response": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      }
+    ],
+    "finished": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ]
+  },
+  "off": {
+    "layoutFile": "layout.css",
+    "idle": [
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      }
+    ],
+    "selected": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "withTarget": {
+      "cards": [
+        0
+      ],
+      "targetRetained": true
     },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 0
-    }
-  ],
-  "cancelled": [
-    {
-      "selected": false,
-      "selectable": true,
-      "mask": 0
+    "switched": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "cancelled": [
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      }
+    ],
+    "multiFull": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "dependentFilter": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      }
+    ],
+    "response": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      }
+    ],
+    "finished": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ]
+  },
+  "babysha": {
+    "layoutFile": "layout.css",
+    "idle": [
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      }
+    ],
+    "selected": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "withTarget": {
+      "cards": [
+        0
+      ],
+      "targetRetained": true
     },
-    {
-      "selected": false,
-      "selectable": true,
-      "mask": 0
+    "switched": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "cancelled": [
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      }
+    ],
+    "multiFull": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "dependentFilter": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      }
+    ],
+    "response": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      }
+    ],
+    "finished": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ]
+  },
+  "codename": {
+    "layoutFile": "layout.css",
+    "idle": [
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      }
+    ],
+    "selected": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "withTarget": {
+      "cards": [
+        0
+      ],
+      "targetRetained": true
     },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 1
-    },
-    {
-      "selected": false,
-      "selectable": true,
-      "mask": 0
-    }
-  ],
-  "multiFull": [
-    {
-      "selected": true,
-      "selectable": true,
-      "mask": 0
-    },
-    {
-      "selected": true,
-      "selectable": true,
-      "mask": 0
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 0
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 0
-    }
-  ],
-  "dependentFilter": [
-    {
-      "selected": true,
-      "selectable": true,
-      "mask": 0
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 1
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 1
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 1
-    }
-  ],
-  "response": [
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 1
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 1
-    },
-    {
-      "selected": true,
-      "selectable": true,
-      "mask": 0
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 1
-    }
-  ],
-  "otherStyle": [
-    {
-      "selected": true,
-      "selectable": true,
-      "mask": 0
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 1
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 1
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 1
-    }
-  ],
-  "finished": [
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 0
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 0
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 0
-    },
-    {
-      "selected": false,
-      "selectable": false,
-      "mask": 0
-    }
-  ]
+    "switched": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "cancelled": [
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": true,
+        "mask": 0
+      }
+    ],
+    "multiFull": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ],
+    "dependentFilter": [
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      }
+    ],
+    "response": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      },
+      {
+        "selected": true,
+        "selectable": true,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 1
+      }
+    ],
+    "finished": [
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      },
+      {
+        "selected": false,
+        "selectable": false,
+        "mask": 0
+      }
+    ]
+  }
 }

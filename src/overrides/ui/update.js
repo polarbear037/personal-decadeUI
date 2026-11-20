@@ -7,6 +7,10 @@ import { syncDialogOlControls as syncDialogOlControls } from "../../ui/dialog-ol
 import { clearDialogOlLayout as clearDialogOlLayout, isDialogOlLayout as isDialogOlLayout, syncDialogOlLayoutMarker as syncDialogOlLayoutMarker, updateDialogOlLayout as updateDialogOlLayout } from "../../ui/dialog-ol-layout.js";
 function e() {
 	const controls = ui.control.childNodes;
+	// 一将确认栏由固定锚点布局；隐藏的结束回合控件不参与 stayleft 避让。
+	// 没有待避让控件时不要读取 offsetLeft，避免每次 check/确认都同步排版。
+	if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff" &&
+		!Array.from(controls).some(control => control.stayleft && !control.classList.contains("yjcm-end-turn"))) return;
 	let stayleft, offsetLeft;
 	for (let i = 0; i < controls.length && (!stayleft && controls[i].stayleft ? (stayleft = controls[i]) : offsetLeft || (offsetLeft = controls[i].offsetLeft), !stayleft || !offsetLeft); i++);
 	stayleft && (ui.$stayleft != stayleft && ((stayleft._width = stayleft.offsetWidth), (ui.$stayleft = stayleft)), offsetLeft < stayleft._width ? (stayleft.style.position = "static") : (stayleft.style.position = "absolute"));

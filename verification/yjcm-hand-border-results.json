@@ -1,0 +1,1088 @@
+[
+  {
+    "style": "othersOff",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout-xinsha.css",
+      "/extension/十周年UI/src/styles/card-xinsha.css",
+      "/extension/十周年UI/src/styles/meihua-xinsha.css",
+      "/extension/十周年UI/src/styles/layout-xinsha.css"
+    ],
+    "layouts": 48,
+    "cases": [
+      {
+        "border": "off",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 108,
+        "ch": 150,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(140px, 90px) scale(1.8)",
+            "translate(338px, 90px) scale(1.8)",
+            "translate(535px, 90px) scale(1.8)",
+            "translate(733px, 90px) scale(1.8)"
+          ],
+          "x": [
+            140,
+            338,
+            535,
+            733
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(140px, 90px) scale(1.8)",
+            "translate(335px, 90px) scale(1.8)",
+            "translate(529px, 90px) scale(1.8)",
+            "translate(724px, 90px) scale(1.8)"
+          ],
+          "x": [
+            140,
+            335,
+            529,
+            724
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang1",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(143px, 87px) scale(1.8)",
+            "translate(344px, 87px) scale(1.8)",
+            "translate(545px, 87px) scale(1.8)",
+            "translate(746px, 87px) scale(1.8)"
+          ],
+          "x": [
+            143,
+            344,
+            545,
+            746
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(143px, 87px) scale(1.8)",
+            "translate(337px, 87px) scale(1.8)",
+            "translate(532px, 87px) scale(1.8)",
+            "translate(726px, 87px) scale(1.8)"
+          ],
+          "x": [
+            143,
+            337,
+            532,
+            726
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang2",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(143px, 87px) scale(1.8)",
+            "translate(344px, 87px) scale(1.8)",
+            "translate(545px, 87px) scale(1.8)",
+            "translate(746px, 87px) scale(1.8)"
+          ],
+          "x": [
+            143,
+            344,
+            545,
+            746
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(143px, 87px) scale(1.8)",
+            "translate(337px, 87px) scale(1.8)",
+            "translate(532px, 87px) scale(1.8)",
+            "translate(726px, 87px) scale(1.8)"
+          ],
+          "x": [
+            143,
+            337,
+            532,
+            726
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang3",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(143px, 87px) scale(1.8)",
+            "translate(344px, 87px) scale(1.8)",
+            "translate(545px, 87px) scale(1.8)",
+            "translate(746px, 87px) scale(1.8)"
+          ],
+          "x": [
+            143,
+            344,
+            545,
+            746
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(143px, 87px) scale(1.8)",
+            "translate(337px, 87px) scale(1.8)",
+            "translate(532px, 87px) scale(1.8)",
+            "translate(726px, 87px) scale(1.8)"
+          ],
+          "x": [
+            143,
+            337,
+            532,
+            726
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      }
+    ]
+  },
+  {
+    "style": "onlineUI",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout-online.css",
+      "/extension/十周年UI/src/styles/card-online.css",
+      "/extension/十周年UI/src/styles/meihua-online.css",
+      "/extension/十周年UI/src/styles/layout-online.css"
+    ],
+    "layouts": 48,
+    "cases": [
+      {
+        "border": "off",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 108,
+        "ch": 150,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(43px, 60px) scale(1.8)",
+            "translate(240px, 60px) scale(1.8)",
+            "translate(436px, 60px) scale(1.8)",
+            "translate(632px, 60px) scale(1.8)"
+          ],
+          "x": [
+            43,
+            240,
+            436,
+            632
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(43px, 60px) scale(1.8)",
+            "translate(240px, 60px) scale(1.8)",
+            "translate(436px, 60px) scale(1.8)",
+            "translate(632px, 60px) scale(1.8)"
+          ],
+          "x": [
+            43,
+            240,
+            436,
+            632
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang1",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang2",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang3",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      }
+    ]
+  },
+  {
+    "style": "on",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout.css",
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/meihua.css",
+      "/extension/十周年UI/src/styles/layout.css"
+    ],
+    "layouts": 48,
+    "cases": [
+      {
+        "border": "off",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 108,
+        "ch": 150,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(252px, 60px) scale(1.8)",
+            "translate(449px, 60px) scale(1.8)",
+            "translate(645px, 60px) scale(1.8)",
+            "translate(841px, 60px) scale(1.8)"
+          ],
+          "x": [
+            252,
+            449,
+            645,
+            841
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(252px, 60px) scale(1.8)",
+            "translate(449px, 60px) scale(1.8)",
+            "translate(645px, 60px) scale(1.8)",
+            "translate(841px, 60px) scale(1.8)"
+          ],
+          "x": [
+            252,
+            449,
+            645,
+            841
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang1",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(245px, 61px) scale(1.8)",
+            "translate(445px, 61px) scale(1.8)",
+            "translate(645px, 61px) scale(1.8)",
+            "translate(845px, 61px) scale(1.8)"
+          ],
+          "x": [
+            245,
+            445,
+            645,
+            845
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(245px, 61px) scale(1.8)",
+            "translate(445px, 61px) scale(1.8)",
+            "translate(645px, 61px) scale(1.8)",
+            "translate(845px, 61px) scale(1.8)"
+          ],
+          "x": [
+            245,
+            445,
+            645,
+            845
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang2",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(245px, 61px) scale(1.8)",
+            "translate(445px, 61px) scale(1.8)",
+            "translate(645px, 61px) scale(1.8)",
+            "translate(845px, 61px) scale(1.8)"
+          ],
+          "x": [
+            245,
+            445,
+            645,
+            845
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(245px, 61px) scale(1.8)",
+            "translate(445px, 61px) scale(1.8)",
+            "translate(645px, 61px) scale(1.8)",
+            "translate(845px, 61px) scale(1.8)"
+          ],
+          "x": [
+            245,
+            445,
+            645,
+            845
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang3",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(245px, 61px) scale(1.8)",
+            "translate(445px, 61px) scale(1.8)",
+            "translate(645px, 61px) scale(1.8)",
+            "translate(845px, 61px) scale(1.8)"
+          ],
+          "x": [
+            245,
+            445,
+            645,
+            845
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(245px, 61px) scale(1.8)",
+            "translate(445px, 61px) scale(1.8)",
+            "translate(645px, 61px) scale(1.8)",
+            "translate(845px, 61px) scale(1.8)"
+          ],
+          "x": [
+            245,
+            445,
+            645,
+            845
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      }
+    ]
+  },
+  {
+    "style": "off",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout.css",
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/meihua.css",
+      "/extension/十周年UI/src/styles/layout.css"
+    ],
+    "layouts": 48,
+    "cases": [
+      {
+        "border": "off",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 108,
+        "ch": 150,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(43px, 60px) scale(1.8)",
+            "translate(240px, 60px) scale(1.8)",
+            "translate(436px, 60px) scale(1.8)",
+            "translate(632px, 60px) scale(1.8)"
+          ],
+          "x": [
+            43,
+            240,
+            436,
+            632
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(43px, 60px) scale(1.8)",
+            "translate(240px, 60px) scale(1.8)",
+            "translate(436px, 60px) scale(1.8)",
+            "translate(632px, 60px) scale(1.8)"
+          ],
+          "x": [
+            43,
+            240,
+            436,
+            632
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang1",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang2",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang3",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      }
+    ]
+  },
+  {
+    "style": "babysha",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout.css",
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/meihua.css",
+      "/extension/十周年UI/src/styles/layout.css"
+    ],
+    "layouts": 48,
+    "cases": [
+      {
+        "border": "off",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 108,
+        "ch": 150,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(43px, 60px) scale(1.8)",
+            "translate(240px, 60px) scale(1.8)",
+            "translate(436px, 60px) scale(1.8)",
+            "translate(632px, 60px) scale(1.8)"
+          ],
+          "x": [
+            43,
+            240,
+            436,
+            632
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(43px, 60px) scale(1.8)",
+            "translate(240px, 60px) scale(1.8)",
+            "translate(436px, 60px) scale(1.8)",
+            "translate(632px, 60px) scale(1.8)"
+          ],
+          "x": [
+            43,
+            240,
+            436,
+            632
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang1",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang2",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang3",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(44px, 61px) scale(1.8)",
+            "translate(244px, 61px) scale(1.8)",
+            "translate(444px, 61px) scale(1.8)",
+            "translate(644px, 61px) scale(1.8)"
+          ],
+          "x": [
+            44,
+            244,
+            444,
+            644
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      }
+    ]
+  },
+  {
+    "style": "codename",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout.css",
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/meihua.css",
+      "/extension/十周年UI/src/styles/layout.css"
+    ],
+    "layouts": 48,
+    "cases": [
+      {
+        "border": "off",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 108,
+        "ch": 150,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(252px, 60px) scale(1.8)",
+            "translate(449px, 60px) scale(1.8)",
+            "translate(645px, 60px) scale(1.8)",
+            "translate(841px, 60px) scale(1.8)"
+          ],
+          "x": [
+            252,
+            449,
+            645,
+            841
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(252px, 60px) scale(1.8)",
+            "translate(449px, 60px) scale(1.8)",
+            "translate(645px, 60px) scale(1.8)",
+            "translate(841px, 60px) scale(1.8)"
+          ],
+          "x": [
+            252,
+            449,
+            645,
+            841
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang1",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(245px, 61px) scale(1.8)",
+            "translate(445px, 61px) scale(1.8)",
+            "translate(645px, 61px) scale(1.8)",
+            "translate(845px, 61px) scale(1.8)"
+          ],
+          "x": [
+            245,
+            445,
+            645,
+            845
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(245px, 61px) scale(1.8)",
+            "translate(445px, 61px) scale(1.8)",
+            "translate(645px, 61px) scale(1.8)",
+            "translate(845px, 61px) scale(1.8)"
+          ],
+          "x": [
+            245,
+            445,
+            645,
+            845
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang2",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(245px, 61px) scale(1.8)",
+            "translate(445px, 61px) scale(1.8)",
+            "translate(645px, 61px) scale(1.8)",
+            "translate(845px, 61px) scale(1.8)"
+          ],
+          "x": [
+            245,
+            445,
+            645,
+            845
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(245px, 61px) scale(1.8)",
+            "translate(445px, 61px) scale(1.8)",
+            "translate(645px, 61px) scale(1.8)",
+            "translate(845px, 61px) scale(1.8)"
+          ],
+          "x": [
+            245,
+            445,
+            645,
+            845
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      },
+      {
+        "border": "kuang3",
+        "scale": 1.8,
+        "count": 4,
+        "fold": false,
+        "cw": 110,
+        "ch": 152,
+        "face": 108,
+        "available": 1100,
+        "before": {
+          "transforms": [
+            "translate(245px, 61px) scale(1.8)",
+            "translate(445px, 61px) scale(1.8)",
+            "translate(645px, 61px) scale(1.8)",
+            "translate(845px, 61px) scale(1.8)"
+          ],
+          "x": [
+            245,
+            445,
+            645,
+            845
+          ],
+          "scroll": false,
+          "width": "100%"
+        },
+        "after": {
+          "transforms": [
+            "translate(245px, 61px) scale(1.8)",
+            "translate(445px, 61px) scale(1.8)",
+            "translate(645px, 61px) scale(1.8)",
+            "translate(845px, 61px) scale(1.8)"
+          ],
+          "x": [
+            245,
+            445,
+            645,
+            845
+          ],
+          "scroll": false,
+          "width": "100%"
+        }
+      }
+    ]
+  }
+]

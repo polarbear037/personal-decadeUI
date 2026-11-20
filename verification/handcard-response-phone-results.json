@@ -1,0 +1,1061 @@
+{
+  "device": "e1143408",
+  "package": "com.noname.shijian",
+  "style": "othersOff",
+  "files": [
+    {
+      "file": "src/ui/handcard-selection.js",
+      "verified": true,
+      "bytes": 1080
+    },
+    {
+      "file": "src/core/hooks.js",
+      "verified": true,
+      "bytes": 3774
+    },
+    {
+      "file": "src/core/layout.js",
+      "verified": true,
+      "bytes": 9582
+    },
+    {
+      "file": "src/ui/handcard-motion-xinsha.js",
+      "verified": true,
+      "bytes": 2722
+    },
+    {
+      "file": "src/overrides/card/overrides.js",
+      "verified": true,
+      "bytes": 9240
+    },
+    {
+      "file": "src/ui/card-effects-xinsha.js",
+      "verified": true,
+      "bytes": 864
+    },
+    {
+      "file": "src/ui/card-utils.js",
+      "verified": true,
+      "bytes": 11513
+    }
+  ],
+  "rescue": {
+    "before": [
+      {
+        "name": "sha",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card dui-handcard-available",
+        "mask": "0"
+      },
+      {
+        "name": "sha",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card dui-handcard-available",
+        "mask": "0"
+      },
+      {
+        "name": "shan",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card dui-handcard-available",
+        "mask": "0"
+      },
+      {
+        "name": "sha",
+        "classes": "card fullskin thunder lei-yijiang-card lei-yijiang-card-ready decade-card dui-handcard-available",
+        "mask": "0"
+      },
+      {
+        "name": "cixiong",
+        "classes": "card fullskin equip1 lei-yijiang-card lei-yijiang-card-ready decade-card dui-handcard-available",
+        "mask": "0"
+      },
+      {
+        "name": "sha",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card dui-handcard-available",
+        "mask": "0"
+      },
+      {
+        "name": "hanbing",
+        "classes": "card fullskin equip1 lei-yijiang-card lei-yijiang-card-ready decade-card dui-handcard-available",
+        "mask": "0"
+      },
+      {
+        "name": "sha",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card dui-handcard-available",
+        "mask": "0"
+      },
+      {
+        "name": "tao",
+        "available": true,
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card selectable dui-handcard-available",
+        "mask": "0"
+      },
+      {
+        "name": "shan",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card dui-handcard-available",
+        "mask": "0"
+      },
+      {
+        "name": "shan",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card dui-handcard-available",
+        "mask": "0"
+      },
+      {
+        "name": "sha",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card dui-handcard-available",
+        "mask": "0"
+      },
+      {
+        "name": "baiyin",
+        "classes": "card fullskin equip2 lei-yijiang-card lei-yijiang-card-ready decade-card dui-handcard-available",
+        "mask": "0"
+      },
+      {
+        "name": "shan",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card dui-handcard-available",
+        "mask": "0"
+      }
+    ],
+    "after": [
+      {
+        "name": "sha",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card",
+        "mask": "1"
+      },
+      {
+        "name": "sha",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card",
+        "mask": "1"
+      },
+      {
+        "name": "shan",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card",
+        "mask": "1"
+      },
+      {
+        "name": "sha",
+        "classes": "card fullskin thunder lei-yijiang-card lei-yijiang-card-ready decade-card",
+        "mask": "1"
+      },
+      {
+        "name": "cixiong",
+        "classes": "card fullskin equip1 lei-yijiang-card lei-yijiang-card-ready decade-card",
+        "mask": "1"
+      },
+      {
+        "name": "sha",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card",
+        "mask": "1"
+      },
+      {
+        "name": "hanbing",
+        "classes": "card fullskin equip1 lei-yijiang-card lei-yijiang-card-ready decade-card",
+        "mask": "1"
+      },
+      {
+        "name": "sha",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card",
+        "mask": "1"
+      },
+      {
+        "name": "tao",
+        "available": true,
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card selectable dui-handcard-available",
+        "mask": "0"
+      },
+      {
+        "name": "shan",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card",
+        "mask": "1"
+      },
+      {
+        "name": "shan",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card",
+        "mask": "1"
+      },
+      {
+        "name": "sha",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card",
+        "mask": "1"
+      },
+      {
+        "name": "baiyin",
+        "classes": "card fullskin equip2 lei-yijiang-card lei-yijiang-card-ready decade-card",
+        "mask": "1"
+      },
+      {
+        "name": "shan",
+        "classes": "card fullskin lei-yijiang-card lei-yijiang-card-ready decade-card",
+        "mask": "1"
+      }
+    ]
+  },
+  "selection": {
+    "before": {
+      "files": {
+        "applicationDirectory": "file:///android_asset/",
+        "applicationStorageDirectory": "file:///data/user/0/com.noname.shijian/",
+        "dataDirectory": "file:///data/user/0/com.noname.shijian/files/",
+        "cacheDirectory": "file:///data/user/0/com.noname.shijian/cache/",
+        "externalApplicationStorageDirectory": "file:///storage/emulated/0/Android/data/com.noname.shijian/",
+        "externalDataDirectory": "file:///storage/emulated/0/Android/data/com.noname.shijian/files/",
+        "externalCacheDirectory": "file:///storage/emulated/0/Android/data/com.noname.shijian/cache/",
+        "externalRootDirectory": "file:///storage/emulated/0/",
+        "tempDirectory": null,
+        "syncedDataDirectory": null,
+        "documentsDirectory": null,
+        "sharedDirectory": null
+      },
+      "zoom": 0.56,
+      "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445);",
+      "update": "function (...args) {\r\n                const state = hands.get(this.parentNode);\r\n                const position = state?.positions.get(this);\r\n                if (!args[1] && state?.cards.has(this) && position) {\r\n                    // 外部整手排版会先改tx及baseTransform。存牌始终沿用独立木牛区的位置，\r\n                    // 只合成选中抬升，不能先执行原函数让它短暂跑到手牌最右侧。\r\n                    this.tx = position.x;\r\n                    this.ty = position.y;\r\n                    this._transform = position.base;\r\n                    writeTransform(this, position.base + (this.classList.contains('selected')\r\n                        ? ` translateY(-${21 * (this.clientWidth || this.offsetWidth) / 126}px)` : ''));\r\n                    return;\r\n                }\r\n                return original.apply(this, args);\r\n            }",
+      "resize": "resize() {\n\t\t\tif (!ui.arena) return;\n\t\t\t(ui.arena.classList.toggle(\"dui-mobile\", decadeUI.isMobile()), (decadeUI.dataset.animSizeUpdated = !1), (decadeUI.dataset.bodySize.updated = !1), Object.values(decadeUI.boundsCaches).forEach(e => (e.updated = !1)));\n\t\t\tconst ensureStyle = selector => decadeUI.sheet.getStyle(selector) || decadeUI.sheet.insertRule(`${selector} { zoom: 1; }`),\n\t\t\t\tbuttonsWindow = ensureStyle(\"#window > .dialog.popped .buttons:not(.smallzoom)\"),\n\t\t\t\tbuttonsArena = ensureStyle(\"#arena:not(.choose-character) .buttons:not(.smallzoom)\");\n\t\t\t((decadeUI.zooms.card = decadeUI.getCardBestScale()), ui.me && (ui.me.style.height = `${Math.round(decadeUI.getHandCardSize().height * decadeUI.zooms.card + 30.4)}px`), buttonsArena && (buttonsArena.zoom = decadeUI.zooms.card), buttonsWindow && (buttonsWindow.zoom = decadeUI.zooms.card), this.update());\n\t\t\t// 尺寸变化立即落位，避免防抖与移牌过渡让卡牌在拖动窗口时滞后。\n\t\t\tfor (const card of [...(ui.handcards1?.children ?? []), ...(ui.thrown ?? [])])\n\t\t\t\tfor (const animation of card.getAnimations?.() ?? [])\n\t\t\t\t\tif (animation.transitionProperty === \"transform\") animation.finish();\n\t\t}",
+      "device": {
+        "platform": "Android"
+      },
+      "clickMs": 75.09999990463257,
+      "entries": [
+        {
+          "time": 126.29999995231628,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 22)",
+          "animations": [
+            {
+              "time": 0,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 202.70000004768372,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 22)",
+          "animations": [
+            {
+              "time": 0,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 205.40000009536743,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 18.9692)",
+          "animations": [
+            {
+              "time": 44.14399983579642,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 221.20000004768372,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 18.2509)",
+          "animations": [
+            {
+              "time": 55.24399983573858,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 227.09999990463257,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 17.5538)",
+          "animations": [
+            {
+              "time": 66.24399983593321,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 237.20000004768372,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 16.8649)",
+          "animations": [
+            {
+              "time": 77.34399983587537,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 248.20000004768372,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 16.1965)",
+          "animations": [
+            {
+              "time": 88.34399983584262,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 260,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 15.5362)",
+          "animations": [
+            {
+              "time": 99.44399983578478,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 269.7999999523163,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 14.8962)",
+          "animations": [
+            {
+              "time": 110.44399983575204,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 286.40000009536743,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 14.2647)",
+          "animations": [
+            {
+              "time": 121.54399983592157,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 296.59999990463257,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 13.6534)",
+          "animations": [
+            {
+              "time": 132.54399983588883,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 305.09999990463257,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 13.0568)",
+          "animations": [
+            {
+              "time": 143.54399983585608,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 316.7000000476837,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 12.4699)",
+          "animations": [
+            {
+              "time": 154.64399983579824,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 327.7000000476837,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 11.8985)",
+          "animations": [
+            {
+              "time": 165.7439998357404,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 340.2999999523163,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 11.348)",
+          "animations": [
+            {
+              "time": 176.74399983593503,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 351.40000009536743,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 10.8089)",
+          "animations": [
+            {
+              "time": 187.84399983587718,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 360.7999999523163,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 10.2912)",
+          "animations": [
+            {
+              "time": 198.84399983584444,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 372.5,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 9.79063)",
+          "animations": [
+            {
+              "time": 209.8439998358117,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 382.7000000476837,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 9.30348)",
+          "animations": [
+            {
+              "time": 220.94399983575386,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 392.90000009536743,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 8.83919)",
+          "animations": [
+            {
+              "time": 231.9439998359485,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 404.59999990463257,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 8.394)",
+          "animations": [
+            {
+              "time": 242.94399983591575,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 415.2000000476837,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 7.96494)",
+          "animations": [
+            {
+              "time": 254.0439998358579,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        }
+      ],
+      "stacks": []
+    },
+    "after": {
+      "files": {
+        "applicationDirectory": "file:///android_asset/",
+        "applicationStorageDirectory": "file:///data/user/0/com.noname.shijian/",
+        "dataDirectory": "file:///data/user/0/com.noname.shijian/files/",
+        "cacheDirectory": "file:///data/user/0/com.noname.shijian/cache/",
+        "externalApplicationStorageDirectory": "file:///storage/emulated/0/Android/data/com.noname.shijian/",
+        "externalDataDirectory": "file:///storage/emulated/0/Android/data/com.noname.shijian/files/",
+        "externalCacheDirectory": "file:///storage/emulated/0/Android/data/com.noname.shijian/cache/",
+        "externalRootDirectory": "file:///storage/emulated/0/",
+        "tempDirectory": null,
+        "syncedDataDirectory": null,
+        "documentsDirectory": null,
+        "sharedDirectory": null
+      },
+      "zoom": 0.56,
+      "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445);",
+      "update": "function(...args){const result=original.apply(this,args);if(!args[1]&&this.parentNode===ui.handcards1&&lib.config.extension_十周年UI_newDecadeStyle==='othersOff')motion.updateXinshaHandMotion(this,this.style.transform,!!args[0]);return result;}",
+      "resize": "resize() {\n\t\t\tif (!ui.arena) return;\n\t\t\t(ui.arena.classList.toggle(\"dui-mobile\", decadeUI.isMobile()), (decadeUI.dataset.animSizeUpdated = !1), (decadeUI.dataset.bodySize.updated = !1), Object.values(decadeUI.boundsCaches).forEach(e => (e.updated = !1)));\n\t\t\tconst ensureStyle = selector => decadeUI.sheet.getStyle(selector) || decadeUI.sheet.insertRule(`${selector} { zoom: 1; }`),\n\t\t\t\tbuttonsWindow = ensureStyle(\"#window > .dialog.popped .buttons:not(.smallzoom)\"),\n\t\t\t\tbuttonsArena = ensureStyle(\"#arena:not(.choose-character) .buttons:not(.smallzoom)\");\n\t\t\t((decadeUI.zooms.card = decadeUI.getCardBestScale()), ui.me && (ui.me.style.height = `${Math.round(decadeUI.getHandCardSize().height * decadeUI.zooms.card + 30.4)}px`), buttonsArena && (buttonsArena.zoom = decadeUI.zooms.card), buttonsWindow && (buttonsWindow.zoom = decadeUI.zooms.card), this.update());\n\t\t\t// 尺寸变化立即落位，避免防抖与移牌过渡让卡牌在拖动窗口时滞后。\n\t\t\tfor (const card of [...(ui.handcards1?.children ?? []), ...(ui.thrown ?? [])])\n\t\t\t\tfor (const animation of card.getAnimations?.() ?? [])\n\t\t\t\t\tif (animation.transitionProperty === \"transform\") animation.finish();\n\t\t}",
+      "device": {
+        "platform": "Android"
+      },
+      "clickMs": 95.19999980926514,
+      "entries": [
+        {
+          "time": 133.59999990463257,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 22)",
+          "animations": [
+            {
+              "time": -130.20000014307698,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 173.29999995231628,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 22)",
+          "animations": [
+            {
+              "time": -8.7000001431079,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 175.79999995231628,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 18.5415)",
+          "animations": [
+            {
+              "time": 35.39999985673603,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 183.19999980926514,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 17.4289)",
+          "animations": [
+            {
+              "time": 46.49999985690556,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 199.09999990463257,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 16.3227)",
+          "animations": [
+            {
+              "time": 57.49999985687282,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 210.69999980926514,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 15.2208)",
+          "animations": [
+            {
+              "time": 68.49999985684008,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 221.09999990463257,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 14.1224)",
+          "animations": [
+            {
+              "time": 79.59999985678223,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 233.69999980926514,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 13.0581)",
+          "animations": [
+            {
+              "time": 90.59999985674949,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 244,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 12.0199)",
+          "animations": [
+            {
+              "time": 101.69999985691902,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 256,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 11.0295)",
+          "animations": [
+            {
+              "time": 112.79999985686118,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 265,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 10.1061)",
+          "animations": [
+            {
+              "time": 123.79999985682844,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 277,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 9.24995)",
+          "animations": [
+            {
+              "time": 134.7999998567957,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 288.09999990463257,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 8.4684)",
+          "animations": [
+            {
+              "time": 145.79999985676295,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 300,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 7.76028)",
+          "animations": [
+            {
+              "time": 156.89999985693248,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 310.2999999523163,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 7.14069)",
+          "animations": [
+            {
+              "time": 167.89999985689974,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 353,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 6.59835)",
+          "animations": [
+            {
+              "time": 178.9999998568419,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 360.7999999523163,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 5.44933)",
+          "animations": [
+            {
+              "time": 212.09999985694594,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 367.2999999523163,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 5.20684)",
+          "animations": [
+            {
+              "time": 223.1999998568881,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 375.2999999523163,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 5.02906)",
+          "animations": [
+            {
+              "time": 234.19999985685536,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 385.69999980926514,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 4.9085)",
+          "animations": [
+            {
+              "time": 245.19999985682261,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 399,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 4.83992)",
+          "animations": [
+            {
+              "time": 256.29999985676477,
+              "playState": "running"
+            }
+          ],
+          "inline": "background-image: none !important; transition: opacity 400ms ease-out, left, top; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        },
+        {
+          "time": 443.69999980926514,
+          "transform": "matrix(0.95445, 0, 0, 0.95445, 49, 4.8199)",
+          "animations": [],
+          "inline": "background-image: none !important; transition: transform 400ms ease-out; transform: translate(49px, 22px) scale(0.95445) translateY(-18px);"
+        }
+      ],
+      "stacks": []
+    },
+    "nativeTouch": {
+      "before": "chooseToUse",
+      "frames": [
+        {
+          "time": 2451934.2999999523,
+          "y": 22,
+          "selected": true
+        },
+        {
+          "time": 2451953.7000000477,
+          "y": 21.3693,
+          "selected": true
+        },
+        {
+          "time": 2451978.2000000477,
+          "y": 20.2926,
+          "selected": true
+        },
+        {
+          "time": 2451983.4000000954,
+          "y": 18.1013,
+          "selected": true
+        },
+        {
+          "time": 2451994.7999999523,
+          "y": 16.9965,
+          "selected": true
+        },
+        {
+          "time": 2452021.100000143,
+          "y": 15.881,
+          "selected": true
+        },
+        {
+          "time": 2452044.2999999523,
+          "y": 13.6932,
+          "selected": true
+        },
+        {
+          "time": 2452050,
+          "y": 11.6209,
+          "selected": true
+        },
+        {
+          "time": 2452057.9000000954,
+          "y": 10.6611,
+          "selected": true
+        },
+        {
+          "time": 2452070.2999999523,
+          "y": 9.76295,
+          "selected": true
+        },
+        {
+          "time": 2452081.100000143,
+          "y": 8.92805,
+          "selected": true
+        },
+        {
+          "time": 2452091.100000143,
+          "y": 8.17784,
+          "selected": true
+        },
+        {
+          "time": 2452103.9000000954,
+          "y": 7.50258,
+          "selected": true
+        },
+        {
+          "time": 2452114.600000143,
+          "y": 6.91582,
+          "selected": true
+        },
+        {
+          "time": 2452124.9000000954,
+          "y": 6.40604,
+          "selected": true
+        },
+        {
+          "time": 2452137.100000143,
+          "y": 5.97986,
+          "selected": true
+        },
+        {
+          "time": 2452148.600000143,
+          "y": 5.62569,
+          "selected": true
+        },
+        {
+          "time": 2452157.600000143,
+          "y": 5.3453,
+          "selected": true
+        },
+        {
+          "time": 2452169.2000000477,
+          "y": 5.12855,
+          "selected": true
+        },
+        {
+          "time": 2452180.7000000477,
+          "y": 4.97425,
+          "selected": true
+        },
+        {
+          "time": 2452192.2000000477,
+          "y": 4.87454,
+          "selected": true
+        },
+        {
+          "time": 2452202.5,
+          "y": 4.82623,
+          "selected": true
+        },
+        {
+          "time": 2452235.4000000954,
+          "y": 4.8199,
+          "selected": true
+        },
+        {
+          "time": 2452242.2000000477,
+          "y": 4.8199,
+          "selected": true
+        },
+        {
+          "time": 2452247.5,
+          "y": 4.8199,
+          "selected": true
+        },
+        {
+          "time": 2452258.100000143,
+          "y": 4.8199,
+          "selected": true
+        },
+        {
+          "time": 2452266.9000000954,
+          "y": 4.8199,
+          "selected": true
+        },
+        {
+          "time": 2452278.2999999523,
+          "y": 4.8199,
+          "selected": true
+        },
+        {
+          "time": 2452290.600000143,
+          "y": 4.8199,
+          "selected": true
+        },
+        {
+          "time": 2452304.4000000954,
+          "y": 4.8199,
+          "selected": true
+        },
+        {
+          "time": 2452313.2999999523,
+          "y": 4.8199,
+          "selected": true
+        },
+        {
+          "time": 2452323.2999999523,
+          "y": 4.8199,
+          "selected": true
+        },
+        {
+          "time": 2452339.4000000954,
+          "y": 4.8199,
+          "selected": true
+        },
+        {
+          "time": 2452347.100000143,
+          "y": 4.8199,
+          "selected": true
+        },
+        {
+          "time": 2452358.100000143,
+          "y": 4.8199,
+          "selected": true
+        },
+        {
+          "time": 2452369.7000000477,
+          "y": 4.8199,
+          "selected": true
+        }
+      ],
+      "received": true,
+      "event": "chooseToUse",
+      "selected": [
+        "sha"
+      ]
+    }
+  },
+  "effects": {
+    "before": [
+      {
+        "name": "sha",
+        "sync": 48.8
+      },
+      {
+        "name": "tao",
+        "sync": 45.3
+      },
+      {
+        "name": "shan",
+        "sync": 40.2
+      },
+      {
+        "name": "wuzhong",
+        "sync": 37.4
+      },
+      {
+        "name": "cixiong",
+        "sync": 0.3
+      },
+      {
+        "name": "sha",
+        "sync": 51.7
+      }
+    ],
+    "after": [
+      {
+        "name": "sha",
+        "sync": 1.8000001907348633
+      },
+      {
+        "name": "tao",
+        "sync": 0.6999998092651367
+      },
+      {
+        "name": "shan",
+        "sync": 0.20000004768371582
+      },
+      {
+        "name": "wuzhong",
+        "sync": 0.6000001430511475
+      },
+      {
+        "name": "cixiong",
+        "sync": 0.2999999523162842
+      },
+      {
+        "name": "sha",
+        "sync": 0.5999999046325684
+      }
+    ],
+    "deferredWork": {
+      "frames": [
+        {
+          "name": "sha",
+          "sync": 0.39999985694885254
+        },
+        {
+          "name": "tao",
+          "sync": 0.2999999523162842
+        },
+        {
+          "name": "shan",
+          "sync": 0.9000000953674316
+        },
+        {
+          "name": "wuzhong",
+          "sync": 0.6000001430511475
+        }
+      ],
+      "effects": [
+        {
+          "name": "effect_heisha",
+          "elapsed": 0.2999999523162842
+        },
+        {
+          "name": "effect_tao",
+          "elapsed": 0.2999999523162842
+        },
+        {
+          "name": "effect_shan",
+          "elapsed": 0.2999999523162842
+        },
+        {
+          "name": "effect_wuzhongshengyou",
+          "elapsed": 0.20000004768371582
+        }
+      ],
+      "event": "chooseToUse"
+    }
+  },
+  "cleanup": {
+    "removedDiagnosticEvents": 3,
+    "event": "chooseToUse",
+    "next": [],
+    "hand": [
+      "sha",
+      "sha",
+      "shan",
+      "sha",
+      "cixiong",
+      "sha",
+      "hanbing",
+      "sha",
+      "tao",
+      "shan",
+      "shan",
+      "sha",
+      "baiyin",
+      "shan"
+    ],
+    "selected": 0
+  },
+  "checks": [
+    {
+      "command": "python verification/handcard-response-source.py",
+      "result": "HANDCARD_RESPONSE_SOURCE_OK"
+    },
+    {
+      "command": "node verification/handcard-response-motion-browser.cjs",
+      "result": "HANDCARD_RESPONSE_MOTION_OK"
+    },
+    {
+      "command": "node verification/xinsha-settlement-yield-browser.cjs",
+      "result": "XINSHA_SETTLEMENT_YIELD_OK"
+    },
+    {
+      "command": "node verification/yjcm-hand-hover-browser.cjs",
+      "result": "7 style/DOMRect cases PASS"
+    },
+    {
+      "command": "node verification/card-animations-async-engine.cjs",
+      "result": "ASYNC_CARD_ENGINE_OK othersOff + onlineUI; real useCard/equip settlement, both seats"
+    },
+    {
+      "command": "node verification/xinsha-use-card-performance.cjs",
+      "result": "passed, median selection 9.8ms / confirmation 11.5ms; errors=[]"
+    }
+  ],
+  "limits": [
+    "电脑后台已接通，停留大厅且 game.players.length=0，未操作或开始征程，未完成当前Electron牌局验证。",
+    "手机验证在保留现有事件/手牌的可逆救援选择、原生触摸和实际特效播放上完成；没有提交真实用牌、推进征程或完成完整手机对局。",
+    "未完成官方Android客户端动态画面对照及真实联机。"
+  ]
+}

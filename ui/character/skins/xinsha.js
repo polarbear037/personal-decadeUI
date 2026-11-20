@@ -6,6 +6,7 @@ import { _status } from "noname";
 import { createBaseCharacterPlugin } from "./base.js";
 
 const IMAGE_PATH = "extension/十周年UI/ui/assets/character/xinsha/";
+const OFFICIAL_PATH = `${IMAGE_PATH}official/`;
 const AUDIO_PATH = "../extension/十周年UI/ui/assets/lbtn/shousha/";
 
 const NICKNAMES = ["缘之空", "小小恐龙", "自然萌", "海边的ebao", "小云云", "无语", "点点", "猫猫虫", "小爱莉", "冰佬", "鹿鹿", "黎佬", "小曦", "浮牢师", "U佬", "蓝宝", "影宝", "柳下跖", "k9", "扶苏", "皇叔"];
@@ -46,8 +47,10 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 				e?.stopPropagation();
 				const plugin = this;
 				const player = node || this;
+				if (lib.config.extension_十周年UI_newDecadeStyle !== "othersOff") return;
 
 				if (plugin.playerDialog) {
+					plugin.playerDialog.hide();
 					plugin.playerDialog.remove();
 					plugin.playerDialog = null;
 				}
@@ -67,25 +70,40 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 			const container = ui.create.div(".popup-container.hidden", ui.window, ev => {
 				if (ev.target === container) {
 					container.hide();
-					game.resume2();
 				}
 			});
 
 			const playname = player === game.me ? lib.config.connect_nickname : get.translation(NICKNAMES.randomGet(1));
-			const dialog = ui.create.div(".xinsha-character-dialog.popped", container);
+			const dialog = ui.create.div(".xinsha-character-dialog.yjcm-seat-info", container);
 			const rightPane = ui.create.div(".right", dialog);
 
 			this._buildMainDialog(dialog, rightPane, player, playname);
 			this._createProfilePage(dialog, player, playname);
 
+			// 坐标以原版 1334×750 场景为基准，保持人物窗 1031×460 的比例。
+			const resize = () => {
+				const width = ui.window.clientWidth;
+				const height = ui.window.clientHeight;
+				const unit = Math.min(width / 1334, height / 750);
+				dialog.style.setProperty("--yjcm-info-scale", String(unit));
+			};
+			const observer = new ResizeObserver(resize);
+			const remove = container.remove.bind(container);
+			container.remove = () => {
+				observer.disconnect();
+				remove();
+			};
 			container.show = (player, bool) => {
 				this._showContent(player, rightPane, bool, dialog);
 				container.classList.remove("hidden");
+				resize();
+				observer.observe(ui.window);
 				game.pause2();
 			};
 
 			container.hide = () => {
 				container.classList.add("hidden");
+				observer.disconnect();
 				game.resume2();
 			};
 
@@ -97,19 +115,13 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 		 * @private
 		 */
 		_buildMainDialog(dialog, rightPane, player, playname) {
-			dialog.style.backgroundImage = `url("${this.getGroupBackgroundImage()}")`;
-
-			ui.create.div(".left", dialog).innerHTML = "<div></div>";
+			ui.create.div(".yjcm-info-frame", dialog);
+			ui.create.div(".yjcm-info-split", dialog);
+			const footer = ui.create.div(".yjcm-info-footer", dialog);
 			this._createActionButtons(dialog, rightPane, player);
 			this._createCharacterSkins(dialog, player);
-			this._createRarityInfo(dialog, player);
 			this._createCloseButton(dialog);
-			this._createLongkuang(dialog, player);
-			this._createLevelBadge(dialog, player);
-			ui.create.div(".wjkuang", dialog);
-			ui.create.div(".jineng", dialog, "武将技能");
-			this._createCharacterName(dialog, player);
-			ui.create.div(".wanjiaming2", dialog, playname);
+			ui.create.div(".wanjiaming2", footer, playname);
 
 			rightPane.innerHTML = "<div></div>";
 			lib.setScroll(rightPane.firstChild);
@@ -122,6 +134,18 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 		_createActionButtons(dialog, rightPane, player) {
 			const skill = ui.create.div(".skillx", dialog);
 			const equip = ui.create.div(".equip", dialog);
+			skill.textContent = "技能";
+			equip.textContent = "装备";
+			for (const button of [skill, equip]) {
+				button.setAttribute("role", "tab");
+				button.tabIndex = 0;
+				button.onkeydown = event => {
+					if (event.key === "Enter" || event.key === " ") {
+						event.preventDefault();
+						button.click();
+					}
+				};
+			}
 			const container = dialog.parentElement;
 
 			const clearRightPane = () => {
@@ -154,33 +178,40 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 		 * @private
 		 */
 		_createProfilePage(dialog, player, playname) {
-			const zbdialog = ui.create.div(".zbdialog", dialog);
-			zbdialog.onclick = () => this._showEquipmentDialog();
-
-			const caizhu = ui.create.div(".caizhu", dialog);
+			const footer = dialog.querySelector(".yjcm-info-footer");
+			const caizhu = ui.create.div(".caizhu", footer);
+			caizhu.title = "查看资料";
+			caizhu.setAttribute("role", "button");
+			caizhu.setAttribute("aria-label", "查看资料");
+			caizhu.tabIndex = 0;
 			caizhu.onclick = () => this._showProfileDialog(player, playname);
 
-			const miniChangePanel = globalThis.__tlMiniChangePanel;
-			const miniChangeEnabled = (() => {
+			// 原版入口固定显示；雷霆开关与接口均在点击时读取，允许窗口接口稍后加载。
+			const miniChange = ui.create.div(".miniChange", footer);
+			miniChange.title = "更换皮肤";
+			miniChange.setAttribute("role", "button");
+			miniChange.setAttribute("aria-label", "更换皮肤");
+			miniChange.tabIndex = 0;
+			miniChange.onclick = event => {
+				event.preventDefault();
+				event.stopPropagation();
 				const value = lib.config?.tl_versus_miniChange;
-				return value === undefined || value === true || value === "开启";
-			})();
-			if (miniChangeEnabled && typeof miniChangePanel?.open === "function") {
-				const miniChange = ui.create.div(".miniChange", dialog);
-				miniChange.title = "更换皮肤";
-				miniChange.setAttribute("role", "button");
-				miniChange.setAttribute("aria-label", "更换皮肤");
-				miniChange.onclick = event => {
-					event.preventDefault();
-					event.stopPropagation();
-					const currentValue = lib.config?.tl_versus_miniChange;
-					if (currentValue !== undefined && currentValue !== true && currentValue !== "开启") return;
-					void globalThis.__tlMiniChangePanel?.open?.(player);
+				if (value !== true && value !== "开启") {
+					ui.create.toast('请打开“雷霆”扩展迷你换肤功能');
+					return;
+				}
+				const panel = globalThis.__tlMiniChangePanel;
+				if (typeof panel?.open === "function") void panel.open(player);
+			};
+
+			for (const button of dialog.querySelectorAll(".caizhu, .miniChange")) {
+				button.onkeydown = event => {
+					if (event.key === "Enter" || event.key === " ") {
+						event.preventDefault();
+						button.click();
+					}
 				};
 			}
-
-			const leftPaneProfile = ui.create.div(lib.config.extension_十周年UI_ZLLT ? ".left" : ".left2", dialog);
-			leftPaneProfile.style.backgroundImage = player.node.avatar.style.backgroundImage;
 		},
 
 		/**
@@ -349,27 +380,64 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 		 * @private
 		 */
 		_createCharacterSkins(dialog, player) {
-			const skin1 = ui.create.div(".skin1", dialog);
-			const skin2 = ui.create.div(".skin2", dialog);
-
-			let name = player.name1 || player.name;
-			let name2 = player.name2;
-			if (player.classList.contains("unseen") && player !== game.me) name = "unknown";
-			if (player.classList.contains("unseen2") && player !== game.me) name2 = "unknown";
-
-			if (name !== "unknown") {
-				const playerSkin = player.style.backgroundImage || player.childNodes[0]?.style.backgroundImage;
-				this.utils.setLihuiDiv(skin1, playerSkin);
-			} else {
-				skin1.style.backgroundImage = `url("${lib.assetURL}extension/十周年UI/ui/assets/character/xinsha/unknown.png")`;
-			}
-
-			if (name2) {
-				if (name2 !== "unknown") {
-					const playerSkin2 = player.childNodes[1]?.style.backgroundImage;
-					this.utils.setLihuiDiv(skin2, playerSkin2);
-				} else {
-					skin2.style.backgroundImage = `url("${lib.assetURL}extension/十周年UI/ui/assets/character/xinsha/unknown.png")`;
+			const card = ui.create.div(".yjcm-general-card", dialog);
+			const portrait = ui.create.div(".yjcm-general-portrait", card);
+			const country = ui.create.div(".yjcm-general-country", card);
+			const countryBackground = ui.create.div(".yjcm-general-country-bg", country);
+			const emblem = ui.create.div(".yjcm-general-emblem", country);
+			const nameLabel = ui.create.div(".yjcm-general-name", country);
+			const hp = ui.create.div(".yjcm-general-hp", card);
+			const render = secondary => {
+				const name = secondary ? player.name2 : player.name1 || player.name;
+				const hidden = player !== game.me && player.classList.contains(secondary ? "unseen2" : "unseen");
+				const group = hidden ? "unknown" : get.character(name)?.group || player.group;
+				const countryId = { wei: 1, shu: 2, wu: 3, qun: 4, shen: 5, Han: 10, ye: 13, jin: 20 }[group] || 0;
+				portrait.style.backgroundImage = hidden
+					? `url("${lib.assetURL}${OFFICIAL_PATH}game_playerinfo_new_empty.png")`
+					: (secondary ? player.node.avatar2 : player.node.avatar)?.style.backgroundImage || "";
+				country.setBackgroundImage(`${OFFICIAL_PATH}yjcm_general_gradation_bg_${countryId}.png`);
+				countryBackground.style.display = countryId ? "" : "none";
+				if (countryId) countryBackground.setBackgroundImage(`${OFFICIAL_PATH}yjcm_general_country_bg_${countryId}.png`);
+				emblem.style.display = countryId ? "" : "none";
+				if (countryId) emblem.setBackgroundImage(`${OFFICIAL_PATH}yjcm_general_country_${countryId}.png`);
+				nameLabel.innerHTML = hidden ? "未知" : get.slimNameHorizontal(name);
+				nameLabel.style.fontSize = nameLabel.textContent.length > 5 ? "16px" : nameLabel.textContent.length > 4 ? "20px" : "24px";
+				hp.replaceChildren();
+				if (!hidden) {
+					const maxHp = get.character(name)?.maxHp;
+					if (Number.isFinite(maxHp)) {
+						// 原版 HP 容器 36×105，底图含透明上缘，不能按可见血珠直接裁缩。
+						const count = Math.ceil(maxHp);
+						const background = ui.create.div(".yjcm-general-hp-bg", hp);
+						background.style.height = `${Math.max(178, Math.min(count, 5) * 20 + 130 + 6)}px`;
+						if (count > 5) {
+							ui.create.div(".yjcm-general-hp-count", hp, String(maxHp));
+							const pip = ui.create.div(".yjcm-general-hp-pip", hp);
+							pip.style.bottom = "11px";
+						} else for (let i = 0; i < count; i++) {
+							const pip = ui.create.div(".yjcm-general-hp-pip", hp);
+							pip.style.bottom = `${6 + i * 20}px`;
+						}
+					}
+				}
+				dialog.dataset.general = secondary ? "secondary" : "primary";
+			};
+			render(false);
+			if (player.name2) {
+				dialog.classList.add("yjcm-double-general");
+				const switcher = ui.create.div(".yjcm-general-switch", dialog);
+				for (const [index, title] of ["主将", "副将"].entries()) {
+					const button = ui.create.div(".yjcm-general-switch-button", switcher, title);
+					button.setAttribute("role", "button");
+					button.tabIndex = 0;
+					button.onclick = () => {
+						render(Boolean(index));
+						for (const child of switcher.children) child.classList.toggle("active", child === button);
+					};
+					button.onkeydown = event => {
+						if (event.key === "Enter" || event.key === " ") { event.preventDefault(); button.click(); }
+					};
+					button.classList.toggle("active", index === 0);
 				}
 			}
 		},
@@ -392,12 +460,17 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 		 */
 		_createCloseButton(dialog) {
 			const diaozhui = ui.create.div(".diaozhui", dialog);
-			diaozhui.setBackgroundImage(`${IMAGE_PATH}guanbi.png`);
+			diaozhui.setBackgroundImage(`${OFFICIAL_PATH}game_playerinfonew_btnclose.png`);
+			diaozhui.setAttribute("role", "button");
+			diaozhui.setAttribute("aria-label", "关闭人物信息");
+			diaozhui.tabIndex = 0;
+			diaozhui.onkeydown = event => {
+				if (event.key === "Enter" || event.key === " ") { event.preventDefault(); diaozhui.click(); }
+			};
 			diaozhui.addEventListener("click", () => {
 				game.playAudio(`${AUDIO_PATH}caidan.mp3`);
 				const container = dialog.parentElement;
 				container.hide();
-				game.resume2();
 			});
 		},
 
@@ -434,6 +507,12 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 		 * @private
 		 */
 		_showContent(player, rightPane, bool, dialog) {
+			rightPane.firstChild.replaceChildren();
+			for (const [selector, active] of [[".skillx", bool], [".equip", !bool]]) {
+				const tab = dialog.querySelector(selector);
+				tab.classList.toggle("active", active);
+				tab.setAttribute("aria-selected", String(active));
+			}
 			let oSkills = player.getSkills(null, false, false).slice(0);
 			oSkills = oSkills.filter(s => lib.skill[s] && s !== "jiu" && !lib.skill[s].nopop && !lib.skill[s].equipSkill && lib.translate[s + "_info"]);
 			if (player === game.me && player.hiddenSkills?.length) oSkills.addArray(player.hiddenSkills);
@@ -442,7 +521,17 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 				const skill = dialog.querySelector(".skillx");
 				skill?.classList.add("active");
 				if (oSkills.length) {
-					oSkills.forEach(name => this.createSkillItem(rightPane.firstChild, name, player, dialog.parentElement));
+					oSkills.forEach(name => {
+						this.createSkillItem(rightPane.firstChild, name, player, dialog.parentElement);
+						const label = rightPane.firstChild.lastElementChild?.querySelector("[data-color]");
+						if (label) {
+							const badge = document.createElement("span");
+							const active = Boolean(lib.skill[name]?.enable);
+							badge.className = `yjcm-skill-kind${active ? " active" : ""}`;
+							badge.textContent = active ? "主" : "被";
+							label.appendChild(badge);
+						}
+					});
 				}
 			} else {
 				this._showEquipment(player, rightPane);
@@ -505,7 +594,7 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 			const shownHs = player.getShownCards();
 			const allShown = player.isUnderControl() || (!game.observe && game.me?.hasSkillTag("viewHandcard", null, player, true));
 			if (!shownHs.length && !allShown && !judges.length && !eSkills.length) {
-				ui.create.div(".noxcaption", rightPane.firstChild);
+				ui.create.div(".noxcaption", rightPane.firstChild, "当前未穿戴装备");
 			}
 		},
 	};

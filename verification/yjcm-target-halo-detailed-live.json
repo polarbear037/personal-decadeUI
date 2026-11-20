@@ -1,0 +1,1067 @@
+{
+  "url": "http://localhost:8089/app.html",
+  "style": "othersOff",
+  "arena": {
+    "player_height": "default",
+    "player_height_nova": "short",
+    "target_shake": "off",
+    "phonelayout": "on",
+    "newDecadeStyle": "othersOff",
+    "decadeLayout": "on",
+    "outcropSkin": "shizhounian",
+    "borderLevel": "random",
+    "longLevel": "random",
+    "borderStyle": "dragon4",
+    "aloneEquip": "off",
+    "dynamicSkinOutcrop": "on",
+    "chupaizhishi": "dajiangjun",
+    "playerMarkStyle": "decade",
+    "loadingStyle": "dialog_xinsha",
+    "gainSkillsVisible": "off",
+    "rightLayout": "on",
+    "number": "8",
+    "layout": "nova",
+    "decadeOfficialPlayerPopups": "true",
+    "sclevel": "2",
+    "decadeOptimizedActive": "true"
+  },
+  "dpr": 2,
+  "viewport": [
+    1224,
+    729
+  ],
+  "sheets": [
+    {
+      "href": "http://localhost:8089/layout/default/layout.css",
+      "selector": ".zoomin",
+      "text": ".zoomin { transform: scale(1.05) !important; }"
+    },
+    {
+      "href": "http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/styles/player3.css?v=1.3.1&t=1794752483605",
+      "selector": "body[data-style=\"othersOff\"] #arena",
+      "text": "body[data-style=\"othersOff\"] #arena { --yjcm-seat-turn: url(\"../../image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\"); --yjcm-seat-selected: url(\"../../image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\"); --yjcm-seat-response: url(\"../../image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\"); --yjcm-seat-halo-width: 130.857143%; --yjcm-seat-halo-x: 50.285714%; --yjcm-seat-halo-y: 50.108932%; --yjcm-seat-halo-height: 122.875817%; --yjcm-seat-selected-width: 130.484330%; --yjcm-seat-selected-x: 50.427350%; --yjcm-seat-red-width: 139.031339%; --yjcm-seat-red-x: 50.142450%; --yjcm-seat-red-y: 50.436681%; --yjcm-seat-red-height: 128.820961%; }"
+    },
+    {
+      "href": "http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/styles/player3.css?v=1.3.1&t=1794752483605",
+      "selector": "body[data-style=\"othersOff\"] #arena[data-border-style=\"dragon2\"]",
+      "text": "body[data-style=\"othersOff\"] #arena[data-border-style=\"dragon2\"] { --yjcm-seat-turn: url(\"../../image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m2_play_dynamic.png\"); --yjcm-seat-selected: url(\"../../image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m2_play_dynamic.png\"); --yjcm-seat-response: url(\"../../image/ui/effects/xinsha/SF_eff_paiju_paidired_m2_play_dynamic.png\"); --yjcm-seat-halo-width: 130.379747%; --yjcm-seat-halo-x: 50.316456%; --yjcm-seat-selected-width: 130.379747%; --yjcm-seat-selected-x: 50.316456%; --yjcm-seat-red-width: 139.682540%; --yjcm-seat-red-x: 50.158730%; }"
+    },
+    {
+      "href": "http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/styles/player3.css?v=1.3.1&t=1794752483605",
+      "selector": "body[data-style=\"othersOff\"] #arena .player.glow_phase:not(.selectable):not(.selected):not([data-position=\"0\"])::before",
+      "text": "body[data-style=\"othersOff\"] #arena .player.glow_phase:not(.selectable):not(.selected):not([data-position=\"0\"])::before { background-image: var(--yjcm-seat-turn); transform: translate(-50%, -50%) scale(1.05); opacity: 1; }"
+    },
+    {
+      "href": "http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/styles/player3.css?v=1.3.1&t=1794752483605",
+      "selector": "body[data-style=\"othersOff\"] #arena.selecting:not(.choose-character) .player[data-position=\"0\"]:not(.selectable):not(.selected):not(.dead)::before, body[data-style=\"othersOff\"] #arena .player.target:not(.selectable):not(.selected)::before",
+      "text": "body[data-style=\"othersOff\"] #arena.selecting:not(.choose-character) .player[data-position=\"0\"]:not(.selectable):not(.selected):not(.dead)::before, body[data-style=\"othersOff\"] #arena .player.target:not(.selectable):not(.selected)::before { left: var(--yjcm-seat-red-x); top: var(--yjcm-seat-red-y); width: var(--yjcm-seat-red-width); height: var(--yjcm-seat-red-height); background-image: var(--yjcm-seat-response); transform: translate(-50%, -50%) scale(1.05); opacity: 1; }"
+    },
+    {
+      "href": "http://localhost:8089/extension/%E9%9B%B7%E9%9C%86/pages/famous/miniChange.css",
+      "selector": ".general-card.tl-famous-mini-change-card",
+      "text": ".general-card.tl-famous-mini-change-card { --tl-famous-mini-card-scale: 1; position: relative; z-index: 204; flex: 0 0 var(--tl-famous-mini-card-width, 10.2cqw); width: var(--tl-famous-mini-card-width, 10.2cqw); cursor: pointer; animation: auto ease 0s 1 normal none running none; transform: scale(1.05); opacity: 1; height: var(--tl-famous-mini-card-height, 20.4cqw) !important; }"
+    }
+  ],
+  "nodes": [
+    {
+      "position": "0",
+      "name": "周善",
+      "classes": "player fullskin d-skin glow_phase",
+      "rect": {
+        "x": 1141.012369791667,
+        "y": 497.1484375000001,
+        "w": 130.00000000000003,
+        "h": 179.99414062500003
+      },
+      "client": [
+        130,
+        180
+      ],
+      "before": {
+        "width": "180.739px",
+        "height": "231.867px",
+        "left": "65.1777px",
+        "top": "90.7799px",
+        "transform": "matrix(1.05, 0, 0, 1.05, -90.3695, -115.934)",
+        "transformOrigin": "90.3695px 115.934px",
+        "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+        "opacity": "1",
+        "zIndex": "-1",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "after": {
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "transform": "none",
+        "transformOrigin": "65px 89.9971px",
+        "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "zIndex": "0",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "parents": [
+        {
+          "id": "",
+          "classes": "player fullskin d-skin glow_phase",
+          "style": {
+            "width": "130px",
+            "height": "179.994px",
+            "left": "1119.02px",
+            "top": "387.241px",
+            "transform": "none",
+            "transformOrigin": "65px 89.9971px",
+            "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+            "opacity": "1",
+            "zIndex": "4",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "arena",
+          "classes": "oblongcard phone decadeUI outcrop-skin-enabled selecting tempnoe",
+          "style": {
+            "width": "1279.01px",
+            "height": "575.868px",
+            "left": "22px",
+            "top": "11.8659px",
+            "transform": "none",
+            "transformOrigin": "639.505px 287.934px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "window",
+          "classes": "low_performance oblongcard",
+          "style": {
+            "width": "1326px",
+            "height": "593.667px",
+            "left": "0px",
+            "top": "0px",
+            "transform": "none",
+            "transformOrigin": "663px 296.833px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "hidden",
+            "filter": "none"
+          }
+        }
+      ]
+    },
+    {
+      "position": "1",
+      "name": "吴质",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 1143.0097656250002,
+        "y": 236.5983072916667,
+        "w": 130.00000000000003,
+        "h": 179.99414062500003
+      },
+      "client": [
+        130,
+        180
+      ],
+      "before": {
+        "width": "170.109px",
+        "height": "221.169px",
+        "left": "65.3639px",
+        "top": "90.1875px",
+        "transform": "matrix(1, 0, 0, 1, -85.0544, -110.585)",
+        "transformOrigin": "85.0544px 110.585px",
+        "backgroundImage": "none",
+        "opacity": "0",
+        "zIndex": "-1",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "after": {
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "transform": "none",
+        "transformOrigin": "65px 89.9971px",
+        "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "zIndex": "0",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "parents": [
+        {
+          "id": "",
+          "classes": "player fullskin",
+          "style": {
+            "width": "130px",
+            "height": "179.994px",
+            "left": "1121.01px",
+            "top": "126.691px",
+            "transform": "none",
+            "transformOrigin": "65px 89.9971px",
+            "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+            "opacity": "1",
+            "zIndex": "4",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "arena",
+          "classes": "oblongcard phone decadeUI outcrop-skin-enabled selecting tempnoe",
+          "style": {
+            "width": "1279.01px",
+            "height": "575.868px",
+            "left": "22px",
+            "top": "11.8659px",
+            "transform": "none",
+            "transformOrigin": "639.505px 287.934px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "window",
+          "classes": "low_performance oblongcard",
+          "style": {
+            "width": "1326px",
+            "height": "593.667px",
+            "left": "0px",
+            "top": "0px",
+            "transform": "none",
+            "transformOrigin": "663px 296.833px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "hidden",
+            "filter": "none"
+          }
+        }
+      ]
+    },
+    {
+      "position": "2",
+      "name": "谋许攸",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 961.3059895833335,
+        "y": 139.90234375000003,
+        "w": 130.00000000000003,
+        "h": 179.99414062500003
+      },
+      "client": [
+        130,
+        180
+      ],
+      "before": {
+        "width": "170.109px",
+        "height": "221.169px",
+        "left": "65.3639px",
+        "top": "90.1875px",
+        "transform": "matrix(1, 0, 0, 1, -85.0544, -110.585)",
+        "transformOrigin": "85.0544px 110.585px",
+        "backgroundImage": "none",
+        "opacity": "0",
+        "zIndex": "-1",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "after": {
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "transform": "none",
+        "transformOrigin": "65px 89.9971px",
+        "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "zIndex": "0",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "parents": [
+        {
+          "id": "",
+          "classes": "player fullskin",
+          "style": {
+            "width": "130px",
+            "height": "179.994px",
+            "left": "939.309px",
+            "top": "30px",
+            "transform": "none",
+            "transformOrigin": "65px 89.9971px",
+            "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+            "opacity": "1",
+            "zIndex": "4",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "arena",
+          "classes": "oblongcard phone decadeUI outcrop-skin-enabled selecting tempnoe",
+          "style": {
+            "width": "1279.01px",
+            "height": "575.868px",
+            "left": "22px",
+            "top": "11.8659px",
+            "transform": "none",
+            "transformOrigin": "639.505px 287.934px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "window",
+          "classes": "low_performance oblongcard",
+          "style": {
+            "width": "1326px",
+            "height": "593.667px",
+            "left": "0px",
+            "top": "0px",
+            "transform": "none",
+            "transformOrigin": "663px 296.833px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "hidden",
+            "filter": "none"
+          }
+        }
+      ]
+    },
+    {
+      "position": "3",
+      "name": "刘懿君",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 782.2428385416669,
+        "y": 107.91015625000001,
+        "w": 130.00000000000003,
+        "h": 179.99414062500003
+      },
+      "client": [
+        130,
+        180
+      ],
+      "before": {
+        "width": "170.109px",
+        "height": "221.169px",
+        "left": "65.3639px",
+        "top": "90.1875px",
+        "transform": "matrix(1, 0, 0, 1, -85.0544, -110.585)",
+        "transformOrigin": "85.0544px 110.585px",
+        "backgroundImage": "none",
+        "opacity": "0",
+        "zIndex": "-1",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "after": {
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "transform": "none",
+        "transformOrigin": "65px 89.9971px",
+        "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "zIndex": "0",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "parents": [
+        {
+          "id": "",
+          "classes": "player fullskin",
+          "style": {
+            "width": "130px",
+            "height": "179.994px",
+            "left": "760.246px",
+            "top": "-2px",
+            "transform": "none",
+            "transformOrigin": "65px 89.9971px",
+            "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+            "opacity": "1",
+            "zIndex": "4",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "arena",
+          "classes": "oblongcard phone decadeUI outcrop-skin-enabled selecting tempnoe",
+          "style": {
+            "width": "1279.01px",
+            "height": "575.868px",
+            "left": "22px",
+            "top": "11.8659px",
+            "transform": "none",
+            "transformOrigin": "639.505px 287.934px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "window",
+          "classes": "low_performance oblongcard",
+          "style": {
+            "width": "1326px",
+            "height": "593.667px",
+            "left": "0px",
+            "top": "0px",
+            "transform": "none",
+            "transformOrigin": "663px 296.833px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "hidden",
+            "filter": "none"
+          }
+        }
+      ]
+    },
+    {
+      "position": "7",
+      "name": "曹髦",
+      "classes": "player fullskin d-skin",
+      "rect": {
+        "x": 73.99674479166669,
+        "y": 236.5983072916667,
+        "w": 130.00000000000003,
+        "h": 179.99414062500003
+      },
+      "client": [
+        130,
+        180
+      ],
+      "before": {
+        "width": "170.109px",
+        "height": "221.169px",
+        "left": "65.3639px",
+        "top": "90.1875px",
+        "transform": "matrix(1, 0, 0, 1, -85.0544, -110.585)",
+        "transformOrigin": "85.0544px 110.585px",
+        "backgroundImage": "none",
+        "opacity": "0",
+        "zIndex": "-1",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "after": {
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "transform": "none",
+        "transformOrigin": "65px 89.9971px",
+        "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "zIndex": "0",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "parents": [
+        {
+          "id": "",
+          "classes": "player fullskin d-skin",
+          "style": {
+            "width": "130px",
+            "height": "179.994px",
+            "left": "52px",
+            "top": "126.691px",
+            "transform": "none",
+            "transformOrigin": "65px 89.9971px",
+            "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+            "opacity": "1",
+            "zIndex": "4",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "arena",
+          "classes": "oblongcard phone decadeUI outcrop-skin-enabled selecting tempnoe",
+          "style": {
+            "width": "1279.01px",
+            "height": "575.868px",
+            "left": "22px",
+            "top": "11.8659px",
+            "transform": "none",
+            "transformOrigin": "639.505px 287.934px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "window",
+          "classes": "low_performance oblongcard",
+          "style": {
+            "width": "1326px",
+            "height": "593.667px",
+            "left": "0px",
+            "top": "0px",
+            "transform": "none",
+            "transformOrigin": "663px 296.833px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "hidden",
+            "filter": "none"
+          }
+        }
+      ]
+    },
+    {
+      "position": "5",
+      "name": "王允",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 426.11393229166674,
+        "y": 107.91015625000001,
+        "w": 130.00000000000003,
+        "h": 179.99414062500003
+      },
+      "client": [
+        130,
+        180
+      ],
+      "before": {
+        "width": "170.109px",
+        "height": "221.169px",
+        "left": "65.3639px",
+        "top": "90.1875px",
+        "transform": "matrix(1, 0, 0, 1, -85.0544, -110.585)",
+        "transformOrigin": "85.0544px 110.585px",
+        "backgroundImage": "none",
+        "opacity": "0",
+        "zIndex": "-1",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "after": {
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "transform": "none",
+        "transformOrigin": "65px 89.9971px",
+        "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "zIndex": "0",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "parents": [
+        {
+          "id": "",
+          "classes": "player fullskin",
+          "style": {
+            "width": "130px",
+            "height": "179.994px",
+            "left": "404.117px",
+            "top": "-2px",
+            "transform": "none",
+            "transformOrigin": "65px 89.9971px",
+            "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+            "opacity": "1",
+            "zIndex": "4",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "arena",
+          "classes": "oblongcard phone decadeUI outcrop-skin-enabled selecting tempnoe",
+          "style": {
+            "width": "1279.01px",
+            "height": "575.868px",
+            "left": "22px",
+            "top": "11.8659px",
+            "transform": "none",
+            "transformOrigin": "639.505px 287.934px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "window",
+          "classes": "low_performance oblongcard",
+          "style": {
+            "width": "1326px",
+            "height": "593.667px",
+            "left": "0px",
+            "top": "0px",
+            "transform": "none",
+            "transformOrigin": "663px 296.833px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "hidden",
+            "filter": "none"
+          }
+        }
+      ]
+    },
+    {
+      "position": "6",
+      "name": "辛评",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 245.77278645833337,
+        "y": 139.90234375000003,
+        "w": 130.00000000000003,
+        "h": 179.99414062500003
+      },
+      "client": [
+        130,
+        180
+      ],
+      "before": {
+        "width": "170.109px",
+        "height": "221.169px",
+        "left": "65.3639px",
+        "top": "90.1875px",
+        "transform": "matrix(1, 0, 0, 1, -85.0544, -110.585)",
+        "transformOrigin": "85.0544px 110.585px",
+        "backgroundImage": "none",
+        "opacity": "0",
+        "zIndex": "-1",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "after": {
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "transform": "none",
+        "transformOrigin": "65px 89.9971px",
+        "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "zIndex": "0",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "parents": [
+        {
+          "id": "",
+          "classes": "player fullskin",
+          "style": {
+            "width": "130px",
+            "height": "179.994px",
+            "left": "223.776px",
+            "top": "30px",
+            "transform": "none",
+            "transformOrigin": "65px 89.9971px",
+            "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+            "opacity": "1",
+            "zIndex": "4",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "arena",
+          "classes": "oblongcard phone decadeUI outcrop-skin-enabled selecting tempnoe",
+          "style": {
+            "width": "1279.01px",
+            "height": "575.868px",
+            "left": "22px",
+            "top": "11.8659px",
+            "transform": "none",
+            "transformOrigin": "639.505px 287.934px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "window",
+          "classes": "low_performance oblongcard",
+          "style": {
+            "width": "1326px",
+            "height": "593.667px",
+            "left": "0px",
+            "top": "0px",
+            "transform": "none",
+            "transformOrigin": "663px 296.833px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "hidden",
+            "filter": "none"
+          }
+        }
+      ]
+    },
+    {
+      "position": "4",
+      "name": "文鸯",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 606.4550781250001,
+        "y": 107.91015625000001,
+        "w": 130.00000000000003,
+        "h": 179.99414062500003
+      },
+      "client": [
+        130,
+        180
+      ],
+      "before": {
+        "width": "170.109px",
+        "height": "221.169px",
+        "left": "65.3639px",
+        "top": "90.1875px",
+        "transform": "matrix(1, 0, 0, 1, -85.0544, -110.585)",
+        "transformOrigin": "85.0544px 110.585px",
+        "backgroundImage": "none",
+        "opacity": "0",
+        "zIndex": "-1",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "after": {
+        "width": "130px",
+        "height": "179.994px",
+        "left": "0px",
+        "top": "0px",
+        "transform": "none",
+        "transformOrigin": "65px 89.9971px",
+        "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+        "opacity": "1",
+        "zIndex": "0",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "visible",
+        "filter": "none"
+      },
+      "parents": [
+        {
+          "id": "",
+          "classes": "player fullskin",
+          "style": {
+            "width": "130px",
+            "height": "179.994px",
+            "left": "584.458px",
+            "top": "-2px",
+            "transform": "none",
+            "transformOrigin": "65px 89.9971px",
+            "backgroundImage": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/player-bg/bj1.png\")",
+            "opacity": "1",
+            "zIndex": "4",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "arena",
+          "classes": "oblongcard phone decadeUI outcrop-skin-enabled selecting tempnoe",
+          "style": {
+            "width": "1279.01px",
+            "height": "575.868px",
+            "left": "22px",
+            "top": "11.8659px",
+            "transform": "none",
+            "transformOrigin": "639.505px 287.934px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "visible",
+            "filter": "none"
+          }
+        },
+        {
+          "id": "window",
+          "classes": "low_performance oblongcard",
+          "style": {
+            "width": "1326px",
+            "height": "593.667px",
+            "left": "0px",
+            "top": "0px",
+            "transform": "none",
+            "transformOrigin": "663px 296.833px",
+            "backgroundImage": "none",
+            "opacity": "1",
+            "zIndex": "auto",
+            "animationName": "none",
+            "clipPath": "none",
+            "maskImage": "none",
+            "overflow": "hidden",
+            "filter": "none"
+          }
+        }
+      ]
+    }
+  ],
+  "canvases": [
+    {
+      "id": "decadeUI-canvas",
+      "classes": "animation-player",
+      "style": {
+        "width": "1326px",
+        "height": "593.667px",
+        "left": "0px",
+        "top": "0px",
+        "transform": "none",
+        "transformOrigin": "663px 296.833px",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "zIndex": "7",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "clip",
+        "filter": "none"
+      },
+      "parent": ""
+    },
+    {
+      "id": "canvas",
+      "classes": "",
+      "style": {
+        "width": "1278.99px",
+        "height": "575.995px",
+        "left": "0px",
+        "top": "0px",
+        "transform": "none",
+        "transformOrigin": "639.497px 287.997px",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "zIndex": "10",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "clip",
+        "filter": "none"
+      },
+      "parent": "oblongcard phone decadeUI outcrop-skin-enabled selecting tempnoe"
+    },
+    {
+      "id": "",
+      "classes": "animation-player",
+      "style": {
+        "width": "130px",
+        "height": "199.993px",
+        "left": "0px",
+        "top": "-19.9993px",
+        "transform": "none",
+        "transformOrigin": "65px 99.9967px",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "zIndex": "auto",
+        "animationName": "none",
+        "clipPath": "url(\"#dskin-clip\")",
+        "maskImage": "none",
+        "overflow": "clip",
+        "filter": "none"
+      },
+      "parent": "dynamic-wrap"
+    },
+    {
+      "id": "",
+      "classes": "animation-player",
+      "style": {
+        "width": "130px",
+        "height": "199.993px",
+        "left": "0px",
+        "top": "-19.9993px",
+        "transform": "none",
+        "transformOrigin": "65px 99.9967px",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "zIndex": "auto",
+        "animationName": "none",
+        "clipPath": "url(\"#dskin-clip\")",
+        "maskImage": "none",
+        "overflow": "clip",
+        "filter": "none"
+      },
+      "parent": "dynamic-wrap"
+    },
+    {
+      "id": "chukuang-canvas",
+      "classes": "chukuang-canvas",
+      "style": {
+        "width": "1326px",
+        "height": "593.667px",
+        "left": "0px",
+        "top": "0px",
+        "transform": "none",
+        "transformOrigin": "663px 296.833px",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "zIndex": "100",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "clip",
+        "filter": "none"
+      },
+      "parent": "chukuang-canvas-wraper"
+    },
+    {
+      "id": "chukuang-canvas2",
+      "classes": "chukuang-canvas2",
+      "style": {
+        "width": "1326px",
+        "height": "593.667px",
+        "left": "0px",
+        "top": "0px",
+        "transform": "none",
+        "transformOrigin": "663px 296.833px",
+        "backgroundImage": "none",
+        "opacity": "1",
+        "zIndex": "4",
+        "animationName": "none",
+        "clipPath": "none",
+        "maskImage": "none",
+        "overflow": "clip",
+        "filter": "none"
+      },
+      "parent": "chukuang-canvas-wraper2"
+    }
+  ]
+}

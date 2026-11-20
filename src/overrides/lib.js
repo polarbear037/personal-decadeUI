@@ -2,6 +2,7 @@ import { lib, ui, game, _status } from "noname";
 import { wrapAround as wrapAround } from "../utils/safeOverride.js";
 import { applyFactionCharacterInit as applyFactionCharacterInit, applyFactionControlChoice as applyFactionControlChoice } from "./faction-character-init.js";
 import { positionOfficialTooltip } from "../ui/officialTooltip.js";
+import { positionXinshaTooltip } from "../ui/xinsha-tooltip.js";
 function t() {
 	const restoreFns = [];
 	restoreFns.push(wrapAround(lib.filter, "wuxieSwap", function (original, event) {
@@ -18,7 +19,7 @@ function t() {
 		return original.call(this, event);
 	}));
 	restoreFns.push(wrapAround(lib, "placePoppedDialog", function (original, dialog, event) {
-		if (!positionOfficialTooltip(dialog, event)) return original.call(this, dialog, event);
+		if (!positionXinshaTooltip(dialog, event) && !positionOfficialTooltip(dialog, event)) return original.call(this, dialog, event);
 	}));
 	restoreFns.push(...applyFactionCharacterInit());
 	restoreFns.push(...applyFactionControlChoice());

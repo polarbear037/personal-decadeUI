@@ -1,0 +1,190 @@
+/* windowSelectCountry / SkillNewStyleBaseWindow，原始设计高度750。 */
+body[data-style="othersOff"] #arena.decadeUI > .dialog.xinsha-faction-dialog {
+	position: absolute !important;
+	left: var(--xinsha-faction-x, 50%) !important;
+	top: var(--xinsha-faction-y, 50%) !important;
+	right: auto !important;
+	bottom: auto !important;
+	width: var(--xinsha-faction-width, 100%) !important;
+	height: calc(392 * var(--xinsha-faction-unit, 1px)) !important;
+	min-width: 0 !important;
+	min-height: 0 !important;
+	max-height: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	transform: translate(-50%, -50%) !important;
+	background: none !important;
+	box-shadow: none !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	overflow: visible !important;
+	isolation: isolate;
+	z-index: 101 !important;
+	animation: none !important;
+	transition-property: opacity !important;
+}
+
+body[data-style="othersOff"] #arena.decadeUI > .dialog.xinsha-faction-dialog::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background: url("../../image/ui/dialog/dialog_xinsha.png") center / 100% 100% no-repeat;
+	border: 0 !important;
+	border-image: none !important;
+	pointer-events: none;
+}
+
+body[data-style="othersOff"] #arena.decadeUI > .dialog.xinsha-faction-dialog::after {
+	display: none !important;
+}
+
+body[data-style="othersOff"] #arena.decadeUI > .dialog.xinsha-faction-dialog > .content-container,
+body[data-style="othersOff"] #arena.decadeUI > .dialog.xinsha-faction-dialog > .content-container > .content {
+	position: absolute !important;
+	inset: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	max-height: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: visible !important;
+}
+
+body[data-style="othersOff"] .xinsha-faction-dialog .xinsha-faction-native-caption,
+body[data-style="othersOff"] .xinsha-faction-dialog .xinsha-faction-native-hidden {
+	display: none !important;
+}
+
+body[data-style="othersOff"] #arena.decadeUI > .xinsha-faction-dialog > .xinsha-faction-title {
+	position: absolute;
+	left: 50%;
+	top: calc(1.5 * var(--xinsha-faction-unit));
+	width: calc(295 * var(--xinsha-faction-unit));
+	height: calc(37 * var(--xinsha-faction-unit));
+	transform: translateX(-50%);
+	box-sizing: border-box;
+	padding-left: calc(6 * var(--xinsha-faction-unit));
+	background: url("../../image/ui/dialog/dialog_xinsha_title.png") center / 100% 100% no-repeat;
+	color: #ffecbb;
+	font-size: calc(32 * var(--xinsha-faction-unit));
+	line-height: calc(37 * var(--xinsha-faction-unit));
+	text-align: center;
+	text-shadow: none;
+}
+
+body[data-style="othersOff"] #arena.decadeUI > .xinsha-faction-dialog .buttons {
+	position: absolute !important;
+	left: 50% !important;
+	top: calc(65 * var(--xinsha-faction-unit)) !important;
+	display: flex !important;
+	justify-content: center;
+	gap: calc(50 * var(--xinsha-faction-card-unit)) !important;
+	width: max-content !important;
+	height: calc(182 * var(--xinsha-faction-card-unit)) !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	transform: translateX(-50%) !important;
+}
+
+body[data-style="othersOff"] #arena.decadeUI > .xinsha-faction-dialog .xinsha-faction-button {
+	position: relative !important;
+	flex: none !important;
+	width: calc(151 * var(--xinsha-faction-card-unit)) !important;
+	height: calc(182 * var(--xinsha-faction-card-unit)) !important;
+	min-width: 0 !important;
+	min-height: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	background: none !important;
+	box-shadow: none !important;
+	transform: none !important;
+	overflow: visible !important;
+	cursor: pointer;
+	transition: none !important;
+}
+
+body[data-style="othersOff"] #arena.decadeUI > .xinsha-faction-dialog .xinsha-faction-button::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: var(--xinsha-faction-image) center / 100% 100% no-repeat;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	opacity: 1;
+	pointer-events: none;
+}
+
+body[data-style="othersOff"] #arena.decadeUI > .xinsha-faction-dialog .xinsha-faction-button::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: calc(184 * var(--xinsha-faction-card-unit));
+	height: calc(215 * var(--xinsha-faction-card-unit));
+	transform: translate(-50%, -50%);
+	background: url("../../image/ui/faction/xinsha/skill_window_select_country_selected_frame.png") center / 100% 100% no-repeat;
+	border: 0;
+	box-shadow: none;
+	opacity: 0;
+	pointer-events: none;
+}
+
+body[data-style="othersOff"] #arena.decadeUI > .xinsha-faction-dialog .xinsha-faction-button:is(:hover, :focus-visible, .selected, .xinsha-faction-custom)::after {
+	opacity: 1;
+}
+
+body[data-style="othersOff"] #arena.decadeUI > .xinsha-faction-dialog .xinsha-faction-button:active {
+	transform: scale(.95) !important;
+	filter: brightness(.698);
+}
+
+body[data-style="othersOff"] #arena.decadeUI > .xinsha-faction-dialog .xinsha-faction-button:is(.unselectable, .noclick) {
+	filter: grayscale(1) brightness(.6);
+	cursor: default;
+}
+
+body[data-style="othersOff"] .xinsha-faction-label {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(46 * var(--xinsha-faction-card-unit));
+	color: #ffecbb;
+	text-shadow: 1px 1px 2px #23160b;
+	text-align: center;
+	pointer-events: none;
+}
+
+/* 晋字使用一将成名原版 fzbw 字体；图片只承载独立牌底。 */
+body[data-style="othersOff"] #arena.decadeUI > .xinsha-faction-dialog .xinsha-faction-jin > .xinsha-faction-label {
+	font-family: "dui-yjcm-label", serif !important;
+	font-size: calc(100 * var(--xinsha-faction-card-unit));
+	line-height: 1;
+	color: #fff;
+	text-shadow: 0 0 calc(5 * var(--xinsha-faction-card-unit)) #d17cff, 0 0 calc(10 * var(--xinsha-faction-card-unit)) #853ed0;
+	padding-top: calc(10 * var(--xinsha-faction-card-unit));
+	box-sizing: border-box;
+}
+
+body[data-style="othersOff"] #arena.decadeUI > .xinsha-faction-dialog > .xinsha-faction-prompt {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: calc(80 * var(--xinsha-faction-unit));
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	font-size: calc(30 * var(--xinsha-faction-unit));
+	line-height: 1;
+	color: #fff3de;
+	letter-spacing: calc(-1 * var(--xinsha-faction-unit));
+	text-align: center;
+	text-shadow: none;
+	pointer-events: none;
+}

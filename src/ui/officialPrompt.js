@@ -22,6 +22,12 @@ function officialText(key, values = {}) {
 function skillNameForPrompt(skill, player) {
 	if (!skill) return "";
 	const base = skill.replace(/_(?:backup|cost)$/, "");
+	// 将灵使用全局规则事件，没有普通技能翻译；通用弹窗和提示共用真实技能名。
+	if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && lib.skill?.[base]?.jiang0JianglingRule) {
+		const id = /^jiang0_rule_(\d+)$/.exec(base)?.[1];
+		const row = id && game.jiang0Skills?.context?.row?.(player, Number(id));
+		if (row?.SkillName) return plainPrompt(row.SkillName);
+	}
 	const source = get.sourceSkillFor?.(base) || (lib.translate?.[base] ? base : skill);
 	const name = plainPrompt(get.skillTranslation?.(source, player) || lib.translate?.[source] || "");
 	return name === source && !lib.translate?.[source] && !/[\u3400-\u9fff]/.test(name) ? "" : name;
@@ -130,7 +136,7 @@ function buildOfficialPrompt(event, main = "", skill = "", detail = "") {
 				if (event.type === "dying" && event.dying) main = `${playerNameForPrompt(event.dying)}濒死，需要${Math.max(1, 1 - event.dying.hp)}张【桃】，是否帮助？`;
 				else if (name) {
 					const selectingTargets = targets && targets[1] !== 0 && (!cards || cards[1] === 0 || (selected.cards?.length || 0) >= cards[0]);
-					main = `发动“${name}”${selectingTargets ? `，请选择${rangeText(targets)}名角色` : cards?.[1] !== 0 ? `，请选择${rangeText(cards) || 1}张牌` : ""}`;
+					main = `发动“${name}”${selectingTargets ? `，请选择${rangeText(targets)}名角色` : cards && cards[1] !== 0 ? `，请选择${rangeText(cards) || 1}张牌` : ""}`;
 				}
 				else main = cardName ? `请使用【${cardName}】` : "请选择要使用的牌";
 				break;
@@ -220,4 +226,4 @@ function renderOfficialPrompt(tip, prompt, event, richMain = "") {
 	tip.strokeText?.();
 }
 
-export { officialColors, officialText, plainPrompt, skillNameForPrompt, buildOfficialPrompt, renderOfficialPrompt };
+export { officialColors, officialText, plainPrompt, skillNameForPrompt, selectionRange, cardForPrompt, targetRangeForPrompt, buildOfficialPrompt, renderOfficialPrompt };

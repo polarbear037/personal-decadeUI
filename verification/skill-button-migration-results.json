@@ -1,0 +1,31 @@
+{
+  "initial": {
+    "selected": 0,
+    "skill": "zhiheng",
+    "position": "he",
+    "range": [
+      1,
+      null
+    ],
+    "clicked": false,
+    "selectable": [
+      "card fullskin decade-card selectable",
+      "card fullskin decade-card selectable",
+      "card fullskin decade-card selectable",
+      "card fullskin decade-card selectable",
+      "card fullskin decade-card selectable",
+      "card fullskin decade-card selectable"
+    ],
+    "click": "function (...args) {\n\t\t\ttry {\n\t\t\t\treturn r.call(this, i, ...args);\n\t\t\t} catch (n) {\n\t\t\t\treturn i.apply(this, args);\n\t\t\t}\n\t\t}"
+  },
+  "selectAll": 6,
+  "cancelAll": 0,
+  "skillRetained": true,
+  "playing": [
+    {
+      "name": "../../../雷的一将/animation/skill-button/zhudong_xuanzhong",
+      "canvas": "chukuang-canvas"
+    }
+  ],
+  "errors": []
+}

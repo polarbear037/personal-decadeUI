@@ -1,0 +1,518 @@
+{
+  "othersOff": {
+    "result": {
+      "style": "othersOff",
+      "rows": [
+        {
+          "scene": "single",
+          "count": 1,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 1,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0.03200000000003911,
+          "remaining": 1,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "batch",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "large",
+          "count": 20,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 20,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 20,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "interleaved",
+          "count": 10,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 10,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 10,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "removing",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "local",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        }
+      ]
+    },
+    "errors": []
+  },
+  "onlineUI": {
+    "result": {
+      "style": "onlineUI",
+      "rows": [
+        {
+          "scene": "single",
+          "count": 1,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 1,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 1,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "batch",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "large",
+          "count": 20,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 20,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 20,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "interleaved",
+          "count": 10,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 10,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 10,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "removing",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "local",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        }
+      ]
+    },
+    "errors": []
+  },
+  "on": {
+    "result": {
+      "style": "on",
+      "rows": [
+        {
+          "scene": "single",
+          "count": 1,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 1,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 1,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "batch",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "large",
+          "count": 20,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 20,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 20,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "interleaved",
+          "count": 10,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 10,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 10,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "removing",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "local",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        }
+      ]
+    },
+    "errors": []
+  },
+  "off": {
+    "result": {
+      "style": "off",
+      "rows": [
+        {
+          "scene": "single",
+          "count": 1,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 1,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 1,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "batch",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "large",
+          "count": 20,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 20,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 20,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "interleaved",
+          "count": 10,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 10,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 10,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "removing",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "local",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        }
+      ]
+    },
+    "errors": []
+  },
+  "babysha": {
+    "result": {
+      "style": "babysha",
+      "rows": [
+        {
+          "scene": "single",
+          "count": 1,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 1,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 1,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "batch",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "large",
+          "count": 20,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 20,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 20,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "interleaved",
+          "count": 10,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 10,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 10,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "removing",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "local",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        }
+      ]
+    },
+    "errors": []
+  },
+  "codename": {
+    "result": {
+      "style": "codename",
+      "rows": [
+        {
+          "scene": "single",
+          "count": 1,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 1,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 1,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "batch",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "large",
+          "count": 20,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 20,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 20,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "interleaved",
+          "count": 10,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 10,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 10,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "removing",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        },
+        {
+          "scene": "local",
+          "count": 5,
+          "initialCalls": 1,
+          "subsequentCalls": 1,
+          "ordinaryCalls": 2,
+          "movingCards": 5,
+          "maxReverse": 0,
+          "maxFinalDelta": 0,
+          "maxStableDelta": 0,
+          "remaining": 5,
+          "outgoingExcluded": true
+        }
+      ]
+    },
+    "errors": []
+  }
+}

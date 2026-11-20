@@ -1,0 +1,479 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "game_member": "assets/res/lib/game.zip",
+    "decoded_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28"
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_c86fbbdc52e479ecd3205698402df56a06275158f4056a4ae3e989f4fdf3db0f",
+    "ev_dfd6cd8c4fffa08ad889ec37ec8ca2af4280d83b99bd4da4e237c36293e9976b"
+  ],
+  "source_resources": {
+    "resources": [
+      {
+        "name": "paiju_target_actived",
+        "plist": "assets/res/new/tex/plist/gameinfo.plist",
+        "plist_sha256": "2d23c6a2d9d8254115ce892f1895db16cd6f9fb30e6dd512ab835e8b6c4b7731",
+        "frame": {
+          "frame": "{{633,565},{169,243}}",
+          "offset": "{0,0}",
+          "rotated": true,
+          "sourceColorRect": "{{0,0},{169,243}}",
+          "sourceSize": "{169,243}"
+        },
+        "reference_cardbg": {
+          "frame": "{{1046,803},{164,236}}",
+          "offset": "{6,-2}",
+          "rotated": true,
+          "sourceColorRect": "{{21,12},{164,236}}",
+          "sourceSize": "{194,256}"
+        },
+        "texture_sha256": "6ff05a3dbacc2a1cef5e05b67cc24490133dfffd7b9d3aeac9f3eb06744bc0f5",
+        "alpha_sha256": "91c659e96274aa2d2ea762b78eb94a89fa0cebbdca610e1fe770dc0a55a98be3",
+        "prepared_sha256": "f208651fa4e48430f4f4d3050b1300b1ff1a752be3ad74682e96006101b1e254"
+      },
+      {
+        "name": "SF_eff_paiju_paidigreen_m",
+        "members": [
+          {
+            "member": "assets/res/new/data/spine/yjcm/SF_eff_paiju_paidigreen_m.skel",
+            "sha256": "f8bbe2391432a479b1bfbb07483a4c9bcbb38e03ae758e2ee8bbfab2ba2af80f",
+            "prepared_sha256": "f8bbe2391432a479b1bfbb07483a4c9bcbb38e03ae758e2ee8bbfab2ba2af80f"
+          },
+          {
+            "member": "assets/res/new/data/spine/yjcm/SF_eff_paiju_paidigreen_m.atlas",
+            "sha256": "9c3aad9d9f76d0f2aaa5a9432a1290e8c86386d72da52e4656b8ee3347aa5ffe",
+            "prepared_sha256": "9c3aad9d9f76d0f2aaa5a9432a1290e8c86386d72da52e4656b8ee3347aa5ffe"
+          }
+        ],
+        "texture_sha256": "929055717bb71ee1cf2dc262ee017932d02c54a360c6e11f1545b40390508ba8",
+        "alpha_sha256": "a5e3bfbc4dbf8ef3216752bc375620c41e1c0981d809a51e7c22ea21541fdf3d",
+        "prepared_texture_size": [
+          1854,
+          1854
+        ]
+      },
+      {
+        "name": "SF_eff_paiju_paidigreen_m2",
+        "members": [
+          {
+            "member": "assets/res/new/data/spine/yjcm/SF_eff_paiju_paidigreen_m2.skel",
+            "sha256": "e001977e92bc8891e91c79a3855a113bc9a0d129460a36b16977b230085019da",
+            "prepared_sha256": "e001977e92bc8891e91c79a3855a113bc9a0d129460a36b16977b230085019da"
+          },
+          {
+            "member": "assets/res/new/data/spine/yjcm/SF_eff_paiju_paidigreen_m2.atlas",
+            "sha256": "c0a4af24792e8e26e77030a8ce421aabf1b7230eade5224139be7d6d3b3314d9",
+            "prepared_sha256": "c0a4af24792e8e26e77030a8ce421aabf1b7230eade5224139be7d6d3b3314d9"
+          }
+        ],
+        "texture_sha256": "5cd6496d750957f7f5de7f43bba226027c37fd0d770a91e963eaa2a9e49105bc",
+        "alpha_sha256": "00daf378bd9b59ccc9a86e28f459b998448e0f26a627a6f93fe614bcd5cdcd5c",
+        "prepared_texture_size": [
+          1854,
+          1854
+        ]
+      },
+      {
+        "name": "SF_eff_paiju_paidiorange_m",
+        "members": [
+          {
+            "member": "assets/res/new/data/spine/yjcm/SF_eff_paiju_paidiorange_m.skel",
+            "sha256": "be506c1f0526be56c55503a84d9fb7fffd09075ab0770bd8213a9994779725bc",
+            "prepared_sha256": "be506c1f0526be56c55503a84d9fb7fffd09075ab0770bd8213a9994779725bc"
+          },
+          {
+            "member": "assets/res/new/data/spine/yjcm/SF_eff_paiju_paidiorange_m.atlas",
+            "sha256": "abb7ce887031c886ae38e2e9fcdb4623a9a65d8c4c02d41d31a38dc9312463dd",
+            "prepared_sha256": "abb7ce887031c886ae38e2e9fcdb4623a9a65d8c4c02d41d31a38dc9312463dd"
+          }
+        ],
+        "texture_sha256": "b15f3ab3cf3319133a390ccc97351f59fa23a65005cdae80b00d158b93baf292",
+        "alpha_sha256": "e05838c19f919d3eb221eab53299a75bd782366499dce2fb222b305f8445ea56",
+        "prepared_texture_size": [
+          1854,
+          1854
+        ]
+      },
+      {
+        "name": "SF_eff_paiju_paidiorange_m2",
+        "members": [
+          {
+            "member": "assets/res/new/data/spine/yjcm/SF_eff_paiju_paidiorange_m2.skel",
+            "sha256": "ce46c00a44b8c2f6460711db46fdba478f8406f5cb8a62179b45e308a4e2554e",
+            "prepared_sha256": "ce46c00a44b8c2f6460711db46fdba478f8406f5cb8a62179b45e308a4e2554e"
+          },
+          {
+            "member": "assets/res/new/data/spine/yjcm/SF_eff_paiju_paidiorange_m2.atlas",
+            "sha256": "99e04d7b13ee4859301bce70fd20bccb3cb597922c3de744a677de97c57ad176",
+            "prepared_sha256": "99e04d7b13ee4859301bce70fd20bccb3cb597922c3de744a677de97c57ad176"
+          }
+        ],
+        "texture_sha256": "075b28e54e45310001b443ef5bc95fddb834af34f00cd9c11a15ed6de27aa708",
+        "alpha_sha256": "b173d365ff8ea6d785088bb42c18e0f57c9fb24dde882f4c9c2d9390decfb59a",
+        "prepared_texture_size": [
+          1854,
+          1854
+        ]
+      },
+      {
+        "name": "SF_eff_paiju_paidired_m",
+        "members": [
+          {
+            "member": "assets/res/new/data/spine/yjcm/SF_eff_paiju_paidired_m.skel",
+            "sha256": "a2f05729fbbfec2b949e8e443eccf64f9811fe2540efa88845ed6f63a78e43c8",
+            "prepared_sha256": "a2f05729fbbfec2b949e8e443eccf64f9811fe2540efa88845ed6f63a78e43c8"
+          },
+          {
+            "member": "assets/res/new/data/spine/yjcm/SF_eff_paiju_paidired_m.atlas",
+            "sha256": "20842d21fcf5bfd86a67eb55823cf220a7e3378e793b0e918eac782da8d57a51",
+            "prepared_sha256": "20842d21fcf5bfd86a67eb55823cf220a7e3378e793b0e918eac782da8d57a51"
+          }
+        ],
+        "texture_sha256": "4a1d8b5c40c250ba0cf9e56551e5660e646a89670ed1739191fceacbc0cd7173",
+        "alpha_sha256": "8f04e489d3754239694673222efcd674c3b666c0af5a4758637606db4a3d41f0",
+        "prepared_texture_size": [
+          1979,
+          1979
+        ]
+      },
+      {
+        "name": "SF_eff_paiju_paidired_m2",
+        "members": [
+          {
+            "member": "assets/res/new/data/spine/yjcm/SF_eff_paiju_paidired_m2.skel",
+            "sha256": "dc365fc9c4ec6bfe0c29bdc1882f18d84dfaec159eec9123f5afceb1a23161cc",
+            "prepared_sha256": "dc365fc9c4ec6bfe0c29bdc1882f18d84dfaec159eec9123f5afceb1a23161cc"
+          },
+          {
+            "member": "assets/res/new/data/spine/yjcm/SF_eff_paiju_paidired_m2.atlas",
+            "sha256": "3fb1021f48e390a91adee8b9208d126abdd7a82a21f38814d16be31176775e77",
+            "prepared_sha256": "3fb1021f48e390a91adee8b9208d126abdd7a82a21f38814d16be31176775e77"
+          }
+        ],
+        "texture_sha256": "4a1d8b5c40c250ba0cf9e56551e5660e646a89670ed1739191fceacbc0cd7173",
+        "alpha_sha256": "8f04e489d3754239694673222efcd674c3b666c0af5a4758637606db4a3d41f0",
+        "prepared_texture_size": [
+          1979,
+          1979
+        ]
+      }
+    ],
+    "modules": [
+      {
+        "module": "app.module.game.seat.PlayerSeat",
+        "sha256": "667d131e48095c759f6feb3945c329d5be6051524e614f2a4b88b85e5c5d45b6"
+      },
+      {
+        "module": "app.manager.general.GeneralUiResCfg",
+        "sha256": "bffd18a00183bb1d549d83408d2394ebb45f7e70bb9bd702c319058a11e6de06"
+      },
+      {
+        "module": "app.view.game.GameSeatCcb",
+        "sha256": "0f54477bcff860404681e61cba1677bfd409234cf8abc44b136061ea98e35ff5"
+      },
+      {
+        "module": "app.cfg.CfgCCB",
+        "sha256": "ddb7d89e9749e3b562494aba0ac31f2eb658a32b65d18927c97211bd672ca6d6"
+      }
+    ]
+  },
+  "call_chain": {
+    "model": "app.module.game.seat.PlayerSeat.getDisplayStatus prototype0.152 line2079",
+    "priority": "isSelected->2; isActive->4; inOwnRound2&&!isSelf->1; inAskState&&isSelf->3 (completed combo may return5); otherwise0",
+    "view": "OtherSeatView.updateDisplayStatus -> GameSeatCcb.updateSeatDisplayStatus prototype0.100 line3261",
+    "state_table": "GameSeatCcb root PC721-767: array1 green_m,2 orange_m,3 red_m,4 nil,5 lianzhao_zuowei; yjcm paths",
+    "active_white": "State4 uses #paiju_target_actived.png, not Spine; CENTER, scaleX1.02/scaleY1.01, center offsets(+4,-9). addTo(parent) has no negative z, unlike Spine addTo(parent,-2). FadeIn2 seconds, then repeat fadeTo(.5)1 second/fadeTo(1)1 second.",
+    "spine": "States1/2/3: CENTER alignment through getDisplayStatusParent0.99, yjcm x adjustment-2, z=-2, playAnimation(play,true).",
+    "variant": "GeneralUiResCfg.isUseOldDragon0.12 is DragonType2; getTranfromUiName0.13 maps to m2, offset(0,0). State4 additionally uses x offset-7 and scaleX1.16.",
+    "scope": "Combo/lianzhao state5 is a separate skill mechanic and is not replaced with a generic seat frame."
+  },
+  "converter": {
+    "tool": "D:/spine2apng/make_apng.mjs",
+    "sha256": "81eabb002edac8d4848bcae3934fae81e75688a817793ee1985893c8d817771e",
+    "renderer_sha256": "22e5e5aeb82c9bb4f68504f97b340035d024f87fdc4fce1ac55071bbba6c3e09",
+    "runtime": "3.6 / shipped skeleton3.6.38",
+    "fps": 30,
+    "scale": 1,
+    "output": "RGBA APNG, infinite loop, untouched converter output",
+    "conversion": "ETC1 RGB + red channel from separate ETC1 alpha; atlas page suffix .pvr.ccz -> .png; no recoloring, extra cropping or resizing."
+  },
+  "assets": [
+    {
+      "name": "SF_eff_paiju_paidigreen_m",
+      "duration": 3.2666666507720947,
+      "minX": -112.00000617255749,
+      "minY": -144.99999999999994,
+      "maxX": 112.00000672947995,
+      "maxY": 132.99999999999994,
+      "width": 229,
+      "height": 282,
+      "originX": -2.7846122918617766e-07,
+      "originY": 6,
+      "path": "image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png",
+      "sha256": "a35c913e0fcbe27a46fc3e0f5983cebdeb22c4c7c7eda38da78ade77cb5bdeb2",
+      "bytes": 1284229,
+      "frames": 98,
+      "duration_ms": 3266.66666666667,
+      "loop": 0,
+      "unique_frames": 49,
+      "visible_alpha64_union": [
+        15,
+        15,
+        214,
+        268
+      ],
+      "bright_ridge_lrtb": [
+        26.5,
+        201.5,
+        26.0,
+        255.5
+      ],
+      "unchanged_converter_output": true
+    },
+    {
+      "name": "SF_eff_paiju_paidigreen_m2",
+      "duration": 1.6333333253860474,
+      "minX": -92.10000369300427,
+      "minY": -144.99999999999994,
+      "maxX": 109.500003868457,
+      "maxY": 132.99999999999994,
+      "width": 206,
+      "height": 282,
+      "originX": -8.700000087726366,
+      "originY": 6,
+      "path": "image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m2_play_dynamic.png",
+      "sha256": "cecef8c542b941d7066123353c592e938b7d662c2303f0848f5748c3ad97a289",
+      "bytes": 907095,
+      "frames": 49,
+      "duration_ms": 1633.3333333333323,
+      "loop": 0,
+      "unique_frames": 36,
+      "visible_alpha64_union": [
+        13,
+        15,
+        193,
+        268
+      ],
+      "bright_ridge_lrtb": [
+        23.5,
+        181.5,
+        26.0,
+        255.5
+      ],
+      "unchanged_converter_output": true
+    },
+    {
+      "name": "SF_eff_paiju_paidiorange_m",
+      "duration": 3.2666666507720947,
+      "minX": -112.00000617255749,
+      "minY": -144.99999999999994,
+      "maxX": 112.00000672947995,
+      "maxY": 132.99999999999994,
+      "width": 229,
+      "height": 282,
+      "originX": -2.7846122918617766e-07,
+      "originY": 6,
+      "path": "image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png",
+      "sha256": "554e64d38fcdd0742a1e10bd3685c77869c2705f78629c32e835bb23a0ab7274",
+      "bytes": 1236839,
+      "frames": 98,
+      "duration_ms": 3266.66666666667,
+      "loop": 0,
+      "unique_frames": 49,
+      "visible_alpha64_union": [
+        14,
+        14,
+        215,
+        269
+      ],
+      "bright_ridge_lrtb": [
+        26.0,
+        201.5,
+        26.0,
+        255.5
+      ],
+      "unchanged_converter_output": true
+    },
+    {
+      "name": "SF_eff_paiju_paidiorange_m2",
+      "duration": 3.2666666507720947,
+      "minX": -91.63001200904431,
+      "minY": -144.99999999999994,
+      "maxX": 109.97000890385739,
+      "maxY": 132.99999999999994,
+      "width": 206,
+      "height": 282,
+      "originX": -9.169998447406542,
+      "originY": 6,
+      "path": "image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m2_play_dynamic.png",
+      "sha256": "57eaabefdd565f5cefda6d60458d2b3bcf4abafa5bf57664ee7692ec7f583be2",
+      "bytes": 1176244,
+      "frames": 98,
+      "duration_ms": 3266.66666666667,
+      "loop": 0,
+      "unique_frames": 49,
+      "visible_alpha64_union": [
+        13,
+        14,
+        193,
+        269
+      ],
+      "bright_ridge_lrtb": [
+        23.5,
+        181.5,
+        26.0,
+        255.5
+      ],
+      "unchanged_converter_output": true
+    },
+    {
+      "name": "SF_eff_paiju_paidired_m",
+      "duration": 3.2666666507720947,
+      "minX": -120.00000640460851,
+      "minY": -151.99999999999994,
+      "maxX": 119.000006961531,
+      "maxY": 138.99999999999994,
+      "width": 244,
+      "height": 295,
+      "originX": 0.4999997215387566,
+      "originY": 6.5,
+      "path": "image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png",
+      "sha256": "a3d29765c91190b26e6aa29cf6a939b88c2fc008faf4f87f865328133228aa91",
+      "bytes": 1182711,
+      "frames": 98,
+      "duration_ms": 3266.66666666667,
+      "loop": 0,
+      "unique_frames": 49,
+      "visible_alpha64_union": [
+        21,
+        19,
+        224,
+        276
+      ],
+      "bright_ridge_lrtb": [
+        34.0,
+        209.5,
+        32.0,
+        261.0
+      ],
+      "unchanged_converter_output": true
+    },
+    {
+      "name": "SF_eff_paiju_paidired_m2",
+      "duration": 1.6333333253860474,
+      "minX": -100.00007173129919,
+      "minY": -151.99999999999994,
+      "maxX": 115.09995018214639,
+      "maxY": 138.99999999999994,
+      "width": 220,
+      "height": 295,
+      "originX": -7.5499392254236,
+      "originY": 6.5,
+      "path": "image/ui/effects/xinsha/SF_eff_paiju_paidired_m2_play_dynamic.png",
+      "sha256": "c9460cb227e1b9ff5a1bd5b5fc0b37fe7f1a8900072a2d94f65a8531ea7e43bf",
+      "bytes": 823571,
+      "frames": 49,
+      "duration_ms": 1633.3333333333323,
+      "loop": 0,
+      "unique_frames": 36,
+      "visible_alpha64_union": [
+        19,
+        19,
+        202,
+        276
+      ],
+      "bright_ridge_lrtb": [
+        31.0,
+        188.5,
+        32.0,
+        261.0
+      ],
+      "unchanged_converter_output": true
+    }
+  ],
+  "geometry": {
+    "reference": "Local player background stretches to130x180. Align source bright-ridge rectangle to this actual background boundary; the earlier164x236 cardbg trim mapping was incorrect for the local node.",
+    "apng_origin": "Keep the full converter canvas and its transparent margins. Each asset has its own bright_ridge_lrtb; the CSS scales the ridge span to the local frame and compensates its center.",
+    "measurement": "Across all frames, take median alpha on the middle row/column; in each outer third, average coordinates with median alpha>=254. This measures the stable bright line instead of the outer animated flame union.",
+    "white": {
+      "canvas": [
+        169,
+        243
+      ],
+      "bright_ridge_lrtb": [
+        6,
+        162,
+        6,
+        236
+      ],
+      "method": "Alpha maxima on middle row/column, independently aligned to the same local frame for every border style."
+    },
+    "render_order": "One state effect in::before z=-1; duplicate inherited player background in::after z=0, below avatar/dynamic/camp. Merely a negative effect z-index cannot move it under its own stacking-context background. The extra backdrop occludes solid effect centers even with hidden/missing/transparent avatars.",
+    "mapping_limit": "Local source-pixel and real-DOM checks; not a captured official-client runtime coordinate trace."
+  },
+  "implementation": {
+    "file": "src/styles/player3.css",
+    "host": "body[data-style=othersOff] #arena",
+    "available": "white sprite + fade/breathe",
+    "selected": "orange Spine APNG, independent1.05 scale; higher priority than available/target",
+    "turn": "green Spine APNG for other current-turn player",
+    "response": "red Spine APNG for self during arena.selecting, excluding choose-character, dead, selected and selectable; nonacting other target state uses same red APNG; target excludes glow_phase and position0",
+    "other_styles": "Original shared sprites and other style CSS are unchanged"
+  },
+  "verification": {
+    "commands": [
+      "python verification/extract-yjcm-target-effects.py",
+      "node D:/spine2apng/make_apng.mjs --input <six extracted skel files> --output-dir <project temporary directory>",
+      "python verification/verify-yjcm-target-assets.py",
+      "node verification/yjcm-target-effects-browser.cjs",
+      "git diff --check"
+    ],
+    "browser_results": "verification/yjcm-target-effects-browser-results.json",
+    "live_before": "verification/yjcm-target-effects-live-before.json",
+    "live_after": "verification/yjcm-target-effects-live-after.json",
+    "live_screenshot": "verification/yjcm-target-effects-live-after.png",
+    "checks": [
+      "all6 APNG frame counts/durations/alpha bounds/looping",
+      "4 frame styles and8 DOM states",
+      "selected/available priority and clearing",
+      "static white fade and pulse",
+      "visible APNG animation behind avatar",
+      "CSS/source-coordinate ratios and transparent margins",
+      "five other style isolation"
+    ]
+  },
+  "alignment_verification": {
+    "commands": [
+      "node verification/yjcm-target-alignment-browser.cjs",
+      "python verification/verify-yjcm-target-alignment.py"
+    ],
+    "geometry": "verification/yjcm-target-alignment-results.json",
+    "pixels": "verification/yjcm-target-alignment-pixel-results.json",
+    "live": "verification/yjcm-target-alignment-live.json",
+    "screenshot": "verification/yjcm-target-alignment-live.png",
+    "cases": "4 borders x hidden/dynamic without opaque frame/static/outcrop x5 states; red/green use centered1.03 display scale, selected orange uses1.05 display scale, white ridges to the independently expanded3px outline, all within0.04 CSS px;48 interior RGB comparisons and4 outcrop strips differ by at most1."
+  },
+  "white_frame_fitting": {
+    "local_geometry": "Independent white169x243 source with ridge(6,6)-(162,236); map ridge to local frame expanded3px each side. At130x180, canvas147.333x196.513 and center(65.4359,90.4043).",
+    "layer": "User-requested white/red/green/gold all remain at z-1, behind portrait61/dynamic60 and the occluding backdrop; only white geometry expands the visible fine line beyond the root frame.",
+    "visibility": "verification/yjcm-target-white-visibility-results.json",
+    "live": "verification/yjcm-target-white-live-after.json",
+    "screenshot": "verification/yjcm-target-white-live-after.png",
+    "checks": "12 visible outer-edge comparisons,4 opaque outcrop strips unchanged; actual selectable targets inspected with decoded white image, running breathe animation and z-1."
+  },
+  "state_priority_fix": {
+    "rea_evidence": "ev_2085c90d63c90dfc4f1d502b9c27dbac4f77fdaf73242771f01e9ebc0931efc4",
+    "orange": "Official state2 paidiorange is selected target. Its resource was already connected, but previous2%/5% adjustments only changed red/green and left selected orange at1.0. It now uses its own1.05 scale.",
+    "actor": "Official own-round state1 precedes ask state3. Generic target highlight must not replace an acting player glow_phase with the wider red asset. Self seat response follows arena.selecting instead of generic target.",
+    "root_zoom": "Base layout/default/layout.css target_shake=zoom separately applies scale1.03 to target and target2. Suppress this additional root transform only for the acting player/self in othersOff. Current observed game uses target_shake=off; that optional zoom is a separately covered amplification path.",
+    "verification": "Real card-actions-xinsha.js playerUseCard wrapper executed on browser role DOM, checking target add/remove and original finish across both off/zoom for self/other current actor and all4 borders."
+  },
+  "limitations": [
+    "Official client runtime side-by-side not performed",
+    "Physical Android device not tested",
+    "Actual user game stylesheet inspected/loaded; selection interaction and geometry additionally checked in the browser fixture"
+  ]
+}

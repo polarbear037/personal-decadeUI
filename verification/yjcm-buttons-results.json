@@ -1,0 +1,725 @@
+{
+  "hud": {
+    "window": {
+      "x": 0,
+      "y": 0,
+      "width": 1500,
+      "height": 750,
+      "top": 0,
+      "right": 1500,
+      "bottom": 750,
+      "left": 0
+    },
+    "menu": {
+      "rect": {
+        "x": 1369.5,
+        "y": 18,
+        "width": 56,
+        "height": 51,
+        "top": 18,
+        "right": 1425.5,
+        "bottom": 69,
+        "left": 1369.5
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_menu_main.png\")",
+      "fontSize": "16px",
+      "animation": "none",
+      "filter": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    "question": {
+      "rect": {
+        "x": 1312.8125,
+        "y": 23.796875,
+        "width": 34.390625,
+        "height": 34.390625,
+        "top": 23.796875,
+        "right": 1347.203125,
+        "bottom": 58.1875,
+        "left": 1312.8125
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/gameInfoWenHao.png\")",
+      "fontSize": "16px",
+      "animation": "none",
+      "filter": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    "pile": {
+      "rect": {
+        "x": 77,
+        "y": 21,
+        "width": 92,
+        "height": 112,
+        "top": 21,
+        "right": 169,
+        "bottom": 133,
+        "left": 77
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/showInfo.png\")",
+      "fontSize": "16px",
+      "animation": "none",
+      "filter": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    "sort": {
+      "rect": {
+        "x": 1037,
+        "y": 681,
+        "width": 106,
+        "height": 38,
+        "top": 681,
+        "right": 1143,
+        "bottom": 719,
+        "left": 1037
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/gameinfo_btn_sort_cardsnew.png\")",
+      "fontSize": "24px",
+      "animation": "none",
+      "filter": "none",
+      "color": "rgb(193, 174, 142)"
+    },
+    "confirm": {
+      "rect": {
+        "x": 506.0625,
+        "y": 461.75,
+        "width": 207.890625,
+        "height": 60.5,
+        "top": 461.75,
+        "right": 713.953125,
+        "bottom": 522.25,
+        "left": 506.0625
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+      "fontSize": "30.8px",
+      "animation": "none",
+      "filter": "none",
+      "color": "rgb(247, 231, 174)"
+    },
+    "cancel": {
+      "rect": {
+        "x": 786.046875,
+        "y": 461.75,
+        "width": 207.890625,
+        "height": 60.5,
+        "top": 461.75,
+        "right": 993.9375,
+        "bottom": 522.25,
+        "left": 786.046875
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+      "fontSize": "30.8px",
+      "animation": "none",
+      "filter": "none",
+      "color": "rgb(247, 231, 174)"
+    },
+    "handcount": {
+      "rect": {
+        "x": 1160,
+        "y": 682,
+        "width": 88,
+        "height": 34,
+        "top": 682,
+        "right": 1248,
+        "bottom": 716,
+        "left": 1160
+      },
+      "background": "none",
+      "fontSize": "16px",
+      "animation": "none",
+      "filter": "none",
+      "color": "rgb(245, 215, 142)"
+    },
+    "skill": {
+      "rect": {
+        "x": 1128,
+        "y": 633,
+        "width": 110,
+        "height": 45,
+        "top": 633,
+        "right": 1238,
+        "bottom": 678,
+        "left": 1128
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+      "fontSize": "34px",
+      "animation": "none",
+      "filter": "none",
+      "color": "rgb(252, 244, 188)"
+    },
+    "flower": {
+      "rect": {
+        "x": 76.5,
+        "y": 504,
+        "width": 73,
+        "height": 72,
+        "top": 504,
+        "right": 149.5,
+        "bottom": 576,
+        "left": 76.5
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_menu_flower.png\")",
+      "fontSize": "16px",
+      "animation": "none",
+      "filter": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    "chat": {
+      "rect": {
+        "x": 76.5,
+        "y": 668,
+        "width": 73,
+        "height": 72,
+        "top": 668,
+        "right": 149.5,
+        "bottom": 740,
+        "left": 76.5
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_menu_chat.png\")",
+      "fontSize": "16px",
+      "animation": "none",
+      "filter": "none",
+      "color": "rgb(255, 255, 255)"
+    },
+    "face": {
+      "rect": {
+        "x": 76.5,
+        "y": 586,
+        "width": 73,
+        "height": 72,
+        "top": 586,
+        "right": 149.5,
+        "bottom": 658,
+        "left": 76.5
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_menu_quick_face.png\")",
+      "fontSize": "16px",
+      "animation": "none",
+      "filter": "none",
+      "color": "rgb(255, 255, 255)"
+    }
+  },
+  "buttonStates": [
+    {
+      "enabled": {
+        "label": "确定",
+        "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+        "filter": "none",
+        "width": 207.890625
+      },
+      "pressed": {
+        "label": "确定",
+        "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+        "filter": "none",
+        "width": 155.91796875
+      },
+      "disabled": {
+        "label": "确定",
+        "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+        "filter": "grayscale(1)",
+        "width": 207.890625
+      },
+      "geometry": {
+        "flow": "normal",
+        "centers": 279.984375,
+        "centerY": 492
+      }
+    },
+    {
+      "enabled": {
+        "label": "换牌",
+        "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_1.png\")",
+        "filter": "none",
+        "width": 207.890625
+      },
+      "pressed": {
+        "label": "换牌",
+        "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_1.png\")",
+        "filter": "none",
+        "width": 155.91796875
+      },
+      "disabled": {
+        "label": "换牌",
+        "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_1.png\")",
+        "filter": "grayscale(1)",
+        "width": 207.890625
+      },
+      "geometry": {
+        "flow": "redraw",
+        "centers": 256.984375,
+        "centerY": 495.5
+      }
+    }
+  ],
+  "confirmAfterRedraw": {
+    "flow": "normal",
+    "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+    "color": "rgb(247, 231, 174)"
+  },
+  "interactionOpened": true,
+  "grid": [
+    {
+      "x": 185,
+      "y": 147.5,
+      "width": 260,
+      "height": 175,
+      "top": 147.5,
+      "right": 445,
+      "bottom": 322.5,
+      "left": 185
+    },
+    {
+      "x": 475,
+      "y": 147.5,
+      "width": 260,
+      "height": 175,
+      "top": 147.5,
+      "right": 735,
+      "bottom": 322.5,
+      "left": 475
+    },
+    {
+      "x": 765,
+      "y": 147.5,
+      "width": 260,
+      "height": 175,
+      "top": 147.5,
+      "right": 1025,
+      "bottom": 322.5,
+      "left": 765
+    },
+    {
+      "x": 1055,
+      "y": 147.5,
+      "width": 260,
+      "height": 175,
+      "top": 147.5,
+      "right": 1315,
+      "bottom": 322.5,
+      "left": 1055
+    },
+    {
+      "x": 185,
+      "y": 332.5,
+      "width": 260,
+      "height": 175,
+      "top": 332.5,
+      "right": 445,
+      "bottom": 507.5,
+      "left": 185
+    }
+  ],
+  "settings": {
+    "allModes": false,
+    "global": {
+      "id": 0,
+      "dynamic": false
+    },
+    "modes": {
+      "identity": {
+        "id": 1,
+        "dynamic": false
+      }
+    }
+  },
+  "animation": {
+    "nonempty": true,
+    "changing": true,
+    "buffer": [
+      1500,
+      750
+    ]
+  },
+  "dynamicScenes": [
+    1,
+    0,
+    2,
+    3,
+    6,
+    7,
+    8,
+    15,
+    315
+  ],
+  "confirmClicks": [
+    "ok",
+    "cancel"
+  ],
+  "resizedMenu": {
+    "x": 1077.140625,
+    "y": 12.671875,
+    "width": 39.421875,
+    "height": 35.890625
+  },
+  "lowerLeft": [
+    {
+      "tag": "DIV",
+      "class": "yjcm-button yjcm-quick-face",
+      "html": "<div class=\"yjcm-button yjcm-quick-face\" role=\"button\" aria-label=\"表情\" tabindex=\"0\"></div>"
+    },
+    {
+      "tag": "DIV",
+      "class": "yjcm-chat-buttons",
+      "html": "<div class=\"yjcm-chat-buttons\"><div class=\"yjcm-button yjcm-flower\" role=\"button\" aria-label=\"互动道具\" tabindex=\"0\"></div><div class=\"yjcm-button yjcm-quick-face\" role=\"button\" aria-label=\"表情\" tabindex=\"0\"></div><div class=\"yjcm-button yjcm-chat\" role=\"button\" aria-label=\"聊天\" tabindex=\"0\"></div></div>"
+    },
+    {
+      "tag": "DIV",
+      "class": "handcards",
+      "html": "<div class=\"handcards\" data-card-alternate-name-visible=\"off\" style=\"width: 100%;\"><div class=\"card fullskin decade-card drawinghidden\" data-card-name=\"sha\" data-card-type=\"basic\" data-card-subtype=\"\" data-card-multitarget=\"0\" data-suit=\"spade\" style=\"background: url(&quot;extension/十周年UI/image/card-skins/decade/sha.png&quot;); transform: translate(31px, 7px) scale(0.789075);\"><div class=\"image\" style=\"background-image: url(&quot;image/card/sha.png&quot;);\"></div><div class=\"info\"></div><div cla"
+    },
+    {
+      "tag": "DIV",
+      "class": "hand-cards",
+      "html": "<div class=\"hand-cards\"><div class=\"handcards\" data-card-alternate-name-visible=\"off\" style=\"width: 100%;\"><div class=\"card fullskin decade-card drawinghidden\" data-card-name=\"sha\" data-card-type=\"basic\" data-card-subtype=\"\" data-card-multitarget=\"0\" data-suit=\"spade\" style=\"background: url(&quot;extension/十周年UI/image/card-skins/decade/sha.png&quot;); transform: translate(31px, 7px) scale(0.789075);\"><div class=\"image\" style=\"background-image: url(&quot;image/card/sha.png&quot;);\"></div><div cla"
+    },
+    {
+      "tag": "DIV",
+      "class": "hand-wrap",
+      "html": "<div class=\"hand-wrap\" style=\"height: 149px;\"><div class=\"hand-cards\"><div class=\"handcards\" data-card-alternate-name-visible=\"off\" style=\"width: 100%;\"><div class=\"card fullskin decade-card drawinghidden\" data-card-name=\"sha\" data-card-type=\"basic\" data-card-subtype=\"\" data-card-multitarget=\"0\" data-suit=\"spade\" style=\"background: url(&quot;extension/十周年UI/image/card-skins/decade/sha.png&quot;); transform: translate(31px, 7px) scale(0.789075);\"><div class=\"image\" style=\"background-image: url(&q"
+    }
+  ],
+  "referenceLayout": {
+    "style": "othersOff",
+    "window": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 576,
+      "top": 0,
+      "right": 1280,
+      "bottom": 576,
+      "left": 0
+    },
+    "unit": 0.768,
+    "menu": {
+      "rect": {
+        "x": 1179.78125,
+        "y": 13.828125,
+        "width": 43,
+        "height": 39.15625,
+        "top": 13.828125,
+        "right": 1222.78125,
+        "bottom": 52.984375,
+        "left": 1179.78125
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_menu_main.png\")",
+      "border": "none"
+    },
+    "pile": {
+      "rect": {
+        "x": 59.125,
+        "y": 16.125,
+        "width": 70.640625,
+        "height": 86.015625,
+        "top": 16.125,
+        "right": 129.765625,
+        "bottom": 102.140625,
+        "left": 59.125
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/showInfo.png\")",
+      "border": "none"
+    },
+    "flower": {
+      "rect": {
+        "x": 58.75,
+        "y": 387.109375,
+        "width": 56.0625,
+        "height": 55.28125,
+        "top": 387.109375,
+        "right": 114.8125,
+        "bottom": 442.390625,
+        "left": 58.75
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_menu_flower.png\")",
+      "border": "none"
+    },
+    "face": {
+      "rect": {
+        "x": 58.75,
+        "y": 450.078125,
+        "width": 56.0625,
+        "height": 55.28125,
+        "top": 450.078125,
+        "right": 114.8125,
+        "bottom": 505.359375,
+        "left": 58.75
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_menu_quick_face.png\")",
+      "border": "none"
+    },
+    "chat": {
+      "rect": {
+        "x": 58.75,
+        "y": 513.046875,
+        "width": 56.0625,
+        "height": 55.28125,
+        "top": 513.046875,
+        "right": 114.8125,
+        "bottom": 568.328125,
+        "left": 58.75
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_menu_chat.png\")",
+      "border": "none"
+    },
+    "sort": {
+      "rect": {
+        "x": 924.421875,
+        "y": 523.03125,
+        "width": 81.40625,
+        "height": 29.171875,
+        "top": 523.03125,
+        "right": 1005.828125,
+        "bottom": 552.203125,
+        "left": 924.421875
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/gameinfo_btn_sort_cardsnew.png\")",
+      "border": "none"
+    },
+    "confirm": {
+      "rect": {
+        "x": 461.4921875,
+        "y": 357.328125,
+        "width": 159.65625,
+        "height": 46.453125,
+        "top": 357.328125,
+        "right": 621.1484375,
+        "bottom": 403.78125,
+        "left": 461.4921875
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_1.png\")",
+      "border": "none"
+    },
+    "cancel": {
+      "rect": {
+        "x": 658.8515625,
+        "y": 357.328125,
+        "width": 159.65625,
+        "height": 46.453125,
+        "top": 357.328125,
+        "right": 818.5078125,
+        "bottom": 403.78125,
+        "left": 658.8515625
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+      "border": "none"
+    },
+    "handcount": {
+      "rect": {
+        "x": 1018.890625,
+        "y": 523.78125,
+        "width": 67.578125,
+        "height": 26.109375,
+        "top": 523.78125,
+        "right": 1086.46875,
+        "bottom": 549.890625,
+        "left": 1018.890625
+      },
+      "background": "none",
+      "border": "none"
+    },
+    "hand": {
+      "rect": {
+        "x": 76.796875,
+        "y": 422.40625,
+        "width": 727.046875,
+        "height": 153.59375,
+        "top": 422.40625,
+        "right": 803.84375,
+        "bottom": 576,
+        "left": 76.796875
+      },
+      "background": "none",
+      "border": "none"
+    },
+    "cards": [
+      {
+        "x": 124.6893539428711,
+        "y": 442.5902404785156,
+        "width": 96.21503448486328,
+        "height": 133.63204956054688,
+        "top": 442.5902404785156,
+        "right": 220.90438842773438,
+        "bottom": 576.2222900390625,
+        "left": 124.6893539428711
+      },
+      {
+        "x": 222.68936157226562,
+        "y": 442.5902404785156,
+        "width": 96.21505737304688,
+        "height": 133.63204956054688,
+        "top": 442.5902404785156,
+        "right": 318.9044189453125,
+        "bottom": 576.2222900390625,
+        "left": 222.68936157226562
+      },
+      {
+        "x": 321.6893615722656,
+        "y": 442.5902404785156,
+        "width": 96.21505737304688,
+        "height": 133.63204956054688,
+        "top": 442.5902404785156,
+        "right": 417.9044189453125,
+        "bottom": 576.2222900390625,
+        "left": 321.6893615722656
+      },
+      {
+        "x": 419.6893615722656,
+        "y": 442.5902404785156,
+        "width": 96.21505737304688,
+        "height": 133.63204956054688,
+        "top": 442.5902404785156,
+        "right": 515.9044189453125,
+        "bottom": 576.2222900390625,
+        "left": 419.6893615722656
+      }
+    ],
+    "active": {
+      "rect": {
+        "x": 994.328125,
+        "y": 456.234375,
+        "width": 84.46875,
+        "height": 34.546875,
+        "top": 456.234375,
+        "right": 1078.796875,
+        "bottom": 490.78125,
+        "left": 994.328125
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+      "border": "none"
+    },
+    "passive": {
+      "rect": {
+        "x": 1023.125,
+        "y": 500.765625,
+        "width": 55.671875,
+        "height": 19.953125,
+        "top": 500.765625,
+        "right": 1078.796875,
+        "bottom": 520.71875,
+        "left": 1023.125
+      },
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+      "border": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_beidong_btn.png\")"
+    },
+    "cardScale": 0.18560000000000001
+  },
+  "skillImages": {
+    "enabled": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_item_normal.png\")",
+    "disabled": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_skill_normal_gray.png\")",
+    "limitNormal": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic.png\")",
+    "limitUsed": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png\")",
+    "convert": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png\")"
+  },
+  "foldedHand": {
+    "scrolling": true,
+    "width": 1915,
+    "lastRight": 1914.2080078125
+  },
+  "layoutVariants": [
+    {
+      "scenario": {
+        "zoom": 1.5,
+        "sidebar": "leftbar",
+        "side": "on",
+        "width": 1280,
+        "height": 576
+      },
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 576,
+        "top": 0,
+        "right": 1280,
+        "bottom": 576,
+        "left": 0
+      },
+      "hand": {
+        "x": 76.8125,
+        "y": 422.40625,
+        "width": 727.03125,
+        "height": 153.59375,
+        "top": 422.40625,
+        "right": 803.84375,
+        "bottom": 576,
+        "left": 76.8125
+      },
+      "skill": {
+        "x": 994.328125,
+        "y": 456.234375,
+        "width": 84.46875,
+        "height": 34.546875,
+        "top": 456.234375,
+        "right": 1078.796875,
+        "bottom": 490.78125,
+        "left": 994.328125
+      }
+    },
+    {
+      "scenario": {
+        "zoom": 1.25,
+        "sidebar": "rightbar",
+        "side": "off",
+        "width": 1440,
+        "height": 810
+      },
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 810,
+        "top": 0,
+        "right": 1440,
+        "bottom": 810,
+        "left": 0
+      },
+      "hand": {
+        "x": 604.484375,
+        "y": 593.90625,
+        "width": 792.328125,
+        "height": 215.890625,
+        "top": 593.90625,
+        "right": 1396.8125,
+        "bottom": 809.796875,
+        "left": 604.484375
+      },
+      "skill": {
+        "x": 218.046875,
+        "y": 641.421875,
+        "width": 118.734375,
+        "height": 48.5625,
+        "top": 641.421875,
+        "right": 336.78125,
+        "bottom": 689.984375,
+        "left": 218.046875
+      }
+    }
+  ],
+  "modeScope": [
+    "0",
+    "22"
+  ],
+  "restored": "22",
+  "layouts": [
+    {
+      "style": "othersOff",
+      "phonelayout": true,
+      "buttons": 3,
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_1.png\")"
+    },
+    {
+      "style": "othersOff",
+      "phonelayout": false,
+      "buttons": 3,
+      "background": "url(\"http://127.0.0.1:56917/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_1.png\")"
+    }
+  ],
+  "isolation": [
+    "on",
+    "off",
+    "onlineUI",
+    "babysha",
+    "codename"
+  ],
+  "errors": [],
+  "failed": []
+}

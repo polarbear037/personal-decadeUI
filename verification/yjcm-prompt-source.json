@@ -1,0 +1,257 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "packed_cache_matches_apk": true,
+    "game_decoded_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28",
+    "config_decoded_sha256": "954227244cf413b393d4394848ae218b46707c2e340ead266e7e21f85966b0d2"
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_9c5d0ada064eb4df0e69550e647832f45a7c91a83828969b6e7b0219840bc0e9"
+  ],
+  "modules": [
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "member": "app.skill.spell",
+      "sha256": "5550e92ed9367963d41edfbdd09f76b147bf517bbcb462385cc939a6fc0988dc"
+    },
+    {
+      "archive_member": "assets/res/lib/config.zip",
+      "member": "app.config.spell_desc",
+      "sha256": "a92ac0e9b8c26a4a26289a87420f475a68b84ed4fcc17bb215e06aa769c09aba"
+    },
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "member": "app.cfg.CfgText",
+      "sha256": "448d085b4c5b749be66e9b111256c0382b3ceecf758563abac12601b81094a19"
+    },
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "member": "app.skill.Skill",
+      "sha256": "c6d8b455bd502b174f9d95773c39b05f0a7d62f35d2e84515b90dced68e4146a"
+    },
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "member": "app.module.game.spell.SpellData",
+      "sha256": "20f80048bb86e7c6af6b777725124e81b801d0cdd29a4e4d6ee973853580106c"
+    },
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "member": "app.module.game.seat.PlayerSeat",
+      "sha256": "667d131e48095c759f6feb3945c329d5be6051524e614f2a4b88b85e5c5d45b6"
+    },
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "member": "app.view.game.GameSelfSeatUi",
+      "sha256": "e7c812fcb76fc79acfa3faf81ba1715cf3ee137737cc3a424f0f4d2209d317bf"
+    },
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "member": "app.view.game.GameButtonBar",
+      "sha256": "6d3716462c6ac2617d32bc93dc010fdda80989519100c8b00356cd0163e70ad2"
+    },
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "member": "app.skill.normal.jinnang.WuXieKeJi",
+      "sha256": "052df6ba617e1eb93b04d1ae410e8088ffa8560387ebcdc970ea6667ef8c7489"
+    }
+  ],
+  "entries": 3732,
+  "destination": "src/ui/xinshaPromptData.js",
+  "sha256": "b7682eaa883c33bb6b490f8472810ccc4f7e9086f62face52807fe4d6dc4ae9a",
+  "observations": [
+    "GameSelfSeatUi.getDealCardOptMsg uses CfgText.TXT_Deal_Card.",
+    "Skill.getActiveTip/getAskTip/getDefensiveTip read spellCfg; transformTip substitutes Source/Target/Skill.",
+    "SpellData.getColorName uses #FFD979 for equipment and #A3F030 with FZSHENGSKSJW at size32 for skills.",
+    "PlayerSeat.getSeatNameWithColor uses #FFE100.",
+    "GameButtonBar.createChildren: RichLabel fnt/fzbw.ttf, size28, #FEF0C9, charSpace0, outline 1,#614131; CENTER_BOTTOM at width/2,height+5."
+  ],
+  "adaptation": "Match names with description/version evidence; ambiguous versions, unknown branch parameters, custom operation prompts and unmatched templates preserve native text. No protocol SkillId or arbitrary branch parameter is inferred from a noname event. Online renderer remains separate.",
+  "scope": "Static packaged Lua and configuration; official runtime, live Electron, mobile and multiplayer not observed.",
+  "fonts": [
+    {
+      "member": "assets/res/fnt/fzbw.ttf",
+      "destination": "ui/assets/fonts/fzbw.ttf",
+      "sha256": "9d8c656395e0cae765a2292c403ec2aaaa55ee551ab37ab330bf1ce5c3c2d9cc"
+    },
+    {
+      "member": "assets/res/fnt/FZSHENGSKSJW.ttf",
+      "destination": "ui/assets/fonts/FZSHENGSKSJW.ttf",
+      "sha256": "7f5026e29f8e4c4e83db3f73a6656597cb631d7a35908c1ef3e23a5612c9a521"
+    }
+  ],
+  "validation": {
+    "passed_commands": [
+      "node --check (15 changed JavaScript files)",
+      "git diff --check -- (changed tracked files)",
+      "node verification/optimized-prompt-browser.cjs",
+      "node verification/official-prompt-browser.cjs",
+      "node verification/xinsha-prompt-browser.cjs",
+      "node verification/xinsha-prompt-engine.cjs",
+      "node verification/simplified-skill-prompt-browser.cjs"
+    ],
+    "browser_scope": "Edge headless: real noname entry, native chooseToUse/check/card and skill clicks, select menu, old bool migration; xinsha text/color/font/geometry; Online unchanged path; simplified skill regression across all six UI styles. No rule settlement or networking changes.",
+    "not_verified": [
+      "official client runtime visual comparison",
+      "current user Electron game",
+      "mobile device",
+      "live multiplayer"
+    ]
+  },
+  "response_bridge": {
+    "rea_inventory_evidence": "ev_71f2476166478cf34c6a234403c79c9f42f01c2e8bd1e87cdfd7778efe21c30e",
+    "apk_packed_game_config_and_local_fonts_byte_identity_verified": true,
+    "modules": [
+      {
+        "archive_member": "assets/res/lib/game.zip",
+        "member": "app.skill.normal.basic.Tao",
+        "sha256": "f6d9ad2e04f6b88680b4066bb0c941d6610247e313c404aabde1c3ccc711c44c",
+        "function": "getActiveTip, Lua function 0.8, lines 205-233",
+        "observation": "Other-seat rescue selects ActiveTip branch 2 and substitutes tostring(1 - target:getCurHp()) for {Count}."
+      },
+      {
+        "archive_member": "assets/res/lib/game.zip",
+        "member": "app.skill.normal.jinnang.WanJianQiFa",
+        "sha256": "d4b2541637262e60265db34799a565037abeb9fe801ef30afa411172dee1cb50",
+        "observation": "No getDefensiveTip override; inherited Skill.getDefensiveTip reads the spell DefensiveTip."
+      }
+    ],
+    "noname_entry_points": [
+      "noname/library/element/content.js:Content._save",
+      "noname/library/element/player.js:Player.chooseToRespond",
+      "card/standard.js:sha.content, wanjian.content"
+    ],
+    "adaptation": "Only event.skill identifies a locally selected response conversion; an inherited attack skill belongs to the other actor. Native rescue text uses the official Tao ActiveTip without the redundant current-HP line. Custom conditions stay intact; fallback text uses xinsha colors.",
+    "browser_verification": {
+      "command": "node verification/xinsha-prompt-engine.cjs",
+      "scenarios": [
+        "Real wanjian.content creating chooseToRespond under luanji",
+        "Real _save creating rescue chooseToUse at HP 0",
+        "Native respondShan under an attacker skill",
+        "HP -1 rescue, custom rescue text and extra conditions",
+        "Official font loaded and base/player/card/count colors",
+        "Online text and font isolation"
+      ],
+      "result": "passed, no page errors",
+      "scope": "Headless Edge with real noname entry and native choice steps, paused before settlement. Not current Electron gameplay or official-client runtime comparison."
+    }
+  },
+  "qinglong_bridge": {
+    "rea_inventory_evidence": "ev_83a400d7662487233e14d0d10957b7858ba3a0cca706f6ed28fc149cfc2cd16c",
+    "modules": [
+      {
+        "archive_member": "assets/res/lib/game.zip",
+        "member": "app.skill.normal.equip.QingLongYanYueDao",
+        "sha256": "fa5bd773a232e64a7039137a165f656c761526d9e8730e1751101ffb30f98bb8",
+        "functions": [
+          "ctor lines 13-39; getAvatarSkillType lines 41-43; isTriggerAutoUse lines 45-47"
+        ]
+      },
+      {
+        "archive_member": "assets/res/lib/game.zip",
+        "member": "app.skill.selector.seat.TargetSelector",
+        "sha256": "0d141073f52d024ba14d454bd3c18bff6cce03bc5cc717f59407a224b60e5fcf",
+        "functions": [
+          "setFixTargets lines 608-614",
+          "checkAllSeats lines 698-756",
+          "autoSelect lines 758-798"
+        ]
+      },
+      {
+        "archive_member": "assets/res/lib/game.zip",
+        "member": "app.view.game.GameSelfSeatUi",
+        "sha256": "e7c812fcb76fc79acfa3faf81ba1715cf3ee137737cc3a424f0f4d2209d317bf",
+        "functions": [
+          "startSelectTarget lines 2561-2599",
+          "playDefensiveCard lines 1927 onward"
+        ]
+      },
+      {
+        "archive_member": "assets/res/lib/game.zip",
+        "member": "app.skill.Skill",
+        "sha256": "c6d8b455bd502b174f9d95773c39b05f0a7d62f35d2e84515b90dced68e4146a",
+        "functions": [
+          "activeRoleOptTarget lines 1699-1702",
+          "activeTriggerTarget lines 1704-1706"
+        ]
+      }
+    ],
+    "prompt": {
+      "spell_id": 26,
+      "field": "DefensiveTip",
+      "text": "使用【青龙偃月刀】，继续使用【杀】",
+      "card_color": "#FFD979",
+      "font": "fnt/fzbw.ttf, inherited GameButtonBar optLabel"
+    },
+    "observed_static_behavior": [
+      "QingLongYanYueDao does not override the target selector; it is an ASK equipment skill with normal basic avatar cards.",
+      "Skill.activeRoleOptTarget returns true. GameSelfSeatUi.startSelectTarget passes roleOptTargetData.getTargetSeatIds() into TargetSelector.setFixTargets.",
+      "TargetSelector.checkAllSeats first adds fixed target IDs, disables selection input for fixed targets, and only activates other allowed seats when maximum target count exceeds fixed-target count."
+    ],
+    "noname_entry_points": [
+      "card/standard.js:qinglong_skill.content creates chooseToUse with sourcex, complexTarget, complexSelect, addCount=false and logSkill",
+      "noname/get/index.js:get.prompt2 returns the ###title###description protocol",
+      "noname/game/index.js:Game.check and checkEnd",
+      "noname/ui/click/index.js:target, complexSelect deselection resets the current selection"
+    ],
+    "local_adaptation": "Parse combined prompts before the native dialog exists; map the equipment response to spell[26].DefensiveTip. In othersOff only, use the existing checkEnd hook to preselect sourcex after a legal physical/virtual sha is selected; remove its selectable flag to lock it. Recheck via game.check to expose extra targets under original filters and target-count modifiers. No noname file or qinglong content function is overwritten; no new setting is needed. Generic autoSelect being off does not disable this fixed-target behavior.",
+    "verification": {
+      "command": "node verification/xinsha-qinglong-prompt-engine.cjs",
+      "result": "passed, no page errors",
+      "cases": [
+        "Native qinglong_skill.content and chooseToUse creation; early, opened and selected prompts",
+        "Single physical sha auto-selects and locks original target",
+        "Native selectTarget/targetInRange modifiers allow adding an extra target while retaining original",
+        "Original target cannot be deselected; optional-target deselection retains native complexSelect reset behavior; selecting sha again restores original target",
+        "Generic autoSelect off, non-qinglong event isolation, wusheng virtual sha",
+        "Custom text and extra operation conditions preserved; cancellation works",
+        "Online retains prior text, font and target selection path"
+      ],
+      "scope": "Headless Edge running real noname modules and choice steps; paused before card settlement. Current Electron gameplay, official runtime and networking not observed."
+    },
+    "unknowns": [
+      "The APK static selector does not expose live server-supplied roleOpt target IDs for every special skill interaction. No arbitrary retargeting rule is inferred beyond the observed fixed-target list and remaining target capacity."
+    ]
+  },
+  "virtual_target_bridge": {
+    "rea_inventory_evidence": "ev_83a400d7662487233e14d0d10957b7858ba3a0cca706f6ed28fc149cfc2cd16c",
+    "official_observations": [
+      {
+        "archive_member": "assets/res/lib/game.zip",
+        "member": "app.skill.spell",
+        "sha256": "5550e92ed9367963d41edfbdd09f76b147bf517bbcb462385cc939a6fc0988dc",
+        "entry": 1,
+        "field": "ActiveTip",
+        "text": "选择1名目标角色"
+      },
+      {
+        "archive_member": "assets/res/lib/game.zip",
+        "member": "app.view.game.GameButtonBar",
+        "sha256": "6d3716462c6ac2617d32bc93dc010fdda80989519100c8b00356cd0163e70ad2",
+        "observation": "Single optLabel RichLabel uses the official font/color and CENTER_BOTTOM placement above normal confirmation buttons."
+      }
+    ],
+    "local_observations": [
+      "chooseTarget has a real get.card()/_get_card value, while main and prompt2 are rendered as separate block lines.",
+      "A 10% hand-tip height setting reproduces overlap: hint bottom552.28125 versus confirm top492.546875 at 1500x800. Default 20% does not overlap in this fixture."
+    ],
+    "adaptation": "Only replace a generic exactly-one-target prompt with the known card ActiveTip when prompt2 identifies the same virtually-used card and has no extra conditions. Preserve custom main/detail constraints. The othersOff/xinsha bottom follows the handTipHeight setting relative to official baseline299 with no minimum clamp; user height choices take precedence. No card/target filter, confirmation, or settlement rule is changed.",
+    "validation": {
+      "command": "node verification/xinsha-virtual-prompt-engine.cjs",
+      "result": "passed; no page errors",
+      "cases": [
+        "40 browser-frame samples at default20% with native chooseTarget and actual confirmation buttons",
+        "Pure virtual sha becomes one official line; custom extra constraints remain",
+        "Real config.handTipHeight.onblur saves and moves the hint at0,5,10,15,20,30,40%; no lower-value plateau",
+        "Desktop1280x720 resize and actual setting save at0%",
+        "Online text path unchanged"
+      ],
+      "scope": "Real noname modules in headless Edge. Default20% is checked for button separation; manually lowered heights are honored without forced avoidance. Not current Electron gameplay."
+    },
+    "unknowns": [
+      "The cropped user screenshot does not identify the triggering skill, so it does not establish the corresponding official skill-specific prompt branch.",
+      "Current Electron debugging endpoint was unreachable (provider_unavailable/endpoint_unreachable); no live game state was read."
+    ]
+  }
+}

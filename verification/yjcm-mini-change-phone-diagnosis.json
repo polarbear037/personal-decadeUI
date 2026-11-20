@@ -1,0 +1,74 @@
+{
+  "device": "e1143408",
+  "cause": "miniChange is disabled by default; no saved tl_versus_miniChange value, startup skips panel installation and button returns early",
+  "evidence": {
+    "touchEvents": [
+      {
+        "type": "touchstart",
+        "target": "miniChange",
+        "prevented": false,
+        "x": 200.85714721679688,
+        "y": 264.2857360839844
+      },
+      {
+        "type": "touchend",
+        "target": "miniChange",
+        "prevented": false,
+        "x": 200.85714721679688,
+        "y": 264.2857360839844
+      },
+      {
+        "type": "click",
+        "target": "miniChange",
+        "prevented": false
+      }
+    ],
+    "settingStored": false,
+    "settingValue": null,
+    "panelLoaded": false,
+    "event": "chooseBool",
+    "dialogOpen": true
+  },
+  "settingDefault": "关闭",
+  "sameAsCoordinateIssue": false,
+  "gameplayOrSettingsChanged": false,
+  "toastVerification": {
+    "message": "请打开“雷霆”扩展迷你换肤功能",
+    "appearance": {
+      "text": "请打开“雷霆”扩展迷你换肤功能",
+      "display": "block",
+      "opacity": "0.526553",
+      "rect": {
+        "x": 317.60491943359375,
+        "y": 53.09821701049805,
+        "width": 156.79019165039062,
+        "height": 20.910715103149414,
+        "top": 53.09821701049805,
+        "right": 474.3951110839844,
+        "bottom": 74.00893211364746,
+        "left": 317.60491943359375
+      },
+      "viewport": [
+        792,
+        354
+      ],
+      "eventUnchanged": true,
+      "pauseUnchanged": true
+    },
+    "cleanup": {
+      "removed": true,
+      "eventUnchanged": true,
+      "pauseUnchanged": true
+    },
+    "sha256": {
+      "computer": "82653eb2479641429ed569917fdd2694aea3a46dccc700645e8b84f395869606",
+      "phoneDisk": "82653eb2479641429ed569917fdd2694aea3a46dccc700645e8b84f395869606",
+      "phoneLoaded": "82653eb2479641429ed569917fdd2694aea3a46dccc700645e8b84f395869606"
+    },
+    "checks": [
+      "node --check ui/character/skins/xinsha.js",
+      "git diff --check -- ui/character/skins/xinsha.js",
+      "ADB physical-device tap with real ui.create.toast, automatic disappearance observed"
+    ]
+  }
+}

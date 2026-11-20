@@ -1,0 +1,198 @@
+{
+  "othersOff": {
+    "liangzhu": {
+      "main": "“良助”：请选择1名角色",
+      "detail": "",
+      "native": "是否发动【良助】？",
+      "nativeDetail": "当一名角色于其出牌阶段内回复体力时，你可以选择一项：1、摸一张牌；2、令该角色摸两张牌。"
+    },
+    "caochun": {
+      "main": "请选择一个目标视为对其使用一张杀",
+      "detail": "",
+      "id": "1762",
+      "field": "ActiveTip",
+      "native": "选择杀【◈】的目标",
+      "nativeDetail": ""
+    },
+    "custom": {
+      "main": "缮甲：只能选择距离为1的角色",
+      "detail": "",
+      "native": "缮甲：只能选择距离为1的角色",
+      "nativeDetail": ""
+    },
+    "ordinaryVirtual": {
+      "main": "选择1名目标角色",
+      "detail": "",
+      "id": "1",
+      "field": "ActiveTip",
+      "native": "选择杀【◈】的目标",
+      "nativeDetail": ""
+    },
+    "stageCases": {
+      "targetAfterCost": {
+        "main": "“武圣”：请选择1名角色",
+        "detail": "",
+        "skill": "武圣",
+        "official": null
+      },
+      "cardBeforeTarget": {
+        "main": "“青囊”：请选择1张牌",
+        "detail": "",
+        "skill": "青囊",
+        "official": null
+      },
+      "modifiedTargetCount": {
+        "main": "“节命”：请选择2名角色",
+        "detail": "",
+        "skill": "节命",
+        "official": null
+      },
+      "discardInsteadOfUse": {
+        "main": "“武圣”：请弃置2张牌",
+        "detail": "",
+        "skill": "武圣",
+        "official": null
+      },
+      "noCardCost": {
+        "main": "“良助”：请选择1名角色",
+        "detail": "",
+        "skill": "良助",
+        "official": null
+      },
+      "noTargetCost": {
+        "main": "“良助”：请选择1张牌",
+        "detail": "",
+        "skill": "良助",
+        "official": null
+      },
+      "zeroCostTemplate": {
+        "main": "“青囊”：请选择1名角色",
+        "detail": "",
+        "skill": "青囊",
+        "official": null
+      },
+      "unlimitedTargets": {
+        "main": "“良助”：请选择至少1名角色",
+        "detail": "",
+        "skill": "良助",
+        "official": null
+      },
+      "multipleVirtual": {
+        "main": "请选择1至2名角色，视为使用【杀】",
+        "detail": "",
+        "native": "请选择一名角色",
+        "nativeDetail": "视为使用一张【杀】"
+      }
+    },
+    "loadout": {
+      "name": "缮甲",
+      "id": 1762,
+      "itemId": 7161
+    },
+    "audit": {
+      "entries": 3732,
+      "checked": 27360,
+      "official": 3963,
+      "fallback": 23397,
+      "failureCount": 0,
+      "failures": []
+    },
+    "errors": []
+  },
+  "onlineUI": {
+    "liangzhu": {
+      "main": "是否发动【良助】？",
+      "detail": "",
+      "native": "是否发动【良助】？",
+      "nativeDetail": "当一名角色于其出牌阶段内回复体力时，你可以选择一项：1、摸一张牌；2、令该角色摸两张牌。"
+    },
+    "caochun": {
+      "main": "选择杀【◈】的目标",
+      "detail": "",
+      "native": "选择杀【◈】的目标",
+      "nativeDetail": ""
+    },
+    "custom": {
+      "main": "缮甲：只能选择距离为1的角色",
+      "detail": "",
+      "native": "缮甲：只能选择距离为1的角色",
+      "nativeDetail": ""
+    },
+    "ordinaryVirtual": {
+      "main": "选择杀【◈】的目标",
+      "detail": "",
+      "native": "选择杀【◈】的目标",
+      "nativeDetail": ""
+    },
+    "stageCases": {
+      "targetAfterCost": {
+        "main": "“武圣”：请选择1名角色",
+        "detail": "",
+        "skill": "武圣",
+        "official": null
+      },
+      "cardBeforeTarget": {
+        "main": "“青囊”：请选择1张牌",
+        "detail": "",
+        "skill": "青囊",
+        "official": null
+      },
+      "modifiedTargetCount": {
+        "main": "“节命”：请选择2名角色",
+        "detail": "",
+        "skill": "节命",
+        "official": null
+      },
+      "discardInsteadOfUse": {
+        "main": "“武圣”：请弃置2张牌",
+        "detail": "",
+        "skill": "武圣",
+        "official": null
+      },
+      "noCardCost": {
+        "main": "“良助”：请选择1名角色",
+        "detail": "",
+        "skill": "良助",
+        "official": null
+      },
+      "noTargetCost": {
+        "main": "“良助”：请选择1张牌",
+        "detail": "",
+        "skill": "良助",
+        "official": null
+      },
+      "zeroCostTemplate": {
+        "main": "“青囊”：请选择1名角色",
+        "detail": "",
+        "skill": "青囊",
+        "official": null
+      },
+      "unlimitedTargets": {
+        "main": "“良助”：请选择至少1名角色",
+        "detail": "",
+        "skill": "良助",
+        "official": null
+      },
+      "multipleVirtual": {
+        "main": "请选择一名角色",
+        "detail": "视为使用一张【杀】",
+        "native": "请选择一名角色",
+        "nativeDetail": "视为使用一张【杀】"
+      }
+    },
+    "loadout": {
+      "name": "缮甲",
+      "id": 1762,
+      "itemId": 7161
+    },
+    "audit": {
+      "entries": 3732,
+      "checked": 27360,
+      "official": 3963,
+      "fallback": 23397,
+      "failureCount": 0,
+      "failures": []
+    },
+    "errors": []
+  }
+}

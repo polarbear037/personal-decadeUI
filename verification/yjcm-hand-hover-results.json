@@ -1,0 +1,49 @@
+[
+  {
+    "style": "othersOff",
+    "plainRect": true,
+    "stationarySamples": 119,
+    "stableHover": true,
+    "originalStripClick": true,
+    "nativeDragOrigin": true,
+    "layouts": 90,
+    "fold": true,
+    "settingOff": true
+  },
+  {
+    "style": "othersOff",
+    "plainRect": false,
+    "stationarySamples": 119,
+    "stableHover": true,
+    "originalStripClick": true,
+    "nativeDragOrigin": true,
+    "layouts": 90,
+    "fold": true,
+    "settingOff": true
+  },
+  {
+    "style": "onlineUI",
+    "nativeHandlers": true,
+    "noXinshaLift": true
+  },
+  {
+    "style": "on",
+    "nativeHandlers": true,
+    "noXinshaLift": true
+  },
+  {
+    "style": "off",
+    "nativeHandlers": true,
+    "noXinshaLift": true
+  },
+  {
+    "style": "babysha",
+    "nativeHandlers": true,
+    "noXinshaLift": true
+  },
+  {
+    "style": "codename",
+    "nativeHandlers": true,
+    "noXinshaLift": true
+  }
+]

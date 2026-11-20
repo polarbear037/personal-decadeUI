@@ -1,0 +1,148 @@
+{
+  "othersOff": {
+    "thunder": {
+      "name": "chooseTarget",
+      "native": "是否发动【婵娟】？",
+      "nativeDetail": "视为再使用一张雷杀【◈】",
+      "main": "“婵娟”：请选择1名角色",
+      "detail": "视为再使用一张雷杀【◈】",
+      "cardNature": "thunder",
+      "addCount": false,
+      "filterUnchanged": true
+    },
+    "fire": {
+      "name": "chooseTarget",
+      "native": "是否发动【婵娟】？",
+      "nativeDetail": "视为再使用一张火杀【◈】",
+      "main": "“婵娟”：请选择1名角色",
+      "detail": "视为再使用一张火杀【◈】",
+      "cardNature": "fire",
+      "addCount": false,
+      "filterUnchanged": true
+    },
+    "plain": {
+      "name": "chooseTarget",
+      "native": "是否发动【婵娟】？",
+      "nativeDetail": "视为再使用一张杀【◈】",
+      "main": "“婵娟”：请选择1名角色",
+      "detail": "视为再使用一张杀【◈】",
+      "cardNature": "",
+      "addCount": false,
+      "filterUnchanged": true
+    },
+    "extra": {
+      "name": "chooseTarget",
+      "native": "是否发动【婵娟】？",
+      "nativeDetail": "视为再使用一张雷杀【◈】（不计次数，且只能选择距离为1的角色）",
+      "main": "“婵娟”：请选择1名角色",
+      "detail": "视为再使用一张雷杀【◈】（不计次数，且只能选择距离为1的角色）",
+      "cardNature": "thunder",
+      "addCount": false,
+      "filterUnchanged": true
+    },
+    "custom": {
+      "name": "chooseTarget",
+      "native": "是否发动【婵娟】？",
+      "nativeDetail": "额外条件：只能使用这一张雷杀【♠7】",
+      "main": "“婵娟”：请选择1名角色",
+      "detail": "额外条件：只能使用这一张雷杀【♠7】",
+      "cardNature": "thunder",
+      "addCount": false,
+      "filterUnchanged": true
+    },
+    "defaultBool": {
+      "name": "chooseBool",
+      "native": "是否对孙权使用无中生有【◈】?",
+      "nativeDetail": "",
+      "main": "是否对孙权使用无中生有【◈】?",
+      "detail": "",
+      "cardNature": "",
+      "addCount": false,
+      "filterUnchanged": true
+    },
+    "repeatBool": {
+      "name": "chooseBool",
+      "native": "是否发动【婵娟】？",
+      "nativeDetail": "视为再使用一张无中生有【◈】",
+      "main": "是否发动“婵娟”",
+      "detail": "视为再使用一张无中生有【◈】",
+      "cardNature": "",
+      "addCount": false,
+      "filterUnchanged": true
+    },
+    "errors": []
+  },
+  "onlineUI": {
+    "thunder": {
+      "name": "chooseTarget",
+      "native": "是否发动【婵娟】？",
+      "nativeDetail": "视为再使用一张雷杀【◈】",
+      "main": "是否发动【婵娟】？",
+      "detail": "视为再使用一张雷杀【◈】",
+      "cardNature": "thunder",
+      "addCount": false,
+      "filterUnchanged": true
+    },
+    "fire": {
+      "name": "chooseTarget",
+      "native": "是否发动【婵娟】？",
+      "nativeDetail": "视为再使用一张火杀【◈】",
+      "main": "是否发动【婵娟】？",
+      "detail": "视为再使用一张火杀【◈】",
+      "cardNature": "fire",
+      "addCount": false,
+      "filterUnchanged": true
+    },
+    "plain": {
+      "name": "chooseTarget",
+      "native": "是否发动【婵娟】？",
+      "nativeDetail": "视为再使用一张杀【◈】",
+      "main": "是否发动【婵娟】？",
+      "detail": "视为再使用一张杀【◈】",
+      "cardNature": "",
+      "addCount": false,
+      "filterUnchanged": true
+    },
+    "extra": {
+      "name": "chooseTarget",
+      "native": "是否发动【婵娟】？",
+      "nativeDetail": "视为再使用一张雷杀【◈】（不计次数，且只能选择距离为1的角色）",
+      "main": "是否发动【婵娟】？",
+      "detail": "视为再使用一张雷杀【◈】（不计次数，且只能选择距离为1的角色）",
+      "cardNature": "thunder",
+      "addCount": false,
+      "filterUnchanged": true
+    },
+    "custom": {
+      "name": "chooseTarget",
+      "native": "是否发动【婵娟】？",
+      "nativeDetail": "额外条件：只能使用这一张雷杀【♠7】",
+      "main": "是否发动【婵娟】？",
+      "detail": "额外条件：只能使用这一张雷杀【♠7】",
+      "cardNature": "thunder",
+      "addCount": false,
+      "filterUnchanged": true
+    },
+    "defaultBool": {
+      "name": "chooseBool",
+      "native": "是否对孙权使用无中生有【◈】?",
+      "nativeDetail": "",
+      "main": "是否对孙权使用无中生有【◈】?",
+      "detail": "",
+      "cardNature": "",
+      "addCount": false,
+      "filterUnchanged": true
+    },
+    "repeatBool": {
+      "name": "chooseBool",
+      "native": "是否发动【婵娟】？",
+      "nativeDetail": "视为再使用一张无中生有【◈】",
+      "main": "是否发动【婵娟】？",
+      "detail": "视为再使用一张无中生有【◈】",
+      "cardNature": "",
+      "addCount": false,
+      "filterUnchanged": true
+    },
+    "errors": []
+  }
+}

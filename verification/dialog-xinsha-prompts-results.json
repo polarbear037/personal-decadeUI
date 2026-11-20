@@ -1,0 +1,379 @@
+{
+  "cases": [
+    {
+      "width": 1280,
+      "zoom": 1,
+      "multiple": false,
+      "geometry": {
+        "scale": 0.7547169811320755,
+        "width": 559.9988281249999,
+        "height": 16.997265624999997,
+        "barY": 73.01480674743652,
+        "promptY": 79.99992790222167,
+        "fontSize": 30,
+        "center": -0.0078125,
+        "fillData": 449,
+        "fillWidth": "100%",
+        "image": "url(\"http://127.0.0.1:64371/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_1.png\")",
+        "filter": "brightness(1.1)",
+        "promptAboveBar": true,
+        "hiddenTip": "none",
+        "buttonXError": -0.01503935532233669,
+        "buttonYError": -0.009346889055478869
+      }
+    },
+    {
+      "width": 1280,
+      "zoom": 1,
+      "multiple": true,
+      "geometry": {
+        "scale": 0.7547169811320755,
+        "width": 559.9988281249999,
+        "height": 16.997265624999997,
+        "barY": 108.00308799743651,
+        "promptY": 119.99998283386229,
+        "fontSize": 30,
+        "center": -0.0078125,
+        "fillData": 449,
+        "fillWidth": "100%",
+        "image": "url(\"http://127.0.0.1:64371/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_1.png\")",
+        "filter": "brightness(1.1)",
+        "promptAboveBar": true,
+        "hiddenTip": "none",
+        "buttonXError": -0.01503935532233669,
+        "buttonYError": -0.009346889055478869
+      }
+    },
+    {
+      "width": 1280,
+      "zoom": 1.5,
+      "multiple": false,
+      "geometry": {
+        "scale": 0.7543949631025206,
+        "width": 559.9893234475235,
+        "height": 16.983809047859204,
+        "barY": 73.00333604101634,
+        "promptY": 80.0000148836698,
+        "fontSize": 30,
+        "center": -0.0078125,
+        "fillData": 449,
+        "fillWidth": "100%",
+        "image": "url(\"http://127.0.0.1:64371/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_1.png\")",
+        "filter": "brightness(1.1)",
+        "promptAboveBar": true,
+        "hiddenTip": "none",
+        "buttonXError": -0.015039355322343795,
+        "buttonYError": -0.10309688905547887
+      }
+    },
+    {
+      "width": 1280,
+      "zoom": 1.5,
+      "multiple": true,
+      "geometry": {
+        "scale": 0.7543949631025206,
+        "width": 559.9893234475235,
+        "height": 16.983809047859204,
+        "barY": 108.0065522494091,
+        "promptY": 119.99999198571626,
+        "fontSize": 30,
+        "center": -0.0078125,
+        "fillData": 449,
+        "fillWidth": "100%",
+        "image": "url(\"http://127.0.0.1:64371/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_1.png\")",
+        "filter": "brightness(1.1)",
+        "promptAboveBar": true,
+        "hiddenTip": "none",
+        "buttonXError": -0.015039355322343795,
+        "buttonYError": -0.10309688905547887
+      }
+    },
+    {
+      "width": 1920,
+      "zoom": 1,
+      "multiple": false,
+      "geometry": {
+        "scale": 1.1320754716981132,
+        "width": 559.9919270833334,
+        "height": 16.990364583333335,
+        "barY": 73.00107879638672,
+        "promptY": 80.00002899169922,
+        "fontSize": 30,
+        "center": -0.00787353515625,
+        "fillData": 449,
+        "fillWidth": "100%",
+        "image": "url(\"http://127.0.0.1:64371/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_1.png\")",
+        "filter": "brightness(1.1)",
+        "promptAboveBar": true,
+        "hiddenTip": "none",
+        "buttonXError": -0.003124999999997158,
+        "buttonYError": -0.006249999999965894
+      }
+    },
+    {
+      "width": 1920,
+      "zoom": 1,
+      "multiple": true,
+      "geometry": {
+        "scale": 1.1320754716981132,
+        "width": 559.9919270833334,
+        "height": 16.990364583333335,
+        "barY": 108.00316212972005,
+        "promptY": 120.00008392333984,
+        "fontSize": 30,
+        "center": -0.00787353515625,
+        "fillData": 449,
+        "fillWidth": "100%",
+        "image": "url(\"http://127.0.0.1:64371/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_1.png\")",
+        "filter": "brightness(1.1)",
+        "promptAboveBar": true,
+        "hiddenTip": "none",
+        "buttonXError": -0.003124999999997158,
+        "buttonYError": -0.006249999999965894
+      }
+    },
+    {
+      "width": 1920,
+      "zoom": 1.5,
+      "multiple": false,
+      "geometry": {
+        "scale": 1.1320754716981132,
+        "width": 559.9919270833334,
+        "height": 16.990364583333335,
+        "barY": 73.00105183919271,
+        "promptY": 80.00000203450521,
+        "fontSize": 30,
+        "center": -0.0078125,
+        "fillData": 449,
+        "fillWidth": "100%",
+        "image": "url(\"http://127.0.0.1:64371/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_1.png\")",
+        "filter": "brightness(1.1)",
+        "promptAboveBar": true,
+        "hiddenTip": "none",
+        "buttonXError": -0.0031250000000113687,
+        "buttonYError": -0.006250000000022737
+      }
+    },
+    {
+      "width": 1920,
+      "zoom": 1.5,
+      "multiple": true,
+      "geometry": {
+        "scale": 1.1320754716981132,
+        "width": 559.9919270833334,
+        "height": 16.990364583333335,
+        "barY": 108.00313517252604,
+        "promptY": 120.00000305175782,
+        "fontSize": 30,
+        "center": -0.0078125,
+        "fillData": 449,
+        "fillWidth": "100%",
+        "image": "url(\"http://127.0.0.1:64371/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_1.png\")",
+        "filter": "brightness(1.1)",
+        "promptAboveBar": true,
+        "hiddenTip": "none",
+        "buttonXError": -0.0031250000000113687,
+        "buttonYError": -0.006250000000022737
+      }
+    },
+    {
+      "width": 1280,
+      "zoom": 1,
+      "count": 3,
+      "generic": {
+        "promptGapTop": 56.921875,
+        "promptGapBottom": 56.9375,
+        "title": "经造",
+        "prompt": "弃置一张满足条件的牌，然后程秉〖经造〗本回合亮出牌数+1；或点“取消”令程秉随机获得每种牌名的牌各一张，且〖经造〗本回合失效",
+        "sameNode": true,
+        "footerCount": 1,
+        "afterCards": true,
+        "textBelowBar": true,
+        "textInsideFrame": true,
+        "overlayMatches": true,
+        "scrollable": false
+      },
+      "drift": [
+        0,
+        0
+      ]
+    },
+    {
+      "width": 1280,
+      "zoom": 1,
+      "count": 9,
+      "generic": {
+        "promptGapTop": 56.921875,
+        "promptGapBottom": 56.9375,
+        "title": "经造",
+        "prompt": "弃置一张满足条件的牌，然后程秉〖经造〗本回合亮出牌数+1；或点“取消”令程秉随机获得每种牌名的牌各一张，且〖经造〗本回合失效",
+        "sameNode": true,
+        "footerCount": 1,
+        "afterCards": true,
+        "textBelowBar": true,
+        "textInsideFrame": true,
+        "overlayMatches": true,
+        "scrollable": false
+      },
+      "drift": [
+        0,
+        0
+      ]
+    },
+    {
+      "width": 1280,
+      "zoom": 1.5,
+      "count": 3,
+      "generic": {
+        "promptGapTop": 60.234375,
+        "promptGapBottom": 60.25,
+        "title": "经造",
+        "prompt": "弃置一张满足条件的牌，然后程秉〖经造〗本回合亮出牌数+1；或点“取消”令程秉随机获得每种牌名的牌各一张，且〖经造〗本回合失效",
+        "sameNode": true,
+        "footerCount": 1,
+        "afterCards": true,
+        "textBelowBar": true,
+        "textInsideFrame": true,
+        "overlayMatches": true,
+        "scrollable": false
+      },
+      "drift": [
+        0,
+        0
+      ]
+    },
+    {
+      "width": 1280,
+      "zoom": 1.5,
+      "count": 9,
+      "generic": {
+        "promptGapTop": 49.890625,
+        "promptGapBottom": 49.890625,
+        "title": "经造",
+        "prompt": "弃置一张满足条件的牌，然后程秉〖经造〗本回合亮出牌数+1；或点“取消”令程秉随机获得每种牌名的牌各一张，且〖经造〗本回合失效",
+        "sameNode": true,
+        "footerCount": 1,
+        "afterCards": true,
+        "textBelowBar": true,
+        "textInsideFrame": true,
+        "overlayMatches": true,
+        "scrollable": true
+      },
+      "drift": [
+        0,
+        0
+      ]
+    },
+    {
+      "width": 1920,
+      "zoom": 1,
+      "count": 3,
+      "generic": {
+        "promptGapTop": 69.390625,
+        "promptGapBottom": 69.40625,
+        "title": "经造",
+        "prompt": "弃置一张满足条件的牌，然后程秉〖经造〗本回合亮出牌数+1；或点“取消”令程秉随机获得每种牌名的牌各一张，且〖经造〗本回合失效",
+        "sameNode": true,
+        "footerCount": 1,
+        "afterCards": true,
+        "textBelowBar": true,
+        "textInsideFrame": true,
+        "overlayMatches": true,
+        "scrollable": false
+      },
+      "drift": [
+        0,
+        0
+      ]
+    },
+    {
+      "width": 1920,
+      "zoom": 1,
+      "count": 9,
+      "generic": {
+        "promptGapTop": 69.390625,
+        "promptGapBottom": 69.40625,
+        "title": "经造",
+        "prompt": "弃置一张满足条件的牌，然后程秉〖经造〗本回合亮出牌数+1；或点“取消”令程秉随机获得每种牌名的牌各一张，且〖经造〗本回合失效",
+        "sameNode": true,
+        "footerCount": 1,
+        "afterCards": true,
+        "textBelowBar": true,
+        "textInsideFrame": true,
+        "overlayMatches": true,
+        "scrollable": false
+      },
+      "drift": [
+        0,
+        0
+      ]
+    },
+    {
+      "width": 1920,
+      "zoom": 1.5,
+      "count": 3,
+      "generic": {
+        "promptGapTop": 72.953125,
+        "promptGapBottom": 72.953125,
+        "title": "经造",
+        "prompt": "弃置一张满足条件的牌，然后程秉〖经造〗本回合亮出牌数+1；或点“取消”令程秉随机获得每种牌名的牌各一张，且〖经造〗本回合失效",
+        "sameNode": true,
+        "footerCount": 1,
+        "afterCards": true,
+        "textBelowBar": true,
+        "textInsideFrame": true,
+        "overlayMatches": true,
+        "scrollable": false
+      },
+      "drift": [
+        0,
+        0
+      ]
+    },
+    {
+      "width": 1920,
+      "zoom": 1.5,
+      "count": 9,
+      "generic": {
+        "promptGapTop": 72.953125,
+        "promptGapBottom": 72.953125,
+        "title": "经造",
+        "prompt": "弃置一张满足条件的牌，然后程秉〖经造〗本回合亮出牌数+1；或点“取消”令程秉随机获得每种牌名的牌各一张，且〖经造〗本回合失效",
+        "sameNode": true,
+        "footerCount": 1,
+        "afterCards": true,
+        "textBelowBar": true,
+        "textInsideFrame": true,
+        "overlayMatches": true,
+        "scrollable": false
+      },
+      "drift": [
+        0,
+        0
+      ]
+    }
+  ],
+  "errors": [],
+  "moon": [
+    {
+      "zoom": 1,
+      "src": "http://127.0.0.1:64371/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/newTimeBar.png",
+      "width": "5%",
+      "content": "normal",
+      "clippedRatio": 0.049983979493752,
+      "fullRatio": 1,
+      "bg": "http://127.0.0.1:64371/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/newTimeBarBg.png",
+      "barWidth": 633.953125
+    },
+    {
+      "zoom": 1.5,
+      "src": "http://127.0.0.1:64371/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/newTimeBar.png",
+      "width": "5%",
+      "content": "normal",
+      "clippedRatio": 0.049983979493752,
+      "fullRatio": 1,
+      "bg": "http://127.0.0.1:64371/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/newTimeBarBg.png",
+      "barWidth": 633.953125
+    }
+  ]
+}

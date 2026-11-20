@@ -1,0 +1,5100 @@
+{
+  "result": {
+    "style": "othersOff",
+    "operations": [
+      {
+        "own": true,
+        "name": "lebu",
+        "id": "8176115339"
+      },
+      {
+        "own": true,
+        "name": "bingliang",
+        "id": "1596850344"
+      },
+      {
+        "own": false,
+        "name": "lebu",
+        "id": "7009788349"
+      },
+      {
+        "own": false,
+        "name": "bingliang",
+        "id": "7402355354"
+      },
+      {
+        "own": true,
+        "name": "bingliang",
+        "id": "2273209359",
+        "virtual": true
+      }
+    ],
+    "samples": [
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 6543.300000011921,
+        "elapsed": 0,
+        "point": {
+          "x": 673,
+          "y": 284.247
+        },
+        "scale": 0.7875,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 6598.699999988079,
+        "elapsed": 88.79999999999998,
+        "point": {
+          "x": 673,
+          "y": 262.031
+        },
+        "scale": 0.822465,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 6639.5,
+        "elapsed": 144.4000000000001,
+        "point": {
+          "x": 673,
+          "y": 248.122
+        },
+        "scale": 0.844357,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 6675.4000000059605,
+        "elapsed": 188.9000000000003,
+        "point": {
+          "x": 673,
+          "y": 236.989
+        },
+        "scale": 0.861879,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 6709.699999988079,
+        "elapsed": 222.1000000000002,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 6734.699999988079,
+        "elapsed": 255.40000000000074,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 6762.4000000059605,
+        "elapsed": 299.90000000000003,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 6784.5999999940395,
+        "elapsed": 311.00000000000085,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 6809.800000011921,
+        "elapsed": 333.5000000000008,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 6840,
+        "elapsed": 377.70000000000084,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 6862.800000011921,
+        "elapsed": 400.10000000000014,
+        "point": {
+          "x": 672.984,
+          "y": 234.166
+        },
+        "scale": 0.865955,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 6888.5999999940395,
+        "elapsed": 411.00000000000045,
+        "point": {
+          "x": 671.233,
+          "y": 229.147
+        },
+        "scale": 0.833766,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 6909.800000011921,
+        "elapsed": 433.3,
+        "point": {
+          "x": 667.65,
+          "y": 218.879
+        },
+        "scale": 0.767911,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 6980.199999988079,
+        "elapsed": 516.5980000000001,
+        "point": {
+          "x": 654.267,
+          "y": 180.524
+        },
+        "scale": 0.521921,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 7001.199999988079,
+        "elapsed": 538.8660000000006,
+        "point": {
+          "x": 650.689,
+          "y": 170.271
+        },
+        "scale": 0.456161,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 7023.9000000059605,
+        "elapsed": 561.0660000000003,
+        "point": {
+          "x": 647.122,
+          "y": 160.049
+        },
+        "scale": 0.390602,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 7040.5,
+        "elapsed": 566.5000000000005,
+        "point": {
+          "x": 646.249,
+          "y": 157.547
+        },
+        "scale": 0.374555,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 7066.5999999940395,
+        "elapsed": 600.0000000000006,
+        "point": {
+          "x": 640.867,
+          "y": 142.122
+        },
+        "scale": 0.275625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 7095,
+        "elapsed": 627.6660000000005,
+        "point": {
+          "x": 636.422,
+          "y": 129.383
+        },
+        "scale": 0.193924,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "8176115339",
+        "own": true,
+        "name": "lebu",
+        "time": 7122.9000000059605,
+        "elapsed": 661.0660000000008,
+        "point": {
+          "x": 631.056,
+          "y": 114.004
+        },
+        "scale": 0.0952895,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8427.800000011921,
+        "elapsed": 55.50000000000033,
+        "point": {
+          "x": 673,
+          "y": 270.362
+        },
+        "scale": 0.809353,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8473.199999988079,
+        "elapsed": 77.7000000000001,
+        "point": {
+          "x": 673,
+          "y": 264.808
+        },
+        "scale": 0.818094,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8494.199999988079,
+        "elapsed": 111.10000000000042,
+        "point": {
+          "x": 673,
+          "y": 256.453
+        },
+        "scale": 0.831245,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8530.59999999404,
+        "elapsed": 155.49999999999997,
+        "point": {
+          "x": 673,
+          "y": 245.345
+        },
+        "scale": 0.848728,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8556.59999999404,
+        "elapsed": 177.70000000000152,
+        "point": {
+          "x": 673,
+          "y": 239.791
+        },
+        "scale": 0.857469,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8572.40000000596,
+        "elapsed": 199.90000000000128,
+        "point": {
+          "x": 673,
+          "y": 234.237
+        },
+        "scale": 0.866211,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8585.59999999404,
+        "elapsed": 222.20000000000084,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8616.699999988079,
+        "elapsed": 244.30000000000086,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8640.40000000596,
+        "elapsed": 277.7000000000012,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8662.90000000596,
+        "elapsed": 311.0000000000017,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8688.59999999404,
+        "elapsed": 333.30000000000126,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8717.800000011921,
+        "elapsed": 355.500000000001,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8740,
+        "elapsed": 388.8000000000016,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8776.5,
+        "elapsed": 411.10000000000116,
+        "point": {
+          "x": 671.217,
+          "y": 229.101
+        },
+        "scale": 0.83347,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8810.5,
+        "elapsed": 422.20000000000016,
+        "point": {
+          "x": 669.433,
+          "y": 223.99
+        },
+        "scale": 0.800691,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8848.90000000596,
+        "elapsed": 455.5000000000007,
+        "point": {
+          "x": 664.083,
+          "y": 208.657
+        },
+        "scale": 0.702351,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8909.300000011921,
+        "elapsed": 533.2000000000007,
+        "point": {
+          "x": 651.6,
+          "y": 172.88
+        },
+        "scale": 0.472894,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8953.90000000596,
+        "elapsed": 577.7,
+        "point": {
+          "x": 644.45,
+          "y": 152.39
+        },
+        "scale": 0.34148,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8961.300000011921,
+        "elapsed": 611.1000000000004,
+        "point": {
+          "x": 639.084,
+          "y": 137.011
+        },
+        "scale": 0.242845,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 8987.800000011921,
+        "elapsed": 633.2000000000004,
+        "point": {
+          "x": 635.533,
+          "y": 126.835
+        },
+        "scale": 0.177581,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "1596850344",
+        "own": true,
+        "name": "bingliang",
+        "time": 9010.699999988079,
+        "elapsed": 644.400000000001,
+        "point": {
+          "x": 633.734,
+          "y": 121.678
+        },
+        "scale": 0.144506,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10197.300000011921,
+        "elapsed": 0,
+        "point": {
+          "x": 673,
+          "y": 284.247
+        },
+        "scale": 0.7875,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10246.199999988079,
+        "elapsed": 22.199999999999775,
+        "point": {
+          "x": 673,
+          "y": 278.693
+        },
+        "scale": 0.796241,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10288.40000000596,
+        "elapsed": 55.600000000000094,
+        "point": {
+          "x": 673,
+          "y": 270.337
+        },
+        "scale": 0.809392,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10339.699999988079,
+        "elapsed": 99.99999999999964,
+        "point": {
+          "x": 673,
+          "y": 259.23
+        },
+        "scale": 0.826875,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10374.59999999404,
+        "elapsed": 155.59999999999974,
+        "point": {
+          "x": 673,
+          "y": 245.32
+        },
+        "scale": 0.848767,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10411.5,
+        "elapsed": 233.29999999999984,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10452.699999988079,
+        "elapsed": 255.4999999999996,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10479.40000000596,
+        "elapsed": 300.0000000000007,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10489,
+        "elapsed": 311.1999999999995,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10516.90000000596,
+        "elapsed": 322.2000000000005,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10540.300000011921,
+        "elapsed": 366.6999999999998,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10560.800000011921,
+        "elapsed": 388.8999999999996,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10587.199999988079,
+        "elapsed": 400.00000000000034,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10634.09999999404,
+        "elapsed": 433.3000000000009,
+        "point": {
+          "x": 745.115,
+          "y": 260.466
+        },
+        "scale": 0.767911,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10696.40000000596,
+        "elapsed": 477.9,
+        "point": {
+          "x": 841.702,
+          "y": 295.628
+        },
+        "scale": 0.636202,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10743,
+        "elapsed": 555.5000000000003,
+        "point": {
+          "x": 1009.75,
+          "y": 356.807
+        },
+        "scale": 0.407039,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10759.90000000596,
+        "elapsed": 577.7,
+        "point": {
+          "x": 1057.83,
+          "y": 374.31
+        },
+        "scale": 0.34148,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10785.90000000596,
+        "elapsed": 611.1000000000004,
+        "point": {
+          "x": 1130.16,
+          "y": 400.642
+        },
+        "scale": 0.242845,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10810.59999999404,
+        "elapsed": 633.4,
+        "point": {
+          "x": 1178.46,
+          "y": 418.223
+        },
+        "scale": 0.176991,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7009788349",
+        "own": false,
+        "name": "lebu",
+        "time": 10834.699999988079,
+        "elapsed": 655.5999999999997,
+        "point": {
+          "x": 1226.53,
+          "y": 435.726
+        },
+        "scale": 0.111431,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12022.199999988079,
+        "elapsed": 0,
+        "point": {
+          "x": 673,
+          "y": 284.247
+        },
+        "scale": 0.7875,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12058.300000011921,
+        "elapsed": 22.299999999999542,
+        "point": {
+          "x": 673,
+          "y": 278.668
+        },
+        "scale": 0.796281,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12085.59999999404,
+        "elapsed": 55.600000000000094,
+        "point": {
+          "x": 673,
+          "y": 270.337
+        },
+        "scale": 0.809392,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12120.40000000596,
+        "elapsed": 88.90000000000065,
+        "point": {
+          "x": 673,
+          "y": 262.006
+        },
+        "scale": 0.822504,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12156.40000000596,
+        "elapsed": 133.39999999999998,
+        "point": {
+          "x": 673,
+          "y": 250.874
+        },
+        "scale": 0.840026,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12206.199999988079,
+        "elapsed": 188.9000000000003,
+        "point": {
+          "x": 673,
+          "y": 236.989
+        },
+        "scale": 0.861879,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12230.40000000596,
+        "elapsed": 211.10000000000008,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12250,
+        "elapsed": 244.5000000000004,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12262.90000000596,
+        "elapsed": 255.69999999999914,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12284.800000011921,
+        "elapsed": 288.9999999999997,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12320.5,
+        "elapsed": 311.1999999999995,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12338.40000000596,
+        "elapsed": 344.5,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12361.300000011921,
+        "elapsed": 366.6999999999998,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12394.59999999404,
+        "elapsed": 400.00000000000034,
+        "point": {
+          "x": 673,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12427.09999999404,
+        "elapsed": 411.09999999999934,
+        "point": {
+          "x": 697.038,
+          "y": 242.964
+        },
+        "scale": 0.83347,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12451.5,
+        "elapsed": 433.40000000000066,
+        "point": {
+          "x": 745.332,
+          "y": 260.545
+        },
+        "scale": 0.767615,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12465.300000011921,
+        "elapsed": 444.59999999999945,
+        "point": {
+          "x": 769.587,
+          "y": 269.375
+        },
+        "scale": 0.734541,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12487.40000000596,
+        "elapsed": 466.7999999999992,
+        "point": {
+          "x": 817.664,
+          "y": 286.877
+        },
+        "scale": 0.668981,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12520.199999988079,
+        "elapsed": 488.999999999999,
+        "point": {
+          "x": 865.741,
+          "y": 304.379
+        },
+        "scale": 0.603422,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12536.90000000596,
+        "elapsed": 533.4000000000003,
+        "point": {
+          "x": 961.894,
+          "y": 339.384
+        },
+        "scale": 0.472303,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12561.40000000596,
+        "elapsed": 566.6999999999991,
+        "point": {
+          "x": 1034.01,
+          "y": 365.637
+        },
+        "scale": 0.373964,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12594.800000011921,
+        "elapsed": 588.9000000000007,
+        "point": {
+          "x": 1082.09,
+          "y": 383.14
+        },
+        "scale": 0.308405,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12615,
+        "elapsed": 611.2000000000002,
+        "point": {
+          "x": 1130.38,
+          "y": 400.721
+        },
+        "scale": 0.24255,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "7402355354",
+        "own": false,
+        "name": "bingliang",
+        "time": 12637.699999988079,
+        "elapsed": 644.5000000000007,
+        "point": {
+          "x": 1202.5,
+          "y": 426.974
+        },
+        "scale": 0.144211,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(672.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(672.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(1250.5px,444.45051546391755px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 1304,
+          "y": 511.59375,
+          "width": 45,
+          "height": 45,
+          "top": 511.59375,
+          "right": 1349,
+          "bottom": 556.59375,
+          "left": 1304
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14383.90000000596,
+        "elapsed": 0,
+        "point": {
+          "x": 716,
+          "y": 284.247
+        },
+        "scale": 0.7875,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14407.90000000596,
+        "elapsed": 33.30000000000055,
+        "point": {
+          "x": 716,
+          "y": 275.916
+        },
+        "scale": 0.800612,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14440.5,
+        "elapsed": 66.9000000000004,
+        "point": {
+          "x": 716,
+          "y": 267.51
+        },
+        "scale": 0.813842,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14465.09999999404,
+        "elapsed": 88.90000000000065,
+        "point": {
+          "x": 716,
+          "y": 262.006
+        },
+        "scale": 0.822504,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14488.09999999404,
+        "elapsed": 111.10000000000042,
+        "point": {
+          "x": 716,
+          "y": 256.453
+        },
+        "scale": 0.831245,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14524.800000011921,
+        "elapsed": 144.39999999999918,
+        "point": {
+          "x": 716,
+          "y": 248.122
+        },
+        "scale": 0.844357,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14557,
+        "elapsed": 166.60000000000076,
+        "point": {
+          "x": 716,
+          "y": 242.568
+        },
+        "scale": 0.853099,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14580.300000011921,
+        "elapsed": 211.10000000000008,
+        "point": {
+          "x": 716,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14593.90000000596,
+        "elapsed": 244.4000000000006,
+        "point": {
+          "x": 716,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14617,
+        "elapsed": 277.8000000000009,
+        "point": {
+          "x": 716,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14638.300000011921,
+        "elapsed": 288.8999999999999,
+        "point": {
+          "x": 716,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14659.699999988079,
+        "elapsed": 322.2000000000005,
+        "point": {
+          "x": 716,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14689.09999999404,
+        "elapsed": 344.40000000000026,
+        "point": {
+          "x": 716,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14716.300000011921,
+        "elapsed": 377.8000000000006,
+        "point": {
+          "x": 716,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14738,
+        "elapsed": 400.00000000000034,
+        "point": {
+          "x": 716,
+          "y": 234.212
+        },
+        "scale": 0.86625,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14760.800000011921,
+        "elapsed": 410.9999999999996,
+        "point": {
+          "x": 712.459,
+          "y": 229.147
+        },
+        "scale": 0.833766,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14807.09999999404,
+        "elapsed": 444.49999999999966,
+        "point": {
+          "x": 701.675,
+          "y": 213.722
+        },
+        "scale": 0.734836,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14829.199999988079,
+        "elapsed": 466.5999999999997,
+        "point": {
+          "x": 694.561,
+          "y": 203.546
+        },
+        "scale": 0.669572,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14841.40000000596,
+        "elapsed": 477.80000000000024,
+        "point": {
+          "x": 690.955,
+          "y": 198.389
+        },
+        "scale": 0.636497,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14860,
+        "elapsed": 522.1999999999998,
+        "point": {
+          "x": 676.662,
+          "y": 177.945
+        },
+        "scale": 0.505378,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14886.5,
+        "elapsed": 544.3999999999995,
+        "point": {
+          "x": 669.516,
+          "y": 167.723
+        },
+        "scale": 0.439819,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14911.40000000596,
+        "elapsed": 566.7000000000008,
+        "point": {
+          "x": 662.337,
+          "y": 157.455
+        },
+        "scale": 0.373964,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14938.300000011921,
+        "elapsed": 599.8999999999999,
+        "point": {
+          "x": 651.649,
+          "y": 142.168
+        },
+        "scale": 0.27592,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14960.199999988079,
+        "elapsed": 622.1999999999994,
+        "point": {
+          "x": 644.471,
+          "y": 131.9
+        },
+        "scale": 0.210066,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      },
+      {
+        "id": "2273209359",
+        "own": true,
+        "name": "bingliang",
+        "virtual": true,
+        "time": 14992.90000000596,
+        "elapsed": 655.5,
+        "point": {
+          "x": 633.751,
+          "y": 116.567
+        },
+        "scale": 0.111727,
+        "visible": true,
+        "opacity": "1",
+        "markVisible": false,
+        "markOpacity": "0",
+        "frames": [
+          {
+            "offset": 0,
+            "transform": "translate(715.9999694824219px,284.246735395189px) scale(0.7874998869719328)"
+          },
+          {
+            "offset": 0.3,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 0.6,
+            "transform": "translate(715.9999694824219px,234.2123711340206px) scale(0.8662498756691263)"
+          },
+          {
+            "offset": 1,
+            "transform": "translate(630.15625px,111.42491408934708px) scale(0.0787499886971933)"
+          }
+        ],
+        "duration": 666.6666666666666,
+        "target": {
+          "x": 683.65625,
+          "y": 178.796875,
+          "width": 45,
+          "height": 45,
+          "top": 178.796875,
+          "right": 728.65625,
+          "bottom": 223.796875,
+          "left": 683.65625
+        }
+      }
+    ],
+    "remaining": 0,
+    "completion": [
+      {
+        "id": "8176115339",
+        "done": true,
+        "sourceConnected": false,
+        "judges": [
+          {
+            "name": "bingliang",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          {
+            "name": "lebu",
+            "visibility": "visible",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "id": "1596850344",
+        "done": true,
+        "sourceConnected": false,
+        "judges": [
+          {
+            "name": "bingliang",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          {
+            "name": "lebu",
+            "visibility": "visible",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "id": "7009788349",
+        "done": true,
+        "sourceConnected": false,
+        "judges": [
+          {
+            "name": "bingliang",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          {
+            "name": "lebu",
+            "visibility": "visible",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "id": "7402355354",
+        "done": true,
+        "sourceConnected": false,
+        "judges": [
+          {
+            "name": "bingliang",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          {
+            "name": "lebu",
+            "visibility": "visible",
+            "opacity": "1"
+          }
+        ]
+      },
+      {
+        "id": "2273209359",
+        "virtual": true,
+        "done": true,
+        "sourceConnected": false,
+        "judges": [
+          {
+            "name": "bingliang",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          {
+            "name": "lebu",
+            "visibility": "visible",
+            "opacity": "1"
+          }
+        ]
+      }
+    ]
+  },
+  "errors": []
+}

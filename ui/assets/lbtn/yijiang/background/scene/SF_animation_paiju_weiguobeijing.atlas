@@ -1,0 +1,293 @@
+
+SF_animation_paiju_weiguobeijing.png
+size: 1172,1172
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1112_00
+  rotate: true
+  xy: 2, 366
+  size: 127, 245
+  orig: 128, 256
+  offset: 0, 7
+  index: -1
+1112_01
+  rotate: false
+  xy: 253, 125
+  size: 126, 239
+  orig: 128, 256
+  offset: 0, 8
+  index: -1
+1112_02
+  rotate: true
+  xy: 874, 85
+  size: 123, 251
+  orig: 128, 256
+  offset: 2, 0
+  index: -1
+1112_03
+  rotate: false
+  xy: 744, 243
+  size: 124, 250
+  orig: 128, 256
+  offset: 1, 0
+  index: -1
+1112_04
+  rotate: true
+  xy: 2, 117
+  size: 119, 246
+  orig: 128, 256
+  offset: 2, 3
+  index: -1
+1112_05
+  rotate: true
+  xy: 502, 5
+  size: 115, 250
+  orig: 128, 256
+  offset: 6, 3
+  index: -1
+1112_06
+  rotate: true
+  xy: 620, 122
+  size: 117, 252
+  orig: 128, 256
+  offset: 6, 3
+  index: -1
+1112_07
+  rotate: true
+  xy: 250, 4
+  size: 119, 250
+  orig: 128, 256
+  offset: 5, 2
+  index: -1
+1112_08
+  rotate: false
+  xy: 620, 241
+  size: 122, 252
+  orig: 128, 256
+  offset: 4, 0
+  index: -1
+1112_09
+  rotate: false
+  xy: 493, 240
+  size: 125, 253
+  orig: 128, 256
+  offset: 2, 0
+  index: -1
+1112_10
+  rotate: true
+  xy: 2, 238
+  size: 126, 249
+  orig: 128, 256
+  offset: 1, 3
+  index: -1
+1112_11
+  rotate: true
+  xy: 249, 366
+  size: 127, 242
+  orig: 128, 256
+  offset: 0, 5
+  index: -1
+1qianlou
+  rotate: true
+  xy: 964, 210
+  size: 960, 171
+  orig: 960, 171
+  offset: 0, 0
+  index: -1
+boom01_00
+  rotate: false
+  xy: 466, 191
+  size: 31, 31
+  orig: 32, 32
+  offset: 1, 0
+  index: -1
+qizi0101
+  rotate: false
+  xy: 87, 52
+  size: 22, 18
+  orig: 24, 20
+  offset: 1, 1
+  index: -1
+qizi0102
+  rotate: true
+  xy: 217, 52
+  size: 28, 18
+  orig: 30, 20
+  offset: 1, 1
+  index: -1
+qizi0103
+  rotate: false
+  xy: 58, 52
+  size: 27, 18
+  orig: 29, 20
+  offset: 1, 1
+  index: -1
+qizi0104
+  rotate: true
+  xy: 486, 224
+  size: 14, 13
+  orig: 16, 15
+  offset: 1, 1
+  index: -1
+qizi0105
+  rotate: false
+  xy: 2, 29
+  size: 54, 41
+  orig: 54, 41
+  offset: 0, 0
+  index: -1
+qizi0106
+  rotate: true
+  xy: 172, 58
+  size: 57, 43
+  orig: 57, 43
+  offset: 0, 0
+  index: -1
+qizi0107
+  rotate: false
+  xy: 924, 397
+  size: 37, 96
+  orig: 37, 96
+  offset: 0, 0
+  index: -1
+qizi0108
+  rotate: false
+  xy: 870, 390
+  size: 52, 103
+  orig: 52, 103
+  offset: 0, 0
+  index: -1
+qizi0109
+  rotate: true
+  xy: 844, 49
+  size: 71, 23
+  orig: 73, 25
+  offset: 1, 1
+  index: -1
+qizi0110
+  rotate: true
+  xy: 217, 82
+  size: 33, 21
+  orig: 35, 23
+  offset: 1, 1
+  index: -1
+qizi0111
+  rotate: false
+  xy: 502, 136
+  size: 106, 102
+  orig: 106, 102
+  offset: 0, 0
+  index: -1
+qizi0113_00
+  rotate: false
+  xy: 1127, 125
+  size: 43, 83
+  orig: 44, 89
+  offset: 1, 0
+  index: -1
+qizi0113_01
+  rotate: false
+  xy: 1127, 40
+  size: 43, 83
+  orig: 44, 89
+  offset: 1, 0
+  index: -1
+qizi0113_02
+  rotate: false
+  xy: 870, 305
+  size: 43, 83
+  orig: 44, 89
+  offset: 1, 0
+  index: -1
+qizi0113_03
+  rotate: true
+  xy: 870, 260
+  size: 43, 83
+  orig: 44, 89
+  offset: 1, 0
+  index: -1
+qizi0113_04
+  rotate: false
+  xy: 915, 305
+  size: 43, 83
+  orig: 44, 89
+  offset: 1, 0
+  index: -1
+qizi0113_05
+  rotate: true
+  xy: 874, 215
+  size: 43, 83
+  orig: 44, 89
+  offset: 1, 0
+  index: -1
+qizi0113_06
+  rotate: true
+  xy: 381, 179
+  size: 43, 83
+  orig: 44, 89
+  offset: 1, 0
+  index: -1
+qizi0113_07
+  rotate: true
+  xy: 381, 134
+  size: 43, 83
+  orig: 44, 89
+  offset: 1, 0
+  index: -1
+qizi0113_08
+  rotate: false
+  xy: 754, 37
+  size: 43, 83
+  orig: 44, 89
+  offset: 1, 0
+  index: -1
+qizi0113_09
+  rotate: false
+  xy: 799, 37
+  size: 43, 83
+  orig: 44, 89
+  offset: 1, 0
+  index: -1
+qizi0113_10
+  rotate: true
+  xy: 2, 72
+  size: 43, 83
+  orig: 44, 89
+  offset: 1, 0
+  index: -1
+qizi0113_11
+  rotate: true
+  xy: 87, 72
+  size: 43, 83
+  orig: 44, 89
+  offset: 1, 0
+  index: -1
+qizi0115
+  rotate: true
+  xy: 466, 131
+  size: 58, 26
+  orig: 58, 26
+  offset: 0, 0
+  index: -1
+rilgouwei
+  rotate: false
+  xy: 2, 758
+  size: 960, 412
+  orig: 960, 414
+  offset: 0, 0
+  index: -1
+zduidi
+  rotate: false
+  xy: 2, 495
+  size: 960, 261
+  orig: 960, 261
+  offset: 0, 0
+  index: -1
+zlldtk
+  rotate: false
+  xy: 381, 228
+  size: 103, 136
+  orig: 103, 136
+  offset: 0, 0
+  index: -1

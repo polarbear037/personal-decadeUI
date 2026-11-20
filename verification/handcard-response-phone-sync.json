@@ -1,0 +1,42 @@
+{
+  "result": {
+    "type": "object",
+    "value": [
+      {
+        "file": "src/ui/handcard-selection.js",
+        "verified": true,
+        "bytes": 1080
+      },
+      {
+        "file": "src/core/hooks.js",
+        "verified": true,
+        "bytes": 3774
+      },
+      {
+        "file": "src/core/layout.js",
+        "verified": true,
+        "bytes": 9582
+      },
+      {
+        "file": "src/ui/handcard-motion-xinsha.js",
+        "verified": true,
+        "bytes": 2722
+      },
+      {
+        "file": "src/overrides/card/overrides.js",
+        "verified": true,
+        "bytes": 9240
+      },
+      {
+        "file": "src/ui/card-effects-xinsha.js",
+        "verified": true,
+        "bytes": 864
+      },
+      {
+        "file": "src/ui/card-utils.js",
+        "verified": true,
+        "bytes": 11513
+      }
+    ]
+  }
+}

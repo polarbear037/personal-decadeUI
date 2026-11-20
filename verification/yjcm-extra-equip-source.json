@@ -1,0 +1,78 @@
+{
+  "client": {
+    "apk": "D:/yoka_sgs.x_g_android_6.4.5.apk",
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "packed_member": "assets/res/lib/game.zip",
+    "packed_cache_matches_apk": true,
+    "decoded_game_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28"
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_5fdcc6dfede9590d8801629a513e09051c18f4122f41f5d0b1c808216e90eac4"
+  ],
+  "modules": [
+    {
+      "member": "app.view.game.card.EquipArea",
+      "sha256": "8a937dc55a16cc35f46cbc29cfccbbca1a33dacf925bcd24eec3b795a248f7f7"
+    },
+    {
+      "member": "app.view.game.card.EquipCardUi",
+      "sha256": "c0c9615a0e4d0ee5330224d2c0a99e8f0c969712736ae9396eb69cc7f54959b4"
+    },
+    {
+      "member": "app.view.game.GameSeatCcb",
+      "sha256": "0f54477bcff860404681e61cba1677bfd409234cf8abc44b136061ea98e35ff5"
+    },
+    {
+      "member": "app.skill.general.huo.BaZhen",
+      "sha256": "ac3fa3a6abdcb8694822f5c247262f7754b2250ec106bf492cc5dbc7020e07f2"
+    },
+    {
+      "member": "app.skill.general.tiantong.LingLong",
+      "sha256": "e0ed50a5dfc5790e4e55f4af2b4b558ee7525d04d6d716e14fe3f29aaf080104"
+    },
+    {
+      "member": "app.view.game.spell.SpellAreaNew",
+      "sha256": "d3d4d38f82caf525ea7abb1a25ed7bb259e179d09b4b14d4650bcc3681df0ad3"
+    }
+  ],
+  "observed_static": [
+    {
+      "function": "EquipArea.getLayout; EquipArea.YjcmLayout",
+      "layout": "125x23 equipped rows; x37; treasure104,weapon81,armor58,defensive horse35,attack horse12 in190x252 seat; local visible-frame mapping reuses yjcm-equip-layout-source.json"
+    },
+    {
+      "function": "EquipCardUi.createChilden; Lua function0.3, lines44-89",
+      "rendering": "For non-empty CardData, creates equImg centered, scales width/129, selects equip_<EquipImageID>.png (or special skill-generated card strip); labels are baked into beige strip."
+    },
+    {
+      "function": "BaZhen.ctor/getResponser/use; LingLong.ctor/getResponser/use",
+      "rendering": "avatarSkills BAGUAZHEN and OPT_BAGUAZHEN response. No EquipArea/addCard call in these examined skill modules; does not establish that every possible runtime virtual-equipment state has no row."
+    }
+  ],
+  "local_cause": "updateEquipPresentation skips emptyequip, feichu and extraEquip; othersOff removes card backgrounds and hides old empty-slot backgrounds, leaving extraEquip native text without a strip.",
+  "adaptation": "Keep native skill+equipment text and all placeholder/condition/rule semantics. Mark only othersOff extraEquip labels and reuse existing image/ui/equip/xinsha/background.png. No fabricated number/suit or real equipment created.",
+  "background": {
+    "path": "image/ui/equip/xinsha/background.png",
+    "sha256": "5802624f3dff398d667d30bc9e614728064b95c8823fd44f078dcd1755d77169",
+    "derivation": "Existing official-strip-derived asset, source/crop details in yjcm-equip-layout-source.json; no image modified in this task."
+  },
+  "verification": {
+    "commands": [
+      "node --check src/ui/equip-layout.js",
+      "node --check src/ui/equip-xinsha.js",
+      "node verification/yjcm-extra-equip-browser.cjs",
+      "node verification/yjcm-equip-layout-browser.cjs",
+      "git diff --check"
+    ],
+    "before": "Native addExtraEquip produced background:none; reproduced in yjcm-extra-equip-results-before.json.",
+    "after": "Five slots for self/other, native add/remove, repeated refresh, abolished slot restore, preserve callback and copy cleanup; othersOff and onlineUI browser checks passed.",
+    "corrections": "Use parent placeholder as query container for font size; disable abolished-label transition to avoid old background during restore. An added copy probe initially accessed copy.node.name2; corrected probe to querySelector(.name2), consistent with native copy structure.",
+    "limitations": [
+      "No official-client runtime side-by-side capture.",
+      "No current running Electron game validation.",
+      "No physical Android or real multiplayer validation."
+    ]
+  }
+}

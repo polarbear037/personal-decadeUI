@@ -1,8 +1,11 @@
 import { lib, game, ui, get, _status } from "noname";
 import { plainPrompt, skillNameForPrompt, buildOfficialPrompt, renderOfficialPrompt } from "./officialPrompt.js";
 import { syncOfficialPlayerPopups } from "./officialPlayerPopup.js";
+import { isSkillPromptSimplified, getSimplifiedSkillPrompt } from "./simplifiedSkillPrompt.js";
+import { getOptimizedPromptStyle, optimizePromptKey } from "./promptStyle.js";
+import { buildXinshaPrompt, renderXinshaPrompt } from "./xinshaPrompt.js";
 
-const configKey = "extension_十周年UI_optimizePrompt";
+const configKey = optimizePromptKey;
 const dialogs = new Map();
 const combinedDetails = new WeakMap();
 let activeState = null;
@@ -50,11 +53,12 @@ function isCharacterChoice(event) {
 
 function getPromptEvent() {
 	const event = _status.event;
-	if (!event || event.finished || _status.auto || _status.video || (!choiceEvents.has(event.name) && event.prompt == null && event.prompt2 == null)) return null;
+	const xinshaPlayerCard = event?.name === "gainPlayerCard" && getOptimizedPromptStyle() === "xinsha";
+	if (!event || event.finished || _status.auto || _status.video || (!choiceEvents.has(event.name) && !xinshaPlayerCard && event.prompt == null && event.prompt2 == null)) return null;
 	// 开局选将、自由选将复用 chooseButton，但保留各自的原生标题和计数。
 	if (isCharacterChoice(event)) return null;
 	if (typeof event.isMine === "function" ? !event.isMine() : !event.player || event.player !== game.me) return null;
-	return choiceEvents.has(event.name) || getPromptSkill(event) || event.type === "wuxie" ? event : null;
+	return choiceEvents.has(event.name) || xinshaPlayerCard || getPromptSkill(event) || event.type === "wuxie" ? event : null;
 }
 
 function getState(dialog, event) {
@@ -174,10 +178,13 @@ function closeHandTip() {
 	tipText = "";
 	if (ui.arena) delete ui.arena.dataset.decadeOptimizedActive;
 	if (tip) {
+		// 一将提示立即清空正文和 data-text 描边，再撤销定位；避免普通样式下移后的淡出残影。
+		if (tip.dataset.optimizedPromptStyle === "xinsha") tip.clear();
 		tip.classList.remove("decade-optimized-hand-tip");
 		delete tip.dataset.officialPromptMode;
 		delete tip.dataset.officialSkillId;
 		delete tip.dataset.officialPromptField;
+		delete tip.dataset.optimizedPromptStyle;
 		tip.close?.();
 	}
 }
@@ -192,7 +199,7 @@ function restoreNativePrompt(dialog, retiring) {
 function restoreNativePrompts() {
 	const event = getPromptEvent();
 	for (const { dialog, event: owner } of dialogs.values()) {
-		restoreNativePrompt(dialog, dialog.classList.contains("removing") || lib.config?.[configKey] && owner !== event);
+		restoreNativePrompt(dialog, dialog.classList.contains("removing") || getOptimizedPromptStyle() !== "off" && owner !== event);
 	}
 }
 
@@ -204,8 +211,9 @@ function deactivateOptimizedPrompt() {
 
 function refreshOptimizedPrompt() {
 	syncOfficialPlayerPopups();
-	const enabled = !!lib.config?.[configKey] && typeof window.decadeUI?.showHandTip === "function";
 	const currentEvent = getPromptEvent();
+	const style = getOptimizedPromptStyle();
+	const enabled = (style !== "off" || isSkillPromptSimplified() && currentEvent && getPromptSkill(currentEvent)) && typeof window.decadeUI?.showHandTip === "function";
 	if (currentEvent) {
 		// 同时接管本体的普通 dialog、openskilldialog 和后添加的 promptbar。
 		const sources = new Set([currentEvent.dialog, currentEvent.skillDialog]);
@@ -235,13 +243,14 @@ function refreshOptimizedPrompt() {
 	if (!event || (topDialog && !state && topDialog !== event.dialog) || topDialog?.classList.contains("online-faction-dialog") || topDialog?.classList.contains("dialog-ol-skill-prompt") || topDialog?.dataset.olLayout === "card-move" || ui.cardDialog?._isLuckyCardTip) {
 		return deactivateOptimizedPrompt();
 	}
-	const rawMain = state ? getMainText(state) : typeof event.prompt === "string" ? event.prompt : "";
-	const prompt = event.prompt !== false || rawMain ? buildOfficialPrompt(event, rawMain, getPromptSkill(event), state ? getDetailText(state) : event.prompt2) : null;
+	const rawMain = getSimplifiedSkillPrompt(event) ?? (state ? getMainText(state) : typeof event.prompt === "string" ? event.prompt : "");
+	const buildPrompt = style === "xinsha" ? buildXinshaPrompt : buildOfficialPrompt;
+	const prompt = event.prompt !== false || rawMain ? buildPrompt(event, rawMain, getPromptSkill(event), state ? getDetailText(state) : event.prompt2) : null;
 	if (!prompt) {
 		return deactivateOptimizedPrompt();
 	}
 	const richMain = state ? getMainMarkup(state) : rawMain;
-	const text = JSON.stringify([prompt, richMain]);
+	const text = JSON.stringify([style, prompt, richMain]);
 	const owner = state || event;
 	if (activeState !== owner || !handTip || handTip.closed) {
 		closeHandTip();
@@ -250,7 +259,9 @@ function refreshOptimizedPrompt() {
 		handTip?.classList.add("decade-optimized-hand-tip");
 	}
 	if (handTip && (text !== tipText || handTip.classList.contains("hidden"))) {
-		renderOfficialPrompt(handTip, prompt, event, richMain);
+		handTip.dataset.optimizedPromptStyle = style === "xinsha" ? "xinsha" : "online";
+		if (style === "xinsha") renderXinshaPrompt(handTip, prompt, event, richMain);
+		else renderOfficialPrompt(handTip, prompt, event, richMain);
 		tipText = text;
 	}
 	handTip?.strokeText?.();
@@ -275,7 +286,7 @@ function clearOptimizedPrompts() {
 	closeHandTip();
 	checkedEvent = null;
 	for (const state of dialogs.values()) {
-		restoreNativePrompt(state.dialog, state.dialog.classList.contains("removing") || !!lib.config?.[configKey]);
+		restoreNativePrompt(state.dialog, state.dialog.classList.contains("removing") || getOptimizedPromptStyle() !== "off");
 		for (const node of state.mainNodes) node.classList.remove("decade-optimized-main");
 		for (const node of state.detailNodes) node.classList.remove("decade-optimized-detail");
 		for (const node of state.progressNodes) node.classList.remove("decade-optimized-progress");
@@ -299,7 +310,7 @@ function initOptimizedPromptHooks() {
 	lib.hooks.checkEnd.add(event => {
 		if (event !== _status.event) return;
 		checkedEvent = event;
-		if (lib.config?.[configKey] && !ui.cardDialog?._isLuckyCardTip) {
+		if ((getOptimizedPromptStyle() !== "off" || isSkillPromptSimplified() && getPromptSkill(event)) && !ui.cardDialog?._isLuckyCardTip) {
 			ui.cardDialog?.close?.();
 			delete ui.cardDialog;
 		}

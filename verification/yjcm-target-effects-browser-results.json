@@ -1,0 +1,1338 @@
+[
+  {
+    "style": "on",
+    "isolated": true
+  },
+  {
+    "style": "off",
+    "isolated": true
+  },
+  {
+    "style": "othersOff",
+    "border": "xinsha",
+    "states": [
+      {
+        "id": "idle",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "none",
+          "opacity": 0,
+          "width": 170.109,
+          "height": 221.172,
+          "left": 65.3594,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "available",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "opacity": 0.9167,
+          "width": 147.328,
+          "height": 196.5,
+          "left": 65.4219,
+          "top": 90.3906,
+          "animation": "yjcm-target-enter, yjcm-target-breathe",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "selected",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 169.625,
+          "height": 221.172,
+          "left": 65.5469,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.05
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "other-turn",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 170.109,
+          "height": 221.172,
+          "left": 65.3594,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.03
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "self-response",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 180.734,
+          "height": 231.875,
+          "left": 65.1719,
+          "top": 90.7812,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.03
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "target",
+        "width": 130,
+        "height": 180,
+        "shadow": "none",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 180.734,
+          "height": 231.875,
+          "left": 65.1719,
+          "top": 90.7812,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.03
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "selected-target",
+        "width": 130,
+        "height": 180,
+        "shadow": "none",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 169.625,
+          "height": 221.172,
+          "left": 65.5469,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.05
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "available-turn",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "opacity": 0.9167,
+          "width": 147.328,
+          "height": 196.5,
+          "left": 65.4219,
+          "top": 90.3906,
+          "animation": "yjcm-target-enter, yjcm-target-breathe",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      }
+    ],
+    "animated": true,
+    "selfUse": [
+      {
+        "shake": "off",
+        "id": "other-turn",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "width": "170.109px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -85.0547, -110.586)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "width": "170.109px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -85.0547, -110.586)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      },
+      {
+        "shake": "off",
+        "id": "self-response",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "width": "180.734px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.3672, -115.938)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "width": "180.734px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.3672, -115.938)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      },
+      {
+        "shake": "zoom",
+        "id": "other-turn",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "width": "170.109px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -85.0547, -110.586)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "width": "170.109px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -85.0547, -110.586)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      },
+      {
+        "shake": "zoom",
+        "id": "self-response",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "width": "180.734px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.3672, -115.938)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "width": "180.734px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.3672, -115.938)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      }
+    ]
+  },
+  {
+    "style": "othersOff",
+    "border": "dragon2",
+    "states": [
+      {
+        "id": "idle",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "none",
+          "opacity": 0,
+          "width": 169.484,
+          "height": 221.172,
+          "left": 65.4062,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "available",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "opacity": 0.64445,
+          "width": 147.328,
+          "height": 196.5,
+          "left": 65.4219,
+          "top": 90.3906,
+          "animation": "yjcm-target-enter, yjcm-target-breathe",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "selected",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m2_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 169.484,
+          "height": 221.172,
+          "left": 65.4062,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.05
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "other-turn",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m2_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 169.484,
+          "height": 221.172,
+          "left": 65.4062,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.03
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "self-response",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m2_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 181.578,
+          "height": 231.875,
+          "left": 65.2031,
+          "top": 90.7812,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.03
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "target",
+        "width": 130,
+        "height": 180,
+        "shadow": "none",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m2_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 181.578,
+          "height": 231.875,
+          "left": 65.2031,
+          "top": 90.7812,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.03
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "selected-target",
+        "width": 130,
+        "height": 180,
+        "shadow": "none",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m2_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 169.484,
+          "height": 221.172,
+          "left": 65.4062,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.05
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "available-turn",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "opacity": 0.64445,
+          "width": 147.328,
+          "height": 196.5,
+          "left": 65.4219,
+          "top": 90.3906,
+          "animation": "yjcm-target-enter, yjcm-target-breathe",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      }
+    ],
+    "animated": true,
+    "selfUse": [
+      {
+        "shake": "off",
+        "id": "other-turn",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m2_play_dynamic.png\")",
+          "width": "169.484px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -84.7422, -110.586)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m2_play_dynamic.png\")",
+          "width": "169.484px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -84.7422, -110.586)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      },
+      {
+        "shake": "off",
+        "id": "self-response",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m2_play_dynamic.png\")",
+          "width": "181.578px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.7891, -115.938)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m2_play_dynamic.png\")",
+          "width": "181.578px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.7891, -115.938)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      },
+      {
+        "shake": "zoom",
+        "id": "other-turn",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m2_play_dynamic.png\")",
+          "width": "169.484px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -84.7422, -110.586)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m2_play_dynamic.png\")",
+          "width": "169.484px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -84.7422, -110.586)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      },
+      {
+        "shake": "zoom",
+        "id": "self-response",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m2_play_dynamic.png\")",
+          "width": "181.578px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.7891, -115.938)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m2_play_dynamic.png\")",
+          "width": "181.578px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.7891, -115.938)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      }
+    ]
+  },
+  {
+    "style": "othersOff",
+    "border": "dragon3",
+    "states": [
+      {
+        "id": "idle",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "none",
+          "opacity": 0,
+          "width": 170.109,
+          "height": 221.172,
+          "left": 65.3594,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "available",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "opacity": 0.61115,
+          "width": 147.328,
+          "height": 196.5,
+          "left": 65.4219,
+          "top": 90.3906,
+          "animation": "yjcm-target-enter, yjcm-target-breathe",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "selected",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 169.625,
+          "height": 221.172,
+          "left": 65.5469,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.05
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "other-turn",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 170.109,
+          "height": 221.172,
+          "left": 65.3594,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.03
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "self-response",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 180.734,
+          "height": 231.875,
+          "left": 65.1719,
+          "top": 90.7812,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.03
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "target",
+        "width": 130,
+        "height": 180,
+        "shadow": "none",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 180.734,
+          "height": 231.875,
+          "left": 65.1719,
+          "top": 90.7812,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.03
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "selected-target",
+        "width": 130,
+        "height": 180,
+        "shadow": "none",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 169.625,
+          "height": 221.172,
+          "left": 65.5469,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.05
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "available-turn",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "opacity": 0.61115,
+          "width": 147.328,
+          "height": 196.5,
+          "left": 65.4219,
+          "top": 90.3906,
+          "animation": "yjcm-target-enter, yjcm-target-breathe",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      }
+    ],
+    "animated": true,
+    "selfUse": [
+      {
+        "shake": "off",
+        "id": "other-turn",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "width": "170.109px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -85.0547, -110.586)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "width": "170.109px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -85.0547, -110.586)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      },
+      {
+        "shake": "off",
+        "id": "self-response",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "width": "180.734px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.3672, -115.938)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "width": "180.734px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.3672, -115.938)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      },
+      {
+        "shake": "zoom",
+        "id": "other-turn",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "width": "170.109px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -85.0547, -110.586)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "width": "170.109px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -85.0547, -110.586)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      },
+      {
+        "shake": "zoom",
+        "id": "self-response",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "width": "180.734px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.3672, -115.938)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "width": "180.734px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.3672, -115.938)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      }
+    ]
+  },
+  {
+    "style": "othersOff",
+    "border": "dragon4",
+    "states": [
+      {
+        "id": "idle",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "none",
+          "opacity": 0,
+          "width": 170.109,
+          "height": 221.172,
+          "left": 65.3594,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "available",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "opacity": 0.88895,
+          "width": 147.328,
+          "height": 196.5,
+          "left": 65.4219,
+          "top": 90.3906,
+          "animation": "yjcm-target-enter, yjcm-target-breathe",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "selected",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 169.625,
+          "height": 221.172,
+          "left": 65.5469,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.05
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "other-turn",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 170.109,
+          "height": 221.172,
+          "left": 65.3594,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.03
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "self-response",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 180.734,
+          "height": 231.875,
+          "left": 65.1719,
+          "top": 90.7812,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.03
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "target",
+        "width": 130,
+        "height": 180,
+        "shadow": "none",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 180.734,
+          "height": 231.875,
+          "left": 65.1719,
+          "top": 90.7812,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.03
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "selected-target",
+        "width": 130,
+        "height": 180,
+        "shadow": "none",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png\")",
+          "opacity": 1,
+          "width": 169.625,
+          "height": 221.172,
+          "left": 65.5469,
+          "top": 90.1875,
+          "animation": "none",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1.05
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      },
+      {
+        "id": "available-turn",
+        "width": 130,
+        "height": 180,
+        "shadow": "rgb(182, 166, 125) 0px 0px 0px 1px",
+        "before": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/paiju_target_actived.png\")",
+          "opacity": 0.88895,
+          "width": 147.328,
+          "height": 196.5,
+          "left": 65.4219,
+          "top": 90.3906,
+          "animation": "yjcm-target-enter, yjcm-target-breathe",
+          "pointer": "none",
+          "z": "-1",
+          "scale": 1
+        },
+        "after": {
+          "image": "none",
+          "opacity": 1,
+          "width": 130,
+          "height": 180,
+          "left": 0,
+          "top": 0,
+          "animation": "none",
+          "pointer": "none",
+          "z": "0",
+          "scale": 1
+        }
+      }
+    ],
+    "animated": true,
+    "selfUse": [
+      {
+        "shake": "off",
+        "id": "other-turn",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "width": "170.109px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -85.0547, -110.586)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "width": "170.109px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -85.0547, -110.586)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      },
+      {
+        "shake": "off",
+        "id": "self-response",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "width": "180.734px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.3672, -115.938)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "width": "180.734px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.3672, -115.938)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      },
+      {
+        "shake": "zoom",
+        "id": "other-turn",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "width": "170.109px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -85.0547, -110.586)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png\")",
+          "width": "170.109px",
+          "height": "221.172px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -85.0547, -110.586)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      },
+      {
+        "shake": "zoom",
+        "id": "self-response",
+        "normal": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "width": "180.734px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.3672, -115.938)",
+          "root": "none"
+        },
+        "targeted": {
+          "image": "url(\"http://127.0.0.1:65072/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+          "width": "180.734px",
+          "height": "231.875px",
+          "transform": "matrix(1.03, 0, 0, 1.03, -90.3672, -115.938)",
+          "root": "none"
+        },
+        "finished": true,
+        "cleared": true
+      }
+    ]
+  },
+  {
+    "style": "onlineUI",
+    "isolated": true
+  },
+  {
+    "style": "babysha",
+    "isolated": true
+  },
+  {
+    "style": "codename",
+    "isolated": true
+  }
+]

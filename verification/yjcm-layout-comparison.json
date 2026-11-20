@@ -1,0 +1,203 @@
+{
+  "reference_sha256": "eb29a344af9eb31aa039f0e715b96b13558d29d6632485cfb5a3991ccd7ab51e",
+  "reference_size": [
+    1280,
+    576
+  ],
+  "scope": "geometry only; skill assets separately checked by browser native skill updater",
+  "controls": [
+    {
+      "control": "pile",
+      "source_expected": [
+        59.135999999999996,
+        16.128,
+        70.656,
+        86.016
+      ],
+      "dom_delta_px": {
+        "x": -0.011,
+        "y": -0.003,
+        "width": -0.015,
+        "height": -0.0
+      },
+      "reference_edge_registration_unavailable": "Insufficient opaque edge pixels; compare overlay visually, do not report a false zero error."
+    },
+    {
+      "control": "menu",
+      "source_expected": [
+        1179.776,
+        13.824,
+        43.008,
+        39.168
+      ],
+      "dom_delta_px": {
+        "x": 0.005,
+        "y": 0.004,
+        "width": -0.008,
+        "height": -0.012
+      },
+      "reference_edge_registration_unavailable": "Insufficient opaque edge pixels; compare overlay visually, do not report a false zero error."
+    },
+    {
+      "control": "confirm",
+      "source_expected": [
+        461.47839999999997,
+        357.312,
+        159.6672,
+        46.464
+      ],
+      "dom_delta_px": {
+        "x": 0.014,
+        "y": 0.016,
+        "width": -0.011,
+        "height": -0.011
+      },
+      "reference_edge_registration": {
+        "offset_from_source_px": [
+          1,
+          0
+        ],
+        "mean_rgb_error": 6.45,
+        "sampled_pixels": 198
+      }
+    },
+    {
+      "control": "cancel",
+      "source_expected": [
+        658.8543999999999,
+        357.312,
+        159.6672,
+        46.464
+      ],
+      "dom_delta_px": {
+        "x": -0.003,
+        "y": 0.016,
+        "width": -0.011,
+        "height": -0.011
+      },
+      "reference_edge_registration": {
+        "offset_from_source_px": [
+          -1,
+          0
+        ],
+        "mean_rgb_error": 5.87,
+        "sampled_pixels": 198
+      }
+    },
+    {
+      "control": "sort",
+      "source_expected": [
+        924.416,
+        523.008,
+        81.408,
+        29.184
+      ],
+      "dom_delta_px": {
+        "x": 0.006,
+        "y": 0.023,
+        "width": -0.002,
+        "height": -0.012
+      },
+      "reference_edge_registration": {
+        "offset_from_source_px": [
+          2,
+          0
+        ],
+        "mean_rgb_error": 8.39,
+        "sampled_pixels": 68
+      }
+    },
+    {
+      "control": "handcount",
+      "source_expected": [
+        1018.8800000000001,
+        523.776,
+        67.584,
+        26.112000000000002
+      ],
+      "dom_delta_px": {
+        "x": 0.011,
+        "y": 0.005,
+        "width": -0.006,
+        "height": -0.003
+      }
+    },
+    {
+      "control": "active",
+      "source_expected": [
+        994.3040000000001,
+        456.192,
+        84.48,
+        34.56
+      ],
+      "dom_delta_px": {
+        "x": 0.024,
+        "y": 0.042,
+        "width": -0.011,
+        "height": -0.013
+      }
+    },
+    {
+      "control": "passive",
+      "source_expected": [
+        1023.104,
+        500.736,
+        55.68,
+        19.968
+      ],
+      "dom_delta_px": {
+        "x": 0.021,
+        "y": 0.03,
+        "width": -0.008,
+        "height": -0.015
+      }
+    },
+    {
+      "control": "flower",
+      "source_expected": [
+        58.751999999999995,
+        387.072,
+        56.064,
+        55.296
+      ],
+      "dom_delta_px": {
+        "x": -0.002,
+        "y": 0.037,
+        "width": -0.002,
+        "height": -0.015
+      }
+    },
+    {
+      "control": "face",
+      "source_expected": [
+        58.751999999999995,
+        450.048,
+        56.064,
+        55.296
+      ],
+      "dom_delta_px": {
+        "x": -0.002,
+        "y": 0.03,
+        "width": -0.002,
+        "height": -0.015
+      }
+    },
+    {
+      "control": "chat",
+      "source_expected": [
+        58.751999999999995,
+        513.024,
+        56.064,
+        55.296
+      ],
+      "dom_delta_px": {
+        "x": -0.002,
+        "y": 0.023,
+        "width": -0.002,
+        "height": -0.015
+      }
+    }
+  ],
+  "card_dimensions": "production getCardBestScale unchanged; test changes cardScale through existing config and verifies scaling",
+  "limitation": "Reference template registration is approximate due to alpha blending; exact DOM geometry is independently checked against shipped source. Existing portrait/equipment/background/progress styles are outside this comparison."
+}

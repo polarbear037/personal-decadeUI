@@ -1,5 +1,6 @@
 import { game, lib, _status, get } from "noname";
 import { showOnlinePhaseTip, clearOnlinePhaseTips } from "./online-phase-tips.js";
+import { showXinshaPhaseTip, clearXinshaPhaseTips } from "./xinsha-phase-tips.js";
 const e = () => {
 		(game.as_removeImage(), _status.as_showImage_phase && game.showJDTsImage(_status.as_showImage_phase, !0));
 	},
@@ -28,17 +29,23 @@ const e = () => {
 function d() {
 	const style = () => String(lib.config.extension_十周年UI_JDTSYangshi ?? "0");
 	const d = () => style() !== "0";
+	// 一将成名接入原十周年选项，并兼容此前选择OL提示后出现裸文字的配置。
+	const isXinshaPhaseStyle = () => lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && ["2", "3"].includes(style());
 	let currentStyle = style();
 	game.updateJDTsStyle = () => {
 		if (currentStyle === style()) return;
 		currentStyle = style();
 		clearOnlinePhaseTips();
+		clearXinshaPhaseTips();
 		game.as_removeImage();
 		if (!d()) delete _status.as_showImage_phase;
 		else if (_status.as_showImage_phase) game.showJDTsImage(_status.as_showImage_phase, true);
 	};
 	((game.showJDTsImage = (e, s) => {
-		if (d() && style() === "3") return showOnlinePhaseTip(e, s);
+		if (d() && isXinshaPhaseStyle()) return showXinshaPhaseTip(e, s);
+		if (d() && style() === "3") {
+			if (lib.config.extension_十周年UI_newDecadeStyle === "onlineUI") return showOnlinePhaseTip(e, s);
+		}
 		d() &&
 			game.as_showImage(
 				(imageName => `extension/十周年UI/ui/assets/lbtn/tips/${imageName}.${{ 2: "png", 3: "webp", 4: "jpeg" }[lib.config.extension_十周年UI_JDTSYangshi] || "jpg"}`)(e),
@@ -49,7 +56,7 @@ function d() {
 				s
 			);
 	}),
-		lib.onover.push(() => { game.as_removeImage(); clearOnlinePhaseTips(); }),
+		lib.onover.push(() => { game.as_removeImage(); clearOnlinePhaseTips(); clearXinshaPhaseTips(); }),
 		t.forEach(([event, e, s]) => {
 			lib.skill[`_jdts_${event}`] = {
 				trigger: { player: event },
@@ -61,7 +68,7 @@ function d() {
 				filter: (e, player) => d() && a(player),
 				async content() {
 					var a;
-					((a = style() === "3" ? s : e), game.showJDTsImage(a, !0), (_status.as_showImage_phase = s));
+					((a = style() === "3" || isXinshaPhaseStyle() ? s : e), game.showJDTsImage(a, !0), (_status.as_showImage_phase = s));
 				},
 			};
 		}),

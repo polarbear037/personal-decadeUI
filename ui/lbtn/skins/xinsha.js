@@ -1,13 +1,27 @@
 /**
- * @fileoverview 新杀风格lbtn插件
- * 特点：新杀风格按钮布局、全选/反选按钮
+ * @fileoverview 一将成名风格lbtn插件
+ * 使用官方贴图、设计坐标与现有无名杀交互
  */
 import { lib, game, ui, get, ai, _status } from "noname";
 import { createBaseLbtnPlugin } from "./base.js";
+import { createXinshaBackgroundSelector } from "./xinsha-background-selector.js";
+import { installXinshaProps } from "../../../src/ui/xinsha-props.js";
+import { initXinshaActionButtons, syncXinshaActionButtons } from "../../../src/ui/xinsha-action-buttons.js";
+import { initXinshaButtonInput } from "../../../src/ui/xinsha-button-input.js";
+
+export function updateXinshaHandCount() {
+	if (!game.me) return;
+	const current = game.me.countCards("h") || 0, limit = Math.max(0, game.me.getHandcardLimit() || 0);
+	const displayLimit = limit === Infinity ? "∞" : limit;
+	// SelfSeatView.updateCardNum：当前张数米白色，上限红色。
+	this.node.cardNumber.innerHTML = `<span>${current}/<font color="#FF3500">${displayLimit}</font></span>`;
+	this.show();
+	game.addVideo("updateCardnumber", null, { cardNumber: limit });
+}
 
 export function createXinshaLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 	const base = createBaseLbtnPlugin(lib, game, ui, get, ai, _status, app);
-	const assetPath = "extension/十周年UI/ui/assets/lbtn/";
+	const backgrounds = createXinshaBackgroundSelector(lib, game, ui, get, _status);
 
 	return {
 		...base,
@@ -33,35 +47,118 @@ export function createXinshaLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 
 		precontent() {
 			base.initBaseRewrites.call(this);
+			initXinshaActionButtons();
+			initXinshaButtonInput();
+			this.initTempNoWuxieButton();
 			this.initArenaReady();
 			this.initSelectAllOverride();
+		},
+
+		initTempNoWuxieButton() {
+			const createControl = ui.create.control;
+			ui.create.control = function (...args) {
+				const control = createControl.apply(this, args);
+				// 本体在复用确认栏时会重建独立的结束回合控件；原版将它与取消互斥显示。
+				if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && _status.event?.name === "chooseToUse" && _status.event.type === "phase" && control.stayleft && control.firstChild?.link === "结束回合") {
+					control.classList.add("yjcm-end-turn");
+				}
+				// 按本体回调识别控件，保留 link、_origin、glow 和关闭流程。
+				if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && control.custom === ui.click.tempnowuxie) {
+					control.classList.add("yjcm-tempnowuxie");
+					control.firstChild.textContent = "本轮不出";
+				}
+				return control;
+			};
 		},
 
 		initArenaReady() {
 			const self = this;
 			lib.arenaReady.push(() => {
+				self.initOfficialLayout();
 				self.initRoundUpdate();
+				backgrounds.restore();
+				if (_status.connectMode) lib.hooks.gameStart.add(backgrounds.restore);
 
 				// 问号按钮
-				if (["identity", "doudizhu", "guozhan", "versus", "single", "martial"].includes(lib.config.mode)) {
+				if (self.supportedModes.includes(lib.config.mode)) {
 					self.createQuestionButton();
 				}
 
-				// 阴影背景
-				self.createShadowBg();
-
-				// 主按钮
-				self.createMainButton();
-
-				// 左侧小按钮（记录、换肤、笑脸）
-				self.createSideButtons();
-
 				// 整理手牌按钮
 				self.createSortButton();
-
-				// 全选按钮
 				self.createSelectAllButton();
+
+				// 右上角菜单
+				self.createTopRightMenu();
+				self.createChatButtons();
 			});
+		},
+
+		initOfficialLayout() {
+			const update = () => {
+				const unit = Math.min(ui.window.clientWidth / 1334, ui.window.clientHeight / 750);
+				// display.getScreenBangsWidth_：Windows 固定60；未知宽屏手机默认60。
+				const safeWidth = !lib.device || ui.window.clientWidth / ui.window.clientHeight > 1.86 ? 60 : 0;
+				const sceneWidth = Math.max(1334, Math.min(1750, ui.window.clientWidth / unit - safeWidth * 2));
+				const insetX = (ui.window.clientWidth - sceneWidth * unit) / 2;
+				const insetY = Math.max(0, (ui.window.clientHeight - 750 * unit) / 2);
+				ui.window.style.setProperty("--yjcm-unit", `${unit}px`);
+				ui.window.style.setProperty("--yjcm-window-width", `${ui.window.clientWidth}px`);
+				document.body.style.setProperty("--yjcm-unit", `${unit}px`);
+				// 采用参考图中 LuckCardView 的582宽条，横向乘ui.factorX(1)=USE_WIDTH/1334。
+				document.body.style.setProperty("--yjcm-progress-width", `${582 * sceneWidth / 1334 * unit}px`);
+				ui.window.style.setProperty("--yjcm-scene-x", `${insetX}px`);
+				ui.window.style.setProperty("--yjcm-scene-y", `${insetY}px`);
+				// arena 有内缩，官方锚点按完整游戏窗口换算，不能直接套 arena 百分比。
+				const windowRect = ui.window.getBoundingClientRect();
+				const arenaRect = ui.arena.getBoundingClientRect();
+				const zoom = windowRect.height / ui.window.clientHeight || 1;
+				ui.window.style.setProperty("--yjcm-arena-bottom", `${(windowRect.bottom - arenaRect.bottom) / zoom}px`);
+				ui.window.style.setProperty("--yjcm-arena-left", `${(arenaRect.left - windowRect.left) / zoom}px`);
+				ui.window.style.setProperty("--yjcm-arena-right", `${(windowRect.right - arenaRect.right) / zoom}px`);
+				ui.window.style.setProperty("--yjcm-arena-center", `${(windowRect.left + windowRect.width / 2 - arenaRect.left - arenaRect.width / 2) / zoom}px`);
+				ui.window.dataset.yjcmSide = lib.config.extension_十周年UI_rightLayout === "on" ? "right" : "left";
+				// 区域变化后让现有布局重新读取宽度，卡牌尺寸仍由 cardScale 设置决定。
+				if (window.decadeUI?.boundsCaches?.hand) {
+					decadeUI.boundsCaches.hand.updated = false;
+					decadeUI.queueNextFrameTick(decadeUI.layoutHand, decadeUI);
+				}
+			};
+			update();
+			const observer = new ResizeObserver(update);
+			observer.observe(ui.window);
+			observer.observe(ui.arena);
+			// 木牛区显隐会改变手牌安全边距，同步刷新缓存宽度及原有排牌。
+			if (ui.me) observer.observe(ui.me);
+		},
+
+		createOfficialButton(className, label, onClick, parent = ui.window) {
+			const button = ui.create.div(`.yjcm-button.${className}`, parent);
+			button.setAttribute("role", "button");
+			button.setAttribute("aria-label", label);
+			button.tabIndex = 0;
+			button.onclick = onClick;
+			button.onkeydown = event => {
+				if (event.key === "Enter" || event.key === " ") {
+					event.preventDefault();
+					button.click();
+				}
+			};
+			return button;
+		},
+
+		createChatButtons() {
+			installXinshaProps();
+			const buttons = ui.create.div(".yjcm-chat-buttons", ui.window);
+			this.createOfficialButton("yjcm-flower", "砸蛋送花", () => this.showInteractionPanel(), buttons);
+			const chat = this.createOfficialButton("yjcm-chat", "聊天", null, buttons);
+			// chat() 只构造隐藏弹窗，必须经本体弹窗入口挂载和定位。
+			lib.setPopped(chat, ui.click.chat, 300, 400, true);
+			this.createOfficialButton("yjcm-microphone", "麦克风", null, buttons);
+		},
+
+		async showInteractionPanel() {
+			installXinshaProps()?.show();
 		},
 
 		// 初始化全选按钮覆盖
@@ -95,230 +192,124 @@ export function createXinshaLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 		// 创建问号按钮
 		createQuestionButton() {
 			const self = this;
-			const isTouch = lib.config.phonelayout;
-			const bottomOffset = isTouch ? "calc(100% - 55px)" : "calc(100% - 105px)";
+			const btn = this.createOfficialButton("yjcm-question", "胜利条件", null);
 
-			const btn = ui.create.node("img");
-			btn.src = `${lib.assetURL}${assetPath}CD/new_wenhao.png`;
-			btn.style.cssText = `display:block;width:40px;height:29px;position:absolute;bottom:${bottomOffset};left:calc(100% - 160px);background-color:transparent;z-index:3;`;
+			btn.onclick = () => {
+				const container = ui.create.div(".popup-container", ui.window);
 
-			if (["identity", "doudizhu", "versus", "guozhan"].includes(lib.config.mode)) {
-				btn.onclick = () => {
-					const container = ui.create.div(".popup-container", ui.window);
-					game.playAudio(`../${assetPath}shousha/label.mp3`);
 
-					const mode = lib.config.mode;
-					if (mode === "identity") {
-						const cls = self.identityTips[game.me?.identity];
-						if (cls) ui.create.div(cls, container);
-					} else if (mode === "doudizhu") {
-						const cls = self.doudizhuTips[game.me?.identity];
-						if (cls) ui.create.div(cls, container);
-					} else if (mode === "versus") {
-						ui.create.div(".Tiphu", container);
-					} else if (mode === "guozhan") {
-						const cls = self.groupTips[game.me?.group] || ".Tipweizhi";
-						ui.create.div(cls, container);
-					}
-
-					container.addEventListener("click", () => {
-						game.playAudio(`../${assetPath}shousha/caidan.mp3`);
-						container.delete(200);
-					});
-				};
-			}
-
-			document.body.appendChild(btn);
-		},
-
-		// 创建阴影背景
-		createShadowBg() {
-			const shadow = ui.create.node("img");
-			shadow.src = `${lib.assetURL}${assetPath}uibutton/yinying.png`;
-			shadow.style.cssText = "display:block;width:100%;height:20%;position:absolute;bottom:0px;background-color:transparent;z-index:-1;";
-			document.body.appendChild(shadow);
-		},
-
-		// 创建左侧小按钮（记录、换肤、笑脸）- 仅触屏布局
-		createSideButtons() {
-			if (!lib.config.phonelayout) return;
-
-			const isRight = lib.config["extension_十周年UI_rightLayout"] === "on";
-
-			// 记录按钮
-			const jiluBtn = ui.create.div(isRight ? ".jiluButton_new" : ".jiluButton_new1", document.body);
-			jiluBtn.onclick = () => ui.click.pause();
-
-			// 笑脸按钮（聊天）
-			const xiaolianBtn = ui.create.div(isRight ? ".xiaolianButton_new" : ".xiaolianButton_new1", document.body);
-			xiaolianBtn.onclick = () => {
-				if (lib.config["extension_说话_enable"]) {
-					game.showChatWordBackground?.();
-				} else {
-					game.showChatWordBackgroundX?.();
+				const mode = lib.config.mode;
+				if (mode === "identity") {
+					const cls = self.identityTips[game.me?.identity];
+					if (cls) ui.create.div(cls, container);
+				} else if (mode === "doudizhu") {
+					const cls = self.doudizhuTips[game.me?.identity];
+					if (cls) ui.create.div(cls, container);
+				} else if (mode === "versus") {
+					ui.create.div(".Tiphu", container);
+				} else if (mode === "guozhan") {
+					const cls = self.groupTips[game.me?.group] || ".Tipweizhi";
+					ui.create.div(cls, container);
 				}
-			};
-		},
 
-		// 创建主按钮
-		createMainButton() {
-			const self = this;
-			const isTouch = lib.config.phonelayout;
-			const bottomOffset = isTouch ? "calc(100% - 69px)" : "calc(100% - 129px)";
+				container.addEventListener("click", () => {
 
-			// 按钮背景
-			const btnBg = ui.create.node("img");
-			btnBg.src = `${lib.assetURL}${assetPath}CD/new_button3.png`;
-			btnBg.style.cssText = `display:block;--w:56px;--h:calc(var(--w)*74/71);width:var(--w);height:var(--h);position:absolute;bottom:${bottomOffset};left:calc(100% - 110px);background-color:transparent;z-index:1;`;
-			document.body.appendChild(btnBg);
-
-			// 按钮点击区域
-			const btn = ui.create.node("div");
-			btn.style.cssText = `display:block;--w:56px;--h:calc(var(--w)*74/71);width:var(--w);height:var(--h);position:absolute;bottom:${bottomOffset};left:calc(100% - 110px);background-color:transparent;z-index:1;`;
-			btn.onclick = () => {
-				game.playAudio(`../${assetPath}CD/click.mp3`);
-				self.createMainMenu();
-			};
-			document.body.appendChild(btn);
-		},
-
-		// 创建主菜单
-		createMainMenu() {
-			const self = this;
-			const container = ui.create.div(".popup-container", { background: "rgb(0,0,0,0)" }, ui.window);
-
-			container.addEventListener("click", e => {
-				game.playAudio(`../${assetPath}CD/back.mp3`);
-				e.stopPropagation();
-				container.delete(200);
-			});
-
-			const home = ui.create.div(".buttonyjcm", container);
-
-			// 设置按钮
-			const szBtn = ui.create.div(".controls", home);
-			szBtn.setBackgroundImage(`${assetPath}uibutton/button_sz.png`);
-			szBtn.addEventListener("click", () => {
-				game.playAudio(`../${assetPath}CD/button.mp3`);
-				ui.click.configMenu?.();
-				ui.system1.classList.remove("shown");
-				ui.system2.classList.remove("shown");
-			});
-
-			// 背景按钮
-			const bjBtn = ui.create.div(".controls", home);
-			bjBtn.setBackgroundImage(`${assetPath}uibutton/button_bj.png`);
-			bjBtn.addEventListener("click", () => {
-				game.playAudio(`../${assetPath}CD/button.mp3`);
-				self.openBackgroundSelector(`../${assetPath}shousha/caidan.mp3`);
-			});
-
-			// 托管按钮
-			const tgBtn = ui.create.div(".controls", home);
-			tgBtn.setBackgroundImage(`${assetPath}uibutton/button_tg.png`);
-			tgBtn.addEventListener("click", () => {
-				game.playAudio(`../${assetPath}CD/button.mp3`);
-				ui.click.auto();
-			});
-
-			// 退出按钮
-			const tcBtn = ui.create.div(".controls", home);
-			tcBtn.setBackgroundImage(`${assetPath}uibutton/button_tc.png`);
-			tcBtn.addEventListener("click", () => {
-				game.playAudio(`../${assetPath}CD/button.mp3`);
-				window.location.reload();
-			});
-		},
-
-		// 创建整理手牌按钮
-		createSortButton() {
-			const self = this;
-			const isRight = lib.config["extension_十周年UI_rightLayout"] === "on";
-
-			const btn = ui.create.node("img");
-			btn.src = `${lib.assetURL}${assetPath}uibutton/new_zhengli.png`;
-
-			const style = isRight ? "display:block;--w:88px;--h:calc(var(--w)*81/247);width:var(--w);height:var(--h);position:absolute;top:calc(100% - 46px);left:calc(100% - 335px);background-color:transparent;z-index:3;" : "display:block;--w:88px;--h:calc(var(--w)*81/247);width:var(--w);height:var(--h);position:absolute;top:calc(100% - 33px);right:calc(100% - 335px);background-color:transparent;z-index:3;";
-
-			btn.style.cssText = style;
-			btn.onclick = () => {
-				game.playAudio("../extension/十周年UI/audio/card_click.mp3");
-				self.sortHandCards();
+					container.delete(200);
+				});
 			};
 
-			// 定时检测手牌数
-			setInterval(() => {
-				btn.style.display = game.me?.getCards("hs").length >= 4 ? "block" : "none";
-			}, 1000);
-
-			document.body.appendChild(btn);
 		},
 
-		// 创建全选按钮
+		// GameSelfSeatUi：整理手牌独立于技能区，保留原排序条件。
 		createSelectAllButton() {
-			const self = this;
-			const isRight = lib.config["extension_十周年UI_rightLayout"] === "on";
-
-			const btn = ui.create.node("img");
-
-			const updateImage = () => {
-				btn.src = ui.selected.cards.length > 0 ? `${lib.assetURL}${assetPath}uibutton/fanxuan.png` : `${lib.assetURL}${assetPath}uibutton/quanxuan.png`;
-			};
-			updateImage();
-
-			const style = isRight ? "display:none;--w:88px;--h:calc(var(--w)*81/247);width:var(--w);height:var(--h);position:absolute;top:calc(100% - 46px);left:calc(100% - 430px);background-color:transparent;z-index:3;" : "display:none;--w:88px;--h:calc(var(--w)*81/247);width:var(--w);height:var(--h);position:absolute;top:calc(100% - 33px);right:calc(100% - 430px);background-color:transparent;z-index:3;";
-
-			btn.style.cssText = style;
-
-			btn.onclick = () => {
-				game.playAudio("../extension/十周年UI/audio/card_click.mp3");
-				self.toggleSelectAllCards(updateImage);
-			};
-
-			// 定时检测是否显示
-			setInterval(() => {
+			const button = this.createOfficialButton("yjcm-select-all", "全选手牌", () => this.toggleSelectAllCards(update));
+			const update = () => {
 				const event = _status.event;
-				if (!event?.isMine?.() || !event.allowChooseAll || event.complexCard || event.complexSelect) {
-					btn.style.display = "none";
-					return;
-				}
-				const selectCard = event.selectCard;
-				if (!selectCard) {
-					btn.style.display = "none";
-					return;
-				}
-				const range = get.select(selectCard);
-				if (range[1] <= 1) {
-					btn.style.display = "none";
-					return;
-				}
-				btn.style.display = "block";
-				updateImage();
-			}, 100);
+				button.hidden = !event?.isMine?.() || !event.allowChooseAll || event.complexCard || event.complexSelect || !event.selectCard || get.select(event.selectCard)[1] <= 1;
+				ui.window.dataset.yjcmSelectAll = String(!button.hidden);
+				button.textContent = ui.selected.cards.length ? "反选" : "全选";
+			};
+			update();
+			setInterval(update, 100);
+		},
 
-			document.body.appendChild(btn);
+		createSortButton() {
+			const button = this.createOfficialButton("yjcm-sort", "整理手牌", () => this.sortHandCards());
+			button.textContent = "整理手牌";
+			const update = () => {
+				button.hidden = !game.me || game.me.getCards("hs").length < 4;
+				ui.window.dataset.yjcmSort = String(!button.hidden);
+				button.classList.toggle("disabled", !!game.me?.hasSkillTag("noSortCard"));
+			};
+			update();
+			setInterval(update, 1000);
+		},
+
+		// GameMenuNew：中心锚点，59px 行距；原生菜单和窗口行为继续走无名杀接口。
+		createTopRightMenu() {
+			const menu = ui.create.div(".yjcm-menu", ui.window);
+			const menuBtn = this.createOfficialButton("yjcm-menu-main", "菜单", toggle, menu);
+			menuBtn.setAttribute("aria-expanded", "false");
+			ui.yjcmMenuButton = menuBtn;
+			const list = ui.create.div(".yjcm-menu-list", menu);
+			list.hidden = true;
+			const outside = event => {
+				if (!menu.contains(event.target)) close();
+			};
+			function close() {
+				list.hidden = true;
+				menuBtn.setAttribute("aria-expanded", "false");
+				document.removeEventListener("pointerdown", outside, true);
+			}
+			function toggle() {
+				if (!list.hidden) return close();
+				list.hidden = false;
+				menuBtn.setAttribute("aria-expanded", "true");
+				document.addEventListener("pointerdown", outside, true);
+			}
+			const items = [
+				["setting", "设置", () => ui.click.configMenu?.()],
+				["background", "背景", () => backgrounds.open()],
+				["surround", "退出", () => game.over()],
+				["handler", "托管", () => ui.click.auto()],
+			];
+			for (const [name, label, action] of items) {
+				this.createOfficialButton(`yjcm-menu-${name}`, label, () => {
+					close();
+
+					action();
+				}, list);
+			}
+			menu.onkeydown = event => {
+				if (event.key === "Escape") {
+					close();
+					menuBtn.focus();
+				}
+			};
 		},
 
 		create: {
 			control() {},
 
 			confirm() {
-				return base.create.confirm();
+				const confirm = base.create.confirm();
+				const update = confirm.update;
+				confirm.update = () => {
+					update();
+					confirm.dataset.yjcmFlow = ui.cardDialog?._isLuckyCardTip || _status.event.name === "gameDraw" ? "redraw" : "normal";
+					syncXinshaActionButtons();
+				};
+				return confirm;
 			},
 
 			cardRoundTime() {
-				return base.create.cardRoundTime();
+				const node = base.create.cardRoundTime();
+				ui.window.appendChild(node);
+				return node;
 			},
 
 			handcardNumber() {
 				const isRight = lib.config["extension_十周年UI_rightLayout"] === "on";
-
-				// 设置按钮
-				ui.create.div(".settingButton", ui.arena);
-
-				// 托管按钮
-				ui.create.div(".tuoguanButton", ui.arena, ui.click.auto);
-
 				// 手牌数量
 				const className = isRight ? ".handcardNumber" : ".handcardNumber1";
 				const node = ui.create.div(className, ui.arena).hide();
@@ -327,17 +318,7 @@ export function createXinshaLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 					cardNumber: ui.create.div(".cardNumber", node),
 				};
 
-				node.updateCardnumber = function () {
-					if (!game.me) return;
-					const current = game.me.countCards("h") || 0;
-					const limit = game.me.getHandcardLimit() || 0;
-					const color = current > limit ? "red" : "white";
-					const displayLimit = limit === Infinity ? "∞" : limit;
-
-					this.node.cardNumber.innerHTML = `<span><font color="${color}">${current}</font><sp style="font-size:15px;font-family:yuanli;color:#FFFCF5;">/</sp>${displayLimit}</span>`;
-					this.show();
-					game.addVideo("updateCardnumber", null, { cardNumber: limit });
-				};
+				node.updateCardnumber = updateXinshaHandCount;
 
 				node.node.cardNumber.interval = setInterval(() => ui.handcardNumber?.updateCardnumber(), 1000);
 				game.addVideo("createhandcardNumber");

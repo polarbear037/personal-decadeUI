@@ -1,0 +1,250 @@
+{
+  "style": "othersOff",
+  "config": "othersOff",
+  "border": "dragon4",
+  "event": "chooseToUse",
+  "selecting": "oblongcard phone decadeUI outcrop-skin-enabled selecting tempnoe",
+  "selectedTargets": [],
+  "players": [
+    {
+      "position": "0",
+      "classes": "player fullskin glow_phase d-skin",
+      "rect": {
+        "x": 1141.012369791667,
+        "y": 497.1484375000001,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_blue.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_red.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      }
+    },
+    {
+      "position": "1",
+      "classes": "player fullskin d-skin",
+      "rect": {
+        "x": 1143.0097656250002,
+        "y": 236.5983072916667,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_blue.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_red.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      }
+    },
+    {
+      "position": "2",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 961.3059895833335,
+        "y": 139.90234375000003,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_blue.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_red.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      }
+    },
+    {
+      "position": "3",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 782.2428385416669,
+        "y": 107.91015625000001,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_blue.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_red.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      }
+    },
+    {
+      "position": "4",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 606.4550781250001,
+        "y": 107.91015625000001,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_blue.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_red.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      }
+    },
+    {
+      "position": "5",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 426.11393229166674,
+        "y": 107.91015625000001,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_blue.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_red.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      }
+    },
+    {
+      "position": "6",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 245.77278645833337,
+        "y": 139.90234375000003,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_blue.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_red.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      }
+    },
+    {
+      "position": "7",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 73.99674479166669,
+        "y": 236.5983072916667,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_blue.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/sprites_glow_red.png\")",
+        "opacity": "0",
+        "width": "229.997px",
+        "height": "261.997px",
+        "left": "-65px",
+        "top": "-42px",
+        "z": "-1",
+        "animation": "kf-sprites-glow"
+      }
+    }
+  ]
+}

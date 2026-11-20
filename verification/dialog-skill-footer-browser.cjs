@@ -1,5 +1,5 @@
 const path = require('node:path');
-const { bootstrap, server, chromium, assert, script } = require('../../雷的ol/verification/card-beautify-browser.cjs');
+const { bootstrap, server, chromium, assert, script, read } = require('../../雷的ol/verification/card-beautify-browser.cjs');
 
 async function main() {
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
@@ -12,6 +12,7 @@ async function main() {
     page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
     page.on('response', response => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
     await bootstrap(page, origin, true);
+    await page.addStyleTag({ url: `${origin}/extension/十周年UI/src/styles/layout-online.css` });
     await page.addStyleTag({ url: `${origin}/extension/十周年UI/ui/styles/lbtn/online.css` });
     await page.evaluate(() => {
       document.body.innerHTML = '<div id="window"><div id="arena" class="decadeUI" data-loading-style="dialog_ol"></div></div>';
@@ -38,7 +39,7 @@ async function main() {
           return tip;
         },
       };
-      window.applyOnlineFactionDialog = window.applyFactionDialogInteraction = window.applyHuarenDialogInteraction = dialog => dialog;
+      window.applyOnlineFactionDialog = window.applyXinshaFactionDialog = window.applyFactionDialogInteraction = window.applyHuarenDialogInteraction = dialog => dialog;
       window.syncOfficialPlayerPopups = () => {};
       game.me = {};
       game.over = () => {};
@@ -58,13 +59,21 @@ async function main() {
       ['src/ui/officialSkillPromptData.js', 'window.officialSkillPrompts=officialSkillPrompts;'],
       ['src/ui/officialPromptBridge.js', 'window.getOfficialScenePrompt=getOfficialScenePrompt;'],
       ['src/ui/officialPrompt.js', 'Object.assign(window,{plainPrompt,skillNameForPrompt,buildOfficialPrompt,renderOfficialPrompt});'],
+      ['src/ui/simplifiedSkillPrompt.js', 'Object.assign(window,{isSkillPromptSimplified,getSimplifiedSkillPrompt});'],
+      ['src/ui/promptStyle.js', 'Object.assign(window,{optimizePromptKey,getOptimizedPromptStyle});'],
+      ['src/ui/xinshaPlayerCardPrompt.js', 'window.getXinshaPlayerCardPrompt=getXinshaPlayerCardPrompt;'],
+      ['src/ui/xinshaPromptData.js', 'Object.assign(window,{xinshaPromptEntries,xinshaPhasePrompt});'],
+      ['src/ui/xinshaPrompt.js', 'Object.assign(window,{buildXinshaPrompt,renderXinshaPrompt});'],
       ['src/ui/optimizedPrompt.js', 'Object.assign(window,{addOptimizedPrompt,addOptimizedPromptText,prepareOptimizedPrompt,refreshOptimizedPrompt,closeOptimizedPrompt,clearOptimizedPrompts});'],
       ['src/utils/safeOverride.js', 'window.wrapAround=r;window.wrapAfter=t;'],
-      ['src/overrides/dialog.js', 'EngineDialog.prototype.open=s;t();'],
+      ['src/ui/dialog-card-animations-xinsha.js', 'window.xinshaDialogCardAnimations=xinshaDialogCardAnimations;'],
+      ['src/overrides/dialog.js', 'EngineDialog.prototype.open=s;window.getDialogSkillTitle=getDialogSkillTitle;t();'],
       ['src/overrides/ui/update.js', 'ui.update=l;'],
       ['src/overrides/ui/create.js', 'ui.create.dialog=s;'],
       ['ui/lbtn/skins/base.js', 'window.createBaseLbtnPlugin=createBaseLbtnPlugin;'],
       ['src/ui/online-action-buttons.js', 'Object.assign(window,{initOnlineActionButtons,attachOnlineRecastButton,syncOnlineActionButtons});'],
+      ['ui/lbtn/skins/online-backgrounds.js', 'window.onlineBackgrounds=onlineBackgrounds;'],
+      ['ui/lbtn/skins/online-background-selector.js', 'window.createOnlineBackgroundSelector=createOnlineBackgroundSelector;'],
       ['ui/lbtn/skins/online.js', 'window.createOnlineLbtnPlugin=createOnlineLbtnPlugin;'],
     ]) await page.addScriptTag({ content: script('extension/十周年UI/' + file, expose) });
     await page.evaluate(() => {
@@ -150,7 +159,7 @@ async function main() {
       ui.arena.classList.add('choose-character');
       let dialog = makeSkillDialog('选将：请选择武将'); results.push(!dialog.querySelector('.dialog-ol-footer')); dialog.close();
       ui.arena.classList.remove('choose-character');
-      dialog = makeSkillDialog('技能：<span style="background-image:url(http://example.invalid/icon.png)">提示内容：后续冒号保留</span>');
+      dialog = makeSkillDialog('技能：<span style="background-image:url(' + lib.assetURL + 'extension/十周年UI/image/ui/dialog/dialog_ol.png)">提示内容：后续冒号保留</span>');
       results.push(dialog.querySelector('.dialog-ol-footer').textContent === '提示内容：后续冒号保留');
       ui.arena.dataset.loadingStyle = 'on'; ui.update();
       results.push(dialog.content.firstElementChild.textContent === '技能：提示内容：后续冒号保留' && !dialog.querySelector('.dialog-ol-footer'));
@@ -180,8 +189,142 @@ async function main() {
       return results;
     });
     assert.ok(titles.every(Boolean), JSON.stringify(titles));
+    // 执行本体的取牌弹窗创建步骤，覆盖密运没有技能文字的自动标题。
+    const contentSource = read('noname/library/element/content.js');
+    const gainSource = contentSource.slice(contentSource.indexOf('  gainPlayerCard: ['), contentSource.indexOf('  async showHandcards('));
+    await page.addScriptTag({ content: `window.engineGainPlayerCard=({${gainSource}}).gainPlayerCard[0];` });
+    const getSource = read('noname/get/index.js');
+    await page.addScriptTag({ content: `get.sourceSkillFor=({${getSource.slice(getSource.indexOf('  sourceSkillFor(skill, text) {'), getSource.indexOf('  sgn(num) {'))}}).sourceSkillFor;` });
+    await page.evaluate(() => {
+      Object.assign(lib.skill, { dcmiyun: {}, dcmiyun_lose: { sourceSkill: 'dcmiyun' }, huashen: {} });
+      Object.assign(lib.translate, { dcmiyun: '密运', huashen: '化身', zhangyu: '张裕' });
+      lib.filter = { all: () => true };
+      get.select = value => value;
+      get.cnNumber = value => value === 1 ? '一' : String(value);
+      const translation = get.translation;
+      get.translation = value => translation(value?.name || value);
+      game.me.hasSkillTag = () => false;
+      game.check = game.pause = () => {};
+      ui.create.buttonChooseAll = () => {};
+      ui.create.buttons = (cards, type, parent) => cards.map(card => {
+        const button = ui.create.div('.button.card', parent);
+        button.style.cssText = 'position:relative;display:inline-block;width:90px;height:120px;margin:4px';
+        button.textContent = '牌'; button.link = card;
+        button.onclick = () => button.classList.toggle('selected');
+        return button;
+      });
+      Array.prototype.randomSort = function () { return this; };
+      window.openGainDialog = async parent => {
+        const cards = Array.from({ length: 4 }, () => ({ name: 'sha' }));
+        const event = {
+          name: 'gainPlayerCard', player: game.me, parent, position: 'he', visible: true,
+          target: { name: 'zhangyu', getCards: () => cards, getGainableCards: (player, position) => position === 'h' ? cards : [], isUnderControl: () => false },
+          selectButton: [1, 1], forced: false, filterButton: lib.filter.all,
+          isMine: () => true, isOnline: () => false,
+        };
+        _status.event = event;
+        await engineGainPlayerCard(event, null, game.me);
+        window.testDialog = event.dialog;
+        return event;
+      };
+    });
+    let skillCases = 0;
+    for (const style of ['othersOff', 'onlineUI']) {
+      const skin = style === 'othersOff' ? 'xinsha' : 'online';
+      const layout = await page.addStyleTag({ url: `${origin}/extension/十周年UI/src/styles/layout-${skin}.css` });
+      for (const optimize of [false, true]) {
+        await page.evaluate(async ({ style, optimize }) => {
+          document.body.dataset.style = style;
+          ui.arena.dataset.loadingStyle = style === 'othersOff' ? 'dialog_xinsha' : 'dialog_ol';
+          lib.config.extension_十周年UI_newDecadeStyle = style;
+          lib.config.extension_十周年UI_optimizePrompt = optimize;
+          window.gainEvent = await openGainDialog({ name: 'dcmiyun', player: game.me, parent: { name: 'phase' } });
+        }, { style, optimize });
+        await page.evaluate(() => document.fonts.ready);
+        await page.waitForTimeout(600);
+        const gain = await page.evaluate(() => {
+          const caption = testDialog.content.firstElementChild;
+          const footer = testDialog.querySelector('.dialog-ol-footer');
+          return { title: caption.textContent, prompt: footer?.textContent, cards: testDialog.buttons.length,
+            section: testDialog.content.children[1].textContent,
+            titleVisible: getComputedStyle(caption).display !== 'none',
+            promptVisible: getComputedStyle(footer).display !== 'none' };
+        });
+        assert.deepEqual(gain, { title: '密运', prompt: '获得张裕一张牌', cards: 4, section: '手牌区', titleVisible: true, promptVisible: true });
+        await page.locator('.buttons>.button').first().click();
+        assert.equal(await page.locator('.buttons>.button.selected').count(), 1);
+        const stable = await page.evaluate(() => {
+          _status.event = { name: 'huashen', player: game.me };
+          for (let i = 0; i < 3; i++) ui.update();
+          const stableTitle = testDialog.content.firstElementChild.textContent;
+          testDialog.setCaption('密运：请选择一张牌');
+          return { stableTitle, title: testDialog.content.firstElementChild.textContent, prompt: testDialog.querySelector('.dialog-ol-footer').textContent };
+        });
+        assert.deepEqual(stable, { stableTitle: '密运', title: '密运', prompt: '请选择一张牌' });
+        const reused = await page.evaluate(() => {
+          testDialog.open();
+          const title = testDialog.content.firstElementChild.textContent;
+          testDialog.close();
+          return title;
+        });
+        assert.equal(reused, '化身');
+        const ordinary = await page.evaluate(async () => {
+          await openGainDialog({ name: 'useCard', type: 'card', skill: 'dcmiyun', parent: { name: 'dcmiyun' } });
+          const result = { title: testDialog.content.firstElementChild.textContent, footer: !!testDialog.querySelector('.dialog-ol-footer') };
+          testDialog.close(); return result;
+        });
+        assert.deepEqual(ordinary, { title: '获得张裕一张牌', footer: false });
+        skillCases++;
+      }
+      await layout.evaluate(node => node.remove());
+    }
+    const jianglingTitles = await page.evaluate(async () => {
+      lib.skill.jiang0_rule_999 = { jiang0JianglingRule: true };
+      const calls = [];
+      game.jiang0Skills = { context: { row(player, id) { calls.push([player === game.me, id]); return player === game.me && id === 999 ? {GameSkillID:999,SkillName:'奇才'} : undefined; } } };
+      const results = [];
+      for (const style of ['othersOff', 'onlineUI']) {
+        lib.config.extension_十周年UI_newDecadeStyle = style;
+        document.body.dataset.style = style;
+        ui.arena.dataset.loadingStyle = style === 'othersOff' ? 'dialog_xinsha' : 'dialog_ol';
+        const parent = {name:'jiang0_rule_999',player:game.me,parent:{name:'useCard'}};
+        await openGainDialog(parent);
+        results.push(testDialog.content.firstElementChild.textContent);
+        testDialog.close();
+        _status.event = {name:'chooseButton',player:game.me,parent};
+        const options = makeSkillDialog('请选择一项');
+        _status.event.parent = parent;
+        options.open();
+        results.push(options.content.firstElementChild.textContent);
+        options.close();
+      }
+      delete game.jiang0Skills;
+      return {results,calls};
+    });
+    assert.deepEqual(jianglingTitles.results, ['奇才','奇才','获得张裕一张牌','请选择一项']);
+    assert.ok(jianglingTitles.calls.length >= 2 && jianglingTitles.calls.every(([owner,id]) => owner && id === 999));
+    const sources = await page.evaluate(() => {
+      const title = event => getDialogSkillTitle(event);
+      const skill = { name: 'dcmiyun', player: game.me };
+      const cycle = { name: 'chooseButton' }; cycle.parent = cycle;
+      return [
+        title({ name: 'chooseButton', parent: { name: 'dcmiyun_cost' } }),
+        title({ name: 'chooseButton', skill: 'dcmiyun_backup' }),
+        title({ name: 'chooseButton', sourceSkill: 'dcmiyun_lose' }),
+        title({ name: 'chooseButton', hsskill: 'dcmiyun' }),
+        title({ name: 'chooseButton', logSkill: ['dcmiyun', {}] }),
+        title({ name: 'chooseButton', getParent: () => skill }),
+        title({ name: 'chooseButton', getParent() { throw Error('missing parent'); }, parent: skill }),
+        title({ name: 'chooseButton', skill: 'unknown_skill', parent: skill }),
+        title({ name: 'chooseButton', parent: { name: 'phaseUse', parent: skill } }),
+        title({ name: 'chooseButton', parent: { name: 'chooseCharacter', parent: skill } }),
+        title({ name: 'chooseButton', parent: { name: 'useCard', parent: skill } }),
+        title(cycle),
+      ];
+    });
+    assert.deepEqual(sources, [...Array(8).fill('密运'), '', '', '', '']);
     assert.deepEqual(errors, []);
-    console.log(`DIALOG_SKILL_FOOTER_OK: ${scenarios} zoom/mobile/optimization combinations; activation titles; title updates; rich text; collapse/restore; card clicks; exclusions; 0 browser errors`);
+    console.log(`DIALOG_SKILL_FOOTER_OK: ${scenarios} zoom/mobile/optimization combinations; ${skillCases} native gainPlayerCard xinsha/online optimization combinations; source/cost/backup skills; title updates/reuse; rich text; collapse/restore; card clicks; exclusions; 0 browser errors`);
   } finally { await browser.close(); server.close(); }
 }
 main().catch(error => { console.error(error); server.close(); process.exitCode = 1; });

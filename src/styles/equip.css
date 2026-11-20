@@ -31,13 +31,13 @@
 	/* onlineUI 样式 */
 	--equip-right-ol: 160px;
 	--equip-right-layout-left-ol: 90px;
-	--player-equips-left-ol: 15.5%;
-	--player-equips-right-ol: 1.5%;
+	--player-equips-left-ol: 17%;
+	--player-equips-right-ol: 5%;
 }
 
 /** 装备栏容器 */
 
-#arena>.equips-wrap {
+#arena > .equips-wrap {
 	min-width: 130px;
 	height: 100%;
 	top: auto;
@@ -47,51 +47,50 @@
 }
 
 /* 右手布局 */
-#arena[data-right-layout="on"]>.equips-wrap {
+#arena[data-right-layout="on"] > .equips-wrap {
 	left: var(--equip-right-layout-left);
 	right: auto;
 }
 
 /* 隐藏装备栏 */
-#arena[data-alone-equip="off"]>.equips-wrap {
+#arena[data-alone-equip="off"] > .equips-wrap {
 	left: auto;
 	opacity: 0;
 }
 
 /* 十周年样式 - 关闭触屏布局 */
-#arena[data-new-decade-style="on"][data-phonelayout="off"][data-right-layout="on"]>.equips-wrap {
+#arena[data-new-decade-style="on"][data-phonelayout="off"][data-right-layout="on"] > .equips-wrap {
 	left: 1%;
 	right: auto;
 }
 
 /* othersOff 样式 - 关闭触屏布局 */
-#arena[data-new-decade-style="othersOff"][data-phonelayout="off"][data-right-layout="on"]>.equips-wrap {
+#arena[data-new-decade-style="othersOff"][data-phonelayout="off"][data-right-layout="on"] > .equips-wrap {
 	left: 1%;
 	right: auto;
 }
 
 /* othersOff 样式 - 其他玩家装备右移 */
-#arena[data-new-decade-style="othersOff"] .player>.equips,
-#arena[data-new-decade-style="othersOff"]>.player:not(.minskin)>.equips {
+#arena[data-new-decade-style="othersOff"] .player > .equips,
+#arena[data-new-decade-style="othersOff"] > .player:not(.minskin) > .equips {
 	left: calc(var(--player-equips-left) + 5%);
 }
 
 /** 装备栏背景 */
 
-.equips-wrap>.equips-back {
+.equips-wrap > .equips-back {
 	position: absolute;
-	display: grid;
-	grid-template-columns: minmax(0, 1fr);
-	grid-template-rows: repeat(var(--equip-rows, 4), 27px);
-	align-items: stretch;
-	align-content: end;
-	justify-items: stretch;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: flex-end;
 	width: 100%;
 	height: 100%;
 	row-gap: 3px;
 }
 
-.equips-wrap>.equips-back>div {
+.equips-wrap > .equips-back > div {
 	position: initial;
 	width: 100%;
 	height: 27px;
@@ -100,29 +99,29 @@
 }
 
 /* 装备槽背景图 */
-.equips-wrap>.equips-back>div[data-type="0"] {
+.equips-wrap > .equips-back > div[data-type="0"] {
 	background-image: url("../../image/styles/decade/equip1.png");
 }
 
-.equips-wrap>.equips-back>div[data-type="1"] {
+.equips-wrap > .equips-back > div[data-type="1"] {
 	background-image: url("../../image/styles/decade/equip2.png");
 }
 
-.equips-wrap>.equips-back>div[data-type="2"] {
+.equips-wrap > .equips-back > div[data-type="2"] {
 	background-image: url("../../image/styles/decade/equip3.png");
 }
 
-.equips-wrap>.equips-back>div[data-type="3"] {
+.equips-wrap > .equips-back > div[data-type="3"] {
 	background-image: url("../../image/styles/decade/equip4.png");
 }
 
-.equips-wrap>.equips-back>div[data-type="4"] {
+.equips-wrap > .equips-back > div[data-type="4"] {
 	background-image: url("../../image/styles/decade/equip5.png");
 }
 
 /** 装备栏内容 */
 
-.equips-wrap>.equips {
+.equips-wrap > .equips {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -137,193 +136,17 @@
 	row-gap: 3px;
 }
 
-/* 普通装备栏保留四行背景；进攻马与宝物同时存在时复用防御马这一行。 */
-.equips-wrap>.equips-back>div[data-type="3"] {
-	display: none;
-}
-
-.equips-wrap[data-equip-layout="attack"]>.equips-back>div[data-type="4"] {
-	display: none;
-}
-
-.equips-wrap[data-equip-layout="attack"]>.equips-back>div[data-type="3"] {
-	display: block;
-}
-
-.equips-wrap>.equips-back>div[data-type="0"] {
-	grid-column: 1;
-	grid-row: 1;
-}
-
-.equips-wrap>.equips-back>div[data-type="1"] {
-	grid-column: 1;
-	grid-row: 2;
-}
-
-.equips-wrap>.equips-back>div[data-type="2"] {
-	grid-column: 1;
-	grid-row: 3;
-}
-
-.equips-wrap>.equips-back>div[data-type="3"],
-.equips-wrap>.equips-back>div[data-type="4"] {
-	grid-column: 1;
-	grid-row: 4;
-}
-
-/* 普通状态下四行依次对应武器、护甲、防御马和末行装备。 */
-.equips-wrap>.equips,
-.player>.equips {
-	display: grid;
-	grid-template-columns: minmax(0, 1fr);
-	grid-template-rows: repeat(var(--equip-rows, 4), 27px);
-	align-content: end;
-	justify-items: stretch;
-}
-
-.equips-wrap>.equips>div,
-.player>.equips>div {
-	grid-column: 1;
-	width: 100%;
-}
-
-.equips-wrap>.equips>div[data-equip-slot="1"],
-.player>.equips>div[data-equip-slot="1"] {
-	grid-row: 1;
-}
-
-.equips-wrap>.equips>div[data-equip-slot="2"],
-.player>.equips>div[data-equip-slot="2"] {
-	grid-row: 2;
-}
-
-.equips-wrap>.equips>div[data-equip-slot="3"],
-.player>.equips>div[data-equip-slot="3"] {
-	grid-row: 3;
-}
-
-.equips-wrap>.equips>div[data-equip-slot="4"],
-.equips-wrap>.equips>div[data-equip-slot="5"],
-.player>.equips>div[data-equip-slot="4"],
-.player>.equips>div[data-equip-slot="5"] {
-	grid-row: 4;
-}
-
-.equips-wrap>.equips[data-equip-layout="combined"],
-.player>.equips[data-equip-layout="combined"] {
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"],
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"] {
-	grid-column: 1;
-	grid-row: 3;
-}
-
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="1"],
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="2"],
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="1"],
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="2"] {
-	grid-column: 1 / -1;
-}
-
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"],
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"] {
-	grid-column: 2;
-	grid-row: 3;
-}
-
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="5"],
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="5"] {
-	grid-column: 1 / -1;
-	grid-row: 4;
-}
-
-.equips-wrap>.equips[data-equip-layout="combined"]>.card>.name2,
-.player>.equips[data-equip-layout="combined"]>.card>.name2 {
-	font-size: 14px;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"]>.name2:not([data-decade-feichu]):not([data-decade-horse]) span,
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"]>.name2:not([data-decade-feichu]):not([data-decade-horse]) span,
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"]>.name2:not([data-decade-feichu]):not([data-decade-horse]) span,
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"]>.name2:not([data-decade-feichu]):not([data-decade-horse]) span {
-	font-size: 12px !important;
-	margin-left: 0 !important;
-}
-
-.equips-wrap[data-equip-layout="combined"]>.equips-back {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	grid-template-rows: repeat(var(--equip-rows, 4), 27px);
-	align-content: end;
-	justify-items: stretch;
-}
-
-.equips-wrap[data-equip-layout="combined"]>.equips-back>div {
-	display: block;
-	width: 100%;
-}
-
-.equips-wrap[data-equip-layout="combined"]>.equips-back>div[data-type="0"] {
-	grid-column: 1 / -1;
-	grid-row: 1;
-}
-
-.equips-wrap[data-equip-layout="combined"]>.equips-back>div[data-type="1"] {
-	grid-column: 1 / -1;
-	grid-row: 2;
-}
-
-.equips-wrap[data-equip-layout="combined"]>.equips-back>div[data-type="2"] {
-	grid-column: 1;
-	grid-row: 3;
-}
-
-.equips-wrap[data-equip-layout="combined"]>.equips-back>div[data-type="3"] {
-	display: block;
-	grid-column: 2;
-	grid-row: 3;
-}
-
-.equips-wrap[data-equip-layout="combined"]>.equips-back>div[data-type="4"] {
-	grid-column: 1 / -1;
-	grid-row: 4;
-}
-
-/* +1 马栏空闲时，单独的 -1 马使用第三行左栏。 */
-.equips-wrap>.equips[data-lone-attack-horse="true"]>div[data-equip-slot="4"],
-.player>.equips[data-lone-attack-horse="true"]>div[data-equip-slot="4"] {
-	grid-column: 1;
-	grid-row: 3;
-}
-
-.equips-wrap[data-lone-attack-horse="true"]>.equips-back>div[data-type="2"] {
-	display: none;
-}
-
-.equips-wrap[data-lone-attack-horse="true"]>.equips-back>div[data-type="3"] {
-	display: block;
-	grid-column: 1;
-	grid-row: 3;
-}
-
-.equips-wrap[data-lone-attack-horse="true"]>.equips-back>div[data-type="4"] {
-	display: block;
-}
-
 /* 装备卡牌槽 */
-.equips-wrap>.equips>div {
-	position: relative;
+.equips-wrap > .equips > div {
+	position: initial;
 	display: flex;
 	align-items: center;
 	align-content: center;
 	justify-content: center;
 	width: 100%;
 	height: 27px;
-	inset: auto;
+	left: 3px;
+	right: 3px;
 	background: rgb(53, 38, 32) !important;
 	border-radius: 0;
 	box-shadow: none;
@@ -331,7 +154,7 @@
 	z-index: 1;
 }
 
-.equips-wrap>.equips>div::before {
+.equips-wrap > .equips > div::before {
 	width: inherit;
 	height: inherit;
 	top: auto;
@@ -340,7 +163,7 @@
 }
 
 /* 装备槽边框 */
-.equips-wrap>.equips>div::after {
+.equips-wrap > .equips > div::after {
 	display: block;
 	width: inherit;
 	height: inherit;
@@ -368,80 +191,28 @@
 
 /** 装备选中状态 */
 
-.equips-wrap>.equips>div.selected {
+.equips-wrap > .equips > div.selected {
 	box-shadow: 0 0 10px yellow;
 }
 
-.equips-wrap>.equips>div.selectable {
+.equips-wrap > .equips > div.selectable {
 	cursor: pointer;
 	transform: translateX(-10px);
 }
 
-.equips-wrap>.equips>div.selectable::before {
+.equips-wrap > .equips > div.selectable::before {
 	animation: none;
 }
 
-.equips-wrap>.equips>div.selected::before {
+.equips-wrap > .equips > div.selected::before {
 	animation: fade-in-out-selectable 1s infinite;
 }
 
-#arena .equips.decade-equip-entry-settling>.card,
-#arena .player .equips.decade-equip-entry-settling>.card,
-#arena .player:not([data-position="0"]) .equips.decade-equip-entry-settling>.card,
-#arena.chess .player .equips.decade-equip-entry-settling>.card {
-	margin-top: 0 !important;
-	margin-bottom: 0 !important;
-	transition: none !important;
-	-webkit-transition: none !important;
-	animation: none !important;
-	-webkit-animation: none !important;
-}
-
-#arena .player:not([data-position="0"]) .equips>.card:not(.equiped),
-#arena.chess .player .equips>.card:not(.equiped) {
-	margin-top: 0 !important;
-	margin-bottom: 0 !important;
-	transition: none !important;
-	-webkit-transition: none !important;
-	animation: none !important;
-	-webkit-animation: none !important;
-}
-
-#arena.decadeUI>.equips-wrap>.equips>div.equiped,
-#arena.decadeUI>.equips-wrap>.equips>.card.equiped,
-#arena .player .equips>.card.equiped,
-#arena .player>.equips>.card.equiped,
-#arena .player:not([data-position="0"]) .equips>.card.equiped,
-#arena.chess .player .equips>.card.equiped,
-#arena:not(.chess).textequip .player[data-position="0"] .equips>.card.equiped,
-#arena.decadeUI .player>.equips>.card.equiped,
-#arena.decadeUI>.player:not(.minskin)>.equips>.card.equiped {
-	margin-top: 0 !important;
-	margin-bottom: 0 !important;
-	transition: none !important;
-	-webkit-transition: none !important;
-	animation: insertEquips 0.5s ease forwards !important;
-	-webkit-animation: insertEquips 0.5s ease forwards !important;
-}
-
-#window.low_performance #arena .player .equips>.card.equiped,
-#window.low_performance #arena .player:not([data-position="0"]) .equips>.card.equiped,
-#window.low_performance #arena.chess .player .equips>.card.equiped,
-#window.low_performance #arena.decadeUI .player>.equips>.card.equiped,
-#window.low_performance #arena.decadeUI>.player:not(.minskin)>.equips>.card.equiped {
-	margin-top: 0 !important;
-	margin-bottom: 0 !important;
-	transition: none !important;
-	-webkit-transition: none !important;
-	animation: insertEquips 0.5s ease forwards !important;
-	-webkit-animation: insertEquips 0.5s ease forwards !important;
-}
-
-#arena[data-right-layout="on"]>.equips-wrap>.equips>div.selectable {
+#arena[data-right-layout="on"] > .equips-wrap > .equips > div.selectable {
 	transform: translateX(10px);
 }
 
-.mobile-phone .equips-wrap>.equips>div.selected {
+.mobile-phone .equips-wrap > .equips > div.selected {
 	box-shadow:
 		0 0 2px yellow,
 		0 0 4px yellow,
@@ -450,8 +221,8 @@
 
 /** 装备图标 */
 
-.equips-wrap>.equips-back>div>.icon,
-.equips-wrap>.equips>div>.icon {
+.equips-wrap > .equips-back > div > .icon,
+.equips-wrap > .equips > div > .icon {
 	display: block;
 	width: 20px;
 	height: 20px;
@@ -462,12 +233,12 @@
 
 /** 装备牌内容 */
 
-.equips-wrap>.equips>.card>div {
+.equips-wrap > .equips > .card > div {
 	position: absolute;
 	text-shadow: none;
 }
 
-.equips-wrap>.equips>.card>.name2 {
+.equips-wrap > .equips > .card > .name2 {
 	position: static;
 	display: flex;
 	align-items: center;
@@ -476,7 +247,7 @@
 	width: calc(100% - 4px);
 	height: calc(100% - 4px);
 	margin: 0;
-	font-family: "HYXLSJ" !important;
+	font-family: "yuanli" !important;
 	font-weight: bold;
 	white-space: pre-wrap;
 	background-color: rgb(228, 207, 166);
@@ -488,121 +259,32 @@
 }
 
 /* 红色花色 */
-.equips-wrap>.equips>.card[data-suit="heart"]>.name2,
-.equips-wrap>.equips>.card[data-suit="diamond"]>.name2 {
-	color: red;
+.equips-wrap > .equips > .card[data-suit="heart"] > .name2,
+.equips-wrap > .equips > .card[data-suit="diamond"] > .name2 {
+	color: #8b0000;
 }
 
 /* 黑色花色 */
-.equips-wrap>.equips>.card[data-suit="spade"]>.name2,
-.equips-wrap>.equips>.card[data-suit="club"]>.name2 {
-	color: black;
+.equips-wrap > .equips > .card[data-suit="spade"] > .name2,
+.equips-wrap > .equips > .card[data-suit="club"] > .name2 {
+	color: #181818;
 }
 
 /* 无色 */
-.equips-wrap>.equips>.card[data-suit="none"]>.name2 {
-	color: none;
-	background-color: rgba(113, 116, 109, 0.8);
+.equips-wrap > .equips > .card[data-suit="none"] > .name2 {
+	color: white;
+	background-color: black;
 }
 
 /* 废除状态 */
-.equips-wrap>.equips>.card.feichu>.name2 {
+.equips-wrap > .equips > .card.feichu > .name2 {
 	color: white;
 	font-weight: normal;
 	background-color: rgb(57, 48, 33);
 }
 
-/* 废除栏位只在专属子节点中重绘，保留本体卡牌文本与状态字段。 */
-.equips-wrap>.equips>.card>.name2[data-decade-feichu],
-.player>.equips>.card>.name2[data-decade-feichu] {
-	font-size: 0 !important;
-	justify-content: flex-start;
-	overflow: hidden;
-}
-
-.decade-equip-feichu {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	width: 100%;
-	height: 100%;
-	min-width: 0;
-	color: white;
-	font-size: 14px;
-	font-weight: normal;
-	line-height: 1;
-}
-
-.decade-equip-feichu-icon {
-	display: block;
-	flex: 0 0 18px;
-	width: 18px;
-	height: 18px;
-	margin-left: 2px;
-	box-sizing: border-box;
-	background-image: var(--decade-feichu-icon);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-.decade-equip-feichu-label {
-	display: block;
-	flex: 1 1 auto;
-	min-width: 0;
-	font-size: 14px;
-	font-weight: 600;
-	text-align: center;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-.decade-equip-feichu-distance {
-	display: block;
-	flex: 0 0 14px;
-	margin-left: 1px;
-	white-space: nowrap;
-}
-
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"] .decade-equip-feichu,
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"] .decade-equip-feichu {
-	font-size: 12px;
-}
-
-.equips-wrap>.equips[data-equip-layout="combined"] .decade-equip-feichu-distance {
-	font-size: 11px;
-}
-
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"] .decade-equip-feichu-icon,
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"] .decade-equip-feichu-icon {
-	flex-basis: 16px;
-	width: 16px;
-	height: 16px;
-	margin-left: 0;
-}
-
-.decade-equip-feichu[data-slot="1"] {
-	--decade-feichu-icon: url("../../image/ui/equip/official/new_equip_type_3_new.png");
-}
-
-.decade-equip-feichu[data-slot="2"] {
-	--decade-feichu-icon: url("../../image/ui/equip/official/new_equip_type_4_new.png");
-}
-
-.decade-equip-feichu[data-slot="3"] {
-	--decade-feichu-icon: url("../../image/ui/equip/official/new_equip_type_5_new.png");
-}
-
-.decade-equip-feichu[data-slot="4"] {
-	--decade-feichu-icon: url("../../image/ui/equip/official/new_equip_type_6_new.png");
-}
-
-.decade-equip-feichu[data-slot="5"] {
-	--decade-feichu-icon: url("../../image/ui/equip/official/new_equip_type_7_new.png");
-}
-
 /* 装备图片 */
-.equips-wrap>.equips>.card>.image {
+.equips-wrap > .equips > .card > .image {
 	position: absolute;
 	display: block;
 	width: 20px;
@@ -613,31 +295,29 @@
 	z-index: 2;
 }
 
-.equips-wrap>.equips>.card:not(.fullskin)>.image {
+.equips-wrap > .equips > .card:not(.fullskin) > .image {
 	display: block !important;
 }
 
 /** 其他玩家装备栏 */
 
-.player>.equips,
-#arena>.player:not(.minskin)>.equips {
+.player > .equips,
+#arena > .player:not(.minskin) > .equips {
 	position: absolute;
+	display: flex;
 	flex-direction: column;
 	width: auto;
-	height: 79px;
+	height: 80px;
 	left: var(--player-equips-left);
 	right: var(--player-equips-right);
-	bottom: 2.3px;
+	bottom: 3%;
 	background: none;
-	/*overflow-y: auto;*/
-	/*overflow-x: visible !important;*/
-	overflow: visible !important;
-	border-radius: none !important;
+	border-radius: 0;
 	box-shadow: none;
 	transform: none;
 	transform-origin: center;
 	pointer-events: none;
-	z-index: 66;
+	z-index: 88;
 }
 
 /* 未翻面玩家装备栏 */
@@ -645,182 +325,70 @@
 #arena.decadeUI:not(.long):not(.mobile):not(.oldlayout) .player.unseen .equips:not(*:empty),
 #arena.decadeUI.long.mobile:not(.oldlayout) .player.unseen2:not([data-position="0"]) .equips:not(*:empty),
 #arena.decadeUI.long:not(.mobile):not(.oldlayout) .player.unseen2 .equips:not(*:empty) {
-	/*overflow-y: auto;*/
-	/*overflow-x: visible !important;*/
-	overflow: visible !important;
+	overflow: hidden;
 	background: none;
 	border-radius: 0;
 	box-shadow: none;
 }
 
 /* 其他玩家装备牌 */
-.player>.equips>.card,
-.player.unseen>.equips>.card,
-.player.unseen2>.equips>.card {
+.player > .equips > .card,
+.player.unseen > .equips > .card,
+.player.unseen2 > .equips > .card {
 	display: flex;
 	align-items: center;
 	align-content: center;
 	justify-content: center;
-	top: 1px;
 	width: 100%;
-	height: 19px;
-	box-shadow:
-		0 0.5px 0 rgba(68, 58, 48, 0.8),
-		0 -0.5px 0 rgba(68, 58, 48, 0.8);
-	background: rgba(0, 0, 0, 0.6) !important;
-	border-radius: none;
-	/* overflow: auto; */
+	height: 16px;
+	background: rgba(228, 207, 166, 0.8) !important;
+	border: 1px solid rgb(95, 55, 45);
+	border-image: none !important;
+	border-radius: 1px;
+	box-sizing: border-box;
 	text-shadow: none;
 }
 
-/*其他玩家暗将装备*/
-#arena.decadeUI:not(.long).mobile:not(.oldlayout) .player.unseen:not([data-position="0"]) .equips:not(*:empty)>.card,
-#arena.decadeUI:not(.long):not(.mobile):not(.oldlayout) .player.unseen .equips:not(*:empty)>.card:not(.selected),
-#arena.decadeUI.long.mobile:not(.oldlayout) .player.unseen2:not([data-position="0"]) .equips:not(*:empty)>.card,
-#arena.decadeUI.long:not(.mobile):not(.oldlayout) .player.unseen2 .equips:not(*:empty)>.card:not(.selected) {
-	background: url("../../image/ui/equip/online/equip_bg.png") !important;
+#arena.decadeUI:not(.long).mobile:not(.oldlayout) .player.unseen:not([data-position="0"]) .equips:not(*:empty) > .card,
+#arena.decadeUI:not(.long):not(.mobile):not(.oldlayout) .player.unseen .equips:not(*:empty) > .card:not(.selected),
+#arena.decadeUI.long.mobile:not(.oldlayout) .player.unseen2:not([data-position="0"]) .equips:not(*:empty) > .card,
+#arena.decadeUI.long:not(.mobile):not(.oldlayout) .player.unseen2 .equips:not(*:empty) > .card:not(.selected) {
+	background: rgba(228, 207, 166, 0.8) !important;
 }
 
-.player:not(.selectable)>.equips>.card,
-.player:not(.selectable)>.equips>.card>div {
+.player:not(.selectable) > .equips > .card,
+.player:not(.selectable) > .equips > .card > div {
 	pointer-events: auto;
 }
 
-.player>.equips>.card>div {
+.player > .equips > .card > div {
 	position: static;
-	opacity: 1 !important;
 }
 
-.player>.equips>.card>.name2 {
-	position: relative;
+.player > .equips > .card > .name2 {
+	position: absolute;
 	display: flex;
 	align-items: center;
 	align-content: center;
-	justify-content: flex-start;
+	justify-content: center;
 	width: 100%;
 	height: 100%;
-	left: 1.5px;
-	top: 0px;
+	left: 0;
+	top: 0;
 	margin: 0;
 	line-height: 15px;
-	font-size: 17px;
-	font-family: "shousha";
+	font-size: 13px;
+	font-family: yuanli;
+	font-weight: bold;
+	color: #181818;
 	text-align: center;
 	text-shadow: none;
 	pointer-events: none;
 }
 
-/* 拼装内容按原装备槽定位；底图不含名称、花色或点数。 */
-.equips>.card:has(>.name2[data-decade-equip]) {
-	background: none !important;
-	container-type: inline-size;
-}
-
-.equips>.card:has(>.name2[data-decade-equip])>.image {
-	display: none !important;
-}
-
-.equips>.card>.name2[data-decade-equip] {
-	--equip-icon-size: 14px;
-	--equip-suit-left: 17px;
-	--equip-number-left: 28px;
-	--equip-name-left: 41px;
-	--equip-point-size: 12px;
-	position: relative;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	border: 0;
-	background: url("../../image/ui/equip/official/new_equip_card_bg_new.png") center / 100% 100% no-repeat;
-	box-sizing: border-box;
-	overflow: hidden;
-}
-
-.equips-wrap>.equips>.card>.name2[data-decade-equip] {
-	--equip-icon-size: 20px;
-	--equip-suit-left: 23px;
-	--equip-number-left: 36px;
-	--equip-name-left: 49px;
-	--equip-point-size: 14px;
-	width: 100%;
-}
-
-.equips>.card>.name2[data-decade-equip]>img,
-.equips>.card>.name2[data-decade-equip]>.decade-equip-name {
-	position: absolute;
-	top: 50%;
-	margin: 0;
-	transform: translateY(-50%);
-	opacity: 1;
-	object-fit: contain;
-}
-
-.equips>.card>.name2[data-decade-equip]>.decade-equip-type-icon {
-	left: 2px;
-	width: var(--equip-icon-size);
-	height: var(--equip-icon-size);
-}
-
-.equips>.card>.name2[data-decade-equip]>.decade-equip-suit {
-	left: var(--equip-suit-left);
-	width: var(--equip-point-size);
-	height: var(--equip-point-size);
-}
-
-.equips>.card>.name2[data-decade-equip]>.decade-equip-number {
-	left: var(--equip-number-left);
-	width: var(--equip-point-size);
-	height: calc(var(--equip-point-size) + 2px);
-}
-
-.equips>.card>.name2[data-decade-equip]>.decade-equip-name {
-	left: var(--equip-name-left);
-	right: 0;
-	height: auto;
-	font-family: "shousha", "KaiTi", serif;
-	/* 四字名称在较窄主题中随槽宽适配，保留原有字号下限。 */
-	font-size: clamp(13px, calc((100cqw - var(--equip-name-left)) / 4), 17px);
-	font-weight: normal;
-	letter-spacing: min(0px, calc((100cqw - var(--equip-name-left) - 52px) / 4));
-	line-height: 1;
-	text-align: left;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	color: white;
-}
-
-.equips-wrap>.equips>.card>.name2[data-decade-equip]>.decade-equip-name {
-	font-size: 20px;
-	letter-spacing: -0.75px;
-}
-
-/* 无花色、无点数时，名称使用类型图标右侧的整个区域。 */
-.equips>.card>.name2[data-decade-equip]:has(>.decade-equip-suit[hidden]):has(>.decade-equip-number[hidden]) {
-	--equip-name-left: calc(var(--equip-icon-size) + 5px);
-}
-
-.equips>.card>.name2[data-decade-equip]:has(>.decade-equip-suit[hidden]):has(>.decade-equip-number[hidden])>.decade-equip-name {
-	right: 2px;
-	text-align: center;
-}
-
-.player>.equips>.card[data-suit="heart"]>.name2 {
-	color: red;
-}
-
-.player>.equips>.card[data-suit="diamond"]>.name2 {
-	color: red;
-}
-
-.player>.equips>.card[data-suit="spade"]>.name2 {
-	color: black;
-}
-
-.player>.equips>.card[data-suit="club"]>.name2 {
-	color: black;
+.player > .equips > .card[data-suit="heart"] > .name2,
+.player > .equips > .card[data-suit="diamond"] > .name2 {
+	color: #8b0000;
 }
 
 /** 样式变量覆盖 */
@@ -846,41 +414,41 @@ body[data-style="off"] {
 	--player-equips-right: var(--player-equips-right-new);
 }
 
-body[data-style="codename"] .equips-wrap>.equips-back>div {
+body[data-style="codename"] .equips-wrap > .equips-back > div {
 	opacity: 0.5;
 }
 
 /** 技能选择装备牌 */
 
 /* 默认不突出 */
-.equips-wrap>.equips>div.equip-card-selectable {
+.equips-wrap > .equips > div.equip-card-selectable {
 	transform: none;
 }
 
-#arena[data-right-layout="on"]>.equips-wrap>.equips>div.equip-card-selectable {
+#arena[data-right-layout="on"] > .equips-wrap > .equips > div.equip-card-selectable {
 	transform: none;
 }
 
 /* 可选时突出 */
-.equips-wrap>.equips>div.equip-card-selectable.selectable {
+.equips-wrap > .equips > div.equip-card-selectable.selectable {
 	transform: translateX(-10px);
 }
 
-#arena[data-right-layout="on"]>.equips-wrap>.equips>div.equip-card-selectable.selectable {
+#arena[data-right-layout="on"] > .equips-wrap > .equips > div.equip-card-selectable.selectable {
 	transform: translateX(10px);
 }
 
 /* 选中时突出 */
-.equips-wrap>.equips>div.equip-card-selectable.selected {
+.equips-wrap > .equips > div.equip-card-selectable.selected {
 	transform: translateX(-10px);
 }
 
-#arena[data-right-layout="on"]>.equips-wrap>.equips>div.equip-card-selectable.selected {
+#arena[data-right-layout="on"] > .equips-wrap > .equips > div.equip-card-selectable.selected {
 	transform: translateX(10px);
 }
 
 /* 选中特效边框 */
-.equips-wrap>.equips>div.equip-card-selectable::before {
+.equips-wrap > .equips > div.equip-card-selectable::before {
 	content: "";
 	position: absolute;
 	top: -4px;
@@ -900,226 +468,107 @@ body[data-style="codename"] .equips-wrap>.equips-back>div {
 	z-index: 2;
 }
 
-.equips-wrap>.equips>div.equip-card-selectable.selected::before {
+.equips-wrap > .equips > div.equip-card-selectable.selected::before {
 	opacity: 1;
 }
 
-@keyframes insertEquips {
-	from {
-		transform: translateX(-100%);
-	}
-
-	to {
-		transform: translateX(0);
-	}
-}
-
-@-webkit-keyframes insertEquips {
-	from {
-		transform: translateX(-100%);
-	}
-
-	to {
-		transform: translateX(0);
-	}
-}
-
-/* 角色装备栏原样式使用绝对定位，网格状态需恢复为普通网格项。 */
-.player>.equips {
-	grid-template-rows: repeat(var(--equip-rows, 4), 19px);
-	row-gap: 1px;
-}
-
-.player>.equips>.card {
+/* 与共享 equip-layout.js 生成的图片节点配套，保留本风格装备栏底图和槽位。 */
+.player > .equips > .card {
 	position: relative;
-	inset: auto;
-	height: 19px;
+	left: auto;
+	top: auto;
+	flex-shrink: 0;
+	margin: 0;
 }
 
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"]>.name2,
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"]>.name2 {
-	font-size: 12px;
+.equips > .card > .name2[data-decade-equip] {
+	--equip-point-size: 10px;
+	--equip-type-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1px;
+	padding: 0 2px;
+	min-width: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.equips-wrap > .equips > .card > .name2[data-decade-equip] {
+	--equip-point-size: 14px;
+	--equip-type-size: 18px;
+}
+
+.equips > .card > .name2[data-decade-equip] > img {
+	position: static;
+	flex: 0 0 auto;
+	width: var(--equip-point-size);
+	height: calc(var(--equip-point-size) + 2px);
+	margin: 0;
+	object-fit: contain;
+}
+
+.equips > .card > .name2[data-decade-equip] > .decade-equip-type-icon {
+	width: var(--equip-type-size);
+	height: var(--equip-type-size);
+}
+
+.equips > .card > .name2[data-decade-equip] > .decade-equip-name {
+	position: static;
+	flex: 1 1 auto;
+	min-width: 0;
 	white-space: nowrap;
 	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-.player>.equips>.card>.name2[data-decade-feichu] .decade-equip-feichu {
-	font-size: 12px;
-}
-
-.player>.equips>.card>.name2[data-decade-feichu] .decade-equip-feichu-icon {
-	flex-basis: 12px;
-	width: 12px;
-	height: 12px;
-	margin-left: 1px;
-}
-
-.player>.equips[data-equip-layout="combined"]>.card>.name2[data-decade-feichu] .decade-equip-feichu-icon {
-	flex-basis: 13px;
-	width: 13px;
-	margin-left: 0;
-}
-
-.player>.equips[data-equip-layout="combined"]>.card>.name2[data-decade-feichu] .decade-equip-feichu-distance {
-	margin-left: 0;
-	font-size: 11px;
-}
-
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"] .decade-equip-feichu-label,
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"] .decade-equip-feichu-label,
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"] .decade-equip-feichu-label,
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"] .decade-equip-feichu-label {
-	font-size: 12px;
-}
-
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"] .decade-equip-feichu-distance,
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"] .decade-equip-feichu-distance,
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"] .decade-equip-feichu-distance,
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"] .decade-equip-feichu-distance {
-	font-size: 12px;
-}
-
-/* 宝物存在时，马牌依次显示图标、花色、点数和距离。 */
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"]>.name2[data-decade-horse],
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"]>.name2[data-decade-horse],
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"]>.name2[data-decade-horse],
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"]>.name2[data-decade-horse] {
-	font-size: 0 !important;
-	overflow: hidden;
-	justify-content: center;
-}
-
-.equips>.card>.name2[data-decade-horse]> :not(.decade-equip-horse) {
+.equips > .card > .name2[data-decade-horse] > :not(.decade-equip-horse) {
 	display: none !important;
 }
 
-.decade-equip-horse {
-	display: grid;
-	grid-template-columns: var(--decade-horse-icon-width, 18px) minmax(0, 1fr) max-content max-content max-content minmax(0, 1fr);
+.equips > .card > .name2 > .decade-equip-horse {
+	position: static;
+	display: flex;
 	align-items: center;
 	gap: 2px;
 	width: 100%;
 	height: 100%;
 	min-width: 0;
-	font-size: 15px;
-	font-weight: normal;
-	color: white;
+	font-size: 13px;
 	line-height: 1;
-	white-space: nowrap;
+}
+
+.decade-equip-horse > span {
+	position: static;
+	flex: 0 0 auto;
 }
 
 .decade-equip-horse-icon {
-	display: block;
-	grid-column: 1;
-	flex: 0 0 18px;
-	width: 18px;
-	height: 18px;
+	width: var(--equip-type-size, 12px);
+	height: var(--equip-type-size, 12px);
 	background-position: center;
-	background-repeat: no-repeat;
 	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-.decade-equip-horse[data-slot="3"]>.decade-equip-horse-icon {
+.decade-equip-horse[data-slot="3"] > .decade-equip-horse-icon {
 	background-image: url("../../image/ui/equip/official/new_equip_type_5_new.png");
 }
 
-.decade-equip-horse[data-slot="4"]>.decade-equip-horse-icon {
+.decade-equip-horse[data-slot="4"] > .decade-equip-horse-icon {
 	background-image: url("../../image/ui/equip/official/new_equip_type_6_new.png");
 }
 
-.decade-equip-horse-distance,
-.decade-equip-horse-suit,
-.decade-equip-horse-number {
-	display: block;
-	flex: 0 0 auto;
-	min-width: 0;
-}
-
-.decade-equip-horse-suit {
-	flex-basis: 12px;
-	width: 12px;
-	height: 12px;
-	font-size: 0;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-.decade-equip-horse-suit {
-	grid-column: 3;
-}
-
-.decade-equip-horse-number {
-	grid-column: 4;
-	width: 12px;
-	height: 14px;
-}
-
-.decade-equip-horse-suit>img,
-.decade-equip-horse-number>img {
+.decade-equip-horse-suit > img,
+.decade-equip-horse-number > img {
 	position: static;
 	display: block;
-	width: 130%;
-	height: 100%;
-	margin: 0;
+	width: var(--equip-point-size, 10px);
+	height: calc(var(--equip-point-size, 10px) + 2px);
 	object-fit: contain;
 }
 
-.decade-equip-horse-distance {
-	grid-column: 5;
-}
-
-.equips-wrap>.equips[data-equip-layout="combined"] .decade-equip-horse {
-	--decade-horse-icon-width: 12px;
-	gap: 1px;
-}
-
-.equips-wrap>.equips[data-equip-layout="combined"] .decade-equip-horse-icon {
-	flex-basis: 12px;
-	width: 12px;
-	height: 12px;
-}
-
-.equips-wrap>.equips[data-equip-layout="combined"] .decade-equip-horse-number {
-	width: 10px;
-}
-
-.player>.equips[data-equip-layout="combined"] .decade-equip-horse {
-	--decade-horse-icon-width: 10px;
-	gap: 0;
-}
-
-.player>.equips[data-equip-layout="combined"] .decade-equip-horse-icon {
-	flex-basis: 12px;
-	width: 12px;
-	height: 12px;
-}
-
-.player>.equips[data-equip-layout="combined"] .decade-equip-horse-suit {
-	flex-basis: 12px;
-	width: 10px;
-	height: 12px;
-}
-
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"]>.image,
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"]>.image,
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"]>.icon,
-.equips-wrap>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"]>.icon,
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"]>.image,
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"]>.image,
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="3"]>.icon,
-.player>.equips[data-equip-layout="combined"]>div[data-equip-slot="4"]>.icon {
-	display: none !important;
-}
-
-/* 扩展栏位按实例分行；额外武器复用废除防具的位置。 */
-:is(.player, .equips-wrap)>.equips[data-expanded-equip="true"]>div[data-equip-slot],
-.equips-wrap>.equips-back[data-expanded-equip="true"]>div[data-type] {
-	grid-row: var(--equip-row, 1);
-	grid-column: var(--equip-column, 1 / -1);
-}
-
-:is(.player, .equips-wrap)>.equips>div[data-equip-replaced="true"],
-.equips-wrap>.equips-back>div[data-equip-replaced="true"] {
+/* 装备区只展示横条；卡面上的花色点数、牌名和图片仍供离区恢复。 */
+.equips > .card:has(> .name2[data-decade-equip]) > :not(.name2) {
 	display: none !important;
 }

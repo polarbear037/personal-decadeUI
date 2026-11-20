@@ -1,0 +1,4 @@
+(async () => {
+ const {lib,game,ui}=await import('./noname.js');
+ return {style:lib.config.extension_十周年UI_newDecadeStyle,enabled:lib.config.extension_十周年UI_cardAlternateName,player:game.me?.name,handCount:game.me?.countCards('h'),newCss:[...document.styleSheets].some(s=>[...s.cssRules].some(r=>r.selectorText?.includes('dui-xinsha-card-name'))),newApi:String(window.decadeUI.cardAlternateName.updateVisibility).includes('cardsByZone'),zones:['handcards1','handcards2'].map(key=>({key,exists:!!game.me?.node?.[key],same:game.me?.node?.[key]===ui[key],cards:game.me?.node?.[key]?.children.length,visible:game.me?.node?.[key]?.dataset.cardAlternateNameVisible,style:game.me?.node?.[key]?.dataset.cardAlternateNameStyle})),styles:[...document.querySelectorAll('link[href*="card"]')].map(n=>n.href)};
+})()

@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "frameQueued": true,
+    "displayReady": false,
+    "departed": false,
+    "animation": true,
+    "compositingReasons": [
+      "Has an active accelerated transform animation or transition.",
+      "Has an active accelerated opacity animation or transition.",
+      "Has a will-change: transform compositing hint.",
+      "Has a will-change: opacity compositing hint."
+    ],
+    "selfPointGeometryReads": 50
+  },
+  "current": {
+    "frameQueued": false,
+    "displayReady": false,
+    "departed": false,
+    "animation": true,
+    "compositingReasons": [
+      "Has an active accelerated transform animation or transition.",
+      "Has an active accelerated opacity animation or transition.",
+      "Has a will-change: transform compositing hint.",
+      "Has a will-change: opacity compositing hint."
+    ],
+    "selfPointGeometryReads": 6
+  }
+}

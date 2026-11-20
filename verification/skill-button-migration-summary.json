@@ -1,0 +1,97 @@
+{
+  "othersOff-skill-effects-results.json": {
+    "states": 17,
+    "geometry": 12,
+    "disabled": {
+      "markers": 0,
+      "playing": 0,
+      "follow": 0
+    },
+    "cleanup": {
+      "markers": 0,
+      "playing": 0,
+      "shared": true,
+      "follow": 0,
+      "parents": 0
+    }
+  },
+  "othersOff-skill-effects-mobile-results.json": {
+    "states": 17,
+    "geometry": 12,
+    "disabled": {
+      "markers": 0,
+      "playing": 0,
+      "follow": 0
+    },
+    "cleanup": {
+      "markers": 0,
+      "playing": 0,
+      "shared": true,
+      "follow": 0,
+      "parents": 0
+    }
+  },
+  "onlineUI-skill-effects-results.json": {
+    "states": 17,
+    "geometry": 12,
+    "disabled": {
+      "markers": 0,
+      "playing": 0,
+      "follow": 0
+    },
+    "cleanup": {
+      "markers": 0,
+      "playing": 0,
+      "shared": true,
+      "follow": 0,
+      "parents": 0
+    }
+  },
+  "onlineUI-skill-effects-mobile-results.json": {
+    "states": 17,
+    "geometry": 12,
+    "disabled": {
+      "markers": 0,
+      "playing": 0,
+      "follow": 0
+    },
+    "cleanup": {
+      "markers": 0,
+      "playing": 0,
+      "shared": true,
+      "follow": 0,
+      "parents": 0
+    }
+  },
+  "fuqin": [
+    {
+      "connected": true,
+      "parent": true,
+      "count": 1,
+      "text": "4/4",
+      "children": 2
+    },
+    {
+      "connected": true,
+      "parent": true,
+      "count": 1,
+      "text": "4/2",
+      "children": 2
+    },
+    {
+      "connected": true,
+      "parent": true,
+      "count": 1,
+      "text": "4/2",
+      "children": 2
+    }
+  ],
+  "currentElectron": {
+    "counterConnected": true,
+    "eventSame": true,
+    "skillSame": true,
+    "selectionSame": true,
+    "stateSame": true,
+    "runtimePlayback": "new Worker/module after next launch"
+  }
+}

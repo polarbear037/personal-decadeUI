@@ -1,4 +1,4 @@
-﻿@import "animation.css";
+﻿@import "animation-xinsha.css";
 
 /** 基础样式 */
 .player {
@@ -34,50 +34,136 @@
 	background-size: 100% 100% !important;
 }
 
-/** 选中光效 */
-.player::before,
-.player::after {
-	left: -65px;
-	top: -42px;
-	width: 230px;
-	height: 262px;
+/** 原版座位状态：PlayerSeat.getDisplayStatus → GameSeatCcb.updateSeatDisplayStatus。
+ * 用原图亮边的中心线贴合本地角色框，不用整幅透明画布或cardbg裁切尺寸代替亮边。
+ * 白色可选框是原图+呼吸，已选金框/回合/响应是 Spine 的 play 动画，不能共用旧蓝框。 */
+body[data-style="othersOff"] #arena {
+	--yjcm-seat-turn: url("../../image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png");
+	--yjcm-seat-selected: url("../../image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png");
+	--yjcm-seat-response: url("../../image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png");
+	--yjcm-seat-halo-width: 130.857143%;
+	--yjcm-seat-halo-x: 50.285714%;
+	--yjcm-seat-halo-y: 50.108932%;
+	--yjcm-seat-halo-height: 122.875817%;
+	--yjcm-seat-selected-width: 130.484330%;
+	--yjcm-seat-selected-x: 50.427350%;
+	--yjcm-seat-red-width: 139.031339%;
+	--yjcm-seat-red-x: 50.142450%;
+	--yjcm-seat-red-y: 50.436681%;
+	--yjcm-seat-red-height: 128.820961%;
+}
+
+/* GeneralUiResCfg.isUseOldDragon：仅DragonType2使用 m2，其他三种沿用 m。 */
+body[data-style="othersOff"] #arena[data-border-style="dragon2"] {
+	--yjcm-seat-turn: url("../../image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m2_play_dynamic.png");
+	--yjcm-seat-selected: url("../../image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m2_play_dynamic.png");
+	--yjcm-seat-response: url("../../image/ui/effects/xinsha/SF_eff_paiju_paidired_m2_play_dynamic.png");
+	--yjcm-seat-halo-width: 130.379747%;
+	--yjcm-seat-halo-x: 50.316456%;
+	--yjcm-seat-selected-width: 130.379747%;
+	--yjcm-seat-selected-x: 50.316456%;
+	--yjcm-seat-red-width: 139.682540%;
+	--yjcm-seat-red-x: 50.158730%;
+}
+
+body[data-style="othersOff"] #arena .player::before {
+	content: "";
+	position: absolute;
+	display: block;
+	left: var(--yjcm-seat-halo-x);
+	top: var(--yjcm-seat-halo-y);
+	width: var(--yjcm-seat-halo-width);
+	height: var(--yjcm-seat-halo-height);
 	opacity: 0;
-	background-repeat: no-repeat;
-	animation: kf-sprites-glow 0s infinite steps(1) forwards;
+	background: none center / 100% 100% no-repeat;
+	transform: translate(-50%, -50%);
+	animation: none;
+	transition: none;
 	pointer-events: none;
 	box-shadow: none;
-	transition: opacity 0.1s linear;
+	z-index: -1;
 }
 
-/* 蓝色光效(默认) */
-.player::before {
-	background-image: url("../../image/ui/effects/sprites_glow_blue.png");
+/* 原版特效在_generalBg后面。暗将/动皮可能没有不透明头像，必须由底图遮住动画实心中心。
+ * 单给特效负z-index仍会盖住player自身的background，因此将同一底图绘制在独立上层。 */
+body[data-style="othersOff"] #arena .player::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: inherit;
+	border-radius: inherit;
+	opacity: 1;
+	transform: none;
+	animation: none;
+	transition: none;
+	box-shadow: none;
+	pointer-events: none;
+	z-index: 0;
 }
 
-/* 橙色光效(选中/回合中) */
-.player.selected:not(.target)::before,
-.player.glow_phase:not(.selectable):not([data-position="0"])::before {
-	animation-duration: 0.9s;
-	background-image: url("../../image/ui/effects/sprites_glow_orange.png");
+/* 状态4：可选。原版先淡入2秒，再按1秒半透明/1秒全亮循环。 */
+body[data-style="othersOff"] #arena .player.selectable:not(.selected)::before {
+	/* 白框169×243，亮边(6,6)-(162,236)：单独外扩3px，并保留自身的居中补偿。
+	 * 与红绿框共用底层；亮边露在角色框外，不能为显示白框抬层级压住露头立绘。 */
+	left: 50.335306%;
+	top: 50.224638%;
+	width: 113.333333%;
+	height: 109.173913%;
+	background-image: url("../../image/ui/effects/xinsha/paiju_target_actived.png");
+	opacity: 1;
+	animation: yjcm-target-enter 2s linear both, yjcm-target-breathe 2s linear 2s infinite;
+}
+
+/* 状态2优先于可选及回合：选中即切换金色，APNG按骨骼原时长自行循环。 */
+body[data-style="othersOff"] #arena .player.selected::before {
+	left: var(--yjcm-seat-selected-x);
+	width: var(--yjcm-seat-selected-width);
+	background-image: var(--yjcm-seat-selected);
+	transform: translate(-50%, -50%) scale(1.05);
 	opacity: 1;
 }
 
-/* 蓝色光效(可选中) */
-.player.selectable:not(.selected):not(.target)::before {
-	animation-duration: 0.9s;
+/* 状态1：其他角色自己的回合。 */
+body[data-style="othersOff"] #arena .player.glow_phase:not(.selectable):not(.selected):not([data-position="0"])::before {
+	background-image: var(--yjcm-seat-turn);
+	transform: translate(-50%, -50%) scale(1.03);
 	opacity: 1;
 }
 
-/* 红色光效(目标) */
-.player::after,
-.player.selected::after,
-.player.selectable::after {
-	background-image: url("../../image/ui/effects/sprites_glow_red.png");
+/* 状态3：本人操作/响应；target仅补充非行动者的结算指示，不能覆盖回合或选中状态。 */
+body[data-style="othersOff"] #arena.selecting:not(.choose-character) .player[data-position="0"]:not(.selectable):not(.selected):not(.dead)::before,
+body[data-style="othersOff"] #arena .player.target:not(.glow_phase):not([data-position="0"]):not(.selectable):not(.selected)::before {
+	left: var(--yjcm-seat-red-x);
+	top: var(--yjcm-seat-red-y);
+	width: var(--yjcm-seat-red-width);
+	height: var(--yjcm-seat-red-height);
+	background-image: var(--yjcm-seat-response);
+	transform: translate(-50%, -50%) scale(1.03);
+	opacity: 1;
 }
 
-.player.target:not(.glow_phase):not(.selectable):not(.selected)::after {
-	animation-duration: 0.9s;
-	opacity: 1;
+body[data-style="othersOff"] #arena .player.target {
+	/* 本体.target的红色box-shadow会叠到金框外，原版只显示对应状态图。 */
+	box-shadow: none !important;
+}
+
+/* useCard给自己加target时不能覆盖回合状态；本体zoom选项也不能再放大行动者整张角色框。 */
+body[data-style="othersOff"] #arena[data-target_shake="zoom"] .player.glow_phase:is(.target, .target2),
+body[data-style="othersOff"] #arena[data-target_shake="zoom"] .player[data-position="0"]:is(.target, .target2) {
+	transform: none !important;
+}
+
+@keyframes yjcm-target-enter {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes yjcm-target-breathe {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.5; }
 }
 
 /** 遮罩层 */
@@ -136,13 +222,13 @@
 	left: 25px;
 	top: auto;
 	right: auto;
-	bottom: 1%;
+	bottom: 1.5%;
 }
 
 #arena[data-right-layout="on"]>.player[data-position="0"],
 #arena[data-right-layout="on"]>.player[data-position="0"]:not(.miniskin) {
 	left: auto;
-	right: 20px;
+	right: 30px;
 }
 
 .player[data-position="0"]>.card-count {
@@ -357,6 +443,22 @@ body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] {
 	font-family: "yuanli" !important;
 }
 
+/* 竖排长名限制在姓名栏内，避免溢出或挤成多列。 */
+body[data-style="othersOff"] .player>.camp-wrap>.avatar-name,
+body[data-style="othersOff"] .player>.name.name2:not(:empty),
+body[data-style="othersOff"] #arena>.player:not(.minskin)>.name.name2:not(:empty) {
+	display: block !important;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* 保留原flex文字的右侧锚点，让字宽向左展开，避免窄姓名栏裁字。 */
+body[data-style="othersOff"] .player>.camp-wrap>.avatar-name {
+	left: auto !important;
+	width: max-content;
+}
+
 /* 主将名 */
 #arena>.player:not(.minskin)>.name.name,
 .player>.name.name2,
@@ -377,6 +479,11 @@ body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] {
 	left: 50% !important;
 	top: 47px !important;
 	background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.4) 80%, transparent 100%);
+}
+
+body[data-style="othersOff"] .player>.name.name2,
+body[data-style="othersOff"] #arena>.player:not(.minskin)>.name.name2 {
+	max-height: calc(100% - 47px);
 }
 
 .player>.name.name2:empty,
@@ -483,6 +590,41 @@ body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] {
 }
 
 /** 血量显示 */
+/* GeneralYjcmHpContainer：原39×40手牌图标和139×178透明血条底图。
+ * 原生牌身180高对应官方245高，局部控件在同一设计坐标中缩放。 */
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player:not(.minskin) > .hp-wrap {
+	right: 2px !important; bottom: 4px !important; left: auto !important; top: auto !important;
+	width: 36px !important; height: 105px !important; border: 0 !important; border-image: none !important;
+	background: none; transform: scale(0.7346938776); transform-origin: right bottom;
+	--yjcm-hp-bg-height: 216px; --yjcm-hp-bg: url("../../ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png");
+}
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player[data-border-level="five"] > .hp-wrap,
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"][data-border-level="five"] > .player > .hp-wrap {
+	--yjcm-hp-bg: url("../../ui/assets/lbtn/yijiang/dragon2_hp_grade_5.png");
+}
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player:is([data-max-hp="1"],[data-max-hp="2"]) > .hp-wrap { --yjcm-hp-bg-height: 178px; }
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player[data-max-hp="3"] > .hp-wrap { --yjcm-hp-bg-height: 196px; }
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player[data-max-hp="5"] > .hp-wrap,
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player > .hp-wrap:has(> .hp.textstyle) { --yjcm-hp-bg-height: 236px; }
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player > .hp-wrap::before {
+	content: ""; position: absolute; left: -97px; bottom: -7px; width: 139px; height: var(--yjcm-hp-bg-height);
+	box-sizing: border-box; border-style: solid; border-width: 146px 0 30px;
+	border-image: var(--yjcm-hp-bg) 146 0 30 0 fill / 146px 0 30px 0 stretch; pointer-events: none;
+}
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player > .hp-wrap > .hp {
+	left: 15px !important; right: auto !important; bottom: 6px !important; top: auto !important;
+	width: 20px !important; height: auto; margin: 0 !important; gap: 0; font-size: 20px; line-height: 20px;
+}
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player > .hp-wrap > .hp > div:not(.shield) {
+	width: 20px; height: 20px; flex: 0 0 20px; margin: 0 !important; transform: none; background-size: contain;
+}
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player > .hp-wrap > .hp.textstyle { bottom: 11px !important; display: block; text-align: center; }
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player > .hp-wrap > .hp.textstyle > div:not(.shield) { display: block; margin-top: 5px !important; }
+body[data-style="othersOff"] #arena > .player[data-position="0"] > .card-count {
+	visibility: visible !important; width: 28.65px; height: 29.39px; left: -4.4px; bottom: 12.12px;
+	background-image: var(--yjcm-self-hand-icon, url("../../ui/assets/lbtn/yijiang/self_handcardnum_bg.png"));
+	background-size: 100% 100%; background-position: center;
+}
 .player>.hp-wrap {
 	display: block;
 	position: absolute;
@@ -584,6 +726,10 @@ body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] {
 }
 
 /* 血量状态图标 */
+body[data-style="othersOff"] .player>.hp-wrap>.hp>div:not(.shield) {
+	margin-left: 2px;
+}
+
 .hp:not(.text):not(.actcount):not(.treasure)[data-condition="high"]>div:not(.lost):not(.shield) {
 	background: url("../../image/styles/xinsha/glass1.png") no-repeat;
 	background-size: 100% 100%;

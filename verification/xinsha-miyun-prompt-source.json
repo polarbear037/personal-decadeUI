@@ -1,0 +1,203 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "packed_cache_matches_apk": true,
+    "decoded_game_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28"
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_9c5d0ada064eb4df0e69550e647832f45a7c91a83828969b6e7b0219840bc0e9"
+  ],
+  "modules": [
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "module": "app.skill.general.online.MiYun",
+      "sha256": "91ae128109d3b6a40c612c377fe814a72b64c480da03a0bff6aa7f41ad9a2610",
+      "functions": [
+        {
+          "id": "0.2",
+          "line": 41,
+          "last": 53,
+          "code_sha256": "97cb342ef08b405019358e57205b26a78f86778f9b9bf2f98d15596fef82fc80",
+          "constants": [
+            "super",
+            "getActiveTip",
+            "string",
+            "split",
+            "|",
+            "isRoleOptType",
+            "enum",
+            "EmOpt",
+            "OPT_SKILL_FLAG1",
+            1.0,
+            "OPT_SKILL_FLAG2",
+            2.0,
+            "OPT_SKILL_FLAG3",
+            3.0,
+            "OPT_SKILL_FLAG4",
+            4.0
+          ]
+        }
+      ]
+    },
+    {
+      "archive_member": "assets/res/lib/game.zip",
+      "module": "app.view.game.dlg.windowSnitch",
+      "sha256": "4a65d0ab8bf1c55f2ae79988c1e090db6560c802ee908dbcf295ea786f98658f",
+      "functions": [
+        {
+          "id": "0.5",
+          "line": 146,
+          "last": 248,
+          "code_sha256": "93610f56882a7933afd9a0edace76e7d90fe68e88c04b55e99ddacc7d36e80a6",
+          "constants": [
+            "contentWidth",
+            610.0,
+            "contentHeight",
+            190.0,
+            "baoWuContentWidth",
+            200.0,
+            "btns",
+            "setSkillTitle",
+            "skill",
+            "getName",
+            "contentNode",
+            "display",
+            "newNode",
+            "addTo",
+            40.0,
+            "USE_WIDTH",
+            1334.0,
+            0.0,
+            "setPositionX",
+            "showEquipCard",
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            "targetSeatinfo",
+            "hasZone",
+            "ZoneData",
+            "ZONE_EQUIP_WEAPON_EX",
+            "ZONE_EQUIP_ARMOR",
+            14.0,
+            "equipRect",
+            "new",
+            "num",
+            "title",
+            "装备区",
+            "showText",
+            "seat",
+            "callback",
+            "handler",
+            "onCardAction",
+            "align",
+            "LEFT_CENTER",
+            "leftPosX",
+            "upPosY",
+            "baoWu",
+            "宝物牌",
+            11.0,
+            "downPosY",
+            "showJudgeCard",
+            "judgeRect",
+            "判定区",
+            5.0,
+            6.0,
+            7.0,
+            "showHandCard",
+            "手牌区",
+            "showWindowShowData",
+            "showWindowCardDesc",
+            1220.0,
+            "handCardRect",
+            "width",
+            "height",
+            "cardNum",
+            "handCards",
+            "isShowConfirmBtn",
+            "createConfirmBtn",
+            "isShowCancelBtn",
+            "createCancelBtn",
+            "ui",
+            "arrangeNodes",
+            50.0,
+            "CENTER_BOTTOM",
+            "getWinOperateDesc",
+            "",
+            "请选择",
+            "getMaxCardCnt",
+            "getMinCardCnt",
+            "请至多选择",
+            "spellId",
+            "SkillId",
+            "SHUNQIAN",
+            "请选择并获得1张",
+            "的牌",
+            "GUOCHAI",
+            "请弃置1张",
+            "的1张牌",
+            "的",
+            "张牌",
+            "string",
+            "format",
+            "<font color=#FFE100>%s</font>",
+            "targetName",
+            "optMsgLabel",
+            "setString",
+            "setTimeout",
+            "waitTime",
+            "layout",
+            "addAllCards"
+          ]
+        }
+      ]
+    }
+  ],
+  "observations": [
+    "MiYun.getActiveTip splits spell.ActiveTip with | by OPT_SKILL_FLAG1..4; noname dcmiyun roundStart chooseTarget uses branch1.",
+    "windowSnitch.initUI first uses getWinOperateDesc; otherwise creates 请选择 + targetName formatted #FFE100 + 的1张牌, with separate min/max and card-specific wording.",
+    "noname dcmiyun calls gainPlayerCard(target,true,visibleMove), whose native prompt is 获得界曹叡一张牌.",
+    "Visible skill footer bypasses optimized hand-tip rendering. Collapse restores a separate hand-tip, so both paths must use the same operation adapter.",
+    "Source text offsetHeight rounds fractional glyph heights; feeding it back into the vertical scale caused repeating font/position changes. Fixed 100x100 measurement removes that feedback."
+  ],
+  "validation": {
+    "passed_commands": [
+      "node verification/xinsha-miyun-prompt-engine.cjs",
+      "node verification/dialog-xinsha-prompts-browser.cjs",
+      "node verification/dialog-skill-footer-browser.cjs",
+      "node verification/xinsha-prompt-browser.cjs",
+      "node verification/optimized-prompt-browser.cjs",
+      "node --check (changed JavaScript)",
+      "git diff --check (changed tracked files)"
+    ],
+    "scope": "Headless Edge real noname entry and native chooseTarget/gainPlayerCard; separate native-dialog fixture loads actual 雷的一将 shunchai module; 35 animation-frame samples including repeated game.check, hidden/shown consistency, custom text, counts, Online isolation, zoom/hide/progress restoration. No full gain settlement is run.",
+    "phase": {
+      "text": "请选择一名其他角色获得其一张牌",
+      "colors": []
+    },
+    "collapsed": {
+      "text": "请选择界曹叡的1张牌",
+      "color": "rgb(255, 225, 0)"
+    },
+    "shunchai_collapsed": {
+      "text": "请选择界曹叡的1张牌",
+      "color": "rgb(255, 225, 0)"
+    },
+    "stable_frame_delta_px": {
+      "native": 0.0,
+      "shunchai": 0.0
+    },
+    "browser_errors": {
+      "othersOff": [],
+      "onlineUI": []
+    },
+    "not_verified": [
+      "current user Electron game",
+      "official client runtime visual comparison",
+      "mobile device",
+      "live multiplayer"
+    ]
+  }
+}

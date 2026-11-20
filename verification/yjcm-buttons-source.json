@@ -1,0 +1,997 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "member": "assets/res/lib/game.zip",
+    "decoded_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28"
+  },
+  "rea_evidence": {
+    "apk_inventory": "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "game_inventory": "ev_229e54696ec7e1268eb03d4586c6bfe650ee8130405d6b2810fec6e459a49243"
+  },
+  "conversion": "ETC1 color + ETC1 alpha red channel; undo plist rotation and restore sourceSize/spriteOffset, no resizing",
+  "sources": [
+    {
+      "plist": "assets/res/new/tex/plist/cloud.plist",
+      "plist_sha256": "61527971d61db73ad968e810b4d7100cd082aa4339b3fd17f2df038f6e5504b3",
+      "texture_sha256": "38e783b657746aaad8345df48c2f262aba960c4bcbef2e0733c78b23a6537354",
+      "alpha_sha256": "4c24108d5d814354a2ae9de4718311133546ca3fb4966ac99efec67027472691"
+    },
+    {
+      "plist": "assets/res/new/tex/plist/cmn02.plist",
+      "plist_sha256": "a60bcb9940fdb1d2283815a8c63befa90287fe4aa467d793ebbbcca0dea4bafc",
+      "texture_sha256": "f4aeca6b5e29698fc8b747a6bc4e1e463a0df2ddbea3ff5a06df38045c9d460f",
+      "alpha_sha256": "7f7bb2c496c943572af516eb9c2d93b43e3ea0a9de86166ffb011b26ecd57998"
+    },
+    {
+      "plist": "assets/res/new/tex/plist/game_menu.plist",
+      "plist_sha256": "4e9a5dfd58d0600648a4240dd3d59f0eca94edcd7db9013b15ba7c1d764e75d4",
+      "texture_sha256": "83750cd56cf02a47bb6b6af7e25455e2fd1f1ae087a43a356e173c2ba677869b",
+      "alpha_sha256": "e381b735584099c3725841dca0ad3fb4491aa3ed9a9cd371c509ce1464efe00b"
+    },
+    {
+      "plist": "assets/res/new/tex/plist/game_ui.plist",
+      "plist_sha256": "d28ea9710dbfe59e577d7008b5daa602532307238396e805b224b85cc26ad37a",
+      "texture_sha256": "7a4155cb7401d7d15475b0e7337e6675b257fcfcdb94d39bb7c56b60943332e4",
+      "alpha_sha256": "0093350d72092297bebef6d860cabdff71f4a9f3c878493fe84e1309018e31a9"
+    },
+    {
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "plist_sha256": "2d23c6a2d9d8254115ce892f1895db16cd6f9fb30e6dd512ab835e8b6c4b7731",
+      "texture_sha256": "6ff05a3dbacc2a1cef5e05b67cc24490133dfffd7b9d3aeac9f3eb06744bc0f5",
+      "alpha_sha256": "91c659e96274aa2d2ea762b78eb94a89fa0cebbdca610e1fe770dc0a55a98be3"
+    },
+    {
+      "plist": "assets/res/new/tex/plist/gameinfo_bg.plist",
+      "plist_sha256": "87323dc4bc783c82471a123df515f65977a4123f6632705a33c5efa6597908b0",
+      "texture_sha256": "78133d172cd36d4851abf503f317ff56e9037bd473242722b06edbaf50f66ff4",
+      "alpha_sha256": "234b2a4a5ac12b3e90d7eea9aabb0404f2eb06d198b5676a9148b7ec8ece8947"
+    }
+  ],
+  "frames": [
+    {
+      "frame": "zhanchang_youyun1.png",
+      "plist": "assets/res/new/tex/plist/cloud.plist",
+      "frame_metadata": {
+        "frame": "{{260,137},{163,111}}",
+        "offset": "{0,-1}",
+        "rotated": false,
+        "sourceColorRect": "{{0,2},{163,111}}",
+        "sourceSize": "{163,113}"
+      },
+      "size": [
+        163,
+        113
+      ],
+      "destination": "ui/assets/lbtn/yijiang/zhanchang_youyun1.png",
+      "sha256": "e5e4d8dc0917089202c58ec0109f597f87b16d4ce98c133a7e8fdd48aa6d5663"
+    },
+    {
+      "frame": "zhanchang_youyun2.png",
+      "plist": "assets/res/new/tex/plist/cloud.plist",
+      "frame_metadata": {
+        "frame": "{{800,2},{212,121}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{212,121}}",
+        "sourceSize": "{212,121}"
+      },
+      "size": [
+        212,
+        121
+      ],
+      "destination": "ui/assets/lbtn/yijiang/zhanchang_youyun2.png",
+      "sha256": "ef0a0fdbb2960a3671acbe360251bb45380ffae1ea2142c3bae48d07d7ef45c0"
+    },
+    {
+      "frame": "zhanchang_youyun3.png",
+      "plist": "assets/res/new/tex/plist/cloud.plist",
+      "frame_metadata": {
+        "frame": "{{260,2},{281,133}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{281,133}}",
+        "sourceSize": "{281,133}"
+      },
+      "size": [
+        281,
+        133
+      ],
+      "destination": "ui/assets/lbtn/yijiang/zhanchang_youyun3.png",
+      "sha256": "904c2602f69dad903f3adc0cf341390046e1ef0e8412085381fb1cc7736d9bd7"
+    },
+    {
+      "frame": "zhanchang_zuoyun1.png",
+      "plist": "assets/res/new/tex/plist/cloud.plist",
+      "frame_metadata": {
+        "frame": "{{2,2},{256,192}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{256,192}}",
+        "sourceSize": "{256,192}"
+      },
+      "size": [
+        256,
+        192
+      ],
+      "destination": "ui/assets/lbtn/yijiang/zhanchang_zuoyun1.png",
+      "sha256": "175e8d894a9354b44d98c47d9351fd07e45a4877bce36540475fa346cf9cf847"
+    },
+    {
+      "frame": "zhanchang_zuoyun2.png",
+      "plist": "assets/res/new/tex/plist/cloud.plist",
+      "frame_metadata": {
+        "frame": "{{656,145},{251,90}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{251,90}}",
+        "sourceSize": "{251,90}"
+      },
+      "size": [
+        251,
+        90
+      ],
+      "destination": "ui/assets/lbtn/yijiang/zhanchang_zuoyun2.png",
+      "sha256": "dd155be03ce510a3635a9d292b13ccc71c7c16715adcc94cca1625ed614a8851"
+    },
+    {
+      "frame": "zhanchang_zuoyun3.png",
+      "plist": "assets/res/new/tex/plist/cloud.plist",
+      "frame_metadata": {
+        "frame": "{{543,2},{255,141}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{255,141}}",
+        "sourceSize": "{255,141}"
+      },
+      "size": [
+        255,
+        141
+      ],
+      "destination": "ui/assets/lbtn/yijiang/zhanchang_zuoyun3.png",
+      "sha256": "7941ef9b02620d57b3f45526c20624f7883ee825ead2646fbf0ca151a106a716"
+    },
+    {
+      "frame": "btn_skill_item_normal.png",
+      "plist": "assets/res/new/tex/plist/cmn02.plist",
+      "frame_metadata": {
+        "frame": "{{1758,1369},{110,45}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{110,45}}",
+        "sourceSize": "{110,45}"
+      },
+      "size": [
+        110,
+        45
+      ],
+      "destination": "ui/assets/lbtn/yijiang/btn_skill_item_normal.png",
+      "sha256": "753f9a276783a56aed56da89f3b2522d7383d1db4ee30542ac70cfecf9557e1a"
+    },
+    {
+      "frame": "btn_skill_normal_gray.png",
+      "plist": "assets/res/new/tex/plist/cmn02.plist",
+      "frame_metadata": {
+        "frame": "{{1770,1030},{110,45}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{110,45}}",
+        "sourceSize": "{110,45}"
+      },
+      "size": [
+        110,
+        45
+      ],
+      "destination": "ui/assets/lbtn/yijiang/btn_skill_normal_gray.png",
+      "sha256": "2869b4300d439bc8e75fa247e2452fb72198490043d49003d50e88bc2c45030f"
+    },
+    {
+      "frame": "cmn_checkbox_normal.png",
+      "plist": "assets/res/new/tex/plist/cmn02.plist",
+      "frame_metadata": {
+        "frame": "{{1622,1936},{35,35}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{35,35}}",
+        "sourceSize": "{35,35}"
+      },
+      "size": [
+        35,
+        35
+      ],
+      "destination": "ui/assets/lbtn/yijiang/cmn_checkbox_normal.png",
+      "sha256": "9d18cee79c4777196892e3a0a6c329ff2ee136405abfdf28e08897127afb190c"
+    },
+    {
+      "frame": "cmn_checkbox_select.png",
+      "plist": "assets/res/new/tex/plist/cmn02.plist",
+      "frame_metadata": {
+        "frame": "{{1585,1936},{35,35}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{35,35}}",
+        "sourceSize": "{35,35}"
+      },
+      "size": [
+        35,
+        35
+      ],
+      "destination": "ui/assets/lbtn/yijiang/cmn_checkbox_select.png",
+      "sha256": "227b4bae0f9cd2472cef308581e7011f39dbe0b0c8062931780e5d5010365d99"
+    },
+    {
+      "frame": "gameinfo_btn_sort_cardsnew.png",
+      "plist": "assets/res/new/tex/plist/cmn02.plist",
+      "frame_metadata": {
+        "frame": "{{901,1800},{106,38}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{106,38}}",
+        "sourceSize": "{106,38}"
+      },
+      "size": [
+        106,
+        38
+      ],
+      "destination": "ui/assets/lbtn/yijiang/gameinfo_btn_sort_cardsnew.png",
+      "sha256": "901da4b27d182c81f2e2a2174cf960d5150911e71166ebd74cd19fd88d6356d4"
+    },
+    {
+      "frame": "btn_menu_background.png",
+      "plist": "assets/res/new/tex/plist/game_menu.plist",
+      "frame_metadata": {
+        "frame": "{{374,129},{65,51}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{65,51}}",
+        "sourceSize": "{65,51}"
+      },
+      "size": [
+        65,
+        51
+      ],
+      "destination": "ui/assets/lbtn/yijiang/btn_menu_background.png",
+      "sha256": "f7f30690e503555630397448b8622336dce5403e3f4cc35c67e8b98810acff73"
+    },
+    {
+      "frame": "btn_menu_handler.png",
+      "plist": "assets/res/new/tex/plist/game_menu.plist",
+      "frame_metadata": {
+        "frame": "{{270,199},{65,51}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{65,51}}",
+        "sourceSize": "{65,51}"
+      },
+      "size": [
+        65,
+        51
+      ],
+      "destination": "ui/assets/lbtn/yijiang/btn_menu_handler.png",
+      "sha256": "7c5ec0fa5c5121ee2f6373e79682483d2b5b173f9e0a4e66e2fd8757714fb7ad"
+    },
+    {
+      "frame": "btn_menu_leaven.png",
+      "plist": "assets/res/new/tex/plist/game_menu.plist",
+      "frame_metadata": {
+        "frame": "{{300,72},{65,51}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{65,51}}",
+        "sourceSize": "{65,51}"
+      },
+      "size": [
+        65,
+        51
+      ],
+      "destination": "ui/assets/lbtn/yijiang/btn_menu_leaven.png",
+      "sha256": "5a558ab03e26b1a173eb54a4eb361d243e4d60d933d56537b48f8cd35595960e"
+    },
+    {
+      "frame": "btn_menu_main.png",
+      "plist": "assets/res/new/tex/plist/game_menu.plist",
+      "frame_metadata": {
+        "frame": "{{441,129},{56,51}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{56,51}}",
+        "sourceSize": "{56,51}"
+      },
+      "size": [
+        56,
+        51
+      ],
+      "destination": "ui/assets/lbtn/yijiang/btn_menu_main.png",
+      "sha256": "b176be5e596bf2966cbb044591e98aa689382097b7becdf05cc3f76e2cfec92b"
+    },
+    {
+      "frame": "btn_menu_setting.png",
+      "plist": "assets/res/new/tex/plist/game_menu.plist",
+      "frame_metadata": {
+        "frame": "{{136,202},{65,51}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{65,51}}",
+        "sourceSize": "{65,51}"
+      },
+      "size": [
+        65,
+        51
+      ],
+      "destination": "ui/assets/lbtn/yijiang/btn_menu_setting.png",
+      "sha256": "cda0bf65ecbd17cf6eb4ddc2d62bb8c478c324ef1347ad1dcb61fb70173725dd"
+    },
+    {
+      "frame": "btn_menu_surround.png",
+      "plist": "assets/res/new/tex/plist/game_menu.plist",
+      "frame_metadata": {
+        "frame": "{{69,202},{65,51}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{65,51}}",
+        "sourceSize": "{65,51}"
+      },
+      "size": [
+        65,
+        51
+      ],
+      "destination": "ui/assets/lbtn/yijiang/btn_menu_surround.png",
+      "sha256": "62eeb7944871c13c97f3d481093d3faa42b041f02461e203a07205622fca27cd"
+    },
+    {
+      "frame": "game_menu_chat.png",
+      "plist": "assets/res/new/tex/plist/game_menu.plist",
+      "frame_metadata": {
+        "frame": "{{367,2},{73,72}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{73,72}}",
+        "sourceSize": "{73,72}"
+      },
+      "size": [
+        73,
+        72
+      ],
+      "destination": "ui/assets/lbtn/yijiang/game_menu_chat.png",
+      "sha256": "215906e3769bc3c9e89db4d41afe76c19bfbe4646576516d79fe74d9eed43532"
+    },
+    {
+      "frame": "game_menu_flower.png",
+      "plist": "assets/res/new/tex/plist/game_menu.plist",
+      "frame_metadata": {
+        "frame": "{{77,128},{73,72}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{73,72}}",
+        "sourceSize": "{73,72}"
+      },
+      "size": [
+        73,
+        72
+      ],
+      "destination": "ui/assets/lbtn/yijiang/game_menu_flower.png",
+      "sha256": "bb3849b97a916d270e0844b5e4437fb4a2781c18cdbe6fc70a1380379d171a37"
+    },
+    {
+      "frame": "game_menu_quick_face.png",
+      "plist": "assets/res/new/tex/plist/game_menu.plist",
+      "frame_metadata": {
+        "frame": "{{2,128},{73,72}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{73,72}}",
+        "sourceSize": "{73,72}"
+      },
+      "size": [
+        73,
+        72
+      ],
+      "destination": "ui/assets/lbtn/yijiang/game_menu_quick_face.png",
+      "sha256": "866162aa8b69423223386699faaed7403156783f08befac2f37dbe401b9eddd1"
+    },
+    {
+      "frame": "gameinfo_xf_menu_bg.png",
+      "plist": "assets/res/new/tex/plist/game_menu.plist",
+      "frame_metadata": {
+        "frame": "{{2,2},{68,363}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{68,363}}",
+        "sourceSize": "{68,363}"
+      },
+      "size": [
+        68,
+        363
+      ],
+      "destination": "ui/assets/lbtn/yijiang/gameinfo_xf_menu_bg.png",
+      "sha256": "a5f457e3c97058095404501449b6b19bb1fb8747074bbca7006e0e41265b8d12"
+    },
+    {
+      "frame": "game_ui_dlg_bg.png",
+      "plist": "assets/res/new/tex/plist/game_ui.plist",
+      "frame_metadata": {
+        "frame": "{{2,300},{192,228}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{192,228}}",
+        "sourceSize": "{192,228}"
+      },
+      "size": [
+        192,
+        228
+      ],
+      "destination": "ui/assets/lbtn/yijiang/game_ui_dlg_bg.png",
+      "sha256": "b027df21ac10778bc58d7023e93738d2a27de3805226747bb2ea4220cceab252"
+    },
+    {
+      "frame": "game_ui_dlg_title_bg.png",
+      "plist": "assets/res/new/tex/plist/game_ui.plist",
+      "frame_metadata": {
+        "frame": "{{1316,2},{353,42}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{353,42}}",
+        "sourceSize": "{353,42}"
+      },
+      "size": [
+        353,
+        42
+      ],
+      "destination": "ui/assets/lbtn/yijiang/game_ui_dlg_title_bg.png",
+      "sha256": "adb95cc4c507790299d055d50c643ee8ac1b7fc4995b4033cf9c8ea96fc6a01f"
+    },
+    {
+      "frame": "game_ui_left_line.png",
+      "plist": "assets/res/new/tex/plist/game_ui.plist",
+      "frame_metadata": {
+        "frame": "{{958,463},{215,15}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{215,15}}",
+        "sourceSize": "{215,15}"
+      },
+      "size": [
+        215,
+        15
+      ],
+      "destination": "ui/assets/lbtn/yijiang/game_ui_left_line.png",
+      "sha256": "0d6f1b8fa608200576616fc6735d44728fabf5aa98c994f9f457597c8856c7b3"
+    },
+    {
+      "frame": "gameInfoWenHao.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{488,1744},{43,43}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{43,43}}",
+        "sourceSize": "{43,43}"
+      },
+      "size": [
+        43,
+        43
+      ],
+      "destination": "ui/assets/lbtn/yijiang/gameInfoWenHao.png",
+      "sha256": "408b445bfc866e629d65d9bbf34b57f13fa2a86f24257cb34a695c5eaf3dadfe"
+    },
+    {
+      "frame": "game_btn_1.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{1475,381},{189,55}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{189,55}}",
+        "sourceSize": "{189,55}"
+      },
+      "size": [
+        189,
+        55
+      ],
+      "destination": "ui/assets/lbtn/yijiang/game_btn_1.png",
+      "sha256": "da0b53aacae52bd0aff4634d51e79802a8a328dbd517f8f2ded6fd9d4f2e167e"
+    },
+    {
+      "frame": "game_btn_2.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{1792,187},{189,55}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{189,55}}",
+        "sourceSize": "{189,55}"
+      },
+      "size": [
+        189,
+        55
+      ],
+      "destination": "ui/assets/lbtn/yijiang/game_btn_2.png",
+      "sha256": "a0f7addc7c4c7b5c6a9857c51586e5b8902bc8a51796d0d980ecbacf4c55cd4c"
+    },
+    {
+      "frame": "handNum.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{1110,1598},{88,34}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{88,34}}",
+        "sourceSize": "{88,34}"
+      },
+      "size": [
+        88,
+        34
+      ],
+      "destination": "ui/assets/lbtn/yijiang/handNum.png",
+      "sha256": "911d131653b27f3a2ced67c102accb737af76deebc7ee08b422536f901b958b2"
+    },
+    {
+      "frame": "showInfo.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{373,1506},{92,112}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{92,112}}",
+        "sourceSize": "{92,112}"
+      },
+      "size": [
+        92,
+        112
+      ],
+      "destination": "ui/assets/lbtn/yijiang/showInfo.png",
+      "sha256": "ec69da400fc42e77d0a39bf1714c6482fba54d1d95ba07b6a5c3819b802b1419"
+    },
+    {
+      "frame": "showInfo_card.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{360,1887},{27,28}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{27,28}}",
+        "sourceSize": "{27,28}"
+      },
+      "size": [
+        27,
+        28
+      ],
+      "destination": "ui/assets/lbtn/yijiang/showInfo_card.png",
+      "sha256": "5b2eec557426501036f8eb99e75486cb67d7cd62c0519780e7615164d16814e8"
+    },
+    {
+      "frame": "skill_beidong_btn.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{539,1704},{50,34}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{50,34}}",
+        "sourceSize": "{50,34}"
+      },
+      "size": [
+        50,
+        34
+      ],
+      "destination": "ui/assets/lbtn/yijiang/skill_beidong_btn.png",
+      "sha256": "90bcc379254c2b48322f3c87385f911530c6f218b64d22262349a054237ccd06"
+    },
+    {
+      "frame": "skill_item_lmt_pic.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{1096,1890},{24,24}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{24,24}}",
+        "sourceSize": "{24,24}"
+      },
+      "size": [
+        24,
+        24
+      ],
+      "destination": "ui/assets/lbtn/yijiang/skill_item_lmt_pic.png",
+      "sha256": "4049a660cad5778dc96e4c294564619cafe86d89c8d7c42fba61691dce17da71"
+    },
+    {
+      "frame": "skill_item_lmt_pic_gray.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{1070,1889},{24,24}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{24,24}}",
+        "sourceSize": "{24,24}"
+      },
+      "size": [
+        24,
+        24
+      ],
+      "destination": "ui/assets/lbtn/yijiang/skill_item_lmt_pic_gray.png",
+      "sha256": "81911d2f6dd367b26d9320f6d056bb999ddb73e13b8bb17c9c4c176567049740"
+    },
+    {
+      "frame": "skill_item_t_yang_pic.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{1899,1790},{35,35}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{35,35}}",
+        "sourceSize": "{35,35}"
+      },
+      "size": [
+        35,
+        35
+      ],
+      "destination": "ui/assets/lbtn/yijiang/skill_item_t_yang_pic.png",
+      "sha256": "1321c1cc660990e0eb311460da0f69ff5dab2627e147bccb61bf908bbff31023"
+    },
+    {
+      "frame": "skill_item_t_yang_pic_gray.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{1899,1753},{35,35}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{35,35}}",
+        "sourceSize": "{35,35}"
+      },
+      "size": [
+        35,
+        35
+      ],
+      "destination": "ui/assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png",
+      "sha256": "895d144c8647330ffe26332481454195e3dcedc8965da1f7ea371d3b66b9a20a"
+    },
+    {
+      "frame": "skill_item_t_ying_pic.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{1764,1863},{35,35}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{35,35}}",
+        "sourceSize": "{35,35}"
+      },
+      "size": [
+        35,
+        35
+      ],
+      "destination": "ui/assets/lbtn/yijiang/skill_item_t_ying_pic.png",
+      "sha256": "42c9b07ad30ad30213ede0e8be7e8aa35e69a11ef06dc41dd39b01d3d7f56984"
+    },
+    {
+      "frame": "skill_item_t_ying_pic_gray.png",
+      "plist": "assets/res/new/tex/plist/gameinfo.plist",
+      "frame_metadata": {
+        "frame": "{{1690,1862},{35,35}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{35,35}}",
+        "sourceSize": "{35,35}"
+      },
+      "size": [
+        35,
+        35
+      ],
+      "destination": "ui/assets/lbtn/yijiang/skill_item_t_ying_pic_gray.png",
+      "sha256": "f06d44f8409939020f74c4d57aef7afe72dcd0920c3f19b14c2fe8bdb02ff211"
+    },
+    {
+      "frame": "gameinfo_bg_btn_1.png",
+      "plist": "assets/res/new/tex/plist/gameinfo_bg.plist",
+      "frame_metadata": {
+        "frame": "{{81,217},{66,24}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{66,24}}",
+        "sourceSize": "{66,24}"
+      },
+      "size": [
+        66,
+        24
+      ],
+      "destination": "ui/assets/lbtn/yijiang/gameinfo_bg_btn_1.png",
+      "sha256": "a051195249c639ee0885ccf1b73c617a60db9bb030dba58782079669c035b865"
+    },
+    {
+      "frame": "gameinfo_bg_btn_2.png",
+      "plist": "assets/res/new/tex/plist/gameinfo_bg.plist",
+      "frame_metadata": {
+        "frame": "{{141,182},{68,26}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{68,26}}",
+        "sourceSize": "{68,26}"
+      },
+      "size": [
+        68,
+        26
+      ],
+      "destination": "ui/assets/lbtn/yijiang/gameinfo_bg_btn_2.png",
+      "sha256": "450ff073959fff824973bb6424b0c92f0d79f376c986c59bd96d60a991b0a1f0"
+    },
+    {
+      "frame": "gameinfo_bg_btn_lock.png",
+      "plist": "assets/res/new/tex/plist/gameinfo_bg.plist",
+      "frame_metadata": {
+        "frame": "{{272,90},{36,36}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{36,36}}",
+        "sourceSize": "{36,36}"
+      },
+      "size": [
+        36,
+        36
+      ],
+      "destination": "ui/assets/lbtn/yijiang/gameinfo_bg_btn_lock.png",
+      "sha256": "8baf8dd6947c04134188c2a8c191b6034da05db07d3a2a2083e61b22c9a32bea"
+    },
+    {
+      "frame": "gameinfo_bg_btn_state.png",
+      "plist": "assets/res/new/tex/plist/gameinfo_bg.plist",
+      "frame_metadata": {
+        "frame": "{{211,182},{36,26}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{36,26}}",
+        "sourceSize": "{36,26}"
+      },
+      "size": [
+        36,
+        26
+      ],
+      "destination": "ui/assets/lbtn/yijiang/gameinfo_bg_btn_state.png",
+      "sha256": "cabc1fbe2865faf8b67b6ca5f5f77a78f5f16b598a224fb5378b177924021199"
+    },
+    {
+      "frame": "gameinfo_bg_dynamtic.png",
+      "plist": "assets/res/new/tex/plist/gameinfo_bg.plist",
+      "frame_metadata": {
+        "frame": "{{149,210},{36,35}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{36,35}}",
+        "sourceSize": "{36,35}"
+      },
+      "size": [
+        36,
+        35
+      ],
+      "destination": "ui/assets/lbtn/yijiang/gameinfo_bg_dynamtic.png",
+      "sha256": "040313e648fa34aa3a29c8863ab18c98c27d83152b34e4641d89b395928a8a5d"
+    },
+    {
+      "frame": "gameinfo_bg_frame.png",
+      "plist": "assets/res/new/tex/plist/gameinfo_bg.plist",
+      "frame_metadata": {
+        "frame": "{{239,196},{43,43}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{43,43}}",
+        "sourceSize": "{43,43}"
+      },
+      "size": [
+        43,
+        43
+      ],
+      "destination": "ui/assets/lbtn/yijiang/gameinfo_bg_frame.png",
+      "sha256": "d5da8d02794b6bbce941fa925fe3ce78b7e8f396515bfc96390f26c26b8b169c"
+    },
+    {
+      "frame": "gameinfo_bg_namebg.png",
+      "plist": "assets/res/new/tex/plist/gameinfo_bg.plist",
+      "frame_metadata": {
+        "frame": "{{2,140},{235,40}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{235,40}}",
+        "sourceSize": "{235,40}"
+      },
+      "size": [
+        235,
+        40
+      ],
+      "destination": "ui/assets/lbtn/yijiang/gameinfo_bg_namebg.png",
+      "sha256": "dd4a6a770dd552e891c614addb6882171021e85502190f170d954f475f898991"
+    },
+    {
+      "frame": "gameinfo_bg_onUse.png",
+      "plist": "assets/res/new/tex/plist/gameinfo_bg.plist",
+      "frame_metadata": {
+        "frame": "{{2,217},{26,77}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{26,77}}",
+        "sourceSize": "{26,77}"
+      },
+      "size": [
+        26,
+        77
+      ],
+      "destination": "ui/assets/lbtn/yijiang/gameinfo_bg_onUse.png",
+      "sha256": "59ed716775f73768039449c55a071a9d774681e175856614488afc155ea47259"
+    },
+    {
+      "frame": "gameinfo_bg_question.png",
+      "plist": "assets/res/new/tex/plist/gameinfo_bg.plist",
+      "frame_metadata": {
+        "frame": "{{239,140},{54,72}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{54,72}}",
+        "sourceSize": "{54,72}"
+      },
+      "size": [
+        54,
+        72
+      ],
+      "destination": "ui/assets/lbtn/yijiang/gameinfo_bg_question.png",
+      "sha256": "c534ff346c9eb426384c298f42ab3401c7e784a85ab35af5bf26336c529086c0"
+    },
+    {
+      "frame": "gameinfo_bg_select.png",
+      "plist": "assets/res/new/tex/plist/gameinfo_bg.plist",
+      "frame_metadata": {
+        "frame": "{{2,2},{268,136}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{268,136}}",
+        "sourceSize": "{268,136}"
+      },
+      "size": [
+        268,
+        136
+      ],
+      "destination": "ui/assets/lbtn/yijiang/gameinfo_bg_select.png",
+      "sha256": "f490db1c158d7421cc7d41b46f88353a79e6a99592a7173f6b927ebb259f2206"
+    }
+  ],
+  "scope": "Static shipped package and Lua bytecode inspection. Official client runtime comparison remains unverified.",
+  "target_style": {
+    "label": "一将成名",
+    "config_value": "othersOff",
+    "skin": "xinsha",
+    "label_source": "src/config/definitions/appearance.js",
+    "mapping_source": "ui/constants.js",
+    "loader_sources": [
+      "src/core/decadeModule.js",
+      "src/styles/style-route.js",
+      "ui/lbtn/skins/index.js"
+    ],
+    "implementation": [
+      "ui/lbtn/skins/xinsha.js",
+      "ui/skill/skins/xinsha.js",
+      "ui/styles/lbtn/xinsha.css",
+      "ui/styles/lbtn/xinsha-official.css",
+      "ui/lbtn/skins/xinsha-background-selector.js",
+      "ui/lbtn/skins/xinsha-backgrounds.js"
+    ],
+    "correction": "Earlier task edits and test fixtures incorrectly targeted on/shizhounian. Those task edits were removed from shizhounian files. Validation must assert othersOff and xinsha.css, with on included in isolation checks."
+  },
+  "lua_members": [
+    {
+      "path": "app.view.game.GameMenuLayer",
+      "sha256": "48c60695c60a5305938d1058448b7a6a64cd5748d96930acb6b5b83034da33a2"
+    },
+    {
+      "path": "app.view.game.menu.GameMenuNew",
+      "sha256": "26e071a405a3c236847716dd0b77d8be82ec0e602faa6bd67edc3ccc1da9f1c8"
+    },
+    {
+      "path": "app.view.game.GameSelfSeatUi",
+      "sha256": "e7c812fcb76fc79acfa3faf81ba1715cf3ee137737cc3a424f0f4d2209d317bf"
+    },
+    {
+      "path": "app.view.game.GameButtonBar",
+      "sha256": "6d3716462c6ac2617d32bc93dc010fdda80989519100c8b00356cd0163e70ad2"
+    },
+    {
+      "path": "app.view.game.spell.SpellAreaNew",
+      "sha256": "d3d4d38f82caf525ea7abb1a25ed7bb259e179d09b4b14d4650bcc3681df0ad3"
+    },
+    {
+      "path": "app.view.game.spell.SpellActiveItem",
+      "sha256": "94651a1bdf7d49353f901ec98ac534bea41f3672134916e6a8fb96b72cb2f1f1"
+    },
+    {
+      "path": "app.view.game.spell.SpellPassiveItem",
+      "sha256": "2fc9e132ab62ae220bafd3ab9f00c42123e90d0930bb5a1a1e706d612d96d891"
+    }
+  ],
+  "observations": {
+    "menu": "GameMenuLayer.createMenuBtn / GameMenuNew: center at (width-42.5,height-43.5), entrance 56x51, four common entries setting/background/surround/handler; item center -(59*index)-15 relative to node at y18; scale9 background 81 by 20+59*(count+1).",
+    "pile": "GameMenuLayer.createGameRecordBtn prototype0.34: LEFT_TOP (17,height-21), showInfo92x112; icon LEFT_CENTER (9,height-25), number LEFT_CENTER (45,height-25), font20; round CENTER(width/2,height/2), font25; time CENTER(width/2,22), font18.",
+    "bottom": "GameMenuLayer.createFlowerBtn prototype0.40 uses game_menu_flower.png (73x72); callback0.40.0 opens GameGiveItemView. Restore the missing interaction entrance above the existing expression and chat buttons, using the same10px vertical gap. Existing shared chatSystem supplies local/noname online throwEmotion behavior.",
+    "sort": "GameSelfSeatUi.createChildren0.120 creates at width-510+4 and width-380+4, but checkBtnState0.87 overrides visible positions: sort occupies first slot center(width-350,50), select-all second center(width-480,50). Source106x38 -> right297/right427,bottom31; add scene safe inset.",
+    "controls": "GameButtonBar.createButton prototype0.9 and LuckCardView.createButton0.14 both specify scale1.1 and scaleArgs0.75. Source189x55 -> actual207.9x60.5; label28 ->30.8. GameButtonBar.layout0.13 has center spacing180+100=280, child centerY=height-36=64; GameSelfSeatUi bar bottom194 -> center from window bottom258. LuckCardView uses yellow game_btn_1 for redraw, center spacing257 and centerY254.5. Noname shared confirm bar selects the correct layout from its gameDraw event or _isLuckyCardTip context; appearance uses semantic primary, never label matching.",
+    "primary_appearance": "GameButtonBar.createChildren0.8 explicitly supplies game_btn_2.png for normal ok/cancel/discard; LuckCardView.createChildren0.11 supplies game_btn_1.png for redraw and game_btn_2.png for cancel. Use native gameDraw/_isLuckyCardTip flow metadata to select yellow only for redraw. Normal .primary inherits brown, including after the same control is reused following redraw; label matching must not determine the skin. Earlier uniform-yellow override was corrected to match the shipped code.",
+    "button_state": "CfgStyleButton BS_ImageBtn_Scale: actionType pressed, effectType scale, disabled filter GRAY. BasePushButton.ctor reads scale into orignScale and pressed scaleArgs; GameButtonBar overrides pressed factor to0.75. Implement grayscale disabled and 0.1s pressed scale0.75, retaining noname click guards.",
+    "skills": "SpellActiveItem110x45 label34; SpellPassiveItem72.5x26 label18 with source50x34 and capInsets(10,1,26,28), CSS slice1 14 5 10. Window-relative origin right202,bottom72 plus scene safe inset. SpellAreaNew.initSpellBtns0.25 puts passive3 columns79/32 below active2 columns116/50, active baseY=ceil(passives/3)*32+7 or0. Native main/global skill nodes share this positioning without changing handlers.",
+    "background_extras": "SceneBg id0 adds six cloud sprites with20s FadeIn+20s FadeOut; id2 adds skeleton movement over60s; id6 adds SF_animation_paiju_qunxiong1 atscale0.835. All retained from selected APK."
+  },
+  "implementation_limits": [
+    "Noname game rules and portrait/equipment/progress/background styling are retained. Model-specific mobile notch data is unverified.",
+    "Official runtime screenshot comparison uses user-provided duibi.png; no fresh official client execution.",
+    "Fresh user Electron session, physical Android device and real multiplayer are not verified."
+  ],
+  "extra": [
+    {
+      "member": "assets/res/new/data/spine/SF_animation_paiju_qunxiong1.skel",
+      "source_sha256": "724797f64d7a075a9bb0b88cc5580d15da19113e52de0975ac3ff3dc70f644da",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_animation_paiju_qunxiong1.skel",
+      "sha256": "724797f64d7a075a9bb0b88cc5580d15da19113e52de0975ac3ff3dc70f644da"
+    },
+    {
+      "member": "assets/res/new/data/spine/SF_animation_paiju_qunxiong1.atlas",
+      "source_sha256": "c2885f8a0d1ccf10f695e42d9501858d185d8d30597c2f466f47015348eca6d6",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_animation_paiju_qunxiong1.atlas",
+      "sha256": "c2885f8a0d1ccf10f695e42d9501858d185d8d30597c2f466f47015348eca6d6"
+    },
+    {
+      "member": "assets/res/new/data/spine/SF_animation_paiju_qunxiong1.pvr.ccz",
+      "source_sha256": "b685bb5061ce90dda1991e59fe3d1cb4cfdc4556087439f9bc329ea192cd63f5",
+      "alpha_sha256": "42528af69f969e1a504be900367827c7a49b98b6f8aaa4e4723831690f3d516d",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/SF_animation_paiju_qunxiong1.png",
+      "sha256": "85a6aea4ad37eae013564355348960ed2a8d08810b9852de41c82332f477cdf6"
+    },
+    {
+      "member": "assets/res/new/data/spine/skeleton.skel",
+      "source_sha256": "38f253eafdd982a0bdf555b80c15d504d3ec29375dd47f5ed95e4cb772a93e5e",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/skeleton.skel",
+      "sha256": "38f253eafdd982a0bdf555b80c15d504d3ec29375dd47f5ed95e4cb772a93e5e"
+    },
+    {
+      "member": "assets/res/new/data/spine/skeleton.atlas",
+      "source_sha256": "6fea8fa43cf0f196a22ea00b9050cc35983b43e53d19e8c45eb033c925c87302",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/skeleton.atlas",
+      "sha256": "6fea8fa43cf0f196a22ea00b9050cc35983b43e53d19e8c45eb033c925c87302"
+    },
+    {
+      "member": "assets/res/new/data/spine/skeleton.pvr.ccz",
+      "source_sha256": "f5a3666ca602466e65e2e7ab13dcca209fe113a5e1830977cecb65bf2ca773c4",
+      "alpha_sha256": "9f66a4bc828388343db7044308a7313166ba49d005b0d276f347a6dc06d2d737",
+      "destination": "ui/assets/lbtn/yijiang/background/scene/skeleton.png",
+      "sha256": "8ee7922f5772ba89800544e507a9af54e78dc93c9b6219681694178adaaff023"
+    },
+    {
+      "member": "assets/res/fnt/fzbw.ttf",
+      "source_sha256": "9d8c656395e0cae765a2292c403ec2aaaa55ee551ab37ab330bf1ce5c3c2d9cc",
+      "destination": "ui/assets/lbtn/yijiang/fnt/fzbw.ttf",
+      "sha256": "9d8c656395e0cae765a2292c403ec2aaaa55ee551ab37ab330bf1ce5c3c2d9cc"
+    },
+    {
+      "member": "assets/res/fnt/FZSHENGSKSJW.ttf",
+      "source_sha256": "7f5026e29f8e4c4e83db3f73a6656597cb631d7a35908c1ef3e23a5612c9a521",
+      "destination": "ui/assets/lbtn/yijiang/fnt/FZSHENGSKSJW.ttf",
+      "sha256": "7f5026e29f8e4c4e83db3f73a6656597cb631d7a35908c1ef3e23a5612c9a521"
+    }
+  ],
+  "validation": {
+    "command": "node verification/yjcm-buttons-browser.cjs",
+    "results": "verification/yjcm-buttons-results.json",
+    "environment": "Headless Microsoft Edge, real noname entry and production extension modules. Test-only browser routes adapt installed CommonJS dependencies to their expected ESM exports.",
+    "checks": [
+      "Official asset SHA256",
+      "Target style othersOff, loaded xinsha.css and absence of shizhounian.css",
+      "Normal confirm brown and native redraw yellow: enabled/disabled/pressed states, scale, gap and anchor; redraw-to-normal restoration",
+      "Touchscreen layout enabled/disabled: othersOff, three entries and yellow redraw",
+      "Native confirm/cancel and disabled click behavior",
+      "Menu expansion and background entry",
+      "Four-column background grid",
+      "Nine dynamic scenes with actual rendered pixels",
+      "Background settings by mode and reload restoration",
+      "1500x750 and1169x528 geometry",
+      "Isolation of on/off/onlineUI/babysha/codename"
+    ],
+    "not_verified": [
+      "Official client runtime screenshot comparison",
+      "Electron in-game session",
+      "Android physical device",
+      "Real online multiplayer"
+    ]
+  },
+  "layout_followup": "Final code-derived positioning, scene safe area, skill grouping and screenshot comparison are recorded in verification/yjcm-layout-source.json; earlier constructor-only coordinates were incomplete."
+}

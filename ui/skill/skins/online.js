@@ -9,10 +9,6 @@ import { skillButtonTooltip } from "../../../src/ui/skillButtonTooltip.js";
 import { syncOnlineJudgeLayout } from "../../../src/ui/online-judge-layout.js";
 
 const ASSETS_PATH = "extension/十周年UI/ui/assets/skill/online";
-const SKILL_USABILITY_FX = Object.freeze({
-	active: Object.freeze({ file: "fx_UI_AnNIu_ZhuDong_play_dynamic.png", widthScale: 178 / 146, heightScale: 95 / 60 }),
-	passive: Object.freeze({ file: "fx_UI_AnNIu_BeiDong_new_play_dynamic.png", widthScale: 145 / 129, heightScale: 71 / 56 }),
-});
 
 function getOnlineConversionState(skillId) {
 	const markNode = game.me?.node?.xSkillMarks?.querySelector(`.skillMarkItem.zhuanhuanji[data-id="${skillId}"]`);
@@ -86,37 +82,47 @@ function getActiveSkillIds() {
 	return active;
 }
 
+function getSelectedPassiveSkillIds() {
+	const selected = new Set();
+	if (!_status.imchoosing || _status.auto || _status.over || _status.event?.player !== game.me) return selected;
+	const visited = new Set();
+	for (let event = _status.event; event && visited.size < 32 && !visited.has(event); event = event.getParent?.() || event.parent) {
+		visited.add(event);
+		if (event.finished || event.cancelled || event._cancelled || event._finished || event.player && event.player !== game.me) break;
+		// OL YEs.getState/updateInfo：只有PASSIVE_SEL播放；可发动、初次询问及自动结算均不播放。
+		// 本体trigger/cost负责询问，确认后才进入以技能名命名的content事件。
+		if (event.name === "trigger" || event.name?.endsWith("_cost") || /^(?:game|phase(?:Use|Draw|Discard|Judge|Zhunbei|Jieshu)?)$/.test(event.name || "")) break;
+		const id = lib.skill[event.name] ? event.name : event.name === "useSkill" ? event.skill : null;
+		if (!id || !lib.skill[id]) continue;
+		const source = get.sourceSkillFor?.(id) || get.info(id)?.sourceSkill || id;
+		if (!lib.skill[source]?.enable) {
+			selected.add(id); selected.add(source);
+			hookSkillEventCompletion(event);
+		}
+		break;
+	}
+	return selected;
+}
+
 function updateSkillUsabilityEffects(container) {
 	if (!container) return;
 	skillUsabilityContainer = container;
 	const activeSkillIds = getActiveSkillIds();
+	const selectedPassiveIds = getSelectedPassiveSkillIds();
+	const enabled = lib.config.extension_十周年UI_newDecadeStyle === "onlineUI" && !_status.over;
 	for (const node of Array.from(container.children || [])) {
 		const type = node.classList.contains("enable-skill") ? "active" : node.classList.contains("trigger-skill") ? "passive" : null;
-		const skillActive = !!type && activeSkillIds.has(node.dataset.id);
-		const usable = !!type && (node.classList.contains("usable") || skillActive);
-		let effect = Array.from(node.children).find(child => child.classList?.contains("skill-usability-fx"));
+		const skillActive = enabled && !!type && (type === "passive" ? selectedPassiveIds : activeSkillIds).has(node.dataset.id);
+		const usable = enabled && !!type && (type === "passive" ? skillActive : node.classList.contains("usable") || skillActive);
+		const effect = usable ? type : "";
+		if (node.dataset.skillButtonEffect !== effect) node.dataset.skillButtonEffect = effect;
 		const activeSkillResolving = type === "active" && skillActive;
 		node.classList.toggle("skill-actively-resolving", activeSkillResolving);
 		node.classList.toggle("skill-passively-resolving", type === "passive" && skillActive);
 		if (!usable) {
-			effect?.remove();
 			node.classList.remove("has-skill-usability-fx", "skill-actively-resolving", "skill-passively-resolving");
 			continue;
 		}
-		if (!effect) {
-			effect = document.createElement("img");
-			effect.className = "skill-usability-fx";
-			effect.alt = "";
-			effect.draggable = false;
-			effect.setAttribute("aria-hidden", "true");
-			node.appendChild(effect);
-		}
-		const config = SKILL_USABILITY_FX[type];
-		effect.dataset.effectType = type;
-		effect.style.setProperty("--skill-usability-fx-width", `${config.widthScale * 100}%`);
-		effect.style.setProperty("--skill-usability-fx-height", `${config.heightScale * 100}%`);
-		const source = `${ASSETS_PATH}/${config.file}`;
-		if (effect.getAttribute("src") !== source) effect.src = source;
 		node.classList.add("has-skill-usability-fx");
 	}
 }
@@ -365,6 +371,10 @@ export function createOnlineSkillPlugin(lib, game, ui, get, ai, _status, app) {
 				],
 			});
 			app.on("playerUpdateE", player => plugin.updateMark(player));
+			lib.announce.subscribe("Noname.Game.Event.Changed", requestSkillUsabilityRefresh);
+			lib.hooks.checkEnd.add(requestSkillUsabilityRefresh);
+			lib.hooks.uncheckEnd.add(requestSkillUsabilityRefresh);
+			lib.onover.push(requestSkillUsabilityRefresh);
 		},
 
 		initTimer() {

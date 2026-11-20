@@ -1,0 +1,1285 @@
+{
+  "labels": [
+    "砸蛋送花",
+    "聊天",
+    "麦克风"
+  ],
+  "balance": 2894,
+  "order": [
+    1,
+    3,
+    37,
+    38,
+    2,
+    4,
+    39,
+    40
+  ],
+  "selection": {
+    "boxSizing": "border-box",
+    "width": 105.047,
+    "height": 102,
+    "frameZ": "0",
+    "iconZ": "1",
+    "costZ": "1"
+  },
+  "layouts": [
+    {
+      "unit": 1,
+      "x": 149,
+      "bottom": 176,
+      "width": 289.6000061035156,
+      "height": 148,
+      "insetX": 60,
+      "insetY": 0,
+      "cells": [
+        {
+          "x": 149.4250030517578,
+          "y": 429.01251220703125
+        },
+        {
+          "x": 222.01251220703125,
+          "y": 429.01251220703125
+        },
+        {
+          "x": 294.6000061035156,
+          "y": 429.01251220703125
+        },
+        {
+          "x": 367.1875,
+          "y": 429.01251220703125
+        },
+        {
+          "x": 149.4250030517578,
+          "y": 498.3999938964844
+        },
+        {
+          "x": 222.01251220703125,
+          "y": 498.3999938964844
+        },
+        {
+          "x": 294.6000061035156,
+          "y": 498.3999938964844
+        },
+        {
+          "x": 367.1875,
+          "y": 498.3999938964844
+        }
+      ],
+      "icons": [
+        {
+          "y": 504,
+          "image": "url(\"http://127.0.0.1:63374/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_menu_flower.png\")"
+        },
+        {
+          "y": 586,
+          "image": "url(\"http://127.0.0.1:63374/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_menu_chat.png\")"
+        },
+        {
+          "y": 668,
+          "image": "url(\"http://127.0.0.1:63374/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_vtotxt.png\")"
+        }
+      ]
+    },
+    {
+      "unit": 0.704,
+      "x": 104.890625,
+      "bottom": 123.890625,
+      "width": 203.87841796875,
+      "height": 104.1920166015625,
+      "insetX": 42.24000000000001,
+      "insetY": 0,
+      "cells": [
+        {
+          "x": 105.18982696533203,
+          "y": 302.03814697265625
+        },
+        {
+          "x": 156.2914276123047,
+          "y": 302.03814697265625
+        },
+        {
+          "x": 207.3930206298828,
+          "y": 302.03814697265625
+        },
+        {
+          "x": 258.49462890625,
+          "y": 302.03814697265625
+        },
+        {
+          "x": 105.18982696533203,
+          "y": 350.886962890625
+        },
+        {
+          "x": 156.2914276123047,
+          "y": 350.886962890625
+        },
+        {
+          "x": 207.3930206298828,
+          "y": 350.886962890625
+        },
+        {
+          "x": 258.49462890625,
+          "y": 350.886962890625
+        }
+      ],
+      "icons": [
+        {
+          "y": 354.828125,
+          "image": "url(\"http://127.0.0.1:63374/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_menu_flower.png\")"
+        },
+        {
+          "y": 412.5625,
+          "image": "url(\"http://127.0.0.1:63374/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_menu_chat.png\")"
+        },
+        {
+          "y": 470.28125,
+          "image": "url(\"http://127.0.0.1:63374/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/btn_vtotxt.png\")"
+        }
+      ]
+    }
+  ],
+  "sent": [
+    1,
+    3,
+    37,
+    38,
+    2,
+    4,
+    39,
+    40
+  ],
+  "hits": [
+    1,
+    3,
+    37,
+    38,
+    2,
+    4,
+    39,
+    40
+  ],
+  "spines": [
+    {
+      "name": "xinsha-props/SF_bianta_eff_xianhua",
+      "action": "play",
+      "version": "3.6.38",
+      "events": [],
+      "offset": {
+        "x": 0,
+        "y": 0,
+        "scale": 0.6842105263157895
+      }
+    },
+    {
+      "name": "xinsha-props/SF_bianta_eff_jitui",
+      "action": "play",
+      "version": "3.6.38",
+      "events": [],
+      "offset": {
+        "x": 0,
+        "y": 0,
+        "scale": 0.6842105263157895
+      }
+    },
+    {
+      "name": "xinsha-props/SF_paiju_ZhuZhuXiabq2",
+      "action": "play",
+      "version": "3.6.38",
+      "events": [],
+      "offset": {
+        "x": 0,
+        "y": 0,
+        "scale": 0.6842105263157895
+      }
+    },
+    {
+      "name": "xinsha-props/SF_paiju_ZhuZhuXiabq29",
+      "action": "play",
+      "version": "3.6.38",
+      "events": [],
+      "offset": {
+        "x": 0,
+        "y": 0,
+        "scale": 0.6842105263157895
+      }
+    },
+    {
+      "name": "xinsha-props/SF_bianta_eff_caiye",
+      "action": "play",
+      "version": "3.6.38",
+      "events": [],
+      "offset": {
+        "x": 0,
+        "y": 0,
+        "scale": 0.6842105263157895
+      }
+    },
+    {
+      "name": "xinsha-props/SF_paiju_shuitong",
+      "action": "play",
+      "version": "3.6.38",
+      "events": [],
+      "offset": {
+        "x": 0,
+        "y": 0,
+        "scale": 0.6842105263157895
+      }
+    },
+    {
+      "name": "xinsha-props/SF_paiju_ZhuZhuXiabq34",
+      "action": "play",
+      "version": "3.6.38",
+      "events": [],
+      "offset": {
+        "x": 0,
+        "y": 0,
+        "scale": 0.6842105263157895
+      }
+    },
+    {
+      "name": "xinsha-props/SF_paiju_ZhuZhuXiabq36",
+      "action": "play",
+      "version": "3.6.38",
+      "events": [],
+      "offset": {
+        "x": 0,
+        "y": 0,
+        "scale": 0.6842105263157895
+      }
+    }
+  ],
+  "videos": [
+    [
+      "1",
+      "flower",
+      {
+        "xinshaProp": 1,
+        "xinshaCombo": 1,
+        "xinshaHit": [
+          0,
+          0
+        ]
+      }
+    ],
+    [
+      "1",
+      "wine",
+      {
+        "xinshaProp": 3,
+        "xinshaCombo": 1,
+        "xinshaHit": [
+          0,
+          0
+        ]
+      }
+    ],
+    [
+      "1",
+      "flower",
+      {
+        "xinshaProp": 37,
+        "xinshaCombo": 1,
+        "xinshaHit": [
+          0,
+          0
+        ]
+      }
+    ],
+    [
+      "1",
+      "flower",
+      {
+        "xinshaProp": 38,
+        "xinshaCombo": 1,
+        "xinshaHit": [
+          0,
+          0
+        ]
+      }
+    ],
+    [
+      "1",
+      "egg",
+      {
+        "xinshaProp": 2,
+        "xinshaCombo": 1,
+        "xinshaHit": [
+          0,
+          0
+        ]
+      }
+    ],
+    [
+      "1",
+      "shoe",
+      {
+        "xinshaProp": 4,
+        "xinshaCombo": 1,
+        "xinshaHit": [
+          0,
+          0
+        ]
+      }
+    ],
+    [
+      "1",
+      "egg",
+      {
+        "xinshaProp": 39,
+        "xinshaCombo": 1,
+        "xinshaHit": [
+          0,
+          0
+        ]
+      }
+    ],
+    [
+      "1",
+      "egg",
+      {
+        "xinshaProp": 40,
+        "xinshaCombo": 1,
+        "xinshaHit": [
+          0,
+          0
+        ]
+      }
+    ]
+  ],
+  "network": [
+    [
+      "throwEmotion",
+      "flower",
+      {
+        "xinshaProp": 38,
+        "xinshaCombo": 1,
+        "xinshaHit": [
+          0,
+          0
+        ]
+      }
+    ]
+  ],
+  "touchSingleThrow": true,
+  "chatOpens": true,
+  "scatter": {
+    "details": [
+      {
+        "id": 1,
+        "hit": [
+          0,
+          0
+        ],
+        "combo": 1
+      },
+      {
+        "id": 1,
+        "hit": [
+          45.00000000000014,
+          67.46153846153842
+        ],
+        "combo": 2
+      },
+      {
+        "id": 1,
+        "hit": [
+          -30.999999999999844,
+          52.46153846153845
+        ],
+        "combo": 3
+      },
+      {
+        "id": 3,
+        "hit": [
+          0,
+          0
+        ],
+        "combo": 1
+      },
+      {
+        "id": 3,
+        "hit": [
+          -24.000000000000014,
+          -81.53846153846155
+        ],
+        "combo": 2
+      },
+      {
+        "id": 3,
+        "hit": [
+          -32.999999999999986,
+          53.461538461538424
+        ],
+        "combo": 3
+      },
+      {
+        "id": 37,
+        "hit": [
+          0,
+          0
+        ],
+        "combo": 1
+      },
+      {
+        "id": 37,
+        "hit": [
+          -7.000000000000156,
+          -77.53846153846155
+        ],
+        "combo": 2
+      },
+      {
+        "id": 37,
+        "hit": [
+          43,
+          -42.53846153846155
+        ],
+        "combo": 3
+      },
+      {
+        "id": 38,
+        "hit": [
+          0,
+          0
+        ],
+        "combo": 1
+      },
+      {
+        "id": 38,
+        "hit": [
+          -45.000000000000156,
+          64.46153846153845
+        ],
+        "combo": 2
+      },
+      {
+        "id": 38,
+        "hit": [
+          40.999999999999886,
+          64.46153846153845
+        ],
+        "combo": 3
+      },
+      {
+        "id": 2,
+        "hit": [
+          0,
+          0
+        ],
+        "combo": 1
+      },
+      {
+        "id": 2,
+        "hit": [
+          -43.00000000000002,
+          -44.53846153846153
+        ],
+        "combo": 2
+      },
+      {
+        "id": 2,
+        "hit": [
+          -36.99999999999993,
+          81.4615384615384
+        ],
+        "combo": 3
+      },
+      {
+        "id": 4,
+        "hit": [
+          0,
+          0
+        ],
+        "combo": 1
+      },
+      {
+        "id": 4,
+        "hit": [
+          -43.00000000000002,
+          -76.53846153846152
+        ],
+        "combo": 2
+      },
+      {
+        "id": 4,
+        "hit": [
+          -36.99999999999993,
+          54.46153846153851
+        ],
+        "combo": 3
+      },
+      {
+        "id": 39,
+        "hit": [
+          0,
+          0
+        ],
+        "combo": 1
+      },
+      {
+        "id": 39,
+        "hit": [
+          -45.000000000000156,
+          46.46153846153845
+        ],
+        "combo": 2
+      },
+      {
+        "id": 39,
+        "hit": [
+          38,
+          72.46153846153842
+        ],
+        "combo": 3
+      },
+      {
+        "id": 40,
+        "hit": [
+          0,
+          0
+        ],
+        "combo": 1
+      },
+      {
+        "id": 40,
+        "hit": [
+          -30.000000000000114,
+          59.461538461538424
+        ],
+        "combo": 2
+      },
+      {
+        "id": 40,
+        "hit": [
+          38,
+          64.46153846153845
+        ],
+        "combo": 3
+      }
+    ],
+    "spines": [
+      {
+        "name": "xinsha-props/SF_bianta_eff_xianhua",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_bianta_eff_xianhua",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": 30.789473684210623,
+          "y": -46.15789473684208,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_bianta_eff_xianhua",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": -21.210526315789366,
+          "y": -35.89473684210526,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_bianta_eff_jitui",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_bianta_eff_jitui",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": -16.421052631578956,
+          "y": 55.789473684210535,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_bianta_eff_jitui",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": -22.578947368421044,
+          "y": -36.57894736842103,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_ZhuZhuXiabq2",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_ZhuZhuXiabq2",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": -4.789473684210633,
+          "y": 53.05263157894738,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_ZhuZhuXiabq2",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": 29.42105263157895,
+          "y": 29.105263157894743,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_ZhuZhuXiabq29",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_ZhuZhuXiabq29",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": -30.789473684210634,
+          "y": -44.10526315789473,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_ZhuZhuXiabq29",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": 28.05263157894729,
+          "y": -44.10526315789473,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_bianta_eff_caiye",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_bianta_eff_caiye",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": -29.421052631578963,
+          "y": 30.47368421052631,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_bianta_eff_caiye",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": -25.315789473684163,
+          "y": -55.736842105263115,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_shuitong",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_shuitong",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": -29.421052631578963,
+          "y": 52.36842105263157,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_shuitong",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": -25.315789473684163,
+          "y": -37.26315789473688,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_ZhuZhuXiabq34",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_ZhuZhuXiabq34",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": -30.789473684210634,
+          "y": -31.78947368421052,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_ZhuZhuXiabq34",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": 26,
+          "y": -49.57894736842103,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_ZhuZhuXiabq36",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_ZhuZhuXiabq36",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": -20.526315789473763,
+          "y": -40.684210526315766,
+          "scale": 0.6842105263157895
+        }
+      },
+      {
+        "name": "xinsha-props/SF_paiju_ZhuZhuXiabq36",
+        "action": "play",
+        "version": "3.6.38",
+        "events": [],
+        "offset": {
+          "x": 26,
+          "y": -44.10526315789473,
+          "scale": 0.6842105263157895
+        }
+      }
+    ],
+    "flights": [
+      {
+        "end": "translate(1361.4736842105262px,239.046875px)",
+        "width": 41.0526,
+        "height": 52
+      },
+      {
+        "end": "translate(1392.2631578947369px,285.2047697368421px)",
+        "width": 41.0526,
+        "height": 52
+      },
+      {
+        "end": "translate(1340.2631578947369px,274.94161184210526px)",
+        "width": 41.0526,
+        "height": 52
+      },
+      {
+        "end": "translate(1355.178947368421px,234.66792763157895px)",
+        "width": 53.6421,
+        "height": 60.7579
+      },
+      {
+        "end": "translate(1338.757894736842px,178.87845394736843px)",
+        "width": 53.6421,
+        "height": 60.7579
+      },
+      {
+        "end": "translate(1332.6px,271.246875px)",
+        "width": 53.6421,
+        "height": 60.7579
+      },
+      {
+        "end": "translate(1354.6315789473683px,237.6784539473684px)",
+        "width": 54.7368,
+        "height": 54.7368
+      },
+      {
+        "end": "translate(1349.8421052631577px,184.62582236842104px)",
+        "width": 54.7368,
+        "height": 54.7368
+      },
+      {
+        "end": "translate(1384.0526315789473px,208.57319078947367px)",
+        "width": 54.7368,
+        "height": 54.7368
+      },
+      {
+        "end": "translate(1354.6315789473683px,237.6784539473684px)",
+        "width": 54.7368,
+        "height": 54.7368
+      },
+      {
+        "end": "translate(1323.8421052631577px,281.7837171052631px)",
+        "width": 54.7368,
+        "height": 54.7368
+      },
+      {
+        "end": "translate(1382.6842105263156px,281.7837171052631px)",
+        "width": 54.7368,
+        "height": 54.7368
+      },
+      {
+        "end": "translate(1351.8947368421052px,234.94161184210526px)",
+        "width": 60.2105,
+        "height": 60.2105
+      },
+      {
+        "end": "translate(1322.4736842105262px,204.46792763157896px)",
+        "width": 60.2105,
+        "height": 60.2105
+      },
+      {
+        "end": "translate(1326.578947368421px,290.6784539473684px)",
+        "width": 60.2105,
+        "height": 60.2105
+      },
+      {
+        "end": "translate(1409.9157894736843px,166.65740131578946px)",
+        "width": 50.9053,
+        "height": 55.8316
+      },
+      {
+        "end": "translate(1380.4947368421053px,114.28898026315791px)",
+        "width": 50.9053,
+        "height": 55.8316
+      },
+      {
+        "end": "translate(1384.6000000000001px,203.9205592105264px)",
+        "width": 50.9053,
+        "height": 55.8316
+      },
+      {
+        "end": "translate(1354.6315789473683px,237.6784539473684px)",
+        "width": 54.7368,
+        "height": 54.7368
+      },
+      {
+        "end": "translate(1323.8421052631577px,269.46792763157896px)",
+        "width": 54.7368,
+        "height": 54.7368
+      },
+      {
+        "end": "translate(1380.6315789473683px,287.2574013157894px)",
+        "width": 54.7368,
+        "height": 54.7368
+      },
+      {
+        "end": "translate(1354.6315789473683px,237.6784539473684px)",
+        "width": 54.7368,
+        "height": 54.7368
+      },
+      {
+        "end": "translate(1334.1052631578946px,278.36266447368416px)",
+        "width": 54.7368,
+        "height": 54.7368
+      },
+      {
+        "end": "translate(1380.6315789473683px,281.7837171052631px)",
+        "width": 54.7368,
+        "height": 54.7368
+      }
+    ],
+    "videos": [
+      [
+        "1",
+        "flower",
+        {
+          "xinshaProp": 1,
+          "xinshaCombo": 1,
+          "xinshaHit": [
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        "1",
+        "flower",
+        {
+          "xinshaProp": 1,
+          "xinshaCombo": 2,
+          "xinshaHit": [
+            45.00000000000014,
+            67.46153846153842
+          ]
+        }
+      ],
+      [
+        "1",
+        "flower",
+        {
+          "xinshaProp": 1,
+          "xinshaCombo": 3,
+          "xinshaHit": [
+            -30.999999999999844,
+            52.46153846153845
+          ]
+        }
+      ],
+      [
+        "1",
+        "wine",
+        {
+          "xinshaProp": 3,
+          "xinshaCombo": 1,
+          "xinshaHit": [
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        "1",
+        "wine",
+        {
+          "xinshaProp": 3,
+          "xinshaCombo": 2,
+          "xinshaHit": [
+            -24.000000000000014,
+            -81.53846153846155
+          ]
+        }
+      ],
+      [
+        "1",
+        "wine",
+        {
+          "xinshaProp": 3,
+          "xinshaCombo": 3,
+          "xinshaHit": [
+            -32.999999999999986,
+            53.461538461538424
+          ]
+        }
+      ],
+      [
+        "1",
+        "flower",
+        {
+          "xinshaProp": 37,
+          "xinshaCombo": 1,
+          "xinshaHit": [
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        "1",
+        "flower",
+        {
+          "xinshaProp": 37,
+          "xinshaCombo": 2,
+          "xinshaHit": [
+            -7.000000000000156,
+            -77.53846153846155
+          ]
+        }
+      ],
+      [
+        "1",
+        "flower",
+        {
+          "xinshaProp": 37,
+          "xinshaCombo": 3,
+          "xinshaHit": [
+            43,
+            -42.53846153846155
+          ]
+        }
+      ],
+      [
+        "1",
+        "flower",
+        {
+          "xinshaProp": 38,
+          "xinshaCombo": 1,
+          "xinshaHit": [
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        "1",
+        "flower",
+        {
+          "xinshaProp": 38,
+          "xinshaCombo": 2,
+          "xinshaHit": [
+            -45.000000000000156,
+            64.46153846153845
+          ]
+        }
+      ],
+      [
+        "1",
+        "flower",
+        {
+          "xinshaProp": 38,
+          "xinshaCombo": 3,
+          "xinshaHit": [
+            40.999999999999886,
+            64.46153846153845
+          ]
+        }
+      ],
+      [
+        "1",
+        "egg",
+        {
+          "xinshaProp": 2,
+          "xinshaCombo": 1,
+          "xinshaHit": [
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        "1",
+        "egg",
+        {
+          "xinshaProp": 2,
+          "xinshaCombo": 2,
+          "xinshaHit": [
+            -43.00000000000002,
+            -44.53846153846153
+          ]
+        }
+      ],
+      [
+        "1",
+        "egg",
+        {
+          "xinshaProp": 2,
+          "xinshaCombo": 3,
+          "xinshaHit": [
+            -36.99999999999993,
+            81.4615384615384
+          ]
+        }
+      ],
+      [
+        "1",
+        "shoe",
+        {
+          "xinshaProp": 4,
+          "xinshaCombo": 1,
+          "xinshaHit": [
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        "1",
+        "shoe",
+        {
+          "xinshaProp": 4,
+          "xinshaCombo": 2,
+          "xinshaHit": [
+            -43.00000000000002,
+            -76.53846153846152
+          ]
+        }
+      ],
+      [
+        "1",
+        "shoe",
+        {
+          "xinshaProp": 4,
+          "xinshaCombo": 3,
+          "xinshaHit": [
+            -36.99999999999993,
+            54.46153846153851
+          ]
+        }
+      ],
+      [
+        "1",
+        "egg",
+        {
+          "xinshaProp": 39,
+          "xinshaCombo": 1,
+          "xinshaHit": [
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        "1",
+        "egg",
+        {
+          "xinshaProp": 39,
+          "xinshaCombo": 2,
+          "xinshaHit": [
+            -45.000000000000156,
+            46.46153846153845
+          ]
+        }
+      ],
+      [
+        "1",
+        "egg",
+        {
+          "xinshaProp": 39,
+          "xinshaCombo": 3,
+          "xinshaHit": [
+            38,
+            72.46153846153842
+          ]
+        }
+      ],
+      [
+        "1",
+        "egg",
+        {
+          "xinshaProp": 40,
+          "xinshaCombo": 1,
+          "xinshaHit": [
+            0,
+            0
+          ]
+        }
+      ],
+      [
+        "1",
+        "egg",
+        {
+          "xinshaProp": 40,
+          "xinshaCombo": 2,
+          "xinshaHit": [
+            -30.000000000000114,
+            59.461538461538424
+          ]
+        }
+      ],
+      [
+        "1",
+        "egg",
+        {
+          "xinshaProp": 40,
+          "xinshaCombo": 3,
+          "xinshaHit": [
+            38,
+            64.46153846153845
+          ]
+        }
+      ]
+    ],
+    "target": {
+      "x": 1382,
+      "y": 265.046875,
+      "scale": 0.6842105263157895,
+      "nativeHeight": 263.0769230769231,
+      "nearTop": false
+    }
+  },
+  "comboReset": [
+    {
+      "id": 40,
+      "hit": [
+        0,
+        0
+      ],
+      "combo": 1
+    },
+    {
+      "id": 40,
+      "hit": [
+        0,
+        0
+      ],
+      "combo": 1
+    },
+    {
+      "id": 40,
+      "hit": [
+        0,
+        0
+      ],
+      "combo": 1
+    }
+  ],
+  "cleanup": {
+    "active": 0,
+    "open": false,
+    "restored": true,
+    "panels": 0
+  },
+  "isolation": [
+    "onlineUI",
+    "on"
+  ],
+  "errors": [],
+  "failed": []
+}

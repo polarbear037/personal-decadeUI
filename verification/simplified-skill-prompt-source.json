@@ -1,0 +1,134 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "member": "assets/res/lib/game.zip",
+    "packed_sha256": "df9af4ec01e45b7a2bca47b4fa22c1537c8c8365199b8ba2f764224d5e696d04",
+    "decoded_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28",
+    "packed_cache_matches_apk": true
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_229e54696ec7e1268eb03d4586c6bfe650ee8130405d6b2810fec6e459a49243"
+  ],
+  "modules": [
+    {
+      "member": "app.view.game.GameSelfSeatUi",
+      "sha256": "e7c812fcb76fc79acfa3faf81ba1715cf3ee137737cc3a424f0f4d2209d317bf",
+      "functions": [
+        {
+          "id": "0.39",
+          "line": 986,
+          "last": 1019,
+          "instruction_count": 67,
+          "instructions_sha256": "2cda59da1156a28e3fef5832b14286c760f693ecfa23ff1d83c6df5e3acadc55",
+          "referenced_api": [
+            "isSelected",
+            "useSkill",
+            "startRoleRoundOpt"
+          ]
+        },
+        {
+          "id": "0.49",
+          "line": 1238,
+          "last": 1263,
+          "instruction_count": 60,
+          "instructions_sha256": "d730e958c9f4aa7f418e02b0cdce7d87b20a32c666a6c52cb3505760af148109",
+          "referenced_api": [
+            "isTriggerAutoUse",
+            "responseAskSkill"
+          ]
+        },
+        {
+          "id": "0.50",
+          "line": 1265,
+          "last": 1344,
+          "instruction_count": 199,
+          "instructions_sha256": "d3a838a4a5eeb0128019303beb4fe7ca2344493131e9b55bc7b199a448b2b269",
+          "referenced_api": [
+            "getActiveTip",
+            "SSTAuto",
+            "SSTManual",
+            "SSTSet",
+            "useSkill",
+            "getAskTip",
+            "showButtonBar",
+            "spellTouchConfirmResult",
+            "startSelectTarget"
+          ]
+        },
+        {
+          "id": "0.54",
+          "line": 1381,
+          "last": 1507,
+          "instruction_count": 329,
+          "instructions_sha256": "da0f3c564a948d971fe8b06220e78b3b3d61ed4149fe3bcb3e950c0088a8c680",
+          "referenced_api": [
+            "beforeUseSkill",
+            "getCardSelector",
+            "getMaxCardCnt",
+            "getMaxTargetCnt",
+            "isNeedAsk",
+            "use",
+            "startSelectTarget",
+            "showButtonBar",
+            "getActiveTip"
+          ]
+        }
+      ]
+    },
+    {
+      "member": "app.view.game.spell.SpellAreaNew",
+      "sha256": "d3d4d38f82caf525ea7abb1a25ed7bb259e179d09b4b14d4650bcc3681df0ad3",
+      "functions": [
+        {
+          "id": "0.27",
+          "line": 837,
+          "last": 860,
+          "instruction_count": 40,
+          "instructions_sha256": "35da45a35988769d2cb0e5c60fcac0933d374f0f90ae86bc090678d47670a269",
+          "referenced_api": [
+            "setItemSelected",
+            "isSelected",
+            "dispatchEvent",
+            "EVENT_ITEM_CLICK"
+          ]
+        }
+      ]
+    }
+  ],
+  "observations": [
+    "SpellAreaNew.onClicked dispatches EVENT_ITEM_CLICK after toggling selected skill.",
+    "GameSelfSeatUi.onSkillItemClicked (0.39 lines986..1019) calls useSkill for selected item; deselection restores startRoleRoundOpt.",
+    "GameSelfSeatUi.useSkill (0.54 lines1381..1507) checks beforeUseSkill, card/target selectors and isNeedAsk; no cards/targets and no ask leads to skill.use, otherwise selectors and buttonBar with getActiveTip.",
+    "GameSelfSeatUi.responseAskSkill (0.50 lines1265..1344) preserves manual/automatic skill settings and uses getAskTip plus showButtonBar/spellTouchConfirmResult for optional trigger confirmation."
+  ],
+  "adaptation": "Only explicit skill clicks may immediately submit a valid no-selection action. Preserve manualConfirm, optional card selection, card/target/button selectors, triggered chooseBool, cancellation, AI and non-local flows. Existing optimized prompt renderer supplies concise instructions without full descriptions.",
+  "scope": "Static packaged Lua bytecode and constants. Official client runtime, current Electron game, mobile and live multiplayer not observed.",
+  "validation": {
+    "passed_commands": [
+      "node --check src/ui/simplifiedSkillPrompt.js",
+      "node --check src/ui/optimizedPrompt.js",
+      "node --check src/ui/officialPrompt.js",
+      "node --check src/core/decadeUI.js",
+      "node --check src/config/config-window.js",
+      "node --check src/config/definitions/appearance.js",
+      "node verification/simplified-skill-prompt-browser.cjs",
+      "node verification/optimized-prompt-browser.cjs",
+      "node verification/official-prompt-browser.cjs",
+      "git diff --check -- src/config/config-window.js src/config/definitions/appearance.js src/core/decadeUI.js src/ui/officialPrompt.js src/ui/optimizedPrompt.js verification/optimized-prompt-browser.cjs"
+    ],
+    "browser_scope": "Edge headless real noname entry, native skill click/check/selection/cancel results, chooseBool and chooseButton; original fixture event loop held by replacing game.resume. Six styles, default-on, custom prompts, special manualConfirm, optional-zero-card selection, menu toggle and independent optimizePrompt tested. Native chooseToUse settlement not executed by this fixture.",
+    "screenshots": [
+      "simplified-skill-prompt-othersOff.png",
+      "simplified-skill-prompt-onlineUI.png"
+    ],
+    "old_selection_fixture": "Not used as final acceptance. node verification/optimized-prompt-selection-browser.cjs initially reported ReferenceError: createOnlineBackgroundSelector is not defined (old harness lacks current plugin imports). Exploratory dependency completion reached AssertionError [ERR_ASSERTION]: 现有高度设置无法避开确认栏; existing dialog-online.css local --hand-tip-bottom overrides the root height setting. Exploratory selection-fixture edits reverted; no product change made for that separate issue.",
+    "not_verified": [
+      "official client runtime",
+      "current Electron game",
+      "mobile device",
+      "live multiplayer"
+    ]
+  }
+}

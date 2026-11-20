@@ -1,6 +1,17 @@
 import { createCollapseEnd as createCollapseEnd, createCollapseTitle as createCollapseTitle } from "../utils.js";
 import { onDynamicSkinOutcropUpdate as onDynamicSkinOutcropUpdate, onDynamicSkinClick as onDynamicSkinClick, onMeanPrettifyClick as onMeanPrettifyClick, onAloneEquipUpdate as onAloneEquipUpdate, onBorderLevelUpdate as onBorderLevelUpdate, onOutcropSkinClick as onOutcropSkinClick, onOutcropSkinUpdate as onOutcropSkinUpdate, onNewDecadeStyleUpdate as onNewDecadeStyleUpdate, onNewDecadeStyleClick as onNewDecadeStyleClick, onExtensionToggleUpdate as onExtensionToggleUpdate, onExtensionToggleClick as onExtensionToggleClick, onOptimizePromptClick as onOptimizePromptClick } from "../handlers/appearance-handlers.js";
 import { game, ui } from "noname";
+import { simplifySkillPromptKey } from "../../ui/simplifiedSkillPrompt.js";
+import { refreshOptimizedPrompt } from "../../ui/optimizedPrompt.js";
+const simplifySkillPrompt = {
+	name: "简化技能提示",
+	intro: "点击技能后跳过技能名和完整效果说明，直接选牌、选目标；无需选择且没有特殊确认要求的技能直接发动。保留触发技的发动选择、必要的操作提示及取消入口。关闭后，下次操作恢复原有说明框。",
+	init: true,
+	onclick(value) {
+		game.saveConfig(simplifySkillPromptKey, !!value);
+		refreshOptimizedPrompt();
+	},
+};
 const w = { clear: !0, onclick: onExtensionToggleClick, update: onExtensionToggleUpdate },
 	p = {
 		name: "打开新版菜单",
@@ -21,7 +32,7 @@ const w = { clear: !0, onclick: onExtensionToggleClick, update: onExtensionToggl
 	b = { name: "动态皮肤", intro: "开启后显示动态皮肤，阵亡后也保留", init: !1, onclick: onDynamicSkinClick },
 	v = { name: "动皮露头", init: !1, update: onDynamicSkinOutcropUpdate },
 	C = { name: "击杀特效", intro: "开启后，击杀敌方角色时会显示击杀特效", init: !0 },
-	M = { name: "优化提示", intro: "使用官方OL字体、描边和语义配色，在手牌上方显示技能、用牌、响应、弃牌及目标选择提示和选取进度；操作提示未覆盖的技能保留本体提示。武将飘字仅保留官方通用触发动画中的技能名，置于触发特效上方、全屏特效和对话框下方。独立于出牌信息提示开关。", init: !1, onclick: onOptimizePromptClick },
+	M = { name: "优化提示", intro: "在手牌上方显示技能、用牌、响应、弃牌及目标选择提示。一将成名使用官方技能、出牌提示及字体配色；online 沿用现有OL提示和武将飘字配置。未匹配的技能保留本体提示。独立于出牌信息提示与简化技能提示开关。", init: "off", item: { off: "关闭", xinsha: "一将成名", online: "online" }, onclick: onOptimizePromptClick },
 	I = createCollapseEnd("outward_title"),
-	U = { extensionToggle: w, newConfigWindow: p, eruda: s, outward_title: h, newDecadeStyle: k, outcropSkin: g, borderStyle: B, borderLevel: y, aloneEquip: _, meanPrettify: S, dynamicSkin: b, dynamicSkinOutcrop: v, killEffect: C, optimizePrompt: M, outward_title_end: I };
+	U = { extensionToggle: w, newConfigWindow: p, eruda: s, outward_title: h, newDecadeStyle: k, outcropSkin: g, borderStyle: B, borderLevel: y, aloneEquip: _, meanPrettify: S, dynamicSkin: b, dynamicSkinOutcrop: v, killEffect: C, optimizePrompt: M, simplifySkillPrompt, outward_title_end: I };
 export { _ as aloneEquip, U as appearanceConfigs, y as borderLevel, B as borderStyle, b as dynamicSkin, v as dynamicSkinOutcrop, s as eruda, w as extensionToggle, C as killEffect, S as meanPrettify, p as newConfigWindow, k as newDecadeStyle, g as outcropSkin, h as outward_title, M as optimizePrompt, I as outward_title_end };

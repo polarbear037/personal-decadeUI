@@ -1,0 +1,97 @@
+{
+  "client": {
+    "apk": "D:/yoka_sgs.x_g_android_6.4.5.apk",
+    "version": "6.4.5",
+    "sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202"
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_587eee0cd61874d39939f356205cbe0c89e572f379ed157b8a88242b54d63070"
+  ],
+  "resources": [
+    {
+      "member": "assets/res/fnt/fzbw.ttf",
+      "destination": "ui/assets/fonts/fzbw.ttf",
+      "size": 13254764,
+      "sha256": "9d8c656395e0cae765a2292c403ec2aaaa55ee551ab37ab330bf1ce5c3c2d9cc"
+    },
+    {
+      "member": "assets/res/fnt/FZSHENGSKSJW.ttf",
+      "destination": "ui/assets/fonts/FZSHENGSKSJW.ttf",
+      "size": 5061056,
+      "sha256": "7f5026e29f8e4c4e83db3f73a6656597cb631d7a35908c1ef3e23a5612c9a521"
+    },
+    {
+      "member": "assets/res/fnt/hyxlsj.ttf",
+      "destination": "ui/assets/fonts/yjcm-hyxlsj.ttf",
+      "size": 5209896,
+      "sha256": "bc22d323a17d6d140fa7507f9d5260a3c141ec187527d626bdebc91f7e133bc1"
+    },
+    {
+      "member": "assets/res/fnt/sy.ttf",
+      "destination": "ui/assets/fonts/sy.ttf",
+      "size": 10421048,
+      "sha256": "afb292af22d20f2c1c4c79f9a13bbccca8adcdd6224de4c382e1a58da23d11a7"
+    }
+  ],
+  "conversion": "Original APK TTF bytes, unchanged. hyxlsj.ttf is named yjcm-hyxlsj.ttf to preserve the existing different HYXLSJ.ttf on case-insensitive Windows.",
+  "style": {
+    "value": "othersOff",
+    "skin": "xinsha",
+    "default_font": "fzbw.ttf",
+    "skill_font": "FZSHENGSKSJW.ttf"
+  },
+  "source": {
+    "decoded_game_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28",
+    "default_chain": "app.Constant.DEFAULT_LABEL_FONT -> framework_extend.viewNode.ViewLabel -> framework.display.newTTFLabel",
+    "related_evidence": [
+      "verification/yjcm-card-tag-source.json",
+      "verification/yjcm-buttons-source.json"
+    ],
+    "modules": [
+      {
+        "member": "app.Constant",
+        "sha256": "5dafc9469970284051e6fab66d234141bed7113160057a476b08de9fbd6a1fd4"
+      },
+      {
+        "member": "framework_extend.viewNode.ViewLabel",
+        "sha256": "aefd758a607024762af49f019a00a33774a4e0d49751b61ecd47e5932ed07632"
+      },
+      {
+        "member": "framework.display",
+        "sha256": "83350b660ba584d72fcd96b13dd8ad8765e9961c781cbca1010af69dc07fadd8"
+      }
+    ]
+  },
+  "limitations": [
+    "Static APK inspection and browser validation are separate from official-client runtime or Electron game validation."
+  ],
+  "validation": {
+    "commands": [
+      "node --check src/core/decadeModule.js",
+      "node --check verification/yjcm-font-browser.cjs",
+      "node verification/yjcm-font-browser.cjs",
+      "node verification/style-route-browser.cjs",
+      "git diff --check -- src/core/decadeModule.js"
+    ],
+    "results": "verification/yjcm-font-results.json",
+    "screenshot": "verification/yjcm-font-browser.png",
+    "observed_fonts": [
+      "FZBeiWeiKaiShu-S19_GBK",
+      "FZShengShiKaiShuS-EB-GB"
+    ],
+    "checks": [
+      "4 source-matching font SHA256 and browser decodes",
+      "7 native text probes confirmed by CSS.getPlatformFontsForNode",
+      "68 settings menu labels",
+      "5 other style font isolation checks",
+      "8 style routing configurations",
+      "Screenshot reviewed"
+    ],
+    "not_verified": [
+      "Fresh Electron game session",
+      "Physical Android device",
+      "Official client runtime visual comparison"
+    ]
+  }
+}

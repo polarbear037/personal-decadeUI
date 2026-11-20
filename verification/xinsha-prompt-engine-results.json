@@ -1,0 +1,1042 @@
+{
+  "othersOff": {
+    "initial": "xinsha",
+    "bodyStyle": "othersOff",
+    "phaseTip": {
+      "text": "出牌阶段，请选择一张卡牌",
+      "detail": "",
+      "mode": "xinsha",
+      "field": "TXT_Deal_Card",
+      "color": "rgb(254, 240, 201)",
+      "font": "dui-xinsha-prompt-label, serif",
+      "spans": [
+        {
+          "text": "出牌阶段",
+          "color": "rgb(255, 207, 59)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        },
+        {
+          "text": "，请选择一张卡牌",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        }
+      ],
+      "rect": {
+        "x": 46,
+        "y": 443.765625,
+        "width": 1405,
+        "height": 37.3125,
+        "top": 443.765625,
+        "right": 1451,
+        "bottom": 481.078125,
+        "left": 46
+      },
+      "confirm": {
+        "x": 489.796875,
+        "y": 492.546875,
+        "width": 520.40625,
+        "height": 64.53125,
+        "top": 492.546875,
+        "right": 1010.203125,
+        "bottom": 557.078125,
+        "left": 489.796875
+      }
+    },
+    "selected": {
+      "text": "选择1名目标角色",
+      "detail": "",
+      "mode": "xinsha",
+      "field": "ActiveTip",
+      "color": "rgb(254, 240, 201)",
+      "font": "dui-xinsha-prompt-label, serif",
+      "spans": [
+        {
+          "text": "选择1名目标角色",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        }
+      ],
+      "rect": {
+        "x": 46,
+        "y": 443.765625,
+        "width": 1405,
+        "height": 37.3125,
+        "top": 443.765625,
+        "right": 1451,
+        "bottom": 481.078125,
+        "left": 46
+      },
+      "confirm": {
+        "x": 489.796875,
+        "y": 492.546875,
+        "width": 520.40625,
+        "height": 64.53125,
+        "top": 492.546875,
+        "right": 1010.203125,
+        "bottom": 557.078125,
+        "left": 489.796875
+      }
+    },
+    "skillTip": {
+      "text": "请选择你要“制衡”的牌",
+      "detail": "",
+      "mode": "xinsha",
+      "field": "ActiveTip",
+      "color": "rgb(254, 240, 201)",
+      "font": "dui-xinsha-prompt-label, serif",
+      "spans": [
+        {
+          "text": "请选择你要",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        },
+        {
+          "text": "“制衡”",
+          "color": "rgb(163, 240, 48)",
+          "font": "dui-xinsha-prompt-skill, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        },
+        {
+          "text": "的牌",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        }
+      ],
+      "rect": {
+        "x": 46,
+        "y": 438.40625,
+        "width": 1405,
+        "height": 42.671875,
+        "top": 438.40625,
+        "right": 1451,
+        "bottom": 481.078125,
+        "left": 46
+      },
+      "confirm": {
+        "x": 489.796875,
+        "y": 492.546875,
+        "width": 520.40625,
+        "height": 64.53125,
+        "top": 492.546875,
+        "right": 1010.203125,
+        "bottom": 557.078125,
+        "left": 489.796875
+      }
+    },
+    "skillSelected": {
+      "text": "弃置任意张牌并摸等量的牌",
+      "detail": "",
+      "mode": "xinsha",
+      "color": "rgb(254, 240, 201)",
+      "font": "dui-xinsha-prompt-label, serif",
+      "spans": [
+        {
+          "text": "弃",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        },
+        {
+          "text": "置",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        },
+        {
+          "text": "任",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        },
+        {
+          "text": "意",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        },
+        {
+          "text": "张",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        },
+        {
+          "text": "牌",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        },
+        {
+          "text": "并",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        },
+        {
+          "text": "摸",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        },
+        {
+          "text": "等",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        },
+        {
+          "text": "量",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        },
+        {
+          "text": "的",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        },
+        {
+          "text": "牌",
+          "color": "rgb(254, 240, 201)",
+          "font": "dui-xinsha-prompt-label, serif",
+          "stroke": "2.13333px rgb(97, 65, 49)"
+        }
+      ],
+      "rect": {
+        "x": 46,
+        "y": 443.765625,
+        "width": 1405,
+        "height": 37.3125,
+        "top": 443.765625,
+        "right": 1451,
+        "bottom": 481.078125,
+        "left": 46
+      },
+      "confirm": {
+        "x": 489.796875,
+        "y": 492.546875,
+        "width": 520.40625,
+        "height": 64.53125,
+        "top": 492.546875,
+        "right": 1010.203125,
+        "bottom": 557.078125,
+        "left": 489.796875
+      },
+      "selected": 1
+    },
+    "responseTips": {
+      "luanji": {
+        "text": "关羽使用了【万箭齐发】，请打出1张【闪】",
+        "detail": "",
+        "mode": "xinsha",
+        "field": "DefensiveTip",
+        "color": "rgb(254, 240, 201)",
+        "font": "dui-xinsha-prompt-label, serif",
+        "spans": [
+          {
+            "text": "关羽",
+            "color": "rgb(255, 225, 0)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "使用了",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "【万箭齐发】",
+            "color": "rgb(255, 217, 121)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "，请打出1张",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "【闪】",
+            "color": "rgb(255, 217, 121)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          }
+        ],
+        "rect": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "confirm": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "nativePrompt": "请打出一张牌响应万箭齐发",
+        "nativeDetail": ""
+      },
+      "sha": {
+        "text": "关羽对你使用了【杀】，请使用一张【闪】",
+        "detail": "",
+        "mode": "xinsha",
+        "field": "DefensiveTip",
+        "color": "rgb(254, 240, 201)",
+        "font": "dui-xinsha-prompt-label, serif",
+        "spans": [
+          {
+            "text": "关羽",
+            "color": "rgb(255, 225, 0)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "对你使用了",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "【杀】",
+            "color": "rgb(255, 217, 121)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "，请使用一张",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "【闪】",
+            "color": "rgb(255, 217, 121)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          }
+        ],
+        "rect": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "confirm": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "nativePrompt": "请使用一张闪响应杀",
+        "nativeDetail": ""
+      },
+      "dying": {
+        "text": "关羽濒死，需要1个【桃】，是否对其使用【桃】？",
+        "detail": "",
+        "mode": "xinsha",
+        "field": "ActiveTip",
+        "color": "rgb(254, 240, 201)",
+        "font": "dui-xinsha-prompt-label, serif",
+        "spans": [
+          {
+            "text": "关羽",
+            "color": "rgb(255, 225, 0)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "濒死，需要",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "1",
+            "color": "rgb(210, 126, 17)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "个",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "【桃】",
+            "color": "rgb(255, 217, 121)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "，是否对其使用",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "【桃】",
+            "color": "rgb(255, 217, 121)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "？",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          }
+        ],
+        "rect": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "confirm": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "nativePrompt": "关羽濒死，是否帮助？",
+        "nativeDetail": "当前体力：0"
+      },
+      "dyingTwo": {
+        "text": "关羽濒死，需要2个【桃】，是否对其使用【桃】？",
+        "detail": "",
+        "mode": "xinsha",
+        "field": "ActiveTip",
+        "color": "rgb(254, 240, 201)",
+        "font": "dui-xinsha-prompt-label, serif",
+        "spans": [
+          {
+            "text": "关羽",
+            "color": "rgb(255, 225, 0)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "濒死，需要",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "2",
+            "color": "rgb(210, 126, 17)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "个",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "【桃】",
+            "color": "rgb(255, 217, 121)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "，是否对其使用",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "【桃】",
+            "color": "rgb(255, 217, 121)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "？",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          }
+        ],
+        "rect": {
+          "x": 46,
+          "y": 443.765625,
+          "width": 1405,
+          "height": 37.3125,
+          "top": 443.765625,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "confirm": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "nativePrompt": "关羽濒死，是否帮助？",
+        "nativeDetail": "当前体力：-1"
+      },
+      "custom": {
+        "text": "自定义救援：请选择两张牌",
+        "detail": "必须保留的额外条件",
+        "mode": "xinsha",
+        "color": "rgb(254, 240, 201)",
+        "font": "dui-xinsha-prompt-label, serif",
+        "spans": [
+          {
+            "text": "自",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "定",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "义",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "救",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "援",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "：",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "请",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "选",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "择",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "两",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "张",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          },
+          {
+            "text": "牌",
+            "color": "rgb(254, 240, 201)",
+            "font": "dui-xinsha-prompt-label, serif",
+            "stroke": "2.13333px rgb(97, 65, 49)"
+          }
+        ],
+        "rect": {
+          "x": 46,
+          "y": 406.453125,
+          "width": 1405,
+          "height": 74.625,
+          "top": 406.453125,
+          "right": 1451,
+          "bottom": 481.078125,
+          "left": 46
+        },
+        "confirm": {
+          "x": 489.796875,
+          "y": 492.546875,
+          "width": 520.40625,
+          "height": 64.53125,
+          "top": 492.546875,
+          "right": 1010.203125,
+          "bottom": 557.078125,
+          "left": 489.796875
+        },
+        "nativePrompt": "<font color=\"blue\">自定义救援：请选择两张牌</font>",
+        "nativeDetail": "必须保留的额外条件"
+      },
+      "fontLoaded": true
+    },
+    "menu": {
+      "options": [
+        "关闭",
+        "一将成名",
+        "online"
+      ],
+      "selected": "xinsha",
+      "off": "off",
+      "xinsha": "xinsha",
+      "online": "online"
+    },
+    "errors": []
+  },
+  "onlineUI": {
+    "initial": "online",
+    "bodyStyle": "onlineUI",
+    "phaseTip": {
+      "text": "出牌阶段，请选择一张卡牌",
+      "detail": "",
+      "mode": "online",
+      "color": "rgb(249, 236, 206)",
+      "font": "dui-official-prompt, sans-serif",
+      "spans": [
+        {
+          "text": "出牌阶段",
+          "color": "rgb(255, 216, 0)",
+          "font": "dui-official-prompt, sans-serif",
+          "stroke": "2.66667px rgb(83, 61, 33)"
+        },
+        {
+          "text": "，请选择一张卡牌",
+          "color": "rgb(249, 236, 206)",
+          "font": "dui-official-prompt, sans-serif",
+          "stroke": "2.66667px rgb(83, 61, 33)"
+        }
+      ],
+      "rect": {
+        "x": 46,
+        "y": 583.125,
+        "width": 1405,
+        "height": 26,
+        "top": 583.125,
+        "right": 1451,
+        "bottom": 609.125,
+        "left": 46
+      },
+      "confirm": {
+        "x": 165,
+        "y": 520.890625,
+        "width": 1160,
+        "height": 46,
+        "top": 520.890625,
+        "right": 1325,
+        "bottom": 566.890625,
+        "left": 165
+      }
+    },
+    "selected": {
+      "text": "请选择1名角色，作为杀的目标",
+      "detail": "",
+      "mode": "online",
+      "field": "ActiveTip",
+      "color": "rgb(249, 236, 206)",
+      "font": "dui-official-prompt, sans-serif",
+      "spans": [
+        {
+          "text": "请选择",
+          "color": "rgb(249, 236, 206)",
+          "font": "dui-official-prompt, sans-serif",
+          "stroke": "2.66667px rgb(83, 61, 33)"
+        },
+        {
+          "text": "1",
+          "color": "rgb(255, 224, 115)",
+          "font": "dui-official-prompt, sans-serif",
+          "stroke": "2.66667px rgb(83, 61, 33)"
+        },
+        {
+          "text": "名角色，作为",
+          "color": "rgb(249, 236, 206)",
+          "font": "dui-official-prompt, sans-serif",
+          "stroke": "2.66667px rgb(83, 61, 33)"
+        },
+        {
+          "text": "杀",
+          "color": "rgb(255, 216, 0)",
+          "font": "dui-official-prompt, sans-serif",
+          "stroke": "2.66667px rgb(83, 61, 33)"
+        },
+        {
+          "text": "的目标",
+          "color": "rgb(249, 236, 206)",
+          "font": "dui-official-prompt, sans-serif",
+          "stroke": "2.66667px rgb(83, 61, 33)"
+        }
+      ],
+      "rect": {
+        "x": 46,
+        "y": 583.125,
+        "width": 1405,
+        "height": 26,
+        "top": 583.125,
+        "right": 1451,
+        "bottom": 609.125,
+        "left": 46
+      },
+      "confirm": {
+        "x": 165,
+        "y": 520.890625,
+        "width": 1160,
+        "height": 46,
+        "top": 520.890625,
+        "right": 1325,
+        "bottom": 566.890625,
+        "left": 165
+      }
+    },
+    "skillTip": {
+      "text": "弃置任意张牌并摸等量的牌",
+      "detail": "",
+      "mode": "online",
+      "color": "rgb(249, 236, 206)",
+      "font": "dui-official-prompt, sans-serif",
+      "spans": [
+        {
+          "text": "弃置",
+          "color": "rgb(255, 80, 80)",
+          "font": "dui-official-prompt, sans-serif",
+          "stroke": "2.66667px rgb(83, 61, 33)"
+        },
+        {
+          "text": "任意张牌并摸等量的牌",
+          "color": "rgb(249, 236, 206)",
+          "font": "dui-official-prompt, sans-serif",
+          "stroke": "2.66667px rgb(83, 61, 33)"
+        }
+      ],
+      "rect": {
+        "x": 46,
+        "y": 583.125,
+        "width": 1405,
+        "height": 26,
+        "top": 583.125,
+        "right": 1451,
+        "bottom": 609.125,
+        "left": 46
+      },
+      "confirm": {
+        "x": 165,
+        "y": 520.890625,
+        "width": 1160,
+        "height": 46,
+        "top": 520.890625,
+        "right": 1325,
+        "bottom": 566.890625,
+        "left": 165
+      }
+    },
+    "skillSelected": {
+      "text": "弃置任意张牌并摸等量的牌",
+      "detail": "",
+      "mode": "online",
+      "color": "rgb(249, 236, 206)",
+      "font": "dui-official-prompt, sans-serif",
+      "spans": [
+        {
+          "text": "弃置",
+          "color": "rgb(255, 80, 80)",
+          "font": "dui-official-prompt, sans-serif",
+          "stroke": "2.66667px rgb(83, 61, 33)"
+        },
+        {
+          "text": "任意张牌并摸等量的牌",
+          "color": "rgb(249, 236, 206)",
+          "font": "dui-official-prompt, sans-serif",
+          "stroke": "2.66667px rgb(83, 61, 33)"
+        }
+      ],
+      "rect": {
+        "x": 46,
+        "y": 583.125,
+        "width": 1405,
+        "height": 26,
+        "top": 583.125,
+        "right": 1451,
+        "bottom": 609.125,
+        "left": 46
+      },
+      "confirm": {
+        "x": 165,
+        "y": 520.890625,
+        "width": 1160,
+        "height": 46,
+        "top": 520.890625,
+        "right": 1325,
+        "bottom": 566.890625,
+        "left": 165
+      },
+      "selected": 1
+    },
+    "responseTips": {
+      "luanji": {
+        "text": "请打出一张牌响应万箭齐发",
+        "detail": "",
+        "mode": "online",
+        "color": "rgb(249, 236, 206)",
+        "font": "dui-official-prompt, sans-serif",
+        "spans": [
+          {
+            "text": "请打出一张牌响应",
+            "color": "rgb(249, 236, 206)",
+            "font": "dui-official-prompt, sans-serif",
+            "stroke": "2.66667px rgb(83, 61, 33)"
+          },
+          {
+            "text": "万箭齐发",
+            "color": "rgb(255, 216, 0)",
+            "font": "dui-official-prompt, sans-serif",
+            "stroke": "2.66667px rgb(83, 61, 33)"
+          }
+        ],
+        "rect": {
+          "x": 46,
+          "y": 583.125,
+          "width": 1405,
+          "height": 26,
+          "top": 583.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "confirm": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "nativePrompt": "请打出一张牌响应万箭齐发",
+        "nativeDetail": ""
+      },
+      "sha": {
+        "text": "请使用一张闪响应杀",
+        "detail": "",
+        "mode": "online",
+        "color": "rgb(249, 236, 206)",
+        "font": "dui-official-prompt, sans-serif",
+        "spans": [
+          {
+            "text": "请使用一张闪响应杀",
+            "color": "rgb(249, 236, 206)",
+            "font": "dui-official-prompt, sans-serif",
+            "stroke": "2.66667px rgb(83, 61, 33)"
+          }
+        ],
+        "rect": {
+          "x": 46,
+          "y": 583.125,
+          "width": 1405,
+          "height": 26,
+          "top": 583.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "confirm": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "nativePrompt": "请使用一张闪响应杀",
+        "nativeDetail": ""
+      },
+      "dying": {
+        "text": "关羽濒死，是否帮助？",
+        "detail": "当前体力：0",
+        "mode": "online",
+        "color": "rgb(249, 236, 206)",
+        "font": "dui-official-prompt, sans-serif",
+        "spans": [
+          {
+            "text": "关羽",
+            "color": "rgb(228, 168, 64)",
+            "font": "dui-official-prompt, sans-serif",
+            "stroke": "2.66667px rgb(83, 61, 33)"
+          },
+          {
+            "text": "濒死，是否帮助？",
+            "color": "rgb(249, 236, 206)",
+            "font": "dui-official-prompt, sans-serif",
+            "stroke": "2.66667px rgb(83, 61, 33)"
+          }
+        ],
+        "rect": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "confirm": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "nativePrompt": "关羽濒死，是否帮助？",
+        "nativeDetail": "当前体力：0"
+      },
+      "dyingTwo": {
+        "text": "关羽濒死，是否帮助？",
+        "detail": "当前体力：-1",
+        "mode": "online",
+        "color": "rgb(249, 236, 206)",
+        "font": "dui-official-prompt, sans-serif",
+        "spans": [
+          {
+            "text": "关羽",
+            "color": "rgb(228, 168, 64)",
+            "font": "dui-official-prompt, sans-serif",
+            "stroke": "2.66667px rgb(83, 61, 33)"
+          },
+          {
+            "text": "濒死，是否帮助？",
+            "color": "rgb(249, 236, 206)",
+            "font": "dui-official-prompt, sans-serif",
+            "stroke": "2.66667px rgb(83, 61, 33)"
+          }
+        ],
+        "rect": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "confirm": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "nativePrompt": "关羽濒死，是否帮助？",
+        "nativeDetail": "当前体力：-1"
+      },
+      "custom": {
+        "text": "自定义救援：请选择两张牌",
+        "detail": "必须保留的额外条件",
+        "mode": "online",
+        "color": "rgb(249, 236, 206)",
+        "font": "dui-official-prompt, sans-serif",
+        "spans": [
+          {
+            "text": "自定义救援：请选择两张牌",
+            "color": "rgb(0, 0, 255)",
+            "font": "dui-official-prompt, sans-serif",
+            "stroke": "2.66667px rgb(83, 61, 33)"
+          }
+        ],
+        "rect": {
+          "x": 46,
+          "y": 557.125,
+          "width": 1405,
+          "height": 52,
+          "top": 557.125,
+          "right": 1451,
+          "bottom": 609.125,
+          "left": 46
+        },
+        "confirm": {
+          "x": 165,
+          "y": 520.890625,
+          "width": 1160,
+          "height": 46,
+          "top": 520.890625,
+          "right": 1325,
+          "bottom": 566.890625,
+          "left": 165
+        },
+        "nativePrompt": "<font color=\"blue\">自定义救援：请选择两张牌</font>",
+        "nativeDetail": "必须保留的额外条件"
+      },
+      "fontLoaded": false
+    },
+    "menu": {
+      "options": [
+        "关闭",
+        "一将成名",
+        "online"
+      ],
+      "selected": "online",
+      "off": "off",
+      "xinsha": "xinsha",
+      "online": "online"
+    },
+    "errors": []
+  }
+}

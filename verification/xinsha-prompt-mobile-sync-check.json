@@ -1,0 +1,100 @@
+{
+  "device": "e1143408",
+  "package": "com.noname.shijian",
+  "url": "https://localhost/index.html",
+  "configuration": {
+    "url": "https://localhost/index.html",
+    "style": "othersOff",
+    "optimizePrompt": "xinsha",
+    "uiStyle": "othersOff",
+    "eventChain": [
+      {
+        "name": "chooseTarget",
+        "prompt": "选择杀【◈】的目标",
+        "player": "re_gongsunzan"
+      },
+      {
+        "name": "chooseUseTarget",
+        "player": "re_gongsunzan"
+      },
+      {
+        "name": "jiang0_rule_1762",
+        "player": "re_gongsunzan"
+      },
+      {
+        "name": "trigger",
+        "skill": "jiang0_rule_1762",
+        "player": "re_gongsunzan"
+      },
+      {
+        "name": "arrangeTrigger"
+      },
+      {
+        "name": "phaseUse",
+        "player": "re_gongsunzan"
+      },
+      {
+        "name": "phase",
+        "player": "re_gongsunzan"
+      },
+      {
+        "name": "fhltLoop",
+        "player": "re_gongsunzan"
+      },
+      {
+        "name": "game"
+      },
+      {}
+    ],
+    "tips": [
+      {
+        "text": "选择杀【◈】的目标",
+        "style": "xinsha",
+        "hidden": false,
+        "closed": false
+      }
+    ],
+    "dialogs": [
+      {
+        "text": "选择杀【◈】的目标1/1",
+        "class": "dialog prompt",
+        "prompt": "skill"
+      }
+    ],
+    "jiangling": true
+  },
+  "comparison": {
+    "phoneLoadedSha256": "604b79299243095da529bb6f281bb287c5e2a87aacb4f3e63a47bbd9cab7df32",
+    "phoneDiskSha256": "604b79299243095da529bb6f281bb287c5e2a87aacb4f3e63a47bbd9cab7df32",
+    "computerSha256": "f33b0bff5bf14be77346fd84b96bd74905d3ee2e5131ba9e211c57e4672dc80c",
+    "sameAsBeforeRepair": true,
+    "phoneDiskSameAsLoaded": true
+  },
+  "currentEventNewCodeProbe": {
+    "before": {
+      "event": "chooseTarget",
+      "prompt": "选择杀【◈】的目标",
+      "targets": [
+        "9507326244"
+      ]
+    },
+    "result": {
+      "main": "请选择一个目标视为对其使用一张杀",
+      "detail": "",
+      "skill": "缮甲",
+      "official": {
+        "richMain": "请选择一个目标视为对其使用一张杀",
+        "entryId": 1762,
+        "field": "ActiveTip"
+      }
+    },
+    "after": {
+      "event": "chooseTarget",
+      "prompt": "选择杀【◈】的目标",
+      "targets": [
+        "9507326244"
+      ]
+    }
+  },
+  "scope": "Read-only phone runtime/file inspection plus pure prompt computation with current desktop source. No phone file, setting, visible prompt, selected target, or settlement was changed. REA browser inventory rejected Android WebView response; evidence acquired through existing forwarded WebView page CDP and game.readFileAsText."
+}

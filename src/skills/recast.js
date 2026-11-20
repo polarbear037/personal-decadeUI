@@ -117,8 +117,11 @@ function c() {
 					const e = event.filterCard?.(selectedCard, player);
 					return void (e ? ((okBtn.innerHTML = "确定"), okBtn.classList.remove("disabled"), delete event._decadeUI_shouldRecast) : ((okBtn.innerHTML = "重铸"), okBtn.classList.remove("disabled"), (event._decadeUI_shouldRecast = !0)));
 				}
-				if (0 === ui.selected.targets.length) ((okBtn.innerHTML = "重铸"), okBtn.classList.remove("disabled"));
-				else {
+				if (0 === ui.selected.targets.length) {
+					// 一将成名铁索沿用确定按钮，零目标提交重铸；来源见 verification/yjcm-recast-source.json。
+					okBtn.innerHTML = lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && get.card()?.name === "tiesuo" ? "确定" : "重铸";
+					okBtn.classList.remove("disabled");
+				} else {
 					const card = get.card(),
 						e = card ? t(card) : 1;
 					((okBtn.innerHTML = "确定"), ui.selected.targets.length >= e ? okBtn.classList.remove("disabled") : okBtn.classList.add("disabled"));

@@ -11,7 +11,17 @@ const { installNativeHarness, server, chromium, assert, script } = require('./op
   page.on('pageerror', error => errors.push(error.message));
   try {
     await installNativeHarness(page, origin, false);
-    await page.addStyleTag({ url: `${origin}/extension/十周年UI/src/styles/animation.css` });
+    await page.addScriptTag({ content: script('extension/十周年UI/ui/constants.js', 'Object.assign(window,{STYLE_TO_SKIN,DEFAULT_SKIN});') });
+    await page.addScriptTag({ content: script('extension/十周年UI/src/styles/style-route.js', 'window.getStyleFile=getStyleFile;') });
+    await page.evaluate(origin => {
+      const link = document.createElement('link');
+      link.id = 'popup-animation-style';
+      link.rel = 'stylesheet';
+      link.href = `${origin}/extension/十周年UI/src/styles/${getStyleFile('animation', 'onlineUI')}`;
+      document.head.appendChild(link);
+      document.body.dataset.style = lib.config.extension_十周年UI_newDecadeStyle = 'onlineUI';
+    }, origin);
+    await page.waitForFunction(() => document.querySelector('#popup-animation-style').sheet);
     await page.addScriptTag({ content: script('extension/十周年UI/src/ui/officialPlayerPopup.js', 'Object.assign(window,{isOfficialPlayerPopup,syncOfficialPlayerPopups});') });
     const playerSource = fs.readFileSync(path.resolve(__dirname, '../../../noname/library/element/player.js'), 'utf8');
     const popupSource = playerSource.slice(playerSource.indexOf('\n  popup('), playerSource.indexOf('\n  popup_old('));
@@ -72,19 +82,14 @@ const { installNativeHarness, server, chromium, assert, script } = require('./op
       const numeric = { addedText: ui.arena.querySelectorAll('.skill-popup').length - beforeNumbers, effect: effects.at(-1)?.[0] };
       lib.config.extension_十周年UI_optimizePrompt = false;
       const disabled = pop('胜');
-      lib.config.extension_十周年UI_optimizePrompt = true;
-      refreshOptimizedPrompt();
-      const liveOn = getComputedStyle(ui.arena.querySelector('.skill-popup')).display;
-      lib.config.extension_十周年UI_optimizePrompt = false;
-      refreshOptimizedPrompt();
-      const liveOff = getComputedStyle(ui.arena.querySelector('.skill-popup')).display;
       clear();
       lib.config.extension_十周年UI_optimizePrompt = true;
       player.popup('wusheng', 'water', false);
       const localOnly = broadcasts.length;
       player.popup('武圣', 'water', false);
       const localOnlyPreserved = broadcasts.length === localOnly;
-      return { filtered, skill, layers, dialogLayer, coveredByDialog, framedLayer, numeric, disabled, liveOn, liveOff, records: records.length, broadcasts: broadcasts.length, localOnlyPreserved };
+      window.popupTest = { pop, clear, records, broadcasts, player };
+      return { filtered, skill, layers, dialogLayer, coveredByDialog, framedLayer, numeric, disabled, records: records.length, broadcasts: broadcasts.length, localOnlyPreserved };
     });
     assert(result.filtered.every(row => row.text === ''), `不属于官方技能名的广播未隐藏: ${JSON.stringify(result.filtered)}`);
     assert.equal(result.skill.text, '武圣');
@@ -95,18 +100,56 @@ const { installNativeHarness, server, chromium, assert, script } = require('./op
     assert.equal(result.framedLayer, 101);
     assert.equal(result.numeric.addedText, 0);
     assert.deepEqual(result.numeric.effect, { name: 'effect_shoujidonghua', action: 'play4' });
-    assert.equal(result.disabled.text, '胜');
-    assert.equal(result.disabled.inlineLayer, '200');
-    assert.equal(result.liveOn, 'none');
-    assert.notEqual(result.liveOff, 'none');
+    assert.equal(result.disabled.text, '');
     assert.equal(result.records, 14);
     assert.equal(result.broadcasts, 12);
     assert.equal(result.localOnlyPreserved, true);
+    const matrix = [];
+    for (const style of ['on', 'off', 'othersOff', 'onlineUI', 'babysha', 'codename']) {
+      await page.evaluate(async ({ style, origin }) => {
+        document.body.dataset.style = lib.config.extension_十周年UI_newDecadeStyle = style;
+        const link = document.querySelector('#popup-animation-style');
+        const href = `${origin}/extension/十周年UI/src/styles/${getStyleFile('animation', style)}`;
+        if (link.href === new URL(href).href) return;
+        await new Promise((resolve, reject) => {
+          link.onload = resolve;
+          link.onerror = () => reject(new Error(`Cannot load ${link.href}`));
+          link.href = href;
+        });
+      }, { style, origin });
+      for (const optimizePrompt of ['off', 'online', 'xinsha', false, true]) {
+        const row = await page.evaluate(optimizePrompt => {
+          lib.config.extension_十周年UI_optimizePrompt = optimizePrompt;
+          const { pop, records, broadcasts, player } = popupTest;
+          const before = { records: records.length, broadcasts: broadcasts.length };
+          const filtered = ['胜', '负', '判定生效', '判定失效', '拼点成功', '拼点失败', '闪', '八卦阵', '自定义系统提示'].map(pop);
+          const skill = pop('wusheng');
+          const node = ui.arena.querySelector('.skill-popup');
+          const visible = node && getComputedStyle(node).display !== 'none';
+          const numericBefore = records.length;
+          player.$damagepop(-2, 'fire');
+          return {
+            style: document.body.dataset.style, optimizePrompt, filtered, skill, visible,
+            animationFile: new URL(document.querySelector('#popup-animation-style').href).pathname.split('/').pop(),
+            records: numericBefore - before.records, broadcasts: broadcasts.length - before.broadcasts,
+            numericText: ui.arena.querySelector('.skill-popup')?.textContent,
+          };
+        }, optimizePrompt);
+        assert(row.filtered.every(item => item.text === ''), JSON.stringify(row));
+        assert.equal(row.skill.text, '武圣');
+        assert.equal(row.visible, true);
+        assert.equal(row.numericText, '武圣');
+        assert.equal(row.records, 10);
+        assert.equal(row.broadcasts, 10);
+        assert.equal(row.animationFile, style === 'onlineUI' ? 'animation-online.css' : style === 'othersOff' ? 'animation-xinsha.css' : 'animation.css');
+        matrix.push(row);
+      }
+    }
     assert.deepEqual(errors, []);
     await page.waitForTimeout(250);
     await page.screenshot({ path: path.join(__dirname, 'player-popup-browser.png') });
-    fs.writeFileSync(path.join(__dirname, 'player-popup-browser-results.json'), JSON.stringify({ ...result, errors }, null, 2));
-    console.log('PLAYER_POPUP_OK', JSON.stringify({ ...result, errors }));
+    fs.writeFileSync(path.join(__dirname, 'player-popup-browser-results.json'), JSON.stringify({ ...result, matrix, errors }, null, 2));
+    console.log('PLAYER_POPUP_OK', JSON.stringify({ cases: matrix.length, ...result, errors }));
   } finally {
     await browser.close();
     await new Promise(resolve => server.close(resolve));

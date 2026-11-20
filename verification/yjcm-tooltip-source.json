@@ -1,0 +1,167 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "game_member": "assets/res/lib/game.zip",
+    "decoded_game_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28",
+    "packed_cache_matches_apk": true
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_229e54696ec7e1268eb03d4586c6bfe650ee8130405d6b2810fec6e459a49243"
+  ],
+  "assets": [
+    {
+      "member": "assets/res/new/tex/plist/cmn01.plist",
+      "plist_sha256": "ac9157c5403dcbf2699449fd0ec50fcb27e34d964ce3001d2977a08c0f5077f8",
+      "texture_sha256": "2cb0d5ad1cddb110678565707b1d7555a236f2fd52384194a003dd9f6171449d",
+      "alpha_sha256": "5d9bc492d84322c5061f1d3fbfafe152388f74028fbf1efddd74497c5bf40e6c",
+      "frame": "new_skill_bg.png",
+      "metadata": {
+        "frame": "{{1189,1478},{30,30}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{30,30}}",
+        "sourceSize": "{30,30}"
+      },
+      "destination": "image/ui/tooltip/xinsha/new_skill_bg.png",
+      "sha256": "a6f6321dd7b4aa882136dad741194bdce1dcba749d574fc28c4e3cd712ebbcaf",
+      "size": [
+        30,
+        30
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/cmn02.plist",
+      "plist_sha256": "a60bcb9940fdb1d2283815a8c63befa90287fe4aa467d793ebbbcca0dea4bafc",
+      "texture_sha256": "f4aeca6b5e29698fc8b747a6bc4e1e463a0df2ddbea3ff5a06df38045c9d460f",
+      "alpha_sha256": "7f7bb2c496c943572af516eb9c2d93b43e3ea0a9de86166ffb011b26ecd57998",
+      "frame": "cmn_activite_skill_bg.png",
+      "metadata": {
+        "frame": "{{1381,2003},{38,38}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{38,38}}",
+        "sourceSize": "{38,38}"
+      },
+      "destination": "image/ui/tooltip/xinsha/cmn_activite_skill_bg.png",
+      "sha256": "5b321695616065aaa565b0ce4541870a2cc4cf86ea53804fb17860281f477109",
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/cmn02.plist",
+      "plist_sha256": "a60bcb9940fdb1d2283815a8c63befa90287fe4aa467d793ebbbcca0dea4bafc",
+      "texture_sha256": "f4aeca6b5e29698fc8b747a6bc4e1e463a0df2ddbea3ff5a06df38045c9d460f",
+      "alpha_sha256": "7f7bb2c496c943572af516eb9c2d93b43e3ea0a9de86166ffb011b26ecd57998",
+      "frame": "cmn_passive_skill_bg.png",
+      "metadata": {
+        "frame": "{{675,1157},{38,38}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{38,38}}",
+        "sourceSize": "{38,38}"
+      },
+      "destination": "image/ui/tooltip/xinsha/cmn_passive_skill_bg.png",
+      "sha256": "354308ea7c6169954d4d84e65bcbb45c304280670b1df9af4045884951d076b6",
+      "size": [
+        38,
+        38
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/cmn02.plist",
+      "plist_sha256": "a60bcb9940fdb1d2283815a8c63befa90287fe4aa467d793ebbbcca0dea4bafc",
+      "texture_sha256": "f4aeca6b5e29698fc8b747a6bc4e1e463a0df2ddbea3ff5a06df38045c9d460f",
+      "alpha_sha256": "7f7bb2c496c943572af516eb9c2d93b43e3ea0a9de86166ffb011b26ecd57998",
+      "frame": "game_playinfo_skillbg.png",
+      "metadata": {
+        "frame": "{{1956,1038},{87,41}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{87,41}}",
+        "sourceSize": "{87,41}"
+      },
+      "destination": "image/ui/tooltip/xinsha/game_playinfo_skillbg.png",
+      "sha256": "abfb23978945b8dec8ca0c84c7f12b1bbd026ac34ad1d9564fe2a9976c454499",
+      "size": [
+        87,
+        41
+      ]
+    },
+    {
+      "member": "assets/res/new/ui/bg/item_tips_bg.pvr.ccz",
+      "texture_sha256": "9d57b33a17126e1ee8b081923e16d695f1581bf3c9d777f21cf08eb18147e7a2",
+      "alpha_sha256": "5cc872003b7f80b9b21697c4d5fd0d48860b4169b9b54eba8c95951a9684373c",
+      "destination": "image/ui/tooltip/xinsha/item_tips_bg.png",
+      "sha256": "f14a2277e03ffb75e2f57dd9feaf8ab3a7be430c1287bb30a2e87176b79fbe6a",
+      "size": [
+        393,
+        189
+      ]
+    }
+  ],
+  "conversion": "ETC1 color + alpha red channel, undo atlas rotation and restore sourceSize/offset; no resizing or recoloring",
+  "scope": "Static shipped Lua bytecode and assets; official client runtime comparison not performed.",
+  "modules": [
+    {
+      "member": "app.view.game.card.CardUi",
+      "sha256": "cce5b3806985a41e09492be4f2c78ef835cf4e743bf35f7b018d4a1945677c38"
+    },
+    {
+      "member": "app.view.game.card.CardUiNew",
+      "sha256": "27c48e1767310c28e76c3215961ea3883806b53cf339c6bd9da9177161b4646e"
+    },
+    {
+      "member": "app.view.game.card.SelfCardsArea",
+      "sha256": "07e9f8984ad0145e4faa1dbf890f0418f0ae2f6c75692a63757babf94d398481"
+    },
+    {
+      "member": "app.view.tip.TextTips",
+      "sha256": "43fff7bb8e6eb1ed8d77d9d2097e10014f985e5e09b0ed615c9f68a14f3f3649"
+    },
+    {
+      "member": "app.core.utils.UIFactory",
+      "sha256": "485cf638b268a3c65d66894d9941f7dd6956c1f2bed5c2628355529b82882d24"
+    },
+    {
+      "member": "app.view.game.GeneralSpellTips",
+      "sha256": "cd0760ef82784c9fd3b9879a5a848d4b8dda10b3d7722bfa4c95643348d66ce5"
+    }
+  ],
+  "observations": [
+    "SelfCardsArea requires CardUi; CardUi imports .CardUiNew. CardUiNew.showTips 0.37 lines714..796 uses TextTips, width518, green title c3b(85,207,48), plain body or transform rich text, not the DBG showTipsForDBG title/flower path.",
+    "TextTips.initUI 0.2 lines47..136: item_tips_bg, capInsets(130,60,70,60), font fzbw, title28/body24, content width=width-55, text left19/top11, successive label top advances labelHeight+14. total height=sum(labelHeight+8)+42; two labels => titleHeight+bodyHeight+58. No card-type row or rank suffix.",
+    "SpellAreaNew.initSpellBtns 0.25.0/0.25.1 calls sgs.ui.showSkillTips. UIFactory.showSkillTips 0.47 lines739..766 constructs GeneralSpellTips, not SpellTips or SkillTextTip.",
+    "GeneralSpellTips width400, createSpellNode0.10 lines228..361: title LEFT_TOP(21,-16), size87x41, title FZSHENGSKSJW34 c3b252,244,188 centered43.5,20. If label width>68 grow background by width-68. Active/passive38x38 at title LEFT_BOTTOM(100+growth,1), fzbw26.",
+    "GeneralSpellTips body LEFT_TOP(19,-69), fzbw22, lineSpace6,maxWidth360,color255,240,213; bottom14; new_skill_bg scale9 default one-third caps. Rich/scroll content retained."
+  ],
+  "adaptation": "Only othersOff hand-card nodeintro and skill-button hover. Use native cardPrompt/dynamicTranslate and move original card nodes. Suppress only redundant native type row; preserve range, derivation, yingbian and interactive content. Tooltips anchor above source and clamp to ui.window, use existing --yjcm-unit with documentZoom conversion. No changes to card/skill rules. Other style branches retained.",
+  "validation": {
+    "command": "node verification/yjcm-tooltip-browser.cjs",
+    "results": "verification/yjcm-tooltip-results.json",
+    "screenshots": [
+      "verification/yjcm-tooltip-browser.png",
+      "verification/yjcm-tooltip-wuzhong.png"
+    ],
+    "checks": [
+      "real noname entry and native get.nodeintro/lib.placePoppedDialog",
+      "actual skill-control mouse hover",
+      "source-derived title/body/badge geometry and assets",
+      "user wuzhong heart J case: plain green name, no redundant trick-card row; height from actual visible labels",
+      "35 animation-frame samples at scale0.65: first visible width260, zero animation/transition, stable height",
+      "dynamic long-description scroll and mouse enter/leave hide",
+      "hidden cards and outside-hand exclusions",
+      "window resize/documentZoom",
+      "Online and other four styles isolation"
+    ],
+    "not_verified": [
+      "official client runtime comparison",
+      "current Electron game",
+      "mobile device",
+      "network play"
+    ]
+  }
+}

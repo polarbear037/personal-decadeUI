@@ -1,5 +1,6 @@
 import { lib, get, ui, game } from "noname";
 import { refreshOptimizedPrompt, initOptimizedPromptHooks } from "./optimizedPrompt.js";
+import { getOptimizedPromptStyle } from "./promptStyle.js";
 const e = ["compareMultiple", "chooseToCompare", "chooseToCompareMultiple"],
 	n = {
 		sha: "选择1名角色，作为杀的目标",
@@ -424,7 +425,7 @@ function T({ game: game, ui: ui }) {
 							refreshOptimizedPrompt();
 							return;
 						}
-						if (lib.config.extension_十周年UI_optimizePrompt) return;
+						if (getOptimizedPromptStyle() !== "off") return;
 						if (!ui.cardDialog?._isLuckyCardTip)
 							switch (event.name) {
 								case "chooseToDiscard":

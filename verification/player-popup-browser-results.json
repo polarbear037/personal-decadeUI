@@ -77,14 +77,1573 @@
     }
   },
   "disabled": {
-    "text": "胜",
-    "layer": 100,
-    "inlineLayer": "200"
+    "text": "",
+    "layer": null
   },
-  "liveOn": "none",
-  "liveOff": "flex",
   "records": 14,
   "broadcasts": 12,
   "localOnlyPreserved": true,
+  "matrix": [
+    {
+      "style": "on",
+      "optimizePrompt": "off",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "on",
+      "optimizePrompt": "online",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "on",
+      "optimizePrompt": "xinsha",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "on",
+      "optimizePrompt": false,
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "on",
+      "optimizePrompt": true,
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "off",
+      "optimizePrompt": "off",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "off",
+      "optimizePrompt": "online",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "off",
+      "optimizePrompt": "xinsha",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "off",
+      "optimizePrompt": false,
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "off",
+      "optimizePrompt": true,
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "othersOff",
+      "optimizePrompt": "off",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation-xinsha.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "othersOff",
+      "optimizePrompt": "online",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation-xinsha.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "othersOff",
+      "optimizePrompt": "xinsha",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation-xinsha.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "othersOff",
+      "optimizePrompt": false,
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation-xinsha.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "othersOff",
+      "optimizePrompt": true,
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation-xinsha.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "onlineUI",
+      "optimizePrompt": "off",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 100,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation-online.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "onlineUI",
+      "optimizePrompt": "online",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 6,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation-online.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "onlineUI",
+      "optimizePrompt": "xinsha",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 100,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation-online.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "onlineUI",
+      "optimizePrompt": false,
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 100,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation-online.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "onlineUI",
+      "optimizePrompt": true,
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 6,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation-online.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "babysha",
+      "optimizePrompt": "off",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "babysha",
+      "optimizePrompt": "online",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "babysha",
+      "optimizePrompt": "xinsha",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "babysha",
+      "optimizePrompt": false,
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "babysha",
+      "optimizePrompt": true,
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "codename",
+      "optimizePrompt": "off",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "codename",
+      "optimizePrompt": "online",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "codename",
+      "optimizePrompt": "xinsha",
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "codename",
+      "optimizePrompt": false,
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    },
+    {
+      "style": "codename",
+      "optimizePrompt": true,
+      "filtered": [
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        },
+        {
+          "text": "",
+          "layer": null
+        }
+      ],
+      "skill": {
+        "text": "武圣",
+        "layer": 9999,
+        "inlineLayer": "200"
+      },
+      "visible": true,
+      "animationFile": "animation.css",
+      "records": 10,
+      "broadcasts": 10,
+      "numericText": "武圣"
+    }
+  ],
   "errors": []
 }

@@ -1,0 +1,118 @@
+/* 技能流程在所有风格共用：只隐藏已由简短提示接管的文字，保留交互内容。 */
+#arena.decadeUI .dialog[data-decade-optimized-prompt] .decade-optimized-main,
+#arena.decadeUI .dialog[data-decade-optimized-prompt] .decade-optimized-detail,
+#arena.decadeUI .dialog[data-decade-optimized-prompt] .decade-optimized-progress {
+	display: none !important;
+}
+
+#arena.decadeUI .dialog[data-decade-optimized-empty="true"] {
+	visibility: hidden !important;
+	pointer-events: none !important;
+}
+
+#arena.decadeUI > .dialog.decade-optimized-closing {
+	display: none !important;
+	visibility: hidden !important;
+	pointer-events: none !important;
+}
+
+#arena.decadeUI .hand-tip.decade-optimized-hand-tip:not(.hidden) {
+	display: block !important;
+}
+
+#arena.decadeUI[data-decade-optimized-active="true"] > .hand-tip:not(.decade-optimized-hand-tip),
+#arena.decadeUI[data-decade-optimized-active="true"] > .hand-tip-info {
+	display: none !important;
+}
+
+#arena.decadeUI[data-decade-optimized-active="true"] > .dialog.prompt:not(:has(.button, .buttons, .popup, .card, .player, input, button, select, textarea, a, canvas, [onclick], [contenteditable])) {
+	visibility: hidden !important;
+	pointer-events: none !important;
+}
+
+/* Online 沿用专用字体和描边；其余风格保留原字体并让多行提示自然增高。 */
+body:not([data-style="onlineUI"]) #arena.decadeUI > .hand-tip.decade-optimized-hand-tip {
+	height: auto;
+	line-height: 24px;
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+	z-index: 102;
+}
+
+body:not([data-style="onlineUI"]) #arena.decadeUI > .hand-tip.decade-optimized-hand-tip > span {
+	display: block;
+	position: static;
+}
+
+/* 一将 GameButtonBar.optLabel：fzbw 28 / #FEF0C9 / outline 1,#614131。 */
+@font-face {
+	font-family: "dui-xinsha-prompt-label";
+	src: url("../../ui/assets/fonts/fzbw.ttf") format("truetype");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "dui-xinsha-prompt-skill";
+	src: url("../../ui/assets/fonts/FZSHENGSKSJW.ttf") format("truetype");
+	font-display: swap;
+}
+
+body #window #arena.decadeUI > .hand-tip.decade-optimized-hand-tip[data-optimized-prompt-style="xinsha"] {
+	--hand-tip-bottom: inherit;
+	left: 24px;
+	right: 24px;
+	bottom: var(--hand-tip-bottom, calc(20% + 10px)) !important;
+	height: auto;
+	line-height: 1.25;
+	font-family: "dui-xinsha-prompt-label", serif !important;
+	font-size: calc(28 * var(--yjcm-unit, .714286px)) !important;
+	font-weight: normal !important;
+	font-style: normal;
+	letter-spacing: 0;
+	color: #fef0c9;
+	text-align: center;
+	text-shadow: none !important;
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+	pointer-events: none;
+	z-index: 102;
+}
+
+/* 原版 bar.y=194，optLabel.y=100+5；高度设置在此基准上自由上下调整。 */
+body[data-style="othersOff"] #window #arena.decadeUI > .hand-tip.decade-optimized-hand-tip[data-optimized-prompt-style="xinsha"] {
+	bottom: calc(var(--hand-tip-bottom, calc(20% + 10px)) - 20% - 10px + var(--yjcm-scene-y, 0px) + 299 * var(--yjcm-unit, 1px) - var(--yjcm-arena-bottom, 0px)) !important;
+}
+
+body #window #arena.decadeUI > .hand-tip[data-optimized-prompt-style="xinsha"]::before {
+	content: none;
+}
+
+body #window #arena.decadeUI > .hand-tip[data-optimized-prompt-style="xinsha"] span {
+	position: static;
+	font-family: inherit !important;
+	font-size: inherit !important;
+	font-weight: inherit;
+	line-height: inherit;
+	color: inherit;
+	text-shadow: none !important;
+	-webkit-text-stroke: calc(2 * var(--yjcm-unit, .714286px)) #614131;
+	paint-order: stroke fill;
+}
+
+body #window #arena.decadeUI > .hand-tip[data-optimized-prompt-style="xinsha"] > span {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+body #window #arena.decadeUI > .hand-tip[data-optimized-prompt-style="xinsha"] span[data-type="skill"] {
+	font-family: "dui-xinsha-prompt-skill", serif !important;
+	font-size: calc(32 * var(--yjcm-unit, .714286px)) !important;
+}
+
+/* windowSnitch 收起后仍使用同一操作提示与字体配色。 */
+body[data-style="othersOff"] #window #arena.decadeUI > .hand-tip[data-optimized-prompt-style="xinsha"][data-official-prompt-field="windowSnitch.initUI"] {
+	font-size: calc(30 * var(--yjcm-unit, 1px)) !important;
+	line-height: 1;
+	color: #fff3de;
+}

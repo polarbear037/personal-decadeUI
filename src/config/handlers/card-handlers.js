@@ -1,7 +1,6 @@
 import { game, lib, ui, get } from "noname";
 import { refreshCardSkin as n } from "../../overrides/card/skin-applier.js";
 import "../utils.js";
-import { chupaiAnimations as chupaiAnimations } from "../../animation/configs/skillAnimations.js";
 function a(bool) {
 	(game.saveConfig("extension_十周年UI_cardGhostEffect", bool), window.decadeUI?.effect?.ghost?.setEnabled?.(bool));
 }
@@ -108,36 +107,11 @@ function I() {
 		(ui.arena.dataset.chupaizhishi = config),
 		game.players &&
 			decadeUI.animation &&
-			game.players.forEach(player => {
-				if ((player.ChupaizhishiXid && (decadeUI.animation.stopSpine(player.ChupaizhishiXid), delete player.ChupaizhishiXid), player.classList.contains("selectable") && "off" !== config)) {
-					const cfg = chupaiAnimations[decadeUI.config.chupaizhishi];
-					if (!cfg) return;
-					let playData = {
-						name: cfg.name,
-						loop: true,
-					};
-					// 读取自定义动画片段
-					if (cfg.anim) {
-						playData.anim = cfg.anim;
-					}
-					player.ChupaizhishiXid = decadeUI.animation.playSpine(playData, {
-						parent: player,
-						scale: cfg.scale,
-					});
-				}
-			}));
+			game.players.forEach(player => player.ChupaizhishiXRefresh?.(true)));
 }
 
 function U(bool) {
-	if ((game.saveConfig("extension_十周年UI_cardAlternateName", bool), window.decadeUI?.cardAlternateName))
-		if (bool) window.decadeUI.cardAlternateName.updateVisibility?.();
-		else {
-			["handcards1", "handcards2"]
-				.map(name => game.me?.node?.[name])
-				.filter(Boolean)
-				.forEach(zone => {
-					zone.dataset.cardAlternateNameVisible = "off";
-				});
-		}
+	game.saveConfig("extension_十周年UI_cardAlternateName", bool);
+	window.decadeUI?.cardAlternateName?.updateVisibility?.();
 }
 export { i as onAutoSelectClick, t as onAutoSelectUpdate, U as onCardAlternateNameClick, a as onCardGhostEffectClick, u as onCardPrettifyClick, c as onCardScaleBlur, d as onCardScaleUpdate, g as onCardkmhClick, m as onCardkmhUpdate, I as onChupaizhishiUpdate, r as onDiscardScaleBlur, h as onDiscardScaleUpdate, l as onHandFoldMinBlur, f as onHandFoldMinUpdate, o as onHandTipHeightBlur, s as onHandTipHeightUpdate };

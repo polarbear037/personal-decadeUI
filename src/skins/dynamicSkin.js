@@ -21728,6 +21728,111 @@ export const dynamicSkinConfig = {
 				},
 			},
 		},
+
+		// 原生手机 6163401，Spine 3.6.38；攻击 shouji=0.466667s/1.300000s，线 baodian=0.066667s/0.666667s。 坐标/缩放为同源预览基准，待实局校准。
+		"权倾龙廷": {
+				"name": "贾诩/权倾龙廷/daiji2",
+				"version": "3.6",
+				"action": "play",
+				"scale": 0.7,
+				"x": [0, 0.5],
+				"y": [0, 0.5],
+				"shizhounian": true,
+				"daijiteshu": "play2",
+				"daijishan": "play3",
+				"beijing": {
+					"name": "贾诩/权倾龙廷/beijing",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.7,
+					"x": [0, 0.5],
+					"y": [0, 0.5]
+				},
+				"gongji": {
+					"name": "贾诩/权倾龙廷/chuchang2",
+					"version": "3.6",
+					"action": "gongji",
+					"scale": 0.6,
+					"showTime": 1.3,
+					"speed": 1
+				},
+				"teshu": {
+					"name": "贾诩/权倾龙廷/chuchang2",
+					"version": "3.6",
+					"action": "jineng",
+					"scale": 0.6
+				},
+				"ss_jinchang": "play4",
+				"zhishixian": {
+					"name": "贾诩/权倾龙廷/shouji2",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.5,
+					"speed": 1,
+					"delay": 0.358974,
+					"factor": 0.1,
+					"effect": {
+						"name": "贾诩/权倾龙廷/shouji",
+						"version": "3.6",
+						"action": "play",
+						"scale": 0.5,
+						"speed": 1,
+						"delay": 0.1
+					}
+				}
+			},
+		// 原生手机 6163402，Spine 3.6.38；攻击 shouji=0.433333s/1.633333s，线 baodian=0.066667s/0.666667s。 坐标/缩放为同源预览基准，待实局校准。
+		"权倾龙廷2": {
+				"name": "贾诩/权倾龙廷2/daiji2",
+				"version": "3.6",
+				"action": "play",
+				"scale": 0.7,
+				"x": [0, 0.5],
+				"y": [0, 0.5],
+				"shizhounian": true,
+				"daijiteshu": "play2",
+				"daijishan": "play3",
+				"beijing": {
+					"name": "贾诩/权倾龙廷2/beijing",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.7,
+					"x": [0, 0.5],
+					"y": [0, 0.5]
+				},
+				"gongji": {
+					"name": "贾诩/权倾龙廷2/chuchang2",
+					"version": "3.6",
+					"action": "gongji",
+					"scale": 0.6,
+					"showTime": 1.633333,
+					"speed": 1
+				},
+				"teshu": {
+					"name": "贾诩/权倾龙廷2/chuchang2",
+					"version": "3.6",
+					"action": "jineng",
+					"scale": 0.6
+				},
+				"ss_jinchang": "play4",
+				"zhishixian": {
+					"name": "贾诩/权倾龙廷2/shouji2",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.5,
+					"speed": 1,
+					"delay": 0.265306,
+					"factor": 0.1,
+					"effect": {
+						"name": "贾诩/权倾龙廷2/shouji",
+						"version": "3.6",
+						"action": "play",
+						"scale": 0.5,
+						"speed": 1,
+						"delay": 0.1
+					}
+				}
+			},
 	},
 	jianyong: {
 		//简雍
@@ -33004,49 +33109,62 @@ export const dynamicSkinConfig = {
 			},
 		},
 		马到功成: {
-			name: "神马超/马到功成/daiji2",
-			daijiteshu: "play2",
-			daijishan: "play3",
-			x: [0, 0.5],
-			y: [0, 0.5],
-			scale: 0.72,
-			angle: 0,
-			//speed: 1,
-			shizhounian: true,
-			chuchang: {
-				name: "神马超/马到功成/chuchang",
-				action: "play",
-				scale: 0.6,
-			},
-			gongji: {
-				name: "神马超/马到功成/chuchang2",
-				action: "gongji",
-				scale: 0.7,
-			},
-			teshu: {
-				name: "神马超/马到功成/chuchang2",
-				action: "jineng",
-				scale: 0.7,
-			},
-			beijing: {
-				name: "神马超/马到功成/beijing",
-				x: [0, 0.5],
-				y: [0, 0.5],
-				scale: 0.4,
-			},
-			zhishixian: {
-				name: "神马超/马到功成/shouji2", //指示线
-				scale: 0.5,
-				speed: 0.8,
-				delay: 0.4,
-				effect: {
-					name: "神马超/马到功成/shouji",
-					scale: 0.65,
-					speed: 0.6,
-					delay: 0.45,
+				"x": [0, 0.5],
+				"y": [0, 0.5],
+				"scale": 0.72,
+				"angle": 0,
+				"name": "神马超/马到功成/daiji2",
+				"version": "3.6",
+				"action": "play",
+				"shizhounian": true,
+				"daijiteshu": "play2",
+				"daijishan": "play3",
+				"beijing": {
+					"x": [0, 0.5],
+					"y": [0, 0.5],
+					"scale": 0.4,
+					"name": "神马超/马到功成/beijing",
+					"version": "3.6",
+					"action": "play"
 				},
+				"gongji": {
+					"scale": 0.7,
+					"name": "神马超/马到功成/chuchang2",
+					"version": "3.6",
+					"action": "gongji",
+					"showTime": 1.566667,
+					"speed": 1
+				},
+				"teshu": {
+					"scale": 0.7,
+					"name": "神马超/马到功成/chuchang2",
+					"version": "3.6",
+					"action": "jineng"
+				},
+				"chuchang": {
+					"scale": 0.6,
+					"name": "神马超/马到功成/chuchang",
+					"version": "3.6",
+					"action": "play"
+				},
+				"zhishixian": {
+					"scale": 0.5,
+					"name": "神马超/马到功成/shouji2",
+					"version": "3.6",
+					"action": "play",
+					"speed": 1,
+					"delay": 0.297872,
+					"factor": 0.1,
+					"effect": {
+						"scale": 0.65,
+						"name": "神马超/马到功成/shouji",
+						"version": "3.6",
+						"action": "play",
+						"speed": 1,
+						"delay": 0.1
+					}
+				}
 			},
-		},
 	},
 	shen_pangtong: {
 		//神庞统
@@ -34961,6 +35079,64 @@ export const dynamicSkinConfig = {
 				y: [0, 0.5],
 			},
 		},
+
+		// 原生手机 6164201，Spine 3.6.38；攻击 shouji=0.400000s/1.500000s，线 baodian=0.066667s/0.666667s。 坐标/缩放为同源预览基准，待实局校准。
+		"情澜拾珠": {
+				"name": "司马师/情澜拾珠/daiji2",
+				"version": "3.6",
+				"action": "play",
+				"scale": 0.7,
+				"x": [0, 0.5],
+				"y": [0, 0.5],
+				"shizhounian": true,
+				"daijiteshu": "play2",
+				"daijishan": "play3",
+				"beijing": {
+					"name": "司马师/情澜拾珠/beijing",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.7,
+					"x": [0, 0.5],
+					"y": [0, 0.5]
+				},
+				"gongji": {
+					"name": "司马师/情澜拾珠/chuchang2",
+					"version": "3.6",
+					"action": "gongji",
+					"scale": 0.6,
+					"showTime": 1.5,
+					"speed": 1
+				},
+				"teshu": {
+					"name": "司马师/情澜拾珠/chuchang2",
+					"version": "3.6",
+					"action": "jineng",
+					"scale": 0.6
+				},
+				"chuchang": {
+					"name": "司马师/情澜拾珠/chuchang",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.6
+				},
+				"zhishixian": {
+					"name": "司马师/情澜拾珠/shouji2",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.5,
+					"speed": 1,
+					"delay": 0.266667,
+					"factor": 0.1,
+					"effect": {
+						"name": "司马师/情澜拾珠/shouji",
+						"version": "3.6",
+						"action": "play",
+						"scale": 0.5,
+						"speed": 1,
+						"delay": 0.1
+					}
+				}
+			},
 	},
 	simayi: {
 		//司马懿
@@ -43877,6 +44053,64 @@ export const dynamicSkinConfig = {
 				scale: 0.7,
 			},
 		},
+
+		// 原生手机 6150501，Spine 3.6.38；攻击 shouji=0.433333s/1.833333s，线 baodian=0.066667s/0.666667s。 坐标/缩放为同源预览基准，待实局校准。
+		"情澜拾珠": {
+				"name": "夏侯徽/情澜拾珠/daiji2",
+				"version": "3.6",
+				"action": "play",
+				"scale": 0.7,
+				"x": [0, 0.5],
+				"y": [0, 0.5],
+				"shizhounian": true,
+				"daijiteshu": "play2",
+				"daijishan": "play3",
+				"beijing": {
+					"name": "夏侯徽/情澜拾珠/beijing",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.7,
+					"x": [0, 0.5],
+					"y": [0, 0.5]
+				},
+				"gongji": {
+					"name": "夏侯徽/情澜拾珠/chuchang2",
+					"version": "3.6",
+					"action": "gongji",
+					"scale": 0.6,
+					"showTime": 1.833333,
+					"speed": 1
+				},
+				"teshu": {
+					"name": "夏侯徽/情澜拾珠/chuchang2",
+					"version": "3.6",
+					"action": "jineng",
+					"scale": 0.6
+				},
+				"chuchang": {
+					"name": "夏侯徽/情澜拾珠/chuchang",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.6
+				},
+				"zhishixian": {
+					"name": "夏侯徽/情澜拾珠/shouji2",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.5,
+					"speed": 1,
+					"delay": 0.236364,
+					"factor": 0.1,
+					"effect": {
+						"name": "夏侯徽/情澜拾珠/shouji",
+						"version": "3.6",
+						"action": "play",
+						"scale": 0.5,
+						"speed": 1,
+						"delay": 0.1
+					}
+				}
+			},
 	},
 	xiahoushi: {
 		//夏侯氏
@@ -62370,21 +62604,25 @@ export const dynamicSkinConfig = {
 		},
 	},
 	v_caozhang: {
-		// 手机原皮场景 154，原生 Spine 3.6.38；只提供 play/play2 展示动作。
+		// 手机原皮场景 154，原生 Spine 3.6.38；play 待机，play2 用于攻击出框。
 		// 人物与背景同原点；按 130×175.5 卡框预览对齐原皮裁图。
 		经典形象: {
 			name: "威曹彰/经典形象/zhujiemian_weicaozhang1",
 			version: "3.6",
 			action: "play",
-			x: [0, 1.05],
-			y: [0, -0.1],
+			gongji: {
+				action: "play2",
+				scale: 0.5,
+			},
+			x: [0, 0.75],
+			y: [0, 0],
 			scale: 0.7,
 			beijing: {
 				name: "威曹彰/经典形象/zhujiemian_weicaozhang2",
 				version: "3.6",
 				action: "play",
-				x: [0, 1.05],
-				y: [0, -0.1],
+				x: [0, 0.75],
+				y: [0, 0],
 				scale: 0.7,
 			},
 		},
@@ -66252,6 +66490,64 @@ export const dynamicSkinConfig = {
 				scale: 0.4,
 			},
 		},
+
+		// 原生手机 6133701，Spine 3.6.38；攻击 shouji=0.433333s/1.333333s，线 baodian=0.066667s/0.666667s。 坐标/缩放为同源预览基准，待实局校准。
+		"姝丽风华": {
+				"name": "乐邹氏/姝丽风华/daiji2",
+				"version": "3.6",
+				"action": "play",
+				"scale": 0.7,
+				"x": [0, 0.5],
+				"y": [0, 0.5],
+				"shizhounian": true,
+				"daijiteshu": "play2",
+				"daijishan": "play3",
+				"beijing": {
+					"name": "乐邹氏/姝丽风华/beijing",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.7,
+					"x": [0, 0.5],
+					"y": [0, 0.5]
+				},
+				"gongji": {
+					"name": "乐邹氏/姝丽风华/chuchang2",
+					"version": "3.6",
+					"action": "gongji",
+					"scale": 0.6,
+					"showTime": 1.333333,
+					"speed": 1
+				},
+				"teshu": {
+					"name": "乐邹氏/姝丽风华/chuchang2",
+					"version": "3.6",
+					"action": "jineng",
+					"scale": 0.6
+				},
+				"chuchang": {
+					"name": "乐邹氏/姝丽风华/chuchang",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.6
+				},
+				"zhishixian": {
+					"name": "乐邹氏/姝丽风华/shouji2",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.5,
+					"speed": 1,
+					"delay": 0.325,
+					"factor": 0.1,
+					"effect": {
+						"name": "乐邹氏/姝丽风华/shouji",
+						"version": "3.6",
+						"action": "play",
+						"scale": 0.5,
+						"speed": 1,
+						"delay": 0.1
+					}
+				}
+			},
 	},
 	yue_zhugeguo: {
 		//乐诸葛果
@@ -66674,92 +66970,120 @@ export const dynamicSkinConfig = {
 			},
 		},
 		暖风恋心: {
-			name: "乐大乔/暖风恋心/daiji2",
-			daijiteshu: "play2",
-			daijishan: "play3",
-			x: [0, 0.5],
-			y: [0, 0.5],
-			scale: 0.72,
-			shizhounian: true,
-			chuchang: {
-				name: "乐大乔/暖风恋心/chuchang",
-				action: "play",
-				scale: 0.6,
-			},
-			gongji: {
-				name: "乐大乔/暖风恋心/chuchang2",
-				action: "gongji",
-				scale: 0.6,
-			},
-			teshu: {
-				name: "乐大乔/暖风恋心/chuchang2",
-				action: "jineng",
-				scale: 0.6,
-			},
-			beijing: {
-				name: "乐大乔/暖风恋心/beijing",
-				x: [0, 0.5],
-				y: [0, 0.5],
-				scale: 0.4,
-			},
-			zhishixian: {
-				name: "乐大乔/暖风恋心/shouji2",
-				scale: 0.5,
-				speed: 0.9,
-				delay: 0.3,
-				effect: {
-					name: "乐大乔/暖风恋心/shouji",
-					scale: 0.5,
-					speed: 0.9,
-					delay: 0.2,
+				"x": [0, 0.5],
+				"y": [0, 0.5],
+				"scale": 0.72,
+				"name": "乐大乔/暖风恋心/daiji2",
+				"version": "3.6",
+				"action": "play",
+				"shizhounian": true,
+				"daijiteshu": "play2",
+				"daijishan": "play3",
+				"beijing": {
+					"x": [0, 0.5],
+					"y": [0, 0.5],
+					"scale": 0.4,
+					"name": "乐大乔/暖风恋心/beijing",
+					"version": "3.6",
+					"action": "play"
 				},
+				"gongji": {
+					"scale": 0.6,
+					"name": "乐大乔/暖风恋心/chuchang2",
+					"version": "3.6",
+					"action": "gongji",
+					"showTime": 1.8,
+					"speed": 1
+				},
+				"teshu": {
+					"scale": 0.6,
+					"name": "乐大乔/暖风恋心/chuchang2",
+					"version": "3.6",
+					"action": "jineng"
+				},
+				"chuchang": {
+					"scale": 0.6,
+					"name": "乐大乔/暖风恋心/chuchang",
+					"version": "3.6",
+					"action": "play"
+				},
+				"zhishixian": {
+					"scale": 0.5,
+					"name": "乐大乔/暖风恋心/shouji2",
+					"version": "3.6",
+					"action": "play",
+					"speed": 1,
+					"delay": 0.222222,
+					"factor": 0.1,
+					"effect": {
+						"scale": 0.5,
+						"name": "乐大乔/暖风恋心/shouji",
+						"version": "3.6",
+						"action": "play",
+						"speed": 1,
+						"delay": 0.1
+					}
+				}
 			},
-		},
 	},
 	yue_xiaoqiao: {
 		//乐小乔
 		暖风恋心: {
-			name: "乐小乔/暖风恋心/daiji2",
-			daijiteshu: "play2",
-			daijishan: "play3",
-			x: [0, 0.5],
-			y: [0, 0.5],
-			scale: 0.8,
-			shizhounian: true,
-			chuchang: {
-				name: "乐小乔/暖风恋心/chuchang",
-				action: "play",
-				scale: 0.6,
-			},
-			gongji: {
-				name: "乐小乔/暖风恋心/chuchang2",
-				action: "gongji",
-				scale: 0.6,
-			},
-			teshu: {
-				name: "乐小乔/暖风恋心/chuchang2",
-				action: "jineng",
-				scale: 0.6,
-			},
-			beijing: {
-				name: "乐小乔/暖风恋心/beijing",
-				x: [0, 0.5],
-				y: [0, 0.5],
-				scale: 0.4,
-			},
-			zhishixian: {
-				name: "乐小乔/暖风恋心/shouji2",
-				scale: 0.5,
-				speed: 0.9,
-				delay: 0.3,
-				effect: {
-					name: "乐小乔/暖风恋心/shouji",
-					scale: 0.5,
-					speed: 0.9,
-					delay: 0.2,
+				"x": [0, 0.5],
+				"y": [0, 0.5],
+				"scale": 0.8,
+				"name": "乐小乔/暖风恋心/daiji2",
+				"version": "3.6",
+				"action": "play",
+				"shizhounian": true,
+				"daijiteshu": "play2",
+				"daijishan": "play3",
+				"beijing": {
+					"x": [0, 0.5],
+					"y": [0, 0.5],
+					"scale": 0.4,
+					"name": "乐小乔/暖风恋心/beijing",
+					"version": "3.6",
+					"action": "play"
 				},
+				"gongji": {
+					"scale": 0.6,
+					"name": "乐小乔/暖风恋心/chuchang2",
+					"version": "3.6",
+					"action": "gongji",
+					"showTime": 1.5,
+					"speed": 1
+				},
+				"teshu": {
+					"scale": 0.6,
+					"name": "乐小乔/暖风恋心/chuchang2",
+					"version": "3.6",
+					"action": "jineng"
+				},
+				"chuchang": {
+					"scale": 0.6,
+					"name": "乐小乔/暖风恋心/chuchang",
+					"version": "3.6",
+					"action": "play"
+				},
+				"zhishixian": {
+					"scale": 0.5,
+					"name": "乐小乔/暖风恋心/shouji2",
+					"version": "3.6",
+					"action": "play",
+					"speed": 1,
+					"delay": 0.466667,
+					"factor": 0.1,
+					"effect": {
+						"scale": 0.5,
+						"name": "乐小乔/暖风恋心/shouji",
+						"version": "3.6",
+						"action": "play",
+						"speed": 1,
+						"delay": 0.1
+					}
+				}
 			},
-		},
 	},
 	shen_zhenji: {
 		//神甄姬
@@ -67826,6 +68150,64 @@ export const dynamicSkinConfig = {
 				alpha: false,
 			},
 		},
+
+		// 原生手机 6123801，Spine 3.6.38；攻击 shouji=0.500000s/1.466667s，线 baodian=0.066667s/0.666667s。 坐标/缩放为同源预览基准，待实局校准。
+		"春宵彩翼": {
+				"name": "任婉/春宵彩翼/daiji2",
+				"version": "3.6",
+				"action": "play",
+				"scale": 0.7,
+				"x": [0, 0.5],
+				"y": [0, 0.5],
+				"shizhounian": true,
+				"daijiteshu": "play2",
+				"daijishan": "play3",
+				"beijing": {
+					"name": "任婉/春宵彩翼/beijing",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.7,
+					"x": [0, 0.5],
+					"y": [0, 0.5]
+				},
+				"gongji": {
+					"name": "任婉/春宵彩翼/chuchang2",
+					"version": "3.6",
+					"action": "gongji",
+					"scale": 0.6,
+					"showTime": 1.466667,
+					"speed": 1
+				},
+				"teshu": {
+					"name": "任婉/春宵彩翼/chuchang2",
+					"version": "3.6",
+					"action": "jineng",
+					"scale": 0.6
+				},
+				"chuchang": {
+					"name": "任婉/春宵彩翼/chuchang",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.6
+				},
+				"zhishixian": {
+					"name": "任婉/春宵彩翼/shouji2",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.5,
+					"speed": 1,
+					"delay": 0.340909,
+					"factor": 0.1,
+					"effect": {
+						"name": "任婉/春宵彩翼/shouji",
+						"version": "3.6",
+						"action": "play",
+						"scale": 0.5,
+						"speed": 1,
+						"delay": 0.1
+					}
+				}
+			},
 	},
 	zhangzhongjing: {
 		//张仲景
@@ -70438,6 +70820,64 @@ export const dynamicSkinConfig = {
 				},
 			},
 		},
+
+		// 原生手机 6109101，Spine 3.6.38；攻击 shouji=0.366667s/1.333333s，线 baodian=0.066667s/0.666667s。 坐标/缩放为同源预览基准，待实局校准。
+		"虎贲冠勇": {
+				"name": "王昶/虎贲冠勇/daiji2",
+				"version": "3.6",
+				"action": "play",
+				"scale": 0.7,
+				"x": [0, 0.5],
+				"y": [0, 0.5],
+				"shizhounian": true,
+				"daijiteshu": "play2",
+				"daijishan": "play3",
+				"beijing": {
+					"name": "王昶/虎贲冠勇/beijing",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.7,
+					"x": [0, 0.5],
+					"y": [0, 0.5]
+				},
+				"gongji": {
+					"name": "王昶/虎贲冠勇/chuchang2",
+					"version": "3.6",
+					"action": "gongji",
+					"scale": 0.6,
+					"showTime": 1.333333,
+					"speed": 1
+				},
+				"teshu": {
+					"name": "王昶/虎贲冠勇/chuchang2",
+					"version": "3.6",
+					"action": "jineng",
+					"scale": 0.6
+				},
+				"chuchang": {
+					"name": "王昶/虎贲冠勇/chuchang",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.6
+				},
+				"zhishixian": {
+					"name": "王昶/虎贲冠勇/shouji2",
+					"version": "3.6",
+					"action": "play",
+					"scale": 0.5,
+					"speed": 1,
+					"delay": 0.275,
+					"factor": 0.1,
+					"effect": {
+						"name": "王昶/虎贲冠勇/shouji",
+						"version": "3.6",
+						"action": "play",
+						"scale": 0.5,
+						"speed": 1,
+						"delay": 0.1
+					}
+				}
+			},
 	},
 	xia_xiahousone: {
 		//夏侯子萼
@@ -70678,51 +71118,61 @@ export const dynamicSkinConfig = {
 	tianshangyi: {
 		//田尚衣
 		姝丽风华: {
-			name: "田尚衣/姝丽风华/daiji2",
-			daijiteshu: "play2",
-			daijishan: "play3",
-			x: [0, 0.5],
-			y: [0, 0.5],
-			scale: 0.72,
-			//speed: 1,
-			shizhounian: true,
-			chuchang: {
-				name: "田尚衣/姝丽风华/chuchang",
-				action: "play",
-				scale: 0.7,
-			},
-			gongji: {
-				name: "田尚衣/姝丽风华/chuchang2",
-				action: ["gongji", "jineng"],
-				scale: 0.7,
-			},
-			teshu: {
-				name: "田尚衣/姝丽风华/chuchang2",
-				action: "jineng",
-				scale: 0.7,
-			},
-			audio: {
-				skill: "田尚衣/姝丽风华/audio",
-			},
-			beijing: {
-				name: "田尚衣/姝丽风华/beijing",
-				x: [0, 0.5],
-				y: [0, 0.5],
-				scale: 0.4,
-			},
-			zhishixian: {
-				name: "田尚衣/姝丽风华/shouji2",
-				scale: 0.7,
-				speed: 0.8,
-				delay: 0.3,
-				effect: {
-					name: "田尚衣/姝丽风华/shouji",
-					scale: 0.65,
-					speed: 0.6,
-					delay: 0.4,
+				"x": [0, 0.5],
+				"y": [0, 0.5],
+				"scale": 0.72,
+				"name": "田尚衣/姝丽风华/daiji2",
+				"version": "3.6",
+				"action": "play",
+				"shizhounian": true,
+				"daijiteshu": "play2",
+				"daijishan": "play3",
+				"beijing": {
+					"x": [0, 0.5],
+					"y": [0, 0.5],
+					"scale": 0.4,
+					"name": "田尚衣/姝丽风华/beijing",
+					"version": "3.6",
+					"action": "play"
 				},
+				"gongji": {
+					"scale": 0.7,
+					"name": "田尚衣/姝丽风华/chuchang2",
+					"version": "3.6",
+					"action": "gongji",
+					"showTime": 1.333333,
+					"speed": 1
+				},
+				"teshu": {
+					"scale": 0.7,
+					"name": "田尚衣/姝丽风华/chuchang2",
+					"version": "3.6",
+					"action": "jineng"
+				},
+				"chuchang": {
+					"scale": 0.7,
+					"name": "田尚衣/姝丽风华/chuchang",
+					"version": "3.6",
+					"action": "play"
+				},
+				"zhishixian": {
+					"scale": 0.7,
+					"name": "田尚衣/姝丽风华/shouji2",
+					"version": "3.6",
+					"action": "play",
+					"speed": 1,
+					"delay": 0.4,
+					"factor": 0.1,
+					"effect": {
+						"scale": 0.65,
+						"name": "田尚衣/姝丽风华/shouji",
+						"version": "3.6",
+						"action": "play",
+						"speed": 1,
+						"delay": 0.1
+					}
+				}
 			},
-		},
 	},
 	tw_niufudongxie: {
 		//牛辅董翓
@@ -70964,49 +71414,62 @@ export const dynamicSkinConfig = {
 			},
 		},
 		马到功成: {
-			name: "神黄忠/马到功成/daiji2",
-			daijiteshu: "play2",
-			daijishan: "play3",
-			x: [0, 0.6],
-			y: [0, 0.5],
-			scale: 0.72,
-			angle: 0,
-			//speed: 1,
-			shizhounian: true,
-			chuchang: {
-				name: "神黄忠/马到功成/chuchang",
-				action: "play",
-				scale: 0.6,
-			},
-			gongji: {
-				name: "神黄忠/马到功成/chuchang2",
-				action: "gongji",
-				scale: 0.7,
-			},
-			teshu: {
-				name: "神黄忠/马到功成/chuchang2",
-				action: "jineng",
-				scale: 0.7,
-			},
-			beijing: {
-				name: "神黄忠/马到功成/beijing",
-				x: [0, 0.5],
-				y: [0, 0.5],
-				scale: 0.4,
-			},
-			zhishixian: {
-				name: "神黄忠/马到功成/shouji2", //指示线
-				scale: 0.5,
-				speed: 0.8,
-				delay: 0.4,
-				effect: {
-					name: "神黄忠/马到功成/shouji",
-					scale: 0.65,
-					speed: 0.6,
-					delay: 0.45,
+				"x": [0, 0.6],
+				"y": [0, 0.5],
+				"scale": 0.72,
+				"angle": 0,
+				"name": "神黄忠/马到功成/daiji2",
+				"version": "3.6",
+				"action": "play",
+				"shizhounian": true,
+				"daijiteshu": "play2",
+				"daijishan": "play3",
+				"beijing": {
+					"x": [0, 0.5],
+					"y": [0, 0.5],
+					"scale": 0.4,
+					"name": "神黄忠/马到功成/beijing",
+					"version": "3.6",
+					"action": "play"
 				},
+				"gongji": {
+					"scale": 0.7,
+					"name": "神黄忠/马到功成/chuchang2",
+					"version": "3.6",
+					"action": "gongji",
+					"showTime": 1.266667,
+					"speed": 1
+				},
+				"teshu": {
+					"scale": 0.7,
+					"name": "神黄忠/马到功成/chuchang2",
+					"version": "3.6",
+					"action": "jineng"
+				},
+				"chuchang": {
+					"scale": 0.6,
+					"name": "神黄忠/马到功成/chuchang",
+					"version": "3.6",
+					"action": "play"
+				},
+				"zhishixian": {
+					"scale": 0.5,
+					"name": "神黄忠/马到功成/shouji2",
+					"version": "3.6",
+					"action": "play",
+					"speed": 1,
+					"delay": 0.473684,
+					"factor": 0.1,
+					"effect": {
+						"scale": 0.65,
+						"name": "神黄忠/马到功成/shouji",
+						"version": "3.6",
+						"action": "play",
+						"speed": 1,
+						"delay": 0.1
+					}
+				}
 			},
-		},
 	},
 	gaoshun: {
 		//高顺

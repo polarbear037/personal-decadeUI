@@ -1,0 +1,86 @@
+{
+  "style": "othersOff",
+  "configuredStyle": "othersOff",
+  "duiStyle": "othersOff",
+  "cardScale": 0.944775,
+  "clientWidth": 108,
+  "outerWidth": 109,
+  "previousRule": "clientWidth * cardScale * 128 / 126",
+  "currentRule": "clientWidth * cardScale",
+  "cardSizesUnchanged": true,
+  "activeCardLayer": "lei-yijiang-card-face",
+  "wrapper": "雷的ol handCardRuler",
+  "cards": [
+    {
+      "name": "sha",
+      "beforeX": 128.0047613779704,
+      "afterX": 128.0047613779704,
+      "leftShift": 0,
+      "width": 103.05429013570152,
+      "height": 142.7391510009766,
+      "beforeTx": 48,
+      "afterTx": 48
+    },
+    {
+      "name": "sha",
+      "beforeX": 232.00475311279303,
+      "afterX": 231.00476582845056,
+      "leftShift": 0.9999872843424669,
+      "width": 103.0542653401693,
+      "height": 142.7391510009766,
+      "beforeTx": 152,
+      "afterTx": 151
+    },
+    {
+      "name": "qilin",
+      "beforeX": 336.004753112793,
+      "afterX": 333.004758199056,
+      "leftShift": 2.999994913736998,
+      "width": 103.05429840087892,
+      "height": 142.7391510009766,
+      "beforeTx": 256,
+      "afterTx": 253
+    },
+    {
+      "name": "baiyin",
+      "beforeX": 439.0047658284506,
+      "afterX": 435.00478363037115,
+      "leftShift": 3.999982198079465,
+      "width": 103.05429840087892,
+      "height": 142.7391510009766,
+      "beforeTx": 359,
+      "afterTx": 355
+    },
+    {
+      "name": "sha",
+      "beforeX": 543.0047658284507,
+      "afterX": 537.0047760009767,
+      "leftShift": 5.999989827473996,
+      "width": 103.0542653401693,
+      "height": 142.7391510009766,
+      "beforeTx": 463,
+      "afterTx": 457
+    },
+    {
+      "name": "dilu",
+      "beforeX": 647.0047658284507,
+      "afterX": 639.0047353108725,
+      "leftShift": 8.000030517578125,
+      "width": 103.0542653401693,
+      "height": 142.7391510009766,
+      "beforeTx": 567,
+      "afterTx": 559
+    },
+    {
+      "name": "sha",
+      "beforeX": 750.0047454833986,
+      "afterX": 741.0047607421876,
+      "leftShift": 8.999984741210938,
+      "width": 103.0542653401693,
+      "height": 142.7391510009766,
+      "beforeTx": 670,
+      "afterTx": 661
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,20 @@
+{
+  "result": {
+    "cold": {
+      "delay": 450,
+      "finishedAfterVisible": 862.5999999940395
+    },
+    "targetRemoved": true,
+    "sourceRemoved": true,
+    "styleChange": true,
+    "animationCancel": true,
+    "gameOver": true,
+    "noBorrow": true,
+    "zoom": {
+      "zoom": 1.5,
+      "error": 0.0004657820168858263
+    },
+    "pending": 0
+  },
+  "errors": []
+}

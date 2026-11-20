@@ -1,0 +1,909 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "game_member": "assets/res/lib/game.zip",
+    "decoded_game_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28"
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_587eee0cd61874d39939f356205cbe0c89e572f379ed157b8a88242b54d63070"
+  ],
+  "modules": [
+    {
+      "member": "app.view.game.GameSeatInfoDlgYjcm",
+      "sha256": "ddac11933fce90351659609437fc6dd505dfaed46cc4e61af8b6a7c0a0b1921f"
+    },
+    {
+      "member": "app.view.game.GameSeatInfoDlgNew",
+      "sha256": "817bed382dfefaf8cadd27242ed9b8d84e0102176ebe7b9aa8bd148fb5d697c6"
+    },
+    {
+      "member": "app.view.game.select.GeneralCardCcbNode",
+      "sha256": "b9a4732e1748d1138cfe90e17d67cf8eb84d994d929926e36b0b5cd608d57db5"
+    },
+    {
+      "member": "app.view.general.GeneralYjcmCountryContainer",
+      "sha256": "d824a5113a882158e9ed580428bb2688186aa454697fb94cfe7469404a81c40b"
+    },
+    {
+      "member": "app.view.general.GeneralYjcmHpContainer",
+      "sha256": "bab286b955ef2c3f47b6a67b303ce9b2d5e7e8b6d965596388185968fad5ce00"
+    },
+    {
+      "member": "app.ui.button.NewSwitchBtnGrop",
+      "sha256": "e6041c52bae5f4d9c8b4e4c8d8d0df533143f8ae1147df1b78c03f971d6f26c3"
+    },
+    {
+      "member": "framework.cocos2dx.SpriteEx",
+      "sha256": "d3f1a2fd302b3a14f7ce1eea8f9ce3968d55975896559f0fcd7821f08f3362f6"
+    },
+    {
+      "member": "app.enum.EnumCfg",
+      "sha256": "3b8a89ae49754003f6b04766f99ea67fcc9fbb1dab0c0b805ff7cc5bb5f62786"
+    }
+  ],
+  "assets": [
+    {
+      "member": "assets/res/new/tex/plist/game_player_info.plist",
+      "plist_sha256": "af8ecacaa8bc450ab8422e9ccffcb583841637e7ebd4eb25ca6a91a71287d36a",
+      "texture_sha256": "deed99848dd35b5f5372dffc67fe2fe1719269967f75fb372d4f4c26c04315b4",
+      "alpha_sha256": "648560052af7f6d17c7aeaf4a1b6e4ec56a14a3d1674c407565834de81b77480",
+      "frame": "game_playerinfo_new_empty.png",
+      "metadata": {
+        "frame": "{{622,2},{164,235}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{164,235}}",
+        "sourceSize": "{164,235}"
+      },
+      "destination": "ui/assets/character/xinsha/official/game_playerinfo_new_empty.png",
+      "sha256": "94b3d3b523ae029cebbb3ecb26a4b81e3be8fe452a74e653895b8aa87c698153",
+      "size": [
+        164,
+        235
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/game_player_info.plist",
+      "plist_sha256": "af8ecacaa8bc450ab8422e9ccffcb583841637e7ebd4eb25ca6a91a71287d36a",
+      "texture_sha256": "deed99848dd35b5f5372dffc67fe2fe1719269967f75fb372d4f4c26c04315b4",
+      "alpha_sha256": "648560052af7f6d17c7aeaf4a1b6e4ec56a14a3d1674c407565834de81b77480",
+      "frame": "game_playerinfonew_bg.png",
+      "metadata": {
+        "frame": "{{2,2},{189,228}}",
+        "offset": "{-1,1}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{189,228}}",
+        "sourceSize": "{191,230}"
+      },
+      "destination": "ui/assets/character/xinsha/official/game_playerinfonew_bg.png",
+      "sha256": "5e22345521c81ed56600be444a66fbcaafa039fd8cf4839226a4cdd944db50ce",
+      "size": [
+        191,
+        230
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/game_player_info.plist",
+      "plist_sha256": "af8ecacaa8bc450ab8422e9ccffcb583841637e7ebd4eb25ca6a91a71287d36a",
+      "texture_sha256": "deed99848dd35b5f5372dffc67fe2fe1719269967f75fb372d4f4c26c04315b4",
+      "alpha_sha256": "648560052af7f6d17c7aeaf4a1b6e4ec56a14a3d1674c407565834de81b77480",
+      "frame": "game_playerinfonew_btnbar_yjcm.png",
+      "metadata": {
+        "frame": "{{193,104},{360,101}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{360,101}}",
+        "sourceSize": "{360,101}"
+      },
+      "destination": "ui/assets/character/xinsha/official/game_playerinfonew_btnbar_yjcm.png",
+      "sha256": "571642241b14d45375023a212ab455c67736e12224c51dfded91076508bcd488",
+      "size": [
+        360,
+        101
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/game_player_info.plist",
+      "plist_sha256": "af8ecacaa8bc450ab8422e9ccffcb583841637e7ebd4eb25ca6a91a71287d36a",
+      "texture_sha256": "deed99848dd35b5f5372dffc67fe2fe1719269967f75fb372d4f4c26c04315b4",
+      "alpha_sha256": "648560052af7f6d17c7aeaf4a1b6e4ec56a14a3d1674c407565834de81b77480",
+      "frame": "game_playerinfonew_btnclose.png",
+      "metadata": {
+        "frame": "{{999,194},{53,53}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{53,53}}",
+        "sourceSize": "{53,53}"
+      },
+      "destination": "ui/assets/character/xinsha/official/game_playerinfonew_btnclose.png",
+      "sha256": "390aee1d915f270f691b67e9b15f2b34d27c20f210fe8a39ac0016ba2c6604ea",
+      "size": [
+        53,
+        53
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/game_player_info.plist",
+      "plist_sha256": "af8ecacaa8bc450ab8422e9ccffcb583841637e7ebd4eb25ca6a91a71287d36a",
+      "texture_sha256": "deed99848dd35b5f5372dffc67fe2fe1719269967f75fb372d4f4c26c04315b4",
+      "alpha_sha256": "648560052af7f6d17c7aeaf4a1b6e4ec56a14a3d1674c407565834de81b77480",
+      "frame": "game_playerinfonew_change_skin.png",
+      "metadata": {
+        "frame": "{{989,123},{46,46}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{1,1},{46,46}}",
+        "sourceSize": "{48,48}"
+      },
+      "destination": "ui/assets/character/xinsha/official/game_playerinfonew_change_skin.png",
+      "sha256": "ba1132a175ee2e2d1687ecf3545b2c4937cf514dc584279115c73933168b5ded",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/game_player_info.plist",
+      "plist_sha256": "af8ecacaa8bc450ab8422e9ccffcb583841637e7ebd4eb25ca6a91a71287d36a",
+      "texture_sha256": "deed99848dd35b5f5372dffc67fe2fe1719269967f75fb372d4f4c26c04315b4",
+      "alpha_sha256": "648560052af7f6d17c7aeaf4a1b6e4ec56a14a3d1674c407565834de81b77480",
+      "frame": "game_playerinfonew_detail.png",
+      "metadata": {
+        "frame": "{{941,123},{46,46}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{1,1},{46,46}}",
+        "sourceSize": "{48,48}"
+      },
+      "destination": "ui/assets/character/xinsha/official/game_playerinfonew_detail.png",
+      "sha256": "97ea0ec11ab20f820f36c704823d2e4ccf7a4d9231cb18427a780d572ed11d50",
+      "size": [
+        48,
+        48
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/game_player_info.plist",
+      "plist_sha256": "af8ecacaa8bc450ab8422e9ccffcb583841637e7ebd4eb25ca6a91a71287d36a",
+      "texture_sha256": "deed99848dd35b5f5372dffc67fe2fe1719269967f75fb372d4f4c26c04315b4",
+      "alpha_sha256": "648560052af7f6d17c7aeaf4a1b6e4ec56a14a3d1674c407565834de81b77480",
+      "frame": "game_playerinfonew_empty_equip_tip_bg.png",
+      "metadata": {
+        "frame": "{{193,207},{349,42}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{349,42}}",
+        "sourceSize": "{349,42}"
+      },
+      "destination": "ui/assets/character/xinsha/official/game_playerinfonew_empty_equip_tip_bg.png",
+      "sha256": "d54aea249058458942476f9025f00ce5a7e8ad6e55812500d3408e47b845c6e3",
+      "size": [
+        349,
+        42
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/game_player_info.plist",
+      "plist_sha256": "af8ecacaa8bc450ab8422e9ccffcb583841637e7ebd4eb25ca6a91a71287d36a",
+      "texture_sha256": "deed99848dd35b5f5372dffc67fe2fe1719269967f75fb372d4f4c26c04315b4",
+      "alpha_sha256": "648560052af7f6d17c7aeaf4a1b6e4ec56a14a3d1674c407565834de81b77480",
+      "frame": "game_playerinfonew_general_change.png",
+      "metadata": {
+        "frame": "{{1127,162},{85,41}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{1,1},{85,41}}",
+        "sourceSize": "{87,43}"
+      },
+      "destination": "ui/assets/character/xinsha/official/game_playerinfonew_general_change.png",
+      "sha256": "f47dc145b44d797e7b0db845a959892dcbec579a067dfb07e3ba72c284bbc631",
+      "size": [
+        87,
+        43
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/game_player_info.plist",
+      "plist_sha256": "af8ecacaa8bc450ab8422e9ccffcb583841637e7ebd4eb25ca6a91a71287d36a",
+      "texture_sha256": "deed99848dd35b5f5372dffc67fe2fe1719269967f75fb372d4f4c26c04315b4",
+      "alpha_sha256": "648560052af7f6d17c7aeaf4a1b6e4ec56a14a3d1674c407565834de81b77480",
+      "frame": "game_playerinfonew_general_change_bg.png",
+      "metadata": {
+        "frame": "{{1127,2},{158,41}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{1,1},{158,41}}",
+        "sourceSize": "{160,43}"
+      },
+      "destination": "ui/assets/character/xinsha/official/game_playerinfonew_general_change_bg.png",
+      "sha256": "a58510e67fa965c51d3f656bf65a1f8ca7a2c957a5faa23b8626aed7ec743f18",
+      "size": [
+        160,
+        43
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/game_player_info.plist",
+      "plist_sha256": "af8ecacaa8bc450ab8422e9ccffcb583841637e7ebd4eb25ca6a91a71287d36a",
+      "texture_sha256": "deed99848dd35b5f5372dffc67fe2fe1719269967f75fb372d4f4c26c04315b4",
+      "alpha_sha256": "648560052af7f6d17c7aeaf4a1b6e4ec56a14a3d1674c407565834de81b77480",
+      "frame": "game_playerinfonew_tabbg.png",
+      "metadata": {
+        "frame": "{{788,194},{52,126}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{52,126}}",
+        "sourceSize": "{52,126}"
+      },
+      "destination": "ui/assets/character/xinsha/official/game_playerinfonew_tabbg.png",
+      "sha256": "f102598932c5361aa96c233ecf534c83e7c40173a1a3d33676afa37887a605e2",
+      "size": [
+        52,
+        126
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/game_player_info.plist",
+      "plist_sha256": "af8ecacaa8bc450ab8422e9ccffcb583841637e7ebd4eb25ca6a91a71287d36a",
+      "texture_sha256": "deed99848dd35b5f5372dffc67fe2fe1719269967f75fb372d4f4c26c04315b4",
+      "alpha_sha256": "648560052af7f6d17c7aeaf4a1b6e4ec56a14a3d1674c407565834de81b77480",
+      "frame": "game_playerinfonew_tabselected.png",
+      "metadata": {
+        "frame": "{{555,104},{52,126}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{52,126}}",
+        "sourceSize": "{52,126}"
+      },
+      "destination": "ui/assets/character/xinsha/official/game_playerinfonew_tabselected.png",
+      "sha256": "5555060598934ff6c659fa16ac308225426dc7434e41ed3bee7be52d412aedc3",
+      "size": [
+        52,
+        126
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/game_player_info.plist",
+      "plist_sha256": "af8ecacaa8bc450ab8422e9ccffcb583841637e7ebd4eb25ca6a91a71287d36a",
+      "texture_sha256": "deed99848dd35b5f5372dffc67fe2fe1719269967f75fb372d4f4c26c04315b4",
+      "alpha_sha256": "648560052af7f6d17c7aeaf4a1b6e4ec56a14a3d1674c407565834de81b77480",
+      "frame": "game_playinfo_split.png",
+      "metadata": {
+        "frame": "{{32,240},{5,24}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{5,24}}",
+        "sourceSize": "{5,24}"
+      },
+      "destination": "ui/assets/character/xinsha/official/game_playinfo_split.png",
+      "sha256": "9d93acaf00c202ca89a24220e724aef356bb3001671a6ef1410401c6fffdf821",
+      "size": [
+        5,
+        24
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/gameinfo.plist",
+      "plist_sha256": "2d23c6a2d9d8254115ce892f1895db16cd6f9fb30e6dd512ab835e8b6c4b7731",
+      "texture_sha256": "6ff05a3dbacc2a1cef5e05b67cc24490133dfffd7b9d3aeac9f3eb06744bc0f5",
+      "alpha_sha256": "91c659e96274aa2d2ea762b78eb94a89fa0cebbdca610e1fe770dc0a55a98be3",
+      "frame": "cardbg.png",
+      "metadata": {
+        "frame": "{{1046,803},{164,236}}",
+        "offset": "{6,-2}",
+        "rotated": true,
+        "sourceColorRect": "{{21,12},{164,236}}",
+        "sourceSize": "{194,256}"
+      },
+      "destination": "ui/assets/character/xinsha/official/cardbg.png",
+      "sha256": "34e538ffc69fffa4c5a5286bf355d284d568b2e74a4a77f85bc5b63dca88aa9f",
+      "size": [
+        194,
+        256
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_1.png",
+      "metadata": {
+        "frame": "{{1767,1244},{50,50}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{50,50}}",
+        "sourceSize": "{50,50}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_1.png",
+      "sha256": "3f8c0944785ff6c26b8593b013c0e98d8fb24e2b9bb613953ba2932e14ede48b",
+      "size": [
+        50,
+        50
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_10.png",
+      "metadata": {
+        "frame": "{{1715,1234},{50,50}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{50,50}}",
+        "sourceSize": "{50,50}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_10.png",
+      "sha256": "48878f188a5da1e08c5c904a14a92248e9ec93107b4820bd7a6b4a48a7aef837",
+      "size": [
+        50,
+        50
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_13.png",
+      "metadata": {
+        "frame": "{{1559,1252},{50,50}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{50,50}}",
+        "sourceSize": "{50,50}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_13.png",
+      "sha256": "5d210af8dc787ce690700773362ddfb37df1c617c9d2131855997772bc4e3372",
+      "size": [
+        50,
+        50
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_2.png",
+      "metadata": {
+        "frame": "{{1455,1260},{50,50}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{50,50}}",
+        "sourceSize": "{50,50}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_2.png",
+      "sha256": "97d5b66c79fc3baff22315463bda047cedccf47163a08fa00f9faa673c2644fb",
+      "size": [
+        50,
+        50
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_20.png",
+      "metadata": {
+        "frame": "{{1455,1208},{50,50}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{50,50}}",
+        "sourceSize": "{50,50}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_20.png",
+      "sha256": "6cc48f04f736f22b1763ff180d0907c6c3a19ebc3156dc54b7010193e178643c",
+      "size": [
+        50,
+        50
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_3.png",
+      "metadata": {
+        "frame": "{{1653,1148},{50,50}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{50,50}}",
+        "sourceSize": "{50,50}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_3.png",
+      "sha256": "b79a8c0dafcc8593fdfa1064c77ada447540ae5b9edc298755301e9db0055ea6",
+      "size": [
+        50,
+        50
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_4.png",
+      "metadata": {
+        "frame": "{{1601,1148},{50,50}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{50,50}}",
+        "sourceSize": "{50,50}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_4.png",
+      "sha256": "10a2a78ec1ba110e10cf139d86c1c5f5d866e079083815153a772c0ecb116d59",
+      "size": [
+        50,
+        50
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_5.png",
+      "metadata": {
+        "frame": "{{1549,1148},{50,50}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{50,50}}",
+        "sourceSize": "{50,50}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_5.png",
+      "sha256": "b7232034122f26cdb1aa26a70ab14baf403a53ba4630ead4022736ba382e87b5",
+      "size": [
+        50,
+        50
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_bg_1.png",
+      "metadata": {
+        "frame": "{{102,680},{41,41}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{41,41}}",
+        "sourceSize": "{41,41}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_bg_1.png",
+      "sha256": "224736685e08f06804538e47319de943b89b18d978fdf3d9ca2ef2fb91b609aa",
+      "size": [
+        41,
+        41
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_bg_10.png",
+      "metadata": {
+        "frame": "{{1915,1327},{40,40}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{40,40}}",
+        "sourceSize": "{40,40}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_bg_10.png",
+      "sha256": "6c4378f22b6cd46da4e64e0148fd60c524db0de9ef6d808a95b38403ceb73905",
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_bg_13.png",
+      "metadata": {
+        "frame": "{{1999,1285},{40,40}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{40,40}}",
+        "sourceSize": "{40,40}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_bg_13.png",
+      "sha256": "8cf5696b54f8ea82f35d26ae24c238a2066bec7a6b67dd1ebd5b99e7bb4eec02",
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_bg_2.png",
+      "metadata": {
+        "frame": "{{1861,1243},{40,41}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{40,41}}",
+        "sourceSize": "{40,41}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_bg_2.png",
+      "sha256": "6e5fb211d28e6641f7b8f99b8792a103bcbf79ccb9c7e0d12dc8f18430be11b3",
+      "size": [
+        40,
+        41
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_bg_20.png",
+      "metadata": {
+        "frame": "{{1705,1295},{40,40}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{40,40}}",
+        "sourceSize": "{40,40}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_bg_20.png",
+      "sha256": "deb23cf42b15d6ee77f1d8dccede8a54fe90476fecc8244a2a22ef4aeb63691c",
+      "size": [
+        40,
+        40
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_bg_3.png",
+      "metadata": {
+        "frame": "{{1819,1244},{40,41}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{40,41}}",
+        "sourceSize": "{40,41}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_bg_3.png",
+      "sha256": "86ebe5483f1ebddf189cdc8d25567bcadc15c942f8a97377a9ee229b4c7ba4fc",
+      "size": [
+        40,
+        41
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_bg_4.png",
+      "metadata": {
+        "frame": "{{1663,1200},{40,41}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{40,41}}",
+        "sourceSize": "{40,41}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_bg_4.png",
+      "sha256": "1c3094df0e10a232b8420501e60b5e057056698c31dfe320ffaac4706dfbd6c0",
+      "size": [
+        40,
+        41
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_country_bg_5.png",
+      "metadata": {
+        "frame": "{{1447,1148},{40,41}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{40,41}}",
+        "sourceSize": "{40,41}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_country_bg_5.png",
+      "sha256": "b656a64696de7432beda794add644ba9927e7b934558565aee55c429ee258226",
+      "size": [
+        40,
+        41
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_gradation_bg_0.png",
+      "metadata": {
+        "frame": "{{1779,778},{32,230}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{32,230}}",
+        "sourceSize": "{32,230}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_gradation_bg_0.png",
+      "sha256": "c6281c2c93cf2f18b1759185071b56550b541138c07fe6eef1cad00291a264a4",
+      "size": [
+        32,
+        230
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_gradation_bg_1.png",
+      "metadata": {
+        "frame": "{{1360,1088},{33,232}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{33,232}}",
+        "sourceSize": "{33,232}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_gradation_bg_1.png",
+      "sha256": "4075e734fa4d203581b8f90273d6b8c4daba4ce7c59b32965dcb238286a548ee",
+      "size": [
+        33,
+        232
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_gradation_bg_10.png",
+      "metadata": {
+        "frame": "{{1325,1064},{33,232}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{33,232}}",
+        "sourceSize": "{33,232}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_gradation_bg_10.png",
+      "sha256": "151116bf99e4924d794fafa661645f2f8567def20f76afe03c3eef3ee8e41132",
+      "size": [
+        33,
+        232
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_gradation_bg_13.png",
+      "metadata": {
+        "frame": "{{1950,1009},{33,232}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{33,232}}",
+        "sourceSize": "{33,232}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_gradation_bg_13.png",
+      "sha256": "c884eeb7a219a85ffb23ce953b6a91e614d916ddcee53c60c55ec191d3cb7bf1",
+      "size": [
+        33,
+        232
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_gradation_bg_2.png",
+      "metadata": {
+        "frame": "{{1705,1000},{33,232}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{33,232}}",
+        "sourceSize": "{33,232}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_gradation_bg_2.png",
+      "sha256": "3f33d7e8ccb0715b6a81978b0a6703e9ad917f305145c24a5a3804e56ce343e2",
+      "size": [
+        33,
+        232
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_gradation_bg_20.png",
+      "metadata": {
+        "frame": "{{1954,775},{33,232}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{33,232}}",
+        "sourceSize": "{33,232}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_gradation_bg_20.png",
+      "sha256": "59059a8b9d0e4911ac73e3efafe22f80e3b5bb4721149d95352725520d517f7c",
+      "size": [
+        33,
+        232
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_gradation_bg_3.png",
+      "metadata": {
+        "frame": "{{1050,1109},{33,232}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{33,232}}",
+        "sourceSize": "{33,232}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_gradation_bg_3.png",
+      "sha256": "afb4f59a1888de52aa7659db3c0cd5c235021cc8772c35e19e53729bf7af3663",
+      "size": [
+        33,
+        232
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_gradation_bg_4.png",
+      "metadata": {
+        "frame": "{{768,1324},{33,232}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{33,232}}",
+        "sourceSize": "{33,232}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_gradation_bg_4.png",
+      "sha256": "37d2fe23a670f08f65c6e9d813e189889296d4276f3446a41fd026dd0b3bc31a",
+      "size": [
+        33,
+        232
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_gradation_bg_5.png",
+      "metadata": {
+        "frame": "{{768,1289},{33,232}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{33,232}}",
+        "sourceSize": "{33,232}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_gradation_bg_5.png",
+      "sha256": "802a297edd54ce5c6fa418a23803239f2dee60269bab75c541a7684bf9a3c5bb",
+      "size": [
+        33,
+        232
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_hp_1.png",
+      "metadata": {
+        "frame": "{{2024,710},{18,20}}",
+        "offset": "{0,0}",
+        "rotated": false,
+        "sourceColorRect": "{{0,0},{18,20}}",
+        "sourceSize": "{18,20}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_hp_1.png",
+      "sha256": "46ef080aa6cb3e3d1bdf24f6c273a3bc2a209819c0bccc7f606d8f219fbab66a",
+      "size": [
+        18,
+        20
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+      "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+      "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17",
+      "frame": "yjcm_general_hp_bg.png",
+      "metadata": {
+        "frame": "{{1822,242},{139,178}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{139,178}}",
+        "sourceSize": "{139,178}"
+      },
+      "destination": "ui/assets/character/xinsha/official/yjcm_general_hp_bg.png",
+      "sha256": "f540f0203b3b858269d12c6032f20b07d8c446de8cebd1273d6dbcc5a8b71e67",
+      "size": [
+        139,
+        178
+      ]
+    },
+    {
+      "member": "assets/res/new/tex/noneetc/skin_clip.png",
+      "destination": "ui/assets/character/xinsha/official/skin_clip.png",
+      "sha256": "992f03746ea6df1ba939f4ebc43dd471feb64ca9e86cb752b4c150407c786e3f",
+      "size": [
+        180,
+        245
+      ]
+    }
+  ],
+  "conversion": "ETC1 color plus alpha red channel; undo atlas rotation and restore sourceSize/offset; no resizing or recoloring",
+  "layout": {
+    "window": "GameSeatInfoDlgYjcm.ctor 1031x460. createChildren background scale9(99,58,20,20); native close LEFT_BOTTOM(W-35,H-35),53x53; split LEFT_BOTTOM(376,24),1x413 => DOM top23. Local close adaptation requested after screenshot feedback: center(996,26.5),box(969.5,0,53,53),inside the frame and above the first tab. This differs deliberately from native close placement.",
+    "footer": "createUserInfo: btnbar_yjcm LEFT_BOTTOM(1,1),360x101. Nickname LEFT_TOP(27,H-7); official rank name_bg occupies(15,30),103x26; native detail(162,20),change-skin(224,20). Noname has no official account rank data: omit the empty rank placeholder and compact the two working buttons to footer LEFT_BOTTOM(15,20) and(77,20),48x48. Nickname and buttons now share the real footer parent. Mini open(player) contract is unchanged.",
+    "tabs": "getTabGroupPos=(387,H). showSpellDetailView624x0; group LEFT_TOP(578,-53),tabs52x126,gap4 => DOM left965,top53; second top183.",
+    "skills": "createSpellView:549x378 pane at LEFT_TOP(0,-21) relative to spellDetailView; list559x378. Skill item name87x41,font32 FZSHENGSKSJW color252,244,188; text maxWidth538,font24 fzbw,color255,240,213,lineSpace3; description left6,top56; item gap20.",
+    "card": "createSkin view326x354 LEFT_BOTTOM(12,100); setSkinId GeneralCardCcbNode190x252 scale1.1 center(view.width/2+12,view.height/2), giving DOM left82.5,top44.4,size209x277.2. seatInfo.ccbi tag200 cardbg original194x256 anchor(0,0) at(0,0); preserve its transparent margins. GeneralCardCcbNode.updateGeneral places GeneralSkinUi180x245 at LEFT_BOTTOM(10,10), so portrait DOM top=-3, not10. Use original skin_clip180x245 for the local portrait. Guozhan uses scale.95, centerY230 and general switch at bottom107.",
+    "hp": "GeneralCardCcbNode.createChilden: GeneralYjcmHpContainer36x105 RIGHT_BOTTOM(width-8,8),so local left146,bottom8. Native bg original139x178 RIGHT_BOTTOM(36-(-6),-7) gives local left-97,bottom-7. setScaleRange(178-30-2,30,0,0),height=max(178,min(maxHp,5)*20+130+6). Pip nodes20x20 centeredX25,images18x20; bottom6+20*i. Alpha bbox of original bg is(98,111,134,171); preserve the full transparent source instead of treating the visible band as its dimensions.",
+    "country": "GeneralYjcmCountryContainer32x230 LEFT_BOTTOM(5,10.5); bg center(16,114.5),country text backdrop and emblem center(16,202). Native sizes are restored without stretching the33x232 background or omitting the40x41 faction circle.",
+    "scroll": "User-requested adaptation: scrollbar-width:none!important and WebKit scrollbar display:none,width0,height0; retain native overflow-y:auto, wheel and touch scrolling.",
+    "scale9": "framework.cocos2dx.SpriteEx.setScaleRange(top,bottom,left,right) writes setInsetLeft(r3),setInsetRight(r4),setInsetBottom(r2),setInsetTop(r1); frame CSS slices are top99,right20,bottom58,left20.",
+    "countries": "app.enum.EnumCfg.CountryTyp: Wei1,Shu2,Wu3,Qun4,Shen5,Han10,Ye13,Jin20. Custom factions without an official mapping use neutral0.",
+    "reused_assets": "image/ui/tooltip/xinsha/game_playinfo_skillbg.png and cmn_{activite,passive}_skill_bg.png reuse exact extracted frames documented in verification/yjcm-tooltip-source.json; fonts reuse verification/yjcm-font-source.json."
+  },
+  "limitations": [
+    "Static shipped Lua bytecode and assets; official client runtime comparison not performed.",
+    "Noname provides its own character art, skill text, equipment and visible hand cards. Official rank service and Jiangling data are not available."
+  ],
+  "validation": {
+    "commands": [
+      "node --check ui/character/skins/xinsha.js",
+      "node --check verification/yjcm-character-browser.cjs",
+      "python verification/read-yjcm-character-ccb.py",
+      "python verification/extract-yjcm-character.py",
+      "node verification/yjcm-character-browser.cjs",
+      "git diff --check -- ui/character/skins/xinsha.js ui/styles/character/xinsha.css 开发前必看.md"
+    ],
+    "results": "verification/yjcm-character-results.json",
+    "screenshots": [
+      "verification/yjcm-character-browser.png",
+      "verification/yjcm-character-caojinyu.png",
+      "verification/yjcm-character-caojinyu-scrolled.png"
+    ],
+    "ccb_source": "verification/yjcm-character-ccb.json",
+    "hp_background_changed_pixels": 2067,
+    "checks": [
+      "native right-click entry",
+      "180x245 portrait at(10,-3)",
+      "36x105 HP container and full original nine-slice backdrop",
+      "close contained within frame",
+      "compact footer mini skin open(player),config toggle,keyboard activation",
+      "Cao Jinyu three skills scroll without native tracks or gutter",
+      "3 viewport/zoom cases",
+      "5 non-target style guards",
+      "0 page errors or failed official asset requests"
+    ],
+    "not_verified": [
+      "Current user Electron game was not reloaded or changed",
+      "Actual external mini skin chooser interaction",
+      "Official client runtime visual comparison"
+    ]
+  }
+}

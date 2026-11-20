@@ -8,6 +8,263 @@ let restoreButton;
 let restoreOwner;
 let activeDialog;
 
+function usesXinshaControls(arena) {
+	return arena?.getAttribute("data-loading-style") === "dialog_xinsha" || document.body?.dataset.style === "othersOff";
+}
+
+function positionXinshaControl(button, parent) {
+	// WindowManager.setHideBtn：LEFT_BOTTOM，x=可用画面左缘+39，y=258；设计高度750。
+	const unit = parseFloat(getComputedStyle(parent).getPropertyValue("--yjcm-unit")) || Math.min(parent.clientWidth / 1334, parent.clientHeight / 750);
+	const sceneX = parseFloat(getComputedStyle(parent).getPropertyValue("--yjcm-scene-x"));
+	// 优先复用一将场景已经计算的安全区；旧实现漏掉了两侧60设计单位。
+	const usableWidth = Math.max(1334, Math.min(1750, parent.clientWidth / unit - 120)) * unit;
+	button.style.left = `${(Number.isFinite(sceneX) ? sceneX : (parent.clientWidth - usableWidth) / 2) + 39 * unit}px`;
+	button.style.bottom = `${258 * unit}px`;
+	button.style.top = "auto";
+	button.style.width = `${86 * unit}px`;
+	button.style.height = `${86 * unit}px`;
+}
+
+function clearXinshaPromptLayout(state) {
+	const layout = state?.promptLayout;
+	if (!layout) return;
+	state.promptLayout = null;
+	layout.mutations.disconnect();
+	layout.resize.disconnect();
+	cancelAnimationFrame(layout.frame);
+	layout.frame = 0;
+	for (const copy of layout.copies.values()) copy.remove();
+	for (const [node, properties] of layout.nodes) {
+		for (const [key, [value, priority]] of properties) {
+			if (value) node.style.setProperty(key, value, priority);
+			else node.style.removeProperty(key);
+		}
+	}
+	layout.copies.clear();
+	layout.nodes.clear();
+	state.dialog.classList.remove("dialog-xinsha-prompt-layout");
+}
+
+function syncXinshaPromptLayout(state) {
+	const { dialog, arena, windowElement } = state;
+	if (document.body.dataset.style !== "othersOff" || state.collapsed || dialog.hidden ||
+		dialog.classList.contains("hidden") || dialog.classList.contains("removing") ||
+		dialog.classList.contains("lei-yijiang-sc-closing") || arena?.classList.contains("choose-character") && !dialog.classList.contains("xinsha-faction-dialog") ||
+		typeof dialog.getCurrentCapt === "function" || !dialog.isConnected) {
+		clearXinshaPromptLayout(state);
+		return;
+	}
+	if (state.promptLayout) return state.promptLayout.update();
+	const layout = { nodes: new Map(), copies: new Map(), frame: 0 };
+	// 收起只恢复显示属性；同一窗口恢复时复用坐标基准，关闭后随state释放。
+	const placements = state.promptPlacements ||= new WeakMap();
+	let placementKey, bodyPlacementKey;
+	const px = value => `${Number(value.toPrecision(6))}px`;
+	state.promptLayout = layout;
+	const set = (node, key, value) => {
+		let saved = layout.nodes.get(node);
+		if (!saved) layout.nodes.set(node, saved = new Map());
+		if (!saved.has(key)) saved.set(key, [node.style.getPropertyValue(key), node.style.getPropertyPriority(key)]);
+		const current = node.style.getPropertyValue(key);
+		// CSSOM会舍入px；忽略小于千分之一像素的序列化误差，避免相同布局仍持续改写style。
+		if (node.style.getPropertyPriority(key) === "important" && (current === value || current.endsWith("px") && value.endsWith("px") && Math.abs(parseFloat(current) - parseFloat(value)) < .001)) return;
+		node.style.setProperty(key, value, "important");
+	};
+	// 只在窗口坐标系变化时用100×100校准；缓存浮点比例和原点，避免排版取整反向反馈到定位。
+	const place = (node, center, bottom, width, height, fontSize, zIndex = "103", measureOnly = false) => {
+		let origin = placements.get(node);
+		// body浮层不受窗口自身的开窗scale影响，不能跟着每一帧重新100×100校准。
+		const key = node.parentElement === document.body ? bodyPlacementKey : placementKey;
+		// 收起曾还原这些属性；复用坐标时仍须恢复定位，但不再写入100×100临时尺寸。
+		for (const [name, value] of Object.entries({ position: "fixed", right: "auto", bottom: "auto", margin: "0px", padding: "0px", transform: "none", "transition-property": "opacity", "box-sizing": "border-box", "z-index": zIndex })) set(node, name, value);
+		if (!origin || origin.key !== key || origin.parent !== node.parentElement) {
+			for (const [name, value] of Object.entries({ left: "0px", top: "0px", width: "100px", height: "100px" })) set(node, name, value);
+			const rect = node.getBoundingClientRect();
+			origin = { key, parent: node.parentElement, x: rect.left, y: rect.top, sx: rect.width / 100 || 1, sy: rect.height / 100 || 1 };
+			placements.set(node, origin);
+		}
+		const { sx, sy } = origin;
+		set(node, "width", px(width / sx));
+		set(node, "height", height ? px(height / sy) : "auto");
+		if (fontSize) {
+			set(node, "font-size", px(fontSize / sy));
+			set(node, "line-height", "1");
+			set(node, "color", "rgb(255, 243, 222)");
+			set(node, "text-align", "center");
+			for (const span of node.querySelectorAll("span")) {
+				set(span, "font-size", "inherit");
+				set(span, "line-height", "inherit");
+				if (span.dataset.type === "player") set(span, "color", "rgb(255, 225, 0)");
+			}
+		}
+		if (!measureOnly) {
+			set(node, "left", px((center - width / 2 - origin.x) / sx));
+			set(node, "top", px((bottom - node.getBoundingClientRect().height - origin.y) / sy));
+		}
+		return { sx, sy };
+	};
+	// 保留原提示节点供本体、布局和关闭流程使用；同一 body 浮层绘制无交互副本，
+	// 避免 footer 被 dialog(101) 的 stacking context 限制而压在 body 进度条下面。
+	const paintTip = (node, center, bottom, width, scale, measureOnly = false) => {
+		place(node, center, bottom, width, 0, 30 * scale, "103", measureOnly);
+		if (node.hidden || node.classList.contains("hidden") || !node.textContent.trim() || getComputedStyle(node).display === "none") {
+			layout.copies.get(node)?.remove();
+			return;
+		}
+		let copy = layout.copies.get(node);
+		if (!copy) {
+			copy = document.createElement("div");
+			copy.className = "dialog-xinsha-prompt-overlay";
+			copy.setAttribute("aria-hidden", "true");
+			layout.copies.set(node, copy);
+		}
+		if (copy.innerHTML !== node.innerHTML) copy.innerHTML = node.innerHTML;
+		if (copy.parentNode !== document.body) document.body.appendChild(copy);
+		for (const [key, value] of Object.entries({ "z-index": "104", "pointer-events": "none", "font-family": "dui-yjcm-label, serif", opacity: "1", visibility: "visible", "text-shadow": "none" })) set(copy, key, value);
+		place(copy, center, bottom, width, 0, 30 * scale, "104", measureOnly);
+		set(node, "opacity", "0");
+	};
+	layout.update = () => {
+		if (state.promptLayout !== layout) return;
+		cancelAnimationFrame(layout.frame);
+		layout.frame = 0;
+		if (document.body.dataset.style !== "othersOff" || !dialog.isConnected || dialog.hidden || dialog.classList.contains("hidden") || dialog.classList.contains("removing") || dialog.classList.contains("lei-yijiang-sc-closing")) return clearXinshaPromptLayout(state);
+		for (const [node, properties] of layout.nodes) {
+			if (node.isConnected) continue;
+			for (const [key, [value, priority]] of properties) {
+				if (value) node.style.setProperty(key, value, priority);
+				else node.style.removeProperty(key);
+			}
+			layout.nodes.delete(node);
+			placements.delete(node);
+		}
+		const viewport = windowElement || arena.parentElement || arena;
+		const box = dialog.getBoundingClientRect(), view = viewport.getBoundingClientRect();
+		placementKey = [box.x, box.y, box.width, box.height, view.x, view.y, view.width, view.height].join(",");
+		const body = document.body.getBoundingClientRect();
+		bodyPlacementKey = [body.x, body.y, body.width, body.height, document.body.offsetWidth, document.body.offsetHeight, view.x, view.y, view.width, view.height].join(",");
+		const snitch = dialog.id === "lei-yijiang-player-card-dialog";
+		const faction = dialog.classList.contains("xinsha-faction-dialog");
+		const windowButtons = dialog.dataset.xinshaActionButtons === "window";
+		const fixedCardLayout = snitch || faction || windowButtons || dialog.dataset.olLayout === "card-move";
+		const scale = snitch ? box.width / 1696 : Math.min(view.width / 1334, view.height / 750);
+		if (!(scale > 0 && box.height > 0)) { observe(); return; }
+		const center = box.left + box.width / 2;
+		const controls = arena.querySelector("#dui-controls");
+		const style = controls && getComputedStyle(controls);
+		const hasButtons = controls?.children.length && !controls.classList.contains("hidden") && style.display !== "none" && style.visibility !== "hidden";
+		const barY = faction ? 64 : snitch ? (hasButtons ? 108 : 73) : 113;
+		const tipY = faction ? 80 : snitch ? (hasButtons ? 120 : 80) : 120;
+		// 普通框先量取文字，再将提示置于实际牌区底边与框底的中点。
+		let tipBottom = box.bottom - (fixedCardLayout ? tipY : 52) * scale;
+		const footer = dialog.querySelector(":scope > .dialog-ol-footer");
+		const tipWidth = Math.min(1220 * scale, view.width - 24);
+		for (const [node, copy] of layout.copies) {
+			if (!node.isConnected) { copy.remove(); layout.copies.delete(node); }
+		}
+		let promptHeight = 30 * scale;
+		for (const tip of arena.querySelectorAll(":scope > .hand-tip")) {
+			if (footer) {
+				set(tip, "display", "none");
+				layout.copies.get(tip)?.remove();
+			}
+			else paintTip(tip, center, tipBottom, tipWidth, scale, !fixedCardLayout);
+			if (!footer && !tip.classList.contains("hidden")) promptHeight = Math.max(promptHeight, tip.getBoundingClientRect().height);
+		}
+		if (footer) {
+			paintTip(footer, center, tipBottom, tipWidth, scale, !fixedCardLayout);
+			promptHeight = footer.getBoundingClientRect().height;
+		}
+		let promptTop = tipBottom - promptHeight;
+		const visibleInfos = [];
+		let infoHeight = 0;
+		for (const info of arena.querySelectorAll(":scope > .hand-tip-info")) {
+			paintTip(info, center, promptTop - 6 * scale, tipWidth, scale, !fixedCardLayout);
+			if (!fixedCardLayout && layout.copies.get(info)?.isConnected) {
+				visibleInfos.push(info);
+				const height = info.getBoundingClientRect().height + 6 * scale;
+				infoHeight += height;
+				promptTop -= height;
+			}
+		}
+		if (!fixedCardLayout) {
+			const dialogStyle = getComputedStyle(dialog);
+			const openingScale = dialogStyle.animationName.split(",").some(name => name.trim() === "open-dialog-xinsha") ? parseFloat(dialogStyle.scale) || 1 : 1;
+			const dialogScale = (box.width / dialog.offsetWidth || 1) / openingScale;
+			// 固定留白先独立于文字定位求出，避免中点位置与框高相互反馈、逐帧伸缩。
+			set(dialog, "--dialog-xinsha-prompt-space", `max(0px, calc(${(104 * scale + promptHeight + 2 * infoHeight) / dialogScale}px - var(--dialog-ol-frame-padding)))`);
+			const frame = dialog.getBoundingClientRect();
+			const container = dialog.contentContainer || dialog.querySelector(":scope > .content-container");
+			const contentBottom = container?.getBoundingClientRect().bottom ?? frame.top;
+			const bottoms = [];
+			for (const area of dialog.querySelectorAll(".buttons,[data-dialog-card-area]")) {
+				if (!area.offsetHeight) continue;
+				const rect = area.getBoundingClientRect();
+				const cards = [...area.children].filter(card => card.classList.contains("card") && card.offsetParent === area);
+				// 使用布局坐标排除卡牌斜向入场/选中动画，提示不能跟着动画移动。
+				bottoms.push(cards.length ? rect.top + Math.max(...cards.map(card => card.offsetTop + card.offsetHeight)) * rect.height / area.offsetHeight : rect.bottom);
+			}
+			const cardBottom = Math.min(contentBottom, bottoms.length ? Math.max(...bottoms) : contentBottom);
+			tipBottom = (frame.bottom + cardBottom + promptHeight) / 2;
+			if (footer) paintTip(footer, center, tipBottom, tipWidth, scale);
+			else for (const tip of arena.querySelectorAll(":scope > .hand-tip")) paintTip(tip, center, tipBottom, tipWidth, scale);
+			promptTop = tipBottom - promptHeight;
+			for (const info of visibleInfos) {
+				paintTip(info, center, promptTop - 6 * scale, tipWidth, scale);
+				promptTop -= info.getBoundingClientRect().height + 6 * scale;
+			}
+		}
+		const barBottom = fixedCardLayout ? box.bottom - barY * scale : promptTop - 8 * scale;
+		for (const bar of document.querySelectorAll("#jindutiaopl, [data-yjcm-progress]")) {
+			if (bar.dataset.yjcmProgress !== "4") continue;
+			const fill = bar.firstElementChild;
+			const image = fill?.querySelector("img");
+			if (!image) continue;
+			const moon = bar.dataset.yjcmMoonProgress === "true";
+			const { sx } = place(bar, center, barBottom, 560 * scale, 17 * scale);
+			for (const [key, value] of Object.entries({ "--yjcm-progress-width": `${560 * scale / sx}px`, "background-color": "transparent", "border-radius": "0px", "box-shadow": "none", "background-image": moon ? "none" : 'url("' + new URL("xf_newTimeBar_bg_1.png", image.src).href + '")', "background-size": "101.071% 129.412%", "background-position": "center center", "background-repeat": "no-repeat" })) set(bar, key, value);
+			if (fill) { set(fill, "top", "0px"); set(fill, "height", "100%"); }
+			set(image, "content", moon ? "normal" : 'url("' + new URL("xf_newTimeBar" + (image.getAttribute("src").includes("_red_") ? "_red_1.png" : "_1.png"), image.src).href + '")');
+		}
+		if (!snitch) {
+			if (!dialog.classList.contains("dialog-xinsha-prompt-layout")) dialog.classList.add("dialog-xinsha-prompt-layout");
+			// 留白属于布局尺寸，不能把开窗 1→1.1→1 的绘制缩放算进去，否则框高会反向伸缩。
+			const dialogStyle = getComputedStyle(dialog);
+			const openingScale = dialogStyle.animationName.split(",").some(name => name.trim() === "open-dialog-xinsha") ? parseFloat(dialogStyle.scale) || 1 : 1;
+			// 所有框均以横向比例换算留白；高度含留白自身，不能用取整后的高度反推比例。
+			const dialogScale = (box.width / dialog.offsetWidth || 1) / openingScale;
+			set(dialog, "--dialog-xinsha-prompt-unit", `${scale / dialogScale}px`);
+			if (fixedCardLayout) set(dialog, "--dialog-xinsha-prompt-space", `${150 * scale / dialogScale}px`);
+		}
+		observe();
+	};
+	const schedule = () => {
+		if (state.promptLayout === layout && !layout.frame) layout.frame = requestAnimationFrame(() => { layout.frame = 0; layout.update(); });
+	};
+	layout.mutations = new MutationObserver(records => {
+		if (!dialog.isConnected || document.body.dataset.style !== "othersOff") return clearXinshaPromptLayout(state);
+		if (records.some(record => record.type !== "attributes" || record.target === dialog || record.target === arena || record.target === windowElement || record.target === document.body || record.attributeName === "src" || record.target.closest?.(".hand-tip,.hand-tip-info,.dialog-ol-footer,#dui-controls"))) schedule();
+	});
+	const observe = () => {
+		// 丢弃本次布局自己的变更，并释放已被替换的提示/进度条观察目标；不扫描整页牌面style。
+		layout.mutations.disconnect();
+		const roots = new Set([document.documentElement, document.body, windowElement, arena]);
+		for (let parent = dialog.parentElement; parent; parent = parent.parentElement) roots.add(parent);
+		for (const node of roots) if (node) layout.mutations.observe(node, { childList: true, attributes: true, attributeFilter: ["class", "style", "hidden", "data-style"] });
+		const options = { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ["class", "style", "hidden", "src"] };
+		layout.mutations.observe(dialog, options);
+		for (const node of arena.querySelectorAll(":scope > .hand-tip,:scope > .hand-tip-info,#dui-controls")) layout.mutations.observe(node, options);
+		for (const bar of document.querySelectorAll("#jindutiaopl,[data-yjcm-progress='4']")) layout.mutations.observe(bar, options);
+	};
+	layout.resize = new ResizeObserver(schedule);
+	for (const node of [dialog, arena, windowElement].filter(Boolean)) layout.resize.observe(node);
+	layout.update();
+}
+
+function clearXinshaControlPosition(button) {
+	for (const name of ["left", "bottom", "top", "width", "height"]) button.style.removeProperty(name);
+}
+
 function callOriginal(state, method, owner, args = []) {
 	const original = state.original?.[method];
 	return typeof original === "function" ? original.apply(owner, args) : undefined;
@@ -31,6 +288,7 @@ function getRestoreButton(windowElement, arena) {
 		restoreButton.className = RESTORE_CLASS;
 		restoreButton.hidden = true;
 		restoreButton.textContent = "显示弹窗";
+		restoreButton.setAttribute("aria-label", "显示弹窗");
 		restoreButton.addEventListener("click", event => {
 			event.preventDefault();
 			event.stopPropagation();
@@ -49,6 +307,10 @@ function getRestoreButton(windowElement, arena) {
 	}
 	const parent = windowElement || arena;
 	if (parent && restoreButton.parentNode !== parent) parent.appendChild(restoreButton);
+	const xinsha = usesXinshaControls(arena);
+	restoreButton.classList.toggle("dialog-xinsha-restore", xinsha);
+	if (xinsha && parent) positionXinshaControl(restoreButton, parent);
+	else clearXinshaControlPosition(restoreButton);
 	return restoreButton;
 }
 
@@ -62,6 +324,7 @@ function removeArrow(state, dialog) {
 function cleanupDialog(dialog, state, restoreVisible) {
 	if (!state || state.cleaning) return;
 	state.cleaning = true;
+	clearXinshaPromptLayout(state);
 	releaseDialogOlLayout(dialog);
 	if (restoreVisible && state.collapsed) callOriginal(state, "show", dialog);
 	state.collapsed = false;
@@ -105,6 +368,7 @@ function bindArrow(dialog, state) {
 		state.collapsed = true;
 		state.arrow.hidden = true;
 		callOriginal(state, "hide", dialog);
+		clearXinshaPromptLayout(state);
 		const restore = getRestoreButton(state.windowElement, state.arena);
 		restoreOwner = dialog;
 		restore.hidden = false;
@@ -161,7 +425,7 @@ function hasVisibleDialogBackground(dialog) {
 }
 
 function hasDialogOlBackground(dialog, arena) {
-	if (arena?.getAttribute("data-loading-style") !== "dialog_ol") return true;
+	if (arena?.getAttribute("data-loading-style") !== "dialog_ol" && !usesXinshaControls(arena)) return true;
 	return hasVisibleDialogBackground(dialog);
 }
 
@@ -174,10 +438,13 @@ function installDialogHooks(dialog, state) {
 			state.arrow.hidden = false;
 			hideRestoreButton();
 		}
-		return callOriginal(state, "show", this, args);
+		const result = callOriginal(state, "show", this, args);
+		syncXinshaPromptLayout(state);
+		return result;
 	};
 	if (typeof state.original.hide === "function") state.wrapped.hide = function (...args) {
 		const result = callOriginal(state, "hide", this, args);
+		clearXinshaPromptLayout(state);
 		if (!state.collapsed && restoreOwner === this) hideRestoreButton();
 		return result;
 	};
@@ -206,6 +473,22 @@ function syncCaption(state, dialog) {
 		removeArrow(state, dialog);
 		return;
 	}
+	if (usesXinshaControls(state.arena)) {
+		// 原版挂在场景左下方，不能放进 caption；自由选将的筛选栏也不能改成标题。
+		state.caption?.classList.remove(CAPTION_CLASS);
+		state.caption = null;
+		dialog.classList.remove(NO_CAPTION_CLASS);
+		const arrow = createArrow(state);
+		arrow.classList.add("dialog-xinsha-hide");
+		arrow.setAttribute("aria-label", "隐藏弹窗");
+		arrow.title = "隐藏弹窗";
+		bindArrow(dialog, state);
+		arrow.hidden = state.collapsed || dialog.classList.contains("hidden");
+		const parent = state.windowElement || state.arena;
+		if (parent && arrow.parentNode !== parent) parent.appendChild(arrow);
+		if (parent) positionXinshaControl(arrow, parent);
+		return;
+	}
 	const caption = dialog.querySelector(":scope > .content-container > .content > .caption, :scope > .content > .caption, :scope > .caption");
 	if (state.caption !== caption) {
 		state.caption?.classList.remove(CAPTION_CLASS);
@@ -218,6 +501,10 @@ function syncCaption(state, dialog) {
 		dialog.classList.add(NO_CAPTION_CLASS);
 	}
 	createArrow(state);
+	state.arrow.classList.remove("dialog-xinsha-hide");
+	state.arrow.setAttribute("aria-label", "收起窗口");
+	state.arrow.title = "收起窗口";
+	clearXinshaControlPosition(state.arrow);
 	bindArrow(dialog, state);
 	state.arrow.hidden = state.collapsed;
 	const parent = caption || dialog;
@@ -257,6 +544,7 @@ export function syncDialogOlControls(dialog, arena, windowElement, update) {
 	state.windowElement = windowElement;
 	state.update = update;
 	syncCaption(state, dialog);
+	syncXinshaPromptLayout(state);
 	if (state.collapsed) {
 		const restore = getRestoreButton(windowElement, arena);
 		restoreOwner = dialog;

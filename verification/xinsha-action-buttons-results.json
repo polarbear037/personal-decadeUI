@@ -1,0 +1,1376 @@
+{
+  "othersOff": {
+    "two": {
+      "flow": "multi",
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "dialog": {
+        "x": 433.5,
+        "y": 569.734375,
+        "width": 630,
+        "height": 18,
+        "top": 569.734375,
+        "right": 1063.5,
+        "bottom": 587.734375,
+        "left": 433.5
+      },
+      "bar": {
+        "x": 560.671875,
+        "y": 496.015625,
+        "width": 378.65625,
+        "height": 54.390625,
+        "top": 496.015625,
+        "right": 939.328125,
+        "bottom": 550.40625,
+        "left": 560.671875
+      },
+      "tips": [
+        {
+          "class": "hand-tip decade-optimized-hand-tip",
+          "rect": {
+            "x": 46,
+            "y": 550.421875,
+            "width": 1405,
+            "height": 37.3125,
+            "top": 550.421875,
+            "right": 1451,
+            "bottom": 587.734375,
+            "left": 46
+          },
+          "text": "巧思：请选择一项"
+        }
+      ],
+      "unit": 1.0666666666666667,
+      "nodes": [
+        {
+          "link": "摸两张牌",
+          "text": "摸两张牌",
+          "rect": {
+            "x": 560.671875,
+            "y": 496.015625,
+            "width": 149.328125,
+            "height": 54.390625,
+            "top": 496.015625,
+            "right": 710,
+            "bottom": 550.40625,
+            "left": 560.671875
+          },
+          "border": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_multi_select.png\")",
+          "background": "none",
+          "color": "rgb(97, 53, 27)",
+          "font": "25.6px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "cancel2",
+          "text": "取消",
+          "rect": {
+            "x": 790,
+            "y": 498.140625,
+            "width": 149.328125,
+            "height": 52.265625,
+            "top": 498.140625,
+            "right": 939.328125,
+            "bottom": 550.40625,
+            "left": 790
+          },
+          "border": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_multi_cancel.png\")",
+          "background": "none",
+          "color": "rgb(222, 186, 137)",
+          "font": "25.6px",
+          "filter": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "three": {
+      "flow": "multi",
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "dialog": {
+        "x": 433.5,
+        "y": 569.734375,
+        "width": 630,
+        "height": 18,
+        "top": 569.734375,
+        "right": 1063.5,
+        "bottom": 587.734375,
+        "left": 433.5
+      },
+      "bar": {
+        "x": 381.484375,
+        "y": 496.015625,
+        "width": 737.03125,
+        "height": 54.390625,
+        "top": 496.015625,
+        "right": 1118.515625,
+        "bottom": 550.40625,
+        "left": 381.484375
+      },
+      "tips": [
+        {
+          "class": "hand-tip decade-optimized-hand-tip",
+          "rect": {
+            "x": 46,
+            "y": 550.421875,
+            "width": 1405,
+            "height": 37.3125,
+            "top": 550.421875,
+            "right": 1451,
+            "bottom": 587.734375,
+            "left": 46
+          },
+          "text": "巧思：请选择一项"
+        }
+      ],
+      "unit": 1.0666666666666667,
+      "nodes": [
+        {
+          "link": "摸一张牌",
+          "text": "摸一张牌",
+          "rect": {
+            "x": 381.484375,
+            "y": 496.015625,
+            "width": 149.328125,
+            "height": 54.390625,
+            "top": 496.015625,
+            "right": 530.8125,
+            "bottom": 550.40625,
+            "left": 381.484375
+          },
+          "border": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_multi_select.png\")",
+          "background": "none",
+          "color": "rgb(97, 53, 27)",
+          "font": "25.6px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "回复一点体力并获得一张锦囊牌",
+          "text": "回复一点体力并获得一张锦囊牌",
+          "rect": {
+            "x": 557.46875,
+            "y": 496.015625,
+            "width": 385.0625,
+            "height": 54.390625,
+            "top": 496.015625,
+            "right": 942.53125,
+            "bottom": 550.40625,
+            "left": 557.46875
+          },
+          "border": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_multi_select.png\")",
+          "background": "none",
+          "color": "rgb(97, 53, 27)",
+          "font": "25.6px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "cancel2",
+          "text": "取消",
+          "rect": {
+            "x": 969.1875,
+            "y": 498.140625,
+            "width": 149.328125,
+            "height": 52.265625,
+            "top": 498.140625,
+            "right": 1118.515625,
+            "bottom": 550.40625,
+            "left": 969.1875
+          },
+          "border": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_multi_cancel.png\")",
+          "background": "none",
+          "color": "rgb(222, 186, 137)",
+          "font": "25.6px",
+          "filter": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "card": {
+      "flow": "window",
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "dialog": {
+        "x": 0,
+        "y": 142.8125,
+        "width": 1500,
+        "height": 409,
+        "top": 142.8125,
+        "right": 1500,
+        "bottom": 551.8125,
+        "left": 0
+      },
+      "bar": {
+        "x": 531.3359375,
+        "y": 451.5625,
+        "width": 437.328125,
+        "height": 57.59375,
+        "top": 451.5625,
+        "right": 968.6640625,
+        "bottom": 509.15625,
+        "left": 531.3359375
+      },
+      "tips": [
+        {
+          "class": "hand-tip hidden",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "text": "巧思：请选择一项"
+        },
+        {
+          "class": "dialog-ol-footer",
+          "rect": {
+            "x": 99.328125,
+            "y": 391.8125,
+            "width": 1301.328125,
+            "height": 32,
+            "top": 391.8125,
+            "right": 1400.65625,
+            "bottom": 423.8125,
+            "left": 99.328125
+          },
+          "text": "请选择一张牌"
+        },
+        {
+          "class": "dialog-xinsha-prompt-overlay",
+          "rect": {
+            "x": 99.328125,
+            "y": 391.8125,
+            "width": 1301.328125,
+            "height": 32,
+            "top": 391.8125,
+            "right": 1400.65625,
+            "bottom": 423.8125,
+            "left": 99.328125
+          },
+          "text": "请选择一张牌"
+        }
+      ],
+      "unit": 1.0666666666666667,
+      "nodes": [
+        {
+          "link": "ok",
+          "text": "确定",
+          "rect": {
+            "x": 531.3359375,
+            "y": 451.5625,
+            "width": 192,
+            "height": 57.59375,
+            "top": 451.5625,
+            "right": 723.3359375,
+            "bottom": 509.15625,
+            "left": 531.3359375
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/cmn_btn_gray_180_54.png\")",
+          "color": "rgb(104, 83, 71)",
+          "font": "29.8667px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "cancel",
+          "text": "取消",
+          "rect": {
+            "x": 776.6640625,
+            "y": 451.5625,
+            "width": 192,
+            "height": 57.59375,
+            "top": 451.5625,
+            "right": 968.6640625,
+            "bottom": 509.15625,
+            "left": 776.6640625
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/cmn_btn_brown_180_54.png\")",
+          "color": "rgb(255, 223, 160)",
+          "font": "29.8667px",
+          "filter": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "selected": {
+      "flow": "window",
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "dialog": {
+        "x": 0,
+        "y": 142.8125,
+        "width": 1500,
+        "height": 409,
+        "top": 142.8125,
+        "right": 1500,
+        "bottom": 551.8125,
+        "left": 0
+      },
+      "bar": {
+        "x": 531.3359375,
+        "y": 451.5625,
+        "width": 437.328125,
+        "height": 57.59375,
+        "top": 451.5625,
+        "right": 968.6640625,
+        "bottom": 509.15625,
+        "left": 531.3359375
+      },
+      "tips": [
+        {
+          "class": "hand-tip hidden",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "text": "巧思：请选择一项"
+        },
+        {
+          "class": "dialog-ol-footer",
+          "rect": {
+            "x": 99.328125,
+            "y": 391.8125,
+            "width": 1301.328125,
+            "height": 32,
+            "top": 391.8125,
+            "right": 1400.65625,
+            "bottom": 423.8125,
+            "left": 99.328125
+          },
+          "text": "请选择一张牌"
+        },
+        {
+          "class": "dialog-xinsha-prompt-overlay",
+          "rect": {
+            "x": 99.328125,
+            "y": 391.8125,
+            "width": 1301.328125,
+            "height": 32,
+            "top": 391.8125,
+            "right": 1400.65625,
+            "bottom": 423.8125,
+            "left": 99.328125
+          },
+          "text": "请选择一张牌"
+        }
+      ],
+      "unit": 1.0666666666666667,
+      "nodes": [
+        {
+          "link": "ok",
+          "text": "确定",
+          "rect": {
+            "x": 531.3359375,
+            "y": 451.5625,
+            "width": 192,
+            "height": 57.59375,
+            "top": 451.5625,
+            "right": 723.3359375,
+            "bottom": 509.15625,
+            "left": 531.3359375
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/cmn_btn_yellow_180_54.png\")",
+          "color": "rgb(106, 60, 34)",
+          "font": "29.8667px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "cancel",
+          "text": "取消",
+          "rect": {
+            "x": 776.6640625,
+            "y": 451.5625,
+            "width": 192,
+            "height": 57.59375,
+            "top": 451.5625,
+            "right": 968.6640625,
+            "bottom": 509.15625,
+            "left": 776.6640625
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/cmn_btn_gray_180_54.png\")",
+          "color": "rgb(104, 83, 71)",
+          "font": "29.8667px",
+          "filter": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "restored": {
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "bar": {
+        "x": 489.796875,
+        "y": 492.546875,
+        "width": 520.40625,
+        "height": 64.53125,
+        "top": 492.546875,
+        "right": 1010.203125,
+        "bottom": 557.078125,
+        "left": 489.796875
+      },
+      "tips": [
+        {
+          "class": "hand-tip hidden",
+          "rect": {
+            "x": 172,
+            "y": 606.8125,
+            "width": 1153,
+            "height": 20,
+            "top": 606.8125,
+            "right": 1325,
+            "bottom": 626.8125,
+            "left": 172
+          },
+          "text": "制衡：请选择一张牌"
+        }
+      ],
+      "unit": 1.0666666666666667,
+      "nodes": [
+        {
+          "link": "ok",
+          "text": "确定",
+          "rect": {
+            "x": 489.796875,
+            "y": 492.546875,
+            "width": 221.75,
+            "height": 64.53125,
+            "top": 492.546875,
+            "right": 711.546875,
+            "bottom": 557.078125,
+            "left": 489.796875
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+          "color": "rgb(247, 231, 174)",
+          "font": "32.8533px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "cancel",
+          "text": "取消",
+          "rect": {
+            "x": 788.453125,
+            "y": 492.546875,
+            "width": 221.75,
+            "height": 64.53125,
+            "top": 492.546875,
+            "right": 1010.203125,
+            "bottom": 557.078125,
+            "left": 788.453125
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+          "color": "rgb(247, 231, 174)",
+          "font": "32.8533px",
+          "filter": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "errors": []
+  },
+  "onlineUI": {
+    "two": {
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "dialog": {
+        "x": 433.5,
+        "y": 482.53125,
+        "width": 630,
+        "height": 36,
+        "top": 482.53125,
+        "right": 1063.5,
+        "bottom": 518.53125,
+        "left": 433.5
+      },
+      "bar": {
+        "x": 165,
+        "y": 504.25,
+        "width": 1160,
+        "height": 46,
+        "top": 504.25,
+        "right": 1325,
+        "bottom": 550.25,
+        "left": 165
+      },
+      "tips": [],
+      "unit": null,
+      "nodes": [
+        {
+          "link": "摸两张牌",
+          "text": "摸两张牌",
+          "rect": {
+            "x": 600.5,
+            "y": 505.3125,
+            "width": 146,
+            "height": 47.890625,
+            "top": 505.3125,
+            "right": 746.5,
+            "bottom": 553.203125,
+            "left": 600.5
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_ingnore.png\")",
+          "color": "rgb(206, 177, 147)",
+          "font": "23px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "cancel2",
+          "text": "取消",
+          "rect": {
+            "x": 793.5,
+            "y": 505.3125,
+            "width": 96,
+            "height": 47.890625,
+            "top": 505.3125,
+            "right": 889.5,
+            "bottom": 553.203125,
+            "left": 793.5
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_ingnore.png\")",
+          "color": "rgb(206, 177, 147)",
+          "font": "23px",
+          "filter": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "three": {
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "dialog": {
+        "x": 433.5,
+        "y": 482.53125,
+        "width": 630,
+        "height": 36,
+        "top": 482.53125,
+        "right": 1063.5,
+        "bottom": 518.53125,
+        "left": 433.5
+      },
+      "bar": {
+        "x": 165,
+        "y": 504.25,
+        "width": 1160,
+        "height": 46,
+        "top": 504.25,
+        "right": 1325,
+        "bottom": 550.25,
+        "left": 165
+      },
+      "tips": [],
+      "unit": null,
+      "nodes": [
+        {
+          "link": "摸一张牌",
+          "text": "摸一张牌",
+          "rect": {
+            "x": 369,
+            "y": 505.3125,
+            "width": 150,
+            "height": 47.890625,
+            "top": 505.3125,
+            "right": 519,
+            "bottom": 553.203125,
+            "left": 369
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_ingnore.png\")",
+          "color": "rgb(206, 177, 147)",
+          "font": "24px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "回复一点体力并获得一张锦囊牌",
+          "text": "回复一点体力并获得一张锦囊牌",
+          "rect": {
+            "x": 566,
+            "y": 505.3125,
+            "width": 410,
+            "height": 47.890625,
+            "top": 505.3125,
+            "right": 976,
+            "bottom": 553.203125,
+            "left": 566
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_ingnore.png\")",
+          "color": "rgb(206, 177, 147)",
+          "font": "24px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "cancel2",
+          "text": "取消",
+          "rect": {
+            "x": 1023,
+            "y": 505.3125,
+            "width": 98,
+            "height": 47.890625,
+            "top": 505.3125,
+            "right": 1121,
+            "bottom": 553.203125,
+            "left": 1023
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_ingnore.png\")",
+          "color": "rgb(206, 177, 147)",
+          "font": "24px",
+          "filter": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "card": {
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "dialog": {
+        "x": 548.5,
+        "y": 325.8125,
+        "width": 400,
+        "height": 226,
+        "top": 325.8125,
+        "right": 948.5,
+        "bottom": 551.8125,
+        "left": 548.5
+      },
+      "bar": {
+        "x": 165,
+        "y": 504.25,
+        "width": 1160,
+        "height": 46,
+        "top": 504.25,
+        "right": 1325,
+        "bottom": 550.25,
+        "left": 165
+      },
+      "tips": [],
+      "unit": null,
+      "nodes": [
+        {
+          "link": "ok",
+          "text": "确定",
+          "rect": {
+            "x": 570.5,
+            "y": 502.25,
+            "width": 158,
+            "height": 54,
+            "top": 502.25,
+            "right": 728.5,
+            "bottom": 556.25,
+            "left": 570.5
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_ingnore.png\")",
+          "color": "rgb(206, 177, 147)",
+          "font": "28px",
+          "filter": "grayscale(1)",
+          "transform": "none"
+        },
+        {
+          "link": "_recasting",
+          "text": "重铸",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_allselect.png\")",
+          "color": "rgb(124, 45, 6)",
+          "font": "23px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "cancel",
+          "text": "取消",
+          "rect": {
+            "x": 785.5,
+            "y": 505.75,
+            "width": 134,
+            "height": 47,
+            "top": 505.75,
+            "right": 919.5,
+            "bottom": 552.75,
+            "left": 785.5
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_2.png\")",
+          "color": "rgb(206, 177, 147)",
+          "font": "23px",
+          "filter": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "selected": {
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "dialog": {
+        "x": 548.5,
+        "y": 325.8125,
+        "width": 400,
+        "height": 226,
+        "top": 325.8125,
+        "right": 948.5,
+        "bottom": 551.8125,
+        "left": 548.5
+      },
+      "bar": {
+        "x": 165,
+        "y": 504.25,
+        "width": 1160,
+        "height": 46,
+        "top": 504.25,
+        "right": 1325,
+        "bottom": 550.25,
+        "left": 165
+      },
+      "tips": [],
+      "unit": null,
+      "nodes": [
+        {
+          "link": "ok",
+          "text": "确定",
+          "rect": {
+            "x": 570.5,
+            "y": 502.25,
+            "width": 158,
+            "height": 54,
+            "top": 502.25,
+            "right": 728.5,
+            "bottom": 556.25,
+            "left": 570.5
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_ingnore.png\")",
+          "color": "rgb(206, 177, 147)",
+          "font": "28px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "_recasting",
+          "text": "重铸",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_allselect.png\")",
+          "color": "rgb(124, 45, 6)",
+          "font": "23px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "cancel",
+          "text": "取消",
+          "rect": {
+            "x": 785.5,
+            "y": 505.75,
+            "width": 134,
+            "height": 47,
+            "top": 505.75,
+            "right": 919.5,
+            "bottom": 552.75,
+            "left": 785.5
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_2.png\")",
+          "color": "rgb(206, 177, 147)",
+          "font": "23px",
+          "filter": "grayscale(1)",
+          "transform": "none"
+        }
+      ]
+    },
+    "restored": {
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "bar": {
+        "x": 165,
+        "y": 504.25,
+        "width": 1160,
+        "height": 46,
+        "top": 504.25,
+        "right": 1325,
+        "bottom": 550.25,
+        "left": 165
+      },
+      "tips": [],
+      "unit": null,
+      "nodes": [
+        {
+          "link": "ok",
+          "text": "确定",
+          "rect": {
+            "x": 570.5,
+            "y": 502.25,
+            "width": 158,
+            "height": 54,
+            "top": 502.25,
+            "right": 728.5,
+            "bottom": 556.25,
+            "left": 570.5
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_ingnore.png\")",
+          "color": "rgb(206, 177, 147)",
+          "font": "28px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "_recasting",
+          "text": "重铸",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_allselect.png\")",
+          "color": "rgb(124, 45, 6)",
+          "font": "23px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "cancel",
+          "text": "取消",
+          "rect": {
+            "x": 785.5,
+            "y": 505.75,
+            "width": 134,
+            "height": 47,
+            "top": 505.75,
+            "right": 919.5,
+            "bottom": 552.75,
+            "left": 785.5
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/seatui_btns_confirm_2.png\")",
+          "color": "rgb(206, 177, 147)",
+          "font": "23px",
+          "filter": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "errors": []
+  },
+  "on": {
+    "two": {
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "dialog": {
+        "x": 433.5,
+        "y": 506.53125,
+        "width": 630,
+        "height": 32,
+        "top": 506.53125,
+        "right": 1063.5,
+        "bottom": 538.53125,
+        "left": 433.5
+      },
+      "bar": {
+        "x": 165,
+        "y": 554.8125,
+        "width": 1160,
+        "height": 42,
+        "top": 554.8125,
+        "right": 1325,
+        "bottom": 596.8125,
+        "left": 165
+      },
+      "tips": [],
+      "unit": null,
+      "nodes": [
+        {
+          "link": "摸两张牌",
+          "text": "摸两张牌",
+          "rect": {
+            "x": 580,
+            "y": 553.375,
+            "width": 150,
+            "height": 48.875,
+            "top": 553.375,
+            "right": 730,
+            "bottom": 602.25,
+            "left": 580
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/uibutton/btnn2.png\")",
+          "color": "rgb(47, 79, 79)",
+          "font": "25px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "cancel2",
+          "text": "取消",
+          "rect": {
+            "x": 760,
+            "y": 553.375,
+            "width": 150,
+            "height": 48.875,
+            "top": 553.375,
+            "right": 910,
+            "bottom": 602.25,
+            "left": 760
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/uibutton/btnn2.png\")",
+          "color": "rgb(47, 79, 79)",
+          "font": "25px",
+          "filter": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "three": {
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "dialog": {
+        "x": 433.5,
+        "y": 506.53125,
+        "width": 630,
+        "height": 32,
+        "top": 506.53125,
+        "right": 1063.5,
+        "bottom": 538.53125,
+        "left": 433.5
+      },
+      "bar": {
+        "x": 165,
+        "y": 554.8125,
+        "width": 1160,
+        "height": 42,
+        "top": 554.8125,
+        "right": 1325,
+        "bottom": 596.8125,
+        "left": 165
+      },
+      "tips": [],
+      "unit": null,
+      "nodes": [
+        {
+          "link": "摸一张牌",
+          "text": "摸一张牌",
+          "rect": {
+            "x": 365,
+            "y": 553.375,
+            "width": 150,
+            "height": 48.875,
+            "top": 553.375,
+            "right": 515,
+            "bottom": 602.25,
+            "left": 365
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/uibutton/btnn2.png\")",
+          "color": "rgb(47, 79, 79)",
+          "font": "25px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "回复一点体力并获得一张锦囊牌",
+          "text": "回复一点体力并获得一张锦囊牌",
+          "rect": {
+            "x": 545,
+            "y": 553.375,
+            "width": 400,
+            "height": 48.875,
+            "top": 553.375,
+            "right": 945,
+            "bottom": 602.25,
+            "left": 545
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/uibutton/btnn2.png\")",
+          "color": "rgb(47, 79, 79)",
+          "font": "25px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "cancel2",
+          "text": "取消",
+          "rect": {
+            "x": 975,
+            "y": 553.375,
+            "width": 150,
+            "height": 48.875,
+            "top": 553.375,
+            "right": 1125,
+            "bottom": 602.25,
+            "left": 975
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/uibutton/btnn2.png\")",
+          "color": "rgb(47, 79, 79)",
+          "font": "25px",
+          "filter": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "card": {
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "dialog": {
+        "x": 548.5,
+        "y": 329.8125,
+        "width": 400,
+        "height": 222,
+        "top": 329.8125,
+        "right": 948.5,
+        "bottom": 551.8125,
+        "left": 548.5
+      },
+      "bar": {
+        "x": 165,
+        "y": 554.8125,
+        "width": 1160,
+        "height": 42,
+        "top": 554.8125,
+        "right": 1325,
+        "bottom": 596.8125,
+        "left": 165
+      },
+      "tips": [],
+      "unit": null,
+      "nodes": [
+        {
+          "link": "ok",
+          "text": "确定",
+          "rect": {
+            "x": 575,
+            "y": 557.171875,
+            "width": 150,
+            "height": 41.28125,
+            "top": 557.171875,
+            "right": 725,
+            "bottom": 598.453125,
+            "left": 575
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/uibutton/btnn2.png\")",
+          "color": "rgb(47, 79, 79)",
+          "font": "23px",
+          "filter": "brightness(0.7)",
+          "transform": "none"
+        },
+        {
+          "link": "cancel",
+          "text": "取消",
+          "rect": {
+            "x": 765,
+            "y": 557.171875,
+            "width": 150,
+            "height": 41.28125,
+            "top": 557.171875,
+            "right": 915,
+            "bottom": 598.453125,
+            "left": 765
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/uibutton/btnn.png\")",
+          "color": "rgb(47, 79, 79)",
+          "font": "23px",
+          "filter": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "selected": {
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "dialog": {
+        "x": 548.5,
+        "y": 329.8125,
+        "width": 400,
+        "height": 222,
+        "top": 329.8125,
+        "right": 948.5,
+        "bottom": 551.8125,
+        "left": 548.5
+      },
+      "bar": {
+        "x": 165,
+        "y": 554.8125,
+        "width": 1160,
+        "height": 42,
+        "top": 554.8125,
+        "right": 1325,
+        "bottom": 596.8125,
+        "left": 165
+      },
+      "tips": [],
+      "unit": null,
+      "nodes": [
+        {
+          "link": "ok",
+          "text": "确定",
+          "rect": {
+            "x": 575,
+            "y": 557.171875,
+            "width": 150,
+            "height": 41.28125,
+            "top": 557.171875,
+            "right": 725,
+            "bottom": 598.453125,
+            "left": 575
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/uibutton/btnn2.png\")",
+          "color": "rgb(47, 79, 79)",
+          "font": "23px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "cancel",
+          "text": "取消",
+          "rect": {
+            "x": 765,
+            "y": 557.171875,
+            "width": 150,
+            "height": 41.28125,
+            "top": 557.171875,
+            "right": 915,
+            "bottom": 598.453125,
+            "left": 765
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/uibutton/btnn.png\")",
+          "color": "rgb(47, 79, 79)",
+          "font": "23px",
+          "filter": "brightness(0.7)",
+          "transform": "none"
+        }
+      ]
+    },
+    "restored": {
+      "window": {
+        "x": 0,
+        "y": 0,
+        "width": 1500,
+        "height": 800,
+        "top": 0,
+        "right": 1500,
+        "bottom": 800,
+        "left": 0
+      },
+      "bar": {
+        "x": 165,
+        "y": 554.8125,
+        "width": 1160,
+        "height": 42,
+        "top": 554.8125,
+        "right": 1325,
+        "bottom": 596.8125,
+        "left": 165
+      },
+      "tips": [],
+      "unit": null,
+      "nodes": [
+        {
+          "link": "ok",
+          "text": "确定",
+          "rect": {
+            "x": 575,
+            "y": 557.171875,
+            "width": 150,
+            "height": 41.28125,
+            "top": 557.171875,
+            "right": 725,
+            "bottom": 598.453125,
+            "left": 575
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/uibutton/btnn2.png\")",
+          "color": "rgb(47, 79, 79)",
+          "font": "23px",
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "link": "cancel",
+          "text": "取消",
+          "rect": {
+            "x": 765,
+            "y": 557.171875,
+            "width": 150,
+            "height": 41.28125,
+            "top": 557.171875,
+            "right": 915,
+            "bottom": 598.453125,
+            "left": 765
+          },
+          "border": "none",
+          "background": "url(\"http://127.0.0.1:53204/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/uibutton/btnn.png\")",
+          "color": "rgb(47, 79, 79)",
+          "font": "23px",
+          "filter": "none",
+          "transform": "none"
+        }
+      ]
+    },
+    "errors": []
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "node": {
+    "name": "../../../雷的ol/animation/skill-button/fx_UI_AnNIu_BeiDong_new",
+    "id": "skill-button-../../../雷的ol/animation/skill-button/fx_UI_AnNIu_BeiDong_new-18",
+    "completed": false,
+    "opacity": 1,
+    "mvp": [
+      0.0023052217438817024,
+      0,
+      0,
+      0,
+      0,
+      0.0040758876129984856,
+      0,
+      0,
+      0,
+      0,
+      -2,
+      0,
+      -0.19571863114833832,
+      -0.8460144996643066,
+      -1,
+      1
+    ],
+    "canvas": [
+      1959,
+      1101
+    ],
+    "rect": {
+      "left": 312.5234375,
+      "top": 469.564453125,
+      "right": 476.4765625,
+      "bottom": 549.435546875,
+      "width": 163.953125,
+      "height": 79.87109375,
+      "canvasWidth": 981,
+      "canvasHeight": 552,
+      "x": 312.5234375,
+      "y": 469.564453125,
+      "bottomInBody": -182.435546875,
+      "canvasBottomInBody": -185
+    }
+  },
+  "hit": "jianxiong",
+  "hitTrace": {
+    "rect": [
+      321,
+      478,
+      147,
+      63
+    ],
+    "element": "<div class=\"skillitem trigger-skill skill-passively-resolving has-skill-usability-fx\" data-id=\"jianxiong\" data-tooltip-attached=\"true\" data-skill-button-effect=\"passive\"><span class=\"skill-label-content\">奸雄</span><div data-skill-button-spine=\"passive",
+    "zoom": 1,
+    "inner": [
+      981,
+      552
+    ]
+  },
+  "expected": [
+    0.0023052216246616753,
+    0.004075887617370892,
+    -0.19571865443425074,
+    -0.8460144927536233
+  ],
+  "workerErrors": [],
+  "canvasZ": "100",
+  "buttonZ": "0"
+}

@@ -11,6 +11,8 @@ import { createDecadeUICreateModule as createDecadeUICreateModule } from "./crea
 import { createStaticsModule as createStaticsModule } from "./statics.js";
 import { createHandlerModule as createHandlerModule } from "./handler.js";
 import { initHooks as initHooks } from "./hooks.js";
+import { initSimplifiedSkillPrompt } from "../ui/simplifiedSkillPrompt.js";
+import { xinshaDialogCardAnimations } from "../ui/dialog-card-animations-xinsha.js";
 import { lerp as c, observeSize as u, throttle as y } from "../animation/utils.js";
 import { CubicBezierEase as f } from "../animation/easing.js";
 import { TimeStep as h } from "../animation/TimeStep.js";
@@ -117,12 +119,14 @@ const Dr = () => ({
 		}),
 			initHooks(),
 			this.initUIExtensions(),
+			initSimplifiedSkillPrompt(),
 			(this.registerCardSkin = this.statics.registerCardSkin));
 	},
 	initUIExtensions() {
 		((ui.click.identity = Q), (ui.click.volumn = X), (ui.clear = te), (ui.create.me = _), (ui.create.player = createPlayerElement), (ui.create.card = createCardElement), (ui.create.cards = createCardsWrapper(ui.create.cards)), (lib.init.layout = createLayoutInit()), definePlayerGroupProperty());
 	},
 	dialog: createDecadeUIDialogModule(),
+	dialogCardAnimations: xinshaDialogCardAnimations,
 	animate: createDecadeUIAnimateModule(),
 	ResizeSensor: createResizeSensorClass(),
 	sheet: createSheetModule(),

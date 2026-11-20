@@ -67,6 +67,10 @@ function installEquipSweepCompatibility() {
 	if (!api || typeof api.playEffect !== "function" || installedApis.has(api)) return;
 	const original = api.playEffect;
 	api.playEffect = function (sprite, position, ...args) {
+		const name = typeof sprite === "string" ? sprite : sprite?.name;
+		// 6.4.5 EquipArea.addCard / MoveCardController 没有 OL 通用入栏扫光。
+		// 标记补充的延时回调仍会到达此入口；按实际风格拦截，保留 Online 原路径。
+		if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && name?.split("/").pop() === EQUIP_SWEEP_NAME) return;
 		const fitted = fitOnlineArmorEffect(sprite, position) || fitEquipSweep(sprite, position);
 		return original.call(this, fitted?.sprite || sprite, fitted?.position || position, ...args);
 	};

@@ -2,6 +2,8 @@ import { lib, get } from "noname";
 import { cardSkinMeta as cardSkinMeta } from "../../config/utils.js";
 import { getChixuerenSkinFilename as getChixuerenSkinFilename } from "./chixueren.js";
 import { generateSkinFilename as generateSkinFilename, isSkinPreloaded as isSkinPreloaded, getSkinCache as getSkinCache, getFallbackKey as getFallbackKey, getFallbackSkinUrl as getFallbackSkinUrl, createSkinAsset as createSkinAsset, buildSkinUrl as buildSkinUrl, loadSkinImage as loadSkinImage, loadFallbackSkin as loadFallbackSkin } from "./skin-loader.js";
+// 已存在的牌及后续装备区迁移也可恢复原生皮肤，无需再次 init 卡牌。
+lib.decadeCardSkin = { restore: card => applySkin(card, card, { skipProvider: true }) };
 function l(cardElement, url) {
 	((cardElement.style.background = `url("${url}")`), cardElement.classList.add("decade-card"));
 }
@@ -28,17 +30,26 @@ function installChixuerenObserver() {
 		}
 	}).observe(document.body, { childList: true, subtree: true });
 }
-function applySkin(cardElement, card) {
+function applySkin(cardElement, card, options = {}) {
 	const cardName = Array.isArray(card) ? card[2] : card?.name || cardElement?.name || cardElement?.dataset?.cardName;
 	// Faction dialog buttons are group_* virtual cards whose country images are set by their own dialog renderer.
 	// The generic skin loader has no matching card assets and its asynchronous fallback can overwrite those images.
 	if (typeof cardName === "string" && cardName.startsWith("group_")) return;
+	// 废除装备槽是占位节点，没有对应的卡牌皮肤。
+	if (typeof cardName === "string" && cardName.startsWith("empty_equip")) return;
+	cardName === "chixueren" && (installChixuerenObserver(), cardElement._decadeChixuerenRefreshBound || ((cardElement._decadeChixuerenRefreshBound = true), cardElement.addEventListener("decadeUIChixuerenRefresh", () => applySkin(cardElement, cardElement))));
+	// 只接管图像：卡牌节点、数据初始化和装备布局仍使用本体流程。
+	// provider 在创建/复制时同步准备首帧，缺图时可跳过 provider 恢复原生换肤。
+	if (!options.skipProvider && lib.cardSkinProvider?.apply(cardElement, () => applySkin(cardElement, cardElement, { skipProvider: true }))) {
+		if (!cardElement.classList.contains("decade-card")) cardElement.classList.add("decade-card");
+		return true;
+	}
+	if (options.providerOnly) return false;
 	const f = cardName,
 		{ skinKey: y, isOff: g } = (function () {
 			const skinKey = lib.config.extension_十周年UI_cardPrettify;
 			return { skinKey: skinKey, isOff: !skinKey || "off" === skinKey };
 		})();
-	f === "chixueren" && (installChixuerenObserver(), cardElement._decadeChixuerenRefreshBound || ((cardElement._decadeChixuerenRefreshBound = true), cardElement.addEventListener("decadeUIChixuerenRefresh", () => applySkin(cardElement, cardElement))));
 	if ((cardElement.classList.remove("decade-card"), g))
 		return void (function (cardElement) {
 			(cardElement.classList.remove("decade-card"), cardElement.style.removeProperty("background"));

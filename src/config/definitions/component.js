@@ -17,7 +17,7 @@ const O = {
 		item: (function () {
 			const basePath = `${lib.assetURL}extension/十周年UI/image/ui/dialog`,
 				createPreview = filename => `<div style="width:60px;height:40px;position:relative;background-image: url(${basePath}/${filename});background-size: 100% 100%;"></div>`;
-			return { off: "关闭", on: createPreview("dialog2.png"), On: createPreview("dialog1.png"), othersOn: createPreview("dialog3.png"), othersOff: createPreview("dialog4.png"), onlineUI: createPreview("dialog5.png"), dialog_ol: createPreview("dialog_ol.png") };
+			return { off: "关闭", on: createPreview("dialog2.png"), On: createPreview("dialog1.png"), othersOn: createPreview("dialog3.png"), othersOff: createPreview("dialog4.png"), onlineUI: createPreview("dialog5.png"), dialog_ol: createPreview("dialog_ol.png"), dialog_xinsha: createPreview("dialog_xinsha.png") };
 		})(),
 		update: onLoadingStyleUpdate,
 	},

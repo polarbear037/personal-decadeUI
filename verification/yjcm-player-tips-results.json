@@ -1,0 +1,2331 @@
+{
+  "othersOff": {
+    "native": {
+      "result": "ai",
+      "tip": {
+        "text": "出牌阶段",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": null,
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1329.3125,
+          "y": 373.1513671875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 373.1513671875,
+          "right": 1433.3125,
+          "bottom": 395.0419921875,
+          "left": 1329.3125
+        },
+        "playerRect": {
+          "x": 1317,
+          "y": 175.046875,
+          "width": 130,
+          "height": 180,
+          "top": 175.046875,
+          "right": 1447,
+          "bottom": 355.046875,
+          "left": 1317
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1318.5,
+          "y": 363.03125,
+          "width": 122,
+          "height": 6.015625,
+          "top": 363.03125,
+          "right": 1440.5,
+          "bottom": 369.046875,
+          "left": 1318.5
+        },
+        "barClass": "timePhase",
+        "count": 1
+      }
+    },
+    "wuxie": {
+      "tip": {
+        "text": "无懈可击思考中",
+        "subject": "无懈可击",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": "rgb(245, 222, 67)",
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1329.3125,
+          "y": 373.1513671875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 373.1513671875,
+          "right": 1433.3125,
+          "bottom": 395.0419921875,
+          "left": 1329.3125
+        },
+        "playerRect": {
+          "x": 1317,
+          "y": 175.046875,
+          "width": 130,
+          "height": 180,
+          "top": 175.046875,
+          "right": 1447,
+          "bottom": 355.046875,
+          "left": 1317
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1318.5,
+          "y": 363.03125,
+          "width": 122,
+          "height": 6.015625,
+          "top": 363.03125,
+          "right": 1440.5,
+          "bottom": 369.046875,
+          "left": 1318.5
+        },
+        "barClass": "timePhase",
+        "count": 1
+      },
+      "other": {
+        "text": "无懈可击思考中",
+        "subject": "无懈可击",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": "rgb(245, 222, 67)",
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1110.375,
+          "y": 243.1044921875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 243.1044921875,
+          "right": 1214.375,
+          "bottom": 264.9951171875,
+          "left": 1110.375
+        },
+        "playerRect": {
+          "x": 1098.0625,
+          "y": 45,
+          "width": 130,
+          "height": 180,
+          "top": 45,
+          "right": 1228.0625,
+          "bottom": 225,
+          "left": 1098.0625
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1099.5625,
+          "y": 232.984375,
+          "width": 122,
+          "height": 6.015625,
+          "top": 232.984375,
+          "right": 1221.5625,
+          "bottom": 239,
+          "left": 1099.5625
+        },
+        "barClass": "timeai",
+        "count": 1
+      }
+    },
+    "shan": {
+      "tip": {
+        "text": "闪思考中",
+        "subject": "闪",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": "rgb(245, 222, 67)",
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1329.3125,
+          "y": 373.1513671875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 373.1513671875,
+          "right": 1433.3125,
+          "bottom": 395.0419921875,
+          "left": 1329.3125
+        },
+        "playerRect": {
+          "x": 1317,
+          "y": 175.046875,
+          "width": 130,
+          "height": 180,
+          "top": 175.046875,
+          "right": 1447,
+          "bottom": 355.046875,
+          "left": 1317
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1318.5,
+          "y": 363.03125,
+          "width": 122,
+          "height": 6.015625,
+          "top": 363.03125,
+          "right": 1440.5,
+          "bottom": 369.046875,
+          "left": 1318.5
+        },
+        "barClass": "timePhase",
+        "count": 1
+      },
+      "other": {
+        "text": "无懈可击思考中",
+        "subject": "无懈可击",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": "rgb(245, 222, 67)",
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1110.375,
+          "y": 243.1044921875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 243.1044921875,
+          "right": 1214.375,
+          "bottom": 264.9951171875,
+          "left": 1110.375
+        },
+        "playerRect": {
+          "x": 1098.0625,
+          "y": 45,
+          "width": 130,
+          "height": 180,
+          "top": 45,
+          "right": 1228.0625,
+          "bottom": 225,
+          "left": 1098.0625
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1099.5625,
+          "y": 232.984375,
+          "width": 122,
+          "height": 6.015625,
+          "top": 232.984375,
+          "right": 1221.5625,
+          "bottom": 239,
+          "left": 1099.5625
+        },
+        "barClass": "timeai",
+        "count": 1
+      }
+    },
+    "sha": {
+      "tip": {
+        "text": "杀思考中",
+        "subject": "杀",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": "rgb(245, 222, 67)",
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1329.3125,
+          "y": 373.1513671875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 373.1513671875,
+          "right": 1433.3125,
+          "bottom": 395.0419921875,
+          "left": 1329.3125
+        },
+        "playerRect": {
+          "x": 1317,
+          "y": 175.046875,
+          "width": 130,
+          "height": 180,
+          "top": 175.046875,
+          "right": 1447,
+          "bottom": 355.046875,
+          "left": 1317
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1318.5,
+          "y": 363.03125,
+          "width": 122,
+          "height": 6.015625,
+          "top": 363.03125,
+          "right": 1440.5,
+          "bottom": 369.046875,
+          "left": 1318.5
+        },
+        "barClass": "timePhase",
+        "count": 1
+      },
+      "other": {
+        "text": "无懈可击思考中",
+        "subject": "无懈可击",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": "rgb(245, 222, 67)",
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1110.375,
+          "y": 243.1044921875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 243.1044921875,
+          "right": 1214.375,
+          "bottom": 264.9951171875,
+          "left": 1110.375
+        },
+        "playerRect": {
+          "x": 1098.0625,
+          "y": 45,
+          "width": 130,
+          "height": 180,
+          "top": 45,
+          "right": 1228.0625,
+          "bottom": 225,
+          "left": 1098.0625
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1099.5625,
+          "y": 232.984375,
+          "width": 122,
+          "height": 6.015625,
+          "top": 232.984375,
+          "right": 1221.5625,
+          "bottom": 239,
+          "left": 1099.5625
+        },
+        "barClass": "timeai",
+        "count": 1
+      }
+    },
+    "tao": {
+      "tip": {
+        "text": "桃思考中",
+        "subject": "桃",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": "rgb(245, 222, 67)",
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1329.3125,
+          "y": 373.1513671875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 373.1513671875,
+          "right": 1433.3125,
+          "bottom": 395.0419921875,
+          "left": 1329.3125
+        },
+        "playerRect": {
+          "x": 1317,
+          "y": 175.046875,
+          "width": 130,
+          "height": 180,
+          "top": 175.046875,
+          "right": 1447,
+          "bottom": 355.046875,
+          "left": 1317
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1318.5,
+          "y": 363.03125,
+          "width": 122,
+          "height": 6.015625,
+          "top": 363.03125,
+          "right": 1440.5,
+          "bottom": 369.046875,
+          "left": 1318.5
+        },
+        "barClass": "timePhase",
+        "count": 1
+      },
+      "other": {
+        "text": "无懈可击思考中",
+        "subject": "无懈可击",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": "rgb(245, 222, 67)",
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1110.375,
+          "y": 243.1044921875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 243.1044921875,
+          "right": 1214.375,
+          "bottom": 264.9951171875,
+          "left": 1110.375
+        },
+        "playerRect": {
+          "x": 1098.0625,
+          "y": 45,
+          "width": 130,
+          "height": 180,
+          "top": 45,
+          "right": 1228.0625,
+          "bottom": 225,
+          "left": 1098.0625
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1099.5625,
+          "y": 232.984375,
+          "width": 122,
+          "height": 6.015625,
+          "top": 232.984375,
+          "right": 1221.5625,
+          "bottom": 239,
+          "left": 1099.5625
+        },
+        "barClass": "timeai",
+        "count": 1
+      }
+    },
+    "skill": {
+      "tip": {
+        "text": "武圣思考中",
+        "subject": "武圣",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": "rgb(245, 222, 67)",
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1329.3125,
+          "y": 373.1513671875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 373.1513671875,
+          "right": 1433.3125,
+          "bottom": 395.0419921875,
+          "left": 1329.3125
+        },
+        "playerRect": {
+          "x": 1317,
+          "y": 175.046875,
+          "width": 130,
+          "height": 180,
+          "top": 175.046875,
+          "right": 1447,
+          "bottom": 355.046875,
+          "left": 1317
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1318.5,
+          "y": 363.03125,
+          "width": 122,
+          "height": 6.015625,
+          "top": 363.03125,
+          "right": 1440.5,
+          "bottom": 369.046875,
+          "left": 1318.5
+        },
+        "barClass": "timePhase",
+        "count": 1
+      },
+      "other": {
+        "text": "",
+        "playerRect": {
+          "x": 1098.0625,
+          "y": 45,
+          "width": 130,
+          "height": 180,
+          "top": 45,
+          "right": 1228.0625,
+          "bottom": 225,
+          "left": 1098.0625
+        },
+        "playerWidth": 130,
+        "count": 0
+      }
+    },
+    "longCard": {
+      "tip": {
+        "text": "无中生有思考中",
+        "subject": "无中生有",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": "rgb(245, 222, 67)",
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1329.3125,
+          "y": 373.1513671875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 373.1513671875,
+          "right": 1433.3125,
+          "bottom": 395.0419921875,
+          "left": 1329.3125
+        },
+        "playerRect": {
+          "x": 1317,
+          "y": 175.046875,
+          "width": 130,
+          "height": 180,
+          "top": 175.046875,
+          "right": 1447,
+          "bottom": 355.046875,
+          "left": 1317
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1318.5,
+          "y": 363.03125,
+          "width": 122,
+          "height": 6.015625,
+          "top": 363.03125,
+          "right": 1440.5,
+          "bottom": 369.046875,
+          "left": 1318.5
+        },
+        "barClass": "timePhase",
+        "count": 1
+      },
+      "other": {
+        "text": "",
+        "playerRect": {
+          "x": 1098.0625,
+          "y": 45,
+          "width": 130,
+          "height": 180,
+          "top": 45,
+          "right": 1228.0625,
+          "bottom": 225,
+          "left": 1098.0625
+        },
+        "playerWidth": 130,
+        "count": 0
+      }
+    },
+    "resolvedChoice": {
+      "tip": {
+        "text": "闪思考中",
+        "subject": "闪",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": "rgb(245, 222, 67)",
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1329.3125,
+          "y": 373.1513671875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 373.1513671875,
+          "right": 1433.3125,
+          "bottom": 395.0419921875,
+          "left": 1329.3125
+        },
+        "playerRect": {
+          "x": 1317,
+          "y": 175.046875,
+          "width": 130,
+          "height": 180,
+          "top": 175.046875,
+          "right": 1447,
+          "bottom": 355.046875,
+          "left": 1317
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1318.5,
+          "y": 363.03125,
+          "width": 122,
+          "height": 6.015625,
+          "top": 363.03125,
+          "right": 1440.5,
+          "bottom": 369.046875,
+          "left": 1318.5
+        },
+        "barClass": "timePhase",
+        "count": 1
+      },
+      "other": {
+        "text": "",
+        "playerRect": {
+          "x": 1098.0625,
+          "y": 45,
+          "width": 130,
+          "height": 180,
+          "top": 45,
+          "right": 1228.0625,
+          "bottom": 225,
+          "left": 1098.0625
+        },
+        "playerWidth": 130,
+        "count": 0
+      }
+    },
+    "phases": [
+      {
+        "text": "回合开始",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": null,
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1329.3125,
+          "y": 373.1513671875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 373.1513671875,
+          "right": 1433.3125,
+          "bottom": 395.0419921875,
+          "left": 1329.3125
+        },
+        "playerRect": {
+          "x": 1317,
+          "y": 175.046875,
+          "width": 130,
+          "height": 180,
+          "top": 175.046875,
+          "right": 1447,
+          "bottom": 355.046875,
+          "left": 1317
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1318.5,
+          "y": 363.03125,
+          "width": 122,
+          "height": 6.015625,
+          "top": 363.03125,
+          "right": 1440.5,
+          "bottom": 369.046875,
+          "left": 1318.5
+        },
+        "barClass": "timePhase",
+        "count": 1
+      },
+      {
+        "text": "判定阶段",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": null,
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1329.3125,
+          "y": 373.1513671875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 373.1513671875,
+          "right": 1433.3125,
+          "bottom": 395.0419921875,
+          "left": 1329.3125
+        },
+        "playerRect": {
+          "x": 1317,
+          "y": 175.046875,
+          "width": 130,
+          "height": 180,
+          "top": 175.046875,
+          "right": 1447,
+          "bottom": 355.046875,
+          "left": 1317
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1318.5,
+          "y": 363.03125,
+          "width": 122,
+          "height": 6.015625,
+          "top": 363.03125,
+          "right": 1440.5,
+          "bottom": 369.046875,
+          "left": 1318.5
+        },
+        "barClass": "timePhase",
+        "count": 1
+      },
+      {
+        "text": "摸牌阶段",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": null,
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1329.3125,
+          "y": 373.1513671875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 373.1513671875,
+          "right": 1433.3125,
+          "bottom": 395.0419921875,
+          "left": 1329.3125
+        },
+        "playerRect": {
+          "x": 1317,
+          "y": 175.046875,
+          "width": 130,
+          "height": 180,
+          "top": 175.046875,
+          "right": 1447,
+          "bottom": 355.046875,
+          "left": 1317
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1318.5,
+          "y": 363.03125,
+          "width": 122,
+          "height": 6.015625,
+          "top": 363.03125,
+          "right": 1440.5,
+          "bottom": 369.046875,
+          "left": 1318.5
+        },
+        "barClass": "timePhase",
+        "count": 1
+      },
+      {
+        "text": "出牌阶段",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": null,
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1329.3125,
+          "y": 373.1513671875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 373.1513671875,
+          "right": 1433.3125,
+          "bottom": 395.0419921875,
+          "left": 1329.3125
+        },
+        "playerRect": {
+          "x": 1317,
+          "y": 175.046875,
+          "width": 130,
+          "height": 180,
+          "top": 175.046875,
+          "right": 1447,
+          "bottom": 355.046875,
+          "left": 1317
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1318.5,
+          "y": 363.03125,
+          "width": 122,
+          "height": 6.015625,
+          "top": 363.03125,
+          "right": 1440.5,
+          "bottom": 369.046875,
+          "left": 1318.5
+        },
+        "barClass": "timePhase",
+        "count": 1
+      },
+      {
+        "text": "弃牌阶段",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": null,
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1329.3125,
+          "y": 373.1513671875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 373.1513671875,
+          "right": 1433.3125,
+          "bottom": 395.0419921875,
+          "left": 1329.3125
+        },
+        "playerRect": {
+          "x": 1317,
+          "y": 175.046875,
+          "width": 130,
+          "height": 180,
+          "top": 175.046875,
+          "right": 1447,
+          "bottom": 355.046875,
+          "left": 1317
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1318.5,
+          "y": 363.03125,
+          "width": 122,
+          "height": 6.015625,
+          "top": 363.03125,
+          "right": 1440.5,
+          "bottom": 369.046875,
+          "left": 1318.5
+        },
+        "barClass": "timePhase",
+        "count": 1
+      },
+      {
+        "text": "结束阶段",
+        "color": "rgb(247, 226, 201)",
+        "subjectColor": null,
+        "fontSize": "10.9474px",
+        "font": "dui-yjcm-label, serif",
+        "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+        "rect": {
+          "x": 1329.3125,
+          "y": 373.1513671875,
+          "width": 104,
+          "height": 21.890625,
+          "top": 373.1513671875,
+          "right": 1433.3125,
+          "bottom": 395.0419921875,
+          "left": 1329.3125
+        },
+        "playerRect": {
+          "x": 1317,
+          "y": 175.046875,
+          "width": 130,
+          "height": 180,
+          "top": 175.046875,
+          "right": 1447,
+          "bottom": 355.046875,
+          "left": 1317
+        },
+        "playerWidth": 130,
+        "bar": {
+          "x": 1318.5,
+          "y": 363.03125,
+          "width": 122,
+          "height": 6.015625,
+          "top": 363.03125,
+          "right": 1440.5,
+          "bottom": 369.046875,
+          "left": 1318.5
+        },
+        "barClass": "timePhase",
+        "count": 1
+      }
+    ],
+    "geometry": {
+      "text": "无懈可击思考中",
+      "subject": "无懈可击",
+      "color": "rgb(247, 226, 201)",
+      "subjectColor": "rgb(245, 222, 67)",
+      "fontSize": "10.9474px",
+      "font": "dui-yjcm-label, serif",
+      "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+      "rect": {
+        "x": 1329.3125,
+        "y": 373.1513671875,
+        "width": 104,
+        "height": 21.890625,
+        "top": 373.1513671875,
+        "right": 1433.3125,
+        "bottom": 395.0419921875,
+        "left": 1329.3125
+      },
+      "playerRect": {
+        "x": 1317,
+        "y": 175.046875,
+        "width": 130,
+        "height": 180,
+        "top": 175.046875,
+        "right": 1447,
+        "bottom": 355.046875,
+        "left": 1317
+      },
+      "playerWidth": 130,
+      "bar": {
+        "x": 1318.5,
+        "y": 363.03125,
+        "width": 122,
+        "height": 6.015625,
+        "top": 363.03125,
+        "right": 1440.5,
+        "bottom": 369.046875,
+        "left": 1318.5
+      },
+      "barClass": "timePhase",
+      "count": 1
+    },
+    "progressSeparation": [
+      {
+        "viewport": 1500,
+        "zoom": 1,
+        "pair": [
+          {
+            "text": "无懈可击思考中",
+            "subject": "无懈可击",
+            "color": "rgb(247, 226, 201)",
+            "subjectColor": "rgb(245, 222, 67)",
+            "fontSize": "10.9474px",
+            "font": "dui-yjcm-label, serif",
+            "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+            "rect": {
+              "x": 1329.3125,
+              "y": 373.1513671875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 373.1513671875,
+              "right": 1433.3125,
+              "bottom": 395.0419921875,
+              "left": 1329.3125
+            },
+            "playerRect": {
+              "x": 1317,
+              "y": 175.046875,
+              "width": 130,
+              "height": 180,
+              "top": 175.046875,
+              "right": 1447,
+              "bottom": 355.046875,
+              "left": 1317
+            },
+            "playerWidth": 130,
+            "bar": {
+              "x": 1318.5,
+              "y": 363.03125,
+              "width": 122,
+              "height": 6.015625,
+              "top": 363.03125,
+              "right": 1440.5,
+              "bottom": 369.046875,
+              "left": 1318.5
+            },
+            "barClass": "timePhase",
+            "count": 1
+          },
+          {
+            "text": "无懈可击思考中",
+            "subject": "无懈可击",
+            "color": "rgb(247, 226, 201)",
+            "subjectColor": "rgb(245, 222, 67)",
+            "fontSize": "10.9474px",
+            "font": "dui-yjcm-label, serif",
+            "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+            "rect": {
+              "x": 1110.375,
+              "y": 243.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 243.1044921875,
+              "right": 1214.375,
+              "bottom": 264.9951171875,
+              "left": 1110.375
+            },
+            "playerRect": {
+              "x": 1098.0625,
+              "y": 45,
+              "width": 130,
+              "height": 180,
+              "top": 45,
+              "right": 1228.0625,
+              "bottom": 225,
+              "left": 1098.0625
+            },
+            "playerWidth": 130,
+            "bar": {
+              "x": 1099.5625,
+              "y": 232.984375,
+              "width": 122,
+              "height": 6.015625,
+              "top": 232.984375,
+              "right": 1221.5625,
+              "bottom": 239,
+              "left": 1099.5625
+            },
+            "barClass": "timeai",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "viewport": 1500,
+        "zoom": 1.25,
+        "pair": [
+          {
+            "text": "无懈可击思考中",
+            "subject": "无懈可击",
+            "color": "rgb(247, 226, 201)",
+            "subjectColor": "rgb(245, 222, 67)",
+            "fontSize": "10.9474px",
+            "font": "dui-yjcm-label, serif",
+            "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+            "rect": {
+              "x": 1286.640625,
+              "y": 422.6767578125,
+              "width": 130,
+              "height": 27.359375,
+              "top": 422.6767578125,
+              "right": 1416.640625,
+              "bottom": 450.0361328125,
+              "left": 1286.640625
+            },
+            "playerRect": {
+              "x": 1271.25,
+              "y": 175.046875,
+              "width": 162.5,
+              "height": 225,
+              "top": 175.046875,
+              "right": 1433.75,
+              "bottom": 400.046875,
+              "left": 1271.25
+            },
+            "playerWidth": 130,
+            "bar": {
+              "x": 1273.125,
+              "y": 410.03125,
+              "width": 152.5,
+              "height": 7.515625,
+              "top": 410.03125,
+              "right": 1425.625,
+              "bottom": 417.546875,
+              "left": 1273.125
+            },
+            "barClass": "timePhase",
+            "count": 1
+          },
+          {
+            "text": "无懈可击思考中",
+            "subject": "无懈可击",
+            "color": "rgb(247, 226, 201)",
+            "subjectColor": "rgb(245, 222, 67)",
+            "fontSize": "10.9474px",
+            "font": "dui-yjcm-label, serif",
+            "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+            "rect": {
+              "x": 1093.21875,
+              "y": 300.1298828125,
+              "width": 130,
+              "height": 27.359375,
+              "top": 300.1298828125,
+              "right": 1223.21875,
+              "bottom": 327.4892578125,
+              "left": 1093.21875
+            },
+            "playerRect": {
+              "x": 1077.828125,
+              "y": 52.5,
+              "width": 162.5,
+              "height": 225,
+              "top": 52.5,
+              "right": 1240.328125,
+              "bottom": 277.5,
+              "left": 1077.828125
+            },
+            "playerWidth": 130,
+            "bar": {
+              "x": 1079.703125,
+              "y": 287.484375,
+              "width": 152.5,
+              "height": 7.515625,
+              "top": 287.484375,
+              "right": 1232.203125,
+              "bottom": 295,
+              "left": 1079.703125
+            },
+            "barClass": "timeai",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "viewport": 1280,
+        "zoom": 1,
+        "pair": [
+          {
+            "text": "无懈可击思考中",
+            "subject": "无懈可击",
+            "color": "rgb(247, 226, 201)",
+            "subjectColor": "rgb(245, 222, 67)",
+            "fontSize": "10.9474px",
+            "font": "dui-yjcm-label, serif",
+            "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+            "rect": {
+              "x": 1109.3125,
+              "y": 373.1513671875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 373.1513671875,
+              "right": 1213.3125,
+              "bottom": 395.0419921875,
+              "left": 1109.3125
+            },
+            "playerRect": {
+              "x": 1097,
+              "y": 175.046875,
+              "width": 130,
+              "height": 180,
+              "top": 175.046875,
+              "right": 1227,
+              "bottom": 355.046875,
+              "left": 1097
+            },
+            "playerWidth": 130,
+            "bar": {
+              "x": 1098.5,
+              "y": 363.03125,
+              "width": 122,
+              "height": 6.015625,
+              "top": 363.03125,
+              "right": 1220.5,
+              "bottom": 369.046875,
+              "left": 1098.5
+            },
+            "barClass": "timePhase",
+            "count": 1
+          },
+          {
+            "text": "无懈可击思考中",
+            "subject": "无懈可击",
+            "color": "rgb(247, 226, 201)",
+            "subjectColor": "rgb(245, 222, 67)",
+            "fontSize": "10.9474px",
+            "font": "dui-yjcm-label, serif",
+            "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+            "rect": {
+              "x": 937.453125,
+              "y": 243.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 243.1044921875,
+              "right": 1041.453125,
+              "bottom": 264.9951171875,
+              "left": 937.453125
+            },
+            "playerRect": {
+              "x": 925.140625,
+              "y": 45,
+              "width": 130,
+              "height": 180,
+              "top": 45,
+              "right": 1055.140625,
+              "bottom": 225,
+              "left": 925.140625
+            },
+            "playerWidth": 130,
+            "bar": {
+              "x": 926.640625,
+              "y": 232.984375,
+              "width": 122,
+              "height": 6.015625,
+              "top": 232.984375,
+              "right": 1048.640625,
+              "bottom": 239,
+              "left": 926.640625
+            },
+            "barClass": "timeai",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "viewport": 1280,
+        "zoom": 1.25,
+        "pair": [
+          {
+            "text": "无懈可击思考中",
+            "subject": "无懈可击",
+            "color": "rgb(247, 226, 201)",
+            "subjectColor": "rgb(245, 222, 67)",
+            "fontSize": "10.9474px",
+            "font": "dui-yjcm-label, serif",
+            "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+            "rect": {
+              "x": 1109.3125,
+              "y": 373.1513671875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 373.1513671875,
+              "right": 1213.3125,
+              "bottom": 395.0419921875,
+              "left": 1109.3125
+            },
+            "playerRect": {
+              "x": 1097,
+              "y": 175.046875,
+              "width": 130,
+              "height": 180,
+              "top": 175.046875,
+              "right": 1227,
+              "bottom": 355.046875,
+              "left": 1097
+            },
+            "playerWidth": 130,
+            "bar": {
+              "x": 1098.5,
+              "y": 363.03125,
+              "width": 122,
+              "height": 6.015625,
+              "top": 363.03125,
+              "right": 1220.5,
+              "bottom": 369.046875,
+              "left": 1098.5
+            },
+            "barClass": "timePhase",
+            "count": 1
+          },
+          {
+            "text": "无懈可击思考中",
+            "subject": "无懈可击",
+            "color": "rgb(247, 226, 201)",
+            "subjectColor": "rgb(245, 222, 67)",
+            "fontSize": "10.9474px",
+            "font": "dui-yjcm-label, serif",
+            "bg": "url(\"http://127.0.0.1:56928/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tip/xinsha/gamestatus_bar.png\")",
+            "rect": {
+              "x": 937.453125,
+              "y": 243.1044921875,
+              "width": 104,
+              "height": 21.890625,
+              "top": 243.1044921875,
+              "right": 1041.453125,
+              "bottom": 264.9951171875,
+              "left": 937.453125
+            },
+            "playerRect": {
+              "x": 925.140625,
+              "y": 45,
+              "width": 130,
+              "height": 180,
+              "top": 45,
+              "right": 1055.140625,
+              "bottom": 225,
+              "left": 925.140625
+            },
+            "playerWidth": 130,
+            "bar": {
+              "x": 926.640625,
+              "y": 232.984375,
+              "width": 122,
+              "height": 6.015625,
+              "top": 232.984375,
+              "right": 1048.640625,
+              "bottom": 239,
+              "left": 926.640625
+            },
+            "barClass": "timeai",
+            "count": 1
+          }
+        ]
+      }
+    ],
+    "lifecycle": {
+      "samples": [
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": true,
+            "tip": true,
+            "seat": "none"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ],
+        [
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          },
+          {
+            "bar": false,
+            "tip": false,
+            "seat": "block"
+          }
+        ]
+      ],
+      "afterExit": [
+        {
+          "bar": false,
+          "tip": false,
+          "seat": "block"
+        },
+        {
+          "bar": false,
+          "tip": false,
+          "seat": "block"
+        }
+      ],
+      "afterEnter": [
+        {
+          "bar": true,
+          "tip": true,
+          "seat": "none"
+        },
+        {
+          "bar": false,
+          "tip": false,
+          "seat": "block"
+        }
+      ],
+      "onTimeout": [
+        {
+          "bar": false,
+          "tip": false,
+          "seat": "block"
+        },
+        {
+          "bar": false,
+          "tip": false,
+          "seat": "block"
+        }
+      ],
+      "later": [
+        {
+          "bar": false,
+          "tip": false,
+          "seat": "block"
+        },
+        {
+          "bar": false,
+          "tip": false,
+          "seat": "block"
+        }
+      ],
+      "callbacks": 1,
+      "event": "phaseUse",
+      "paused": true,
+      "imchoosing": true
+    },
+    "cleanup": {
+      "character": "",
+      "switched": "",
+      "over": ""
+    }
+  },
+  "onlineUI": {
+    "native": {
+      "result": "ai",
+      "tip": {
+        "text": "",
+        "playerRect": {
+          "x": 1276.171875,
+          "y": 237.53125,
+          "width": 132,
+          "height": 175,
+          "top": 237.53125,
+          "right": 1408.171875,
+          "bottom": 412.53125,
+          "left": 1276.171875
+        },
+        "playerWidth": 132,
+        "count": 1
+      },
+      "online": "思考 出牌"
+    },
+    "wuxie": {
+      "tip": {
+        "text": "",
+        "playerRect": {
+          "x": 1276.171875,
+          "y": 237.53125,
+          "width": 132,
+          "height": 175,
+          "top": 237.53125,
+          "right": 1408.171875,
+          "bottom": 412.53125,
+          "left": 1276.171875
+        },
+        "playerWidth": 132,
+        "count": 1
+      },
+      "other": {
+        "text": "",
+        "playerRect": {
+          "x": 1065.109375,
+          "y": 107.03125,
+          "width": 132,
+          "height": 175,
+          "top": 107.03125,
+          "right": 1197.109375,
+          "bottom": 282.03125,
+          "left": 1065.109375
+        },
+        "playerWidth": 132,
+        "count": 0
+      }
+    },
+    "shan": {
+      "tip": {
+        "text": "",
+        "playerRect": {
+          "x": 1276.171875,
+          "y": 237.53125,
+          "width": 132,
+          "height": 175,
+          "top": 237.53125,
+          "right": 1408.171875,
+          "bottom": 412.53125,
+          "left": 1276.171875
+        },
+        "playerWidth": 132,
+        "count": 1
+      },
+      "other": {
+        "text": "",
+        "playerRect": {
+          "x": 1065.109375,
+          "y": 107.03125,
+          "width": 132,
+          "height": 175,
+          "top": 107.03125,
+          "right": 1197.109375,
+          "bottom": 282.03125,
+          "left": 1065.109375
+        },
+        "playerWidth": 132,
+        "count": 0
+      }
+    },
+    "sha": {
+      "tip": {
+        "text": "",
+        "playerRect": {
+          "x": 1276.171875,
+          "y": 237.53125,
+          "width": 132,
+          "height": 175,
+          "top": 237.53125,
+          "right": 1408.171875,
+          "bottom": 412.53125,
+          "left": 1276.171875
+        },
+        "playerWidth": 132,
+        "count": 1
+      },
+      "other": {
+        "text": "",
+        "playerRect": {
+          "x": 1065.109375,
+          "y": 107.03125,
+          "width": 132,
+          "height": 175,
+          "top": 107.03125,
+          "right": 1197.109375,
+          "bottom": 282.03125,
+          "left": 1065.109375
+        },
+        "playerWidth": 132,
+        "count": 0
+      }
+    },
+    "tao": {
+      "tip": {
+        "text": "",
+        "playerRect": {
+          "x": 1276.171875,
+          "y": 237.53125,
+          "width": 132,
+          "height": 175,
+          "top": 237.53125,
+          "right": 1408.171875,
+          "bottom": 412.53125,
+          "left": 1276.171875
+        },
+        "playerWidth": 132,
+        "count": 1
+      },
+      "other": {
+        "text": "",
+        "playerRect": {
+          "x": 1065.109375,
+          "y": 107.03125,
+          "width": 132,
+          "height": 175,
+          "top": 107.03125,
+          "right": 1197.109375,
+          "bottom": 282.03125,
+          "left": 1065.109375
+        },
+        "playerWidth": 132,
+        "count": 0
+      }
+    },
+    "skill": {
+      "tip": {
+        "text": "",
+        "playerRect": {
+          "x": 1276.171875,
+          "y": 237.53125,
+          "width": 132,
+          "height": 175,
+          "top": 237.53125,
+          "right": 1408.171875,
+          "bottom": 412.53125,
+          "left": 1276.171875
+        },
+        "playerWidth": 132,
+        "count": 1
+      },
+      "other": {
+        "text": "",
+        "playerRect": {
+          "x": 1065.109375,
+          "y": 107.03125,
+          "width": 132,
+          "height": 175,
+          "top": 107.03125,
+          "right": 1197.109375,
+          "bottom": 282.03125,
+          "left": 1065.109375
+        },
+        "playerWidth": 132,
+        "count": 0
+      }
+    },
+    "longCard": {
+      "tip": {
+        "text": "",
+        "playerRect": {
+          "x": 1276.171875,
+          "y": 237.53125,
+          "width": 132,
+          "height": 175,
+          "top": 237.53125,
+          "right": 1408.171875,
+          "bottom": 412.53125,
+          "left": 1276.171875
+        },
+        "playerWidth": 132,
+        "count": 1
+      },
+      "other": {
+        "text": "",
+        "playerRect": {
+          "x": 1065.109375,
+          "y": 107.03125,
+          "width": 132,
+          "height": 175,
+          "top": 107.03125,
+          "right": 1197.109375,
+          "bottom": 282.03125,
+          "left": 1065.109375
+        },
+        "playerWidth": 132,
+        "count": 0
+      }
+    },
+    "resolvedChoice": {
+      "tip": {
+        "text": "",
+        "playerRect": {
+          "x": 1276.171875,
+          "y": 237.53125,
+          "width": 132,
+          "height": 175,
+          "top": 237.53125,
+          "right": 1408.171875,
+          "bottom": 412.53125,
+          "left": 1276.171875
+        },
+        "playerWidth": 132,
+        "count": 1
+      },
+      "other": {
+        "text": "",
+        "playerRect": {
+          "x": 1065.109375,
+          "y": 107.03125,
+          "width": 132,
+          "height": 175,
+          "top": 107.03125,
+          "right": 1197.109375,
+          "bottom": 282.03125,
+          "left": 1065.109375
+        },
+        "playerWidth": 132,
+        "count": 0
+      }
+    }
+  }
+}

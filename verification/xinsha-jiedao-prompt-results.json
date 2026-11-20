@@ -1,0 +1,147 @@
+{
+  "othersOff": {
+    "cases": [
+      {
+        "missingHp": 1,
+        "main": "发动“截刀”，请选择增加的伤害值",
+        "field": "ActiveTip",
+        "controls": [
+          "一",
+          "cancel2"
+        ],
+        "links": [
+          "一",
+          "cancel2"
+        ],
+        "custom": {
+          "main": "截刀：只能选择指定的数值",
+          "detail": "必须保留的条件",
+          "skill": "截刀",
+          "official": null
+        },
+        "damageUnchanged": true,
+        "resultUnchanged": true
+      },
+      {
+        "missingHp": 2,
+        "main": "发动“截刀”，请选择增加的伤害值",
+        "field": "ActiveTip",
+        "controls": [
+          "一",
+          "二",
+          "cancel2"
+        ],
+        "links": [
+          "一",
+          "二",
+          "cancel2"
+        ],
+        "custom": {
+          "main": "截刀：只能选择指定的数值",
+          "detail": "必须保留的条件",
+          "skill": "截刀",
+          "official": null
+        },
+        "damageUnchanged": true,
+        "resultUnchanged": true
+      },
+      {
+        "missingHp": 3,
+        "main": "发动“截刀”，请选择增加的伤害值",
+        "field": "ActiveTip",
+        "controls": [
+          "一",
+          "二",
+          "三",
+          "cancel2"
+        ],
+        "links": [
+          "一",
+          "二",
+          "三",
+          "cancel2"
+        ],
+        "custom": {
+          "main": "截刀：只能选择指定的数值",
+          "detail": "必须保留的条件",
+          "skill": "截刀",
+          "official": null
+        },
+        "damageUnchanged": true,
+        "resultUnchanged": true
+      }
+    ],
+    "errors": []
+  },
+  "onlineUI": {
+    "cases": [
+      {
+        "missingHp": 1,
+        "main": "是否对关羽发动【截刀】？",
+        "controls": [
+          "一",
+          "cancel2"
+        ],
+        "links": [
+          "一",
+          "cancel2"
+        ],
+        "custom": {
+          "main": "截刀：只能选择指定的数值",
+          "detail": "必须保留的条件",
+          "skill": "截刀",
+          "official": null
+        },
+        "damageUnchanged": true,
+        "resultUnchanged": true
+      },
+      {
+        "missingHp": 2,
+        "main": "是否对关羽发动【截刀】？",
+        "controls": [
+          "一",
+          "二",
+          "cancel2"
+        ],
+        "links": [
+          "一",
+          "二",
+          "cancel2"
+        ],
+        "custom": {
+          "main": "截刀：只能选择指定的数值",
+          "detail": "必须保留的条件",
+          "skill": "截刀",
+          "official": null
+        },
+        "damageUnchanged": true,
+        "resultUnchanged": true
+      },
+      {
+        "missingHp": 3,
+        "main": "是否对关羽发动【截刀】？",
+        "controls": [
+          "一",
+          "二",
+          "三",
+          "cancel2"
+        ],
+        "links": [
+          "一",
+          "二",
+          "三",
+          "cancel2"
+        ],
+        "custom": {
+          "main": "截刀：只能选择指定的数值",
+          "detail": "必须保留的条件",
+          "skill": "截刀",
+          "official": null
+        },
+        "damageUnchanged": true,
+        "resultUnchanged": true
+      }
+    ],
+    "errors": []
+  }
+}

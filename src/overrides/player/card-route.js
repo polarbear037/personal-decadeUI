@@ -1,8 +1,10 @@
+import { game, get } from "noname";
 import { STYLE_TO_SKIN, DEFAULT_SKIN } from "../../../ui/constants.js";
 import * as fallbackActions from "./card-actions.js";
 import * as fallbackMovement from "./card-movement.js";
 import { refreshEquipLayout } from "../../ui/equip-layout.js";
 import { installEquipSweepCompatibility } from "../../ui/equip-effects.js";
+import { installXinshaCardSettlementYield } from "../../ui/card-settlement-xinsha.js";
 
 const ACTION_EXPORTS = ["playerHandleEquipChange", "playerLose", "playerRespond", "playerRespondAnimateBefore", "playerUseCard", "playerUseCardAnimateBefore"];
 const MOVEMENT_EXPORTS = ["playerAddVirtualJudge", "playerDirectgain", "playerDirectgains", "playerDraw", "playerGain2", "playerGive", "playerPhaseJudge", "playerThrow", "playerThrowordered2", "setBasePlayerDraw"];
@@ -36,6 +38,7 @@ async function loadPlayerCardOverrides(style) {
 		loadStyleModule(`./card-movement-${skin}.js`, fallbackMovement, MOVEMENT_EXPORTS, "卡牌移动", skin),
 	]);
 	[actionOverrides, movementOverrides] = [actions, movement];
+	if (skin === "xinsha") installXinshaCardSettlementYield();
 	return { skin, actions, movement };
 }
 
@@ -59,7 +62,10 @@ function playerRespondAnimateBefore() {
 }
 
 function playerUseCard() {
-	return actionOverrides.playerUseCard.apply(this, arguments);
+	const event = actionOverrides.playerUseCard.apply(this, arguments);
+	// 只跳过用牌展示等待，动画及选择、响应和结算仍走各自的原生流程。
+	event.delayx = false;
+	return event;
 }
 
 function playerUseCardAnimateBefore() {
@@ -90,8 +96,11 @@ function playerGive() {
 	return movementOverrides.playerGive.apply(this, arguments);
 }
 
-function playerPhaseJudge() {
-	return movementOverrides.playerPhaseJudge.apply(this, arguments);
+function playerPhaseJudge(card) {
+	game.addVideo("phaseJudge", this, get.cardInfo(card));
+	const cards = card[card.cardSymbol]?.cards;
+	// 只播放判定区移出画面，不登记过渡等待；判定规则仍由本体事件处理。
+	this.$throw(cards?.length ? cards : game.createCard(card.name, "虚拟", ""));
 }
 
 function playerThrow() {

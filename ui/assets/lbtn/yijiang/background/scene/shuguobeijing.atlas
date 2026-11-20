@@ -1,0 +1,146 @@
+
+shuguobeijing.png
+size: 984,984
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guangglow_00
+  rotate: true
+  xy: 865, 35
+  size: 102, 106
+  orig: 108, 108
+  offset: 3, 2
+  index: -1
+shuguo_dashu
+  rotate: false
+  xy: 2, 641
+  size: 351, 341
+  orig: 351, 342
+  offset: 0, 1
+  index: -1
+shuguo_qiao1
+  rotate: false
+  xy: 901, 866
+  size: 65, 55
+  orig: 66, 55
+  offset: 0, 0
+  index: -1
+shuguo_qiao2
+  rotate: true
+  xy: 901, 923
+  size: 59, 65
+  orig: 59, 66
+  offset: 0, 1
+  index: -1
+shuguo_qiao3
+  rotate: false
+  xy: 695, 43
+  size: 168, 94
+  orig: 169, 95
+  offset: 0, 1
+  index: -1
+shuguo_xiongmao1
+  rotate: false
+  xy: 901, 809
+  size: 59, 55
+  orig: 60, 55
+  offset: 1, 0
+  index: -1
+shuguo_xiongmao2
+  rotate: true
+  xy: 968, 963
+  size: 19, 13
+  orig: 19, 13
+  offset: 0, 0
+  index: -1
+shuguo_xiongmao3
+  rotate: true
+  xy: 968, 946
+  size: 15, 14
+  orig: 16, 14
+  offset: 1, 0
+  index: -1
+shushuialangaok_00
+  rotate: true
+  xy: 628, 772
+  size: 210, 271
+  orig: 252, 302
+  offset: 0, 31
+  index: -1
+shushuialangaok_01
+  rotate: true
+  xy: 275, 348
+  size: 209, 271
+  orig: 252, 302
+  offset: 0, 31
+  index: -1
+shushuialangaok_02
+  rotate: false
+  xy: 275, 75
+  size: 208, 271
+  orig: 252, 302
+  offset: 0, 31
+  index: -1
+shushuialangaok_03
+  rotate: true
+  xy: 2, 218
+  size: 209, 271
+  orig: 252, 302
+  offset: 0, 31
+  index: -1
+shushuialangaok_04
+  rotate: true
+  xy: 628, 560
+  size: 210, 271
+  orig: 252, 302
+  offset: 0, 31
+  index: -1
+shushuialangaok_05
+  rotate: true
+  xy: 355, 771
+  size: 211, 271
+  orig: 252, 302
+  offset: 0, 31
+  index: -1
+shushuialangaok_06
+  rotate: true
+  xy: 355, 559
+  size: 210, 271
+  orig: 252, 302
+  offset: 0, 31
+  index: -1
+shushuialangaok_07
+  rotate: true
+  xy: 628, 348
+  size: 210, 271
+  orig: 252, 302
+  offset: 0, 31
+  index: -1
+shushuialangaok_08
+  rotate: false
+  xy: 485, 75
+  size: 208, 271
+  orig: 252, 302
+  offset: 0, 31
+  index: -1
+shushuialangaok_09
+  rotate: true
+  xy: 695, 139
+  size: 207, 271
+  orig: 252, 302
+  offset: 0, 31
+  index: -1
+shushuialangaok_10
+  rotate: true
+  xy: 2, 7
+  size: 209, 271
+  orig: 252, 302
+  offset: 0, 31
+  index: -1
+shushuialangaok_11
+  rotate: true
+  xy: 2, 429
+  size: 210, 271
+  orig: 252, 302
+  offset: 0, 31
+  index: -1

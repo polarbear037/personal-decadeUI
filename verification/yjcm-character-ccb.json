@@ -1,0 +1,210 @@
+{
+  "member": "assets/res/new/data/ccb/seatInfo.ccbi",
+  "sha256": "7e34a1288b3460d0fe9feb07d4256fabe19115f02b29c59e3c5b232180543f47",
+  "format": "CocosBuilder v5; parsed all bytes, no trailing data",
+  "reader_format_reference": "https://github.com/cocos2d/CCBReader/blob/master/CCBReader/CCBReader.m",
+  "root": {
+    "contentSize": [
+      190,
+      252,
+      0
+    ],
+    "anchorPoint": [
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      0
+    ],
+    "ignoreAnchorPointForPosition": 0
+  },
+  "selected_nodes": [
+    {
+      "class": "CCSprite",
+      "properties": {
+        "anchorPoint": [
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          0
+        ],
+        "tag": 200,
+        "ignoreAnchorPointForPosition": 0,
+        "displayFrame": [
+          "gameinfo.plist",
+          "cardbg.png"
+        ],
+        "blendFunc": [
+          770,
+          771
+        ]
+      },
+      "offset": 831
+    },
+    {
+      "class": "CCSprite",
+      "properties": {
+        "position": [
+          20,
+          6,
+          0
+        ],
+        "anchorPoint": [
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          0
+        ],
+        "tag": 201,
+        "ignoreAnchorPointForPosition": 0,
+        "displayFrame": [
+          "gameinfo.plist",
+          "game_kuang.png"
+        ],
+        "blendFunc": [
+          770,
+          771
+        ]
+      },
+      "offset": 1146
+    },
+    {
+      "class": "CCSprite",
+      "properties": {
+        "position": [
+          121,
+          0,
+          0
+        ],
+        "anchorPoint": [
+          0.5,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          0
+        ],
+        "tag": 202,
+        "ignoreAnchorPointForPosition": 0,
+        "displayFrame": [
+          "gameinfo.plist",
+          "hp_bg_1.png"
+        ],
+        "opacity": 0,
+        "blendFunc": [
+          770,
+          771
+        ]
+      },
+      "offset": 1198
+    },
+    {
+      "class": "CCSprite",
+      "properties": {
+        "position": [
+          23,
+          143,
+          0
+        ],
+        "anchorPoint": [
+          0.5,
+          0.5
+        ],
+        "scale": [
+          1,
+          1,
+          0
+        ],
+        "tag": 203,
+        "ignoreAnchorPointForPosition": 0,
+        "displayFrame": [
+          "gameinfo.plist",
+          "tag_4.png"
+        ],
+        "blendFunc": [
+          770,
+          771
+        ]
+      },
+      "offset": 1254
+    },
+    {
+      "class": "CCSprite",
+      "properties": {
+        "position": [
+          25,
+          221,
+          0
+        ],
+        "anchorPoint": [
+          0.5,
+          0.5
+        ],
+        "scale": [
+          1,
+          1,
+          0
+        ],
+        "tag": 204,
+        "ignoreAnchorPointForPosition": 0,
+        "displayFrame": [
+          "gameinfo.plist",
+          "country_flag_4.png"
+        ],
+        "blendFunc": [
+          770,
+          771
+        ]
+      },
+      "offset": 1362
+    },
+    {
+      "class": "CCLabelTTF",
+      "properties": {
+        "position": [
+          23,
+          150,
+          0
+        ],
+        "anchorPoint": [
+          0.5,
+          0.5
+        ],
+        "scale": [
+          1,
+          1,
+          0
+        ],
+        "tag": 101,
+        "ignoreAnchorPointForPosition": 0,
+        "fontName": "Helvetica",
+        "fontSize": [
+          22,
+          0
+        ],
+        "dimensions": [
+          26,
+          82,
+          0
+        ],
+        "horizontalAlignment": 1,
+        "verticalAlignment": 1,
+        "string": ""
+      },
+      "offset": 2336
+    }
+  ],
+  "override_notes": [
+    "GeneralCardCcbNode.createChilden hides native _kuang1 and old HP. GeneralYjcmHpContainer and GeneralYjcmCountryContainer replace old tags202/203/204/101.",
+    "Static source graph; not an official client runtime capture."
+  ]
+}

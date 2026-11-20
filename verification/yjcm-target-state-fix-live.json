@@ -1,0 +1,71 @@
+{
+  "style": "othersOff",
+  "border": "dragon4",
+  "targetShake": "off",
+  "players": [
+    {
+      "position": "0",
+      "classes": "player fullskin d-skin glow_phase",
+      "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+      "scale": 1.03,
+      "rootTransform": "none",
+      "isActor": true
+    },
+    {
+      "position": "1",
+      "classes": "player fullskin d-skin",
+      "image": "none",
+      "scale": 1,
+      "rootTransform": "none",
+      "isActor": false
+    },
+    {
+      "position": "2",
+      "classes": "player fullskin",
+      "image": "none",
+      "scale": 1,
+      "rootTransform": "none",
+      "isActor": false
+    },
+    {
+      "position": "3",
+      "classes": "player fullskin",
+      "image": "none",
+      "scale": 1,
+      "rootTransform": "none",
+      "isActor": false
+    },
+    {
+      "position": "4",
+      "classes": "player fullskin",
+      "image": "none",
+      "scale": 1,
+      "rootTransform": "none",
+      "isActor": false
+    },
+    {
+      "position": "5",
+      "classes": "player fullskin",
+      "image": "none",
+      "scale": 1,
+      "rootTransform": "none",
+      "isActor": false
+    },
+    {
+      "position": "6",
+      "classes": "player fullskin",
+      "image": "none",
+      "scale": 1,
+      "rootTransform": "none",
+      "isActor": false
+    },
+    {
+      "position": "7",
+      "classes": "player fullskin",
+      "image": "none",
+      "scale": 1,
+      "rootTransform": "none",
+      "isActor": false
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import { ui, lib, get } from "noname";
 import { createLinkElement as createLinkElement, createScriptElement as createScriptElement } from "./loader.js";
 import { checkVersionCompatibility as e } from "../utils/version.js";
 import { prefixMarkModule as prefixMarkModule } from "../ui/prefixMark.js";
+import { getStyleFile } from "../styles/style-route.js";
 const o = ["chess", "tafang", "hs_hearthstone"],
 	n = ["on", "off", "othersOff", "onlineUI", "babysha", "codename"],
 	i = { on: "shizhounian", off: "shousha", othersOff: "xinsha", onlineUI: "online", babysha: "baby", codename: "codename" };
@@ -23,10 +24,13 @@ function r() {
 		},
 		prefixMark: prefixMarkModule,
 		init: async function () {
-			["src/styles/extension.css", "src/styles/decadeLayout.css", "src/styles/card.css", "src/styles/meihua.css", "src/styles/online-faction-dialog.css", "src/styles/online-hand-cards.css"].forEach(path => this.css(`${decadeUIPath}${path}`));
 			const style = a("newDecadeStyle", "on"),
 				styleIndex = n.indexOf(style);
-			(this.css(`${decadeUIPath}src/styles/player${-1 !== styleIndex ? styleIndex + 1 : 2}.css`), this.css(`${decadeUIPath}src/styles/equip.css`), this.css(`${decadeUIPath}src/styles/layout.css`), document.body.setAttribute("data-style", style), a("meanPrettify", !1) && (ui.css.decadeMenu = this.css(`${decadeUIPath}src/styles/menu.css`)), await this.js(`${decadeUIPath}src/libs/spine.js`));
+			document.body.setAttribute("data-style", style);
+			if (style === "othersOff") this.css(`${decadeUIPath}ui/styles/fonts-xinsha.css`);
+			if (style === "othersOff") this.css(`${decadeUIPath}src/styles/xinsha-faction-dialog.css`);
+			["extension", "decadeLayout", "card", "meihua", "online-faction-dialog", "online-hand-cards"].forEach(name => this.css(`${decadeUIPath}src/styles/${getStyleFile(name, style)}`));
+			(this.css(`${decadeUIPath}src/styles/player${-1 !== styleIndex ? styleIndex + 1 : 2}.css`), this.css(`${decadeUIPath}src/styles/${getStyleFile("equip", style)}`), this.css(`${decadeUIPath}src/styles/${getStyleFile("layout", style)}`), a("meanPrettify", !1) && (ui.css.decadeMenu = this.css(`${decadeUIPath}src/styles/menu.css`)), await this.js(`${decadeUIPath}src/libs/spine.js`));
 			const currentMode = get.mode(),
 				isPhoneLayout = lib.config.phonelayout;
 			if (!o.includes(currentMode)) {

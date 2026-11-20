@@ -1,4 +1,5 @@
 import { ui, get, _status, lib } from "noname";
+import { playXinshaCardEffect } from "./card-effects-xinsha.js";
 function e(card, e, t, n) {
 	const a =
 		n?.create ||
@@ -39,6 +40,61 @@ const t = { effect_caochuanjiejian: { key: "effect_caochuanjiejian" }, shan: { k
 function n(nature, card) {
 	return { thunder: "effect_leisha", fire: "effect_huosha" }[nature] || ("red" === get.color(card) ? "effect_hongsha" : "effect_heisha");
 }
+// GameMoveManager.getMoveToZoneCardTextLabel → CardUiNew.setCardTextLabel。
+// 原版把整句交给固定宽度的白字标签换行，不使用 cardsetion 的势力色/强制换行。
+function xinshaCardText(card, player, event) {
+	const plain = value => {
+		const node = document.createElement("span");
+		node.innerHTML = value || "";
+		return node.textContent || "";
+	};
+	const name = current => plain(get.slimName?.(current?.name) || get.translation(current?.name));
+	const skillName = skill => {
+		if (!skill) return "";
+		const source = get.sourceSkillFor?.(skill) || skill;
+		return source ? plain(get.skillTranslation?.(source, player) || get.translation(source)) : "";
+	};
+	const owner = name(player);
+	if (event.name === "judge") return plain(get.translation(event.judgestr)) + "判定牌";
+	if (["useCard", "respond"].includes(event.name)) {
+		const used = event.card;
+		// 转化牌在原版牌底只显示转化技能；原牌使用不重复拼接技能名。
+		const originals = used?.cards || event.cards || [card];
+		if (event.skill && (!originals.length || originals.some(original => original.name !== used?.name || !get.is.sameNature(get.nature(original), get.nature(used), true)))) {
+			const skill = skillName(event.skill);
+			if (skill) return skill;
+		}
+		if ((get.type?.(used) || lib.card[used?.name]?.type) === "equip") return owner + "装备";
+		const targets = event.targets || [];
+		if (["nanman", "wanjian"].includes(used?.name) || targets.includes(player)) return owner + "使用";
+		if (targets.length) return owner + "对" + targets.map(name).join("、");
+		return owner + "打出";
+	}
+	if (["lose", "loseAsync", "discard", "recast", "showCards", "chooseToCompare"].includes(event.name)) {
+		let source = event;
+		const seen = new Set();
+		while (source && !seen.has(source)) {
+			seen.add(source);
+			if (source.name === "recast") return owner + "重铸";
+			if (source.name === "chooseToCompare" || source.name === "showCards") return owner + skillName(source.skill) + "展示";
+			if (source.name === "useCard" && source.card?.name === "guohe") return "过河拆桥弃置";
+			if (["game", "phase", "phaseDiscard", "phaseUse"].includes(source.name)) break;
+			const skill = source.skill || (lib.skill[source.name] ? source.name : "");
+			if (skill && event.type === "discard") return owner + skillName(skill) + "弃置";
+			source = source.getParent?.() || source.parent;
+		}
+		if (event.type === "discard" || event.name === "discard") return owner + "弃置";
+	}
+	return "";
+}
+function setXinshaCardText(node, text) {
+	node.replaceChildren();
+	if (!text) return;
+	const label = document.createElement("span");
+	label.className = "dui-yjcm-used-text";
+	label.textContent = text;
+	node.appendChild(label);
+}
 function a(card, player, event, a) {
 	if (!card || !player || !event) return;
 	const i =
@@ -56,7 +112,7 @@ function a(card, player, event, a) {
 		(s =
 			"judge" === event.name
 				? (function (card, event, decadeUI) {
-						const initialText = event.judgestr + "的判定牌";
+						const initialText = lib.config.extension_十周年UI_newDecadeStyle === "othersOff" ? xinshaCardText(card, player, event) : event.judgestr + "的判定牌";
 						return (
 							event.addMessageHook?.("judgeResult", function () {
 								const evt = this,
@@ -71,6 +127,7 @@ function a(card, player, event, a) {
 								const numericEffect = typeof rawEffect === "boolean" ? (rawEffect ? 1 : -1) : Number(rawEffect);
 								const success = !Number.isNaN(numericEffect) && numericEffect >= 0;
 								((tagText = success ? "判定生效" : "判定失效"), apcard?._ap?.stopSpineAll?.(), playJudgeResultEffect(resultCard, success, decadeUI, apcard), (evt.apcard = void 0), (judgeValue.innerHTML = (get.translation(evt.judgestr) || "") + tagText));
+								if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff") setXinshaCardText(judgeValue, xinshaCardText(resultCard, player, evt));
 							}),
 							decadeUI.animation?.cap?.playSpineTo?.(card, { name: "effect_panding", action: "play", loop: !0 }),
 							(event.apcard = card),
@@ -81,7 +138,7 @@ function a(card, player, event, a) {
 						const i = _status.event;
 						const isCardUseEvent = ["useCard", "respond"].includes(event.name);
 						let text = "";
-						if (isCardUseEvent) {
+						if (isCardUseEvent && lib.config.extension_十周年UI_newDecadeStyle !== "othersOff") {
 							try {
 								_status.event = event;
 								text = get.cardsetion?.(player) || "";
@@ -104,16 +161,17 @@ function a(card, player, event, a) {
 									i = event.card.nature;
 								if ("sha" === e) {
 									const key = n(i, card);
-									decadeUI.animation?.cap?.playSpineTo?.(card, key);
+									playXinshaCardEffect(card, key, undefined, decadeUI.animation?.cap);
 								} else {
 									const n = t[e];
-									n && decadeUI.animation?.cap?.playSpineTo?.(card, n.key, n.opts);
+									n && playXinshaCardEffect(card, n.key, n.opts, decadeUI.animation?.cap);
 								}
 							}
 						}
 						return text;
 					})(card, player, event, a)),
 		(u.innerHTML = s));
+	if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff") setXinshaCardText(u, xinshaCardText(card, player, event));
 }
 function getJudgeResultEffect(success) {
 	const online = typeof lib !== "undefined" && lib.config?.extension_十周年UI_newDecadeStyle === "onlineUI";

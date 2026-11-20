@@ -1,0 +1,22 @@
+{
+  "cases": [
+    "new ordinary card dialog: default entry, bottom-left scale, deferred native confirm, no duplicate submission",
+    "choosePlayerCard, zoom=1, touch=false: one shared animation before native close",
+    "gainPlayerCard, zoom=1, touch=false: one shared animation before native close",
+    "discardPlayerCard, zoom=1, touch=false: one shared animation before native close",
+    "choosePlayerCard, zoom=1, touch=true: one shared animation before native close",
+    "gainPlayerCard, zoom=1, touch=true: one shared animation before native close",
+    "discardPlayerCard, zoom=1, touch=true: one shared animation before native close",
+    "choosePlayerCard, zoom=1.5, touch=false: one shared animation before native close",
+    "gainPlayerCard, zoom=1.5, touch=false: one shared animation before native close",
+    "discardPlayerCard, zoom=1.5, touch=false: one shared animation before native close",
+    "choosePlayerCard, zoom=1.5, touch=true: one shared animation before native close",
+    "gainPlayerCard, zoom=1.5, touch=true: one shared animation before native close",
+    "discardPlayerCard, zoom=1.5, touch=true: one shared animation before native close",
+    "natural playback: official close at 512 ms, delayed-exit DOM hidden immediately",
+    "connectMode flag: immediate native result, one callback, visual close after animation",
+    "pre-existing transform/scale: unchanged first frame and fixed bottom-left origin",
+    "native AI chooseButton: synchronous result and cleanup before resume, no stale selection for subsequent dying response"
+  ],
+  "errors": []
+}

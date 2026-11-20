@@ -1,0 +1,279 @@
+{
+  "client": {
+    "version": "6.4.5",
+    "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "member": "assets/res/lib/game.zip",
+    "member_sha256": "df9af4ec01e45b7a2bca47b4fa22c1537c8c8365199b8ba2f764224d5e696d04",
+    "decoded_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28",
+    "decoded_again_from_selected_apk": true
+  },
+  "rea_evidence": {
+    "apk_inventory": "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "decoded_game_inventory": "ev_f93105d387f7f88051537d7dc1e4ed3c2ee63cbf440c93814aa6386b400d4a4d"
+  },
+  "members": [
+    {
+      "path": "app.module.generalSkin.SkinSpineData",
+      "sha256": "a5980841f7fc9728330fceecfad31731da7e5b640cd5c96d8ec89307e9c3ae66"
+    },
+    {
+      "path": "app.view.game.seat.GeneralSkinUi",
+      "sha256": "7c388fb61245e77f8235dedad4a7dad26cef301a126f4a251d86a1c3a30ac55a"
+    },
+    {
+      "path": "app.view.skin.remote.SkinDynamicSkill",
+      "sha256": "2b0c56a48c9e8865cced5757e0be09582475b14b6976082107ba9ddebb45ee83"
+    }
+  ],
+  "observations": [
+    "SkinSpineData exposes DefenceAnimateInfos.",
+    "GeneralSkinUi root_23 consumes LineFileName/LineAnimateName and DefenceFileName/DefenceAnimateName; root_23_1 creates target defence nodes.",
+    "SkinDynamicSkill createSpine/root_2_0_0 forwards shouji/baodian Spine events to eventCallBack."
+  ],
+  "local_consumer": "extension/皮肤切换/chukuangWorker.js: playZhiShiXianWithPlayNode/playZhiShiXian",
+  "local_consumer_sha256": "b1b4ffb464ade95b9f798f020754b9cd541bf9a5eff691214adca8123702fbab",
+  "scope": "Static package inspection, Lua prototype/operand inspection, Spine runtime pose validation and worker-method fixture. No official or noname in-game visual validation.",
+  "skins": [
+    {
+      "general": "乐大乔",
+      "id": "yue_daqiao",
+      "skin": "暖风恋心",
+      "dynamicOwner": "yue_daqiao",
+      "missing": [],
+      "forms": [
+        {
+          "skin": "暖风恋心",
+          "resource": "6133501",
+          "attackEvent": 0.4000000059604645,
+          "attackDuration": 1.7999999523162842,
+          "hitEvent": 0.06666667014360428,
+          "lineDuration": 0.6666666865348816,
+          "existingCalibration": true
+        }
+      ]
+    },
+    {
+      "general": "乐小乔",
+      "id": "yue_xiaoqiao",
+      "skin": "暖风恋心",
+      "dynamicOwner": "yue_xiaoqiao",
+      "missing": [],
+      "forms": [
+        {
+          "skin": "暖风恋心",
+          "resource": "6133601",
+          "attackEvent": 0.699999988079071,
+          "attackDuration": 1.5,
+          "hitEvent": 0.06666667014360428,
+          "lineDuration": 0.6666666865348816,
+          "existingCalibration": true
+        }
+      ]
+    },
+    {
+      "general": "乐邹氏",
+      "id": "yue_zoushi",
+      "skin": "姝丽风华",
+      "dynamicOwner": "yue_zoushi",
+      "missing": [],
+      "forms": [
+        {
+          "skin": "姝丽风华",
+          "resource": "6133701",
+          "attackEvent": 0.4333333373069763,
+          "attackDuration": 1.3333333730697632,
+          "hitEvent": 0.06666667014360428,
+          "lineDuration": 0.6666666865348816,
+          "existingCalibration": false
+        }
+      ]
+    },
+    {
+      "general": "任婉",
+      "id": "renwan",
+      "skin": "春宵彩翼",
+      "dynamicOwner": "renwan",
+      "missing": [],
+      "forms": [
+        {
+          "skin": "春宵彩翼",
+          "resource": "6123801",
+          "attackEvent": 0.5,
+          "attackDuration": 1.4666666984558105,
+          "hitEvent": 0.06666667014360428,
+          "lineDuration": 0.6666666865348816,
+          "existingCalibration": false
+        }
+      ]
+    },
+    {
+      "general": "夏侯徽",
+      "id": "dc_xiahouhui",
+      "skin": "情澜拾珠",
+      "dynamicOwner": "jin_xiahouhui",
+      "missing": [],
+      "forms": [
+        {
+          "skin": "情澜拾珠",
+          "resource": "6150501",
+          "attackEvent": 0.4333333373069763,
+          "attackDuration": 1.8333333730697632,
+          "hitEvent": 0.06666667014360428,
+          "lineDuration": 0.6666666865348816,
+          "existingCalibration": false
+        }
+      ]
+    },
+    {
+      "general": "孙綝",
+      "id": "dc_sunchen",
+      "skin": "龙陛霆威",
+      "dynamicOwner": null,
+      "missing": [
+        "手机动态皮肤（未找到公开骨骼）"
+      ],
+      "forms": []
+    },
+    {
+      "general": "王昶",
+      "id": "dc_wangchang",
+      "skin": "虎贲冠勇",
+      "dynamicOwner": "dc_wangchang",
+      "missing": [],
+      "forms": [
+        {
+          "skin": "虎贲冠勇",
+          "resource": "6109101",
+          "attackEvent": 0.36666667461395264,
+          "attackDuration": 1.3333333730697632,
+          "hitEvent": 0.06666667014360428,
+          "lineDuration": 0.6666666865348816,
+          "existingCalibration": false
+        }
+      ]
+    },
+    {
+      "general": "田尚衣",
+      "id": "tianshangyi",
+      "skin": "姝丽风华",
+      "dynamicOwner": "tianshangyi",
+      "missing": [],
+      "forms": [
+        {
+          "skin": "姝丽风华",
+          "resource": "6124401",
+          "attackEvent": 0.5333333611488342,
+          "attackDuration": 1.3333333730697632,
+          "hitEvent": 0.06666667014360428,
+          "lineDuration": 0.6666666865348816,
+          "existingCalibration": true
+        }
+      ]
+    },
+    {
+      "general": "神马超",
+      "id": "shen_machao",
+      "skin": "马到功成",
+      "dynamicOwner": "shen_machao",
+      "missing": [],
+      "forms": [
+        {
+          "skin": "马到功成",
+          "resource": "621402",
+          "attackEvent": 0.46666666865348816,
+          "attackDuration": 1.5666667222976685,
+          "hitEvent": 0.06666667014360428,
+          "lineDuration": 0.6666666865348816,
+          "existingCalibration": true
+        }
+      ]
+    },
+    {
+      "general": "神黄忠",
+      "id": "shen_huangzhong",
+      "skin": "马到功成",
+      "dynamicOwner": "shen_huangzhong",
+      "missing": [],
+      "forms": [
+        {
+          "skin": "马到功成",
+          "resource": "622102",
+          "attackEvent": 0.6000000238418579,
+          "attackDuration": 1.2666666507720947,
+          "hitEvent": 0.06666667014360428,
+          "lineDuration": 0.6666666865348816,
+          "existingCalibration": true
+        }
+      ]
+    },
+    {
+      "general": "谋司马师",
+      "id": "dc_simashi",
+      "skin": "情澜拾珠",
+      "dynamicOwner": "simashi",
+      "missing": [],
+      "forms": [
+        {
+          "skin": "情澜拾珠",
+          "resource": "6164201",
+          "attackEvent": 0.4000000059604645,
+          "attackDuration": 1.5,
+          "hitEvent": 0.06666667014360428,
+          "lineDuration": 0.6666666865348816,
+          "existingCalibration": false
+        }
+      ]
+    },
+    {
+      "general": "谋贾诩",
+      "id": "dc_sb_jiaxu",
+      "skin": "权倾龙廷",
+      "dynamicOwner": "jiaxu",
+      "missing": [],
+      "forms": [
+        {
+          "skin": "权倾龙廷",
+          "resource": "6163401",
+          "attackEvent": 0.46666666865348816,
+          "attackDuration": 1.2999999523162842,
+          "hitEvent": 0.06666667014360428,
+          "lineDuration": 0.6666666865348816,
+          "existingCalibration": false
+        },
+        {
+          "skin": "权倾龙廷2",
+          "resource": "6163402",
+          "attackEvent": 0.4333333373069763,
+          "attackDuration": 1.6333333253860474,
+          "hitEvent": 0.06666667014360428,
+          "lineDuration": 0.6666666865348816,
+          "existingCalibration": false
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "copiedHashes": 425,
+    "skeletonsParsedAndPosed": 82,
+    "configuredLayers": 82,
+    "skininfoFiles": 36,
+    "synchronizedSkininfoEntries": 39,
+    "timingScenarios": 48,
+    "userCaozhangEditPreserved": true,
+    "unrelatedConfigPreserved": true,
+    "gameVisualCalibration": false
+  },
+  "media": {
+    "mp3ProbedAndFullyDecoded": 71,
+    "staticImagesDecoded": 60,
+    "transparentPortraits": 12,
+    "atlasTexturePagesVerified": 119
+  },
+  "limitations": [
+    "Sun Chen Long Bi Ting Wei package explicitly reports no public mobile dynamic skeleton.",
+    "Jia Xu second form has dynamic/voice resources only; no independent static artwork/transparent portrait supplied.",
+    "Dynamic event sounds have no confirmed public audio paths in package metadata.",
+    "Skill event path is not connected to zhishixian by the current GongJi-only worker consumer.",
+    "New local x/y/scale values remain preview baselines until in-game calibration."
+  ]
+}

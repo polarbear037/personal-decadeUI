@@ -1,0 +1,144 @@
+{
+  "baseline": true,
+  "medianSelect": 27.69999998807907,
+  "medianConfirm": 18.19999998807907,
+  "metrics": {
+    "LayoutCount": 114,
+    "RecalcStyleCount": 265,
+    "LayoutDuration": 0.051287,
+    "RecalcStyleDuration": 2.340259
+  },
+  "probe": {
+    "samples": [
+      0.3999999761581421,
+      0.10000002384185791,
+      0.10000002384185791,
+      0.09999996423721313,
+      0.10000002384185791,
+      0,
+      0.09999996423721313,
+      0
+    ],
+    "nodes": 1193,
+    "recalculatedElements": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "result": {
+    "samples": [
+      {
+        "selected": 56,
+        "confirmed": 30,
+        "result": {
+          "bool": true,
+          "name": "wuzhong"
+        }
+      },
+      {
+        "selected": 25.69999998807907,
+        "confirmed": 16.19999998807907,
+        "result": {
+          "bool": true,
+          "name": "wuzhong"
+        }
+      },
+      {
+        "selected": 29,
+        "confirmed": 15.699999988079071,
+        "result": {
+          "bool": true,
+          "name": "wuzhong"
+        }
+      },
+      {
+        "selected": 28.30000001192093,
+        "confirmed": 15.900000035762787,
+        "result": {
+          "bool": true,
+          "name": "wuzhong"
+        }
+      },
+      {
+        "selected": 21.69999998807907,
+        "confirmed": 15.799999952316284,
+        "result": {
+          "bool": true,
+          "name": "wuzhong"
+        }
+      },
+      {
+        "selected": 26.599999964237213,
+        "confirmed": 16.19999998807907,
+        "result": {
+          "bool": true,
+          "name": "wuzhong"
+        }
+      },
+      {
+        "selected": 27.799999952316284,
+        "confirmed": 19.30000001192093,
+        "result": {
+          "bool": true,
+          "name": "wuzhong"
+        }
+      },
+      {
+        "selected": 26.400000035762787,
+        "confirmed": 20.900000035762787,
+        "result": {
+          "bool": true,
+          "name": "wuzhong"
+        }
+      },
+      {
+        "selected": 27.69999998807907,
+        "confirmed": 19.899999976158142,
+        "result": {
+          "bool": true,
+          "name": "wuzhong"
+        }
+      },
+      {
+        "selected": 27.5,
+        "confirmed": 19.30000001192093,
+        "result": {
+          "bool": true,
+          "name": "wuzhong"
+        }
+      },
+      {
+        "selected": 28.80000001192093,
+        "confirmed": 18.19999998807907,
+        "result": {
+          "bool": true,
+          "name": "wuzhong"
+        }
+      },
+      {
+        "selected": 23.399999976158142,
+        "confirmed": 17.400000035762787,
+        "result": {
+          "bool": true,
+          "name": "wuzhong"
+        }
+      }
+    ],
+    "reads": {
+      "tip": 84,
+      "control": 24
+    },
+    "equipmentMarkers": {
+      "original": "1"
+    },
+    "style": "othersOff",
+    "face": true
+  },
+  "errors": []
+}

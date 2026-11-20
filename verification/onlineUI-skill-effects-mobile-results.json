@@ -1,0 +1,1254 @@
+{
+  "states": {
+    "availableOnly": [
+      {
+        "id": "rende",
+        "type": "active"
+      },
+      {
+        "id": "wusheng",
+        "type": "active"
+      }
+    ],
+    "activeSelected": [
+      {
+        "id": "rende",
+        "type": "active"
+      }
+    ],
+    "reused": true,
+    "activeResolving": [
+      {
+        "id": "rende",
+        "type": "active"
+      }
+    ],
+    "activeFinished": [],
+    "passiveAutomatic": [],
+    "passiveAsk": [],
+    "pendingWithOldResult": [],
+    "passiveCost": [],
+    "passiveTargets": [
+      {
+        "id": "jianxiong",
+        "type": "passive"
+      }
+    ],
+    "passiveAccepted": [
+      {
+        "id": "jianxiong",
+        "type": "passive"
+      }
+    ],
+    "remoteChoice": [],
+    "passiveSettlement": [],
+    "autoControl": [],
+    "cancelled": [],
+    "conversion": [
+      {
+        "id": "wusheng",
+        "type": "active"
+      }
+    ],
+    "isolation": [
+      {
+        "style": "othersOff",
+        "count": 0
+      },
+      {
+        "style": "on",
+        "count": 0
+      },
+      {
+        "style": "off",
+        "count": 0
+      },
+      {
+        "style": "babysha",
+        "count": 0
+      },
+      {
+        "style": "codename",
+        "count": 0
+      }
+    ]
+  },
+  "geometry": [
+    {
+      "zoom": 0.75,
+      "side": "right",
+      "passive": false,
+      "edges": [
+        0.02740087581922604,
+        0.9657498615114875,
+        0.05468661878596853,
+        0.9296868805789965
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:112px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:60005/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/skill/online/btnnOL42.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        112,
+        48
+      ],
+      "widthRatio": 1.219168755133011,
+      "heightRatio": 1.4843754441131725,
+      "left": -0.10958437756650555,
+      "top": -0.242188470036666,
+      "pointer": "none",
+      "natural": [
+        178,
+        95
+      ],
+      "hit": "rende",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的ol/animation/skill-button/fx_UI_AnNIu_ZhuDong",
+          "id": "skill-button-../../../雷的ol/animation/skill-button/fx_UI_AnNIu_ZhuDong-3",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0013293576193973422,
+            0,
+            0,
+            0,
+            0,
+            0.0023097824305295944,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0.430587500333786,
+            -0.46014493703842163,
+            -1,
+            1
+          ],
+          "canvas": [
+            2940,
+            1653
+          ],
+          "rect": {
+            "left": 643.6707153320312,
+            "top": 372.71875,
+            "right": 759.735595703125,
+            "bottom": 433.28125,
+            "width": 116.06488037109375,
+            "height": 60.5625,
+            "canvasWidth": 981,
+            "canvasHeight": 552,
+            "x": 643.6707153320312,
+            "y": 372.71875,
+            "bottomInBody": 117.71875,
+            "canvasBottomInBody": -1
+          }
+        },
+        "hit": "rende",
+        "hitTrace": {
+          "rect": [
+            654.1031494140625,
+            382.60003662109375,
+            95.20001220703125,
+            40.79998779296875
+          ],
+          "element": "<div class=\"skillitem enable-skill select skill-actively-resolving has-skill-usability-fx\" data-id=\"rende\" style=\"position: relative;\" data-tooltip-attached=\"true\" data-skill-button-effect=\"active\"><span class=\"skill-label-content\">仁德</span><img clas",
+          "zoom": 1,
+          "inner": [
+            981,
+            552
+          ]
+        },
+        "expected": [
+          0.001329357573344028,
+          0.002309782608695652,
+          0.4305874730225854,
+          -0.46014492753623193
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "4"
+      }
+    },
+    {
+      "zoom": 0.75,
+      "side": "right",
+      "passive": true,
+      "edges": [
+        0.0038715932530906175,
+        0.9884364934640115,
+        -0.008902852468896771,
+        0.9731903715938863
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:112px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:60005/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/skill/online/btnnOL3.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        112,
+        48
+      ],
+      "widthRatio": 1.1153274260201838,
+      "heightRatio": 1.2677930710628655,
+      "left": -0.05766371301009193,
+      "top": -0.1338965355314328,
+      "pointer": "none",
+      "natural": [
+        145,
+        71
+      ],
+      "hit": "jianxiong",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的ol/animation/skill-button/fx_UI_AnNIu_BeiDong_new",
+          "id": "skill-button-../../../雷的ol/animation/skill-button/fx_UI_AnNIu_BeiDong_new-4",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0009797188686206937,
+            0,
+            0,
+            0,
+            0,
+            0.0017322510248050094,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0.4649210274219513,
+            -0.7742754220962524,
+            -1,
+            1
+          ],
+          "canvas": [
+            3919,
+            2203
+          ],
+          "rect": {
+            "left": 683.7037353515625,
+            "top": 472.7274169921875,
+            "right": 753.3837890625,
+            "bottom": 506.672607421875,
+            "width": 69.6800537109375,
+            "height": 33.9451904296875,
+            "canvasWidth": 981,
+            "canvasHeight": 552,
+            "x": 683.7037353515625,
+            "y": 472.7274169921875,
+            "bottomInBody": 228.327392578125,
+            "canvasBottomInBody": 183
+          }
+        },
+        "hit": "jianxiong",
+        "hitTrace": {
+          "rect": [
+            687.3062744140625,
+            476.3125,
+            62.4749755859375,
+            26.7750244140625
+          ],
+          "element": "<div class=\"skillitem trigger-skill skill-passively-resolving has-skill-usability-fx\" data-id=\"jianxiong\" data-tooltip-attached=\"true\" data-skill-button-effect=\"passive\"><span class=\"skill-label-content\">奸雄</span><div data-skill-button-spine=\"passive",
+          "zoom": 1,
+          "inner": [
+            981,
+            552
+          ]
+        },
+        "expected": [
+          0.0009797188472134345,
+          0.0017322509915129363,
+          0.46492102386754586,
+          -0.7742754065472146
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "4"
+      }
+    },
+    {
+      "zoom": 0.75,
+      "side": "left",
+      "passive": false,
+      "edges": [
+        0.027418947107653593,
+        0.965732476445753,
+        0.05468714470928496,
+        0.9296878428243741
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:112px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:60005/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/skill/online/btnnOL42.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        112,
+        48
+      ],
+      "widthRatio": 1.2191226877531511,
+      "heightRatio": 1.4843761843023835,
+      "left": -0.10956113016798137,
+      "top": -0.24218809215119178,
+      "pointer": "none",
+      "natural": [
+        178,
+        95
+      ],
+      "hit": "rende",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的ol/animation/skill-button/fx_UI_AnNIu_ZhuDong",
+          "id": "skill-button-../../../雷的ol/animation/skill-button/fx_UI_AnNIu_ZhuDong-5",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0009969795355573297,
+            0,
+            0,
+            0,
+            0,
+            0.0017323370557278395,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            -0.510201632976532,
+            -0.5525361895561218,
+            -1,
+            1
+          ],
+          "canvas": [
+            3919,
+            2203
+          ],
+          "rect": {
+            "left": 196.72344970703125,
+            "top": 405.7890625,
+            "right": 283.76873779296875,
+            "bottom": 451.2109375,
+            "width": 87.0452880859375,
+            "height": 45.421875,
+            "canvasWidth": 981,
+            "canvasHeight": 552,
+            "x": 196.72344970703125,
+            "y": 405.7890625,
+            "bottomInBody": 283.7890625,
+            "canvasBottomInBody": 183
+          }
+        },
+        "hit": "rende",
+        "hitTrace": {
+          "rect": [
+            204.6257781982422,
+            413.20001220703125,
+            71.40000915527344,
+            30.5999755859375
+          ],
+          "element": "<div class=\"skillitem enable-skill select skill-actively-resolving has-skill-usability-fx\" data-id=\"rende\" style=\"position: relative;\" data-tooltip-attached=\"true\" data-skill-button-effect=\"active\"><span class=\"skill-label-content\">仁德</span><img clas",
+          "zoom": 1,
+          "inner": [
+            981,
+            552
+          ]
+        },
+        "expected": [
+          0.0009969795563565898,
+          0.001732336956521739,
+          -0.5102016437308868,
+          -0.5525362318840579
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "1"
+      }
+    },
+    {
+      "zoom": 0.75,
+      "side": "left",
+      "passive": true,
+      "edges": [
+        0.0038716308419564915,
+        0.9884364564579188,
+        -0.008902852468896771,
+        0.9731903715938863
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:112px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:60005/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/skill/online/btnnOL3.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        112,
+        48
+      ],
+      "widthRatio": 1.1153273415180822,
+      "heightRatio": 1.2677930710628655,
+      "left": -0.05766367075904115,
+      "top": -0.1338965355314328,
+      "pointer": "none",
+      "natural": [
+        145,
+        71
+      ],
+      "hit": "jianxiong",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的ol/animation/skill-button/fx_UI_AnNIu_BeiDong_new",
+          "id": "skill-button-../../../雷的ol/animation/skill-button/fx_UI_AnNIu_BeiDong_new-6",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0009797191014513373,
+            0,
+            0,
+            0,
+            0,
+            0.0017322510248050094,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            -0.5088478326797485,
+            -0.7742754220962524,
+            -1,
+            1
+          ],
+          "canvas": [
+            3919,
+            2203
+          ],
+          "rect": {
+            "left": 206.10997009277344,
+            "top": 472.7274169921875,
+            "right": 275.7900390625,
+            "bottom": 506.672607421875,
+            "width": 69.68006896972656,
+            "height": 33.9451904296875,
+            "canvasWidth": 981,
+            "canvasHeight": 552,
+            "x": 206.10997009277344,
+            "y": 472.7274169921875,
+            "bottomInBody": 228.327392578125,
+            "canvasBottomInBody": 183
+          }
+        },
+        "hit": "jianxiong",
+        "hitTrace": {
+          "rect": [
+            209.71250915527344,
+            476.3125,
+            62.47499084472656,
+            26.7750244140625
+          ],
+          "element": "<div class=\"skillitem trigger-skill skill-passively-resolving has-skill-usability-fx\" data-id=\"jianxiong\" data-tooltip-attached=\"true\" data-skill-button-effect=\"passive\"><span class=\"skill-label-content\">奸雄</span><div data-skill-button-spine=\"passive",
+          "zoom": 1,
+          "inner": [
+            981,
+            552
+          ]
+        },
+        "expected": [
+          0.0009797190617557956,
+          0.0017322509915129363,
+          -0.5087665553972748,
+          -0.7742754065472146
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "0"
+      }
+    },
+    {
+      "zoom": 1,
+      "side": "right",
+      "passive": false,
+      "edges": [
+        0.027400964335874786,
+        0.9657497742776887,
+        0.0546875,
+        0.9296875
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:112px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:60005/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/skill/online/btnnOL42.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        112,
+        48
+      ],
+      "widthRatio": 1.2191685267857142,
+      "heightRatio": 1.484375,
+      "left": -0.10958426339285714,
+      "top": -0.2421875,
+      "pointer": "none",
+      "natural": [
+        178,
+        95
+      ],
+      "hit": "rende",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的ol/animation/skill-button/fx_UI_AnNIu_ZhuDong",
+          "id": "skill-button-../../../雷的ol/animation/skill-button/fx_UI_AnNIu_ZhuDong-8",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0015639496268704534,
+            0,
+            0,
+            0,
+            0,
+            0.0027173911221325397,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0.5078364014625549,
+            -0.5416666865348816,
+            -1,
+            1
+          ],
+          "canvas": [
+            2940,
+            1653
+          ],
+          "rect": {
+            "left": 671.3203125,
+            "top": 389.875,
+            "right": 807.8671875,
+            "bottom": 461.125,
+            "width": 136.546875,
+            "height": 71.25,
+            "canvasWidth": 981,
+            "canvasHeight": 552,
+            "x": 671.3203125,
+            "y": 389.875,
+            "bottomInBody": 89.875,
+            "canvasBottomInBody": -1
+          }
+        },
+        "hit": "rende",
+        "hitTrace": {
+          "rect": [
+            683.515625,
+            401.5,
+            112,
+            48
+          ],
+          "element": "<div class=\"skillitem enable-skill select skill-actively-resolving has-skill-usability-fx\" data-id=\"rende\" style=\"position: relative;\" data-tooltip-attached=\"true\" data-skill-button-effect=\"active\"><span class=\"skill-label-content\">仁德</span><img clas",
+          "zoom": 1,
+          "inner": [
+            981,
+            552
+          ]
+        },
+        "expected": [
+          0.0015639495928254819,
+          0.002717391304347826,
+          0.507836391437309,
+          -0.5416666666666667
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "4"
+      }
+    },
+    {
+      "zoom": 1,
+      "side": "right",
+      "passive": true,
+      "edges": [
+        0.003850927493842367,
+        0.9884568388238916,
+        -0.008816571302816906,
+        0.9731101452464788
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:112px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:60005/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/skill/online/btnnOL3.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        112,
+        48
+      ],
+      "widthRatio": 1.1153738839285714,
+      "heightRatio": 1.267578125,
+      "left": -0.05768694196428571,
+      "top": -0.1337890625,
+      "pointer": "none",
+      "natural": [
+        145,
+        71
+      ],
+      "hit": "jianxiong",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的ol/animation/skill-button/fx_UI_AnNIu_BeiDong_new",
+          "id": "skill-button-../../../雷的ol/animation/skill-button/fx_UI_AnNIu_BeiDong_new-10",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0015368785243481398,
+            0,
+            0,
+            0,
+            0,
+            0.0027167932130396366,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0.5067533254623413,
+            -0.8894927501678467,
+            -1,
+            1
+          ],
+          "canvas": [
+            2940,
+            1653
+          ],
+          "rect": {
+            "left": 684.4091796875,
+            "top": 494.880859375,
+            "right": 793.7158203125,
+            "bottom": 548.119140625,
+            "width": 109.306640625,
+            "height": 53.23828125,
+            "canvasWidth": 981,
+            "canvasHeight": 552,
+            "x": 684.4091796875,
+            "y": 494.880859375,
+            "bottomInBody": 2.880859375,
+            "canvasBottomInBody": -1
+          }
+        },
+        "hit": "jianxiong",
+        "hitTrace": {
+          "rect": [
+            690.0625,
+            500.5,
+            98,
+            42
+          ],
+          "element": "<div class=\"skillitem trigger-skill skill-passively-resolving has-skill-usability-fx\" data-id=\"jianxiong\" data-tooltip-attached=\"true\" data-skill-button-effect=\"passive\"><span class=\"skill-label-content\">奸雄</span><div data-skill-button-spine=\"passive",
+          "zoom": 1,
+          "inner": [
+            981,
+            552
+          ]
+        },
+        "expected": [
+          0.001536878493092903,
+          0.0027167932868952848,
+          0.5067533129459736,
+          -0.8894927536231885
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "4"
+      }
+    },
+    {
+      "zoom": 1,
+      "side": "left",
+      "passive": false,
+      "edges": [
+        0.027400964335874786,
+        0.9657497742776887,
+        0.0546875,
+        0.9296875
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:112px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:60005/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/skill/online/btnnOL42.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        112,
+        48
+      ],
+      "widthRatio": 1.2191685267857142,
+      "heightRatio": 1.484375,
+      "left": -0.10958426339285714,
+      "top": -0.2421875,
+      "pointer": "none",
+      "natural": [
+        178,
+        95
+      ],
+      "hit": "rende",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的ol/animation/skill-button/fx_UI_AnNIu_ZhuDong",
+          "id": "skill-button-../../../雷的ol/animation/skill-button/fx_UI_AnNIu_ZhuDong-12",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0015639496268704534,
+            0,
+            0,
+            0,
+            0,
+            0.0027173911221325397,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            -0.46397170424461365,
+            -0.5416666865348816,
+            -1,
+            1
+          ],
+          "canvas": [
+            2940,
+            1653
+          ],
+          "rect": {
+            "left": 194.6640625,
+            "top": 389.875,
+            "right": 331.2109375,
+            "bottom": 461.125,
+            "width": 136.546875,
+            "height": 71.25,
+            "canvasWidth": 981,
+            "canvasHeight": 552,
+            "x": 194.6640625,
+            "y": 389.875,
+            "bottomInBody": 89.875,
+            "canvasBottomInBody": -1
+          }
+        },
+        "hit": "rende",
+        "hitTrace": {
+          "rect": [
+            206.9375,
+            401.5,
+            112,
+            48
+          ],
+          "element": "<div class=\"skillitem enable-skill select skill-actively-resolving has-skill-usability-fx\" data-id=\"rende\" style=\"position: relative;\" data-tooltip-attached=\"true\" data-skill-button-effect=\"active\"><span class=\"skill-label-content\">仁德</span><img clas",
+          "zoom": 1,
+          "inner": [
+            981,
+            552
+          ]
+        },
+        "expected": [
+          0.0015639495928254819,
+          0.002717391304347826,
+          -0.4639398572884812,
+          -0.5416666666666667
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "0"
+      }
+    },
+    {
+      "zoom": 1,
+      "side": "left",
+      "passive": true,
+      "edges": [
+        0.003850927493842367,
+        0.9884568388238916,
+        -0.008816571302816906,
+        0.9731101452464788
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:112px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:60005/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/skill/online/btnnOL3.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        112,
+        48
+      ],
+      "widthRatio": 1.1153738839285714,
+      "heightRatio": 1.267578125,
+      "left": -0.05768694196428571,
+      "top": -0.1337890625,
+      "pointer": "none",
+      "natural": [
+        145,
+        71
+      ],
+      "hit": "jianxiong",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的ol/animation/skill-button/fx_UI_AnNIu_BeiDong_new",
+          "id": "skill-button-../../../雷的ol/animation/skill-button/fx_UI_AnNIu_BeiDong_new-13",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0015368785243481398,
+            0,
+            0,
+            0,
+            0,
+            0.0027167932130396366,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            -0.4638124406337738,
+            -0.8894927501678467,
+            -1,
+            1
+          ],
+          "canvas": [
+            2940,
+            1653
+          ],
+          "rect": {
+            "left": 208.3466796875,
+            "top": 494.880859375,
+            "right": 317.6533203125,
+            "bottom": 548.119140625,
+            "width": 109.306640625,
+            "height": 53.23828125,
+            "canvasWidth": 981,
+            "canvasHeight": 552,
+            "x": 208.3466796875,
+            "y": 494.880859375,
+            "bottomInBody": 2.880859375,
+            "canvasBottomInBody": -1
+          }
+        },
+        "hit": "jianxiong",
+        "hitTrace": {
+          "rect": [
+            214,
+            500.5,
+            98,
+            42
+          ],
+          "element": "<div class=\"skillitem trigger-skill skill-passively-resolving has-skill-usability-fx\" data-id=\"jianxiong\" data-tooltip-attached=\"true\" data-skill-button-effect=\"passive\"><span class=\"skill-label-content\">奸雄</span><div data-skill-button-spine=\"passive",
+          "zoom": 1,
+          "inner": [
+            981,
+            552
+          ]
+        },
+        "expected": [
+          0.001536878493092903,
+          0.0027167932868952848,
+          -0.46381243628950053,
+          -0.8894927536231885
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "0"
+      }
+    },
+    {
+      "zoom": 1.5,
+      "side": "right",
+      "passive": false,
+      "edges": [
+        0.027418990770465487,
+        0.9657320090957731,
+        0.0546875,
+        0.9296875
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:112px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:60005/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/skill/online/btnnOL42.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        112,
+        48
+      ],
+      "widthRatio": 1.2191220238095237,
+      "heightRatio": 1.484375,
+      "left": -0.1095610119047619,
+      "top": -0.2421875,
+      "pointer": "none",
+      "natural": [
+        178,
+        95
+      ],
+      "hit": "rende",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的ol/animation/skill-button/fx_UI_AnNIu_ZhuDong",
+          "id": "skill-button-../../../雷的ol/animation/skill-button/fx_UI_AnNIu_ZhuDong-15",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.002345835091546178,
+            0,
+            0,
+            0,
+            0,
+            0.004076086916029453,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0.4259684383869171,
+            -0.32427534461021423,
+            -1,
+            1
+          ],
+          "canvas": [
+            1959,
+            1101
+          ],
+          "rect": {
+            "left": 597.03125,
+            "top": 312.0625,
+            "right": 801.84375,
+            "bottom": 418.9375,
+            "width": 204.8125,
+            "height": 106.875,
+            "canvasWidth": 981,
+            "canvasHeight": 552,
+            "x": 597.03125,
+            "y": 312.0625,
+            "bottomInBody": -51.9375,
+            "canvasBottomInBody": -185
+          }
+        },
+        "hit": "rende",
+        "hitTrace": {
+          "rect": [
+            615.4375,
+            329.5,
+            168,
+            72
+          ],
+          "element": "<div class=\"skillitem enable-skill select skill-actively-resolving has-skill-usability-fx\" data-id=\"rende\" style=\"position: relative;\" data-tooltip-attached=\"true\" data-skill-button-effect=\"active\"><span class=\"skill-label-content\">仁德</span><img clas",
+          "zoom": 1,
+          "inner": [
+            981,
+            552
+          ]
+        },
+        "expected": [
+          0.0023458349081996125,
+          0.004076086956521739,
+          0.42596839959225274,
+          -0.3242753623188406
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "4"
+      }
+    },
+    {
+      "zoom": 1.5,
+      "side": "right",
+      "passive": true,
+      "edges": [
+        0.003871613300492606,
+        0.988436473727422,
+        -0.008903682511737107,
+        0.9731911433881064
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:112px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:60005/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/skill/online/btnnOL3.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        112,
+        48
+      ],
+      "widthRatio": 1.115327380952381,
+      "heightRatio": 1.2677951388888888,
+      "left": -0.05766369047619048,
+      "top": -0.13389756944444445,
+      "pointer": "none",
+      "natural": [
+        145,
+        71
+      ],
+      "hit": "jianxiong",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的ol/animation/skill-button/fx_UI_AnNIu_BeiDong_new",
+          "id": "skill-button-../../../雷的ol/animation/skill-button/fx_UI_AnNIu_BeiDong_new-16",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0023052217438817024,
+            0,
+            0,
+            0,
+            0,
+            0.0040758876129984856,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            0.4259684383869171,
+            -0.8460144996643066,
+            -1,
+            1
+          ],
+          "canvas": [
+            1959,
+            1101
+          ],
+          "rect": {
+            "left": 617.4609375,
+            "top": 469.564453125,
+            "right": 781.4140625,
+            "bottom": 549.435546875,
+            "width": 163.953125,
+            "height": 79.87109375,
+            "canvasWidth": 981,
+            "canvasHeight": 552,
+            "x": 617.4609375,
+            "y": 469.564453125,
+            "bottomInBody": -182.435546875,
+            "canvasBottomInBody": -185
+          }
+        },
+        "hit": "jianxiong",
+        "hitTrace": {
+          "rect": [
+            625.9375,
+            478,
+            147,
+            63
+          ],
+          "element": "<div class=\"skillitem trigger-skill skill-passively-resolving has-skill-usability-fx\" data-id=\"jianxiong\" data-tooltip-attached=\"true\" data-skill-button-effect=\"passive\"><span class=\"skill-label-content\">奸雄</span><div data-skill-button-spine=\"passive",
+          "zoom": 1,
+          "inner": [
+            981,
+            552
+          ]
+        },
+        "expected": [
+          0.0023052216246616753,
+          0.004075887617370892,
+          0.42596839959225274,
+          -0.8460144927536233
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "4"
+      }
+    },
+    {
+      "zoom": 1.5,
+      "side": "left",
+      "passive": false,
+      "edges": [
+        0.027418990770465487,
+        0.9657320090957731,
+        0.0546875,
+        0.9296875
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:112px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:60005/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/skill/online/btnnOL42.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        112,
+        48
+      ],
+      "widthRatio": 1.2191220238095237,
+      "heightRatio": 1.484375,
+      "left": -0.1095610119047619,
+      "top": -0.2421875,
+      "pointer": "none",
+      "natural": [
+        178,
+        95
+      ],
+      "hit": "rende",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的ol/animation/skill-button/fx_UI_AnNIu_ZhuDong",
+          "id": "skill-button-../../../雷的ol/animation/skill-button/fx_UI_AnNIu_ZhuDong-17",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.002345835091546178,
+            0,
+            0,
+            0,
+            0,
+            0.004076086916029453,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            -0.19689726829528809,
+            -0.32427534461021423,
+            -1,
+            1
+          ],
+          "canvas": [
+            1959,
+            1101
+          ],
+          "rect": {
+            "left": 291.515625,
+            "top": 312.0625,
+            "right": 496.328125,
+            "bottom": 418.9375,
+            "width": 204.8125,
+            "height": 106.875,
+            "canvasWidth": 981,
+            "canvasHeight": 552,
+            "x": 291.515625,
+            "y": 312.0625,
+            "bottomInBody": -51.9375,
+            "canvasBottomInBody": -185
+          }
+        },
+        "hit": "rende",
+        "hitTrace": {
+          "rect": [
+            310.015625,
+            329.5,
+            168,
+            72
+          ],
+          "element": "<div class=\"skillitem enable-skill select skill-actively-resolving has-skill-usability-fx\" data-id=\"rende\" style=\"position: relative;\" data-tooltip-attached=\"true\" data-skill-button-effect=\"active\"><span class=\"skill-label-content\">仁德</span><img clas",
+          "zoom": 1,
+          "inner": [
+            981,
+            552
+          ]
+        },
+        "expected": [
+          0.0023458349081996125,
+          0.004076086956521739,
+          -0.19689729867482164,
+          -0.3242753623188406
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "0"
+      }
+    },
+    {
+      "zoom": 1.5,
+      "side": "left",
+      "passive": true,
+      "edges": [
+        0.003871613300492606,
+        0.988436473727422,
+        -0.008903682511737107,
+        0.9731911433881064
+      ],
+      "playing": true,
+      "canvas": 3,
+      "staticCss": "width:112px;height:48px;box-sizing:border-box;background-image:url(\"http://127.0.0.1:60005/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/skill/online/btnnOL3.png\");background-size:100% 100%;background-position:0% 0%;background-repeat:repeat;border-image:none;border-width:0px;border-style:none;border-radius:0px",
+      "staticSize": [
+        112,
+        48
+      ],
+      "widthRatio": 1.115327380952381,
+      "heightRatio": 1.2677951388888888,
+      "left": -0.05766369047619048,
+      "top": -0.13389756944444445,
+      "pointer": "none",
+      "natural": [
+        145,
+        71
+      ],
+      "hit": "jianxiong",
+      "gpu": {
+        "node": {
+          "name": "../../../雷的ol/animation/skill-button/fx_UI_AnNIu_BeiDong_new",
+          "id": "skill-button-../../../雷的ol/animation/skill-button/fx_UI_AnNIu_BeiDong_new-18",
+          "completed": false,
+          "opacity": 1,
+          "mvp": [
+            0.0023052217438817024,
+            0,
+            0,
+            0,
+            0,
+            0.0040758876129984856,
+            0,
+            0,
+            0,
+            0,
+            -2,
+            0,
+            -0.19571863114833832,
+            -0.8460144996643066,
+            -1,
+            1
+          ],
+          "canvas": [
+            1959,
+            1101
+          ],
+          "rect": {
+            "left": 312.5234375,
+            "top": 469.564453125,
+            "right": 476.4765625,
+            "bottom": 549.435546875,
+            "width": 163.953125,
+            "height": 79.87109375,
+            "canvasWidth": 981,
+            "canvasHeight": 552,
+            "x": 312.5234375,
+            "y": 469.564453125,
+            "bottomInBody": -182.435546875,
+            "canvasBottomInBody": -185
+          }
+        },
+        "hit": "jianxiong",
+        "hitTrace": {
+          "rect": [
+            321,
+            478,
+            147,
+            63
+          ],
+          "element": "<div class=\"skillitem trigger-skill skill-passively-resolving has-skill-usability-fx\" data-id=\"jianxiong\" data-tooltip-attached=\"true\" data-skill-button-effect=\"passive\"><span class=\"skill-label-content\">奸雄</span><div data-skill-button-spine=\"passive",
+          "zoom": 1,
+          "inner": [
+            981,
+            552
+          ]
+        },
+        "expected": [
+          0.0023052216246616753,
+          0.004075887617370892,
+          -0.19571865443425074,
+          -0.8460144927536233
+        ],
+        "workerErrors": [],
+        "canvasZ": "100",
+        "buttonZ": "0"
+      }
+    }
+  ],
+  "animation": [
+    {
+      "passive": false,
+      "changed": true
+    },
+    {
+      "passive": true,
+      "changed": true
+    }
+  ],
+  "disabled": {
+    "markers": 0,
+    "playing": 0,
+    "follow": 0
+  },
+  "cleanup": {
+    "markers": 0,
+    "playing": 0,
+    "shared": true,
+    "follow": 0,
+    "parents": 0
+  },
+  "errors": [],
+  "failures": []
+}

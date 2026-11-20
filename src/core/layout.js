@@ -1,10 +1,12 @@
 import { ui, game, lib } from "noname";
+import { finishXinshaHandMotion } from "../ui/handcard-motion-xinsha.js";
 function e() {
 	return {
 		update() {
 			(this.updateHand(), this.updateDiscard());
 		},
 		updateHand() {
+			window.decadeUI?.cardAlternateName?.updateVisibility?.();
 			if (!game.me) return;
 			const handNode = ui.handcards1;
 			if (!handNode) return console.error("hand undefined");
@@ -14,27 +16,57 @@ function e() {
 			bounds.check();
 			const { width: pw, cardWidth: cw, cardHeight: ch, cardScale: cs, x: boundsX } = bounds,
 				csw = cw * cs,
-				l = Math.round((ch * cs - ch) / 2);
-			let xMargin = csw + 2,
+				style = decadeUI?.config?.newDecadeStyle ?? lib.config.extension_十周年UI_newDecadeStyle,
+				l = Math.round((ch * cs - ch) / 2 + (style === "othersOff" ? handNode.offsetHeight - ch * cs : 0));
+			// 原版牌框画在 126×174 内；本地 CSS border 额外占位，不能再计入一将的卡面步进。
+			const faceWidth = style === "othersOff" ? (t[0].clientWidth || cw) * cs : csw;
+			// 一将实局按卡面宽度紧排，不在描边及贴图边缘之外再附加两设计单位留缝。
+			let xMargin = style === "othersOff" ? faceWidth : csw + 2,
 				xStart = (csw - cw) / 2;
-			const totalW = t.length * csw + 2 * (t.length - 1),
-				limitW = pw;
+			// 一将 SelfCardsArea：从容器 left=card_width/2 起排，保留设置给出的实际牌宽。
+			if (style === "othersOff") xStart += csw / 2;
+			// 原版预留区容纳 126 设计单位的牌尾；本地调大卡牌时，从排布宽度中扣回超出的部分。
+			const nativeCardWidth = style === "othersOff" ? 126 * parseFloat(ui.window?.style.getPropertyValue("--yjcm-unit")) : 0,
+				cardOverflow = nativeCardWidth > 0 ? Math.max(0, csw - nativeCardWidth) : 0;
+			const totalW = csw + xMargin * (t.length - 1),
+				limitW = pw - (style === "othersOff" ? csw / 2 + cardOverflow : 0),
+				compressed = style === "othersOff" ? t.length * xMargin > limitW : totalW > limitW;
 			let f = !1;
-			if (totalW > limitW) {
-				if (((xMargin = csw - Math.abs(limitW - csw * t.length) / (t.length - 1)), lib.config.fold_card)) {
+			if (compressed) {
+				// SelfCardsArea.adjustCardPos：min(card_width + spacing, (width - left) / count)。
+				if (((xMargin = style === "othersOff" ? limitW / t.length : csw - Math.abs(limitW - csw * t.length) / (t.length - 1)), lib.config.fold_card)) {
 					const e = parseFloat(lib.config.extension_十周年UI_handFoldMin) || 9,
 						t = cs * e;
 					xMargin < t && ((f = !0), (xMargin = t));
 				}
 			} else {
-				const e = decadeUI?.config?.newDecadeStyle ?? lib.config.extension_十周年UI_newDecadeStyle;
-				("codename" === e || (("on" === e || "othersOff" === e) && !lib.config.phonelayout)) && (xStart = (ui.arena.offsetWidth - totalW) / 2 - boundsX);
+				("codename" === style || ("on" === style && !lib.config.phonelayout)) && (xStart = (ui.arena.offsetWidth - totalW) / 2 - boundsX);
 			}
 			let selectedIndex = -1,
 				spreadOffsetLeft = 0,
 				spreadOffsetRight = 0,
 				baseShift = 0;
-			if (totalW > limitW && xMargin < csw - 0.5 && !f && "function" == typeof ui.getSpreadOffset) {
+			let xinshaPositions;
+			if (style === "othersOff") {
+				// SelfCardsArea.adjustCardPos：选中牌起，交替向右、向左给最多五张牌留出 80 设计单位。
+				const current = ui.selected?.cards?.filter(card => t.includes(card)).at(-1) || ui._handcardHover,
+					index = t.indexOf(current),
+					wideStep = faceWidth * 80 / 126;
+				if (lib.config.spread_card && !f && index >= 0 && t.length >= 5 && limitW / t.length < wideStep) {
+					const expanded = new Set();
+					for (let distance = 0; expanded.size < 5 && distance < t.length; distance++) {
+						if (index - distance >= 0) expanded.add(index - distance);
+						if (expanded.size < 5 && index + distance + 1 < t.length) expanded.add(index + distance + 1);
+					}
+					const narrowStep = Math.min(faceWidth, (limitW - wideStep * expanded.size) / (t.length - expanded.size));
+					let x = xStart;
+					xinshaPositions = t.map((card, i) => {
+						const position = x;
+						x += expanded.has(i) ? wideStep : narrowStep;
+						return position;
+					});
+				}
+			} else if (compressed && xMargin < csw - 0.5 && !f && "function" == typeof ui.getSpreadOffset) {
 				const e = ui.getSpreadOffset(t, { cardWidth: csw, currentMargin: xMargin });
 				if ((({ spreadIndex: selectedIndex, spreadLeft: spreadOffsetLeft, spreadRight: spreadOffsetRight } = e), -1 !== selectedIndex)) {
 					const e = xStart + selectedIndex * xMargin,
@@ -43,15 +75,15 @@ function e() {
 				}
 			}
 			t.forEach((card, e) => {
-				let fx = xStart + e * xMargin + baseShift;
+				let fx = xinshaPositions ? xinshaPositions[e] : xStart + e * xMargin + baseShift;
 				(spreadOffsetLeft || spreadOffsetRight) && (e < selectedIndex ? (fx -= spreadOffsetLeft) : e > selectedIndex && (fx += spreadOffsetRight));
 				const a = Math.round(fx);
 				((card.tx = a), (card.ty = l), (card.scaled = !0));
 				// 基础位置交给 updateTransform 合成，避免已选牌先落下再抬起。
-				card.updateTransform(card.classList.contains("selected"), 0, `translate(${a}px,${l}px) scale(${cs})`);
+				card.updateTransform(card.classList.contains("selected") || (style === "othersOff" && lib.config.spread_card && card === ui._handcardHover), 0, `translate(${a}px,${l}px) scale(${cs})`);
 			});
 			const container = ui.handcards1Container;
-			f ? (container.classList.add("scrollh"), (container.style.overflowX = "scroll"), (container.style.overflowY = "hidden"), (handNode.style.width = `${Math.round(t.length * xMargin + (csw - xMargin))}px`)) : (container.classList.remove("scrollh"), (container.style.overflowX = container.style.overflowY = ""), (handNode.style.width = "100%"));
+			f ? (container.classList.add("scrollh"), (container.style.overflowX = "scroll"), (container.style.overflowY = "hidden"), (handNode.style.width = `${Math.round(t.length * xMargin + (csw - xMargin) + (style === "othersOff" ? csw / 2 : 0))}px`)) : (container.classList.remove("scrollh"), (container.style.overflowX = container.style.overflowY = ""), (handNode.style.width = "100%"));
 		},
 		updateDiscard() {
 			if (((ui.thrown ??= []), (ui.thrown = ui.thrown.filter(e => !(e.classList.contains("drawingcard") || e.classList.contains("removing") || e.parentNode !== ui.arena || e.fixed) && (e.classList.remove("removing"), !0))), !ui.thrown.length)) return;
@@ -116,6 +148,7 @@ function e() {
 		},
 		resize() {
 			if (!ui.arena) return;
+			for (const card of ui.handcards1?.children ?? []) finishXinshaHandMotion(card);
 			(ui.arena.classList.toggle("dui-mobile", decadeUI.isMobile()), (decadeUI.dataset.animSizeUpdated = !1), (decadeUI.dataset.bodySize.updated = !1), Object.values(decadeUI.boundsCaches).forEach(e => (e.updated = !1)));
 			const ensureStyle = selector => decadeUI.sheet.getStyle(selector) || decadeUI.sheet.insertRule(`${selector} { zoom: 1; }`),
 				buttonsWindow = ensureStyle("#window > .dialog.popped .buttons:not(.smallzoom)"),

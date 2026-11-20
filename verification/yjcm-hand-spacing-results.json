@@ -1,0 +1,3224 @@
+[
+  {
+    "style": "othersOff",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout-xinsha.css",
+      "/extension/十周年UI/src/styles/card-xinsha.css",
+      "/extension/十周年UI/src/styles/meihua-xinsha.css",
+      "/extension/十周年UI/src/styles/layout-xinsha.css"
+    ],
+    "points": [
+      {
+        "card": {
+          "x": 24.15625,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 132.15625,
+          "bottom": 174.15625,
+          "left": 24.15625
+        },
+        "number": {
+          "x": 29,
+          "y": 26.3828125,
+          "width": 16,
+          "height": 19.546875,
+          "top": 26.3828125,
+          "right": 45,
+          "bottom": 45.9296875,
+          "left": 29
+        },
+        "suit": {
+          "x": 27,
+          "y": 44.3671875,
+          "width": 20,
+          "height": 17.859375,
+          "top": 44.3671875,
+          "right": 47,
+          "bottom": 62.2265625,
+          "left": 27
+        }
+      },
+      {
+        "card": {
+          "x": 149.921875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 257.921875,
+          "bottom": 174.15625,
+          "left": 149.921875
+        },
+        "number": {
+          "x": 154.765625,
+          "y": 26.3828125,
+          "width": 16,
+          "height": 19.546875,
+          "top": 26.3828125,
+          "right": 170.765625,
+          "bottom": 45.9296875,
+          "left": 154.765625
+        },
+        "suit": {
+          "x": 152.765625,
+          "y": 44.3671875,
+          "width": 20,
+          "height": 17.859375,
+          "top": 44.3671875,
+          "right": 172.765625,
+          "bottom": 62.2265625,
+          "left": 152.765625
+        }
+      },
+      {
+        "card": {
+          "x": 275.6875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 383.6875,
+          "bottom": 174.15625,
+          "left": 275.6875
+        },
+        "number": {
+          "x": 280.53125,
+          "y": 26.3828125,
+          "width": 16,
+          "height": 19.546875,
+          "top": 26.3828125,
+          "right": 296.53125,
+          "bottom": 45.9296875,
+          "left": 280.53125
+        },
+        "suit": {
+          "x": 278.53125,
+          "y": 44.3671875,
+          "width": 20,
+          "height": 17.859375,
+          "top": 44.3671875,
+          "right": 298.53125,
+          "bottom": 62.2265625,
+          "left": 278.53125
+        }
+      },
+      {
+        "card": {
+          "x": 401.453125,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 509.453125,
+          "bottom": 174.15625,
+          "left": 401.453125
+        },
+        "number": {
+          "x": 406.296875,
+          "y": 26.3828125,
+          "width": 16,
+          "height": 19.546875,
+          "top": 26.3828125,
+          "right": 422.296875,
+          "bottom": 45.9296875,
+          "left": 406.296875
+        },
+        "suit": {
+          "x": 404.296875,
+          "y": 44.7265625,
+          "width": 20,
+          "height": 17.140625,
+          "top": 44.7265625,
+          "right": 424.296875,
+          "bottom": 61.8671875,
+          "left": 404.296875
+        }
+      },
+      {
+        "card": {
+          "x": 527.21875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 635.21875,
+          "bottom": 174.15625,
+          "left": 527.21875
+        },
+        "number": {
+          "x": 532.0625,
+          "y": 26.3828125,
+          "width": 16,
+          "height": 19.546875,
+          "top": 26.3828125,
+          "right": 548.0625,
+          "bottom": 45.9296875,
+          "left": 532.0625
+        },
+        "suit": {
+          "x": 530.0625,
+          "y": 44.7265625,
+          "width": 20,
+          "height": 17.140625,
+          "top": 44.7265625,
+          "right": 550.0625,
+          "bottom": 61.8671875,
+          "left": 530.0625
+        }
+      },
+      {
+        "card": {
+          "x": 652.984375,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 760.984375,
+          "bottom": 174.15625,
+          "left": 652.984375
+        },
+        "number": {
+          "x": 657.828125,
+          "y": 26.3828125,
+          "width": 16,
+          "height": 19.546875,
+          "top": 26.3828125,
+          "right": 673.828125,
+          "bottom": 45.9296875,
+          "left": 657.828125
+        },
+        "suit": {
+          "x": 655.828125,
+          "y": 44.7265625,
+          "width": 20,
+          "height": 17.140625,
+          "top": 44.7265625,
+          "right": 675.828125,
+          "bottom": 61.8671875,
+          "left": 655.828125
+        }
+      },
+      {
+        "card": {
+          "x": 778.75,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 886.75,
+          "bottom": 174.15625,
+          "left": 778.75
+        },
+        "number": {
+          "x": 783.59375,
+          "y": 26.3828125,
+          "width": 16,
+          "height": 19.546875,
+          "top": 26.3828125,
+          "right": 799.59375,
+          "bottom": 45.9296875,
+          "left": 783.59375
+        },
+        "suit": {
+          "x": 781.59375,
+          "y": 44.171875,
+          "width": 20,
+          "height": 18.25,
+          "top": 44.171875,
+          "right": 801.59375,
+          "bottom": 62.421875,
+          "left": 781.59375
+        }
+      },
+      {
+        "card": {
+          "x": 904.515625,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1012.515625,
+          "bottom": 174.15625,
+          "left": 904.515625
+        },
+        "number": {
+          "x": 909.359375,
+          "y": 26.3828125,
+          "width": 16,
+          "height": 19.546875,
+          "top": 26.3828125,
+          "right": 925.359375,
+          "bottom": 45.9296875,
+          "left": 909.359375
+        },
+        "suit": {
+          "x": 907.359375,
+          "y": 44.171875,
+          "width": 20,
+          "height": 18.25,
+          "top": 44.171875,
+          "right": 927.359375,
+          "bottom": 62.421875,
+          "left": 907.359375
+        }
+      },
+      {
+        "card": {
+          "x": 1030.28125,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1138.28125,
+          "bottom": 174.15625,
+          "left": 1030.28125
+        },
+        "number": {
+          "x": 1035.125,
+          "y": 26.3828125,
+          "width": 16,
+          "height": 19.546875,
+          "top": 26.3828125,
+          "right": 1051.125,
+          "bottom": 45.9296875,
+          "left": 1035.125
+        },
+        "suit": {
+          "x": 1033.125,
+          "y": 44.171875,
+          "width": 20,
+          "height": 18.25,
+          "top": 44.171875,
+          "right": 1053.125,
+          "bottom": 62.421875,
+          "left": 1033.125
+        }
+      },
+      {
+        "card": {
+          "x": 1156.046875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1264.046875,
+          "bottom": 174.15625,
+          "left": 1156.046875
+        },
+        "number": {
+          "x": 1160.890625,
+          "y": 26.3828125,
+          "width": 16,
+          "height": 19.546875,
+          "top": 26.3828125,
+          "right": 1176.890625,
+          "bottom": 45.9296875,
+          "left": 1160.890625
+        },
+        "suit": {
+          "x": 1158.890625,
+          "y": 44.171875,
+          "width": 20,
+          "height": 18.25,
+          "top": 44.171875,
+          "right": 1178.890625,
+          "bottom": 62.421875,
+          "left": 1158.890625
+        }
+      },
+      {
+        "card": {
+          "x": 24.15625,
+          "y": 191.921875,
+          "width": 108,
+          "height": 150,
+          "top": 191.921875,
+          "right": 132.15625,
+          "bottom": 341.921875,
+          "left": 24.15625
+        },
+        "number": {
+          "x": 29,
+          "y": 194.1484375,
+          "width": 16,
+          "height": 19.546875,
+          "top": 194.1484375,
+          "right": 45,
+          "bottom": 213.6953125,
+          "left": 29
+        },
+        "suit": {
+          "x": 27,
+          "y": 211.9375,
+          "width": 20,
+          "height": 18.25,
+          "top": 211.9375,
+          "right": 47,
+          "bottom": 230.1875,
+          "left": 27
+        }
+      },
+      {
+        "card": {
+          "x": 149.921875,
+          "y": 191.921875,
+          "width": 108,
+          "height": 150,
+          "top": 191.921875,
+          "right": 257.921875,
+          "bottom": 341.921875,
+          "left": 149.921875
+        },
+        "number": {
+          "x": 154.765625,
+          "y": 194.1484375,
+          "width": 16,
+          "height": 19.546875,
+          "top": 194.1484375,
+          "right": 170.765625,
+          "bottom": 213.6953125,
+          "left": 154.765625
+        },
+        "suit": {
+          "x": 152.765625,
+          "y": 211.9375,
+          "width": 20,
+          "height": 18.25,
+          "top": 211.9375,
+          "right": 172.765625,
+          "bottom": 230.1875,
+          "left": 152.765625
+        }
+      }
+    ],
+    "cases": [
+      {
+        "width": 740,
+        "scale": 1,
+        "count": 12,
+        "fold": false,
+        "before": {
+          "cards": [
+            {
+              "x": 54,
+              "y": 50,
+              "transform": "translate(54px, 50px) scale(1)"
+            },
+            {
+              "x": 107,
+              "y": 50,
+              "transform": "translate(107px, 50px) scale(1) translateY(-20px)"
+            },
+            {
+              "x": 159,
+              "y": 50,
+              "transform": "translate(159px, 50px) scale(1)"
+            },
+            {
+              "x": 212,
+              "y": 50,
+              "transform": "translate(212px, 50px) scale(1)"
+            },
+            {
+              "x": 264,
+              "y": 50,
+              "transform": "translate(264px, 50px) scale(1)"
+            },
+            {
+              "x": 317,
+              "y": 50,
+              "transform": "translate(317px, 50px) scale(1)"
+            },
+            {
+              "x": 369,
+              "y": 50,
+              "transform": "translate(369px, 50px) scale(1)"
+            },
+            {
+              "x": 422,
+              "y": 50,
+              "transform": "translate(422px, 50px) scale(1)"
+            },
+            {
+              "x": 474,
+              "y": 50,
+              "transform": "translate(474px, 50px) scale(1)"
+            },
+            {
+              "x": 527,
+              "y": 50,
+              "transform": "translate(527px, 50px) scale(1)"
+            },
+            {
+              "x": 579,
+              "y": 50,
+              "transform": "translate(579px, 50px) scale(1)"
+            },
+            {
+              "x": 632,
+              "y": 50,
+              "transform": "translate(632px, 50px) scale(1)"
+            }
+          ],
+          "width": "100%",
+          "scroll": false
+        },
+        "after": {
+          "cards": [
+            {
+              "x": 54,
+              "y": 50,
+              "transform": "translate(54px, 50px) scale(1)"
+            },
+            {
+              "x": 111,
+              "y": 50,
+              "transform": "translate(111px, 50px) scale(1) translateY(-20px)"
+            },
+            {
+              "x": 168,
+              "y": 50,
+              "transform": "translate(168px, 50px) scale(1)"
+            },
+            {
+              "x": 226,
+              "y": 50,
+              "transform": "translate(226px, 50px) scale(1)"
+            },
+            {
+              "x": 283,
+              "y": 50,
+              "transform": "translate(283px, 50px) scale(1)"
+            },
+            {
+              "x": 340,
+              "y": 50,
+              "transform": "translate(340px, 50px) scale(1)"
+            },
+            {
+              "x": 397,
+              "y": 50,
+              "transform": "translate(397px, 50px) scale(1)"
+            },
+            {
+              "x": 454,
+              "y": 50,
+              "transform": "translate(454px, 50px) scale(1)"
+            },
+            {
+              "x": 511,
+              "y": 50,
+              "transform": "translate(511px, 50px) scale(1)"
+            },
+            {
+              "x": 569,
+              "y": 50,
+              "transform": "translate(569px, 50px) scale(1)"
+            },
+            {
+              "x": 626,
+              "y": 50,
+              "transform": "translate(626px, 50px) scale(1)"
+            },
+            {
+              "x": 683,
+              "y": 50,
+              "transform": "translate(683px, 50px) scale(1)"
+            }
+          ],
+          "width": "100%",
+          "scroll": false
+        }
+      }
+    ],
+    "checkedLayouts": 180
+  },
+  {
+    "style": "onlineUI",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout-online.css",
+      "/extension/十周年UI/src/styles/card-online.css",
+      "/extension/十周年UI/src/styles/meihua-online.css",
+      "/extension/十周年UI/src/styles/layout-online.css"
+    ],
+    "points": [
+      {
+        "card": {
+          "x": 24.0625,
+          "y": 24.0625,
+          "width": 108,
+          "height": 150,
+          "top": 24.0625,
+          "right": 132.0625,
+          "bottom": 174.0625,
+          "left": 24.0625
+        },
+        "number": {
+          "x": 31.0625,
+          "y": 29.0625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 29.0625,
+          "right": 47.0625,
+          "bottom": 48.609375,
+          "left": 31.0625
+        },
+        "suit": {
+          "x": 29.0625,
+          "y": 49.609375,
+          "width": 20,
+          "height": 17.859375,
+          "top": 49.609375,
+          "right": 49.0625,
+          "bottom": 67.46875,
+          "left": 29.0625
+        }
+      },
+      {
+        "card": {
+          "x": 149.96875,
+          "y": 24.0625,
+          "width": 108,
+          "height": 150,
+          "top": 24.0625,
+          "right": 257.96875,
+          "bottom": 174.0625,
+          "left": 149.96875
+        },
+        "number": {
+          "x": 156.96875,
+          "y": 29.0625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 29.0625,
+          "right": 172.96875,
+          "bottom": 48.609375,
+          "left": 156.96875
+        },
+        "suit": {
+          "x": 154.96875,
+          "y": 49.609375,
+          "width": 20,
+          "height": 17.859375,
+          "top": 49.609375,
+          "right": 174.96875,
+          "bottom": 67.46875,
+          "left": 154.96875
+        }
+      },
+      {
+        "card": {
+          "x": 275.875,
+          "y": 24.0625,
+          "width": 108,
+          "height": 150,
+          "top": 24.0625,
+          "right": 383.875,
+          "bottom": 174.0625,
+          "left": 275.875
+        },
+        "number": {
+          "x": 282.875,
+          "y": 29.0625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 29.0625,
+          "right": 298.875,
+          "bottom": 48.609375,
+          "left": 282.875
+        },
+        "suit": {
+          "x": 280.875,
+          "y": 49.609375,
+          "width": 20,
+          "height": 17.859375,
+          "top": 49.609375,
+          "right": 300.875,
+          "bottom": 67.46875,
+          "left": 280.875
+        }
+      },
+      {
+        "card": {
+          "x": 401.78125,
+          "y": 24.0625,
+          "width": 108,
+          "height": 150,
+          "top": 24.0625,
+          "right": 509.78125,
+          "bottom": 174.0625,
+          "left": 401.78125
+        },
+        "number": {
+          "x": 408.78125,
+          "y": 29.0625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 29.0625,
+          "right": 424.78125,
+          "bottom": 48.609375,
+          "left": 408.78125
+        },
+        "suit": {
+          "x": 406.78125,
+          "y": 49.609375,
+          "width": 20,
+          "height": 17.140625,
+          "top": 49.609375,
+          "right": 426.78125,
+          "bottom": 66.75,
+          "left": 406.78125
+        }
+      },
+      {
+        "card": {
+          "x": 527.6875,
+          "y": 24.0625,
+          "width": 108,
+          "height": 150,
+          "top": 24.0625,
+          "right": 635.6875,
+          "bottom": 174.0625,
+          "left": 527.6875
+        },
+        "number": {
+          "x": 534.6875,
+          "y": 29.0625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 29.0625,
+          "right": 550.6875,
+          "bottom": 48.609375,
+          "left": 534.6875
+        },
+        "suit": {
+          "x": 532.6875,
+          "y": 49.609375,
+          "width": 20,
+          "height": 17.140625,
+          "top": 49.609375,
+          "right": 552.6875,
+          "bottom": 66.75,
+          "left": 532.6875
+        }
+      },
+      {
+        "card": {
+          "x": 653.59375,
+          "y": 24.0625,
+          "width": 108,
+          "height": 150,
+          "top": 24.0625,
+          "right": 761.59375,
+          "bottom": 174.0625,
+          "left": 653.59375
+        },
+        "number": {
+          "x": 660.59375,
+          "y": 29.0625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 29.0625,
+          "right": 676.59375,
+          "bottom": 48.609375,
+          "left": 660.59375
+        },
+        "suit": {
+          "x": 658.59375,
+          "y": 49.609375,
+          "width": 20,
+          "height": 17.140625,
+          "top": 49.609375,
+          "right": 678.59375,
+          "bottom": 66.75,
+          "left": 658.59375
+        }
+      },
+      {
+        "card": {
+          "x": 779.5,
+          "y": 24.0625,
+          "width": 108,
+          "height": 150,
+          "top": 24.0625,
+          "right": 887.5,
+          "bottom": 174.0625,
+          "left": 779.5
+        },
+        "number": {
+          "x": 786.5,
+          "y": 29.0625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 29.0625,
+          "right": 802.5,
+          "bottom": 48.609375,
+          "left": 786.5
+        },
+        "suit": {
+          "x": 784.5,
+          "y": 49.609375,
+          "width": 20,
+          "height": 18.25,
+          "top": 49.609375,
+          "right": 804.5,
+          "bottom": 67.859375,
+          "left": 784.5
+        }
+      },
+      {
+        "card": {
+          "x": 905.40625,
+          "y": 24.0625,
+          "width": 108,
+          "height": 150,
+          "top": 24.0625,
+          "right": 1013.40625,
+          "bottom": 174.0625,
+          "left": 905.40625
+        },
+        "number": {
+          "x": 912.40625,
+          "y": 29.0625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 29.0625,
+          "right": 928.40625,
+          "bottom": 48.609375,
+          "left": 912.40625
+        },
+        "suit": {
+          "x": 910.40625,
+          "y": 49.609375,
+          "width": 20,
+          "height": 18.25,
+          "top": 49.609375,
+          "right": 930.40625,
+          "bottom": 67.859375,
+          "left": 910.40625
+        }
+      },
+      {
+        "card": {
+          "x": 1031.3125,
+          "y": 24.0625,
+          "width": 108,
+          "height": 150,
+          "top": 24.0625,
+          "right": 1139.3125,
+          "bottom": 174.0625,
+          "left": 1031.3125
+        },
+        "number": {
+          "x": 1038.3125,
+          "y": 29.0625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 29.0625,
+          "right": 1054.3125,
+          "bottom": 48.609375,
+          "left": 1038.3125
+        },
+        "suit": {
+          "x": 1036.3125,
+          "y": 49.609375,
+          "width": 20,
+          "height": 18.25,
+          "top": 49.609375,
+          "right": 1056.3125,
+          "bottom": 67.859375,
+          "left": 1036.3125
+        }
+      },
+      {
+        "card": {
+          "x": 1157.21875,
+          "y": 24.0625,
+          "width": 108,
+          "height": 150,
+          "top": 24.0625,
+          "right": 1265.21875,
+          "bottom": 174.0625,
+          "left": 1157.21875
+        },
+        "number": {
+          "x": 1164.21875,
+          "y": 29.0625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 29.0625,
+          "right": 1180.21875,
+          "bottom": 48.609375,
+          "left": 1164.21875
+        },
+        "suit": {
+          "x": 1162.21875,
+          "y": 49.609375,
+          "width": 20,
+          "height": 18.25,
+          "top": 49.609375,
+          "right": 1182.21875,
+          "bottom": 67.859375,
+          "left": 1162.21875
+        }
+      },
+      {
+        "card": {
+          "x": 24.0625,
+          "y": 191.96875,
+          "width": 108,
+          "height": 150,
+          "top": 191.96875,
+          "right": 132.0625,
+          "bottom": 341.96875,
+          "left": 24.0625
+        },
+        "number": {
+          "x": 31.0625,
+          "y": 196.96875,
+          "width": 16,
+          "height": 19.546875,
+          "top": 196.96875,
+          "right": 47.0625,
+          "bottom": 216.515625,
+          "left": 31.0625
+        },
+        "suit": {
+          "x": 29.0625,
+          "y": 217.515625,
+          "width": 20,
+          "height": 18.25,
+          "top": 217.515625,
+          "right": 49.0625,
+          "bottom": 235.765625,
+          "left": 29.0625
+        }
+      },
+      {
+        "card": {
+          "x": 149.96875,
+          "y": 191.96875,
+          "width": 108,
+          "height": 150,
+          "top": 191.96875,
+          "right": 257.96875,
+          "bottom": 341.96875,
+          "left": 149.96875
+        },
+        "number": {
+          "x": 156.96875,
+          "y": 196.96875,
+          "width": 16,
+          "height": 19.546875,
+          "top": 196.96875,
+          "right": 172.96875,
+          "bottom": 216.515625,
+          "left": 156.96875
+        },
+        "suit": {
+          "x": 154.96875,
+          "y": 217.515625,
+          "width": 20,
+          "height": 18.25,
+          "top": 217.515625,
+          "right": 174.96875,
+          "bottom": 235.765625,
+          "left": 154.96875
+        }
+      }
+    ],
+    "cases": [
+      {
+        "width": 740,
+        "scale": 1,
+        "count": 12,
+        "fold": false,
+        "before": {
+          "cards": [
+            {
+              "x": 0,
+              "y": 0,
+              "transform": "translate(0px, 0px) scale(1)"
+            },
+            {
+              "x": 57,
+              "y": 0,
+              "transform": "translate(57px, 0px) scale(1) translateY(-20px)"
+            },
+            {
+              "x": 115,
+              "y": 0,
+              "transform": "translate(115px, 0px) scale(1)"
+            },
+            {
+              "x": 172,
+              "y": 0,
+              "transform": "translate(172px, 0px) scale(1)"
+            },
+            {
+              "x": 230,
+              "y": 0,
+              "transform": "translate(230px, 0px) scale(1)"
+            },
+            {
+              "x": 287,
+              "y": 0,
+              "transform": "translate(287px, 0px) scale(1)"
+            },
+            {
+              "x": 345,
+              "y": 0,
+              "transform": "translate(345px, 0px) scale(1)"
+            },
+            {
+              "x": 402,
+              "y": 0,
+              "transform": "translate(402px, 0px) scale(1)"
+            },
+            {
+              "x": 460,
+              "y": 0,
+              "transform": "translate(460px, 0px) scale(1)"
+            },
+            {
+              "x": 517,
+              "y": 0,
+              "transform": "translate(517px, 0px) scale(1)"
+            },
+            {
+              "x": 575,
+              "y": 0,
+              "transform": "translate(575px, 0px) scale(1)"
+            },
+            {
+              "x": 632,
+              "y": 0,
+              "transform": "translate(632px, 0px) scale(1)"
+            }
+          ],
+          "width": "100%",
+          "scroll": false
+        },
+        "after": {
+          "cards": [
+            {
+              "x": 0,
+              "y": 0,
+              "transform": "translate(0px, 0px) scale(1)"
+            },
+            {
+              "x": 57,
+              "y": 0,
+              "transform": "translate(57px, 0px) scale(1) translateY(-20px)"
+            },
+            {
+              "x": 115,
+              "y": 0,
+              "transform": "translate(115px, 0px) scale(1)"
+            },
+            {
+              "x": 172,
+              "y": 0,
+              "transform": "translate(172px, 0px) scale(1)"
+            },
+            {
+              "x": 230,
+              "y": 0,
+              "transform": "translate(230px, 0px) scale(1)"
+            },
+            {
+              "x": 287,
+              "y": 0,
+              "transform": "translate(287px, 0px) scale(1)"
+            },
+            {
+              "x": 345,
+              "y": 0,
+              "transform": "translate(345px, 0px) scale(1)"
+            },
+            {
+              "x": 402,
+              "y": 0,
+              "transform": "translate(402px, 0px) scale(1)"
+            },
+            {
+              "x": 460,
+              "y": 0,
+              "transform": "translate(460px, 0px) scale(1)"
+            },
+            {
+              "x": 517,
+              "y": 0,
+              "transform": "translate(517px, 0px) scale(1)"
+            },
+            {
+              "x": 575,
+              "y": 0,
+              "transform": "translate(575px, 0px) scale(1)"
+            },
+            {
+              "x": 632,
+              "y": 0,
+              "transform": "translate(632px, 0px) scale(1)"
+            }
+          ],
+          "width": "100%",
+          "scroll": false
+        }
+      }
+    ],
+    "checkedLayouts": 180
+  },
+  {
+    "style": "on",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout.css",
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/meihua.css",
+      "/extension/十周年UI/src/styles/layout.css"
+    ],
+    "points": [
+      {
+        "card": {
+          "x": 24.15625,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 132.15625,
+          "bottom": 174.15625,
+          "left": 24.15625
+        },
+        "number": {
+          "x": 33.65625,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 49.65625,
+          "bottom": 53.703125,
+          "left": 33.65625
+        },
+        "suit": {
+          "x": 31.65625,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.859375,
+          "top": 54.703125,
+          "right": 51.65625,
+          "bottom": 72.5625,
+          "left": 31.65625
+        }
+      },
+      {
+        "card": {
+          "x": 149.921875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 257.921875,
+          "bottom": 174.15625,
+          "left": 149.921875
+        },
+        "number": {
+          "x": 159.421875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 175.421875,
+          "bottom": 53.703125,
+          "left": 159.421875
+        },
+        "suit": {
+          "x": 157.421875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.859375,
+          "top": 54.703125,
+          "right": 177.421875,
+          "bottom": 72.5625,
+          "left": 157.421875
+        }
+      },
+      {
+        "card": {
+          "x": 275.6875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 383.6875,
+          "bottom": 174.15625,
+          "left": 275.6875
+        },
+        "number": {
+          "x": 285.1875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 301.1875,
+          "bottom": 53.703125,
+          "left": 285.1875
+        },
+        "suit": {
+          "x": 283.1875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.859375,
+          "top": 54.703125,
+          "right": 303.1875,
+          "bottom": 72.5625,
+          "left": 283.1875
+        }
+      },
+      {
+        "card": {
+          "x": 401.453125,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 509.453125,
+          "bottom": 174.15625,
+          "left": 401.453125
+        },
+        "number": {
+          "x": 410.953125,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 426.953125,
+          "bottom": 53.703125,
+          "left": 410.953125
+        },
+        "suit": {
+          "x": 408.953125,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.140625,
+          "top": 54.703125,
+          "right": 428.953125,
+          "bottom": 71.84375,
+          "left": 408.953125
+        }
+      },
+      {
+        "card": {
+          "x": 527.21875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 635.21875,
+          "bottom": 174.15625,
+          "left": 527.21875
+        },
+        "number": {
+          "x": 536.71875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 552.71875,
+          "bottom": 53.703125,
+          "left": 536.71875
+        },
+        "suit": {
+          "x": 534.71875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.140625,
+          "top": 54.703125,
+          "right": 554.71875,
+          "bottom": 71.84375,
+          "left": 534.71875
+        }
+      },
+      {
+        "card": {
+          "x": 652.984375,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 760.984375,
+          "bottom": 174.15625,
+          "left": 652.984375
+        },
+        "number": {
+          "x": 662.484375,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 678.484375,
+          "bottom": 53.703125,
+          "left": 662.484375
+        },
+        "suit": {
+          "x": 660.484375,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.140625,
+          "top": 54.703125,
+          "right": 680.484375,
+          "bottom": 71.84375,
+          "left": 660.484375
+        }
+      },
+      {
+        "card": {
+          "x": 778.75,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 886.75,
+          "bottom": 174.15625,
+          "left": 778.75
+        },
+        "number": {
+          "x": 788.25,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 804.25,
+          "bottom": 53.703125,
+          "left": 788.25
+        },
+        "suit": {
+          "x": 786.25,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 806.25,
+          "bottom": 72.953125,
+          "left": 786.25
+        }
+      },
+      {
+        "card": {
+          "x": 904.515625,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1012.515625,
+          "bottom": 174.15625,
+          "left": 904.515625
+        },
+        "number": {
+          "x": 914.015625,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 930.015625,
+          "bottom": 53.703125,
+          "left": 914.015625
+        },
+        "suit": {
+          "x": 912.015625,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 932.015625,
+          "bottom": 72.953125,
+          "left": 912.015625
+        }
+      },
+      {
+        "card": {
+          "x": 1030.28125,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1138.28125,
+          "bottom": 174.15625,
+          "left": 1030.28125
+        },
+        "number": {
+          "x": 1039.78125,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 1055.78125,
+          "bottom": 53.703125,
+          "left": 1039.78125
+        },
+        "suit": {
+          "x": 1037.78125,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 1057.78125,
+          "bottom": 72.953125,
+          "left": 1037.78125
+        }
+      },
+      {
+        "card": {
+          "x": 1156.046875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1264.046875,
+          "bottom": 174.15625,
+          "left": 1156.046875
+        },
+        "number": {
+          "x": 1165.546875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 1181.546875,
+          "bottom": 53.703125,
+          "left": 1165.546875
+        },
+        "suit": {
+          "x": 1163.546875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 1183.546875,
+          "bottom": 72.953125,
+          "left": 1163.546875
+        }
+      },
+      {
+        "card": {
+          "x": 24.15625,
+          "y": 191.921875,
+          "width": 108,
+          "height": 150,
+          "top": 191.921875,
+          "right": 132.15625,
+          "bottom": 341.921875,
+          "left": 24.15625
+        },
+        "number": {
+          "x": 33.65625,
+          "y": 201.921875,
+          "width": 16,
+          "height": 19.546875,
+          "top": 201.921875,
+          "right": 49.65625,
+          "bottom": 221.46875,
+          "left": 33.65625
+        },
+        "suit": {
+          "x": 31.65625,
+          "y": 222.46875,
+          "width": 20,
+          "height": 18.25,
+          "top": 222.46875,
+          "right": 51.65625,
+          "bottom": 240.71875,
+          "left": 31.65625
+        }
+      },
+      {
+        "card": {
+          "x": 149.921875,
+          "y": 191.921875,
+          "width": 108,
+          "height": 150,
+          "top": 191.921875,
+          "right": 257.921875,
+          "bottom": 341.921875,
+          "left": 149.921875
+        },
+        "number": {
+          "x": 159.421875,
+          "y": 201.921875,
+          "width": 16,
+          "height": 19.546875,
+          "top": 201.921875,
+          "right": 175.421875,
+          "bottom": 221.46875,
+          "left": 159.421875
+        },
+        "suit": {
+          "x": 157.421875,
+          "y": 222.46875,
+          "width": 20,
+          "height": 18.25,
+          "top": 222.46875,
+          "right": 177.421875,
+          "bottom": 240.71875,
+          "left": 157.421875
+        }
+      }
+    ],
+    "cases": [
+      {
+        "width": 740,
+        "scale": 1,
+        "count": 12,
+        "fold": false,
+        "before": {
+          "cards": [
+            {
+              "x": 0,
+              "y": 0,
+              "transform": "translate(0px, 0px) scale(1)"
+            },
+            {
+              "x": 57,
+              "y": 0,
+              "transform": "translate(57px, 0px) scale(1) translateY(-20px)"
+            },
+            {
+              "x": 115,
+              "y": 0,
+              "transform": "translate(115px, 0px) scale(1)"
+            },
+            {
+              "x": 172,
+              "y": 0,
+              "transform": "translate(172px, 0px) scale(1)"
+            },
+            {
+              "x": 230,
+              "y": 0,
+              "transform": "translate(230px, 0px) scale(1)"
+            },
+            {
+              "x": 287,
+              "y": 0,
+              "transform": "translate(287px, 0px) scale(1)"
+            },
+            {
+              "x": 345,
+              "y": 0,
+              "transform": "translate(345px, 0px) scale(1)"
+            },
+            {
+              "x": 402,
+              "y": 0,
+              "transform": "translate(402px, 0px) scale(1)"
+            },
+            {
+              "x": 460,
+              "y": 0,
+              "transform": "translate(460px, 0px) scale(1)"
+            },
+            {
+              "x": 517,
+              "y": 0,
+              "transform": "translate(517px, 0px) scale(1)"
+            },
+            {
+              "x": 575,
+              "y": 0,
+              "transform": "translate(575px, 0px) scale(1)"
+            },
+            {
+              "x": 632,
+              "y": 0,
+              "transform": "translate(632px, 0px) scale(1)"
+            }
+          ],
+          "width": "100%",
+          "scroll": false
+        },
+        "after": {
+          "cards": [
+            {
+              "x": 0,
+              "y": 0,
+              "transform": "translate(0px, 0px) scale(1)"
+            },
+            {
+              "x": 57,
+              "y": 0,
+              "transform": "translate(57px, 0px) scale(1) translateY(-20px)"
+            },
+            {
+              "x": 115,
+              "y": 0,
+              "transform": "translate(115px, 0px) scale(1)"
+            },
+            {
+              "x": 172,
+              "y": 0,
+              "transform": "translate(172px, 0px) scale(1)"
+            },
+            {
+              "x": 230,
+              "y": 0,
+              "transform": "translate(230px, 0px) scale(1)"
+            },
+            {
+              "x": 287,
+              "y": 0,
+              "transform": "translate(287px, 0px) scale(1)"
+            },
+            {
+              "x": 345,
+              "y": 0,
+              "transform": "translate(345px, 0px) scale(1)"
+            },
+            {
+              "x": 402,
+              "y": 0,
+              "transform": "translate(402px, 0px) scale(1)"
+            },
+            {
+              "x": 460,
+              "y": 0,
+              "transform": "translate(460px, 0px) scale(1)"
+            },
+            {
+              "x": 517,
+              "y": 0,
+              "transform": "translate(517px, 0px) scale(1)"
+            },
+            {
+              "x": 575,
+              "y": 0,
+              "transform": "translate(575px, 0px) scale(1)"
+            },
+            {
+              "x": 632,
+              "y": 0,
+              "transform": "translate(632px, 0px) scale(1)"
+            }
+          ],
+          "width": "100%",
+          "scroll": false
+        }
+      }
+    ],
+    "checkedLayouts": 180
+  },
+  {
+    "style": "off",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout.css",
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/meihua.css",
+      "/extension/十周年UI/src/styles/layout.css"
+    ],
+    "points": [
+      {
+        "card": {
+          "x": 24.15625,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 132.15625,
+          "bottom": 174.15625,
+          "left": 24.15625
+        },
+        "number": {
+          "x": 33.65625,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 49.65625,
+          "bottom": 53.703125,
+          "left": 33.65625
+        },
+        "suit": {
+          "x": 31.65625,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.859375,
+          "top": 54.703125,
+          "right": 51.65625,
+          "bottom": 72.5625,
+          "left": 31.65625
+        }
+      },
+      {
+        "card": {
+          "x": 149.921875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 257.921875,
+          "bottom": 174.15625,
+          "left": 149.921875
+        },
+        "number": {
+          "x": 159.421875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 175.421875,
+          "bottom": 53.703125,
+          "left": 159.421875
+        },
+        "suit": {
+          "x": 157.421875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.859375,
+          "top": 54.703125,
+          "right": 177.421875,
+          "bottom": 72.5625,
+          "left": 157.421875
+        }
+      },
+      {
+        "card": {
+          "x": 275.6875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 383.6875,
+          "bottom": 174.15625,
+          "left": 275.6875
+        },
+        "number": {
+          "x": 285.1875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 301.1875,
+          "bottom": 53.703125,
+          "left": 285.1875
+        },
+        "suit": {
+          "x": 283.1875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.859375,
+          "top": 54.703125,
+          "right": 303.1875,
+          "bottom": 72.5625,
+          "left": 283.1875
+        }
+      },
+      {
+        "card": {
+          "x": 401.453125,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 509.453125,
+          "bottom": 174.15625,
+          "left": 401.453125
+        },
+        "number": {
+          "x": 410.953125,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 426.953125,
+          "bottom": 53.703125,
+          "left": 410.953125
+        },
+        "suit": {
+          "x": 408.953125,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.140625,
+          "top": 54.703125,
+          "right": 428.953125,
+          "bottom": 71.84375,
+          "left": 408.953125
+        }
+      },
+      {
+        "card": {
+          "x": 527.21875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 635.21875,
+          "bottom": 174.15625,
+          "left": 527.21875
+        },
+        "number": {
+          "x": 536.71875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 552.71875,
+          "bottom": 53.703125,
+          "left": 536.71875
+        },
+        "suit": {
+          "x": 534.71875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.140625,
+          "top": 54.703125,
+          "right": 554.71875,
+          "bottom": 71.84375,
+          "left": 534.71875
+        }
+      },
+      {
+        "card": {
+          "x": 652.984375,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 760.984375,
+          "bottom": 174.15625,
+          "left": 652.984375
+        },
+        "number": {
+          "x": 662.484375,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 678.484375,
+          "bottom": 53.703125,
+          "left": 662.484375
+        },
+        "suit": {
+          "x": 660.484375,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.140625,
+          "top": 54.703125,
+          "right": 680.484375,
+          "bottom": 71.84375,
+          "left": 660.484375
+        }
+      },
+      {
+        "card": {
+          "x": 778.75,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 886.75,
+          "bottom": 174.15625,
+          "left": 778.75
+        },
+        "number": {
+          "x": 788.25,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 804.25,
+          "bottom": 53.703125,
+          "left": 788.25
+        },
+        "suit": {
+          "x": 786.25,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 806.25,
+          "bottom": 72.953125,
+          "left": 786.25
+        }
+      },
+      {
+        "card": {
+          "x": 904.515625,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1012.515625,
+          "bottom": 174.15625,
+          "left": 904.515625
+        },
+        "number": {
+          "x": 914.015625,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 930.015625,
+          "bottom": 53.703125,
+          "left": 914.015625
+        },
+        "suit": {
+          "x": 912.015625,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 932.015625,
+          "bottom": 72.953125,
+          "left": 912.015625
+        }
+      },
+      {
+        "card": {
+          "x": 1030.28125,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1138.28125,
+          "bottom": 174.15625,
+          "left": 1030.28125
+        },
+        "number": {
+          "x": 1039.78125,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 1055.78125,
+          "bottom": 53.703125,
+          "left": 1039.78125
+        },
+        "suit": {
+          "x": 1037.78125,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 1057.78125,
+          "bottom": 72.953125,
+          "left": 1037.78125
+        }
+      },
+      {
+        "card": {
+          "x": 1156.046875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1264.046875,
+          "bottom": 174.15625,
+          "left": 1156.046875
+        },
+        "number": {
+          "x": 1165.546875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 1181.546875,
+          "bottom": 53.703125,
+          "left": 1165.546875
+        },
+        "suit": {
+          "x": 1163.546875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 1183.546875,
+          "bottom": 72.953125,
+          "left": 1163.546875
+        }
+      },
+      {
+        "card": {
+          "x": 24.15625,
+          "y": 191.921875,
+          "width": 108,
+          "height": 150,
+          "top": 191.921875,
+          "right": 132.15625,
+          "bottom": 341.921875,
+          "left": 24.15625
+        },
+        "number": {
+          "x": 33.65625,
+          "y": 201.921875,
+          "width": 16,
+          "height": 19.546875,
+          "top": 201.921875,
+          "right": 49.65625,
+          "bottom": 221.46875,
+          "left": 33.65625
+        },
+        "suit": {
+          "x": 31.65625,
+          "y": 222.46875,
+          "width": 20,
+          "height": 18.25,
+          "top": 222.46875,
+          "right": 51.65625,
+          "bottom": 240.71875,
+          "left": 31.65625
+        }
+      },
+      {
+        "card": {
+          "x": 149.921875,
+          "y": 191.921875,
+          "width": 108,
+          "height": 150,
+          "top": 191.921875,
+          "right": 257.921875,
+          "bottom": 341.921875,
+          "left": 149.921875
+        },
+        "number": {
+          "x": 159.421875,
+          "y": 201.921875,
+          "width": 16,
+          "height": 19.546875,
+          "top": 201.921875,
+          "right": 175.421875,
+          "bottom": 221.46875,
+          "left": 159.421875
+        },
+        "suit": {
+          "x": 157.421875,
+          "y": 222.46875,
+          "width": 20,
+          "height": 18.25,
+          "top": 222.46875,
+          "right": 177.421875,
+          "bottom": 240.71875,
+          "left": 157.421875
+        }
+      }
+    ],
+    "cases": [
+      {
+        "width": 740,
+        "scale": 1,
+        "count": 12,
+        "fold": false,
+        "before": {
+          "cards": [
+            {
+              "x": 0,
+              "y": 0,
+              "transform": "translate(0px, 0px) scale(1)"
+            },
+            {
+              "x": 57,
+              "y": 0,
+              "transform": "translate(57px, 0px) scale(1) translateY(-20px)"
+            },
+            {
+              "x": 115,
+              "y": 0,
+              "transform": "translate(115px, 0px) scale(1)"
+            },
+            {
+              "x": 172,
+              "y": 0,
+              "transform": "translate(172px, 0px) scale(1)"
+            },
+            {
+              "x": 230,
+              "y": 0,
+              "transform": "translate(230px, 0px) scale(1)"
+            },
+            {
+              "x": 287,
+              "y": 0,
+              "transform": "translate(287px, 0px) scale(1)"
+            },
+            {
+              "x": 345,
+              "y": 0,
+              "transform": "translate(345px, 0px) scale(1)"
+            },
+            {
+              "x": 402,
+              "y": 0,
+              "transform": "translate(402px, 0px) scale(1)"
+            },
+            {
+              "x": 460,
+              "y": 0,
+              "transform": "translate(460px, 0px) scale(1)"
+            },
+            {
+              "x": 517,
+              "y": 0,
+              "transform": "translate(517px, 0px) scale(1)"
+            },
+            {
+              "x": 575,
+              "y": 0,
+              "transform": "translate(575px, 0px) scale(1)"
+            },
+            {
+              "x": 632,
+              "y": 0,
+              "transform": "translate(632px, 0px) scale(1)"
+            }
+          ],
+          "width": "100%",
+          "scroll": false
+        },
+        "after": {
+          "cards": [
+            {
+              "x": 0,
+              "y": 0,
+              "transform": "translate(0px, 0px) scale(1)"
+            },
+            {
+              "x": 57,
+              "y": 0,
+              "transform": "translate(57px, 0px) scale(1) translateY(-20px)"
+            },
+            {
+              "x": 115,
+              "y": 0,
+              "transform": "translate(115px, 0px) scale(1)"
+            },
+            {
+              "x": 172,
+              "y": 0,
+              "transform": "translate(172px, 0px) scale(1)"
+            },
+            {
+              "x": 230,
+              "y": 0,
+              "transform": "translate(230px, 0px) scale(1)"
+            },
+            {
+              "x": 287,
+              "y": 0,
+              "transform": "translate(287px, 0px) scale(1)"
+            },
+            {
+              "x": 345,
+              "y": 0,
+              "transform": "translate(345px, 0px) scale(1)"
+            },
+            {
+              "x": 402,
+              "y": 0,
+              "transform": "translate(402px, 0px) scale(1)"
+            },
+            {
+              "x": 460,
+              "y": 0,
+              "transform": "translate(460px, 0px) scale(1)"
+            },
+            {
+              "x": 517,
+              "y": 0,
+              "transform": "translate(517px, 0px) scale(1)"
+            },
+            {
+              "x": 575,
+              "y": 0,
+              "transform": "translate(575px, 0px) scale(1)"
+            },
+            {
+              "x": 632,
+              "y": 0,
+              "transform": "translate(632px, 0px) scale(1)"
+            }
+          ],
+          "width": "100%",
+          "scroll": false
+        }
+      }
+    ],
+    "checkedLayouts": 180
+  },
+  {
+    "style": "babysha",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout.css",
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/meihua.css",
+      "/extension/十周年UI/src/styles/layout.css"
+    ],
+    "points": [
+      {
+        "card": {
+          "x": 24.15625,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 132.15625,
+          "bottom": 174.15625,
+          "left": 24.15625
+        },
+        "number": {
+          "x": 33.65625,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 49.65625,
+          "bottom": 53.703125,
+          "left": 33.65625
+        },
+        "suit": {
+          "x": 31.65625,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.859375,
+          "top": 54.703125,
+          "right": 51.65625,
+          "bottom": 72.5625,
+          "left": 31.65625
+        }
+      },
+      {
+        "card": {
+          "x": 149.921875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 257.921875,
+          "bottom": 174.15625,
+          "left": 149.921875
+        },
+        "number": {
+          "x": 159.421875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 175.421875,
+          "bottom": 53.703125,
+          "left": 159.421875
+        },
+        "suit": {
+          "x": 157.421875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.859375,
+          "top": 54.703125,
+          "right": 177.421875,
+          "bottom": 72.5625,
+          "left": 157.421875
+        }
+      },
+      {
+        "card": {
+          "x": 275.6875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 383.6875,
+          "bottom": 174.15625,
+          "left": 275.6875
+        },
+        "number": {
+          "x": 285.1875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 301.1875,
+          "bottom": 53.703125,
+          "left": 285.1875
+        },
+        "suit": {
+          "x": 283.1875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.859375,
+          "top": 54.703125,
+          "right": 303.1875,
+          "bottom": 72.5625,
+          "left": 283.1875
+        }
+      },
+      {
+        "card": {
+          "x": 401.453125,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 509.453125,
+          "bottom": 174.15625,
+          "left": 401.453125
+        },
+        "number": {
+          "x": 410.953125,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 426.953125,
+          "bottom": 53.703125,
+          "left": 410.953125
+        },
+        "suit": {
+          "x": 408.953125,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.140625,
+          "top": 54.703125,
+          "right": 428.953125,
+          "bottom": 71.84375,
+          "left": 408.953125
+        }
+      },
+      {
+        "card": {
+          "x": 527.21875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 635.21875,
+          "bottom": 174.15625,
+          "left": 527.21875
+        },
+        "number": {
+          "x": 536.71875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 552.71875,
+          "bottom": 53.703125,
+          "left": 536.71875
+        },
+        "suit": {
+          "x": 534.71875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.140625,
+          "top": 54.703125,
+          "right": 554.71875,
+          "bottom": 71.84375,
+          "left": 534.71875
+        }
+      },
+      {
+        "card": {
+          "x": 652.984375,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 760.984375,
+          "bottom": 174.15625,
+          "left": 652.984375
+        },
+        "number": {
+          "x": 662.484375,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 678.484375,
+          "bottom": 53.703125,
+          "left": 662.484375
+        },
+        "suit": {
+          "x": 660.484375,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.140625,
+          "top": 54.703125,
+          "right": 680.484375,
+          "bottom": 71.84375,
+          "left": 660.484375
+        }
+      },
+      {
+        "card": {
+          "x": 778.75,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 886.75,
+          "bottom": 174.15625,
+          "left": 778.75
+        },
+        "number": {
+          "x": 788.25,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 804.25,
+          "bottom": 53.703125,
+          "left": 788.25
+        },
+        "suit": {
+          "x": 786.25,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 806.25,
+          "bottom": 72.953125,
+          "left": 786.25
+        }
+      },
+      {
+        "card": {
+          "x": 904.515625,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1012.515625,
+          "bottom": 174.15625,
+          "left": 904.515625
+        },
+        "number": {
+          "x": 914.015625,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 930.015625,
+          "bottom": 53.703125,
+          "left": 914.015625
+        },
+        "suit": {
+          "x": 912.015625,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 932.015625,
+          "bottom": 72.953125,
+          "left": 912.015625
+        }
+      },
+      {
+        "card": {
+          "x": 1030.28125,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1138.28125,
+          "bottom": 174.15625,
+          "left": 1030.28125
+        },
+        "number": {
+          "x": 1039.78125,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 1055.78125,
+          "bottom": 53.703125,
+          "left": 1039.78125
+        },
+        "suit": {
+          "x": 1037.78125,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 1057.78125,
+          "bottom": 72.953125,
+          "left": 1037.78125
+        }
+      },
+      {
+        "card": {
+          "x": 1156.046875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1264.046875,
+          "bottom": 174.15625,
+          "left": 1156.046875
+        },
+        "number": {
+          "x": 1165.546875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 1181.546875,
+          "bottom": 53.703125,
+          "left": 1165.546875
+        },
+        "suit": {
+          "x": 1163.546875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 1183.546875,
+          "bottom": 72.953125,
+          "left": 1163.546875
+        }
+      },
+      {
+        "card": {
+          "x": 24.15625,
+          "y": 191.921875,
+          "width": 108,
+          "height": 150,
+          "top": 191.921875,
+          "right": 132.15625,
+          "bottom": 341.921875,
+          "left": 24.15625
+        },
+        "number": {
+          "x": 33.65625,
+          "y": 201.921875,
+          "width": 16,
+          "height": 19.546875,
+          "top": 201.921875,
+          "right": 49.65625,
+          "bottom": 221.46875,
+          "left": 33.65625
+        },
+        "suit": {
+          "x": 31.65625,
+          "y": 222.46875,
+          "width": 20,
+          "height": 18.25,
+          "top": 222.46875,
+          "right": 51.65625,
+          "bottom": 240.71875,
+          "left": 31.65625
+        }
+      },
+      {
+        "card": {
+          "x": 149.921875,
+          "y": 191.921875,
+          "width": 108,
+          "height": 150,
+          "top": 191.921875,
+          "right": 257.921875,
+          "bottom": 341.921875,
+          "left": 149.921875
+        },
+        "number": {
+          "x": 159.421875,
+          "y": 201.921875,
+          "width": 16,
+          "height": 19.546875,
+          "top": 201.921875,
+          "right": 175.421875,
+          "bottom": 221.46875,
+          "left": 159.421875
+        },
+        "suit": {
+          "x": 157.421875,
+          "y": 222.46875,
+          "width": 20,
+          "height": 18.25,
+          "top": 222.46875,
+          "right": 177.421875,
+          "bottom": 240.71875,
+          "left": 157.421875
+        }
+      }
+    ],
+    "cases": [
+      {
+        "width": 740,
+        "scale": 1,
+        "count": 12,
+        "fold": false,
+        "before": {
+          "cards": [
+            {
+              "x": 0,
+              "y": 0,
+              "transform": "translate(0px, 0px) scale(1)"
+            },
+            {
+              "x": 57,
+              "y": 0,
+              "transform": "translate(57px, 0px) scale(1) translateY(-20px)"
+            },
+            {
+              "x": 115,
+              "y": 0,
+              "transform": "translate(115px, 0px) scale(1)"
+            },
+            {
+              "x": 172,
+              "y": 0,
+              "transform": "translate(172px, 0px) scale(1)"
+            },
+            {
+              "x": 230,
+              "y": 0,
+              "transform": "translate(230px, 0px) scale(1)"
+            },
+            {
+              "x": 287,
+              "y": 0,
+              "transform": "translate(287px, 0px) scale(1)"
+            },
+            {
+              "x": 345,
+              "y": 0,
+              "transform": "translate(345px, 0px) scale(1)"
+            },
+            {
+              "x": 402,
+              "y": 0,
+              "transform": "translate(402px, 0px) scale(1)"
+            },
+            {
+              "x": 460,
+              "y": 0,
+              "transform": "translate(460px, 0px) scale(1)"
+            },
+            {
+              "x": 517,
+              "y": 0,
+              "transform": "translate(517px, 0px) scale(1)"
+            },
+            {
+              "x": 575,
+              "y": 0,
+              "transform": "translate(575px, 0px) scale(1)"
+            },
+            {
+              "x": 632,
+              "y": 0,
+              "transform": "translate(632px, 0px) scale(1)"
+            }
+          ],
+          "width": "100%",
+          "scroll": false
+        },
+        "after": {
+          "cards": [
+            {
+              "x": 0,
+              "y": 0,
+              "transform": "translate(0px, 0px) scale(1)"
+            },
+            {
+              "x": 57,
+              "y": 0,
+              "transform": "translate(57px, 0px) scale(1) translateY(-20px)"
+            },
+            {
+              "x": 115,
+              "y": 0,
+              "transform": "translate(115px, 0px) scale(1)"
+            },
+            {
+              "x": 172,
+              "y": 0,
+              "transform": "translate(172px, 0px) scale(1)"
+            },
+            {
+              "x": 230,
+              "y": 0,
+              "transform": "translate(230px, 0px) scale(1)"
+            },
+            {
+              "x": 287,
+              "y": 0,
+              "transform": "translate(287px, 0px) scale(1)"
+            },
+            {
+              "x": 345,
+              "y": 0,
+              "transform": "translate(345px, 0px) scale(1)"
+            },
+            {
+              "x": 402,
+              "y": 0,
+              "transform": "translate(402px, 0px) scale(1)"
+            },
+            {
+              "x": 460,
+              "y": 0,
+              "transform": "translate(460px, 0px) scale(1)"
+            },
+            {
+              "x": 517,
+              "y": 0,
+              "transform": "translate(517px, 0px) scale(1)"
+            },
+            {
+              "x": 575,
+              "y": 0,
+              "transform": "translate(575px, 0px) scale(1)"
+            },
+            {
+              "x": 632,
+              "y": 0,
+              "transform": "translate(632px, 0px) scale(1)"
+            }
+          ],
+          "width": "100%",
+          "scroll": false
+        }
+      }
+    ],
+    "checkedLayouts": 180
+  },
+  {
+    "style": "codename",
+    "files": [
+      "/extension/十周年UI/src/styles/extension.css",
+      "/extension/十周年UI/src/styles/decadeLayout.css",
+      "/extension/十周年UI/src/styles/card.css",
+      "/extension/十周年UI/src/styles/meihua.css",
+      "/extension/十周年UI/src/styles/layout.css"
+    ],
+    "points": [
+      {
+        "card": {
+          "x": 24.15625,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 132.15625,
+          "bottom": 174.15625,
+          "left": 24.15625
+        },
+        "number": {
+          "x": 33.65625,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 49.65625,
+          "bottom": 53.703125,
+          "left": 33.65625
+        },
+        "suit": {
+          "x": 31.65625,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.859375,
+          "top": 54.703125,
+          "right": 51.65625,
+          "bottom": 72.5625,
+          "left": 31.65625
+        }
+      },
+      {
+        "card": {
+          "x": 149.921875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 257.921875,
+          "bottom": 174.15625,
+          "left": 149.921875
+        },
+        "number": {
+          "x": 159.421875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 175.421875,
+          "bottom": 53.703125,
+          "left": 159.421875
+        },
+        "suit": {
+          "x": 157.421875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.859375,
+          "top": 54.703125,
+          "right": 177.421875,
+          "bottom": 72.5625,
+          "left": 157.421875
+        }
+      },
+      {
+        "card": {
+          "x": 275.6875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 383.6875,
+          "bottom": 174.15625,
+          "left": 275.6875
+        },
+        "number": {
+          "x": 285.1875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 301.1875,
+          "bottom": 53.703125,
+          "left": 285.1875
+        },
+        "suit": {
+          "x": 283.1875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.859375,
+          "top": 54.703125,
+          "right": 303.1875,
+          "bottom": 72.5625,
+          "left": 283.1875
+        }
+      },
+      {
+        "card": {
+          "x": 401.453125,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 509.453125,
+          "bottom": 174.15625,
+          "left": 401.453125
+        },
+        "number": {
+          "x": 410.953125,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 426.953125,
+          "bottom": 53.703125,
+          "left": 410.953125
+        },
+        "suit": {
+          "x": 408.953125,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.140625,
+          "top": 54.703125,
+          "right": 428.953125,
+          "bottom": 71.84375,
+          "left": 408.953125
+        }
+      },
+      {
+        "card": {
+          "x": 527.21875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 635.21875,
+          "bottom": 174.15625,
+          "left": 527.21875
+        },
+        "number": {
+          "x": 536.71875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 552.71875,
+          "bottom": 53.703125,
+          "left": 536.71875
+        },
+        "suit": {
+          "x": 534.71875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.140625,
+          "top": 54.703125,
+          "right": 554.71875,
+          "bottom": 71.84375,
+          "left": 534.71875
+        }
+      },
+      {
+        "card": {
+          "x": 652.984375,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 760.984375,
+          "bottom": 174.15625,
+          "left": 652.984375
+        },
+        "number": {
+          "x": 662.484375,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 678.484375,
+          "bottom": 53.703125,
+          "left": 662.484375
+        },
+        "suit": {
+          "x": 660.484375,
+          "y": 54.703125,
+          "width": 20,
+          "height": 17.140625,
+          "top": 54.703125,
+          "right": 680.484375,
+          "bottom": 71.84375,
+          "left": 660.484375
+        }
+      },
+      {
+        "card": {
+          "x": 778.75,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 886.75,
+          "bottom": 174.15625,
+          "left": 778.75
+        },
+        "number": {
+          "x": 788.25,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 804.25,
+          "bottom": 53.703125,
+          "left": 788.25
+        },
+        "suit": {
+          "x": 786.25,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 806.25,
+          "bottom": 72.953125,
+          "left": 786.25
+        }
+      },
+      {
+        "card": {
+          "x": 904.515625,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1012.515625,
+          "bottom": 174.15625,
+          "left": 904.515625
+        },
+        "number": {
+          "x": 914.015625,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 930.015625,
+          "bottom": 53.703125,
+          "left": 914.015625
+        },
+        "suit": {
+          "x": 912.015625,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 932.015625,
+          "bottom": 72.953125,
+          "left": 912.015625
+        }
+      },
+      {
+        "card": {
+          "x": 1030.28125,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1138.28125,
+          "bottom": 174.15625,
+          "left": 1030.28125
+        },
+        "number": {
+          "x": 1039.78125,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 1055.78125,
+          "bottom": 53.703125,
+          "left": 1039.78125
+        },
+        "suit": {
+          "x": 1037.78125,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 1057.78125,
+          "bottom": 72.953125,
+          "left": 1037.78125
+        }
+      },
+      {
+        "card": {
+          "x": 1156.046875,
+          "y": 24.15625,
+          "width": 108,
+          "height": 150,
+          "top": 24.15625,
+          "right": 1264.046875,
+          "bottom": 174.15625,
+          "left": 1156.046875
+        },
+        "number": {
+          "x": 1165.546875,
+          "y": 34.15625,
+          "width": 16,
+          "height": 19.546875,
+          "top": 34.15625,
+          "right": 1181.546875,
+          "bottom": 53.703125,
+          "left": 1165.546875
+        },
+        "suit": {
+          "x": 1163.546875,
+          "y": 54.703125,
+          "width": 20,
+          "height": 18.25,
+          "top": 54.703125,
+          "right": 1183.546875,
+          "bottom": 72.953125,
+          "left": 1163.546875
+        }
+      },
+      {
+        "card": {
+          "x": 24.15625,
+          "y": 191.921875,
+          "width": 108,
+          "height": 150,
+          "top": 191.921875,
+          "right": 132.15625,
+          "bottom": 341.921875,
+          "left": 24.15625
+        },
+        "number": {
+          "x": 33.65625,
+          "y": 201.921875,
+          "width": 16,
+          "height": 19.546875,
+          "top": 201.921875,
+          "right": 49.65625,
+          "bottom": 221.46875,
+          "left": 33.65625
+        },
+        "suit": {
+          "x": 31.65625,
+          "y": 222.46875,
+          "width": 20,
+          "height": 18.25,
+          "top": 222.46875,
+          "right": 51.65625,
+          "bottom": 240.71875,
+          "left": 31.65625
+        }
+      },
+      {
+        "card": {
+          "x": 149.921875,
+          "y": 191.921875,
+          "width": 108,
+          "height": 150,
+          "top": 191.921875,
+          "right": 257.921875,
+          "bottom": 341.921875,
+          "left": 149.921875
+        },
+        "number": {
+          "x": 159.421875,
+          "y": 201.921875,
+          "width": 16,
+          "height": 19.546875,
+          "top": 201.921875,
+          "right": 175.421875,
+          "bottom": 221.46875,
+          "left": 159.421875
+        },
+        "suit": {
+          "x": 157.421875,
+          "y": 222.46875,
+          "width": 20,
+          "height": 18.25,
+          "top": 222.46875,
+          "right": 177.421875,
+          "bottom": 240.71875,
+          "left": 157.421875
+        }
+      }
+    ],
+    "cases": [
+      {
+        "width": 740,
+        "scale": 1,
+        "count": 12,
+        "fold": false,
+        "before": {
+          "cards": [
+            {
+              "x": 0,
+              "y": 0,
+              "transform": "translate(0px, 0px) scale(1)"
+            },
+            {
+              "x": 57,
+              "y": 0,
+              "transform": "translate(57px, 0px) scale(1) translateY(-20px)"
+            },
+            {
+              "x": 115,
+              "y": 0,
+              "transform": "translate(115px, 0px) scale(1)"
+            },
+            {
+              "x": 172,
+              "y": 0,
+              "transform": "translate(172px, 0px) scale(1)"
+            },
+            {
+              "x": 230,
+              "y": 0,
+              "transform": "translate(230px, 0px) scale(1)"
+            },
+            {
+              "x": 287,
+              "y": 0,
+              "transform": "translate(287px, 0px) scale(1)"
+            },
+            {
+              "x": 345,
+              "y": 0,
+              "transform": "translate(345px, 0px) scale(1)"
+            },
+            {
+              "x": 402,
+              "y": 0,
+              "transform": "translate(402px, 0px) scale(1)"
+            },
+            {
+              "x": 460,
+              "y": 0,
+              "transform": "translate(460px, 0px) scale(1)"
+            },
+            {
+              "x": 517,
+              "y": 0,
+              "transform": "translate(517px, 0px) scale(1)"
+            },
+            {
+              "x": 575,
+              "y": 0,
+              "transform": "translate(575px, 0px) scale(1)"
+            },
+            {
+              "x": 632,
+              "y": 0,
+              "transform": "translate(632px, 0px) scale(1)"
+            }
+          ],
+          "width": "100%",
+          "scroll": false
+        },
+        "after": {
+          "cards": [
+            {
+              "x": 0,
+              "y": 0,
+              "transform": "translate(0px, 0px) scale(1)"
+            },
+            {
+              "x": 57,
+              "y": 0,
+              "transform": "translate(57px, 0px) scale(1) translateY(-20px)"
+            },
+            {
+              "x": 115,
+              "y": 0,
+              "transform": "translate(115px, 0px) scale(1)"
+            },
+            {
+              "x": 172,
+              "y": 0,
+              "transform": "translate(172px, 0px) scale(1)"
+            },
+            {
+              "x": 230,
+              "y": 0,
+              "transform": "translate(230px, 0px) scale(1)"
+            },
+            {
+              "x": 287,
+              "y": 0,
+              "transform": "translate(287px, 0px) scale(1)"
+            },
+            {
+              "x": 345,
+              "y": 0,
+              "transform": "translate(345px, 0px) scale(1)"
+            },
+            {
+              "x": 402,
+              "y": 0,
+              "transform": "translate(402px, 0px) scale(1)"
+            },
+            {
+              "x": 460,
+              "y": 0,
+              "transform": "translate(460px, 0px) scale(1)"
+            },
+            {
+              "x": 517,
+              "y": 0,
+              "transform": "translate(517px, 0px) scale(1)"
+            },
+            {
+              "x": 575,
+              "y": 0,
+              "transform": "translate(575px, 0px) scale(1)"
+            },
+            {
+              "x": 632,
+              "y": 0,
+              "transform": "translate(632px, 0px) scale(1)"
+            }
+          ],
+          "width": "100%",
+          "scroll": false
+        }
+      }
+    ],
+    "checkedLayouts": 180
+  }
+]

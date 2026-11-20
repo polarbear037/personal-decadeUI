@@ -1,0 +1,90 @@
+
+skeleton.png
+size: 620,620
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shuguo_feiniao_00
+  rotate: false
+  xy: 2, 496
+  size: 430, 60
+  orig: 430, 60
+  offset: 0, 0
+  index: -1
+shuguo_feiniao_01
+  rotate: false
+  xy: 2, 434
+  size: 430, 60
+  orig: 430, 60
+  offset: 0, 0
+  index: -1
+shuguo_feiniao_02
+  rotate: true
+  xy: 2, 2
+  size: 430, 60
+  orig: 430, 60
+  offset: 0, 0
+  index: -1
+shuguo_feiniao_03
+  rotate: true
+  xy: 64, 2
+  size: 430, 60
+  orig: 430, 60
+  offset: 0, 0
+  index: -1
+shuguo_feiniao_04
+  rotate: true
+  xy: 126, 2
+  size: 430, 60
+  orig: 430, 60
+  offset: 0, 0
+  index: -1
+shuguo_feiniao_05
+  rotate: true
+  xy: 188, 2
+  size: 430, 60
+  orig: 430, 60
+  offset: 0, 0
+  index: -1
+shuguo_feiniao_06
+  rotate: true
+  xy: 250, 2
+  size: 430, 60
+  orig: 430, 60
+  offset: 0, 0
+  index: -1
+shuguo_feiniao_07
+  rotate: true
+  xy: 312, 2
+  size: 430, 60
+  orig: 430, 60
+  offset: 0, 0
+  index: -1
+shuguo_feiniao_08
+  rotate: true
+  xy: 374, 2
+  size: 430, 60
+  orig: 430, 60
+  offset: 0, 0
+  index: -1
+shuguo_feiniao_09
+  rotate: true
+  xy: 436, 188
+  size: 430, 60
+  orig: 430, 60
+  offset: 0, 0
+  index: -1
+shuguo_feiniao_10
+  rotate: true
+  xy: 498, 188
+  size: 430, 60
+  orig: 430, 60
+  offset: 0, 0
+  index: -1
+shuguo_feiniao_11
+  rotate: false
+  xy: 2, 558
+  size: 430, 60
+  orig: 430, 60
+  offset: 0, 0
+  index: -1

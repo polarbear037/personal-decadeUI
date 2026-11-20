@@ -1,0 +1,250 @@
+{
+  "style": "othersOff",
+  "config": "othersOff",
+  "border": "dragon4",
+  "event": "chooseToUse",
+  "selecting": "oblongcard phone decadeUI outcrop-skin-enabled selecting tempnoe",
+  "selectedTargets": [],
+  "players": [
+    {
+      "position": "0",
+      "classes": "player fullskin glow_phase d-skin",
+      "rect": {
+        "x": 1141.012369791667,
+        "y": 497.1484375000001,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      },
+      "after": {
+        "image": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png\")",
+        "opacity": "1",
+        "width": "193.409px",
+        "height": "224.986px",
+        "left": "55.8763px",
+        "top": "97.9994px",
+        "z": "0",
+        "animation": "none"
+      }
+    },
+    {
+      "position": "1",
+      "classes": "player fullskin d-skin",
+      "rect": {
+        "x": 1143.0097656250002,
+        "y": 236.5983072916667,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      },
+      "after": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      }
+    },
+    {
+      "position": "2",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 961.3059895833335,
+        "y": 139.90234375000003,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      },
+      "after": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      }
+    },
+    {
+      "position": "3",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 782.2428385416669,
+        "y": 107.91015625000001,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      },
+      "after": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      }
+    },
+    {
+      "position": "4",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 606.4550781250001,
+        "y": 107.91015625000001,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      },
+      "after": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      }
+    },
+    {
+      "position": "5",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 426.11393229166674,
+        "y": 107.91015625000001,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      },
+      "after": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      }
+    },
+    {
+      "position": "6",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 245.77278645833337,
+        "y": 139.90234375000003,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      },
+      "after": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      }
+    },
+    {
+      "position": "7",
+      "classes": "player fullskin",
+      "rect": {
+        "x": 73.99674479166669,
+        "y": 236.5983072916667,
+        "width": 130.00000000000003,
+        "height": 179.99414062500003
+      },
+      "before": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      },
+      "after": {
+        "image": "none",
+        "opacity": "0",
+        "width": "181.518px",
+        "height": "215.076px",
+        "left": "56.2741px",
+        "top": "97.6185px",
+        "z": "0",
+        "animation": "none"
+      }
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+/* 一将成名 6.4.5：源尺寸、锚点与出处见 verification/yjcm-buttons-source.json。 */
+body[data-style="othersOff"] {
+	--yjcm-unit: 1px;
+}
+/* 跟随窗口/缩放立即落位，不继承本体 div 的 transition:all。 */
+body[data-style="othersOff"] #window > :is(.yjcm-menu,.yjcm-chat-buttons,.cardRoundNumber),
+body[data-style="othersOff"] #arena > :is(.handcardNumber,.handcardNumber1,.skill-control,.skill-controlzuoshou,.gskill-control) { transition-property: opacity; }
+
+body[data-style="othersOff"] .yjcm-button {
+	position: absolute;
+	box-sizing: border-box;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	box-shadow: none;
+	border: 0;
+	border-radius: 0;
+	cursor: pointer;
+	user-select: none;
+	transition: filter .12s;
+}
+body[data-style="othersOff"] .yjcm-button:active { filter: brightness(1.15); }
+body[data-style="othersOff"] .yjcm-button:focus-visible { outline: 1px solid #e6c68a; }
+body[data-style="othersOff"] .yjcm-button[hidden],
+body[data-style="othersOff"] .yjcm-menu-list[hidden] { display: none !important; }
+/* 与 Online 桌面分支一致：保留本体系统菜单入口，给两侧牌局控件留出空间。 */
+body[data-style="othersOff"] #window:has(> .yjcm-menu):has(> #arena[data-phonelayout="off"]) > #system {
+	box-sizing: border-box;
+	width: 100%;
+	padding-inline: 114px 146px;
+}
+/* 系统栏本身也要高于场景101和隐藏控件130；仅提高打开后的菜单面板不能修复入口命中。 */
+body[data-style="othersOff"] #window > #system { z-index: 132; }
+
+body[data-style="othersOff"] #window > .yjcm-question {
+	width: calc(34.4 * var(--yjcm-unit));
+	height: calc(34.4 * var(--yjcm-unit));
+	right: calc(var(--yjcm-scene-x) + 92.8 * var(--yjcm-unit));
+	top: calc(var(--yjcm-scene-y) + 23.8 * var(--yjcm-unit));
+	background-image: url("../../assets/lbtn/yijiang/gameInfoWenHao.png");
+	z-index: 8;
+}
+body[data-style="othersOff"] #window > .yjcm-menu {
+	position: absolute;
+	width: 0;
+	height: 0;
+	right: calc(var(--yjcm-scene-x) + 42.5 * var(--yjcm-unit));
+	top: calc(var(--yjcm-scene-y) + 43.5 * var(--yjcm-unit));
+	z-index: 133;
+}
+body[data-style="othersOff"] .yjcm-menu-main {
+	left: calc(-28 * var(--yjcm-unit));
+	top: calc(-25.5 * var(--yjcm-unit));
+	width: calc(56 * var(--yjcm-unit));
+	height: calc(51 * var(--yjcm-unit));
+	background-image: url("../../assets/lbtn/yijiang/btn_menu_main.png");
+	z-index: 2;
+}
+body[data-style="othersOff"] .yjcm-menu-list {
+	position: absolute;
+	left: calc(-40.5 * var(--yjcm-unit));
+	top: calc(-38 * var(--yjcm-unit));
+	width: calc(81 * var(--yjcm-unit));
+	height: calc(315 * var(--yjcm-unit));
+	border-image: url("../../assets/lbtn/yijiang/gameinfo_xf_menu_bg.png") 10 fill / calc(10 * var(--yjcm-unit));
+}
+body[data-style="othersOff"] .yjcm-menu-list > .yjcm-button {
+	width: calc(65 * var(--yjcm-unit));
+	height: calc(51 * var(--yjcm-unit));
+	left: calc(8 * var(--yjcm-unit));
+}
+body[data-style="othersOff"] .yjcm-menu-setting { top: calc(68.5 * var(--yjcm-unit)); background-image: url("../../assets/lbtn/yijiang/btn_menu_setting.png"); }
+body[data-style="othersOff"] .yjcm-menu-background { top: calc(127.5 * var(--yjcm-unit)); background-image: url("../../assets/lbtn/yijiang/btn_menu_background.png"); }
+body[data-style="othersOff"] .yjcm-menu-surround { top: calc(186.5 * var(--yjcm-unit)); background-image: url("../../assets/lbtn/yijiang/btn_menu_surround.png"); }
+body[data-style="othersOff"] .yjcm-menu-handler { top: calc(245.5 * var(--yjcm-unit)); background-image: url("../../assets/lbtn/yijiang/btn_menu_handler.png"); }
+
+body[data-style="othersOff"] #window > .yjcm-chat-buttons {
+	position: absolute;
+	left: calc(var(--yjcm-scene-x) + 16.5 * var(--yjcm-unit));
+	bottom: calc(var(--yjcm-scene-y) + 10 * var(--yjcm-unit));
+	width: calc(73 * var(--yjcm-unit));
+	height: calc(236 * var(--yjcm-unit));
+	z-index: 8;
+}
+body[data-style="othersOff"] .yjcm-chat-buttons > .yjcm-button { width: calc(73 * var(--yjcm-unit)); height: calc(72 * var(--yjcm-unit)); left: 0; }
+body[data-style="othersOff"] .yjcm-flower { bottom: calc(164 * var(--yjcm-unit)); background-image: url("../../assets/lbtn/yijiang/game_menu_flower.png"); }
+body[data-style="othersOff"] .yjcm-chat { bottom: calc(82 * var(--yjcm-unit)); background-image: url("../../assets/lbtn/yijiang/game_menu_chat.png"); }
+body[data-style="othersOff"] .yjcm-microphone { bottom: 0; background-image: url("../../assets/lbtn/yijiang/btn_vtotxt.png"); }
+body[data-style="othersOff"] #window > :is(.yjcm-sort,.yjcm-select-all) {
+	right: calc(var(--yjcm-scene-x) + 297 * var(--yjcm-unit));
+	/* GameSelfSeatUi.checkBtnState：中心Y50，贴图高38，故底边31。 */
+	bottom: calc(var(--yjcm-scene-y) + 31 * var(--yjcm-unit));
+	width: calc(106 * var(--yjcm-unit));
+	height: calc(38 * var(--yjcm-unit));
+	line-height: calc(38 * var(--yjcm-unit));
+	font: calc(24 * var(--yjcm-unit)) / calc(38 * var(--yjcm-unit)) "dui-yjcm-label";
+	color: #c1ae8e;
+	text-align: center;
+	text-shadow: none;
+	background-image: url("../../assets/lbtn/yijiang/gameinfo_btn_sort_cardsnew.png");
+	z-index: 8;
+}
+body[data-style="othersOff"] .yjcm-sort.disabled { filter: grayscale(1); cursor: default; }
+body[data-style="othersOff"] #window > .yjcm-select-all { right: calc(var(--yjcm-scene-x) + 297 * var(--yjcm-unit)); }
+
+body[data-style="othersOff"] #window > .cardRoundNumber {
+	position: absolute;
+	left: calc(var(--yjcm-scene-x) + 17 * var(--yjcm-unit));
+	top: calc(var(--yjcm-scene-y) + 21 * var(--yjcm-unit));
+	width: calc(92 * var(--yjcm-unit));
+	height: calc(112 * var(--yjcm-unit));
+	background: url("../../assets/lbtn/yijiang/showInfo.png") center / 100% 100% no-repeat;
+	font-family: "dui-yjcm-label";
+	font-weight: 400;
+	text-shadow: none;
+	z-index: 8;
+}
+body[data-style="othersOff"] #window > .cardRoundNumber > .cardPileNumber {
+	position: absolute; inset: 0; width: 100%; height: calc(40 * var(--yjcm-unit)); background: none;
+}
+body[data-style="othersOff"] #window > .cardRoundNumber > .cardPileNumber::before {
+	content: ""; position: absolute; left: calc(9 * var(--yjcm-unit)); top: calc(11 * var(--yjcm-unit));
+	width: calc(27 * var(--yjcm-unit)); height: calc(28 * var(--yjcm-unit));
+	background: url("../../assets/lbtn/yijiang/showInfo_card.png") center / contain no-repeat;
+}
+body[data-style="othersOff"] #window > .cardRoundNumber > .cardPileNumber > span {
+	left: calc(45 * var(--yjcm-unit)); top: calc(11 * var(--yjcm-unit)); width: calc(47 * var(--yjcm-unit)); text-align: left;
+	font-size: calc(20 * var(--yjcm-unit)); line-height: calc(28 * var(--yjcm-unit)); color: #c29b78; font-weight: 400;
+}
+body[data-style="othersOff"] #window > .cardRoundNumber > .roundNumber,
+body[data-style="othersOff"] #window > .cardRoundNumber > .time {
+	left: 0; top: calc(45 * var(--yjcm-unit)); width: 100%; height: calc(25 * var(--yjcm-unit));
+	font-size: calc(20 * var(--yjcm-unit)); line-height: calc(25 * var(--yjcm-unit)); color: #c29b78; font-weight: 400; text-align: center;
+}
+body[data-style="othersOff"] #window > .cardRoundNumber > .roundNumber { top: calc(43.5 * var(--yjcm-unit)); font-size: calc(25 * var(--yjcm-unit)); }
+body[data-style="othersOff"] #window > .cardRoundNumber > .time { top: calc(77.5 * var(--yjcm-unit)); font-size: calc(18 * var(--yjcm-unit)); }
+
+body[data-style="othersOff"] #arena > :is(.handcardNumber,.handcardNumber1) {
+	width: calc(88 * var(--yjcm-unit)); height: calc(34 * var(--yjcm-unit));
+	left: auto; right: calc(var(--yjcm-scene-x) + 192 * var(--yjcm-unit) - var(--yjcm-arena-right)); bottom: calc(var(--yjcm-scene-y) + 34 * var(--yjcm-unit) - var(--yjcm-arena-bottom)); z-index: 8;
+}
+body[data-style="othersOff"] #arena > :is(.handcardNumber,.handcardNumber1) > .cardPicture {
+	position: absolute; inset: 0; width: 100%; height: 100%; transform: none; z-index: 0;
+	background-image: url("../../assets/lbtn/yijiang/handNum.png");
+}
+body[data-style="othersOff"] #arena > :is(.handcardNumber,.handcardNumber1) > .cardNumber {
+	position: absolute; inset: 0; width: 100%; height: 100%; text-align: center;
+	font-size: calc(25 * var(--yjcm-unit)); line-height: calc(34 * var(--yjcm-unit)); color: #fff1e1; text-shadow: none;
+}
+
+/* GameButtonBar：贴图189×55，创建时scale=1.1，实际207.9×60.5；中心间距280。 */
+body[data-style="othersOff"] #arena > #dui-controls { height: calc(60.5 * var(--yjcm-unit)); }
+body[data-style="othersOff"] #arena:not(.choose-character) > #dui-controls {
+	left: calc(50% + var(--yjcm-arena-center, 0px)); right: auto; width: max-content;
+	bottom: calc(var(--yjcm-scene-y) + 227.75 * var(--yjcm-unit) - var(--yjcm-arena-bottom, 0px));
+	transform: translateX(-50%);
+}
+body[data-style="othersOff"] #arena > #dui-controls > .control { --height: calc(60.5 * var(--yjcm-unit)); height: var(--height); margin-top: 0; }
+body[data-style="othersOff"] #arena > #dui-controls > .control > div {
+	position: relative;
+	/* updateLayout会给子按钮加.control；其overflow:hidden不能裁掉透明命中层。 */
+	overflow: visible;
+	touch-action: none;
+	user-select: none;
+	box-sizing: border-box; min-width: calc(207.9 * var(--yjcm-unit)) !important; height: calc(60.5 * var(--yjcm-unit)); max-height: none !important;
+	padding: 0 calc(16 * var(--yjcm-unit)) !important; margin: 0 !important;
+	font: calc(30.8 * var(--yjcm-unit)) / calc(60.5 * var(--yjcm-unit)) "dui-yjcm-label";
+	color: #f7e7ae; -webkit-text-stroke: 0; text-shadow: none;
+	background-image: url("../../assets/lbtn/yijiang/game_btn_2.png"); background-size: 100% 100%;
+	transition: transform .1s; transform-origin: center;
+}
+body[data-style="othersOff"] #arena > #dui-controls > .lbtn-confirm { display: flex; gap: calc(72.1 * var(--yjcm-unit)); }
+/* GameButtonBar.update：discardBtn 与 cancelBtn 互斥，共用右侧位置。保留本体节点及关闭流程。 */
+body[data-style="othersOff"] #arena > #dui-controls > .yjcm-end-turn { display: none !important; }
+/* LuckCardView 的两按钮中心距257，中心距窗口底部254.5。 */
+body[data-style="othersOff"] #arena > #dui-controls > .lbtn-confirm[data-yjcm-flow="redraw"] { gap: calc(49.1 * var(--yjcm-unit)); }
+body[data-style="othersOff"] #arena:not(.choose-character) > #dui-controls:has(> .lbtn-confirm[data-yjcm-flow="redraw"]) { bottom: calc(var(--yjcm-scene-y) + 224.25 * var(--yjcm-unit) - var(--yjcm-arena-bottom, 0px)); }
+body[data-style="othersOff"] #arena > #dui-controls > .control > .disabled { filter: grayscale(1); -webkit-filter: grayscale(1); }
+body[data-style="othersOff"] #arena > #dui-controls > .lbtn-confirm[data-yjcm-flow="redraw"] > .primary {
+	background-image: url("../../assets/lbtn/yijiang/game_btn_1.png"); color: #6a3c22;
+}
+body[data-style="othersOff"] #arena > #dui-controls > .control:not(.disabled):not(.combo-control):active { transform: none; }
+body[data-style="othersOff"] #arena > #dui-controls > .control > div:not(.disabled):active { transform: scale(.75); }
+/* 透明命中层反向补偿缩放，边缘按下/抬起仍落在原按钮上。
+ * 继承按钮的实际过渡（确认栏为 none!important），避免按钮已缩小而命中层还在补偿途中。
+ * 恢复途中也不缩小命中范围；事件仍由原节点处理。 */
+body[data-style="othersOff"] #arena > #dui-controls > .control > div::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 0;
+	pointer-events: auto;
+	transform: scale(1);
+	transform-origin: center;
+	transition: inherit;
+}
+body[data-style="othersOff"] #arena > #dui-controls > .control > div:not(.disabled):active::after {
+	transform: scale(1.3333333333);
+}
+
+/* SpellMultiSelectorBtnBar（技能选项条）。原版九宫格、原节点与 link 均保留。 */
+body[data-style="othersOff"] #arena:not(.choose-character) > #dui-controls[data-xinsha-action="multi"] {
+	display: grid;
+	grid-template-columns: repeat(var(--yjcm-action-columns), max-content);
+	column-gap: calc(var(--yjcm-action-gap) * var(--yjcm-unit));
+	row-gap: calc(10 * var(--yjcm-unit));
+	align-items: end;
+	height: auto;
+	bottom: calc(var(--yjcm-scene-y) + 234 * var(--yjcm-unit) - var(--yjcm-arena-bottom, 0px));
+}
+body[data-style="othersOff"] #arena > #dui-controls > .control[data-yjcm-action="multi"] { display: contents; }
+/* 独立多选条中心244，窗口高100，optLabel底边5 => 场景底边199。 */
+body[data-style="othersOff"] #window #arena:has(> #dui-controls[data-xinsha-action="multi"]) > .hand-tip,
+body[data-style="othersOff"] #window #arena:has(> #dui-controls[data-xinsha-action="multi"]) > .dialog.prompt {
+	top: auto !important;
+	bottom: calc(var(--yjcm-scene-y) + 199 * var(--yjcm-unit) - var(--yjcm-arena-bottom, 0px)) !important;
+}
+body[data-style="othersOff"] #arena > #dui-controls > .control[data-yjcm-action="multi"] > div {
+	width: max-content;
+	min-width: calc(140 * var(--yjcm-unit)) !important;
+	height: calc(51 * var(--yjcm-unit));
+	padding: 0 calc(12.5 * var(--yjcm-unit)) !important;
+	font-size: calc(24 * var(--yjcm-unit));
+	line-height: calc(51 * var(--yjcm-unit));
+	color: #61351b;
+	background: none;
+	border-image: url("../../assets/lbtn/yijiang/game_btn_multi_select.png") 17 52 fill / calc(17 * var(--yjcm-unit)) calc(52 * var(--yjcm-unit));
+}
+body[data-style="othersOff"] #arena > #dui-controls > .control[data-yjcm-action="multi"] > [data-yjcm-cancel="true"] {
+	height: calc(49 * var(--yjcm-unit));
+	color: #deba89;
+	border-image: url("../../assets/lbtn/yijiang/game_btn_multi_cancel.png") 16.333333 51.333333 fill / calc(16.333333 * var(--yjcm-unit)) calc(51.333333 * var(--yjcm-unit));
+}
+
+/* windowSnitch：窗口内的确定/取消，180×54、底边40、间隔50。 */
+body[data-style="othersOff"] #arena:not(.choose-character) > #dui-controls[data-xinsha-action="window"] {
+	left: var(--yjcm-action-left);
+	bottom: var(--yjcm-action-bottom);
+	height: calc(54 * var(--yjcm-action-unit));
+	gap: calc(50 * var(--yjcm-action-unit));
+}
+body[data-style="othersOff"] #arena > #dui-controls > .control[data-yjcm-action="window"] {
+	height: calc(54 * var(--yjcm-action-unit));
+	gap: calc(50 * var(--yjcm-action-unit));
+}
+body[data-style="othersOff"] #arena > #dui-controls > .control[data-yjcm-action="window"] > div {
+	min-width: calc(180 * var(--yjcm-action-unit)) !important;
+	height: calc(54 * var(--yjcm-action-unit));
+	font-size: calc(28 * var(--yjcm-action-unit));
+	line-height: calc(54 * var(--yjcm-action-unit));
+	color: #6a3c22;
+	background-image: url("../../assets/lbtn/yijiang/cmn_btn_yellow_180_54.png");
+}
+body[data-style="othersOff"] #arena > #dui-controls > .control[data-yjcm-action="window"] > [data-yjcm-cancel="true"] {
+	color: #ffdfa0;
+	background-image: url("../../assets/lbtn/yijiang/cmn_btn_brown_180_54.png");
+}
+body[data-style="othersOff"] #arena > #dui-controls > .control[data-yjcm-action="window"] > .disabled {
+	color: #685347;
+	background-image: url("../../assets/lbtn/yijiang/cmn_btn_gray_180_54.png");
+	/* 禁用图四边各多7px透明留白，保持可见按钮仍为180×54。 */
+	background-size: 107.777778% 125.925926%;
+	background-position: center;
+	filter: none;
+	-webkit-filter: none;
+}
+body[data-style="othersOff"] #arena > #dui-controls > .control[data-yjcm-action="window"] > div:not(.disabled):active {
+	transform: scale(.95);
+	filter: brightness(.698039);
+}
+body[data-style="othersOff"] #arena > #dui-controls > .control[data-yjcm-action="multi"] > div:not(.disabled):active { transform: scale(.95); filter: brightness(.698039); }
+body[data-style="othersOff"] #arena > #dui-controls > .control:is([data-yjcm-action="window"],[data-yjcm-action="multi"]) > div:not(.disabled):active::after {
+	transform: scale(1.0526315789);
+}
+body[data-style="othersOff"] #arena > #dui-controls[data-xinsha-action] > :is(.closing,.removing) { display: none !important; }
+
+/* GameSelfSeatUi 把 ignoreWuxieBtn 的中心X改到场景200；中心Y=194+100/2+15=259。
+ * 控件仍在原确认栏内，按窗口中心抵消父层居中，避免参与 flex 挤动确定/取消。 */
+body[data-style="othersOff"] #arena > #dui-controls > .control.stayleft.yjcm-tempnowuxie {
+	position: absolute !important;
+	left: calc(50% + var(--yjcm-scene-x) + 96.05 * var(--yjcm-unit) - var(--yjcm-window-width) / 2) !important;
+	top: auto;
+	right: auto;
+	bottom: calc(1 * var(--yjcm-unit));
+	width: calc(207.9 * var(--yjcm-unit)) !important;
+	margin: 0 !important;
+	padding: 0;
+	box-shadow: none;
+	transform: none;
+	transition-property: opacity;
+}
+body[data-style="othersOff"] #arena > #dui-controls > .yjcm-tempnowuxie > div {
+	width: 100%;
+	white-space: nowrap;
+}
+/* SpellAreaNew：主动技110×45，横向步长116；被动技72.5×26，步长79。 */
+body[data-style="othersOff"] #arena > :is(.skill-control,.skill-controlzuoshou,.gskill-control) {
+ max-width: none; width: 0; height: 0; left: auto;
+ right: calc(var(--yjcm-scene-x) + 202 * var(--yjcm-unit) - var(--yjcm-arena-right));
+ bottom: calc(var(--yjcm-scene-y) + 72 * var(--yjcm-unit) - var(--yjcm-arena-bottom));
+ z-index: 8; display: block;
+}
+body[data-style="othersOff"] #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) > div {
+ position: static; display: contents;
+}
+body[data-style="othersOff"] #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) > div > :is(.skillitem,.xiandingji) {
+	position: absolute; left: auto; top: auto; right: calc(var(--yjcm-skill-x, 0) * var(--yjcm-unit)); bottom: calc(var(--yjcm-skill-y, 0) * var(--yjcm-unit)); float: none; box-sizing: border-box; width: calc(110 * var(--yjcm-unit)); height: calc(45 * var(--yjcm-unit));
+	margin: 0; padding: 0; text-indent: 0; white-space: nowrap; text-align: center;
+	font: calc(34 * var(--yjcm-unit)) / calc(45 * var(--yjcm-unit)) "dui-yjcm-skill";
+	color: #fff1e1; text-shadow: 0 1px 2px #332c18; background-size: 100% 100%;
+	background-image: url("../../assets/lbtn/yijiang/btn_skill_item_normal.png");
+	flex: 0 0 calc(110 * var(--yjcm-unit)) !important; animation: none; filter: none; -webkit-filter: none;
+	transition-property: transform, opacity;
+}
+body[data-style="othersOff"] #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) > div > :is(.skillitem,.xiandingji):not([data-yjcm-passive="true"]):not(.usable):not(.select):not(.yjcm-skill-resolving) {
+	background-image: url("../../assets/lbtn/yijiang/btn_skill_normal_gray.png"); filter: none; color: #fcf4bc;
+}
+body[data-style="othersOff"] #window #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) > div > [data-yjcm-passive="true"] {
+	width: calc(72.5 * var(--yjcm-unit)); height: calc(26 * var(--yjcm-unit)); padding: 0;
+	flex-basis: calc(72.5 * var(--yjcm-unit)) !important;
+	font-size: calc(18 * var(--yjcm-unit)); line-height: calc(26 * var(--yjcm-unit)); color: #e4be6e;
+	border: 0 solid transparent;
+	border-image: url("../../assets/lbtn/yijiang/skill_beidong_btn.png") 1 14 5 10 fill / calc(1 * var(--yjcm-unit)) calc(14 * var(--yjcm-unit)) calc(5 * var(--yjcm-unit)) calc(10 * var(--yjcm-unit)); background: none;
+	text-shadow: none;
+}
+body[data-style="othersOff"] #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) > div::after { display: none; }
+body[data-style="othersOff"] #arena :is(.handcardNumber,.handcardNumber1) .cardNumber sp { font-size: inherit !important; }
+body[data-style="othersOff"] #window[data-yjcm-side="left"] > .yjcm-chat-buttons { left: auto; right: calc(var(--yjcm-scene-x) + 16.5 * var(--yjcm-unit)); }
+body[data-style="othersOff"] #window[data-yjcm-side="left"] > .yjcm-sort { right: auto; left: calc(var(--yjcm-scene-x) + 297 * var(--yjcm-unit)); }
+body[data-style="othersOff"] #window[data-yjcm-side="left"] > .yjcm-select-all { right: auto; left: calc(var(--yjcm-scene-x) + 297 * var(--yjcm-unit)); }
+body[data-style="othersOff"] #window[data-yjcm-side="left"] #arena > :is(.handcardNumber,.handcardNumber1) { right: auto; left: calc(var(--yjcm-scene-x) + 192 * var(--yjcm-unit) - var(--yjcm-arena-left)); }
+body[data-style="othersOff"] #window[data-yjcm-side="left"] #arena > :is(.skill-control,.skill-controlzuoshou) { right: auto; left: calc(var(--yjcm-scene-x) + 202 * var(--yjcm-unit) - var(--yjcm-arena-left)); }
+body[data-style="othersOff"] #window[data-yjcm-side="left"] #arena > .gskill-control { right: auto; left: calc(var(--yjcm-scene-x) + 202 * var(--yjcm-unit) - var(--yjcm-arena-left)); }
+body[data-style="othersOff"] #window[data-yjcm-side="left"] #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) > div > [data-id] { right: auto; left: calc(var(--yjcm-skill-x, 0) * var(--yjcm-unit)); }
+body[data-style="othersOff"] #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) .xiandingji::before { content: none; }
+body[data-style="othersOff"] #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) .xiandingji-mark {
+	transition: none;
+	left: calc(1 * var(--yjcm-unit)); top: auto; bottom: calc(24 * var(--yjcm-unit));
+	width: calc(24 * var(--yjcm-unit)); height: calc(24 * var(--yjcm-unit)); filter: none;
+	background-image: url("../../assets/lbtn/yijiang/skill_item_lmt_pic.png");
+}
+/* SpellActiveItem.setSkillType：限定角标与按钮同按 isActive 切换，未使用也可能不可用。 */
+body[data-style="othersOff"] #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) :not(.usable):not(.select) > .xiandingji-mark,
+body[data-style="othersOff"] #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) .used > .xiandingji-mark {
+	background-image: url("../../assets/lbtn/yijiang/skill_item_lmt_pic_gray.png"); filter: none;
+}
+body[data-style="othersOff"] #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) .zhuanhuanji-mark {
+	transition: none;
+	left: calc(-6 * var(--yjcm-unit)); top: auto; bottom: calc(17 * var(--yjcm-unit));
+	width: calc(35 * var(--yjcm-unit)); height: calc(35 * var(--yjcm-unit));
+}
+body[data-style="othersOff"] #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) .zhuanhuanji-mark.yang { background-image: url("../../assets/lbtn/yijiang/skill_item_t_yang_pic.png"); }
+body[data-style="othersOff"] #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) .zhuanhuanji-mark.yin { background-image: url("../../assets/lbtn/yijiang/skill_item_t_ying_pic.png"); }
+body[data-style="othersOff"] #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) :not(.usable):not(.select) > .zhuanhuanji-mark.yang { background-image: url("../../assets/lbtn/yijiang/skill_item_t_yang_pic_gray.png"); }
+body[data-style="othersOff"] #arena :is(.skill-control,.skill-controlzuoshou,.gskill-control) :not(.usable):not(.select) > .zhuanhuanji-mark.yin { background-image: url("../../assets/lbtn/yijiang/skill_item_t_ying_pic_gray.png"); }
+
+body[data-style="othersOff"] .yjcm-wallpaper-overlay {
+	position: absolute; inset: 0; background: rgba(0,0,0,.6); z-index: 100;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-panel {
+	position: absolute; left: 50%; top: 50%; width: 1200px; height: 573px;
+	transform: translate(-50%,-50%) scale(var(--yjcm-panel-scale, 1));
+	transform-origin: center; outline: none; color: #fff0d5; font-family: "dui-yjcm-label"; text-shadow: none;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-bg {
+	position: absolute; left: -50px; top: 11.5px; width: 1300px; height: 530px;
+	border-image: url("../../assets/lbtn/yijiang/game_ui_dlg_bg.png") 81 75 fill / 81px 75px;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-title {
+	position: absolute; left: 423.5px; top: -42px; width: 353px; height: 42px;
+	font-size: 30px; line-height: 42px; text-align: center; color: #c1ae8e;
+	background: url("../../assets/lbtn/yijiang/game_ui_dlg_title_bg.png") center / 100% 100%;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-list {
+	position: absolute; left: 20px; top: 39px; width: 1160px; height: 445px; overflow: auto; scrollbar-width: none;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-list::-webkit-scrollbar { display: none; }
+body[data-style="othersOff"] .yjcm-wallpaper-grid {
+	position: relative; display: grid; grid-template-columns: repeat(4,260px); gap: 10px 30px;
+	padding: 20px 15px 0; box-sizing: border-box; width: 1160px;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-tile {
+	position: relative; width: 260px; height: 175px; border: none; padding: 0; margin: 0;
+	background: none; box-shadow: none; border-radius: 0; cursor: pointer; color: #b9976e; font-family: "dui-yjcm-label";
+}
+body[data-style="othersOff"] .yjcm-wallpaper-thumb {
+	position: absolute; top: 0; left: 0; width: 260px; height: 139px; object-fit: cover;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-tile::before {
+	content: ""; position: absolute; top: -3px; left: -7px; width: 274px; height: 145px; z-index: 1; pointer-events: none;
+	border-image: url("../../assets/lbtn/yijiang/gameinfo_bg_frame.png") 15 6 fill / 15px 6px;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-tile[aria-pressed="true"]::after {
+	content: ""; position: absolute; left: -4px; top: 1.5px; width: 268px; height: 136px; z-index: 2; pointer-events: none;
+	background: url("../../assets/lbtn/yijiang/gameinfo_bg_select.png") center / 100% 100%;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-name {
+	position: absolute; left: -1px; bottom: 0; width: 262px; height: 40px; line-height: 40px; font-size: 24px; white-space: nowrap;
+	border-image: url("../../assets/lbtn/yijiang/gameinfo_bg_namebg.png") 0 6 fill / 0 6px;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-animated {
+	position: absolute; left: 0; top: 0; width: 36px; height: 35px; z-index: 2;
+	background: url("../../assets/lbtn/yijiang/gameinfo_bg_dynamtic.png") center / contain no-repeat;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-default {
+	position: absolute; left: 35px; top: 499px; display: flex; align-items: center; gap: 8px; font-size: 24px; cursor: pointer;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-checkbox {
+	appearance: none; width: 35px; height: 35px; margin: 0; border: none;
+	background: url("../../assets/lbtn/yijiang/cmn_checkbox_normal.png") center / contain no-repeat;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-checkbox:checked { background-image: url("../../assets/lbtn/yijiang/cmn_checkbox_select.png"); }
+body[data-style="othersOff"] .yjcm-wallpaper-dynamic {
+	position: absolute; right: 38px; top: 505px; display: flex; align-items: center; gap: 5px; font-size: 20px;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-switch {
+	position: relative; width: 66px; height: 24px; padding: 0; border: 0; background: url("../../assets/lbtn/yijiang/gameinfo_bg_btn_2.png") center / 100% 100%; cursor: pointer;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-switch > span { position: absolute; top: 0; width: 32px; line-height: 24px; font: 18px/24px "dui-yjcm-label"; color: #a8987d; }
+body[data-style="othersOff"] .yjcm-switch-on { left: 0; }
+body[data-style="othersOff"] .yjcm-switch-off { right: 0; }
+body[data-style="othersOff"] .yjcm-wallpaper-switch::after {
+	content: ""; position: absolute; left: 30px; top: -1px; width: 36px; height: 26px;
+	background: url("../../assets/lbtn/yijiang/gameinfo_bg_btn_state.png") center / 100% 100%;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-switch[aria-checked="true"] { background-image: url("../../assets/lbtn/yijiang/gameinfo_bg_btn_1.png"); }
+body[data-style="othersOff"] .yjcm-wallpaper-switch[aria-checked="true"]::after { left: 0; }
+body[data-style="othersOff"] .yjcm-wallpaper-switch[aria-checked="true"] .yjcm-switch-on,
+body[data-style="othersOff"] .yjcm-wallpaper-switch[aria-checked="false"] .yjcm-switch-off { color: #ffffb2; }
+body[data-style="othersOff"] .yjcm-wallpaper-switch:disabled { opacity: .5; cursor: default; }
+body[data-style="othersOff"] .yjcm-wallpaper-close-tip {
+	position: absolute; left: 0; top: 583px; width: 100%; text-align: center; font-size: 24px; line-height: 30px; color: #ffdfb5;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-close-tip::before,
+body[data-style="othersOff"] .yjcm-wallpaper-close-tip::after {
+	content: ""; position: absolute; top: 7.5px; left: 200px; width: 215px; height: 15px;
+	background: url("../../assets/lbtn/yijiang/game_ui_left_line.png") center / 100% 100%;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-close-tip::after { left: auto; right: 200px; transform: scaleX(-1); }
+body[data-style="othersOff"] .yjcm-wallpaper-in-use {
+	display: none; position: absolute; right: 0; top: 0; width: 26px; height: 77px; z-index: 3;
+	background: url("../../assets/lbtn/yijiang/gameinfo_bg_onUse.png") center / contain no-repeat;
+}
+body[data-style="othersOff"] .yjcm-wallpaper-tile[aria-pressed="true"] .yjcm-wallpaper-in-use { display: block; }
+body[data-style="othersOff"] .yjcm-wallpaper-clouds {
+	position: absolute; width: 1500px; height: 750px; left: 50%; top: 50%; pointer-events: none;
+	transform: translate(-50%,-50%) scale(var(--yjcm-scene-scale,1));
+}
+body[data-style="othersOff"] .yjcm-wallpaper-cloud { position: absolute; transform: translate(-50%,-50%); animation: yjcm-cloud-opacity 40s linear infinite; }
+@keyframes yjcm-cloud-opacity { 0%,100% { opacity: 0; } 50% { opacity: 1; } }
+
+/* checkBtnState 的显示排位覆盖创建坐标：整理先占350，全选再占480。 */
+body[data-style="othersOff"] #window[data-yjcm-sort="true"][data-yjcm-select-all="true"] > .yjcm-select-all { right: calc(var(--yjcm-scene-x) + 427 * var(--yjcm-unit)); }
+body[data-style="othersOff"] #window[data-yjcm-side="left"][data-yjcm-sort="true"][data-yjcm-select-all="true"] > .yjcm-select-all { right: auto; left: calc(var(--yjcm-scene-x) + 427 * var(--yjcm-unit)); }

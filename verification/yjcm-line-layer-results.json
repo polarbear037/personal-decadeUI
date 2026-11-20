@@ -1,0 +1,54 @@
+{
+  "cases": [
+    {
+      "classes": "thrown gainingcard",
+      "line": 9,
+      "card": 6
+    },
+    {
+      "classes": "thrown drawingcard",
+      "line": 9,
+      "card": 6
+    },
+    {
+      "style": "on",
+      "line": "4",
+      "isolated": true
+    },
+    {
+      "style": "off",
+      "line": "4",
+      "isolated": true
+    },
+    {
+      "style": "onlineUI",
+      "line": "4",
+      "isolated": true
+    },
+    {
+      "style": "babysha",
+      "line": "4",
+      "isolated": true
+    },
+    {
+      "style": "codename",
+      "line": "4",
+      "isolated": true
+    }
+  ],
+  "errors": [],
+  "reproduction": {
+    "before": {
+      "line": "4",
+      "discard": "5"
+    },
+    "after": {
+      "line": "9",
+      "inline": "4",
+      "pointer": "none",
+      "hit": true
+    },
+    "changedPixels": 781,
+    "nativeDrag": "9"
+  }
+}

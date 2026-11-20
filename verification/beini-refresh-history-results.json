@@ -1,0 +1,53 @@
+{
+  "on": {
+    "style": "on",
+    "players": 8,
+    "elapsed": 250.9000000357628,
+    "counts": {
+      "addSkill": 112,
+      "addSkillTrigger": 112,
+      "addSkillBlocker": 112,
+      "addTip": 112,
+      "updateSkillControl": 448,
+      "showCards": 1792,
+      "removeSkill": 112,
+      "removeTip": 112,
+      "removeSkillTrigger": 112
+    },
+    "times": {
+      "addSkillBlocker": 0.19999992847442627,
+      "addTip": 136.90000027418137,
+      "updateSkillControl": 20.600000619888306,
+      "addSkillTrigger": 145.60000002384186,
+      "showCards": 16.70000022649765,
+      "addSkill": 175.10000014305115,
+      "removeTip": 2.2999998927116394,
+      "removeSkillTrigger": 6.000000298023224,
+      "removeSkill": 40.5
+    },
+    "choice": "chooseTarget",
+    "aiTargets": [
+      0,
+      7
+    ],
+    "leakedSeal": false,
+    "simulated": {
+      "blocked": true,
+      "tip": true
+    },
+    "formal": {
+      "blocked": true,
+      "tip": "非锁定技失效"
+    },
+    "removed": {
+      "blocked": false,
+      "tip": false
+    },
+    "ordinaryTip": "普通提示",
+    "errors": [],
+    "history": {
+      "revision": "1421283",
+      "files": "all tracked CSS"
+    }
+  }
+}

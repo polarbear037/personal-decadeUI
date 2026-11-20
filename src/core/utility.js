@@ -23,6 +23,16 @@ const h = decadeUI => {
 						})));
 			}),
 			(decadeUI.queueNextFrameTick = (callback, ctx) => {
+				if (callback === decadeUI.layoutDiscard) {
+					// 一批弃牌只重排一次；RAF 后的计时器执行前也仍属于同一批。
+					if (decadeUI._discardFrameTickPending) return;
+					decadeUI._discardFrameTickPending = true;
+					const discardCallback = callback;
+					callback = function () {
+						decadeUI._discardFrameTickPending = false;
+						discardCallback.call(this);
+					};
+				}
 				((decadeUI._frameTickEntries ??= []),
 					decadeUI._frameTickEntries.push({ ctx: ctx, callback: callback }),
 					decadeUI._queueFrameTick ||

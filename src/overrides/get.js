@@ -2,6 +2,7 @@ import { game, get, lib } from "noname";
 import { wrapAfter as wrapAfter, wrapAround as wrapAround } from "../utils/safeOverride.js";
 import { ensureChixuerenCardDefinition as ensureChixuerenCardDefinition } from "./card/chixueren.js";
 import { applyOfficialNodeIntro, isOnlineTooltip } from "../ui/officialTooltip.js";
+import { applyXinshaNodeIntro } from "../ui/xinsha-tooltip.js";
 import { applyOnlineLucunCards } from "../ui/online-mark-vcards.js";
 import { getOnlineMarkPresentation } from "./player/marks.js";
 function t() {
@@ -49,6 +50,7 @@ function t() {
 				dialog.classList.add("online-player-mark-intro");
 			}
 			applyOfficialNodeIntro(dialog, source);
+			applyXinshaNodeIntro(dialog, source);
 		})),
 		restoreFns.push(
 			wrapAfter(get, "skillState", function (skills, player) {

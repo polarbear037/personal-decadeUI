@@ -53,6 +53,7 @@ async function run() {
     await page.addScriptTag({ content: script('extension/十周年UI/src/ui/officialPromptBridge.js', 'Object.assign(window,{getOfficialScenePrompt});') });
     await page.addScriptTag({ content: script('extension/十周年UI/src/ui/officialPrompt.js', 'Object.assign(window,{buildOfficialPrompt,renderOfficialPrompt});') });
     await page.addScriptTag({ content: script('extension/十周年UI/src/ui/optimizedPrompt.js', 'Object.assign(window,{prepareOptimizedPrompt,refreshOptimizedPrompt});') });
+    await page.addScriptTag({ content: script('extension/十周年UI/src/ui/dialog-card-animations-xinsha.js', 'window.xinshaDialogCardAnimations=xinshaDialogCardAnimations;') });
     await page.addScriptTag({ content: script('extension/十周年UI/src/overrides/dialog.js', 'EngineDialog.prototype.open=s;') });
     await page.addScriptTag({ content: script('extension/十周年UI/src/overrides/ui/update.js', 'ui.update=l;') });
     await page.addScriptTag({ content: script('extension/十周年UI/src/overrides/ui/create.js', 'ui.create.dialog=s;') });

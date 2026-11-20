@@ -127,7 +127,7 @@ function findFactionControlParent(event) {
 }
 
 function isFactionControlChoice(event, player) {
-	if (lib.config?.extension_十周年UI_newDecadeStyle !== "onlineUI" || !event || !player || typeof event.isMine !== "function") return false;
+	if (!["onlineUI", "othersOff"].includes(lib.config?.extension_十周年UI_newDecadeStyle) || !event || !player || typeof event.isMine !== "function") return false;
 	if (event.sortcard || event.choiceList || !event.isMine()) return false;
 	if (!Array.isArray(event.controls) || !event.controls.length) return false;
 	const groups = Array.isArray(lib.group) ? lib.group : [];
