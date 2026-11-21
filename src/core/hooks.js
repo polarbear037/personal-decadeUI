@@ -1,6 +1,8 @@
 import { lib, _status, get, ui, game } from "noname";
 import { isHandCardAvailable } from "../ui/handcard-selection.js";
+import { installXinshaBattleTools } from "../ui/xinsha-battle-tools.js";
 function e() {
+	installXinshaBattleTools({ lib, game, ui, get, status: _status });
 	lib.hooks.checkCard.push(function (card, event) {
 		card.classList.toggle("dui-handcard-available", !!(card.classList.contains("selectable") || card.classList.contains("selected") || isHandCardAvailable(card, event)));
 	});

@@ -3,6 +3,7 @@
     {
       "style": "othersOff",
       "zoom": 0.7,
+      "loading": "othersOff",
       "geometry": {
         "window": {
           "x": 0,
@@ -68,8 +69,83 @@
         ],
         "xinsha": true,
         "online": false,
-        "frame": "url(\"http://127.0.0.1:51940/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
-        "image": "url(\"http://127.0.0.1:51940/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
+        "frame": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
+        "title": "选择势力",
+        "animated": false
+      }
+    },
+    {
+      "style": "othersOff",
+      "zoom": 0.7,
+      "loading": "dialog_xinsha",
+      "geometry": {
+        "window": {
+          "x": 0,
+          "y": 0,
+          "width": 1600,
+          "height": 900,
+          "top": 0,
+          "right": 1600,
+          "bottom": 900,
+          "left": 0
+        },
+        "dialog": {
+          "x": -0.0078125,
+          "y": 214.9921875,
+          "width": 1600.171875,
+          "height": 470.203125,
+          "top": 214.9921875,
+          "right": 1600.1640625,
+          "bottom": 685.1953125,
+          "left": -0.0078125
+        },
+        "buttons": [
+          {
+            "x": 347.8671875,
+            "y": 292.9609375,
+            "width": 181.125,
+            "height": 218.3125,
+            "top": 292.9609375,
+            "right": 528.9921875,
+            "bottom": 511.2734375,
+            "left": 347.8671875
+          },
+          {
+            "x": 588.9609375,
+            "y": 292.9609375,
+            "width": 181.125,
+            "height": 218.3125,
+            "top": 292.9609375,
+            "right": 770.0859375,
+            "bottom": 511.2734375,
+            "left": 588.9609375
+          },
+          {
+            "x": 830.0546875,
+            "y": 292.9609375,
+            "width": 181.125,
+            "height": 218.3125,
+            "top": 292.9609375,
+            "right": 1011.1796875,
+            "bottom": 511.2734375,
+            "left": 830.0546875
+          },
+          {
+            "x": 1071.1484375,
+            "y": 292.9609375,
+            "width": 181.125,
+            "height": 218.3125,
+            "top": 292.9609375,
+            "right": 1252.2734375,
+            "bottom": 511.2734375,
+            "left": 1071.1484375
+          }
+        ],
+        "xinsha": true,
+        "online": false,
+        "frame": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
         "title": "选择势力",
         "animated": false
       }
@@ -77,6 +153,7 @@
     {
       "style": "othersOff",
       "zoom": 1,
+      "loading": "othersOff",
       "geometry": {
         "window": {
           "x": 0,
@@ -142,8 +219,83 @@
         ],
         "xinsha": true,
         "online": false,
-        "frame": "url(\"http://127.0.0.1:51940/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
-        "image": "url(\"http://127.0.0.1:51940/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
+        "frame": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
+        "title": "选择势力",
+        "animated": false
+      }
+    },
+    {
+      "style": "othersOff",
+      "zoom": 1,
+      "loading": "dialog_xinsha",
+      "geometry": {
+        "window": {
+          "x": 0,
+          "y": 0,
+          "width": 1600,
+          "height": 900,
+          "top": 0,
+          "right": 1600,
+          "bottom": 900,
+          "left": 0
+        },
+        "dialog": {
+          "x": 0,
+          "y": 214.921875,
+          "width": 1600,
+          "height": 470.15625,
+          "top": 214.921875,
+          "right": 1600,
+          "bottom": 685.078125,
+          "left": 0
+        },
+        "buttons": [
+          {
+            "x": 347.828125,
+            "y": 292.875,
+            "width": 181.109375,
+            "height": 218.28125,
+            "top": 292.875,
+            "right": 528.9375,
+            "bottom": 511.15625,
+            "left": 347.828125
+          },
+          {
+            "x": 588.90625,
+            "y": 292.875,
+            "width": 181.109375,
+            "height": 218.28125,
+            "top": 292.875,
+            "right": 770.015625,
+            "bottom": 511.15625,
+            "left": 588.90625
+          },
+          {
+            "x": 829.984375,
+            "y": 292.875,
+            "width": 181.109375,
+            "height": 218.28125,
+            "top": 292.875,
+            "right": 1011.09375,
+            "bottom": 511.15625,
+            "left": 829.984375
+          },
+          {
+            "x": 1071.0625,
+            "y": 292.875,
+            "width": 181.109375,
+            "height": 218.28125,
+            "top": 292.875,
+            "right": 1252.171875,
+            "bottom": 511.15625,
+            "left": 1071.0625
+          }
+        ],
+        "xinsha": true,
+        "online": false,
+        "frame": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
         "title": "选择势力",
         "animated": false
       }
@@ -151,6 +303,7 @@
     {
       "style": "othersOff",
       "zoom": 1.2,
+      "loading": "othersOff",
       "geometry": {
         "window": {
           "x": 0,
@@ -216,8 +369,83 @@
         ],
         "xinsha": true,
         "online": false,
-        "frame": "url(\"http://127.0.0.1:51940/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
-        "image": "url(\"http://127.0.0.1:51940/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
+        "frame": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
+        "title": "选择势力",
+        "animated": false
+      }
+    },
+    {
+      "style": "othersOff",
+      "zoom": 1.2,
+      "loading": "dialog_xinsha",
+      "geometry": {
+        "window": {
+          "x": 0,
+          "y": 0,
+          "width": 1600,
+          "height": 900,
+          "top": 0,
+          "right": 1600,
+          "bottom": 900,
+          "left": 0
+        },
+        "dialog": {
+          "x": 0.0078125,
+          "y": 214.96875,
+          "width": 1599.546875,
+          "height": 470.03125,
+          "top": 214.96875,
+          "right": 1599.5546875,
+          "bottom": 685,
+          "left": 0.0078125
+        },
+        "buttons": [
+          {
+            "x": 347.75,
+            "y": 292.90625,
+            "width": 181.046875,
+            "height": 218.21875,
+            "top": 292.90625,
+            "right": 528.796875,
+            "bottom": 511.125,
+            "left": 347.75
+          },
+          {
+            "x": 588.75,
+            "y": 292.90625,
+            "width": 181.046875,
+            "height": 218.21875,
+            "top": 292.90625,
+            "right": 769.796875,
+            "bottom": 511.125,
+            "left": 588.75
+          },
+          {
+            "x": 829.75,
+            "y": 292.90625,
+            "width": 181.046875,
+            "height": 218.21875,
+            "top": 292.90625,
+            "right": 1010.796875,
+            "bottom": 511.125,
+            "left": 829.75
+          },
+          {
+            "x": 1070.75,
+            "y": 292.90625,
+            "width": 181.046875,
+            "height": 218.21875,
+            "top": 292.90625,
+            "right": 1251.796875,
+            "bottom": 511.125,
+            "left": 1070.75
+          }
+        ],
+        "xinsha": true,
+        "online": false,
+        "frame": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
         "title": "选择势力",
         "animated": false
       }
@@ -225,6 +453,7 @@
     {
       "style": "onlineUI",
       "zoom": 0.7,
+      "loading": "dialog_ol",
       "geometry": {
         "window": {
           "x": 0,
@@ -291,13 +520,14 @@
         "xinsha": false,
         "online": true,
         "frame": "none",
-        "image": "url(\"http://127.0.0.1:51940/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/select_country_wei.png\")",
+        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/select_country_wei.png\")",
         "animated": false
       }
     },
     {
       "style": "onlineUI",
       "zoom": 1,
+      "loading": "dialog_ol",
       "geometry": {
         "window": {
           "x": 0,
@@ -364,13 +594,14 @@
         "xinsha": false,
         "online": true,
         "frame": "none",
-        "image": "url(\"http://127.0.0.1:51940/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/select_country_wei.png\")",
+        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/select_country_wei.png\")",
         "animated": false
       }
     },
     {
       "style": "onlineUI",
       "zoom": 1.2,
+      "loading": "dialog_ol",
       "geometry": {
         "window": {
           "x": 0,
@@ -437,13 +668,14 @@
         "xinsha": false,
         "online": true,
         "frame": "none",
-        "image": "url(\"http://127.0.0.1:51940/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/select_country_wei.png\")",
+        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/select_country_wei.png\")",
         "animated": false
       }
     },
     {
       "style": "on",
       "zoom": 0.7,
+      "loading": "on",
       "geometry": {
         "window": {
           "x": 0,
@@ -517,6 +749,7 @@
     {
       "style": "on",
       "zoom": 1,
+      "loading": "on",
       "geometry": {
         "window": {
           "x": 0,
@@ -590,6 +823,7 @@
     {
       "style": "on",
       "zoom": 1.2,
+      "loading": "on",
       "geometry": {
         "window": {
           "x": 0,

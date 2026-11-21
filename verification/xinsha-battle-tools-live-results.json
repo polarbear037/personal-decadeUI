@@ -1,0 +1,10 @@
+{
+  "event": "chooseToUse",
+  "dialog": "dialog forcebutton-auto lei-yijiang-shunchai fullwidth lei-yijiang-sc-big fullheight scroll1 scroll2 dialog-xinsha-prompt-retiring lei-yijiang-sc-closing dialog-ol-layout dialog-xinsha-layout",
+  "zoom": 1.221153846153846,
+  "counts": {
+    "old": 0,
+    "new": 1
+  },
+  "note": "Current faction DOM and screenshot verified centered after excluding managed layouts from legacy scroll CSS."
+}

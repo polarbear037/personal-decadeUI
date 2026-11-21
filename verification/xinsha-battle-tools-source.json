@@ -1,0 +1,4320 @@
+{
+  "apk_sha256": "974381c26f5bdc45daa6796f31cf384840e8d95e2eff3039990180f22f36a895",
+  "member": "app.view.cmn.SpecialCardTips",
+  "sha256": "970b3c521a2f472e0406bcab999857895135f82338abe713a702e53f1de738cb",
+  "prototypes": [
+    {
+      "id": "0",
+      "line": 0,
+      "last_line": 0,
+      "header": [
+        0,
+        0,
+        2,
+        5
+      ],
+      "constants": [
+        "import",
+        ".SpecailItemTipsWindow",
+        "require",
+        "app.view.pic.GeneralHeadPic",
+        "class",
+        "SpecialCardTips",
+        "ctor",
+        "onEnter",
+        "onUpdateTurnCnt",
+        "createChilden",
+        "isHitSelf",
+        "initTabBtns",
+        "onTabChanged",
+        "showWithTarget"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "getglobal",
+          "a": 0,
+          "b": 0,
+          "c": 0,
+          "constant": "import"
+        },
+        {
+          "pc": 2,
+          "op": "loadk",
+          "a": 1,
+          "b": 0,
+          "c": 1,
+          "constant": ".SpecailItemTipsWindow"
+        },
+        {
+          "pc": 3,
+          "op": "call",
+          "a": 0,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 4,
+          "op": "getglobal",
+          "a": 1,
+          "b": 0,
+          "c": 2,
+          "constant": "require"
+        },
+        {
+          "pc": 5,
+          "op": "loadk",
+          "a": 2,
+          "b": 0,
+          "c": 3,
+          "constant": "app.view.pic.GeneralHeadPic"
+        },
+        {
+          "pc": 6,
+          "op": "call",
+          "a": 1,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 7,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 4,
+          "constant": "class"
+        },
+        {
+          "pc": 8,
+          "op": "loadk",
+          "a": 3,
+          "b": 0,
+          "c": 5,
+          "constant": "SpecialCardTips"
+        },
+        {
+          "pc": 9,
+          "op": "move",
+          "a": 4,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 10,
+          "op": "call",
+          "a": 2,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 11,
+          "op": "closure",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 12,
+          "op": "move",
+          "a": 0,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 13,
+          "op": "settable",
+          "a": 2,
+          "b": 262,
+          "c": 3,
+          "constant_operands": {
+            "b": "ctor"
+          }
+        },
+        {
+          "pc": 14,
+          "op": "closure",
+          "a": 3,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 15,
+          "op": "settable",
+          "a": 2,
+          "b": 263,
+          "c": 3,
+          "constant_operands": {
+            "b": "onEnter"
+          }
+        },
+        {
+          "pc": 16,
+          "op": "closure",
+          "a": 3,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 17,
+          "op": "settable",
+          "a": 2,
+          "b": 264,
+          "c": 3,
+          "constant_operands": {
+            "b": "onUpdateTurnCnt"
+          }
+        },
+        {
+          "pc": 18,
+          "op": "closure",
+          "a": 3,
+          "b": 0,
+          "c": 3
+        },
+        {
+          "pc": 19,
+          "op": "settable",
+          "a": 2,
+          "b": 265,
+          "c": 3,
+          "constant_operands": {
+            "b": "createChilden"
+          }
+        },
+        {
+          "pc": 20,
+          "op": "closure",
+          "a": 3,
+          "b": 0,
+          "c": 4
+        },
+        {
+          "pc": 21,
+          "op": "settable",
+          "a": 2,
+          "b": 266,
+          "c": 3,
+          "constant_operands": {
+            "b": "isHitSelf"
+          }
+        },
+        {
+          "pc": 22,
+          "op": "closure",
+          "a": 3,
+          "b": 0,
+          "c": 5
+        },
+        {
+          "pc": 23,
+          "op": "settable",
+          "a": 2,
+          "b": 267,
+          "c": 3,
+          "constant_operands": {
+            "b": "initTabBtns"
+          }
+        },
+        {
+          "pc": 24,
+          "op": "closure",
+          "a": 3,
+          "b": 0,
+          "c": 6
+        },
+        {
+          "pc": 25,
+          "op": "settable",
+          "a": 2,
+          "b": 268,
+          "c": 3,
+          "constant_operands": {
+            "b": "onTabChanged"
+          }
+        },
+        {
+          "pc": 26,
+          "op": "closure",
+          "a": 3,
+          "b": 0,
+          "c": 7
+        },
+        {
+          "pc": 27,
+          "op": "settable",
+          "a": 2,
+          "b": 269,
+          "c": 3,
+          "constant_operands": {
+            "b": "showWithTarget"
+          }
+        },
+        {
+          "pc": 28,
+          "op": "return",
+          "a": 2,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 29,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.0",
+      "line": 10,
+      "last_line": 20,
+      "header": [
+        1,
+        2,
+        0,
+        7
+      ],
+      "constants": [
+        "seats",
+        "app",
+        "rescourseManager",
+        "addSpriteFramesWithNode",
+        "speical_card",
+        "playcard",
+        "super",
+        "ctor",
+        "width",
+        715.0,
+        "height",
+        580.0,
+        "setNodeEventEnabled"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "settable",
+          "a": 0,
+          "b": 256,
+          "c": 1,
+          "constant_operands": {
+            "b": "seats"
+          }
+        },
+        {
+          "pc": 2,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 1,
+          "constant": "app"
+        },
+        {
+          "pc": 3,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 258,
+          "constant_operands": {
+            "c": "rescourseManager"
+          }
+        },
+        {
+          "pc": 4,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 259,
+          "constant_operands": {
+            "c": "addSpriteFramesWithNode"
+          }
+        },
+        {
+          "pc": 5,
+          "op": "move",
+          "a": 4,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 6,
+          "op": "loadk",
+          "a": 5,
+          "b": 0,
+          "c": 4,
+          "constant": "speical_card"
+        },
+        {
+          "pc": 7,
+          "op": "loadbool",
+          "a": 6,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 8,
+          "op": "call",
+          "a": 2,
+          "b": 5,
+          "c": 1
+        },
+        {
+          "pc": 9,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 1,
+          "constant": "app"
+        },
+        {
+          "pc": 10,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 258,
+          "constant_operands": {
+            "c": "rescourseManager"
+          }
+        },
+        {
+          "pc": 11,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 259,
+          "constant_operands": {
+            "c": "addSpriteFramesWithNode"
+          }
+        },
+        {
+          "pc": 12,
+          "op": "move",
+          "a": 4,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 13,
+          "op": "loadk",
+          "a": 5,
+          "b": 0,
+          "c": 5,
+          "constant": "playcard"
+        },
+        {
+          "pc": 14,
+          "op": "loadbool",
+          "a": 6,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 15,
+          "op": "call",
+          "a": 2,
+          "b": 5,
+          "c": 1
+        },
+        {
+          "pc": 16,
+          "op": "getupval",
+          "a": 2,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 17,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 262,
+          "constant_operands": {
+            "c": "super"
+          }
+        },
+        {
+          "pc": 18,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 263,
+          "constant_operands": {
+            "c": "ctor"
+          }
+        },
+        {
+          "pc": 19,
+          "op": "move",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 20,
+          "op": "loadnil",
+          "a": 4,
+          "b": 4,
+          "c": 0
+        },
+        {
+          "pc": 21,
+          "op": "newtable",
+          "a": 5,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 22,
+          "op": "settable",
+          "a": 5,
+          "b": 264,
+          "c": 265,
+          "constant_operands": {
+            "b": "width",
+            "c": 715.0
+          }
+        },
+        {
+          "pc": 23,
+          "op": "settable",
+          "a": 5,
+          "b": 266,
+          "c": 267,
+          "constant_operands": {
+            "b": "height",
+            "c": 580.0
+          }
+        },
+        {
+          "pc": 24,
+          "op": "call",
+          "a": 2,
+          "b": 4,
+          "c": 1
+        },
+        {
+          "pc": 25,
+          "op": "self",
+          "a": 2,
+          "b": 0,
+          "c": 268,
+          "constant_operands": {
+            "c": "setNodeEventEnabled"
+          }
+        },
+        {
+          "pc": 26,
+          "op": "loadbool",
+          "a": 4,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 27,
+          "op": "call",
+          "a": 2,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 28,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.1",
+      "line": 22,
+      "last_line": 25,
+      "header": [
+        0,
+        1,
+        0,
+        7
+      ],
+      "constants": [
+        "cc",
+        "EventProxy",
+        "new",
+        "app",
+        "gameManager",
+        "addEventListener",
+        "EVENT_UPDATE_TURN_CNT",
+        "handler",
+        "onUpdateTurnCnt"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "getglobal",
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "constant": "cc"
+        },
+        {
+          "pc": 2,
+          "op": "gettable",
+          "a": 1,
+          "b": 1,
+          "c": 257,
+          "constant_operands": {
+            "c": "EventProxy"
+          }
+        },
+        {
+          "pc": 3,
+          "op": "gettable",
+          "a": 1,
+          "b": 1,
+          "c": 258,
+          "constant_operands": {
+            "c": "new"
+          }
+        },
+        {
+          "pc": 4,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 3,
+          "constant": "app"
+        },
+        {
+          "pc": 5,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 260,
+          "constant_operands": {
+            "c": "gameManager"
+          }
+        },
+        {
+          "pc": 6,
+          "op": "move",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 7,
+          "op": "call",
+          "a": 1,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 8,
+          "op": "self",
+          "a": 1,
+          "b": 1,
+          "c": 261,
+          "constant_operands": {
+            "c": "addEventListener"
+          }
+        },
+        {
+          "pc": 9,
+          "op": "getglobal",
+          "a": 3,
+          "b": 0,
+          "c": 3,
+          "constant": "app"
+        },
+        {
+          "pc": 10,
+          "op": "gettable",
+          "a": 3,
+          "b": 3,
+          "c": 260,
+          "constant_operands": {
+            "c": "gameManager"
+          }
+        },
+        {
+          "pc": 11,
+          "op": "gettable",
+          "a": 3,
+          "b": 3,
+          "c": 262,
+          "constant_operands": {
+            "c": "EVENT_UPDATE_TURN_CNT"
+          }
+        },
+        {
+          "pc": 12,
+          "op": "getglobal",
+          "a": 4,
+          "b": 0,
+          "c": 7,
+          "constant": "handler"
+        },
+        {
+          "pc": 13,
+          "op": "move",
+          "a": 5,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 14,
+          "op": "gettable",
+          "a": 6,
+          "b": 0,
+          "c": 264,
+          "constant_operands": {
+            "c": "onUpdateTurnCnt"
+          }
+        },
+        {
+          "pc": 15,
+          "op": "call",
+          "a": 4,
+          "b": 3,
+          "c": 0
+        },
+        {
+          "pc": 16,
+          "op": "call",
+          "a": 1,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 17,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.2",
+      "line": 27,
+      "last_line": 31,
+      "header": [
+        0,
+        1,
+        0,
+        3
+      ],
+      "constants": [
+        "app",
+        "gameManager",
+        "turn",
+        1.0,
+        "close"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "getglobal",
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "constant": "app"
+        },
+        {
+          "pc": 2,
+          "op": "gettable",
+          "a": 1,
+          "b": 1,
+          "c": 257,
+          "constant_operands": {
+            "c": "gameManager"
+          }
+        },
+        {
+          "pc": 3,
+          "op": "gettable",
+          "a": 1,
+          "b": 1,
+          "c": 258,
+          "constant_operands": {
+            "c": "turn"
+          }
+        },
+        {
+          "pc": 4,
+          "op": "lt",
+          "a": 0,
+          "b": 259,
+          "c": 1,
+          "constant_operands": {
+            "b": 1.0
+          }
+        },
+        {
+          "pc": 5,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 1
+        },
+        {
+          "pc": 6,
+          "op": "self",
+          "a": 1,
+          "b": 0,
+          "c": 260,
+          "constant_operands": {
+            "c": "close"
+          }
+        },
+        {
+          "pc": 7,
+          "op": "call",
+          "a": 1,
+          "b": 2,
+          "c": 1
+        },
+        {
+          "pc": 8,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.3",
+      "line": 33,
+      "last_line": 41,
+      "header": [
+        0,
+        1,
+        0,
+        6
+      ],
+      "constants": [
+        "display",
+        "newScale9Sprite",
+        "#special_card_scaleBg.png",
+        "size",
+        715.0,
+        580.0,
+        "align",
+        "CENTER",
+        "width",
+        2.0,
+        "height",
+        "addTo",
+        "bg",
+        "initTabBtns"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "getglobal",
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "constant": "display"
+        },
+        {
+          "pc": 2,
+          "op": "gettable",
+          "a": 1,
+          "b": 1,
+          "c": 257,
+          "constant_operands": {
+            "c": "newScale9Sprite"
+          }
+        },
+        {
+          "pc": 3,
+          "op": "loadk",
+          "a": 2,
+          "b": 0,
+          "c": 2,
+          "constant": "#special_card_scaleBg.png"
+        },
+        {
+          "pc": 4,
+          "op": "call",
+          "a": 1,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 5,
+          "op": "self",
+          "a": 1,
+          "b": 1,
+          "c": 259,
+          "constant_operands": {
+            "c": "size"
+          }
+        },
+        {
+          "pc": 6,
+          "op": "loadk",
+          "a": 3,
+          "b": 0,
+          "c": 4,
+          "constant": 715.0
+        },
+        {
+          "pc": 7,
+          "op": "loadk",
+          "a": 4,
+          "b": 0,
+          "c": 5,
+          "constant": 580.0
+        },
+        {
+          "pc": 8,
+          "op": "call",
+          "a": 1,
+          "b": 4,
+          "c": 2
+        },
+        {
+          "pc": 9,
+          "op": "self",
+          "a": 1,
+          "b": 1,
+          "c": 262,
+          "constant_operands": {
+            "c": "align"
+          }
+        },
+        {
+          "pc": 10,
+          "op": "getglobal",
+          "a": 3,
+          "b": 0,
+          "c": 0,
+          "constant": "display"
+        },
+        {
+          "pc": 11,
+          "op": "gettable",
+          "a": 3,
+          "b": 3,
+          "c": 263,
+          "constant_operands": {
+            "c": "CENTER"
+          }
+        },
+        {
+          "pc": 12,
+          "op": "gettable",
+          "a": 4,
+          "b": 0,
+          "c": 264,
+          "constant_operands": {
+            "c": "width"
+          }
+        },
+        {
+          "pc": 13,
+          "op": "div",
+          "a": 4,
+          "b": 4,
+          "c": 265,
+          "constant_operands": {
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 14,
+          "op": "gettable",
+          "a": 5,
+          "b": 0,
+          "c": 266,
+          "constant_operands": {
+            "c": "height"
+          }
+        },
+        {
+          "pc": 15,
+          "op": "div",
+          "a": 5,
+          "b": 5,
+          "c": 265,
+          "constant_operands": {
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 16,
+          "op": "call",
+          "a": 1,
+          "b": 5,
+          "c": 2
+        },
+        {
+          "pc": 17,
+          "op": "self",
+          "a": 1,
+          "b": 1,
+          "c": 267,
+          "constant_operands": {
+            "c": "addTo"
+          }
+        },
+        {
+          "pc": 18,
+          "op": "move",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 19,
+          "op": "call",
+          "a": 1,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 20,
+          "op": "settable",
+          "a": 0,
+          "b": 268,
+          "c": 1,
+          "constant_operands": {
+            "b": "bg"
+          }
+        },
+        {
+          "pc": 21,
+          "op": "self",
+          "a": 2,
+          "b": 0,
+          "c": 269,
+          "constant_operands": {
+            "c": "initTabBtns"
+          }
+        },
+        {
+          "pc": 22,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 1
+        },
+        {
+          "pc": 23,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.4",
+      "line": 43,
+      "last_line": 45,
+      "header": [
+        0,
+        3,
+        0,
+        8
+      ],
+      "constants": [
+        "bg",
+        "getCascadeBoundingBox",
+        "containsPoint",
+        "cc",
+        "p"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "bg"
+          }
+        },
+        {
+          "pc": 2,
+          "op": "self",
+          "a": 3,
+          "b": 3,
+          "c": 257,
+          "constant_operands": {
+            "c": "getCascadeBoundingBox"
+          }
+        },
+        {
+          "pc": 3,
+          "op": "loadbool",
+          "a": 5,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 4,
+          "op": "call",
+          "a": 3,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 5,
+          "op": "self",
+          "a": 3,
+          "b": 3,
+          "c": 258,
+          "constant_operands": {
+            "c": "containsPoint"
+          }
+        },
+        {
+          "pc": 6,
+          "op": "getglobal",
+          "a": 5,
+          "b": 0,
+          "c": 3,
+          "constant": "cc"
+        },
+        {
+          "pc": 7,
+          "op": "gettable",
+          "a": 5,
+          "b": 5,
+          "c": 260,
+          "constant_operands": {
+            "c": "p"
+          }
+        },
+        {
+          "pc": 8,
+          "op": "move",
+          "a": 6,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 9,
+          "op": "move",
+          "a": 7,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 10,
+          "op": "call",
+          "a": 5,
+          "b": 3,
+          "c": 0
+        },
+        {
+          "pc": 11,
+          "op": "tailcall",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 12,
+          "op": "return",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 13,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.5",
+      "line": 47,
+      "last_line": 102,
+      "header": [
+        0,
+        1,
+        0,
+        16
+      ],
+      "constants": [
+        "tab_btns",
+        "table",
+        "sort",
+        "seats",
+        "ipairs",
+        "ui",
+        "newTabButton",
+        "images",
+        "normal",
+        "#special_card_tabBtn1.png",
+        "selected",
+        "#special_card_tabBtn2.png",
+        "unselectEnable",
+        true,
+        "filters",
+        "disabled",
+        "GRAY",
+        "touchInSprite",
+        "align",
+        "display",
+        "CENTER",
+        45.5,
+        1.0,
+        75.0,
+        552.0,
+        "addTo",
+        "info",
+        "setButtonLabel",
+        "newLabel",
+        "text",
+        "Lang",
+        "TXT_HAN_",
+        "getFixSeatId",
+        "color",
+        "cc",
+        "c3b",
+        239.0,
+        218.0,
+        180.0,
+        "size",
+        24.0,
+        84.0,
+        45.0,
+        "setButtonLabelStateOffset",
+        35.0,
+        0.0,
+        "pressed",
+        "require",
+        "app.view.pic.SkinHeadPic",
+        "new",
+        "getStaticSkinId",
+        -5.0,
+        "setScale",
+        0.4,
+        "ct",
+        "TabGroup",
+        "pairs",
+        "insert",
+        "addTabButton",
+        "onTabSelectChanged",
+        "listView",
+        "newListView",
+        "width",
+        564.0,
+        "height",
+        534.0,
+        "ltype",
+        2.0,
+        "off",
+        20.0,
+        "LEFT_BOTTOM",
+        119.0,
+        23.0,
+        "selectTab"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "newtable",
+          "a": 1,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 2,
+          "op": "settable",
+          "a": 0,
+          "b": 256,
+          "c": 1,
+          "constant_operands": {
+            "b": "tab_btns"
+          }
+        },
+        {
+          "pc": 3,
+          "op": "getglobal",
+          "a": 1,
+          "b": 0,
+          "c": 1,
+          "constant": "table"
+        },
+        {
+          "pc": 4,
+          "op": "gettable",
+          "a": 1,
+          "b": 1,
+          "c": 258,
+          "constant_operands": {
+            "c": "sort"
+          }
+        },
+        {
+          "pc": 5,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 259,
+          "constant_operands": {
+            "c": "seats"
+          }
+        },
+        {
+          "pc": 6,
+          "op": "closure",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 7,
+          "op": "call",
+          "a": 1,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 8,
+          "op": "getglobal",
+          "a": 1,
+          "b": 0,
+          "c": 4,
+          "constant": "ipairs"
+        },
+        {
+          "pc": 9,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 259,
+          "constant_operands": {
+            "c": "seats"
+          }
+        },
+        {
+          "pc": 10,
+          "op": "call",
+          "a": 1,
+          "b": 2,
+          "c": 4
+        },
+        {
+          "pc": 11,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 108
+        },
+        {
+          "pc": 12,
+          "op": "getglobal",
+          "a": 6,
+          "b": 0,
+          "c": 5,
+          "constant": "ui"
+        },
+        {
+          "pc": 13,
+          "op": "gettable",
+          "a": 6,
+          "b": 6,
+          "c": 262,
+          "constant_operands": {
+            "c": "newTabButton"
+          }
+        },
+        {
+          "pc": 14,
+          "op": "newtable",
+          "a": 7,
+          "b": 0,
+          "c": 3
+        },
+        {
+          "pc": 15,
+          "op": "newtable",
+          "a": 8,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 16,
+          "op": "settable",
+          "a": 8,
+          "b": 264,
+          "c": 265,
+          "constant_operands": {
+            "b": "normal",
+            "c": "#special_card_tabBtn1.png"
+          }
+        },
+        {
+          "pc": 17,
+          "op": "settable",
+          "a": 8,
+          "b": 266,
+          "c": 267,
+          "constant_operands": {
+            "b": "selected",
+            "c": "#special_card_tabBtn2.png"
+          }
+        },
+        {
+          "pc": 18,
+          "op": "settable",
+          "a": 7,
+          "b": 263,
+          "c": 8,
+          "constant_operands": {
+            "b": "images"
+          }
+        },
+        {
+          "pc": 19,
+          "op": "settable",
+          "a": 7,
+          "b": 268,
+          "c": 269,
+          "constant_operands": {
+            "b": "unselectEnable",
+            "c": true
+          }
+        },
+        {
+          "pc": 20,
+          "op": "newtable",
+          "a": 8,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 21,
+          "op": "newtable",
+          "a": 9,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 22,
+          "op": "loadk",
+          "a": 10,
+          "b": 0,
+          "c": 16,
+          "constant": "GRAY"
+        },
+        {
+          "pc": 23,
+          "op": "setlist",
+          "a": 9,
+          "b": 1,
+          "c": 1
+        },
+        {
+          "pc": 24,
+          "op": "settable",
+          "a": 8,
+          "b": 271,
+          "c": 9,
+          "constant_operands": {
+            "b": "disabled"
+          }
+        },
+        {
+          "pc": 25,
+          "op": "settable",
+          "a": 7,
+          "b": 270,
+          "c": 8,
+          "constant_operands": {
+            "b": "filters"
+          }
+        },
+        {
+          "pc": 26,
+          "op": "newtable",
+          "a": 8,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 27,
+          "op": "settable",
+          "a": 8,
+          "b": 273,
+          "c": 269,
+          "constant_operands": {
+            "b": "touchInSprite",
+            "c": true
+          }
+        },
+        {
+          "pc": 28,
+          "op": "call",
+          "a": 6,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 29,
+          "op": "self",
+          "a": 6,
+          "b": 6,
+          "c": 274,
+          "constant_operands": {
+            "c": "align"
+          }
+        },
+        {
+          "pc": 30,
+          "op": "getglobal",
+          "a": 8,
+          "b": 0,
+          "c": 19,
+          "constant": "display"
+        },
+        {
+          "pc": 31,
+          "op": "gettable",
+          "a": 8,
+          "b": 8,
+          "c": 276,
+          "constant_operands": {
+            "c": "CENTER"
+          }
+        },
+        {
+          "pc": 32,
+          "op": "loadk",
+          "a": 9,
+          "b": 0,
+          "c": 21,
+          "constant": 45.5
+        },
+        {
+          "pc": 33,
+          "op": "sub",
+          "a": 10,
+          "b": 4,
+          "c": 278,
+          "constant_operands": {
+            "c": 1.0
+          }
+        },
+        {
+          "pc": 34,
+          "op": "mul",
+          "a": 10,
+          "b": 279,
+          "c": 10,
+          "constant_operands": {
+            "b": 75.0
+          }
+        },
+        {
+          "pc": 35,
+          "op": "sub",
+          "a": 10,
+          "b": 280,
+          "c": 10,
+          "constant_operands": {
+            "b": 552.0
+          }
+        },
+        {
+          "pc": 36,
+          "op": "call",
+          "a": 6,
+          "b": 5,
+          "c": 2
+        },
+        {
+          "pc": 37,
+          "op": "self",
+          "a": 6,
+          "b": 6,
+          "c": 281,
+          "constant_operands": {
+            "c": "addTo"
+          }
+        },
+        {
+          "pc": 38,
+          "op": "move",
+          "a": 8,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 39,
+          "op": "call",
+          "a": 6,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 40,
+          "op": "settable",
+          "a": 6,
+          "b": 282,
+          "c": 5,
+          "constant_operands": {
+            "b": "info"
+          }
+        },
+        {
+          "pc": 41,
+          "op": "self",
+          "a": 7,
+          "b": 6,
+          "c": 283,
+          "constant_operands": {
+            "c": "setButtonLabel"
+          }
+        },
+        {
+          "pc": 42,
+          "op": "loadk",
+          "a": 9,
+          "b": 0,
+          "c": 8,
+          "constant": "normal"
+        },
+        {
+          "pc": 43,
+          "op": "getglobal",
+          "a": 10,
+          "b": 0,
+          "c": 5,
+          "constant": "ui"
+        },
+        {
+          "pc": 44,
+          "op": "gettable",
+          "a": 10,
+          "b": 10,
+          "c": 284,
+          "constant_operands": {
+            "c": "newLabel"
+          }
+        },
+        {
+          "pc": 45,
+          "op": "newtable",
+          "a": 11,
+          "b": 0,
+          "c": 3
+        },
+        {
+          "pc": 46,
+          "op": "getglobal",
+          "a": 12,
+          "b": 0,
+          "c": 30,
+          "constant": "Lang"
+        },
+        {
+          "pc": 47,
+          "op": "loadk",
+          "a": 13,
+          "b": 0,
+          "c": 31,
+          "constant": "TXT_HAN_"
+        },
+        {
+          "pc": 48,
+          "op": "self",
+          "a": 14,
+          "b": 5,
+          "c": 288,
+          "constant_operands": {
+            "c": "getFixSeatId"
+          }
+        },
+        {
+          "pc": 49,
+          "op": "call",
+          "a": 14,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 50,
+          "op": "concat",
+          "a": 13,
+          "b": 13,
+          "c": 14
+        },
+        {
+          "pc": 51,
+          "op": "call",
+          "a": 12,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 52,
+          "op": "settable",
+          "a": 11,
+          "b": 285,
+          "c": 12,
+          "constant_operands": {
+            "b": "text"
+          }
+        },
+        {
+          "pc": 53,
+          "op": "getglobal",
+          "a": 12,
+          "b": 0,
+          "c": 34,
+          "constant": "cc"
+        },
+        {
+          "pc": 54,
+          "op": "gettable",
+          "a": 12,
+          "b": 12,
+          "c": 291,
+          "constant_operands": {
+            "c": "c3b"
+          }
+        },
+        {
+          "pc": 55,
+          "op": "loadk",
+          "a": 13,
+          "b": 0,
+          "c": 36,
+          "constant": 239.0
+        },
+        {
+          "pc": 56,
+          "op": "loadk",
+          "a": 14,
+          "b": 0,
+          "c": 37,
+          "constant": 218.0
+        },
+        {
+          "pc": 57,
+          "op": "loadk",
+          "a": 15,
+          "b": 0,
+          "c": 38,
+          "constant": 180.0
+        },
+        {
+          "pc": 58,
+          "op": "call",
+          "a": 12,
+          "b": 4,
+          "c": 2
+        },
+        {
+          "pc": 59,
+          "op": "settable",
+          "a": 11,
+          "b": 289,
+          "c": 12,
+          "constant_operands": {
+            "b": "color"
+          }
+        },
+        {
+          "pc": 60,
+          "op": "settable",
+          "a": 11,
+          "b": 295,
+          "c": 296,
+          "constant_operands": {
+            "b": "size",
+            "c": 24.0
+          }
+        },
+        {
+          "pc": 61,
+          "op": "call",
+          "a": 10,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 62,
+          "op": "call",
+          "a": 7,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 63,
+          "op": "self",
+          "a": 7,
+          "b": 6,
+          "c": 283,
+          "constant_operands": {
+            "c": "setButtonLabel"
+          }
+        },
+        {
+          "pc": 64,
+          "op": "loadk",
+          "a": 9,
+          "b": 0,
+          "c": 10,
+          "constant": "selected"
+        },
+        {
+          "pc": 65,
+          "op": "getglobal",
+          "a": 10,
+          "b": 0,
+          "c": 5,
+          "constant": "ui"
+        },
+        {
+          "pc": 66,
+          "op": "gettable",
+          "a": 10,
+          "b": 10,
+          "c": 284,
+          "constant_operands": {
+            "c": "newLabel"
+          }
+        },
+        {
+          "pc": 67,
+          "op": "newtable",
+          "a": 11,
+          "b": 0,
+          "c": 3
+        },
+        {
+          "pc": 68,
+          "op": "getglobal",
+          "a": 12,
+          "b": 0,
+          "c": 30,
+          "constant": "Lang"
+        },
+        {
+          "pc": 69,
+          "op": "loadk",
+          "a": 13,
+          "b": 0,
+          "c": 31,
+          "constant": "TXT_HAN_"
+        },
+        {
+          "pc": 70,
+          "op": "self",
+          "a": 14,
+          "b": 5,
+          "c": 288,
+          "constant_operands": {
+            "c": "getFixSeatId"
+          }
+        },
+        {
+          "pc": 71,
+          "op": "call",
+          "a": 14,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 72,
+          "op": "concat",
+          "a": 13,
+          "b": 13,
+          "c": 14
+        },
+        {
+          "pc": 73,
+          "op": "call",
+          "a": 12,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 74,
+          "op": "settable",
+          "a": 11,
+          "b": 285,
+          "c": 12,
+          "constant_operands": {
+            "b": "text"
+          }
+        },
+        {
+          "pc": 75,
+          "op": "getglobal",
+          "a": 12,
+          "b": 0,
+          "c": 34,
+          "constant": "cc"
+        },
+        {
+          "pc": 76,
+          "op": "gettable",
+          "a": 12,
+          "b": 12,
+          "c": 291,
+          "constant_operands": {
+            "c": "c3b"
+          }
+        },
+        {
+          "pc": 77,
+          "op": "loadk",
+          "a": 13,
+          "b": 0,
+          "c": 41,
+          "constant": 84.0
+        },
+        {
+          "pc": 78,
+          "op": "loadk",
+          "a": 14,
+          "b": 0,
+          "c": 42,
+          "constant": 45.0
+        },
+        {
+          "pc": 79,
+          "op": "loadk",
+          "a": 15,
+          "b": 0,
+          "c": 40,
+          "constant": 24.0
+        },
+        {
+          "pc": 80,
+          "op": "call",
+          "a": 12,
+          "b": 4,
+          "c": 2
+        },
+        {
+          "pc": 81,
+          "op": "settable",
+          "a": 11,
+          "b": 289,
+          "c": 12,
+          "constant_operands": {
+            "b": "color"
+          }
+        },
+        {
+          "pc": 82,
+          "op": "settable",
+          "a": 11,
+          "b": 295,
+          "c": 296,
+          "constant_operands": {
+            "b": "size",
+            "c": 24.0
+          }
+        },
+        {
+          "pc": 83,
+          "op": "call",
+          "a": 10,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 84,
+          "op": "call",
+          "a": 7,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 85,
+          "op": "self",
+          "a": 7,
+          "b": 6,
+          "c": 299,
+          "constant_operands": {
+            "c": "setButtonLabelStateOffset"
+          }
+        },
+        {
+          "pc": 86,
+          "op": "loadk",
+          "a": 9,
+          "b": 0,
+          "c": 8,
+          "constant": "normal"
+        },
+        {
+          "pc": 87,
+          "op": "loadk",
+          "a": 10,
+          "b": 0,
+          "c": 44,
+          "constant": 35.0
+        },
+        {
+          "pc": 88,
+          "op": "loadk",
+          "a": 11,
+          "b": 0,
+          "c": 45,
+          "constant": 0.0
+        },
+        {
+          "pc": 89,
+          "op": "call",
+          "a": 7,
+          "b": 5,
+          "c": 1
+        },
+        {
+          "pc": 90,
+          "op": "self",
+          "a": 7,
+          "b": 6,
+          "c": 299,
+          "constant_operands": {
+            "c": "setButtonLabelStateOffset"
+          }
+        },
+        {
+          "pc": 91,
+          "op": "loadk",
+          "a": 9,
+          "b": 0,
+          "c": 46,
+          "constant": "pressed"
+        },
+        {
+          "pc": 92,
+          "op": "loadk",
+          "a": 10,
+          "b": 0,
+          "c": 44,
+          "constant": 35.0
+        },
+        {
+          "pc": 93,
+          "op": "loadk",
+          "a": 11,
+          "b": 0,
+          "c": 45,
+          "constant": 0.0
+        },
+        {
+          "pc": 94,
+          "op": "call",
+          "a": 7,
+          "b": 5,
+          "c": 1
+        },
+        {
+          "pc": 95,
+          "op": "self",
+          "a": 7,
+          "b": 6,
+          "c": 299,
+          "constant_operands": {
+            "c": "setButtonLabelStateOffset"
+          }
+        },
+        {
+          "pc": 96,
+          "op": "loadk",
+          "a": 9,
+          "b": 0,
+          "c": 10,
+          "constant": "selected"
+        },
+        {
+          "pc": 97,
+          "op": "loadk",
+          "a": 10,
+          "b": 0,
+          "c": 44,
+          "constant": 35.0
+        },
+        {
+          "pc": 98,
+          "op": "loadk",
+          "a": 11,
+          "b": 0,
+          "c": 45,
+          "constant": 0.0
+        },
+        {
+          "pc": 99,
+          "op": "call",
+          "a": 7,
+          "b": 5,
+          "c": 1
+        },
+        {
+          "pc": 100,
+          "op": "getglobal",
+          "a": 7,
+          "b": 0,
+          "c": 47,
+          "constant": "require"
+        },
+        {
+          "pc": 101,
+          "op": "loadk",
+          "a": 8,
+          "b": 0,
+          "c": 48,
+          "constant": "app.view.pic.SkinHeadPic"
+        },
+        {
+          "pc": 102,
+          "op": "call",
+          "a": 7,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 103,
+          "op": "gettable",
+          "a": 7,
+          "b": 7,
+          "c": 305,
+          "constant_operands": {
+            "c": "new"
+          }
+        },
+        {
+          "pc": 104,
+          "op": "self",
+          "a": 8,
+          "b": 5,
+          "c": 306,
+          "constant_operands": {
+            "c": "getStaticSkinId"
+          }
+        },
+        {
+          "pc": 105,
+          "op": "call",
+          "a": 8,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 106,
+          "op": "call",
+          "a": 7,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 107,
+          "op": "self",
+          "a": 7,
+          "b": 7,
+          "c": 274,
+          "constant_operands": {
+            "c": "align"
+          }
+        },
+        {
+          "pc": 108,
+          "op": "getglobal",
+          "a": 9,
+          "b": 0,
+          "c": 19,
+          "constant": "display"
+        },
+        {
+          "pc": 109,
+          "op": "gettable",
+          "a": 9,
+          "b": 9,
+          "c": 276,
+          "constant_operands": {
+            "c": "CENTER"
+          }
+        },
+        {
+          "pc": 110,
+          "op": "loadk",
+          "a": 10,
+          "b": 0,
+          "c": 51,
+          "constant": -5.0
+        },
+        {
+          "pc": 111,
+          "op": "loadk",
+          "a": 11,
+          "b": 0,
+          "c": 45,
+          "constant": 0.0
+        },
+        {
+          "pc": 112,
+          "op": "call",
+          "a": 7,
+          "b": 5,
+          "c": 2
+        },
+        {
+          "pc": 113,
+          "op": "self",
+          "a": 7,
+          "b": 7,
+          "c": 281,
+          "constant_operands": {
+            "c": "addTo"
+          }
+        },
+        {
+          "pc": 114,
+          "op": "move",
+          "a": 9,
+          "b": 6,
+          "c": 0
+        },
+        {
+          "pc": 115,
+          "op": "call",
+          "a": 7,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 116,
+          "op": "self",
+          "a": 7,
+          "b": 7,
+          "c": 308,
+          "constant_operands": {
+            "c": "setScale"
+          }
+        },
+        {
+          "pc": 117,
+          "op": "loadk",
+          "a": 9,
+          "b": 0,
+          "c": 53,
+          "constant": 0.4
+        },
+        {
+          "pc": 118,
+          "op": "call",
+          "a": 7,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 119,
+          "op": "gettable",
+          "a": 8,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "tab_btns"
+          }
+        },
+        {
+          "pc": 120,
+          "op": "settable",
+          "a": 8,
+          "b": 4,
+          "c": 6,
+          "constant_operands": {}
+        },
+        {
+          "pc": 121,
+          "op": "tforloop",
+          "a": 1,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 122,
+          "op": "jmp",
+          "a": 0,
+          "b": 255,
+          "c": 400
+        },
+        {
+          "pc": 123,
+          "op": "newtable",
+          "a": 1,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 124,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 54,
+          "constant": "ct"
+        },
+        {
+          "pc": 125,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 261,
+          "constant_operands": {
+            "c": "ui"
+          }
+        },
+        {
+          "pc": 126,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 311,
+          "constant_operands": {
+            "c": "TabGroup"
+          }
+        },
+        {
+          "pc": 127,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 305,
+          "constant_operands": {
+            "c": "new"
+          }
+        },
+        {
+          "pc": 128,
+          "op": "call",
+          "a": 2,
+          "b": 1,
+          "c": 2
+        },
+        {
+          "pc": 129,
+          "op": "getglobal",
+          "a": 3,
+          "b": 0,
+          "c": 56,
+          "constant": "pairs"
+        },
+        {
+          "pc": 130,
+          "op": "gettable",
+          "a": 4,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "tab_btns"
+          }
+        },
+        {
+          "pc": 131,
+          "op": "call",
+          "a": 3,
+          "b": 2,
+          "c": 4
+        },
+        {
+          "pc": 132,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 4
+        },
+        {
+          "pc": 133,
+          "op": "getglobal",
+          "a": 8,
+          "b": 0,
+          "c": 1,
+          "constant": "table"
+        },
+        {
+          "pc": 134,
+          "op": "gettable",
+          "a": 8,
+          "b": 8,
+          "c": 313,
+          "constant_operands": {
+            "c": "insert"
+          }
+        },
+        {
+          "pc": 135,
+          "op": "move",
+          "a": 9,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 136,
+          "op": "move",
+          "a": 10,
+          "b": 7,
+          "c": 0
+        },
+        {
+          "pc": 137,
+          "op": "call",
+          "a": 8,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 138,
+          "op": "tforloop",
+          "a": 3,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 139,
+          "op": "jmp",
+          "a": 0,
+          "b": 255,
+          "c": 504
+        },
+        {
+          "pc": 140,
+          "op": "self",
+          "a": 3,
+          "b": 2,
+          "c": 314,
+          "constant_operands": {
+            "c": "addTabButton"
+          }
+        },
+        {
+          "pc": 141,
+          "op": "move",
+          "a": 5,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 142,
+          "op": "call",
+          "a": 3,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 143,
+          "op": "self",
+          "a": 3,
+          "b": 2,
+          "c": 315,
+          "constant_operands": {
+            "c": "onTabSelectChanged"
+          }
+        },
+        {
+          "pc": 144,
+          "op": "closure",
+          "a": 5,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 145,
+          "op": "move",
+          "a": 0,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 146,
+          "op": "call",
+          "a": 3,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 147,
+          "op": "getglobal",
+          "a": 3,
+          "b": 0,
+          "c": 5,
+          "constant": "ui"
+        },
+        {
+          "pc": 148,
+          "op": "gettable",
+          "a": 3,
+          "b": 3,
+          "c": 317,
+          "constant_operands": {
+            "c": "newListView"
+          }
+        },
+        {
+          "pc": 149,
+          "op": "newtable",
+          "a": 4,
+          "b": 0,
+          "c": 4
+        },
+        {
+          "pc": 150,
+          "op": "settable",
+          "a": 4,
+          "b": 318,
+          "c": 319,
+          "constant_operands": {
+            "b": "width",
+            "c": 564.0
+          }
+        },
+        {
+          "pc": 151,
+          "op": "settable",
+          "a": 4,
+          "b": 320,
+          "c": 321,
+          "constant_operands": {
+            "b": "height",
+            "c": 534.0
+          }
+        },
+        {
+          "pc": 152,
+          "op": "settable",
+          "a": 4,
+          "b": 322,
+          "c": 323,
+          "constant_operands": {
+            "b": "ltype",
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 153,
+          "op": "settable",
+          "a": 4,
+          "b": 324,
+          "c": 325,
+          "constant_operands": {
+            "b": "off",
+            "c": 20.0
+          }
+        },
+        {
+          "pc": 154,
+          "op": "call",
+          "a": 3,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 155,
+          "op": "self",
+          "a": 3,
+          "b": 3,
+          "c": 274,
+          "constant_operands": {
+            "c": "align"
+          }
+        },
+        {
+          "pc": 156,
+          "op": "getglobal",
+          "a": 5,
+          "b": 0,
+          "c": 19,
+          "constant": "display"
+        },
+        {
+          "pc": 157,
+          "op": "gettable",
+          "a": 5,
+          "b": 5,
+          "c": 326,
+          "constant_operands": {
+            "c": "LEFT_BOTTOM"
+          }
+        },
+        {
+          "pc": 158,
+          "op": "loadk",
+          "a": 6,
+          "b": 0,
+          "c": 71,
+          "constant": 119.0
+        },
+        {
+          "pc": 159,
+          "op": "loadk",
+          "a": 7,
+          "b": 0,
+          "c": 72,
+          "constant": 23.0
+        },
+        {
+          "pc": 160,
+          "op": "call",
+          "a": 3,
+          "b": 5,
+          "c": 2
+        },
+        {
+          "pc": 161,
+          "op": "self",
+          "a": 3,
+          "b": 3,
+          "c": 281,
+          "constant_operands": {
+            "c": "addTo"
+          }
+        },
+        {
+          "pc": 162,
+          "op": "move",
+          "a": 5,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 163,
+          "op": "call",
+          "a": 3,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 164,
+          "op": "settable",
+          "a": 0,
+          "b": 316,
+          "c": 3,
+          "constant_operands": {
+            "b": "listView"
+          }
+        },
+        {
+          "pc": 165,
+          "op": "self",
+          "a": 3,
+          "b": 2,
+          "c": 329,
+          "constant_operands": {
+            "c": "selectTab"
+          }
+        },
+        {
+          "pc": 166,
+          "op": "gettable",
+          "a": 5,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "tab_btns"
+          }
+        },
+        {
+          "pc": 167,
+          "op": "gettable",
+          "a": 5,
+          "b": 5,
+          "c": 278,
+          "constant_operands": {
+            "c": 1.0
+          }
+        },
+        {
+          "pc": 168,
+          "op": "call",
+          "a": 3,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 169,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.5.0",
+      "line": 50,
+      "last_line": 52,
+      "header": [
+        0,
+        2,
+        0,
+        5
+      ],
+      "constants": [
+        "getFixSeatId"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "self",
+          "a": 2,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "getFixSeatId"
+          }
+        },
+        {
+          "pc": 2,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 3,
+          "op": "self",
+          "a": 3,
+          "b": 1,
+          "c": 256,
+          "constant_operands": {
+            "c": "getFixSeatId"
+          }
+        },
+        {
+          "pc": 4,
+          "op": "call",
+          "a": 3,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 5,
+          "op": "lt",
+          "a": 1,
+          "b": 2,
+          "c": 3,
+          "constant_operands": {}
+        },
+        {
+          "pc": 6,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 0
+        },
+        {
+          "pc": 7,
+          "op": "loadbool",
+          "a": 2,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 8,
+          "op": "loadbool",
+          "a": 2,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 9,
+          "op": "return",
+          "a": 2,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 10,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.5.1",
+      "line": 89,
+      "last_line": 92,
+      "header": [
+        1,
+        1,
+        0,
+        4
+      ],
+      "constants": [
+        "cur_tab",
+        "info",
+        "name",
+        "onTabChanged"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "getupval",
+          "a": 1,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 2,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "info"
+          }
+        },
+        {
+          "pc": 3,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 258,
+          "constant_operands": {
+            "c": "name"
+          }
+        },
+        {
+          "pc": 4,
+          "op": "settable",
+          "a": 1,
+          "b": 256,
+          "c": 2,
+          "constant_operands": {
+            "b": "cur_tab"
+          }
+        },
+        {
+          "pc": 5,
+          "op": "getupval",
+          "a": 1,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 6,
+          "op": "self",
+          "a": 1,
+          "b": 1,
+          "c": 259,
+          "constant_operands": {
+            "c": "onTabChanged"
+          }
+        },
+        {
+          "pc": 7,
+          "op": "move",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 8,
+          "op": "call",
+          "a": 1,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 9,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.6",
+      "line": 104,
+      "last_line": 134,
+      "header": [
+        0,
+        2,
+        0,
+        8
+      ],
+      "constants": [
+        "require",
+        "app.config.sgs_special_cards_conf",
+        "SpecialCardsByID",
+        "info",
+        "getGeneralId",
+        "listView",
+        "setItems",
+        "infos",
+        "Cards",
+        "callback"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 0,
+          "constant": "require"
+        },
+        {
+          "pc": 2,
+          "op": "loadk",
+          "a": 3,
+          "b": 0,
+          "c": 1,
+          "constant": "app.config.sgs_special_cards_conf"
+        },
+        {
+          "pc": 3,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 4,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 258,
+          "constant_operands": {
+            "c": "SpecialCardsByID"
+          }
+        },
+        {
+          "pc": 5,
+          "op": "gettable",
+          "a": 3,
+          "b": 1,
+          "c": 259,
+          "constant_operands": {
+            "c": "info"
+          }
+        },
+        {
+          "pc": 6,
+          "op": "self",
+          "a": 3,
+          "b": 3,
+          "c": 260,
+          "constant_operands": {
+            "c": "getGeneralId"
+          }
+        },
+        {
+          "pc": 7,
+          "op": "call",
+          "a": 3,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 8,
+          "op": "gettable",
+          "a": 4,
+          "b": 0,
+          "c": 261,
+          "constant_operands": {
+            "c": "listView"
+          }
+        },
+        {
+          "pc": 9,
+          "op": "self",
+          "a": 4,
+          "b": 4,
+          "c": 262,
+          "constant_operands": {
+            "c": "setItems"
+          }
+        },
+        {
+          "pc": 10,
+          "op": "newtable",
+          "a": 6,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 11,
+          "op": "gettable",
+          "a": 7,
+          "b": 2,
+          "c": 3,
+          "constant_operands": {}
+        },
+        {
+          "pc": 12,
+          "op": "gettable",
+          "a": 7,
+          "b": 7,
+          "c": 264,
+          "constant_operands": {
+            "c": "Cards"
+          }
+        },
+        {
+          "pc": 13,
+          "op": "settable",
+          "a": 6,
+          "b": 263,
+          "c": 7,
+          "constant_operands": {
+            "b": "infos"
+          }
+        },
+        {
+          "pc": 14,
+          "op": "closure",
+          "a": 7,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 15,
+          "op": "settable",
+          "a": 6,
+          "b": 265,
+          "c": 7,
+          "constant_operands": {
+            "b": "callback"
+          }
+        },
+        {
+          "pc": 16,
+          "op": "call",
+          "a": 4,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 17,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.6.0",
+      "line": 109,
+      "last_line": 132,
+      "header": [
+        0,
+        3,
+        0,
+        12
+      ],
+      "constants": [
+        "display",
+        "newNode",
+        "size",
+        564.0,
+        194.0,
+        "require",
+        "app.view.game.card.CardUi",
+        "new",
+        "getInfo",
+        "align",
+        "LEFT_BOTTOM",
+        0.0,
+        20.0,
+        "addTo",
+        "newScale9Sprite",
+        "#special_card_divide.png",
+        5.0,
+        "cardData",
+        "skills",
+        1.0,
+        "cfg",
+        "cframe.extends.cc.ui.RichLabel",
+        "fontName",
+        "fnt/fzbw.ttf",
+        "fontSize",
+        24.0,
+        "fontColor",
+        "cc",
+        "c3b",
+        255.0,
+        240.0,
+        213.0,
+        "maxWidth",
+        420.0,
+        "lineSpace",
+        "LEFT_TOP",
+        144.0,
+        195.0,
+        "setNotNeedClickUnderLine",
+        "setString",
+        "Desc",
+        ""
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "getglobal",
+          "a": 3,
+          "b": 0,
+          "c": 0,
+          "constant": "display"
+        },
+        {
+          "pc": 2,
+          "op": "gettable",
+          "a": 3,
+          "b": 3,
+          "c": 257,
+          "constant_operands": {
+            "c": "newNode"
+          }
+        },
+        {
+          "pc": 3,
+          "op": "call",
+          "a": 3,
+          "b": 1,
+          "c": 2
+        },
+        {
+          "pc": 4,
+          "op": "self",
+          "a": 3,
+          "b": 3,
+          "c": 258,
+          "constant_operands": {
+            "c": "size"
+          }
+        },
+        {
+          "pc": 5,
+          "op": "loadk",
+          "a": 5,
+          "b": 0,
+          "c": 3,
+          "constant": 564.0
+        },
+        {
+          "pc": 6,
+          "op": "loadk",
+          "a": 6,
+          "b": 0,
+          "c": 4,
+          "constant": 194.0
+        },
+        {
+          "pc": 7,
+          "op": "call",
+          "a": 3,
+          "b": 4,
+          "c": 2
+        },
+        {
+          "pc": 8,
+          "op": "getglobal",
+          "a": 4,
+          "b": 0,
+          "c": 5,
+          "constant": "require"
+        },
+        {
+          "pc": 9,
+          "op": "loadk",
+          "a": 5,
+          "b": 0,
+          "c": 6,
+          "constant": "app.view.game.card.CardUi"
+        },
+        {
+          "pc": 10,
+          "op": "call",
+          "a": 4,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 11,
+          "op": "gettable",
+          "a": 4,
+          "b": 4,
+          "c": 263,
+          "constant_operands": {
+            "c": "new"
+          }
+        },
+        {
+          "pc": 12,
+          "op": "self",
+          "a": 5,
+          "b": 0,
+          "c": 264,
+          "constant_operands": {
+            "c": "getInfo"
+          }
+        },
+        {
+          "pc": 13,
+          "op": "move",
+          "a": 7,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 14,
+          "op": "call",
+          "a": 5,
+          "b": 3,
+          "c": 0
+        },
+        {
+          "pc": 15,
+          "op": "call",
+          "a": 4,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 16,
+          "op": "self",
+          "a": 4,
+          "b": 4,
+          "c": 265,
+          "constant_operands": {
+            "c": "align"
+          }
+        },
+        {
+          "pc": 17,
+          "op": "getglobal",
+          "a": 6,
+          "b": 0,
+          "c": 0,
+          "constant": "display"
+        },
+        {
+          "pc": 18,
+          "op": "gettable",
+          "a": 6,
+          "b": 6,
+          "c": 266,
+          "constant_operands": {
+            "c": "LEFT_BOTTOM"
+          }
+        },
+        {
+          "pc": 19,
+          "op": "loadk",
+          "a": 7,
+          "b": 0,
+          "c": 11,
+          "constant": 0.0
+        },
+        {
+          "pc": 20,
+          "op": "loadk",
+          "a": 8,
+          "b": 0,
+          "c": 12,
+          "constant": 20.0
+        },
+        {
+          "pc": 21,
+          "op": "call",
+          "a": 4,
+          "b": 5,
+          "c": 2
+        },
+        {
+          "pc": 22,
+          "op": "self",
+          "a": 4,
+          "b": 4,
+          "c": 269,
+          "constant_operands": {
+            "c": "addTo"
+          }
+        },
+        {
+          "pc": 23,
+          "op": "move",
+          "a": 6,
+          "b": 3,
+          "c": 0
+        },
+        {
+          "pc": 24,
+          "op": "call",
+          "a": 4,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 25,
+          "op": "getglobal",
+          "a": 5,
+          "b": 0,
+          "c": 0,
+          "constant": "display"
+        },
+        {
+          "pc": 26,
+          "op": "gettable",
+          "a": 5,
+          "b": 5,
+          "c": 270,
+          "constant_operands": {
+            "c": "newScale9Sprite"
+          }
+        },
+        {
+          "pc": 27,
+          "op": "loadk",
+          "a": 6,
+          "b": 0,
+          "c": 15,
+          "constant": "#special_card_divide.png"
+        },
+        {
+          "pc": 28,
+          "op": "call",
+          "a": 5,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 29,
+          "op": "self",
+          "a": 5,
+          "b": 5,
+          "c": 258,
+          "constant_operands": {
+            "c": "size"
+          }
+        },
+        {
+          "pc": 30,
+          "op": "loadk",
+          "a": 7,
+          "b": 0,
+          "c": 3,
+          "constant": 564.0
+        },
+        {
+          "pc": 31,
+          "op": "loadk",
+          "a": 8,
+          "b": 0,
+          "c": 16,
+          "constant": 5.0
+        },
+        {
+          "pc": 32,
+          "op": "call",
+          "a": 5,
+          "b": 4,
+          "c": 2
+        },
+        {
+          "pc": 33,
+          "op": "self",
+          "a": 5,
+          "b": 5,
+          "c": 265,
+          "constant_operands": {
+            "c": "align"
+          }
+        },
+        {
+          "pc": 34,
+          "op": "getglobal",
+          "a": 7,
+          "b": 0,
+          "c": 0,
+          "constant": "display"
+        },
+        {
+          "pc": 35,
+          "op": "gettable",
+          "a": 7,
+          "b": 7,
+          "c": 266,
+          "constant_operands": {
+            "c": "LEFT_BOTTOM"
+          }
+        },
+        {
+          "pc": 36,
+          "op": "loadk",
+          "a": 8,
+          "b": 0,
+          "c": 11,
+          "constant": 0.0
+        },
+        {
+          "pc": 37,
+          "op": "loadk",
+          "a": 9,
+          "b": 0,
+          "c": 11,
+          "constant": 0.0
+        },
+        {
+          "pc": 38,
+          "op": "call",
+          "a": 5,
+          "b": 5,
+          "c": 2
+        },
+        {
+          "pc": 39,
+          "op": "self",
+          "a": 5,
+          "b": 5,
+          "c": 269,
+          "constant_operands": {
+            "c": "addTo"
+          }
+        },
+        {
+          "pc": 40,
+          "op": "move",
+          "a": 7,
+          "b": 3,
+          "c": 0
+        },
+        {
+          "pc": 41,
+          "op": "call",
+          "a": 5,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 42,
+          "op": "gettable",
+          "a": 5,
+          "b": 4,
+          "c": 273,
+          "constant_operands": {
+            "c": "cardData"
+          }
+        },
+        {
+          "pc": 43,
+          "op": "gettable",
+          "a": 5,
+          "b": 5,
+          "c": 274,
+          "constant_operands": {
+            "c": "skills"
+          }
+        },
+        {
+          "pc": 44,
+          "op": "gettable",
+          "a": 5,
+          "b": 5,
+          "c": 275,
+          "constant_operands": {
+            "c": 1.0
+          }
+        },
+        {
+          "pc": 45,
+          "op": "gettable",
+          "a": 5,
+          "b": 5,
+          "c": 276,
+          "constant_operands": {
+            "c": "cfg"
+          }
+        },
+        {
+          "pc": 46,
+          "op": "getglobal",
+          "a": 6,
+          "b": 0,
+          "c": 5,
+          "constant": "require"
+        },
+        {
+          "pc": 47,
+          "op": "loadk",
+          "a": 7,
+          "b": 0,
+          "c": 21,
+          "constant": "cframe.extends.cc.ui.RichLabel"
+        },
+        {
+          "pc": 48,
+          "op": "call",
+          "a": 6,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 49,
+          "op": "gettable",
+          "a": 6,
+          "b": 6,
+          "c": 263,
+          "constant_operands": {
+            "c": "new"
+          }
+        },
+        {
+          "pc": 50,
+          "op": "newtable",
+          "a": 7,
+          "b": 0,
+          "c": 5
+        },
+        {
+          "pc": 51,
+          "op": "settable",
+          "a": 7,
+          "b": 278,
+          "c": 279,
+          "constant_operands": {
+            "b": "fontName",
+            "c": "fnt/fzbw.ttf"
+          }
+        },
+        {
+          "pc": 52,
+          "op": "settable",
+          "a": 7,
+          "b": 280,
+          "c": 281,
+          "constant_operands": {
+            "b": "fontSize",
+            "c": 24.0
+          }
+        },
+        {
+          "pc": 53,
+          "op": "getglobal",
+          "a": 8,
+          "b": 0,
+          "c": 27,
+          "constant": "cc"
+        },
+        {
+          "pc": 54,
+          "op": "gettable",
+          "a": 8,
+          "b": 8,
+          "c": 284,
+          "constant_operands": {
+            "c": "c3b"
+          }
+        },
+        {
+          "pc": 55,
+          "op": "loadk",
+          "a": 9,
+          "b": 0,
+          "c": 29,
+          "constant": 255.0
+        },
+        {
+          "pc": 56,
+          "op": "loadk",
+          "a": 10,
+          "b": 0,
+          "c": 30,
+          "constant": 240.0
+        },
+        {
+          "pc": 57,
+          "op": "loadk",
+          "a": 11,
+          "b": 0,
+          "c": 31,
+          "constant": 213.0
+        },
+        {
+          "pc": 58,
+          "op": "call",
+          "a": 8,
+          "b": 4,
+          "c": 2
+        },
+        {
+          "pc": 59,
+          "op": "settable",
+          "a": 7,
+          "b": 282,
+          "c": 8,
+          "constant_operands": {
+            "b": "fontColor"
+          }
+        },
+        {
+          "pc": 60,
+          "op": "settable",
+          "a": 7,
+          "b": 288,
+          "c": 289,
+          "constant_operands": {
+            "b": "maxWidth",
+            "c": 420.0
+          }
+        },
+        {
+          "pc": 61,
+          "op": "settable",
+          "a": 7,
+          "b": 290,
+          "c": 272,
+          "constant_operands": {
+            "b": "lineSpace",
+            "c": 5.0
+          }
+        },
+        {
+          "pc": 62,
+          "op": "call",
+          "a": 6,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 63,
+          "op": "self",
+          "a": 6,
+          "b": 6,
+          "c": 265,
+          "constant_operands": {
+            "c": "align"
+          }
+        },
+        {
+          "pc": 64,
+          "op": "getglobal",
+          "a": 8,
+          "b": 0,
+          "c": 0,
+          "constant": "display"
+        },
+        {
+          "pc": 65,
+          "op": "gettable",
+          "a": 8,
+          "b": 8,
+          "c": 291,
+          "constant_operands": {
+            "c": "LEFT_TOP"
+          }
+        },
+        {
+          "pc": 66,
+          "op": "loadk",
+          "a": 9,
+          "b": 0,
+          "c": 36,
+          "constant": 144.0
+        },
+        {
+          "pc": 67,
+          "op": "loadk",
+          "a": 10,
+          "b": 0,
+          "c": 37,
+          "constant": 195.0
+        },
+        {
+          "pc": 68,
+          "op": "call",
+          "a": 6,
+          "b": 5,
+          "c": 2
+        },
+        {
+          "pc": 69,
+          "op": "self",
+          "a": 6,
+          "b": 6,
+          "c": 269,
+          "constant_operands": {
+            "c": "addTo"
+          }
+        },
+        {
+          "pc": 70,
+          "op": "move",
+          "a": 8,
+          "b": 3,
+          "c": 0
+        },
+        {
+          "pc": 71,
+          "op": "call",
+          "a": 6,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 72,
+          "op": "self",
+          "a": 7,
+          "b": 6,
+          "c": 294,
+          "constant_operands": {
+            "c": "setNotNeedClickUnderLine"
+          }
+        },
+        {
+          "pc": 73,
+          "op": "loadbool",
+          "a": 9,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 74,
+          "op": "call",
+          "a": 7,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 75,
+          "op": "self",
+          "a": 7,
+          "b": 6,
+          "c": 295,
+          "constant_operands": {
+            "c": "setString"
+          }
+        },
+        {
+          "pc": 76,
+          "op": "gettable",
+          "a": 9,
+          "b": 5,
+          "c": 296,
+          "constant_operands": {
+            "c": "Desc"
+          }
+        },
+        {
+          "pc": 77,
+          "op": "test",
+          "a": 9,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 78,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 0
+        },
+        {
+          "pc": 79,
+          "op": "loadk",
+          "a": 9,
+          "b": 0,
+          "c": 41,
+          "constant": ""
+        },
+        {
+          "pc": 80,
+          "op": "call",
+          "a": 7,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 81,
+          "op": "return",
+          "a": 3,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 82,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.7",
+      "line": 136,
+      "last_line": 159,
+      "header": [
+        0,
+        2,
+        0,
+        20
+      ],
+      "constants": [
+        "display",
+        "getRunningScene",
+        "convertToWorldSpace",
+        "cc",
+        "p",
+        0.0,
+        "getCascadeBoundingBox",
+        "size",
+        "x",
+        "width",
+        "y",
+        "height",
+        "getContentSzie",
+        2.0,
+        "USE_WIDTH",
+        "USE_HEIGHT",
+        "RIGHT_TOP",
+        "align",
+        "addTo",
+        "ZORDER_DLG"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 0,
+          "constant": "display"
+        },
+        {
+          "pc": 2,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 257,
+          "constant_operands": {
+            "c": "getRunningScene"
+          }
+        },
+        {
+          "pc": 3,
+          "op": "call",
+          "a": 2,
+          "b": 1,
+          "c": 2
+        },
+        {
+          "pc": 4,
+          "op": "test",
+          "a": 2,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 5,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 0
+        },
+        {
+          "pc": 6,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 7,
+          "op": "self",
+          "a": 3,
+          "b": 1,
+          "c": 258,
+          "constant_operands": {
+            "c": "convertToWorldSpace"
+          }
+        },
+        {
+          "pc": 8,
+          "op": "getglobal",
+          "a": 5,
+          "b": 0,
+          "c": 3,
+          "constant": "cc"
+        },
+        {
+          "pc": 9,
+          "op": "gettable",
+          "a": 5,
+          "b": 5,
+          "c": 260,
+          "constant_operands": {
+            "c": "p"
+          }
+        },
+        {
+          "pc": 10,
+          "op": "loadk",
+          "a": 6,
+          "b": 0,
+          "c": 5,
+          "constant": 0.0
+        },
+        {
+          "pc": 11,
+          "op": "loadk",
+          "a": 7,
+          "b": 0,
+          "c": 5,
+          "constant": 0.0
+        },
+        {
+          "pc": 12,
+          "op": "call",
+          "a": 5,
+          "b": 3,
+          "c": 0
+        },
+        {
+          "pc": 13,
+          "op": "call",
+          "a": 3,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 14,
+          "op": "self",
+          "a": 4,
+          "b": 1,
+          "c": 262,
+          "constant_operands": {
+            "c": "getCascadeBoundingBox"
+          }
+        },
+        {
+          "pc": 15,
+          "op": "call",
+          "a": 4,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 16,
+          "op": "gettable",
+          "a": 4,
+          "b": 4,
+          "c": 263,
+          "constant_operands": {
+            "c": "size"
+          }
+        },
+        {
+          "pc": 17,
+          "op": "gettable",
+          "a": 5,
+          "b": 3,
+          "c": 264,
+          "constant_operands": {
+            "c": "x"
+          }
+        },
+        {
+          "pc": 18,
+          "op": "gettable",
+          "a": 6,
+          "b": 3,
+          "c": 264,
+          "constant_operands": {
+            "c": "x"
+          }
+        },
+        {
+          "pc": 19,
+          "op": "gettable",
+          "a": 7,
+          "b": 4,
+          "c": 265,
+          "constant_operands": {
+            "c": "width"
+          }
+        },
+        {
+          "pc": 20,
+          "op": "add",
+          "a": 6,
+          "b": 6,
+          "c": 7,
+          "constant_operands": {}
+        },
+        {
+          "pc": 21,
+          "op": "gettable",
+          "a": 7,
+          "b": 3,
+          "c": 266,
+          "constant_operands": {
+            "c": "y"
+          }
+        },
+        {
+          "pc": 22,
+          "op": "gettable",
+          "a": 8,
+          "b": 3,
+          "c": 266,
+          "constant_operands": {
+            "c": "y"
+          }
+        },
+        {
+          "pc": 23,
+          "op": "gettable",
+          "a": 9,
+          "b": 4,
+          "c": 267,
+          "constant_operands": {
+            "c": "height"
+          }
+        },
+        {
+          "pc": 24,
+          "op": "add",
+          "a": 8,
+          "b": 8,
+          "c": 9,
+          "constant_operands": {}
+        },
+        {
+          "pc": 25,
+          "op": "self",
+          "a": 9,
+          "b": 0,
+          "c": 268,
+          "constant_operands": {
+            "c": "getContentSzie"
+          }
+        },
+        {
+          "pc": 26,
+          "op": "call",
+          "a": 9,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 27,
+          "op": "gettable",
+          "a": 10,
+          "b": 9,
+          "c": 265,
+          "constant_operands": {
+            "c": "width"
+          }
+        },
+        {
+          "pc": 28,
+          "op": "gettable",
+          "a": 11,
+          "b": 9,
+          "c": 267,
+          "constant_operands": {
+            "c": "height"
+          }
+        },
+        {
+          "pc": 29,
+          "op": "getglobal",
+          "a": 12,
+          "b": 0,
+          "c": 0,
+          "constant": "display"
+        },
+        {
+          "pc": 30,
+          "op": "gettable",
+          "a": 12,
+          "b": 12,
+          "c": 265,
+          "constant_operands": {
+            "c": "width"
+          }
+        },
+        {
+          "pc": 31,
+          "op": "div",
+          "a": 12,
+          "b": 12,
+          "c": 269,
+          "constant_operands": {
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 32,
+          "op": "getglobal",
+          "a": 13,
+          "b": 0,
+          "c": 0,
+          "constant": "display"
+        },
+        {
+          "pc": 33,
+          "op": "gettable",
+          "a": 13,
+          "b": 13,
+          "c": 270,
+          "constant_operands": {
+            "c": "USE_WIDTH"
+          }
+        },
+        {
+          "pc": 34,
+          "op": "div",
+          "a": 13,
+          "b": 13,
+          "c": 269,
+          "constant_operands": {
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 35,
+          "op": "sub",
+          "a": 12,
+          "b": 12,
+          "c": 13,
+          "constant_operands": {}
+        },
+        {
+          "pc": 36,
+          "op": "getglobal",
+          "a": 13,
+          "b": 0,
+          "c": 0,
+          "constant": "display"
+        },
+        {
+          "pc": 37,
+          "op": "gettable",
+          "a": 13,
+          "b": 13,
+          "c": 267,
+          "constant_operands": {
+            "c": "height"
+          }
+        },
+        {
+          "pc": 38,
+          "op": "div",
+          "a": 13,
+          "b": 13,
+          "c": 269,
+          "constant_operands": {
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 39,
+          "op": "getglobal",
+          "a": 14,
+          "b": 0,
+          "c": 0,
+          "constant": "display"
+        },
+        {
+          "pc": 40,
+          "op": "gettable",
+          "a": 14,
+          "b": 14,
+          "c": 271,
+          "constant_operands": {
+            "c": "USE_HEIGHT"
+          }
+        },
+        {
+          "pc": 41,
+          "op": "div",
+          "a": 14,
+          "b": 14,
+          "c": 269,
+          "constant_operands": {
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 42,
+          "op": "sub",
+          "a": 13,
+          "b": 13,
+          "c": 14,
+          "constant_operands": {}
+        },
+        {
+          "pc": 43,
+          "op": "loadk",
+          "a": 14,
+          "b": 0,
+          "c": 16,
+          "constant": "RIGHT_TOP"
+        },
+        {
+          "pc": 44,
+          "op": "self",
+          "a": 15,
+          "b": 0,
+          "c": 273,
+          "constant_operands": {
+            "c": "align"
+          }
+        },
+        {
+          "pc": 45,
+          "op": "getglobal",
+          "a": 17,
+          "b": 0,
+          "c": 0,
+          "constant": "display"
+        },
+        {
+          "pc": 46,
+          "op": "gettable",
+          "a": 17,
+          "b": 17,
+          "c": 14,
+          "constant_operands": {}
+        },
+        {
+          "pc": 47,
+          "op": "move",
+          "a": 18,
+          "b": 5,
+          "c": 0
+        },
+        {
+          "pc": 48,
+          "op": "move",
+          "a": 19,
+          "b": 8,
+          "c": 0
+        },
+        {
+          "pc": 49,
+          "op": "call",
+          "a": 15,
+          "b": 5,
+          "c": 1
+        },
+        {
+          "pc": 50,
+          "op": "self",
+          "a": 15,
+          "b": 0,
+          "c": 274,
+          "constant_operands": {
+            "c": "addTo"
+          }
+        },
+        {
+          "pc": 51,
+          "op": "move",
+          "a": 17,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 52,
+          "op": "getglobal",
+          "a": 18,
+          "b": 0,
+          "c": 0,
+          "constant": "display"
+        },
+        {
+          "pc": 53,
+          "op": "gettable",
+          "a": 18,
+          "b": 18,
+          "c": 275,
+          "constant_operands": {
+            "c": "ZORDER_DLG"
+          }
+        },
+        {
+          "pc": 54,
+          "op": "call",
+          "a": 15,
+          "b": 4,
+          "c": 1
+        },
+        {
+          "pc": 55,
+          "op": "return",
+          "a": 0,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 56,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    }
+  ],
+  "rea_inventory_evidence": "ev_2ea443d8c59d7d564cce7107d494e63d2b670ad3cef90bc87f8aba521c5793c3",
+  "apk": "yoka_sgs.x_g_android_6.4.1.apk",
+  "layout": {
+    "official": "showWithTarget aligns RIGHT_TOP to target world left/top; panel 715x580; list left119 bottom23 width564 height534; tabs centers(45.5,552-i*75), images115x54; row564x194; description left144 top195 font24 lineSpace5.",
+    "adaptation": "Keep the existing noname 1920-wide battle HUD scale; panel and button share the same root. Convert native viewport rects once to that root. This scale is host adaptation, not an official display-resolution claim. Native long descriptions may expand rows; list uses browser scrolling.",
+    "avatar": "Shared TenUI create.playerAvatar, derived from existing dialog portrait composition; no runtime dependency on 雷的一将 or 雷霆."
+  },
+  "tactical_signal": {
+    "sourceKind": "Previously recovered newer client bytecode, historical source evidence; not claimed to be shipped by the selected 6.4.1 APK.",
+    "modules": {
+      "app.view.game.GameMenuLayer": "48c60695c60a5305938d1058448b7a6a64cd5748d96930acb6b5b83034da33a2",
+      "app.view.game.GameSeatCcb": "0f54477bcff860404681e61cba1677bfd409234cf8abc44b136061ea98e35ff5"
+    },
+    "configModuleSha256": "0272bd092212f9fd8efeace19626ed8aceecbcf1cc56835080aebd71682774b3",
+    "sourceFunctions": [
+      "GameMenuLayer.setTacticalSignalSelected",
+      "GameMenuLayer.onTacticalSignalCancelTouch",
+      "GameSeatCcb.setTacticalSignalBtnVisible",
+      "GameSeatCcb.onTacticalSignalBtnClicked (1431-1458)",
+      "GameSeatCcb.onTacticalSignalFire (1461-1490)"
+    ],
+    "config": {
+      "SignalSpine": "sgs_paiju_zhanshuxinhao",
+      "SignalSound": "gongji",
+      "action": "play",
+      "loop": false,
+      "clickDebounceMs": 300
+    },
+    "remotePrefix": "https://web.sanguosha.com/10/mobile/game/spine/tacticalSignal/",
+    "button": "Original sword frame nor/nor_37 extracted from the downloaded Spine atlas; CSS circle. The complete game_ui_tactical_btn1/2 PNGs were not recovered.",
+    "oldEffectExcluded": "SF_paiju_ledianbing_jihuo is the legacy persistent marker, not the requested transient signal.",
+    "runtime": "Use existing decadeUI.animation shared canvas, native loadSpine/playSpine/stopSpine; never allocate or release the shared canvas. Audio uses game.playAudio.",
+    "network": "Broadcast source/target players; show effects to same-side clients. Real multiplayer and replay have not been validated; tools are disabled in playback."
+  },
+  "files": {
+    "image/ui/xinsha-battle/gameinfo_specialCard_btn.png": "8fb55bf44ad0a5f47f5091fad032128cafd6817fd144e8a1f56ac71dcb33c3dd",
+    "image/ui/xinsha-battle/special_card_divide.png": "8250f79e6ae498a2638d6b754b0df82d00cc1f71701bd6c2a60e471398c535a0",
+    "image/ui/xinsha-battle/special_card_scaleBg.png": "9a4382906417b694e370f183d728d19a069266c5226f8f8f6c3c952bc35d3e91",
+    "image/ui/xinsha-battle/special_card_tabBtn1.png": "2d2cdc34a89b204332606fef2e2a1505727243305c1e2f26d8c4db60d97e6f58",
+    "image/ui/xinsha-battle/special_card_tabBtn2.png": "6af59d40a18d038618b6ec22125735f59f91934b4fb4a0c7c4c4a7eb878f21b3",
+    "image/ui/xinsha-battle/tactical-signal.png": "5b10f07261c1bfbc51c580f248b223fcd9d5f30a5f42d1494dc777907886ce85",
+    "assets/animation/xinsha-battle/sgs_paiju_zhanshuxinhao.atlas": "2edc4def2be811b36d88e10a5b85d8288583bb6c3bfe14ae795cb6e48f7c53db",
+    "assets/animation/xinsha-battle/sgs_paiju_zhanshuxinhao.png": "be58a958942775d1001e98c3d0528427210ba67205d14aec4aa5b85abd418770",
+    "assets/animation/xinsha-battle/sgs_paiju_zhanshuxinhao.skel": "c7c984cc2fdcd5daba62551f60c943d2e6e2b469513539b1a87d2637d9815598",
+    "audio/xinsha-battle/gongji.mp3": "41473b0b1c58d7161dafa35aa3e4a0e4c5cbd3644d1bbf00fc7237b2b654f5f3"
+  }
+}

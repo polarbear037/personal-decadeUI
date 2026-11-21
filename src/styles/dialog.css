@@ -100,9 +100,9 @@
 
 /** 选项框背景 */
 
-#arena.decadeUI[data-loading-style="On"] > .dialog.scroll1:not(.dclieqiong),
-#arena.decadeUI[data-loading-style="On"] > .dialog.scroll2:not(.dclieqiong),
-#arena.decadeUI[data-loading-style="On"] > .dialog.addNewRow:not(.dclieqiong) {
+#arena.decadeUI[data-loading-style="On"] > .dialog.scroll1:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)),
+#arena.decadeUI[data-loading-style="On"] > .dialog.scroll2:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)),
+#arena.decadeUI[data-loading-style="On"] > .dialog.addNewRow:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)) {
 	background-image: url("../../image/ui/dialog/dialog1.png") !important;
 	background-size: 100% 100% !important;
 	background-position: center;
@@ -111,9 +111,9 @@
 	box-shadow: none !important;
 }
 
-#arena.decadeUI[data-loading-style="on"] > .dialog.scroll1:not(.dclieqiong),
-#arena.decadeUI[data-loading-style="on"] > .dialog.scroll2:not(.dclieqiong),
-#arena.decadeUI[data-loading-style="on"] > .dialog.addNewRow:not(.dclieqiong) {
+#arena.decadeUI[data-loading-style="on"] > .dialog.scroll1:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)),
+#arena.decadeUI[data-loading-style="on"] > .dialog.scroll2:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)),
+#arena.decadeUI[data-loading-style="on"] > .dialog.addNewRow:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)) {
 	background-image: url("../../image/ui/dialog/dialog2.png") !important;
 	background-size: 100% 100% !important;
 	background-position: center;
@@ -122,9 +122,9 @@
 	box-shadow: none !important;
 }
 
-#arena.decadeUI[data-loading-style="othersOn"] > .dialog.scroll1:not(.dclieqiong),
-#arena.decadeUI[data-loading-style="othersOn"] > .dialog.scroll2:not(.dclieqiong),
-#arena.decadeUI[data-loading-style="othersOn"] > .dialog.addNewRow:not(.dclieqiong) {
+#arena.decadeUI[data-loading-style="othersOn"] > .dialog.scroll1:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)),
+#arena.decadeUI[data-loading-style="othersOn"] > .dialog.scroll2:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)),
+#arena.decadeUI[data-loading-style="othersOn"] > .dialog.addNewRow:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)) {
 	width: 900px !important;
 	height: 200px;
 	left: calc(50% - 450px) !important;
@@ -137,9 +137,9 @@
 	box-shadow: none !important;
 }
 
-#arena.decadeUI[data-loading-style="othersOff"] > .dialog.scroll1:not(.dclieqiong),
-#arena.decadeUI[data-loading-style="othersOff"] > .dialog.scroll2:not(.dclieqiong),
-#arena.decadeUI[data-loading-style="othersOff"] > .dialog.addNewRow:not(.dclieqiong) {
+#arena.decadeUI[data-loading-style="othersOff"] > .dialog.scroll1:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)),
+#arena.decadeUI[data-loading-style="othersOff"] > .dialog.scroll2:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)),
+#arena.decadeUI[data-loading-style="othersOff"] > .dialog.addNewRow:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)) {
 	width: 900px !important;
 	height: 200px;
 	left: calc(50% - 450px) !important;
@@ -152,9 +152,9 @@
 	box-shadow: none !important;
 }
 
-#arena.decadeUI[data-loading-style="onlineUI"] > .dialog.scroll1:not(.dclieqiong),
-#arena.decadeUI[data-loading-style="onlineUI"] > .dialog.scroll2:not(.dclieqiong),
-#arena.decadeUI[data-loading-style="onlineUI"] > .dialog.addNewRow:not(.dclieqiong) {
+#arena.decadeUI[data-loading-style="onlineUI"] > .dialog.scroll1:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)),
+#arena.decadeUI[data-loading-style="onlineUI"] > .dialog.scroll2:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)),
+#arena.decadeUI[data-loading-style="onlineUI"] > .dialog.addNewRow:not(.dclieqiong):where(:not(.dialog-ol-layout, .online-faction-dialog, .xinsha-faction-dialog)) {
 	width: 900px !important;
 	height: 200px;
 	left: calc(50% - 450px) !important;

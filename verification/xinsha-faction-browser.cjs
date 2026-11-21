@@ -75,18 +75,19 @@ for (const item of JSON.parse(fs.readFileSync(path.join(__dirname, 'xinsha-facti
           window.currentDialog?.close();
           _status.event = { name: 'chooseButton', player: game.me, isMine: () => true, selectButton: [1, 1], filterButton: button => !button.classList.contains('unselectable'), forced };
           const dialog = ui.create.dialog('请选择你的势力', [groups.map(group => ['', '', `group_${group}`]), 'vcard'], 'hidden');
-          _status.event.dialog = dialog; window.currentDialog = dialog; dialog.open(); return dialog;
+          _status.event.dialog = dialog; window.currentDialog = dialog; dialog.open(); dialog.classList.add('scroll1', 'scroll2'); return dialog;
         };
       });
-      for (const zoom of [.7, 1, 1.2]) {
-        const geometry = await page.evaluate(async zoom => {
+      for (const zoom of [.7, 1, 1.2]) for (const loading of style === 'othersOff' ? ['othersOff', 'dialog_xinsha'] : [style === 'onlineUI' ? 'dialog_ol' : 'on']) {
+        const geometry = await page.evaluate(async ({zoom, loading}) => {
+          ui.arena.dataset.loadingStyle = loading;
           document.body.style.zoom = zoom; game.documentZoom = zoom;
           const dialog = makeFaction();
           await document.fonts.ready;
           await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
           const rect = node => node.getBoundingClientRect().toJSON();
           return { window: rect(ui.window), dialog: rect(dialog), buttons: dialog.buttons.map(rect), xinsha: dialog.classList.contains('xinsha-faction-dialog'), online: dialog.classList.contains('online-faction-dialog'), frame: getComputedStyle(dialog, '::before').backgroundImage, image: getComputedStyle(dialog.buttons[0], '::before').backgroundImage, title: dialog.querySelector('.xinsha-faction-title')?.textContent, animated: dialog.buttons.some(button => button.getAnimations().length) };
-        }, zoom);
+        }, {zoom, loading});
         if (style === 'othersOff') {
           assert.equal(geometry.xinsha, true); assert.equal(geometry.online, false); assert.equal(geometry.title, '选择势力'); assert.equal(geometry.animated, false);
           const unit = Math.min(geometry.window.width / 1334, geometry.window.height / 750);
@@ -108,7 +109,7 @@ for (const item of JSON.parse(fs.readFileSync(path.join(__dirname, 'xinsha-facti
           });
           assert.deepEqual(hidden, { hidden: true, same: true, visible: true });
         } else assert.equal(geometry.xinsha, false);
-        report.cases.push({ style, zoom, geometry });
+        report.cases.push({ style, zoom, loading, geometry });
       }
       if (style === 'othersOff') {
         await page.evaluate(() => makeFaction(['wei', 'shu'], false));

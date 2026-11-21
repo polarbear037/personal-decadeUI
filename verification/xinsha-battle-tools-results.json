@@ -1,0 +1,523 @@
+{
+  "geometry": [
+    {
+      "zoom": 1,
+      "wrapped": false,
+      "width": 1638,
+      "dx": 0,
+      "dy": 0,
+      "panel": {
+        "x": 839.328125,
+        "y": 93.359375,
+        "width": 609.984375,
+        "height": 494.8125,
+        "top": 93.359375,
+        "right": 1449.3125,
+        "bottom": 588.171875,
+        "left": 839.328125
+      },
+      "listX": 118.99997138278388,
+      "listY": 22.999996422847985,
+      "listW": 563.9999713827839,
+      "scale": 0.853125,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1,
+      "wrapped": true,
+      "width": 1638,
+      "dx": 0,
+      "dy": 0,
+      "panel": {
+        "x": 839.328125,
+        "y": 93.359375,
+        "width": 609.984375,
+        "height": 494.8125,
+        "top": 93.359375,
+        "right": 1449.3125,
+        "bottom": 588.171875,
+        "left": 839.328125
+      },
+      "listX": 118.99997138278388,
+      "listY": 22.999996422847985,
+      "listW": 563.9999713827839,
+      "scale": 0.853125,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1.221153846153846,
+      "wrapped": false,
+      "width": 1638,
+      "dx": -0.017578125,
+      "dy": -0.015625,
+      "panel": {
+        "x": 839.3125,
+        "y": 93.34375,
+        "width": 609.982421875,
+        "height": 494.808349609375,
+        "top": 93.34375,
+        "right": 1449.294921875,
+        "bottom": 588.152099609375,
+        "left": 839.3125
+      },
+      "listX": 118.99605981697731,
+      "listY": 22.993112484430583,
+      "listW": 563.9900441787192,
+      "scale": 0.8531222683566434,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1.221153846153846,
+      "wrapped": true,
+      "width": 1638,
+      "dx": -0.017578125,
+      "dy": -0.015625,
+      "panel": {
+        "x": 839.3125,
+        "y": 93.34375,
+        "width": 609.982421875,
+        "height": 494.808349609375,
+        "top": 93.34375,
+        "right": 1449.294921875,
+        "bottom": 588.152099609375,
+        "left": 839.3125
+      },
+      "listX": 118.99605981697731,
+      "listY": 22.993112484430583,
+      "listW": 563.9900441787192,
+      "scale": 0.8531222683566434,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1.5288461538461537,
+      "wrapped": false,
+      "width": 1638,
+      "dx": 0.002197265625,
+      "dy": 0,
+      "panel": {
+        "x": 839.328125,
+        "y": 93.359375,
+        "width": 609.986572265625,
+        "height": 494.8074951171875,
+        "top": 93.359375,
+        "right": 1449.314697265625,
+        "bottom": 588.1668701171875,
+        "left": 839.328125
+      },
+      "listX": 118.99288924777017,
+      "listY": 22.99528117814453,
+      "listW": 563.9977251396335,
+      "scale": 0.8531280730987763,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1.5288461538461537,
+      "wrapped": true,
+      "width": 1638,
+      "dx": 0.002197265625,
+      "dy": 0,
+      "panel": {
+        "x": 839.328125,
+        "y": 93.359375,
+        "width": 609.986572265625,
+        "height": 494.8074951171875,
+        "top": 93.359375,
+        "right": 1449.314697265625,
+        "bottom": 588.1668701171875,
+        "left": 839.328125
+      },
+      "listX": 118.99288924777017,
+      "listY": 22.99528117814453,
+      "listW": 563.9977251396335,
+      "scale": 0.8531280730987763,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1,
+      "wrapped": false,
+      "width": 2052,
+      "dx": 0,
+      "dy": 0,
+      "panel": {
+        "x": 1051.46875,
+        "y": 116.953125,
+        "width": 764.15625,
+        "height": 619.875,
+        "top": 116.953125,
+        "right": 1815.625,
+        "bottom": 736.828125,
+        "left": 1051.46875
+      },
+      "listX": 119.00002284356724,
+      "listY": 23.000002855445903,
+      "listW": 564.0000228435672,
+      "scale": 1.06875,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1,
+      "wrapped": true,
+      "width": 2052,
+      "dx": 0,
+      "dy": 0,
+      "panel": {
+        "x": 1051.46875,
+        "y": 116.953125,
+        "width": 764.15625,
+        "height": 619.875,
+        "top": 116.953125,
+        "right": 1815.625,
+        "bottom": 736.828125,
+        "left": 1051.46875
+      },
+      "listX": 119.00002284356724,
+      "listY": 23.000002855445903,
+      "listW": 564.0000228435672,
+      "scale": 1.06875,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1.221153846153846,
+      "wrapped": false,
+      "width": 2052,
+      "dx": 0.0009765625,
+      "dy": 0,
+      "panel": {
+        "x": 1051.46875,
+        "y": 116.953125,
+        "width": 764.1572265625,
+        "height": 619.87255859375,
+        "top": 116.953125,
+        "right": 1815.6259765625,
+        "bottom": 736.82568359375,
+        "left": 1051.46875
+      },
+      "listX": 118.99610158249808,
+      "listY": 22.99310612372955,
+      "listW": 563.990050441088,
+      "scale": 1.0687513658216783,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1.221153846153846,
+      "wrapped": true,
+      "width": 2052,
+      "dx": 0.0009765625,
+      "dy": 0,
+      "panel": {
+        "x": 1051.46875,
+        "y": 116.953125,
+        "width": 764.1572265625,
+        "height": 619.87255859375,
+        "top": 116.953125,
+        "right": 1815.6259765625,
+        "bottom": 736.82568359375,
+        "left": 1051.46875
+      },
+      "listX": 118.99610158249808,
+      "listY": 22.99310612372955,
+      "listW": 563.990050441088,
+      "scale": 1.0687513658216783,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1.5288461538461537,
+      "wrapped": false,
+      "width": 2052,
+      "dx": 0.000732421875,
+      "dy": 0,
+      "panel": {
+        "x": 1051.46875,
+        "y": 116.953125,
+        "width": 764.156982421875,
+        "height": 619.8671875,
+        "top": 116.953125,
+        "right": 1815.625732421875,
+        "bottom": 736.8203125,
+        "left": 1051.46875
+      },
+      "listX": 118.99294150422989,
+      "listY": 22.995283606609227,
+      "listW": 563.9976547825917,
+      "scale": 1.0687510243662588,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1.5288461538461537,
+      "wrapped": true,
+      "width": 2052,
+      "dx": 0.000732421875,
+      "dy": 0,
+      "panel": {
+        "x": 1051.46875,
+        "y": 116.953125,
+        "width": 764.156982421875,
+        "height": 619.8671875,
+        "top": 116.953125,
+        "right": 1815.625732421875,
+        "bottom": 736.8203125,
+        "left": 1051.46875
+      },
+      "listX": 118.99294150422989,
+      "listY": 22.995283606609227,
+      "listW": 563.9976547825917,
+      "scale": 1.0687510243662588,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1,
+      "wrapped": false,
+      "width": 1280,
+      "dx": -0.005126953125,
+      "dy": 0,
+      "panel": {
+        "x": 655.875,
+        "y": 72.953125,
+        "width": 476.666748046875,
+        "height": 386.66668701171875,
+        "top": 72.953125,
+        "right": 1132.541748046875,
+        "bottom": 459.61981201171875,
+        "left": 655.875
+      },
+      "listX": 118.99994916583309,
+      "listY": 22.999999887959962,
+      "listW": 563.9999952623069,
+      "scale": 0.6666667804851398,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1,
+      "wrapped": true,
+      "width": 1280,
+      "dx": -0.005126953125,
+      "dy": 0,
+      "panel": {
+        "x": 655.875,
+        "y": 72.953125,
+        "width": 476.666748046875,
+        "height": 386.66668701171875,
+        "top": 72.953125,
+        "right": 1132.541748046875,
+        "bottom": 459.61981201171875,
+        "left": 655.875
+      },
+      "listX": 118.99994916583309,
+      "listY": 22.999999887959962,
+      "listW": 563.9999952623069,
+      "scale": 0.6666667804851398,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1.221153846153846,
+      "wrapped": false,
+      "width": 1280,
+      "dx": -0.0047607421875,
+      "dy": 0,
+      "panel": {
+        "x": 655.875,
+        "y": 72.953125,
+        "width": 476.6671142578125,
+        "height": 386.6650695800781,
+        "top": 72.953125,
+        "right": 1132.5421142578125,
+        "bottom": 459.6181945800781,
+        "left": 655.875
+      },
+      "listX": 118.99610408268472,
+      "listY": 22.99311576902816,
+      "listW": 563.9901320330041,
+      "scale": 0.6666672926682692,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1.221153846153846,
+      "wrapped": true,
+      "width": 1280,
+      "dx": -0.0047607421875,
+      "dy": 0,
+      "panel": {
+        "x": 655.875,
+        "y": 72.953125,
+        "width": 476.6671142578125,
+        "height": 386.6650695800781,
+        "top": 72.953125,
+        "right": 1132.5421142578125,
+        "bottom": 459.6181945800781,
+        "left": 655.875
+      },
+      "listX": 118.99610408268472,
+      "listY": 22.99311576902816,
+      "listW": 563.9901320330041,
+      "scale": 0.6666672926682692,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1.5288461538461537,
+      "wrapped": false,
+      "width": 1280,
+      "dx": -0.0050048828125,
+      "dy": 0,
+      "panel": {
+        "x": 655.875,
+        "y": 72.953125,
+        "width": 476.6668701171875,
+        "height": 386.66156005859375,
+        "top": 72.953125,
+        "right": 1132.5418701171875,
+        "bottom": 459.61468505859375,
+        "left": 655.875
+      },
+      "listX": 118.99286913342492,
+      "listY": 22.99527903404864,
+      "listW": 563.9975620093447,
+      "scale": 0.6666669512128497,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    },
+    {
+      "zoom": 1.5288461538461537,
+      "wrapped": true,
+      "width": 1280,
+      "dx": -0.0050048828125,
+      "dy": 0,
+      "panel": {
+        "x": 655.875,
+        "y": 72.953125,
+        "width": 476.6668701171875,
+        "height": 386.66156005859375,
+        "top": 72.953125,
+        "right": 1132.5418701171875,
+        "bottom": 459.61468505859375,
+        "left": 655.875
+      },
+      "listX": 118.99286913342492,
+      "listY": 22.99527903404864,
+      "listW": 563.9975620093447,
+      "scale": 0.6666669512128497,
+      "cardCount": 1,
+      "avatarBackground": "url(\"http://127.0.0.1:10203/image/character/dc_liuye.jpg\"), url(\"http://127.0.0.1:10203/image/character/default_silhouette_male.jpg\")"
+    }
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:10203/extension/十周年UI/src/ui/xinsha-battle-tools.js",
+    "http://127.0.0.1:10203/extension/十周年UI/src/styles/xinsha-battle-tools.css",
+    "http://127.0.0.1:10203/extension/十周年UI/image/ui/xinsha-battle/tactical-signal.png",
+    "http://127.0.0.1:10203/extension/十周年UI/image/ui/xinsha-battle/gameinfo_specialCard_btn.png",
+    "http://127.0.0.1:10203/extension/十周年UI/image/ui/xinsha-battle/special_card_scaleBg.png",
+    "http://127.0.0.1:10203/extension/十周年UI/image/ui/xinsha-battle/special_card_tabBtn2.png",
+    "http://127.0.0.1:10203/extension/十周年UI/image/ui/xinsha-battle/special_card_tabBtn1.png",
+    "http://127.0.0.1:10203/extension/十周年UI/image/ui/xinsha-battle/special_card_divide.png",
+    "http://127.0.0.1:10203/extension/十周年UI/assets/animation/xinsha-battle/sgs_paiju_zhanshuxinhao.skel",
+    "http://127.0.0.1:10203/extension/十周年UI/assets/animation/xinsha-battle/sgs_paiju_zhanshuxinhao.atlas",
+    "http://127.0.0.1:10203/extension/十周年UI/assets/animation/xinsha-battle/sgs_paiju_zhanshuxinhao.png",
+    "http://127.0.0.1:10203/extension/十周年UI/audio/xinsha-battle/gongji.mp3"
+  ],
+  "start": {
+    "registered": true,
+    "old": false,
+    "count": 1,
+    "roster": [
+      {
+        "names": [
+          "dc_liuye"
+        ],
+        "cards": [
+          "pilitoushiche"
+        ]
+      },
+      {
+        "names": [
+          "puyuan"
+        ],
+        "cards": [
+          "pyzhuren_heart",
+          "pyzhuren_diamond",
+          "pyzhuren_club",
+          "pyzhuren_spade",
+          "pyzhuren_shandian"
+        ]
+      }
+    ],
+    "helper": "function"
+  },
+  "cardImage": {
+    "src": "http://127.0.0.1:10203/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/card-skins/online/pilitoushiche.jpg",
+    "width": 133,
+    "height": 186
+  },
+  "interaction": {
+    "many": 5,
+    "scrolled": true,
+    "targets": 7,
+    "panelClosed": true,
+    "cancelled": true,
+    "calls": 1,
+    "playerClicks": 0,
+    "hidden": true,
+    "eventUnchanged": true,
+    "cardsUnchanged": true,
+    "targetsUnchanged": true
+  },
+  "effect": {
+    "canvasCount": 2,
+    "afterCanvasCount": 2,
+    "enemyIgnored": true,
+    "loaded": true,
+    "active": 1,
+    "name": "xinsha-battle/sgs_paiju_zhanshuxinhao",
+    "time": 0.1833000000000002,
+    "scale": 0.7183257918552036,
+    "referWidth": 158.75,
+    "action": "play",
+    "audio": [
+      {
+        "src": "http://127.0.0.1:10203/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/audio/xinsha-battle/gongji.mp3",
+        "ready": 4,
+        "duration": 0.5625,
+        "paused": false
+      }
+    ],
+    "pixels": 16206,
+    "cleaned": true,
+    "canvasPreserved": true
+  },
+  "lifecycle": {
+    "out": [
+      {
+        "style": "onlineUI",
+        "count": 0
+      },
+      {
+        "style": "on",
+        "count": 0
+      },
+      {
+        "style": "othersOff",
+        "count": 1
+      }
+    ],
+    "played": 0,
+    "audio": 0,
+    "hidden": 0,
+    "overCount": 0,
+    "skillRemoved": true
+  }
+}
