@@ -1,0 +1,1418 @@
+{
+  "errors": [],
+  "cases": [],
+  "initial": {
+    "name": "sunquan",
+    "double": false,
+    "layers": [
+      {
+        "layer": -1,
+        "clip": {
+          "x": 0,
+          "y": 0,
+          "width": [
+            0,
+            1
+          ],
+          "height": [
+            0,
+            0.9
+          ]
+        }
+      },
+      {
+        "layer": 0
+      }
+    ],
+    "prototype": true,
+    "card": {
+      "x": 312.32464599609375,
+      "y": 214.43333435058594,
+      "width": 262.833984375,
+      "height": 363.9239501953125,
+      "top": 214.43333435058594,
+      "right": 575.1586303710938,
+      "bottom": 578.3572845458984,
+      "left": 312.32464599609375
+    },
+    "dialog": {
+      "x": 187.34063720703125,
+      "y": 177.67333984375,
+      "width": 1263.31884765625,
+      "height": 563.6533203125,
+      "top": 177.67333984375,
+      "right": 1450.6594848632812,
+      "bottom": 741.32666015625,
+      "left": 187.34063720703125
+    },
+    "avatar": {
+      "x": 340.62982177734375,
+      "y": 214.43333435058594,
+      "width": 233.89703369140625,
+      "height": 363.9239501953125,
+      "top": 214.43333435058594,
+      "right": 574.52685546875,
+      "bottom": 578.3572845458984,
+      "left": 340.62982177734375
+    },
+    "hp": {
+      "x": 517.6405029296875,
+      "y": 414.30267333984375,
+      "width": 53.47454833984375,
+      "height": 155.96746826171875,
+      "top": 414.30267333984375,
+      "right": 571.1150512695312,
+      "bottom": 570.2701416015625,
+      "left": 517.6405029296875
+    },
+    "camp": {
+      "x": 286.041259765625,
+      "y": 216.45513916015625,
+      "width": 74.80657958984375,
+      "height": 258.7903747558594,
+      "top": 216.45513916015625,
+      "right": 360.84783935546875,
+      "bottom": 475.2455139160156,
+      "left": 286.041259765625
+    },
+    "frame": true,
+    "hiddenNodes": [],
+    "players": 8,
+    "dynamic": 0,
+    "listeners": 3
+  },
+  "rounded": {
+    "clip": "url(\"#dskin-clip\")",
+    "clipped": {
+      "left": [
+        208,
+        104,
+        76,
+        255
+      ],
+      "right": [
+        58,
+        39,
+        27,
+        255
+      ],
+      "body": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "head": [
+        0,
+        255,
+        0,
+        255
+      ]
+    },
+    "square": {
+      "left": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "right": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "body": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "head": [
+        0,
+        255,
+        0,
+        255
+      ]
+    }
+  },
+  "cleanup": {
+    "destroyed": true,
+    "connected": false,
+    "width": 0,
+    "height": 0,
+    "active": 0,
+    "listeners": 2,
+    "before": 2,
+    "assets": [
+      0,
+      0
+    ],
+    "frames": [
+      null,
+      null
+    ]
+  },
+  "hpReopen": [
+    {
+      "maxHp": 4,
+      "hp": 4,
+      "round": 0,
+      "reopen": false,
+      "condition": "high",
+      "sourceCondition": "high",
+      "html": "<div></div><div></div><div></div><div></div>",
+      "sourceHtml": "<div></div><div></div><div></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 4,
+      "round": 0,
+      "reopen": true,
+      "condition": "high",
+      "sourceCondition": "high",
+      "html": "<div></div><div></div><div></div><div></div>",
+      "sourceHtml": "<div></div><div></div><div></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 4,
+      "round": 1,
+      "reopen": false,
+      "condition": "high",
+      "sourceCondition": "high",
+      "html": "<div></div><div></div><div></div><div></div>",
+      "sourceHtml": "<div></div><div></div><div></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 4,
+      "round": 1,
+      "reopen": true,
+      "condition": "high",
+      "sourceCondition": "high",
+      "html": "<div></div><div></div><div></div><div></div>",
+      "sourceHtml": "<div></div><div></div><div></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 4,
+      "round": 2,
+      "reopen": false,
+      "condition": "high",
+      "sourceCondition": "high",
+      "html": "<div></div><div></div><div></div><div></div>",
+      "sourceHtml": "<div></div><div></div><div></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 4,
+      "round": 2,
+      "reopen": true,
+      "condition": "high",
+      "sourceCondition": "high",
+      "html": "<div></div><div></div><div></div><div></div>",
+      "sourceHtml": "<div></div><div></div><div></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 2,
+      "round": 0,
+      "reopen": false,
+      "condition": "mid",
+      "sourceCondition": "mid",
+      "html": "<div class=\"lost\"></div><div class=\"lost\"></div><div></div><div></div>",
+      "sourceHtml": "<div class=\"lost\"></div><div class=\"lost\"></div><div></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 2,
+      "round": 0,
+      "reopen": true,
+      "condition": "mid",
+      "sourceCondition": "mid",
+      "html": "<div class=\"lost\"></div><div class=\"lost\"></div><div></div><div></div>",
+      "sourceHtml": "<div class=\"lost\"></div><div class=\"lost\"></div><div></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 2,
+      "round": 1,
+      "reopen": false,
+      "condition": "mid",
+      "sourceCondition": "mid",
+      "html": "<div class=\"lost\"></div><div class=\"lost\"></div><div></div><div></div>",
+      "sourceHtml": "<div class=\"lost\"></div><div class=\"lost\"></div><div></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 2,
+      "round": 1,
+      "reopen": true,
+      "condition": "mid",
+      "sourceCondition": "mid",
+      "html": "<div class=\"lost\"></div><div class=\"lost\"></div><div></div><div></div>",
+      "sourceHtml": "<div class=\"lost\"></div><div class=\"lost\"></div><div></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 2,
+      "round": 2,
+      "reopen": false,
+      "condition": "mid",
+      "sourceCondition": "mid",
+      "html": "<div class=\"lost\"></div><div class=\"lost\"></div><div></div><div></div>",
+      "sourceHtml": "<div class=\"lost\"></div><div class=\"lost\"></div><div></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 2,
+      "round": 2,
+      "reopen": true,
+      "condition": "mid",
+      "sourceCondition": "mid",
+      "html": "<div class=\"lost\"></div><div class=\"lost\"></div><div></div><div></div>",
+      "sourceHtml": "<div class=\"lost\"></div><div class=\"lost\"></div><div></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass2.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 1,
+      "round": 0,
+      "reopen": false,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "<div class=\"lost\"></div><div class=\"lost\"></div><div class=\"lost\"></div><div></div>",
+      "sourceHtml": "<div class=\"lost\"></div><div class=\"lost\"></div><div class=\"lost\"></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 1,
+      "round": 0,
+      "reopen": true,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "<div class=\"lost\"></div><div class=\"lost\"></div><div class=\"lost\"></div><div></div>",
+      "sourceHtml": "<div class=\"lost\"></div><div class=\"lost\"></div><div class=\"lost\"></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 1,
+      "round": 1,
+      "reopen": false,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "<div class=\"lost\"></div><div class=\"lost\"></div><div class=\"lost\"></div><div></div>",
+      "sourceHtml": "<div class=\"lost\"></div><div class=\"lost\"></div><div class=\"lost\"></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 1,
+      "round": 1,
+      "reopen": true,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "<div class=\"lost\"></div><div class=\"lost\"></div><div class=\"lost\"></div><div></div>",
+      "sourceHtml": "<div class=\"lost\"></div><div class=\"lost\"></div><div class=\"lost\"></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 1,
+      "round": 2,
+      "reopen": false,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "<div class=\"lost\"></div><div class=\"lost\"></div><div class=\"lost\"></div><div></div>",
+      "sourceHtml": "<div class=\"lost\"></div><div class=\"lost\"></div><div class=\"lost\"></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 4,
+      "hp": 1,
+      "round": 2,
+      "reopen": true,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "<div class=\"lost\"></div><div class=\"lost\"></div><div class=\"lost\"></div><div></div>",
+      "sourceHtml": "<div class=\"lost\"></div><div class=\"lost\"></div><div class=\"lost\"></div><div></div>",
+      "classes": "hp",
+      "sourceClasses": "hp",
+      "images": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass4.png\")",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "228px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 7,
+      "round": 0,
+      "reopen": false,
+      "condition": "high",
+      "sourceCondition": "high",
+      "html": "7<br>/<br>7<div></div>",
+      "sourceHtml": "7<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 7,
+      "round": 0,
+      "reopen": true,
+      "condition": "high",
+      "sourceCondition": "high",
+      "html": "7<br>/<br>7<div></div>",
+      "sourceHtml": "7<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 7,
+      "round": 1,
+      "reopen": false,
+      "condition": "high",
+      "sourceCondition": "high",
+      "html": "7<br>/<br>7<div></div>",
+      "sourceHtml": "7<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 7,
+      "round": 1,
+      "reopen": true,
+      "condition": "high",
+      "sourceCondition": "high",
+      "html": "7<br>/<br>7<div></div>",
+      "sourceHtml": "7<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 7,
+      "round": 2,
+      "reopen": false,
+      "condition": "high",
+      "sourceCondition": "high",
+      "html": "7<br>/<br>7<div></div>",
+      "sourceHtml": "7<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 7,
+      "round": 2,
+      "reopen": true,
+      "condition": "high",
+      "sourceCondition": "high",
+      "html": "7<br>/<br>7<div></div>",
+      "sourceHtml": "7<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass1.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 2,
+      "round": 0,
+      "reopen": false,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "2<br>/<br>7<div></div>",
+      "sourceHtml": "2<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 2,
+      "round": 0,
+      "reopen": true,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "2<br>/<br>7<div></div>",
+      "sourceHtml": "2<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 2,
+      "round": 1,
+      "reopen": false,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "2<br>/<br>7<div></div>",
+      "sourceHtml": "2<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 2,
+      "round": 1,
+      "reopen": true,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "2<br>/<br>7<div></div>",
+      "sourceHtml": "2<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 2,
+      "round": 2,
+      "reopen": false,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "2<br>/<br>7<div></div>",
+      "sourceHtml": "2<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 2,
+      "round": 2,
+      "reopen": true,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "2<br>/<br>7<div></div>",
+      "sourceHtml": "2<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 1,
+      "round": 0,
+      "reopen": false,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "1<br>/<br>7<div></div>",
+      "sourceHtml": "1<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 1,
+      "round": 0,
+      "reopen": true,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "1<br>/<br>7<div></div>",
+      "sourceHtml": "1<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 1,
+      "round": 1,
+      "reopen": false,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "1<br>/<br>7<div></div>",
+      "sourceHtml": "1<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 1,
+      "round": 1,
+      "reopen": true,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "1<br>/<br>7<div></div>",
+      "sourceHtml": "1<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 1,
+      "round": 2,
+      "reopen": false,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "1<br>/<br>7<div></div>",
+      "sourceHtml": "1<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    },
+    {
+      "maxHp": 7,
+      "hp": 1,
+      "round": 2,
+      "reopen": true,
+      "condition": "low",
+      "sourceCondition": "low",
+      "html": "1<br>/<br>7<div></div>",
+      "sourceHtml": "1<br>/<br>7<div></div>",
+      "classes": "hp textstyle",
+      "sourceClasses": "hp textstyle",
+      "images": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "sourceImages": [
+        "none",
+        "none",
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/glass3.png\")"
+      ],
+      "frame": [
+        "url(\"http://127.0.0.1:10226/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "sourceFrame": [
+        "url(\"http://127.0.0.1:10226/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "248px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ]
+    }
+  ]
+}

@@ -94,6 +94,7 @@ class t {
 		return void 0 !== this.spine.assets[e];
 	}
 	loadSpine(filename, skelType, onload, onerror) {
+		if (this.destroyed) return;
 		if (!this.spine.assetManager) return void (onerror && onerror());
 		const type = (skelType || "skel").toLowerCase(),
 			manager = this.spine.assetManager,
@@ -105,12 +106,15 @@ class t {
 				errors: 0,
 				toLoad: 2,
 				onerror: () => {
+					if (this.destroyed) { manager.dispose(); return; }
 					(reader.toLoad--, reader.errors++, 0 === reader.toLoad && (console.error(`loadSpine: [${filename}] 加载失败.`), onerror && onerror()));
 				},
 				onload: () => {
+					if (this.destroyed) { manager.dispose(); return; }
 					(reader.toLoad--, reader.loaded++, 0 === reader.toLoad && (reader.errors > 0 ? (console.error(`loadSpine: [${filename}] 加载失败.`), onerror && onerror()) : ((assets[filename] = { name: filename, skelType: type }), onload && onload())));
 				},
 				ontextLoad: (path, data) => {
+					if (this.destroyed) { manager.dispose(); return; }
 					const atlasReader = new spine.TextureAtlasReader(data),
 						prefix = this._getPathPrefix(filename);
 					let imageName = null;

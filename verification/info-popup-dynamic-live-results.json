@@ -1,0 +1,44 @@
+{
+  "before": {
+    "event": "chooseToUse",
+    "paused": true,
+    "paused2": true,
+    "players": 4,
+    "counter": 3
+  },
+  "after": {
+    "event": "chooseToUse",
+    "paused": true,
+    "paused2": true,
+    "players": 4,
+    "counter": 2
+  },
+  "name": "dc_guansuo",
+  "double": false,
+  "rank": "one",
+  "sourceRank": "one",
+  "offscreen": false,
+  "primary": "关索/万花簇威/daiji2",
+  "layers": [
+    {
+      "name": "关索/万花簇威/beijing",
+      "layer": -1,
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": [
+          0,
+          1
+        ],
+        "height": [
+          0,
+          0.9
+        ]
+      }
+    },
+    {
+      "name": "关索/万花簇威/daiji2",
+      "layer": 0
+    }
+  ]
+}

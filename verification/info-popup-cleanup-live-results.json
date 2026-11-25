@@ -1,0 +1,26 @@
+{
+  "cleanup": {
+    "destroyed": true,
+    "canvasConnected": false,
+    "canvasSize": [
+      0,
+      0
+    ],
+    "assets": 0,
+    "nodes": 0,
+    "active": 0,
+    "listeners": 2,
+    "expectedListeners": 2,
+    "counter": 2,
+    "sourceUnchanged": true
+  },
+  "reopened": {
+    "rank": "one",
+    "sourceRank": "one",
+    "previewCount": 1,
+    "event": "chooseToUse",
+    "paused2": true,
+    "counter": 2,
+    "expectedCounter": 2
+  }
+}

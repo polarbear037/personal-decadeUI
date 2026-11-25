@@ -1,4 +1,5 @@
 import { getXinshaPlayerCardPrompt } from "./xinshaPlayerCardPrompt.js";
+import { getPrintedSkillDescription, getPrintedSkillPromptHeight } from "./printed-skill-prompt.js";
 
 let activeLayoutObserver;
 const DIALOG_OL_LAYOUT_CLASS = "dialog-ol-layout";
@@ -7,10 +8,43 @@ const skillPromptStates = new WeakMap();
 const dialogSkillTitles = new WeakMap();
 const dialogSourceEvents = new WeakMap();
 
+function usesXinshaDialogLayout(arena) {
+	const style = arena?.getAttribute("data-loading-style");
+	return style === "dialog_xinsha" || style === "othersOff" && document.body?.dataset.style === "othersOff";
+}
+
+function restorePrintedHeight(dialog, state) {
+	const saved = state.printedHeight;
+	if (saved && dialog.style.getPropertyValue("height") === saved.applied) {
+		if (saved.value) dialog.style.setProperty("height", saved.value, saved.priority);
+		else dialog.style.removeProperty("height");
+	}
+	delete state.printedHeight; delete state.printedDescription; delete state.printedCount;
+}
+
 function syncPlayerCardFooter(dialog, state) {
-	if (!state.footer) return;
 	const event = dialogSourceEvents.get(dialog);
-	const markup = event?.name === "gainPlayerCard" && getXinshaPlayerCardPrompt(event, state.original) || state.footerOriginal;
+	const description = getPrintedSkillDescription(dialog, event);
+	let printedMarkup;
+	if (description) {
+		const holder = document.createElement("div"); holder.textContent = description;
+		printedMarkup = holder.innerHTML;
+		if (!state.footer) {
+			state.footer = document.createElement("div"); state.footer.className = "dialog-ol-footer";
+			dialog.appendChild(state.footer); dialog.classList.add("dialog-ol-skill-prompt");
+		}
+		const count = dialog.buttons?.length || 1;
+		if (state.printedDescription !== description || state.printedCount !== count) {
+			// 以印牌区的设计宽度测量换行；多出的说明高度在开窗测量前计入，避免遮住牌名。
+			const height = getPrintedSkillPromptHeight(dialog, description);
+			state.printedHeight ||= { value: dialog.style.getPropertyValue("height"), priority: dialog.style.getPropertyPriority("height") };
+			dialog.style.setProperty("height", `${height}px`, "important");
+			state.printedHeight.applied = dialog.style.getPropertyValue("height");
+			state.printedDescription = description; state.printedCount = count;
+		}
+	} else restorePrintedHeight(dialog, state);
+	if (!state.footer) return;
+	const markup = printedMarkup ?? (event?.name === "gainPlayerCard" && getXinshaPlayerCardPrompt(event, state.original) || state.footerOriginal);
 	// 定位模块会给子节点补行内样式，不能把这些样式变化误判成文案变化并反复重建。
 	if (state.footerMarkup !== markup) {
 		state.footer.innerHTML = markup;
@@ -63,7 +97,7 @@ function simplifySkillTitle(title) {
 }
 
 function syncXinshaDescriptions(dialog, content, state, arena) {
-	if (arena.getAttribute("data-loading-style") !== "dialog_xinsha" || !state.hasSkillTitle) return;
+	if (!usesXinshaDialogLayout(arena) || !state.hasSkillTitle) return;
 	const cards = Array.from(content.children).find(node => node.matches(".buttons,.item-container"));
 	if (!cards) return;
 	// 经造等技能在 open 后往标题与牌区之间插入普通 div；移动原节点以保留后续更新。
@@ -87,6 +121,7 @@ function syncXinshaDescriptions(dialog, content, state, arena) {
 function clearSkillPrompt(dialog) {
 	const state = skillPromptStates.get(dialog);
 	if (state) {
+		restorePrintedHeight(dialog, state);
 		if (readCaptionMarkup(state.caption) === state.title) writeCaptionMarkup(state.caption, state.original);
 		for (const { node, parent, next } of (state.descriptions || []).slice().reverse()) {
 			node.classList.remove("dialog-xinsha-description");
@@ -102,6 +137,12 @@ function clearSkillPrompt(dialog) {
 function syncSkillPrompt(dialog, arena, enabled) {
 	// 只拆首个标题，选项说明、选将界面和自定义移牌提示保留原结构。
 	const content = dialog.content || dialog.querySelector(":scope > .content-container > .content, :scope > .content");
+	// 本体 buttonChooseAll 会把辅助控件插到 caption 前；标题顺序不能随多选状态失效。
+	// 保留原控件及监听器，只让标题重新位于这些辅助控件之前。
+	if (enabled && usesXinshaDialogLayout(arena) && content?.firstElementChild?.classList.contains("select-all")) {
+		const title = content.querySelector(":scope > .caption");
+		if (title) content.insertBefore(title, content.firstElementChild);
+	}
 	const caption = content?.firstElementChild;
 	if (!enabled || arena.classList.contains("choose-character") || dialog.dataset.olLayout === "card-move" ||
 		!caption?.classList.contains("caption") || caption.querySelector(".text,.popup,.button,input,button:not(.dialog-ol-collapse),select,textarea,a,[onclick],[contenteditable]")) {
@@ -177,9 +218,9 @@ function isDialogOlCandidate(dialog, arena) {
 	return !!(
 		dialog &&
 		arena?.classList.contains("decadeUI") &&
-		["dialog_ol", "dialog_xinsha"].includes(arena.getAttribute("data-loading-style")) &&
+		(arena.getAttribute("data-loading-style") === "dialog_ol" || usesXinshaDialogLayout(arena)) &&
 		// 自由选将自带筛选、搜索及列表布局；新杀基板不能接管 noupdate 窗口。
-		!(arena.getAttribute("data-loading-style") === "dialog_xinsha" &&
+		!(usesXinshaDialogLayout(arena) &&
 			(dialog.classList.contains("noupdate") || typeof dialog.getCurrentCapt === "function")) &&
 		dialog.classList.contains("dialog") &&
 		!dialog.classList.contains("dclieqiong") &&
@@ -208,6 +249,7 @@ export function syncDialogOlLayoutMarker(dialog, arena, reevaluate = false) {
 	dialog.classList.toggle(XINSHA_CHARACTER_FRAME_CLASS, isXinshaCharacterFrame(dialog, arena));
 	if (!isDialogOlCandidate(dialog, arena)) {
 		dialog.classList.remove(DIALOG_OL_LAYOUT_CLASS);
+		dialog.classList.remove("dialog-xinsha-layout");
 		clearSkillPrompt(dialog);
 		return false;
 	}
@@ -216,6 +258,7 @@ export function syncDialogOlLayoutMarker(dialog, arena, reevaluate = false) {
 		else dialog.classList.remove(DIALOG_OL_LAYOUT_CLASS);
 	}
 	const enabled = dialog.classList.contains(DIALOG_OL_LAYOUT_CLASS);
+	dialog.classList.toggle("dialog-xinsha-layout", enabled && usesXinshaDialogLayout(arena));
 	syncSkillPrompt(dialog, arena, enabled);
 	return enabled;
 }
@@ -234,6 +277,7 @@ export function clearDialogOlLayout(dialog) {
 	if (!dialog) return;
 	releaseDialogOlLayout(dialog);
 	dialog.classList.remove(DIALOG_OL_LAYOUT_CLASS);
+	dialog.classList.remove("dialog-xinsha-layout");
 	dialog.classList.remove(XINSHA_CHARACTER_FRAME_CLASS);
 	clearSkillPrompt(dialog);
 	dialog.style.removeProperty("--dialog-ol-content-height");
@@ -243,6 +287,7 @@ export function clearDialogOlLayout(dialog) {
 	dialog.style.removeProperty("--dialog-ol-center-x");
 	dialog.style.removeProperty("--dialog-xinsha-frame-left");
 	dialog.style.removeProperty("--dialog-xinsha-frame-width");
+	dialog.style.removeProperty("--dialog-xinsha-layout-unit");
 }
 
 export function releaseDialogOlLayout(dialog) {
@@ -282,6 +327,10 @@ function measureDialogOlLayout(dialog, content, arena) {
 	if (scaleX > 0 && viewportRect?.width > 0) {
 		dialog.style.setProperty("--dialog-ol-width", `${viewportRect.width / scaleX}px`);
 		dialog.style.setProperty("--dialog-ol-center-x", `${(viewportRect.left + viewportRect.width / 2 - arenaRect.left) / scaleX}px`);
+		if (usesXinshaDialogLayout(arena)) {
+			const unit = Math.min(viewportRect.width / 1334, viewportRect.height / 750) / scaleX;
+			dialog.style.setProperty("--dialog-xinsha-layout-unit", `${unit}px`);
+		}
 	}
 	const scaleY = arena.offsetHeight ? arenaRect.height / arena.offsetHeight : 0;
 	if (scaleY > 0 && viewportRect?.height > 0) {
@@ -359,6 +408,13 @@ export function updateDialogOlLayout(dialog, arena) {
 }
 
 export function prepareDialogOlOpen(dialog, arena, skillTitle, sourceEvent) {
+	if (typeof skillTitle === "function") {
+		// 一将收起恢复不能拿无关的当前事件覆盖来源；新选择事件接手同一窗口时重新绑定。
+		if (usesXinshaDialogLayout(arena) && dialog.classList.contains("hidden") && sourceEvent?.dialog !== dialog) {
+			sourceEvent = dialogSourceEvents.get(dialog) || sourceEvent;
+		}
+		skillTitle = skillTitle(sourceEvent);
+	}
 	if (sourceEvent !== undefined) dialogSourceEvents.set(dialog, sourceEvent);
 	// 绑定打开时的来源；后续 ui.update 不跟随其他事件给旧窗口改名。
 	if (skillTitle !== undefined && dialogSkillTitles.get(dialog) !== skillTitle) {
@@ -372,8 +428,9 @@ export function prepareDialogOlOpen(dialog, arena, skillTitle, sourceEvent) {
 	}
 	if (dialog._onEndDelete) delete dialog._onEndDelete;
 	dialog.classList.remove("removing");
+	dialog.classList.remove("dialog-xinsha-prompt-retiring");
 	// 在插入牌桌前确定一将标题的宽度，避免先按100vw绘制再随窗口测量收窄。
-	if (arena?.getAttribute("data-loading-style") === "dialog_xinsha") {
+	if (usesXinshaDialogLayout(arena)) {
 		const content = dialog.content || dialog.querySelector(":scope > .content-container > .content");
 		if (content) measureDialogOlLayout(dialog, content, arena);
 	}

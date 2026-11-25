@@ -145,7 +145,7 @@ body[data-style="othersOff"] #arena .lei-yijiang-line {
 }
 
 #arena > .dialog {
-	z-index: 7;
+	z-index: 8;
 }
 
 /** 手牌区 */
@@ -550,6 +550,20 @@ body[data-style="othersOff"] .hand-cards > .handcards > .card {
 
 #arena > .card > .judge-mark {
 	visibility: hidden;
+}
+
+/* 主视角判定区只绘制图标，隐藏美化牌面、标签及卡背/装饰框。 */
+body[data-style="othersOff"] #arena > .player[data-position="0"] > .judges > .card {
+	background: none !important;
+	box-shadow: none !important;
+}
+
+body[data-style="othersOff"] #arena > .player[data-position="0"] > .judges > .card > :not(.judge-mark),
+body[data-style="othersOff"] #arena > .player[data-position="0"] > .judges > .card::before,
+body[data-style="othersOff"] #arena > .player[data-position="0"] > .judges > .card::after {
+	display: none !important;
+	opacity: 0 !important;
+	pointer-events: none !important;
 }
 
 /** 信息显示 */

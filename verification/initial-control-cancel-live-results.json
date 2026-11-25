@@ -1,0 +1,11 @@
+{
+  "centerDelta": 0.0078125,
+  "right": true,
+  "asset": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/cmn_btn_brown_180_54.png\")",
+  "precommit": true,
+  "controls": [
+    "basic",
+    "trick",
+    "equip"
+  ]
+}

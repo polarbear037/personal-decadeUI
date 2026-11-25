@@ -1,5 +1,7 @@
 import { ui, game, lib } from "noname";
-import { finishXinshaHandMotion } from "../ui/handcard-motion-xinsha.js";
+import { positionHandDisplays } from "../ui/hand-displays.js";
+import { finishXinshaHandMotion, withXinshaHandLayout } from "../ui/handcard-motion-xinsha.js";
+import { updateXinshaDiscardMotion, finishXinshaDiscardMotion } from "../ui/discard-motion-xinsha.js";
 function e() {
 	return {
 		update() {
@@ -74,16 +76,22 @@ function e() {
 					baseShift = Math.round(Math.max(0, Math.min(t, e)) - e);
 				}
 			}
-			t.forEach((card, e) => {
+			const updateCards = () => t.forEach((card, e) => {
 				let fx = xinshaPositions ? xinshaPositions[e] : xStart + e * xMargin + baseShift;
 				(spreadOffsetLeft || spreadOffsetRight) && (e < selectedIndex ? (fx -= spreadOffsetLeft) : e > selectedIndex && (fx += spreadOffsetRight));
 				const a = Math.round(fx);
 				((card.tx = a), (card.ty = l), (card.scaled = !0));
+				// directgain重新入手会加临时隐藏标记，落位后恢复牌面；真实暗牌标记仍由原流程维护。
+				// remove 即使未命中也会发出 class 变更，整手重排会反复唤醒牌面观察器。
+				if (card.classList.contains("drawinghidden")) card.classList.remove("drawinghidden");
 				// 基础位置交给 updateTransform 合成，避免已选牌先落下再抬起。
 				card.updateTransform(card.classList.contains("selected") || (style === "othersOff" && lib.config.spread_card && card === ui._handcardHover), 0, `translate(${a}px,${l}px) scale(${cs})`);
 			});
+			if (style === "othersOff") withXinshaHandLayout(updateCards);
+			else updateCards();
 			const container = ui.handcards1Container;
-			f ? (container.classList.add("scrollh"), (container.style.overflowX = "scroll"), (container.style.overflowY = "hidden"), (handNode.style.width = `${Math.round(t.length * xMargin + (csw - xMargin) + (style === "othersOff" ? csw / 2 : 0))}px`)) : (container.classList.remove("scrollh"), (container.style.overflowX = container.style.overflowY = ""), (handNode.style.width = "100%"));
+			container.classList.toggle("scrollh", f);
+			f ? ((container.style.overflowX = "scroll"), (container.style.overflowY = "hidden"), (handNode.style.width = `${Math.round(t.length * xMargin + (csw - xMargin) + (style === "othersOff" ? csw / 2 : 0))}px`)) : ((container.style.overflowX = container.style.overflowY = ""), (handNode.style.width = "100%"));
 		},
 		updateDiscard() {
 			if (((ui.thrown ??= []), (ui.thrown = ui.thrown.filter(e => !(e.classList.contains("drawingcard") || e.classList.contains("removing") || e.parentNode !== ui.arena || e.fixed) && (e.classList.remove("removing"), !0))), !ui.thrown.length)) return;
@@ -99,11 +107,17 @@ function e() {
 				limitW = Math.min(maxWidth, pw);
 			let xMargin = csw + 2,
 				xStart = (pw - Math.min(totalW, limitW)) / 2 + (csw - cw) / 2;
-			(totalW > limitW && (xMargin = (limitW - csw) / (cards.length - 1)),
-				cards.forEach((card, e) => {
-					const t = Math.round(xStart + e * xMargin);
-					((card.tx = t), (card.ty = c), (card.scaled = !0), (card.style.transform = `translate(${t}px,${c}px) scale(${cs})`));
-				}));
+			totalW > limitW && (xMargin = (limitW - csw) / (cards.length - 1));
+			const placements = cards.map((card, e) => {
+				const t = Math.round(xStart + e * xMargin);
+				((card.tx = t), (card.ty = c), (card.scaled = !0));
+				return { card, transform: `translate(${t}px,${c}px) scale(${cs})` };
+			});
+			if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff") updateXinshaDiscardMotion(placements);
+			else for (const { card, transform } of placements) {
+				finishXinshaDiscardMotion(card);
+				card.style.transform = transform;
+			}
 		},
 		clearout(card) {
 			!card ||
@@ -154,10 +168,15 @@ function e() {
 				buttonsWindow = ensureStyle("#window > .dialog.popped .buttons:not(.smallzoom)"),
 				buttonsArena = ensureStyle("#arena:not(.choose-character) .buttons:not(.smallzoom)");
 			((decadeUI.zooms.card = decadeUI.getCardBestScale()), ui.me && (ui.me.style.height = `${Math.round(decadeUI.getHandCardSize().height * decadeUI.zooms.card + 30.4)}px`), buttonsArena && (buttonsArena.zoom = decadeUI.zooms.card), buttonsWindow && (buttonsWindow.zoom = decadeUI.zooms.card), this.update());
+			for (const player of game.players || [])
+				if (player.node?.showCards && !player.node.showCards.classList.contains("hidden")) positionHandDisplays(player);
 			// 尺寸变化立即落位，避免防抖与移牌过渡让卡牌在拖动窗口时滞后。
-			for (const card of [...(ui.handcards1?.children ?? []), ...(ui.thrown ?? [])])
+			for (const card of [...(ui.handcards1?.children ?? []), ...(ui.thrown ?? [])]) {
+				finishXinshaHandMotion(card);
+				finishXinshaDiscardMotion(card);
 				for (const animation of card.getAnimations?.() ?? [])
 					if (animation.transitionProperty === "transform") animation.finish();
+			}
 		},
 	};
 }

@@ -1,0 +1,57 @@
+{
+  "before": {
+    "durationMs": 14937.753,
+    "viewportLayoutReadMs": 1795.331,
+    "samples": 3164,
+    "stacks": [
+      {
+        "stack": "get clientWidth@ <- getElementLogicalSize@雷霆/src/SpineViewportCompat.js <- getCanvasMetrics@雷霆/src/SpineViewportCompat.js <- syncDecadeAnimation@雷霆/src/SpineViewportCompat.js <- syncSpineViewportCompat@雷霆/src/SpineViewportCompat.js <- watchDocumentZoom@雷霆/src/PcRatioFrame.js <- (root)@",
+        "ms": 395.643
+      },
+      {
+        "stack": "get clientWidth@ <- syncQhlyViewportCompat@雷霆/src/PcRatioFrame.js <- watchDocumentZoom@雷霆/src/PcRatioFrame.js <- (root)@",
+        "ms": 2.667
+      },
+      {
+        "stack": "get clientWidth@ <- getElementLogicalSize@雷霆/src/SpineViewportCompat.js <- getCanvasMetrics@雷霆/src/SpineViewportCompat.js <- sendWorkerViewportUpdate@雷霆/src/SpineViewportCompat.js <- patchWorker@雷霆/src/SpineViewportCompat.js <- syncSkinSwitchWorkers@雷霆/src/SpineViewportCompat.js <- syncSpineViewportCompat@雷霆/src/SpineViewportCompat.js <- watchDocumentZoom@雷霆/src/PcRatioFrame.js <- (root)@",
+        "ms": 3.452
+      },
+      {
+        "stack": "get clientWidth@ <- getElementLogicalSize@雷霆/src/SpineViewportCompat.js <- getCanvasMetrics@雷霆/src/SpineViewportCompat.js <- syncDecadeAnimation@雷霆/src/SpineViewportCompat.js <- watchDocumentZoom@雷霆/src/PcRatioFrame.js <- (root)@",
+        "ms": 1382.721
+      },
+      {
+        "stack": "get clientWidth@ <- getElementLogicalSize@雷霆/src/SpineViewportCompat.js <- getCanvasMetrics@雷霆/src/SpineViewportCompat.js <- sendWorkerViewportUpdate@雷霆/src/SpineViewportCompat.js <- patchWorker@雷霆/src/SpineViewportCompat.js <- syncSkinSwitchWorkers@雷霆/src/SpineViewportCompat.js <- watchDocumentZoom@雷霆/src/PcRatioFrame.js <- (root)@",
+        "ms": 10.848
+      }
+    ]
+  },
+  "after": {
+    "durationMs": 35948.179,
+    "viewportLayoutReadMs": 0,
+    "samples": 0,
+    "stacks": []
+  },
+  "recorderUntouched": true,
+  "notes": "Before/after recorder state differs due to the user switching it off; compare the identified viewport call chain only, not total frame rate.",
+  "localPresentation": {
+    "controlledPresentationOnly": true,
+    "cards": 2,
+    "extraClones": 0,
+    "sameHands": true,
+    "sameEvent": true,
+    "samePositions": true,
+    "videoKinds": [
+      "drawCard"
+    ],
+    "recorder": false
+  },
+  "naturalGains": [
+    {
+      "at": 1795528288589,
+      "cards": 2,
+      "clones": 0,
+      "inHand": true
+    }
+  ]
+}

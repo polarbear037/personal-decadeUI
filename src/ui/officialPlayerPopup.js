@@ -2,12 +2,20 @@ import { lib, ui } from "noname";
 import { officialSkillPrompts } from "./officialSkillPromptData.js";
 import { getOptimizedPromptStyle } from "./promptStyle.js";
 
-// 官方 MUt.labelHandler 只显示 skill.Name；AniType=NONE 不创建通用技能名动画。
-// 同名版本的广播文字相同：任一官方武将技能版本有此动画即可保留该名字。
+// 官方表中的动画技能名优先匹配；表外技能再按当前游戏实际注册的译名判断。
+// 同名版本的广播文字相同，任一版本匹配即可保留该名字。
 const popupNames = new Set(officialSkillPrompts.filter(entry => entry.name && entry.type === 2 && entry.aniType > 0 && entry.aniType <= 8).map(entry => entry.name));
 
 function isOfficialPlayerPopup(text) {
-	return typeof text === "string" && popupNames.has(text.trim());
+	if (typeof text !== "string" || !text.trim()) return false;
+	const name = text.trim();
+	if (popupNames.has(name)) return true;
+	// 官方静态表不包含所有本体版本、装备技能和扩展技能，以当前注册译名补全。
+	// 不缓存未命中结果，兼容开局后动态注册技能或更新翻译。
+	for (const skill in lib.skill) {
+		if (lib.translate[skill] === name) return true;
+	}
+	return false;
 }
 
 function syncOfficialPlayerPopups() {

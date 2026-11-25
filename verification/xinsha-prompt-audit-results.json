@@ -92,8 +92,8 @@
     "audit": {
       "entries": 3732,
       "checked": 27360,
-      "official": 3963,
-      "fallback": 23397,
+      "official": 4567,
+      "fallback": 22793,
       "failureCount": 0,
       "failures": []
     },
@@ -188,8 +188,8 @@
     "audit": {
       "entries": 3732,
       "checked": 27360,
-      "official": 3963,
-      "fallback": 23397,
+      "official": 4567,
+      "fallback": 22793,
       "failureCount": 0,
       "failures": []
     },

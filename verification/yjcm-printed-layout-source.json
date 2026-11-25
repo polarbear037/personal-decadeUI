@@ -1,0 +1,5337 @@
+{
+  "apk_sha256": "974381c26f5bdc45daa6796f31cf384840e8d95e2eff3039990180f22f36a895",
+  "member": "app.view.game.dlg.windowSelectVirtualSkill",
+  "module_sha256": "6f66078b963258051ca94678be6e3484c40709b2b819bbc20aebce433aed2521",
+  "prototypes": [
+    {
+      "id": "0",
+      "line": 0,
+      "last_line": 0,
+      "header": [
+        0,
+        0,
+        2,
+        4
+      ],
+      "constants": [
+        "import",
+        ".SkillNewStyleBaseWindow",
+        "class",
+        "windowSelectVirtualSkill",
+        "ctor",
+        "initData",
+        "initUI",
+        "isShowBigBg",
+        "isShowConfirmBtn",
+        "onConfirmBtnClicked",
+        "onBtnClicked",
+        "getSelBtnCnt",
+        "getSelSkillIds",
+        "onTouchEnded"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "getglobal",
+          "a": 0,
+          "b": 0,
+          "c": 0,
+          "constant": "import"
+        },
+        {
+          "pc": 2,
+          "op": "loadk",
+          "a": 1,
+          "b": 0,
+          "c": 1,
+          "constant": ".SkillNewStyleBaseWindow"
+        },
+        {
+          "pc": 3,
+          "op": "call",
+          "a": 0,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 4,
+          "op": "getglobal",
+          "a": 1,
+          "b": 0,
+          "c": 2,
+          "constant": "class"
+        },
+        {
+          "pc": 5,
+          "op": "loadk",
+          "a": 2,
+          "b": 0,
+          "c": 3,
+          "constant": "windowSelectVirtualSkill"
+        },
+        {
+          "pc": 6,
+          "op": "move",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 7,
+          "op": "call",
+          "a": 1,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 8,
+          "op": "closure",
+          "a": 2,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 9,
+          "op": "move",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 10,
+          "op": "settable",
+          "a": 1,
+          "b": 260,
+          "c": 2,
+          "constant_operands": {
+            "b": "ctor"
+          }
+        },
+        {
+          "pc": 11,
+          "op": "closure",
+          "a": 2,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 12,
+          "op": "settable",
+          "a": 1,
+          "b": 261,
+          "c": 2,
+          "constant_operands": {
+            "b": "initData"
+          }
+        },
+        {
+          "pc": 13,
+          "op": "closure",
+          "a": 2,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 14,
+          "op": "settable",
+          "a": 1,
+          "b": 262,
+          "c": 2,
+          "constant_operands": {
+            "b": "initUI"
+          }
+        },
+        {
+          "pc": 15,
+          "op": "closure",
+          "a": 2,
+          "b": 0,
+          "c": 3
+        },
+        {
+          "pc": 16,
+          "op": "settable",
+          "a": 1,
+          "b": 263,
+          "c": 2,
+          "constant_operands": {
+            "b": "isShowBigBg"
+          }
+        },
+        {
+          "pc": 17,
+          "op": "closure",
+          "a": 2,
+          "b": 0,
+          "c": 4
+        },
+        {
+          "pc": 18,
+          "op": "settable",
+          "a": 1,
+          "b": 264,
+          "c": 2,
+          "constant_operands": {
+            "b": "isShowConfirmBtn"
+          }
+        },
+        {
+          "pc": 19,
+          "op": "closure",
+          "a": 2,
+          "b": 0,
+          "c": 5
+        },
+        {
+          "pc": 20,
+          "op": "settable",
+          "a": 1,
+          "b": 265,
+          "c": 2,
+          "constant_operands": {
+            "b": "onConfirmBtnClicked"
+          }
+        },
+        {
+          "pc": 21,
+          "op": "closure",
+          "a": 2,
+          "b": 0,
+          "c": 6
+        },
+        {
+          "pc": 22,
+          "op": "settable",
+          "a": 1,
+          "b": 266,
+          "c": 2,
+          "constant_operands": {
+            "b": "onBtnClicked"
+          }
+        },
+        {
+          "pc": 23,
+          "op": "closure",
+          "a": 2,
+          "b": 0,
+          "c": 7
+        },
+        {
+          "pc": 24,
+          "op": "settable",
+          "a": 1,
+          "b": 267,
+          "c": 2,
+          "constant_operands": {
+            "b": "getSelBtnCnt"
+          }
+        },
+        {
+          "pc": 25,
+          "op": "closure",
+          "a": 2,
+          "b": 0,
+          "c": 8
+        },
+        {
+          "pc": 26,
+          "op": "settable",
+          "a": 1,
+          "b": 268,
+          "c": 2,
+          "constant_operands": {
+            "b": "getSelSkillIds"
+          }
+        },
+        {
+          "pc": 27,
+          "op": "closure",
+          "a": 2,
+          "b": 0,
+          "c": 9
+        },
+        {
+          "pc": 28,
+          "op": "settable",
+          "a": 1,
+          "b": 269,
+          "c": 2,
+          "constant_operands": {
+            "b": "onTouchEnded"
+          }
+        },
+        {
+          "pc": 29,
+          "op": "return",
+          "a": 1,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 30,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.0",
+      "line": 10,
+      "last_line": 23,
+      "header": [
+        1,
+        2,
+        0,
+        6
+      ],
+      "constants": [
+        "initData",
+        "super",
+        "ctor",
+        "hideBtnEnable",
+        "hideWhenClickOut",
+        "showGray",
+        false,
+        "initUI",
+        "setTouchSwallowEnabled"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "test",
+          "a": 1,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 2,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 1
+        },
+        {
+          "pc": 3,
+          "op": "newtable",
+          "a": 2,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 4,
+          "op": "move",
+          "a": 1,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 5,
+          "op": "self",
+          "a": 2,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "initData"
+          }
+        },
+        {
+          "pc": 6,
+          "op": "move",
+          "a": 4,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 7,
+          "op": "call",
+          "a": 2,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 8,
+          "op": "getupval",
+          "a": 2,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 9,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 257,
+          "constant_operands": {
+            "c": "super"
+          }
+        },
+        {
+          "pc": 10,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 258,
+          "constant_operands": {
+            "c": "ctor"
+          }
+        },
+        {
+          "pc": 11,
+          "op": "move",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 12,
+          "op": "newtable",
+          "a": 4,
+          "b": 0,
+          "c": 3
+        },
+        {
+          "pc": 13,
+          "op": "gettable",
+          "a": 5,
+          "b": 0,
+          "c": 259,
+          "constant_operands": {
+            "c": "hideBtnEnable"
+          }
+        },
+        {
+          "pc": 14,
+          "op": "settable",
+          "a": 4,
+          "b": 259,
+          "c": 5,
+          "constant_operands": {
+            "b": "hideBtnEnable"
+          }
+        },
+        {
+          "pc": 15,
+          "op": "gettable",
+          "a": 5,
+          "b": 0,
+          "c": 260,
+          "constant_operands": {
+            "c": "hideWhenClickOut"
+          }
+        },
+        {
+          "pc": 16,
+          "op": "settable",
+          "a": 4,
+          "b": 260,
+          "c": 5,
+          "constant_operands": {
+            "b": "hideWhenClickOut"
+          }
+        },
+        {
+          "pc": 17,
+          "op": "settable",
+          "a": 4,
+          "b": 261,
+          "c": 262,
+          "constant_operands": {
+            "b": "showGray",
+            "c": false
+          }
+        },
+        {
+          "pc": 18,
+          "op": "call",
+          "a": 2,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 19,
+          "op": "self",
+          "a": 2,
+          "b": 0,
+          "c": 263,
+          "constant_operands": {
+            "c": "initUI"
+          }
+        },
+        {
+          "pc": 20,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 1
+        },
+        {
+          "pc": 21,
+          "op": "self",
+          "a": 2,
+          "b": 0,
+          "c": 264,
+          "constant_operands": {
+            "c": "setTouchSwallowEnabled"
+          }
+        },
+        {
+          "pc": 22,
+          "op": "loadbool",
+          "a": 4,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 23,
+          "op": "call",
+          "a": 2,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 24,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.1",
+      "line": 25,
+      "last_line": 36,
+      "header": [
+        0,
+        2,
+        0,
+        4
+      ],
+      "constants": [
+        "skill",
+        "GameUtil",
+        "getSkill",
+        "SkillId",
+        "GU_HUO_NEW",
+        "skillIds",
+        "getFilterPideCardVirtualSkillIds",
+        "skillName",
+        "getName",
+        "",
+        "seat",
+        "generalId",
+        "getGeneralId",
+        1.0,
+        "skillsCnt",
+        "table",
+        "nums",
+        "column",
+        5.0,
+        "hideWhenClickOut",
+        false,
+        "hideBtnEnable",
+        "isEnableHideBtn"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "gettable",
+          "a": 2,
+          "b": 1,
+          "c": 256,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 2,
+          "op": "test",
+          "a": 2,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 3,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 4
+        },
+        {
+          "pc": 4,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 1,
+          "constant": "GameUtil"
+        },
+        {
+          "pc": 5,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 258,
+          "constant_operands": {
+            "c": "getSkill"
+          }
+        },
+        {
+          "pc": 6,
+          "op": "getglobal",
+          "a": 3,
+          "b": 0,
+          "c": 3,
+          "constant": "SkillId"
+        },
+        {
+          "pc": 7,
+          "op": "gettable",
+          "a": 3,
+          "b": 3,
+          "c": 260,
+          "constant_operands": {
+            "c": "GU_HUO_NEW"
+          }
+        },
+        {
+          "pc": 8,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 9,
+          "op": "settable",
+          "a": 0,
+          "b": 256,
+          "c": 2,
+          "constant_operands": {
+            "b": "skill"
+          }
+        },
+        {
+          "pc": 10,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 11,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 262,
+          "constant_operands": {
+            "c": "getFilterPideCardVirtualSkillIds"
+          }
+        },
+        {
+          "pc": 12,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 13,
+          "op": "test",
+          "a": 2,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 14,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 0
+        },
+        {
+          "pc": 15,
+          "op": "newtable",
+          "a": 2,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 16,
+          "op": "settable",
+          "a": 0,
+          "b": 261,
+          "c": 2,
+          "constant_operands": {
+            "b": "skillIds"
+          }
+        },
+        {
+          "pc": 17,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 18,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 264,
+          "constant_operands": {
+            "c": "getName"
+          }
+        },
+        {
+          "pc": 19,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 20,
+          "op": "test",
+          "a": 2,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 21,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 0
+        },
+        {
+          "pc": 22,
+          "op": "loadk",
+          "a": 2,
+          "b": 0,
+          "c": 9,
+          "constant": ""
+        },
+        {
+          "pc": 23,
+          "op": "settable",
+          "a": 0,
+          "b": 263,
+          "c": 2,
+          "constant_operands": {
+            "b": "skillName"
+          }
+        },
+        {
+          "pc": 24,
+          "op": "gettable",
+          "a": 2,
+          "b": 1,
+          "c": 266,
+          "constant_operands": {
+            "c": "seat"
+          }
+        },
+        {
+          "pc": 25,
+          "op": "settable",
+          "a": 0,
+          "b": 266,
+          "c": 2,
+          "constant_operands": {
+            "b": "seat"
+          }
+        },
+        {
+          "pc": 26,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 266,
+          "constant_operands": {
+            "c": "seat"
+          }
+        },
+        {
+          "pc": 27,
+          "op": "test",
+          "a": 2,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 28,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 4
+        },
+        {
+          "pc": 29,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 266,
+          "constant_operands": {
+            "c": "seat"
+          }
+        },
+        {
+          "pc": 30,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 268,
+          "constant_operands": {
+            "c": "getGeneralId"
+          }
+        },
+        {
+          "pc": 31,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 32,
+          "op": "test",
+          "a": 2,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 33,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 0
+        },
+        {
+          "pc": 34,
+          "op": "loadk",
+          "a": 2,
+          "b": 0,
+          "c": 13,
+          "constant": 1.0
+        },
+        {
+          "pc": 35,
+          "op": "settable",
+          "a": 0,
+          "b": 267,
+          "c": 2,
+          "constant_operands": {
+            "b": "generalId"
+          }
+        },
+        {
+          "pc": 36,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 15,
+          "constant": "table"
+        },
+        {
+          "pc": 37,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 272,
+          "constant_operands": {
+            "c": "nums"
+          }
+        },
+        {
+          "pc": 38,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 261,
+          "constant_operands": {
+            "c": "skillIds"
+          }
+        },
+        {
+          "pc": 39,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 40,
+          "op": "settable",
+          "a": 0,
+          "b": 270,
+          "c": 2,
+          "constant_operands": {
+            "b": "skillsCnt"
+          }
+        },
+        {
+          "pc": 41,
+          "op": "settable",
+          "a": 0,
+          "b": 273,
+          "c": 274,
+          "constant_operands": {
+            "b": "column",
+            "c": 5.0
+          }
+        },
+        {
+          "pc": 42,
+          "op": "settable",
+          "a": 0,
+          "b": 275,
+          "c": 276,
+          "constant_operands": {
+            "b": "hideWhenClickOut",
+            "c": false
+          }
+        },
+        {
+          "pc": 43,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 44,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 278,
+          "constant_operands": {
+            "c": "isEnableHideBtn"
+          }
+        },
+        {
+          "pc": 45,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 46,
+          "op": "settable",
+          "a": 0,
+          "b": 277,
+          "c": 2,
+          "constant_operands": {
+            "b": "hideBtnEnable"
+          }
+        },
+        {
+          "pc": 47,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.2",
+      "line": 38,
+      "last_line": 126,
+      "header": [
+        0,
+        1,
+        0,
+        18
+      ],
+      "constants": [
+        "setSkillTitle",
+        "skill",
+        "getName",
+        "btns",
+        "pairs",
+        "skillIds",
+        "#virtualskill",
+        "type",
+        "table",
+        1.0,
+        2.0,
+        0.0,
+        "_",
+        ".png",
+        "ui",
+        "SimpleButton",
+        "new",
+        "onButtonClicked",
+        "handler",
+        "onBtnClicked",
+        "GameUtil",
+        "getSkill",
+        "property",
+        "setOriAvatarSkill",
+        "canUseVirtualSkill",
+        "needCheckVisualWindowCard",
+        "createCardDataBySkillId",
+        "setVisualCard",
+        "getCardSelector",
+        "initSeatStatus",
+        "isAllowCard",
+        "setButtonEnabled",
+        "data",
+        "skillId",
+        "insert",
+        "arrayNode",
+        "arrayHorVerNode",
+        "column",
+        29.0,
+        35.0,
+        "align",
+        "display",
+        "CENTER",
+        "width",
+        "height",
+        20.0,
+        "addTo",
+        "btns2",
+        "isShowConfirmBtn",
+        "needConfirmInWindowVirtualSkill",
+        "sureBtn",
+        "CmnYellowBtn_180_54",
+        "text",
+        "Lang",
+        "TXT_Sure",
+        "onConfirmBtnClicked",
+        "isEnableCancel",
+        "needCancelInWindowVirtualSkill",
+        "cancelBtn",
+        "CmnBrownBtn_180_54",
+        "TXT_Cancel",
+        "arrangeNodes",
+        50.0,
+        "CENTER_BOTTOM",
+        40.0,
+        "hideGameButtonBarWhenWindowVirtualSkill",
+        "CENTER_TOP",
+        37.0,
+        "setOptMsg",
+        "getWinOperateDesc",
+        "optMsgLabel",
+        "pos",
+        113.0,
+        "downTimeProgress",
+        103.0,
+        "setTimeout",
+        "seat",
+        "getCountdownTime"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "self",
+          "a": 1,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "setSkillTitle"
+          }
+        },
+        {
+          "pc": 2,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 3,
+          "op": "self",
+          "a": 3,
+          "b": 3,
+          "c": 258,
+          "constant_operands": {
+            "c": "getName"
+          }
+        },
+        {
+          "pc": 4,
+          "op": "call",
+          "a": 3,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 5,
+          "op": "call",
+          "a": 1,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 6,
+          "op": "newtable",
+          "a": 1,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 7,
+          "op": "settable",
+          "a": 0,
+          "b": 259,
+          "c": 1,
+          "constant_operands": {
+            "b": "btns"
+          }
+        },
+        {
+          "pc": 8,
+          "op": "loadbool",
+          "a": 1,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 9,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 4,
+          "constant": "pairs"
+        },
+        {
+          "pc": 10,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 261,
+          "constant_operands": {
+            "c": "skillIds"
+          }
+        },
+        {
+          "pc": 11,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 4
+        },
+        {
+          "pc": 12,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 94
+        },
+        {
+          "pc": 13,
+          "op": "loadk",
+          "a": 7,
+          "b": 0,
+          "c": 6,
+          "constant": "#virtualskill"
+        },
+        {
+          "pc": 14,
+          "op": "move",
+          "a": 8,
+          "b": 6,
+          "c": 0
+        },
+        {
+          "pc": 15,
+          "op": "loadnil",
+          "a": 9,
+          "b": 9,
+          "c": 0
+        },
+        {
+          "pc": 16,
+          "op": "getglobal",
+          "a": 10,
+          "b": 0,
+          "c": 7,
+          "constant": "type"
+        },
+        {
+          "pc": 17,
+          "op": "move",
+          "a": 11,
+          "b": 6,
+          "c": 0
+        },
+        {
+          "pc": 18,
+          "op": "call",
+          "a": 10,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 19,
+          "op": "eq",
+          "a": 0,
+          "b": 10,
+          "c": 264,
+          "constant_operands": {
+            "c": "table"
+          }
+        },
+        {
+          "pc": 20,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 16
+        },
+        {
+          "pc": 21,
+          "op": "gettable",
+          "a": 8,
+          "b": 6,
+          "c": 265,
+          "constant_operands": {
+            "c": 1.0
+          }
+        },
+        {
+          "pc": 22,
+          "op": "gettable",
+          "a": 9,
+          "b": 6,
+          "c": 266,
+          "constant_operands": {
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 23,
+          "op": "getglobal",
+          "a": 10,
+          "b": 0,
+          "c": 4,
+          "constant": "pairs"
+        },
+        {
+          "pc": 24,
+          "op": "move",
+          "a": 11,
+          "b": 6,
+          "c": 0
+        },
+        {
+          "pc": 25,
+          "op": "call",
+          "a": 10,
+          "b": 2,
+          "c": 4
+        },
+        {
+          "pc": 26,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 7
+        },
+        {
+          "pc": 27,
+          "op": "test",
+          "a": 14,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 28,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 5
+        },
+        {
+          "pc": 29,
+          "op": "eq",
+          "a": 1,
+          "b": 14,
+          "c": 267,
+          "constant_operands": {
+            "c": 0.0
+          }
+        },
+        {
+          "pc": 30,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 3
+        },
+        {
+          "pc": 31,
+          "op": "move",
+          "a": 15,
+          "b": 7,
+          "c": 0
+        },
+        {
+          "pc": 32,
+          "op": "loadk",
+          "a": 16,
+          "b": 0,
+          "c": 12,
+          "constant": "_"
+        },
+        {
+          "pc": 33,
+          "op": "move",
+          "a": 17,
+          "b": 14,
+          "c": 0
+        },
+        {
+          "pc": 34,
+          "op": "concat",
+          "a": 7,
+          "b": 15,
+          "c": 17
+        },
+        {
+          "pc": 35,
+          "op": "tforloop",
+          "a": 10,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 36,
+          "op": "jmp",
+          "a": 0,
+          "b": 255,
+          "c": 501
+        },
+        {
+          "pc": 37,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 3
+        },
+        {
+          "pc": 38,
+          "op": "move",
+          "a": 10,
+          "b": 7,
+          "c": 0
+        },
+        {
+          "pc": 39,
+          "op": "loadk",
+          "a": 11,
+          "b": 0,
+          "c": 12,
+          "constant": "_"
+        },
+        {
+          "pc": 40,
+          "op": "move",
+          "a": 12,
+          "b": 8,
+          "c": 0
+        },
+        {
+          "pc": 41,
+          "op": "concat",
+          "a": 7,
+          "b": 10,
+          "c": 12
+        },
+        {
+          "pc": 42,
+          "op": "move",
+          "a": 10,
+          "b": 7,
+          "c": 0
+        },
+        {
+          "pc": 43,
+          "op": "loadk",
+          "a": 11,
+          "b": 0,
+          "c": 13,
+          "constant": ".png"
+        },
+        {
+          "pc": 44,
+          "op": "concat",
+          "a": 7,
+          "b": 10,
+          "c": 11
+        },
+        {
+          "pc": 45,
+          "op": "getglobal",
+          "a": 10,
+          "b": 0,
+          "c": 14,
+          "constant": "ui"
+        },
+        {
+          "pc": 46,
+          "op": "gettable",
+          "a": 10,
+          "b": 10,
+          "c": 271,
+          "constant_operands": {
+            "c": "SimpleButton"
+          }
+        },
+        {
+          "pc": 47,
+          "op": "gettable",
+          "a": 10,
+          "b": 10,
+          "c": 272,
+          "constant_operands": {
+            "c": "new"
+          }
+        },
+        {
+          "pc": 48,
+          "op": "move",
+          "a": 11,
+          "b": 7,
+          "c": 0
+        },
+        {
+          "pc": 49,
+          "op": "call",
+          "a": 10,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 50,
+          "op": "self",
+          "a": 11,
+          "b": 10,
+          "c": 273,
+          "constant_operands": {
+            "c": "onButtonClicked"
+          }
+        },
+        {
+          "pc": 51,
+          "op": "getglobal",
+          "a": 13,
+          "b": 0,
+          "c": 18,
+          "constant": "handler"
+        },
+        {
+          "pc": 52,
+          "op": "move",
+          "a": 14,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 53,
+          "op": "gettable",
+          "a": 15,
+          "b": 0,
+          "c": 275,
+          "constant_operands": {
+            "c": "onBtnClicked"
+          }
+        },
+        {
+          "pc": 54,
+          "op": "call",
+          "a": 13,
+          "b": 3,
+          "c": 0
+        },
+        {
+          "pc": 55,
+          "op": "call",
+          "a": 11,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 56,
+          "op": "getglobal",
+          "a": 11,
+          "b": 0,
+          "c": 20,
+          "constant": "GameUtil"
+        },
+        {
+          "pc": 57,
+          "op": "gettable",
+          "a": 11,
+          "b": 11,
+          "c": 277,
+          "constant_operands": {
+            "c": "getSkill"
+          }
+        },
+        {
+          "pc": 58,
+          "op": "move",
+          "a": 12,
+          "b": 8,
+          "c": 0
+        },
+        {
+          "pc": 59,
+          "op": "call",
+          "a": 11,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 60,
+          "op": "settable",
+          "a": 11,
+          "b": 278,
+          "c": 9,
+          "constant_operands": {
+            "b": "property"
+          }
+        },
+        {
+          "pc": 61,
+          "op": "self",
+          "a": 12,
+          "b": 11,
+          "c": 279,
+          "constant_operands": {
+            "c": "setOriAvatarSkill"
+          }
+        },
+        {
+          "pc": 62,
+          "op": "gettable",
+          "a": 14,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 63,
+          "op": "call",
+          "a": 12,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 64,
+          "op": "gettable",
+          "a": 12,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 65,
+          "op": "self",
+          "a": 12,
+          "b": 12,
+          "c": 280,
+          "constant_operands": {
+            "c": "canUseVirtualSkill"
+          }
+        },
+        {
+          "pc": 66,
+          "op": "move",
+          "a": 14,
+          "b": 11,
+          "c": 0
+        },
+        {
+          "pc": 67,
+          "op": "call",
+          "a": 12,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 68,
+          "op": "test",
+          "a": 12,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 69,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 23
+        },
+        {
+          "pc": 70,
+          "op": "gettable",
+          "a": 13,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 71,
+          "op": "self",
+          "a": 13,
+          "b": 13,
+          "c": 281,
+          "constant_operands": {
+            "c": "needCheckVisualWindowCard"
+          }
+        },
+        {
+          "pc": 72,
+          "op": "call",
+          "a": 13,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 73,
+          "op": "test",
+          "a": 13,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 74,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 18
+        },
+        {
+          "pc": 75,
+          "op": "getglobal",
+          "a": 13,
+          "b": 0,
+          "c": 20,
+          "constant": "GameUtil"
+        },
+        {
+          "pc": 76,
+          "op": "gettable",
+          "a": 13,
+          "b": 13,
+          "c": 282,
+          "constant_operands": {
+            "c": "createCardDataBySkillId"
+          }
+        },
+        {
+          "pc": 77,
+          "op": "move",
+          "a": 14,
+          "b": 8,
+          "c": 0
+        },
+        {
+          "pc": 78,
+          "op": "move",
+          "a": 15,
+          "b": 9,
+          "c": 0
+        },
+        {
+          "pc": 79,
+          "op": "call",
+          "a": 13,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 80,
+          "op": "self",
+          "a": 14,
+          "b": 13,
+          "c": 283,
+          "constant_operands": {
+            "c": "setVisualCard"
+          }
+        },
+        {
+          "pc": 81,
+          "op": "loadbool",
+          "a": 16,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 82,
+          "op": "call",
+          "a": 14,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 83,
+          "op": "gettable",
+          "a": 14,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 84,
+          "op": "self",
+          "a": 14,
+          "b": 14,
+          "c": 284,
+          "constant_operands": {
+            "c": "getCardSelector"
+          }
+        },
+        {
+          "pc": 85,
+          "op": "call",
+          "a": 14,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 86,
+          "op": "test",
+          "a": 14,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 87,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 5
+        },
+        {
+          "pc": 88,
+          "op": "self",
+          "a": 15,
+          "b": 14,
+          "c": 285,
+          "constant_operands": {
+            "c": "initSeatStatus"
+          }
+        },
+        {
+          "pc": 89,
+          "op": "call",
+          "a": 15,
+          "b": 2,
+          "c": 1
+        },
+        {
+          "pc": 90,
+          "op": "self",
+          "a": 15,
+          "b": 14,
+          "c": 286,
+          "constant_operands": {
+            "c": "isAllowCard"
+          }
+        },
+        {
+          "pc": 91,
+          "op": "move",
+          "a": 17,
+          "b": 13,
+          "c": 0
+        },
+        {
+          "pc": 92,
+          "op": "call",
+          "a": 15,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 93,
+          "op": "move",
+          "a": 12,
+          "b": 15,
+          "c": 0
+        },
+        {
+          "pc": 94,
+          "op": "test",
+          "a": 12,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 95,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 0
+        },
+        {
+          "pc": 96,
+          "op": "loadbool",
+          "a": 1,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 97,
+          "op": "self",
+          "a": 13,
+          "b": 10,
+          "c": 287,
+          "constant_operands": {
+            "c": "setButtonEnabled"
+          }
+        },
+        {
+          "pc": 98,
+          "op": "move",
+          "a": 15,
+          "b": 12,
+          "c": 0
+        },
+        {
+          "pc": 99,
+          "op": "call",
+          "a": 13,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 100,
+          "op": "settable",
+          "a": 10,
+          "b": 288,
+          "c": 6,
+          "constant_operands": {
+            "b": "data"
+          }
+        },
+        {
+          "pc": 101,
+          "op": "settable",
+          "a": 10,
+          "b": 289,
+          "c": 8,
+          "constant_operands": {
+            "b": "skillId"
+          }
+        },
+        {
+          "pc": 102,
+          "op": "settable",
+          "a": 10,
+          "b": 278,
+          "c": 9,
+          "constant_operands": {
+            "b": "property"
+          }
+        },
+        {
+          "pc": 103,
+          "op": "getglobal",
+          "a": 13,
+          "b": 0,
+          "c": 8,
+          "constant": "table"
+        },
+        {
+          "pc": 104,
+          "op": "gettable",
+          "a": 13,
+          "b": 13,
+          "c": 290,
+          "constant_operands": {
+            "c": "insert"
+          }
+        },
+        {
+          "pc": 105,
+          "op": "gettable",
+          "a": 14,
+          "b": 0,
+          "c": 259,
+          "constant_operands": {
+            "c": "btns"
+          }
+        },
+        {
+          "pc": 106,
+          "op": "move",
+          "a": 15,
+          "b": 10,
+          "c": 0
+        },
+        {
+          "pc": 107,
+          "op": "call",
+          "a": 13,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 108,
+          "op": "tforloop",
+          "a": 2,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 109,
+          "op": "jmp",
+          "a": 0,
+          "b": 255,
+          "c": 414
+        },
+        {
+          "pc": 110,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 14,
+          "constant": "ui"
+        },
+        {
+          "pc": 111,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 292,
+          "constant_operands": {
+            "c": "arrayHorVerNode"
+          }
+        },
+        {
+          "pc": 112,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 259,
+          "constant_operands": {
+            "c": "btns"
+          }
+        },
+        {
+          "pc": 113,
+          "op": "gettable",
+          "a": 4,
+          "b": 0,
+          "c": 293,
+          "constant_operands": {
+            "c": "column"
+          }
+        },
+        {
+          "pc": 114,
+          "op": "loadk",
+          "a": 5,
+          "b": 0,
+          "c": 38,
+          "constant": 29.0
+        },
+        {
+          "pc": 115,
+          "op": "loadk",
+          "a": 6,
+          "b": 0,
+          "c": 39,
+          "constant": 35.0
+        },
+        {
+          "pc": 116,
+          "op": "call",
+          "a": 2,
+          "b": 5,
+          "c": 2
+        },
+        {
+          "pc": 117,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 296,
+          "constant_operands": {
+            "c": "align"
+          }
+        },
+        {
+          "pc": 118,
+          "op": "getglobal",
+          "a": 4,
+          "b": 0,
+          "c": 41,
+          "constant": "display"
+        },
+        {
+          "pc": 119,
+          "op": "gettable",
+          "a": 4,
+          "b": 4,
+          "c": 298,
+          "constant_operands": {
+            "c": "CENTER"
+          }
+        },
+        {
+          "pc": 120,
+          "op": "gettable",
+          "a": 5,
+          "b": 0,
+          "c": 299,
+          "constant_operands": {
+            "c": "width"
+          }
+        },
+        {
+          "pc": 121,
+          "op": "div",
+          "a": 5,
+          "b": 5,
+          "c": 266,
+          "constant_operands": {
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 122,
+          "op": "gettable",
+          "a": 6,
+          "b": 0,
+          "c": 300,
+          "constant_operands": {
+            "c": "height"
+          }
+        },
+        {
+          "pc": 123,
+          "op": "div",
+          "a": 6,
+          "b": 6,
+          "c": 266,
+          "constant_operands": {
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 124,
+          "op": "add",
+          "a": 6,
+          "b": 6,
+          "c": 301,
+          "constant_operands": {
+            "c": 20.0
+          }
+        },
+        {
+          "pc": 125,
+          "op": "call",
+          "a": 2,
+          "b": 5,
+          "c": 2
+        },
+        {
+          "pc": 126,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 302,
+          "constant_operands": {
+            "c": "addTo"
+          }
+        },
+        {
+          "pc": 127,
+          "op": "move",
+          "a": 4,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 128,
+          "op": "call",
+          "a": 2,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 129,
+          "op": "settable",
+          "a": 0,
+          "b": 291,
+          "c": 2,
+          "constant_operands": {
+            "b": "arrayNode"
+          }
+        },
+        {
+          "pc": 130,
+          "op": "newtable",
+          "a": 2,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 131,
+          "op": "settable",
+          "a": 0,
+          "b": 303,
+          "c": 2,
+          "constant_operands": {
+            "b": "btns2"
+          }
+        },
+        {
+          "pc": 132,
+          "op": "self",
+          "a": 2,
+          "b": 0,
+          "c": 304,
+          "constant_operands": {
+            "c": "isShowConfirmBtn"
+          }
+        },
+        {
+          "pc": 133,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 134,
+          "op": "test",
+          "a": 2,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 135,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 4
+        },
+        {
+          "pc": 136,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 137,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 305,
+          "constant_operands": {
+            "c": "needConfirmInWindowVirtualSkill"
+          }
+        },
+        {
+          "pc": 138,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 139,
+          "op": "test",
+          "a": 2,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 140,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 20
+        },
+        {
+          "pc": 141,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 14,
+          "constant": "ui"
+        },
+        {
+          "pc": 142,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 307,
+          "constant_operands": {
+            "c": "CmnYellowBtn_180_54"
+          }
+        },
+        {
+          "pc": 143,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 272,
+          "constant_operands": {
+            "c": "new"
+          }
+        },
+        {
+          "pc": 144,
+          "op": "newtable",
+          "a": 3,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 145,
+          "op": "getglobal",
+          "a": 4,
+          "b": 0,
+          "c": 53,
+          "constant": "Lang"
+        },
+        {
+          "pc": 146,
+          "op": "loadk",
+          "a": 5,
+          "b": 0,
+          "c": 54,
+          "constant": "TXT_Sure"
+        },
+        {
+          "pc": 147,
+          "op": "call",
+          "a": 4,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 148,
+          "op": "settable",
+          "a": 3,
+          "b": 308,
+          "c": 4,
+          "constant_operands": {
+            "b": "text"
+          }
+        },
+        {
+          "pc": 149,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 150,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 273,
+          "constant_operands": {
+            "c": "onButtonClicked"
+          }
+        },
+        {
+          "pc": 151,
+          "op": "getglobal",
+          "a": 4,
+          "b": 0,
+          "c": 18,
+          "constant": "handler"
+        },
+        {
+          "pc": 152,
+          "op": "move",
+          "a": 5,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 153,
+          "op": "gettable",
+          "a": 6,
+          "b": 0,
+          "c": 311,
+          "constant_operands": {
+            "c": "onConfirmBtnClicked"
+          }
+        },
+        {
+          "pc": 154,
+          "op": "call",
+          "a": 4,
+          "b": 3,
+          "c": 0
+        },
+        {
+          "pc": 155,
+          "op": "call",
+          "a": 2,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 156,
+          "op": "settable",
+          "a": 0,
+          "b": 306,
+          "c": 2,
+          "constant_operands": {
+            "b": "sureBtn"
+          }
+        },
+        {
+          "pc": 157,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 8,
+          "constant": "table"
+        },
+        {
+          "pc": 158,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 290,
+          "constant_operands": {
+            "c": "insert"
+          }
+        },
+        {
+          "pc": 159,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 303,
+          "constant_operands": {
+            "c": "btns2"
+          }
+        },
+        {
+          "pc": 160,
+          "op": "gettable",
+          "a": 4,
+          "b": 0,
+          "c": 306,
+          "constant_operands": {
+            "c": "sureBtn"
+          }
+        },
+        {
+          "pc": 161,
+          "op": "call",
+          "a": 2,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 162,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 163,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 312,
+          "constant_operands": {
+            "c": "isEnableCancel"
+          }
+        },
+        {
+          "pc": 164,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 165,
+          "op": "test",
+          "a": 2,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 166,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 23
+        },
+        {
+          "pc": 167,
+          "op": "test",
+          "a": 1,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 168,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 4
+        },
+        {
+          "pc": 169,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 170,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 313,
+          "constant_operands": {
+            "c": "needCancelInWindowVirtualSkill"
+          }
+        },
+        {
+          "pc": 171,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 172,
+          "op": "test",
+          "a": 2,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 173,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 16
+        },
+        {
+          "pc": 174,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 14,
+          "constant": "ui"
+        },
+        {
+          "pc": 175,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 315,
+          "constant_operands": {
+            "c": "CmnBrownBtn_180_54"
+          }
+        },
+        {
+          "pc": 176,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 272,
+          "constant_operands": {
+            "c": "new"
+          }
+        },
+        {
+          "pc": 177,
+          "op": "getglobal",
+          "a": 3,
+          "b": 0,
+          "c": 53,
+          "constant": "Lang"
+        },
+        {
+          "pc": 178,
+          "op": "loadk",
+          "a": 4,
+          "b": 0,
+          "c": 60,
+          "constant": "TXT_Cancel"
+        },
+        {
+          "pc": 179,
+          "op": "call",
+          "a": 3,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 180,
+          "op": "call",
+          "a": 2,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 181,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 273,
+          "constant_operands": {
+            "c": "onButtonClicked"
+          }
+        },
+        {
+          "pc": 182,
+          "op": "closure",
+          "a": 4,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 183,
+          "op": "move",
+          "a": 0,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 184,
+          "op": "call",
+          "a": 2,
+          "b": 3,
+          "c": 2
+        },
+        {
+          "pc": 185,
+          "op": "settable",
+          "a": 0,
+          "b": 314,
+          "c": 2,
+          "constant_operands": {
+            "b": "cancelBtn"
+          }
+        },
+        {
+          "pc": 186,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 8,
+          "constant": "table"
+        },
+        {
+          "pc": 187,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 290,
+          "constant_operands": {
+            "c": "insert"
+          }
+        },
+        {
+          "pc": 188,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 303,
+          "constant_operands": {
+            "c": "btns2"
+          }
+        },
+        {
+          "pc": 189,
+          "op": "gettable",
+          "a": 4,
+          "b": 0,
+          "c": 314,
+          "constant_operands": {
+            "c": "cancelBtn"
+          }
+        },
+        {
+          "pc": 190,
+          "op": "call",
+          "a": 2,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 191,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 14,
+          "constant": "ui"
+        },
+        {
+          "pc": 192,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 317,
+          "constant_operands": {
+            "c": "arrangeNodes"
+          }
+        },
+        {
+          "pc": 193,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 303,
+          "constant_operands": {
+            "c": "btns2"
+          }
+        },
+        {
+          "pc": 194,
+          "op": "loadk",
+          "a": 4,
+          "b": 0,
+          "c": 62,
+          "constant": 50.0
+        },
+        {
+          "pc": 195,
+          "op": "loadbool",
+          "a": 5,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 196,
+          "op": "call",
+          "a": 2,
+          "b": 4,
+          "c": 2
+        },
+        {
+          "pc": 197,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 296,
+          "constant_operands": {
+            "c": "align"
+          }
+        },
+        {
+          "pc": 198,
+          "op": "getglobal",
+          "a": 4,
+          "b": 0,
+          "c": 41,
+          "constant": "display"
+        },
+        {
+          "pc": 199,
+          "op": "gettable",
+          "a": 4,
+          "b": 4,
+          "c": 319,
+          "constant_operands": {
+            "c": "CENTER_BOTTOM"
+          }
+        },
+        {
+          "pc": 200,
+          "op": "gettable",
+          "a": 5,
+          "b": 0,
+          "c": 299,
+          "constant_operands": {
+            "c": "width"
+          }
+        },
+        {
+          "pc": 201,
+          "op": "div",
+          "a": 5,
+          "b": 5,
+          "c": 266,
+          "constant_operands": {
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 202,
+          "op": "loadk",
+          "a": 6,
+          "b": 0,
+          "c": 64,
+          "constant": 40.0
+        },
+        {
+          "pc": 203,
+          "op": "call",
+          "a": 2,
+          "b": 5,
+          "c": 2
+        },
+        {
+          "pc": 204,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 302,
+          "constant_operands": {
+            "c": "addTo"
+          }
+        },
+        {
+          "pc": 205,
+          "op": "move",
+          "a": 4,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 206,
+          "op": "call",
+          "a": 2,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 207,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 208,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 321,
+          "constant_operands": {
+            "c": "hideGameButtonBarWhenWindowVirtualSkill"
+          }
+        },
+        {
+          "pc": 209,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 210,
+          "op": "test",
+          "a": 2,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 211,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 30
+        },
+        {
+          "pc": 212,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 291,
+          "constant_operands": {
+            "c": "arrayNode"
+          }
+        },
+        {
+          "pc": 213,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 296,
+          "constant_operands": {
+            "c": "align"
+          }
+        },
+        {
+          "pc": 214,
+          "op": "getglobal",
+          "a": 4,
+          "b": 0,
+          "c": 41,
+          "constant": "display"
+        },
+        {
+          "pc": 215,
+          "op": "gettable",
+          "a": 4,
+          "b": 4,
+          "c": 322,
+          "constant_operands": {
+            "c": "CENTER_TOP"
+          }
+        },
+        {
+          "pc": 216,
+          "op": "gettable",
+          "a": 5,
+          "b": 0,
+          "c": 299,
+          "constant_operands": {
+            "c": "width"
+          }
+        },
+        {
+          "pc": 217,
+          "op": "div",
+          "a": 5,
+          "b": 5,
+          "c": 266,
+          "constant_operands": {
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 218,
+          "op": "gettable",
+          "a": 6,
+          "b": 0,
+          "c": 300,
+          "constant_operands": {
+            "c": "height"
+          }
+        },
+        {
+          "pc": 219,
+          "op": "sub",
+          "a": 6,
+          "b": 6,
+          "c": 323,
+          "constant_operands": {
+            "c": 37.0
+          }
+        },
+        {
+          "pc": 220,
+          "op": "call",
+          "a": 2,
+          "b": 5,
+          "c": 1
+        },
+        {
+          "pc": 221,
+          "op": "self",
+          "a": 2,
+          "b": 0,
+          "c": 324,
+          "constant_operands": {
+            "c": "setOptMsg"
+          }
+        },
+        {
+          "pc": 222,
+          "op": "gettable",
+          "a": 4,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 223,
+          "op": "self",
+          "a": 4,
+          "b": 4,
+          "c": 325,
+          "constant_operands": {
+            "c": "getWinOperateDesc"
+          }
+        },
+        {
+          "pc": 224,
+          "op": "call",
+          "a": 4,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 225,
+          "op": "call",
+          "a": 2,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 226,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 326,
+          "constant_operands": {
+            "c": "optMsgLabel"
+          }
+        },
+        {
+          "pc": 227,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 327,
+          "constant_operands": {
+            "c": "pos"
+          }
+        },
+        {
+          "pc": 228,
+          "op": "gettable",
+          "a": 4,
+          "b": 0,
+          "c": 299,
+          "constant_operands": {
+            "c": "width"
+          }
+        },
+        {
+          "pc": 229,
+          "op": "div",
+          "a": 4,
+          "b": 4,
+          "c": 266,
+          "constant_operands": {
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 230,
+          "op": "loadk",
+          "a": 5,
+          "b": 0,
+          "c": 72,
+          "constant": 113.0
+        },
+        {
+          "pc": 231,
+          "op": "call",
+          "a": 2,
+          "b": 4,
+          "c": 1
+        },
+        {
+          "pc": 232,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 329,
+          "constant_operands": {
+            "c": "downTimeProgress"
+          }
+        },
+        {
+          "pc": 233,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 327,
+          "constant_operands": {
+            "c": "pos"
+          }
+        },
+        {
+          "pc": 234,
+          "op": "gettable",
+          "a": 4,
+          "b": 0,
+          "c": 299,
+          "constant_operands": {
+            "c": "width"
+          }
+        },
+        {
+          "pc": 235,
+          "op": "div",
+          "a": 4,
+          "b": 4,
+          "c": 266,
+          "constant_operands": {
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 236,
+          "op": "loadk",
+          "a": 5,
+          "b": 0,
+          "c": 74,
+          "constant": 103.0
+        },
+        {
+          "pc": 237,
+          "op": "call",
+          "a": 2,
+          "b": 4,
+          "c": 1
+        },
+        {
+          "pc": 238,
+          "op": "self",
+          "a": 2,
+          "b": 0,
+          "c": 331,
+          "constant_operands": {
+            "c": "setTimeout"
+          }
+        },
+        {
+          "pc": 239,
+          "op": "gettable",
+          "a": 4,
+          "b": 0,
+          "c": 332,
+          "constant_operands": {
+            "c": "seat"
+          }
+        },
+        {
+          "pc": 240,
+          "op": "self",
+          "a": 4,
+          "b": 4,
+          "c": 333,
+          "constant_operands": {
+            "c": "getCountdownTime"
+          }
+        },
+        {
+          "pc": 241,
+          "op": "call",
+          "a": 4,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 242,
+          "op": "call",
+          "a": 2,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 243,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.2.0",
+      "line": 103,
+      "last_line": 110,
+      "header": [
+        1,
+        0,
+        0,
+        3
+      ],
+      "constants": [
+        "skill",
+        "isNeedCancel",
+        "app",
+        "gameManager",
+        "reqRoleOptCancel",
+        "seat",
+        "startRoleOpt",
+        "windowManager",
+        "closeWindow",
+        "skillId"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "getupval",
+          "a": 0,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 2,
+          "op": "gettable",
+          "a": 0,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 3,
+          "op": "self",
+          "a": 0,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "isNeedCancel"
+          }
+        },
+        {
+          "pc": 4,
+          "op": "call",
+          "a": 0,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 5,
+          "op": "test",
+          "a": 0,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 6,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 4
+        },
+        {
+          "pc": 7,
+          "op": "getglobal",
+          "a": 0,
+          "b": 0,
+          "c": 2,
+          "constant": "app"
+        },
+        {
+          "pc": 8,
+          "op": "gettable",
+          "a": 0,
+          "b": 0,
+          "c": 259,
+          "constant_operands": {
+            "c": "gameManager"
+          }
+        },
+        {
+          "pc": 9,
+          "op": "self",
+          "a": 0,
+          "b": 0,
+          "c": 260,
+          "constant_operands": {
+            "c": "reqRoleOptCancel"
+          }
+        },
+        {
+          "pc": 10,
+          "op": "call",
+          "a": 0,
+          "b": 2,
+          "c": 1
+        },
+        {
+          "pc": 11,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 3
+        },
+        {
+          "pc": 12,
+          "op": "getupval",
+          "a": 0,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 13,
+          "op": "gettable",
+          "a": 0,
+          "b": 0,
+          "c": 261,
+          "constant_operands": {
+            "c": "seat"
+          }
+        },
+        {
+          "pc": 14,
+          "op": "self",
+          "a": 0,
+          "b": 0,
+          "c": 262,
+          "constant_operands": {
+            "c": "startRoleOpt"
+          }
+        },
+        {
+          "pc": 15,
+          "op": "call",
+          "a": 0,
+          "b": 2,
+          "c": 1
+        },
+        {
+          "pc": 16,
+          "op": "getglobal",
+          "a": 0,
+          "b": 0,
+          "c": 2,
+          "constant": "app"
+        },
+        {
+          "pc": 17,
+          "op": "gettable",
+          "a": 0,
+          "b": 0,
+          "c": 263,
+          "constant_operands": {
+            "c": "windowManager"
+          }
+        },
+        {
+          "pc": 18,
+          "op": "self",
+          "a": 0,
+          "b": 0,
+          "c": 264,
+          "constant_operands": {
+            "c": "closeWindow"
+          }
+        },
+        {
+          "pc": 19,
+          "op": "getupval",
+          "a": 2,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 20,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 256,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 21,
+          "op": "gettable",
+          "a": 2,
+          "b": 2,
+          "c": 265,
+          "constant_operands": {
+            "c": "skillId"
+          }
+        },
+        {
+          "pc": 22,
+          "op": "call",
+          "a": 0,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 23,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.3",
+      "line": 129,
+      "last_line": 131,
+      "header": [
+        0,
+        1,
+        0,
+        3
+      ],
+      "constants": [
+        "skillsCnt",
+        "column",
+        3.0
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "gettable",
+          "a": 1,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "skillsCnt"
+          }
+        },
+        {
+          "pc": 2,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "column"
+          }
+        },
+        {
+          "pc": 3,
+          "op": "mul",
+          "a": 2,
+          "b": 258,
+          "c": 2,
+          "constant_operands": {
+            "b": 3.0
+          }
+        },
+        {
+          "pc": 4,
+          "op": "lt",
+          "a": 1,
+          "b": 2,
+          "c": 1,
+          "constant_operands": {}
+        },
+        {
+          "pc": 5,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 0
+        },
+        {
+          "pc": 6,
+          "op": "loadbool",
+          "a": 1,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 7,
+          "op": "loadbool",
+          "a": 1,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 8,
+          "op": "return",
+          "a": 1,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 9,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.4",
+      "line": 133,
+      "last_line": 135,
+      "header": [
+        0,
+        1,
+        0,
+        3
+      ],
+      "constants": [
+        "skill",
+        "getMaxShowVirtualCardCnt",
+        1.0
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "gettable",
+          "a": 1,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 2,
+          "op": "self",
+          "a": 1,
+          "b": 1,
+          "c": 257,
+          "constant_operands": {
+            "c": "getMaxShowVirtualCardCnt"
+          }
+        },
+        {
+          "pc": 3,
+          "op": "call",
+          "a": 1,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 4,
+          "op": "lt",
+          "a": 1,
+          "b": 258,
+          "c": 1,
+          "constant_operands": {
+            "b": 1.0
+          }
+        },
+        {
+          "pc": 5,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 0
+        },
+        {
+          "pc": 6,
+          "op": "loadbool",
+          "a": 1,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 7,
+          "op": "loadbool",
+          "a": 1,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 8,
+          "op": "return",
+          "a": 1,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 9,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.5",
+      "line": 137,
+      "last_line": 146,
+      "header": [
+        0,
+        1,
+        0,
+        5
+      ],
+      "constants": [
+        "getSelBtnCnt",
+        "skill",
+        "getMinShowVirtualCardCnt",
+        "ui",
+        "showTips",
+        "请选择卡牌",
+        "virtualCardWindowSelFinish",
+        "getSelSkillIds",
+        "app",
+        "windowManager",
+        "closeWindow",
+        "skillId"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "self",
+          "a": 1,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "getSelBtnCnt"
+          }
+        },
+        {
+          "pc": 2,
+          "op": "call",
+          "a": 1,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 3,
+          "op": "gettable",
+          "a": 2,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 4,
+          "op": "self",
+          "a": 2,
+          "b": 2,
+          "c": 258,
+          "constant_operands": {
+            "c": "getMinShowVirtualCardCnt"
+          }
+        },
+        {
+          "pc": 5,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 6,
+          "op": "lt",
+          "a": 0,
+          "b": 1,
+          "c": 2,
+          "constant_operands": {}
+        },
+        {
+          "pc": 7,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 4
+        },
+        {
+          "pc": 8,
+          "op": "getglobal",
+          "a": 1,
+          "b": 0,
+          "c": 3,
+          "constant": "ui"
+        },
+        {
+          "pc": 9,
+          "op": "gettable",
+          "a": 1,
+          "b": 1,
+          "c": 260,
+          "constant_operands": {
+            "c": "showTips"
+          }
+        },
+        {
+          "pc": 10,
+          "op": "loadk",
+          "a": 2,
+          "b": 0,
+          "c": 5,
+          "constant": "请选择卡牌"
+        },
+        {
+          "pc": 11,
+          "op": "call",
+          "a": 1,
+          "b": 2,
+          "c": 1
+        },
+        {
+          "pc": 12,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 13,
+          "op": "gettable",
+          "a": 1,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 14,
+          "op": "self",
+          "a": 1,
+          "b": 1,
+          "c": 262,
+          "constant_operands": {
+            "c": "virtualCardWindowSelFinish"
+          }
+        },
+        {
+          "pc": 15,
+          "op": "self",
+          "a": 3,
+          "b": 0,
+          "c": 263,
+          "constant_operands": {
+            "c": "getSelSkillIds"
+          }
+        },
+        {
+          "pc": 16,
+          "op": "call",
+          "a": 3,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 17,
+          "op": "call",
+          "a": 1,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 18,
+          "op": "getglobal",
+          "a": 1,
+          "b": 0,
+          "c": 8,
+          "constant": "app"
+        },
+        {
+          "pc": 19,
+          "op": "gettable",
+          "a": 1,
+          "b": 1,
+          "c": 265,
+          "constant_operands": {
+            "c": "windowManager"
+          }
+        },
+        {
+          "pc": 20,
+          "op": "self",
+          "a": 1,
+          "b": 1,
+          "c": 266,
+          "constant_operands": {
+            "c": "closeWindow"
+          }
+        },
+        {
+          "pc": 21,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 22,
+          "op": "gettable",
+          "a": 3,
+          "b": 3,
+          "c": 267,
+          "constant_operands": {
+            "c": "skillId"
+          }
+        },
+        {
+          "pc": 23,
+          "op": "call",
+          "a": 1,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 24,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.6",
+      "line": 148,
+      "last_line": 170,
+      "header": [
+        0,
+        2,
+        0,
+        12
+      ],
+      "constants": [
+        "target",
+        "data",
+        0.0,
+        "type",
+        "table",
+        1.0,
+        2.0,
+        "GameUtil",
+        "getSkill",
+        "property",
+        "skill",
+        "updateVirtualSkill",
+        "getMinShowVirtualCardCnt",
+        "getMaxShowVirtualCardCnt",
+        "needConfirmInWindowVirtualSkill",
+        "virtualCardWindowSelFinish",
+        "skillId",
+        "app",
+        "windowManager",
+        "closeWindow",
+        "sureBtn"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "gettable",
+          "a": 2,
+          "b": 1,
+          "c": 256,
+          "constant_operands": {
+            "c": "target"
+          }
+        },
+        {
+          "pc": 2,
+          "op": "gettable",
+          "a": 3,
+          "b": 2,
+          "c": 257,
+          "constant_operands": {
+            "c": "data"
+          }
+        },
+        {
+          "pc": 3,
+          "op": "loadk",
+          "a": 4,
+          "b": 0,
+          "c": 2,
+          "constant": 0.0
+        },
+        {
+          "pc": 4,
+          "op": "getglobal",
+          "a": 5,
+          "b": 0,
+          "c": 3,
+          "constant": "type"
+        },
+        {
+          "pc": 5,
+          "op": "gettable",
+          "a": 6,
+          "b": 2,
+          "c": 257,
+          "constant_operands": {
+            "c": "data"
+          }
+        },
+        {
+          "pc": 6,
+          "op": "call",
+          "a": 5,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 7,
+          "op": "eq",
+          "a": 0,
+          "b": 5,
+          "c": 260,
+          "constant_operands": {
+            "c": "table"
+          }
+        },
+        {
+          "pc": 8,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 3
+        },
+        {
+          "pc": 9,
+          "op": "gettable",
+          "a": 5,
+          "b": 2,
+          "c": 257,
+          "constant_operands": {
+            "c": "data"
+          }
+        },
+        {
+          "pc": 10,
+          "op": "gettable",
+          "a": 3,
+          "b": 5,
+          "c": 261,
+          "constant_operands": {
+            "c": 1.0
+          }
+        },
+        {
+          "pc": 11,
+          "op": "gettable",
+          "a": 5,
+          "b": 2,
+          "c": 257,
+          "constant_operands": {
+            "c": "data"
+          }
+        },
+        {
+          "pc": 12,
+          "op": "gettable",
+          "a": 4,
+          "b": 5,
+          "c": 262,
+          "constant_operands": {
+            "c": 2.0
+          }
+        },
+        {
+          "pc": 13,
+          "op": "getglobal",
+          "a": 5,
+          "b": 0,
+          "c": 7,
+          "constant": "GameUtil"
+        },
+        {
+          "pc": 14,
+          "op": "gettable",
+          "a": 5,
+          "b": 5,
+          "c": 264,
+          "constant_operands": {
+            "c": "getSkill"
+          }
+        },
+        {
+          "pc": 15,
+          "op": "move",
+          "a": 6,
+          "b": 3,
+          "c": 0
+        },
+        {
+          "pc": 16,
+          "op": "call",
+          "a": 5,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 17,
+          "op": "settable",
+          "a": 5,
+          "b": 265,
+          "c": 4,
+          "constant_operands": {
+            "b": "property"
+          }
+        },
+        {
+          "pc": 18,
+          "op": "gettable",
+          "a": 6,
+          "b": 0,
+          "c": 266,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 19,
+          "op": "self",
+          "a": 6,
+          "b": 6,
+          "c": 267,
+          "constant_operands": {
+            "c": "updateVirtualSkill"
+          }
+        },
+        {
+          "pc": 20,
+          "op": "move",
+          "a": 8,
+          "b": 5,
+          "c": 0
+        },
+        {
+          "pc": 21,
+          "op": "call",
+          "a": 6,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 22,
+          "op": "gettable",
+          "a": 6,
+          "b": 0,
+          "c": 266,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 23,
+          "op": "self",
+          "a": 6,
+          "b": 6,
+          "c": 268,
+          "constant_operands": {
+            "c": "getMinShowVirtualCardCnt"
+          }
+        },
+        {
+          "pc": 24,
+          "op": "call",
+          "a": 6,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 25,
+          "op": "gettable",
+          "a": 7,
+          "b": 0,
+          "c": 266,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 26,
+          "op": "self",
+          "a": 7,
+          "b": 7,
+          "c": 269,
+          "constant_operands": {
+            "c": "getMaxShowVirtualCardCnt"
+          }
+        },
+        {
+          "pc": 27,
+          "op": "call",
+          "a": 7,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 28,
+          "op": "eq",
+          "a": 0,
+          "b": 7,
+          "c": 261,
+          "constant_operands": {
+            "c": 1.0
+          }
+        },
+        {
+          "pc": 29,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 19
+        },
+        {
+          "pc": 30,
+          "op": "gettable",
+          "a": 8,
+          "b": 0,
+          "c": 266,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 31,
+          "op": "self",
+          "a": 8,
+          "b": 8,
+          "c": 270,
+          "constant_operands": {
+            "c": "needConfirmInWindowVirtualSkill"
+          }
+        },
+        {
+          "pc": 32,
+          "op": "call",
+          "a": 8,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 33,
+          "op": "test",
+          "a": 8,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 34,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 14
+        },
+        {
+          "pc": 35,
+          "op": "gettable",
+          "a": 8,
+          "b": 0,
+          "c": 266,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 36,
+          "op": "self",
+          "a": 8,
+          "b": 8,
+          "c": 271,
+          "constant_operands": {
+            "c": "virtualCardWindowSelFinish"
+          }
+        },
+        {
+          "pc": 37,
+          "op": "newtable",
+          "a": 10,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 38,
+          "op": "newtable",
+          "a": 11,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 39,
+          "op": "settable",
+          "a": 11,
+          "b": 272,
+          "c": 3,
+          "constant_operands": {
+            "b": "skillId"
+          }
+        },
+        {
+          "pc": 40,
+          "op": "settable",
+          "a": 11,
+          "b": 265,
+          "c": 4,
+          "constant_operands": {
+            "b": "property"
+          }
+        },
+        {
+          "pc": 41,
+          "op": "setlist",
+          "a": 10,
+          "b": 1,
+          "c": 1
+        },
+        {
+          "pc": 42,
+          "op": "call",
+          "a": 8,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 43,
+          "op": "getglobal",
+          "a": 8,
+          "b": 0,
+          "c": 17,
+          "constant": "app"
+        },
+        {
+          "pc": 44,
+          "op": "gettable",
+          "a": 8,
+          "b": 8,
+          "c": 274,
+          "constant_operands": {
+            "c": "windowManager"
+          }
+        },
+        {
+          "pc": 45,
+          "op": "self",
+          "a": 8,
+          "b": 8,
+          "c": 275,
+          "constant_operands": {
+            "c": "closeWindow"
+          }
+        },
+        {
+          "pc": 46,
+          "op": "gettable",
+          "a": 10,
+          "b": 0,
+          "c": 266,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 47,
+          "op": "gettable",
+          "a": 10,
+          "b": 10,
+          "c": 272,
+          "constant_operands": {
+            "c": "skillId"
+          }
+        },
+        {
+          "pc": 48,
+          "op": "call",
+          "a": 8,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 49,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 2
+        },
+        {
+          "pc": 50,
+          "op": "gettable",
+          "a": 8,
+          "b": 0,
+          "c": 276,
+          "constant_operands": {
+            "c": "sureBtn"
+          }
+        },
+        {
+          "pc": 51,
+          "op": "test",
+          "a": 8,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 52,
+          "op": "jmp",
+          "a": 0,
+          "b": 255,
+          "c": 511
+        },
+        {
+          "pc": 53,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.7",
+      "line": 172,
+      "last_line": 180,
+      "header": [
+        0,
+        1,
+        0,
+        9
+      ],
+      "constants": [
+        0.0,
+        "pairs",
+        "btns",
+        "cardData",
+        "isSelected",
+        1.0
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "loadk",
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "constant": 0.0
+        },
+        {
+          "pc": 2,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 1,
+          "constant": "pairs"
+        },
+        {
+          "pc": 3,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 258,
+          "constant_operands": {
+            "c": "btns"
+          }
+        },
+        {
+          "pc": 4,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 4
+        },
+        {
+          "pc": 5,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 8
+        },
+        {
+          "pc": 6,
+          "op": "gettable",
+          "a": 7,
+          "b": 6,
+          "c": 259,
+          "constant_operands": {
+            "c": "cardData"
+          }
+        },
+        {
+          "pc": 7,
+          "op": "test",
+          "a": 7,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 8,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 5
+        },
+        {
+          "pc": 9,
+          "op": "gettable",
+          "a": 7,
+          "b": 6,
+          "c": 259,
+          "constant_operands": {
+            "c": "cardData"
+          }
+        },
+        {
+          "pc": 10,
+          "op": "self",
+          "a": 7,
+          "b": 7,
+          "c": 260,
+          "constant_operands": {
+            "c": "isSelected"
+          }
+        },
+        {
+          "pc": 11,
+          "op": "call",
+          "a": 7,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 12,
+          "op": "test",
+          "a": 7,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 13,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 0
+        },
+        {
+          "pc": 14,
+          "op": "add",
+          "a": 1,
+          "b": 1,
+          "c": 261,
+          "constant_operands": {
+            "c": 1.0
+          }
+        },
+        {
+          "pc": 15,
+          "op": "tforloop",
+          "a": 2,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 16,
+          "op": "jmp",
+          "a": 0,
+          "b": 255,
+          "c": 500
+        },
+        {
+          "pc": 17,
+          "op": "return",
+          "a": 1,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 18,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.8",
+      "line": 182,
+      "last_line": 190,
+      "header": [
+        0,
+        1,
+        0,
+        11
+      ],
+      "constants": [
+        "pairs",
+        "btns",
+        "cardData",
+        "isSelected",
+        "table",
+        "insert",
+        "skillId",
+        "property"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "newtable",
+          "a": 1,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 2,
+          "op": "getglobal",
+          "a": 2,
+          "b": 0,
+          "c": 0,
+          "constant": "pairs"
+        },
+        {
+          "pc": 3,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "btns"
+          }
+        },
+        {
+          "pc": 4,
+          "op": "call",
+          "a": 2,
+          "b": 2,
+          "c": 4
+        },
+        {
+          "pc": 5,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 16
+        },
+        {
+          "pc": 6,
+          "op": "gettable",
+          "a": 7,
+          "b": 6,
+          "c": 258,
+          "constant_operands": {
+            "c": "cardData"
+          }
+        },
+        {
+          "pc": 7,
+          "op": "test",
+          "a": 7,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 8,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 13
+        },
+        {
+          "pc": 9,
+          "op": "gettable",
+          "a": 7,
+          "b": 6,
+          "c": 258,
+          "constant_operands": {
+            "c": "cardData"
+          }
+        },
+        {
+          "pc": 10,
+          "op": "self",
+          "a": 7,
+          "b": 7,
+          "c": 259,
+          "constant_operands": {
+            "c": "isSelected"
+          }
+        },
+        {
+          "pc": 11,
+          "op": "call",
+          "a": 7,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 12,
+          "op": "test",
+          "a": 7,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 13,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 8
+        },
+        {
+          "pc": 14,
+          "op": "getglobal",
+          "a": 7,
+          "b": 0,
+          "c": 4,
+          "constant": "table"
+        },
+        {
+          "pc": 15,
+          "op": "gettable",
+          "a": 7,
+          "b": 7,
+          "c": 261,
+          "constant_operands": {
+            "c": "insert"
+          }
+        },
+        {
+          "pc": 16,
+          "op": "move",
+          "a": 8,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 17,
+          "op": "newtable",
+          "a": 9,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 18,
+          "op": "gettable",
+          "a": 10,
+          "b": 6,
+          "c": 262,
+          "constant_operands": {
+            "c": "skillId"
+          }
+        },
+        {
+          "pc": 19,
+          "op": "settable",
+          "a": 9,
+          "b": 262,
+          "c": 10,
+          "constant_operands": {
+            "b": "skillId"
+          }
+        },
+        {
+          "pc": 20,
+          "op": "gettable",
+          "a": 10,
+          "b": 6,
+          "c": 263,
+          "constant_operands": {
+            "c": "property"
+          }
+        },
+        {
+          "pc": 21,
+          "op": "settable",
+          "a": 9,
+          "b": 263,
+          "c": 10,
+          "constant_operands": {
+            "b": "property"
+          }
+        },
+        {
+          "pc": 22,
+          "op": "call",
+          "a": 7,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 23,
+          "op": "tforloop",
+          "a": 2,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "pc": 24,
+          "op": "jmp",
+          "a": 0,
+          "b": 255,
+          "c": 492
+        },
+        {
+          "pc": 25,
+          "op": "return",
+          "a": 1,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 26,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    },
+    {
+      "id": "0.9",
+      "line": 192,
+      "last_line": 207,
+      "header": [
+        0,
+        3,
+        0,
+        7
+      ],
+      "constants": [
+        "hideWhenClickOut",
+        "isClicked",
+        "isHitSelf",
+        "seat",
+        "skill",
+        "isNeedCancel",
+        "app",
+        "gameManager",
+        "reqRoleOptCancel",
+        "startRoleOpt",
+        "windowManager",
+        "closeWindow",
+        "skillId"
+      ],
+      "instructions": [
+        {
+          "pc": 1,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 256,
+          "constant_operands": {
+            "c": "hideWhenClickOut"
+          }
+        },
+        {
+          "pc": 2,
+          "op": "test",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 3,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 36
+        },
+        {
+          "pc": 4,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 257,
+          "constant_operands": {
+            "c": "isClicked"
+          }
+        },
+        {
+          "pc": 5,
+          "op": "test",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 6,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 33
+        },
+        {
+          "pc": 7,
+          "op": "self",
+          "a": 3,
+          "b": 0,
+          "c": 258,
+          "constant_operands": {
+            "c": "isHitSelf"
+          }
+        },
+        {
+          "pc": 8,
+          "op": "move",
+          "a": 5,
+          "b": 1,
+          "c": 0
+        },
+        {
+          "pc": 9,
+          "op": "move",
+          "a": 6,
+          "b": 2,
+          "c": 0
+        },
+        {
+          "pc": 10,
+          "op": "call",
+          "a": 3,
+          "b": 4,
+          "c": 2
+        },
+        {
+          "pc": 11,
+          "op": "test",
+          "a": 3,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "pc": 12,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 27
+        },
+        {
+          "pc": 13,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 259,
+          "constant_operands": {
+            "c": "seat"
+          }
+        },
+        {
+          "pc": 14,
+          "op": "test",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 15,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 15
+        },
+        {
+          "pc": 16,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 260,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 17,
+          "op": "test",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 18,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 9
+        },
+        {
+          "pc": 19,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 260,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 20,
+          "op": "self",
+          "a": 3,
+          "b": 3,
+          "c": 261,
+          "constant_operands": {
+            "c": "isNeedCancel"
+          }
+        },
+        {
+          "pc": 21,
+          "op": "call",
+          "a": 3,
+          "b": 2,
+          "c": 2
+        },
+        {
+          "pc": 22,
+          "op": "test",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 23,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 4
+        },
+        {
+          "pc": 24,
+          "op": "getglobal",
+          "a": 3,
+          "b": 0,
+          "c": 6,
+          "constant": "app"
+        },
+        {
+          "pc": 25,
+          "op": "gettable",
+          "a": 3,
+          "b": 3,
+          "c": 263,
+          "constant_operands": {
+            "c": "gameManager"
+          }
+        },
+        {
+          "pc": 26,
+          "op": "self",
+          "a": 3,
+          "b": 3,
+          "c": 264,
+          "constant_operands": {
+            "c": "reqRoleOptCancel"
+          }
+        },
+        {
+          "pc": 27,
+          "op": "call",
+          "a": 3,
+          "b": 2,
+          "c": 1
+        },
+        {
+          "pc": 28,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 2
+        },
+        {
+          "pc": 29,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 259,
+          "constant_operands": {
+            "c": "seat"
+          }
+        },
+        {
+          "pc": 30,
+          "op": "self",
+          "a": 3,
+          "b": 3,
+          "c": 265,
+          "constant_operands": {
+            "c": "startRoleOpt"
+          }
+        },
+        {
+          "pc": 31,
+          "op": "call",
+          "a": 3,
+          "b": 2,
+          "c": 1
+        },
+        {
+          "pc": 32,
+          "op": "gettable",
+          "a": 3,
+          "b": 0,
+          "c": 260,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 33,
+          "op": "test",
+          "a": 3,
+          "b": 0,
+          "c": 0
+        },
+        {
+          "pc": 34,
+          "op": "jmp",
+          "a": 0,
+          "b": 256,
+          "c": 5
+        },
+        {
+          "pc": 35,
+          "op": "getglobal",
+          "a": 3,
+          "b": 0,
+          "c": 6,
+          "constant": "app"
+        },
+        {
+          "pc": 36,
+          "op": "gettable",
+          "a": 3,
+          "b": 3,
+          "c": 266,
+          "constant_operands": {
+            "c": "windowManager"
+          }
+        },
+        {
+          "pc": 37,
+          "op": "self",
+          "a": 3,
+          "b": 3,
+          "c": 267,
+          "constant_operands": {
+            "c": "closeWindow"
+          }
+        },
+        {
+          "pc": 38,
+          "op": "gettable",
+          "a": 5,
+          "b": 0,
+          "c": 260,
+          "constant_operands": {
+            "c": "skill"
+          }
+        },
+        {
+          "pc": 39,
+          "op": "gettable",
+          "a": 5,
+          "b": 5,
+          "c": 268,
+          "constant_operands": {
+            "c": "skillId"
+          }
+        },
+        {
+          "pc": 40,
+          "op": "call",
+          "a": 3,
+          "b": 3,
+          "c": 1
+        },
+        {
+          "pc": 41,
+          "op": "return",
+          "a": 0,
+          "b": 1,
+          "c": 0
+        }
+      ]
+    }
+  ],
+  "rea_evidence": [
+    "ev_05d5033df946a225de4c38cf5efc4639c70456d4f31e1909520997450f785874"
+  ],
+  "layout": {
+    "function": "windowSelectVirtualSkill.initUI",
+    "prototype": "0.2",
+    "source_lines": [
+      38,
+      126
+    ],
+    "default_grid": {
+      "anchor": "CENTER",
+      "x": "width/2",
+      "y": "height/2+20",
+      "dom_top": "height/2-20 minus half grid height"
+    },
+    "window_action_branch": {
+      "predicate": "skill:hideGameButtonBarWhenWindowVirtualSkill()",
+      "pc_range": [
+        207,
+        242
+      ],
+      "grid_anchor": "CENTER_TOP",
+      "grid_position": [
+        "width/2",
+        "height-37"
+      ],
+      "dom_grid_top": 37,
+      "prompt_bottom": 113,
+      "progress_bottom": 103
+    },
+    "buttons": {
+      "gap": 50,
+      "bottom": 40
+    }
+  },
+  "local_adaptation": "For fixed scenes with a semantic options group, center the visible group excluding transparent padding between the actual caption bottom and prompt top. Preserve banner dimensions, original node/link/callback identity and native confirmation. No forced top37.",
+  "limitation": "Static APK bytecode inspection plus separate noname browser/live verification; no official Android runtime capture.",
+  "branch_condition_evidence": [
+    {
+      "member": "app.skill.Skill",
+      "sha256": "7471574f803b3ac36f97836cddbddf2612c3a104cd608943d22c27b01368d8ae",
+      "prototype": {
+        "id": "0.310",
+        "line": 2124,
+        "last_line": 2126,
+        "header": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "constants": [],
+        "instructions": [
+          {
+            "pc": 1,
+            "op": "loadbool",
+            "a": 1,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "pc": 2,
+            "op": "return",
+            "a": 1,
+            "b": 2,
+            "c": 0
+          },
+          {
+            "pc": 3,
+            "op": "return",
+            "a": 0,
+            "b": 1,
+            "c": 0
+          }
+        ]
+      }
+    },
+    {
+      "member": "app.skill.general.fightlord.HuiWan",
+      "sha256": "fbefdc3752aed7be9fcda7005c2f0717946c62319de4e0a5874586a55b4e8157",
+      "prototype": {
+        "id": "0.14",
+        "line": 81,
+        "last_line": 83,
+        "header": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "constants": [],
+        "instructions": [
+          {
+            "pc": 1,
+            "op": "loadbool",
+            "a": 1,
+            "b": 1,
+            "c": 0
+          },
+          {
+            "pc": 2,
+            "op": "return",
+            "a": 1,
+            "b": 2,
+            "c": 0
+          },
+          {
+            "pc": 3,
+            "op": "return",
+            "a": 0,
+            "b": 1,
+            "c": 0
+          }
+        ]
+      }
+    },
+    {
+      "member": "app.manager.game.WindowManager",
+      "sha256": "2ec2db2bfd4612728d626343d5ee6a339ac80072bc19ac88c1349338c7655c42",
+      "prototype": {
+        "id": "0.45",
+        "line": 310,
+        "last_line": 318,
+        "header": [
+          0,
+          3,
+          0,
+          11
+        ],
+        "constants": [
+          "require",
+          "app.view.game.dlg.windowSelectVirtualSkill",
+          "new",
+          80.0,
+          "skill",
+          "hideGameButtonBarWhenWindowVirtualSkill",
+          30.0,
+          "addWindow",
+          "display",
+          "width",
+          2.0,
+          "height"
+        ],
+        "instructions": [
+          {
+            "pc": 1,
+            "op": "getglobal",
+            "a": 3,
+            "b": 0,
+            "c": 0,
+            "constant": "require"
+          },
+          {
+            "pc": 2,
+            "op": "loadk",
+            "a": 4,
+            "b": 0,
+            "c": 1,
+            "constant": "app.view.game.dlg.windowSelectVirtualSkill"
+          },
+          {
+            "pc": 3,
+            "op": "call",
+            "a": 3,
+            "b": 2,
+            "c": 2
+          },
+          {
+            "pc": 4,
+            "op": "gettable",
+            "a": 3,
+            "b": 3,
+            "c": 258,
+            "constant_operands": {
+              "c": "new"
+            }
+          },
+          {
+            "pc": 5,
+            "op": "move",
+            "a": 4,
+            "b": 1,
+            "c": 0
+          },
+          {
+            "pc": 6,
+            "op": "call",
+            "a": 3,
+            "b": 2,
+            "c": 2
+          },
+          {
+            "pc": 7,
+            "op": "loadk",
+            "a": 4,
+            "b": 0,
+            "c": 3,
+            "constant": 80.0
+          },
+          {
+            "pc": 8,
+            "op": "gettable",
+            "a": 5,
+            "b": 1,
+            "c": 260,
+            "constant_operands": {
+              "c": "skill"
+            }
+          },
+          {
+            "pc": 9,
+            "op": "self",
+            "a": 5,
+            "b": 5,
+            "c": 261,
+            "constant_operands": {
+              "c": "hideGameButtonBarWhenWindowVirtualSkill"
+            }
+          },
+          {
+            "pc": 10,
+            "op": "call",
+            "a": 5,
+            "b": 2,
+            "c": 2
+          },
+          {
+            "pc": 11,
+            "op": "test",
+            "a": 5,
+            "b": 0,
+            "c": 0
+          },
+          {
+            "pc": 12,
+            "op": "jmp",
+            "a": 0,
+            "b": 256,
+            "c": 0
+          },
+          {
+            "pc": 13,
+            "op": "loadk",
+            "a": 4,
+            "b": 0,
+            "c": 6,
+            "constant": 30.0
+          },
+          {
+            "pc": 14,
+            "op": "self",
+            "a": 5,
+            "b": 0,
+            "c": 263,
+            "constant_operands": {
+              "c": "addWindow"
+            }
+          },
+          {
+            "pc": 15,
+            "op": "move",
+            "a": 7,
+            "b": 3,
+            "c": 0
+          },
+          {
+            "pc": 16,
+            "op": "move",
+            "a": 8,
+            "b": 2,
+            "c": 0
+          },
+          {
+            "pc": 17,
+            "op": "getglobal",
+            "a": 9,
+            "b": 0,
+            "c": 8,
+            "constant": "display"
+          },
+          {
+            "pc": 18,
+            "op": "gettable",
+            "a": 9,
+            "b": 9,
+            "c": 265,
+            "constant_operands": {
+              "c": "width"
+            }
+          },
+          {
+            "pc": 19,
+            "op": "div",
+            "a": 9,
+            "b": 9,
+            "c": 266,
+            "constant_operands": {
+              "c": 2.0
+            }
+          },
+          {
+            "pc": 20,
+            "op": "getglobal",
+            "a": 10,
+            "b": 0,
+            "c": 8,
+            "constant": "display"
+          },
+          {
+            "pc": 21,
+            "op": "gettable",
+            "a": 10,
+            "b": 10,
+            "c": 267,
+            "constant_operands": {
+              "c": "height"
+            }
+          },
+          {
+            "pc": 22,
+            "op": "div",
+            "a": 10,
+            "b": 10,
+            "c": 266,
+            "constant_operands": {
+              "c": 2.0
+            }
+          },
+          {
+            "pc": 23,
+            "op": "add",
+            "a": 10,
+            "b": 10,
+            "c": 259,
+            "constant_operands": {
+              "c": 80.0
+            }
+          },
+          {
+            "pc": 24,
+            "op": "call",
+            "a": 5,
+            "b": 6,
+            "c": 1
+          },
+          {
+            "pc": 25,
+            "op": "return",
+            "a": 3,
+            "b": 2,
+            "c": 0
+          },
+          {
+            "pc": 26,
+            "op": "return",
+            "a": 0,
+            "b": 1,
+            "c": 0
+          }
+        ]
+      }
+    }
+  ],
+  "predicate_literal_search": {
+    "scope": "all regular modules in decoded assets/res/lib/game.zip",
+    "matches": [
+      "app.manager.game.WindowManager",
+      "app.skill.general.fightlord.HuiWan",
+      "app.skill.Skill",
+      "app.view.game.dlg.windowSelectVirtualSkill",
+      "app.view.game.GameSelfSeatUi"
+    ],
+    "limitation": "Literal matches do not exclude dynamically composed method names."
+  },
+  "correction": "Earlier native-confirm-presence -> top37 mapping was invalid. The official predicate is independent; Skill defaults false and the explicit literal override found is HuiWan. General noname printed dialogs now balance visible option content between title and prompt. This is a DOM layout adaptation, not a direct reproduction of either official branch."
+}

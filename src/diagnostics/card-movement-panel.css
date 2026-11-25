@@ -1,0 +1,8 @@
+.decade-card-diagnostics{position:fixed;inset:0;z-index:1000000;background:#0009;display:flex;align-items:center;justify-content:center;font:16px/1.6 sans-serif;color:#f6ecd6}
+.decade-card-diagnostics section{position:relative;box-sizing:border-box;width:620px;max-width:90vw;max-height:85vh;overflow:auto;padding:24px;background:#302c26;border:1px solid #a88b53;border-radius:12px;box-shadow:0 8px 40px #0009}
+.decade-card-diagnostics h2{position:static;margin:0 0 12px;font:24px/1.4 sans-serif}
+.decade-card-diagnostics p{position:static;margin:12px 0;white-space:normal;overflow-wrap:anywhere}
+.decade-card-diagnostics-actions{position:static;display:flex;flex-wrap:wrap;gap:10px}
+.decade-card-diagnostics button{position:static;width:auto;height:auto;margin:0;padding:8px 14px;border:1px solid #ad905d;border-radius:5px;background:#51412e;color:#fff0ce;font:16px/1.5 sans-serif;cursor:pointer}
+.decade-card-diagnostics button:disabled{opacity:.5;cursor:wait}
+.decade-card-diagnostics button:focus-visible{outline:2px solid #fff0ce;outline-offset:2px}

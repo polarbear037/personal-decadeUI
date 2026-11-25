@@ -65,7 +65,9 @@ function animateEntry(state) {
 	const all = cardsIn(state.dialog);
 	// 自定义分区标记优先；普通新建选牌框直接把其卡牌按钮视为手牌展示区。
 	const handAreas = state.options.handAreas || Array.from(state.dialog.querySelectorAll('[data-dialog-card-area="hand"],.lei-yijiang-sc-h,.handcards'));
-	const cards = all.filter(card => !state.entered.has(card) && (!handAreas.length || handAreas.some(area => area.contains(card))));
+	// 已声明分区或显式传入空手牌列表时，没有手牌就是不播放，不能退回整框入场。
+	const partitioned = state.options.handAreas !== undefined || handAreas.length > 0 || state.dialog.querySelector('[data-dialog-card-area],.lei-yijiang-sc-zone');
+	const cards = all.filter(card => !state.entered.has(card) && (!partitioned || handAreas.some(area => area.contains(card))));
 	if (!cards.length) return;
 	const viewport = ui.window || ui.arena;
 	const view = viewport.getBoundingClientRect();

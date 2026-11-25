@@ -13,6 +13,8 @@ import { createHandlerModule as createHandlerModule } from "./handler.js";
 import { initHooks as initHooks } from "./hooks.js";
 import { initSimplifiedSkillPrompt } from "../ui/simplifiedSkillPrompt.js";
 import { xinshaDialogCardAnimations } from "../ui/dialog-card-animations-xinsha.js";
+import { captureHandCardPosition } from "../utils/hand-card-position.js";
+import { startCardMovementDiagnostics } from "../diagnostics/loader.js";
 import { lerp as c, observeSize as u, throttle as y } from "../animation/utils.js";
 import { CubicBezierEase as f } from "../animation/easing.js";
 import { TimeStep as h } from "../animation/TimeStep.js";
@@ -52,6 +54,7 @@ import { applyLibOverrides as applyLibOverrides } from "../overrides/lib.js";
 import { createContentLose as createContentLose, createContentGain as createContentGain, contentJudge as contentJudge, setBaseContentMethods as wr } from "../overrides/content.js";
 import { applyMoveAnimFix as applyMoveAnimFix } from "../overrides/moveAnimFix.js";
 const Dr = () => ({
+	captureHandCardPosition,
 	init() {
 		return ((this.extensionName = decadeUIName), (this.bodySensor = initializeDecadeUIEnvironment(this)), this.initOverride(), this);
 	},
@@ -119,6 +122,7 @@ const Dr = () => ({
 		}),
 			initHooks(),
 			this.initUIExtensions(),
+			(this.cardMovementDiagnosticsReady = startCardMovementDiagnostics()),
 			initSimplifiedSkillPrompt(),
 			(this.registerCardSkin = this.statics.registerCardSkin));
 	},

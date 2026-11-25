@@ -1,0 +1,26 @@
+{
+  "copyCaptured": true,
+  "distinct": true,
+  "endpoints": {
+    "from": {
+      "transform": "translate(400px, 50px)"
+    },
+    "to": {
+      "transform": "translate(100px, 200px)"
+    }
+  },
+  "stackCaptured": true,
+  "poseSamples": 5,
+  "automatic": true,
+  "automaticSave": true,
+  "status": {
+    "enabled": true,
+    "rows": 2,
+    "watching": 0,
+    "error": ""
+  },
+  "eventUnchanged": true,
+  "handUnchanged": true,
+  "testDataCleared": true,
+  "shortcutInstalled": true
+}

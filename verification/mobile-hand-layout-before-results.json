@@ -1,0 +1,113 @@
+[
+  {
+    "style": "othersOff",
+    "rows": [
+      {
+        "count": 4,
+        "ms": 2.699999988079071,
+        "writes": 25,
+        "stable": true,
+        "eventUnchanged": true,
+        "selected": 0
+      },
+      {
+        "count": 15,
+        "ms": 0.5999999940395355,
+        "writes": 80,
+        "stable": true,
+        "eventUnchanged": true,
+        "selected": 0
+      },
+      {
+        "count": 40,
+        "ms": 0.9000000059604645,
+        "writes": 205,
+        "stable": true,
+        "eventUnchanged": true,
+        "selected": 0
+      },
+      {
+        "count": 80,
+        "ms": 2.7999999821186066,
+        "writes": 405,
+        "stable": true,
+        "eventUnchanged": true,
+        "selected": 0
+      }
+    ]
+  },
+  {
+    "style": "onlineUI",
+    "rows": [
+      {
+        "count": 4,
+        "ms": 0.699999988079071,
+        "writes": 25,
+        "stable": true,
+        "eventUnchanged": true,
+        "selected": 0
+      },
+      {
+        "count": 15,
+        "ms": 0.4000000059604645,
+        "writes": 80,
+        "stable": true,
+        "eventUnchanged": true,
+        "selected": 0
+      },
+      {
+        "count": 40,
+        "ms": 1.2000000178813934,
+        "writes": 205,
+        "stable": true,
+        "eventUnchanged": true,
+        "selected": 0
+      },
+      {
+        "count": 80,
+        "ms": 2.300000011920929,
+        "writes": 405,
+        "stable": true,
+        "eventUnchanged": true,
+        "selected": 0
+      }
+    ]
+  },
+  {
+    "style": "on",
+    "rows": [
+      {
+        "count": 4,
+        "ms": 0.3999999761581421,
+        "writes": 25,
+        "stable": true,
+        "eventUnchanged": true,
+        "selected": 0
+      },
+      {
+        "count": 15,
+        "ms": 0.699999988079071,
+        "writes": 80,
+        "stable": true,
+        "eventUnchanged": true,
+        "selected": 0
+      },
+      {
+        "count": 40,
+        "ms": 1.2000000178813934,
+        "writes": 205,
+        "stable": true,
+        "eventUnchanged": true,
+        "selected": 0
+      },
+      {
+        "count": 80,
+        "ms": 2.9000000059604645,
+        "writes": 405,
+        "stable": true,
+        "eventUnchanged": true,
+        "selected": 0
+      }
+    ]
+  }
+]

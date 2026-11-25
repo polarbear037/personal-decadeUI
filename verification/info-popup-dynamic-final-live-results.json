@@ -1,0 +1,78 @@
+{
+  "name": "dc_guansuo",
+  "double": false,
+  "sourceRank": "one",
+  "previewRank": "one",
+  "canvas": {
+    "width": 198,
+    "height": 305,
+    "client": [
+      130,
+      200
+    ],
+    "visible": "visible"
+  },
+  "active": [
+    {
+      "name": "关索/万花簇威/beijing",
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": [
+          0,
+          1
+        ],
+        "height": [
+          0,
+          0.9
+        ]
+      },
+      "layer": -1,
+      "loaded": true,
+      "node": {
+        "x": [
+          0,
+          0.5
+        ],
+        "y": [
+          0,
+          0.5
+        ],
+        "scale": 0.4,
+        "renderClip": {
+          "x": 0,
+          "y": 0,
+          "width": 198,
+          "height": 274.5
+        }
+      }
+    },
+    {
+      "name": "关索/万花簇威/daiji2",
+      "layer": 0,
+      "loaded": true,
+      "node": {
+        "x": [
+          0,
+          0.5
+        ],
+        "y": [
+          0,
+          0.5
+        ],
+        "scale": 0.72
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "name": "关索/万花簇威/beijing",
+      "layer": -1
+    },
+    {
+      "name": "关索/万花簇威/daiji2",
+      "layer": 0
+    }
+  ],
+  "counter": 2
+}

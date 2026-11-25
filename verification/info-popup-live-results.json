@@ -1,0 +1,18 @@
+{
+  "before": {
+    "event": "chooseToUse",
+    "players": 4,
+    "dynamicCount": 2
+  },
+  "after": {
+    "event": "chooseToUse",
+    "players": 4,
+    "dynamicCount": 2,
+    "paused": true,
+    "paused2": true
+  },
+  "name": "luwenyi",
+  "dynamic": false,
+  "frame": true,
+  "unneeded": []
+}

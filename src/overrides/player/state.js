@@ -1,6 +1,7 @@
 import { get, game, lib, ui, _status } from "noname";
 import { getBasePlayerMethods as getBasePlayerMethods } from "./base.js";
 import { clearOnlineJudgeLayout } from "../../ui/online-judge-layout.js";
+import { clearXinshaJudgeLayout } from "../../ui/xinsha-judge-layout.js";
 import { closeOnlineHandCards } from "../../ui/online-hand-cards.js";
 function e(skill) {
 	const result = getBasePlayerMethods().awakenSkill.apply(this, arguments);
@@ -43,6 +44,7 @@ function o() {
 	getBasePlayerMethods().$uninit.apply(this, arguments);
 	this.classList.add("decade-uninitialized");
 	clearOnlineJudgeLayout(this);
+	clearXinshaJudgeLayout(this);
 	return this;
 }
 function r(from, to, maxHp, online) {

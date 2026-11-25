@@ -48,12 +48,14 @@ function initCardAlternateNameVisible() {
 	clearInterval(window._cardAlternateNameVisibleTimer);
 	ui.window?._cardAlternateNameVisibleObservers?.forEach(observer => observer.disconnect());
 	if (ui.window) delete ui.window._cardAlternateNameVisibleObservers;
-	if (window.decadeUI) {
-		window.decadeUI.cardAlternateName ||= {};
-		window.decadeUI.cardAlternateName.updateVisibility = updateVisibility;
-	}
 	const attach = () => {
-		if (updateVisibility()) {
+		// precontent 先于 content 创建decadeUI；早期手牌区不能让接口注册提前结束。
+		const decadeUI = window.decadeUI;
+		if (decadeUI) {
+			decadeUI.cardAlternateName ||= {};
+			decadeUI.cardAlternateName.updateVisibility = updateVisibility;
+		}
+		if (updateVisibility() && decadeUI) {
 			clearInterval(window._cardAlternateNameVisibleTimer);
 			window._cardAlternateNameVisibleTimer = null;
 		}

@@ -1,0 +1,23 @@
+{
+  "baseline": true,
+  "cases": [
+    {
+      "loading": "othersOff",
+      "zoom": 1,
+      "count": 11,
+      "title": "昭文",
+      "text": "昭文",
+      "expected": "出牌阶段开始时，你可以展示所有手牌。然后你于本回合获得如下效果：1.你可以将其中一张黑色牌当做任意一张普通锦囊牌使用（每回合每种牌名限一次）；2.当你使用其中的一张红色牌时，你摸一张牌。",
+      "height": 392,
+      "topGap": -5.4765521536646755,
+      "bottomGap": -5.471770748144774,
+      "progressGap": 7.012728095855528,
+      "buttonsGap": 2.0018151109987596,
+      "copies": 1,
+      "reopened": true,
+      "originalButtons": true,
+      "cleaned": true
+    }
+  ],
+  "errors": []
+}

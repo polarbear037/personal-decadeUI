@@ -2,7 +2,7 @@
   {
     "style": "othersOff",
     "plainRect": true,
-    "stationarySamples": 119,
+    "stationarySamples": 232,
     "stableHover": true,
     "originalStripClick": true,
     "nativeDragOrigin": true,
@@ -13,7 +13,7 @@
   {
     "style": "othersOff",
     "plainRect": false,
-    "stationarySamples": 119,
+    "stationarySamples": 236,
     "stableHover": true,
     "originalStripClick": true,
     "nativeDragOrigin": true,

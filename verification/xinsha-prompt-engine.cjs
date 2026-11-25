@@ -195,7 +195,8 @@ async function run() {
 					assert.equal(tip.spans.find(span => span.text === "关羽").color, "rgb(255, 225, 0)");
 					assert.equal(tip.spans.find(span => /【/.test(span.text)).color, "rgb(255, 217, 121)");
 				}
-				assert.ok(result.skillTip.rect.bottom <= result.skillTip.confirm.top, "一将提示与确认栏重叠");
+				assert.ok(result.skillTip.rect.bottom <= result.skillTip.confirm.top || result.skillTip.rect.top >= result.skillTip.confirm.bottom,
+					`一将提示与确认栏重叠: ${JSON.stringify({ tip: result.skillTip.rect, controls: result.skillTip.confirm })}`);
 			} else {
 				assert.equal(result.initial, "online");
 				assert.equal(result.skillTip.mode, "online");

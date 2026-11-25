@@ -5,7 +5,7 @@ const crypto = require("node:crypto");
 const { server, chromium, seed } = require("./online-player-tips-browser.cjs");
 const root = path.resolve(__dirname, "..");
 const configKey = "extension_十周年UI_yjcmBackground";
-Object.assign(seed, { mode: "identity", characters: ["standard", "huicui", "xianding"], cards: ["standard", "extra"], extension_十周年UI_newDecadeStyle: "othersOff", extension_十周年UI_rightLayout: "on", phonelayout:true, touchscreen: false });
+Object.assign(seed, { hp_style: "round", mode: "identity", characters: ["standard", "huicui", "xianding"], cards: ["standard", "extra"], extension_十周年UI_newDecadeStyle: "othersOff", extension_十周年UI_rightLayout: "on", phonelayout:true, touchscreen: false });
 const results = {};
 (async () => {
 	await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
@@ -37,6 +37,7 @@ const results = {};
 		for (const [pattern, file] of [["**/pinyin-pro/dist/index.js", "pinyin-pro@3.28.0/node_modules/pinyin-pro/dist/index.mjs"], ["**/dedent/dist/dedent.js", "dedent@1.7.1/node_modules/dedent/dist/dedent.mjs"]]) {
 			await page.route(pattern, route => route.fulfill({ contentType: "text/javascript", body: fs.readFileSync(path.resolve(root, "../../node_modules/.pnpm/", file), "utf8") }));
 		}
+		for (const file of ['core-js-bundle@3.48.0/node_modules/core-js-bundle/index.js','stackframe@1.3.4/node_modules/stackframe/stackframe.js','error-stack-parser@2.1.4/node_modules/error-stack-parser/error-stack-parser.js','stacktrace-gps@3.1.2/node_modules/stacktrace-gps/stacktrace-gps.js']) if (/as __require/.test(fs.readFileSync(path.resolve(root,'../../node_modules/.pnpm',file),'utf8'))) await page.unroute('**/node_modules/.pnpm/'+file);
 		await page.goto(`http://127.0.0.1:${server.address().port}/player-tips-probe`);
 		await Promise.race([startupFailure, page.locator("#arena > .player").nth(1).waitFor({ state: "attached", timeout: 45000 })]).catch(async error => {
 			console.log("STARTUP", JSON.stringify({ errors, failed, body: await page.locator("body").innerText() }));
@@ -122,31 +123,17 @@ const results = {};
             const d = document.querySelector('.yjcm-seat-info');
             return Number(getComputedStyle(d.querySelector('.right')).zIndex) > Number(getComputedStyle(d.querySelector('.yjcm-info-frame')).zIndex);
         }), true, 'opaque frame must stay below skill text');
-        for (const [name, expected] of Object.entries({ close:[969.5,0,53,53], mini:[78,391,48,48], pane:[387,21,559,378], tab:[965,53,52,126], card:[82.5,44.4,209,277.2] })) {
+        for (const [name, expected] of Object.entries({ close:[969.5,0,53,53], mini:[78,391,48,48], pane:[387,21,559,378], tab:[965,53,52,126], card:[82,30,214,305] })) {
             const values = Object.values(results.initial[name]);
             values.forEach((v,i) => assert.ok(Math.abs(v-expected[i]) < .1, `${name}: ${values} expected ${expected}`));
         }
         await page.screenshot({ path: path.join(__dirname, 'yjcm-character-browser.png') });
         results.cardDetails = await page.evaluate(() => {
-            const d = document.querySelector('.yjcm-seat-info'), portrait=d.querySelector('.yjcm-general-portrait');
-            const hp=d.querySelector('.yjcm-general-hp'), bg=d.querySelector('.yjcm-general-hp-bg');
-            const scroller=d.querySelector('.right > div');
-            return { portrait:[portrait.offsetLeft,portrait.offsetTop,portrait.offsetWidth,portrait.offsetHeight],mask:getComputedStyle(portrait).maskImage,hp:[hp.offsetLeft,hp.offsetTop,hp.offsetWidth,hp.offsetHeight],background:getComputedStyle(bg).borderImageSource,backgroundHeight:bg.offsetHeight,gutter:scroller.offsetWidth-scroller.clientWidth,scrollbar:getComputedStyle(scroller).scrollbarWidth,webkitScrollbar:getComputedStyle(scroller,'::-webkit-scrollbar').display,miniParent:d.querySelector('.miniChange').parentElement.className };
+            const d=document.querySelector('.yjcm-seat-info'), p=d.querySelector('.yjcm-character-preview'), scroller=d.querySelector('.right>div');
+            return {native:p instanceof lib.element.Player, name:p.name, visible:p.node.avatar.isConnected, extras:['identity','count','marks','judges','equips','seat'].filter(key=>p.node[key]?.isConnected), gutter:scroller.offsetWidth-scroller.clientWidth, scrollbar:getComputedStyle(scroller).scrollbarWidth, miniParent:d.querySelector('.miniChange').parentElement.className};
         });
-        assert.deepEqual(results.cardDetails.portrait,[10,-3,180,245]);
-        assert.deepEqual(results.cardDetails.hp,[146,139,36,105]);
-        assert.match(results.cardDetails.mask,/skin_clip.png/);
-        assert.match(results.cardDetails.background,/yjcm_general_hp_bg.png/);
-        assert.equal(results.cardDetails.backgroundHeight,216);
-        assert.equal(results.cardDetails.gutter,0);
-        assert.equal(results.cardDetails.scrollbar,'none');
-        assert.equal(results.cardDetails.webkitScrollbar,'none');
-        assert.equal(results.cardDetails.miniParent,'yjcm-info-footer');
-        await page.locator('.yjcm-general-hp').screenshot({path:path.join(root,'.codex-tmp/yjcm-character-hp-on.png')});
-        await page.locator('.yjcm-general-hp-bg').evaluate(n=>{n.style.display='none'});
-        await page.locator('.yjcm-general-hp').screenshot({path:path.join(root,'.codex-tmp/yjcm-character-hp-off.png')});
-        await page.locator('.yjcm-general-hp-bg').evaluate(n=>{n.style.display=''});
-        assert.notDeepEqual(fs.readFileSync(path.join(root,'.codex-tmp/yjcm-character-hp-on.png')),fs.readFileSync(path.join(root,'.codex-tmp/yjcm-character-hp-off.png')),'HP background must actually paint');
+        assert.ok(results.cardDetails.native); assert.ok(results.cardDetails.visible); assert.deepEqual(results.cardDetails.extras,[]);
+        assert.equal(results.cardDetails.gutter,0);assert.equal(results.cardDetails.scrollbar,'none');assert.equal(results.cardDetails.miniParent,'yjcm-info-footer');
         await page.evaluate(()=>{game.me.init('caojinyu');characterPlugin.click.playerIntro.call(characterPlugin,null,game.me)});
         await page.evaluate(()=>document.fonts.ready);
         assert.equal(await page.locator('.yjcm-seat-info .xskill').count(),3);
@@ -239,11 +226,11 @@ const results = {};
             characterPlugin.click.playerIntro.call(characterPlugin, null, game.me);
             const d = document.querySelector('.yjcm-seat-info');
             d.querySelectorAll('.yjcm-general-switch-button')[1].click();
-            return { general:d.dataset.general,name:d.querySelector('.yjcm-general-name').textContent };
+            return { general:d.dataset.general,name:d.querySelector('.yjcm-character-preview').node.name.textContent };
         });
         assert.equal(results.doubleGeneral.general, 'secondary');
         assert.equal(results.doubleGeneral.name, '关羽');
-        assert.ok(Math.abs((await page.locator('.yjcm-general-card').boundingBox()).width-190*.95)<.1);
+        assert.ok(Math.abs((await page.locator('.yjcm-general-card').boundingBox()).width-214)<.1);
         results.jin = await page.evaluate(() => {
             game.me.init('jin_simayi');
             // 测试包未启用晋包时，使用临时测试角色，仍走真实人物窗创建路径。
@@ -252,17 +239,17 @@ const results = {};
                 game.me.init('yjcm_jin_probe');
             }
             characterPlugin.click.playerIntro.call(characterPlugin, null, game.me);
-            return document.querySelector('.yjcm-general-country').style.backgroundImage;
+            return document.querySelector('.yjcm-character-preview').node.campWrap.dataset.camp;
         });
-        assert.match(results.jin, /gradation_bg_20.png/);
+        assert.equal(results.jin, 'jin');
         results.opponent = await page.evaluate(() => {
             const player = game.players[1]; player.init('sunquan','guanyu'); player.classList.add('unseen','unseen2');
             characterPlugin.click.playerIntro.call(characterPlugin, null, player);
             const d = document.querySelector('.yjcm-seat-info');
-            const mainName = d.querySelector('.yjcm-general-name').textContent;
+            const mainName = d.querySelector('.yjcm-character-preview').node.name.textContent;
             d.querySelectorAll('.yjcm-general-switch-button')[1].click();
             d.querySelector('.miniChange').click();
-            return { mainName,secondary:d.querySelector('.yjcm-general-name').textContent,calls:miniCalls };
+            return { mainName,secondary:d.querySelector('.yjcm-character-preview').node.name.textContent,calls:miniCalls };
         });
         assert.equal(results.opponent.mainName, '未知');
         assert.equal(results.opponent.secondary, '未知');

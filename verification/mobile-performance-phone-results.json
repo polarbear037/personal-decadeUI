@@ -1,0 +1,211 @@
+{
+  "date": "2026-11-25",
+  "device": {
+    "model": "PJA110",
+    "os": "Android 16",
+    "webview": "134.0.6998.135",
+    "style": "othersOff"
+  },
+  "scope": "十周年UI及用户明确授权的皮肤切换；飞牌诊断实现未改动，用户已手动关闭",
+  "changes": [
+    "手牌重排只在状态变化时改class，避免随牌数增长的无效观察器通知",
+    "一将动态背景缓存尺寸，停止逐帧相同DOM属性写入，隐藏时暂停并在恢复时继续",
+    "Spine DOM画布先检查30fps节拍，GL状态未变化时复用快照；外部改状态或替换入口时重新查询，释放时恢复方法",
+    "仅ui.arena/padding=0/scale=1的特效画布通过100%跟随牌桌，其他尺寸分支保留"
+  ],
+  "phone": {
+    "files": [
+      {
+        "file": "extension/十周年UI/src/core/layout.js",
+        "equal": true,
+        "sha256": "c0812a1a600fb89c4ae96707ab5da516a857f5a10af5c0553779384e25534435"
+      },
+      {
+        "file": "extension/十周年UI/ui/lbtn/skins/xinsha-background-animation.js",
+        "equal": true,
+        "sha256": "0fc0c12d8b3df2f8c977da1c4f96bb430eed7136c33b72f0b30b2cfcd9b3caed"
+      },
+      {
+        "file": "extension/皮肤切换/js/modules/spine-dom-canvas.js",
+        "equal": true,
+        "sha256": "fd5289c2a1973d65ae9ff205f5f1a24a2050e7a12369f1d8dd5fbb0ecbedd5f1"
+      },
+      {
+        "file": "extension/皮肤切换/js/modules/chukuang-worker-api.js",
+        "equal": true,
+        "sha256": "625aa053a6ecf9d979b776d509dba3392c8c99defd58b4ea7e955059fac27cd5"
+      }
+    ],
+    "layoutStableFiveUpdates": {
+      "beforeWrites": 65,
+      "afterWrites": 0,
+      "hand": 12,
+      "wrapperPreserved": true,
+      "eventUnchanged": true
+    },
+    "cpuIdleComparison": {
+      "before": {
+        "url": "(idle)",
+        "ms": 3620,
+        "pct": 43.8
+      },
+      "after": {
+        "url": "(idle)",
+        "ms": 5849,
+        "pct": 70.9
+      },
+      "note": "同一12张手牌等待场景的8秒CDP主线程采样；不是整机CPU、GPU功耗或温升数据，操作活动不同的首组用牌样本不用于性能倍率计算"
+    },
+    "getParameter": {
+      "before": {
+        "ms": 2358.197,
+        "pct": 28.51022461955691
+      },
+      "after": {
+        "ms": 0,
+        "pct": 0
+      }
+    },
+    "canvas5": {
+      "before": {
+        "rect": {
+          "x": 21.994580541338237,
+          "y": 12.63552393232073,
+          "width": 1367.2911507742745,
+          "height": 613.1935664585658
+        },
+        "style": "position: absolute; pointer-events: none; left: 0px; top: 0px; width: 1367.29px; height: 613.194px; z-index: 5;"
+      },
+      "after": {
+        "rect": {
+          "x": 21.994580541338237,
+          "y": 12.63552393232073,
+          "width": 1367.2911507742745,
+          "height": 613.1935664585658
+        },
+        "style": "position: absolute; pointer-events: none; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 5;",
+        "verified": true,
+        "eventUnchanged": true,
+        "handUnchanged": true
+      }
+    },
+    "frames": {
+      "ms": 8005.700000000186,
+      "frames": 698,
+      "averageMs": 11.457163323782368,
+      "p95": 11.100000000093132,
+      "over50": 4,
+      "longTasks": 4,
+      "maxLongTask": 63
+    },
+    "observation20Seconds": {
+      "eventChanges": 1,
+      "states": [
+        {
+          "at": 3,
+          "event": "chooseToUse",
+          "hand": 12
+        }
+      ],
+      "note": "此窗口没有新的用牌/技能提交，不能当作优化后的完整手机结算验证"
+    }
+  },
+  "browser": {
+    "handCounts": [
+      4,
+      15,
+      40,
+      80
+    ],
+    "styles": [
+      "othersOff",
+      "onlineUI",
+      "on"
+    ],
+    "redundantClassWrites80CardsFiveUpdates": {
+      "before": 405,
+      "after": 0
+    },
+    "backgrounds": 9,
+    "backgroundLifecycle": {
+      "steadyDraws": 19,
+      "steadyAttributeWrites": 0,
+      "hiddenDraws": 0,
+      "resumedDraws": 19
+    },
+    "spine": {
+      "drawsPerSecond": 30,
+      "visibilityChecks90HzBefore": 90,
+      "visibilityChecks90HzAfter": 30,
+      "idleBatchQueries": 0,
+      "changedStateQueries": 18,
+      "replacedEntryQueries": 18,
+      "sourcePixelsPreserved": true,
+      "glError": 0,
+      "trackerRestored": true
+    },
+    "canvas5": {
+      "stableReads": 0,
+      "stableWrites": 0,
+      "scales": [
+        0.75,
+        1,
+        1.5
+      ],
+      "widths": [
+        700,
+        1000
+      ],
+      "geometryError": 0,
+      "nonArenaFallbackPreserved": true
+    },
+    "nativeCardWait": {
+      "othersOff": true,
+      "onlineUI": true,
+      "note": "浏览器真实引擎用牌等待回归，不等同手机完整结算"
+    }
+  },
+  "commands": [
+    "node --check src/core/layout.js",
+    "node --check ui/lbtn/skins/xinsha-background-animation.js",
+    "node --check ../皮肤切换/js/modules/spine-dom-canvas.js",
+    "node --check ../皮肤切换/js/modules/chukuang-worker-api.js",
+    "node verification/mobile-hand-layout-performance.cjs --baseline",
+    "node verification/mobile-hand-layout-performance.cjs",
+    "node verification/xinsha-background-browser.cjs",
+    "node verification/card-reflow-sync-browser.cjs",
+    "node ../皮肤切换/tests/spine-dom-canvas-browser.cjs",
+    "node ../皮肤切换/tests/canvas5-sizing-browser.cjs",
+    "node verification/card-animations-async-engine.cjs"
+  ],
+  "testNotes": [
+    "card-reflow-sync-browser.cjs初期出现hand-settled: 真实途中帧/同帧移动进度一致断言失败；修改前对照及相同源码指定路由复现通过，最终直接运行通过。保留该夹具的启动时序波动，未通过放宽断言来掩盖。",
+    "Android game.writeFile成功回调返回ProgressEvent(writeend)，不是Node式error-first；所有同步结果以读取文本及SHA256比对确认。",
+    "Debugger对新增ES模块顶层绑定返回BlockedByTopLevelEsModuleChange；GL缓存通过现有龙框setEnabled生命周期接入，只重建2处龙框，未重开牌局。"
+  ],
+  "limitations": [
+    "仍观测到50～63ms长任务，未承诺所有帧达到固定帧率",
+    "未完成优化后的手机完整用牌/发动技能对局、长时间温升、真实联机验证",
+    "未测量整机功耗或GPU负载；温度读数受USB充电影响，不作为改善证据",
+    "官方APK仅核对身份和龙框成员，不冒称已运行官方客户端或该优化来自官方GL实现"
+  ],
+  "officialEvidence": {
+    "scope": "静态APK身份和成员核对；本次更改属于本地WebView绘制适配，不改变官方骨骼、动作、素材或播放模式分流",
+    "famous": {
+      "path": "D:/yoka_sgs.x_g_android_6.4.5.apk",
+      "sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+      "inventory": "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+      "members": "ev_176ac71bb14b6808cad5b4987277666ea51d38521fefade72b9905f53659f37b",
+      "paths": [
+        "assets/res/new/data/spine/yjcm/sgs_paiju_laolongkuang.skel",
+        "assets/res/new/data/spine/yjcm/sgs_paiju_laolongkuang.atlas"
+      ]
+    },
+    "online": {
+      "path": "D:/yoka.game_g_android_4.0.3.apk",
+      "sha256": "47be3dbf22d303d055c42b615282f29b7799a4c8d1471172af6fb59c4a902c3d",
+      "inventory": "ev_40f150d683ceec8a5b7dd4871126b5fbf5ec2157aa8713c527065d40b11d2760"
+    },
+    "sessionsClosed": true
+  }
+}

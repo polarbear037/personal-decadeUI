@@ -9,14 +9,28 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 1,
+            "lineCenterErrors": [
+              0
+            ]
+          }
         }
       },
       {
@@ -25,14 +39,28 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 1,
+            "lineCenterErrors": [
+              0
+            ]
+          }
         }
       },
       {
@@ -41,14 +69,29 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 2,
+            "lineCenterErrors": [
+              0,
+              0
+            ]
+          }
         }
       },
       {
@@ -57,14 +100,28 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 1,
+            "lineCenterErrors": [
+              0
+            ]
+          }
         }
       },
       {
@@ -73,14 +130,28 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 1,
+            "lineCenterErrors": [
+              -0.0078125
+            ]
+          }
         }
       },
       {
@@ -89,14 +160,28 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 1,
+            "lineCenterErrors": [
+              0
+            ]
+          }
         }
       },
       {
@@ -105,14 +190,28 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 1,
+            "lineCenterErrors": [
+              0
+            ]
+          }
         }
       },
       {
@@ -121,14 +220,28 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 1,
+            "lineCenterErrors": [
+              0
+            ]
+          }
         }
       },
       {
@@ -137,14 +250,29 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 2,
+            "lineCenterErrors": [
+              0,
+              -0.0078125
+            ]
+          }
         }
       },
       {
@@ -153,14 +281,28 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 1,
+            "lineCenterErrors": [
+              0
+            ]
+          }
         }
       },
       {
@@ -169,14 +311,28 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 1,
+            "lineCenterErrors": [
+              0
+            ]
+          }
         }
       },
       {
@@ -185,14 +341,28 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 1,
+            "lineCenterErrors": [
+              0
+            ]
+          }
         }
       },
       {
@@ -201,14 +371,29 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 2,
+            "lineCenterErrors": [
+              0,
+              -0.0078125
+            ]
+          }
         }
       },
       {
@@ -217,14 +402,28 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 1,
+            "lineCenterErrors": [
+              0
+            ]
+          }
         }
       },
       {
@@ -233,14 +432,29 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 2,
+            "lineCenterErrors": [
+              0,
+              -0.0078125
+            ]
+          }
         }
       },
       {
@@ -249,14 +463,28 @@
         "color": "rgb(255, 255, 255)",
         "font": "dui-yjcm-card-tag, serif",
         "size": "18.8571px",
-        "background": "url(\"http://127.0.0.1:59022/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
+        "background": "url(\"http://127.0.0.1:63784/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/card_text_bg.png\")",
         "left": -0.015769675925925927,
         "height": 0.35052083333333334,
         "opacity": "1",
         "label": {
           "color": "rgb(255, 255, 255)",
           "outline": "rgb(63, 51, 24)",
-          "font": "dui-yjcm-card-tag, serif"
+          "font": "dui-yjcm-card-tag, serif",
+          "geometry": {
+            "centerX": 0.484504277099986,
+            "centerY": 0.4676077265973254,
+            "width": 0.923012200252419,
+            "height": 0.9833580980683506,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0.857143px",
+            "lineCount": 1,
+            "lineCenterErrors": [
+              0
+            ]
+          }
         }
       }
     ]
@@ -278,7 +506,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -294,7 +534,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -310,7 +562,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -326,7 +590,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -342,7 +618,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.6296296296296297,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -358,7 +646,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -500,7 +800,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -516,7 +828,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -532,7 +856,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -548,7 +884,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -564,7 +912,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.6296296296296297,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -580,7 +940,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -722,7 +1094,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -738,7 +1122,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -754,7 +1150,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -770,7 +1178,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -786,7 +1206,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.6296296296296297,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -802,7 +1234,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -944,7 +1388,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -960,7 +1416,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -976,7 +1444,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -992,7 +1472,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -1008,7 +1500,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.6296296296296297,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -1024,7 +1528,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -1166,7 +1682,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -1182,7 +1710,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -1198,7 +1738,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -1214,7 +1766,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -1230,7 +1794,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.6296296296296297,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {
@@ -1246,7 +1822,19 @@
         "label": {
           "color": "rgb(255, 255, 200)",
           "outline": "rgb(255, 255, 200)",
-          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif"
+          "font": "STHeiti, SimHei, \"Microsoft JhengHei\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", Helvetica, Arial, sans-serif",
+          "geometry": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "width": 0.3463541666666667,
+            "height": 0.7676767676767676,
+            "bottomGap": 0,
+            "textAlign": "center",
+            "whiteSpace": "normal",
+            "outlineWidth": "0px",
+            "lineCount": 0,
+            "lineCenterErrors": []
+          }
         }
       },
       {

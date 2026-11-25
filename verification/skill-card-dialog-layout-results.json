@@ -1,0 +1,1617 @@
+{
+  "cases": [
+    {
+      "style": "othersOff",
+      "loading": "othersOff",
+      "zoom": 1,
+      "skill": "dcxialei",
+      "title": "霞泪",
+      "footer": "获得其中的一张牌",
+      "frame": {
+        "x": 0,
+        "y": 169.34375,
+        "width": 1600,
+        "height": 476.46875,
+        "top": 169.34375,
+        "right": 1600,
+        "bottom": 645.8125,
+        "left": 0
+      },
+      "titleRect": {
+        "x": 623.09375,
+        "y": 171.140625,
+        "width": 353.8125,
+        "height": 44.375,
+        "top": 171.140625,
+        "right": 976.90625,
+        "bottom": 215.515625,
+        "left": 623.09375
+      },
+      "cards": [
+        {
+          "x": 612.109375,
+          "y": 238.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 238.765625,
+          "right": 728.734375,
+          "bottom": 400.765625,
+          "left": 612.109375
+        },
+        {
+          "x": 741.671875,
+          "y": 238.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 238.765625,
+          "right": 858.296875,
+          "bottom": 400.765625,
+          "left": 741.671875
+        },
+        {
+          "x": 871.234375,
+          "y": 238.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 238.765625,
+          "right": 987.859375,
+          "bottom": 400.765625,
+          "left": 871.234375
+        }
+      ],
+      "tip": {
+        "x": 68.359375,
+        "y": 429.578125,
+        "width": 1463.265625,
+        "height": 35.984375,
+        "top": 429.578125,
+        "right": 1531.625,
+        "bottom": 465.5625,
+        "left": 68.359375
+      },
+      "controls": {
+        "x": 554.125,
+        "y": 533.078125,
+        "width": 491.75,
+        "height": 64.765625,
+        "top": 533.078125,
+        "right": 1045.875,
+        "bottom": 597.84375,
+        "left": 554.125
+      },
+      "image": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+      "titleImage": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha_title.png\")",
+      "scale": 1.199400299850075,
+      "progress": {
+        "x": 464.15625,
+        "y": 473.96875,
+        "width": 671.65625,
+        "height": 20.375,
+        "top": 473.96875,
+        "right": 1135.8125,
+        "bottom": 494.34375,
+        "left": 464.15625
+      },
+      "marker": true,
+      "moved": {
+        "tip": {
+          "x": 68.359375,
+          "y": 354.375,
+          "width": 1463.265625,
+          "height": 35.984375,
+          "top": 354.375,
+          "right": 1531.625,
+          "bottom": 390.359375,
+          "left": 68.359375
+        },
+        "progress": {
+          "x": 464.15625,
+          "y": 398.765625,
+          "width": 671.65625,
+          "height": 20.375,
+          "top": 398.765625,
+          "right": 1135.8125,
+          "bottom": 419.140625,
+          "left": 464.15625
+        }
+      },
+      "wrapGap": 8.40625,
+      "baseGap": 8.40625,
+      "hidden": true,
+      "restored": true,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "othersOff",
+      "loading": "othersOff",
+      "zoom": 1,
+      "skill": "zhiheng",
+      "title": "制衡",
+      "footer": "请选择一张牌",
+      "frame": {
+        "x": 0,
+        "y": 169.34375,
+        "width": 1600,
+        "height": 476.46875,
+        "top": 169.34375,
+        "right": 1600,
+        "bottom": 645.8125,
+        "left": 0
+      },
+      "titleRect": {
+        "x": 623.09375,
+        "y": 171.140625,
+        "width": 353.8125,
+        "height": 44.375,
+        "top": 171.140625,
+        "right": 976.90625,
+        "bottom": 215.515625,
+        "left": 623.09375
+      },
+      "cards": [
+        {
+          "x": 612.109375,
+          "y": 238.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 238.765625,
+          "right": 728.734375,
+          "bottom": 400.765625,
+          "left": 612.109375
+        },
+        {
+          "x": 741.671875,
+          "y": 238.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 238.765625,
+          "right": 858.296875,
+          "bottom": 400.765625,
+          "left": 741.671875
+        },
+        {
+          "x": 871.234375,
+          "y": 238.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 238.765625,
+          "right": 987.859375,
+          "bottom": 400.765625,
+          "left": 871.234375
+        }
+      ],
+      "tip": {
+        "x": 68.359375,
+        "y": 429.578125,
+        "width": 1463.265625,
+        "height": 35.984375,
+        "top": 429.578125,
+        "right": 1531.625,
+        "bottom": 465.5625,
+        "left": 68.359375
+      },
+      "controls": {
+        "x": 554.125,
+        "y": 533.078125,
+        "width": 491.75,
+        "height": 64.765625,
+        "top": 533.078125,
+        "right": 1045.875,
+        "bottom": 597.84375,
+        "left": 554.125
+      },
+      "image": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+      "titleImage": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha_title.png\")",
+      "scale": 1.199400299850075,
+      "progress": {
+        "x": 464.15625,
+        "y": 473.96875,
+        "width": 671.65625,
+        "height": 20.375,
+        "top": 473.96875,
+        "right": 1135.8125,
+        "bottom": 494.34375,
+        "left": 464.15625
+      },
+      "marker": true,
+      "moved": {
+        "tip": {
+          "x": 68.359375,
+          "y": 354.375,
+          "width": 1463.265625,
+          "height": 35.984375,
+          "top": 354.375,
+          "right": 1531.625,
+          "bottom": 390.359375,
+          "left": 68.359375
+        },
+        "progress": {
+          "x": 464.15625,
+          "y": 398.765625,
+          "width": 671.65625,
+          "height": 20.375,
+          "top": 398.765625,
+          "right": 1135.8125,
+          "bottom": 419.140625,
+          "left": 464.15625
+        }
+      },
+      "wrapGap": 8.40625,
+      "baseGap": 8.40625,
+      "hidden": true,
+      "restored": true,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "othersOff",
+      "loading": "othersOff",
+      "zoom": 1.5,
+      "skill": "dcxialei",
+      "title": "霞泪",
+      "footer": "获得其中的一张牌",
+      "frame": {
+        "x": -0.0078125,
+        "y": 127.34375,
+        "width": 1600.515625,
+        "height": 475.96875,
+        "top": 127.34375,
+        "right": 1600.5078125,
+        "bottom": 603.3125,
+        "left": -0.0078125
+      },
+      "titleRect": {
+        "x": 623.2734375,
+        "y": 129.140625,
+        "width": 353.9375,
+        "height": 44.390625,
+        "top": 129.140625,
+        "right": 977.2109375,
+        "bottom": 173.53125,
+        "left": 623.2734375
+      },
+      "cards": [
+        {
+          "x": 612.3046875,
+          "y": 196.796875,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 196.796875,
+          "right": 728.9765625,
+          "bottom": 358.84375,
+          "left": 612.3046875
+        },
+        {
+          "x": 741.9140625,
+          "y": 196.796875,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 196.796875,
+          "right": 858.5859375,
+          "bottom": 358.84375,
+          "left": 741.9140625
+        },
+        {
+          "x": 871.5234375,
+          "y": 196.796875,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 196.796875,
+          "right": 988.1953125,
+          "bottom": 358.84375,
+          "left": 871.5234375
+        }
+      ],
+      "tip": {
+        "x": 68.609375,
+        "y": 387.359375,
+        "width": 1463.265625,
+        "height": 35.984375,
+        "top": 387.359375,
+        "right": 1531.875,
+        "bottom": 423.34375,
+        "left": 68.609375
+      },
+      "controls": {
+        "x": 554.375,
+        "y": 490.578125,
+        "width": 491.75,
+        "height": 64.765625,
+        "top": 490.578125,
+        "right": 1046.125,
+        "bottom": 555.34375,
+        "left": 554.375
+      },
+      "image": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+      "titleImage": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha_title.png\")",
+      "scale": 1.199400299850075,
+      "progress": {
+        "x": 464.40625,
+        "y": 431.765625,
+        "width": 671.65625,
+        "height": 20.375,
+        "top": 431.765625,
+        "right": 1136.0625,
+        "bottom": 452.140625,
+        "left": 464.40625
+      },
+      "marker": true,
+      "moved": {
+        "tip": {
+          "x": 68.609375,
+          "y": 354.65625,
+          "width": 1463.265625,
+          "height": 35.984375,
+          "top": 354.65625,
+          "right": 1531.875,
+          "bottom": 390.640625,
+          "left": 68.609375
+        },
+        "progress": {
+          "x": 464.40625,
+          "y": 399.0625,
+          "width": 671.65625,
+          "height": 20.375,
+          "top": 399.0625,
+          "right": 1136.0625,
+          "bottom": 419.4375,
+          "left": 464.40625
+        }
+      },
+      "wrapGap": 8.421875,
+      "baseGap": 8.421875,
+      "hidden": true,
+      "restored": true,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "othersOff",
+      "loading": "othersOff",
+      "zoom": 1.5,
+      "skill": "zhiheng",
+      "title": "制衡",
+      "footer": "请选择一张牌",
+      "frame": {
+        "x": -0.0078125,
+        "y": 127.34375,
+        "width": 1600.515625,
+        "height": 475.96875,
+        "top": 127.34375,
+        "right": 1600.5078125,
+        "bottom": 603.3125,
+        "left": -0.0078125
+      },
+      "titleRect": {
+        "x": 623.2734375,
+        "y": 129.140625,
+        "width": 353.9375,
+        "height": 44.390625,
+        "top": 129.140625,
+        "right": 977.2109375,
+        "bottom": 173.53125,
+        "left": 623.2734375
+      },
+      "cards": [
+        {
+          "x": 612.3046875,
+          "y": 196.796875,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 196.796875,
+          "right": 728.9765625,
+          "bottom": 358.84375,
+          "left": 612.3046875
+        },
+        {
+          "x": 741.9140625,
+          "y": 196.796875,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 196.796875,
+          "right": 858.5859375,
+          "bottom": 358.84375,
+          "left": 741.9140625
+        },
+        {
+          "x": 871.5234375,
+          "y": 196.796875,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 196.796875,
+          "right": 988.1953125,
+          "bottom": 358.84375,
+          "left": 871.5234375
+        }
+      ],
+      "tip": {
+        "x": 68.609375,
+        "y": 387.359375,
+        "width": 1463.265625,
+        "height": 35.984375,
+        "top": 387.359375,
+        "right": 1531.875,
+        "bottom": 423.34375,
+        "left": 68.609375
+      },
+      "controls": {
+        "x": 554.375,
+        "y": 490.578125,
+        "width": 491.75,
+        "height": 64.765625,
+        "top": 490.578125,
+        "right": 1046.125,
+        "bottom": 555.34375,
+        "left": 554.375
+      },
+      "image": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+      "titleImage": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha_title.png\")",
+      "scale": 1.199400299850075,
+      "progress": {
+        "x": 464.40625,
+        "y": 431.765625,
+        "width": 671.65625,
+        "height": 20.375,
+        "top": 431.765625,
+        "right": 1136.0625,
+        "bottom": 452.140625,
+        "left": 464.40625
+      },
+      "marker": true,
+      "moved": {
+        "tip": {
+          "x": 68.609375,
+          "y": 354.65625,
+          "width": 1463.265625,
+          "height": 35.984375,
+          "top": 354.65625,
+          "right": 1531.875,
+          "bottom": 390.640625,
+          "left": 68.609375
+        },
+        "progress": {
+          "x": 464.40625,
+          "y": 399.0625,
+          "width": 671.65625,
+          "height": 20.375,
+          "top": 399.0625,
+          "right": 1136.0625,
+          "bottom": 419.4375,
+          "left": 464.40625
+        }
+      },
+      "wrapGap": 8.421875,
+      "baseGap": 8.421875,
+      "hidden": true,
+      "restored": true,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "othersOff",
+      "loading": "dialog_xinsha",
+      "zoom": 1,
+      "skill": "dcxialei",
+      "title": "霞泪",
+      "footer": "获得其中的一张牌",
+      "frame": {
+        "x": 0,
+        "y": 169.34375,
+        "width": 1600,
+        "height": 476.46875,
+        "top": 169.34375,
+        "right": 1600,
+        "bottom": 645.8125,
+        "left": 0
+      },
+      "titleRect": {
+        "x": 623.09375,
+        "y": 171.140625,
+        "width": 353.8125,
+        "height": 44.375,
+        "top": 171.140625,
+        "right": 976.90625,
+        "bottom": 215.515625,
+        "left": 623.09375
+      },
+      "cards": [
+        {
+          "x": 612.109375,
+          "y": 238.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 238.765625,
+          "right": 728.734375,
+          "bottom": 400.765625,
+          "left": 612.109375
+        },
+        {
+          "x": 741.671875,
+          "y": 238.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 238.765625,
+          "right": 858.296875,
+          "bottom": 400.765625,
+          "left": 741.671875
+        },
+        {
+          "x": 871.234375,
+          "y": 238.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 238.765625,
+          "right": 987.859375,
+          "bottom": 400.765625,
+          "left": 871.234375
+        }
+      ],
+      "tip": {
+        "x": 68.359375,
+        "y": 429.578125,
+        "width": 1463.265625,
+        "height": 35.984375,
+        "top": 429.578125,
+        "right": 1531.625,
+        "bottom": 465.5625,
+        "left": 68.359375
+      },
+      "controls": {
+        "x": 554.125,
+        "y": 533.078125,
+        "width": 491.75,
+        "height": 64.765625,
+        "top": 533.078125,
+        "right": 1045.875,
+        "bottom": 597.84375,
+        "left": 554.125
+      },
+      "image": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+      "titleImage": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha_title.png\")",
+      "scale": 1.199400299850075,
+      "progress": {
+        "x": 464.15625,
+        "y": 473.96875,
+        "width": 671.65625,
+        "height": 20.375,
+        "top": 473.96875,
+        "right": 1135.8125,
+        "bottom": 494.34375,
+        "left": 464.15625
+      },
+      "marker": true,
+      "moved": {
+        "tip": {
+          "x": 68.359375,
+          "y": 354.375,
+          "width": 1463.265625,
+          "height": 35.984375,
+          "top": 354.375,
+          "right": 1531.625,
+          "bottom": 390.359375,
+          "left": 68.359375
+        },
+        "progress": {
+          "x": 464.15625,
+          "y": 398.765625,
+          "width": 671.65625,
+          "height": 20.375,
+          "top": 398.765625,
+          "right": 1135.8125,
+          "bottom": 419.140625,
+          "left": 464.15625
+        }
+      },
+      "wrapGap": 8.40625,
+      "baseGap": 8.40625,
+      "hidden": true,
+      "restored": true,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "othersOff",
+      "loading": "dialog_xinsha",
+      "zoom": 1,
+      "skill": "zhiheng",
+      "title": "制衡",
+      "footer": "请选择一张牌",
+      "frame": {
+        "x": 0,
+        "y": 169.34375,
+        "width": 1600,
+        "height": 476.46875,
+        "top": 169.34375,
+        "right": 1600,
+        "bottom": 645.8125,
+        "left": 0
+      },
+      "titleRect": {
+        "x": 623.09375,
+        "y": 171.140625,
+        "width": 353.8125,
+        "height": 44.375,
+        "top": 171.140625,
+        "right": 976.90625,
+        "bottom": 215.515625,
+        "left": 623.09375
+      },
+      "cards": [
+        {
+          "x": 612.109375,
+          "y": 238.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 238.765625,
+          "right": 728.734375,
+          "bottom": 400.765625,
+          "left": 612.109375
+        },
+        {
+          "x": 741.671875,
+          "y": 238.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 238.765625,
+          "right": 858.296875,
+          "bottom": 400.765625,
+          "left": 741.671875
+        },
+        {
+          "x": 871.234375,
+          "y": 238.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 238.765625,
+          "right": 987.859375,
+          "bottom": 400.765625,
+          "left": 871.234375
+        }
+      ],
+      "tip": {
+        "x": 68.359375,
+        "y": 429.578125,
+        "width": 1463.265625,
+        "height": 35.984375,
+        "top": 429.578125,
+        "right": 1531.625,
+        "bottom": 465.5625,
+        "left": 68.359375
+      },
+      "controls": {
+        "x": 554.125,
+        "y": 533.078125,
+        "width": 491.75,
+        "height": 64.765625,
+        "top": 533.078125,
+        "right": 1045.875,
+        "bottom": 597.84375,
+        "left": 554.125
+      },
+      "image": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+      "titleImage": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha_title.png\")",
+      "scale": 1.199400299850075,
+      "progress": {
+        "x": 464.15625,
+        "y": 473.96875,
+        "width": 671.65625,
+        "height": 20.375,
+        "top": 473.96875,
+        "right": 1135.8125,
+        "bottom": 494.34375,
+        "left": 464.15625
+      },
+      "marker": true,
+      "moved": {
+        "tip": {
+          "x": 68.359375,
+          "y": 354.375,
+          "width": 1463.265625,
+          "height": 35.984375,
+          "top": 354.375,
+          "right": 1531.625,
+          "bottom": 390.359375,
+          "left": 68.359375
+        },
+        "progress": {
+          "x": 464.15625,
+          "y": 398.765625,
+          "width": 671.65625,
+          "height": 20.375,
+          "top": 398.765625,
+          "right": 1135.8125,
+          "bottom": 419.140625,
+          "left": 464.15625
+        }
+      },
+      "wrapGap": 8.40625,
+      "baseGap": 8.40625,
+      "hidden": true,
+      "restored": true,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "othersOff",
+      "loading": "dialog_xinsha",
+      "zoom": 1.5,
+      "skill": "dcxialei",
+      "title": "霞泪",
+      "footer": "获得其中的一张牌",
+      "frame": {
+        "x": -0.0078125,
+        "y": 127.34375,
+        "width": 1600.515625,
+        "height": 475.96875,
+        "top": 127.34375,
+        "right": 1600.5078125,
+        "bottom": 603.3125,
+        "left": -0.0078125
+      },
+      "titleRect": {
+        "x": 623.2734375,
+        "y": 129.140625,
+        "width": 353.9375,
+        "height": 44.390625,
+        "top": 129.140625,
+        "right": 977.2109375,
+        "bottom": 173.53125,
+        "left": 623.2734375
+      },
+      "cards": [
+        {
+          "x": 612.3046875,
+          "y": 196.796875,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 196.796875,
+          "right": 728.9765625,
+          "bottom": 358.84375,
+          "left": 612.3046875
+        },
+        {
+          "x": 741.9140625,
+          "y": 196.796875,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 196.796875,
+          "right": 858.5859375,
+          "bottom": 358.84375,
+          "left": 741.9140625
+        },
+        {
+          "x": 871.5234375,
+          "y": 196.796875,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 196.796875,
+          "right": 988.1953125,
+          "bottom": 358.84375,
+          "left": 871.5234375
+        }
+      ],
+      "tip": {
+        "x": 68.609375,
+        "y": 387.359375,
+        "width": 1463.265625,
+        "height": 35.984375,
+        "top": 387.359375,
+        "right": 1531.875,
+        "bottom": 423.34375,
+        "left": 68.609375
+      },
+      "controls": {
+        "x": 554.375,
+        "y": 490.578125,
+        "width": 491.75,
+        "height": 64.765625,
+        "top": 490.578125,
+        "right": 1046.125,
+        "bottom": 555.34375,
+        "left": 554.375
+      },
+      "image": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+      "titleImage": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha_title.png\")",
+      "scale": 1.199400299850075,
+      "progress": {
+        "x": 464.40625,
+        "y": 431.765625,
+        "width": 671.65625,
+        "height": 20.375,
+        "top": 431.765625,
+        "right": 1136.0625,
+        "bottom": 452.140625,
+        "left": 464.40625
+      },
+      "marker": true,
+      "moved": {
+        "tip": {
+          "x": 68.609375,
+          "y": 354.65625,
+          "width": 1463.265625,
+          "height": 35.984375,
+          "top": 354.65625,
+          "right": 1531.875,
+          "bottom": 390.640625,
+          "left": 68.609375
+        },
+        "progress": {
+          "x": 464.40625,
+          "y": 399.0625,
+          "width": 671.65625,
+          "height": 20.375,
+          "top": 399.0625,
+          "right": 1136.0625,
+          "bottom": 419.4375,
+          "left": 464.40625
+        }
+      },
+      "wrapGap": 8.421875,
+      "baseGap": 8.421875,
+      "hidden": true,
+      "restored": true,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "othersOff",
+      "loading": "dialog_xinsha",
+      "zoom": 1.5,
+      "skill": "zhiheng",
+      "title": "制衡",
+      "footer": "请选择一张牌",
+      "frame": {
+        "x": -0.0078125,
+        "y": 127.34375,
+        "width": 1600.515625,
+        "height": 475.96875,
+        "top": 127.34375,
+        "right": 1600.5078125,
+        "bottom": 603.3125,
+        "left": -0.0078125
+      },
+      "titleRect": {
+        "x": 623.2734375,
+        "y": 129.140625,
+        "width": 353.9375,
+        "height": 44.390625,
+        "top": 129.140625,
+        "right": 977.2109375,
+        "bottom": 173.53125,
+        "left": 623.2734375
+      },
+      "cards": [
+        {
+          "x": 612.3046875,
+          "y": 196.796875,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 196.796875,
+          "right": 728.9765625,
+          "bottom": 358.84375,
+          "left": 612.3046875
+        },
+        {
+          "x": 741.9140625,
+          "y": 196.796875,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 196.796875,
+          "right": 858.5859375,
+          "bottom": 358.84375,
+          "left": 741.9140625
+        },
+        {
+          "x": 871.5234375,
+          "y": 196.796875,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 196.796875,
+          "right": 988.1953125,
+          "bottom": 358.84375,
+          "left": 871.5234375
+        }
+      ],
+      "tip": {
+        "x": 68.609375,
+        "y": 387.359375,
+        "width": 1463.265625,
+        "height": 35.984375,
+        "top": 387.359375,
+        "right": 1531.875,
+        "bottom": 423.34375,
+        "left": 68.609375
+      },
+      "controls": {
+        "x": 554.375,
+        "y": 490.578125,
+        "width": 491.75,
+        "height": 64.765625,
+        "top": 490.578125,
+        "right": 1046.125,
+        "bottom": 555.34375,
+        "left": 554.375
+      },
+      "image": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+      "titleImage": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha_title.png\")",
+      "scale": 1.199400299850075,
+      "progress": {
+        "x": 464.40625,
+        "y": 431.765625,
+        "width": 671.65625,
+        "height": 20.375,
+        "top": 431.765625,
+        "right": 1136.0625,
+        "bottom": 452.140625,
+        "left": 464.40625
+      },
+      "marker": true,
+      "moved": {
+        "tip": {
+          "x": 68.609375,
+          "y": 354.65625,
+          "width": 1463.265625,
+          "height": 35.984375,
+          "top": 354.65625,
+          "right": 1531.875,
+          "bottom": 390.640625,
+          "left": 68.609375
+        },
+        "progress": {
+          "x": 464.40625,
+          "y": 399.0625,
+          "width": 671.65625,
+          "height": 20.375,
+          "top": 399.0625,
+          "right": 1136.0625,
+          "bottom": 419.4375,
+          "left": 464.40625
+        }
+      },
+      "wrapGap": 8.421875,
+      "baseGap": 8.421875,
+      "hidden": true,
+      "restored": true,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "onlineUI",
+      "loading": "dialog_ol",
+      "zoom": 1,
+      "skill": "dcxialei",
+      "title": "霞泪",
+      "footer": "获得其中的一张牌",
+      "frame": {
+        "x": 0,
+        "y": 264.8125,
+        "width": 1600,
+        "height": 318,
+        "top": 264.8125,
+        "right": 1600,
+        "bottom": 582.8125,
+        "left": 0
+      },
+      "titleRect": {
+        "x": 4,
+        "y": 285.5,
+        "width": 1600,
+        "height": 36.796875,
+        "top": 285.5,
+        "right": 1604,
+        "bottom": 322.296875,
+        "left": 4
+      },
+      "cards": [
+        {
+          "x": 612.109375,
+          "y": 336.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 336.765625,
+          "right": 728.734375,
+          "bottom": 498.765625,
+          "left": 612.109375
+        },
+        {
+          "x": 741.671875,
+          "y": 336.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 336.765625,
+          "right": 858.296875,
+          "bottom": 498.765625,
+          "left": 741.671875
+        },
+        {
+          "x": 871.234375,
+          "y": 336.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 336.765625,
+          "right": 987.859375,
+          "bottom": 498.765625,
+          "left": 871.234375
+        }
+      ],
+      "controls": {
+        "x": 165,
+        "y": 596.75,
+        "width": 1260,
+        "height": 46,
+        "top": 596.75,
+        "right": 1425,
+        "bottom": 642.75,
+        "left": 165
+      },
+      "image": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_ol.png\")",
+      "titleImage": "none",
+      "scale": 1.199400299850075,
+      "marker": false,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "onlineUI",
+      "loading": "dialog_ol",
+      "zoom": 1,
+      "skill": "zhiheng",
+      "title": "制衡",
+      "footer": "请选择一张牌",
+      "frame": {
+        "x": 0,
+        "y": 264.8125,
+        "width": 1600,
+        "height": 318,
+        "top": 264.8125,
+        "right": 1600,
+        "bottom": 582.8125,
+        "left": 0
+      },
+      "titleRect": {
+        "x": 4,
+        "y": 285.5,
+        "width": 1600,
+        "height": 36.796875,
+        "top": 285.5,
+        "right": 1604,
+        "bottom": 322.296875,
+        "left": 4
+      },
+      "cards": [
+        {
+          "x": 612.109375,
+          "y": 336.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 336.765625,
+          "right": 728.734375,
+          "bottom": 498.765625,
+          "left": 612.109375
+        },
+        {
+          "x": 741.671875,
+          "y": 336.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 336.765625,
+          "right": 858.296875,
+          "bottom": 498.765625,
+          "left": 741.671875
+        },
+        {
+          "x": 871.234375,
+          "y": 336.765625,
+          "width": 116.625,
+          "height": 162,
+          "top": 336.765625,
+          "right": 987.859375,
+          "bottom": 498.765625,
+          "left": 871.234375
+        }
+      ],
+      "controls": {
+        "x": 165,
+        "y": 596.75,
+        "width": 1260,
+        "height": 46,
+        "top": 596.75,
+        "right": 1425,
+        "bottom": 642.75,
+        "left": 165
+      },
+      "image": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_ol.png\")",
+      "titleImage": "none",
+      "scale": 1.199400299850075,
+      "marker": false,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "onlineUI",
+      "loading": "dialog_ol",
+      "zoom": 1.5,
+      "skill": "dcxialei",
+      "title": "霞泪",
+      "footer": "获得其中的一张牌",
+      "frame": {
+        "x": -0.0078125,
+        "y": 126.3125,
+        "width": 1600.515625,
+        "height": 382.5,
+        "top": 126.3125,
+        "right": 1600.5078125,
+        "bottom": 508.8125,
+        "left": -0.0078125
+      },
+      "titleRect": {
+        "x": 5.9921875,
+        "y": 157.359375,
+        "width": 1600.515625,
+        "height": 55.1875,
+        "top": 157.359375,
+        "right": 1606.5078125,
+        "bottom": 212.546875,
+        "left": 5.9921875
+      },
+      "cards": [
+        {
+          "x": 612.3046875,
+          "y": 231.015625,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 231.015625,
+          "right": 728.9765625,
+          "bottom": 393.0625,
+          "left": 612.3046875
+        },
+        {
+          "x": 741.9140625,
+          "y": 231.015625,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 231.015625,
+          "right": 858.5859375,
+          "bottom": 393.0625,
+          "left": 741.9140625
+        },
+        {
+          "x": 871.5234375,
+          "y": 231.015625,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 231.015625,
+          "right": 988.1953125,
+          "bottom": 393.0625,
+          "left": 871.5234375
+        }
+      ],
+      "controls": {
+        "x": 247.5,
+        "y": 553.75,
+        "width": 1090,
+        "height": 69,
+        "top": 553.75,
+        "right": 1337.5,
+        "bottom": 622.75,
+        "left": 247.5
+      },
+      "image": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_ol.png\")",
+      "titleImage": "none",
+      "scale": 1.199400299850075,
+      "marker": false,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "onlineUI",
+      "loading": "dialog_ol",
+      "zoom": 1.5,
+      "skill": "zhiheng",
+      "title": "制衡",
+      "footer": "请选择一张牌",
+      "frame": {
+        "x": -0.0078125,
+        "y": 126.3125,
+        "width": 1600.515625,
+        "height": 382.5,
+        "top": 126.3125,
+        "right": 1600.5078125,
+        "bottom": 508.8125,
+        "left": -0.0078125
+      },
+      "titleRect": {
+        "x": 5.9921875,
+        "y": 157.359375,
+        "width": 1600.515625,
+        "height": 55.1875,
+        "top": 157.359375,
+        "right": 1606.5078125,
+        "bottom": 212.546875,
+        "left": 5.9921875
+      },
+      "cards": [
+        {
+          "x": 612.3046875,
+          "y": 231.015625,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 231.015625,
+          "right": 728.9765625,
+          "bottom": 393.0625,
+          "left": 612.3046875
+        },
+        {
+          "x": 741.9140625,
+          "y": 231.015625,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 231.015625,
+          "right": 858.5859375,
+          "bottom": 393.0625,
+          "left": 741.9140625
+        },
+        {
+          "x": 871.5234375,
+          "y": 231.015625,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 231.015625,
+          "right": 988.1953125,
+          "bottom": 393.0625,
+          "left": 871.5234375
+        }
+      ],
+      "controls": {
+        "x": 247.5,
+        "y": 553.75,
+        "width": 1090,
+        "height": 69,
+        "top": 553.75,
+        "right": 1337.5,
+        "bottom": 622.75,
+        "left": 247.5
+      },
+      "image": "url(\"http://127.0.0.1:5993/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_ol.png\")",
+      "titleImage": "none",
+      "scale": 1.199400299850075,
+      "marker": false,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "on",
+      "loading": "othersOff",
+      "zoom": 1,
+      "skill": "dcxialei",
+      "title": "霞泪：获得其中的一张牌",
+      "frame": {
+        "x": 348.5,
+        "y": 445.8125,
+        "width": 900,
+        "height": 200,
+        "top": 445.8125,
+        "right": 1248.5,
+        "bottom": 645.8125,
+        "left": 348.5
+      },
+      "titleRect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "cards": [
+        {
+          "x": 610.609375,
+          "y": 452.28125,
+          "width": 116.625,
+          "height": 162,
+          "top": 452.28125,
+          "right": 727.234375,
+          "bottom": 614.28125,
+          "left": 610.609375
+        },
+        {
+          "x": 740.171875,
+          "y": 452.28125,
+          "width": 116.625,
+          "height": 162,
+          "top": 452.28125,
+          "right": 856.796875,
+          "bottom": 614.28125,
+          "left": 740.171875
+        },
+        {
+          "x": 869.734375,
+          "y": 452.28125,
+          "width": 116.625,
+          "height": 162,
+          "top": 452.28125,
+          "right": 986.359375,
+          "bottom": 614.28125,
+          "left": 869.734375
+        }
+      ],
+      "controls": {
+        "x": 165,
+        "y": 648.8125,
+        "width": 1260,
+        "height": 42,
+        "top": 648.8125,
+        "right": 1425,
+        "bottom": 690.8125,
+        "left": 165
+      },
+      "image": "none",
+      "titleImage": "none",
+      "scale": 1.199400299850075,
+      "marker": false,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "on",
+      "loading": "othersOff",
+      "zoom": 1,
+      "skill": "zhiheng",
+      "title": "请选择一张牌",
+      "frame": {
+        "x": 348.5,
+        "y": 445.8125,
+        "width": 900,
+        "height": 200,
+        "top": 445.8125,
+        "right": 1248.5,
+        "bottom": 645.8125,
+        "left": 348.5
+      },
+      "titleRect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "cards": [
+        {
+          "x": 610.609375,
+          "y": 452.28125,
+          "width": 116.625,
+          "height": 162,
+          "top": 452.28125,
+          "right": 727.234375,
+          "bottom": 614.28125,
+          "left": 610.609375
+        },
+        {
+          "x": 740.171875,
+          "y": 452.28125,
+          "width": 116.625,
+          "height": 162,
+          "top": 452.28125,
+          "right": 856.796875,
+          "bottom": 614.28125,
+          "left": 740.171875
+        },
+        {
+          "x": 869.734375,
+          "y": 452.28125,
+          "width": 116.625,
+          "height": 162,
+          "top": 452.28125,
+          "right": 986.359375,
+          "bottom": 614.28125,
+          "left": 869.734375
+        }
+      ],
+      "controls": {
+        "x": 165,
+        "y": 648.8125,
+        "width": 1260,
+        "height": 42,
+        "top": 648.8125,
+        "right": 1425,
+        "bottom": 690.8125,
+        "left": 165
+      },
+      "image": "none",
+      "titleImage": "none",
+      "scale": 1.199400299850075,
+      "marker": false,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "on",
+      "loading": "othersOff",
+      "zoom": 1.5,
+      "skill": "dcxialei",
+      "title": "霞泪：获得其中的一张牌",
+      "frame": {
+        "x": 122.75,
+        "y": 303.3125,
+        "width": 1350,
+        "height": 300,
+        "top": 303.3125,
+        "right": 1472.75,
+        "bottom": 603.3125,
+        "left": 122.75
+      },
+      "titleRect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "cards": [
+        {
+          "x": 609.796875,
+          "y": 309.78125,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 309.78125,
+          "right": 726.46875,
+          "bottom": 471.828125,
+          "left": 609.796875
+        },
+        {
+          "x": 739.40625,
+          "y": 309.78125,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 309.78125,
+          "right": 856.078125,
+          "bottom": 471.828125,
+          "left": 739.40625
+        },
+        {
+          "x": 869.015625,
+          "y": 309.78125,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 309.78125,
+          "right": 985.6875,
+          "bottom": 471.828125,
+          "left": 869.015625
+        }
+      ],
+      "controls": {
+        "x": 247.5,
+        "y": 607.8125,
+        "width": 1090,
+        "height": 63,
+        "top": 607.8125,
+        "right": 1337.5,
+        "bottom": 670.8125,
+        "left": 247.5
+      },
+      "image": "none",
+      "titleImage": "none",
+      "scale": 1.199400299850075,
+      "marker": false,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    },
+    {
+      "style": "on",
+      "loading": "othersOff",
+      "zoom": 1.5,
+      "skill": "zhiheng",
+      "title": "请选择一张牌",
+      "frame": {
+        "x": 122.75,
+        "y": 303.3125,
+        "width": 1350,
+        "height": 300,
+        "top": 303.3125,
+        "right": 1472.75,
+        "bottom": 603.3125,
+        "left": 122.75
+      },
+      "titleRect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "cards": [
+        {
+          "x": 609.796875,
+          "y": 309.78125,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 309.78125,
+          "right": 726.46875,
+          "bottom": 471.828125,
+          "left": 609.796875
+        },
+        {
+          "x": 739.40625,
+          "y": 309.78125,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 309.78125,
+          "right": 856.078125,
+          "bottom": 471.828125,
+          "left": 739.40625
+        },
+        {
+          "x": 869.015625,
+          "y": 309.78125,
+          "width": 116.671875,
+          "height": 162.046875,
+          "top": 309.78125,
+          "right": 985.6875,
+          "bottom": 471.828125,
+          "left": 869.015625
+        }
+      ],
+      "controls": {
+        "x": 247.5,
+        "y": 607.8125,
+        "width": 1090,
+        "height": 63,
+        "top": 607.8125,
+        "right": 1337.5,
+        "bottom": 670.8125,
+        "left": 247.5
+      },
+      "image": "none",
+      "titleImage": "none",
+      "scale": 1.199400299850075,
+      "marker": false,
+      "sameButtons": true,
+      "selected": true,
+      "confirmed": true,
+      "cleaned": true
+    }
+  ],
+  "errors": []
+}

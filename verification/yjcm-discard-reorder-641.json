@@ -1,0 +1,76 @@
+{
+  "client": {
+    "version": "6.4.1",
+    "apk_sha256": "974381c26f5bdc45daa6796f31cf384840e8d95e2eff3039990180f22f36a895",
+    "member": "assets/res/lib/game.zip",
+    "packed_sha256": "4ddc74d93bf221a27d829540fc0e83b08705dcaeea1c7098ba97ca5a6e2eb116",
+    "decoded_sha256": "aac788fe56a7400264e2f12a1d9046c1839edd3dcf50758cfb587d61904ce3b8",
+    "transformation": "移除15字节包头后XXTEA解码；输出ZIP及选定模块校验通过"
+  },
+  "rea_evidence": [
+    "ev_c4f710e37c9a5954ea1a94964002ffd61d1290076ffcc9d3e774125571a5d8cf",
+    "ev_c46dd0085a2f6e36ea396b167e927f3b5d88c558011a15e512c93a870e814584",
+    "ev_a8977229a310869966f7e077c4a30cda9292e93757a8757a56443739882310f7",
+    "ev_84853ddf472a8e0cda4d69ed3ee935eb8f2422471af5a553ab15c84cd28ecd86"
+  ],
+  "modules": [
+    {
+      "member": "app.view.game.DisCardAreaUi",
+      "bytes": 14924,
+      "sha256": "9294a7e2fcaf7be87c69ad4bc8197a4db2a36a77701b4e3333ee11562648e67a",
+      "equalHistoricalModule": true
+    },
+    {
+      "member": "app.controller.game.MoveCardController",
+      "bytes": 23816,
+      "sha256": "eb444f5f75747887ab02f69544b1cd9cb5dc7eed621efd822635fea62c0177e1",
+      "equalHistoricalModule": true
+    }
+  ],
+  "findings": [
+    {
+      "method": "DisCardAreaUi.addToStackArea",
+      "prototype": "0.6",
+      "sourceLines": [
+        135,
+        158
+      ],
+      "behavior": "创建入场卡牌时设置来源坐标，末尾立即reorderAllCards。"
+    },
+    {
+      "method": "DisCardAreaUi.removeCardById",
+      "prototype": "0.15",
+      "sourceLines": [
+        263,
+        276
+      ],
+      "behavior": "removeSelf和table.remove后立即reorderAllCards。"
+    },
+    {
+      "method": "DisCardAreaUi.reorderAllCards",
+      "prototype": "0.19",
+      "sourceLines": [
+        304,
+        338
+      ],
+      "behavior": "停止TAG_CARD_MOVE+1（1001）及附属动作，重算目标，runAction(spawn(EaseSineOut(MoveTo(.3,target)),scaleTo(.3,.8,.8)))。函数没有重新设置武将来源位置。"
+    },
+    {
+      "method": "DisCardAreaUi.playRemoveCardAction",
+      "prototype": "0.11",
+      "sourceLines": [
+        212,
+        223
+      ],
+      "behavior": "默认等待2秒、FadeTo(.5,0)、CallFunc(removeCard)。"
+    }
+  ],
+  "localAdaptation": [
+    "浏览器WAAPI合成动画与主线程DocumentTimeline快照分离，长任务中getComputedStyle及currentTime仍可能停在旧帧；需先按自身performance.now起播时钟同步，再读取重排起点。",
+    "保留此前适配本体等待的剩余时长策略；官方每次重排使用.3秒，两者不能称为逐项相同。"
+  ],
+  "limitations": [
+    "基于当前6.4.1包内Lua字节码，并在模块逐字节一致后复用历史反编译定位。不是官方作者原始工程源码。",
+    "未运行官方Android客户端；没有核验其Cocos原生C++动作实现。"
+  ]
+}

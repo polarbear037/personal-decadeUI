@@ -1,6 +1,7 @@
 import { game, get, lib, ui, _status } from "noname";
 import { refreshEquipLayout } from "../../ui/equip-layout.js";
 import { updateOnlineHandCards } from "../../ui/online-hand-cards.js";
+import { positionHandDisplays } from "../../ui/hand-displays.js";
 let e = null;
 function t(str) {
 	str = str.replace(/##assetURL##/g, lib.assetURL);
@@ -79,13 +80,9 @@ function n() {
 		return;
 	}
 	const cards = player.getCards("h", e => get.is.shownCard(e) || (void 0 !== game.me && player.isUnderControl(!0)) || (game.me && game.me.hasSkillTag("viewHandcard", null, player, !0)));
+	if (cards.length) positionHandDisplays(player);
 	if (updateOnlineHandCards(player, cards)) return;
 	if (cards.length) {
-		const bounds = player.getBoundingClientRect();
-		const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-		const onRight = bounds.left + bounds.width / 2 >= viewportWidth / 2;
-		player.node.showCards.style.left = onRight ? "auto" : "calc(100% + 10px)";
-		player.node.showCards.style.right = onRight ? "calc(100% + 10px)" : "auto";
 		for (player.node.showCards.show(); player.node.showCards.hasChildNodes(); ) player.node.showCards.removeChild(player.node.showCards.firstChild);
 		for (let i = 0; i < 5; i++) createElement("div", { class: ["handcard"], innerHTML: i < cards.length ? (lib.translate[cards[i].name] || "").slice(0, 2) : "", parentNode: player.node.showCards });
 	} else player.node.showCards.hide();
@@ -111,9 +108,17 @@ function n() {
 		return i;
 	}
 }
-function a(forceUpdate) {
-	let update;
+function a() {
 	const refer = (e || (e = window.decadeUI), e).boundsCaches.arena;
-	(refer.check(), (this.cacheReferW == refer.width && this.cacheReferH == refer.height && this.cachePosition == this.dataset.position) || (update = !0), (this.cacheReferW = refer.width), (this.cacheReferH = refer.height), (this.cachePosition = this.dataset.position), null === this.cacheLeft && (update = !0), (update || forceUpdate) && ((this.cacheLeft = this.offsetLeft), (this.cacheTop = this.offsetTop), (this.cacheWidth = this.offsetWidth), (this.cacheHeight = this.offsetHeight)));
+	refer.check();
+	this.cacheReferW = refer.width;
+	this.cacheReferH = refer.height;
+	this.cachePosition = this.dataset.position;
+	// A reused seat can move when the player count/layout changes without changing
+	// its position number or the arena size. Refresh all movement callers from DOM.
+	this.cacheLeft = this.offsetLeft;
+	this.cacheTop = this.offsetTop;
+	this.cacheWidth = this.offsetWidth;
+	this.cacheHeight = this.offsetHeight;
 }
 export { s as playerCheckAndAddExperienceSuffix, a as playerCheckBoundsCache, t as playerSay, i as playerSyncExpand, n as playerUpdateShowCards };

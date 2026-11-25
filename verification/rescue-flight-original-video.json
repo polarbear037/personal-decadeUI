@@ -1,0 +1,138 @@
+{
+  "throws": [
+    {
+      "i": 4220,
+      "v": {
+        "type": "throw",
+        "player": "2",
+        "content": [
+          [
+            [
+              "heart",
+              7,
+              "tao",
+              null,
+              null
+            ]
+          ],
+          0,
+          null
+        ],
+        "delay": 45
+      },
+      "around": [
+        {
+          "type": "updateSkillControl",
+          "player": "0",
+          "content": true,
+          "delay": 24
+        },
+        {
+          "type": "updateSkillControl",
+          "player": "0",
+          "content": true,
+          "delay": 36
+        },
+        {
+          "type": "updateSkillControl",
+          "player": "0",
+          "content": true,
+          "delay": 21
+        },
+        {
+          "type": "updateCardnumber",
+          "player": null,
+          "content": {
+            "cardNumber": 3
+          },
+          "delay": 1
+        },
+        {
+          "type": "playAudio",
+          "player": null,
+          "content": "../extension/十周年UI/audio/xinsha-ui/GameHold.mp3",
+          "delay": 0
+        },
+        {
+          "type": "throw",
+          "player": "2",
+          "content": [
+            [
+              [
+                "heart",
+                7,
+                "tao",
+                null,
+                null
+              ]
+            ],
+            0,
+            null
+          ],
+          "delay": 45
+        },
+        {
+          "type": "lose",
+          "player": "2",
+          "content": [
+            [
+              [
+                "heart",
+                7,
+                "tao",
+                null,
+                "4850974151"
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "delay": 1
+        },
+        {
+          "type": "unmarkSkill",
+          "player": "2",
+          "content": "ghujia",
+          "delay": 0
+        },
+        {
+          "type": "loseAfter",
+          "player": "2",
+          "delay": 18
+        },
+        {
+          "type": "line",
+          "player": "2",
+          "content": [
+            "1",
+            {}
+          ],
+          "delay": 39
+        },
+        {
+          "type": "log",
+          "player": null,
+          "content": "庞凤衣对新杀关索使用了桃【<img src=\"extension/标记补充/images/suits/heart.png\" class=\"mark-suit\">7】",
+          "delay": 19
+        },
+        {
+          "type": "updateCardnumber",
+          "player": null,
+          "content": {
+            "cardNumber": 3
+          },
+          "delay": 225
+        },
+        {
+          "type": "log",
+          "player": null,
+          "content": "新杀关索回复了一点体力",
+          "delay": 333
+        }
+      ]
+    }
+  ],
+  "count": 22,
+  "probeActive": true
+}

@@ -1,0 +1,236 @@
+{
+  "before": {
+    "event": "chooseToUse",
+    "counter": 2,
+    "hand": 15,
+    "players": 4
+  },
+  "after": {
+    "event": "chooseToUse",
+    "sameEvent": true,
+    "counter": 2,
+    "hand": 15,
+    "players": 4,
+    "paused2": true
+  },
+  "allEqual": true,
+  "count": 16,
+  "rows": [
+    {
+      "name": "luwenyi",
+      "round": 0,
+      "reopen": false,
+      "condition": "high",
+      "sourceCondition": "high",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")"
+      ]
+    },
+    {
+      "name": "luwenyi",
+      "round": 0,
+      "reopen": true,
+      "condition": "high",
+      "sourceCondition": "high",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")"
+      ]
+    },
+    {
+      "name": "dc_guansuo",
+      "round": 1,
+      "reopen": false,
+      "condition": "low",
+      "sourceCondition": "low",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass3.png\")"
+      ]
+    },
+    {
+      "name": "dc_guansuo",
+      "round": 1,
+      "reopen": true,
+      "condition": "low",
+      "sourceCondition": "low",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass3.png\")"
+      ]
+    },
+    {
+      "name": "pangfengyi",
+      "round": 2,
+      "reopen": false,
+      "condition": "high",
+      "sourceCondition": "high",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")"
+      ]
+    },
+    {
+      "name": "pangfengyi",
+      "round": 2,
+      "reopen": true,
+      "condition": "high",
+      "sourceCondition": "high",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")"
+      ]
+    },
+    {
+      "name": "hanlong",
+      "round": 3,
+      "reopen": false,
+      "condition": "low",
+      "sourceCondition": "low",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass3.png\")"
+      ]
+    },
+    {
+      "name": "hanlong",
+      "round": 3,
+      "reopen": true,
+      "condition": "low",
+      "sourceCondition": "low",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass3.png\")"
+      ]
+    },
+    {
+      "name": "luwenyi",
+      "round": 4,
+      "reopen": false,
+      "condition": "high",
+      "sourceCondition": "high",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")"
+      ]
+    },
+    {
+      "name": "luwenyi",
+      "round": 4,
+      "reopen": true,
+      "condition": "high",
+      "sourceCondition": "high",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")"
+      ]
+    },
+    {
+      "name": "dc_guansuo",
+      "round": 5,
+      "reopen": false,
+      "condition": "low",
+      "sourceCondition": "low",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass3.png\")"
+      ]
+    },
+    {
+      "name": "dc_guansuo",
+      "round": 5,
+      "reopen": true,
+      "condition": "low",
+      "sourceCondition": "low",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass3.png\")"
+      ]
+    },
+    {
+      "name": "pangfengyi",
+      "round": 6,
+      "reopen": false,
+      "condition": "high",
+      "sourceCondition": "high",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")"
+      ]
+    },
+    {
+      "name": "pangfengyi",
+      "round": 6,
+      "reopen": true,
+      "condition": "high",
+      "sourceCondition": "high",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass1.png\")"
+      ]
+    },
+    {
+      "name": "hanlong",
+      "round": 7,
+      "reopen": false,
+      "condition": "low",
+      "sourceCondition": "low",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass3.png\")"
+      ]
+    },
+    {
+      "name": "hanlong",
+      "round": 7,
+      "reopen": true,
+      "condition": "low",
+      "sourceCondition": "low",
+      "equal": true,
+      "images": [
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass4.png\")",
+        "url(\"http://localhost:8089/theme/style/hp/image/glass3.png\")"
+      ]
+    }
+  ]
+}

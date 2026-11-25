@@ -1,0 +1,701 @@
+{
+  "event": "chooseBool",
+  "parent": "dcxialei",
+  "frames": [
+    {
+      "time": 0.10000000149011612,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 1.1000000014901161,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 257.29999999701977,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 328.3999999985099,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 330.5,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 334,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 339.3999999985099,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 345,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 350.69999999552965,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 356.1000000014901,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 361.3999999985099,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 367.29999999701977,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 372.5,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 378,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 383.6000000014901,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 389.29999999701977,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 395,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 400.1000000014901,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 406.1000000014901,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 411.1000000014901,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 417,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 422.3999999985099,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 427.8999999985099,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 433.5,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 439.19999999552965,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 447.79999999701977,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 452.6000000014901,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 456.6000000014901,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 461.69999999552965,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 467.3999999985099,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 472.8999999985099,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 478.29999999701977,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 484.5,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 489.3999999985099,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 495.29999999701977,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 501.1000000014901,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 506.5,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 511.79999999701977,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 518,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 523.2999999970198,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 528.5,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 533.7999999970198,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 539.5,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 545.6999999955297,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 550.6999999955297,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 556,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 561.3999999985099,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 566.8999999985099,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 572.3999999985099,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 578,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 584,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 589.3999999985099,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 594.7999999970198,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 600.2999999970198,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 606,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 611.2999999970198,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 616.8999999985099,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 622.5,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 627.7999999970198,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 633.5,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 639.2999999970198,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    },
+    {
+      "time": 644.7999999970198,
+      "copies": 1,
+      "text": [
+        "是否将剩余牌置于牌堆底？"
+      ],
+      "tipY": 247.4803459119497,
+      "frameHeight": 358.634,
+      "controlsY": 318.19339622641513,
+      "flow": "window"
+    }
+  ],
+  "invariant": {
+    "event": true,
+    "dialog": true,
+    "buttons": true,
+    "selected": true,
+    "hand": true
+  },
+  "followup": {
+    "event": "chooseToUse",
+    "parent": "phaseUse",
+    "copies": 0,
+    "note": "后续观察时已进入出牌阶段，未继续操作；热更新前后同一询问事件的状态核对见 invariant。"
+  }
+}

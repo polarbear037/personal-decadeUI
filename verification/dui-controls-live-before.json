@@ -1,0 +1,119 @@
+{
+  "event": [
+    {
+      "name": "useCard",
+      "player": "renwan",
+      "isMine": false,
+      "result": null,
+      "finished": false
+    },
+    {
+      "name": "chooseToUse",
+      "player": "renwan",
+      "isMine": false,
+      "result": {
+        "bool": true
+      },
+      "finished": false,
+      "type": "phase"
+    },
+    {
+      "name": "phaseUse",
+      "player": "renwan",
+      "isMine": false,
+      "result": null,
+      "finished": false
+    },
+    {
+      "name": "phase",
+      "player": "renwan",
+      "isMine": false,
+      "result": null,
+      "finished": false
+    },
+    {
+      "name": "phaseLoop",
+      "player": "renwan",
+      "isMine": false,
+      "result": null,
+      "finished": false
+    },
+    {
+      "name": "game",
+      "result": null,
+      "finished": true
+    }
+  ],
+  "me": "yinfuren",
+  "paused": false,
+  "paused2": true,
+  "choosing": false,
+  "auto": false,
+  "over": false,
+  "style": "othersOff",
+  "arena": "oblongcard phone decadeUI outcrop-skin-enabled menupaused",
+  "controls": {
+    "id": "dui-controls",
+    "cls": "",
+    "text": "确定取消",
+    "hidden": false,
+    "style": "",
+    "data": {},
+    "display": "flex",
+    "visibility": "visible",
+    "opacity": "1",
+    "rect": {
+      "x": 727.1328125,
+      "y": 565.875,
+      "w": 597.703125,
+      "h": 74.109375
+    },
+    "children": [
+      {
+        "cls": "control combo-control lbtn-confirm",
+        "text": "确定取消",
+        "style": "opacity: 1;",
+        "display": "flex",
+        "visibility": "visible"
+      }
+    ]
+  },
+  "confirm": {
+    "id": "",
+    "cls": "control combo-control lbtn-confirm",
+    "text": "确定取消",
+    "hidden": false,
+    "style": "opacity: 1;",
+    "data": {
+      "yjcmFlow": "normal"
+    },
+    "display": "flex",
+    "visibility": "visible",
+    "opacity": "1",
+    "rect": {
+      "x": 727.1328125,
+      "y": 565.875,
+      "w": 597.703125,
+      "h": 74.109375
+    },
+    "children": [
+      {
+        "cls": "control primary",
+        "text": "确定",
+        "link": "ok",
+        "style": "",
+        "display": "flex",
+        "visibility": "visible"
+      },
+      {
+        "cls": "control primary2 disabled",
+        "text": "取消",
+        "link": "cancel",
+        "style": "",
+        "display": "flex",
+        "visibility": "visible"
+      }
+    ]
+  },
+  "dialogs": []
+}

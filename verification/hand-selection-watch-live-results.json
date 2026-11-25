@@ -1,0 +1,1867 @@
+{
+  "style": "othersOff",
+  "capturedSetter": false,
+  "rows": [],
+  "samples": [
+    {
+      "t": 3.599999997764826,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 57.79999999701977,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 110.29999999701977,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 162.69999999925494,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 213.89999999850988,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 265.19999999925494,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 319.3999999985099,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 370.79999999701977,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 424.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 474.69999999925494,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 530.5999999977648,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 585.8999999985099,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 637.3999999985099,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 691.3999999985099,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 741.3999999985099,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 791.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 846.7999999970198,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 898.3999999985099,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 961.8999999985099,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1013.3999999985099,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1065.5999999977648,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1119,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1170.7999999970198,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1224.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1274.7999999970198,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1333.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1385.8999999985099,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1437,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1491.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1541.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1598.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1652.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1704.3999999985099,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1762,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1813.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1866,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1919.0999999977648,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 1980,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2031.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2086.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2138.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2191.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2241.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2298.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2362,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2413.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2465,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2528.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2580.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2632.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2686.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2737.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2791.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2846.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2898.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 2959.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3013.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3065.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3119.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3169.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3224.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3274.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3331.7999999970198,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3386,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3437,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3491.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3541.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3591.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3641.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3698.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3763.2999999970198,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3813.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3865.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3919.2999999970198,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 3971,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4024.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4080.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4132,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4185.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4237.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4291.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4341.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4391.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4446.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4499.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4562.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4613.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4666.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4719.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4770.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4824.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4874.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4924.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 4975,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5032.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5100.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5162.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5213.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5265.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5319.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5370.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5424.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5474.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5527.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5580,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5632.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5686.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5736.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5791.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5841.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5899,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 5960.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6013.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6064.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6119.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6171.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6224.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6274.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6332,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6386.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6436.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6491.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6561.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6613.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6665.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6719.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6770.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6824.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6880.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6932.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 6986.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7037.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7101.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7161.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7213.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7265.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7320,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7370.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7425,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7480.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7530.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7580.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7632.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7686.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7738,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7791.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7841.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7892.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 7961,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8013.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8068.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8120.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8170.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8220.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8275.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8325.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8380.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8433.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8486.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8537.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8591.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8641.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8699.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8762.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8813.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8864.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8919.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 8970.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9020.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9071.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9124.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9174.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9232.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9286.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9337.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9391.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9441.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9491.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9561.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9613.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9665.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9720,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9770.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9826.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9880.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9932,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 9986.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10036.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10102.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10159.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10213.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10265,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10319.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10370.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10424.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10474.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10528.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10580.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10632.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10686.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10737.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10791.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10841.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10899.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 10961.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11013.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11065.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11119.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11170.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11224.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11274.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11324.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11375,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11432.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11488.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11541.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11591.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11647.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11699.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11762,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11813.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11866,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11919.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 11970.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12024.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12074.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12125,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12175.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12233.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12286.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12340.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12392,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12447.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12499.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12560.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12613.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12665.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12719.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12770,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12825.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12880.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12933,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 12986.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13036.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13100.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13162,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13213.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13265.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13319.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13370.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13424.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13474.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13528.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13580.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13633.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13687.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13741.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13791.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13841.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13899.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 13959.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14013.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14065.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14119.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14171.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14224.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14274.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14333.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14386.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14437.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14491.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14559.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14614.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14665.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14719.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14770.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14824.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14874.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14933.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 14987,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15037.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15101.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15162.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15213.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15266.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15319.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15370.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15420.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15471,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15528.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15580.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15632,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15688.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15741.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15791.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15841.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15898.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 15962.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16013.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16066.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16119.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16170.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16224.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16280.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16333.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16386.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16437.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16489.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16541.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16591.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16647.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16698.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16764.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16819.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16870.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16925.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 16980.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17032.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17101.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17160.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17214,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17265.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17319.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17370.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17425.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17481.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17534.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17586.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17638.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17691.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17741.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17792.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17847.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17899.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 17962.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18013.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18064.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18119.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18170.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18225,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18280.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18332.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18385.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18439.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18491.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18560.099999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18613.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18665.5,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18719.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18771.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18825.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18881.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18931.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 18986.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19037.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19102.39999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19161.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19213.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19265.29999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19319.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19371.199999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19425,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19480.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19532.699999999255,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19586,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19637.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19691.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19767.79999999702,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19819.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19870.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19925.599999997765,
+      "event": "chooseToUse",
+      "selected": []
+    },
+    {
+      "t": 19980.89999999851,
+      "event": "chooseToUse",
+      "selected": []
+    }
+  ]
+}

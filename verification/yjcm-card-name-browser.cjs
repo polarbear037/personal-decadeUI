@@ -24,6 +24,8 @@ const base = '/extension/十周年UI/';
    await page.addStyleTag({content:'#samples,#preview{display:none}#arena{position:absolute;inset:0}#name-hand{position:absolute;left:30px;top:270px;width:1250px;height:220px}.hand-cards{position:relative;width:100%;height:100%}.handcards{position:relative;height:100%}.handcards>.card{left:0;top:0;width:108px;height:150px;margin:0;animation:none;transition:transform .266666667s}.handcards>.card>.background{display:none}'});
    await page.addScriptTag({content:script('extension/十周年UI/src/ui/cardAlternateName-xinsha.js','window.updateXinshaCardName=updateXinshaCardName;window.clearXinshaCardName=clearXinshaCardName;')});
    await page.addScriptTag({content:script('extension/十周年UI/src/ui/cardAlternateName.js','window.initCardAlternateNameVisible=initCardAlternateNameVisible;')});
+   await page.addScriptTag({content:script('extension/十周年UI/src/ui/handcard-motion-xinsha.js','Object.assign(window,{withXinshaHandLayout,updateXinshaHandMotion,finishXinshaHandMotion,clearXinshaHandMotion,restoreXinshaHandMotionCopy});')});
+   await page.addScriptTag({content:script('extension/十周年UI/src/utils/hand-card-position.js','window.preserveConfirmedHandCard=preserveConfirmedHandCard;')});
    await page.addScriptTag({content:script('extension/十周年UI/src/core/layout.js','window.nameLayout=e();')});
    await page.addScriptTag({content:script('extension/十周年UI/src/overrides/card/overrides.js','window.nameTransform=p;')});
    await page.addScriptTag({content:script('extension/十周年UI/src/overrides/ui/click.js','window.nameCardClick=t;')});

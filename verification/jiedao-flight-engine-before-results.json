@@ -1,0 +1,112 @@
+{
+  "result": {
+    "throws": [
+      {
+        "event": "lose",
+        "actor": "re_xinxianying",
+        "cards": [
+          {
+            "id": "5583564576",
+            "name": "jiedao"
+          }
+        ],
+        "stack": "Error\n    at proto.$throw (eval at evaluate (:311:30), <anonymous>:10:172)\n    at http://127.0.0.1:1840/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/overrides/content.js:245:48\n    at Game.broadcastAll (http://127.0.0.1:1840/noname/game/index.js:1732:7)\n    at GameEvent.<anonymous> (http://127.0.0.1:1840/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/overrides/content.js:239:11)\n    at GameEvent.content (http://127.0.0.1:1840/noname/library/element/GameEvent/compilers/ArrayCompiler.js:26:34)\n    at async GameEvent.loop (http://127.0.0.1:1840/noname/library/element/gameEvent.js:241:11)\n    at async http://127.0.0.1:1840/noname/library/element/gameEvent.js:206:7\n    at async http://127.0.0.1:1840/noname/library/element/gameEvent.js:291:9"
+      }
+    ],
+    "nodes": [
+      {
+        "node": 1,
+        "event": "lose"
+      }
+    ],
+    "animations": [
+      {
+        "node": 1,
+        "event": "lose",
+        "from": {
+          "offset": 0,
+          "transform": "translate(1306px,172px) scale(1.0125,1.0125)"
+        },
+        "to": {
+          "offset": 1,
+          "transform": "translate(673px,276px) scale(0.7875000238418579,0.7875000238418579)"
+        },
+        "stack": "Error\n    at Element.animate (eval at evaluate (:311:30), <anonymous>:13:108)\n    at HTMLDivElement.animate (http://127.0.0.1:1840/noname/init/compatible.js:19:42)\n    at updateXinshaDiscardMotion (http://127.0.0.1:1840/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/ui/discard-motion-xinsha.js:60:26)\n    at Object.updateDiscard (http://127.0.0.1:1840/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/core/layout.js:110:67)\n    at decadeUI.layoutDiscard (http://127.0.0.1:1840/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/core/utility.js:48:52)\n    at http://127.0.0.1:1840/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/ui/discard-motion-xinsha.js:13:75\n    at http://127.0.0.1:1840/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/core/utility.js:22:71\n    at Array.forEach (<anonymous>)\n    at http://127.0.0.1:1840/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/core/utility.js:22:47"
+      },
+      {
+        "node": 1,
+        "event": "useCard",
+        "from": {
+          "offset": 0,
+          "transform": "translate(1024.87px,218.189px) scale(0.946575,0.946575)"
+        },
+        "to": {
+          "offset": 1,
+          "transform": "translate(673px,276px) scale(0.7875000238418579,0.7875000238418579)"
+        },
+        "stack": "Error\n    at Element.animate (eval at evaluate (:311:30), <anonymous>:13:108)\n    at HTMLDivElement.animate (http://127.0.0.1:1840/noname/init/compatible.js:19:42)\n    at updateXinshaDiscardMotion (http://127.0.0.1:1840/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/ui/discard-motion-xinsha.js:60:26)\n    at Object.updateDiscard (http://127.0.0.1:1840/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/core/layout.js:110:67)\n    at decadeUI.layoutDiscard (http://127.0.0.1:1840/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/core/utility.js:48:52)\n    at eval (eval at evaluate (:311:30), <anonymous>:15:71)"
+      },
+      {
+        "node": 1,
+        "event": "useCard",
+        "from": {
+          "offset": 0,
+          "transform": "translate(673px,276px) scale(0.7875,0.7875)"
+        },
+        "to": {
+          "offset": 1,
+          "transform": "translate(673px,276px) scale(0.7875000238418579,0.7875000238418579)"
+        },
+        "stack": "Error\n    at Element.animate (eval at evaluate (:311:30), <anonymous>:13:108)\n    at HTMLDivElement.animate (http://127.0.0.1:1840/noname/init/compatible.js:19:42)\n    at updateXinshaDiscardMotion (http://127.0.0.1:1840/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/ui/discard-motion-xinsha.js:60:26)\n    at Object.updateDiscard (http://127.0.0.1:1840/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/core/layout.js:110:67)\n    at decadeUI.layoutDiscard (http://127.0.0.1:1840/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/src/core/utility.js:48:52)\n    at eval (eval at evaluate (:311:30), <anonymous>:15:116)"
+      }
+    ],
+    "done": true,
+    "started": true,
+    "active": false
+  },
+  "repeat": {
+    "baseline": true,
+    "repeated": 117,
+    "stillFlying": true,
+    "stableCompletions": 116,
+    "target": "translate(673px, 276px) scale(0.7875)",
+    "retargeted": true,
+    "externalReset": true,
+    "isolation": {
+      "onlineUI": true,
+      "on": true
+    }
+  },
+  "errors": [],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "loadSpine: [effect_baguazhen] 加载失败.",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "loadSpine: [effect_baiyinshizi] 加载失败."
+  ],
+  "missingResources": [
+    {
+      "status": 404,
+      "path": "/theme/style/card"
+    },
+    {
+      "status": 404,
+      "path": "/extension/十周年UI/assets/animation/effect_baguazhen.skel"
+    },
+    {
+      "status": 404,
+      "path": "/extension/十周年UI/assets/animation/effect_baguazhen.atlas"
+    },
+    {
+      "status": 404,
+      "path": "/extension/十周年UI/assets/animation/effect_baiyinshizi.skel"
+    },
+    {
+      "status": 404,
+      "path": "/extension/十周年UI/assets/animation/effect_baiyinshizi.atlas"
+    }
+  ]
+}

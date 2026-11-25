@@ -122,15 +122,17 @@ const results = {};
             const x=q.rect.x+q.rect.width/2,y=q.rect.y+q.rect.height/2;
             if(phone) await page.touchscreen.tap(x,y); else await page.mouse.click(x,y);
             const clicked=await page.evaluate(()=>{
-                const result={glow:ui.tempnowuxie.classList.contains("glow"),cancelCalls:window.cancelCalls,origin:ui.tempnowuxie._origin};
+                const result={glow:ui.tempnowuxie.classList.contains("glow"),cancelCalls:window.cancelCalls,origin:ui.tempnowuxie._origin,
+                    display:getComputedStyle(ui.tempnowuxie).display,connected:ui.tempnowuxie.isConnected};
                 ui.click.cancel=window.savedCancel; delete window.savedCancel;
                 return result;
             });
-            assert.deepEqual(clicked,{glow:true,cancelCalls:1,origin:"group-trick"});
+            assert.deepEqual(clicked,{glow:true,cancelCalls:1,origin:"group-trick",display:"none",connected:true});
             results.layouts.at(-1).clicked=clicked;
             await page.evaluate(()=>{ui.tempnowuxie.close();delete ui.tempnowuxie;});
             await page.locator(".yjcm-tempnowuxie").waitFor({state:"detached"});
             await addIgnore();
+            assert.notEqual(await page.evaluate(()=>getComputedStyle(ui.tempnowuxie).display),"none","下一张锦囊的新按钮恢复显示");
             for(const variant of [{width:1280,height:576,zoom:1,sidebar:""},{width:1440,height:810,zoom:1.5,sidebar:"leftbar"}]) {
                 await page.evaluate(v=>{game.documentZoom=v.zoom;document.body.style.zoom=v.zoom;ui.window.classList.toggle("leftbar",v.sidebar==="leftbar");decadeUI.layout.resize();},variant);
                 await page.setViewportSize({width:variant.width,height:variant.height});

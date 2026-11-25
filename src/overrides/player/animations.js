@@ -15,7 +15,9 @@ function a(num, nature = "soil", font, nobroadcast) {
 			o = 0,
 			d = player;
 		for (; d && d !== ui.arena;) ((t += d.offsetLeft || 0), (o += d.offsetTop || 0), (d = d.offsetParent));
-		((e.style.position = "absolute"), (e.style.left = `${t}px`), (e.style.top = `${o + 80}px`), (e.style.width = `${player.offsetWidth}px`), (e.style.zIndex = "200"));
+		e.style.left = `${t}px`;
+		e.style.top = `${o + 80}px`;
+		e.style.width = `${player.offsetWidth}px`;
 		const r = num.split(""),
 			c = Math.ceil(r.length / 2);
 		return (

@@ -1,9 +1,29 @@
-import { lib, ui, get, _status } from "noname";
+import { lib, game, ui, get, _status } from "noname";
 
 const simplifySkillPromptKey = "extension_十周年UI_simplifySkillPrompt";
 let installed = false;
 let pendingClick = null;
 const clickPrompts = new WeakMap();
+let controlConfirmationInstalled = false;
+
+function initXinshaControlConfirmation() {
+	const steps = lib.element.content.chooseToUse;
+	if (controlConfirmationInstalled || !Array.isArray(steps) || typeof steps[0] !== "function") return;
+	controlConfirmationInstalled = true;
+	const original = steps[0];
+	steps[0] = async function (event, ...args) {
+		// 烈骧已在 chooseControl 明确选择摸牌数；本体 backup 的 manualConfirm 会重复询问。
+		// 仅处理这个无牌、无目标的发动步骤，后续摸牌和选伤害目标仍由原技能结算。
+		const confirmed = lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && isSkillPromptSimplified() &&
+			event.isMine() && event.skill === "dcliexiang_backup" && event._backup && !!event.openskilldialog;
+		const result = await original.call(this, event, ...args);
+		if (confirmed && event === _status.event && event.skill === "dcliexiang_backup" &&
+			!event.filterButton && !event.filterCard && !event.filterTarget && game.check()) {
+			ui.click.ok();
+		}
+		return result;
+	};
+}
 
 function isSkillPromptSimplified() {
 	return lib.config[simplifySkillPromptKey] !== false;
@@ -17,6 +37,7 @@ function getSimplifiedSkillPrompt(event) {
 function initSimplifiedSkillPrompt() {
 	if (installed || !lib.hooks?.checkEnd || typeof ui.click.skill !== "function") return;
 	installed = true;
+	initXinshaControlConfirmation();
 	lib.init.css(`${lib.assetURL}extension/十周年UI/src/styles`, "skill-prompt");
 	const original = ui.click.skill;
 	lib.hooks.checkEnd.add((event, { ok }) => {
@@ -53,4 +74,4 @@ function initSimplifiedSkillPrompt() {
 	};
 }
 
-export { simplifySkillPromptKey, isSkillPromptSimplified, getSimplifiedSkillPrompt, initSimplifiedSkillPrompt };
+export { simplifySkillPromptKey, isSkillPromptSimplified, getSimplifiedSkillPrompt, initSimplifiedSkillPrompt, initXinshaControlConfirmation };

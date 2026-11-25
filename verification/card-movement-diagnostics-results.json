@@ -1,0 +1,102 @@
+[
+  {
+    "style": "othersOff",
+    "automatic": true,
+    "copy": true,
+    "distinct": true,
+    "animations": 2,
+    "frames": 3,
+    "action": true,
+    "endpoints": [
+      {
+        "from": "translate(800px, 40px)",
+        "to": "translate(500px, 300px)",
+        "stack": true
+      },
+      {
+        "from": "matrix(1, 0, 0, 1, 800, 40)",
+        "to": "translate(450px, 300px)",
+        "stack": true
+      }
+    ],
+    "pinned": "模拟二次飞行",
+    "stopped": true,
+    "disabledHooks": true,
+    "retained": true,
+    "deleted": true,
+    "unchanged": true,
+    "panelButtons": [
+      "开启记录",
+      "保存异常现场",
+      "导出记录",
+      "清空记录",
+      "关闭并删除",
+      "关闭窗口"
+    ],
+    "singleCall": true,
+    "markerPreserved": true,
+    "singleAnimation": true,
+    "cssTransition": true,
+    "individualEndpoints": true,
+    "individualPose": true,
+    "bounded": true,
+    "keySurvived": true,
+    "directReset": true,
+    "storageFailure": true,
+    "raceDeleted": true,
+    "shortcut": true,
+    "exported": true,
+    "reloaded": true,
+    "errors": []
+  },
+  {
+    "style": "onlineUI",
+    "automatic": true,
+    "copy": true,
+    "distinct": true,
+    "animations": 2,
+    "frames": 4,
+    "action": true,
+    "endpoints": [
+      {
+        "from": "translate(800px, 40px)",
+        "to": "translate(500px, 300px)",
+        "stack": true
+      },
+      {
+        "from": "matrix(1, 0, 0, 1, 685.499, 139.234)",
+        "to": "translate(450px, 300px)",
+        "stack": true
+      }
+    ],
+    "pinned": "模拟二次飞行",
+    "stopped": true,
+    "disabledHooks": true,
+    "retained": true,
+    "deleted": true,
+    "unchanged": true,
+    "panelButtons": [
+      "开启记录",
+      "保存异常现场",
+      "导出记录",
+      "清空记录",
+      "关闭并删除",
+      "关闭窗口"
+    ],
+    "singleCall": true,
+    "markerPreserved": true,
+    "singleAnimation": true,
+    "cssTransition": true,
+    "individualEndpoints": true,
+    "individualPose": true,
+    "bounded": true,
+    "keySurvived": true,
+    "directReset": true,
+    "storageFailure": true,
+    "raceDeleted": true,
+    "shortcut": true,
+    "exported": true,
+    "reloaded": true,
+    "errors": []
+  }
+]

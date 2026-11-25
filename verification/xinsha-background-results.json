@@ -5,57 +5,63 @@
       "id": 0,
       "name": "两军对峙",
       "opaque": 14244,
-      "changed": 43830
+      "changed": 43887
     },
     {
       "id": 1,
       "name": "吴国风光",
-      "opaque": 6827,
-      "changed": 17781
+      "opaque": 6822,
+      "changed": 17964
     },
     {
       "id": 2,
       "name": "蜀国风光",
-      "opaque": 4694,
-      "changed": 11604
+      "opaque": 4699,
+      "changed": 11889
     },
     {
       "id": 3,
       "name": "魏国风光",
       "opaque": 25921,
-      "changed": 11006
+      "changed": 11079
     },
     {
       "id": 6,
       "name": "群雄风光",
-      "opaque": 15927,
-      "changed": 29848
+      "opaque": 15923,
+      "changed": 30246
     },
     {
       "id": 7,
       "name": "城内灯火",
       "opaque": 21836,
-      "changed": 56563
+      "changed": 57303
     },
     {
       "id": 8,
       "name": "周年庆典",
-      "opaque": 4550,
-      "changed": 9259
+      "opaque": 4567,
+      "changed": 9280
     },
     {
       "id": 15,
       "name": "大闹长坂桥",
-      "opaque": 4680,
-      "changed": 11717
+      "opaque": 4683,
+      "changed": 11676
     },
     {
       "id": 315,
       "name": "天书乱斗",
       "opaque": 28800,
-      "changed": 74249
+      "changed": 74595
     }
   ],
+  "performance": {
+    "steadyDraws": 19,
+    "writes": 0,
+    "hiddenDraws": 0,
+    "resumedDraws": 19
+  },
   "errors": [],
   "failures": []
 }

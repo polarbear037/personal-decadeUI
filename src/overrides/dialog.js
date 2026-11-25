@@ -58,7 +58,7 @@ function s() {
 		xinshaDialogCardAnimations.attach(this, { event: _status.event });
 		// 调用方声明内容类型，外框、确认栏和提示的几何统一由通用 OL dialog 管理。
 		this.classList.toggle("dialog-ol-card-move", this.dataset.olLayout === "card-move");
-		const dialogOl = prepareDialogOlOpen(this, ui.arena, getDialogSkillTitle(_status.event), _status.event);
+		const dialogOl = prepareDialogOlOpen(this, ui.arena, getDialogSkillTitle, _status.event);
 		prepareOptimizedPrompt(this);
 		for (let i = 0; i < ui.dialogs.length; i++) {
 			if (ui.dialogs[i] === this) {

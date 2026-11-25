@@ -1,0 +1,51 @@
+{
+  "style": "othersOff",
+  "borderStyle": "dragon4",
+  "beadPositionsUnchanged": true,
+  "eventUnchanged": true,
+  "selectionUnchanged": true,
+  "playersUnchanged": true,
+  "hpUnchanged": true,
+  "players": [
+    {
+      "position": "0",
+      "grade": "five",
+      "maxHp": "4",
+      "source": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+      "bgHeight": 228.963,
+      "backgroundTransform": "matrix(1, 0, 0, 1, 4, 8)",
+      "hpBottom": 14,
+      "centerBottom": 23.9744363542585
+    },
+    {
+      "position": "1",
+      "grade": "five",
+      "maxHp": "3",
+      "source": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+      "bgHeight": 208.975,
+      "backgroundTransform": "matrix(1, 0, 0, 1, 4, 8)",
+      "hpBottom": 14,
+      "centerBottom": 23.974419910988324
+    },
+    {
+      "position": "2",
+      "grade": "two",
+      "maxHp": "3",
+      "source": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+      "bgHeight": 195.975,
+      "backgroundTransform": "none",
+      "hpBottom": 6,
+      "centerBottom": 15.95586858517335
+    },
+    {
+      "position": "3",
+      "grade": "five",
+      "maxHp": "5",
+      "source": "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+      "bgHeight": 248.95,
+      "backgroundTransform": "matrix(1, 0, 0, 1, 4, 8)",
+      "hpBottom": 14,
+      "centerBottom": 23.974455918996394
+    }
+  ]
+}

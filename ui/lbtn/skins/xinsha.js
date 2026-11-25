@@ -8,6 +8,7 @@ import { createXinshaBackgroundSelector } from "./xinsha-background-selector.js"
 import { installXinshaProps } from "../../../src/ui/xinsha-props.js";
 import { initXinshaActionButtons, syncXinshaActionButtons } from "../../../src/ui/xinsha-action-buttons.js";
 import { initXinshaButtonInput } from "../../../src/ui/xinsha-button-input.js";
+import { installXinshaRecord } from "../../../src/ui/xinsha-record.js";
 
 export function updateXinshaHandCount() {
 	if (!game.me) return;
@@ -47,6 +48,7 @@ export function createXinshaLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 
 		precontent() {
 			base.initBaseRewrites.call(this);
+			this.recordPanel = installXinshaRecord({ lib, game, ui, get, status: _status });
 			initXinshaActionButtons();
 			initXinshaButtonInput();
 			this.initTempNoWuxieButton();
@@ -58,6 +60,10 @@ export function createXinshaLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 			const createControl = ui.create.control;
 			ui.create.control = function (...args) {
 				const control = createControl.apply(this, args);
+				// 原版没有本体的独立 AI 代选按钮；一将样式的所有选牌场景统一屏蔽，保留原生关闭流程。
+				if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && Array.from(control.children).some(node => node.link === "AI代选")) {
+					control.classList.add("yjcm-ai-select");
+				}
 				// 本体在复用确认栏时会重建独立的结束回合控件；原版将它与取消互斥显示。
 				if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && _status.event?.name === "chooseToUse" && _status.event.type === "phase" && control.stayleft && control.firstChild?.link === "结束回合") {
 					control.classList.add("yjcm-end-turn");
@@ -225,9 +231,12 @@ export function createXinshaLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 			const button = this.createOfficialButton("yjcm-select-all", "全选手牌", () => this.toggleSelectAllCards(update));
 			const update = () => {
 				const event = _status.event;
-				button.hidden = !event?.isMine?.() || !event.allowChooseAll || event.complexCard || event.complexSelect || !event.selectCard || get.select(event.selectCard)[1] <= 1;
-				ui.window.dataset.yjcmSelectAll = String(!button.hidden);
-				button.textContent = ui.selected.cards.length ? "反选" : "全选";
+				const hidden = !event?.isMine?.() || !event.allowChooseAll || event.complexCard || event.complexSelect || !event.selectCard || get.select(event.selectCard)[1] <= 1;
+				if (button.hidden !== hidden) button.hidden = hidden;
+				const visible = String(!hidden);
+				if (ui.window.dataset.yjcmSelectAll !== visible) ui.window.dataset.yjcmSelectAll = visible;
+				const label = ui.selected.cards.length ? "反选" : "全选";
+				if (button.textContent !== label) button.textContent = label;
 			};
 			update();
 			setInterval(update, 100);
@@ -237,8 +246,10 @@ export function createXinshaLbtnPlugin(lib, game, ui, get, ai, _status, app) {
 			const button = this.createOfficialButton("yjcm-sort", "整理手牌", () => this.sortHandCards());
 			button.textContent = "整理手牌";
 			const update = () => {
-				button.hidden = !game.me || game.me.getCards("hs").length < 4;
-				ui.window.dataset.yjcmSort = String(!button.hidden);
+				const hidden = !game.me || game.me.getCards("hs").length < 4;
+				if (button.hidden !== hidden) button.hidden = hidden;
+				const visible = String(!hidden);
+				if (ui.window.dataset.yjcmSort !== visible) ui.window.dataset.yjcmSort = visible;
 				button.classList.toggle("disabled", !!game.me?.hasSkillTag("noSortCard"));
 			};
 			update();

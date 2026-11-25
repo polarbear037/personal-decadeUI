@@ -9912,14 +9912,14 @@ var spine;
 					var attachment = slot.getAttachment();
 					if (attachment && hideSlots) {
 						slotName = attachment.name;
-						if (slotName && hideSlots.indexOf(slotName) != -1) {
+						if (hideSlots.indexOf(slot.data.name) != -1 || (slotName && hideSlots.indexOf(slotName) != -1)) {
 							clipper.clipEndWithSlot(slot);
 							continue;
 						}
 					}
 					if (attachment && clipSlots) {
 						slotName = attachment.name;
-						if (slotName && clipSlots.indexOf(slotName) != -1) {
+						if (clipSlots.indexOf(slot.data.name) != -1 || (slotName && clipSlots.indexOf(slotName) != -1)) {
 							if (clipper.clipAttachment != slotsMask) clipper.clipStart(false, slotsMask);
 						} else if (clipper.clipAttachment == slotsMask) {
 							clipper.clipEnd();

@@ -384,7 +384,7 @@
 	color: #ffffff;
 	text-shadow: 0 0 4px #000;
 	opacity: 1;
-	z-index: 9999;
+	z-index: 6;
 	pointer-events: none;
 	position: absolute;
 }

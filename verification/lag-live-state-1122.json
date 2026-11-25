@@ -1,0 +1,70 @@
+{
+  "url": "http://localhost:8089/app.html",
+  "style": "othersOff",
+  "mode": "versus",
+  "over": true,
+  "paused": false,
+  "visibility": "visible",
+  "dom": 1626,
+  "heap": {
+    "used": 279455004,
+    "total": 319169032,
+    "limit": 4294705152
+  },
+  "canvases": [
+    {
+      "id": "",
+      "w": 1341,
+      "h": 601
+    },
+    {
+      "id": "decadeUI-canvas",
+      "w": 1637,
+      "h": 733
+    },
+    {
+      "id": "canvas",
+      "w": 1295,
+      "h": 583
+    },
+    {
+      "id": "",
+      "w": 198,
+      "h": 305
+    },
+    {
+      "id": "chukuang-canvas2",
+      "w": 1342,
+      "h": 601
+    },
+    {
+      "id": "chukuang-canvas",
+      "w": 300,
+      "h": 150
+    },
+    {
+      "id": "bjbc-yjcm-awaken-canvas",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "id": "jiang0-canvas",
+      "w": 2011,
+      "h": 901
+    }
+  ],
+  "diagnosticsKeys": [
+    "storageKey",
+    "ready",
+    "snapshot",
+    "flush",
+    "clear",
+    "setEnabled",
+    "refreshHooks",
+    "saveIncident",
+    "getIncident",
+    "status",
+    "export"
+  ],
+  "inspector": "function"
+}

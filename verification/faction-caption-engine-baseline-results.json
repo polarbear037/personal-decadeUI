@@ -1,0 +1,57 @@
+{
+  "baseline": true,
+  "cases": [
+    {
+      "optimize": false,
+      "captions": [
+        {
+          "text": "请选择你的势力",
+          "display": "none"
+        },
+        {
+          "text": "请选择你的势力",
+          "display": "block"
+        }
+      ],
+      "optimizedTips": [],
+      "labelDesignSize": 99.99996957587342,
+      "titleCount": 1,
+      "footerCount": 1
+    },
+    {
+      "optimize": true,
+      "captions": [
+        {
+          "text": "请选择你的势力",
+          "display": "none"
+        },
+        {
+          "text": "请选择你的势力",
+          "display": "block"
+        }
+      ],
+      "optimizedTips": [],
+      "labelDesignSize": 99.99996957587342,
+      "titleCount": 1,
+      "footerCount": 1
+    },
+    {
+      "optimize": "xinsha",
+      "captions": [
+        {
+          "text": "请选择你的势力",
+          "display": "none"
+        },
+        {
+          "text": "请选择你的势力",
+          "display": "block"
+        }
+      ],
+      "optimizedTips": [],
+      "labelDesignSize": 99.99996957587342,
+      "titleCount": 1,
+      "footerCount": 1
+    }
+  ],
+  "errors": []
+}

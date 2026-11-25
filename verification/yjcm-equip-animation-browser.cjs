@@ -134,14 +134,14 @@ const results = {};
     const fadeHandle=await page.waitForFunction(()=>{
      const f=currentEquip.node._xinshaEquipFlight,animation=f.displayAnimation;
      if(f.phase!=='slot'||!animation)return false;
-     const startTime=animation.startTime;animation.pause();
+     const startTime=animation.startTime,currentTime=animation.currentTime;animation.pause();
      const samples=[0,.25,.5,.75,.9,.95,1].map(progress=>{
       animation.currentTime=f.duration*progress;
       const rect=f.node.getBoundingClientRect(),computed=getComputedStyle(f.node);
       return {progress,opacity:Number(computed.opacity),x:rect.x+rect.width/2,y:rect.y+rect.height/2,width:rect.width};
      });
      const rect=f.equipped.getBoundingClientRect();
-     animation.play();animation.startTime=startTime;
+     if(f.selfUse){animation.play();animation.startTime=startTime;}else animation.currentTime=currentTime;
      return {samples,slot:{x:rect.x+rect.width/2,y:rect.y+rect.height/2}};
     });
     const slotFade=await fadeHandle.jsonValue();await fadeHandle.dispose();
@@ -165,7 +165,7 @@ const results = {};
     assert.equal(result.segments[0].duration,own?300:200,'仅将非主视角首段略放慢到200ms');
     for(let i=1;i<result.segments.length;i++){
      const previous=result.segments[i-1],next=result.segments[i],end=previous.frames.at(-1),start=next.frames[0];
-     assert(Math.abs(next.startTime-previous.startTime-previous.duration)<.01,'段间不能插入等待帧');
+     if(own)assert(Math.abs(next.startTime-previous.startTime-previous.duration)<.01,'本人段间不能插入等待帧');
      const numbers=value=>value.match(/-?\d+(?:\.\d+)?(?:e[-+]?\d+)?/gi).map(Number),left=numbers(end.transform),right=numbers(start.transform);
      assert(left.length===right.length&&left.every((v,j)=>Math.abs(v-right[j])<.002),'段间位置与缩放连续 '+JSON.stringify({previous:previous.phase,next:next.phase,end:end.transform,start:start.transform}));
      assert(Math.abs(Number(end.opacity)-Number(start.opacity))<.001,'段间透明度连续，不能消失后重现');
@@ -210,7 +210,7 @@ const results = {};
    // 非主视角不等通知，直接从武将脸上飞出；晚到通知不能重播或重置。
    await page.evaluate(()=>beginEquip(false,'bagua',0,-1));await page.waitForTimeout(90);
    const waiting=await page.evaluate(()=>{const f=currentEquip.node._xinshaEquipFlight,m=new DOMMatrixReadOnly(getComputedStyle(f.node).transform);return{departed:f.departed??null,start:f.start,point:{x:m.m41,y:m.m42},queued:!!f.frame};});
-   assert.equal(waiting.departed,null);assert.equal(waiting.queued,false);
+   assert.equal(waiting.departed,null);assert.equal(waiting.queued,true,'非主视角使用受卡顿保护的绘制时钟');
    assert(Math.hypot(waiting.point.x-waiting.start.x,waiting.point.y-waiting.start.y)>10,'非主视角通知到达前就必须可见地飞向中央');
    await page.evaluate(()=>currentEquip.node.moveDelete(currentEquip.player));
    await page.waitForFunction(()=>currentEquip.node._xinshaEquipFlight.done);
@@ -233,6 +233,17 @@ const results = {};
    assert.equal(await page.evaluate(()=>getComputedStyle(currentEquip.source).visibility),'visible','首段被取消时仍须恢复实体装备');
    await page.evaluate(()=>{currentEquip.source.remove();currentEquip.player.$handleEquipChange();});
    results[style].displayCancellation=true;
+   await page.evaluate(()=>{
+    beginEquip(false,'zhuge');
+    const f=currentEquip.node._xinshaEquipFlight;
+    window.remoteEquipWaitReleased=false;
+    f.use.after.find(event=>event.xinshaEquipAnimationDone).xinshaEquipAnimationDone.then(()=>{window.remoteEquipWaitReleased=true;});
+    f.displayAnimation.cancel();
+   });
+   await page.waitForFunction(()=>remoteEquipWaitReleased&&!currentEquip.node.isConnected);
+   assert.equal(await page.evaluate(()=>getComputedStyle(currentEquip.source).visibility),'visible','取消非主视角装备动画须释放后续出牌等待并恢复装备');
+   await page.evaluate(()=>{currentEquip.source.remove();currentEquip.player.$handleEquipChange();});
+   results[style].remoteWaitCancellation=true;
    results[style].layouts=[];
    for(const embedded of [false,true]){
     await page.evaluate(embedded=>{const equips=game.me.node.equips;if(embedded){game.me.append(equips);ui.arena.dataset.aloneEquip='off';lib.config.extension_十周年UI_aloneEquip=false;}else{ui.equipSolts.append(equips);}ui.arena.style.transform='scale(.8)';ui.arena.style.transformOrigin='top left';},embedded);

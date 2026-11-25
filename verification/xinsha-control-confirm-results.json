@@ -1,0 +1,577 @@
+{
+  "othersOff": {
+    "scenes": [
+      {
+        "separate": false,
+        "state": {
+          "flow": "multi",
+          "confirmDisplay": "none",
+          "sameConfirm": true,
+          "unit": 1.0666666666666667,
+          "nodes": [
+            {
+              "link": "一张",
+              "rect": {
+                "x": 235.375,
+                "y": 496.015625,
+                "width": 149.328125,
+                "height": 54.390625,
+                "top": 496.015625,
+                "right": 384.703125,
+                "bottom": 550.40625,
+                "left": 235.375
+              }
+            },
+            {
+              "link": "两张",
+              "rect": {
+                "x": 411.359375,
+                "y": 496.015625,
+                "width": 149.328125,
+                "height": 54.390625,
+                "top": 496.015625,
+                "right": 560.6875,
+                "bottom": 550.40625,
+                "left": 411.359375
+              }
+            },
+            {
+              "link": "三张",
+              "rect": {
+                "x": 587.34375,
+                "y": 496.015625,
+                "width": 149.328125,
+                "height": 54.390625,
+                "top": 496.015625,
+                "right": 736.671875,
+                "bottom": 550.40625,
+                "left": 587.34375
+              }
+            },
+            {
+              "link": "四张",
+              "rect": {
+                "x": 763.328125,
+                "y": 496.015625,
+                "width": 149.328125,
+                "height": 54.390625,
+                "top": 496.015625,
+                "right": 912.65625,
+                "bottom": 550.40625,
+                "left": 763.328125
+              }
+            },
+            {
+              "link": "五张",
+              "rect": {
+                "x": 939.3125,
+                "y": 496.015625,
+                "width": 149.328125,
+                "height": 54.390625,
+                "top": 496.015625,
+                "right": 1088.640625,
+                "bottom": 550.40625,
+                "left": 939.3125
+              }
+            },
+            {
+              "link": "cancel2",
+              "rect": {
+                "x": 1115.296875,
+                "y": 498.140625,
+                "width": 149.328125,
+                "height": 52.265625,
+                "top": 498.140625,
+                "right": 1264.625,
+                "bottom": 550.40625,
+                "left": 1115.296875
+              }
+            }
+          ]
+        },
+        "restored": {
+          "result": "三张",
+          "display": "flex",
+          "same": true
+        }
+      },
+      {
+        "separate": true,
+        "state": {
+          "flow": "multi",
+          "confirmDisplay": "none",
+          "sameConfirm": true,
+          "unit": 1.0666666666666667,
+          "nodes": [
+            {
+              "link": "一张",
+              "rect": {
+                "x": 235.375,
+                "y": 496.015625,
+                "width": 149.328125,
+                "height": 54.390625,
+                "top": 496.015625,
+                "right": 384.703125,
+                "bottom": 550.40625,
+                "left": 235.375
+              }
+            },
+            {
+              "link": "两张",
+              "rect": {
+                "x": 411.359375,
+                "y": 496.015625,
+                "width": 149.328125,
+                "height": 54.390625,
+                "top": 496.015625,
+                "right": 560.6875,
+                "bottom": 550.40625,
+                "left": 411.359375
+              }
+            },
+            {
+              "link": "三张",
+              "rect": {
+                "x": 587.34375,
+                "y": 496.015625,
+                "width": 149.328125,
+                "height": 54.390625,
+                "top": 496.015625,
+                "right": 736.671875,
+                "bottom": 550.40625,
+                "left": 587.34375
+              }
+            },
+            {
+              "link": "四张",
+              "rect": {
+                "x": 763.328125,
+                "y": 496.015625,
+                "width": 149.328125,
+                "height": 54.390625,
+                "top": 496.015625,
+                "right": 912.65625,
+                "bottom": 550.40625,
+                "left": 763.328125
+              }
+            },
+            {
+              "link": "五张",
+              "rect": {
+                "x": 939.3125,
+                "y": 496.015625,
+                "width": 149.328125,
+                "height": 54.390625,
+                "top": 496.015625,
+                "right": 1088.640625,
+                "bottom": 550.40625,
+                "left": 939.3125
+              }
+            },
+            {
+              "link": "cancel2",
+              "rect": {
+                "x": 1115.296875,
+                "y": 498.140625,
+                "width": 149.328125,
+                "height": 52.265625,
+                "top": 498.140625,
+                "right": 1264.625,
+                "bottom": 550.40625,
+                "left": 1115.296875
+              }
+            }
+          ]
+        },
+        "restored": {
+          "result": "cancel2",
+          "display": "flex",
+          "same": true
+        }
+      }
+    ],
+    "errors": []
+  },
+  "onlineUI": {
+    "scenes": [
+      {
+        "separate": false,
+        "state": {
+          "confirmDisplay": "flex",
+          "sameConfirm": true,
+          "unit": null,
+          "nodes": [
+            {
+              "link": "一张",
+              "rect": {
+                "x": 219.5,
+                "y": 521.953125,
+                "width": 136,
+                "height": 47.890625,
+                "top": 521.953125,
+                "right": 355.5,
+                "bottom": 569.84375,
+                "left": 219.5
+              }
+            },
+            {
+              "link": "两张",
+              "rect": {
+                "x": 402.5,
+                "y": 521.953125,
+                "width": 136,
+                "height": 47.890625,
+                "top": 521.953125,
+                "right": 538.5,
+                "bottom": 569.84375,
+                "left": 402.5
+              }
+            },
+            {
+              "link": "三张",
+              "rect": {
+                "x": 585.5,
+                "y": 521.953125,
+                "width": 136,
+                "height": 47.890625,
+                "top": 521.953125,
+                "right": 721.5,
+                "bottom": 569.84375,
+                "left": 585.5
+              }
+            },
+            {
+              "link": "四张",
+              "rect": {
+                "x": 768.5,
+                "y": 521.953125,
+                "width": 136,
+                "height": 47.890625,
+                "top": 521.953125,
+                "right": 904.5,
+                "bottom": 569.84375,
+                "left": 768.5
+              }
+            },
+            {
+              "link": "五张",
+              "rect": {
+                "x": 951.5,
+                "y": 521.953125,
+                "width": 136,
+                "height": 47.890625,
+                "top": 521.953125,
+                "right": 1087.5,
+                "bottom": 569.84375,
+                "left": 951.5
+              }
+            },
+            {
+              "link": "cancel2",
+              "rect": {
+                "x": 1134.5,
+                "y": 521.953125,
+                "width": 136,
+                "height": 47.890625,
+                "top": 521.953125,
+                "right": 1270.5,
+                "bottom": 569.84375,
+                "left": 1134.5
+              }
+            }
+          ]
+        },
+        "restored": {
+          "result": "三张",
+          "display": "flex",
+          "same": true
+        }
+      },
+      {
+        "separate": true,
+        "state": {
+          "confirmDisplay": "flex",
+          "sameConfirm": true,
+          "unit": null,
+          "nodes": [
+            {
+              "link": "一张",
+              "rect": {
+                "x": 219.5,
+                "y": 521.953125,
+                "width": 136,
+                "height": 47.890625,
+                "top": 521.953125,
+                "right": 355.5,
+                "bottom": 569.84375,
+                "left": 219.5
+              }
+            },
+            {
+              "link": "两张",
+              "rect": {
+                "x": 402.5,
+                "y": 521.953125,
+                "width": 136,
+                "height": 47.890625,
+                "top": 521.953125,
+                "right": 538.5,
+                "bottom": 569.84375,
+                "left": 402.5
+              }
+            },
+            {
+              "link": "三张",
+              "rect": {
+                "x": 585.5,
+                "y": 521.953125,
+                "width": 136,
+                "height": 47.890625,
+                "top": 521.953125,
+                "right": 721.5,
+                "bottom": 569.84375,
+                "left": 585.5
+              }
+            },
+            {
+              "link": "四张",
+              "rect": {
+                "x": 768.5,
+                "y": 521.953125,
+                "width": 136,
+                "height": 47.890625,
+                "top": 521.953125,
+                "right": 904.5,
+                "bottom": 569.84375,
+                "left": 768.5
+              }
+            },
+            {
+              "link": "五张",
+              "rect": {
+                "x": 951.5,
+                "y": 521.953125,
+                "width": 136,
+                "height": 47.890625,
+                "top": 521.953125,
+                "right": 1087.5,
+                "bottom": 569.84375,
+                "left": 951.5
+              }
+            },
+            {
+              "link": "cancel2",
+              "rect": {
+                "x": 1134.5,
+                "y": 521.953125,
+                "width": 136,
+                "height": 47.890625,
+                "top": 521.953125,
+                "right": 1270.5,
+                "bottom": 569.84375,
+                "left": 1134.5
+              }
+            }
+          ]
+        },
+        "restored": {
+          "result": "cancel2",
+          "display": "flex",
+          "same": true
+        }
+      }
+    ],
+    "errors": []
+  },
+  "on": {
+    "scenes": [
+      {
+        "separate": false,
+        "state": {
+          "confirmDisplay": "flex",
+          "sameConfirm": true,
+          "unit": null,
+          "nodes": [
+            {
+              "link": "一张",
+              "rect": {
+                "x": 280,
+                "y": 569.96875,
+                "width": 130,
+                "height": 41.28125,
+                "top": 569.96875,
+                "right": 410,
+                "bottom": 611.25,
+                "left": 280
+              }
+            },
+            {
+              "link": "两张",
+              "rect": {
+                "x": 440,
+                "y": 569.96875,
+                "width": 130,
+                "height": 41.28125,
+                "top": 569.96875,
+                "right": 570,
+                "bottom": 611.25,
+                "left": 440
+              }
+            },
+            {
+              "link": "三张",
+              "rect": {
+                "x": 600,
+                "y": 569.96875,
+                "width": 130,
+                "height": 41.28125,
+                "top": 569.96875,
+                "right": 730,
+                "bottom": 611.25,
+                "left": 600
+              }
+            },
+            {
+              "link": "四张",
+              "rect": {
+                "x": 760,
+                "y": 569.96875,
+                "width": 130,
+                "height": 41.28125,
+                "top": 569.96875,
+                "right": 890,
+                "bottom": 611.25,
+                "left": 760
+              }
+            },
+            {
+              "link": "五张",
+              "rect": {
+                "x": 920,
+                "y": 569.96875,
+                "width": 130,
+                "height": 41.28125,
+                "top": 569.96875,
+                "right": 1050,
+                "bottom": 611.25,
+                "left": 920
+              }
+            },
+            {
+              "link": "cancel2",
+              "rect": {
+                "x": 1080,
+                "y": 569.96875,
+                "width": 130,
+                "height": 41.28125,
+                "top": 569.96875,
+                "right": 1210,
+                "bottom": 611.25,
+                "left": 1080
+              }
+            }
+          ]
+        },
+        "restored": {
+          "result": "三张",
+          "display": "flex",
+          "same": true
+        }
+      },
+      {
+        "separate": true,
+        "state": {
+          "confirmDisplay": "flex",
+          "sameConfirm": true,
+          "unit": null,
+          "nodes": [
+            {
+              "link": "一张",
+              "rect": {
+                "x": 280,
+                "y": 569.96875,
+                "width": 130,
+                "height": 41.28125,
+                "top": 569.96875,
+                "right": 410,
+                "bottom": 611.25,
+                "left": 280
+              }
+            },
+            {
+              "link": "两张",
+              "rect": {
+                "x": 440,
+                "y": 569.96875,
+                "width": 130,
+                "height": 41.28125,
+                "top": 569.96875,
+                "right": 570,
+                "bottom": 611.25,
+                "left": 440
+              }
+            },
+            {
+              "link": "三张",
+              "rect": {
+                "x": 600,
+                "y": 569.96875,
+                "width": 130,
+                "height": 41.28125,
+                "top": 569.96875,
+                "right": 730,
+                "bottom": 611.25,
+                "left": 600
+              }
+            },
+            {
+              "link": "四张",
+              "rect": {
+                "x": 760,
+                "y": 569.96875,
+                "width": 130,
+                "height": 41.28125,
+                "top": 569.96875,
+                "right": 890,
+                "bottom": 611.25,
+                "left": 760
+              }
+            },
+            {
+              "link": "五张",
+              "rect": {
+                "x": 920,
+                "y": 569.96875,
+                "width": 130,
+                "height": 41.28125,
+                "top": 569.96875,
+                "right": 1050,
+                "bottom": 611.25,
+                "left": 920
+              }
+            },
+            {
+              "link": "cancel2",
+              "rect": {
+                "x": 1080,
+                "y": 569.96875,
+                "width": 130,
+                "height": 41.28125,
+                "top": 569.96875,
+                "right": 1210,
+                "bottom": 611.25,
+                "left": 1080
+              }
+            }
+          ]
+        },
+        "restored": {
+          "result": "cancel2",
+          "display": "flex",
+          "same": true
+        }
+      }
+    ],
+    "errors": []
+  }
+}

@@ -30,6 +30,9 @@ const t = () =>
 		addListener(callback, capture = !0) {
 			this.events.push({ callback: callback, capture: capture });
 		}
+		removeListener(callback) {
+			if (this.events) this.events = this.events.filter(event => event.callback !== callback);
+		}
 		dispatchEvent() {
 			let t = !1;
 			(this.events.forEach(e => {

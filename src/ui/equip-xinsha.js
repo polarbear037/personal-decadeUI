@@ -60,7 +60,8 @@ function updateXinshaEquipPresentation(card, virtualCard, translated) {
 	name.textContent = ({ 八卦阵: "八卦阵", 白银狮子: "白银狮" })[fullName] || translated.replace(/(?:\s|&nbsp;)+[+−-]?\d+\s*$/, "").replace(/&nbsp;/g, " ");
 	// 常规原图为预绘字；扩展的长牌名按同一可用区域收小，避免截掉最后一个字。
 	name.style.setProperty("--xinsha-equip-name-size", String(Math.min(20, (slot === 2 || slot === 5 ? 76 : 62) / Math.max(1, Array.from(name.textContent).length))));
-	name.title = fullName;
+	// 装备说明由 nodeintro 展示，避免浏览器再弹出白底名称提示。
+	name.removeAttribute("title");
 	return true;
 }
 

@@ -54,7 +54,8 @@ function t(t, n) {
 						(this.classList.add("hidden"), this.$info && this.$info.hide?.());
 					}),
 					(tip.close = function () {
-						((this.closed = !0), this.hide(), this.$info && (this.$info.innerHTML = ""));
+						// 已关闭提示不再恢复；同步清空正文及伪元素描边，避免淡出期间重排出残影。
+						((this.closed = !0), this.clear(), this.hide(), this.$info && (this.$info.innerHTML = ""));
 						const tips = decadeUI.statics?.handTips || [];
 						for (let t = 0; t < tips.length; t++) if (!tips[t].closed) return void tips[t].show();
 					}),

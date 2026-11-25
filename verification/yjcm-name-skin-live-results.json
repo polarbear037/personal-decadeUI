@@ -1,0 +1,34 @@
+{
+  "style": "othersOff",
+  "rows": [
+    {
+      "name": "薛灵芸",
+      "align": "center",
+      "centerError": 0.00390625,
+      "button": {
+        "parent": "camp-wrap",
+        "opacity": "1",
+        "image": "url(\"http://localhost:8089/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnOver1.png\")",
+        "pointer": "auto"
+      }
+    },
+    {
+      "name": "徐馨",
+      "align": "center",
+      "centerError": 0.00390625,
+      "button": null
+    },
+    {
+      "name": "笮融",
+      "align": "center",
+      "centerError": 0.00390625,
+      "button": null
+    },
+    {
+      "name": "徐妏",
+      "align": "center",
+      "centerError": 0.00390625,
+      "button": null
+    }
+  ]
+}

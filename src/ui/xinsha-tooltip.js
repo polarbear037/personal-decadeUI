@@ -1,4 +1,7 @@
 import { lib, ui } from "noname";
+import { setScale9Background } from "./scale9-background.js";
+
+const cardBackground = new URL("../../image/ui/tooltip/xinsha/item_tips_bg.png", import.meta.url).href;
 
 export function isXinshaTooltip() {
 	return (document.body.dataset.style || lib.config.extension_十周年UI_newDecadeStyle) === "othersOff";
@@ -24,6 +27,12 @@ export async function prepareXinshaTooltip(host) {
 	if (!host.isConnected || !isXinshaTooltip()) return;
 	layoutXinshaTooltip(host);
 	await document.fonts?.ready;
+	await renderCardBackground(host);
+}
+
+function renderCardBackground(host) {
+	const panel = host.querySelector(".xinsha-card-tooltip");
+	return panel && setScale9Background(panel, cardBackground, [60, 193, 69, 130]);
 }
 
 function node(className, parent, text) {
@@ -94,6 +103,7 @@ export function layoutXinshaTooltip(host) {
 	host.style.height = `${panel.offsetHeight * scale}px`;
 	const name = panel.querySelector(".xinsha-tooltip-name");
 	if (width === 400) panel.querySelector(".xinsha-tooltip-title").style.width = `${Math.max(87, name.scrollWidth + 19)}px`;
+	if (width === 518) void renderCardBackground(host);
 }
 
 export function positionXinshaTooltip(host, event, button) {
@@ -122,8 +132,8 @@ export function positionXinshaTooltip(host, event, button) {
 }
 
 export function applyXinshaNodeIntro(dialog, source) {
-	// 仅手牌区卡牌；角色标记、装备、弃牌堆、选牌窗口保持原本内容结构。
-	if (!isXinshaTooltip() || !dialog?.content || !source?.matches?.(".card") || source.skill || !source.closest(".handcards, .handcards1, .handcards2") || source._banning || source.matches(".infohidden, .infoflip, .blank") || dialog.dataset.xinshaTooltip) return;
+	// 手牌、装备与判定区的实体/虚拟牌共用 TextTips，保留本体生成的牌面规则。
+	if (!isXinshaTooltip() || !dialog?.content || !source?.matches?.(".card") || source.skill || !source.closest(".handcards, .handcards1, .handcards2, .equips, .judges") || source._banning || source.matches(".infohidden, .infoflip, .blank") || dialog.dataset.xinshaTooltip) return;
 	const caption = dialog.content.querySelector(":scope > .caption");
 	if (!caption) return;
 	const title = caption.textContent.trim();

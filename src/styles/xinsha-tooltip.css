@@ -32,6 +32,8 @@ body[data-style="othersOff"] #window .xinsha-tooltip-host > .content-container >
 	padding: 0 !important;
 	overflow: visible !important;
 	transform: none !important;
+	/* 本体 div 的 visibility 过渡会让内部正文在外框显示后仍隐藏半秒。 */
+	transition: none !important;
 }
 body[data-style="othersOff"] #window .xinsha-tooltip,
 body[data-style="othersOff"] #window .xinsha-tooltip * {
@@ -66,8 +68,8 @@ body[data-style="othersOff"] #window .xinsha-tooltip::before {
 /* TextTips capInsets=(130,60,70,60)，原图393×189，左19、顶11。 */
 body[data-style="othersOff"] #window .xinsha-card-tooltip { width: 518px; }
 body[data-style="othersOff"] #window .xinsha-card-tooltip::before {
-	border-width: 60px 193px 69px 130px;
-	border-image: url("../../image/ui/tooltip/xinsha/item_tips_bg.png") 60 193 69 130 fill / 60px 193px 69px 130px stretch;
+	border: 0;
+	background: var(--scale9-background) center / 100% 100% no-repeat;
 }
 body[data-style="othersOff"] #window .xinsha-tooltip-scroll {
 	position: relative;

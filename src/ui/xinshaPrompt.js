@@ -24,6 +24,61 @@ function normalizeDescription(value) {
 	return plainPrompt(value).replace(/[\s\p{P}\p{S}]/gu, "");
 }
 
+function normalizeRuleDescription(value) {
+	// cost 提示会把技能说明的“你可以判定”改成“你判定”。仅比对说明时消除该主语改写，
+	// 不删除“至多/至少/必须”等条件，也不改动显示文字或技能规则。
+	return normalizeDescription(value).replace(/你(?:可以|可(?=判定|进行|令|选择|将|观看|获得|重置))/g, "你");
+}
+
+function isSkillDescriptionText(text, descriptions) {
+	const literal = normalizeDescription(text);
+	const normalized = normalizeRuleDescription(text);
+	if (!normalized) return false;
+	// 完整说明或已知说明的长片段不是额外操作条件。短条件、自定义附言仍保留。
+	return descriptions.some(description => {
+		const original = normalizeDescription(description);
+		if (original === literal || literal.length >= 40 && original.includes(literal)) return true;
+		const source = normalizeRuleDescription(description);
+		if (!source) return false;
+		if (source === normalized || normalized.length >= 40 && source.includes(normalized)) return true;
+		// 本体多目标技能会给同一段规则加执行顺序的包装，例如烈骧的 prompt2。
+		const body = plainPrompt(text).match(/^这些角色按照你选择的顺序依次执行[：:]\s*\{([\s\S]+)\}[。.]?$/)?.[1];
+		return body && normalizeRuleDescription(body).length >= 40 && source.includes(normalizeRuleDescription(body));
+	});
+}
+
+function isSimpleSelectionPrompt(main, name) {
+	let text = main;
+	if (name) text = text.replace(new RegExp(`^[“【]?${name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[”】]?[：:]\\s*`), "");
+	const count = "(?:至多|至少)?(?:[一二两三四五六七八九十\\d]+|任意(?:数量)?)";
+	return new RegExp(`^请?(?:选择|选取|弃置)${count}(?:张(?:手)?牌|名(?:其他)?角色|个目标)(?:弃置)?[。.]?$`).test(text) ||
+		new RegExp(`^(?:你可以)?将${count}张牌交给(?:其他|一名其他)角色[。.]?$`).test(text);
+}
+
+function resolveActiveTemplate(record, event, cards, targets, values) {
+	const templates = record?.prompts.ActiveTip?.split(/[|;]/).filter(Boolean) || [];
+	const matches = [];
+	for (let template of templates) {
+		const parameters = [...template.matchAll(/\{(\w+)\}/g)].filter(match => values[match[1]] == null);
+		if (parameters.length === 1) {
+			// 只给明确的选牌/选人数填入真实选择范围，不推测伤害、摸牌量等协议参数。
+			const selection = plainPrompt(template).match(/(?:选择|选取|弃置)(至多|至少)?\{(cnt|Count|0)\}(名(?:其他)?角色|个目标|张(?:手)?牌)/);
+			const range = selection && (/^(?:名|个)/.test(selection[3]) ? targets : cards);
+			if (range && parameters[0][1] === selection[2] && range[0] >= 0 && range[1] > 0) {
+				const count = selection[1] === "至多" ? range[1] : selection[1] === "至少" ? range[0] : xinshaRangeText(range);
+				template = template.replace(parameters[0][0], String(count));
+			}
+		}
+		const rich = formatXinshaTemplate(template, values);
+		if (!rich || !templateFitsChoice(rich, event, cards, targets)) continue;
+		if (event.name === "chooseToDiscard" && !/(?:弃置|弃掉)/.test(plainPrompt(rich))) continue;
+		// 选项事件不能被选牌/选目标文案覆盖；同阶段有多个含义不同的分支时不代猜。
+		if (event.name === "chooseControl" && !/^请选择(?:摸牌数|一项|一个选项)$/.test(plainPrompt(rich))) continue;
+		if (!matches.some(match => plainPrompt(match) === plainPrompt(rich))) matches.push(rich);
+	}
+	return matches.length === 1 ? matches[0] : "";
+}
+
 function similarity(a, b) {
 	a = normalizeDescription(a);
 	b = normalizeDescription(b);
@@ -74,15 +129,16 @@ function promptContext(event) {
 
 function xinshaSkillContext(skill, player) {
 	const base = skill?.replace(/_(?:backup|cost)$/, "");
+	const source = base && (get.sourceSkillFor?.(base) || base);
 	const info = lib.skill?.[base];
 	// 犟0的规则不加入技能面板，也没有lib.translate；读取当前出战将灵的真实技能编号。
 	const ruleId = info?.jiang0JianglingRule && /^jiang0_rule_(\d+)$/.exec(base)?.[1];
 	const row = ruleId && game.jiang0Skills?.context?.row?.(player, Number(ruleId));
 	const record = row && xinshaPromptEntries.find(entry => entry.type === 2 && entry.id === row.GameSkillID && entry.name === row.SkillName);
 	return {
-		base, record,
+		base, source, record,
 		name: record?.name || skillNameForPrompt(skill, player),
-		description: row?.SkillDesc || base && (get.skillInfoTranslation?.(base, player) || lib.translate?.[base + "_info"]),
+		description: row?.SkillDesc || base && (get.skillInfoTranslation?.(base, player) || get.skillInfoTranslation?.(source, player) || lib.translate?.[source + "_info"]),
 	};
 }
 
@@ -126,7 +182,9 @@ function templateFitsChoice(template, event, cards, targets) {
 	const text = plainPrompt(template);
 	if (!text) return false;
 	// ActiveTip同时包含选牌、选人、选项等不同阶段，不能只因同名就覆盖当前操作。
-	const picksCards = /(?:选择|选取|选出|弃置|弃掉|交出|将)(?:(?!角色|目标|名|人)[^，。；;]){0,40}(?:牌|【星】|“田”|“荣”)/.test(text);
+	const picksCards = [...text.matchAll(/(?:选择|选取|选出|弃置|弃掉|交出|将)(?:(?!角色|目标|名|人)[^，。；;]){0,40}(?:牌|【星】|“田”|“荣”)/g)]
+		.some(match => !/^(?:名|(?:数|的)[^，。；;]{0,24}(?:名|个)[^，。；;]{0,24}(?:角色|目标))/.test(text.slice(match.index + match[0].length))) ||
+		/(?:交给|交付|给予)[^，。；;]{0,24}张(?:手)?牌/.test(text);
 	const picksTargets = /(?:选择|选取|指定|交给|转移给|令)[^，。；;]{0,40}(?:角色|目标|一人|其他人)/.test(text);
 	if (event.name === "chooseTarget" && (!picksTargets || picksCards)) return false;
 	if (["chooseCard", "chooseToDiscard"].includes(event.name) && (!picksCards || picksTargets)) return false;
@@ -136,14 +194,19 @@ function templateFitsChoice(template, event, cards, targets) {
 		if (needsCards && !picksCards || !needsCards && targets?.[1] > 0 && !picksTargets) return false;
 	}
 	const numbers = { 一: 1, 二: 2, 两: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10 };
-	const count = value => numbers[value] || Number(value);
-	for (const [noun, selection] of [["(?:名|个)(?:目标)?(?:角色|目标)", targets], ["张(?:[^，。；;张名个]{0,12})牌", cards]]) {
+	const count = value => {
+		if (numbers[value]) return numbers[value];
+		if (/^\d+$/.test(value)) return Number(value);
+		const tens = value.match(/^([一二两三四五六七八九])?十([一二三四五六七八九])?$/);
+		return tens ? (numbers[tens[1]] || 1) * 10 + (numbers[tens[2]] || 0) : NaN;
+	};
+	for (const [noun, selection] of [["(?:名|个)[^，。；;张名个]{0,24}(?:角色|目标)", targets], ["张(?:[^，。；;张名个]{0,12})牌", cards]]) {
 		if (!selection || selection[1] === 0) continue;
-		const match = text.match(new RegExp(`(?:选择|选取|弃置)(至多|至少)?([0-9]+|[一二两三四五六七八九十])(?:至([0-9]+|[一二两三四五六七八九十]))?${noun}`));
+		const match = text.match(new RegExp(`(至多|至少)?([0-9]+|[一二两三四五六七八九十]+)(?:至([0-9]+|[一二两三四五六七八九十]+))?${noun}`));
 		if (!match) continue;
 		const min = match[1] === "至多" ? 0 : count(match[2]);
 		const max = match[1] === "至少" ? -1 : count(match[3] || match[2]);
-		if (max !== selection[1] || min > selection[0]) return false;
+		if (!Number.isFinite(min) || !Number.isFinite(max) || max !== selection[1] || min > selection[0]) return false;
 	}
 	return true;
 }
@@ -159,7 +222,8 @@ function buildXinshaPrompt(event, main = "", skill = "", detail = "") {
 	if (!skill && event.logSkill === "qinglong_skill") skill = event.logSkill;
 	// 响应事件的祖先可能是对方的乱击、武圣等用牌技能；它不是本人选中的转化技能。
 	if (!event.skill && (event.respondTo?.[1] || event.type === "dying")) skill = "";
-	const { name, base, description, record: jianglingRecord } = xinshaSkillContext(skill, event.player);
+	const { name, base, source: sourceSkill, description, record: jianglingRecord } = xinshaSkillContext(skill, event.player);
+	const descriptions = [description, lib.translate?.[base + "_info"], lib.translate?.[sourceSkill + "_info"]];
 	const skillInfo = lib.skill?.[event.skill] || lib.skill?.[base];
 	const nativeSkillInstruction = typeof skillInfo?.prompt === "string" && main === plainPrompt(skillInfo.prompt) &&
 		!/(?:只能|必须|不得|不能|不可|尚未|本轮|额外|仅限|点数|花色|距离|：|:)/.test(main);
@@ -178,12 +242,18 @@ function buildXinshaPrompt(event, main = "", skill = "", detail = "") {
 	const cards = xinshaSelectionRange(event.selectCard ?? lib.skill?.[event.skill]?.selectCard);
 	const targets = xinshaTargetRange(event, card, lib.skill?.[event.skill]);
 	const phase = event.name === "chooseToUse" && event.type === "phase" && !event.skill;
-	const generic = !main || main === name || (name && main.replace(/[【】“”‘’《》？?：:\s]/g, "") === `是否发动${name}`) || main === plainPrompt(xinshaPhasePrompt) || (description && normalizeDescription(main) === normalizeDescription(description)) || /^(?:请选择要使用的(?:卡)?牌|请选择一张卡牌|请选择一张牌|请选择目标|请选择一名角色|选择目标)$/.test(main) || (phase && event.prompt == null);
+	const generic = !main || main === name || (name && main.replace(/[【】“”‘’《》？?：:\s]/g, "") === `是否发动${name}`) || main === plainPrompt(xinshaPhasePrompt) || isSkillDescriptionText(main, descriptions) || /^(?:请选择要使用的(?:卡)?牌|请选择一张卡牌|请选择一张牌|请选择目标|请选择一名角色|选择目标)$/.test(main) || (phase && event.prompt == null);
 	const trigger = promptContext(event);
 	const playerName = player => plainPrompt(get.translation(player?.name || player || ""));
 	const source = event.respondTo?.[0] || event.source || trigger?.player;
 	const target = event.dying || event.target || event.targets?.[0] || ui.selected?.targets?.[0] || trigger?.target;
 	const values = { Source: source ? colored(playerName(source), "player") : null, Target: target ? colored(playerName(target), "player") : null, Skill: name ? colored(`“${name}”`, "skill") : null };
+	// LieXiang.getActiveTip：选目标的 cnt 用中文数量，多于一人时加“至多”；交牌的 cnt 是最大牌数。
+	const liexiang = base === "dcliexiang" && xinshaPromptEntries.find(entry => entry.id === 3798 && entry.className === "LieXiang" && entry.name === name);
+	if (liexiang && event.name === "chooseTarget" && targets?.[0] === 1 && targets[1] > 0) values.cnt = `${targets[1] > 1 ? "至多" : ""}${get.cnNumber(targets[1])}`;
+	if (liexiang && event.name === "chooseCardTarget" && cards?.[1] > 0) values.cnt = String(cards[1]);
+	const drawCountControl = event.name === "chooseControl" && /^(?:[^：:]{1,12}[：:])?(?:你可以)?摸至多[一二两三四五六七八九十\d]+张牌$/.test(main) &&
+		event.controls?.filter(control => control !== "cancel2").every((control, index) => control === `${get.cnNumber(index + 1)}张`);
 	const nativeDyingPrompt = event.dying && main === `${plainPrompt(get.translation(event.dying))}濒死，是否帮助？`;
 	const nativeResponsePrompt = /^(?:请使用一张闪响应杀|请(?:使用|打出)(?:一|1)张[^，。]+)$/.test(main);
 	const nativeVirtualDetail = cardName && [`视为使用一张【${cardName}】`, `视为使用1张【${cardName}】`, `视为使用一张${cardName}`, `视为使用1张${cardName}`].includes(plainPrompt(detail));
@@ -265,13 +335,13 @@ function buildXinshaPrompt(event, main = "", skill = "", detail = "") {
 			if (!richMain && record && !template) richMain = `是否使用${colored(`【${cardName}】`, "card")}`;
 			if (!richMain) main = `请使用【${cardName}】${targets?.[1] > 1 ? `，请选择${targets[0]}至${targets[1]}名角色` : ""}`;
 		} else richMain = xinshaPhasePrompt;
-	} else if (skill && name && (generic || nativeSkillInstruction)) {
+	} else if (skill && name && (generic || nativeSkillInstruction || drawCountControl || isSimpleSelectionPrompt(main, name))) {
 		const record = jianglingRecord || findXinshaPromptEntry(skill, name, event.player);
 		if (record) {
 			if (event.name === "chooseBool") use(record, "AskTip", record.prompts.AskTip || `是否发动{Skill}`);
-			else if (["chooseToUse", "chooseCard", "chooseCardTarget", "chooseTarget"].includes(event.name)) {
-				const text = record.prompts.ActiveTip;
-				if (templateFitsChoice(text, event, cards, targets)) use(record, "ActiveTip", text);
+			else if (["chooseToUse", "chooseCard", "chooseToDiscard", "chooseCardTarget", "chooseTarget", "chooseControl"].includes(event.name)) {
+				const text = resolveActiveTemplate(record, event, cards, targets, values);
+				if (text) use(record, "ActiveTip", text);
 			}
 		}
 	}
@@ -300,7 +370,8 @@ function buildXinshaPrompt(event, main = "", skill = "", detail = "") {
 	const nativeDyingDetail = event.type === "dying" && field === "ActiveTip" && entry?.id === 3 && plainPrompt(detail) === `当前体力：${event.dying.hp}`;
 	// 武圣等转化技能的说明框打开后，追刀主窗口仍保留着装备介绍，不能跟到转化操作提示后面。
 	const nativeQinglongDetail = event.logSkill === "qinglong_skill" && lib.translate?.qinglong_skill_info && normalizeDescription(detail) === normalizeDescription(lib.translate.qinglong_skill_info);
-	const detailText = nativeDyingDetail || nativeQinglongDetail ? "" : plainPrompt(detail);
+	const detailText = nativeDyingDetail || nativeQinglongDetail || isSkillDescriptionText(detail, descriptions) ? "" :
+		plainPrompt(detail).split(/\n+/).filter(line => !isSkillDescriptionText(line, descriptions)).join("\n");
 	return { main, detail: detailText && normalizeDescription(detailText) !== normalizeDescription(description) ? detailText : "", skill: name, official: richMain ? { richMain, entryId: entry?.id || "phase", field: field || "TXT_Deal_Card" } : null };
 }
 

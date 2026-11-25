@@ -31,7 +31,7 @@ const mobileTopGroups = {
 function getOutcropMode(player) {
 	const style = ui.arena?.dataset.newDecadeStyle ?? lib.config.extension_十周年UI_newDecadeStyle;
 	if (style !== "on" && style !== "othersOff") return null;
-	if (player.parentNode !== ui.arena || player.classList.contains("qh-isBigAvatar")) return null;
+	if ((player.parentNode !== ui.arena && !(player._decadePreview && player.parentNode?.classList.contains("yjcm-player-preview-host"))) || player.classList.contains("qh-isBigAvatar")) return null;
 	return !!lib.config.extension_十周年UI_dynamicSkinOutcrop;
 }
 
@@ -117,6 +117,13 @@ function cropBackground(background, sprite, canvasHeight) {
 	}
 	// 保留原有更小的裁切范围，以及双将的 x / width；仅限制背景顶边。
 	background.clip = { ...clip, height: height[0] + height[1] * canvasHeight <= croppedHeight[0] + croppedHeight[1] * canvasHeight ? height : croppedHeight };
+}
+
+export function prepareDynamicBackground(player, sprite, background) {
+	const prepared = copySkin(background);
+	restoreLegacyCrop(prepared);
+	if (getOutcropMode(player)) cropBackground(prepared, sprite, player.dynamic?.canvas.clientHeight || 200);
+	return prepared;
 }
 
 function attachDynamicPlayer(player, dynamic) {

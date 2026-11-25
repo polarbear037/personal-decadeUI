@@ -12,7 +12,8 @@ const {PNG} = require('C:/Users/Thunder/.cache/codex-runtimes/codex-primary-runt
     page.on('pageerror',error=>errors.push(error.message));
     await page.goto(origin+'/__card_verification__');
     await page.setContent('<div id="window"><div id="arena" class="decadeUI" data-loading-style="dialog_ol"><div class="dialog dialog-ol-layout"><div class="content-container"><div class="content"><div class="caption">测试标题</div><div id="probe">对话框内容</div></div></div></div><div id="dui-controls"><button id="control-button" type="button">控制按钮</button></div></div></div><div class="chukuang-canvas-wraper"><canvas class="chukuang-canvas"></canvas></div>');
-    for(const file of ['layout/default/layout.css','extension/十周年UI/src/styles/layout.css','extension/皮肤切换/style/edit.css'])await page.addStyleTag({url:`${origin}/${file}`});
+    await page.addScriptTag({type:'importmap',content:JSON.stringify({imports:{noname:'data:text/javascript,export const lib={config:{}}, game={}, get={}'}})});
+    for(const file of ['layout/default/layout.css','extension/十周年UI/src/styles/layout-online.css','extension/皮肤切换/style/edit.css'])await page.addStyleTag({url:`${origin}/${file}`});
     await page.addStyleTag({content:'*,*::before,*::after{animation:none!important;transition:none!important}html,body{width:100%;height:100%;margin:0}#probe{position:relative;height:300px;background:rgb(0,0,255)}#control-button{width:140px}.chukuang-canvas{position:fixed;inset:0;width:100%;height:100%}'});
     await page.addScriptTag({type:'module',content:`import {updateDialogOlLayout} from '${origin}/extension/十周年UI/src/ui/dialog-ol-layout.js'; window.updateLayerDialog=()=>{const dialog=document.querySelector('.dialog');dialog.forcebutton=true;updateDialogOlLayout(dialog,document.querySelector('#arena'),800,false);}; window.layerReady=true;`});
     await page.waitForFunction(()=>window.layerReady);
@@ -42,11 +43,11 @@ const {PNG} = require('C:/Users/Thunder/.cache/codex-runtimes/codex-primary-runt
     }
     for(const excluded of ['dclieqiong','online-faction-dialog','bosscharacter']){
       await page.locator('.dialog').evaluate((node,cls)=>node.classList.add(cls),excluded);
-      assert.equal(await page.locator('.dialog').evaluate(node=>getComputedStyle(node).zIndex),'7');
+      assert.equal(await page.locator('.dialog').evaluate(node=>getComputedStyle(node).zIndex),'8');
       await page.locator('.dialog').evaluate((node,cls)=>node.classList.remove(cls),excluded);
     }
     await page.locator('#arena').evaluate(node=>node.dataset.loadingStyle='on');
-    assert.equal(await page.locator('.dialog').evaluate(node=>getComputedStyle(node).zIndex),'7');
+    assert.equal(await page.locator('.dialog').evaluate(node=>getComputedStyle(node).zIndex),'8');
     assert.deepEqual(errors,[]);
     console.log('DIALOG_OL_LAYER_OK: z-index 101 over skin canvas 100; normal and framed paint order; exclusions preserved; 0 page errors');
   }finally{await browser.close();await new Promise(resolve=>server.close(resolve));}

@@ -100,12 +100,15 @@ function prepareOptimizedPrompt(dialog) {
 			markNode(state, node, false);
 		}
 	}
-	for (const text of [...(combinedDetails.get(dialog) || []), state.event.prompt2]) {
+	// 自定义窗口可能先拆开 ###标题###说明，再分别创建节点，未经过 dialog.add。
+	// 从原事件补回同一说明来源，仍只接管内容匹配且不含交互控件的节点。
+	const embeddedDetail = typeof state.event.prompt === "string" && /^###.*?###([\s\S]*)$/.exec(state.event.prompt)?.[1];
+	for (const text of [...(combinedDetails.get(dialog) || []), embeddedDetail, state.event.prompt2]) {
 		if (typeof text !== "string" || !text) continue;
 		const holder = document.createElement("div");
 		holder.innerHTML = text;
 		for (const node of dialog.content.children) {
-			if (!state.mainNodes.has(node) && node.querySelector(".text") && node.textContent === holder.textContent) markNode(state, node, true);
+			if (!state.mainNodes.has(node) && node.textContent === holder.textContent) markNode(state, node, true);
 		}
 	}
 }
@@ -178,20 +181,22 @@ function closeHandTip() {
 	tipText = "";
 	if (ui.arena) delete ui.arena.dataset.decadeOptimizedActive;
 	if (tip) {
-		// 一将提示立即清空正文和 data-text 描边，再撤销定位；避免普通样式下移后的淡出残影。
-		if (tip.dataset.optimizedPromptStyle === "xinsha") tip.clear();
+		// 先关闭并清空正文、描边，再撤销美化样式，所有提示风格共用同一退出顺序。
+		tip.close?.();
 		tip.classList.remove("decade-optimized-hand-tip");
 		delete tip.dataset.officialPromptMode;
 		delete tip.dataset.officialSkillId;
 		delete tip.dataset.officialPromptField;
 		delete tip.dataset.optimizedPromptStyle;
-		tip.close?.();
 	}
 }
 
 function restoreNativePrompt(dialog, retiring) {
 	// 先锁住退出中的弹窗，再清理接管标记；复用时由 prepareOptimizedPrompt 解除。
-	if (retiring && dialog.dataset.decadeOptimizedPrompt) dialog.classList.add("decade-optimized-closing");
+	// 常驻展示框由自身生命周期关闭；切入选牌子事件不代表拼点等展示已经退场。
+	const persistent = dialog._dialogOlKeepControls && dialog.isConnected && ui.dialogs?.includes(dialog) && !dialog.classList.contains("removing");
+	if (persistent) dialog.classList.remove("decade-optimized-closing");
+	else if (retiring && dialog.dataset.decadeOptimizedPrompt) dialog.classList.add("decade-optimized-closing");
 	delete dialog.dataset.decadeOptimizedPrompt;
 	delete dialog.dataset.decadeOptimizedEmpty;
 }
@@ -240,12 +245,15 @@ function refreshOptimizedPrompt() {
 	const state = enabled && currentEvent && dialogs.get(topDialog);
 	// 原生选牌/目标流程经常没有 dialog，只能从本体 check 钩子取得当前操作。
 	const event = state?.event || (enabled && currentEvent && (checkedEvent === currentEvent || _status.imchoosing) ? currentEvent : null);
-	if (!event || (topDialog && !state && topDialog !== event.dialog) || topDialog?.classList.contains("online-faction-dialog") || topDialog?.classList.contains("dialog-ol-skill-prompt") || topDialog?.dataset.olLayout === "card-move" || ui.cardDialog?._isLuckyCardTip) {
+	// 势力专用窗口已提供提示，不能再从原生 caption 生成第二份 hand-tip。
+	if (!event || (topDialog && !state && topDialog !== event.dialog) || topDialog?.classList.contains("online-faction-dialog") || topDialog?.classList.contains("xinsha-faction-dialog") || topDialog?.classList.contains("dialog-ol-skill-prompt") || topDialog?.dataset.olLayout === "card-move" || ui.cardDialog?._isLuckyCardTip) {
 		return deactivateOptimizedPrompt();
 	}
 	const rawMain = getSimplifiedSkillPrompt(event) ?? (state ? getMainText(state) : typeof event.prompt === "string" ? event.prompt : "");
 	const buildPrompt = style === "xinsha" ? buildXinshaPrompt : buildOfficialPrompt;
 	const prompt = event.prompt !== false || rawMain ? buildPrompt(event, rawMain, getPromptSkill(event), state ? getDetailText(state) : event.prompt2) : null;
+	// 一将发动确认只绘制一类提示，完整说明仍保留在原事件与窗口节点中。
+	if (prompt && lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && /^是否(?:对.*?)?发动[“【].+[”】][？?]?$/.test(prompt.main)) prompt.detail = "";
 	if (!prompt) {
 		return deactivateOptimizedPrompt();
 	}

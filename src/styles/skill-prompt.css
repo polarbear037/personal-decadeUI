@@ -78,11 +78,6 @@ body #window #arena.decadeUI > .hand-tip.decade-optimized-hand-tip[data-optimize
 	z-index: 102;
 }
 
-/* 原版 bar.y=194，optLabel.y=100+5；高度设置在此基准上自由上下调整。 */
-body[data-style="othersOff"] #window #arena.decadeUI > .hand-tip.decade-optimized-hand-tip[data-optimized-prompt-style="xinsha"] {
-	bottom: calc(var(--hand-tip-bottom, calc(20% + 10px)) - 20% - 10px + var(--yjcm-scene-y, 0px) + 299 * var(--yjcm-unit, 1px) - var(--yjcm-arena-bottom, 0px)) !important;
-}
-
 body #window #arena.decadeUI > .hand-tip[data-optimized-prompt-style="xinsha"]::before {
 	content: none;
 }

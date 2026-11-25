@@ -30,28 +30,5 @@ const e = {
 				},
 			},
 		},
-	},
-	o = {
-		_slyh: {
-			trigger: { global: "gameStart", player: "enterGame" },
-			forced: !0,
-			popup: !1,
-			silent: !0,
-			priority: 1 / 0,
-			filter: (e, player) => "guozhan" !== get.mode() && player.group && !lib.group.includes(player.group),
-			async content() {
-				const player = _status.event.player,
-					groups = lib.group.slice(0, 5),
-					result = await player
-						.chooseButton(["请选择你的势力", [groups.map(group => ["", "", `group_${group}`]), "vcard"]], !0)
-						.set("direct", !0)
-						.set("ai", button => Math.random())
-						.forResult();
-				if (result?.bool && result.links?.length) {
-					const e = result.links[0][2].slice(6);
-					((player.group = e), (player.node.name.dataset.nature = get.groupnature(e)));
-				}
-			},
-		},
 	};
-export { o as factionOptimizeSkill, e as inheritSubSkill };
+export { e as inheritSubSkill };

@@ -150,6 +150,8 @@ body[data-style="othersOff"] #arena > :is(.handcardNumber,.handcardNumber1) > .c
 
 /* GameButtonBar：贴图189×55，创建时scale=1.1，实际207.9×60.5；中心间距280。 */
 body[data-style="othersOff"] #arena > #dui-controls { height: calc(60.5 * var(--yjcm-unit)); }
+/* 确认栏可由本体复用，离开本人输入时只收起显示，下一次选择自动恢复。 */
+body[data-style="othersOff"] #arena > #dui-controls.xinsha-controls-resolving { display: none !important; }
 body[data-style="othersOff"] #arena:not(.choose-character) > #dui-controls {
 	left: calc(50% + var(--yjcm-arena-center, 0px)); right: auto; width: max-content;
 	bottom: calc(var(--yjcm-scene-y) + 227.75 * var(--yjcm-unit) - var(--yjcm-arena-bottom, 0px));
@@ -172,6 +174,7 @@ body[data-style="othersOff"] #arena > #dui-controls > .control > div {
 body[data-style="othersOff"] #arena > #dui-controls > .lbtn-confirm { display: flex; gap: calc(72.1 * var(--yjcm-unit)); }
 /* GameButtonBar.update：discardBtn 与 cancelBtn 互斥，共用右侧位置。保留本体节点及关闭流程。 */
 body[data-style="othersOff"] #arena > #dui-controls > .yjcm-end-turn { display: none !important; }
+body[data-style="othersOff"] .control.yjcm-ai-select { display: none !important; }
 /* LuckCardView 的两按钮中心距257，中心距窗口底部254.5。 */
 body[data-style="othersOff"] #arena > #dui-controls > .lbtn-confirm[data-yjcm-flow="redraw"] { gap: calc(49.1 * var(--yjcm-unit)); }
 body[data-style="othersOff"] #arena:not(.choose-character) > #dui-controls:has(> .lbtn-confirm[data-yjcm-flow="redraw"]) { bottom: calc(var(--yjcm-scene-y) + 224.25 * var(--yjcm-unit) - var(--yjcm-arena-bottom, 0px)); }
@@ -209,6 +212,8 @@ body[data-style="othersOff"] #arena:not(.choose-character) > #dui-controls[data-
 	bottom: calc(var(--yjcm-scene-y) + 234 * var(--yjcm-unit) - var(--yjcm-arena-bottom, 0px));
 }
 body[data-style="othersOff"] #arena > #dui-controls > .control[data-yjcm-action="multi"] { display: contents; }
+/* chooseControl 点选即提交；上一层保留的确认栏不能参与选项网格。退出选项条后自动恢复。 */
+body[data-style="othersOff"] #arena > #dui-controls[data-xinsha-action="multi"] > .lbtn-confirm { display: none !important; }
 /* 独立多选条中心244，窗口高100，optLabel底边5 => 场景底边199。 */
 body[data-style="othersOff"] #window #arena:has(> #dui-controls[data-xinsha-action="multi"]) > .hand-tip,
 body[data-style="othersOff"] #window #arena:has(> #dui-controls[data-xinsha-action="multi"]) > .dialog.prompt {
@@ -233,6 +238,18 @@ body[data-style="othersOff"] #arena > #dui-controls > .control[data-yjcm-action=
 }
 
 /* windowSnitch：窗口内的确定/取消，180×54、底边40、间隔50。 */
+body[data-style="othersOff"] #arena:not(.choose-character) > #dui-controls[data-xinsha-action="multi"][data-xinsha-reconsider="true"] {
+	align-items: center;
+}
+body[data-style="othersOff"] #arena > #dui-controls > .control[data-yjcm-action="multi"] > [data-yjcm-reconsider="true"] {
+	min-width: calc(180 * var(--yjcm-unit)) !important;
+	height: calc(54 * var(--yjcm-unit));
+	line-height: calc(54 * var(--yjcm-unit));
+	color: #ffdfa0;
+	border-image: none;
+	background: url("../../assets/lbtn/yijiang/cmn_btn_brown_180_54.png") center / 100% 100% no-repeat;
+}
+
 body[data-style="othersOff"] #arena:not(.choose-character) > #dui-controls[data-xinsha-action="window"] {
 	left: var(--yjcm-action-left);
 	bottom: var(--yjcm-action-bottom);
@@ -289,6 +306,8 @@ body[data-style="othersOff"] #arena > #dui-controls > .control.stayleft.yjcm-tem
 	transform: none;
 	transition-property: opacity;
 }
+/* glow 仍供本体跳过后续目标的无懈询问；点击后只隐藏外观，不提前销毁状态。 */
+body[data-style="othersOff"] #arena > #dui-controls > .control.stayleft.yjcm-tempnowuxie.glow { display: none !important; }
 body[data-style="othersOff"] #arena > #dui-controls > .yjcm-tempnowuxie > div {
 	width: 100%;
 	white-space: nowrap;
@@ -450,5 +469,8 @@ body[data-style="othersOff"] .yjcm-wallpaper-cloud { position: absolute; transfo
 @keyframes yjcm-cloud-opacity { 0%,100% { opacity: 0; } 50% { opacity: 1; } }
 
 /* checkBtnState 的显示排位覆盖创建坐标：整理先占350，全选再占480。 */
+/* 单击提交的展示框从首帧移出绘制，避免 visibility 的 all .5s 过渡闪出确认栏。 */
+body[data-style="othersOff"] #dui-controls > .xinsha-direct-choice-confirm,
+body[data-style="othersOff"] #dui-controls > .lyj-wugu-confirm { display: none !important; }
 body[data-style="othersOff"] #window[data-yjcm-sort="true"][data-yjcm-select-all="true"] > .yjcm-select-all { right: calc(var(--yjcm-scene-x) + 427 * var(--yjcm-unit)); }
 body[data-style="othersOff"] #window[data-yjcm-side="left"][data-yjcm-sort="true"][data-yjcm-select-all="true"] > .yjcm-select-all { right: auto; left: calc(var(--yjcm-scene-x) + 427 * var(--yjcm-unit)); }

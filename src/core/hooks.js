@@ -1,8 +1,8 @@
-import { lib, _status, get, ui, game } from "noname";
+import { lib, _status, get, ui } from "noname";
 import { isHandCardAvailable } from "../ui/handcard-selection.js";
-import { installXinshaBattleTools } from "../ui/xinsha-battle-tools.js";
+import { createXinshaPlayerAvatar } from "../ui/xinsha-player-avatar.js";
 function e() {
-	installXinshaBattleTools({ lib, game, ui, get, status: _status });
+	if (globalThis.decadeUI?.create) globalThis.decadeUI.create.playerAvatar = createXinshaPlayerAvatar;
 	lib.hooks.checkCard.push(function (card, event) {
 		card.classList.toggle("dui-handcard-available", !!(card.classList.contains("selectable") || card.classList.contains("selected") || isHandCardAvailable(card, event)));
 	});

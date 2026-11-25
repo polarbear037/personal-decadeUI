@@ -1,0 +1,84 @@
+{
+  "skill": "olsblucun",
+  "cardName": "shunshou",
+  "native": true,
+  "leiSkill": false,
+  "printed": false,
+  "samples": [
+    {
+      "label": "native-names",
+      "name": "chooseButton",
+      "choosing": true,
+      "display": "flex",
+      "okDisabled": true,
+      "targets": 0
+    },
+    {
+      "label": "name-selected",
+      "name": "chooseButton",
+      "choosing": true,
+      "display": "flex",
+      "okDisabled": false,
+      "targets": 0
+    },
+    {
+      "label": "virtual-target-choice",
+      "name": "chooseToUse",
+      "skill": "olsblucun_backup",
+      "result": true,
+      "choosing": true,
+      "display": "flex",
+      "okDisabled": true,
+      "targets": 0,
+      "card": "shunshou"
+    },
+    {
+      "label": "virtual-target-selected",
+      "name": "chooseToUse",
+      "skill": "olsblucun_backup",
+      "result": true,
+      "choosing": true,
+      "display": "flex",
+      "okDisabled": false,
+      "targets": 1,
+      "card": "shunshou"
+    },
+    {
+      "label": "settling",
+      "name": "_verify_printed_settlement",
+      "choosing": false,
+      "display": "none",
+      "targets": 0
+    },
+    {
+      "label": "target-card-picker",
+      "name": "gainPlayerCard",
+      "choosing": true,
+      "display": "flex",
+      "okDisabled": true,
+      "targets": 0
+    },
+    {
+      "label": "target-card-selected",
+      "name": "gainPlayerCard",
+      "choosing": true,
+      "display": "flex",
+      "okDisabled": false,
+      "targets": 0
+    },
+    {
+      "label": "after-virtual-use",
+      "name": "chooseToUse",
+      "choosing": true,
+      "display": "flex",
+      "okDisabled": true,
+      "targets": 0
+    }
+  ],
+  "movement": {
+    "targetLost": true,
+    "actorHas": true,
+    "position": "h"
+  },
+  "errors": []
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "style": "othersOff",
+    "offStartupRequests": 0,
+    "browseSettingsRequests": 0,
+    "loadRaceStopped": true,
+    "toggleEnabled": true,
+    "toggleStopped": true,
+    "offReloadRequests": 0,
+    "manualHistory": {
+      "enabled": false,
+      "rows": 8
+    },
+    "errors": []
+  },
+  {
+    "style": "onlineUI",
+    "offStartupRequests": 0,
+    "browseSettingsRequests": 0,
+    "loadRaceStopped": true,
+    "toggleEnabled": true,
+    "toggleStopped": true,
+    "offReloadRequests": 0,
+    "manualHistory": {
+      "enabled": false,
+      "rows": 8
+    },
+    "errors": []
+  }
+]

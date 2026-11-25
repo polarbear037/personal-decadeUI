@@ -17,13 +17,16 @@ function a(baseGain) {
 				} else cards.splice(d--, 1);
 			}
 			const _dui = window.decadeUI,
-				gainTo = function (cards) {
+				gainTo = function (cards, nodelay) {
 					const famousWugu = lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && window.leiYijiangTableUI?.hasWuguGain(cards, player);
 					const pendingWugu = famousWugu || lib.config.extension_十周年UI_newDecadeStyle == "onlineUI" && hasPendingWuguGain(cards, event, undefined, player);
 					cards.duiMod = event.source;
+					delete cards._duiHandDraws;
 					if (player == game.me) {
 						if (!pendingWugu) {
 							_dui.layoutHandDraws(cards);
+							// 本人实体已负责入手表现；无 source 的 gain2 也不能再生成飞向武将的副本。
+							if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff") cards._duiHandDraws = true;
 							_dui.queueNextFrameTick(_dui.layoutHand, _dui);
 						}
 						game.addVideo("gain12", player, [get.cardsInfo(fragment.childNodes), gaintag]);
@@ -40,14 +43,21 @@ function a(baseGain) {
 							ui.cardPile.childNodes.length,
 							gaintag
 						),
-						player.update());
+						!0 !== nodelay
+							? setTimeout(
+									function (player) {
+										(player.update(), game.resume());
+									},
+									get.delayx(400, 400) + 66,
+									player
+								)
+							: player.update());
 				};
-			// 卡牌归属与状态当步生效；飞行、淡出及布局由原有动画异步完成。
-			if ("draw" == event.animate) (gainTo(cards), player.$draw(cards.length));
-			else if ("gain" == event.animate) (gainTo(cards), player.$gain(cards, event.log));
-			else if ("gain2" == event.animate || "draw2" == event.animate) (gainTo(cards), player.$gain2(cards, event.log));
+			if ("draw" == event.animate) (game.pause(), gainTo(cards), player.$draw(cards.length));
+			else if ("gain" == event.animate) (game.pause(), gainTo(cards), player.$gain(cards, event.log));
+			else if ("gain2" == event.animate || "draw2" == event.animate) (game.pause(), gainTo(cards), player.$gain2(cards, event.log));
 			else if ("give" == event.animate || "giveAuto" == event.animate) {
-				gainTo(cards);
+				(game.pause(), gainTo(cards));
 				const a = event.losing_map;
 				if ("give" == event.animate)
 					for (const e in a) {
@@ -59,9 +69,15 @@ function a(baseGain) {
 						(a[e][1].length && i.$giveAuto(a[e][1], player, event.log), a[e][2].length && i.$give(a[e][2], player, event.log));
 					}
 			} else if ("function" == typeof event.animate) {
-				event.animate(event);
-				gainTo(cards);
-			} else gainTo(cards);
+				const a = event.animate(event);
+				(game.pause(),
+					setTimeout(
+						function () {
+							(gainTo(cards, !0), game.resume());
+						},
+						get.delayx(a, a)
+					));
+			} else gainTo(cards, !0);
 		},
 		async (event, trigger, player) => {
 			event.updatePile && game.updateRoundNumber();
@@ -129,8 +145,6 @@ function t(baseLose) {
 		async (event, trigger, player) => {
 			const evt = event.getParent();
 			("discard" == evt.name && "discard" == event.type) || ("loseToDiscardpile" == evt.name && "loseToDiscardpile" == event.type) ? (!1 === evt.delay && (event.delay = !1), null == event.animate && (event.animate = evt.animate)) : ((event.delay = !1), null == event.blameEvent && (event.animate = !1));
-			// 弃牌仍播放副本动画，但不让本体后续步骤等待过渡或固定展示时长。
-			event.delay = false;
 		},
 		async (event, trigger, player) => {
 			let { cards: cards } = event;
@@ -209,7 +223,11 @@ function t(baseLose) {
 				ui.updatej(player),
 				game.broadcast(
 					(player, cards, num) => {
-						for (let t = 0; t < cards.length; t++) (cards[t].removeGaintag(!0), cards[t].classList.remove("glow"), cards[t].classList.remove("glows"), cards[t].fix(), cards[t].remove());
+						for (let t = 0; t < cards.length; t++) {
+							// 本地为被取牌者时，同样要在联机同步移走实体前保存起点。
+							window.decadeUI?.captureHandCardPosition?.(cards[t], player);
+							(cards[t].removeGaintag(!0), cards[t].classList.remove("glow"), cards[t].classList.remove("glows"), cards[t].fix(), cards[t].remove());
+						}
 						(player == game.me && ui.updatehl(), ui.updatej(player), (_status.cardPileNum = num));
 					},
 					player,
@@ -238,7 +256,9 @@ function t(baseLose) {
 						a.discardid,
 						event.visible
 					),
-					event.delay !== false && lib.config.sync_speed && cards[0]?.clone)
+					// 一将装备使用 WAAPI，非主视角已在 useCard.after 等待真实飞行完成，
+					// 不能再登记不会触发的 CSS transition 并等到其兜底超时。
+					lib.config.sync_speed && cards[0]?.clone && !cards[0].clone._xinshaEquipFlight)
 				)
 					if (0 != a.delay) {
 						const i = get.time();

@@ -5,7 +5,7 @@ const crypto = require("node:crypto");
 const { server, chromium, seed } = require("./online-player-tips-browser.cjs");
 const root = path.resolve(__dirname, "..");
 const configKey = "extension_十周年UI_yjcmBackground";
-Object.assign(seed, { mode: "identity", characters: ["standard"], cards: ["standard", "extra"], extension_十周年UI_newDecadeStyle: "othersOff", extension_十周年UI_rightLayout: "on", phonelayout:true, touchscreen: false });
+Object.assign(seed, { hp_style: "round", mode: "identity", characters: ["standard"], cards: ["standard", "extra"], extension_十周年UI_newDecadeStyle: "othersOff", extension_十周年UI_rightLayout: "on", phonelayout:true, touchscreen: false });
 const results = {};
 (async () => {
 	await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
@@ -37,6 +37,7 @@ const results = {};
 		for (const [pattern, file] of [["**/pinyin-pro/dist/index.js", "pinyin-pro@3.28.0/node_modules/pinyin-pro/dist/index.mjs"], ["**/dedent/dist/dedent.js", "dedent@1.7.1/node_modules/dedent/dist/dedent.mjs"]]) {
 			await page.route(pattern, route => route.fulfill({ contentType: "text/javascript", body: fs.readFileSync(path.resolve(root, "../../node_modules/.pnpm/", file), "utf8") }));
 		}
+		for (const file of ['core-js-bundle@3.48.0/node_modules/core-js-bundle/index.js','stackframe@1.3.4/node_modules/stackframe/stackframe.js','error-stack-parser@2.1.4/node_modules/error-stack-parser/error-stack-parser.js','stacktrace-gps@3.1.2/node_modules/stacktrace-gps/stacktrace-gps.js']) if (/as __require/.test(fs.readFileSync(path.resolve(root,'../../node_modules/.pnpm',file),'utf8'))) await page.unroute('**/node_modules/.pnpm/'+file);
 		await page.goto(`http://127.0.0.1:${server.address().port}/player-tips-probe`);
 		await Promise.race([startupFailure, page.locator("#arena > .player").nth(1).waitFor({ state: "attached", timeout: 45000 })]).catch(async error => {
 			console.log("STARTUP", JSON.stringify({ errors, failed, body: await page.locator("body").innerText() }));
@@ -88,12 +89,12 @@ const results = {};
         const read = () => page.evaluate(() => {
             const panel = cardIntro.querySelector(".xinsha-tooltip"), title = panel.querySelector(".xinsha-tooltip-title"), body = panel.querySelector(".xinsha-tooltip-description");
             const box = node => node.getBoundingClientRect().toJSON();
-            return { host: box(cardIntro), panel: box(panel), title: box(title), body: box(body), text: panel.textContent, color: getComputedStyle(title).color, bodyFont: getComputedStyle(body).fontSize, frame: getComputedStyle(panel,"::before").borderImageSource, unit: parseFloat(getComputedStyle(ui.window).getPropertyValue("--yjcm-unit")), source: testCard.parentElement.className, font: getComputedStyle(title).fontFamily };
+            return { host: box(cardIntro), panel: box(panel), title: box(title), body: box(body), text: panel.textContent, color: getComputedStyle(title).color, bodyFont: getComputedStyle(body).fontSize, frame: getComputedStyle(panel,"::before").backgroundImage.startsWith('url("data:image/png'), unit: parseFloat(getComputedStyle(ui.window).getPropertyValue("--yjcm-unit")), source: testCard.parentElement.className, font: getComputedStyle(title).fontFamily };
         });
         results.card = await read();
         results.cardLayer=await page.evaluate(()=>checkTooltipControlLayer(cardIntro));
         assert.ok(results.cardLayer.overlaps&&results.cardLayer.tooltipOnTop&&results.cardLayer.tooltipZ>results.cardLayer.controlsZ,'卡牌说明须实际覆盖dui-controls');
-        assert.match(results.card.frame, /xinsha\/item_tips_bg.png/);
+        assert.equal(results.card.frame, true);
         assert.equal(results.card.color, "rgb(85, 207, 48)");
         assert.ok(Math.abs(parseFloat(results.card.bodyFont)-24)<0.01);
         assert.match(results.card.text,/杀/);
@@ -134,6 +135,55 @@ const results = {};
         assert(!results.userCard.visibleText.includes('锦囊牌'));
         near(results.userCard.size.height,92+results.userCard.body.height,'card height from TextTips sum(label heights)+58');
         await page.locator('.xinsha-tooltip-host[data-xinsha-tooltip="card"]').screenshot({path:path.join(__dirname,'yjcm-tooltip-wuzhong.png')});
+        results.equipment=[];
+        for (const seat of [0,1]) {
+            for (const name of ['guding','bagua','jueying','chitu','muniu']) {
+                const state=await page.evaluate(async ({seat,name})=>{
+                    cardIntro.remove();
+                    const player=game.players[seat], card=game.createCard(name,'spade',1);
+                    player.$addVirtualEquip(get.autoViewAs(card),[card]);
+                    const layout=await import('/extension/十周年UI/src/ui/equip-layout.js');
+                    layout.refreshEquipLayout(player);
+                    window.equipTestCard=card;
+                    // 与真实悬停相同的本体入口；不重造卡牌说明。
+                    window.equipIntro=ui.click.hoverplayer.call(card);
+                    equipIntro.classList.add('popped','static');ui.window.append(equipIntro);
+                    lib.placePoppedDialog(equipIntro,{clientX:700,clientY:400});
+                    await xinshaTips.prepareXinshaTooltip(equipIntro);
+                    await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+                    const panel=equipIntro.querySelector('.xinsha-tooltip'), title=panel?.querySelector('.xinsha-tooltip-title');
+                    return {seat,name,adapted:equipIntro.dataset.xinshaTooltip,title:title?.textContent,text:panel?.innerText,
+                        visibility:panel&&getComputedStyle(panel).visibility,
+                        titles:[...card.querySelectorAll('[title]')].map(n=>n.title),
+                        frame:panel&&getComputedStyle(panel,'::before').backgroundImage.startsWith('url("data:image/png'),
+                        color:title&&getComputedStyle(title).color};
+                },{seat,name});
+                assert.equal(state.adapted,'card');assert.equal(state.title,({'guding':'古锭刀','bagua':'八卦阵','jueying':'绝影','chitu':'赤兔','muniu':'木牛流马'})[name]);
+                assert.deepEqual(state.titles,[]);assert.equal(state.frame,true);assert.equal(state.color,'rgb(85, 207, 48)');
+                assert.equal(state.visibility,'visible','正文应与外框同时显示，不继承本体半秒的visibility过渡');
+                assert(!state.text.includes('装备牌'),JSON.stringify(state));
+                if(name==='guding'){assert.match(state.text,/攻击范围：2/,JSON.stringify(state));assert.match(state.text,/伤害/);}
+                if(seat===1&&name==='guding')await page.locator('#nodeintro.xinsha-tooltip-host').screenshot({path:path.join(__dirname,'yjcm-tooltip-equipment.png')});
+                results.equipment.push(state);
+                await page.evaluate(()=>equipIntro.remove());
+            }
+        }
+        results.equipSpecial=await page.evaluate(async()=>{
+            const player=game.players[1];
+            const card=game.createCard('guding','spade',1);player.$addVirtualEquip(get.autoViewAs(card),[card]);
+            card.addGaintag('zhiheng');
+            const oldPrompt=lib.card.guding.cardPrompt;
+            lib.card.guding.cardPrompt=()=>'<span style="color:rgb(255,216,0)">自定义装备说明</span>';
+            try {
+                const d=get.nodeintro(card,false);ui.window.append(d);await xinshaTips.prepareXinshaTooltip(d);
+                await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+                const text=d.innerText, html=d.innerHTML;d.remove();
+                return {text,html};
+            }finally{if(oldPrompt)lib.card.guding.cardPrompt=oldPrompt;else delete lib.card.guding.cardPrompt;}
+        });
+        assert.match(results.equipSpecial.text,/自定义装备说明/);assert.match(results.equipSpecial.text,/此牌标签：制衡/);
+        assert.match(results.equipSpecial.html,/rgb\(255, ?216, ?0\)/);
+        await page.evaluate(()=>showCardIntro());
         // 以下测量由程序显示；先移开真实鼠标，避免旧节点移除后的 mouseleave 取消新请求。
         await page.mouse.move(700,300);
         await page.waitForTimeout(250);
@@ -178,7 +228,7 @@ const results = {};
         await page.waitForTimeout(250);
         assert.equal(await page.locator('.skill-button-tooltip').evaluate(n=>n.style.display),"none");
         await page.evaluate(() => {delete lib.dynamicTranslate.zhiheng;tooltips.skillButtonTooltip.destroy();});
-        // 无信息泄漏：暗牌不换肤，装备/标记/弃牌堆不落入手牌专用分支。
+        // 无信息泄漏：暗牌、标记、弃牌堆不落入卡牌提示分支。
         results.exclusions = await page.evaluate(() => {
             const out={};
             for (const cls of ['infohidden','infoflip','blank']) {
@@ -203,13 +253,15 @@ const results = {};
             const state=await page.evaluate(async style=>{
                 document.body.dataset.style=style;lib.config.extension_十周年UI_newDecadeStyle=style;
                 const d=get.nodeintro(testCard,false);ui.window.append(d);lib.placePoppedDialog(d,{clientX:700,clientY:500});
+                const equip=get.nodeintro(equipTestCard,false);const equipXinsha=!!equip.dataset.xinshaTooltip;equip.remove();
                 const button=document.querySelector('.skill-control [data-id="zhiheng"]');
                 tooltips.skillButtonTooltip.show(button,'zhiheng',game.me);
-                return {style,xinsha:!!d.dataset.xinshaTooltip,online:!!d.dataset.decadeTooltip,text:d.textContent};
+                return {style,xinsha:!!d.dataset.xinshaTooltip,equipXinsha,online:!!d.dataset.decadeTooltip,text:d.textContent};
             },style);
             await page.waitForTimeout(150);
             state.skill=await page.locator('.skill-button-tooltip').evaluate(n=>({xinsha:!!n.dataset.xinshaTooltip,online:!!n.dataset.decadeTooltip,background:getComputedStyle(n).backgroundImage}));
             assert.equal(state.xinsha,false);assert.equal(state.skill.xinsha,false);
+            assert.equal(state.equipXinsha,false);
             assert.equal(state.online,style==='onlineUI'); assert.equal(state.skill.online,style==='onlineUI');
             results.isolation.push(state);
             await page.evaluate(()=>{document.querySelectorAll('#window>.dialog.popped').forEach(n=>n.remove());tooltips.skillButtonTooltip.destroy();});
@@ -217,6 +269,6 @@ const results = {};
         assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);
         results.errors=errors;results.failed=failed;
         fs.writeFileSync(path.join(__dirname,'yjcm-tooltip-results.json'),JSON.stringify(results,null,2));
-        console.log(JSON.stringify({passed:true,checks:['native get.nodeintro / lib.placePoppedDialog','actual skill hover','official asset and geometry','dynamic long description scroll and hide','hidden card and outside hand exclusions','window and documentZoom','five other styles isolation'],errors,failed}));
+        console.log(JSON.stringify({passed:true,checks:['native get.nodeintro / lib.placePoppedDialog','self and other-seat five equipment types','equipment browser title removed','custom cardPrompt / tags preserved','actual skill hover','official asset and geometry','dynamic long description scroll and hide','hidden card and outside hand exclusions','window and documentZoom','five other styles isolation including equipment'],errors,failed}));
     } finally {await browser.close();server.close();}
 })().catch(error=>{console.error(error);server.close();process.exitCode=1;});

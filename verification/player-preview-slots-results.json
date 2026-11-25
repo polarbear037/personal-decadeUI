@@ -1,0 +1,441 @@
+{
+  "errors": [],
+  "rendering": [
+    {
+      "hide": [],
+      "outcrop": true,
+      "hiddenDraws": 2,
+      "clipDraws": [
+        {
+          "slot": "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+          "clipped": true
+        },
+        {
+          "slot": "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+          "clipped": true
+        }
+      ],
+      "total": 166
+    },
+    {
+      "hide": [],
+      "outcrop": false,
+      "hiddenDraws": 2,
+      "clipDraws": [
+        {
+          "slot": "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+          "clipped": false
+        },
+        {
+          "slot": "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+          "clipped": false
+        }
+      ],
+      "total": 166
+    },
+    {
+      "hide": [
+        "gh_2g_glow"
+      ],
+      "outcrop": true,
+      "hiddenDraws": 0,
+      "clipDraws": [
+        {
+          "slot": "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+          "clipped": true
+        },
+        {
+          "slot": "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+          "clipped": true
+        }
+      ],
+      "total": 164
+    },
+    {
+      "hide": [
+        "gh_2g_glow"
+      ],
+      "outcrop": false,
+      "hiddenDraws": 0,
+      "clipDraws": [
+        {
+          "slot": "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+          "clipped": false
+        },
+        {
+          "slot": "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+          "clipped": false
+        }
+      ],
+      "total": 164
+    },
+    {
+      "hide": [
+        "vx_daiji/glow03"
+      ],
+      "outcrop": true,
+      "hiddenDraws": 0,
+      "clipDraws": [
+        {
+          "slot": "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+          "clipped": true
+        },
+        {
+          "slot": "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+          "clipped": true
+        }
+      ],
+      "total": 164
+    },
+    {
+      "hide": [
+        "vx_daiji/glow03"
+      ],
+      "outcrop": false,
+      "hiddenDraws": 0,
+      "clipDraws": [
+        {
+          "slot": "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+          "clipped": false
+        },
+        {
+          "slot": "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+          "clipped": false
+        }
+      ],
+      "total": 164
+    }
+  ],
+  "slots": {
+    "input": {
+      "hide": [
+        "gh_2g_glow"
+      ],
+      "clip": [
+        "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+        "gh_2",
+        "gh_2g_glow"
+      ]
+    },
+    "node": {
+      "hide": [
+        "gh_2g_glow"
+      ],
+      "clip": [
+        "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+        "gh_2",
+        "gh_2g_glow"
+      ]
+    },
+    "renderer": {
+      "hide": [
+        "vx_daiji/glow03"
+      ],
+      "clip": [
+        "vx_daiji/vx_dj_guang/vx_dj_guang_1"
+      ],
+      "outcrop": true
+    },
+    "slots": [
+      {
+        "slot": "gh_2g_glow",
+        "attachment": "vx_daiji/glow03"
+      },
+      {
+        "slot": "gh_2",
+        "attachment": "gh_2"
+      },
+      {
+        "slot": "vx_daiji/vx_dj_guang/vx_dj_guang_1",
+        "attachment": "vx_daiji/vx_dj_guang/vx_dj_guang_16"
+      }
+    ]
+  },
+  "frames": [
+    {
+      "border": "dragon2",
+      "source": {
+        "camp": [
+          "37px",
+          "128px"
+        ],
+        "border": [
+          "-36px",
+          "-35px",
+          "108px",
+          "226px",
+          "url(\"http://127.0.0.1:5303/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/dragon2_big_gradation_5.png\")"
+        ],
+        "overlay": [
+          "9%",
+          "-5%",
+          "79%",
+          "104%",
+          "url(\"http://127.0.0.1:5303/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png\")",
+          "none"
+        ],
+        "vars": [
+          "9%",
+          "-5%",
+          "79%",
+          ""
+        ]
+      },
+      "preview": {
+        "camp": [
+          "37px",
+          "128px"
+        ],
+        "border": [
+          "-36px",
+          "-35px",
+          "108px",
+          "226px",
+          "url(\"http://127.0.0.1:5303/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/dragon2_big_gradation_5.png\")"
+        ],
+        "overlay": [
+          "9%",
+          "-5%",
+          "79%",
+          "104%",
+          "url(\"http://127.0.0.1:5303/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png\")",
+          "none"
+        ],
+        "vars": [
+          "9%",
+          "-5%",
+          "79%",
+          ""
+        ]
+      },
+      "sourceCanvas": {
+        "box": [
+          0.08998842592592593,
+          -0.04998617256637168,
+          0.7899305555555556,
+          1
+        ],
+        "sprite": {
+          "name": "../../../皮肤切换/assets/spine-dom/famous/sgs_paiju_heilongkuang",
+          "version": "3.6",
+          "action": "play",
+          "loop": true,
+          "alpha": false
+        },
+        "shared": true,
+        "frames": 22
+      },
+      "previewCanvas": {
+        "box": [
+          0.08984370031908989,
+          -0.049986188081463066,
+          0.7899305062992686,
+          1.0000001335775488
+        ],
+        "sprite": {
+          "name": "../../../皮肤切换/assets/spine-dom/famous/sgs_paiju_heilongkuang",
+          "version": "3.6",
+          "action": "play",
+          "loop": true,
+          "alpha": false
+        },
+        "shared": true,
+        "frames": 22
+      }
+    },
+    {
+      "border": "dragon3",
+      "source": {
+        "camp": [
+          "37px",
+          "128px"
+        ],
+        "border": [
+          "-36px",
+          "-35px",
+          "108px",
+          "226px",
+          "url(\"http://127.0.0.1:5303/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/dragon3_big_gradation_5.png\")"
+        ],
+        "overlay": [
+          "-3%",
+          "-8%",
+          "94%",
+          "103%",
+          "url(\"http://127.0.0.1:5303/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png\")",
+          "none"
+        ],
+        "vars": [
+          "-3%",
+          "-8%",
+          "94%",
+          "103%"
+        ]
+      },
+      "preview": {
+        "camp": [
+          "37px",
+          "128px"
+        ],
+        "border": [
+          "-36px",
+          "-35px",
+          "108px",
+          "226px",
+          "url(\"http://127.0.0.1:5303/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/dragon3_big_gradation_5.png\")"
+        ],
+        "overlay": [
+          "-3%",
+          "-8%",
+          "94%",
+          "103%",
+          "url(\"http://127.0.0.1:5303/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png\")",
+          "none"
+        ],
+        "vars": [
+          "-3%",
+          "-8%",
+          "94%",
+          "103%"
+        ]
+      },
+      "sourceCanvas": {
+        "box": [
+          -0.029947916666666668,
+          -0.079991703539823,
+          0.9399594907407407,
+          1.0299363938053097
+        ],
+        "sprite": {
+          "name": "../../../皮肤切换/assets/spine-dom/famous/sgs_paiju_jinlongkuang",
+          "version": "3.6",
+          "action": "play",
+          "loop": true,
+          "alpha": false
+        },
+        "shared": true,
+        "frames": 21
+      },
+      "previewCanvas": {
+        "box": [
+          -0.029947923399976827,
+          -0.07992256977022524,
+          0.9399594299791881,
+          1.0299365319635045
+        ],
+        "sprite": {
+          "name": "../../../皮肤切换/assets/spine-dom/famous/sgs_paiju_jinlongkuang",
+          "version": "3.6",
+          "action": "play",
+          "loop": true,
+          "alpha": false
+        },
+        "shared": true,
+        "frames": 21
+      }
+    },
+    {
+      "border": "dragon4",
+      "source": {
+        "camp": [
+          "37px",
+          "128px"
+        ],
+        "border": [
+          "-27px",
+          "-32px",
+          "79.5469px",
+          "185.594px",
+          "url(\"http://127.0.0.1:5303/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/border_camp5.png\")"
+        ],
+        "overlay": [
+          "11%",
+          "4%",
+          "79%",
+          "94%",
+          "url(\"http://127.0.0.1:5303/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png\")",
+          "none"
+        ],
+        "vars": [
+          "11%",
+          "4%",
+          "79%",
+          "94%"
+        ]
+      },
+      "preview": {
+        "camp": [
+          "37px",
+          "128px"
+        ],
+        "border": [
+          "-27px",
+          "-32px",
+          "79.5469px",
+          "185.594px",
+          "url(\"http://127.0.0.1:5303/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/border_camp5.png\")"
+        ],
+        "overlay": [
+          "11%",
+          "4%",
+          "79%",
+          "94%",
+          "url(\"http://127.0.0.1:5303/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png\")",
+          "none"
+        ],
+        "vars": [
+          "11%",
+          "4%",
+          "79%",
+          "94%"
+        ]
+      },
+      "sourceCanvas": {
+        "box": [
+          0.10999803574936162,
+          0.03998989728910591,
+          0.789825181693184,
+          0.9399730594376158
+        ],
+        "sprite": {
+          "name": "../../../皮肤切换/assets/spine-dom/famous/sgs_paiju_laolongkuang",
+          "version": "3.6",
+          "action": "play",
+          "loop": true,
+          "alpha": false
+        },
+        "shared": true,
+        "frames": 20
+      },
+      "previewCanvas": {
+        "box": [
+          0.10980163597474615,
+          0.0399057016022497,
+          0.7896284977176505,
+          0.9398888989105008
+        ],
+        "sprite": {
+          "name": "../../../皮肤切换/assets/spine-dom/famous/sgs_paiju_laolongkuang",
+          "version": "3.6",
+          "action": "play",
+          "loop": true,
+          "alpha": false
+        },
+        "shared": true,
+        "frames": 20
+      }
+    }
+  ],
+  "cleanup": {
+    "disposed": true,
+    "connected": false,
+    "sourceAlive": true
+  },
+  "pending": {
+    "disposed": true,
+    "connected": false,
+    "previewCount": 0,
+    "sourceAlive": true
+  },
+  "newDragonWebgl": 0
+}

@@ -40,6 +40,19 @@ const { server, chromium, assert, script } = require("../../雷的ol/verificatio
 			makeProbe();
 		});
 		assert.equal(await page.evaluate(() => getComputedStyle(bar.querySelector("img")).filter), "brightness(1.1)", "普通一将条与临时条使用同一处明度修正");
+		results.originalStyle = await page.evaluate(async () => {
+			const img=bar.firstChild.querySelector('img'); await img.decode();
+			const canvas=document.createElement('canvas'); canvas.width=img.naturalWidth; canvas.height=img.naturalHeight;
+			const ctx=canvas.getContext('2d');ctx.drawImage(img,0,0);const pixels=ctx.getImageData(0,8,canvas.width,1).data;
+			const redShare=percent=>{let total=0,n=0;for(let x=4;x<canvas.width*percent-4;x++){let k=x*4;if(pixels[k+3]){total+=pixels[k]/(pixels[k+1]+pixels[k+2]);n++;}}return total/n;};
+			return {height:parseFloat(getComputedStyle(bar).height),unit:parseFloat(getComputedStyle(ui.window).getPropertyValue('--yjcm-unit')),
+				background:getComputedStyle(bar.querySelector('[data-yjcm-progress-backdrop]')).borderImageSource,
+				gradientFull:redShare(1),gradientLow:redShare(.3),naturalWidth:img.naturalWidth};
+		});
+		assert.equal(results.originalStyle.naturalWidth,501);
+		assert.match(results.originalStyle.background,/new_timebar_bg_scale9\.png/);
+		assert.ok(Math.abs(results.originalStyle.height/results.originalStyle.unit-17)<.1);
+		assert.ok(results.originalStyle.gradientLow>results.originalStyle.gradientFull,'裁切右侧金色后剩余部分红色占比更高');
 		for (const width of [1280, 1920]) for (const zoom of [1, 1.25]) {
 			await page.setViewportSize({ width, height: 720 });
 			await page.evaluate(zoom => { ui.window.style.zoom = 1 / zoom; plugin.initOfficialLayout(); }, zoom);
@@ -61,11 +74,11 @@ const { server, chromium, assert, script } = require("../../雷的ol/verificatio
 				bar.firstChild.data = data; callbacks[0]();
 				return { data, percent: parseFloat(bar.firstChild.style.width), visibleWidth: bar.firstChild.getBoundingClientRect().width, imageWidth: bar.querySelector("img").getBoundingClientRect().width, barWidth: bar.getBoundingClientRect().width, src: bar.querySelector("img").src, delay };
 			}, data);
-			await page.waitForFunction(() => bar.querySelector("img").complete && bar.querySelector("img").naturalWidth === 582);
+			await page.waitForFunction(() => bar.querySelector("img").complete && bar.querySelector("img").naturalWidth === 501);
 			assert.ok(Math.abs(state.percent - data / 449 * 100) < 0.001);
 			assert.ok(Math.abs(state.imageWidth - state.barWidth) < 1);
 			assert.ok(Math.abs(state.visibleWidth - state.barWidth * data / 449) < 1, JSON.stringify(state));
-			assert.match(state.src, data <= 131 ? /red_2\.png$/ : /\/xf_newTimeBar_2\.png$/);
+			assert.match(state.src, /\/xf_newTimeBar_3\.png$/);
 			assert.equal(state.delay, 200);
 			await page.locator("#progress-probe").screenshot({ path: path.join(__dirname, `yjcm-progress-${data}.png`) });
 			states.push(state);
@@ -132,12 +145,14 @@ const { server, chromium, assert, script } = require("../../雷的ol/verificatio
 			await page.waitForFunction(() => [...bar.querySelectorAll("img")].every(img => img.complete && img.naturalWidth > 0));
 			const rendering = await page.evaluate(() => {
 				const fill = bar.firstElementChild, image = fill.querySelector("img");
-				return { percent: parseFloat(fill.style.width), barWidth: bar.getBoundingClientRect().width, fillWidth: fill.getBoundingClientRect().width, imageWidth: image.getBoundingClientRect().width, naturalWidth: image.naturalWidth, backgroundWidth: bar.lastElementChild.naturalWidth };
+				return { percent: parseFloat(fill.style.width), barWidth: bar.getBoundingClientRect().width, fillWidth: fill.getBoundingClientRect().width, imageWidth: image.getBoundingClientRect().width, naturalWidth: image.naturalWidth, backgroundWidth: bar.lastElementChild.naturalWidth,
+					height:parseFloat(getComputedStyle(bar).height)/parseFloat(getComputedStyle(ui.window).getPropertyValue('--yjcm-unit')),normalBackdropHidden:bar.querySelector('[data-yjcm-progress-backdrop]').hidden };
 			});
 			assert.ok(Math.abs(rendering.percent - remaining) < .05);
 			assert.ok(Math.abs(rendering.imageWidth - rendering.barWidth) < 1, "月光贴图保持整幅宽度，仅裁掉已消耗部分");
 			assert.ok(Math.abs(rendering.fillWidth - rendering.barWidth * rendering.percent / 100) < 1);
 			assert.equal(rendering.naturalWidth, 520); assert.equal(rendering.backgroundWidth, 522);
+			assert.ok(Math.abs(rendering.height-26)<.1&&rendering.normalBackdropHidden);
 			await page.locator("#progress-probe").screenshot({ path: path.join(__dirname, `yjcm-moon-progress-${remaining}.png`) });
 			results.moonRendering.push({ remaining, ...rendering });
 		}
@@ -146,6 +161,8 @@ const { server, chromium, assert, script } = require("../../雷的ol/verificatio
 			assert.deepEqual(state, { width, tick, images: 0 }); results.isolation.push(style);
 			assert.equal(await page.evaluate(duration => { for (let j = 1; j < duration; j++) callbacks[0](); return !bar.isConnected && !bar.dataset.yjcmMoonProgress; }, duration), true);
 		}
+		results.otherStyle4=await page.evaluate(()=>{makeProbe('4');return {src:bar.firstChild.querySelector('img').getAttribute('src'),height:getComputedStyle(bar).height,normalBackdrop:!!bar.querySelector('[data-yjcm-progress-backdrop]')};});
+		assert.match(results.otherStyle4.src,/xf_newTimeBar_2\.png$/);assert.equal(results.otherStyle4.height,'13px');assert.equal(results.otherStyle4.normalBackdrop,false);
 		results.timer = await page.evaluate(async () => {
 			probe.dispose(); lib.config.extension_十周年UI_jindutiaoYangshi = "4"; lib.config.extension_十周年UI_jindutiaoST = "10";
 			const handle = game.Jindutiaoplayer({ id: "real-timer", parent: ui.window });

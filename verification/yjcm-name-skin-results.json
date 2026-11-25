@@ -1,0 +1,792 @@
+{
+  "cases": [
+    {
+      "border": "xinsha",
+      "zoom": 1,
+      "text": "徐馨",
+      "name": {
+        "x": 193.875,
+        "y": 192.1875,
+        "width": 22,
+        "height": 75.546875
+      },
+      "button": {
+        "x": 193.40625,
+        "y": 199.78125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "xinsha",
+      "zoom": 1,
+      "text": "谋吴懿",
+      "name": {
+        "x": 193.875,
+        "y": 192.1875,
+        "width": 22,
+        "height": 75.546875
+      },
+      "button": {
+        "x": 193.40625,
+        "y": 199.78125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "xinsha",
+      "zoom": 1,
+      "text": "<span>谋</span>吴懿",
+      "name": {
+        "x": 193.875,
+        "y": 192.1875,
+        "width": 22,
+        "height": 75.546875
+      },
+      "button": {
+        "x": 193.40625,
+        "y": 199.78125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "xinsha",
+      "zoom": 1,
+      "text": "神武将体验后缀很长的名字",
+      "name": {
+        "x": 193.875,
+        "y": 192.1875,
+        "width": 22,
+        "height": 75.546875
+      },
+      "button": {
+        "x": 193.40625,
+        "y": 199.78125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 64.2265625,
+      "overflow": true,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "xinsha",
+      "zoom": 1.5,
+      "text": "徐馨",
+      "name": {
+        "x": 289.796875,
+        "y": 288.296875,
+        "width": 34,
+        "height": 113.296875
+      },
+      "button": {
+        "x": 289.59375,
+        "y": 299.6796875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "xinsha",
+      "zoom": 1.5,
+      "text": "谋吴懿",
+      "name": {
+        "x": 289.796875,
+        "y": 288.296875,
+        "width": 34,
+        "height": 113.296875
+      },
+      "button": {
+        "x": 289.59375,
+        "y": 299.6796875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "xinsha",
+      "zoom": 1.5,
+      "text": "<span>谋</span>吴懿",
+      "name": {
+        "x": 289.796875,
+        "y": 288.296875,
+        "width": 34,
+        "height": 113.296875
+      },
+      "button": {
+        "x": 289.59375,
+        "y": 299.6796875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "xinsha",
+      "zoom": 1.5,
+      "text": "神武将体验后缀很长的名字",
+      "name": {
+        "x": 289.796875,
+        "y": 288.296875,
+        "width": 34,
+        "height": 113.296875
+      },
+      "button": {
+        "x": 289.59375,
+        "y": 299.6796875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 96.3515625,
+      "overflow": true,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon2",
+      "zoom": 1,
+      "text": "徐馨",
+      "name": {
+        "x": 193.875,
+        "y": 192.1875,
+        "width": 22,
+        "height": 75.546875
+      },
+      "button": {
+        "x": 193.40625,
+        "y": 199.78125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon2",
+      "zoom": 1,
+      "text": "谋吴懿",
+      "name": {
+        "x": 193.875,
+        "y": 192.1875,
+        "width": 22,
+        "height": 75.546875
+      },
+      "button": {
+        "x": 193.40625,
+        "y": 199.78125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon2",
+      "zoom": 1,
+      "text": "<span>谋</span>吴懿",
+      "name": {
+        "x": 193.875,
+        "y": 192.1875,
+        "width": 22,
+        "height": 75.546875
+      },
+      "button": {
+        "x": 193.40625,
+        "y": 199.78125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon2",
+      "zoom": 1,
+      "text": "神武将体验后缀很长的名字",
+      "name": {
+        "x": 193.875,
+        "y": 192.1875,
+        "width": 22,
+        "height": 75.546875
+      },
+      "button": {
+        "x": 193.40625,
+        "y": 199.78125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 64.2265625,
+      "overflow": true,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon2",
+      "zoom": 1.5,
+      "text": "徐馨",
+      "name": {
+        "x": 289.796875,
+        "y": 288.296875,
+        "width": 34,
+        "height": 113.296875
+      },
+      "button": {
+        "x": 289.59375,
+        "y": 299.6796875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon2",
+      "zoom": 1.5,
+      "text": "谋吴懿",
+      "name": {
+        "x": 289.796875,
+        "y": 288.296875,
+        "width": 34,
+        "height": 113.296875
+      },
+      "button": {
+        "x": 289.59375,
+        "y": 299.6796875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon2",
+      "zoom": 1.5,
+      "text": "<span>谋</span>吴懿",
+      "name": {
+        "x": 289.796875,
+        "y": 288.296875,
+        "width": 34,
+        "height": 113.296875
+      },
+      "button": {
+        "x": 289.59375,
+        "y": 299.6796875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon2",
+      "zoom": 1.5,
+      "text": "神武将体验后缀很长的名字",
+      "name": {
+        "x": 289.796875,
+        "y": 288.296875,
+        "width": 34,
+        "height": 113.296875
+      },
+      "button": {
+        "x": 289.59375,
+        "y": 299.6796875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 96.3515625,
+      "overflow": true,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon3",
+      "zoom": 1,
+      "text": "徐馨",
+      "name": {
+        "x": 193.875,
+        "y": 192.1875,
+        "width": 22,
+        "height": 75.546875
+      },
+      "button": {
+        "x": 193.40625,
+        "y": 199.78125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon3",
+      "zoom": 1,
+      "text": "谋吴懿",
+      "name": {
+        "x": 193.875,
+        "y": 192.1875,
+        "width": 22,
+        "height": 75.546875
+      },
+      "button": {
+        "x": 193.40625,
+        "y": 199.78125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon3",
+      "zoom": 1,
+      "text": "<span>谋</span>吴懿",
+      "name": {
+        "x": 193.875,
+        "y": 192.1875,
+        "width": 22,
+        "height": 75.546875
+      },
+      "button": {
+        "x": 193.40625,
+        "y": 199.78125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon3",
+      "zoom": 1,
+      "text": "神武将体验后缀很长的名字",
+      "name": {
+        "x": 193.875,
+        "y": 192.1875,
+        "width": 22,
+        "height": 75.546875
+      },
+      "button": {
+        "x": 193.40625,
+        "y": 199.78125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 64.2265625,
+      "overflow": true,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon3",
+      "zoom": 1.5,
+      "text": "徐馨",
+      "name": {
+        "x": 289.796875,
+        "y": 288.296875,
+        "width": 34,
+        "height": 113.296875
+      },
+      "button": {
+        "x": 289.59375,
+        "y": 299.6796875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon3",
+      "zoom": 1.5,
+      "text": "谋吴懿",
+      "name": {
+        "x": 289.796875,
+        "y": 288.296875,
+        "width": 34,
+        "height": 113.296875
+      },
+      "button": {
+        "x": 289.59375,
+        "y": 299.6796875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon3",
+      "zoom": 1.5,
+      "text": "<span>谋</span>吴懿",
+      "name": {
+        "x": 289.796875,
+        "y": 288.296875,
+        "width": 34,
+        "height": 113.296875
+      },
+      "button": {
+        "x": 289.59375,
+        "y": 299.6796875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 0.0078125,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon3",
+      "zoom": 1.5,
+      "text": "神武将体验后缀很长的名字",
+      "name": {
+        "x": 289.796875,
+        "y": 288.296875,
+        "width": 34,
+        "height": 113.296875
+      },
+      "button": {
+        "x": 289.59375,
+        "y": 299.6796875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 96.3515625,
+      "overflow": true,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon4",
+      "zoom": 1,
+      "text": "徐馨",
+      "name": {
+        "x": 187.015625,
+        "y": 185.796875,
+        "width": 22,
+        "height": 81.9375
+      },
+      "button": {
+        "x": 186.5625,
+        "y": 196.578125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 0,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon4",
+      "zoom": 1,
+      "text": "谋吴懿",
+      "name": {
+        "x": 187.015625,
+        "y": 185.796875,
+        "width": 22,
+        "height": 81.9375
+      },
+      "button": {
+        "x": 186.5625,
+        "y": 196.578125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 0,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon4",
+      "zoom": 1,
+      "text": "<span>谋</span>吴懿",
+      "name": {
+        "x": 187.015625,
+        "y": 185.796875,
+        "width": 22,
+        "height": 81.9375
+      },
+      "button": {
+        "x": 186.5625,
+        "y": 196.578125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 0,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon4",
+      "zoom": 1,
+      "text": "神武将体验后缀很长的名字",
+      "name": {
+        "x": 187.015625,
+        "y": 185.796875,
+        "width": 22,
+        "height": 81.9375
+      },
+      "button": {
+        "x": 186.5625,
+        "y": 196.578125,
+        "width": 22.9375,
+        "height": 60.34375
+      },
+      "centerError": 61.03125,
+      "overflow": true,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon4",
+      "zoom": 1.5,
+      "text": "徐馨",
+      "name": {
+        "x": 279.53125,
+        "y": 278.6875,
+        "width": 34,
+        "height": 122.90625
+      },
+      "button": {
+        "x": 279.328125,
+        "y": 294.8671875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 0,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon4",
+      "zoom": 1.5,
+      "text": "谋吴懿",
+      "name": {
+        "x": 279.53125,
+        "y": 278.6875,
+        "width": 34,
+        "height": 122.90625
+      },
+      "button": {
+        "x": 279.328125,
+        "y": 294.8671875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 0,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon4",
+      "zoom": 1.5,
+      "text": "<span>谋</span>吴懿",
+      "name": {
+        "x": 279.53125,
+        "y": 278.6875,
+        "width": 34,
+        "height": 122.90625
+      },
+      "button": {
+        "x": 279.328125,
+        "y": 294.8671875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 0,
+      "overflow": false,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    },
+    {
+      "border": "dragon4",
+      "zoom": 1.5,
+      "text": "神武将体验后缀很长的名字",
+      "name": {
+        "x": 279.53125,
+        "y": 278.6875,
+        "width": 34,
+        "height": 122.90625
+      },
+      "button": {
+        "x": 279.328125,
+        "y": 294.8671875,
+        "width": 34.421875,
+        "height": 90.515625
+      },
+      "centerError": 91.546875,
+      "overflow": true,
+      "align": "center",
+      "ellipsis": "ellipsis",
+      "opacity": "0",
+      "whiteSpace": "nowrap"
+    }
+  ],
+  "errors": [],
+  "countries": [
+    {
+      "camp": "wei",
+      "id": 1,
+      "normal": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnNormal1.png\")",
+      "over": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnOver1.png\")"
+    },
+    {
+      "camp": "shu",
+      "id": 2,
+      "normal": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnNormal2.png\")",
+      "over": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnOver2.png\")"
+    },
+    {
+      "camp": "wu",
+      "id": 3,
+      "normal": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnNormal3.png\")",
+      "over": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnOver3.png\")"
+    },
+    {
+      "camp": "qun",
+      "id": 4,
+      "normal": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnNormal4.png\")",
+      "over": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnOver4.png\")"
+    },
+    {
+      "camp": "shen",
+      "id": 5,
+      "normal": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnNormal5.png\")",
+      "over": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnOver5.png\")"
+    },
+    {
+      "camp": "shen2",
+      "id": 5,
+      "normal": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnNormal5.png\")",
+      "over": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnOver5.png\")"
+    },
+    {
+      "camp": "ye",
+      "id": 101,
+      "normal": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnNormal101.png\")",
+      "over": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnOver101.png\")"
+    },
+    {
+      "camp": "jin",
+      "id": 4,
+      "normal": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnNormal4.png\")",
+      "over": "url(\"http://127.0.0.1:63532/extension/%E9%9B%B7%E9%9C%86/image/famous/miniChange/seatSkinBtnOver4.png\")"
+    }
+  ],
+  "passed": true
+}

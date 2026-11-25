@@ -1,0 +1,26 @@
+{
+  "baseline": {
+    "copies": 2,
+    "flights": 2,
+    "broadcasts": 1,
+    "videos": 2,
+    "reusedClone": false
+  },
+  "fixed": {
+    "copies": 1,
+    "flights": 1,
+    "broadcasts": 1,
+    "videos": 1,
+    "reusedClone": true
+  },
+  "checks": [
+    "移牌先到、loseAsync父链、持续重复通知",
+    "连续反无懈、嵌套事件和同牌再次使用各自起播",
+    "批量材料仅跳过已展示牌、保留输入数组",
+    "技能弃牌、判定牌与非材料牌不与用牌合并",
+    "同事件不同失牌者独立展示、false不写录像或广播",
+    "空材料虚拟牌及数值暗牌保留原路径",
+    "Online、十周年与录像回放不进入一将去重"
+  ],
+  "scope": "实际$throw入口的受控调用；非浏览器绘制、手机实机或完整无懈结算"
+}

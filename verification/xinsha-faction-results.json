@@ -69,8 +69,8 @@
         ],
         "xinsha": true,
         "online": false,
-        "frame": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
-        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
+        "frame": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+        "image": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
         "title": "选择势力",
         "animated": false
       }
@@ -144,8 +144,8 @@
         ],
         "xinsha": true,
         "online": false,
-        "frame": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
-        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
+        "frame": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+        "image": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
         "title": "选择势力",
         "animated": false
       }
@@ -219,8 +219,8 @@
         ],
         "xinsha": true,
         "online": false,
-        "frame": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
-        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
+        "frame": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+        "image": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
         "title": "选择势力",
         "animated": false
       }
@@ -294,8 +294,8 @@
         ],
         "xinsha": true,
         "online": false,
-        "frame": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
-        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
+        "frame": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+        "image": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
         "title": "选择势力",
         "animated": false
       }
@@ -369,8 +369,8 @@
         ],
         "xinsha": true,
         "online": false,
-        "frame": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
-        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
+        "frame": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+        "image": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
         "title": "选择势力",
         "animated": false
       }
@@ -444,8 +444,8 @@
         ],
         "xinsha": true,
         "online": false,
-        "frame": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
-        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
+        "frame": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/dialog/dialog_xinsha.png\")",
+        "image": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/faction/xinsha/skill_window_select_country_1.png\")",
         "title": "选择势力",
         "animated": false
       }
@@ -520,7 +520,7 @@
         "xinsha": false,
         "online": true,
         "frame": "none",
-        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/select_country_wei.png\")",
+        "image": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/select_country_wei.png\")",
         "animated": false
       }
     },
@@ -594,7 +594,7 @@
         "xinsha": false,
         "online": true,
         "frame": "none",
-        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/select_country_wei.png\")",
+        "image": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/select_country_wei.png\")",
         "animated": false
       }
     },
@@ -668,7 +668,7 @@
         "xinsha": false,
         "online": true,
         "frame": "none",
-        "image": "url(\"http://127.0.0.1:9059/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/select_country_wei.png\")",
+        "image": "url(\"http://127.0.0.1:11529/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/OL_line/uibutton/select_country_wei.png\")",
         "animated": false
       }
     },

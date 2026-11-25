@@ -1699,8 +1699,6 @@ function playerGive(cards, target, log, record) {
 	const useOnlineLocalExpansionMotion = lib.config.extension_十周年UI_newDecadeStyle === "onlineUI" && this === game.me;
 	let card;
 	const _dui = getDui();
-	const hand = _dui.boundsCaches.hand;
-	hand.check();
 	const arena = _dui.boundsCaches.arena;
 	arena.check();
 	const draws = [];
@@ -1716,16 +1714,7 @@ function playerGive(cards, target, log, record) {
 			const sourceTransform = !isLocalTargetCard && ui.arena.contains(sourceCard) ? getArenaRelativeTransform(sourceCard) : null;
 			const copy = sourceCard.copy("card", "thrown", "gainingcard", false);
 			if (sourceTransform) copy._decadeMotionStartTransform = sourceTransform;
-			let fromHand = player == game.me;
-			if (fromHand) {
-				fromHand = sourceCard.throwWith ? sourceCard.throwWith == "h" || sourceCard.throwWith == "s" : sourceCard.parentNode == player.node.handcards1;
-			}
-			if (fromHand) {
-				copy.tx = Math.round(hand.x + sourceCard.tx);
-				copy.ty = Math.round(hand.y + 30 + sourceCard.ty);
-				copy.scaled = true;
-				copy.style.transform = "translate(" + copy.tx + "px," + copy.ty + "px) scale(" + hand.cardScale + ")";
-			} else {
+			if (!applyHandCardPosition(sourceCard, copy, player, arena)) {
 				draws.push(copy);
 			}
 			card = copy;
@@ -1811,8 +1800,6 @@ function playerThrow(cards, time, record, nosource) {
 	let clone;
 	const player = this;
 	const _dui = getDui();
-	const hand = _dui.boundsCaches.hand;
-	hand.check();
 	const directEquip = shouldUseDirectEquipAnimation(cards, player);
 	const directDelayJudge = !directEquip && shouldUseDirectDelayJudgeAnimation(cards, player);
 	for (let index = 0; index < cards.length; index++) {
@@ -1827,13 +1814,7 @@ function playerThrow(cards, time, record, nosource) {
 			}
 			if (directEquip) clone._decadeEquipUseAnimation = true;
 			if (directDelayJudge) markDelayJudgeSourceCard(clone);
-			if (duiMod && (card.throwWith == "h" || card.throwWith == "s") && !applyHandCardPosition(card, clone, player, _dui.boundsCaches.arena)) {
-				clone.tx = Math.round(hand.x + card.tx);
-				clone.ty = Math.round(hand.y + 30 + card.ty);
-				clone.scaled = true;
-				clone.throwordered = true;
-				clone.style.transform = "translate(" + clone.tx + "px," + clone.ty + "px) scale(" + hand.cardScale + ")";
-			}
+			if (duiMod) applyHandCardPosition(card, clone, player, _dui.boundsCaches.arena);
 			card = clone;
 		} else {
 			card = _dui.element.create("card infohidden infoflip");

@@ -10,11 +10,13 @@ import { skillButtonTooltip } from "../../../src/ui/skillButtonTooltip.js";
 export function createXinshaSkillPlugin(lib, game, ui, get, ai, _status, app) {
 	const base = createBaseSkillPlugin(lib, game, ui, get, ai, _status, app);
 	const watchedSkillEvents = new WeakSet();
+	let activeSelection;
 	const syncSkillEffects = () => {
 		const enabled = lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && !_status.over;
-		const activeSkills = new Set();
 		const chain = [];
-		for (let event = _status.event; event && chain.length < 32 && !chain.includes(event); event = event.getParent?.() || event.parent) chain.push(event);
+		// game 启动事件可以已结束，不能把它的 finished 传给仍在运行的牌局。
+		for (let event = _status.event; event && event.name !== "game" && chain.length < 32 && !chain.includes(event); event = event.getParent?.() || event.parent) chain.push(event);
+		const containsSelection = activeSelection && chain.includes(activeSelection.event);
 		let localOwner = false;
 		let finished = false;
 		let pendingPassiveSkill;
@@ -22,14 +24,11 @@ export function createXinshaSkillPlugin(lib, game, ui, get, ai, _status, app) {
 			if (event.player != null) localOwner = event.player === game.me;
 			else if (event.source != null) localOwner = event.source === game.me;
 			finished ||= event.finished === true || event.cancelled === true || event._cancelled === true || event._finished === true;
-			if (finished) activeSkills.clear();
 			if (!localOwner || finished) continue;
 			let hasSkill = false;
 			for (const id of [event.skill, event.sourceSkill, event.name]) {
 				if (typeof id !== "string" || !lib.skill[id]) continue;
-				activeSkills.add(id);
 				const source = get.sourceSkillFor?.(id) || get.info(id).sourceSkill;
-				if (source) activeSkills.add(source);
 				pendingPassiveSkill = get.info(id).enable ? undefined : source || id;
 				hasSkill = true;
 			}
@@ -41,12 +40,19 @@ export function createXinshaSkillPlugin(lib, game, ui, get, ai, _status, app) {
 		}
 		// SpellPassiveItem.setActive 跟随可操作的询问/选择状态，自动触发和纯结算不点亮。
 		const passiveChoosing = enabled && !finished && localOwner && _status.imchoosing === true && !_status.auto && _status.event?.player === game.me;
+		// 只有按钮点击建立选择；被动事件即使带相同 skill，也不能建立主动光效。
+		if (activeSelection && (!enabled || finished || !containsSelection || !localOwner || _status.auto || activeSelection.player !== game.me)) activeSelection = undefined;
+		if (activeSelection && _status.event === activeSelection.event) {
+			const skill = _status.event.skill;
+			if (skill !== activeSelection.skill && (typeof skill !== "string" || get.sourceSkillFor?.(skill) !== activeSelection.skill)) activeSelection = undefined;
+		}
+		const activeChoosing = passiveChoosing && activeSelection?.event === _status.event && ["chooseToUse", "chooseToRespond"].includes(_status.event?.name);
 		for (const root of [ui.skillControl, ui.gskillControl]) {
 			if (!root?.isConnected) continue;
 			for (const node of root.querySelectorAll("[data-id]")) {
 				const isActiveSkill = !!get.info(node.dataset.id)?.enable;
 				const active = enabled && (isActiveSkill
-					? (!finished && localOwner && node.classList.contains("select") || activeSkills.has(node.dataset.id))
+					? (activeChoosing && activeSelection.skill === node.dataset.id)
 					: passiveChoosing && pendingPassiveSkill === node.dataset.id);
 				node.classList.toggle("yjcm-skill-resolving", active && isActiveSkill);
 				// 状态由宿主选择引擎提供，素材与播放交给对应的美化扩展。
@@ -74,6 +80,20 @@ export function createXinshaSkillPlugin(lib, game, ui, get, ai, _status, app) {
 
 	const plugin = {
 		...base,
+
+		clickSkill(...args) {
+			const event = _status.event;
+			if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && !_status.over && !_status.auto && _status.imchoosing === true
+				&& event?.player === game.me && ["chooseToUse", "chooseToRespond"].includes(event.name)
+				&& this.classList.contains("usable") && get.info(this.dataset.id)?.enable) {
+				activeSelection = { event, player: game.me, skill: this.dataset.id };
+			}
+			try {
+				return base.clickSkill.apply(this, args);
+			} finally {
+				syncSkillEffects();
+			}
+		},
 
 		precontent() {
 			this.initCreateFunctions();

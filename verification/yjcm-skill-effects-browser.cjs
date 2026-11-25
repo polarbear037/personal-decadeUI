@@ -56,6 +56,25 @@ const { dependencies } = require("./xinsha-prompt-engine.cjs");
 			out.reused = originalFx === document.querySelector('[data-skill-button-effect="active"]');
 			event("useSkill", "rende"); _status.imchoosing = false; out.activeResolving = update();
 			_status.event.finish(); out.activeFinished = update();
+			if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff") {
+				lib.skill.rende_fx_passive = { sourceSkill: "rende", trigger: { player: "damageEnd" } };
+				const passive = event("rende_fx_passive"); out.activeFromPassiveName = update();
+				event("trigger", "rende_fx_passive"); out.activeFromPassiveSkill = update();
+				event("trigger", "rende"); out.activeFromMainId = update();
+				_status.imchoosing = true;
+				event("chooseTarget", null, passive); out.activeFromPassiveTarget = update();
+				event("chooseCard", "rende", passive); out.activeFromPassiveCard = update();
+				const choice = event("chooseToUse", "rende");
+				choice.result = { bool: true, skill: "rende" }; out.activeWithOldResult = update();
+				choice.backup("rende"); out.activeAfterBackup = update();
+				_status.auto = true; out.activeAuto = update(); _status.auto = false;
+				_status.imchoosing = false; out.activeNotChoosing = update(); _status.imchoosing = true;
+				choice.cancelled = true; out.activeCancelled = update();
+				event("chooseToUse", "rende", phase, game.players[1]); out.activeRemote = update();
+				event("chooseToRespond", "wusheng"); out.activeResponse = update();
+				_status.over = true; out.activeGameOver = update(); _status.over = false;
+			}
+			_status.imchoosing = false;
 			event("trigger", "jianxiong"); out.passiveAutomatic = update();
 			const trigger = _status.event; event("chooseBool", null, trigger); _status.imchoosing = true; out.passiveAsk = update();
 			_status.event.result = { bool: true }; out.pendingWithOldResult = update();
@@ -81,7 +100,13 @@ const { dependencies } = require("./xinsha-prompt-engine.cjs");
 		const s = results.states;
 		assert.deepEqual(s.availableOnly.map(x=>x.id).sort(),style === "onlineUI" ? ["rende","wusheng"] : []);
 		for (const name of ["activeFinished", "passiveAutomatic", "remoteChoice", "passiveSettlement", "autoControl", "cancelled"]) assert.equal(s[name].length, 0, name);
-		for (const name of ["activeSelected", "activeResolving"]) assert.deepEqual(s[name].map(x => x.id), ["rende"], name);
+		assert.deepEqual(s.activeSelected.map(x => x.id), ["rende"]);
+		assert.deepEqual(s.activeResolving.map(x => x.id), style === "onlineUI" ? ["rende"] : [], "activeResolving");
+		if (style === "othersOff") {
+			for (const name of ["activeFromPassiveName", "activeFromPassiveSkill", "activeFromMainId", "activeFromPassiveTarget", "activeFromPassiveCard", "activeAuto", "activeNotChoosing", "activeCancelled", "activeRemote", "activeGameOver"]) assert.deepEqual(s[name], [], name);
+			for (const name of ["activeWithOldResult", "activeAfterBackup"]) assert.deepEqual(s[name].map(x => x.id), ["rende"], name);
+			assert.deepEqual(s.activeResponse.map(x => x.id), ["wusheng"]);
+		}
 		for (const name of ["passiveAsk", "pendingWithOldResult", "passiveCost"]) assert.deepEqual(s[name].map(x => x.id), style === "onlineUI" ? [] : ["jianxiong"], name);
 		for (const name of ["passiveTargets", "passiveAccepted"]) assert.deepEqual(s[name].map(x => x.id), ["jianxiong"], name);
 		assert.deepEqual(s.conversion.map(x => x.id), ["wusheng"]); assert(s.reused);
@@ -92,9 +117,9 @@ const { dependencies } = require("./xinsha-prompt-engine.cjs");
 				document.body.style.zoom = String(zoom); ui.window.dataset.yjcmSide = side;
 				ui.window.style.transform = zoom === .75 ? 'scale(.85)' : '';
 				ui.arena.dataset.rightLayout = side === "right" ? "on" : "off";
-				const parent = skillFxProbe.event(passive ? "jianxiong" : "useSkill", passive ? null : "rende");
+				const parent = skillFxProbe.event(passive ? "jianxiong" : "chooseToUse", passive ? null : "rende");
 				if (passive) skillFxProbe.event("chooseBool", null, parent);
-				_status.imchoosing = passive; skillFxProbe.update();
+				_status.imchoosing = true; skillFxProbe.update();
 				await document.fonts.ready; await new Promise(requestAnimationFrame);
 				let fx = document.querySelector("[data-skill-button-spine]");
 				for(let n=0;n<300&&!document.querySelector("[data-skill-button-spine]")?._skillButtonSpine;n++) await new Promise(r=>setTimeout(r,20));
@@ -149,9 +174,9 @@ const { dependencies } = require("./xinsha-prompt-engine.cjs");
 		for (const passive of [false,true]) {
 			await page.evaluate(passive=>{
 				ui.arena.dataset.rightLayout = "on";
-				const parent=skillFxProbe.event(passive?"jianxiong":"useSkill",passive?null:"rende");
+				const parent=skillFxProbe.event(passive?"jianxiong":"chooseToUse",passive?null:"rende");
 				if(passive)skillFxProbe.event("chooseTarget",null,parent);
-				_status.imchoosing=passive; skillFxProbe.update();
+				_status.imchoosing=true; skillFxProbe.update();
 			},passive);
 			await page.waitForTimeout(100);
 			const clip = await page.evaluate(()=>{

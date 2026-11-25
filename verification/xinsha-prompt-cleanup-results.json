@@ -6,7 +6,7 @@
         "stroke": "清理测试提示",
         "pseudo": "none",
         "opacity": 1,
-        "top": 546
+        "top": 675
       },
       "frames": [
         {
@@ -29,7 +29,7 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0.888,
+          "opacity": 0.88394,
           "top": 686,
           "closed": true
         },
@@ -37,7 +37,7 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0.777,
+          "opacity": 0.83794,
           "top": 686,
           "closed": true
         },
@@ -45,7 +45,7 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0.666,
+          "opacity": 0.78194,
           "top": 686,
           "closed": true
         },
@@ -53,7 +53,7 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0.555,
+          "opacity": 0.72594,
           "top": 686,
           "closed": true
         },
@@ -61,7 +61,7 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0.444,
+          "opacity": 0.67094,
           "top": 686,
           "closed": true
         },
@@ -69,7 +69,7 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0.333,
+          "opacity": 0.61494,
           "top": 686,
           "closed": true
         },
@@ -77,7 +77,7 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0.222,
+          "opacity": 0.55894,
           "top": 686,
           "closed": true
         },
@@ -85,7 +85,7 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0.111,
+          "opacity": 0.50294,
           "top": 686,
           "closed": true
         },
@@ -93,7 +93,7 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0,
+          "opacity": 0.44794,
           "top": 686,
           "closed": true
         }
@@ -107,7 +107,7 @@
         "stroke": "清理测试提示",
         "pseudo": "none",
         "opacity": 1,
-        "top": 546,
+        "top": 675,
         "closed": false
       },
       "frames": [
@@ -131,203 +131,7 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0.89,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.779,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.667,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.556,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.445,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.334,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.223,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.112,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.001,
-          "top": 686,
-          "closed": true
-        }
-      ],
-      "reused": true,
-      "restored": "清理测试提示"
-    },
-    "finished": {
-      "before": {
-        "text": "清理测试提示",
-        "stroke": "清理测试提示",
-        "pseudo": "none",
-        "opacity": 1,
-        "top": 546,
-        "closed": false
-      },
-      "frames": [
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 1,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 1,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.88832,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.77732,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.66632,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.55532,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.44432,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.33332,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.22232,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.11032,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 0.00032,
-          "top": 686,
-          "closed": true
-        }
-      ],
-      "reused": true,
-      "restored": "清理测试提示"
-    },
-    "off": {
-      "before": {
-        "text": "清理测试提示",
-        "stroke": "清理测试提示",
-        "pseudo": "none",
-        "opacity": 1,
-        "top": 546,
-        "closed": false
-      },
-      "frames": [
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 1,
-          "top": 686,
-          "closed": true
-        },
-        {
-          "text": "",
-          "stroke": "",
-          "pseudo": "\"\"",
-          "opacity": 1,
+          "opacity": 0.945,
           "top": 686,
           "closed": true
         },
@@ -343,7 +147,23 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0.777,
+          "opacity": 0.834,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.778,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.723,
           "top": 686,
           "closed": true
         },
@@ -359,6 +179,116 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
+          "opacity": 0.612,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.557,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.501,
+          "top": 686,
+          "closed": true
+        }
+      ],
+      "reused": true,
+      "restored": "清理测试提示"
+    },
+    "finished": {
+      "before": {
+        "text": "清理测试提示",
+        "stroke": "清理测试提示",
+        "pseudo": "none",
+        "opacity": 1,
+        "top": 675,
+        "closed": false
+      },
+      "frames": [
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 1,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 1,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.944,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.889,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.833,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.777,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.722,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.666,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.61,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
           "opacity": 0.555,
           "top": 686,
           "closed": true
@@ -367,7 +297,29 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0.444,
+          "opacity": 0.5,
+          "top": 686,
+          "closed": true
+        }
+      ],
+      "reused": true,
+      "restored": "清理测试提示"
+    },
+    "off": {
+      "before": {
+        "text": "清理测试提示",
+        "stroke": "清理测试提示",
+        "pseudo": "none",
+        "opacity": 1,
+        "top": 675,
+        "closed": false
+      },
+      "frames": [
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 1,
           "top": 686,
           "closed": true
         },
@@ -375,7 +327,7 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0.333,
+          "opacity": 1,
           "top": 686,
           "closed": true
         },
@@ -383,7 +335,7 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0.222,
+          "opacity": 0.945,
           "top": 686,
           "closed": true
         },
@@ -391,7 +343,7 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0.11,
+          "opacity": 0.889,
           "top": 686,
           "closed": true
         },
@@ -399,7 +351,55 @@
           "text": "",
           "stroke": "",
           "pseudo": "\"\"",
-          "opacity": 0,
+          "opacity": 0.834,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.778,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.723,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.668,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.611,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.556,
+          "top": 686,
+          "closed": true
+        },
+        {
+          "text": "",
+          "stroke": "",
+          "pseudo": "\"\"",
+          "opacity": 0.501,
           "top": 686,
           "closed": true
         }
@@ -412,15 +412,15 @@
         "text": "清理测试提示",
         "stroke": "清理测试提示",
         "pseudo": "none",
-        "opacity": 0,
+        "opacity": 0.501,
         "top": 650,
         "closed": false
       },
       "after": {
-        "text": "清理测试提示",
-        "stroke": "清理测试提示",
-        "pseudo": "\"清理测试提示\"",
-        "opacity": 0,
+        "text": "",
+        "stroke": "",
+        "pseudo": "\"\"",
+        "opacity": 0.501,
         "top": 686,
         "closed": true
       }

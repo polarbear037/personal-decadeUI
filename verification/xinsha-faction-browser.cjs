@@ -119,6 +119,15 @@ for (const item of JSON.parse(fs.readFileSync(path.join(__dirname, 'xinsha-facti
         await page.screenshot({ path: path.join(__dirname, 'xinsha-faction-standard.png') });
         await page.evaluate(() => { document.body.style.zoom = 1; makeFaction(['wei', 'shu', 'wu', 'qun', 'jin']); });
         await page.evaluate(() => document.fonts.ready);
+        const textLayout = await page.evaluate(() => {
+          const dialog = currentDialog;
+          // 原生调用方可在装饰后补写标题，不能在专用标题下漏出第二行。
+          dialog.add('请选择你的势力');
+          const label = dialog.querySelector('.xinsha-faction-jin > .xinsha-faction-label');
+          return { captionsHidden: [...dialog.querySelectorAll('.caption')].every(node => getComputedStyle(node).display === 'none'), size: parseFloat(getComputedStyle(label).fontSize), unit: parseFloat(dialog.style.getPropertyValue('--xinsha-faction-card-unit')) };
+        });
+        assert.equal(textLayout.captionsHidden, true, '创建时及后追加的原生标题均隐藏');
+        assert.ok(Math.abs(textLayout.size / textLayout.unit - 85) < .01, '晋字使用85设计单位');
         await page.screenshot({ path: path.join(__dirname, 'xinsha-faction-five.png') });
         await page.evaluate(() => { document.body.style.zoom = 1; makeFaction(['shu', 'wei', 'wu', 'qun', 'jin', 'custom']); });
         await page.waitForTimeout(100);

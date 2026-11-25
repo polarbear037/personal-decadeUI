@@ -1,0 +1,105 @@
+{
+  "rows": [
+    {
+      "style": "othersOff",
+      "initial": {
+        "left": 673,
+        "top": -2,
+        "width": 130,
+        "height": 180,
+        "cacheLeft": 673,
+        "cacheTop": -2,
+        "cacheWidth": 130,
+        "cacheHeight": 180
+      },
+      "changed": {
+        "left": 1295,
+        "top": 157,
+        "width": 130,
+        "height": 180,
+        "cacheLeft": 673,
+        "cacheTop": -2,
+        "cacheWidth": 130,
+        "cacheHeight": 180
+      },
+      "destination": {
+        "card": {
+          "x": 764.0000305175781,
+          "y": 176
+        },
+        "actor": {
+          "x": 1382,
+          "y": 326.625
+        }
+      }
+    },
+    {
+      "style": "onlineUI",
+      "initial": {
+        "left": 663,
+        "top": 9,
+        "width": 132,
+        "height": 175,
+        "cacheLeft": 663,
+        "cacheTop": 9,
+        "cacheWidth": 132,
+        "cacheHeight": 175
+      },
+      "changed": {
+        "left": 1254,
+        "top": 173,
+        "width": 132,
+        "height": 175,
+        "cacheLeft": 663,
+        "cacheTop": 9,
+        "cacheWidth": 132,
+        "cacheHeight": 175
+      },
+      "destination": {
+        "card": {
+          "x": 755.0000305175781,
+          "y": 185
+        },
+        "actor": {
+          "x": 1342.171875,
+          "y": 340.859375
+        }
+      }
+    },
+    {
+      "style": "on",
+      "initial": {
+        "left": 667,
+        "top": 9,
+        "width": 130,
+        "height": 180,
+        "cacheLeft": 667,
+        "cacheTop": 9,
+        "cacheWidth": 130,
+        "cacheHeight": 180
+      },
+      "changed": {
+        "left": 1298,
+        "top": 135,
+        "width": 130,
+        "height": 180,
+        "cacheLeft": 667,
+        "cacheTop": 9,
+        "cacheWidth": 130,
+        "cacheHeight": 180
+      },
+      "destination": {
+        "card": {
+          "x": 758.0000305175781,
+          "y": 187
+        },
+        "actor": {
+          "x": 1385,
+          "y": 305.265625
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "passed": false
+}

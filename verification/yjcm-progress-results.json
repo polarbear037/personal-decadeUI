@@ -44,6 +44,14 @@
     "5"
   ],
   "errors": [],
+  "originalStyle": {
+    "height": 16.2969,
+    "unit": 0.95952023988006,
+    "background": "url(\"http://127.0.0.1:11082/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/new_timebar_bg_scale9.png\")",
+    "gradientFull": 0.8513859709925405,
+    "gradientLow": 0.9322310765503521,
+    "naturalWidth": 501
+  },
   "states": [
     {
       "data": 449,
@@ -51,7 +59,7 @@
       "visibleWidth": 558.4375,
       "imageWidth": 558.4375,
       "barWidth": 558.4375,
-      "src": "http://127.0.0.1:54565/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_2.png",
+      "src": "http://127.0.0.1:11082/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_3.png",
       "delay": 200
     },
     {
@@ -60,7 +68,7 @@
       "visibleWidth": 278.59375,
       "imageWidth": 558.4375,
       "barWidth": 558.4375,
-      "src": "http://127.0.0.1:54565/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_2.png",
+      "src": "http://127.0.0.1:11082/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_3.png",
       "delay": 200
     },
     {
@@ -69,7 +77,7 @@
       "visibleWidth": 164.171875,
       "imageWidth": 558.4375,
       "barWidth": 558.4375,
-      "src": "http://127.0.0.1:54565/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_2.png",
+      "src": "http://127.0.0.1:11082/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_3.png",
       "delay": 200
     },
     {
@@ -78,7 +86,7 @@
       "visibleWidth": 162.921875,
       "imageWidth": 558.4375,
       "barWidth": 558.4375,
-      "src": "http://127.0.0.1:54565/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_red_2.png",
+      "src": "http://127.0.0.1:11082/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/xf_newTimeBar_3.png",
       "delay": 200
     }
   ],
@@ -97,7 +105,7 @@
       "initial": {
         "data": 449,
         "width": "100%",
-        "src": "http://127.0.0.1:54565/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/newTimeBar.png",
+        "src": "http://127.0.0.1:11082/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/newTimeBar.png",
         "connected": true
       },
       "afterFive": 448,
@@ -116,7 +124,7 @@
       "initial": {
         "data": 449,
         "width": "100%",
-        "src": "http://127.0.0.1:54565/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/newTimeBar.png",
+        "src": "http://127.0.0.1:11082/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/progress/xinsha/newTimeBar.png",
         "connected": true
       },
       "afterFive": 448,
@@ -146,7 +154,9 @@
       "fillWidth": 558.4375,
       "imageWidth": 558.4375,
       "naturalWidth": 520,
-      "backgroundWidth": 522
+      "backgroundWidth": 522,
+      "height": 25.98955078125,
+      "normalBackdropHidden": true
     },
     {
       "remaining": 50,
@@ -155,7 +165,9 @@
       "fillWidth": 279.09375,
       "imageWidth": 558.4375,
       "naturalWidth": 520,
-      "backgroundWidth": 522
+      "backgroundWidth": 522,
+      "height": 25.98955078125,
+      "normalBackdropHidden": true
     },
     {
       "remaining": 5,
@@ -164,9 +176,16 @@
       "fillWidth": 27.921875,
       "imageWidth": 558.4375,
       "naturalWidth": 520,
-      "backgroundWidth": 522
+      "backgroundWidth": 522,
+      "height": 25.98955078125,
+      "normalBackdropHidden": true
     }
   ],
+  "otherStyle4": {
+    "src": "http://127.0.0.1:11082/extension/十周年UI/image/ui/progress/xinsha/xf_newTimeBar_2.png",
+    "height": "13px",
+    "normalBackdrop": false
+  },
   "timer": {
     "advanced": true,
     "stopped": true,

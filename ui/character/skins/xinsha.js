@@ -4,6 +4,8 @@
  */
 import { _status } from "noname";
 import { createBaseCharacterPlugin } from "./base.js";
+import { setScale9Background, clearScale9Background } from "../../../src/ui/scale9-background.js";
+import { createPlayerPreview } from "../../../src/ui/player-preview.js";
 
 const IMAGE_PATH = "extension/十周年UI/ui/assets/character/xinsha/";
 const OFFICIAL_PATH = `${IMAGE_PATH}official/`;
@@ -135,10 +137,13 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 				const height = ui.window.clientHeight;
 				const unit = Math.min(width / 1334, height / 750);
 				dialog.style.setProperty("--yjcm-info-scale", String(unit));
+				void setScale9Background(dialog.querySelector(".yjcm-info-frame"), `${lib.assetURL}${OFFICIAL_PATH}game_playerinfonew_bg.png`, [99, 20, 58, 20]);
 			};
 			const observer = new ResizeObserver(resize);
 			const remove = container.remove.bind(container);
 			container.remove = () => {
+				dialog._disposeGeneralPreview?.();
+				clearScale9Background(dialog.querySelector(".yjcm-info-frame"));
 				container._infoPaneDrag?.destroy();
 				observer.disconnect();
 				remove();
@@ -147,12 +152,15 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 				container._infoPaneDrag?.cancel();
 				this._showContent(player, rightPane, bool, dialog);
 				container.classList.remove("hidden");
+				dialog._showGeneralPreview?.();
 				resize();
 				observer.observe(ui.window);
 				game.pause2();
 			};
 
 			container.hide = () => {
+				dialog._disposeGeneralPreview?.();
+				clearScale9Background(dialog.querySelector(".yjcm-info-frame"));
 				container._infoPaneDrag?.cancel();
 				container.classList.add("hidden");
 				observer.disconnect();
@@ -433,49 +441,16 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 		 * @private
 		 */
 		_createCharacterSkins(dialog, player) {
-			const card = ui.create.div(".yjcm-general-card", dialog);
-			const portrait = ui.create.div(".yjcm-general-portrait", card);
-			const country = ui.create.div(".yjcm-general-country", card);
-			const countryBackground = ui.create.div(".yjcm-general-country-bg", country);
-			const emblem = ui.create.div(".yjcm-general-emblem", country);
-			const nameLabel = ui.create.div(".yjcm-general-name", country);
-			const hp = ui.create.div(".yjcm-general-hp", card);
-			const render = secondary => {
-				const name = secondary ? player.name2 : player.name1 || player.name;
-				const hidden = player !== game.me && player.classList.contains(secondary ? "unseen2" : "unseen");
-				const group = hidden ? "unknown" : get.character(name)?.group || player.group;
-				const countryId = { wei: 1, shu: 2, wu: 3, qun: 4, shen: 5, Han: 10, ye: 13, jin: 20 }[group] || 0;
-				portrait.style.backgroundImage = hidden
-					? `url("${lib.assetURL}${OFFICIAL_PATH}game_playerinfo_new_empty.png")`
-					: (secondary ? player.node.avatar2 : player.node.avatar)?.style.backgroundImage || "";
-				country.setBackgroundImage(`${OFFICIAL_PATH}yjcm_general_gradation_bg_${countryId}.png`);
-				countryBackground.style.display = countryId ? "" : "none";
-				if (countryId) countryBackground.setBackgroundImage(`${OFFICIAL_PATH}yjcm_general_country_bg_${countryId}.png`);
-				emblem.style.display = countryId ? "" : "none";
-				if (countryId) emblem.setBackgroundImage(`${OFFICIAL_PATH}yjcm_general_country_${countryId}.png`);
-				nameLabel.innerHTML = hidden ? "未知" : get.slimNameHorizontal(name);
-				nameLabel.style.fontSize = nameLabel.textContent.length > 5 ? "16px" : nameLabel.textContent.length > 4 ? "20px" : "24px";
-				hp.replaceChildren();
-				if (!hidden) {
-					const maxHp = get.character(name)?.maxHp;
-					if (Number.isFinite(maxHp)) {
-						// 原版 HP 容器 36×105，底图含透明上缘，不能按可见血珠直接裁缩。
-						const count = Math.ceil(maxHp);
-						const background = ui.create.div(".yjcm-general-hp-bg", hp);
-						background.style.height = `${Math.max(178, Math.min(count, 5) * 20 + 130 + 6)}px`;
-						if (count > 5) {
-							ui.create.div(".yjcm-general-hp-count", hp, String(maxHp));
-							const pip = ui.create.div(".yjcm-general-hp-pip", hp);
-							pip.style.bottom = "11px";
-						} else for (let i = 0; i < count; i++) {
-							const pip = ui.create.div(".yjcm-general-hp-pip", hp);
-							pip.style.bottom = `${6 + i * 20}px`;
-						}
-					}
-				}
-				dialog.dataset.general = secondary ? "secondary" : "primary";
+			const card = ui.create.div(".yjcm-general-card.yjcm-player-preview-host.decadeUI", dialog);
+			let preview, secondary = false;
+			dialog._disposeGeneralPreview = () => {
+				preview?.dispose();
+				preview = null;
 			};
-			render(false);
+			dialog._showGeneralPreview = () => {
+				if (!preview) preview = createPlayerPreview(card, player, secondary);
+			};
+			dialog.dataset.general = "primary";
 			if (player.name2) {
 				dialog.classList.add("yjcm-double-general");
 				const switcher = ui.create.div(".yjcm-general-switch", dialog);
@@ -484,7 +459,11 @@ export function createXinshaCharacterPlugin(lib, game, ui, get, ai, _status, app
 					button.setAttribute("role", "button");
 					button.tabIndex = 0;
 					button.onclick = () => {
-						render(Boolean(index));
+						if (secondary === Boolean(index)) return;
+						dialog._disposeGeneralPreview();
+						secondary = Boolean(index);
+						dialog.dataset.general = secondary ? "secondary" : "primary";
+						dialog._showGeneralPreview();
 						for (const child of switcher.children) child.classList.toggle("active", child === button);
 					};
 					button.onkeydown = event => {

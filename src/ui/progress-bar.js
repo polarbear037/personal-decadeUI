@@ -55,6 +55,7 @@ const h = (className, imgName) => {
 
 function m() {
 	game.Jindutiaoplayer = options => {
+		const xinsha = lib.config.extension_十周年UI_newDecadeStyle === "othersOff";
 		const isolated = options && typeof options === "object";
 		const barId = isolated && options.id ? options.id : a;
 		const parent = isolated && options.parent?.appendChild ? options.parent : document.body;
@@ -165,7 +166,7 @@ function m() {
 				4: {
 					container: {
 						width: "var(--yjcm-progress-width, 582px)",
-						height: "13px",
+						height: xinsha ? "calc(var(--yjcm-progress-height, 17) * var(--yjcm-unit, 1px))" : "13px",
 						display: "block",
 						margin: "0 0 !important",
 						position: "fixed",
@@ -173,15 +174,15 @@ function m() {
 						transform: "translateX(-50%)",
 						transitionProperty: "opacity",
 						bottom: bottom,
-						backgroundColor: "#4B3621",
-						borderRadius: "6px",
+						backgroundColor: xinsha ? "transparent" : "#4B3621",
+						borderRadius: xinsha ? "0px" : "6px",
 					},
 					progressBar: {
 						data: 449,
 						proportionalWidth: true,
-						style: "z-index:1;width:100%;height:12px;margin:0;position:absolute;top:1px;overflow:hidden;transition:none;",
-						image: "extension/十周年UI/image/ui/progress/xinsha/xf_newTimeBar_2.png",
-						warningImage: "extension/十周年UI/image/ui/progress/xinsha/xf_newTimeBar_red_2.png",
+						style: `z-index:1;width:100%;height:${xinsha ? "100%" : "12px"};margin:0;position:absolute;top:${xinsha ? "0" : "1"}px;overflow:hidden;transition:none;`,
+						image: `extension/十周年UI/image/ui/progress/xinsha/xf_newTimeBar_${xinsha ? "3" : "2"}.png`,
+						warningImage: `extension/十周年UI/image/ui/progress/xinsha/${xinsha ? "xf_newTimeBar_3" : "xf_newTimeBar_red_2"}.png`,
 					},
 					moonBar: {
 						image: "extension/十周年UI/image/ui/progress/xinsha/newTimeBar.png",
@@ -228,6 +229,14 @@ function m() {
 		Object.assign(e.style, t.container);
 		const i = c(t.progressBar.data, t.progressBar.style);
 		e.appendChild(i);
+		// GameSelfSeatUi：普通条用圆头 _3 和独立九宫格底图；技能窗另用方头 _1。
+		let normalBackground;
+		if (xinsha && String(lib.config.extension_十周年UI_jindutiaoYangshi) === "4") {
+			normalBackground = document.createElement("div");
+			normalBackground.dataset.yjcmProgressBackdrop = "normal";
+			normalBackground.style.cssText = `position:absolute;left:0;top:calc(-2 * var(--yjcm-unit, 1px));width:100%;height:calc(20 * var(--yjcm-unit, 1px));box-sizing:border-box;pointer-events:none;z-index:0;border:0 solid transparent;border-image-source:url("${lib.assetURL}extension/十周年UI/image/ui/progress/xinsha/new_timebar_bg_scale9.png");border-image-slice:0 15 fill;border-image-width:0 calc(15 * var(--yjcm-unit, 1px));`;
+			e.appendChild(normalBackground);
+		}
 		// 原版 UILoadingBar 裁切整张渐变图，倒计时不能把剩余部分重新拉伸。
 		const progressImage = t.progressBar.image ? d(t.progressBar.image, "position:absolute;left:0;top:0;width:var(--yjcm-progress-width, 582px);height:100%;pointer-events:none;") : null;
 		if (progressImage) {
@@ -239,6 +248,7 @@ function m() {
 		// 官方 moonTimeBar 使用独立贴图；提前加载，普通倒计时耗尽时直接接续。
 		const moonImage = t.moonBar ? d(t.moonBar.image, "position:absolute;left:0;top:0;width:var(--yjcm-progress-width, 582px);height:100%;pointer-events:none;") : null;
 		const moonBackground = t.moonBar ? d(t.moonBar.backgroundImage, "position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:0;display:none;") : null;
+		if (xinsha && moonBackground) { moonBackground.style.top = "-3.84615%"; moonBackground.style.height = "107.6923%"; }
 		if (moonBackground) e.appendChild(moonBackground);
 		let moonTicks = 0;
 		let moonStopped = false;
@@ -299,6 +309,9 @@ function m() {
 			if (0 === --i.data) {
 				if (moonImage) {
 					e.dataset.yjcmMoonProgress = "true";
+					if (xinsha) e.style.setProperty("--yjcm-progress-height", "26");
+					if (xinsha) i.style.height = "100%";
+					if (normalBackground) normalBackground.hidden = true;
 					i.data = t.progressBar.data;
 					i.style.width = "100%";
 					progressImage.replaceWith(moonImage);

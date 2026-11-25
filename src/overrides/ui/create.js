@@ -39,7 +39,11 @@ function c() {
 	return (ui.controls.unshift(control), ui.control.insertBefore(control, _status.createControl || ui.confirm), control.addEventListener(lib.config.touchscreen ? "touchend" : "click", ui.click.control2), control);
 }
 function s(...args) {
-	let hidden = !1,
+	const event = _status.event;
+	// 本体先构造 chooseButton.dialog，再把它交给 chooseButton/chooseControl。
+	// 非本地操作者只需读取选项，不能在这段交接前自动弹出技能说明。
+	const remoteSkillChoice = (event?.name === "chooseToUse" || event?.name === "chooseToRespond") && event.result?.skill && get.info(event.result.skill)?.chooseButton && !event.isMine();
+	let hidden = !!remoteSkillChoice,
 		notouchscroll = !1,
 		forcebutton = !1,
 		noforcebutton = !1,
@@ -47,8 +51,10 @@ function s(...args) {
 	const dialog = decadeUI.element.create("dialog");
 	((dialog.supportsPagination = !1), (dialog.paginationMap = /* @__PURE__ */ new Map()), (dialog.paginationMaxCount = /* @__PURE__ */ new Map()), (dialog.contentContainer = decadeUI.element.create("content-container", dialog)), (dialog.content = decadeUI.element.create("content", dialog.contentContainer)), (dialog.buttons = []), Object.setPrototypeOf(dialog, lib.element.Dialog.prototype));
 	for (let c = 0; c < args.length; c++) "boolean" == typeof args[c] ? (dialog.static = args[c]) : "hidden" == args[c] ? (hidden = !0) : "notouchscroll" == args[c] ? (notouchscroll = !0) : "forcebutton" == args[c] ? (forcebutton = !0) : "noforcebutton" == args[c] ? (noforcebutton = !0) : "peaceDialog" == args[c] ? (peaceDialog = !0) : dialog.add(args[c]);
+	// 势力按钮须在首次 open 前完成装饰，避免先走普通选牌框的布局与入场动画。
+	applyFactionDialogInteraction(applyXinshaFactionDialog(applyOnlineFactionDialog(dialog)));
 	(hidden || dialog.open(), lib.config.touchscreen || (dialog.contentContainer.onscroll = ui.update), notouchscroll || ((dialog.contentContainer.ontouchstart = ui.click.dialogtouchStart), (dialog.contentContainer.ontouchmove = ui.click.touchScroll), (dialog.contentContainer.style.WebkitOverflowScrolling = "touch"), (dialog.ontouchstart = ui.click.dragtouchdialog)), noforcebutton ? (dialog.noforcebutton = !0) : forcebutton && ((dialog.forcebutton = !0), dialog.classList.add("forcebutton")), peaceDialog && (dialog.peaceDialog = !0));
-	return applyHuarenDialogInteraction(applyFactionDialogInteraction(applyXinshaFactionDialog(applyOnlineFactionDialog(dialog))));
+	return applyHuarenDialogInteraction(dialog);
 }
 function d(list, init, position, onchange) {
 	const select = document.createElement("select");

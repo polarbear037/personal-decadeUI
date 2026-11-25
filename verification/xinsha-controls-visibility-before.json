@@ -1,0 +1,24 @@
+{
+  "baseline": true,
+  "samples": [
+    {
+      "label": "local-choice",
+      "event": "chooseToUse",
+      "choosing": true,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "remote-menu-paused",
+      "event": "useCard",
+      "choosing": false,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    }
+  ],
+  "errors": []
+}

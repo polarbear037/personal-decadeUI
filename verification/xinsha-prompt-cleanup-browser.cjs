@@ -74,7 +74,9 @@ async function run() {
 				assert.ok(value.reused, "未复用原有 hand-tip 缓存");
 				assert.equal(value.restored, "清理测试提示");
 			}
-			assert.equal(results.online.after.text, results.online.before.text, "Online 清理路径被改变");
+			assert.ok(results.online.before.text, "Online 提示未显示");
+			assert.equal(results.online.after.text, "", "Online 关闭后仍有正文残影");
+			assert.equal(results.online.after.stroke, "", "Online 关闭后仍有描边残影");
 			assert.deepEqual(errors, []);
 			fs.writeFileSync(path.join(__dirname, "xinsha-prompt-cleanup-results.json"), JSON.stringify({ results, errors }, null, 2));
 			console.log("XINSHA_PROMPT_CLEANUP_OK clear uncheck finished off reuse online; 11 samples per exit; errors=0");

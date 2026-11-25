@@ -157,10 +157,6 @@ function updateOnlineHandCards(player, cards) {
 		closeOnlineHandCards(player);
 		return true;
 	}
-	const bounds = player.getBoundingClientRect();
-	const onRight = bounds.left + bounds.width / 2 >= window.innerWidth / 2;
-	panel.style.left = onRight ? "auto" : "calc(100% + 5px)";
-	panel.style.right = onRight ? "calc(100% + 5px)" : "auto";
 	panel.style.top = "auto";
 	panel.style.bottom = "0px";
 	panel.setAttribute("role", "button");

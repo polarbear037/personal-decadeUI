@@ -1,0 +1,213 @@
+{
+  "baseline": false,
+  "samples": [
+    {
+      "label": "local-choice",
+      "event": "chooseToUse",
+      "choosing": true,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "remote-menu-paused",
+      "event": "useCard",
+      "choosing": false,
+      "display": "none",
+      "hiddenClass": true,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "useCard-settlement",
+      "event": "useCard",
+      "choosing": false,
+      "display": "none",
+      "hiddenClass": true,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "respond-settlement",
+      "event": "respond",
+      "choosing": false,
+      "display": "none",
+      "hiddenClass": true,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "useSkill-settlement",
+      "event": "useSkill",
+      "choosing": false,
+      "display": "none",
+      "hiddenClass": true,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "turn-ended",
+      "event": "chooseToUse",
+      "choosing": false,
+      "display": "none",
+      "hiddenClass": true,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "backup-old-result",
+      "event": "chooseToUse",
+      "choosing": true,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "backup-submitted",
+      "event": "chooseToUse",
+      "choosing": false,
+      "display": "none",
+      "hiddenClass": true,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "gainPlayerCard-local",
+      "event": "gainPlayerCard",
+      "choosing": true,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "gainPlayerCard-remote",
+      "event": "gainPlayerCard",
+      "choosing": false,
+      "display": "none",
+      "hiddenClass": true,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "discardPlayerCard-local",
+      "event": "discardPlayerCard",
+      "choosing": true,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "discardPlayerCard-remote",
+      "event": "discardPlayerCard",
+      "choosing": false,
+      "display": "none",
+      "hiddenClass": true,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "chooseControl-nested",
+      "event": "chooseControl",
+      "choosing": false,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "chooseBool-nested",
+      "event": "chooseBool",
+      "choosing": false,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "chooseButton-nested",
+      "event": "chooseButton",
+      "choosing": false,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "cancel-selection",
+      "event": "chooseToUse",
+      "choosing": true,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "partial-uncheck",
+      "event": "chooseToUse",
+      "choosing": true,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "after-partial-uncheck",
+      "display": "flex",
+      "choosing": true
+    },
+    {
+      "label": "redraw",
+      "event": "gameDraw",
+      "choosing": true,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "before-over",
+      "event": "useCard",
+      "choosing": false,
+      "display": "none",
+      "hiddenClass": true,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "game-over",
+      "display": "flex"
+    },
+    {
+      "label": "character-selection",
+      "event": "useCard",
+      "choosing": false,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "other-style",
+      "event": "useCard",
+      "choosing": false,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    },
+    {
+      "label": "restored-local",
+      "event": "chooseToUse",
+      "choosing": true,
+      "display": "flex",
+      "hiddenClass": false,
+      "sameConfirm": true,
+      "connected": true
+    }
+  ],
+  "errors": []
+}

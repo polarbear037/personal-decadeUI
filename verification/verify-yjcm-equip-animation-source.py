@@ -78,10 +78,20 @@ def main():
         'Self:300ms full-size flight to the lower window center(cx,cy-175), then the source-confirmed433.333ms EaseSineIn move to the actual portrait, then the source-confirmed subtype slot duration and scale targets. '
         'Other:following the user request to further extend the40% outward route, fly60% toward the stack center over200ms (slightly slowed from160ms); the slot start reads the completed entry animation duration to avoid stale handoff offsets while retaining full card size, then immediately enter the actual equip slot. This distance/duration is a requested local adapter, not an official constant. '
         'For smooth handoffs, remove the official 200ms post-portrait hold/fade, keep opacity 1 across both joins, and preserve scale at every boundary. Opacity decreases continuously during the slot flight, from 1 to 0.9 before the final 100ms, then to 0 at the slot center. This retains the requested fade during motion and gives the strongest fade the same 100ms window as the official client. '
-        'All phases use Web Animations. The first animation is submitted paused at currentTime0. If the actual card skin is visibility:hidden/display:none (e.g. Lei Yijiang cold-image decoding), watch card class/style/children without polling and start only once visible. Then one requestAnimationFrame starts playback with its fresh timestamp; this is a one-shot startup, not a per-frame controller. Invisible-card time is excluded, preserving the full200ms outward leg and adjacent slot timing. A3s readiness timeout restores actual equipment. This also avoids an unbounded pending-play wait. Backdating the first animation to a stale document.timeline.currentTime was reproduced to skip the visible hand flight under a420ms main-thread stall. Subsequent startTime equals previous startTime+duration, not a new wall-clock start. Only host/layout changes update keyframes; no per-frame layout polling or style writes. '
-        'Actual equipment is hidden until the flight finishes. For non-self locally executed useCard only (excluding remote clients/replay), replace the native fixed pre-effect display delay with the existing waitingForTransition mechanism: register a private token after synchronous throw setup and release only that token when flight completes/cancels. This lets native equip execute immediately afterward without blank-slot delay, preserving equip conditions/order/identity/video/broadcast. No early equip call or synthetic equipment card is introduced. No horse skip or consecutive-use heuristic.'
+        'All phases use Web Animations. The first animation is submitted paused at currentTime0 and begins only once the card face is visible. Self animations keep native playback. Other-seat animations stay paused and advance currentTime on rendered requestAnimationFrame callbacks, capping each increment at40ms. This preserves both visible legs when a long settlement task blocks drawing; the prior wall-clock chaining could expire both legs under a520ms stall. Each segment endpoint remains for one render before completing. Only host/layout changes recalculate geometry; the visual clock does not read layout or write DOM styles. A3s initial readiness timeout restores equipment and releases any waiter. '
+        'Actual equipment follows native rule settlement immediately and remains hidden until the visual flight finishes. Per the latest user request, non-self locally executed useCard only (excluding game.online receiving clients/replay) inserts an after event awaiting that flight completion Promise. This holds the next parent action until the equipment appears; self useCard does not wait. Completion, cancellation, removal, style change and readiness timeout all resolve the same flight Promise. No global pause/resume, native waitingForTransition token, early equip call or synthetic equipment card is introduced. No horse skip or consecutive-use heuristic.'
     )
     report.pop('remote_first_stage_recheck', None)
+    report['render_clock_reproduction'] = dict(
+        baseline='In controlled browser runs, a520ms main-thread stall in either stack or slot caused the prior wall-clock implementation to remove the flight before the next rendered sample; both snapshots had done=true.',
+        regression='verification/yjcm-equip-animation-stall-browser.cjs: five equipment types, stalls in both legs, capped visual progress, full-size opaque outbound leg, terminal zero-opacity frame at actual equip center, then visible actual equipment.',
+        scope='Controlled browser reproduction; not the current Electron game or official-client runtime.',
+    )
+    report['equipment_appearance_reproduction'] = dict(
+        adaptation='Native equip settlement occurs immediately. Only non-self local useCard adds an insertAfter event awaiting its flight completion. Completion and every cleanup path release the Promise. Self useCard adds no animation wait.',
+        regression='verification/yjcm-equip-animation-live.cjs: other-seat weapon, armour and both horses run consecutively without an artificial inter-card delay; useCard returns only after the flight completes. Self returns before the flight completes.',
+        scope='Real noname useCard/equip in a controlled browser with the Lei Yijiang card provider; current Electron not observed.',
+    )
     report['validation'] = dict(
         commands=[
             'python -B verification/verify-yjcm-equip-animation-source.py --apk <APK> --game-archive <decoded-game.zip> --packed-cache <game.packed> --lua-reader <read-official-lua.py>',
@@ -89,6 +99,7 @@ def main():
             'node --check verification/yjcm-equip-animation-browser.cjs',
             'node --check verification/yjcm-equip-animation-live.cjs',
             'node verification/yjcm-equip-animation-browser.cjs',
+            'node verification/yjcm-equip-animation-stall-browser.cjs',
             'node verification/yjcm-equip-animation-live.cjs',
         ],
         browser='Not executed by this static verifier; run yjcm-equip-animation-browser.cjs separately for current results.',

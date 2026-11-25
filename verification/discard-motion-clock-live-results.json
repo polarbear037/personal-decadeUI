@@ -1,0 +1,28 @@
+{
+  "probe": {
+    "stale": {
+      "time": 34.20000000073742,
+      "elapsed": 385.8999999985099,
+      "y": 17.8107
+    },
+    "fresh": {
+      "time": 299.9999999999545,
+      "y": 100
+    },
+    "passed": true
+  },
+  "installed": {
+    "installed": true,
+    "alreadyInstalled": true
+  },
+  "active": true,
+  "unchanged": true,
+  "event": "chooseToUse",
+  "recorder": {
+    "enabled": true,
+    "rows": 1752,
+    "keyRows": 1276,
+    "watching": 0,
+    "error": ""
+  }
+}

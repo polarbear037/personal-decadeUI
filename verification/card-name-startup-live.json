@@ -1,0 +1,19 @@
+{
+  "scope": "当前Electron牌局修复前的运行态读取；修复后的进程已关闭，没有修后实局数据。",
+  "before": {
+    "style": "othersOff",
+    "bodyStyle": "othersOff",
+    "configStyle": "othersOff",
+    "cardAlternateName": true,
+    "cardAlternateNameVisibleLegacy": false,
+    "handCount": 29,
+    "realCardCount": 29,
+    "tags": 0,
+    "updateVisibilityType": "undefined",
+    "startupTimer": null,
+    "gameHandMatchesUiHand": true,
+    "event": "chooseToUse"
+  },
+  "after": null,
+  "verificationBlocker": "修后读取返回 TypeError: fetch failed; connect ECONNREFUSED 127.0.0.1:9229。随后确认无名杀主进程及8089/9229监听均已退出。"
+}

@@ -117,6 +117,9 @@ function i(t, n) {
 					{ key: "mx_decade_characterDialog", name: "自由选将筛选框", type: "select" },
 					{ key: "rightLayout", name: "左右布局", type: "select" },
 					{ key: "eruda", name: "调试助手", type: "toggle" },
+					{ isTitle: !0, name: "飞牌诊断" },
+					{ key: "cardMovementDiagnostics", name: "飞牌动画记录器", type: "toggle" },
+					{ key: "cardMovementDiagnosticsManager", name: "管理飞牌诊断记录", type: "action" },
 				],
 			}[tabId] || []
 		);
@@ -152,7 +155,7 @@ function i(t, n) {
 			((c.className = "decade-config-toggle-slider"),
 				n.appendChild(c),
 				(n.onclick = function () {
-					const newValue = !lib.config[configKey];
+					const newValue = !(lib.config[configKey] ?? configDef.init);
 					(game.saveConfig(configKey, newValue), (n.className = "decade-config-toggle " + (newValue ? "on" : "off")), configDef.onclick ? configDef.onclick(newValue) : configDef.update && configDef.update());
 				}),
 				tdControl.appendChild(n));
@@ -184,6 +187,10 @@ function i(t, n) {
 						t.appendChild(option));
 				}),
 				tdControl.appendChild(t));
+		} else if ("action" === configItem.type) {
+			const button = document.createElement("button");
+			button.type = "button"; button.textContent = "打开"; button.className = "decade-config-option";
+			button.onclick = () => configDef.onclick?.(); tdControl.appendChild(button);
 		} else if ("input" === configItem.type) {
 			const e = document.createElement("input");
 			((e.type = "text"),

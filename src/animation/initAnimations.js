@@ -1,4 +1,4 @@
-import { lib, game, ui, _status } from "noname";
+import { lib, game, ui, get, _status } from "noname";
 import { cardDefines as cardDefines, skillDefines as skillDefines, chupaiAnimations as chupaiAnimations } from "./configs/skillAnimations.js";
 import { cardTriggers as cardTriggers } from "./configs/cardTriggers.js";
 function usesLeiOlTargetEffect() {
@@ -79,7 +79,9 @@ function t(animation) {
 			animation.playSpine(a.name, { x: a.x, y: a.y, scale: a.scale });
 		};
 	for (const [e, a] of Object.entries(skillDefines))
-		lib.animate.skill[e] = function (name) {
+		lib.animate.skill[e] = function (name, popname) {
+			// 本体命中 animate.skill 后不会再走默认 popup；文字须随特效在本机补播。
+			this.popup(popname && popname !== name ? popname : get.skillTranslation(name, this), "water", false);
 			animation.playSpine(a.name, { x: a.x, y: a.y, scale: a.scale, parent: this });
 		};
 	for (const [e, i] of Object.entries(cardTriggers)) lib.card[e] && Object.assign(lib.card[e], i);

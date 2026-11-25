@@ -1,0 +1,1748 @@
+{
+  "othersOff": {
+    "chooseToUse": {
+      "dcjiesi": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "control": 4,
+            "links": []
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        }
+      },
+      "remote_dialog_buttons": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        }
+      }
+    },
+    "chooseToRespond": {
+      "dcjiesi": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "control": 4,
+            "links": []
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        }
+      },
+      "remote_dialog_buttons": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        }
+      }
+    },
+    "publicOpen": true,
+    "explicitHidden": true,
+    "errors": []
+  },
+  "onlineUI": {
+    "chooseToUse": {
+      "dcjiesi": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "control": 4,
+            "links": []
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        }
+      },
+      "remote_dialog_buttons": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        }
+      }
+    },
+    "chooseToRespond": {
+      "dcjiesi": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "control": 4,
+            "links": []
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        }
+      },
+      "remote_dialog_buttons": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        }
+      }
+    },
+    "publicOpen": true,
+    "explicitHidden": true,
+    "errors": []
+  },
+  "on": {
+    "chooseToUse": {
+      "dcjiesi": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "control": 4,
+            "links": []
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        }
+      },
+      "remote_dialog_buttons": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        }
+      }
+    },
+    "chooseToRespond": {
+      "dcjiesi": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "control": 4,
+            "links": []
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        }
+      },
+      "remote_dialog_buttons": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        }
+      }
+    },
+    "publicOpen": true,
+    "explicitHidden": true,
+    "errors": []
+  },
+  "off": {
+    "chooseToUse": {
+      "dcjiesi": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "control": 4,
+            "links": []
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        }
+      },
+      "remote_dialog_buttons": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        }
+      }
+    },
+    "chooseToRespond": {
+      "dcjiesi": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "control": 4,
+            "links": []
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        }
+      },
+      "remote_dialog_buttons": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        }
+      }
+    },
+    "publicOpen": true,
+    "explicitHidden": true,
+    "errors": []
+  },
+  "babysha": {
+    "chooseToUse": {
+      "dcjiesi": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "control": 4,
+            "links": []
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        }
+      },
+      "remote_dialog_buttons": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        }
+      }
+    },
+    "chooseToRespond": {
+      "dcjiesi": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "control": 4,
+            "links": []
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        }
+      },
+      "remote_dialog_buttons": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        }
+      }
+    },
+    "publicOpen": true,
+    "explicitHidden": true,
+    "errors": []
+  },
+  "codename": {
+    "chooseToUse": {
+      "dcjiesi": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "control": 4,
+            "links": []
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        }
+      },
+      "remote_dialog_buttons": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        }
+      }
+    },
+    "chooseToRespond": {
+      "dcjiesi": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "control": 4,
+            "links": []
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "捷思出牌阶段限一次，你可以获得一张指定牌名字数的牌，若本阶段未以此法获得过该牌名，你可弃置此牌牌名字数张牌，令此技能视为未发动过。",
+          "buttons": 0,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "control": 4
+          },
+          "backup": {
+            "skill": "dcjiesi_backup",
+            "len": 4
+          },
+          "closed": true
+        }
+      },
+      "remote_dialog_buttons": {
+        "remote": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "local": {
+          "mine": true,
+          "createdOpen": true,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": true,
+          "choiceOpen": true,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "auto": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        },
+        "disabled": {
+          "mine": false,
+          "createdOpen": false,
+          "text": "技能选项杀闪",
+          "buttons": 2,
+          "beforeChoiceOpen": false,
+          "choiceOpen": false,
+          "result": {
+            "links": [
+              "杀"
+            ]
+          },
+          "backup": {
+            "skill": "remote_dialog_buttons_backup",
+            "chosen": "杀"
+          },
+          "closed": true
+        }
+      }
+    },
+    "publicOpen": true,
+    "explicitHidden": true,
+    "errors": []
+  }
+}

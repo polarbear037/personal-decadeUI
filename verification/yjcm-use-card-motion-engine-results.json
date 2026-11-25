@@ -1,0 +1,454 @@
+{
+  "result": {
+    "operations": [
+      {
+        "id": "6231979345",
+        "own": true
+      },
+      {
+        "id": "6398180350",
+        "own": false
+      }
+    ],
+    "flights": [
+      {
+        "id": "6231979345",
+        "own": true,
+        "frames": [
+          {
+            "x": 552.188,
+            "y": 568.672,
+            "scale": 1.0125,
+            "time": 0,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 552.188,
+            "y": 568.672,
+            "scale": 1.0125,
+            "time": -5.700000000000038,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 576.5,
+            "y": 509.776,
+            "scale": 0.983475,
+            "time": 38.7000000000004,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 596.658,
+            "y": 460.941,
+            "scale": 0.9585,
+            "time": 72.00000000000006,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 609.387,
+            "y": 430.106,
+            "scale": 0.94185,
+            "time": 94.19999999999985,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 621.392,
+            "y": 401.024,
+            "scale": 0.925125,
+            "time": 116.50000000000027,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 637.524,
+            "y": 361.941,
+            "scale": 0.90015,
+            "time": 149.79999999999993,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 646.86,
+            "y": 339.326,
+            "scale": 0.8835,
+            "time": 171.99999999999972,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 658.477,
+            "y": 311.181,
+            "scale": 0.85845,
+            "time": 205.40000000000003,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 664.39,
+            "y": 296.859,
+            "scale": 0.841875,
+            "time": 227.50000000000003,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 668.849,
+            "y": 286.056,
+            "scale": 0.82515,
+            "time": 249.80000000000047,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 670.459,
+            "y": 282.156,
+            "scale": 0.8169,
+            "time": 260.7999999999997,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 672.518,
+            "y": 277.169,
+            "scale": 0.800175,
+            "time": 283.10000000000014,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 672.941,
+            "y": 276.142,
+            "scale": 0.791775,
+            "time": 294.2999999999998,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 673,
+            "y": 276,
+            "scale": 0.7875,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 673,
+            "y": 276,
+            "scale": 0.7875,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 673,
+            "y": 276,
+            "scale": 0.7875,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 673,
+            "y": 276,
+            "scale": 0.7875,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 673,
+            "y": 276,
+            "scale": 0.7875,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 673,
+            "y": 276,
+            "scale": 0.7875,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 673,
+            "y": 276,
+            "scale": 0.7875,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 673,
+            "y": 276,
+            "scale": 0.7875,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 673,
+            "y": 276,
+            "scale": 0.7875,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 673,
+            "y": 276,
+            "scale": 0.7875,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 673,
+            "y": 276,
+            "scale": 0.7875,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 673,
+            "y": 276,
+            "scale": 0.7875,
+            "visible": "visible",
+            "face": true
+          }
+        ],
+        "registered": true
+      },
+      {
+        "id": "6398180350",
+        "own": false,
+        "frames": [
+          {
+            "x": 1306,
+            "y": 172,
+            "scale": 1.0125,
+            "time": 0,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 1306,
+            "y": 172,
+            "scale": 1.0125,
+            "time": -2.4000000000938826,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 1274.82,
+            "y": 176.79,
+            "scale": 1.0059,
+            "time": 8.79999999990666,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 1235.94,
+            "y": 182.763,
+            "scale": 0.99765,
+            "time": 19.79999999990678,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 1196.95,
+            "y": 188.752,
+            "scale": 0.989325,
+            "time": 30.89999999990667,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 1158.33,
+            "y": 194.685,
+            "scale": 0.981,
+            "time": 41.99999999990656,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 1119.86,
+            "y": 200.594,
+            "scale": 0.9726,
+            "time": 53.19999999990621,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 1082.36,
+            "y": 206.355,
+            "scale": 0.964275,
+            "time": 64.2999999999061,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 1045.62,
+            "y": 211.999,
+            "scale": 0.95595,
+            "time": 75.39999999990687,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 1009.78,
+            "y": 217.506,
+            "scale": 0.947625,
+            "time": 86.49999999990676,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 974.922,
+            "y": 222.86,
+            "scale": 0.9393,
+            "time": 97.59999999990666,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 941.177,
+            "y": 228.044,
+            "scale": 0.930975,
+            "time": 108.69999999990654,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 908.648,
+            "y": 233.041,
+            "scale": 0.92265,
+            "time": 119.79999999990642,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 877.225,
+            "y": 237.868,
+            "scale": 0.91425,
+            "time": 130.99999999990698,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 847.532,
+            "y": 242.429,
+            "scale": 0.905925,
+            "time": 142.09999999990686,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 819.621,
+            "y": 246.717,
+            "scale": 0.897675,
+            "time": 153.09999999990697,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 792.841,
+            "y": 250.831,
+            "scale": 0.889275,
+            "time": 164.29999999990662,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 768.264,
+            "y": 254.606,
+            "scale": 0.881025,
+            "time": 175.29999999990676,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 745.113,
+            "y": 258.163,
+            "scale": 0.872625,
+            "time": 186.4999999999064,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 724.05,
+            "y": 261.398,
+            "scale": 0.8643,
+            "time": 197.5999999999063,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 704.934,
+            "y": 264.335,
+            "scale": 0.855975,
+            "time": 208.6999999999062,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 687.827,
+            "y": 266.963,
+            "scale": 0.84765,
+            "time": 219.79999999990696,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 672.862,
+            "y": 269.262,
+            "scale": 0.839325,
+            "time": 230.89999999990684,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 634.667,
+            "y": 275.129,
+            "scale": 0.806025,
+            "time": 275.2999999999064,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 630.739,
+            "y": 275.733,
+            "scale": 0.797625,
+            "time": 286.49999999990695,
+            "visible": "visible",
+            "face": true
+          },
+          {
+            "x": 629.111,
+            "y": 275.983,
+            "scale": 0.7893,
+            "time": 297.5999999999068,
+            "visible": "visible",
+            "face": true
+          }
+        ],
+        "registered": true
+      }
+    ],
+    "done": true,
+    "started": true,
+    "activeId": null
+  },
+  "lifecycle": {
+    "before": {
+      "x": 332.53,
+      "y": 392.605,
+      "scale": 1.06869
+    },
+    "after": {
+      "x": 332.53,
+      "y": 392.605,
+      "scale": 1.06869
+    },
+    "copyClean": true,
+    "resize": true,
+    "removal": true,
+    "styleExit": true
+  },
+  "errors": []
+}

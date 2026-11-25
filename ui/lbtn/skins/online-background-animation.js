@@ -67,11 +67,21 @@ export async function playOnlineBackground(canvas, path, signal, isCurrent, back
 		renderer = new spine.SceneRenderer(canvas, context);
 		renderer.camera.position.set(offset.x + size.x / 2, offset.y + size.y / 2, 0);
 
+		const frameInterval = window.decadeUI?.isMobile?.() ? 1000 / 24 : 0;
 		let last = performance.now();
+		let nextFrame = last;
 		function draw(now) {
 			if (!isCurrent() || !canvas.isConnected) {
 				dispose();
 				return;
+			}
+			if (frameInterval) {
+				if (now < nextFrame) {
+					frame = requestAnimationFrame(draw);
+					return;
+				}
+				// 保留刷新节拍余量，骨骼仍按两次实绘之间的时间推进。
+				nextFrame = now + frameInterval - (now - nextFrame) % frameInterval;
 			}
 			state.update(Math.min((now - last) / 1000, 0.1));
 			last = now;

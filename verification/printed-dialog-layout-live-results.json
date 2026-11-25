@@ -1,0 +1,15 @@
+{
+  "event": "chooseButton",
+  "parent": "dcshiji",
+  "visibility": "visible",
+  "gridTop": 75.27127247301412,
+  "upperGap": 40.78226836914697,
+  "lowerGap": 40.80648941129161,
+  "optionStyleWritesIn20Updates": 0,
+  "invariant": {
+    "event": true,
+    "buttons": true,
+    "selected": true
+  },
+  "limitation": "Balanced DOM adaptation, not official top37 branch or an official Android runtime pixel match."
+}

@@ -1,0 +1,117 @@
+{
+  "cases": [
+    {
+      "title": "诀言",
+      "titleDisplay": "flex",
+      "prompt": "是否发动“诀言”？",
+      "copies": 1,
+      "details": 0,
+      "hint": "none",
+      "tip": {
+        "x": 71.46875,
+        "y": 492.609375,
+        "width": 1495.046875,
+        "height": 36.765625,
+        "top": 492.609375,
+        "right": 1566.515625,
+        "bottom": 529.375,
+        "left": 71.46875
+      },
+      "bar": {
+        "x": 475.859375,
+        "y": 537.953125,
+        "width": 686.25,
+        "height": 31.859375,
+        "top": 537.953125,
+        "right": 1162.109375,
+        "bottom": 569.8125,
+        "left": 475.859375
+      },
+      "button": {
+        "x": 708.7095336914062,
+        "y": 584.5271606445312,
+        "width": 220.58099365234375,
+        "height": 66.17437744140625,
+        "top": 584.5271606445312,
+        "right": 929.29052734375,
+        "bottom": 650.7015380859375,
+        "left": 708.7095336914062
+      },
+      "options": {
+        "x": 434.82135009765625,
+        "y": 278.1645812988281,
+        "width": 768.3573608398438,
+        "height": 202.19931030273438,
+        "top": 278.1645812988281,
+        "right": 1203.1787109375,
+        "bottom": 480.3638916015625,
+        "left": 434.82135009765625
+      },
+      "gap": 12.007553643390128,
+      "promptGap": 6.999977681135791,
+      "buttons": 3,
+      "loading": "othersOff",
+      "style": "online",
+      "zoom": 1,
+      "moon": true,
+      "html": true
+    }
+  ],
+  "errors": [],
+  "comparisons": [
+    {
+      "style": "online",
+      "snapshots": [
+        {
+          "name": "chooseCard",
+          "closing": false,
+          "display": "block",
+          "visible": true,
+          "collapsed": false
+        },
+        {
+          "name": "chooseToUse",
+          "closing": false,
+          "display": "block",
+          "visible": true,
+          "collapsed": false
+        },
+        {
+          "name": "dcrejueyan",
+          "closing": false,
+          "display": "block",
+          "visible": true,
+          "collapsed": false
+        }
+      ],
+      "closed": true
+    },
+    {
+      "style": "xinsha",
+      "snapshots": [
+        {
+          "name": "chooseCard",
+          "closing": false,
+          "display": "block",
+          "visible": true,
+          "collapsed": false
+        },
+        {
+          "name": "chooseToUse",
+          "closing": false,
+          "display": "block",
+          "visible": true,
+          "collapsed": false
+        },
+        {
+          "name": "dcrejueyan",
+          "closing": false,
+          "display": "block",
+          "visible": true,
+          "collapsed": false
+        }
+      ],
+      "closed": true
+    }
+  ]
+}

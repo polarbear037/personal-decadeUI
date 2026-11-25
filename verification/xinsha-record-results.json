@@ -1,0 +1,229 @@
+{
+  "errors": [],
+  "dialogs": [],
+  "consoleErrors": [],
+  "failed": [],
+  "geometry": [
+    {
+      "zoom": 1,
+      "viewport": [
+        1290,
+        577
+      ],
+      "scale": 0.7693333333333333,
+      "tabsX": 559.0000119531588,
+      "tabsY": 33.000000634681,
+      "title": [
+        149.9999920664875,
+        51.00000007933512,
+        278.00003659993774,
+        45.00000357008063
+      ],
+      "list": [
+        500.0000264450417,
+        574.0000230600764
+      ],
+      "background": "url(\"http://127.0.0.1:11863/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/xinsha-record/game_record_info_bg.png\")",
+      "font": "28px",
+      "arenaPaused": false
+    },
+    {
+      "zoom": 1.5,
+      "viewport": [
+        1290,
+        577
+      ],
+      "scale": 1.1540000813802083,
+      "tabsX": 558.9999593098987,
+      "tabsY": 32.99999830751745,
+      "title": [
+        149.99999471099204,
+        50.99999978843969,
+        277.9999641052659,
+        44.99999709104562
+      ],
+      "list": [
+        499.9999647399469,
+        573.999956136494
+      ],
+      "background": "url(\"http://127.0.0.1:11863/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/xinsha-record/game_record_info_bg.png\")",
+      "font": "28px",
+      "arenaPaused": false
+    },
+    {
+      "zoom": 1,
+      "viewport": [
+        1638,
+        919
+      ],
+      "scale": 1.2253333333333334,
+      "tabsX": 558.9999758250306,
+      "tabsY": 33.00000067244935,
+      "title": [
+        150.00000249055316,
+        51.0000004732051,
+        278.00002736287746,
+        45.000002615080824
+      ],
+      "list": [
+        500.00001660368775,
+        573.9999798099157
+      ],
+      "background": "url(\"http://127.0.0.1:11863/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/xinsha-record/game_record_info_bg.png\")",
+      "font": "28px",
+      "arenaPaused": false
+    },
+    {
+      "zoom": 1.5,
+      "viewport": [
+        1638,
+        919
+      ],
+      "scale": 1.226,
+      "tabsX": 558.9999872553018,
+      "tabsY": 33.00000014935193,
+      "title": [
+        150.00000746759662,
+        51.00000079654364,
+        278.00000238963094,
+        44.99999850648068
+      ],
+      "list": [
+        500,
+        573.9999992034564
+      ],
+      "background": "url(\"http://127.0.0.1:11863/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/xinsha-record/game_record_info_bg.png\")",
+      "font": "28px",
+      "arenaPaused": false
+    },
+    {
+      "zoom": 1,
+      "viewport": [
+        2052,
+        919
+      ],
+      "scale": 1.2253333333333334,
+      "tabsX": 558.9999758250306,
+      "tabsY": 33.00000067244935,
+      "title": [
+        149.99999003778734,
+        51.0000004732051,
+        278.00002736287746,
+        45.000002615080824
+      ],
+      "list": [
+        500.00001660368775,
+        573.9999798099157
+      ],
+      "background": "url(\"http://127.0.0.1:11863/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/xinsha-record/game_record_info_bg.png\")",
+      "font": "28px",
+      "arenaPaused": false
+    },
+    {
+      "zoom": 1.5,
+      "viewport": [
+        2052,
+        919
+      ],
+      "scale": 1.226,
+      "tabsX": 558.9999872553018,
+      "tabsY": 33.00000014935193,
+      "title": [
+        150.00001991359096,
+        51.00000079654364,
+        278.00000238963094,
+        44.99999850648068
+      ],
+      "list": [
+        500,
+        573.9999992034564
+      ],
+      "background": "url(\"http://127.0.0.1:11863/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/xinsha-record/game_record_info_bg.png\")",
+      "font": "28px",
+      "arenaPaused": false
+    }
+  ],
+  "start": {
+    "style": "othersOff",
+    "opened": true,
+    "paused": true,
+    "rows": [
+      "刘备使用了杀，目标是关羽",
+      "关羽打出了闪",
+      "曹操使用了无中生有",
+      "刘备使用了桃",
+      "关羽发动了【武圣】"
+    ],
+    "tabs": 9,
+    "players": 8
+  },
+  "first": {
+    "rows": [
+      "刘备使用了杀，目标是关羽"
+    ],
+    "open": true,
+    "selected": 1
+  },
+  "second": [
+    "刘备使用了杀，目标是关羽",
+    "关羽打出了闪",
+    "关羽发动了【武圣】"
+  ],
+  "sameName": [
+    "刘备使用了桃"
+  ],
+  "live": {
+    "last": "曹操弃置了酒",
+    "unchanged": true,
+    "scrollable": true,
+    "atTop": true
+  },
+  "close": {
+    "removed": true,
+    "paused": false,
+    "event": true,
+    "selection": true,
+    "original": true
+  },
+  "extra": {
+    "shortcut": true,
+    "deadIncluded": true,
+    "hidden": {
+      "title": "3号位 未知武将",
+      "image": "linear-gradient(rgb(23, 17, 13), rgb(48, 37, 30))"
+    },
+    "plainFallback": true,
+    "pauses": 10,
+    "resumes": 10,
+    "rootCount": 0
+  },
+  "touch": {
+    "open": true,
+    "selected": true,
+    "event": true
+  },
+  "cleanup": {
+    "all": 42,
+    "detachedClean": true,
+    "styleClean": true,
+    "fallback": 2,
+    "links": 0
+  },
+  "isolation": [
+    {
+      "style": "onlineUI",
+      "custom": 0,
+      "native": true,
+      "online": true,
+      "requests": []
+    },
+    {
+      "style": "on",
+      "custom": 0,
+      "native": true,
+      "online": false,
+      "requests": []
+    }
+  ],
+  "ok": true
+}

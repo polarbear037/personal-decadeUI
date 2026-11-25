@@ -1,7 +1,7 @@
 {
   "request": "参考十周年UI自制晋势力图适配一将成名竖牌；用户要求使用一将成名字体。",
   "mode": "built-in image_gen：参考已有晋图与原版魏牌制作紫色竖牌，再移除生成字形；不改写输入图。",
-  "rendering": "空白紫色牌底使用PNG；晋字由CSS以dui-yjcm-label（fzbw.ttf）100设计单位渲染，沿用原有紫色发光特点。并非官方晋选势力图片。",
+  "rendering": "空白紫色牌底使用PNG；晋字由CSS以dui-yjcm-label（fzbw.ttf）85设计单位渲染，与其他势力图片内文字的可见大小对齐，沿用原有紫色发光特点。并非官方晋选势力图片。",
   "assets": [
     {
       "path": "ui/assets/lbtn/OL_line/uibutton/select_country_jin.png",

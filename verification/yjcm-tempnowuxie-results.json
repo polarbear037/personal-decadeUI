@@ -37,8 +37,8 @@
       "callback": true,
       "origin": "group-trick",
       "position": "absolute",
-      "background": "url(\"http://127.0.0.1:62813/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
-      "font": "dui-yjcm-label",
+      "background": "url(\"http://127.0.0.1:62605/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+      "font": "dui-yjcm-label, serif",
       "mobile": false,
       "style": "othersOff",
       "source": true,
@@ -47,7 +47,9 @@
       "clicked": {
         "glow": true,
         "cancelCalls": 1,
-        "origin": "group-trick"
+        "origin": "group-trick",
+        "display": "none",
+        "connected": true
       }
     },
     {
@@ -93,8 +95,8 @@
       "callback": true,
       "origin": "group-trick",
       "position": "absolute",
-      "background": "url(\"http://127.0.0.1:62813/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
-      "font": "dui-yjcm-label",
+      "background": "url(\"http://127.0.0.1:62605/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+      "font": "dui-yjcm-label, serif",
       "mobile": false,
       "style": "othersOff",
       "source": true,
@@ -144,8 +146,8 @@
       "callback": true,
       "origin": "group-trick",
       "position": "absolute",
-      "background": "url(\"http://127.0.0.1:62813/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
-      "font": "dui-yjcm-label",
+      "background": "url(\"http://127.0.0.1:62605/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+      "font": "dui-yjcm-label, serif",
       "mobile": false,
       "style": "othersOff",
       "source": true,
@@ -189,8 +191,8 @@
       "callback": true,
       "origin": "group-trick",
       "position": "absolute",
-      "background": "url(\"http://127.0.0.1:62813/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
-      "font": "dui-yjcm-label",
+      "background": "url(\"http://127.0.0.1:62605/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+      "font": "dui-yjcm-label, serif",
       "mobile": true,
       "style": "othersOff",
       "source": true,
@@ -199,7 +201,9 @@
       "clicked": {
         "glow": true,
         "cancelCalls": 1,
-        "origin": "group-trick"
+        "origin": "group-trick",
+        "display": "none",
+        "connected": true
       }
     },
     {
@@ -245,8 +249,8 @@
       "callback": true,
       "origin": "group-trick",
       "position": "absolute",
-      "background": "url(\"http://127.0.0.1:62813/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
-      "font": "dui-yjcm-label",
+      "background": "url(\"http://127.0.0.1:62605/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+      "font": "dui-yjcm-label, serif",
       "mobile": false,
       "style": "othersOff",
       "source": true,
@@ -296,8 +300,8 @@
       "callback": true,
       "origin": "group-trick",
       "position": "absolute",
-      "background": "url(\"http://127.0.0.1:62813/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
-      "font": "dui-yjcm-label",
+      "background": "url(\"http://127.0.0.1:62605/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/game_btn_2.png\")",
+      "font": "dui-yjcm-label, serif",
       "mobile": false,
       "style": "othersOff",
       "source": true,

@@ -1,0 +1,60 @@
+/* 6.4.1 recordGameInfo / recordTabBtnCcb；来源和原图哈希见 verification/yjcm-record-source.json。 */
+body[data-style="othersOff"] .xinsha-record-overlay {
+	position: absolute; inset: 0; z-index: 210; overflow: hidden; background: none;
+	font-family: "dui-yjcm-label", serif; text-shadow: none; touch-action: manipulation;
+}
+body[data-style="othersOff"] .xinsha-record-overlay,
+body[data-style="othersOff"] .xinsha-record-overlay * { box-sizing: border-box; transition: none !important; animation: none !important; }
+body[data-style="othersOff"] #window.xinsha-record-open #arenalog { visibility: hidden; }
+body[data-style="othersOff"] .xinsha-record-scene {
+	position: absolute; width: 671px; height: 750px; transform-origin: top left;
+	margin: 0; padding: 0; border: 0; overflow: visible;
+}
+body[data-style="othersOff"] .xinsha-record-scene::before {
+	content: ""; position: absolute; left: -150px; top: 0; width: 982px; height: 750px;
+	background: url(../../image/ui/xinsha-record/game_record_info_bg.png) center / 100% 100% no-repeat; pointer-events: none;
+}
+body[data-style="othersOff"] .xinsha-record-title {
+	position: absolute; left: 150px; top: 51px; width: 278px; height: 45px; padding: 0; margin: 0;
+	background: url(../../image/ui/xinsha-record/gameRecordBtn_1.png) center / 100% 100% no-repeat;
+	font: 24px/45px "dui-yjcm-label", serif; color: #c1ae8e; text-align: center; font-weight: normal;
+}
+body[data-style="othersOff"] .xinsha-record-list {
+	position: absolute; left: 0; top: 166px; width: 500px; height: 574px; margin: 0; padding: 10px;
+	overflow-x: hidden; overflow-y: auto; scrollbar-width: none; overscroll-behavior: contain; touch-action: pan-y;
+	font: 28px/40px "dui-yjcm-label", serif; color: #a37052; text-align: left; outline: none;
+}
+body[data-style="othersOff"] .xinsha-record-list::-webkit-scrollbar,
+body[data-style="othersOff"] .xinsha-record-tabs::-webkit-scrollbar { display: none; }
+body[data-style="othersOff"] .xinsha-record-row {
+	position: relative; display: block; width: 100%; min-height: 40px; margin: 0; padding: 0;
+	font: inherit; color: inherit; text-align: left; overflow-wrap: anywhere;
+}
+body[data-style="othersOff"] .xinsha-record-row .bluetext { color: #e6bd38; }
+body[data-style="othersOff"] .xinsha-record-row .yellowtext { color: #f3d8a6; }
+body[data-style="othersOff"] .xinsha-record-row .greentext { color: #f0e41d; }
+body[data-style="othersOff"] .xinsha-record-row * { position: static; font-family: inherit; font-size: inherit; line-height: inherit; text-shadow: none; }
+body[data-style="othersOff"] .xinsha-record-tabs {
+	position: absolute; left: 559px; top: 33px; width: 112px; max-height: 717px;
+	display: flex; flex-direction: column; gap: 30px; overflow-y: auto; scrollbar-width: none; overscroll-behavior: contain; touch-action: pan-y;
+}
+body[data-style="othersOff"] .xinsha-record-tabs .xinsha-player-tab {
+	position: relative; display: block; flex: 0 0 50px; width: 112px; height: 50px; margin: 0; padding: 0;
+	border: 0; border-radius: 0; box-shadow: none; cursor: pointer; outline-offset: -2px;
+	background: url(../../image/ui/xinsha-record/record_unselectg.png) center / 100% 100% no-repeat;
+	font: 26px/50px "dui-yjcm-label", serif; color: #ffedc7;
+}
+body[data-style="othersOff"] .xinsha-record-tabs .xinsha-player-tab[aria-pressed="true"] {
+	background-image: url(../../image/ui/xinsha-record/record_selectg.png);
+}
+body[data-style="othersOff"] .xinsha-record-tabs .xinsha-player-tab > span:last-child {
+	position: absolute; left: 5px; top: 0; height: 50px; line-height: 50px;
+}
+body[data-style="othersOff"] .xinsha-record-tabs .xinsha-player-tab:first-child > span:last-child { left: 0; width: 80px; text-align: center; }
+body[data-style="othersOff"] .xinsha-record-tabs .xinsha-player-avatar {
+	position: absolute; left: 38px; top: 7px; width: 44px; height: 43px; pointer-events: none;
+}
+body[data-style="othersOff"] .xinsha-record-tabs .xinsha-player-avatar::after {
+	content: ""; position: absolute; left: -2px; top: -3px; width: 48px; height: 49px; border-radius: 0;
+	background: url(../../image/ui/xinsha-record/record_head.png) center / 100% 100% no-repeat;
+}

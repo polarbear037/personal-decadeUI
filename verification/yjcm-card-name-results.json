@@ -48,7 +48,7 @@
     "normal": {
       "display": "block",
       "color": "rgb(193, 174, 142)",
-      "bg": "url(\"http://127.0.0.1:56520/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/game_ui_cards_tag_normal.png\")",
+      "bg": "url(\"http://127.0.0.1:11011/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/game_ui_cards_tag_normal.png\")",
       "bottom": 4.31034,
       "height": 25.8594,
       "font": 18.8571,
@@ -74,7 +74,7 @@
     "selected": {
       "selected": true,
       "color": "rgb(255, 233, 129)",
-      "bg": "url(\"http://127.0.0.1:56520/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/game_ui_cards_tag_select.png\")"
+      "bg": "url(\"http://127.0.0.1:11011/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/card/xinsha/game_ui_cards_tag_select.png\")"
     },
     "stableWrites": 0,
     "copyOutside": "none",

@@ -1,0 +1,16 @@
+{
+  "event": "damage",
+  "player": "yue_zhugeguo",
+  "me": "dc_huangchengyan",
+  "choosing": false,
+  "paused2": false,
+  "controls": [
+    {
+      "display": "none",
+      "visibility": "visible",
+      "hiddenClass": true,
+      "text": ""
+    }
+  ],
+  "confirmConnected": false
+}

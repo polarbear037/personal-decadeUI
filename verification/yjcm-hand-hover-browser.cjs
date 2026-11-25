@@ -32,7 +32,7 @@ const spread = method('noname/ui/index.js', '  getSpreadOffset(', '  refresh(');
 			await page.addScriptTag({content:script('noname/ui/click/index.js','window.NativeClick=Click;')});
 			await page.addScriptTag({content:'ui.getSpreadOffset=({'+spread+'}).getSpreadOffset;'});
 			await page.addScriptTag({content:script('extension/十周年UI/src/core/layout.js','window.hoverLayout=e();')});
-			await page.addScriptTag({content:script('extension/十周年UI/src/ui/handcard-motion-xinsha.js','Object.assign(window,{updateXinshaHandMotion,clearXinshaHandMotion,restoreXinshaHandMotionCopy,finishXinshaHandMotion});')});
+			await page.addScriptTag({content:script('extension/十周年UI/src/ui/handcard-motion-xinsha.js','Object.assign(window,{updateXinshaHandMotion,clearXinshaHandMotion,restoreXinshaHandMotionCopy,finishXinshaHandMotion,withXinshaHandLayout});')});
 			await page.addScriptTag({content:script('extension/十周年UI/src/utils/hand-card-position.js','window.preserveConfirmedHandCard=preserveConfirmedHandCard;')});
 			await page.addScriptTag({content:script('extension/十周年UI/src/overrides/card/overrides.js','window.hoverTransform=p;')});
 			await page.addScriptTag({content:script('extension/十周年UI/src/overrides/ui/click.js','window.productionCardClick=t;')});

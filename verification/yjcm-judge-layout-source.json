@@ -1,0 +1,659 @@
+{
+  "client": {
+    "apk": "D:\\yoka_sgs.x_g_android_6.4.5.apk",
+    "sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+    "packed_sha256": "df9af4ec01e45b7a2bca47b4fa22c1537c8c8365199b8ba2f764224d5e696d04",
+    "decoded_sha256": "23e20c1adc656591533849a0fccff66ec2262d1b8e8730492f9c0f242c2aae28"
+  },
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_97f06108101d98cedd8001cc310e13e8688193c5bf23b743206c2881553c7f7f"
+  ],
+  "modules": [
+    {
+      "member": "app.view.game.GameSelfSeatUi",
+      "sha256": "e7c812fcb76fc79acfa3faf81ba1715cf3ee137737cc3a424f0f4d2209d317bf",
+      "functions": [
+        {
+          "id": "0.121",
+          "offset": 122223,
+          "source": null,
+          "line": 3214,
+          "last": 3244,
+          "flags": [
+            0,
+            1,
+            0,
+            6
+          ],
+          "code": [
+            4194372,
+            91,
+            2147581988,
+            4194372,
+            12599392,
+            32961,
+            29409476,
+            65797,
+            82245,
+            41959500,
+            8388618
+          ],
+          "constants": [
+            "gameJudge",
+            "align",
+            "display",
+            "LEFT_BOTTOM",
+            108.0,
+            194.0
+          ],
+          "children": 0
+        }
+      ]
+    },
+    {
+      "member": "app.view.game.GameJudgeCcb",
+      "sha256": "226ec707015cd70f1ce525178323997f387a7e16c5a0a88efc3c9e64cf502146",
+      "functions": [
+        {
+          "id": "0.0",
+          "offset": 2743,
+          "source": null,
+          "line": 83,
+          "last": 98,
+          "flags": [
+            0,
+            2,
+            0,
+            13
+          ],
+          "code": [
+            8405120,
+            2147483684,
+            161,
+            4194528,
+            4211012,
+            25182412,
+            225,
+            2164310046,
+            225,
+            2172698654,
+            21037252,
+            2181087262,
+            4260036,
+            219,
+            2147778596,
+            82117,
+            98565,
+            115013,
+            2147696858,
+            131525,
+            50332175,
+            58851787,
+            115140,
+            475,
+            2147598372,
+            63062560,
+            63079072,
+            16810636,
+            4260548,
+            54641425,
+            92472009,
+            84066962,
+            25182732,
+            2147221704,
+            8388618
+          ],
+          "constants": [
+            "hideCcbTags",
+            "HideTag",
+            "judgeCards",
+            "btns",
+            "spaceXOffset",
+            2.0,
+            7.0,
+            1.0,
+            "_mark",
+            "setPositionX",
+            "getPositionX"
+          ],
+          "children": 0
+        },
+        {
+          "id": "0.13",
+          "offset": 7810,
+          "source": null,
+          "line": 216,
+          "last": 294,
+          "flags": [
+            0,
+            1,
+            0,
+            20
+          ],
+          "code": [
+            4194400,
+            4210884,
+            25182284,
+            4227140,
+            8388686,
+            12632085,
+            2147483684,
+            8388618,
+            65605,
+            4227204,
+            16777358,
+            65733,
+            2150907994,
+            4227396,
+            42008900,
+            58720660,
+            66053,
+            46219844,
+            603,
+            2147614756,
+            46219716,
+            41943631,
+            79790752,
+            16810636,
+            83886607,
+            79807136,
+            16810636,
+            83886479,
+            2147565604,
+            46269024,
+            16810572,
+            16987,
+            2147483684,
+            609,
+            79839620,
+            4358724,
+            75612740,
+            16987,
+            2147500068,
+            4375108,
+            75596356,
+            75498112,
+            2147483684,
+            79889028,
+            75498176,
+            2147483684,
+            79905476,
+            667,
+            2150301732,
+            230149,
+            33555279,
+            100877067,
+            197380,
+            795,
+            2150203428,
+            246529,
+            105120516,
+            230213,
+            33555343,
+            109282123,
+            213828,
+            83886991,
+            25182988,
+            230149,
+            33555279,
+            100877067,
+            197380,
+            105136928,
+            16794380,
+            230149,
+            33555279,
+            100877067,
+            197380,
+            105153312,
+            16810764,
+            230213,
+            33555343,
+            109282123,
+            213828,
+            113558368,
+            16810828,
+            4522884,
+            117506948,
+            923,
+            2147565604,
+            4522884,
+            117506948,
+            121979808,
+            16794508,
+            4522884,
+            38110110,
+            4522884,
+            377793,
+            130417604,
+            130433988,
+            83887119,
+            16810956,
+            130450400,
+            1095,
+            50331663,
+            15,
+            25199564,
+            130466784,
+            246849,
+            147260484,
+            50309,
+            50373,
+            41976780,
+            130499552,
+            230469,
+            33555599,
+            142902347,
+            279620,
+            25199564,
+            33801118,
+            230277,
+            33555407,
+            117687179,
+            230276,
+            2399224734,
+            2181169174,
+            2148057124,
+            508805,
+            33555407,
+            117687179,
+            230276,
+            17307,
+            2147827748,
+            508805,
+            33555407,
+            117687179,
+            525249,
+            130565060,
+            130581444,
+            574469,
+            16810956,
+            130466784,
+            246849,
+            147391556,
+            105464977,
+            623813,
+            41976780,
+            130499552,
+            230469,
+            33555599,
+            142902347,
+            279620,
+            640133,
+            33588172,
+            117686302,
+            508805,
+            33555407,
+            117687179,
+            230276,
+            122291104,
+            67109903,
+            25183116,
+            2147729444,
+            508805,
+            33555407,
+            117687179,
+            230276,
+            923,
+            2147631140,
+            508805,
+            33555407,
+            117687179,
+            230276,
+            121979808,
+            16794508,
+            508805,
+            33555407,
+            117687179,
+            121995294,
+            230277,
+            33555407,
+            117687179,
+            230276,
+            122307460,
+            923,
+            2147663908,
+            230277,
+            33555407,
+            117687179,
+            230276,
+            122307460,
+            121979808,
+            16794508,
+            230277,
+            33555407,
+            117687179,
+            230276,
+            2495972254,
+            731,
+            2147909668,
+            689025,
+            705477,
+            16810892,
+            122045316,
+            92275663,
+            16810892,
+            122078112,
+            246785,
+            139002884,
+            105497698,
+            113886370,
+            41976716,
+            122110880,
+            230405,
+            33555535,
+            134497291,
+            263172,
+            25199500,
+            122356704,
+            738373,
+            8389762,
+            33571788,
+            230341,
+            33555471,
+            126092235,
+            246724,
+            2491646942,
+            339,
+            2144010312,
+            8388618
+          ],
+          "constants": [
+            "hideCcbTags",
+            "HideTag",
+            "judgeCards",
+            0.0,
+            1.0,
+            "stateId",
+            "getValue",
+            "getStateSkillId",
+            "getFirstSkill",
+            "skillId",
+            "StateMark",
+            "JudgeMark",
+            "img",
+            "spineName",
+            "_mark",
+            "display",
+            "setImage",
+            "show",
+            "getWidth",
+            "getHeight",
+            "btns",
+            "removeSelf",
+            null,
+            "ui",
+            "SimpleButton",
+            "new",
+            "onButtonClicked",
+            "align",
+            "LEFT_BOTTOM",
+            "addTo",
+            "data",
+            "numLable",
+            "ct",
+            "ccb",
+            "createLabelByStyle",
+            "FZBW_255_255_255_14",
+            "CENTER",
+            4.0,
+            7.0,
+            2.0,
+            "setString",
+            "spine",
+            "require",
+            "app.ui.SpineNode",
+            "playAnimation",
+            "play"
+          ],
+          "children": 1
+        }
+      ]
+    }
+  ],
+  "ccb": {
+    "member": "assets/res/new/data/ccb/judgeshow.ccbi",
+    "sha256": "6a67d5afa567d7f4cae56d8fde8cbd6823654bbe24936473dbd341332aa740d6",
+    "tree": {
+      "class": "CCNode",
+      "properties": {
+        "contentSize": [
+          250,
+          35,
+          0
+        ],
+        "anchorPoint": [
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          0
+        ],
+        "ignoreAnchorPointForPosition": 0
+      },
+      "children": [
+        {
+          "class": "CCSprite",
+          "properties": {
+            "anchorPoint": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              0
+            ],
+            "tag": 201,
+            "ignoreAnchorPointForPosition": 0,
+            "displayFrame": [
+              "gameinfo.plist",
+              "spellsign_1.png"
+            ]
+          },
+          "children": [],
+          "offset": 317
+        },
+        {
+          "class": "CCSprite",
+          "properties": {
+            "position": [
+              35,
+              0,
+              0
+            ],
+            "anchorPoint": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              0
+            ],
+            "tag": 202,
+            "ignoreAnchorPointForPosition": 0,
+            "displayFrame": [
+              "gameinfo.plist",
+              "spellsign_2.png"
+            ]
+          },
+          "children": [],
+          "offset": 349
+        },
+        {
+          "class": "CCSprite",
+          "properties": {
+            "position": [
+              70,
+              0,
+              0
+            ],
+            "anchorPoint": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              0
+            ],
+            "tag": 203,
+            "ignoreAnchorPointForPosition": 0,
+            "displayFrame": [
+              "gameinfo.plist",
+              "spellsign_3.png"
+            ]
+          },
+          "children": [],
+          "offset": 389
+        },
+        {
+          "class": "CCSprite",
+          "properties": {
+            "position": [
+              105,
+              0,
+              0
+            ],
+            "anchorPoint": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              0
+            ],
+            "tag": 204,
+            "ignoreAnchorPointForPosition": 0,
+            "displayFrame": [
+              "gameinfo.plist",
+              "spellsign_4.png"
+            ]
+          },
+          "children": [],
+          "offset": 429
+        },
+        {
+          "class": "CCSprite",
+          "properties": {
+            "position": [
+              140,
+              0,
+              0
+            ],
+            "anchorPoint": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              0
+            ],
+            "tag": 205,
+            "ignoreAnchorPointForPosition": 0,
+            "displayFrame": [
+              "gameinfo.plist",
+              "spellsign_5.png"
+            ]
+          },
+          "children": [],
+          "offset": 470
+        },
+        {
+          "class": "CCSprite",
+          "properties": {
+            "position": [
+              175,
+              0,
+              0
+            ],
+            "anchorPoint": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              0
+            ],
+            "tag": 206,
+            "ignoreAnchorPointForPosition": 0,
+            "displayFrame": [
+              "gameinfo.plist",
+              "spellsign_6.png"
+            ]
+          },
+          "children": [],
+          "offset": 512
+        },
+        {
+          "class": "CCSprite",
+          "properties": {
+            "position": [
+              210,
+              0,
+              0
+            ],
+            "anchorPoint": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              0
+            ],
+            "tag": 207,
+            "ignoreAnchorPointForPosition": 0,
+            "displayFrame": [
+              "gameinfo.plist",
+              "spellsign_7.png"
+            ]
+          },
+          "children": [],
+          "offset": 553
+        }
+      ],
+      "offset": 283
+    }
+  },
+  "frames": {
+    "member": "assets/res/new/tex/plist/gameinfo.plist",
+    "sha256": "2d23c6a2d9d8254115ce892f1895db16cd6f9fb30e6dd512ab835e8b6c4b7731",
+    "selected": {
+      "spellsign_1.png": {
+        "frame": "{{1193,1803},{39,41}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{39,41}}",
+        "sourceSize": "{39,41}"
+      },
+      "spellsign_3.png": {
+        "frame": "{{1652,1749},{39,41}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{39,41}}",
+        "sourceSize": "{39,41}"
+      },
+      "spellsign_7.png": {
+        "frame": "{{1065,1807},{39,41}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{39,41}}",
+        "sourceSize": "{39,41}"
+      }
+    }
+  },
+  "observations": [
+    "GameSelfSeatUi.layoutYJCM0.121 PC4..10: gameJudge.align(LEFT_BOTTOM,108,194). Final override after createChildren; unrelated to portrait position.",
+    "GameSelfSeatUi.createChildren0.120 PC239..252 creates GameJudgeCcb.new() with no spaceXOffset. onCreate0.0 PC13..34 only adds the optional offset when supplied; ordinary slots remain0,35,70,...",
+    "judgeshow.ccbi has anchor(0,0), size250x35; each mark has anchor(0,0), y0. gameinfo.plist mark sprites are39x41.",
+    "GameJudgeCcb.updateUI0.13 PC196..217 centers each Spine in its mark and loops play. The local existing45x45 dynamic PNG remains, centered on the39x41 source carrier; artwork and animation lifecycle unchanged."
+  ],
+  "limitation": "Static shipped bytecode/layout inspection; no official Android runtime comparison. Local browser and current Electron verification are separate."
+}

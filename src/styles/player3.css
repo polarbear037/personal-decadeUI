@@ -41,16 +41,53 @@ body[data-style="othersOff"] #arena {
 	--yjcm-seat-turn: url("../../image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m_play_dynamic.png");
 	--yjcm-seat-selected: url("../../image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m_play_dynamic.png");
 	--yjcm-seat-response: url("../../image/ui/effects/xinsha/SF_eff_paiju_paidired_m_play_dynamic.png");
+}
+
+/* 非龙旗：赤炎、玄墨、耀金沿用当前定位；玄墨的 m2 横向补偿在下方单独覆盖。 */
+body[data-style="othersOff"] #arena:not([data-border-style="dragon4"]) {
+	--yjcm-seat-white-x: 48%;
+	--yjcm-seat-white-y: 49.8%;
+	--yjcm-seat-white-width: 116%;
+	--yjcm-seat-white-height: 108.6%;
 	--yjcm-seat-halo-width: 130.857143%;
 	--yjcm-seat-halo-x: 50.285714%;
 	--yjcm-seat-halo-y: 50.108932%;
 	--yjcm-seat-halo-height: 122.875817%;
+	--yjcm-seat-halo-scale: 1.03;
 	--yjcm-seat-selected-width: 130.484330%;
 	--yjcm-seat-selected-x: 50.427350%;
+	--yjcm-seat-selected-y: 50.108932%;
+	--yjcm-seat-selected-height: 120.875817%;
+	--yjcm-seat-selected-scale: 1.05;
 	--yjcm-seat-red-width: 139.031339%;
 	--yjcm-seat-red-x: 50.142450%;
-	--yjcm-seat-red-y: 50.436681%;
+	--yjcm-seat-red-y: 50.136681%;
 	--yjcm-seat-red-height: 128.820961%;
+	--yjcm-seat-red-scale: 1.03;
+}
+
+/* 龙旗独立参数：白色可选框、绿色回合框、金色选中框、红色响应框。
+ * x/y 为中心位置，width/height 为长宽，scale 为状态缩放；只在此处调整龙旗。 */
+body[data-style="othersOff"] #arena[data-border-style="dragon4"] {
+	--yjcm-seat-white-x: 50%;
+	--yjcm-seat-white-y: 49.8%;
+	--yjcm-seat-white-width: 112%;
+	--yjcm-seat-white-height: 108.6%;
+	--yjcm-seat-halo-width: 130.857143%;
+	--yjcm-seat-halo-x: 50.285714%;
+	--yjcm-seat-halo-y: 50.108932%;
+	--yjcm-seat-halo-height: 122.875817%;
+	--yjcm-seat-halo-scale: 1.03;
+	--yjcm-seat-selected-width: 130.484330%;
+	--yjcm-seat-selected-x: 50.427350%;
+	--yjcm-seat-selected-y: 50.108932%;
+	--yjcm-seat-selected-height: 120.875817%;
+	--yjcm-seat-selected-scale: 1.05;
+	--yjcm-seat-red-width: 139.031339%;
+	--yjcm-seat-red-x: 50.142450%;
+	--yjcm-seat-red-y: 49.836681%;
+	--yjcm-seat-red-height: 127.020961%;
+	--yjcm-seat-red-scale: 1.03;
 }
 
 /* GeneralUiResCfg.isUseOldDragon：仅DragonType2使用 m2，其他三种沿用 m。 */
@@ -58,12 +95,12 @@ body[data-style="othersOff"] #arena[data-border-style="dragon2"] {
 	--yjcm-seat-turn: url("../../image/ui/effects/xinsha/SF_eff_paiju_paidigreen_m2_play_dynamic.png");
 	--yjcm-seat-selected: url("../../image/ui/effects/xinsha/SF_eff_paiju_paidiorange_m2_play_dynamic.png");
 	--yjcm-seat-response: url("../../image/ui/effects/xinsha/SF_eff_paiju_paidired_m2_play_dynamic.png");
-	--yjcm-seat-halo-width: 130.379747%;
-	--yjcm-seat-halo-x: 50.316456%;
-	--yjcm-seat-selected-width: 130.379747%;
-	--yjcm-seat-selected-x: 50.316456%;
-	--yjcm-seat-red-width: 139.682540%;
-	--yjcm-seat-red-x: 50.158730%;
+	--yjcm-seat-halo-width: 136.379747%;
+	--yjcm-seat-halo-x: 48.316456%;
+	--yjcm-seat-selected-width: 134.379747%;
+	--yjcm-seat-selected-x: 47.916456%;
+	--yjcm-seat-red-width: 145.679747%;
+	--yjcm-seat-red-x: 47.416456%;
 }
 
 body[data-style="othersOff"] #arena .player::before {
@@ -108,10 +145,10 @@ body[data-style="othersOff"] #arena .player::after {
 body[data-style="othersOff"] #arena .player.selectable:not(.selected)::before {
 	/* 白框169×243，亮边(6,6)-(162,236)：单独外扩3px，并保留自身的居中补偿。
 	 * 与红绿框共用底层；亮边露在角色框外，不能为显示白框抬层级压住露头立绘。 */
-	left: 50.335306%;
-	top: 50.224638%;
-	width: 113.333333%;
-	height: 109.173913%;
+	left: var(--yjcm-seat-white-x);
+	top: var(--yjcm-seat-white-y);
+	width: var(--yjcm-seat-white-width);
+	height: var(--yjcm-seat-white-height);
 	background-image: url("../../image/ui/effects/xinsha/paiju_target_actived.png");
 	opacity: 1;
 	animation: yjcm-target-enter 2s linear both, yjcm-target-breathe 2s linear 2s infinite;
@@ -120,16 +157,18 @@ body[data-style="othersOff"] #arena .player.selectable:not(.selected)::before {
 /* 状态2优先于可选及回合：选中即切换金色，APNG按骨骼原时长自行循环。 */
 body[data-style="othersOff"] #arena .player.selected::before {
 	left: var(--yjcm-seat-selected-x);
+	top: var(--yjcm-seat-selected-y);
 	width: var(--yjcm-seat-selected-width);
+	height: var(--yjcm-seat-selected-height);
 	background-image: var(--yjcm-seat-selected);
-	transform: translate(-50%, -50%) scale(1.05);
+	transform: translate(-50%, -50%) scale(var(--yjcm-seat-selected-scale));
 	opacity: 1;
 }
 
 /* 状态1：其他角色自己的回合。 */
 body[data-style="othersOff"] #arena .player.glow_phase:not(.selectable):not(.selected):not([data-position="0"])::before {
 	background-image: var(--yjcm-seat-turn);
-	transform: translate(-50%, -50%) scale(1.03);
+	transform: translate(-50%, -50%) scale(var(--yjcm-seat-halo-scale));
 	opacity: 1;
 }
 
@@ -141,7 +180,7 @@ body[data-style="othersOff"] #arena .player.target:not(.glow_phase):not([data-po
 	width: var(--yjcm-seat-red-width);
 	height: var(--yjcm-seat-red-height);
 	background-image: var(--yjcm-seat-response);
-	transform: translate(-50%, -50%) scale(1.03);
+	transform: translate(-50%, -50%) scale(var(--yjcm-seat-red-scale));
 	opacity: 1;
 }
 
@@ -157,13 +196,25 @@ body[data-style="othersOff"] #arena[data-target_shake="zoom"] .player[data-posit
 }
 
 @keyframes yjcm-target-enter {
-	from { opacity: 0; }
-	to { opacity: 1; }
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes yjcm-target-breathe {
-	0%, 100% { opacity: 1; }
-	50% { opacity: 0.5; }
+
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
 }
 
 /** 遮罩层 */
@@ -370,10 +421,10 @@ body[data-style="othersOff"] #arena[data-target_shake="zoom"] .player[data-posit
 body[data-style="othersOff"] #arena.decadeUI .player>.camp-wrap>.camp-border::after {
 	content: none;
 	position: absolute;
-	left: var(--dragon-mask-left, 9%);
-	top: var(--dragon-mask-top, 0);
-	width: var(--dragon-mask-width, 82%);
-	height: var(--dragon-mask-height, 100%);
+	left: var(--dragon-mask-left, -1%);
+	top: var(--dragon-mask-top, -3%);
+	width: var(--dragon-mask-width, 882%);
+	height: var(--dragon-mask-height, 104%);
 	background-image: var(--dragon-mask);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -393,24 +444,27 @@ body[data-style="othersOff"] #arena.decadeUI {
 
 body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon2"] {
 	--dragon-mask: url("../../image/styles/xinsha/sgs_paiju_heilongkuang_play_dynamic.png");
-	--dragon-mask-left: 18%;
+	--dragon-mask-left: 9%;
+	--dragon-mask-top: -5%;
 	--dragon-mask-width: 79%;
 	--dragon-mask-filter: brightness(1.1) contrast(1.1) saturate(1.5) sepia(0.2);
 }
 
 body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon3"] {
 	--dragon-mask: url("../../image/styles/xinsha/sgs_paiju_jinlongkuang_play_dynamic.png");
-	--dragon-mask-left: 10%;
-	--dragon-mask-width: 89%;
+	--dragon-mask-left: -3%;
+	--dragon-mask-top: -8%;
+	--dragon-mask-width: 94%;
+	--dragon-mask-height: 103%;
 	--dragon-mask-filter: brightness(1.1) contrast(1.7) saturate(1.5) sepia(0.3);
 }
 
 body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] {
 	--dragon-mask: url("../../image/styles/xinsha/sgs_paiju_laolongkuang_play_dynamic.png");
-	--dragon-mask-left: 15%;
-	--dragon-mask-top: 6%;
-	--dragon-mask-width: 70%;
-	--dragon-mask-height: 88%;
+	--dragon-mask-left: 11%;
+	--dragon-mask-top: 4%;
+	--dragon-mask-width: 79%;
+	--dragon-mask-height: 94%;
 	--dragon-mask-filter: brightness(1.1) contrast(1.2);
 }
 
@@ -593,39 +647,224 @@ body[data-style="othersOff"] #arena>.player:not(.minskin)>.name.name2 {
 /** 血量显示 */
 /* GeneralYjcmHpContainer：原39×40手牌图标和139×178透明血条底图。
  * 原生牌身180高对应官方245高，局部控件在同一设计坐标中缩放。 */
-body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player:not(.minskin) > .hp-wrap {
-	right: 2px !important; bottom: 4px !important; left: auto !important; top: auto !important;
-	width: 36px !important; height: 105px !important; border: 0 !important; border-image: none !important;
-	background: none; transform: scale(0.7346938776); transform-origin: right bottom;
-	--yjcm-hp-bg-height: 216px; --yjcm-hp-bg: url("../../ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png");
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"]>.player:not(.minskin)>.hp-wrap {
+	right: -1px !important;
+	bottom: -1px !important;
+	left: auto !important;
+	top: auto !important;
+	width: 36px !important;
+	height: 105px !important;
+	border: 0 !important;
+	border-image: none !important;
+	background: none;
+	transform: scale(0.7346938776);
+	transform-origin: right bottom;
+	--yjcm-hp-bg-height: 216px;
+	--yjcm-hp-bg: url("../../ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png");
 }
-body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player[data-border-level="five"] > .hp-wrap,
-body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"][data-border-level="five"] > .player > .hp-wrap {
-	--yjcm-hp-bg: url("../../ui/assets/lbtn/yijiang/dragon2_hp_grade_5.png");
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"]>.player:is([data-max-hp="1"], [data-max-hp="2"])>.hp-wrap {
+	--yjcm-hp-bg-height: 178px;
 }
-body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player:is([data-max-hp="1"],[data-max-hp="2"]) > .hp-wrap { --yjcm-hp-bg-height: 178px; }
-body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player[data-max-hp="3"] > .hp-wrap { --yjcm-hp-bg-height: 196px; }
-body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player[data-max-hp="5"] > .hp-wrap,
-body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player > .hp-wrap:has(> .hp.textstyle) { --yjcm-hp-bg-height: 236px; }
-body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player > .hp-wrap::before {
-	content: ""; position: absolute; left: -97px; bottom: -7px; width: 139px; height: var(--yjcm-hp-bg-height);
-	box-sizing: border-box; border-style: solid; border-width: 146px 0 30px;
-	border-image: var(--yjcm-hp-bg) 146 0 30 0 fill / 146px 0 30px 0 stretch; pointer-events: none;
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"]>.player[data-max-hp="3"]>.hp-wrap {
+	--yjcm-hp-bg-height: 196px;
 }
-body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player > .hp-wrap > .hp {
-	left: 15px !important; right: auto !important; bottom: 6px !important; top: auto !important;
-	width: 20px !important; height: auto; margin: 0 !important; gap: 0; font-size: 20px; line-height: 20px;
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"]>.player[data-max-hp="5"]>.hp-wrap,
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"]>.player>.hp-wrap:has(> .hp.textstyle) {
+	--yjcm-hp-bg-height: 236px;
 }
-body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player > .hp-wrap > .hp > div:not(.shield) {
-	width: 20px; height: 20px; flex: 0 0 20px; margin: 0 !important; transform: none; background-size: contain;
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"]>.player>.hp-wrap::before {
+	content: "";
+	position: absolute;
+	left: -97px;
+	bottom: -7px;
+	width: 139px;
+	height: var(--yjcm-hp-bg-height);
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 146px 0 30px;
+	border-image: var(--yjcm-hp-bg) 146 0 30 0 fill / 146px 0 30px 0 stretch;
+	pointer-events: none;
 }
-body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player > .hp-wrap > .hp.textstyle { bottom: 11px !important; display: block; text-align: center; }
-body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] > .player > .hp-wrap > .hp.textstyle > div:not(.shield) { display: block; margin-top: 5px !important; }
-body[data-style="othersOff"] #arena > .player[data-position="0"] > .card-count {
-	visibility: visible !important; width: 28.65px; height: 29.39px; left: -4.4px; bottom: 12.12px;
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"]>.player>.hp-wrap>.hp {
+	left: 13px !important;
+	right: auto !important;
+	bottom: 6px !important;
+	top: auto !important;
+	width: 20px !important;
+	height: auto;
+	margin: 0 !important;
+	gap: 0;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"]>.player>.hp-wrap>.hp>div:not(.shield) {
+	width: 20px;
+	height: 20px;
+	flex: 0 0 20px;
+	margin: 0 !important;
+	transform: none;
+	background-size: contain;
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"]>.player>.hp-wrap>.hp.textstyle {
+	bottom: 11px !important;
+	display: block;
+	text-align: center;
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"]>.player>.hp-wrap>.hp.textstyle>div:not(.shield) {
+	display: block;
+	margin-top: 5px !important;
+}
+
+/* 五阶同样使用座位 TypeCard 血条；big_hp_grade_5 属于人物大图。
+ * 个人等阶优先于 arena；普通等阶沿用原有规则，主视角和其他座位共用锚点。 */
+body[data-style="othersOff"] #arena.decadeUI[data-border-level="five"]>.player:not([data-border-level]):not(.minskin)>.hp-wrap,
+body[data-style="othersOff"] #arena.decadeUI>.player[data-border-level="five"]:not(.minskin)>.hp-wrap {
+	right: 2px !important;
+	bottom: 4px !important;
+	left: auto !important;
+	top: auto !important;
+	width: 36px !important;
+	height: 105px !important;
+	border: 0 !important;
+	border-image: none !important;
+	background: none;
+	transform: scale(0.7346938776);
+	transform-origin: right bottom;
+	--yjcm-hp-bg: var(--yjcm-hp-five-bg, url("../../ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png"));
+	--yjcm-hp-top-edge: var(--yjcm-hp-five-top, 130px);
+	--yjcm-hp-bottom-edge: var(--yjcm-hp-five-bottom, 6px);
+}
+
+body[data-style="othersOff"] #arena.decadeUI>.player[data-max-hp="1"] {
+	--yjcm-hp-count: 1;
+}
+
+body[data-style="othersOff"] #arena.decadeUI>.player[data-max-hp="2"] {
+	--yjcm-hp-count: 2;
+}
+
+body[data-style="othersOff"] #arena.decadeUI>.player[data-max-hp="3"] {
+	--yjcm-hp-count: 3;
+}
+
+body[data-style="othersOff"] #arena.decadeUI>.player[data-max-hp="5"],
+body[data-style="othersOff"] #arena.decadeUI>.player[data-max-hp="hujia"] {
+	--yjcm-hp-count: 5;
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-level="five"]>.player:not([data-border-level]):not(.minskin)>.hp-wrap:has(> .hp.textstyle),
+body[data-style="othersOff"] #arena.decadeUI>.player[data-border-level="five"]:not(.minskin)>.hp-wrap:has(> .hp.textstyle) {
+	--yjcm-hp-count: 5;
+}
+
+body[data-style="othersOff"] #arena.decadeUI:is([data-border-style="dragon2"], [data-border-style="dragon3"]) {
+	--yjcm-hp-five-bg: url("../../ui/assets/lbtn/yijiang/dragon2_hp_grade_5.png");
+}
+
+/* 各款五阶 hp 独立定位；未指定新坐标的款式先保留现有位置。
+ * 普通血条使用 bottom，数字血条在同一底边上加 5px。 */
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="xinsha"] {
+	/* 赤炎 */
+	--yjcm-hp-five-content-left: 17px;
+	--yjcm-hp-five-content-bottom: 0px;
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon2"] {
+	/* 玄墨 */
+	--yjcm-hp-five-content-left: 16px;
+	--yjcm-hp-five-content-bottom: 1px;
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon3"] {
+	/* 耀金 */
+	--yjcm-hp-five-content-left: 16px;
+	--yjcm-hp-five-content-bottom: 1px;
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] {
+	/* 龙旗沿用当前 hp 定位。 */
+	--yjcm-hp-five-content-left: 18px;
+	--yjcm-hp-five-content-bottom: 5px;
+	--yjcm-hp-five-bg: url("../../ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png");
+	--yjcm-hp-five-top: 140px;
+	--yjcm-hp-five-bottom: 8px;
+	/* 只补偿框图透明留白，使金边贴牌；勾玉仍使用原 hp-wrap 坐标。 */
+	--yjcm-hp-five-bg-offset-x: 4px;
+	--yjcm-hp-five-bg-offset-y: 8px;
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-level="five"]>.player:not([data-border-level]):not(.minskin)>.hp-wrap::before,
+body[data-style="othersOff"] #arena.decadeUI>.player[data-border-level="five"]:not(.minskin)>.hp-wrap::before {
+	content: "";
+	position: absolute;
+	left: -96px;
+	bottom: -7px;
+	width: 139px;
+	height: max(178px, calc(var(--yjcm-hp-count, 4) * 20px + var(--yjcm-hp-top-edge) + var(--yjcm-hp-bottom-edge)));
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 146px 0 30px;
+	border-image: var(--yjcm-hp-bg) 146 0 30 0 fill / 146px 0 30px 0 stretch;
+	pointer-events: none;
+	transform: translate(var(--yjcm-hp-five-bg-offset-x, 0px), var(--yjcm-hp-five-bg-offset-y, 0px));
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-level="five"]>.player:not([data-border-level]):not(.minskin)>.hp-wrap>.hp,
+body[data-style="othersOff"] #arena.decadeUI>.player[data-border-level="five"]:not(.minskin)>.hp-wrap>.hp {
+	left: var(--yjcm-hp-five-content-left, 16px) !important;
+	right: auto !important;
+	bottom: var(--yjcm-hp-five-content-bottom, var(--yjcm-hp-bottom-edge)) !important;
+	top: auto !important;
+	width: 20px !important;
+	height: auto;
+	margin: 0 !important;
+	gap: 0;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-level="five"]>.player:not([data-border-level]):not(.minskin)>.hp-wrap>.hp>div:not(.shield),
+body[data-style="othersOff"] #arena.decadeUI>.player[data-border-level="five"]:not(.minskin)>.hp-wrap>.hp>div:not(.shield) {
+	width: 20px;
+	height: 20px;
+	flex: 0 0 20px;
+	margin: 0 !important;
+	transform: none;
+	background-size: contain;
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-level="five"]>.player:not([data-border-level]):not(.minskin)>.hp-wrap>.hp.textstyle,
+body[data-style="othersOff"] #arena.decadeUI>.player[data-border-level="five"]:not(.minskin)>.hp-wrap>.hp.textstyle {
+	bottom: calc(var(--yjcm-hp-five-content-bottom, var(--yjcm-hp-bottom-edge)) + 5px) !important;
+	display: block;
+	text-align: center;
+}
+
+body[data-style="othersOff"] #arena.decadeUI[data-border-level="five"]>.player:not([data-border-level]):not(.minskin)>.hp-wrap>.hp.textstyle>div:not(.shield),
+body[data-style="othersOff"] #arena.decadeUI>.player[data-border-level="five"]:not(.minskin)>.hp-wrap>.hp.textstyle>div:not(.shield) {
+	display: block;
+	margin-top: 5px !important;
+}
+
+body[data-style="othersOff"] #arena>.player[data-position="0"]>.card-count {
+	visibility: visible !important;
+	width: 28.65px;
+	height: 29.39px;
+	left: -7.4px;
+	bottom: 8.12px;
 	background-image: var(--yjcm-self-hand-icon, url("../../ui/assets/lbtn/yijiang/self_handcardnum_bg.png"));
-	background-size: 100% 100%; background-position: center;
+	background-size: 100% 100%;
+	background-position: center;
 }
+
 .player>.hp-wrap {
 	display: block;
 	position: absolute;
@@ -1243,6 +1482,44 @@ body[data-style="othersOff"] .player>.hp-wrap>.hp>div:not(.shield) {
 	bottom: auto;
 }
 
+/* GameSelfSeatUi.layoutYJCM / judgeshow.ccbi：场景左下(108,194)，槽位步进35。
+ * 45px动态图仍按原尺寸绘制，仅将中心对齐官方39×41承载框。 */
+body[data-style="othersOff"] #arena>.player[data-position="0"]>.judges[data-xinsha-judge-layout] {
+	left: var(--xinsha-judge-x);
+	right: auto;
+	top: auto;
+	bottom: var(--xinsha-judge-bottom);
+	width: 0;
+	height: 41px;
+	transform: scale(var(--xinsha-judge-scale-x), var(--xinsha-judge-scale-y));
+	transform-origin: left bottom;
+	transition: none;
+}
+
+body[data-style="othersOff"] #arena>.player[data-position="0"]>.judges[data-xinsha-judge-layout]>.card {
+	position: relative;
+	flex: 0 0 35px;
+	width: 35px;
+	height: 41px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	transition: opacity .5s;
+}
+
+body[data-style="othersOff"] #arena>.player[data-position="0"]>.judges[data-xinsha-judge-layout]>.card>.judge-mark {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 39px;
+	height: 41px;
+}
+
+body[data-style="othersOff"] #arena>.player[data-position="0"]>.judges[data-xinsha-judge-layout]>.card>.judge-mark>.judge {
+	left: -3px;
+	top: -2px;
+}
+
 .player>.judges>.card,
 #window:not(.nopointer).player.judges>.card {
 	position: static;
@@ -1829,6 +2106,11 @@ body[data-style="othersOff"] .player>.hp-wrap>.hp>div:not(.shield) {
 	background: linear-gradient(to bottom, rgb(112, 52, 126), rgb(52, 18, 55));
 }
 
+/* 魔势力名条：上端紫色，沿武将名向下渐暗。 */
+body[data-style="othersOff"] .player>.camp-wrap[data-camp="devil"]>.camp-back,
+body[data-style="othersOff"] #arena.decadeUI[data-border-style="dragon4"] .player>.camp-wrap[data-camp="devil"]>.camp-back {
+	background: linear-gradient(to bottom, #543465, #39283f 52%, #232025);
+}
 
 
 #arena.decadeUI[data-border-style="dragon4"] .player>.camp-wrap[data-camp="key"]>.camp-back {
@@ -2022,7 +2304,7 @@ body[data-style="othersOff"] .player>.hp-wrap>.hp>div:not(.shield) {
 
 
 
-#arena.decadeUI[data-border-style="dragon2"][data-border-level="five"] .player>.hp-wrap,
+#arena.decadeUI[data-border-style="dragon2"][data-border-level="five"] .player:not([data-border-level])>.hp-wrap,
 #arena.decadeUI[data-border-style="dragon2"] .player[data-border-level="five"]>.hp-wrap {
 	right: -8px;
 	bottom: -11px;
@@ -2037,7 +2319,7 @@ body[data-style="othersOff"] .player>.hp-wrap>.hp>div:not(.shield) {
 
 
 
-#arena.decadeUI[data-border-style="dragon3"][data-border-level="five"] .player>.hp-wrap,
+#arena.decadeUI[data-border-style="dragon3"][data-border-level="five"] .player:not([data-border-level])>.hp-wrap,
 #arena.decadeUI[data-border-style="dragon3"] .player[data-border-level="five"]>.hp-wrap {
 	right: -8px;
 	bottom: -11px;
@@ -2088,70 +2370,70 @@ body[data-style="othersOff"] .player>.hp-wrap>.hp>div:not(.shield) {
 
 
 
-#arena.decadeUI[data-border-style="dragon3"][data-border-level="five"] .player[data-max-hp="1"]>.hp-wrap,
+#arena.decadeUI[data-border-style="dragon3"][data-border-level="five"] .player:not([data-border-level])[data-max-hp="1"]>.hp-wrap,
 #arena.decadeUI[data-border-style="dragon3"] .player[data-border-level="five"][data-max-hp="1"]>.hp-wrap {
 	height: 35px;
 }
 
 
 
-#arena.decadeUI[data-border-style="dragon3"][data-border-level="five"] .player[data-max-hp="2"]>.hp-wrap,
+#arena.decadeUI[data-border-style="dragon3"][data-border-level="five"] .player:not([data-border-level])[data-max-hp="2"]>.hp-wrap,
 #arena.decadeUI[data-border-style="dragon3"] .player[data-border-level="five"][data-max-hp="2"]>.hp-wrap {
 	height: 50px;
 }
 
 
 
-#arena.decadeUI[data-border-style="dragon3"][data-border-level="five"] .player[data-max-hp="3"]>.hp-wrap,
+#arena.decadeUI[data-border-style="dragon3"][data-border-level="five"] .player:not([data-border-level])[data-max-hp="3"]>.hp-wrap,
 #arena.decadeUI[data-border-style="dragon3"] .player[data-border-level="five"][data-max-hp="3"]>.hp-wrap {
 	height: 105px;
 }
 
 
 
-#arena.decadeUI[data-border-style="dragon3"][data-border-level="five"] .player[data-max-hp="4"]>.hp-wrap,
+#arena.decadeUI[data-border-style="dragon3"][data-border-level="five"] .player:not([data-border-level])[data-max-hp="4"]>.hp-wrap,
 #arena.decadeUI[data-border-style="dragon3"] .player[data-border-level="five"][data-max-hp="4"]>.hp-wrap {
 	height: 140px;
 }
 
 
 
-#arena.decadeUI[data-border-style="dragon3"][data-border-level="five"] .player[data-max-hp="5"]>.hp-wrap,
+#arena.decadeUI[data-border-style="dragon3"][data-border-level="five"] .player:not([data-border-level])[data-max-hp="5"]>.hp-wrap,
 #arena.decadeUI[data-border-style="dragon3"] .player[data-border-level="five"][data-max-hp="5"]>.hp-wrap {
 	height: 175px;
 }
 
 
 
-#arena.decadeUI[data-border-style="dragon2"][data-border-level="five"] .player[data-max-hp="1"]>.hp-wrap,
+#arena.decadeUI[data-border-style="dragon2"][data-border-level="five"] .player:not([data-border-level])[data-max-hp="1"]>.hp-wrap,
 #arena.decadeUI[data-border-style="dragon2"] .player[data-border-level="five"][data-max-hp="1"]>.hp-wrap {
 	height: 35px;
 }
 
 
 
-#arena.decadeUI[data-border-style="dragon2"][data-border-level="five"] .player[data-max-hp="2"]>.hp-wrap,
+#arena.decadeUI[data-border-style="dragon2"][data-border-level="five"] .player:not([data-border-level])[data-max-hp="2"]>.hp-wrap,
 #arena.decadeUI[data-border-style="dragon2"] .player[data-border-level="five"][data-max-hp="2"]>.hp-wrap {
 	height: 50px;
 }
 
 
 
-#arena.decadeUI[data-border-style="dragon2"][data-border-level="five"] .player[data-max-hp="3"]>.hp-wrap,
+#arena.decadeUI[data-border-style="dragon2"][data-border-level="five"] .player:not([data-border-level])[data-max-hp="3"]>.hp-wrap,
 #arena.decadeUI[data-border-style="dragon2"] .player[data-border-level="five"][data-max-hp="3"]>.hp-wrap {
 	height: 105px;
 }
 
 
 
-#arena.decadeUI[data-border-style="dragon2"][data-border-level="five"] .player[data-max-hp="4"]>.hp-wrap,
+#arena.decadeUI[data-border-style="dragon2"][data-border-level="five"] .player:not([data-border-level])[data-max-hp="4"]>.hp-wrap,
 #arena.decadeUI[data-border-style="dragon2"] .player[data-border-level="five"][data-max-hp="4"]>.hp-wrap {
 	height: 140px;
 }
 
 
 
-#arena.decadeUI[data-border-style="dragon2"][data-border-level="five"] .player[data-max-hp="5"]>.hp-wrap,
+#arena.decadeUI[data-border-style="dragon2"][data-border-level="five"] .player:not([data-border-level])[data-max-hp="5"]>.hp-wrap,
 #arena.decadeUI[data-border-style="dragon2"] .player[data-border-level="five"][data-max-hp="5"]>.hp-wrap {
 	height: 175px;
 }
@@ -2229,7 +2511,7 @@ body[data-style="othersOff"] .player>.hp-wrap>.hp>div:not(.shield) {
 
 
 
-#arena.decadeUI[data-border-style="dragon2"][data-border-level="five"] .player>.hp-wrap>.hp,
+#arena.decadeUI[data-border-style="dragon2"][data-border-level="five"] .player:not([data-border-level])>.hp-wrap>.hp,
 #arena.decadeUI[data-border-style="dragon2"] .player[data-border-level="five"]>.hp-wrap>.hp {
 	margin-left: 45px;
 	bottom: -5px;
@@ -2237,7 +2519,7 @@ body[data-style="othersOff"] .player>.hp-wrap>.hp>div:not(.shield) {
 
 
 
-#arena.decadeUI[data-border-style="dragon3"][data-border-level="five"] .player>.hp-wrap>.hp,
+#arena.decadeUI[data-border-style="dragon3"][data-border-level="five"] .player:not([data-border-level])>.hp-wrap>.hp,
 #arena.decadeUI[data-border-style="dragon3"] .player[data-border-level="five"]>.hp-wrap>.hp {
 	margin-left: 45px;
 	bottom: -5px;

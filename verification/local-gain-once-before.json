@@ -1,0 +1,664 @@
+{
+  "baseline": true,
+  "cases": [
+    {
+      "style": "othersOff",
+      "scenario": "gain2",
+      "clones": 2,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 99.29374694824219,
+          "y": 694.84375,
+          "width": 109.35000610351562,
+          "height": 151.875
+        },
+        {
+          "x": 209.2937469482422,
+          "y": 694.84375,
+          "width": 109.34999084472656,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 1312.324951171875,
+          "y": 664.0625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        },
+        {
+          "x": 1339.324951171875,
+          "y": 664.0625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        }
+      ]
+    },
+    {
+      "style": "othersOff",
+      "scenario": "draw2",
+      "clones": 2,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 99.29374694824219,
+          "y": 694.84375,
+          "width": 109.35000610351562,
+          "height": 151.875
+        },
+        {
+          "x": 209.2937469482422,
+          "y": 694.84375,
+          "width": 109.34999084472656,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 1312.324951171875,
+          "y": 664.0625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        },
+        {
+          "x": 1339.324951171875,
+          "y": 664.0625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        }
+      ]
+    },
+    {
+      "style": "othersOff",
+      "scenario": "draw",
+      "clones": 0,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 99.29374694824219,
+          "y": 694.84375,
+          "width": 109.35000610351562,
+          "height": 151.875
+        },
+        {
+          "x": 209.2937469482422,
+          "y": 694.84375,
+          "width": 109.34999084472656,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": []
+    },
+    {
+      "style": "othersOff",
+      "scenario": "source",
+      "clones": 0,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 99.29374694824219,
+          "y": 694.84375,
+          "width": 109.35000610351562,
+          "height": 151.875
+        },
+        {
+          "x": 209.2937469482422,
+          "y": 694.84375,
+          "width": 109.34999084472656,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": []
+    },
+    {
+      "style": "othersOff",
+      "scenario": "returning",
+      "clones": 2,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 99.29374694824219,
+          "y": 694.84375,
+          "width": 109.35000610351562,
+          "height": 151.875
+        },
+        {
+          "x": 209.2937469482422,
+          "y": 694.84375,
+          "width": 109.34999084472656,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 1312.324951171875,
+          "y": 664.0625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        },
+        {
+          "x": 1339.324951171875,
+          "y": 664.0625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        }
+      ]
+    },
+    {
+      "style": "othersOff",
+      "scenario": "remote",
+      "clones": 2,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 1314.324951171875,
+          "y": 265.0625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        },
+        {
+          "x": 1341.324951171875,
+          "y": 265.0625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        }
+      ]
+    },
+    {
+      "style": "othersOff",
+      "scenario": "standalone",
+      "clones": 2,
+      "owned": false,
+      "stable": true,
+      "landing": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 1312.324951171875,
+          "y": 664.0625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        },
+        {
+          "x": 1339.324951171875,
+          "y": 664.0625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        }
+      ]
+    },
+    {
+      "style": "onlineUI",
+      "scenario": "gain2",
+      "clones": 2,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 242.3249969482422,
+          "y": 689.5625,
+          "width": 109.34999084472656,
+          "height": 151.875
+        },
+        {
+          "x": 353.32501220703125,
+          "y": 689.5625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "style": "onlineUI",
+      "scenario": "draw2",
+      "clones": 2,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 242.3249969482422,
+          "y": 689.5625,
+          "width": 109.34999084472656,
+          "height": 151.875
+        },
+        {
+          "x": 353.32501220703125,
+          "y": 689.5625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "style": "onlineUI",
+      "scenario": "draw",
+      "clones": 0,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 242.3249969482422,
+          "y": 689.5625,
+          "width": 109.34999084472656,
+          "height": 151.875
+        },
+        {
+          "x": 353.32501220703125,
+          "y": 689.5625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": []
+    },
+    {
+      "style": "onlineUI",
+      "scenario": "source",
+      "clones": 0,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 242.3249969482422,
+          "y": 689.5625,
+          "width": 109.34999084472656,
+          "height": 151.875
+        },
+        {
+          "x": 353.32501220703125,
+          "y": 689.5625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": []
+    },
+    {
+      "style": "onlineUI",
+      "scenario": "returning",
+      "clones": 2,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 242.3249969482422,
+          "y": 689.5625,
+          "width": 109.34999084472656,
+          "height": 151.875
+        },
+        {
+          "x": 353.32501220703125,
+          "y": 689.5625,
+          "width": 109.3499755859375,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "style": "onlineUI",
+      "scenario": "remote",
+      "clones": 2,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 1276.324951171875,
+          "y": 281.06573486328125,
+          "width": 109.3499755859375,
+          "height": 151.875
+        },
+        {
+          "x": 1298.324951171875,
+          "y": 281.06573486328125,
+          "width": 109.3499755859375,
+          "height": 151.875
+        }
+      ]
+    },
+    {
+      "style": "onlineUI",
+      "scenario": "standalone",
+      "clones": 2,
+      "owned": false,
+      "stable": true,
+      "landing": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 1271.324951171875,
+          "y": 662.079833984375,
+          "width": 109.3499755859375,
+          "height": 151.875
+        },
+        {
+          "x": 1293.324951171875,
+          "y": 662.079833984375,
+          "width": 109.3499755859375,
+          "height": 151.875
+        }
+      ]
+    },
+    {
+      "style": "on",
+      "scenario": "gain2",
+      "clones": 2,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 637.3250122070312,
+          "y": 689.5625,
+          "width": 109.35003662109375,
+          "height": 151.875
+        },
+        {
+          "x": 749.3250122070312,
+          "y": 689.5625,
+          "width": 109.35003662109375,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "style": "on",
+      "scenario": "draw2",
+      "clones": 2,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 637.3250122070312,
+          "y": 689.5625,
+          "width": 109.35003662109375,
+          "height": 151.875
+        },
+        {
+          "x": 749.3250122070312,
+          "y": 689.5625,
+          "width": 109.35003662109375,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "style": "on",
+      "scenario": "draw",
+      "clones": 0,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 637.3250122070312,
+          "y": 689.5625,
+          "width": 109.35003662109375,
+          "height": 151.875
+        },
+        {
+          "x": 749.3250122070312,
+          "y": 689.5625,
+          "width": 109.35003662109375,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": []
+    },
+    {
+      "style": "on",
+      "scenario": "source",
+      "clones": 0,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 637.3250122070312,
+          "y": 689.5625,
+          "width": 109.35003662109375,
+          "height": 151.875
+        },
+        {
+          "x": 749.3250122070312,
+          "y": 689.5625,
+          "width": 109.35003662109375,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": []
+    },
+    {
+      "style": "on",
+      "scenario": "returning",
+      "clones": 2,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 637.3250122070312,
+          "y": 689.5625,
+          "width": 109.35003662109375,
+          "height": 151.875
+        },
+        {
+          "x": 749.3250122070312,
+          "y": 689.5625,
+          "width": 109.35003662109375,
+          "height": 151.875
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ]
+    },
+    {
+      "style": "on",
+      "scenario": "remote",
+      "clones": 2,
+      "owned": true,
+      "stable": true,
+      "landing": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 1320.324951171875,
+          "y": 243.07315063476562,
+          "width": 109.3499755859375,
+          "height": 151.875
+        },
+        {
+          "x": 1340.324951171875,
+          "y": 243.07315063476562,
+          "width": 109.3499755859375,
+          "height": 151.875
+        }
+      ]
+    },
+    {
+      "style": "on",
+      "scenario": "standalone",
+      "clones": 2,
+      "owned": false,
+      "stable": true,
+      "landing": [
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      ],
+      "cloneLanding": [
+        {
+          "x": 1320.323974609375,
+          "y": 668.2800903320312,
+          "width": 109.3499755859375,
+          "height": 151.875
+        },
+        {
+          "x": 1340.323974609375,
+          "y": 668.2800903320312,
+          "width": 109.3499755859375,
+          "height": 151.875
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

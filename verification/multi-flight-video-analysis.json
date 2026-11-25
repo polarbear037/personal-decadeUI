@@ -1,0 +1,156 @@
+{
+  "video": "qq_2026-11-22_18-57-18 截取视频.mp4",
+  "cases": [
+    {
+      "node": "mwrq2nwim47:c453",
+      "face": {
+        "id": "mwrq2nwim47:c453",
+        "name": "tiesuo",
+        "suit": "club",
+        "number": 12
+      },
+      "copies": 1,
+      "source": {
+        "id": "mwrq2nwim47:c449",
+        "cardid": "1573113156",
+        "name": "tiesuo",
+        "suit": "club",
+        "number": 12
+      },
+      "first": {
+        "at": 1795345080139,
+        "from": {
+          "transform": "translate(603px, 15px) scale(0.956175, 0.956175)"
+        },
+        "to": {
+          "transform": "translate(371px, 212px) scale(0.8052, 0.8052)"
+        },
+        "duration": 300
+      },
+      "retarget": {
+        "at": 1795345080445,
+        "from": {
+          "transform": "translate(596.927px, 20.1569px) scale(0.953659, 0.953659)"
+        },
+        "to": {
+          "transform": "translate(549px, 212px) scale(0.8052, 0.8052)"
+        },
+        "duration": 294.9999999985124
+      },
+      "elapsedBetweenCreationMs": 306,
+      "oldTimelineAdvancedMs": 5.000000001487592
+    },
+    {
+      "node": "mwrq2nwim47:c535",
+      "face": {
+        "id": "mwrq2nwim47:c535",
+        "name": "huogong",
+        "suit": "heart",
+        "number": 2
+      },
+      "copies": 1,
+      "source": {
+        "id": "mwrq2nwim47:c280",
+        "cardid": "3209358147",
+        "name": "huogong",
+        "suit": "heart",
+        "number": 2
+      },
+      "first": {
+        "at": 1795345085214,
+        "from": {
+          "transform": "translate(603px, 15px) scale(0.956175, 0.956175)"
+        },
+        "to": {
+          "transform": "translate(505px, 212px) scale(0.8052, 0.8052)"
+        },
+        "duration": 300
+      },
+      "retarget": {
+        "at": 1795345085432,
+        "from": {
+          "transform": "translate(600.076px, 20.8783px) scale(0.953306, 0.953306)"
+        },
+        "to": {
+          "transform": "translate(549px, 212px) scale(0.8052, 0.8052)"
+        },
+        "duration": 294.3000000007416
+      },
+      "elapsedBetweenCreationMs": 218,
+      "oldTimelineAdvancedMs": 5.699999999258409
+    },
+    {
+      "node": "mwrq2nwim47:c655",
+      "face": {
+        "id": "mwrq2nwim47:c655",
+        "name": "sha",
+        "suit": "diamond",
+        "number": 6
+      },
+      "copies": 1,
+      "source": {
+        "id": "mwrq2nwim47:c117",
+        "cardid": "1484593137",
+        "name": "sha",
+        "suit": "diamond",
+        "number": 6
+      },
+      "first": {
+        "at": 1795345096598,
+        "from": {
+          "transform": "translate(107.141px, 441.812px) scale(0.956143, 0.956116)"
+        },
+        "to": {
+          "transform": "translate(505px, 212px) scale(0.8052, 0.8052)"
+        },
+        "duration": 300
+      },
+      "retarget": {
+        "at": 1795345096809,
+        "from": {
+          "transform": "translate(232.848px, 369.201px) scale(0.92525, 0.925229)"
+        },
+        "to": {
+          "transform": "translate(549px, 212px) scale(0.8052, 0.8052)"
+        },
+        "duration": 238.59999999850174
+      },
+      "elapsedBetweenCreationMs": 211,
+      "oldTimelineAdvancedMs": 61.400000001498256
+    }
+  ],
+  "conclusion": "已捕获同一副本重排读取旧帧、回到起点附近的共同机制；浏览器阻塞复现及Electron当前窗口隐藏副本验证通过。",
+  "fix": "重排取消前按performance.now与Animation.startTime同步旧动画，读取更新后的插值位置和剩余时长；首帧未起播不提前推进。",
+  "live": {
+    "probe": {
+      "stale": {
+        "time": 34.20000000073742,
+        "elapsed": 385.8999999985099,
+        "y": 17.8107
+      },
+      "fresh": {
+        "time": 299.9999999999545,
+        "y": 100
+      },
+      "passed": true
+    },
+    "installed": {
+      "installed": true,
+      "alreadyInstalled": true
+    },
+    "active": true,
+    "unchanged": true,
+    "event": "chooseToUse",
+    "recorder": {
+      "enabled": true,
+      "rows": 1752,
+      "keyRows": 1276,
+      "watching": 0,
+      "error": ""
+    }
+  },
+  "limits": [
+    "当前窗口已热接入且事件/手牌/选择不变，未重放原录屏的规则操作，也未完成修复后的整场实局观察。",
+    "原版对照为包内字节码核验，非官方客户端动态对照。"
+  ]
+}

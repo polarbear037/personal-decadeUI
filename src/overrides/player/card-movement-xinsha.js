@@ -1,10 +1,77 @@
+import { moveXinshaCardsToSeat } from "../../ui/card-transfer-motion-xinsha.js";
 import { markXinshaDelayJudgeSource } from "../../ui/delay-judge-xinsha.js";
 import { applyHandCardPosition } from "../../utils/hand-card-position.js";
-import{game,get,_status,ui,lib}from"noname";import{applyCardBorder as e}from"../../ui/cardStyles.js";let t=null,n=null;function a(){return n||(n=window.decadeUI),n}function d(e){t=e}function i(e,t,n){const a=this.getCards("hs");for(let r=0;r<e.length;r++)a.includes(e[r])&&e.splice(r--,1);const d=[],i=[];for(let r=0;r<e.length;r++){e[r].fix(),n&&("string"==typeof n&&(n=[n]),n.forEach(t=>e[r].addGaintag(t)));const t=lib.config.sort_card(e[r]);this==game.me&&e[r].classList.add("drawinghidden"),get.is.singleHandcard()||t>0?d.push(e[r]):i.push(e[r])}return this.node.handcards1.append(...d),i.length&&this.node.handcards2.append(...i),(this==game.me||_status.video)&&ui.updatehl(),_status.video||(game.addVideo("directgain",this,get.cardsInfo(e)),this.update()),!1!==t&&game.broadcast(function(player,e){player.directgain(e)},this,e),this}function r(e,t,n){for(var a=this.getCards("hs"),d=0;d<e.length;d++)a.includes(e[d])&&e.splice(d--,1);var i=function(card,e){if(n)for(var t=0;t<e.childNodes.length;t++){var a=e.childNodes[e.childNodes.length-t-1];if(!a.classList.contains("glows"))break;if(a.hasGaintag(n))return void e.insertBefore(card,a.nextSibling)}e.appendChild(card)};for(d=0;d<e.length;d++)e[d].fix(),e[d].remove(),n&&("string"==typeof n&&(n=[n]),n.forEach(t=>e[d].addGaintag(t))),e[d].classList.add("glows"),this==game.me&&e[d].classList.add("drawinghidden"),get.is.singleHandcard()?i(e[d],this.node.handcards1):i(e[d],this.node.handcards2);return(this==game.me||_status.video)&&ui.updatehl(),_status.video||(game.addVideo("directgains",this,{cards:get.cardsInfo(e),gaintag:n}),this.update()),!1!==t&&game.broadcast(function(player,e,t){player.directgains(e,null,t)},this,e,n),this}function s(n,d,i){if(game.chess)return t.call(this,n,d,i);let r,s;var event;if(!1!==d&&"nobroadcast"!==d&&game.broadcast(function(e,t,n,a){e.$draw(t,n,a)},this,n,d,i),"cards"==get.itemtype(n)?(r=n.concat(),s=!0):"card"==get.itemtype(n)?(r=[n],s=!0):r=new Array("number"==typeof n?n:1),!1!==d&&(s?game.addVideo("drawCard",this,get.cardsInfo(r)):game.addVideo("draw",this,n)),_status.event&&_status.event.name&&("gain"==(event=_status.event).name||event.name.includes("raw")||(s=!0)),game.me==this&&!s)return;const o=document.createDocumentFragment();let card;const c=a(),player=this;for(let t=0;t<r.length;t++)card=r[t],card=null==card?c.element.create("card thrown drawingcard"):card.copy("thrown","drawingcard",!1),card.fixed=!0,player!==game.me&&e(card,player),r[t]=card,o.appendChild(card);c.layoutDrawCards(r,player,!0),ui.arena.appendChild(o),c.queueNextFrameTick(function(){c.layoutDrawCards(r,player),c.delayRemoveCards(r,460,220)})}
+import { queueXinshaDiscardLayout } from "../../ui/discard-motion-xinsha.js";
+import{game,get,_status,ui,lib}from"noname";import{applyCardBorder as e}from"../../ui/cardStyles.js";let t=null,n=null;function a(){return n||(n=window.decadeUI),n}function d(e){t=e}function i(e,t,n){const a=this.getCards("hs");for(let r=0;r<e.length;r++)a.includes(e[r])&&e.splice(r--,1);const d=[],i=[];for(let r=0;r<e.length;r++){e[r].fix(),n&&("string"==typeof n&&(n=[n]),n.forEach(t=>e[r].addGaintag(t)));const t=lib.config.sort_card(e[r]);this==game.me&&e[r].classList.add("drawinghidden"),get.is.singleHandcard()||t>0?d.push(e[r]):i.push(e[r])}return this.node.handcards1.append(...d),i.length&&this.node.handcards2.append(...i),(this==game.me||_status.video)&&ui.updatehl(),_status.video||(game.addVideo("directgain",this,get.cardsInfo(e)),this.update()),!1!==t&&game.broadcast(function(player,e){player.directgain(e)},this,e),this}function r(e,t,n){for(var a=this.getCards("hs"),d=0;d<e.length;d++)a.includes(e[d])&&e.splice(d--,1);var i=function(card,e){if(n)for(var t=0;t<e.childNodes.length;t++){var a=e.childNodes[e.childNodes.length-t-1];if(!a.classList.contains("glows"))break;if(a.hasGaintag(n))return void e.insertBefore(card,a.nextSibling)}e.appendChild(card)};for(d=0;d<e.length;d++)e[d].fix(),e[d].remove(),n&&("string"==typeof n&&(n=[n]),n.forEach(t=>e[d].addGaintag(t))),e[d].classList.add("glows"),this==game.me&&e[d].classList.add("drawinghidden"),get.is.singleHandcard()?i(e[d],this.node.handcards1):i(e[d],this.node.handcards2);return(this==game.me||_status.video)&&ui.updatehl(),_status.video||(game.addVideo("directgains",this,{cards:get.cardsInfo(e),gaintag:n}),this.update()),!1!==t&&game.broadcast(function(player,e,t){player.directgains(e,null,t)},this,e,n),this}function s(n,d,i){if(game.chess)return t.call(this,n,d,i);let r,s;var event;if(!1!==d&&"nobroadcast"!==d&&game.broadcast(function(e,t,n,a){e.$draw(t,n,a)},this,n,d,i),"cards"==get.itemtype(n)?(r=n.concat(),s=!0):"card"==get.itemtype(n)?(r=[n],s=!0):r=new Array("number"==typeof n?n:1),!1!==d&&(s?game.addVideo("drawCard",this,get.cardsInfo(r)):game.addVideo("draw",this,n)),_status.event&&_status.event.name&&("gain"==(event=_status.event).name||event.name.includes("raw")||(s=!0)),game.me==this&&!s)return;const o=document.createDocumentFragment();let card;const c=a(),player=this;for(let t=0;t<r.length;t++)card=r[t],card=null==card?c.element.create("card thrown drawingcard"):card.copy("thrown","drawingcard",!1),card.fixed=!0,player!==game.me&&e(card,player),r[t]=card,o.appendChild(card);c.layoutDrawCards(r,player,!0),ui.arena.appendChild(o),c.queueNextFrameTick(function(){moveXinshaCardsToSeat(r,player,c)})}
 // 得牌飞行按展示区当前从左到右的排列组织，不改写广播、录像和规则层列表。
-function o(t,n){let d=get.itemtype(t);if("cards"!=d){if("card"!=d)return;d="cards",t=[t]}!0===n&&game.log(this,"获得了",t),game.broadcast(function(e,t){e.$gain2(t)},this,t);const i=[],r=[],sourceX=new Map();let card,s;const player=this;for(let a=0;a<t.length;a++)s=t[a].clone,card=t[a].copy("thrown","gainingcard"),card.fixed=!0,player!==game.me&&e(card,player),s&&s.parentNode==ui.arena?(card.scaled=!0,card.style.transform=getComputedStyle(s).transform,sourceX.set(card,new DOMMatrix(card.style.transform).e),i.push(card)):r.push(card);if(i.length&&game.addVideo("gain2",this,get.cardsInfo(i)),r.length&&game.addVideo("drawCard",this,get.cardsInfo(r)),t.duiMod&&this==game.me)return;i.sort((a,b)=>sourceX.get(a)-sourceX.get(b));t=i.concat(r);const o=a();o.layoutDrawCards(r,this,!0);const c=document.createDocumentFragment();for(let e=0;e<t.length;e++)c.appendChild(t[e]);ui.arena.appendChild(c),o.queueNextFrameTick(function(){o.layoutDrawCards(t,player),o.delayRemoveCards(t,460,220)})}function c(e,t,n,d){let i;const r=e.duiMod&&game.me==t;if("number"==typeof e)i="number",e=new Array(e);else if(i=get.itemtype(e),"cards"==i)e=e.concat();else{if("card"!=i)return;e=[e]}if(!1!==d){let n=e;"number"==i?(n=e.length,game.addVideo("give",this,[n,t.dataset.position])):game.addVideo("giveCard",this,[get.cardsInfo(n),t.dataset.position]),game.broadcast(function(e,t,n,a){e.$give(t,n,!1,a)},this,n,t,d)}if(0!=n&&("number"==i?game.log(t,"从",this,"获得了"+get.cnNumber(e.length)+"张牌"):game.log(t,"从",this,"获得了",e)),this.$givemod)return void this.$givemod(e,t);if(r)return;let card;const s=a(),o=s.boundsCaches.hand;o.check();const c=[],player=this,l=document.createDocumentFragment();for(let a=0;a<e.length;a++){if(card=e[a],card){const e=card.copy("card","thrown","gainingcard",!1);let t=player==game.me;t&&(t=card.throwWith?"h"==card.throwWith||"s"==card.throwWith:card.parentNode==player.node.handcards1),t?(e.tx=Math.round(o.x+card.tx),e.ty=Math.round(o.y+30+card.ty),e.scaled=!0,e.style.transform="translate("+e.tx+"px,"+e.ty+"px) scale("+o.cardScale+")"):c.push(e),card=e}else card=s.element.create("card thrown gainingcard"),c.push(card);e[a]=card,e[a].fixed=!0,l.appendChild(e[a])}c.length&&s.layoutDrawCards(c,player),ui.arena.appendChild(l),s.queueNextFrameTick(function(){s.layoutDrawCards(e,t),s.delayRemoveCards(e,460,220)})}
+function o(t,n){let d=get.itemtype(t);if("cards"!=d){if("card"!=d)return;d="cards",t=[t]}!0===n&&game.log(this,"获得了",t),game.broadcast(function(e,t){e.$gain2(t)},this,t);const i=[],r=[],sourceX=new Map();let card,s;const player=this;for(let a=0;a<t.length;a++)s=t[a].clone,card=t[a].copy("thrown","gainingcard"),card.fixed=!0,player!==game.me&&e(card,player),s&&s.parentNode==ui.arena?(card.scaled=!0,card.style.transform=getComputedStyle(s).transform,sourceX.set(card,new DOMMatrix(card.style.transform).e),i.push(card)):r.push(card);if(i.length&&game.addVideo("gain2",this,get.cardsInfo(i)),r.length&&game.addVideo("drawCard",this,get.cardsInfo(r)),(t.duiMod||t._duiHandDraws)&&this==game.me)return;i.sort((a,b)=>sourceX.get(a)-sourceX.get(b));t=i.concat(r);const o=a();o.layoutDrawCards(r,this,!0);const c=document.createDocumentFragment();for(let e=0;e<t.length;e++)c.appendChild(t[e]);ui.arena.appendChild(c),o.queueNextFrameTick(function(){moveXinshaCardsToSeat(t,player,o)})}function c(e,t,n,d){let i;const r=e.duiMod&&game.me==t;if("number"==typeof e)i="number",e=new Array(e);else if(i=get.itemtype(e),"cards"==i)e=e.concat();else{if("card"!=i)return;e=[e]}if(!1!==d){let n=e;"number"==i?(n=e.length,game.addVideo("give",this,[n,t.dataset.position])):game.addVideo("giveCard",this,[get.cardsInfo(n),t.dataset.position]),game.broadcast(function(e,t,n,a){e.$give(t,n,!1,a)},this,n,t,d)}if(0!=n&&("number"==i?game.log(t,"从",this,"获得了"+get.cnNumber(e.length)+"张牌"):game.log(t,"从",this,"获得了",e)),this.$givemod)return void this.$givemod(e,t);if(r)return;let card;const s=a();const c=[],player=this,l=document.createDocumentFragment();for(let a=0;a<e.length;a++){if(card=e[a],card){const e=card.copy("card","thrown","gainingcard",!1);applyHandCardPosition(card,e,player,s.boundsCaches.arena)||c.push(e),card=e}else card=s.element.create("card thrown gainingcard"),c.push(card);e[a]=card,e[a].fixed=!0,l.appendChild(e[a])}c.length&&s.layoutDrawCards(c,player),ui.arena.appendChild(l),s.queueNextFrameTick(function(){moveXinshaCardsToSeat(e,t,s,player===game.me)})}
+const xinshaUseThrows = new WeakMap();
+
+function xinshaUseThrowCards(player) {
+	if (lib.config.extension_十周年UI_newDecadeStyle !== "othersOff" || _status.video) return null;
+	let event = _status.event;
+	const seen = new Set();
+	// 仅合并用牌本身与它的移牌通知；不能沿技能/弃牌的祖先吞掉其他移牌。
+	while (event && ["lose", "loseAsync"].includes(event.name) && !seen.has(event)) {
+		seen.add(event);
+		event = event.blameEvent || event.relatedEvent || event.getParent?.() || event.parent;
+	}
+	if (!event || !["useCard", "respond"].includes(event.name)) return null;
+	let players = xinshaUseThrows.get(event);
+	if (!players) xinshaUseThrows.set(event, players = new WeakMap());
+	let cards = players.get(player);
+	if (!cards) players.set(player, cards = new WeakMap());
+	return { event, cards };
+}
+
 // $throwordered2逐张unshift：反向登记本次批量副本，整批左插后仍保持飞入顺序。
-function l(e,t,n,d){let i;const r=e.duiMod&&game.me==this&&!d;if("number"==typeof e)i="number",e=new Array(e);else if(i=get.itemtype(e),"cards"==i)e=e.concat();else if("card"==i)e=[e];else{const t=_status.event;if(t&&t.card&&t.cards===e){const n=ui.create.card().init([t.card.suit,t.card.number,t.card.name,t.card.nature]);"none"==t.card.suit&&(n.node.suitnum.style.display="none"),n.dataset.virtual=1,e=[n]}}let card,s;const player=this,o=a(),c=o.boundsCaches.hand;c.check();for(let a=0;a<e.length;a++)card=e[a],card?(s=card.copy("thrown"),!r||"h"!=card.throwWith&&"s"!=card.throwWith||applyHandCardPosition(card,s,player,o.boundsCaches.arena)||(s.tx=Math.round(c.x+card.tx),s.ty=Math.round(c.y+30+card.ty),s.scaled=!0,s.throwordered=!0,s.style.transform="translate("+s.tx+"px,"+s.ty+"px) scale("+c.cardScale+")"),card=s):(card=o.element.create("card infohidden infoflip"),card.moveTo=lib.element.card.moveTo,card.moveDelete=lib.element.card.moveDelete),e[a]=card;!1!==n&&("nobroadcast"!==n&&game.broadcast(function(e,t,n,a,d){e.$throw(t,n,a,d)},this,e,0,n,d),game.addVideo("throw",this,[get.cardsInfo(e),0,d])),e.sort((e,t)=>void 0===e.tx&&void 0===t.tx?0:void 0===e.tx?decadeUI.config.rightLayout?-1:1:void 0===t.tx?decadeUI.config.rightLayout?1:-1:e.tx-t.tx);for(let a=e.length-1;a>=0;a--)(e=>{player.$throwordered2(e,d)})(e[a]);return game.chess&&this.chessFocus(),e[e.length-1]}// YJCM 6.4.5 MoveCardController.defaultAction / moveCardsFromStackToEquipArea。
+function l(cards, time, broadcast, nosource) {
+	const handOrigin = cards.duiMod && game.me === this && !nosource;
+	let type = get.itemtype(cards);
+	if (typeof cards === "number") { type = "number"; cards = new Array(cards); }
+	else if (type === "cards") cards = cards.concat();
+	else if (type === "card") cards = [cards];
+	else {
+		const event = _status.event;
+		if (event?.card && event.cards === cards) {
+			const card = ui.create.card().init([event.card.suit, event.card.number, event.card.name, event.card.nature]);
+			if (event.card.suit === "none") card.node.suitnum.style.display = "none";
+			card.dataset.virtual = 1;
+			cards = [card];
+		}
+	}
+	const player = this, dui = a(), use = xinshaUseThrowCards(player), displayed = [];
+	let last;
+	for (const source of cards) {
+		// 同一次useCard/respond的实体牌只创建一个展示副本，不能靠时限去重无懈链。
+		const track = source && use && (use.event.cards?.includes(source) || use.event.card?.cards?.includes(source));
+		if (track && use.cards.has(source)) { last = use.cards.get(source); continue; }
+		let card;
+		if (source) {
+			card = source.copy("thrown");
+			if (handOrigin) applyHandCardPosition(source, card, player, dui.boundsCaches.arena);
+		} else {
+			card = dui.element.create("card infohidden infoflip");
+			card.moveTo = lib.element.card.moveTo;
+			card.moveDelete = lib.element.card.moveDelete;
+		}
+		if (track) use.cards.set(source, card);
+		displayed.push(card);
+		last = card;
+	}
+	if (!displayed.length) return last;
+	if (broadcast !== false) {
+		if (broadcast !== "nobroadcast") game.broadcast(function (player, cards, time, broadcast, nosource) {
+			player.$throw(cards, time, broadcast, nosource);
+		}, this, displayed, 0, broadcast, nosource);
+		game.addVideo("throw", this, [get.cardsInfo(displayed), 0, nosource]);
+	}
+	displayed.sort((left, right) => left.tx === undefined && right.tx === undefined ? 0 : left.tx === undefined ? decadeUI.config.rightLayout ? -1 : 1 : right.tx === undefined ? decadeUI.config.rightLayout ? 1 : -1 : left.tx - right.tx);
+	for (let index = displayed.length - 1; index >= 0; index--) player.$throwordered2(displayed[index], nosource);
+	if (game.chess) this.chessFocus();
+	return displayed[displayed.length - 1];
+}
+// YJCM 6.4.5 MoveCardController.defaultAction / moveCardsFromStackToEquipArea。
 // 官方参数及用户要求的连续展示适配见 verification/yjcm-equip-animation-source.json；不延迟规则结算。
 const xinshaEquipFlights = new Set();
 let xinshaEquipCleanupInstalled = false;
@@ -96,6 +163,7 @@ function finishXinshaEquipFlight(flight) {
 	}
 	flight.node.remove();
 	xinshaEquipFlights.delete(flight);
+	flight.resolveCompletion?.();
 }
 
 function xinshaEquipSlot(flight) {
@@ -120,6 +188,27 @@ function xinshaEquipLerp(from, to, ratio, scale) {
 	return { x: from.x + (to.x - from.x) * ratio, y: from.y + (to.y - from.y) * ratio, scale };
 }
 
+function playXinshaRemoteEquipAnimation(flight, animation, time = document.timeline.currentTime) {
+	// 非主视角按实际绘制帧推进：结算长任务不能吃掉整段飞行。
+	// 只推进 WAAPI 时间，不逐帧读布局或改 DOM 样式；每帧最多跨过40ms。
+	animation.pause();
+	animation.currentTime = 0;
+	flight.phaseStarted = time;
+	let previous = time;
+	const duration = animation.effect.getTiming().duration;
+	const tick = time => {
+		flight.frame = 0;
+		if (flight.done || flight.displayAnimation !== animation) return;
+		if (lib.config.extension_十周年UI_newDecadeStyle !== "othersOff" || _status.over || !flight.node.isConnected || !flight.player.isConnected) return finishXinshaEquipFlight(flight);
+		// 终点已绘制一帧后再衔接/清理，确保渐隐完成才显示真实装备。
+		if (animation.currentTime >= duration) return animation.finish();
+		animation.currentTime = Math.min(duration, animation.currentTime + Math.min(40, Math.max(0, time - previous)));
+		previous = time;
+		flight.frame = requestAnimationFrame(tick);
+	};
+	flight.frame = requestAnimationFrame(tick);
+}
+
 function queueXinshaEquipEntryStart(flight) {
 	if (flight.done || flight.phase !== "stack" || flight.started != null || flight.frame) return;
 	const animation = flight.displayAnimation;
@@ -132,8 +221,11 @@ function queueXinshaEquipEntryStart(flight) {
 		const style = getComputedStyle(flight.node);
 		if (style.visibility !== "visible" || style.display === "none") return;
 		flight.started = flight.phaseStarted = time;
-		animation.play();
-		animation.startTime = time;
+		if (!flight.selfUse) playXinshaRemoteEquipAnimation(flight, animation, time);
+		else {
+			animation.play();
+			animation.startTime = time;
+		}
 	});
 }
 
@@ -223,7 +315,8 @@ function animateXinshaEquipSlot(flight) {
 	else {
 		const animation = flight.node.animate(keyframes, { duration: flight.duration, easing: "linear", fill: "both" });
 		flight.displayAnimation = animation;
-		animation.startTime = flight.phaseStarted;
+		if (!flight.selfUse) playXinshaRemoteEquipAnimation(flight, animation);
+		else animation.startTime = flight.phaseStarted;
 		animation.finished.then(() => {
 			if (flight.done || flight.displayAnimation !== animation) return;
 			writeXinshaEquipTransform(flight.node, { ...flight.slotTarget, scale: flight.start.scale * 0.2 }, 0);
@@ -290,7 +383,14 @@ function startXinshaEquipUse(node, actor) {
 	flight.observer.observe(node, { childList: true, attributes: true, attributeFilter: ["class", "style"] });
 	xinshaEquipFlights.add(flight);
 	syncXinshaEquipFlight(flight);
-	// 飞行仅维护副本和实体可见性，不登记结算等待，也不在结束时恢复游戏。
+	// 非主视角在本次useCard的after队列等待画面完成；装备规则照常先结算，
+	// 下一张牌等真实装备显露后继续。本人、联机接收端与录像不增加等待。
+	if (!flight.selfUse && !game.online && !_status.video) {
+		const completion = new Promise(resolve => { flight.resolveCompletion = resolve; });
+		use.insertAfter(async function(event) {
+			await event.xinshaEquipAnimationDone;
+		}, { xinshaEquipAnimationDone: completion });
+	}
 	if (!xinshaEquipCleanupInstalled) {
 		xinshaEquipCleanupInstalled = true;
 		lib.onover.push(() => { for (const flight of xinshaEquipFlights) finishXinshaEquipFlight(flight); });
@@ -347,7 +447,7 @@ function u(card,t){
 	}else card.throwordered=void 0;
 	if(card.classList.add("thrown"),card.fixed)return ui.arena.appendChild(card);
 	let d=card.querySelector(".used-info");
-	null==d&&(d=card.appendChild(n.element.create("used-info"))),card.$usedtag=d,e(card,this,this===game.me),ui.thrown.push(card),ui.arena.appendChild(card);
+	null==d&&(d=card.appendChild(n.element.create("used-info"))),card.$usedtag=d,e(card,this,this===game.me),ui.thrown.unshift(card),ui.arena.appendChild(card);
 	card._decadeEarlyJudgeCreating||n.tryAddPlayerCardUseTag(card,this,_status.event);
 	if(replacementJudgeVisualId!=null){
 		card._decadeJudgeVisualId=String(replacementJudgeVisualId);
@@ -360,7 +460,7 @@ function u(card,t){
 		}
 	}
 	markXinshaDelayJudgeSource(card,this);
-	if(!startXinshaEquipUse(card,this))n.queueNextFrameTick(n.layoutDiscard,n);
+	if(!startXinshaEquipUse(card,this))queueXinshaDiscardLayout(n);
 	return card
 }
 function h(card){game.addVideo("phaseJudge",this,get.cardInfo(card));const player=this;if(card[card.cardSymbol]?.cards?.length){const e=card[card.cardSymbol].cards;if(player.$throw(e),lib.config.low_performance&&e[0]&&e[0].clone){const t=get.time();_status.waitingForTransition=t,e[0].clone.listenTransition(function(){_status.waitingForTransition==t&&_status.paused&&game.resume()}),game.pause()}else a().delay(451)}else{const e=game.createCard(card.name,"虚拟","");if(player.$throw(e),lib.config.low_performance&&e&&e.clone){const t=get.time();_status.waitingForTransition=t,e.clone.listenTransition(function(){_status.waitingForTransition==t&&_status.paused&&game.resume()}),game.pause()}else a().delay(451)}}function g(e,t){if(game.online)return;const card=e,n=1!==t.length||t[0].name!==e.name||!card.isCard;let a;a="card"==get.itemtype(card)&&card.isViewAsCard?card:n?game.createCard(card.name,1==t.length?get.suit(t[0]):"none",1==t.length?get.number(t[0]):0):t[0],game.broadcastAll((e,t,n,a,d)=>{if(t.fix(),!t.isViewAsCard){const e=/* @__PURE__ */Symbol("card");t.cardSymbol=e,t[e]=a}if(t.style.transform="",t.classList.remove("drawinghidden"),delete t._transform,n&&!t.isViewAsCard){t.isViewAsCard=!0,t.destroyLog=!1;for(let t of d)t.goto(ui.special),t.destiny=e.node.judges;t.destroyed&&(t._destroyed_Virtua=t.destroyed),t.destroyed=function(e,t,n,event){if(e._destroyed_Virtua)if("function"==typeof e._destroyed_Virtua){if(!0===e._destroyed_Virtua(e,t,n,event))return!0}else{if(lib.skill[e._destroyed_Virtua])return!n||!n.hasSkill(e._destroyed_Virtua)||(delete e._destroyed_Virtua,!1);if("string"==typeof e._destroyed_Virtua)return e._destroyed_Virtua==t;if(!0===e._destroyed_Virtua)return!0}return("ordering"!=t||!["phaseJudge","executeDelayCardEffect"].includes(event.getParent().name))&&("judge"!=t||void 0)}}if(t.classList.add("drawinghidden"),n){t.cards=d||[],t.viewAs=a.name;const e=lib.translate[t.viewAs+"_bg"]||get.translation(t.viewAs)[0];(t.classList.contains("fullskin")||t.classList.contains("fullborder")||t.classList.contains("fullimage"))&&(t.classList.add("fakejudge"),t.classList.contains("fullimage")&&(t.classList.remove("fullimage"),t.classList.add("fullskin"),t.style.backgroundImage=""),window.decadeUI?t.node.judgeMark.node.judge.innerHTML=e:t.node.background.innerHTML=e)}else delete t.viewAs,t.classList.remove("fakejudge"),window.decadeUI&&(t.node.judgeMark.node.judge.innerHTML=lib.translate[t.name+"_bg"]||get.translation(t.name)[0]);e.node.judges.insertBefore(t,e.node.judges.firstChild);if(["bingliang","lebu","shandian","fulei","hongshui","huoshan","caomu","jlsgqs_shuiyanqijun","jydiy_zouhuorumo","jydiy_yungongliaoshang","xwjh_biguanqingxiu","xwjh_wushisanke","xumou_jsrg","dczixi_bingliang","dczixi_lebu","dczixi_shandian"].includes(t.name)){let e=t.name;const n=lib.translate[t.name+"_bg"]||get.translation(t.name)||"";t.node.judgeMark.node.judge.innerText="",t.node.judgeMark.node.judge.style.fontSize="";const a=("on"===lib.config.extension_十周年UI_newDecadeStyle||"othersOff"===lib.config.extension_十周年UI_newDecadeStyle)&&["bingliang","lebu","shandian"].includes(e)?"1.png":".png",d=`${lib.assetURL}extension/十周年UI/image/ui/judge-mark/`,i=new Image;i.onload=function(){t.node.judgeMark.node.judge.style.backgroundImage=`url("${i.src}")`,t.node.judgeMark.node.judge.innerText="",t.node.judgeMark.node.judge.style.fontSize="0px"},i.onerror=function(){t.node.judgeMark.node.judge.style.backgroundImage=`url("${d}tongyong.png")`,t.node.judgeMark.node.judge.innerText=n?n[0]:""},i.src=`${d}${e}${a}`,t.node.judgeMark.node.judge.style.zIndex="99",t.node.judgeMark.node.judge.parentElement.children[0].style.background="none",t.node.judgeMark.node.judge.parentElement.children[0].style.display="none"}else t.node.judgeMark.node.judge.style.backgroundImage=`url("${lib.assetURL}extension/十周年UI/image/ui/judge-mark/tongyong.png")`;ui.updatej(e);game._decadeUIAnimateXinshaDelayJudge?.(e,t,d)},this,a,n,e,t)}export{g as playerAddVirtualJudge,i as playerDirectgain,r as playerDirectgains,s as playerDraw,o as playerGain2,c as playerGive,h as playerPhaseJudge,l as playerThrow,u as playerThrowordered2,d as setBasePlayerDraw};

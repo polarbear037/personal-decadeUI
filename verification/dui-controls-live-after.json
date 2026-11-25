@@ -1,0 +1,12 @@
+{
+  "beforeDisplay": "flex",
+  "afterDisplay": "none",
+  "event": "useCard",
+  "player": "renwan",
+  "choosing": false,
+  "hiddenClass": true,
+  "eventUnchanged": true,
+  "handUnchanged": true,
+  "confirmUnchanged": true,
+  "selectionUnchanged": true
+}

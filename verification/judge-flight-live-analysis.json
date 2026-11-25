@@ -1,0 +1,39 @@
+{
+  "captured": true,
+  "player": "dc_sb_simayi",
+  "delayedCard": "lebu",
+  "resultCard": {
+    "name": "sha",
+    "suit": "diamond",
+    "number": 4,
+    "physicalId": "9831576194"
+  },
+  "nativeNode": "mwrmocq4b5f:c1539",
+  "dialogNode": "mwrmocq4b5f:c1543",
+  "nativeFlights": [
+    {
+      "at": 1795339555159,
+      "from": {
+        "transform": "translate(490px, 217px) scale(0.956175, 0.956175)"
+      },
+      "to": {
+        "transform": "translate(549px, 212px) scale(0.8052, 0.8052)"
+      },
+      "duration": 300
+    }
+  ],
+  "dialogAnimations": [
+    {
+      "at": 1795339555382,
+      "duration": 266.6666666666667,
+      "missingProperties": "older recorder omitted individual translate"
+    }
+  ],
+  "nativeVisibilityTransition": [
+    {
+      "at": 1795339558366,
+      "duration": 460
+    }
+  ],
+  "conclusion": "Two display nodes captured. Native node has one position animation; dialog entry and visibility handoff require follow-up. This does not prove two discard operations."
+}

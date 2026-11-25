@@ -1,0 +1,5564 @@
+{
+  "apk_sha256": "974381c26f5bdc45daa6796f31cf384840e8d95e2eff3039990180f22f36a895",
+  "packed_sha256": "4ddc74d93bf221a27d829540fc0e83b08705dcaeea1c7098ba97ca5a6e2eb116",
+  "decoded_sha256": "aac788fe56a7400264e2f12a1d9046c1839edd3dcf50758cfb587d61904ce3b8",
+  "rea_evidence": [
+    "ev_2ea443d8c59d7d564cce7107d494e63d2b670ad3cef90bc87f8aba521c5793c3",
+    "ev_fb46dbac93a191733ae50f6886c89cbe33e789d9e0157087d66423042acd0da6"
+  ],
+  "modules": [
+    {
+      "member": "app.view.game.dlg.SkillNewStyleBaseWindow",
+      "sha256": "bc761bac3d2ec8ae795aec07ce4d161a9e2d7af0cae5b78dee55806d2e4e4902",
+      "prototypes": [
+        {
+          "id": "0.3",
+          "line": 36,
+          "last_line": 41,
+          "header": [
+            0,
+            1,
+            0,
+            7
+          ],
+          "constants": [
+            "skillBg",
+            "display",
+            "newScale9Sprite",
+            "getBgRes",
+            "size",
+            "getBgScale",
+            "width",
+            "height",
+            "setScaleRange",
+            0.0,
+            100.0,
+            "addToCenter",
+            -1.0
+          ],
+          "instructions": [
+            {
+              "pc": 1,
+              "op": "getglobal",
+              "a": 1,
+              "b": 0,
+              "c": 1,
+              "constant": "display"
+            },
+            {
+              "pc": 2,
+              "op": "gettable",
+              "a": 1,
+              "b": 1,
+              "c": 258,
+              "constant_operands": {
+                "c": "newScale9Sprite"
+              }
+            },
+            {
+              "pc": 3,
+              "op": "self",
+              "a": 2,
+              "b": 0,
+              "c": 259,
+              "constant_operands": {
+                "c": "getBgRes"
+              }
+            },
+            {
+              "pc": 4,
+              "op": "call",
+              "a": 2,
+              "b": 2,
+              "c": 0
+            },
+            {
+              "pc": 5,
+              "op": "call",
+              "a": 1,
+              "b": 0,
+              "c": 2
+            },
+            {
+              "pc": 6,
+              "op": "self",
+              "a": 1,
+              "b": 1,
+              "c": 260,
+              "constant_operands": {
+                "c": "size"
+              }
+            },
+            {
+              "pc": 7,
+              "op": "self",
+              "a": 3,
+              "b": 0,
+              "c": 261,
+              "constant_operands": {
+                "c": "getBgScale"
+              }
+            },
+            {
+              "pc": 8,
+              "op": "call",
+              "a": 3,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 9,
+              "op": "gettable",
+              "a": 4,
+              "b": 0,
+              "c": 262,
+              "constant_operands": {
+                "c": "width"
+              }
+            },
+            {
+              "pc": 10,
+              "op": "mul",
+              "a": 3,
+              "b": 3,
+              "c": 4,
+              "constant_operands": {}
+            },
+            {
+              "pc": 11,
+              "op": "gettable",
+              "a": 4,
+              "b": 0,
+              "c": 263,
+              "constant_operands": {
+                "c": "height"
+              }
+            },
+            {
+              "pc": 12,
+              "op": "call",
+              "a": 1,
+              "b": 4,
+              "c": 2
+            },
+            {
+              "pc": 13,
+              "op": "self",
+              "a": 1,
+              "b": 1,
+              "c": 264,
+              "constant_operands": {
+                "c": "setScaleRange"
+              }
+            },
+            {
+              "pc": 14,
+              "op": "loadk",
+              "a": 3,
+              "b": 0,
+              "c": 9,
+              "constant": 0.0
+            },
+            {
+              "pc": 15,
+              "op": "loadk",
+              "a": 4,
+              "b": 0,
+              "c": 9,
+              "constant": 0.0
+            },
+            {
+              "pc": 16,
+              "op": "loadk",
+              "a": 5,
+              "b": 0,
+              "c": 10,
+              "constant": 100.0
+            },
+            {
+              "pc": 17,
+              "op": "loadk",
+              "a": 6,
+              "b": 0,
+              "c": 10,
+              "constant": 100.0
+            },
+            {
+              "pc": 18,
+              "op": "call",
+              "a": 1,
+              "b": 6,
+              "c": 2
+            },
+            {
+              "pc": 19,
+              "op": "self",
+              "a": 1,
+              "b": 1,
+              "c": 267,
+              "constant_operands": {
+                "c": "addToCenter"
+              }
+            },
+            {
+              "pc": 20,
+              "op": "move",
+              "a": 3,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 21,
+              "op": "loadk",
+              "a": 4,
+              "b": 0,
+              "c": 12,
+              "constant": -1.0
+            },
+            {
+              "pc": 22,
+              "op": "call",
+              "a": 1,
+              "b": 4,
+              "c": 2
+            },
+            {
+              "pc": 23,
+              "op": "settable",
+              "a": 0,
+              "b": 256,
+              "c": 1,
+              "constant_operands": {
+                "b": "skillBg"
+              }
+            },
+            {
+              "pc": 24,
+              "op": "return",
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          ]
+        },
+        {
+          "id": "0.4",
+          "line": 43,
+          "last_line": 79,
+          "header": [
+            1,
+            1,
+            0,
+            9
+          ],
+          "constants": [
+            "createSkillBg",
+            "display",
+            "newSprite",
+            "#skill_window_title.png",
+            "align",
+            "CENTER",
+            "width",
+            2.0,
+            "height",
+            20.0,
+            "addTo",
+            "titleBg",
+            "skillTitleTxt",
+            "ui",
+            "newLabel",
+            "color",
+            "cc",
+            "c3b",
+            255.0,
+            236.0,
+            187.0,
+            "size",
+            32.0,
+            "getWidth",
+            3.0,
+            "getHeight",
+            "downTimeProgress",
+            "new",
+            "bar",
+            "#xf_newTimeBar_1.png",
+            "bg",
+            "#xf_newTimeBar_bg_1.png",
+            "callback",
+            "hide",
+            "CENTER_BOTTOM",
+            113.0,
+            "setSeat",
+            "app",
+            "gameManager",
+            "getLastTriggerSeat",
+            "optMsgLabel",
+            "RichLabel",
+            "fontName",
+            "fnt/fzbw.ttf",
+            "fontSize",
+            30.0,
+            "fontColor",
+            "c4b",
+            243.0,
+            222.0,
+            "lineSpace",
+            6.0,
+            "charSpace",
+            -1.0,
+            120.0
+          ],
+          "instructions": [
+            {
+              "pc": 1,
+              "op": "self",
+              "a": 1,
+              "b": 0,
+              "c": 256,
+              "constant_operands": {
+                "c": "createSkillBg"
+              }
+            },
+            {
+              "pc": 2,
+              "op": "call",
+              "a": 1,
+              "b": 2,
+              "c": 1
+            },
+            {
+              "pc": 3,
+              "op": "getglobal",
+              "a": 1,
+              "b": 0,
+              "c": 1,
+              "constant": "display"
+            },
+            {
+              "pc": 4,
+              "op": "gettable",
+              "a": 1,
+              "b": 1,
+              "c": 258,
+              "constant_operands": {
+                "c": "newSprite"
+              }
+            },
+            {
+              "pc": 5,
+              "op": "loadk",
+              "a": 2,
+              "b": 0,
+              "c": 3,
+              "constant": "#skill_window_title.png"
+            },
+            {
+              "pc": 6,
+              "op": "call",
+              "a": 1,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 7,
+              "op": "self",
+              "a": 1,
+              "b": 1,
+              "c": 260,
+              "constant_operands": {
+                "c": "align"
+              }
+            },
+            {
+              "pc": 8,
+              "op": "getglobal",
+              "a": 3,
+              "b": 0,
+              "c": 1,
+              "constant": "display"
+            },
+            {
+              "pc": 9,
+              "op": "gettable",
+              "a": 3,
+              "b": 3,
+              "c": 261,
+              "constant_operands": {
+                "c": "CENTER"
+              }
+            },
+            {
+              "pc": 10,
+              "op": "gettable",
+              "a": 4,
+              "b": 0,
+              "c": 262,
+              "constant_operands": {
+                "c": "width"
+              }
+            },
+            {
+              "pc": 11,
+              "op": "div",
+              "a": 4,
+              "b": 4,
+              "c": 263,
+              "constant_operands": {
+                "c": 2.0
+              }
+            },
+            {
+              "pc": 12,
+              "op": "gettable",
+              "a": 5,
+              "b": 0,
+              "c": 264,
+              "constant_operands": {
+                "c": "height"
+              }
+            },
+            {
+              "pc": 13,
+              "op": "sub",
+              "a": 5,
+              "b": 5,
+              "c": 265,
+              "constant_operands": {
+                "c": 20.0
+              }
+            },
+            {
+              "pc": 14,
+              "op": "call",
+              "a": 1,
+              "b": 5,
+              "c": 2
+            },
+            {
+              "pc": 15,
+              "op": "self",
+              "a": 1,
+              "b": 1,
+              "c": 266,
+              "constant_operands": {
+                "c": "addTo"
+              }
+            },
+            {
+              "pc": 16,
+              "op": "move",
+              "a": 3,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 17,
+              "op": "call",
+              "a": 1,
+              "b": 3,
+              "c": 2
+            },
+            {
+              "pc": 18,
+              "op": "settable",
+              "a": 0,
+              "b": 267,
+              "c": 1,
+              "constant_operands": {
+                "b": "titleBg"
+              }
+            },
+            {
+              "pc": 19,
+              "op": "getglobal",
+              "a": 2,
+              "b": 0,
+              "c": 13,
+              "constant": "ui"
+            },
+            {
+              "pc": 20,
+              "op": "gettable",
+              "a": 2,
+              "b": 2,
+              "c": 270,
+              "constant_operands": {
+                "c": "newLabel"
+              }
+            },
+            {
+              "pc": 21,
+              "op": "newtable",
+              "a": 3,
+              "b": 0,
+              "c": 2
+            },
+            {
+              "pc": 22,
+              "op": "getglobal",
+              "a": 4,
+              "b": 0,
+              "c": 16,
+              "constant": "cc"
+            },
+            {
+              "pc": 23,
+              "op": "gettable",
+              "a": 4,
+              "b": 4,
+              "c": 273,
+              "constant_operands": {
+                "c": "c3b"
+              }
+            },
+            {
+              "pc": 24,
+              "op": "loadk",
+              "a": 5,
+              "b": 0,
+              "c": 18,
+              "constant": 255.0
+            },
+            {
+              "pc": 25,
+              "op": "loadk",
+              "a": 6,
+              "b": 0,
+              "c": 19,
+              "constant": 236.0
+            },
+            {
+              "pc": 26,
+              "op": "loadk",
+              "a": 7,
+              "b": 0,
+              "c": 20,
+              "constant": 187.0
+            },
+            {
+              "pc": 27,
+              "op": "call",
+              "a": 4,
+              "b": 4,
+              "c": 2
+            },
+            {
+              "pc": 28,
+              "op": "settable",
+              "a": 3,
+              "b": 271,
+              "c": 4,
+              "constant_operands": {
+                "b": "color"
+              }
+            },
+            {
+              "pc": 29,
+              "op": "settable",
+              "a": 3,
+              "b": 277,
+              "c": 278,
+              "constant_operands": {
+                "b": "size",
+                "c": 32.0
+              }
+            },
+            {
+              "pc": 30,
+              "op": "call",
+              "a": 2,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 31,
+              "op": "self",
+              "a": 2,
+              "b": 2,
+              "c": 260,
+              "constant_operands": {
+                "c": "align"
+              }
+            },
+            {
+              "pc": 32,
+              "op": "getglobal",
+              "a": 4,
+              "b": 0,
+              "c": 1,
+              "constant": "display"
+            },
+            {
+              "pc": 33,
+              "op": "gettable",
+              "a": 4,
+              "b": 4,
+              "c": 261,
+              "constant_operands": {
+                "c": "CENTER"
+              }
+            },
+            {
+              "pc": 34,
+              "op": "self",
+              "a": 5,
+              "b": 1,
+              "c": 279,
+              "constant_operands": {
+                "c": "getWidth"
+              }
+            },
+            {
+              "pc": 35,
+              "op": "call",
+              "a": 5,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 36,
+              "op": "div",
+              "a": 5,
+              "b": 5,
+              "c": 263,
+              "constant_operands": {
+                "c": 2.0
+              }
+            },
+            {
+              "pc": 37,
+              "op": "add",
+              "a": 5,
+              "b": 5,
+              "c": 280,
+              "constant_operands": {
+                "c": 3.0
+              }
+            },
+            {
+              "pc": 38,
+              "op": "self",
+              "a": 6,
+              "b": 1,
+              "c": 281,
+              "constant_operands": {
+                "c": "getHeight"
+              }
+            },
+            {
+              "pc": 39,
+              "op": "call",
+              "a": 6,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 40,
+              "op": "div",
+              "a": 6,
+              "b": 6,
+              "c": 263,
+              "constant_operands": {
+                "c": 2.0
+              }
+            },
+            {
+              "pc": 41,
+              "op": "call",
+              "a": 2,
+              "b": 5,
+              "c": 2
+            },
+            {
+              "pc": 42,
+              "op": "self",
+              "a": 2,
+              "b": 2,
+              "c": 266,
+              "constant_operands": {
+                "c": "addTo"
+              }
+            },
+            {
+              "pc": 43,
+              "op": "move",
+              "a": 4,
+              "b": 1,
+              "c": 0
+            },
+            {
+              "pc": 44,
+              "op": "call",
+              "a": 2,
+              "b": 3,
+              "c": 2
+            },
+            {
+              "pc": 45,
+              "op": "settable",
+              "a": 0,
+              "b": 268,
+              "c": 2,
+              "constant_operands": {
+                "b": "skillTitleTxt"
+              }
+            },
+            {
+              "pc": 46,
+              "op": "getupval",
+              "a": 2,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 47,
+              "op": "gettable",
+              "a": 2,
+              "b": 2,
+              "c": 283,
+              "constant_operands": {
+                "c": "new"
+              }
+            },
+            {
+              "pc": 48,
+              "op": "newtable",
+              "a": 3,
+              "b": 0,
+              "c": 3
+            },
+            {
+              "pc": 49,
+              "op": "settable",
+              "a": 3,
+              "b": 284,
+              "c": 285,
+              "constant_operands": {
+                "b": "bar",
+                "c": "#xf_newTimeBar_1.png"
+              }
+            },
+            {
+              "pc": 50,
+              "op": "settable",
+              "a": 3,
+              "b": 286,
+              "c": 287,
+              "constant_operands": {
+                "b": "bg",
+                "c": "#xf_newTimeBar_bg_1.png"
+              }
+            },
+            {
+              "pc": 51,
+              "op": "closure",
+              "a": 4,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 52,
+              "op": "move",
+              "a": 0,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 53,
+              "op": "settable",
+              "a": 3,
+              "b": 288,
+              "c": 4,
+              "constant_operands": {
+                "b": "callback"
+              }
+            },
+            {
+              "pc": 54,
+              "op": "call",
+              "a": 2,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 55,
+              "op": "self",
+              "a": 2,
+              "b": 2,
+              "c": 289,
+              "constant_operands": {
+                "c": "hide"
+              }
+            },
+            {
+              "pc": 56,
+              "op": "call",
+              "a": 2,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 57,
+              "op": "self",
+              "a": 2,
+              "b": 2,
+              "c": 260,
+              "constant_operands": {
+                "c": "align"
+              }
+            },
+            {
+              "pc": 58,
+              "op": "getglobal",
+              "a": 4,
+              "b": 0,
+              "c": 1,
+              "constant": "display"
+            },
+            {
+              "pc": 59,
+              "op": "gettable",
+              "a": 4,
+              "b": 4,
+              "c": 290,
+              "constant_operands": {
+                "c": "CENTER_BOTTOM"
+              }
+            },
+            {
+              "pc": 60,
+              "op": "gettable",
+              "a": 5,
+              "b": 0,
+              "c": 262,
+              "constant_operands": {
+                "c": "width"
+              }
+            },
+            {
+              "pc": 61,
+              "op": "div",
+              "a": 5,
+              "b": 5,
+              "c": 263,
+              "constant_operands": {
+                "c": 2.0
+              }
+            },
+            {
+              "pc": 62,
+              "op": "loadk",
+              "a": 6,
+              "b": 0,
+              "c": 35,
+              "constant": 113.0
+            },
+            {
+              "pc": 63,
+              "op": "call",
+              "a": 2,
+              "b": 5,
+              "c": 2
+            },
+            {
+              "pc": 64,
+              "op": "self",
+              "a": 2,
+              "b": 2,
+              "c": 266,
+              "constant_operands": {
+                "c": "addTo"
+              }
+            },
+            {
+              "pc": 65,
+              "op": "move",
+              "a": 4,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 66,
+              "op": "call",
+              "a": 2,
+              "b": 3,
+              "c": 2
+            },
+            {
+              "pc": 67,
+              "op": "settable",
+              "a": 0,
+              "b": 282,
+              "c": 2,
+              "constant_operands": {
+                "b": "downTimeProgress"
+              }
+            },
+            {
+              "pc": 68,
+              "op": "gettable",
+              "a": 2,
+              "b": 0,
+              "c": 282,
+              "constant_operands": {
+                "c": "downTimeProgress"
+              }
+            },
+            {
+              "pc": 69,
+              "op": "self",
+              "a": 2,
+              "b": 2,
+              "c": 292,
+              "constant_operands": {
+                "c": "setSeat"
+              }
+            },
+            {
+              "pc": 70,
+              "op": "getglobal",
+              "a": 4,
+              "b": 0,
+              "c": 37,
+              "constant": "app"
+            },
+            {
+              "pc": 71,
+              "op": "gettable",
+              "a": 4,
+              "b": 4,
+              "c": 294,
+              "constant_operands": {
+                "c": "gameManager"
+              }
+            },
+            {
+              "pc": 72,
+              "op": "self",
+              "a": 4,
+              "b": 4,
+              "c": 295,
+              "constant_operands": {
+                "c": "getLastTriggerSeat"
+              }
+            },
+            {
+              "pc": 73,
+              "op": "call",
+              "a": 4,
+              "b": 2,
+              "c": 0
+            },
+            {
+              "pc": 74,
+              "op": "call",
+              "a": 2,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 75,
+              "op": "getglobal",
+              "a": 2,
+              "b": 0,
+              "c": 16,
+              "constant": "cc"
+            },
+            {
+              "pc": 76,
+              "op": "gettable",
+              "a": 2,
+              "b": 2,
+              "c": 269,
+              "constant_operands": {
+                "c": "ui"
+              }
+            },
+            {
+              "pc": 77,
+              "op": "gettable",
+              "a": 2,
+              "b": 2,
+              "c": 297,
+              "constant_operands": {
+                "c": "RichLabel"
+              }
+            },
+            {
+              "pc": 78,
+              "op": "gettable",
+              "a": 2,
+              "b": 2,
+              "c": 283,
+              "constant_operands": {
+                "c": "new"
+              }
+            },
+            {
+              "pc": 79,
+              "op": "newtable",
+              "a": 3,
+              "b": 0,
+              "c": 5
+            },
+            {
+              "pc": 80,
+              "op": "settable",
+              "a": 3,
+              "b": 298,
+              "c": 299,
+              "constant_operands": {
+                "b": "fontName",
+                "c": "fnt/fzbw.ttf"
+              }
+            },
+            {
+              "pc": 81,
+              "op": "settable",
+              "a": 3,
+              "b": 300,
+              "c": 301,
+              "constant_operands": {
+                "b": "fontSize",
+                "c": 30.0
+              }
+            },
+            {
+              "pc": 82,
+              "op": "getglobal",
+              "a": 4,
+              "b": 0,
+              "c": 16,
+              "constant": "cc"
+            },
+            {
+              "pc": 83,
+              "op": "gettable",
+              "a": 4,
+              "b": 4,
+              "c": 303,
+              "constant_operands": {
+                "c": "c4b"
+              }
+            },
+            {
+              "pc": 84,
+              "op": "loadk",
+              "a": 5,
+              "b": 0,
+              "c": 18,
+              "constant": 255.0
+            },
+            {
+              "pc": 85,
+              "op": "loadk",
+              "a": 6,
+              "b": 0,
+              "c": 48,
+              "constant": 243.0
+            },
+            {
+              "pc": 86,
+              "op": "loadk",
+              "a": 7,
+              "b": 0,
+              "c": 49,
+              "constant": 222.0
+            },
+            {
+              "pc": 87,
+              "op": "loadk",
+              "a": 8,
+              "b": 0,
+              "c": 18,
+              "constant": 255.0
+            },
+            {
+              "pc": 88,
+              "op": "call",
+              "a": 4,
+              "b": 5,
+              "c": 2
+            },
+            {
+              "pc": 89,
+              "op": "settable",
+              "a": 3,
+              "b": 302,
+              "c": 4,
+              "constant_operands": {
+                "b": "fontColor"
+              }
+            },
+            {
+              "pc": 90,
+              "op": "settable",
+              "a": 3,
+              "b": 306,
+              "c": 307,
+              "constant_operands": {
+                "b": "lineSpace",
+                "c": 6.0
+              }
+            },
+            {
+              "pc": 91,
+              "op": "settable",
+              "a": 3,
+              "b": 308,
+              "c": 309,
+              "constant_operands": {
+                "b": "charSpace",
+                "c": -1.0
+              }
+            },
+            {
+              "pc": 92,
+              "op": "call",
+              "a": 2,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 93,
+              "op": "self",
+              "a": 2,
+              "b": 2,
+              "c": 260,
+              "constant_operands": {
+                "c": "align"
+              }
+            },
+            {
+              "pc": 94,
+              "op": "getglobal",
+              "a": 4,
+              "b": 0,
+              "c": 1,
+              "constant": "display"
+            },
+            {
+              "pc": 95,
+              "op": "gettable",
+              "a": 4,
+              "b": 4,
+              "c": 290,
+              "constant_operands": {
+                "c": "CENTER_BOTTOM"
+              }
+            },
+            {
+              "pc": 96,
+              "op": "gettable",
+              "a": 5,
+              "b": 0,
+              "c": 262,
+              "constant_operands": {
+                "c": "width"
+              }
+            },
+            {
+              "pc": 97,
+              "op": "div",
+              "a": 5,
+              "b": 5,
+              "c": 263,
+              "constant_operands": {
+                "c": 2.0
+              }
+            },
+            {
+              "pc": 98,
+              "op": "loadk",
+              "a": 6,
+              "b": 0,
+              "c": 54,
+              "constant": 120.0
+            },
+            {
+              "pc": 99,
+              "op": "call",
+              "a": 2,
+              "b": 5,
+              "c": 2
+            },
+            {
+              "pc": 100,
+              "op": "self",
+              "a": 2,
+              "b": 2,
+              "c": 266,
+              "constant_operands": {
+                "c": "addTo"
+              }
+            },
+            {
+              "pc": 101,
+              "op": "move",
+              "a": 4,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 102,
+              "op": "call",
+              "a": 2,
+              "b": 3,
+              "c": 2
+            },
+            {
+              "pc": 103,
+              "op": "settable",
+              "a": 0,
+              "b": 296,
+              "c": 2,
+              "constant_operands": {
+                "b": "optMsgLabel"
+              }
+            },
+            {
+              "pc": 104,
+              "op": "return",
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "member": "app.view.game.dlg.SkillPopUpWindow",
+      "sha256": "d7c9a906b3e0564382e4fc6fca9231043b9691a999255c9e3c30c0d40daa8d64",
+      "prototypes": [
+        {
+          "id": "0.9",
+          "line": 119,
+          "last_line": 129,
+          "header": [
+            0,
+            2,
+            0,
+            8
+          ],
+          "constants": [
+            "parent",
+            "display",
+            "getRunningScene",
+            "addChild",
+            "zorder",
+            "ZORDER_DLG",
+            "moveToCenter",
+            "x",
+            "width",
+            2.0,
+            "y",
+            "height",
+            "showAction",
+            "updateTouchLayerPos"
+          ],
+          "instructions": [
+            {
+              "pc": 1,
+              "op": "testset",
+              "a": 2,
+              "b": 1,
+              "c": 1
+            },
+            {
+              "pc": 2,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 0
+            },
+            {
+              "pc": 3,
+              "op": "newtable",
+              "a": 2,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 4,
+              "op": "gettable",
+              "a": 3,
+              "b": 2,
+              "c": 256,
+              "constant_operands": {
+                "c": "parent"
+              }
+            },
+            {
+              "pc": 5,
+              "op": "test",
+              "a": 3,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 6,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 2
+            },
+            {
+              "pc": 7,
+              "op": "getglobal",
+              "a": 3,
+              "b": 0,
+              "c": 1,
+              "constant": "display"
+            },
+            {
+              "pc": 8,
+              "op": "gettable",
+              "a": 3,
+              "b": 3,
+              "c": 258,
+              "constant_operands": {
+                "c": "getRunningScene"
+              }
+            },
+            {
+              "pc": 9,
+              "op": "call",
+              "a": 3,
+              "b": 1,
+              "c": 2
+            },
+            {
+              "pc": 10,
+              "op": "test",
+              "a": 3,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 11,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 25
+            },
+            {
+              "pc": 12,
+              "op": "self",
+              "a": 4,
+              "b": 3,
+              "c": 259,
+              "constant_operands": {
+                "c": "addChild"
+              }
+            },
+            {
+              "pc": 13,
+              "op": "move",
+              "a": 6,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 14,
+              "op": "gettable",
+              "a": 7,
+              "b": 2,
+              "c": 260,
+              "constant_operands": {
+                "c": "zorder"
+              }
+            },
+            {
+              "pc": 15,
+              "op": "test",
+              "a": 7,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 16,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 1
+            },
+            {
+              "pc": 17,
+              "op": "getglobal",
+              "a": 7,
+              "b": 0,
+              "c": 1,
+              "constant": "display"
+            },
+            {
+              "pc": 18,
+              "op": "gettable",
+              "a": 7,
+              "b": 7,
+              "c": 261,
+              "constant_operands": {
+                "c": "ZORDER_DLG"
+              }
+            },
+            {
+              "pc": 19,
+              "op": "call",
+              "a": 4,
+              "b": 4,
+              "c": 1
+            },
+            {
+              "pc": 20,
+              "op": "self",
+              "a": 4,
+              "b": 0,
+              "c": 262,
+              "constant_operands": {
+                "c": "moveToCenter"
+              }
+            },
+            {
+              "pc": 21,
+              "op": "gettable",
+              "a": 6,
+              "b": 2,
+              "c": 263,
+              "constant_operands": {
+                "c": "x"
+              }
+            },
+            {
+              "pc": 22,
+              "op": "test",
+              "a": 6,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 23,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 2
+            },
+            {
+              "pc": 24,
+              "op": "getglobal",
+              "a": 6,
+              "b": 0,
+              "c": 1,
+              "constant": "display"
+            },
+            {
+              "pc": 25,
+              "op": "gettable",
+              "a": 6,
+              "b": 6,
+              "c": 264,
+              "constant_operands": {
+                "c": "width"
+              }
+            },
+            {
+              "pc": 26,
+              "op": "div",
+              "a": 6,
+              "b": 6,
+              "c": 265,
+              "constant_operands": {
+                "c": 2.0
+              }
+            },
+            {
+              "pc": 27,
+              "op": "gettable",
+              "a": 7,
+              "b": 2,
+              "c": 266,
+              "constant_operands": {
+                "c": "y"
+              }
+            },
+            {
+              "pc": 28,
+              "op": "test",
+              "a": 7,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 29,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 2
+            },
+            {
+              "pc": 30,
+              "op": "getglobal",
+              "a": 7,
+              "b": 0,
+              "c": 1,
+              "constant": "display"
+            },
+            {
+              "pc": 31,
+              "op": "gettable",
+              "a": 7,
+              "b": 7,
+              "c": 267,
+              "constant_operands": {
+                "c": "height"
+              }
+            },
+            {
+              "pc": 32,
+              "op": "div",
+              "a": 7,
+              "b": 7,
+              "c": 265,
+              "constant_operands": {
+                "c": 2.0
+              }
+            },
+            {
+              "pc": 33,
+              "op": "call",
+              "a": 4,
+              "b": 4,
+              "c": 1
+            },
+            {
+              "pc": 34,
+              "op": "self",
+              "a": 4,
+              "b": 0,
+              "c": 268,
+              "constant_operands": {
+                "c": "showAction"
+              }
+            },
+            {
+              "pc": 35,
+              "op": "call",
+              "a": 4,
+              "b": 2,
+              "c": 1
+            },
+            {
+              "pc": 36,
+              "op": "self",
+              "a": 4,
+              "b": 0,
+              "c": 269,
+              "constant_operands": {
+                "c": "updateTouchLayerPos"
+              }
+            },
+            {
+              "pc": 37,
+              "op": "call",
+              "a": 4,
+              "b": 2,
+              "c": 1
+            },
+            {
+              "pc": 38,
+              "op": "return",
+              "a": 0,
+              "b": 2,
+              "c": 0
+            },
+            {
+              "pc": 39,
+              "op": "return",
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "member": "app.ui.TimeBar",
+      "sha256": "fa2f8fd9559d38408cad2c46579fc22bde2da346fe3d48730c04d3c15ad4e5ae",
+      "prototypes": [
+        {
+          "id": "0.1",
+          "line": 13,
+          "last_line": 35,
+          "header": [
+            0,
+            2,
+            0,
+            6
+          ],
+          "constants": [
+            "cc",
+            "addComponent",
+            "components.behavior.EventProtocol",
+            "exportMethods",
+            "bg",
+            "pre",
+            "barFrame",
+            "bar",
+            "seat",
+            "app",
+            "gameManager",
+            "getSelfSeat",
+            "callback",
+            "onPercent",
+            "bgScale9",
+            "ui",
+            "getFrameSize",
+            "width",
+            "height",
+            "size",
+            "createChildren",
+            "setNodeEventEnabled"
+          ],
+          "instructions": [
+            {
+              "pc": 1,
+              "op": "getglobal",
+              "a": 2,
+              "b": 0,
+              "c": 0,
+              "constant": "cc"
+            },
+            {
+              "pc": 2,
+              "op": "move",
+              "a": 3,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 3,
+              "op": "call",
+              "a": 2,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 4,
+              "op": "self",
+              "a": 2,
+              "b": 2,
+              "c": 257,
+              "constant_operands": {
+                "c": "addComponent"
+              }
+            },
+            {
+              "pc": 5,
+              "op": "loadk",
+              "a": 4,
+              "b": 0,
+              "c": 2,
+              "constant": "components.behavior.EventProtocol"
+            },
+            {
+              "pc": 6,
+              "op": "call",
+              "a": 2,
+              "b": 3,
+              "c": 2
+            },
+            {
+              "pc": 7,
+              "op": "self",
+              "a": 2,
+              "b": 2,
+              "c": 259,
+              "constant_operands": {
+                "c": "exportMethods"
+              }
+            },
+            {
+              "pc": 8,
+              "op": "call",
+              "a": 2,
+              "b": 2,
+              "c": 1
+            },
+            {
+              "pc": 9,
+              "op": "gettable",
+              "a": 2,
+              "b": 1,
+              "c": 260,
+              "constant_operands": {
+                "c": "bg"
+              }
+            },
+            {
+              "pc": 10,
+              "op": "settable",
+              "a": 0,
+              "b": 260,
+              "c": 2,
+              "constant_operands": {
+                "b": "bg"
+              }
+            },
+            {
+              "pc": 11,
+              "op": "gettable",
+              "a": 2,
+              "b": 1,
+              "c": 261,
+              "constant_operands": {
+                "c": "pre"
+              }
+            },
+            {
+              "pc": 12,
+              "op": "settable",
+              "a": 0,
+              "b": 261,
+              "c": 2,
+              "constant_operands": {
+                "b": "pre"
+              }
+            },
+            {
+              "pc": 13,
+              "op": "gettable",
+              "a": 2,
+              "b": 1,
+              "c": 263,
+              "constant_operands": {
+                "c": "bar"
+              }
+            },
+            {
+              "pc": 14,
+              "op": "settable",
+              "a": 0,
+              "b": 262,
+              "c": 2,
+              "constant_operands": {
+                "b": "barFrame"
+              }
+            },
+            {
+              "pc": 15,
+              "op": "gettable",
+              "a": 2,
+              "b": 1,
+              "c": 264,
+              "constant_operands": {
+                "c": "seat"
+              }
+            },
+            {
+              "pc": 16,
+              "op": "test",
+              "a": 2,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 17,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 3
+            },
+            {
+              "pc": 18,
+              "op": "getglobal",
+              "a": 2,
+              "b": 0,
+              "c": 9,
+              "constant": "app"
+            },
+            {
+              "pc": 19,
+              "op": "gettable",
+              "a": 2,
+              "b": 2,
+              "c": 266,
+              "constant_operands": {
+                "c": "gameManager"
+              }
+            },
+            {
+              "pc": 20,
+              "op": "self",
+              "a": 2,
+              "b": 2,
+              "c": 267,
+              "constant_operands": {
+                "c": "getSelfSeat"
+              }
+            },
+            {
+              "pc": 21,
+              "op": "call",
+              "a": 2,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 22,
+              "op": "settable",
+              "a": 0,
+              "b": 264,
+              "c": 2,
+              "constant_operands": {
+                "b": "seat"
+              }
+            },
+            {
+              "pc": 23,
+              "op": "gettable",
+              "a": 2,
+              "b": 1,
+              "c": 268,
+              "constant_operands": {
+                "c": "callback"
+              }
+            },
+            {
+              "pc": 24,
+              "op": "settable",
+              "a": 0,
+              "b": 268,
+              "c": 2,
+              "constant_operands": {
+                "b": "callback"
+              }
+            },
+            {
+              "pc": 25,
+              "op": "gettable",
+              "a": 2,
+              "b": 1,
+              "c": 269,
+              "constant_operands": {
+                "c": "onPercent"
+              }
+            },
+            {
+              "pc": 26,
+              "op": "settable",
+              "a": 0,
+              "b": 269,
+              "c": 2,
+              "constant_operands": {
+                "b": "onPercent"
+              }
+            },
+            {
+              "pc": 27,
+              "op": "gettable",
+              "a": 2,
+              "b": 1,
+              "c": 270,
+              "constant_operands": {
+                "c": "bgScale9"
+              }
+            },
+            {
+              "pc": 28,
+              "op": "settable",
+              "a": 0,
+              "b": 270,
+              "c": 2,
+              "constant_operands": {
+                "b": "bgScale9"
+              }
+            },
+            {
+              "pc": 29,
+              "op": "getglobal",
+              "a": 2,
+              "b": 0,
+              "c": 15,
+              "constant": "ui"
+            },
+            {
+              "pc": 30,
+              "op": "gettable",
+              "a": 2,
+              "b": 2,
+              "c": 272,
+              "constant_operands": {
+                "c": "getFrameSize"
+              }
+            },
+            {
+              "pc": 31,
+              "op": "gettable",
+              "a": 3,
+              "b": 0,
+              "c": 262,
+              "constant_operands": {
+                "c": "barFrame"
+              }
+            },
+            {
+              "pc": 32,
+              "op": "call",
+              "a": 2,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 33,
+              "op": "gettable",
+              "a": 3,
+              "b": 2,
+              "c": 273,
+              "constant_operands": {
+                "c": "width"
+              }
+            },
+            {
+              "pc": 34,
+              "op": "settable",
+              "a": 0,
+              "b": 273,
+              "c": 3,
+              "constant_operands": {
+                "b": "width"
+              }
+            },
+            {
+              "pc": 35,
+              "op": "gettable",
+              "a": 3,
+              "b": 2,
+              "c": 274,
+              "constant_operands": {
+                "c": "height"
+              }
+            },
+            {
+              "pc": 36,
+              "op": "settable",
+              "a": 0,
+              "b": 274,
+              "c": 3,
+              "constant_operands": {
+                "b": "height"
+              }
+            },
+            {
+              "pc": 37,
+              "op": "self",
+              "a": 3,
+              "b": 0,
+              "c": 275,
+              "constant_operands": {
+                "c": "size"
+              }
+            },
+            {
+              "pc": 38,
+              "op": "move",
+              "a": 5,
+              "b": 2,
+              "c": 0
+            },
+            {
+              "pc": 39,
+              "op": "call",
+              "a": 3,
+              "b": 3,
+              "c": 1
+            },
+            {
+              "pc": 40,
+              "op": "self",
+              "a": 3,
+              "b": 0,
+              "c": 276,
+              "constant_operands": {
+                "c": "createChildren"
+              }
+            },
+            {
+              "pc": 41,
+              "op": "call",
+              "a": 3,
+              "b": 2,
+              "c": 1
+            },
+            {
+              "pc": 42,
+              "op": "self",
+              "a": 3,
+              "b": 0,
+              "c": 277,
+              "constant_operands": {
+                "c": "setNodeEventEnabled"
+              }
+            },
+            {
+              "pc": 43,
+              "op": "loadbool",
+              "a": 5,
+              "b": 1,
+              "c": 0
+            },
+            {
+              "pc": 44,
+              "op": "call",
+              "a": 3,
+              "b": 3,
+              "c": 1
+            },
+            {
+              "pc": 45,
+              "op": "return",
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          ]
+        },
+        {
+          "id": "0.9",
+          "line": 110,
+          "last_line": 134,
+          "header": [
+            0,
+            1,
+            0,
+            9
+          ],
+          "constants": [
+            "bar",
+            "cc",
+            "ui",
+            "UILoadingBar",
+            "new",
+            "image",
+            "barFrame",
+            "viewRect",
+            "rect",
+            0.0,
+            "width",
+            "height",
+            "pos",
+            "addTo",
+            1.0,
+            "bg",
+            "display",
+            "newSprite",
+            "align",
+            "CENTER",
+            2.0,
+            "bgScale9",
+            "getFrameSize",
+            "img",
+            "newScale9Sprite",
+            "size",
+            0.5,
+            "pre",
+            3.0
+          ],
+          "instructions": [
+            {
+              "pc": 1,
+              "op": "getglobal",
+              "a": 1,
+              "b": 0,
+              "c": 1,
+              "constant": "cc"
+            },
+            {
+              "pc": 2,
+              "op": "gettable",
+              "a": 1,
+              "b": 1,
+              "c": 258,
+              "constant_operands": {
+                "c": "ui"
+              }
+            },
+            {
+              "pc": 3,
+              "op": "gettable",
+              "a": 1,
+              "b": 1,
+              "c": 259,
+              "constant_operands": {
+                "c": "UILoadingBar"
+              }
+            },
+            {
+              "pc": 4,
+              "op": "gettable",
+              "a": 1,
+              "b": 1,
+              "c": 260,
+              "constant_operands": {
+                "c": "new"
+              }
+            },
+            {
+              "pc": 5,
+              "op": "newtable",
+              "a": 2,
+              "b": 0,
+              "c": 2
+            },
+            {
+              "pc": 6,
+              "op": "gettable",
+              "a": 3,
+              "b": 0,
+              "c": 262,
+              "constant_operands": {
+                "c": "barFrame"
+              }
+            },
+            {
+              "pc": 7,
+              "op": "settable",
+              "a": 2,
+              "b": 261,
+              "c": 3,
+              "constant_operands": {
+                "b": "image"
+              }
+            },
+            {
+              "pc": 8,
+              "op": "getglobal",
+              "a": 3,
+              "b": 0,
+              "c": 1,
+              "constant": "cc"
+            },
+            {
+              "pc": 9,
+              "op": "gettable",
+              "a": 3,
+              "b": 3,
+              "c": 264,
+              "constant_operands": {
+                "c": "rect"
+              }
+            },
+            {
+              "pc": 10,
+              "op": "loadk",
+              "a": 4,
+              "b": 0,
+              "c": 9,
+              "constant": 0.0
+            },
+            {
+              "pc": 11,
+              "op": "loadk",
+              "a": 5,
+              "b": 0,
+              "c": 9,
+              "constant": 0.0
+            },
+            {
+              "pc": 12,
+              "op": "gettable",
+              "a": 6,
+              "b": 0,
+              "c": 266,
+              "constant_operands": {
+                "c": "width"
+              }
+            },
+            {
+              "pc": 13,
+              "op": "gettable",
+              "a": 7,
+              "b": 0,
+              "c": 267,
+              "constant_operands": {
+                "c": "height"
+              }
+            },
+            {
+              "pc": 14,
+              "op": "call",
+              "a": 3,
+              "b": 5,
+              "c": 2
+            },
+            {
+              "pc": 15,
+              "op": "settable",
+              "a": 2,
+              "b": 263,
+              "c": 3,
+              "constant_operands": {
+                "b": "viewRect"
+              }
+            },
+            {
+              "pc": 16,
+              "op": "call",
+              "a": 1,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 17,
+              "op": "self",
+              "a": 1,
+              "b": 1,
+              "c": 268,
+              "constant_operands": {
+                "c": "pos"
+              }
+            },
+            {
+              "pc": 18,
+              "op": "loadk",
+              "a": 3,
+              "b": 0,
+              "c": 9,
+              "constant": 0.0
+            },
+            {
+              "pc": 19,
+              "op": "loadk",
+              "a": 4,
+              "b": 0,
+              "c": 9,
+              "constant": 0.0
+            },
+            {
+              "pc": 20,
+              "op": "call",
+              "a": 1,
+              "b": 4,
+              "c": 2
+            },
+            {
+              "pc": 21,
+              "op": "self",
+              "a": 1,
+              "b": 1,
+              "c": 269,
+              "constant_operands": {
+                "c": "addTo"
+              }
+            },
+            {
+              "pc": 22,
+              "op": "move",
+              "a": 3,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 23,
+              "op": "loadk",
+              "a": 4,
+              "b": 0,
+              "c": 14,
+              "constant": 1.0
+            },
+            {
+              "pc": 24,
+              "op": "call",
+              "a": 1,
+              "b": 4,
+              "c": 2
+            },
+            {
+              "pc": 25,
+              "op": "settable",
+              "a": 0,
+              "b": 256,
+              "c": 1,
+              "constant_operands": {
+                "b": "bar"
+              }
+            },
+            {
+              "pc": 26,
+              "op": "gettable",
+              "a": 1,
+              "b": 0,
+              "c": 271,
+              "constant_operands": {
+                "c": "bg"
+              }
+            },
+            {
+              "pc": 27,
+              "op": "test",
+              "a": 1,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 28,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 15
+            },
+            {
+              "pc": 29,
+              "op": "getglobal",
+              "a": 1,
+              "b": 0,
+              "c": 16,
+              "constant": "display"
+            },
+            {
+              "pc": 30,
+              "op": "gettable",
+              "a": 1,
+              "b": 1,
+              "c": 273,
+              "constant_operands": {
+                "c": "newSprite"
+              }
+            },
+            {
+              "pc": 31,
+              "op": "gettable",
+              "a": 2,
+              "b": 0,
+              "c": 271,
+              "constant_operands": {
+                "c": "bg"
+              }
+            },
+            {
+              "pc": 32,
+              "op": "call",
+              "a": 1,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 33,
+              "op": "self",
+              "a": 1,
+              "b": 1,
+              "c": 274,
+              "constant_operands": {
+                "c": "align"
+              }
+            },
+            {
+              "pc": 34,
+              "op": "getglobal",
+              "a": 3,
+              "b": 0,
+              "c": 16,
+              "constant": "display"
+            },
+            {
+              "pc": 35,
+              "op": "gettable",
+              "a": 3,
+              "b": 3,
+              "c": 275,
+              "constant_operands": {
+                "c": "CENTER"
+              }
+            },
+            {
+              "pc": 36,
+              "op": "gettable",
+              "a": 4,
+              "b": 0,
+              "c": 266,
+              "constant_operands": {
+                "c": "width"
+              }
+            },
+            {
+              "pc": 37,
+              "op": "div",
+              "a": 4,
+              "b": 4,
+              "c": 276,
+              "constant_operands": {
+                "c": 2.0
+              }
+            },
+            {
+              "pc": 38,
+              "op": "gettable",
+              "a": 5,
+              "b": 0,
+              "c": 267,
+              "constant_operands": {
+                "c": "height"
+              }
+            },
+            {
+              "pc": 39,
+              "op": "div",
+              "a": 5,
+              "b": 5,
+              "c": 276,
+              "constant_operands": {
+                "c": 2.0
+              }
+            },
+            {
+              "pc": 40,
+              "op": "call",
+              "a": 1,
+              "b": 5,
+              "c": 2
+            },
+            {
+              "pc": 41,
+              "op": "self",
+              "a": 1,
+              "b": 1,
+              "c": 269,
+              "constant_operands": {
+                "c": "addTo"
+              }
+            },
+            {
+              "pc": 42,
+              "op": "move",
+              "a": 3,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 43,
+              "op": "call",
+              "a": 1,
+              "b": 3,
+              "c": 1
+            },
+            {
+              "pc": 44,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 33
+            },
+            {
+              "pc": 45,
+              "op": "gettable",
+              "a": 1,
+              "b": 0,
+              "c": 277,
+              "constant_operands": {
+                "c": "bgScale9"
+              }
+            },
+            {
+              "pc": 46,
+              "op": "test",
+              "a": 1,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 47,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 30
+            },
+            {
+              "pc": 48,
+              "op": "getglobal",
+              "a": 1,
+              "b": 0,
+              "c": 2,
+              "constant": "ui"
+            },
+            {
+              "pc": 49,
+              "op": "gettable",
+              "a": 1,
+              "b": 1,
+              "c": 278,
+              "constant_operands": {
+                "c": "getFrameSize"
+              }
+            },
+            {
+              "pc": 50,
+              "op": "gettable",
+              "a": 2,
+              "b": 0,
+              "c": 277,
+              "constant_operands": {
+                "c": "bgScale9"
+              }
+            },
+            {
+              "pc": 51,
+              "op": "gettable",
+              "a": 2,
+              "b": 2,
+              "c": 279,
+              "constant_operands": {
+                "c": "img"
+              }
+            },
+            {
+              "pc": 52,
+              "op": "call",
+              "a": 1,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 53,
+              "op": "getglobal",
+              "a": 2,
+              "b": 0,
+              "c": 16,
+              "constant": "display"
+            },
+            {
+              "pc": 54,
+              "op": "gettable",
+              "a": 2,
+              "b": 2,
+              "c": 280,
+              "constant_operands": {
+                "c": "newScale9Sprite"
+              }
+            },
+            {
+              "pc": 55,
+              "op": "gettable",
+              "a": 3,
+              "b": 0,
+              "c": 277,
+              "constant_operands": {
+                "c": "bgScale9"
+              }
+            },
+            {
+              "pc": 56,
+              "op": "gettable",
+              "a": 3,
+              "b": 3,
+              "c": 279,
+              "constant_operands": {
+                "c": "img"
+              }
+            },
+            {
+              "pc": 57,
+              "op": "loadk",
+              "a": 4,
+              "b": 0,
+              "c": 9,
+              "constant": 0.0
+            },
+            {
+              "pc": 58,
+              "op": "loadk",
+              "a": 5,
+              "b": 0,
+              "c": 9,
+              "constant": 0.0
+            },
+            {
+              "pc": 59,
+              "op": "getglobal",
+              "a": 6,
+              "b": 0,
+              "c": 1,
+              "constant": "cc"
+            },
+            {
+              "pc": 60,
+              "op": "gettable",
+              "a": 6,
+              "b": 6,
+              "c": 281,
+              "constant_operands": {
+                "c": "size"
+              }
+            },
+            {
+              "pc": 61,
+              "op": "gettable",
+              "a": 7,
+              "b": 0,
+              "c": 266,
+              "constant_operands": {
+                "c": "width"
+              }
+            },
+            {
+              "pc": 62,
+              "op": "gettable",
+              "a": 8,
+              "b": 1,
+              "c": 267,
+              "constant_operands": {
+                "c": "height"
+              }
+            },
+            {
+              "pc": 63,
+              "op": "call",
+              "a": 6,
+              "b": 3,
+              "c": 2
+            },
+            {
+              "pc": 64,
+              "op": "gettable",
+              "a": 7,
+              "b": 0,
+              "c": 277,
+              "constant_operands": {
+                "c": "bgScale9"
+              }
+            },
+            {
+              "pc": 65,
+              "op": "gettable",
+              "a": 7,
+              "b": 7,
+              "c": 264,
+              "constant_operands": {
+                "c": "rect"
+              }
+            },
+            {
+              "pc": 66,
+              "op": "call",
+              "a": 2,
+              "b": 6,
+              "c": 2
+            },
+            {
+              "pc": 67,
+              "op": "self",
+              "a": 2,
+              "b": 2,
+              "c": 274,
+              "constant_operands": {
+                "c": "align"
+              }
+            },
+            {
+              "pc": 68,
+              "op": "getglobal",
+              "a": 4,
+              "b": 0,
+              "c": 16,
+              "constant": "display"
+            },
+            {
+              "pc": 69,
+              "op": "gettable",
+              "a": 4,
+              "b": 4,
+              "c": 275,
+              "constant_operands": {
+                "c": "CENTER"
+              }
+            },
+            {
+              "pc": 70,
+              "op": "gettable",
+              "a": 5,
+              "b": 0,
+              "c": 266,
+              "constant_operands": {
+                "c": "width"
+              }
+            },
+            {
+              "pc": 71,
+              "op": "div",
+              "a": 5,
+              "b": 5,
+              "c": 276,
+              "constant_operands": {
+                "c": 2.0
+              }
+            },
+            {
+              "pc": 72,
+              "op": "gettable",
+              "a": 6,
+              "b": 0,
+              "c": 267,
+              "constant_operands": {
+                "c": "height"
+              }
+            },
+            {
+              "pc": 73,
+              "op": "div",
+              "a": 6,
+              "b": 6,
+              "c": 276,
+              "constant_operands": {
+                "c": 2.0
+              }
+            },
+            {
+              "pc": 74,
+              "op": "sub",
+              "a": 6,
+              "b": 6,
+              "c": 282,
+              "constant_operands": {
+                "c": 0.5
+              }
+            },
+            {
+              "pc": 75,
+              "op": "call",
+              "a": 2,
+              "b": 5,
+              "c": 2
+            },
+            {
+              "pc": 76,
+              "op": "self",
+              "a": 2,
+              "b": 2,
+              "c": 269,
+              "constant_operands": {
+                "c": "addTo"
+              }
+            },
+            {
+              "pc": 77,
+              "op": "move",
+              "a": 4,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 78,
+              "op": "call",
+              "a": 2,
+              "b": 3,
+              "c": 1
+            },
+            {
+              "pc": 79,
+              "op": "gettable",
+              "a": 1,
+              "b": 0,
+              "c": 283,
+              "constant_operands": {
+                "c": "pre"
+              }
+            },
+            {
+              "pc": 80,
+              "op": "test",
+              "a": 1,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 81,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 15
+            },
+            {
+              "pc": 82,
+              "op": "getglobal",
+              "a": 1,
+              "b": 0,
+              "c": 16,
+              "constant": "display"
+            },
+            {
+              "pc": 83,
+              "op": "gettable",
+              "a": 1,
+              "b": 1,
+              "c": 273,
+              "constant_operands": {
+                "c": "newSprite"
+              }
+            },
+            {
+              "pc": 84,
+              "op": "gettable",
+              "a": 2,
+              "b": 0,
+              "c": 283,
+              "constant_operands": {
+                "c": "pre"
+              }
+            },
+            {
+              "pc": 85,
+              "op": "call",
+              "a": 1,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 86,
+              "op": "self",
+              "a": 1,
+              "b": 1,
+              "c": 274,
+              "constant_operands": {
+                "c": "align"
+              }
+            },
+            {
+              "pc": 87,
+              "op": "getglobal",
+              "a": 3,
+              "b": 0,
+              "c": 16,
+              "constant": "display"
+            },
+            {
+              "pc": 88,
+              "op": "gettable",
+              "a": 3,
+              "b": 3,
+              "c": 275,
+              "constant_operands": {
+                "c": "CENTER"
+              }
+            },
+            {
+              "pc": 89,
+              "op": "gettable",
+              "a": 4,
+              "b": 0,
+              "c": 266,
+              "constant_operands": {
+                "c": "width"
+              }
+            },
+            {
+              "pc": 90,
+              "op": "div",
+              "a": 4,
+              "b": 4,
+              "c": 276,
+              "constant_operands": {
+                "c": 2.0
+              }
+            },
+            {
+              "pc": 91,
+              "op": "gettable",
+              "a": 5,
+              "b": 0,
+              "c": 267,
+              "constant_operands": {
+                "c": "height"
+              }
+            },
+            {
+              "pc": 92,
+              "op": "div",
+              "a": 5,
+              "b": 5,
+              "c": 276,
+              "constant_operands": {
+                "c": 2.0
+              }
+            },
+            {
+              "pc": 93,
+              "op": "call",
+              "a": 1,
+              "b": 5,
+              "c": 2
+            },
+            {
+              "pc": 94,
+              "op": "self",
+              "a": 1,
+              "b": 1,
+              "c": 269,
+              "constant_operands": {
+                "c": "addTo"
+              }
+            },
+            {
+              "pc": 95,
+              "op": "move",
+              "a": 3,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 96,
+              "op": "loadk",
+              "a": 4,
+              "b": 0,
+              "c": 28,
+              "constant": 3.0
+            },
+            {
+              "pc": 97,
+              "op": "call",
+              "a": 1,
+              "b": 4,
+              "c": 1
+            },
+            {
+              "pc": 98,
+              "op": "return",
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "member": "cframe.extends.cc.ui.RichLabel",
+      "sha256": "193e288762b6138ee63d164c73775a68f6909dcf8ced5a18d8f69cd29d849ada",
+      "prototypes": [
+        {
+          "id": "0.1",
+          "line": 160,
+          "last_line": 201,
+          "header": [
+            0,
+            2,
+            0,
+            15
+          ],
+          "constants": [
+            "fontName",
+            "display",
+            "DEFAULT_TTF_FONT",
+            "fontSize",
+            "DEFAULT_TTF_FONT_SIZE",
+            "fontColor",
+            "cc",
+            "c4b",
+            255.0,
+            "outline",
+            "maxWidth",
+            0.0,
+            "lineSpace",
+            "charSpace",
+            "maxheight",
+            "maxHeight",
+            "isGameHint",
+            "isVideoChat",
+            "textAlign",
+            "left_center",
+            "setTextAlign",
+            "lineWidth",
+            "tipsidColor",
+            "Node",
+            "create",
+            "addChild",
+            "_maxWidth",
+            999999999999.0,
+            "_containerNode",
+            "_animationCounter",
+            "_default",
+            "setAnchorPoint",
+            "p",
+            1.0,
+            "setCascadeOpacityEnabled",
+            "setCascadeColorEnabled"
+          ],
+          "instructions": [
+            {
+              "pc": 1,
+              "op": "test",
+              "a": 1,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 2,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 1
+            },
+            {
+              "pc": 3,
+              "op": "newtable",
+              "a": 2,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 4,
+              "op": "move",
+              "a": 1,
+              "b": 2,
+              "c": 0
+            },
+            {
+              "pc": 5,
+              "op": "gettable",
+              "a": 2,
+              "b": 1,
+              "c": 256,
+              "constant_operands": {
+                "c": "fontName"
+              }
+            },
+            {
+              "pc": 6,
+              "op": "test",
+              "a": 2,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 7,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 1
+            },
+            {
+              "pc": 8,
+              "op": "getglobal",
+              "a": 2,
+              "b": 0,
+              "c": 1,
+              "constant": "display"
+            },
+            {
+              "pc": 9,
+              "op": "gettable",
+              "a": 2,
+              "b": 2,
+              "c": 258,
+              "constant_operands": {
+                "c": "DEFAULT_TTF_FONT"
+              }
+            },
+            {
+              "pc": 10,
+              "op": "gettable",
+              "a": 3,
+              "b": 1,
+              "c": 259,
+              "constant_operands": {
+                "c": "fontSize"
+              }
+            },
+            {
+              "pc": 11,
+              "op": "test",
+              "a": 3,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 12,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 1
+            },
+            {
+              "pc": 13,
+              "op": "getglobal",
+              "a": 3,
+              "b": 0,
+              "c": 1,
+              "constant": "display"
+            },
+            {
+              "pc": 14,
+              "op": "gettable",
+              "a": 3,
+              "b": 3,
+              "c": 260,
+              "constant_operands": {
+                "c": "DEFAULT_TTF_FONT_SIZE"
+              }
+            },
+            {
+              "pc": 15,
+              "op": "gettable",
+              "a": 4,
+              "b": 1,
+              "c": 261,
+              "constant_operands": {
+                "c": "fontColor"
+              }
+            },
+            {
+              "pc": 16,
+              "op": "test",
+              "a": 4,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 17,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 6
+            },
+            {
+              "pc": 18,
+              "op": "getglobal",
+              "a": 4,
+              "b": 0,
+              "c": 6,
+              "constant": "cc"
+            },
+            {
+              "pc": 19,
+              "op": "gettable",
+              "a": 4,
+              "b": 4,
+              "c": 263,
+              "constant_operands": {
+                "c": "c4b"
+              }
+            },
+            {
+              "pc": 20,
+              "op": "loadk",
+              "a": 5,
+              "b": 0,
+              "c": 8,
+              "constant": 255.0
+            },
+            {
+              "pc": 21,
+              "op": "loadk",
+              "a": 6,
+              "b": 0,
+              "c": 8,
+              "constant": 255.0
+            },
+            {
+              "pc": 22,
+              "op": "loadk",
+              "a": 7,
+              "b": 0,
+              "c": 8,
+              "constant": 255.0
+            },
+            {
+              "pc": 23,
+              "op": "loadk",
+              "a": 8,
+              "b": 0,
+              "c": 8,
+              "constant": 255.0
+            },
+            {
+              "pc": 24,
+              "op": "call",
+              "a": 4,
+              "b": 5,
+              "c": 2
+            },
+            {
+              "pc": 25,
+              "op": "gettable",
+              "a": 5,
+              "b": 1,
+              "c": 265,
+              "constant_operands": {
+                "c": "outline"
+              }
+            },
+            {
+              "pc": 26,
+              "op": "gettable",
+              "a": 6,
+              "b": 1,
+              "c": 266,
+              "constant_operands": {
+                "c": "maxWidth"
+              }
+            },
+            {
+              "pc": 27,
+              "op": "test",
+              "a": 6,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 28,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 0
+            },
+            {
+              "pc": 29,
+              "op": "loadk",
+              "a": 6,
+              "b": 0,
+              "c": 11,
+              "constant": 0.0
+            },
+            {
+              "pc": 30,
+              "op": "gettable",
+              "a": 7,
+              "b": 1,
+              "c": 268,
+              "constant_operands": {
+                "c": "lineSpace"
+              }
+            },
+            {
+              "pc": 31,
+              "op": "test",
+              "a": 7,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 32,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 0
+            },
+            {
+              "pc": 33,
+              "op": "loadk",
+              "a": 7,
+              "b": 0,
+              "c": 11,
+              "constant": 0.0
+            },
+            {
+              "pc": 34,
+              "op": "gettable",
+              "a": 8,
+              "b": 1,
+              "c": 269,
+              "constant_operands": {
+                "c": "charSpace"
+              }
+            },
+            {
+              "pc": 35,
+              "op": "test",
+              "a": 8,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 36,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 0
+            },
+            {
+              "pc": 37,
+              "op": "loadk",
+              "a": 8,
+              "b": 0,
+              "c": 11,
+              "constant": 0.0
+            },
+            {
+              "pc": 38,
+              "op": "gettable",
+              "a": 9,
+              "b": 1,
+              "c": 271,
+              "constant_operands": {
+                "c": "maxHeight"
+              }
+            },
+            {
+              "pc": 39,
+              "op": "test",
+              "a": 9,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 40,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 0
+            },
+            {
+              "pc": 41,
+              "op": "loadk",
+              "a": 9,
+              "b": 0,
+              "c": 11,
+              "constant": 0.0
+            },
+            {
+              "pc": 42,
+              "op": "settable",
+              "a": 0,
+              "b": 270,
+              "c": 9,
+              "constant_operands": {
+                "b": "maxheight"
+              }
+            },
+            {
+              "pc": 43,
+              "op": "gettable",
+              "a": 9,
+              "b": 1,
+              "c": 272,
+              "constant_operands": {
+                "c": "isGameHint"
+              }
+            },
+            {
+              "pc": 44,
+              "op": "test",
+              "a": 9,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 45,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 0
+            },
+            {
+              "pc": 46,
+              "op": "loadbool",
+              "a": 9,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 47,
+              "op": "settable",
+              "a": 0,
+              "b": 272,
+              "c": 9,
+              "constant_operands": {
+                "b": "isGameHint"
+              }
+            },
+            {
+              "pc": 48,
+              "op": "gettable",
+              "a": 9,
+              "b": 1,
+              "c": 273,
+              "constant_operands": {
+                "c": "isVideoChat"
+              }
+            },
+            {
+              "pc": 49,
+              "op": "test",
+              "a": 9,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 50,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 0
+            },
+            {
+              "pc": 51,
+              "op": "loadbool",
+              "a": 9,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 52,
+              "op": "settable",
+              "a": 0,
+              "b": 273,
+              "c": 9,
+              "constant_operands": {
+                "b": "isVideoChat"
+              }
+            },
+            {
+              "pc": 53,
+              "op": "gettable",
+              "a": 9,
+              "b": 1,
+              "c": 274,
+              "constant_operands": {
+                "c": "textAlign"
+              }
+            },
+            {
+              "pc": 54,
+              "op": "test",
+              "a": 9,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 55,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 0
+            },
+            {
+              "pc": 56,
+              "op": "loadk",
+              "a": 9,
+              "b": 0,
+              "c": 19,
+              "constant": "left_center"
+            },
+            {
+              "pc": 57,
+              "op": "settable",
+              "a": 0,
+              "b": 274,
+              "c": 9,
+              "constant_operands": {
+                "b": "textAlign"
+              }
+            },
+            {
+              "pc": 58,
+              "op": "self",
+              "a": 9,
+              "b": 0,
+              "c": 276,
+              "constant_operands": {
+                "c": "setTextAlign"
+              }
+            },
+            {
+              "pc": 59,
+              "op": "call",
+              "a": 9,
+              "b": 2,
+              "c": 1
+            },
+            {
+              "pc": 60,
+              "op": "gettable",
+              "a": 9,
+              "b": 1,
+              "c": 277,
+              "constant_operands": {
+                "c": "lineWidth"
+              }
+            },
+            {
+              "pc": 61,
+              "op": "settable",
+              "a": 0,
+              "b": 277,
+              "c": 9,
+              "constant_operands": {
+                "b": "lineWidth"
+              }
+            },
+            {
+              "pc": 62,
+              "op": "gettable",
+              "a": 9,
+              "b": 1,
+              "c": 278,
+              "constant_operands": {
+                "c": "tipsidColor"
+              }
+            },
+            {
+              "pc": 63,
+              "op": "settable",
+              "a": 0,
+              "b": 278,
+              "c": 9,
+              "constant_operands": {
+                "b": "tipsidColor"
+              }
+            },
+            {
+              "pc": 64,
+              "op": "getglobal",
+              "a": 9,
+              "b": 0,
+              "c": 6,
+              "constant": "cc"
+            },
+            {
+              "pc": 65,
+              "op": "gettable",
+              "a": 9,
+              "b": 9,
+              "c": 279,
+              "constant_operands": {
+                "c": "Node"
+              }
+            },
+            {
+              "pc": 66,
+              "op": "self",
+              "a": 9,
+              "b": 9,
+              "c": 280,
+              "constant_operands": {
+                "c": "create"
+              }
+            },
+            {
+              "pc": 67,
+              "op": "call",
+              "a": 9,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 68,
+              "op": "self",
+              "a": 10,
+              "b": 0,
+              "c": 281,
+              "constant_operands": {
+                "c": "addChild"
+              }
+            },
+            {
+              "pc": 69,
+              "op": "move",
+              "a": 12,
+              "b": 9,
+              "c": 0
+            },
+            {
+              "pc": 70,
+              "op": "call",
+              "a": 10,
+              "b": 3,
+              "c": 1
+            },
+            {
+              "pc": 71,
+              "op": "gettable",
+              "a": 10,
+              "b": 0,
+              "c": 277,
+              "constant_operands": {
+                "c": "lineWidth"
+              }
+            },
+            {
+              "pc": 72,
+              "op": "test",
+              "a": 10,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 73,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 3
+            },
+            {
+              "pc": 74,
+              "op": "gettable",
+              "a": 10,
+              "b": 1,
+              "c": 266,
+              "constant_operands": {
+                "c": "maxWidth"
+              }
+            },
+            {
+              "pc": 75,
+              "op": "test",
+              "a": 10,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 76,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 0
+            },
+            {
+              "pc": 77,
+              "op": "loadk",
+              "a": 10,
+              "b": 0,
+              "c": 27,
+              "constant": 999999999999.0
+            },
+            {
+              "pc": 78,
+              "op": "settable",
+              "a": 0,
+              "b": 282,
+              "c": 10,
+              "constant_operands": {
+                "b": "_maxWidth"
+              }
+            },
+            {
+              "pc": 79,
+              "op": "settable",
+              "a": 0,
+              "b": 284,
+              "c": 9,
+              "constant_operands": {
+                "b": "_containerNode"
+              }
+            },
+            {
+              "pc": 80,
+              "op": "settable",
+              "a": 0,
+              "b": 285,
+              "c": 267,
+              "constant_operands": {
+                "b": "_animationCounter",
+                "c": 0.0
+              }
+            },
+            {
+              "pc": 81,
+              "op": "newtable",
+              "a": 10,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 82,
+              "op": "settable",
+              "a": 0,
+              "b": 286,
+              "c": 10,
+              "constant_operands": {
+                "b": "_default"
+              }
+            },
+            {
+              "pc": 83,
+              "op": "gettable",
+              "a": 10,
+              "b": 0,
+              "c": 286,
+              "constant_operands": {
+                "c": "_default"
+              }
+            },
+            {
+              "pc": 84,
+              "op": "settable",
+              "a": 10,
+              "b": 256,
+              "c": 2,
+              "constant_operands": {
+                "b": "fontName"
+              }
+            },
+            {
+              "pc": 85,
+              "op": "gettable",
+              "a": 10,
+              "b": 0,
+              "c": 286,
+              "constant_operands": {
+                "c": "_default"
+              }
+            },
+            {
+              "pc": 86,
+              "op": "settable",
+              "a": 10,
+              "b": 259,
+              "c": 3,
+              "constant_operands": {
+                "b": "fontSize"
+              }
+            },
+            {
+              "pc": 87,
+              "op": "gettable",
+              "a": 10,
+              "b": 0,
+              "c": 286,
+              "constant_operands": {
+                "c": "_default"
+              }
+            },
+            {
+              "pc": 88,
+              "op": "settable",
+              "a": 10,
+              "b": 261,
+              "c": 4,
+              "constant_operands": {
+                "b": "fontColor"
+              }
+            },
+            {
+              "pc": 89,
+              "op": "gettable",
+              "a": 10,
+              "b": 0,
+              "c": 286,
+              "constant_operands": {
+                "c": "_default"
+              }
+            },
+            {
+              "pc": 90,
+              "op": "settable",
+              "a": 10,
+              "b": 268,
+              "c": 7,
+              "constant_operands": {
+                "b": "lineSpace"
+              }
+            },
+            {
+              "pc": 91,
+              "op": "gettable",
+              "a": 10,
+              "b": 0,
+              "c": 286,
+              "constant_operands": {
+                "c": "_default"
+              }
+            },
+            {
+              "pc": 92,
+              "op": "settable",
+              "a": 10,
+              "b": 269,
+              "c": 8,
+              "constant_operands": {
+                "b": "charSpace"
+              }
+            },
+            {
+              "pc": 93,
+              "op": "gettable",
+              "a": 10,
+              "b": 0,
+              "c": 286,
+              "constant_operands": {
+                "c": "_default"
+              }
+            },
+            {
+              "pc": 94,
+              "op": "settable",
+              "a": 10,
+              "b": 265,
+              "c": 5,
+              "constant_operands": {
+                "b": "outline"
+              }
+            },
+            {
+              "pc": 95,
+              "op": "self",
+              "a": 10,
+              "b": 0,
+              "c": 287,
+              "constant_operands": {
+                "c": "setAnchorPoint"
+              }
+            },
+            {
+              "pc": 96,
+              "op": "getglobal",
+              "a": 12,
+              "b": 0,
+              "c": 6,
+              "constant": "cc"
+            },
+            {
+              "pc": 97,
+              "op": "gettable",
+              "a": 12,
+              "b": 12,
+              "c": 288,
+              "constant_operands": {
+                "c": "p"
+              }
+            },
+            {
+              "pc": 98,
+              "op": "loadk",
+              "a": 13,
+              "b": 0,
+              "c": 11,
+              "constant": 0.0
+            },
+            {
+              "pc": 99,
+              "op": "loadk",
+              "a": 14,
+              "b": 0,
+              "c": 33,
+              "constant": 1.0
+            },
+            {
+              "pc": 100,
+              "op": "call",
+              "a": 12,
+              "b": 3,
+              "c": 0
+            },
+            {
+              "pc": 101,
+              "op": "call",
+              "a": 10,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 102,
+              "op": "self",
+              "a": 10,
+              "b": 0,
+              "c": 290,
+              "constant_operands": {
+                "c": "setCascadeOpacityEnabled"
+              }
+            },
+            {
+              "pc": 103,
+              "op": "loadbool",
+              "a": 12,
+              "b": 1,
+              "c": 0
+            },
+            {
+              "pc": 104,
+              "op": "call",
+              "a": 10,
+              "b": 3,
+              "c": 1
+            },
+            {
+              "pc": 105,
+              "op": "self",
+              "a": 10,
+              "b": 0,
+              "c": 291,
+              "constant_operands": {
+                "c": "setCascadeColorEnabled"
+              }
+            },
+            {
+              "pc": 106,
+              "op": "loadbool",
+              "a": 12,
+              "b": 1,
+              "c": 0
+            },
+            {
+              "pc": 107,
+              "op": "call",
+              "a": 10,
+              "b": 3,
+              "c": 1
+            },
+            {
+              "pc": 108,
+              "op": "self",
+              "a": 10,
+              "b": 9,
+              "c": 290,
+              "constant_operands": {
+                "c": "setCascadeOpacityEnabled"
+              }
+            },
+            {
+              "pc": 109,
+              "op": "loadbool",
+              "a": 12,
+              "b": 1,
+              "c": 0
+            },
+            {
+              "pc": 110,
+              "op": "call",
+              "a": 10,
+              "b": 3,
+              "c": 1
+            },
+            {
+              "pc": 111,
+              "op": "self",
+              "a": 10,
+              "b": 9,
+              "c": 291,
+              "constant_operands": {
+                "c": "setCascadeColorEnabled"
+              }
+            },
+            {
+              "pc": 112,
+              "op": "loadbool",
+              "a": 12,
+              "b": 1,
+              "c": 0
+            },
+            {
+              "pc": 113,
+              "op": "call",
+              "a": 10,
+              "b": 3,
+              "c": 1
+            },
+            {
+              "pc": 114,
+              "op": "return",
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          ]
+        },
+        {
+          "id": "0.6",
+          "line": 326,
+          "last_line": 409,
+          "header": [
+            0,
+            1,
+            0,
+            29
+          ],
+          "constants": [
+            "cc",
+            "p",
+            0.0,
+            "_containerNode",
+            "_default",
+            "lineSpace",
+            "charSpace",
+            "_fontNodesCache",
+            "ipairs",
+            "removeSelf",
+            1.0,
+            "_packageTable",
+            "_alllines",
+            "adjustLineBreak_",
+            "allnodelist",
+            "lineWidth",
+            "isOutOfMaxHeight",
+            false,
+            "lineHeight",
+            "pairs",
+            "layoutLine_",
+            "align",
+            "maxheight",
+            "hide",
+            true,
+            "show",
+            "y",
+            "lastLine",
+            "_currentWidth",
+            "_currentHeight",
+            "getAnchorPoint",
+            "x",
+            "setPosition"
+          ],
+          "instructions": [
+            {
+              "pc": 1,
+              "op": "getglobal",
+              "a": 1,
+              "b": 0,
+              "c": 0,
+              "constant": "cc"
+            },
+            {
+              "pc": 2,
+              "op": "gettable",
+              "a": 1,
+              "b": 1,
+              "c": 257,
+              "constant_operands": {
+                "c": "p"
+              }
+            },
+            {
+              "pc": 3,
+              "op": "loadk",
+              "a": 2,
+              "b": 0,
+              "c": 2,
+              "constant": 0.0
+            },
+            {
+              "pc": 4,
+              "op": "loadk",
+              "a": 3,
+              "b": 0,
+              "c": 2,
+              "constant": 0.0
+            },
+            {
+              "pc": 5,
+              "op": "call",
+              "a": 1,
+              "b": 3,
+              "c": 2
+            },
+            {
+              "pc": 6,
+              "op": "loadk",
+              "a": 2,
+              "b": 0,
+              "c": 2,
+              "constant": 0.0
+            },
+            {
+              "pc": 7,
+              "op": "loadk",
+              "a": 3,
+              "b": 0,
+              "c": 2,
+              "constant": 0.0
+            },
+            {
+              "pc": 8,
+              "op": "gettable",
+              "a": 4,
+              "b": 0,
+              "c": 259,
+              "constant_operands": {
+                "c": "_containerNode"
+              }
+            },
+            {
+              "pc": 9,
+              "op": "gettable",
+              "a": 5,
+              "b": 0,
+              "c": 260,
+              "constant_operands": {
+                "c": "_default"
+              }
+            },
+            {
+              "pc": 10,
+              "op": "gettable",
+              "a": 5,
+              "b": 5,
+              "c": 261,
+              "constant_operands": {
+                "c": "lineSpace"
+              }
+            },
+            {
+              "pc": 11,
+              "op": "gettable",
+              "a": 6,
+              "b": 0,
+              "c": 260,
+              "constant_operands": {
+                "c": "_default"
+              }
+            },
+            {
+              "pc": 12,
+              "op": "gettable",
+              "a": 6,
+              "b": 6,
+              "c": 262,
+              "constant_operands": {
+                "c": "charSpace"
+              }
+            },
+            {
+              "pc": 13,
+              "op": "loadk",
+              "a": 7,
+              "b": 0,
+              "c": 2,
+              "constant": 0.0
+            },
+            {
+              "pc": 14,
+              "op": "loadk",
+              "a": 8,
+              "b": 0,
+              "c": 2,
+              "constant": 0.0
+            },
+            {
+              "pc": 15,
+              "op": "gettable",
+              "a": 9,
+              "b": 0,
+              "c": 263,
+              "constant_operands": {
+                "c": "_fontNodesCache"
+              }
+            },
+            {
+              "pc": 16,
+              "op": "test",
+              "a": 9,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 17,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 13
+            },
+            {
+              "pc": 18,
+              "op": "gettable",
+              "a": 9,
+              "b": 0,
+              "c": 263,
+              "constant_operands": {
+                "c": "_fontNodesCache"
+              }
+            },
+            {
+              "pc": 19,
+              "op": "len",
+              "a": 9,
+              "b": 9,
+              "c": 0
+            },
+            {
+              "pc": 20,
+              "op": "lt",
+              "a": 0,
+              "b": 258,
+              "c": 9,
+              "constant_operands": {
+                "b": 0.0
+              }
+            },
+            {
+              "pc": 21,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 9
+            },
+            {
+              "pc": 22,
+              "op": "getglobal",
+              "a": 9,
+              "b": 0,
+              "c": 8,
+              "constant": "ipairs"
+            },
+            {
+              "pc": 23,
+              "op": "gettable",
+              "a": 10,
+              "b": 0,
+              "c": 263,
+              "constant_operands": {
+                "c": "_fontNodesCache"
+              }
+            },
+            {
+              "pc": 24,
+              "op": "call",
+              "a": 9,
+              "b": 2,
+              "c": 4
+            },
+            {
+              "pc": 25,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 3
+            },
+            {
+              "pc": 26,
+              "op": "test",
+              "a": 13,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 27,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 1
+            },
+            {
+              "pc": 28,
+              "op": "self",
+              "a": 14,
+              "b": 13,
+              "c": 265,
+              "constant_operands": {
+                "c": "removeSelf"
+              }
+            },
+            {
+              "pc": 29,
+              "op": "call",
+              "a": 14,
+              "b": 2,
+              "c": 1
+            },
+            {
+              "pc": 30,
+              "op": "tforloop",
+              "a": 9,
+              "b": 0,
+              "c": 2
+            },
+            {
+              "pc": 31,
+              "op": "jmp",
+              "a": 0,
+              "b": 255,
+              "c": 505
+            },
+            {
+              "pc": 32,
+              "op": "newtable",
+              "a": 9,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 33,
+              "op": "settable",
+              "a": 0,
+              "b": 263,
+              "c": 9,
+              "constant_operands": {
+                "b": "_fontNodesCache"
+              }
+            },
+            {
+              "pc": 34,
+              "op": "loadk",
+              "a": 9,
+              "b": 0,
+              "c": 10,
+              "constant": 1.0
+            },
+            {
+              "pc": 35,
+              "op": "gettable",
+              "a": 10,
+              "b": 0,
+              "c": 267,
+              "constant_operands": {
+                "c": "_packageTable"
+              }
+            },
+            {
+              "pc": 36,
+              "op": "test",
+              "a": 10,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 37,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 0
+            },
+            {
+              "pc": 38,
+              "op": "newtable",
+              "a": 10,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 39,
+              "op": "len",
+              "a": 10,
+              "b": 10,
+              "c": 0
+            },
+            {
+              "pc": 40,
+              "op": "loadk",
+              "a": 11,
+              "b": 0,
+              "c": 10,
+              "constant": 1.0
+            },
+            {
+              "pc": 41,
+              "op": "forprep",
+              "a": 9,
+              "b": 256,
+              "c": 14
+            },
+            {
+              "pc": 42,
+              "op": "loadnil",
+              "a": 13,
+              "b": 13,
+              "c": 0
+            },
+            {
+              "pc": 43,
+              "op": "gettable",
+              "a": 14,
+              "b": 0,
+              "c": 267,
+              "constant_operands": {
+                "c": "_packageTable"
+              }
+            },
+            {
+              "pc": 44,
+              "op": "gettable",
+              "a": 14,
+              "b": 14,
+              "c": 12,
+              "constant_operands": {}
+            },
+            {
+              "pc": 45,
+              "op": "self",
+              "a": 15,
+              "b": 0,
+              "c": 269,
+              "constant_operands": {
+                "c": "adjustLineBreak_"
+              }
+            },
+            {
+              "pc": 46,
+              "op": "gettable",
+              "a": 17,
+              "b": 0,
+              "c": 267,
+              "constant_operands": {
+                "c": "_packageTable"
+              }
+            },
+            {
+              "pc": 47,
+              "op": "gettable",
+              "a": 17,
+              "b": 17,
+              "c": 12,
+              "constant_operands": {}
+            },
+            {
+              "pc": 48,
+              "op": "gettable",
+              "a": 17,
+              "b": 17,
+              "c": 270,
+              "constant_operands": {
+                "c": "allnodelist"
+              }
+            },
+            {
+              "pc": 49,
+              "op": "move",
+              "a": 18,
+              "b": 6,
+              "c": 0
+            },
+            {
+              "pc": 50,
+              "op": "move",
+              "a": 19,
+              "b": 12,
+              "c": 0
+            },
+            {
+              "pc": 51,
+              "op": "call",
+              "a": 15,
+              "b": 5,
+              "c": 3
+            },
+            {
+              "pc": 52,
+              "op": "move",
+              "a": 13,
+              "b": 16,
+              "c": 0
+            },
+            {
+              "pc": 53,
+              "op": "settable",
+              "a": 14,
+              "b": 268,
+              "c": 15,
+              "constant_operands": {
+                "b": "_alllines"
+              }
+            },
+            {
+              "pc": 54,
+              "op": "lt",
+              "a": 0,
+              "b": 7,
+              "c": 13,
+              "constant_operands": {}
+            },
+            {
+              "pc": 55,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 0
+            },
+            {
+              "pc": 56,
+              "op": "move",
+              "a": 7,
+              "b": 13,
+              "c": 0
+            },
+            {
+              "pc": 57,
+              "op": "forloop",
+              "a": 9,
+              "b": 255,
+              "c": 495
+            },
+            {
+              "pc": 58,
+              "op": "gettable",
+              "a": 9,
+              "b": 0,
+              "c": 271,
+              "constant_operands": {
+                "c": "lineWidth"
+              }
+            },
+            {
+              "pc": 59,
+              "op": "test",
+              "a": 9,
+              "b": 0,
+              "c": 1
+            },
+            {
+              "pc": 60,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 0
+            },
+            {
+              "pc": 61,
+              "op": "move",
+              "a": 9,
+              "b": 7,
+              "c": 0
+            },
+            {
+              "pc": 62,
+              "op": "loadnil",
+              "a": 10,
+              "b": 10,
+              "c": 0
+            },
+            {
+              "pc": 63,
+              "op": "settable",
+              "a": 0,
+              "b": 272,
+              "c": 273,
+              "constant_operands": {
+                "b": "isOutOfMaxHeight",
+                "c": false
+              }
+            },
+            {
+              "pc": 64,
+              "op": "newtable",
+              "a": 11,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 65,
+              "op": "settable",
+              "a": 0,
+              "b": 274,
+              "c": 11,
+              "constant_operands": {
+                "b": "lineHeight"
+              }
+            },
+            {
+              "pc": 66,
+              "op": "loadk",
+              "a": 11,
+              "b": 0,
+              "c": 10,
+              "constant": 1.0
+            },
+            {
+              "pc": 67,
+              "op": "gettable",
+              "a": 12,
+              "b": 0,
+              "c": 267,
+              "constant_operands": {
+                "c": "_packageTable"
+              }
+            },
+            {
+              "pc": 68,
+              "op": "len",
+              "a": 12,
+              "b": 12,
+              "c": 0
+            },
+            {
+              "pc": 69,
+              "op": "loadk",
+              "a": 13,
+              "b": 0,
+              "c": 10,
+              "constant": 1.0
+            },
+            {
+              "pc": 70,
+              "op": "forprep",
+              "a": 11,
+              "b": 256,
+              "c": 51
+            },
+            {
+              "pc": 71,
+              "op": "getglobal",
+              "a": 15,
+              "b": 0,
+              "c": 19,
+              "constant": "pairs"
+            },
+            {
+              "pc": 72,
+              "op": "gettable",
+              "a": 16,
+              "b": 0,
+              "c": 267,
+              "constant_operands": {
+                "c": "_packageTable"
+              }
+            },
+            {
+              "pc": 73,
+              "op": "gettable",
+              "a": 16,
+              "b": 16,
+              "c": 14,
+              "constant_operands": {}
+            },
+            {
+              "pc": 74,
+              "op": "gettable",
+              "a": 16,
+              "b": 16,
+              "c": 268,
+              "constant_operands": {
+                "c": "_alllines"
+              }
+            },
+            {
+              "pc": 75,
+              "op": "call",
+              "a": 15,
+              "b": 2,
+              "c": 4
+            },
+            {
+              "pc": 76,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 43
+            },
+            {
+              "pc": 77,
+              "op": "len",
+              "a": 20,
+              "b": 19,
+              "c": 0
+            },
+            {
+              "pc": 78,
+              "op": "lt",
+              "a": 0,
+              "b": 258,
+              "c": 20,
+              "constant_operands": {
+                "b": 0.0
+              }
+            },
+            {
+              "pc": 79,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 40
+            },
+            {
+              "pc": 80,
+              "op": "self",
+              "a": 20,
+              "b": 0,
+              "c": 276,
+              "constant_operands": {
+                "c": "layoutLine_"
+              }
+            },
+            {
+              "pc": 81,
+              "op": "move",
+              "a": 22,
+              "b": 19,
+              "c": 0
+            },
+            {
+              "pc": 82,
+              "op": "move",
+              "a": 23,
+              "b": 1,
+              "c": 0
+            },
+            {
+              "pc": 83,
+              "op": "move",
+              "a": 24,
+              "b": 9,
+              "c": 0
+            },
+            {
+              "pc": 84,
+              "op": "gettable",
+              "a": 25,
+              "b": 0,
+              "c": 267,
+              "constant_operands": {
+                "c": "_packageTable"
+              }
+            },
+            {
+              "pc": 85,
+              "op": "gettable",
+              "a": 25,
+              "b": 25,
+              "c": 14,
+              "constant_operands": {}
+            },
+            {
+              "pc": 86,
+              "op": "gettable",
+              "a": 25,
+              "b": 25,
+              "c": 277,
+              "constant_operands": {
+                "c": "align"
+              }
+            },
+            {
+              "pc": 87,
+              "op": "move",
+              "a": 26,
+              "b": 6,
+              "c": 0
+            },
+            {
+              "pc": 88,
+              "op": "call",
+              "a": 20,
+              "b": 7,
+              "c": 3
+            },
+            {
+              "pc": 89,
+              "op": "gettable",
+              "a": 22,
+              "b": 0,
+              "c": 278,
+              "constant_operands": {
+                "c": "maxheight"
+              }
+            },
+            {
+              "pc": 90,
+              "op": "lt",
+              "a": 0,
+              "b": 258,
+              "c": 22,
+              "constant_operands": {
+                "b": 0.0
+              }
+            },
+            {
+              "pc": 91,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 12
+            },
+            {
+              "pc": 92,
+              "op": "gettable",
+              "a": 22,
+              "b": 0,
+              "c": 278,
+              "constant_operands": {
+                "c": "maxheight"
+              }
+            },
+            {
+              "pc": 93,
+              "op": "lt",
+              "a": 0,
+              "b": 22,
+              "c": 8,
+              "constant_operands": {}
+            },
+            {
+              "pc": 94,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 9
+            },
+            {
+              "pc": 95,
+              "op": "getglobal",
+              "a": 22,
+              "b": 0,
+              "c": 19,
+              "constant": "pairs"
+            },
+            {
+              "pc": 96,
+              "op": "move",
+              "a": 23,
+              "b": 19,
+              "c": 0
+            },
+            {
+              "pc": 97,
+              "op": "call",
+              "a": 22,
+              "b": 2,
+              "c": 4
+            },
+            {
+              "pc": 98,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 1
+            },
+            {
+              "pc": 99,
+              "op": "self",
+              "a": 27,
+              "b": 26,
+              "c": 279,
+              "constant_operands": {
+                "c": "hide"
+              }
+            },
+            {
+              "pc": 100,
+              "op": "call",
+              "a": 27,
+              "b": 2,
+              "c": 1
+            },
+            {
+              "pc": 101,
+              "op": "tforloop",
+              "a": 22,
+              "b": 0,
+              "c": 2
+            },
+            {
+              "pc": 102,
+              "op": "jmp",
+              "a": 0,
+              "b": 255,
+              "c": 507
+            },
+            {
+              "pc": 103,
+              "op": "settable",
+              "a": 0,
+              "b": 272,
+              "c": 280,
+              "constant_operands": {
+                "b": "isOutOfMaxHeight",
+                "c": true
+              }
+            },
+            {
+              "pc": 104,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 8
+            },
+            {
+              "pc": 105,
+              "op": "getglobal",
+              "a": 22,
+              "b": 0,
+              "c": 19,
+              "constant": "pairs"
+            },
+            {
+              "pc": 106,
+              "op": "move",
+              "a": 23,
+              "b": 19,
+              "c": 0
+            },
+            {
+              "pc": 107,
+              "op": "call",
+              "a": 22,
+              "b": 2,
+              "c": 4
+            },
+            {
+              "pc": 108,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 1
+            },
+            {
+              "pc": 109,
+              "op": "self",
+              "a": 27,
+              "b": 26,
+              "c": 281,
+              "constant_operands": {
+                "c": "show"
+              }
+            },
+            {
+              "pc": 110,
+              "op": "call",
+              "a": 27,
+              "b": 2,
+              "c": 1
+            },
+            {
+              "pc": 111,
+              "op": "tforloop",
+              "a": 22,
+              "b": 0,
+              "c": 2
+            },
+            {
+              "pc": 112,
+              "op": "jmp",
+              "a": 0,
+              "b": 255,
+              "c": 507
+            },
+            {
+              "pc": 113,
+              "op": "move",
+              "a": 10,
+              "b": 19,
+              "c": 0
+            },
+            {
+              "pc": 114,
+              "op": "gettable",
+              "a": 22,
+              "b": 0,
+              "c": 274,
+              "constant_operands": {
+                "c": "lineHeight"
+              }
+            },
+            {
+              "pc": 115,
+              "op": "settable",
+              "a": 22,
+              "b": 18,
+              "c": 21,
+              "constant_operands": {}
+            },
+            {
+              "pc": 116,
+              "op": "add",
+              "a": 22,
+              "b": 21,
+              "c": 5,
+              "constant_operands": {}
+            },
+            {
+              "pc": 117,
+              "op": "gettable",
+              "a": 23,
+              "b": 1,
+              "c": 282,
+              "constant_operands": {
+                "c": "y"
+              }
+            },
+            {
+              "pc": 118,
+              "op": "sub",
+              "a": 23,
+              "b": 23,
+              "c": 22,
+              "constant_operands": {}
+            },
+            {
+              "pc": 119,
+              "op": "settable",
+              "a": 1,
+              "b": 282,
+              "c": 23,
+              "constant_operands": {
+                "b": "y"
+              }
+            },
+            {
+              "pc": 120,
+              "op": "add",
+              "a": 8,
+              "b": 8,
+              "c": 22,
+              "constant_operands": {}
+            },
+            {
+              "pc": 121,
+              "op": "tforloop",
+              "a": 15,
+              "b": 0,
+              "c": 2
+            },
+            {
+              "pc": 122,
+              "op": "jmp",
+              "a": 0,
+              "b": 255,
+              "c": 465
+            },
+            {
+              "pc": 123,
+              "op": "forloop",
+              "a": 11,
+              "b": 255,
+              "c": 458
+            },
+            {
+              "pc": 124,
+              "op": "settable",
+              "a": 0,
+              "b": 283,
+              "c": 10,
+              "constant_operands": {
+                "b": "lastLine"
+              }
+            },
+            {
+              "pc": 125,
+              "op": "sub",
+              "a": 8,
+              "b": 8,
+              "c": 5,
+              "constant_operands": {}
+            },
+            {
+              "pc": 126,
+              "op": "settable",
+              "a": 0,
+              "b": 284,
+              "c": 9,
+              "constant_operands": {
+                "b": "_currentWidth"
+              }
+            },
+            {
+              "pc": 127,
+              "op": "settable",
+              "a": 0,
+              "b": 285,
+              "c": 8,
+              "constant_operands": {
+                "b": "_currentHeight"
+              }
+            },
+            {
+              "pc": 128,
+              "op": "self",
+              "a": 11,
+              "b": 0,
+              "c": 286,
+              "constant_operands": {
+                "c": "getAnchorPoint"
+              }
+            },
+            {
+              "pc": 129,
+              "op": "call",
+              "a": 11,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 130,
+              "op": "loadk",
+              "a": 12,
+              "b": 0,
+              "c": 2,
+              "constant": 0.0
+            },
+            {
+              "pc": 131,
+              "op": "move",
+              "a": 13,
+              "b": 8,
+              "c": 0
+            },
+            {
+              "pc": 132,
+              "op": "gettable",
+              "a": 14,
+              "b": 11,
+              "c": 287,
+              "constant_operands": {
+                "c": "x"
+              }
+            },
+            {
+              "pc": 133,
+              "op": "mul",
+              "a": 14,
+              "b": 14,
+              "c": 9,
+              "constant_operands": {}
+            },
+            {
+              "pc": 134,
+              "op": "sub",
+              "a": 14,
+              "b": 12,
+              "c": 14,
+              "constant_operands": {}
+            },
+            {
+              "pc": 135,
+              "op": "gettable",
+              "a": 15,
+              "b": 11,
+              "c": 282,
+              "constant_operands": {
+                "c": "y"
+              }
+            },
+            {
+              "pc": 136,
+              "op": "mul",
+              "a": 15,
+              "b": 15,
+              "c": 8,
+              "constant_operands": {}
+            },
+            {
+              "pc": 137,
+              "op": "sub",
+              "a": 15,
+              "b": 13,
+              "c": 15,
+              "constant_operands": {}
+            },
+            {
+              "pc": 138,
+              "op": "self",
+              "a": 16,
+              "b": 4,
+              "c": 288,
+              "constant_operands": {
+                "c": "setPosition"
+              }
+            },
+            {
+              "pc": 139,
+              "op": "move",
+              "a": 18,
+              "b": 14,
+              "c": 0
+            },
+            {
+              "pc": 140,
+              "op": "move",
+              "a": 19,
+              "b": 15,
+              "c": 0
+            },
+            {
+              "pc": 141,
+              "op": "call",
+              "a": 16,
+              "b": 4,
+              "c": 1
+            },
+            {
+              "pc": 142,
+              "op": "return",
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          ]
+        },
+        {
+          "id": "0.10",
+          "line": 487,
+          "last_line": 495,
+          "header": [
+            0,
+            3,
+            0,
+            7
+          ],
+          "constants": [
+            "type",
+            "number",
+            "cc",
+            "p",
+            "getmetatable",
+            "setAnchorPoint",
+            "_currentText",
+            "layout"
+          ],
+          "instructions": [
+            {
+              "pc": 1,
+              "op": "getglobal",
+              "a": 3,
+              "b": 0,
+              "c": 0,
+              "constant": "type"
+            },
+            {
+              "pc": 2,
+              "op": "move",
+              "a": 4,
+              "b": 1,
+              "c": 0
+            },
+            {
+              "pc": 3,
+              "op": "call",
+              "a": 3,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 4,
+              "op": "eq",
+              "a": 0,
+              "b": 3,
+              "c": 257,
+              "constant_operands": {
+                "c": "number"
+              }
+            },
+            {
+              "pc": 5,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 5
+            },
+            {
+              "pc": 6,
+              "op": "getglobal",
+              "a": 3,
+              "b": 0,
+              "c": 2,
+              "constant": "cc"
+            },
+            {
+              "pc": 7,
+              "op": "gettable",
+              "a": 3,
+              "b": 3,
+              "c": 259,
+              "constant_operands": {
+                "c": "p"
+              }
+            },
+            {
+              "pc": 8,
+              "op": "move",
+              "a": 4,
+              "b": 1,
+              "c": 0
+            },
+            {
+              "pc": 9,
+              "op": "move",
+              "a": 5,
+              "b": 2,
+              "c": 0
+            },
+            {
+              "pc": 10,
+              "op": "call",
+              "a": 3,
+              "b": 3,
+              "c": 2
+            },
+            {
+              "pc": 11,
+              "op": "move",
+              "a": 1,
+              "b": 3,
+              "c": 0
+            },
+            {
+              "pc": 12,
+              "op": "getglobal",
+              "a": 3,
+              "b": 0,
+              "c": 4,
+              "constant": "getmetatable"
+            },
+            {
+              "pc": 13,
+              "op": "move",
+              "a": 4,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 14,
+              "op": "call",
+              "a": 3,
+              "b": 2,
+              "c": 2
+            },
+            {
+              "pc": 15,
+              "op": "gettable",
+              "a": 3,
+              "b": 3,
+              "c": 261,
+              "constant_operands": {
+                "c": "setAnchorPoint"
+              }
+            },
+            {
+              "pc": 16,
+              "op": "move",
+              "a": 4,
+              "b": 3,
+              "c": 0
+            },
+            {
+              "pc": 17,
+              "op": "move",
+              "a": 5,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 18,
+              "op": "move",
+              "a": 6,
+              "b": 1,
+              "c": 0
+            },
+            {
+              "pc": 19,
+              "op": "call",
+              "a": 4,
+              "b": 3,
+              "c": 1
+            },
+            {
+              "pc": 20,
+              "op": "gettable",
+              "a": 4,
+              "b": 0,
+              "c": 262,
+              "constant_operands": {
+                "c": "_currentText"
+              }
+            },
+            {
+              "pc": 21,
+              "op": "test",
+              "a": 4,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 22,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 1
+            },
+            {
+              "pc": 23,
+              "op": "self",
+              "a": 4,
+              "b": 0,
+              "c": 263,
+              "constant_operands": {
+                "c": "layout"
+              }
+            },
+            {
+              "pc": 24,
+              "op": "call",
+              "a": 4,
+              "b": 2,
+              "c": 1
+            },
+            {
+              "pc": 25,
+              "op": "return",
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "member": "framework.cocos2dx.NodeEx",
+      "sha256": "c7ccdcdf948d8e66dc4ca16733d204855485ebbc62ee3a198b8618a66fcbcdcb",
+      "prototypes": [
+        {
+          "id": "0.2",
+          "line": 61,
+          "last_line": 65,
+          "header": [
+            0,
+            4,
+            0,
+            8
+          ],
+          "constants": [
+            "setAnchorPoint",
+            "display",
+            "ANCHOR_POINTS",
+            "setPosition"
+          ],
+          "instructions": [
+            {
+              "pc": 1,
+              "op": "self",
+              "a": 4,
+              "b": 0,
+              "c": 256,
+              "constant_operands": {
+                "c": "setAnchorPoint"
+              }
+            },
+            {
+              "pc": 2,
+              "op": "getglobal",
+              "a": 6,
+              "b": 0,
+              "c": 1,
+              "constant": "display"
+            },
+            {
+              "pc": 3,
+              "op": "gettable",
+              "a": 6,
+              "b": 6,
+              "c": 258,
+              "constant_operands": {
+                "c": "ANCHOR_POINTS"
+              }
+            },
+            {
+              "pc": 4,
+              "op": "gettable",
+              "a": 6,
+              "b": 6,
+              "c": 1,
+              "constant_operands": {}
+            },
+            {
+              "pc": 5,
+              "op": "call",
+              "a": 4,
+              "b": 3,
+              "c": 1
+            },
+            {
+              "pc": 6,
+              "op": "test",
+              "a": 2,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 7,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 5
+            },
+            {
+              "pc": 8,
+              "op": "test",
+              "a": 3,
+              "b": 0,
+              "c": 0
+            },
+            {
+              "pc": 9,
+              "op": "jmp",
+              "a": 0,
+              "b": 256,
+              "c": 3
+            },
+            {
+              "pc": 10,
+              "op": "self",
+              "a": 4,
+              "b": 0,
+              "c": 259,
+              "constant_operands": {
+                "c": "setPosition"
+              }
+            },
+            {
+              "pc": 11,
+              "op": "move",
+              "a": 6,
+              "b": 2,
+              "c": 0
+            },
+            {
+              "pc": 12,
+              "op": "move",
+              "a": 7,
+              "b": 3,
+              "c": 0
+            },
+            {
+              "pc": 13,
+              "op": "call",
+              "a": 4,
+              "b": 4,
+              "c": 1
+            },
+            {
+              "pc": 14,
+              "op": "return",
+              "a": 0,
+              "b": 2,
+              "c": 0
+            },
+            {
+              "pc": 15,
+              "op": "return",
+              "a": 0,
+              "b": 1,
+              "c": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "plist": {
+    "member": "assets/res/new/tex/plist/skill_window.plist",
+    "sha256": "6f658659d728ad65d7f2cbcb0e83712e5b2ffd371ce1b9d5208428c3cfb177da",
+    "title": {
+      "frame": "{{1129,612},{295,37}}",
+      "offset": "{0,0}",
+      "rotated": true,
+      "sourceColorRect": "{{0,0},{295,37}}",
+      "sourceSize": "{295,37}"
+    },
+    "background": {
+      "frame": "{{592,2},{1696,392}}",
+      "offset": "{0,0}",
+      "rotated": true,
+      "sourceColorRect": "{{0,0},{1696,392}}",
+      "sourceSize": "{1696,392}"
+    }
+  },
+  "layout": {
+    "title": {
+      "size": [
+        295,
+        37
+      ],
+      "anchor": "CENTER",
+      "center_from_top": 20,
+      "text_center_x_offset": 3,
+      "font_size": 32
+    },
+    "native_prompt": {
+      "anchor": "CENTER_BOTTOM",
+      "bottom": 120,
+      "font_size": 30
+    },
+    "native_progress": {
+      "anchor": "CENTER_BOTTOM",
+      "bottom": 113,
+      "size": [
+        560,
+        17
+      ]
+    },
+    "dom_adaptation": "One shared moving anchor; convert native anchor delta7 to a visible gap7 below DOM text using bar height17. Both positions follow the same group translation. This boundary conversion is local and is not an official runtime observation."
+  },
+  "limitation": "Static modified-opcode Lua 5.1 bytecode and packaged assets; no official-client runtime capture."
+}

@@ -1,0 +1,100 @@
+{
+  "result": "not-reproduced",
+  "note": "未复现第二次从武将头像重新飞出；未修改生产飞牌代码",
+  "suites": [
+    {
+      "label": "杀伤害直接濒死",
+      "file": "rescue-flight-nested-before-results.json",
+      "errors": [],
+      "cases": [
+        {
+          "scenario": "rescue",
+          "crowded": false,
+          "recovered": 1,
+          "displayClones": 1,
+          "motions": 1,
+          "moveToCalls": 0,
+          "originRestarts": 0
+        },
+        {
+          "scenario": "rescue",
+          "crowded": true,
+          "recovered": 1,
+          "displayClones": 1,
+          "motions": 2,
+          "moveToCalls": 0,
+          "originRestarts": 0
+        },
+        {
+          "scenario": "save",
+          "crowded": false,
+          "recovered": 1,
+          "displayClones": 1,
+          "motions": 1,
+          "moveToCalls": 0,
+          "originRestarts": 0
+        },
+        {
+          "scenario": "save",
+          "crowded": true,
+          "recovered": 1,
+          "displayClones": 1,
+          "motions": 2,
+          "moveToCalls": 0,
+          "originRestarts": 0
+        }
+      ]
+    },
+    {
+      "label": "用牌结束后技能伤害濒死",
+      "file": "rescue-flight-after-use-results.json",
+      "errors": [],
+      "cases": [
+        {
+          "scenario": "rescue",
+          "crowded": false,
+          "recovered": 1,
+          "displayClones": 1,
+          "motions": 1,
+          "moveToCalls": 0,
+          "originRestarts": 0,
+          "zoom": 1.5288461538461537,
+          "players": 4
+        },
+        {
+          "scenario": "rescue",
+          "crowded": true,
+          "recovered": 1,
+          "displayClones": 1,
+          "motions": 2,
+          "moveToCalls": 0,
+          "originRestarts": 0,
+          "zoom": 1.5288461538461537,
+          "players": 4
+        },
+        {
+          "scenario": "save",
+          "crowded": false,
+          "recovered": 1,
+          "displayClones": 1,
+          "motions": 1,
+          "moveToCalls": 0,
+          "originRestarts": 0,
+          "zoom": 1.5288461538461537,
+          "players": 4
+        },
+        {
+          "scenario": "save",
+          "crowded": true,
+          "recovered": 1,
+          "displayClones": 1,
+          "motions": 2,
+          "moveToCalls": 0,
+          "originRestarts": 0,
+          "zoom": 1.5288461538461537,
+          "players": 4
+        }
+      ]
+    }
+  ]
+}

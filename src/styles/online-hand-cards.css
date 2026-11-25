@@ -5,6 +5,7 @@
 }
 
 body[data-style="onlineUI"] .player > .handdisplays.online-handdisplays {
+	--handdisplays-gap: 5px;
 	position: absolute;
 	width: 33.84px;
 	height: 77.76px;

@@ -1,0 +1,60 @@
+{
+  "cases": [],
+  "errors": [],
+  "comparisons": [
+    {
+      "style": "online",
+      "snapshots": [
+        {
+          "name": "chooseCard",
+          "closing": false,
+          "display": "block",
+          "visible": true,
+          "collapsed": false
+        },
+        {
+          "name": "chooseToUse",
+          "closing": false,
+          "display": "block",
+          "visible": true,
+          "collapsed": false
+        },
+        {
+          "name": "dcrejueyan",
+          "closing": true,
+          "display": "none",
+          "visible": false,
+          "collapsed": false
+        }
+      ],
+      "closed": true
+    },
+    {
+      "style": "xinsha",
+      "snapshots": [
+        {
+          "name": "chooseCard",
+          "closing": false,
+          "display": "block",
+          "visible": true,
+          "collapsed": false
+        },
+        {
+          "name": "chooseToUse",
+          "closing": false,
+          "display": "block",
+          "visible": true,
+          "collapsed": false
+        },
+        {
+          "name": "dcrejueyan",
+          "closing": true,
+          "display": "none",
+          "visible": false,
+          "collapsed": false
+        }
+      ],
+      "closed": true
+    }
+  ]
+}

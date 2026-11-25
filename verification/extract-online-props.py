@@ -13,7 +13,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'verification/online-props-source'
 SOURCE.mkdir(exist_ok=True)
-APK = Path('G:/yoka.game_g_android_4.0.2.apk')
+APK = Path('G:/yoka.game_g_android_4.0.3.7.apk')
 PREFIX = 'assets/cache/https.__web.sanguosha.com_220_sgsolApp/'
 records = []
 

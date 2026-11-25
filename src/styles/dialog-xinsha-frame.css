@@ -1,5 +1,5 @@
 /* 一将成名原版 skill_window_bg_2；与 dialog_ol 共用窗口边界及内容测量。 */
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout:not(.dclieqiong):not(.online-faction-dialog):not(.bosscharacter) {
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout:not(.dclieqiong):not(.online-faction-dialog):not(.bosscharacter) {
 	position: absolute !important;
 	z-index: 101 !important;
 	top: auto !important;
@@ -22,21 +22,21 @@
 	animation-name: open-dialog-xinsha !important;
 	transition-property: opacity !important;
 	--dialog-ol-anchor-bottom: calc(20% + 85px);
-	--dialog-ol-edge-bottom: 24px;
+	--dialog-ol-edge-bottom: calc(24 * var(--dialog-xinsha-layout-unit, 1px));
 	--dialog-ol-frame-padding: var(--dialog-ol-edge-bottom);
-	--dialog-xinsha-title-width: clamp(177px, calc(var(--dialog-ol-width, 100vw) * 295 / 1696), 295px);
-	--dialog-xinsha-title-height: calc(var(--dialog-xinsha-title-width) * 37 / 295);
+	--dialog-xinsha-title-width: calc(295 * var(--dialog-xinsha-layout-unit, 1px));
+	--dialog-xinsha-title-height: calc(37 * var(--dialog-xinsha-layout-unit, 1px));
 }
 
-#arena.decadeUI.dui-mobile[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout {
+#arena.decadeUI.dui-mobile > .dialog.dialog-ol-layout.dialog-xinsha-layout {
 	--dialog-ol-anchor-bottom: calc(23% + 86px);
 }
 
-#arena.decadeUI.choose-character[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout {
+#arena.decadeUI.choose-character > .dialog.dialog-ol-layout.dialog-xinsha-layout {
 	--dialog-ol-anchor-bottom: 70px;
 }
 
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout:not(.dclieqiong):not(.online-faction-dialog):not(.bosscharacter)::before {
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout:not(.dclieqiong):not(.online-faction-dialog):not(.bosscharacter)::before {
 	content: "";
 	position: absolute;
 	inset: 0;
@@ -45,11 +45,12 @@
 	border: 1px solid transparent;
 	border-image-source: url("../../image/ui/dialog/dialog_xinsha.png");
 	border-image-slice: 24 0 fill;
-	border-image-width: 16px 0;
+	/* 原图上缘实线在 y20，与标题中心 y20 对齐，标题下半部压在窗体上。 */
+	border-image-width: calc(24 * var(--dialog-xinsha-layout-unit, 1px)) 0;
 	border-image-repeat: stretch;
 }
 
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content-container {
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout > .content-container {
 	position: absolute;
 	inset: 0 0 calc(var(--dialog-ol-frame-padding) + var(--dialog-ol-footer-space, 0px));
 	width: auto;
@@ -61,8 +62,8 @@
 	transition-property: opacity !important;
 }
 
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content-container > .content,
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content {
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout > .content-container > .content,
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout > .content {
 	position: relative;
 	/* 卡牌动画临时解除 overflow 裁切时仍保持格式化上下文，避免标题 margin 折叠后再跳回。 */
 	display: flow-root;
@@ -73,13 +74,36 @@
 	transition-property: opacity !important;
 }
 
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout .caption {
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout .caption {
 	color: #ffecbb;
 }
 
+/* 固定展示框的语义选项组按自身锚点定位，不叠加本体 content > div 的8px外边距。 */
+body[data-style="othersOff"] #arena.decadeUI > .dialog.dialog-xinsha-layout.lyj-table-dialog > .content-container > .content > .caption:first-child {
+	/* 固定展示框的首个 caption 是标题，正文优化不能一并隐藏标题文字。 */
+	display: flex !important;
+}
+
+body[data-style="othersOff"] #arena.decadeUI > .dialog.dialog-xinsha-layout.lyj-table-dialog > .content-container > .content > [role="group"] {
+	margin: 0 !important;
+	transition-property: opacity !important;
+}
+
+/* 原生牌区缩放会改写 margin；不能继承 div 的 all .5s 令窗口高度逐帧收拢。 */
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout > .content-container > .content > .buttons,
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout > .content > .buttons {
+	transition-property: opacity !important;
+}
+
+/* 保留旧卡牌退场画面时，提示已由新窗口接管。 */
+.dialog.dialog-xinsha-prompt-retiring > .dialog-ol-footer {
+	visibility: hidden !important;
+	transition: none !important;
+}
+
 /* 首个 caption 是标题，原生移牌的行名及操作说明也使用 caption，不能一起套标题栏。 */
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content-container > .content > .caption,
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content > .caption {
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout > .content-container > .content > .caption,
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout > .content > .caption {
 	position: relative !important;
 	top: auto !important;
 	left: auto !important;
@@ -92,30 +116,31 @@
 	transition-property: opacity !important;
 }
 
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content-container > .content > .caption:first-child:not(.choosetomove),
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content > .caption:first-child:not(.choosetomove) {
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout > .content-container > .content > .caption:first-child:not(.choosetomove),
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout > .content > .caption:first-child:not(.choosetomove) {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: var(--dialog-xinsha-title-width) !important;
 	min-height: var(--dialog-xinsha-title-height);
 	height: auto !important;
-	margin: 2px auto 14px !important;
-	padding: 0 22px !important;
-	font-size: 20px;
+	/* SkillNewStyleBaseWindow.createChilden：CENTER(width/2,height-20)。 */
+	margin: calc(1.5 * var(--dialog-xinsha-layout-unit, 1px)) auto calc(14 * var(--dialog-xinsha-layout-unit, 1px)) !important;
+	padding: 0 calc(19 * var(--dialog-xinsha-layout-unit, 1px)) 0 calc(25 * var(--dialog-xinsha-layout-unit, 1px)) !important;
+	font-size: calc(32 * var(--dialog-xinsha-layout-unit, 1px));
 	line-height: var(--dialog-xinsha-title-height);
 	background: url("../../image/ui/dialog/dialog_xinsha_title.png") center / 100% 100% no-repeat !important;
 	transition: none !important;
 	animation: none !important;
 }
 
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .content-container > .content > .caption:first-child:not(.choosetomove) > :not(.dialog-ol-collapse):not(.dialog-xinsha-hide) {
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout > .content-container > .content > .caption:first-child:not(.choosetomove) > :not(.dialog-ol-collapse):not(.dialog-xinsha-hide) {
 	transition: none !important;
 	animation: none !important;
 }
 
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout .caption > .text,
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout .caption > .lei-ol-move-caption-text {
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout .caption > .text,
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout .caption > .lei-ol-move-caption-text {
 	position: relative !important;
 	top: auto !important;
 	left: auto !important;
@@ -124,11 +149,11 @@
 	color: inherit;
 }
 
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout.dialog-ol-skill-prompt {
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout.dialog-ol-skill-prompt {
 	--dialog-ol-footer-space: calc(var(--dialog-ol-footer-height, 26px) + 12px);
 }
 
-#arena.decadeUI[data-loading-style="dialog_xinsha"] > .dialog.dialog-ol-layout > .dialog-ol-footer {
+#arena.decadeUI > .dialog.dialog-ol-layout.dialog-xinsha-layout > .dialog-ol-footer {
 	position: absolute;
 	left: 20px;
 	right: 20px;
@@ -148,7 +173,8 @@
 }
 
 #arena.decadeUI[data-loading-style="dialog_xinsha"] .dialog-ol-footer > .dialog-xinsha-description,
-body[data-style="othersOff"] .dialog-xinsha-prompt-overlay > .dialog-xinsha-description {
+body[data-style="othersOff"] .dialog-xinsha-prompt-overlay > .dialog-xinsha-description,
+body[data-style="othersOff"] .dialog-xinsha-prompt-overlay > :is(.decade-official-main, .decade-official-detail) {
 	position: relative;
 	display: block;
 	width: auto;

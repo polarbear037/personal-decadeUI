@@ -120,8 +120,8 @@ function findFactionControlParent(event) {
 	const seen = new Set();
 	for (let current = event; current && !seen.has(current); current = getParentEvent(current)) {
 		seen.add(current);
-		if (["_slyh", "_shengroup_choice", "_doublegroup_choice"].includes(current.skill)
-			|| ["_slyh", "_shengroup_choice", "_doublegroup_choice"].includes(current.name)) return current;
+		if (["_shengroup_choice", "_devilgroup_choice", "_doublegroup_choice"].includes(current.skill)
+			|| ["_shengroup_choice", "_devilgroup_choice", "_doublegroup_choice"].includes(current.name)) return current;
 	}
 	return null;
 }

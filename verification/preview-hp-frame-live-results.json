@@ -1,0 +1,292 @@
+{
+  "before": {
+    "event": "chooseToUse",
+    "counter": 2,
+    "hand": 15,
+    "listeners": 2
+  },
+  "after": {
+    "event": "chooseToUse",
+    "sameEvent": true,
+    "counter": 2,
+    "hand": 15,
+    "listeners": 2,
+    "paused2": true
+  },
+  "allEqual": true,
+  "count": 16,
+  "rows": [
+    {
+      "name": "luwenyi",
+      "reopen": false,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "208px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "208px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "equal": true
+    },
+    {
+      "name": "luwenyi",
+      "reopen": true,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "208px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "208px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "equal": true
+    },
+    {
+      "name": "dc_guansuo",
+      "reopen": false,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "215.992px",
+        "none"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "215.992px",
+        "none"
+      ],
+      "equal": true
+    },
+    {
+      "name": "dc_guansuo",
+      "reopen": true,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "215.992px",
+        "none"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "215.992px",
+        "none"
+      ],
+      "equal": true
+    },
+    {
+      "name": "pangfengyi",
+      "reopen": false,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "195.991px",
+        "none"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "195.991px",
+        "none"
+      ],
+      "equal": true
+    },
+    {
+      "name": "pangfengyi",
+      "reopen": true,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "195.991px",
+        "none"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "195.991px",
+        "none"
+      ],
+      "equal": true
+    },
+    {
+      "name": "hanlong",
+      "reopen": false,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "227.991px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "227.991px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "equal": true
+    },
+    {
+      "name": "hanlong",
+      "reopen": true,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "227.991px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "227.991px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "equal": true
+    },
+    {
+      "name": "luwenyi",
+      "reopen": false,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "208px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "208px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "equal": true
+    },
+    {
+      "name": "luwenyi",
+      "reopen": true,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "208px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "208px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "equal": true
+    },
+    {
+      "name": "dc_guansuo",
+      "reopen": false,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "215.992px",
+        "none"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "215.992px",
+        "none"
+      ],
+      "equal": true
+    },
+    {
+      "name": "dc_guansuo",
+      "reopen": true,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "215.992px",
+        "none"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "215.992px",
+        "none"
+      ],
+      "equal": true
+    },
+    {
+      "name": "pangfengyi",
+      "reopen": false,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "195.991px",
+        "none"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "195.991px",
+        "none"
+      ],
+      "equal": true
+    },
+    {
+      "name": "pangfengyi",
+      "reopen": true,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "195.991px",
+        "none"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/yjcm_general_hp_bg.png\")",
+        "146 0 30 fill",
+        "195.991px",
+        "none"
+      ],
+      "equal": true
+    },
+    {
+      "name": "hanlong",
+      "reopen": false,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "227.991px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "227.991px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "equal": true
+    },
+    {
+      "name": "hanlong",
+      "reopen": true,
+      "sourceFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "227.991px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "targetFrame": [
+        "url(\"http://localhost:8089/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/dragon4_hp_grade_5.png\")",
+        "146 0 30 fill",
+        "227.991px",
+        "matrix(1, 0, 0, 1, 4, 8)"
+      ],
+      "equal": true
+    }
+  ]
+}

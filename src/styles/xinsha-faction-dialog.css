@@ -49,9 +49,11 @@ body[data-style="othersOff"] #arena.decadeUI > .dialog.xinsha-faction-dialog > .
 	margin: 0 !important;
 	padding: 0 !important;
 	overflow: visible !important;
+	transition: none !important;
 }
 
-body[data-style="othersOff"] .xinsha-faction-dialog .xinsha-faction-native-caption,
+/* 专用标题与底部提示已接管，也覆盖开窗后追加的原生 caption。 */
+body[data-style="othersOff"] #arena.decadeUI > .dialog.xinsha-faction-dialog .caption,
 body[data-style="othersOff"] .xinsha-faction-dialog .xinsha-faction-native-hidden {
 	display: none !important;
 }
@@ -85,6 +87,9 @@ body[data-style="othersOff"] #arena.decadeUI > .xinsha-faction-dialog .buttons {
 	margin: 0 !important;
 	padding: 0 !important;
 	transform: translateX(-50%) !important;
+	/* 专用尺寸已按画幅计算，不能再叠加通用卡牌 zoom 或布局过渡。 */
+	zoom: 1 !important;
+	transition: none !important;
 }
 
 body[data-style="othersOff"] #arena.decadeUI > .xinsha-faction-dialog .xinsha-faction-button {
@@ -163,7 +168,7 @@ body[data-style="othersOff"] .xinsha-faction-label {
 /* 晋字使用一将成名原版 fzbw 字体；图片只承载独立牌底。 */
 body[data-style="othersOff"] #arena.decadeUI > .xinsha-faction-dialog .xinsha-faction-jin > .xinsha-faction-label {
 	font-family: "dui-yjcm-label", serif !important;
-	font-size: calc(100 * var(--xinsha-faction-card-unit));
+	font-size: calc(85 * var(--xinsha-faction-card-unit));
 	line-height: 1;
 	color: #fff;
 	text-shadow: 0 0 calc(5 * var(--xinsha-faction-card-unit)) #d17cff, 0 0 calc(10 * var(--xinsha-faction-card-unit)) #853ed0;

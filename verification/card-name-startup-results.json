@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "scope": "真实牌名模块与CSS，受控重现启动顺序；不推进当前牌局。",
+  "results": [
+    {
+      "startupWithEarlyZone": {
+        "early": {
+          "waiting": true,
+          "updater": "undefined"
+        },
+        "attached": {
+          "tags": 29,
+          "timer": null,
+          "oldMarker": null,
+          "display": "block"
+        }
+      }
+    },
+    {
+      "startupWithoutHand": {
+        "waiting": true,
+        "updater": "function"
+      }
+    },
+    {
+      "rebound": {
+        "oldTags": 0,
+        "oldMarker": null,
+        "tags": 29
+      }
+    },
+    {
+      "off": {
+        "visible": "off",
+        "tags": 0
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,19 @@
+{
+  "before": {
+    "event": "chooseToUse",
+    "paused": true,
+    "paused2": true,
+    "players": 4,
+    "counter": 2
+  },
+  "after": {
+    "event": "chooseToUse",
+    "paused": true,
+    "paused2": true,
+    "players": 4,
+    "counter": 2
+  },
+  "replacements": 21,
+  "clip": "url(\"#dskin-clip\")",
+  "name": "dc_guansuo"
+}

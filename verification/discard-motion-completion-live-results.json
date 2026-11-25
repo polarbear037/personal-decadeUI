@@ -1,0 +1,25 @@
+{
+  "rows": [
+    {
+      "remaining": 240,
+      "duration": 240,
+      "events": 0,
+      "jump": 0
+    },
+    {
+      "remaining": 200,
+      "duration": 200,
+      "events": 0,
+      "jump": 0
+    },
+    {
+      "remaining": 170,
+      "duration": 170,
+      "events": 0,
+      "jump": 0
+    }
+  ],
+  "events": 1,
+  "active": 0,
+  "event": "chooseToUse"
+}

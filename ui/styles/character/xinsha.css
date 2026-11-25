@@ -980,9 +980,8 @@ body[data-style="othersOff"] #window .yjcm-seat-info > .yjcm-info-frame {
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
-	border-style: solid;
-	border-width: 99px 20px 58px;
-	border-image: url("../../assets/character/xinsha/official/game_playerinfonew_bg.png") 99 20 58 20 fill / 99px 20px 58px 20px stretch;
+	border: 0;
+	background: var(--scale9-background) center / 100% 100% no-repeat;
 	pointer-events: none;
 }
 
@@ -1188,105 +1187,31 @@ body[data-style="othersOff"] #window .yjcm-info-footer > .miniChange {
 	background-image: url("../../assets/character/xinsha/official/game_playerinfonew_change_skin.png");
 }
 
+/* 卡牌子节点、龙框与血条由十周年UI原创建器及样式提供，仅定位预览整体。 */
 body[data-style="othersOff"] #window .yjcm-seat-info > .yjcm-general-card {
-	left: 82.5px;
-	top: 44.4px;
-	width: 190px;
-	height: 252px;
-	transform: scale(1.1);
-	transform-origin: top left;
-	background: url("../../assets/character/xinsha/official/cardbg.png") left bottom / 194px 256px no-repeat;
-}
-
-body[data-style="othersOff"] #window .yjcm-general-card > div { position: absolute; }
-
-body[data-style="othersOff"] #window .yjcm-seat-info.yjcm-double-general > .yjcm-general-card {
-	left: 96.75px;
-	top: 10.3px;
-	transform: scale(.95);
-}
-
-body[data-style="othersOff"] #window .yjcm-general-portrait {
-	left: 10px;
-	bottom: 10px;
-	width: 180px;
-	height: 245px;
-	background-position: top center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	mask: url("../../assets/character/xinsha/official/skin_clip.png") center / 100% 100% no-repeat;
-}
-
-body[data-style="othersOff"] #window .yjcm-general-country {
-	left: 5px;
-	bottom: 10.5px;
-	width: 32px;
-	height: 230px;
-	background-position: center calc(50% + .5px);
-	background-size: auto;
-	background-repeat: no-repeat;
-}
-
-body[data-style="othersOff"] #window :is(.yjcm-general-emblem, .yjcm-general-country-bg) {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	left: -9px;
-	top: 3px;
-	background-position: center;
-	background-size: auto;
-	background-repeat: no-repeat;
-}
-
-body[data-style="othersOff"] #window .yjcm-general-name {
-	position: absolute;
-	left: 0;
-	top: 112px;
-	width: 32px;
-	transform: translateY(-50%);
-	font-size: 24px;
-	line-height: 26px;
-	color: #fff0d5;
-	text-align: center;
-	word-break: break-all;
-}
-
-body[data-style="othersOff"] #window .yjcm-general-hp {
-	left: 146px;
-	bottom: 8px;
-	width: 36px;
-	height: 105px;
-	font-size: 24px;
-	color: #7ce470;
+	left: 82px;
+	top: 30px;
+	width: 214px;
+	height: 305px;
 	pointer-events: none;
 }
-
-body[data-style="othersOff"] #window .yjcm-general-hp-bg {
+body[data-style="othersOff"] #window .yjcm-general-card > .yjcm-character-preview.player {
 	position: absolute;
-	left: -97px;
-	bottom: -7px;
-	width: 139px;
-	box-sizing: border-box;
-	border-style: solid;
-	border-width: 146px 0 30px;
-	border-image: url("../../assets/character/xinsha/official/yjcm_general_hp_bg.png") 146 0 30 0 fill / 146px 0 30px 0 stretch;
+	left: 20px;
+	top: 0;
+	width: 130px;
+	height: 180px;
+	margin: 0;
+	transform: scale(1.65);
+	transform-origin: top left;
+	transition: none;
+	box-shadow: none;
 }
-
-body[data-style="othersOff"] #window .yjcm-general-hp-pip {
-	position: absolute;
-	left: 15px;
-	width: 20px;
-	height: 20px;
-	background: url("../../assets/character/xinsha/official/yjcm_general_hp_1.png") center / 18px 20px no-repeat;
+body[data-style="othersOff"] #window .yjcm-seat-info.yjcm-double-general > .yjcm-general-card {
+	top: 20px;
 }
-
-body[data-style="othersOff"] #window .yjcm-general-hp-count {
-	position: absolute;
-	left: 15px;
-	bottom: 40px;
-	width: 20px;
-	line-height: 24px;
-	text-align: center;
+body[data-style="othersOff"] #window .yjcm-double-general .yjcm-character-preview.player {
+	transform: scale(1.5);
 }
 
 body[data-style="othersOff"] #window .yjcm-seat-info > .yjcm-general-switch {

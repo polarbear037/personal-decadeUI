@@ -1,0 +1,814 @@
+{
+  "othersOff": {
+    "zhuge-stack": {
+      "snapshot": {
+        "stallPhase": "stack",
+        "done": false,
+        "phase": "stack",
+        "point": {
+          "x": 1068,
+          "y": 200.889
+        },
+        "scale": 1.0125,
+        "start": {
+          "x": 1306,
+          "y": 162.02116104868912,
+          "scale": 1.0125
+        },
+        "display": {
+          "x": 674,
+          "y": 265.233676975945,
+          "scale": 0.7875000000000001
+        },
+        "opacity": 1,
+        "before": 40,
+        "clock": 120,
+        "realVisibility": "hidden"
+      },
+      "complete": {
+        "phases": [
+          "stack",
+          "slot"
+        ],
+        "terminal": {
+          "time": 1664,
+          "elapsed": 1655.5999999999995,
+          "phase": "slot",
+          "phaseElapsed": 477.7999999999993,
+          "opacity": "0",
+          "inline": "translate(1306px, 162.021px) scale(1.0125)",
+          "ownAtSample": false,
+          "transform": "matrix(0.2025, 0, 0, 0.2025, 1303.21, 200.791)",
+          "rect": {
+            "x": 1368.27587890625,
+            "y": 275.6034851074219,
+            "width": 21.8699951171875,
+            "height": 30.375,
+            "top": 275.6034851074219,
+            "right": 1390.1458740234375,
+            "bottom": 305.9784851074219,
+            "left": 1368.27587890625
+          },
+          "equipRect": {
+            "x": 1329.671875,
+            "y": 281.828125,
+            "width": 99.078125,
+            "height": 17.546875,
+            "top": 281.828125,
+            "right": 1428.75,
+            "bottom": 299.375,
+            "left": 1329.671875
+          },
+          "visibility": "hidden",
+          "equipped": true,
+          "departed": 3784.3,
+          "display": {
+            "x": 926.8,
+            "y": 223.949,
+            "scale": 1.0125
+          }
+        },
+        "end": {
+          "x": 1357.2099609375,
+          "y": 275.79100036621094
+        },
+        "slot": {
+          "x": 1357.2109375,
+          "y": 275.7909793814433
+        },
+        "visible": "visible",
+        "frame": 0,
+        "connected": false
+      }
+    },
+    "zhuge-slot": {
+      "snapshot": {
+        "stallPhase": "slot",
+        "done": false,
+        "phase": "slot",
+        "point": {
+          "x": 979.155,
+          "y": 225.273
+        },
+        "scale": 0.842096,
+        "start": {
+          "x": 1306,
+          "y": 175.21872852233676,
+          "scale": 1.0125
+        },
+        "display": {
+          "x": 926.8,
+          "y": 229.228,
+          "scale": 1.0125
+        },
+        "opacity": 0.980875,
+        "before": 0,
+        "clock": 51,
+        "realVisibility": "hidden"
+      },
+      "complete": {
+        "phases": [
+          "stack",
+          "slot"
+        ],
+        "terminal": {
+          "time": 1050.5,
+          "elapsed": 1066.5999999999995,
+          "phase": "slot",
+          "phaseElapsed": 855.5,
+          "opacity": "0",
+          "inline": "translate(1306px, 175.219px) scale(1.0125)",
+          "ownAtSample": false,
+          "transform": "matrix(0.2025, 0, 0, 0.2025, 1303.21, 200.791)",
+          "rect": {
+            "x": 1368.27587890625,
+            "y": 275.6034851074219,
+            "width": 21.8699951171875,
+            "height": 30.375,
+            "top": 275.6034851074219,
+            "right": 1390.1458740234375,
+            "bottom": 305.9784851074219,
+            "left": 1368.27587890625
+          },
+          "equipRect": {
+            "x": 1329.671875,
+            "y": 281.828125,
+            "width": 99.078125,
+            "height": 17.546875,
+            "top": 281.828125,
+            "right": 1428.75,
+            "bottom": 299.375,
+            "left": 1329.671875
+          },
+          "visibility": "hidden",
+          "equipped": true,
+          "departed": 5473.3,
+          "display": {
+            "x": 926.8,
+            "y": 229.228,
+            "scale": 1.0125
+          }
+        },
+        "end": {
+          "x": 1357.2099609375,
+          "y": 275.79100036621094
+        },
+        "slot": {
+          "x": 1357.2109375,
+          "y": 275.7909793814433
+        },
+        "visible": "visible",
+        "frame": 0,
+        "connected": false
+      }
+    },
+    "bagua-stack": {
+      "snapshot": {
+        "stallPhase": "stack",
+        "done": false,
+        "phase": "stack",
+        "point": {
+          "x": 1080.49,
+          "y": 207.338
+        },
+        "scale": 1.0125,
+        "start": {
+          "x": 1306,
+          "y": 175.21872852233676,
+          "scale": 1.0125
+        },
+        "display": {
+          "x": 674,
+          "y": 265.233676975945,
+          "scale": 0.7875000000000001
+        },
+        "opacity": 1,
+        "before": 62.19999999999982,
+        "clock": 113.40000000000055,
+        "realVisibility": "hidden"
+      },
+      "complete": {
+        "phases": [
+          "stack",
+          "slot"
+        ],
+        "terminal": {
+          "time": 1164,
+          "elapsed": 1172.2339999999995,
+          "phase": "slot",
+          "phaseElapsed": 444.39999999999964,
+          "opacity": "0",
+          "inline": "translate(1306px, 175.219px) scale(1.0125)",
+          "ownAtSample": false,
+          "transform": "matrix(0.2025, 0, 0, 0.2025, 1303.21, 218.342)",
+          "rect": {
+            "x": 1368.27587890625,
+            "y": 293.15460205078125,
+            "width": 21.8699951171875,
+            "height": 30.375,
+            "top": 293.15460205078125,
+            "right": 1390.1458740234375,
+            "bottom": 323.52960205078125,
+            "left": 1368.27587890625
+          },
+          "equipRect": {
+            "x": 1329.671875,
+            "y": 299.375,
+            "width": 99.078125,
+            "height": 17.53125,
+            "top": 299.375,
+            "right": 1428.75,
+            "bottom": 316.90625,
+            "left": 1329.671875
+          },
+          "visibility": "hidden",
+          "equipped": true,
+          "departed": 6612.166,
+          "display": {
+            "x": 926.8,
+            "y": 229.228,
+            "scale": 1.0125
+          }
+        },
+        "end": {
+          "x": 1357.2099609375,
+          "y": 293.3419952392578
+        },
+        "slot": {
+          "x": 1357.2109375,
+          "y": 293.34209621993125
+        },
+        "visible": "visible",
+        "frame": 0,
+        "connected": false
+      }
+    },
+    "bagua-slot": {
+      "snapshot": {
+        "stallPhase": "slot",
+        "done": false,
+        "phase": "slot",
+        "point": {
+          "x": 971.274,
+          "y": 227.942
+        },
+        "scale": 0.867747,
+        "start": {
+          "x": 1306,
+          "y": 175.21872852233676,
+          "scale": 1.0125
+        },
+        "display": {
+          "x": 926.8,
+          "y": 229.228,
+          "scale": 1.0125
+        },
+        "opacity": 0.98464,
+        "before": 0,
+        "clock": 51.19999999999982,
+        "realVisibility": "hidden"
+      },
+      "complete": {
+        "phases": [
+          "stack",
+          "slot"
+        ],
+        "terminal": {
+          "time": 1129.6999999997206,
+          "elapsed": 1133.5,
+          "phase": "slot",
+          "phaseElapsed": 922.2999999999993,
+          "opacity": "0",
+          "inline": "translate(1306px, 175.219px) scale(1.0125)",
+          "ownAtSample": false,
+          "transform": "matrix(0.2025, 0, 0, 0.2025, 1303.21, 218.342)",
+          "rect": {
+            "x": 1368.27587890625,
+            "y": 293.15460205078125,
+            "width": 21.8699951171875,
+            "height": 30.375,
+            "top": 293.15460205078125,
+            "right": 1390.1458740234375,
+            "bottom": 323.52960205078125,
+            "left": 1368.27587890625
+          },
+          "equipRect": {
+            "x": 1329.671875,
+            "y": 299.375,
+            "width": 99.078125,
+            "height": 17.53125,
+            "top": 299.375,
+            "right": 1428.75,
+            "bottom": 316.90625,
+            "left": 1329.671875
+          },
+          "visibility": "hidden",
+          "equipped": true,
+          "departed": 7839.9,
+          "display": {
+            "x": 926.8,
+            "y": 229.228,
+            "scale": 1.0125
+          }
+        },
+        "end": {
+          "x": 1357.2099609375,
+          "y": 293.3419952392578
+        },
+        "slot": {
+          "x": 1357.2109375,
+          "y": 293.34209621993125
+        },
+        "visible": "visible",
+        "frame": 0,
+        "connected": false
+      }
+    },
+    "dilu-stack": {
+      "snapshot": {
+        "stallPhase": "stack",
+        "done": false,
+        "phase": "stack",
+        "point": {
+          "x": 1136.48,
+          "y": 199.364
+        },
+        "scale": 1.0125,
+        "start": {
+          "x": 1306,
+          "y": 175.21872852233676,
+          "scale": 1.0125
+        },
+        "display": {
+          "x": 674,
+          "y": 265.233676975945,
+          "scale": 0.7875000000000001
+        },
+        "opacity": 1,
+        "before": 33.400000000001455,
+        "clock": 84.40000000000146,
+        "realVisibility": "hidden"
+      },
+      "complete": {
+        "phases": [
+          "stack",
+          "slot"
+        ],
+        "terminal": {
+          "time": 1199.2000000001863,
+          "elapsed": 1200,
+          "phase": "slot",
+          "phaseElapsed": 500.09999999999854,
+          "opacity": "0",
+          "inline": "translate(1306px, 175.219px) scale(1.0125)",
+          "ownAtSample": false,
+          "transform": "matrix(0.2025, 0, 0, 0.2025, 1303.21, 235.893)",
+          "rect": {
+            "x": 1368.27587890625,
+            "y": 310.7057189941406,
+            "width": 21.8699951171875,
+            "height": 30.375,
+            "top": 310.7057189941406,
+            "right": 1390.1458740234375,
+            "bottom": 341.0807189941406,
+            "left": 1368.27587890625
+          },
+          "equipRect": {
+            "x": 1329.671875,
+            "y": 316.90625,
+            "width": 99.078125,
+            "height": 17.546875,
+            "top": 316.90625,
+            "right": 1428.75,
+            "bottom": 334.453125,
+            "left": 1329.671875
+          },
+          "visibility": "hidden",
+          "equipped": true,
+          "departed": 9017.8,
+          "display": {
+            "x": 926.8,
+            "y": 229.228,
+            "scale": 1.0125
+          }
+        },
+        "end": {
+          "x": 1357.2099609375,
+          "y": 310.89300537109375
+        },
+        "slot": {
+          "x": 1357.2109375,
+          "y": 310.89321305841924
+        },
+        "visible": "visible",
+        "frame": 0,
+        "connected": false
+      }
+    },
+    "dilu-slot": {
+      "snapshot": {
+        "stallPhase": "slot",
+        "done": false,
+        "phase": "slot",
+        "point": {
+          "x": 965.194,
+          "y": 229.908
+        },
+        "scale": 0.887537,
+        "start": {
+          "x": 1306,
+          "y": 175.21872852233676,
+          "scale": 1.0125
+        },
+        "display": {
+          "x": 926.8,
+          "y": 229.228,
+          "scale": 1.0125
+        },
+        "opacity": 0.98725,
+        "before": 0,
+        "clock": 51,
+        "realVisibility": "hidden"
+      },
+      "complete": {
+        "phases": [
+          "stack",
+          "slot"
+        ],
+        "terminal": {
+          "time": 1198.0999999996275,
+          "elapsed": 1200,
+          "phase": "slot",
+          "phaseElapsed": 988.8000000000011,
+          "opacity": "0",
+          "inline": "translate(1306px, 175.219px) scale(1.0125)",
+          "ownAtSample": false,
+          "transform": "matrix(0.2025, 0, 0, 0.2025, 1303.21, 235.893)",
+          "rect": {
+            "x": 1368.27587890625,
+            "y": 310.7057189941406,
+            "width": 21.8699951171875,
+            "height": 30.375,
+            "top": 310.7057189941406,
+            "right": 1390.1458740234375,
+            "bottom": 341.0807189941406,
+            "left": 1368.27587890625
+          },
+          "equipRect": {
+            "x": 1329.671875,
+            "y": 316.90625,
+            "width": 99.078125,
+            "height": 17.546875,
+            "top": 316.90625,
+            "right": 1428.75,
+            "bottom": 334.453125,
+            "left": 1329.671875
+          },
+          "visibility": "hidden",
+          "equipped": true,
+          "departed": 10262.2,
+          "display": {
+            "x": 926.8,
+            "y": 229.228,
+            "scale": 1.0125
+          }
+        },
+        "end": {
+          "x": 1357.2099609375,
+          "y": 310.89300537109375
+        },
+        "slot": {
+          "x": 1357.2109375,
+          "y": 310.89321305841924
+        },
+        "visible": "visible",
+        "frame": 0,
+        "connected": false
+      }
+    },
+    "chitu-stack": {
+      "snapshot": {
+        "stallPhase": "stack",
+        "done": false,
+        "phase": "stack",
+        "point": {
+          "x": 1136.48,
+          "y": 199.364
+        },
+        "scale": 1.0125,
+        "start": {
+          "x": 1306,
+          "y": 175.21872852233676,
+          "scale": 1.0125
+        },
+        "display": {
+          "x": 674,
+          "y": 265.233676975945,
+          "scale": 0.7875000000000001
+        },
+        "opacity": 1,
+        "before": 33.399999999999636,
+        "clock": 84.39999999999964,
+        "realVisibility": "hidden"
+      },
+      "complete": {
+        "phases": [
+          "stack",
+          "slot"
+        ],
+        "terminal": {
+          "time": 1197.2999999998137,
+          "elapsed": 1200,
+          "phase": "slot",
+          "phaseElapsed": 500,
+          "opacity": "0",
+          "inline": "translate(1306px, 175.219px) scale(1.0125)",
+          "ownAtSample": false,
+          "transform": "matrix(0.2025, 0, 0, 0.2025, 1303.21, 253.444)",
+          "rect": {
+            "x": 1368.27587890625,
+            "y": 328.2568359375,
+            "width": 21.8699951171875,
+            "height": 30.375,
+            "top": 328.2568359375,
+            "right": 1390.1458740234375,
+            "bottom": 358.6318359375,
+            "left": 1368.27587890625
+          },
+          "equipRect": {
+            "x": 1329.671875,
+            "y": 334.453125,
+            "width": 99.078125,
+            "height": 17.53125,
+            "top": 334.453125,
+            "right": 1428.75,
+            "bottom": 351.984375,
+            "left": 1329.671875
+          },
+          "visibility": "hidden",
+          "equipped": true,
+          "departed": 11495.6,
+          "display": {
+            "x": 926.8,
+            "y": 229.228,
+            "scale": 1.0125
+          }
+        },
+        "end": {
+          "x": 1357.2099609375,
+          "y": 328.4440002441406
+        },
+        "slot": {
+          "x": 1357.2109375,
+          "y": 328.4443298969072
+        },
+        "visible": "visible",
+        "frame": 0,
+        "connected": false
+      }
+    },
+    "chitu-slot": {
+      "snapshot": {
+        "stallPhase": "slot",
+        "done": false,
+        "phase": "slot",
+        "point": {
+          "x": 965.269,
+          "y": 231.703
+        },
+        "scale": 0.887292,
+        "start": {
+          "x": 1306,
+          "y": 175.21872852233676,
+          "scale": 1.0125
+        },
+        "display": {
+          "x": 926.8,
+          "y": 229.228,
+          "scale": 1.0125
+        },
+        "opacity": 0.987225,
+        "before": 0,
+        "clock": 51.100000000000364,
+        "realVisibility": "hidden"
+      },
+      "complete": {
+        "phases": [
+          "stack",
+          "slot"
+        ],
+        "terminal": {
+          "time": 1215.1000000000931,
+          "elapsed": 1211.1000000000004,
+          "phase": "slot",
+          "phaseElapsed": 989,
+          "opacity": "0",
+          "inline": "translate(1306px, 175.219px) scale(1.0125)",
+          "ownAtSample": false,
+          "transform": "matrix(0.2025, 0, 0, 0.2025, 1303.21, 253.444)",
+          "rect": {
+            "x": 1368.27587890625,
+            "y": 328.2568359375,
+            "width": 21.8699951171875,
+            "height": 30.375,
+            "top": 328.2568359375,
+            "right": 1390.1458740234375,
+            "bottom": 358.6318359375,
+            "left": 1368.27587890625
+          },
+          "equipRect": {
+            "x": 1329.671875,
+            "y": 334.453125,
+            "width": 99.078125,
+            "height": 17.53125,
+            "top": 334.453125,
+            "right": 1428.75,
+            "bottom": 351.984375,
+            "left": 1329.671875
+          },
+          "visibility": "hidden",
+          "equipped": true,
+          "departed": 12717.9,
+          "display": {
+            "x": 926.8,
+            "y": 229.228,
+            "scale": 1.0125
+          }
+        },
+        "end": {
+          "x": 1357.2099609375,
+          "y": 328.4440002441406
+        },
+        "slot": {
+          "x": 1357.2109375,
+          "y": 328.4443298969072
+        },
+        "visible": "visible",
+        "frame": 0,
+        "connected": false
+      }
+    },
+    "muniu-stack": {
+      "snapshot": {
+        "stallPhase": "stack",
+        "done": false,
+        "phase": "stack",
+        "point": {
+          "x": 1125.47,
+          "y": 200.931
+        },
+        "scale": 1.0125,
+        "start": {
+          "x": 1306,
+          "y": 175.21872852233676,
+          "scale": 1.0125
+        },
+        "display": {
+          "x": 674,
+          "y": 265.233676975945,
+          "scale": 0.7875000000000001
+        },
+        "opacity": 1,
+        "before": 27.833999999998923,
+        "clock": 90.03399999999965,
+        "realVisibility": "hidden"
+      },
+      "complete": {
+        "phases": [
+          "stack",
+          "slot"
+        ],
+        "terminal": {
+          "time": 1065.2999999998137,
+          "elapsed": 1072.333999999999,
+          "phase": "slot",
+          "phaseElapsed": 366.7999999999993,
+          "opacity": "0",
+          "inline": "translate(1306px, 175.219px) scale(1.0125)",
+          "ownAtSample": false,
+          "transform": "matrix(0.2025, 0, 0, 0.2025, 1303.21, 183.24)",
+          "rect": {
+            "x": 1368.27587890625,
+            "y": 258.0523681640625,
+            "width": 21.8699951171875,
+            "height": 30.375,
+            "top": 258.0523681640625,
+            "right": 1390.1458740234375,
+            "bottom": 288.4273681640625,
+            "left": 1368.27587890625
+          },
+          "equipRect": {
+            "x": 1329.671875,
+            "y": 264.296875,
+            "width": 99.078125,
+            "height": 17.53125,
+            "top": 264.296875,
+            "right": 1428.75,
+            "bottom": 281.828125,
+            "left": 1329.671875
+          },
+          "visibility": "hidden",
+          "equipped": true,
+          "departed": 13990.066,
+          "display": {
+            "x": 926.8,
+            "y": 229.228,
+            "scale": 1.0125
+          }
+        },
+        "end": {
+          "x": 1357.2099609375,
+          "y": 258.24000549316406
+        },
+        "slot": {
+          "x": 1357.2109375,
+          "y": 258.23986254295534
+        },
+        "visible": "visible",
+        "frame": 0,
+        "connected": false
+      }
+    },
+    "muniu-slot": {
+      "snapshot": {
+        "stallPhase": "slot",
+        "done": false,
+        "phase": "slot",
+        "point": {
+          "x": 979.258,
+          "y": 222.819
+        },
+        "scale": 0.841762,
+        "start": {
+          "x": 1306,
+          "y": 175.21872852233676,
+          "scale": 1.0125
+        },
+        "display": {
+          "x": 926.8,
+          "y": 229.228,
+          "scale": 1.0125
+        },
+        "opacity": 0.980838,
+        "before": 0,
+        "clock": 51.100000000000364,
+        "realVisibility": "hidden"
+      },
+      "complete": {
+        "phases": [
+          "stack",
+          "slot"
+        ],
+        "terminal": {
+          "time": 1072.3999999999069,
+          "elapsed": 1077.699999999999,
+          "phase": "slot",
+          "phaseElapsed": 866.6000000000004,
+          "opacity": "0",
+          "inline": "translate(1306px, 175.219px) scale(1.0125)",
+          "ownAtSample": false,
+          "transform": "matrix(0.2025, 0, 0, 0.2025, 1303.21, 183.24)",
+          "rect": {
+            "x": 1368.27587890625,
+            "y": 258.0523681640625,
+            "width": 21.8699951171875,
+            "height": 30.375,
+            "top": 258.0523681640625,
+            "right": 1390.1458740234375,
+            "bottom": 288.4273681640625,
+            "left": 1368.27587890625
+          },
+          "equipRect": {
+            "x": 1329.671875,
+            "y": 264.296875,
+            "width": 99.078125,
+            "height": 17.53125,
+            "top": 264.296875,
+            "right": 1428.75,
+            "bottom": 281.828125,
+            "left": 1329.671875
+          },
+          "visibility": "hidden",
+          "equipped": true,
+          "departed": 15095.7,
+          "display": {
+            "x": 926.8,
+            "y": 229.228,
+            "scale": 1.0125
+          }
+        },
+        "end": {
+          "x": 1357.2099609375,
+          "y": 258.24000549316406
+        },
+        "slot": {
+          "x": 1357.2109375,
+          "y": 258.23986254295534
+        },
+        "visible": "visible",
+        "frame": 0,
+        "connected": false
+      }
+    }
+  }
+}

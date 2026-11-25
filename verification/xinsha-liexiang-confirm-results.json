@@ -1,0 +1,156 @@
+{
+  "othersOff": {
+    "five": {
+      "chosen": "五张",
+      "backup": "dcliexiang_backup",
+      "index": 4,
+      "submitted": true,
+      "dialogs": [],
+      "drawCount": 5,
+      "targetRequested": true
+    },
+    "one": {
+      "chosen": "一张",
+      "backup": "dcliexiang_backup",
+      "index": 0,
+      "submitted": true,
+      "dialogs": [],
+      "drawCount": 1,
+      "targetRequested": true
+    },
+    "cancel": {
+      "chosen": "cancel2",
+      "index": 0,
+      "submitted": false,
+      "dialogs": [
+        "请选择要使用的牌"
+      ]
+    },
+    "disabled": {
+      "chosen": "五张",
+      "backup": "dcliexiang_backup",
+      "index": 4,
+      "submitted": false,
+      "waitingForSkill": "dcliexiang_backup",
+      "dialogs": [
+        "烈骧摸五张牌，然后你选择一名其他角色。你以此法选择的角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。"
+      ]
+    },
+    "needsTarget": {
+      "chosen": "五张",
+      "backup": "dcliexiang_backup",
+      "index": 4,
+      "submitted": false,
+      "waitingForSkill": "dcliexiang_backup",
+      "dialogs": [
+        "烈骧摸五张牌，然后你选择一名其他角色。你以此法选择的角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。"
+      ]
+    },
+    "errors": [
+      "player.chooseTarget(...).set(...).set(...).set(...).set(...).set(...).set(...).set(...).forResult is not a function",
+      "player.chooseTarget(...).set(...).set(...).set(...).set(...).set(...).set(...).set(...).forResult is not a function"
+    ]
+  },
+  "onlineUI": {
+    "five": {
+      "chosen": "五张",
+      "backup": "dcliexiang_backup",
+      "index": 4,
+      "submitted": false,
+      "waitingForSkill": "dcliexiang_backup",
+      "dialogs": [
+        "烈骧摸五张牌，然后你选择一名其他角色。你以此法选择的角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。"
+      ]
+    },
+    "one": {
+      "chosen": "一张",
+      "backup": "dcliexiang_backup",
+      "index": 0,
+      "submitted": false,
+      "waitingForSkill": "dcliexiang_backup",
+      "dialogs": [
+        "烈骧摸一张牌，然后你选择一名其他角色。你以此法选择的角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。"
+      ]
+    },
+    "cancel": {
+      "chosen": "cancel2",
+      "index": 0,
+      "submitted": false,
+      "dialogs": [
+        "请选择要使用的牌"
+      ]
+    },
+    "disabled": {
+      "chosen": "五张",
+      "backup": "dcliexiang_backup",
+      "index": 4,
+      "submitted": false,
+      "waitingForSkill": "dcliexiang_backup",
+      "dialogs": [
+        "烈骧摸五张牌，然后你选择一名其他角色。你以此法选择的角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。"
+      ]
+    },
+    "needsTarget": {
+      "chosen": "五张",
+      "backup": "dcliexiang_backup",
+      "index": 4,
+      "submitted": false,
+      "waitingForSkill": "dcliexiang_backup",
+      "dialogs": [
+        "烈骧摸五张牌，然后你选择一名其他角色。你以此法选择的角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。"
+      ]
+    },
+    "errors": []
+  },
+  "on": {
+    "five": {
+      "chosen": "五张",
+      "backup": "dcliexiang_backup",
+      "index": 4,
+      "submitted": false,
+      "waitingForSkill": "dcliexiang_backup",
+      "dialogs": [
+        "烈骧摸五张牌，然后你选择一名其他角色。你以此法选择的角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。"
+      ]
+    },
+    "one": {
+      "chosen": "一张",
+      "backup": "dcliexiang_backup",
+      "index": 0,
+      "submitted": false,
+      "waitingForSkill": "dcliexiang_backup",
+      "dialogs": [
+        "烈骧摸一张牌，然后你选择一名其他角色。你以此法选择的角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。"
+      ]
+    },
+    "cancel": {
+      "chosen": "cancel2",
+      "index": 0,
+      "submitted": false,
+      "dialogs": [
+        "请选择要使用的牌"
+      ]
+    },
+    "disabled": {
+      "chosen": "五张",
+      "backup": "dcliexiang_backup",
+      "index": 4,
+      "submitted": false,
+      "waitingForSkill": "dcliexiang_backup",
+      "dialogs": [
+        "烈骧摸五张牌，然后你选择一名其他角色。你以此法选择的角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。"
+      ]
+    },
+    "needsTarget": {
+      "chosen": "五张",
+      "backup": "dcliexiang_backup",
+      "index": 4,
+      "submitted": false,
+      "waitingForSkill": "dcliexiang_backup",
+      "dialogs": [
+        "烈骧摸五张牌，然后你选择一名其他角色。你以此法选择的角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。"
+      ]
+    },
+    "errors": []
+  }
+}

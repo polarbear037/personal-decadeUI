@@ -3,12 +3,16 @@
 export async function playXinshaBackground(canvas, path, signal, isCurrent, entry) {
 	const spine = window.spine;
 	if (!spine?.webgl) throw new Error("Spine 3.6 is unavailable");
-	const context = new spine.webgl.ManagedWebGLRenderingContext(canvas);
+	const mobile = window.decadeUI?.isMobile?.();
+	const frameInterval = mobile ? 1000 / 24 : 0;
+	const context = new spine.webgl.ManagedWebGLRenderingContext(canvas, mobile ? { alpha: true, antialias: false, depth: false } : undefined);
 	if (!context.gl) throw new Error("WebGL is unavailable");
 	const assets = new spine.webgl.AssetManager(context, path);
 	let renderer;
 	let frame;
 	let clouds;
+	let resizeObserver;
+	let resume;
 	let loading = true;
 	let disposed = false;
 	let resourcesDisposed = false;
@@ -23,11 +27,18 @@ export async function playXinshaBackground(canvas, path, signal, isCurrent, entr
 		if (disposed) return;
 		disposed = true;
 		cancelAnimationFrame(frame);
+		resizeObserver?.disconnect();
+		document.removeEventListener("visibilitychange", visibilityChanged);
 		signal.removeEventListener("abort", dispose);
 		clouds?.remove();
 		canvas.remove();
 		// 加载中的纹理回调仍会写入 manager，等其结束再释放，避免留下 GPU 资源。
 		if (!loading) releaseResources();
+	}
+	function visibilityChanged() {
+		// 隐藏页面时不提交背景帧；恢复时由原时间轴继续，避免补跑后台帧。
+		if (document.hidden) { cancelAnimationFrame(frame); frame = 0; }
+		else resume?.();
 	}
 	signal.addEventListener("abort", dispose, { once: true });
 	if (signal.aborted || !isCurrent()) {
@@ -83,17 +94,52 @@ export async function playXinshaBackground(canvas, path, signal, isCurrent, entr
 		}
 		const start = performance.now();
 		let last = start;
+		let nextFrame = start;
+		let width = canvas.clientWidth, height = canvas.clientHeight;
+		let resized = true;
+		// 背景每帧读取尺寸、重写 visibility 会让其他扩展下一次读布局时同步刷新整页。
+		resizeObserver = new ResizeObserver(() => {
+			width = canvas.clientWidth;
+			height = canvas.clientHeight;
+			resized = true;
+		});
+		resizeObserver.observe(canvas);
+		resume = () => {
+			if (!document.hidden && !disposed && !frame) {
+				last = performance.now();
+				nextFrame = last;
+				frame = requestAnimationFrame(draw);
+			}
+		};
+		document.addEventListener("visibilitychange", visibilityChanged);
 		function draw(now) {
+			frame = 0;
 			if (!isCurrent() || !canvas.isConnected) {
 				dispose();
 				return;
 			}
+			if (document.hidden) return;
+			if (!resized && now < nextFrame) {
+				frame = requestAnimationFrame(draw);
+				return;
+			}
+			// 以真实时间推进骨骼，保留节拍余量，适配 60/90/120Hz 屏幕。
+			if (frameInterval) nextFrame = now + frameInterval - Math.max(0, now - nextFrame) % frameInterval;
 			const delta = Math.min((now - last) / 1000, .1);
 			last = now;
-			const width = canvas.clientWidth, height = canvas.clientHeight;
 			if (width && height && !context.gl.isContextLost()) {
 				const scale = Math.max(width / 1500, height / 750);
-				renderer.resize(spine.webgl.ResizeMode.Stretch);
+				if (resized) {
+					// 手机仅缩小透明特效缓冲区，底图和取景仍使用原始 CSS 尺寸。
+					const ratio = mobile ? Math.min(1, 1024 / Math.max(width, height)) : 1;
+					const bufferWidth = Math.max(1, Math.round(width * ratio));
+					const bufferHeight = Math.max(1, Math.round(height * ratio));
+					if (canvas.width !== bufferWidth) canvas.width = bufferWidth;
+					if (canvas.height !== bufferHeight) canvas.height = bufferHeight;
+					context.gl.viewport(0, 0, bufferWidth, bufferHeight);
+					clouds?.style.setProperty("--yjcm-scene-scale", scale);
+					resized = false;
+				}
 				context.gl.clearColor(0, 0, 0, 0);
 				context.gl.clear(context.gl.COLOR_BUFFER_BIT);
 				for (const { animation, skeleton, state } of layers) {
@@ -110,9 +156,10 @@ export async function playXinshaBackground(canvas, path, signal, isCurrent, entr
 					renderer.drawSkeleton(skeleton, false);
 					renderer.end();
 				}
-				clouds?.style.setProperty("--yjcm-scene-scale", scale);
-				canvas.style.visibility = "visible";
-				canvas.dataset.playing = "true";
+				if (canvas.dataset.playing !== "true") {
+					canvas.style.visibility = "visible";
+					canvas.dataset.playing = "true";
+				}
 			}
 			frame = requestAnimationFrame(draw);
 		}

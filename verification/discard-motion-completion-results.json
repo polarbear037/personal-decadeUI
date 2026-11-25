@@ -1,0 +1,68 @@
+{
+  "cases": [
+    {
+      "count": 0,
+      "samples": [],
+      "countAtFinish": 1,
+      "remaining": 0,
+      "pose": "matrix(0.8, 0, 0, 0.8, 100, 100)",
+      "unchanged": 0,
+      "finalCount": 1
+    },
+    {
+      "count": 1,
+      "samples": [
+        {
+          "events": 0,
+          "jump": 0.8164254895579893,
+          "remaining": 223.799999999255,
+          "duration": 222.60000000149012
+        }
+      ],
+      "countAtFinish": 1,
+      "remaining": 0,
+      "pose": "matrix(0.8, 0, 0, 0.8, 150, 100)",
+      "unchanged": 0,
+      "finalCount": 1
+    },
+    {
+      "count": 3,
+      "samples": [
+        {
+          "events": 0,
+          "jump": 0.06802367235014309,
+          "remaining": 222.69999999776473,
+          "duration": 222.59999999776477
+        },
+        {
+          "events": 0,
+          "jump": 0.3105359399489849,
+          "remaining": 150.6999999955296,
+          "duration": 150.29999999701977
+        },
+        {
+          "events": 0,
+          "jump": 0.1707681469127232,
+          "remaining": 78.19999999403966,
+          "duration": 77.99999999627478
+        }
+      ],
+      "countAtFinish": 1,
+      "remaining": 0,
+      "pose": "matrix(0.8, 0, 0, 0.8, 250, 100)",
+      "unchanged": 0,
+      "finalCount": 1
+    }
+  ],
+  "errors": [],
+  "cleanup": {
+    "events": 1,
+    "left": 0
+  },
+  "exhausted": {
+    "early": 0,
+    "events": 1,
+    "left": 0,
+    "x": 200
+  }
+}

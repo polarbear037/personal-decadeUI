@@ -76,12 +76,31 @@ const base = "/extension/十周年UI/";
 					cards.push(card); events.push(event);
 				}
 			}, { style, nativeTag, nativeSourceSkill });
+			await page.addScriptTag({ content: script("extension/十周年UI/src/ui/card-effects-xinsha.js", "window.playXinshaCardEffect=playXinshaCardEffect;") });
 			await page.addScriptTag({ content: script("extension/十周年UI/src/ui/card-utils.js", "window.applyUseTag=a;") });
 			await page.evaluate(() => cards.forEach((card, index) => { _status.event = events[index]; applyUseTag(card, people[0], events[index], duiForTags); }));
 			await page.evaluate(async () => { await document.fonts.ready; });
 			const measure = () => cards.map(card => {
 				const tag = card.querySelector(".used-info"), label = tag.firstElementChild, cs = getComputedStyle(tag), rect = tag.getBoundingClientRect(), cr = card.getBoundingClientRect();
-				return { text: tag.textContent, html: tag.innerHTML, color: cs.color, font: cs.fontFamily, size: cs.fontSize, background: cs.backgroundImage, left: (rect.left - cr.left) / card.clientWidth, height: rect.height / card.clientHeight, opacity: cs.opacity, label: label && { color: getComputedStyle(label).color, outline: getComputedStyle(label).webkitTextStrokeColor, font: getComputedStyle(label).fontFamily } };
+				let geometry;
+				if (label) {
+					const lr = label.getBoundingClientRect(), style = getComputedStyle(label);
+					const lines = new Map();
+					for (let i = 0; i < label.firstChild.length; i++) {
+						const range = document.createRange();
+						range.setStart(label.firstChild, i); range.setEnd(label.firstChild, i + 1);
+						const r = range.getBoundingClientRect(), key = r.top.toFixed(1);
+						const line = lines.get(key) || { left: r.left, right: r.right };
+						line.left = Math.min(line.left, r.left); line.right = Math.max(line.right, r.right); lines.set(key, line);
+					}
+					geometry = { centerX: (lr.left + lr.width / 2 - rect.left) / rect.width,
+						centerY: (rect.bottom - lr.top - lr.height / 2) / rect.height,
+						width: lr.width / rect.width, height: lr.height / rect.height,
+						bottomGap: rect.bottom - (cr.top + card.clientTop + card.clientHeight),
+						textAlign: style.textAlign, whiteSpace: style.whiteSpace, outlineWidth: style.webkitTextStrokeWidth,
+						lineCount: lines.size, lineCenterErrors: [...lines.values()].map(line => (line.left + line.right - lr.left * 2 - lr.width) / 2) };
+				}
+				return { text: tag.textContent, html: tag.innerHTML, color: cs.color, font: cs.fontFamily, size: cs.fontSize, background: cs.backgroundImage, left: (rect.left - cr.left) / card.clientWidth, height: rect.height / card.clientHeight, opacity: cs.opacity, label: label && { color: getComputedStyle(label).color, outline: getComputedStyle(label).webkitTextStrokeColor, font: getComputedStyle(label).fontFamily, geometry } };
 			});
 			const state = await page.evaluate(measure);
 			if (style === "othersOff") {
@@ -92,7 +111,17 @@ const base = "/extension/十周年UI/";
 					assert.equal(row.label.color, "rgb(255, 255, 255)"); assert.equal(row.label.outline, "rgb(63, 51, 24)");
 					assert.match(row.background, /card_text_bg\.png/); assert.ok(Math.abs(row.height - 61 / 174) < .001);
 					assert.ok(!row.html.includes("<br") && !row.html.includes("data-nature"));
+					const geometry = row.label.geometry;
+					assert.ok(Math.abs(geometry.centerX - 63 / 130) < .001, "official label center x=63 in 130px background");
+					assert.ok(Math.abs(geometry.centerY - 28.5 / 61) < .001, "official label center y=28.5 from bottom");
+					assert.ok(Math.abs(geometry.width - 120 / 130) < .001 && Math.abs(geometry.height - 60 / 61) < .001);
+					assert.ok(Math.abs(geometry.bottomGap) < .1, "background stays at card content bottom");
+					assert.equal(geometry.textAlign, "center"); assert.equal(geometry.whiteSpace, "normal");
+					assert.ok(Math.abs(parseFloat(row.size) - 22 * 108 / 126) < .001);
+					assert.ok(Math.abs(parseFloat(geometry.outlineWidth) - 108 / 126) < .001);
+					assert.ok(geometry.lineCenterErrors.every(error => Math.abs(error) < .5), "each wrapped line remains centered");
 				}
+				assert.ok(state[2].label.geometry.lineCount >= 2, "long target list wraps automatically");
 				const lifecycle = await page.evaluate(async () => {
 					cards[0].classList.add("movingcard"); await new Promise(resolve => setTimeout(resolve, 600)); const moving = getComputedStyle(cards[0].querySelector(".used-info")).opacity; cards[0].classList.remove("movingcard");
 					const judge = events[8]; judge.result = { card: { clone: cards[8] }, suit: "club", number: 6, judge: 1 }; judge.judgeResultHook.call(judge);

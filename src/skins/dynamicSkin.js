@@ -2,6 +2,59 @@
 import { lib, game, ui, get, ai, _status } from "noname";
 // import { setupDecadeAnimationTools } from "./decadeAnimationTools.js";
 export const dynamicSkinConfig = {
+	ol_huangfusong: {
+		奋钺斫熊: {
+			// 74301：局内采用 skinEffectSmall；Big 原件单独保存在 big/，不混用两套形象纹理。
+			// 参照 OL 146 宽头像与本地 130 宽基准：zoom=40，place=0,-20；绝对构图仍待实局校准。
+			// ifOutChuChang=1 关闭独立出框入场，框内主层/背景仍播放 ChuChang → DaiJi。
+			name: "OL皇甫嵩/奋钺斫熊/small/daiji/daiji",
+			version: "4.0",
+			action: "DaiJi",
+			ss_jinchang: "ChuChang",
+			x: [0, 0.5],
+			y: [7.123288, 0.5],
+			scale: 0.356164,
+			speed: 1,
+			shizhounian: true,
+			beijing: {
+				name: "OL皇甫嵩/奋钺斫熊/small/beijing/beijing",
+				version: "4.0",
+				action: "DaiJi",
+				ss_jinchang: "ChuChang",
+				x: [0, 0.5],
+				y: [7.123288, 0.5],
+				scale: 0.356164,
+			},
+			gongji: {
+				name: "OL皇甫嵩/奋钺斫熊/small/xingxiang/xingxiang",
+				version: "4.0",
+				action: "GongJi",
+				scale: 0.356164,
+				showTime: 1.4,
+			},
+			hudong: {
+				name: "OL皇甫嵩/奋钺斫熊/small/xingxiang/xingxiang",
+				version: "4.0",
+				action: "HuDong",
+				scale: 0.356164,
+				showTime: 2,
+			},
+			jineng: {
+				name: "OL皇甫嵩/奋钺斫熊/small/xingxiang/xingxiang",
+				version: "4.0",
+				action: "JiNeng",
+				scale: 0.356164,
+				showTime: 1.566667,
+			},
+			teshu: {
+				name: "OL皇甫嵩/奋钺斫熊/small/xingxiang/xingxiang",
+				version: "4.0",
+				action: "JiNeng",
+				scale: 0.356164,
+				showTime: 1.566667,
+			},
+		},
+	},
 	dm_zhangfei: {
 		经典形象: {
 			// 原皮 75000：newSkinJudge=100，直接待机；参数沿用 online 的 232/678 参考基准。
@@ -14353,9 +14406,9 @@ export const dynamicSkinConfig = {
 		},
 		落花醺微: {
 			name: "樊玉凤/落花醺微/daiji2",
-			x: [0, 0.5],
-			y: [0, 0.35],
-			scale: 0.88,
+			x: [0, 0.506],
+			y: [0, 0.413],
+			scale: 0.94,
 			//speed: 1,
 			shizhounian: true,
 			chuchang: {
@@ -14374,6 +14427,7 @@ export const dynamicSkinConfig = {
 				y: [0, 0.45],
 				scale: 0.4,
 			},
+			angle: 0,
 		},
 		斟酒入情: {
 			name: "樊玉凤/斟酒入情/daiji2",
@@ -31320,9 +31374,9 @@ export const dynamicSkinConfig = {
 			version: "4.0",
 			json: true,
 			shizhounian: true,
-			x: [0, 0.9],
-			y: [0, 0.5],
-			scale: 0.64,
+			x: [0, 0.933],
+			y: [0, 0.479],
+			scale: 0.79,
 			//speed: 1,
 			chuchang: {
 				name: "芮姬/玉芮花意/jineng01",
@@ -31361,6 +31415,7 @@ export const dynamicSkinConfig = {
 					delay: 0.4,
 				},
 			},
+			angle: 0,
 		},
 	},
 	shamoke: {
@@ -31863,6 +31918,7 @@ export const dynamicSkinConfig = {
 					delay: 0.25,
 				},
 			},
+			clipSlots: ["guanglun2","jin","tu","mu","shui2"],
 		},
 		遏川制泽: {
 			name: "神邓艾/遏川制泽/daiji2",
@@ -32393,6 +32449,7 @@ export const dynamicSkinConfig = {
 					delay: 0.45,
 				},
 			},
+			clipSlots: ["vx_daiji/vx_dj_guang/vx_dj_guang_1","gh_2","gh_2g_glow"],
 		},
 	},
 	shen_jiangwei: {
@@ -39663,6 +39720,7 @@ export const dynamicSkinConfig = {
 				y: [0, 0.5],
 				scale: 0.4,
 			},
+			hideSlots: ["zi"],
 		},
 		皓露沁兰: {
 			name: "滕芳兰/皓露沁兰/daiji2",
@@ -39763,6 +39821,7 @@ export const dynamicSkinConfig = {
 				scale: 0.6,
 				x: [0, 0.5],
 				y: [0, 0.5],
+				angle: 0,
 			},
 			zhishixian: {
 				name: "文鸯/万军披靡/shouji2", //指示线
@@ -39779,6 +39838,7 @@ export const dynamicSkinConfig = {
 					delay: 0.3,
 				},
 			},
+			clipSlots: ["tengfanglan176","Fx_par_4","tengfanglan170","tengfanglan172","tengfanglan175","tengfanglan173","tengfanglan171","tengfanglan174","tengfanglan16","tengfanglan17"],
 		},
 	},
 	tenggongzhu: {
@@ -51791,10 +51851,13 @@ export const dynamicSkinConfig = {
 			//action: 'DaiJi',
 			beijing: {
 				name: "张瑾云/暖枫袅袅/beijing",
-				x: [0, 0.5],
-				y: [0, 0.5],
-				scale: 0.4,
+				x: [0, -0.211],
+				y: [0, 0.434],
+				scale: 0.27,
+				angle: 0,
 			},
+			hideSlots: ["yd_zi"],
+			clipSlots: ["202"],
 		},
 		瑶影浣月: {
 			name: "张瑾云/瑶影浣月/daiji2",
@@ -53891,56 +53954,71 @@ export const dynamicSkinConfig = {
 				version: "3.8",
 			},
 		},
+		// 原生手机 Spine 3.6.38；保留现有构图，时长及指示线取本包骨骼事件。
 		媚兔春娇: {
 			name: "张嫙/媚兔春娇/daiji2",
 			x: [0, 0.5],
 			y: [0, 0.5],
 			scale: 0.72,
 			angle: 0,
-			//speed: 1,
 			shizhounian: true,
 			chuchang: {
-				//回合开始播放
 				name: "张嫙/媚兔春娇/chuchang",
 				scale: 0.7,
 				action: "play",
+				version: "3.6",
+				showTime: 2
 			},
 			gongji: {
 				name: "张嫙/媚兔春娇/chuchang",
 				scale: 0.7,
 				action: "play",
+				version: "3.6",
+				showTime: 2
 			},
 			beijing: {
 				name: "张嫙/媚兔春娇/beijing",
 				x: [0, 0.5],
 				y: [0, 0.5],
 				scale: 0.4,
+				version: "3.6",
+				action: "play"
 			},
+			version: "3.6",
+			action: "play"
 		},
+		// 原生手机 Spine 3.6.38；保留现有构图，时长及指示线取本包骨骼事件。
 		涟漪夏梦: {
 			name: "张嫙/涟漪夏梦/daiji2",
-			x: [0, 0.5],
-			y: [0, 0.45],
-			scale: 0.8,
+			x: [0, 0.32],
+			y: [0, 0.44],
+			scale: 0.96,
 			angle: 0,
-			//speed: 1,
 			shizhounian: true,
 			chuchang: {
 				name: "张嫙/涟漪夏梦/chuchang",
-				scale: 0.6,
+				scale: 0.84,
 				action: "play",
+				version: "3.6",
+				showTime: 1.66666663
 			},
 			gongji: {
 				name: "张嫙/涟漪夏梦/chuchang",
-				scale: 0.7,
+				scale: 0.84,
 				action: "play",
+				version: "3.6",
+				showTime: 1.66666663
 			},
 			beijing: {
 				name: "张嫙/涟漪夏梦/beijing",
 				x: [0, 0.5],
 				y: [0, 0.5],
 				scale: 0.4,
+				version: "3.6",
+				action: "play"
 			},
+			version: "3.6",
+			action: "play"
 		},
 		敲金击石: {
 			name: "张嫙/敲金击石/zhangxuan",
@@ -54032,31 +54110,7 @@ export const dynamicSkinConfig = {
 				version: "3.6",
 			},
 		},
-		涟漪夏梦: {
-			name: "张嫙/涟漪夏梦/daiji2",
-			x: [0, 0.32],
-			y: [0, 0.44],
-			scale: 0.96,
-			angle: 0,
-			//speed: 1,
-			shizhounian: true,
-			chuchang: {
-				name: "张嫙/涟漪夏梦/chuchang",
-				scale: 0.84,
-				action: "play",
-			},
-			gongji: {
-				name: "张嫙/涟漪夏梦/chuchang",
-				scale: 0.84,
-				action: "play",
-			},
-			beijing: {
-				name: "张嫙/涟漪夏梦/beijing",
-				x: [0, 0.5],
-				y: [0, 0.5],
-				scale: 0.4,
-			},
-		},
+		// 原生手机 Spine 3.6.38；保留现有构图，时长及指示线取本包骨骼事件。
 		双姝绰约: {
 			name: "张嫙/双姝绰约/daiji2",
 			daijiteshu: "play2",
@@ -54064,42 +54118,57 @@ export const dynamicSkinConfig = {
 			x: [0, 0.5],
 			y: [0, 0.5],
 			scale: 0.72,
-			//speed: 1,
 			shizhounian: true,
 			chuchang: {
 				name: "张嫙/双姝绰约/chuchang",
 				action: "play",
 				scale: 0.6,
+				version: "3.6",
+				showTime: 2.33333325
 			},
 			gongji: {
 				name: "张嫙/双姝绰约/chuchang2",
 				action: "gongji",
 				scale: 0.7,
+				version: "3.6",
+				showTime: 2.16666675
 			},
 			teshu: {
 				name: "张嫙/双姝绰约/chuchang2",
 				action: "jineng",
 				scale: 0.7,
+				version: "3.6",
+				showTime: 3.0666666
 			},
 			beijing: {
 				name: "张嫙/双姝绰约/beijing",
 				x: [0, 0.5],
 				y: [0, 0.5],
 				scale: 0.4,
+				version: "3.6",
+				action: "play"
 			},
 			zhishixian: {
 				name: "张嫙/双姝绰约/shouji2",
 				scale: 0.5,
-				speed: 1.3,
-				delay: 0.3,
+				speed: 1,
+				delay: 0.46153844,
 				effect: {
 					name: "张嫙/双姝绰约/shouji",
 					scale: 0.5,
-					speed: 0.8,
-					delay: 0.35,
+					speed: 1,
+					delay: 0.3125,
+					version: "3.6",
+					action: "play"
 				},
+				version: "3.6",
+				action: "play",
+				factor: 0.3125
 			},
+			version: "3.6",
+			action: "play"
 		},
+		// 原生手机 Spine 3.6.38；保留现有构图，时长及指示线取本包骨骼事件。
 		青鸾霓凰: {
 			name: "张嫙/青鸾霓凰/daiji2",
 			daijiteshu: "play2",
@@ -54108,65 +54177,71 @@ export const dynamicSkinConfig = {
 			y: [0, 0.5],
 			scale: 0.72,
 			angle: 0,
-			//speed: 1,
 			shizhounian: true,
 			chuchang: {
 				name: "张嫙/青鸾霓凰/chuchang",
 				action: "play",
 				scale: 0.6,
+				version: "3.6",
+				showTime: 2
 			},
 			gongji: {
 				name: "张嫙/青鸾霓凰/chuchang2",
 				action: "gongji",
 				scale: 0.7,
+				version: "3.6",
+				showTime: 2
 			},
 			teshu: {
 				name: "张嫙/青鸾霓凰/chuchang2",
 				action: "jineng",
 				scale: 0.7,
+				version: "3.6",
+				showTime: 2.33333325
 			},
 			beijing: {
 				name: "张嫙/青鸾霓凰/beijing",
 				x: [0, 0.5],
 				y: [0, 0.5],
 				scale: 0.4,
+				version: "3.6",
+				action: "play"
 			},
 			zhishixian: {
-				name: "张嫙/青鸾霓凰/shouji2", //指示线
+				name: "张嫙/青鸾霓凰/shouji2",
 				scale: 0.5,
-				speed: 0.8,
-				delay: 0.4,
+				speed: 1,
+				delay: 0.23333333,
 				effect: {
 					name: "张嫙/青鸾霓凰/shouji",
 					scale: 0.65,
-					speed: 0.6,
-					delay: 0.45,
+					speed: 1,
+					delay: 0.1,
+					version: "3.6",
+					action: "play"
 				},
+				version: "3.6",
+				action: "play",
+				factor: 0.1
 			},
 			special: {
 				同礼: {
-					name: "zhangxuan/青鸾霓凰2",
-				},
-				奢葬: {
-					name: "zhangxuan/青鸾霓凰2",
+					name: "zhangxuan/青鸾霓凰2"
 				},
 				condition: {
 					tongli: {
-						transform: ["同礼"],
+						transform: [
+							"同礼"
+						],
 						effect: "shaohui",
-						recover: false,
-					},
-					shezang: {
-						transform: ["奢葬"],
-						effect: {
-							name: "bianshen_zhangxuan",
-							version: "4.0",
-						},
-						recover: false,
-					},
-				},
+						recover: false
+					}
+				}
 			},
+			version: "3.6",
+			action: "play"
 		},
+		// 原生手机 Spine 3.6.38；保留现有构图，时长及指示线取本包骨骼事件。
 		青鸾霓凰2: {
 			name: "张嫙/青鸾霓凰2/daiji2",
 			daijiteshu: "play2",
@@ -54175,53 +54250,128 @@ export const dynamicSkinConfig = {
 			y: [0, 0.5],
 			scale: 0.72,
 			angle: 0,
-			//speed: 1,
 			shizhounian: true,
 			chuchang: {
 				name: "张嫙/青鸾霓凰2/chuchang",
 				action: "play",
 				scale: 0.6,
+				version: "3.6",
+				showTime: 2
 			},
 			gongji: {
 				name: "张嫙/青鸾霓凰2/chuchang2",
 				action: "gongji",
 				scale: 0.7,
+				version: "3.6",
+				showTime: 2
 			},
 			teshu: {
 				name: "张嫙/青鸾霓凰2/chuchang2",
 				action: "jineng",
 				scale: 0.7,
+				version: "3.6",
+				showTime: 2.73333335
 			},
 			beijing: {
 				name: "张嫙/青鸾霓凰2/beijing",
 				x: [0, 0.5],
 				y: [0, 0.5],
 				scale: 0.4,
+				version: "3.6",
+				action: "play"
 			},
 			zhishixian: {
-				name: "张嫙/青鸾霓凰2/shouji2", //指示线
+				name: "张嫙/青鸾霓凰2/shouji2",
 				scale: 0.5,
-				speed: 0.8,
-				delay: 0.4,
+				speed: 1,
+				delay: 0.25,
 				effect: {
 					name: "张嫙/青鸾霓凰2/shouji",
 					scale: 0.65,
-					speed: 0.6,
-					delay: 0.45,
+					speed: 1,
+					delay: 0.1,
+					version: "3.6",
+					action: "play"
 				},
+				version: "3.6",
+				action: "play",
+				factor: 0.1
 			},
 			special: {
 				phaseEndTransform: {
-					name: "zhangxuan/青鸾霓凰",
+					name: "zhangxuan/青鸾霓凰"
 				},
 				condition: {
 					phaseEnd: {
-						transform: ["phaseEndTransform"],
-						effect: "shaohui",
-					},
-				},
+						transform: [
+							"phaseEndTransform"
+						],
+						effect: "shaohui"
+					}
+				}
 			},
+			version: "3.6",
+			action: "play"
 		},
+		// 原生手机 5101703；沿用同结构动皮基准，新增构图待实局校准。
+		战场荣耀: {
+			name: "张嫙/战场荣耀/daiji2",
+			x: [0, 0.5],
+			y: [0, 0.5],
+			scale: 0.72,
+			shizhounian: true,
+			version: "3.6",
+			action: "play",
+			daijiteshu: "play2",
+			daijishan: "play3",
+			chuchang: {
+				name: "张嫙/战场荣耀/chuchang",
+				version: "3.6",
+				action: "play",
+				scale: 0.6,
+				showTime: 1.9666667
+			},
+			gongji: {
+				name: "张嫙/战场荣耀/chuchang2",
+				version: "3.6",
+				action: "gongji",
+				scale: 0.7,
+				showTime: 1.33333337
+			},
+			teshu: {
+				name: "张嫙/战场荣耀/chuchang2",
+				version: "3.6",
+				action: "jineng",
+				scale: 0.7,
+				showTime: 2.33333325
+			},
+			beijing: {
+				x: [0, 0.5],
+				y: [0, 0.5],
+				scale: 0.4,
+				name: "张嫙/战场荣耀/beijing",
+				version: "3.6",
+				action: "play"
+			},
+			zhishixian: {
+				name: "张嫙/战场荣耀/shouji2",
+				version: "3.6",
+				action: "play",
+				scale: 0.5,
+				speed: 1,
+				delay: 0.37499999,
+				factor: 0.1,
+				effect: {
+					name: "张嫙/战场荣耀/shouji",
+					version: "3.6",
+					action: "play",
+					scale: 0.5,
+					speed: 1,
+					delay: 0.1
+				}
+			}
+		},
+
 	},
 	zhangyao: {
 		//张媱
@@ -55854,10 +56004,12 @@ export const dynamicSkinConfig = {
 			y: [0, 0.29],
 			scale: 1.1,
 			angle: 0,
+			alpha:true,
 			//speed: 1,
 			beijing: {
 				name: "甄姬/清洛月泷/beijing",
 				version: "4.0",
+				alpha:true,
 				json: true,
 				scale: 0.6,
 				x: [0, 0.5],
@@ -57690,49 +57842,74 @@ export const dynamicSkinConfig = {
 	dc_zhouxuān: {
 		//周宣
 		夏空如渊: {
-			name: "周宣/夏空如渊/daiji2",
-			daijiteshu: "play2",
-			daijishan: "play3",
-			x: [0, 0.5],
-			y: [0, 0.5],
-			scale: 0.8,
-			angle: 0,
-			//speed: 1,
-			shizhounian: true,
-			chuchang: {
-				//回合开始播放
-				name: "周宣/夏空如渊/chuchang",
-				action: "play",
-				scale: 0.7,
+			"name": "周宣/夏空如渊/daiji2",
+			"daijiteshu": "play2",
+			"daijishan": "play3",
+			"x": [
+				0,
+				0.5
+			],
+			"y": [
+				0,
+				0.5
+			],
+			"scale": 0.8,
+			"angle": 0,
+			"shizhounian": true,
+			"chuchang": {
+				"name": "周宣/夏空如渊/chuchang",
+				"action": "play",
+				"scale": 0.7,
+				"version": "3.6",
+				"showTime": 2
 			},
-			gongji: {
-				name: "周宣/夏空如渊/chuchang2",
-				action: "gongji",
-				scale: 0.8,
+			"gongji": {
+				"name": "周宣/夏空如渊/chuchang2",
+				"action": "gongji",
+				"scale": 0.8,
+				"version": "3.6",
+				"showTime": 1.33333337
 			},
-			teshu: {
-				name: "周宣/夏空如渊/chuchang2",
-				action: "jineng",
-				scale: 0.8,
+			"teshu": {
+				"name": "周宣/夏空如渊/chuchang2",
+				"action": "jineng",
+				"scale": 0.8,
+				"version": "3.6",
+				"showTime": 3.0666666
 			},
-			beijing: {
-				name: "周宣/夏空如渊/beijing",
-				x: [0, 0.5],
-				y: [0, 0.5],
-				scale: 0.4,
+			"beijing": {
+				"name": "周宣/夏空如渊/beijing",
+				"x": [
+					0,
+					0.5
+				],
+				"y": [
+					0,
+					0.5
+				],
+				"scale": 0.4,
+				"version": "3.6",
+				"action": "play"
 			},
-			zhishixian: {
-				name: "周宣/夏空如渊/shouji2", //指示线
-				scale: 0.5,
-				speed: 0.8,
-				delay: 0.4,
-				effect: {
-					name: "周宣/夏空如渊/shouji", //击中爆炸特效
-					scale: 0.65,
-					speed: 0.6,
-					delay: 0.45,
+			"zhishixian": {
+				"name": "周宣/夏空如渊/shouji2",
+				"scale": 0.5,
+				"speed": 0.8,
+				"delay": 0.3,
+				"effect": {
+					"name": "周宣/夏空如渊/shouji",
+					"scale": 0.65,
+					"speed": 0.6,
+					"delay": 0.1,
+					"version": "3.6",
+					"action": "play"
 				},
+				"version": "3.6",
+				"action": "play",
+				"factor": 0.125
 			},
+			"version": "3.6",
+			"action": "play"
 		},
 		欢枕梦南柯: {
 			name: "欢杀/周宣/枕梦南柯/daiji",
@@ -57775,71 +57952,116 @@ export const dynamicSkinConfig = {
 			},
 		},
 		枕梦南柯: {
-			name: "周宣/枕梦南柯/daiji",
-			x: [0, 0.5],
-			y: [0, 0.4],
-			scale: 0.56,
-			//speed: 1,
-			shizhounian: true,
-			chuchang: {
-				name: "周宣/枕梦南柯/chuchang",
-				scale: 0.7,
-				action: "play",
+			"name": "周宣/枕梦南柯/daiji",
+			"x": [
+				0,
+				0.5
+			],
+			"y": [
+				0,
+				0.4
+			],
+			"scale": 0.56,
+			"shizhounian": true,
+			"chuchang": {
+				"name": "周宣/枕梦南柯/chuchang",
+				"scale": 0.7,
+				"action": "play",
+				"version": "3.6",
+				"showTime": 2
 			},
-			gongji: {
-				name: "周宣/枕梦南柯/chuchang",
-				scale: 0.7,
-				action: "play",
+			"gongji": {
+				"name": "周宣/枕梦南柯/chuchang",
+				"scale": 0.7,
+				"action": "play",
+				"version": "3.6",
+				"showTime": 2
 			},
-			beijing: {
-				name: "周宣/枕梦南柯/beijing",
-				x: [0, 0.5],
-				y: [0, 0.5],
-				scale: 0.4,
+			"beijing": {
+				"name": "周宣/枕梦南柯/beijing",
+				"x": [
+					0,
+					0.5
+				],
+				"y": [
+					0,
+					0.5
+				],
+				"scale": 0.4,
+				"version": "3.6",
+				"action": "play"
 			},
+			"version": "3.6",
+			"action": "play"
 		},
 		寒缨幻华: {
-			name: "周宣/寒缨幻华/daiji2",
-			daijiteshu: "play2",
-			daijishan: "play3",
-			x: [0, 0.5],
-			y: [0, 0.5],
-			scale: 0.8,
-			//speed: 1,
-			shizhounian: true,
-			chuchang: {
-				name: "周宣/寒缨幻华/chuchang",
-				action: "play",
-				scale: 0.7,
+			"name": "周宣/寒缨幻华/daiji2",
+			"daijiteshu": "play2",
+			"daijishan": "play3",
+			"x": [
+				0,
+				0.5
+			],
+			"y": [
+				0,
+				0.5
+			],
+			"scale": 0.8,
+			"shizhounian": true,
+			"chuchang": {
+				"name": "周宣/寒缨幻华/chuchang",
+				"action": "play",
+				"scale": 0.7,
+				"version": "3.6",
+				"showTime": 2
 			},
-			gongji: {
-				name: "周宣/寒缨幻华/chuchang2",
-				action: "gongji",
-				scale: 0.7,
+			"gongji": {
+				"name": "周宣/寒缨幻华/chuchang2",
+				"action": "gongji",
+				"scale": 0.7,
+				"version": "3.6",
+				"showTime": 1.63333333
 			},
-			teshu: {
-				name: "周宣/寒缨幻华/chuchang2",
-				action: "jineng",
-				scale: 0.7,
+			"teshu": {
+				"name": "周宣/寒缨幻华/chuchang2",
+				"action": "jineng",
+				"scale": 0.7,
+				"version": "3.6",
+				"showTime": 3
 			},
-			beijing: {
-				name: "周宣/寒缨幻华/beijing",
-				x: [0, 0.5],
-				y: [0, 0.5],
-				scale: 0.4,
+			"beijing": {
+				"name": "周宣/寒缨幻华/beijing",
+				"x": [
+					0,
+					0.5
+				],
+				"y": [
+					0,
+					0.5
+				],
+				"scale": 0.4,
+				"version": "3.6",
+				"action": "play"
 			},
-			zhishixian: {
-				name: "周宣/寒缨幻华/shouji2",
-				scale: 0.5,
-				speed: 0.9,
-				delay: 0.3,
-				effect: {
-					name: "周宣/寒缨幻华/shouji",
-					scale: 0.6,
-					speed: 0.8,
-					delay: 0.6,
+			"zhishixian": {
+				"name": "周宣/寒缨幻华/shouji2",
+				"scale": 0.5,
+				"speed": 0.9,
+				"delay": 0.28571429,
+				"effect": {
+					"name": "周宣/寒缨幻华/shouji",
+					"scale": 0.6,
+					"speed": 0.8,
+					"delay": 0.1,
+					"version": "3.6",
+					"action": "play"
 				},
+				"version": "3.6",
+				"action": "play",
+				"factor": 0.11111111
 			},
+			"version": "3.6",
+			"action": "play"
 		},
 	},
 	zhouyi: {
@@ -62125,6 +62347,7 @@ export const dynamicSkinConfig = {
 				y: [0, 0.25],
 				scale: 0.5,
 			},
+			clipSlots: ["tx/yan9","tx/yan8","tx/yan7","tengyi_qian_197","ren22"],
 		},
 		少女回战: {
 			name: "黄盖/少女回战/Huanggai01",
@@ -67311,18 +67534,20 @@ export const dynamicSkinConfig = {
 			name: "神钟会/经典形象/zhujiemian_shenzhonghuixin1",
 			version: "3.6",
 			action: "play",
-			x: [0, 0.5],
-			y: [0, 0.35],
-			scale: 0.3,
+			x: [0, 0.704],
+			y: [0, 0.224],
+			scale: 0.43,
 			//speed: 1,
 			beijing: {
 				name: "神钟会/经典形象/zhujiemian_shenzhonghuixin2",
 				version: "3.6",
 				action: "play",
-				x: [0, 0.5],
-				y: [0, 0.35],
-				scale: 0.3,
+				x: [0, 0.695],
+				y: [0, 0.341],
+				scale: 0.38,
+				angle: 0,
 			},
+			angle: 0,
 		},
 	},
 	ol_pengyang: {
@@ -70601,7 +70826,10 @@ export const dynamicSkinConfig = {
 			teshu: {
 				name: "柳婒/杨柳依依/chuchang2",
 				action: "jineng",
-				scale: 0.8,
+				scale: 0.93,
+				x: [0, 0.801],
+				y: [0, 0.338],
+				angle: 0,
 			},
 			beijing: {
 				name: "柳婒/杨柳依依/beijing",

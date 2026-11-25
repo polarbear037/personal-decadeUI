@@ -27,12 +27,12 @@
 	display: none;
 }
 
-/* 独立牌面位于 z-index:1；将根节点的装饰框移到上层，避免只从透明牌底露出。 */
-body[data-style="othersOff"] .card.lei-yijiang-card {
+/* 独立牌面位于 z-index:1；将装饰框移到上层。技能标记也带 .card，须保留其原生底图与文字。 */
+body[data-style="othersOff"] .card.lei-yijiang-card:not(.mark) {
 	border-image-width: 0 !important;
 }
 
-body[data-style="othersOff"] .card.lei-yijiang-card::after {
+body[data-style="othersOff"] .card.lei-yijiang-card:not(.mark)::after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -54,7 +54,7 @@ body[data-style="othersOff"] .card.lei-yijiang-card::after {
 	transition: none;
 }
 
-body[data-style="othersOff"] .hand-cards > .handcards > .card.lei-yijiang-card::after {
+body[data-style="othersOff"] .hand-cards > .handcards > .card.lei-yijiang-card:not(.mark)::after {
 	border-image-width: 20px;
 }
 
@@ -196,7 +196,8 @@ body[data-style="othersOff"] .card > .used-info {
 
 body[data-style="othersOff"] .card > .used-info > .dui-yjcm-used-text {
 	position: absolute;
-	left: 3.8461538%;
+	/* 底图宽130，原版文字中心x=63、文字框宽120，故left=(63-60)/130。 */
+	left: 2.3076923%;
 	top: 4.0983607%;
 	width: 92.3076923%;
 	height: 98.3606557%;

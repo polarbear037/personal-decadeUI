@@ -1,0 +1,667 @@
+{
+  "cases": [
+    {
+      "skill": "dccaiyun",
+      "controls": [
+        "basic",
+        "trick",
+        "equip",
+        "cancel2"
+      ],
+      "uses": 0,
+      "bar": [
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "basic"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "trick"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "equip"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "cancel2"
+          ]
+        },
+        {
+          "cls": "control combo-control lbtn-confirm",
+          "confirm": true,
+          "end": false,
+          "display": "none",
+          "links": [
+            "ok",
+            "cancel"
+          ]
+        }
+      ],
+      "buttons": [
+        {
+          "link": "basic",
+          "bg": "none",
+          "rect": {
+            "x": 405.4921875,
+            "y": 567.953125,
+            "width": 171.53125,
+            "height": 62.484375,
+            "top": 567.953125,
+            "right": 577.0234375,
+            "bottom": 630.4375,
+            "left": 405.4921875
+          }
+        },
+        {
+          "link": "trick",
+          "bg": "none",
+          "rect": {
+            "x": 607.6484375,
+            "y": 567.953125,
+            "width": 171.53125,
+            "height": 62.484375,
+            "top": 567.953125,
+            "right": 779.1796875,
+            "bottom": 630.4375,
+            "left": 607.6484375
+          }
+        },
+        {
+          "link": "equip",
+          "bg": "none",
+          "rect": {
+            "x": 809.8046875,
+            "y": 567.953125,
+            "width": 171.53125,
+            "height": 62.484375,
+            "top": 567.953125,
+            "right": 981.3359375,
+            "bottom": 630.4375,
+            "left": 809.8046875
+          }
+        },
+        {
+          "link": "cancel2",
+          "bg": "url(\"http://127.0.0.1:12802/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/cmn_btn_brown_180_54.png\")",
+          "rect": {
+            "x": 1011.9609375,
+            "y": 566.125,
+            "width": 220.546875,
+            "height": 66.15625,
+            "top": 566.125,
+            "right": 1232.5078125,
+            "bottom": 632.28125,
+            "left": 1011.9609375
+          }
+        }
+      ]
+    },
+    {
+      "skill": "dccaiyun",
+      "controls": [
+        "basic",
+        "trick",
+        "equip",
+        "cancel2"
+      ],
+      "uses": 0,
+      "bar": [
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "basic"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "trick"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "equip"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "cancel2"
+          ]
+        },
+        {
+          "cls": "control combo-control lbtn-confirm",
+          "confirm": true,
+          "end": false,
+          "display": "none",
+          "links": [
+            "ok",
+            "cancel"
+          ]
+        }
+      ],
+      "buttons": [
+        {
+          "link": "basic",
+          "bg": "none",
+          "rect": {
+            "x": 405.4921875,
+            "y": 567.953125,
+            "width": 171.53125,
+            "height": 62.484375,
+            "top": 567.953125,
+            "right": 577.0234375,
+            "bottom": 630.4375,
+            "left": 405.4921875
+          }
+        },
+        {
+          "link": "trick",
+          "bg": "none",
+          "rect": {
+            "x": 607.6484375,
+            "y": 567.953125,
+            "width": 171.53125,
+            "height": 62.484375,
+            "top": 567.953125,
+            "right": 779.1796875,
+            "bottom": 630.4375,
+            "left": 607.6484375
+          }
+        },
+        {
+          "link": "equip",
+          "bg": "none",
+          "rect": {
+            "x": 809.8046875,
+            "y": 567.953125,
+            "width": 171.53125,
+            "height": 62.484375,
+            "top": 567.953125,
+            "right": 981.3359375,
+            "bottom": 630.4375,
+            "left": 809.8046875
+          }
+        },
+        {
+          "link": "cancel2",
+          "bg": "url(\"http://127.0.0.1:12802/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/cmn_btn_brown_180_54.png\")",
+          "rect": {
+            "x": 1011.9609375,
+            "y": 566.125,
+            "width": 220.546875,
+            "height": 66.15625,
+            "top": 566.125,
+            "right": 1232.5078125,
+            "bottom": 632.28125,
+            "left": 1011.9609375
+          }
+        }
+      ]
+    },
+    {
+      "skill": "initial_control_another",
+      "controls": [
+        "basic",
+        "trick",
+        "cancel2"
+      ],
+      "uses": 0,
+      "bar": [
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "basic"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "trick"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "cancel2"
+          ]
+        },
+        {
+          "cls": "control combo-control lbtn-confirm",
+          "confirm": true,
+          "end": false,
+          "display": "none",
+          "links": [
+            "ok",
+            "cancel"
+          ]
+        }
+      ],
+      "buttons": [
+        {
+          "link": "basic",
+          "bg": "none",
+          "rect": {
+            "x": 506.5703125,
+            "y": 567.953125,
+            "width": 171.53125,
+            "height": 62.484375,
+            "top": 567.953125,
+            "right": 678.1015625,
+            "bottom": 630.4375,
+            "left": 506.5703125
+          }
+        },
+        {
+          "link": "trick",
+          "bg": "none",
+          "rect": {
+            "x": 708.7265625,
+            "y": 567.953125,
+            "width": 171.53125,
+            "height": 62.484375,
+            "top": 567.953125,
+            "right": 880.2578125,
+            "bottom": 630.4375,
+            "left": 708.7265625
+          }
+        },
+        {
+          "link": "cancel2",
+          "bg": "url(\"http://127.0.0.1:12802/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/cmn_btn_brown_180_54.png\")",
+          "rect": {
+            "x": 910.8828125,
+            "y": 566.125,
+            "width": 220.546875,
+            "height": 66.15625,
+            "top": 566.125,
+            "right": 1131.4296875,
+            "bottom": 632.28125,
+            "left": 910.8828125
+          }
+        }
+      ]
+    },
+    {
+      "skill": "initial_control_another",
+      "controls": [
+        "basic",
+        "trick",
+        "cancel2"
+      ],
+      "uses": 0,
+      "bar": [
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "basic"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "trick"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "cancel2"
+          ]
+        },
+        {
+          "cls": "control combo-control lbtn-confirm",
+          "confirm": true,
+          "end": false,
+          "display": "none",
+          "links": [
+            "ok",
+            "cancel"
+          ]
+        }
+      ],
+      "buttons": [
+        {
+          "link": "basic",
+          "bg": "none",
+          "rect": {
+            "x": 506.5703125,
+            "y": 567.953125,
+            "width": 171.53125,
+            "height": 62.484375,
+            "top": 567.953125,
+            "right": 678.1015625,
+            "bottom": 630.4375,
+            "left": 506.5703125
+          }
+        },
+        {
+          "link": "trick",
+          "bg": "none",
+          "rect": {
+            "x": 708.7265625,
+            "y": 567.953125,
+            "width": 171.53125,
+            "height": 62.484375,
+            "top": 567.953125,
+            "right": 880.2578125,
+            "bottom": 630.4375,
+            "left": 708.7265625
+          }
+        },
+        {
+          "link": "cancel2",
+          "bg": "url(\"http://127.0.0.1:12802/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/ui/assets/lbtn/yijiang/cmn_btn_brown_180_54.png\")",
+          "rect": {
+            "x": 910.8828125,
+            "y": 566.125,
+            "width": 220.546875,
+            "height": 66.15625,
+            "top": 566.125,
+            "right": 1131.4296875,
+            "bottom": 632.28125,
+            "left": 910.8828125
+          }
+        }
+      ]
+    },
+    {
+      "skill": "initial_control_after_effect",
+      "controls": [
+        "basic",
+        "trick"
+      ],
+      "uses": 1,
+      "bar": [
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "basic"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "trick"
+          ]
+        },
+        {
+          "cls": "control combo-control lbtn-confirm",
+          "confirm": true,
+          "end": false,
+          "display": "none",
+          "links": [
+            "ok",
+            "cancel"
+          ]
+        }
+      ],
+      "buttons": [
+        {
+          "link": "basic",
+          "bg": "none",
+          "rect": {
+            "x": 601.5234375,
+            "y": 569.796875,
+            "width": 171.53125,
+            "height": 62.484375,
+            "top": 569.796875,
+            "right": 773.0546875,
+            "bottom": 632.28125,
+            "left": 601.5234375
+          }
+        },
+        {
+          "link": "trick",
+          "bg": "none",
+          "rect": {
+            "x": 864.9453125,
+            "y": 569.796875,
+            "width": 171.53125,
+            "height": 62.484375,
+            "top": 569.796875,
+            "right": 1036.4765625,
+            "bottom": 632.28125,
+            "left": 864.9453125
+          }
+        }
+      ]
+    },
+    {
+      "skill": "initial_control_prepared",
+      "controls": [
+        "basic",
+        "trick"
+      ],
+      "uses": 1,
+      "bar": [
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "basic"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "contents",
+          "links": [
+            "trick"
+          ]
+        },
+        {
+          "cls": "control combo-control lbtn-confirm",
+          "confirm": true,
+          "end": false,
+          "display": "none",
+          "links": [
+            "ok",
+            "cancel"
+          ]
+        }
+      ],
+      "buttons": [
+        {
+          "link": "basic",
+          "bg": "none",
+          "rect": {
+            "x": 601.5234375,
+            "y": 569.796875,
+            "width": 171.53125,
+            "height": 62.484375,
+            "top": 569.796875,
+            "right": 773.0546875,
+            "bottom": 632.28125,
+            "left": 601.5234375
+          }
+        },
+        {
+          "link": "trick",
+          "bg": "none",
+          "rect": {
+            "x": 864.9453125,
+            "y": 569.796875,
+            "width": 171.53125,
+            "height": 62.484375,
+            "top": 569.796875,
+            "right": 1036.4765625,
+            "bottom": 632.28125,
+            "left": 864.9453125
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "flow": [
+    {
+      "cancel": true,
+      "skill": "dccaiyun",
+      "before": {
+        "self": 6,
+        "other": 4,
+        "uses": 0,
+        "presented": 0
+      },
+      "after": {
+        "self": 6,
+        "other": 4,
+        "uses": 0,
+        "presented": 0,
+        "selfBuff": false,
+        "otherBuff": false
+      }
+    },
+    {
+      "cancel": false,
+      "skill": "dccaiyun",
+      "before": {
+        "self": 6,
+        "other": 4,
+        "uses": 0,
+        "presented": 0
+      },
+      "after": {
+        "self": 7,
+        "other": 5,
+        "uses": 1,
+        "presented": 1,
+        "selfBuff": true,
+        "otherBuff": true
+      }
+    },
+    {
+      "cancel": true,
+      "skill": "initial_control_another",
+      "before": {
+        "self": 7,
+        "other": 5,
+        "uses": 0,
+        "presented": 1
+      },
+      "after": {
+        "self": 7,
+        "other": 5,
+        "uses": 0,
+        "presented": 1,
+        "selfBuff": false,
+        "otherBuff": false
+      }
+    },
+    {
+      "cancel": false,
+      "skill": "initial_control_another",
+      "before": {
+        "self": 7,
+        "other": 5,
+        "uses": 0,
+        "presented": 1
+      },
+      "after": {
+        "self": 8,
+        "other": 5,
+        "uses": 1,
+        "presented": 2,
+        "selfBuff": false,
+        "otherBuff": false
+      }
+    },
+    {
+      "cancel": false,
+      "skill": "initial_control_after_effect",
+      "before": {
+        "self": 8,
+        "other": 5,
+        "uses": 0,
+        "presented": 2
+      },
+      "after": {
+        "self": 9,
+        "other": 5,
+        "uses": 1,
+        "presented": 3,
+        "selfBuff": false,
+        "otherBuff": false
+      }
+    },
+    {
+      "cancel": false,
+      "skill": "initial_control_prepared",
+      "before": {
+        "self": 9,
+        "other": 5,
+        "uses": 0,
+        "presented": 3
+      },
+      "after": {
+        "self": 11,
+        "other": 5,
+        "uses": 1,
+        "presented": 4,
+        "selfBuff": false,
+        "otherBuff": false
+      }
+    }
+  ]
+}

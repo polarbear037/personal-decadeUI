@@ -1,0 +1,133 @@
+{
+  "cases": [
+    {
+      "skill": "dccaiyun",
+      "controls": [
+        "basic",
+        "trick",
+        "equip"
+      ],
+      "uses": 1,
+      "bar": [
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "flex",
+          "links": [
+            "basic"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "flex",
+          "links": [
+            "trick"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "flex",
+          "links": [
+            "equip"
+          ]
+        },
+        {
+          "cls": "control combo-control lbtn-confirm",
+          "confirm": true,
+          "end": false,
+          "display": "flex",
+          "links": [
+            "ok",
+            "_recasting",
+            "cancel"
+          ]
+        }
+      ],
+      "buttons": []
+    },
+    {
+      "skill": "initial_control_another",
+      "controls": [
+        "basic",
+        "trick"
+      ],
+      "uses": 1,
+      "bar": [
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "flex",
+          "links": [
+            "basic"
+          ]
+        },
+        {
+          "cls": "control",
+          "confirm": false,
+          "end": false,
+          "display": "flex",
+          "links": [
+            "trick"
+          ]
+        },
+        {
+          "cls": "control combo-control lbtn-confirm",
+          "confirm": true,
+          "end": false,
+          "display": "flex",
+          "links": [
+            "ok",
+            "_recasting",
+            "cancel"
+          ]
+        }
+      ],
+      "buttons": []
+    }
+  ],
+  "errors": [],
+  "flow": [
+    {
+      "cancel": false,
+      "skill": "dccaiyun",
+      "before": {
+        "self": 5,
+        "other": 4,
+        "uses": 0,
+        "presented": 0
+      },
+      "after": {
+        "self": 6,
+        "other": 5,
+        "uses": 1,
+        "presented": 1,
+        "selfBuff": true,
+        "otherBuff": true
+      }
+    },
+    {
+      "cancel": false,
+      "skill": "initial_control_another",
+      "before": {
+        "self": 6,
+        "other": 5,
+        "uses": 0,
+        "presented": 1
+      },
+      "after": {
+        "self": 7,
+        "other": 5,
+        "uses": 1,
+        "presented": 2,
+        "selfBuff": false,
+        "otherBuff": false
+      }
+    }
+  ]
+}

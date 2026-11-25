@@ -1,0 +1,129 @@
+{
+  "rows": [
+    {
+      "style": "othersOff",
+      "initial": {
+        "left": 673,
+        "top": -1,
+        "width": 130,
+        "height": 180,
+        "cacheLeft": 673,
+        "cacheTop": -1,
+        "cacheWidth": 130,
+        "cacheHeight": 180
+      },
+      "changed": {
+        "left": 1295,
+        "top": 157,
+        "width": 130,
+        "height": 180,
+        "cacheLeft": 1295,
+        "cacheTop": 157,
+        "cacheWidth": 130,
+        "cacheHeight": 180
+      },
+      "destination": {
+        "card": {
+          "x": 1381.9999389648438,
+          "y": 327,
+          "left": 1327.324951171875,
+          "right": 1436.6749267578125,
+          "top": 251.0625,
+          "bottom": 402.9375
+        },
+        "actor": {
+          "x": 1382,
+          "y": 326.625,
+          "left": 1317,
+          "right": 1447,
+          "top": 236.625,
+          "bottom": 416.625
+        }
+      }
+    },
+    {
+      "style": "onlineUI",
+      "initial": {
+        "left": 663,
+        "top": 9,
+        "width": 132,
+        "height": 175,
+        "cacheLeft": 663,
+        "cacheTop": 9,
+        "cacheWidth": 132,
+        "cacheHeight": 175
+      },
+      "changed": {
+        "left": 1254,
+        "top": 173,
+        "width": 132,
+        "height": 175,
+        "cacheLeft": 1254,
+        "cacheTop": 173,
+        "cacheWidth": 132,
+        "cacheHeight": 175
+      },
+      "destination": {
+        "card": {
+          "x": 1341.9999389648438,
+          "y": 341.0015869140625,
+          "left": 1287.324951171875,
+          "right": 1396.6749267578125,
+          "top": 265.0640869140625,
+          "bottom": 416.9390869140625
+        },
+        "actor": {
+          "x": 1342.171875,
+          "y": 340.859375,
+          "left": 1276.171875,
+          "right": 1408.171875,
+          "top": 253.359375,
+          "bottom": 428.359375
+        }
+      }
+    },
+    {
+      "style": "on",
+      "initial": {
+        "left": 667,
+        "top": 9,
+        "width": 130,
+        "height": 180,
+        "cacheLeft": 667,
+        "cacheTop": 9,
+        "cacheWidth": 130,
+        "cacheHeight": 180
+      },
+      "changed": {
+        "left": 1298,
+        "top": 135,
+        "width": 130,
+        "height": 180,
+        "cacheLeft": 1298,
+        "cacheTop": 135,
+        "cacheWidth": 130,
+        "cacheHeight": 180
+      },
+      "destination": {
+        "card": {
+          "x": 1384.9999389648438,
+          "y": 305.0114059448242,
+          "left": 1330.324951171875,
+          "right": 1439.6749267578125,
+          "top": 229.0738983154297,
+          "bottom": 380.94891357421875
+        },
+        "actor": {
+          "x": 1385,
+          "y": 305.265625,
+          "left": 1320,
+          "right": 1450,
+          "top": 215.265625,
+          "bottom": 395.265625
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

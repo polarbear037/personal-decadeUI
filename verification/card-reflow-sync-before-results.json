@@ -1,0 +1,153 @@
+{
+  "baseline": true,
+  "cases": [
+    {
+      "kind": "hand-settled",
+      "count": 8,
+      "duration": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "starts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "maxProgressSpread": 0.00006887755102114035,
+      "intermediateFrames": 39,
+      "finalError": 0
+    },
+    {
+      "kind": "hand-selected",
+      "count": 8,
+      "duration": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "starts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "maxProgressSpread": 0.00006402439024688622,
+      "intermediateFrames": 39,
+      "finalError": 0
+    },
+    {
+      "kind": "hand-in-flight",
+      "count": 8,
+      "duration": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "starts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "maxProgressSpread": 0.5787321428571395,
+      "intermediateFrames": 20,
+      "finalError": 0
+    },
+    {
+      "kind": "discard-settled",
+      "count": 5,
+      "duration": [
+        300,
+        300,
+        300,
+        300,
+        300
+      ],
+      "starts": [
+        6197.60000000149,
+        6197.60000000149,
+        6197.60000000149,
+        6197.60000000149,
+        6197.60000000149
+      ],
+      "maxProgressSpread": 0.000016913319238032187,
+      "intermediateFrames": 44,
+      "finalError": 0,
+      "early": 0
+    },
+    {
+      "kind": "discard-mixed-flight",
+      "count": 5,
+      "duration": [
+        300,
+        198.19999999701938,
+        300,
+        300,
+        300
+      ],
+      "starts": [
+        7175.800000000745,
+        7175.800000000745,
+        7175.800000000745,
+        7175.800000000745,
+        7175.800000000745
+      ],
+      "maxProgressSpread": 0.22887013768207287,
+      "intermediateFrames": 29,
+      "finalError": 0,
+      "early": 0
+    },
+    {
+      "kind": "discard-blocked",
+      "count": 5,
+      "duration": [
+        300,
+        1.7053025658242404e-13,
+        300,
+        300,
+        300
+      ],
+      "starts": [
+        8302.199999999255,
+        8302.199999999255,
+        8302.199999999255,
+        8302.199999999255,
+        8302.199999999255
+      ],
+      "maxProgressSpread": 0,
+      "intermediateFrames": 0,
+      "finalError": 0,
+      "early": 0
+    }
+  ],
+  "errors": []
+}

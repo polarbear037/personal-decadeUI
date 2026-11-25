@@ -2,48 +2,48 @@
   "card": {
     "host": {
       "x": 5,
-      "y": 410.0625,
+      "y": 362,
       "width": 518,
       "height": 178,
-      "top": 410.0625,
+      "top": 362,
       "right": 523,
-      "bottom": 588.0625,
+      "bottom": 540,
       "left": 5
     },
     "panel": {
       "x": 5,
-      "y": 410.0625,
+      "y": 362,
       "width": 518,
       "height": 178.390625,
-      "top": 410.0625,
+      "top": 362,
       "right": 523,
-      "bottom": 588.453125,
+      "bottom": 540.390625,
       "left": 5
     },
     "title": {
       "x": 24,
-      "y": 421.0625,
+      "y": 373,
       "width": 463,
       "height": 34,
-      "top": 421.0625,
+      "top": 373,
       "right": 487,
-      "bottom": 455.0625,
+      "bottom": 407,
       "left": 24
     },
     "body": {
       "x": 24,
-      "y": 469.0625,
+      "y": 421,
       "width": 463,
       "height": 86.390625,
-      "top": 469.0625,
+      "top": 421,
       "right": 487,
-      "bottom": 555.453125,
+      "bottom": 507.390625,
       "left": 24
     },
     "text": "杀基本牌出牌阶段，对你攻击范围内的一名角色使用。其须使用一张【闪】，否则你对其造成1点伤害。",
     "color": "rgb(85, 207, 48)",
     "bodyFont": "24px",
-    "frame": "url(\"http://127.0.0.1:54857/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/xinsha/item_tips_bg.png\")",
+    "frame": true,
     "unit": 1,
     "source": "handcards",
     "font": "dui-yjcm-label, serif"
@@ -101,7 +101,7 @@
       "bottom": 609,
       "left": 1002
     },
-    "frame": "url(\"http://127.0.0.1:54857/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/xinsha/new_skill_bg.png\")",
+    "frame": "url(\"http://127.0.0.1:6949/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/xinsha/new_skill_bg.png\")",
     "unit": 1
   },
   "skillLayer": {
@@ -114,14 +114,14 @@
     "title": "无中生有",
     "visibleText": "",
     "size": {
-      "x": 131.09375,
-      "y": 460.40625,
+      "x": 147.25,
+      "y": 463.234375,
       "width": 518,
       "height": 121,
-      "top": 460.40625,
-      "right": 649.09375,
-      "bottom": 581.40625,
-      "left": 131.09375
+      "top": 463.234375,
+      "right": 665.25,
+      "bottom": 584.234375,
+      "left": 147.25
     },
     "types": [
       {
@@ -130,17 +130,139 @@
       }
     ],
     "body": {
-      "x": 150.09375,
-      "y": 519.40625,
+      "x": 166.25,
+      "y": 522.234375,
       "width": 463,
       "height": 28.796875,
-      "top": 519.40625,
-      "right": 613.09375,
-      "bottom": 548.203125,
-      "left": 150.09375
+      "top": 522.234375,
+      "right": 629.25,
+      "bottom": 551.03125,
+      "left": 166.25
     }
   },
+  "equipment": [
+    {
+      "seat": 0,
+      "name": "guding",
+      "adapted": "card",
+      "title": "古锭刀",
+      "text": "古锭刀\n攻击范围：2\n锁定技，当你因执行【杀】的效果而对目标角色造成伤害时，若其没有手牌，则此伤害+1。",
+      "visibility": "visible",
+      "titles": [],
+      "frame": true,
+      "color": "rgb(85, 207, 48)"
+    },
+    {
+      "seat": 0,
+      "name": "bagua",
+      "adapted": "card",
+      "title": "八卦阵",
+      "text": "八卦阵\n当你需要使用或打出一张【闪】时，你可以进行判定。若结果为红色，则你视为使用或打出一张【闪】。",
+      "visibility": "visible",
+      "titles": [],
+      "frame": true,
+      "color": "rgb(85, 207, 48)"
+    },
+    {
+      "seat": 0,
+      "name": "jueying",
+      "adapted": "card",
+      "title": "绝影",
+      "text": "绝影\n锁定技，其他角色计算与你的距离+1。",
+      "visibility": "visible",
+      "titles": [],
+      "frame": true,
+      "color": "rgb(85, 207, 48)"
+    },
+    {
+      "seat": 0,
+      "name": "chitu",
+      "adapted": "card",
+      "title": "赤兔",
+      "text": "赤兔\n锁定技，你计算与其他角色的距离-1。",
+      "visibility": "visible",
+      "titles": [],
+      "frame": true,
+      "color": "rgb(85, 207, 48)"
+    },
+    {
+      "seat": 0,
+      "name": "muniu",
+      "adapted": "card",
+      "title": "木牛流马",
+      "text": "木牛流马\n①出牌阶段限一次，你可以将一张手牌扣置于你装备区里的【木牛流马】下，然后你可以将【木牛流马】移动到一名其他角色的装备区里。②你可以将【木牛流马】下的牌如手牌般使用或打出。③当你失去装备区的【木牛流马】后，你刷新〖木牛流马①〗的使用次数限制。若此牌不是因置入其他角色的装备区而失去的，则你将【木牛流马】下的所有牌置入弃牌堆。",
+      "visibility": "visible",
+      "titles": [],
+      "frame": true,
+      "color": "rgb(85, 207, 48)"
+    },
+    {
+      "seat": 1,
+      "name": "guding",
+      "adapted": "card",
+      "title": "古锭刀",
+      "text": "古锭刀\n攻击范围：2\n锁定技，当你因执行【杀】的效果而对目标角色造成伤害时，若其没有手牌，则此伤害+1。",
+      "visibility": "visible",
+      "titles": [],
+      "frame": true,
+      "color": "rgb(85, 207, 48)"
+    },
+    {
+      "seat": 1,
+      "name": "bagua",
+      "adapted": "card",
+      "title": "八卦阵",
+      "text": "八卦阵\n当你需要使用或打出一张【闪】时，你可以进行判定。若结果为红色，则你视为使用或打出一张【闪】。",
+      "visibility": "visible",
+      "titles": [],
+      "frame": true,
+      "color": "rgb(85, 207, 48)"
+    },
+    {
+      "seat": 1,
+      "name": "jueying",
+      "adapted": "card",
+      "title": "绝影",
+      "text": "绝影\n锁定技，其他角色计算与你的距离+1。",
+      "visibility": "visible",
+      "titles": [],
+      "frame": true,
+      "color": "rgb(85, 207, 48)"
+    },
+    {
+      "seat": 1,
+      "name": "chitu",
+      "adapted": "card",
+      "title": "赤兔",
+      "text": "赤兔\n锁定技，你计算与其他角色的距离-1。",
+      "visibility": "visible",
+      "titles": [],
+      "frame": true,
+      "color": "rgb(85, 207, 48)"
+    },
+    {
+      "seat": 1,
+      "name": "muniu",
+      "adapted": "card",
+      "title": "木牛流马",
+      "text": "木牛流马\n①出牌阶段限一次，你可以将一张手牌扣置于你装备区里的【木牛流马】下，然后你可以将【木牛流马】移动到一名其他角色的装备区里。②你可以将【木牛流马】下的牌如手牌般使用或打出。③当你失去装备区的【木牛流马】后，你刷新〖木牛流马①〗的使用次数限制。若此牌不是因置入其他角色的装备区而失去的，则你将【木牛流马】下的所有牌置入弃牌堆。",
+      "visibility": "visible",
+      "titles": [],
+      "frame": true,
+      "color": "rgb(85, 207, 48)"
+    }
+  ],
+  "equipSpecial": {
+    "text": "古锭刀\n攻击范围：2\n自定义装备说明\n此牌标签：制衡",
+    "html": "<div class=\"content-container\"><div class=\"content\"><div class=\"xinsha-tooltip xinsha-card-tooltip\" role=\"tooltip\" style=\"--scale9-background: url(&quot;data:image/png;base64,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&quot;);\"><div class=\"xinsha-tooltip-scroll\" style=\"max-height: 730px;\"><div class=\"xinsha-tooltip-title\"><div class=\"xinsha-tooltip-name\">古锭刀</div></div><div class=\"xinsha-tooltip-description\"><div class=\"caption xinsha-tooltip-card-type\"><div class=\"text center xinsha-tooltip-card-type\">装备牌-武器</div></div><div class=\"caption\"><div class=\"text center\">攻击范围：2</div></div><div class=\"caption\"><div class=\"text\" style=\"display:inline\"><span style=\"color:rgb(255,216,0)\">自定义装备说明</span></div></div><div class=\"caption\"> </div><div class=\"caption\"><div class=\"text\" style=\"display:inline\">此牌标签：制衡</div></div></div></div></div></div></div>"
+  },
   "appearanceFrames": [
+    {
+      "width": 260,
+      "height": 90.3499755859375,
+      "transition": "0s",
+      "animations": 0
+    },
     {
       "width": 260,
       "height": 90.3499755859375,
@@ -399,7 +521,7 @@
       "text": "无中生有锦囊牌出牌阶段，对你使用。你摸两张牌。",
       "color": "rgb(85, 207, 48)",
       "bodyFont": "24px",
-      "frame": "url(\"http://127.0.0.1:54857/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/xinsha/item_tips_bg.png\")",
+      "frame": true,
       "unit": 0.95952023988006,
       "source": "handcards",
       "font": "dui-yjcm-label, serif"
@@ -448,7 +570,7 @@
       "text": "无中生有锦囊牌出牌阶段，对你使用。你摸两张牌。",
       "color": "rgb(85, 207, 48)",
       "bodyFont": "24px",
-      "frame": "url(\"http://127.0.0.1:54857/extension/%E5%8D%81%E5%91%A8%E5%B9%B4UI/image/ui/tooltip/xinsha/item_tips_bg.png\")",
+      "frame": true,
       "unit": 1,
       "source": "handcards",
       "font": "dui-yjcm-label, serif"
@@ -458,6 +580,7 @@
     {
       "style": "onlineUI",
       "xinsha": false,
+      "equipXinsha": false,
       "online": true,
       "text": "无中生有♥ J锦囊牌出牌阶段，对你使用。你摸两张牌。",
       "skill": {
@@ -469,6 +592,7 @@
     {
       "style": "on",
       "xinsha": false,
+      "equipXinsha": false,
       "online": false,
       "text": "无中生有【♥︎J】锦囊牌出牌阶段，对你使用。你摸两张牌。",
       "skill": {
@@ -480,6 +604,7 @@
     {
       "style": "off",
       "xinsha": false,
+      "equipXinsha": false,
       "online": false,
       "text": "无中生有【♥︎J】锦囊牌出牌阶段，对你使用。你摸两张牌。",
       "skill": {
@@ -491,6 +616,7 @@
     {
       "style": "babysha",
       "xinsha": false,
+      "equipXinsha": false,
       "online": false,
       "text": "无中生有【♥︎J】锦囊牌出牌阶段，对你使用。你摸两张牌。",
       "skill": {
@@ -502,6 +628,7 @@
     {
       "style": "codename",
       "xinsha": false,
+      "equipXinsha": false,
       "online": false,
       "text": "无中生有【♥︎J】锦囊牌出牌阶段，对你使用。你摸两张牌。",
       "skill": {

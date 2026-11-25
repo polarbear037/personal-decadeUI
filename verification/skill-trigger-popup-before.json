@@ -1,0 +1,638 @@
+[
+  {
+    "style": "othersOff",
+    "rows": [
+      {
+        "optimize": false,
+        "self": false,
+        "label": "spine",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": false,
+        "label": "equipment",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": false,
+        "label": "extension",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": false,
+        "label": "ordinary",
+        "texts": [
+          "奸雄"
+        ],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": true,
+        "label": "spine",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": true,
+        "label": "equipment",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": true,
+        "label": "extension",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": true,
+        "label": "ordinary",
+        "texts": [
+          "奸雄"
+        ],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": false,
+        "label": "spine",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": false,
+        "label": "equipment",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": false,
+        "label": "extension",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": false,
+        "label": "ordinary",
+        "texts": [
+          "奸雄"
+        ],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": true,
+        "label": "spine",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": true,
+        "label": "equipment",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": true,
+        "label": "extension",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": true,
+        "label": "ordinary",
+        "texts": [
+          "奸雄"
+        ],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "label": "system",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 0
+      },
+      {
+        "label": "received",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 0
+      },
+      {
+        "label": "cleanup",
+        "remaining": 0
+      }
+    ],
+    "errors": []
+  },
+  {
+    "style": "onlineUI",
+    "rows": [
+      {
+        "optimize": false,
+        "self": false,
+        "label": "spine",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": false,
+        "label": "equipment",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": false,
+        "label": "extension",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": false,
+        "label": "ordinary",
+        "texts": [
+          "奸雄"
+        ],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": true,
+        "label": "spine",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": true,
+        "label": "equipment",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": true,
+        "label": "extension",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": true,
+        "label": "ordinary",
+        "texts": [
+          "奸雄"
+        ],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": false,
+        "label": "spine",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": false,
+        "label": "equipment",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": false,
+        "label": "extension",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": false,
+        "label": "ordinary",
+        "texts": [
+          "奸雄"
+        ],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": true,
+        "label": "spine",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": true,
+        "label": "equipment",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": true,
+        "label": "extension",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": true,
+        "label": "ordinary",
+        "texts": [
+          "奸雄"
+        ],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "label": "system",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 0
+      },
+      {
+        "label": "received",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 0
+      },
+      {
+        "label": "cleanup",
+        "remaining": 0
+      }
+    ],
+    "errors": []
+  },
+  {
+    "style": "on",
+    "rows": [
+      {
+        "optimize": false,
+        "self": false,
+        "label": "spine",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": false,
+        "label": "equipment",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": false,
+        "label": "extension",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": false,
+        "label": "ordinary",
+        "texts": [
+          "奸雄"
+        ],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": true,
+        "label": "spine",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": true,
+        "label": "equipment",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": true,
+        "label": "extension",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": false,
+        "self": true,
+        "label": "ordinary",
+        "texts": [
+          "奸雄"
+        ],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": false,
+        "label": "spine",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": false,
+        "label": "equipment",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": false,
+        "label": "extension",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": false,
+        "label": "ordinary",
+        "texts": [
+          "奸雄"
+        ],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": true,
+        "label": "spine",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": true,
+        "label": "equipment",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": true,
+        "label": "extension",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "optimize": true,
+        "self": true,
+        "label": "ordinary",
+        "texts": [
+          "奸雄"
+        ],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 1
+      },
+      {
+        "label": "system",
+        "texts": [],
+        "visible": true,
+        "effects": 0,
+        "records": [
+          "damagepop"
+        ],
+        "broadcasts": 0
+      },
+      {
+        "label": "received",
+        "texts": [],
+        "visible": true,
+        "effects": 1,
+        "records": [],
+        "broadcasts": 0
+      },
+      {
+        "label": "cleanup",
+        "remaining": 0
+      }
+    ],
+    "errors": []
+  }
+]

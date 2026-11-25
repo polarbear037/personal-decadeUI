@@ -60,7 +60,9 @@ const results = {};
             const card=game.createCard(name,'spade',9);equipLive.cards.push({card,player});player.directgain([card]);
             equipLive.operations.push({own:player===game.me,name,id:card.cardid,syncSpeed:lib.config.sync_speed});
             await player.useCard(card,player);
-            await game.delay(0,1700);
+            equipLive.operations.at(-1).flightDoneAtUseReturn=!!card.clone?._xinshaEquipFlight?.done;
+            // 其他座位连续出下一张，直接验证装备动画等待；本人保留采样窗口。
+            if(player===game.me)await game.delay(0,1700);
           }
           equipLive.done=true;game.pause();
         }};
@@ -86,7 +88,9 @@ const results = {};
       const completion=result.completion.find(c=>c.id===result.operations.find(op=>op.own===own&&op.name===name).id);
       assert(completion?.done&&completion.equipped&&completion.visibility==='visible',`通知晚到也须结束飞行并正常显示装备: ${own}/${name}`);
       assert(Number.isFinite(completion.appearanceGap)&&completion.appearanceGap<150,'渐隐结束后装备栏不能长时间空白：'+JSON.stringify({own,name,gap:completion.appearanceGap}));
-      assert(samples.some(n=>n.phase==='stack'&&!n.requested),'两种视角第一段必须在通知之前立即起播');
+      assert(samples.some(n=>n.phase==='stack'),'同帧装备通知不能跳过第一段');
+      const operation=result.operations.find(op=>op.own===own&&op.name===name);
+      assert.equal(operation.flightDoneAtUseReturn,!own,'仅非主视角须等装备动画完成才结束useCard并允许下一张牌');
       const visible=samples.filter(n=>n.visibility==='visible'&&Number(n.opacity)>.05);
       assert.equal(visible[0]?.phase,'stack','实际卡面首个可见帧不能已经在折返入栏');
       assert(visible.some(n=>n.phase==='stack'&&n.elapsed>10&&n.elapsed<190&&Math.hypot(n.point.x-n.start.x,n.point.y-n.start.y)>5),'卡面可见期间必须记录到首段途中位移');

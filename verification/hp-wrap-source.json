@@ -1,0 +1,114 @@
+{
+  "apk": "D:\\yoka_sgs.x_g_android_6.4.5.apk",
+  "apk_sha256": "12a3a7bb9bef360ed8f652efb3efb13be6494ba40701b8c0b04e3a4dd25c9202",
+  "rea_evidence": [
+    "ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965",
+    "ev_587eee0cd61874d39939f356205cbe0c89e572f379ed157b8a88242b54d63070"
+  ],
+  "modules": [
+    {
+      "module": "app.view.general.GeneralYjcmHpContainer",
+      "bytecode_sha256": "bab286b955ef2c3f47b6a67b303ce9b2d5e7e8b6d965596388185968fad5ce00",
+      "source_sha256": "8aefbe70adc80e2682af945ab90f01dac4e7eb96b6da468f351d017d6f53f9d3"
+    },
+    {
+      "module": "app.manager.general.GeneralUiResCfg",
+      "bytecode_sha256": "bffd18a00183bb1d549d83408d2394ebb45f7e70bb9bd702c319058a11e6de06",
+      "source_sha256": "8a3ecf6c493a1a100be1c492b4e610562310e7e95a837d8d7968cb394aceccb3"
+    }
+  ],
+  "frames": [
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "frame": "dragon2/hp_grade_5.png",
+      "metadata": {
+        "frame": "{{1120,1205},{139,178}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{139,178}}",
+        "sourceSize": "{139,178}"
+      },
+      "rgba_sha256": "52d5b619b31192356693c34592d03d0557b830a8349648d1c4b72a9c3b76ae0b",
+      "target": "ui\\assets\\lbtn\\yijiang\\dragon2_hp_grade_5.png",
+      "png_sha256": "345245a5378aa4886074e0bdea57d12baff4c2fef619b41384ab79536932a3b6",
+      "slice": [
+        146,
+        0,
+        30,
+        0
+      ],
+      "width": 139,
+      "left": -97,
+      "bottom": -7
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "frame": "dragon3/hp_grade_5.png",
+      "metadata": {
+        "frame": "{{1120,1205},{139,178}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{139,178}}",
+        "sourceSize": "{139,178}"
+      },
+      "rgba_sha256": "52d5b619b31192356693c34592d03d0557b830a8349648d1c4b72a9c3b76ae0b",
+      "target": "ui\\assets\\lbtn\\yijiang\\dragon2_hp_grade_5.png",
+      "png_sha256": "345245a5378aa4886074e0bdea57d12baff4c2fef619b41384ab79536932a3b6",
+      "slice": [
+        146,
+        0,
+        30,
+        0
+      ],
+      "width": 139,
+      "left": -97,
+      "bottom": -7
+    },
+    {
+      "member": "assets/res/new/tex/plist/yjcm_general.plist",
+      "frame": "dragon4/hp_grade_5.png",
+      "metadata": {
+        "frame": "{{1803,634},{139,178}}",
+        "offset": "{0,0}",
+        "rotated": true,
+        "sourceColorRect": "{{0,0},{139,178}}",
+        "sourceSize": "{139,178}"
+      },
+      "rgba_sha256": "c96fd0d1b955219a42d31e183cfa640b0302d47dceee2c12d595b12e02e3e4cf",
+      "target": "ui\\assets\\lbtn\\yijiang\\dragon4_hp_grade_5.png",
+      "png_sha256": "1dec79c5c60f1f31b4b474685ffb36c52dda916fa3ab625e6b1839a501a996bd",
+      "slice": [
+        146,
+        0,
+        30,
+        0
+      ],
+      "width": 139,
+      "left": -97,
+      "bottom": -7
+    }
+  ],
+  "atlas": {
+    "plist": "assets/res/new/tex/plist/yjcm_general.plist",
+    "plist_sha256": "4ab8a3485b1ff13efcb316a5ea0c1a05eb9abd1fb4ad3b44c9b65ff9b771d447",
+    "texture_sha256": "8e9ea05d32f1230e7786a6bc496345beb9044519c01a4cb2446c9bfa5c3e65e0",
+    "alpha_sha256": "c7fd1ffcfef9591b0065522d7fc9541cbefcb084d45249710f025a5baea85b17"
+  },
+  "layout": {
+    "dragon2_dragon3_five": {
+      "resource": "dragon2/hp_grade_5.png (dragon3 is identical)",
+      "topEdge": 130,
+      "bottomEdge": 6
+    },
+    "dragon4_five": {
+      "resource": "dragon4/hp_grade_5.png",
+      "topEdge": 135,
+      "bottomEdge": 14
+    },
+    "formula": "bgHeight=max(178,min(maxHp,5)*20+topEdge+bottomEdge); pip centers=(25,bottomEdge+10+20*i); bigHP bottom=bottomEdge+5",
+    "scope": "GeneralUiResCfg TypeCard; GeneralYjcmHpContainer shared by self/other seat. TypeDetailPic big_hp_grade_5 is not the seat resource."
+  },
+  "limitations": [
+    "Static APK and recovered Lua verification; not an official client runtime capture."
+  ]
+}

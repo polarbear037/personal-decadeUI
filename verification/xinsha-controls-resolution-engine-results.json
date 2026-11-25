@@ -1,0 +1,109 @@
+{
+  "before": {
+    "label": "first-choice",
+    "display": "flex",
+    "name": "chooseToUse",
+    "text": "确定确定回合结束"
+  },
+  "nested": {
+    "label": "nested-choice",
+    "display": "flex",
+    "name": "chooseBool",
+    "text": "确定确定取消"
+  },
+  "after": {
+    "label": "next-choice",
+    "display": "flex",
+    "name": "chooseToUse",
+    "text": "确定确定回合结束"
+  },
+  "ended": {
+    "label": "after-end-click",
+    "display": "none",
+    "name": "_verify_controls_driver",
+    "text": "确定"
+  },
+  "restoredAfterEnd": {
+    "label": "after-end-choice",
+    "display": "flex",
+    "name": "chooseToUse",
+    "text": "确定确定回合结束"
+  },
+  "samples": [
+    {
+      "label": "first-choice",
+      "display": "flex",
+      "name": "chooseToUse",
+      "text": "确定确定回合结束"
+    },
+    {
+      "label": "settling",
+      "display": "none",
+      "name": "_verify_controls_settlement",
+      "text": "确定"
+    },
+    {
+      "label": "nested-choice",
+      "display": "flex",
+      "name": "chooseBool",
+      "text": "确定确定取消"
+    },
+    {
+      "label": "settling-again",
+      "display": "none",
+      "name": "_verify_controls_settlement",
+      "text": "确定"
+    },
+    {
+      "label": "next-choice",
+      "display": "flex",
+      "name": "chooseToUse",
+      "text": "确定确定回合结束"
+    },
+    {
+      "label": "cancel-card",
+      "display": "flex",
+      "name": "chooseToUse",
+      "text": "确定确定回合结束"
+    },
+    {
+      "label": "cancel-skill",
+      "display": "flex",
+      "name": "chooseToUse",
+      "text": "确定确定回合结束"
+    },
+    {
+      "label": "end-click",
+      "display": "none",
+      "name": "chooseToUse",
+      "result": false,
+      "text": "确定"
+    },
+    {
+      "label": "after-end-click",
+      "display": "none",
+      "name": "_verify_controls_driver",
+      "text": "确定"
+    },
+    {
+      "label": "turn-ended",
+      "display": "none",
+      "name": "_verify_controls_driver",
+      "text": "确定"
+    },
+    {
+      "label": "after-end-choice",
+      "display": "flex",
+      "name": "chooseToUse",
+      "text": "确定确定回合结束"
+    }
+  ],
+  "scopes": {
+    "hidden": "none",
+    "otherStyle": "flex",
+    "over": "flex",
+    "character": "flex",
+    "restored": "flex"
+  },
+  "errors": []
+}

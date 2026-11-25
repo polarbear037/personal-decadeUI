@@ -1,0 +1,8081 @@
+{
+  "othersOff": {
+    "one": {
+      "main": "请选择一名其他角色",
+      "detail": "",
+      "id": "3798",
+      "field": "ActiveTip",
+      "native": "烈骧：请选择一名其他角色",
+      "nativeDetail": "这些角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。"
+    },
+    "multiple": {
+      "main": "请选择至多三名其他角色",
+      "detail": "",
+      "id": "3798",
+      "field": "ActiveTip",
+      "native": "烈骧：请选择至多三名其他角色",
+      "nativeDetail": "这些角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。"
+    },
+    "gift": {
+      "main": "请选择一名角色交给其至多5张牌",
+      "detail": "",
+      "id": "3798",
+      "field": "ActiveTip",
+      "native": "烈骧：你可以将至多五张牌交给其他角色"
+    },
+    "mixedDetail": {
+      "main": "请选择一名角色交给其至多5张牌",
+      "detail": "必须保留的独立条件",
+      "skill": "烈骧",
+      "official": {
+        "richMain": "请选择一名角色交给其至多5张牌",
+        "entryId": 3798,
+        "field": "ActiveTip"
+      }
+    },
+    "customDetail": {
+      "main": "请选择一名角色交给其至多5张牌",
+      "detail": "只能交给本轮未获得过牌的角色，必须保留一张黑桃牌",
+      "id": "3798",
+      "field": "ActiveTip",
+      "native": "烈骧：你可以将至多五张牌交给其他角色",
+      "nativeDetail": "只能交给本轮未获得过牌的角色，必须保留一张黑桃牌"
+    },
+    "control": {
+      "main": "请选择摸牌数",
+      "detail": "",
+      "id": "3798",
+      "field": "ActiveTip"
+    },
+    "audit": {
+      "checked": 3393,
+      "official": 631,
+      "fallback": 2762,
+      "failures": [],
+      "resolvedSkills": [
+        {
+          "id": 92,
+          "name": "驱虎",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名体力值大于你的角色为目标"
+            }
+          ]
+        },
+        {
+          "id": 121,
+          "name": "缔盟",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择1至5张牌弃置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择要交换手牌的2名角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 122,
+          "name": "巧变",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择至多2名有手牌的目标角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择至多2名有手牌的目标角色"
+            }
+          ]
+        },
+        {
+          "id": 160,
+          "name": "良姻",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“良姻”，令1名角色摸1张牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“良姻”，令1名角色弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 161,
+          "name": "箜声",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "发动“箜声”，将任意张牌置于武将牌上"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "发动“箜声”，将任意张牌置于武将牌上"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "发动“箜声”，将任意张牌置于武将牌上"
+            }
+          ]
+        },
+        {
+          "id": 3648,
+          "name": "结营",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择任意横置角色摸牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择任意横置角色摸牌"
+            }
+          ]
+        },
+        {
+          "id": 175,
+          "name": "摧克",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“摧克”，请选择1名角色造成1点伤害"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“摧克”，令1名角色横置并弃置其区域里的1张牌"
+            }
+          ]
+        },
+        {
+          "id": 176,
+          "name": "绽火",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名已横置的角色，对其造成1点火焰伤害"
+            }
+          ]
+        },
+        {
+          "id": 213,
+          "name": "颂词",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "点击确定发动技能令其弃置牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "点击确定发动技能令其弃置牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "点击确定发动技能令其弃置牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "点击确定发动技能令其弃置牌"
+            }
+          ]
+        },
+        {
+          "id": 215,
+          "name": "雪恨",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名角色造成火焰伤害"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请弃置1张红色牌，然后选择至多1名角色横置"
+            }
+          ]
+        },
+        {
+          "id": 219,
+          "name": "星舞",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "发动“星舞”，请选择1张手牌，置于武将牌上"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名角色"
+            }
+          ]
+        },
+        {
+          "id": 221,
+          "name": "傲才",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请从“傲才”牌中选择1张合适的牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "选择你要杀的目标，点击确定发动"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "选择你要杀的目标，点击确定发动"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "选择你要杀的目标，点击确定发动"
+            }
+          ]
+        },
+        {
+          "id": 229,
+          "name": "绝地",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "移去“引兵”牌，将你的手牌补至体力上限"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "移去“引兵”牌，将你的手牌补至体力上限"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "移去“引兵”牌，将你的手牌补至体力上限"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "将“引兵”牌交给1名体力值不大于你的其他角色，其回复1点体力，摸等量的牌"
+            }
+          ]
+        },
+        {
+          "id": 284,
+          "name": "间书",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名其他角色"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1张黑色牌和1名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 325,
+          "name": "狩骊",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择【杀】的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择【杀】的目标"
+            }
+          ]
+        },
+        {
+          "id": 336,
+          "name": "摧心",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名角色"
+            }
+          ]
+        },
+        {
+          "id": 339,
+          "name": "摧決",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 341,
+          "name": "壮魄",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请弃置2张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请弃置1至5张牌"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 344,
+          "name": "寰道",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 377,
+          "name": "筹策",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名角色摸牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名角色并弃置其区域内的1张牌"
+            }
+          ]
+        },
+        {
+          "id": 428,
+          "name": "潜袭",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名距离为1的角色作为“潜袭”的目标"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 449,
+          "name": "陷嗣",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "发动“陷嗣”，请选择1至2名角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "发动“陷嗣”，请选择1至2名角色"
+            }
+          ]
+        },
+        {
+          "id": 469,
+          "name": "蛊惑",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张手牌"
+            }
+          ]
+        },
+        {
+          "id": 474,
+          "name": "潜袭",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌弃置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名距离为1的角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 521,
+          "name": "情势",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择任意名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择任意名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 527,
+          "name": "武佑",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张手牌"
+            }
+          ]
+        },
+        {
+          "id": 530,
+          "name": "连捷",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张手牌中点数最小的牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“连捷”，请选择1名角色"
+            }
+          ]
+        },
+        {
+          "id": 699,
+          "name": "仁德",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "选择1张要使用的基本牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "选择任意张手牌和1名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 775,
+          "name": "滔乱",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 780,
+          "name": "问卦",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1张牌并选择1名有“问卦”技能的角色"
+            }
+          ]
+        },
+        {
+          "id": 794,
+          "name": "诫训",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "令其弃置1张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "令其弃置2张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "令其弃置1至5张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“诫训”，请选择1名角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "令其弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 818,
+          "name": "方统",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "发动“方统”，请弃置1张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名角色，对其造成3点雷电伤害"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "发动“方统”，请弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 830,
+          "name": "表召",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "发动“表召”，请选择1张牌置于你的武将牌上"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名角色"
+            }
+          ]
+        },
+        {
+          "id": 845,
+          "name": "决讨",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择至多2名角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择至多2名角色"
+            }
+          ]
+        },
+        {
+          "id": 878,
+          "name": "卜算",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 891,
+          "name": "溃击",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张黑色基本牌当作【兵粮寸断】置于你的判定区"
+            }
+          ]
+        },
+        {
+          "id": 892,
+          "name": "挫锐",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 896,
+          "name": "绢绘",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择记录的一张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 904,
+          "name": "慈孝",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“慈孝”，请选择1名角色获得”义子“标记"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“慈孝”，请弃置1张牌选择1名角色获得”义子“标记"
+            }
+          ]
+        },
+        {
+          "id": 913,
+          "name": "尊位",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 922,
+          "name": "把盏",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 1320,
+          "name": "蚕食",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择任意名有“傀”的角色为额外目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择任意名有“傀”的角色为额外目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择任意名有“傀”的角色为额外目标"
+            }
+          ]
+        },
+        {
+          "id": 1428,
+          "name": "旋风",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一个目标，对其造成1点伤害"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“旋风”，选择1个目标并弃置其1张牌"
+            }
+          ]
+        },
+        {
+          "id": 1456,
+          "name": "潜袭",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择弃置1张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“潜袭”，请选择1名距离为1的角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 1470,
+          "name": "应势",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“应势”，请选择1张展示的手牌和被杀的角色"
+            }
+          ]
+        },
+        {
+          "id": 1474,
+          "name": "陷嗣",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择要置入弃牌堆的逆"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择要置入弃牌堆的逆"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择要置入弃牌堆的逆"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "发动“陷嗣”，选择1至2名角色为目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "发动“陷嗣”，选择1至2名角色为目标"
+            }
+          ]
+        },
+        {
+          "id": 1722,
+          "name": "馈珠",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“馈珠”，请选择体力值最多的1名角色"
+            }
+          ]
+        },
+        {
+          "id": 1743,
+          "name": "蛮嗣",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择至多1名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择至多2名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择至多2名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 1809,
+          "name": "锋势",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“锋势”，请弃1张牌并选择一名手牌比你少的目标"
+            }
+          ]
+        },
+        {
+          "id": 1832,
+          "name": "玉殒",
+          "rows": [
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色，令其将手牌摸至体力上限（最多摸至5）"
+            }
+          ]
+        },
+        {
+          "id": 1841,
+          "name": "言政",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择要保留的手牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择要保留的手牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择要保留的手牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择选择至多1名角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择选择至多2名角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择选择至多2名角色"
+            }
+          ]
+        },
+        {
+          "id": 1846,
+          "name": "地法",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "发动“地法”，请弃置1张红色牌"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "发动“地法”，请弃置1张红色牌"
+            }
+          ]
+        },
+        {
+          "id": 1847,
+          "name": "诛佞",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "选择一张要使用的牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "选择一名其他角色并选择任意张牌"
+            }
+          ]
+        },
+        {
+          "id": 1849,
+          "name": "枕戈",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择杀的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择杀的目标"
+            }
+          ]
+        },
+        {
+          "id": 1859,
+          "name": "贿生",
+          "rows": [
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "弃置等量的牌"
+            }
+          ]
+        },
+        {
+          "id": 1862,
+          "name": "善身",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "交给受伤角色牌的数量"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "交给受伤角色牌的数量"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "交给受伤角色牌的数量"
+            }
+          ]
+        },
+        {
+          "id": 1863,
+          "name": "娴静",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "交给受伤角色牌的数量"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "交给受伤角色牌的数量"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "交给受伤角色牌的数量"
+            }
+          ]
+        },
+        {
+          "id": 1864,
+          "name": "和洽",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色并选择任意张牌"
+            }
+          ]
+        },
+        {
+          "id": 1879,
+          "name": "锦绘",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张卡牌使用"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 1885,
+          "name": "雄莽",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择花色各不相同的手牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择花色各不相同的手牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择花色各不相同的手牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择花色各不相同的手牌并选择一个目标"
+            }
+          ]
+        },
+        {
+          "id": 1886,
+          "name": "谗逆",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择至多1张手牌当【决斗】使用"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择至多2张手牌当【决斗】使用"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择至多5张手牌当【决斗】使用"
+            }
+          ]
+        },
+        {
+          "id": 1890,
+          "name": "战意",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "发动“战意”，请选择弃置1种类型的所有牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "发动“战意”，请选择弃置1种类型的所有牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "发动“战意”，请选择弃置1种类型的所有牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "发动“战意”，请选择弃置1种类型的所有牌"
+            }
+          ]
+        },
+        {
+          "id": 1902,
+          "name": "怨语",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张手牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一张手牌和一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 1904,
+          "name": "陈见",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择要使用的牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择要使用的牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择要使用的牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一张牌并选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 1933,
+          "name": "忧恤",
+          "rows": [
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请将该牌交给一名角色"
+            }
+          ]
+        },
+        {
+          "id": 1938,
+          "name": "狷狭",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择借刀杀人的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择借刀杀人的目标"
+            }
+          ]
+        },
+        {
+          "id": 1940,
+          "name": "谛听",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择1至5张牌"
+            }
+          ]
+        },
+        {
+          "id": 1942,
+          "name": "卜筮",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择使用或打出后摸牌的花色"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择使用或打出后摸牌的花色"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择使用或打出后摸牌的花色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择成为目标后可以无效的花色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择成为目标后可以无效的花色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择成为目标后可以无效的花色"
+            }
+          ]
+        },
+        {
+          "id": 1946,
+          "name": "媵予",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色获得展示牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "发动“媵予”，请选择2名有手牌的角色"
+            }
+          ]
+        },
+        {
+          "id": 1953,
+          "name": "数合",
+          "rows": [
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "将展示牌交给一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 1959,
+          "name": "泛音",
+          "rows": [
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择要使用的牌，点取消令你使用的下一张牌增加目标"
+            }
+          ]
+        },
+        {
+          "id": 1976,
+          "name": "三顾",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“三顾”，请选择1名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 1979,
+          "name": "示烈",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌置于武将牌上"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择1至5张牌置于武将牌上"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 1991,
+          "name": "私掠",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 1999,
+          "name": "化归",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“化归”，请选择至多1名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "发动“化归”，请选择至多2名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "发动“化归”，请选择至多2名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 2006,
+          "name": "溃击",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张黑色基本牌当作【兵粮寸断】置于你的判定区"
+            }
+          ]
+        },
+        {
+          "id": 2007,
+          "name": "挫锐",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 2168,
+          "name": "附敌",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张手牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一个目标"
+            }
+          ]
+        },
+        {
+          "id": 2193,
+          "name": "甘露",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一个要与之交换的符合条件的角色"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一个装备区有牌的角色"
+            }
+          ]
+        },
+        {
+          "id": 2352,
+          "name": "利傍",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择使用【杀】的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择使用【杀】的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择使用【杀】的目标"
+            }
+          ]
+        },
+        {
+          "id": 2364,
+          "name": "梦解",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择其至多两张牌弃置"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色将手牌摸至体力上限（最多摸5张）"
+            }
+          ]
+        },
+        {
+          "id": 2374,
+          "name": "翊赞",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张基本牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择两张牌（需包含基本牌）"
+            }
+          ]
+        },
+        {
+          "id": 2407,
+          "name": "密运",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择任意张手牌（必须包含【安】）"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择任意张手牌（必须包含【安】）"
+            }
+          ]
+        },
+        {
+          "id": 2414,
+          "name": "驰应",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择攻击范围内任意名角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择攻击范围内任意名角色"
+            }
+          ]
+        },
+        {
+          "id": 2415,
+          "name": "元嫡",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "弃置其一张手牌"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "弃置其一张手牌"
+            }
+          ]
+        },
+        {
+          "id": 2425,
+          "name": "救陷",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌重铸"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张牌重铸"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择1至5张牌重铸"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择使用【决斗】的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择使用【决斗】的目标"
+            }
+          ]
+        },
+        {
+          "id": 2427,
+          "name": "自固",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张装备牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请弃置一张牌并选择一个目标"
+            }
+          ]
+        },
+        {
+          "id": 2433,
+          "name": "谏诤",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张可使用的牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 2434,
+          "name": "腹谋",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“腹谋”，请选择至多1名角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "发动“腹谋”，请选择至多2名角色"
+            }
+          ]
+        },
+        {
+          "id": 2436,
+          "name": "文灿",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择两张不同花色的牌弃置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择至多2名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择至多2名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 2440,
+          "name": "蛮智",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "令其交给你两张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择使用【杀】的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择使用【杀】的目标"
+            }
+          ]
+        },
+        {
+          "id": 2441,
+          "name": "怒责",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择任意张同花色的牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择任意张同花色的牌弃置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择任意张同花色的牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 2455,
+          "name": "狐魅",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "交给你一张牌"
+            }
+          ]
+        },
+        {
+          "id": 2457,
+          "name": "黠策",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "发动“黠策”，请弃置一张牌并回复1点体力"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“黠策”，请选择一名其他角色技能失效"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "发动“黠策”，请弃置一张牌并回复1点体力"
+            }
+          ]
+        },
+        {
+          "id": 2459,
+          "name": "谏国",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "弃置1张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "弃置2张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "弃置1至5张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色并请选择一项"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2461,
+          "name": "掠城",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 2464,
+          "name": "长驱",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张手牌交出"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张手牌交出"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择1至5张手牌交出"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择终止角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择终止角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择终止角色"
+            }
+          ]
+        },
+        {
+          "id": 2474,
+          "name": "司天",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "弃置两张不同色的手牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 2491,
+          "name": "寄春",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌展示"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名手牌大于你的角色"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名手牌小于你的角色，点取消弃置展示的牌"
+            }
+          ]
+        },
+        {
+          "id": 2493,
+          "name": "琼英",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择两名角色"
+            }
+          ]
+        },
+        {
+          "id": 2494,
+          "name": "暖惠",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 2511,
+          "name": "犷骜",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择要无效的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择要无效的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择要无效的目标"
+            }
+          ]
+        },
+        {
+          "id": 2516,
+          "name": "仁德",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "选择一张要使用的基本牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 2519,
+          "name": "定基",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请将手牌弃置至五张"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请将手牌弃置至五张"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色发动定基"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请将手牌弃置至五张"
+            }
+          ]
+        },
+        {
+          "id": 2520,
+          "name": "悖逆",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请弃置2张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请弃置1至5张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择两名角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2521,
+          "name": "恃纵",
+          "rows": [
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1张牌并选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 2523,
+          "name": "硝引",
+          "rows": [
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一张黑色牌和一名角色"
+            }
+          ]
+        },
+        {
+          "id": 2524,
+          "name": "花火",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张红色手牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "是否将【杀】改为指定所有有硝引牌的角色为目标"
+            }
+          ]
+        },
+        {
+          "id": 2533,
+          "name": "蛮后",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择摸牌数量"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择摸牌数量"
+            }
+          ]
+        },
+        {
+          "id": 2537,
+          "name": "良秀",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择两张不同类型的牌"
+            }
+          ]
+        },
+        {
+          "id": 2538,
+          "name": "殉节",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请弃置2张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请弃置1至5张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "选择一名角色发动“殉节”"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2541,
+          "name": "数荐",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "弃置1张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "弃置2张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "弃置1至5张牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一张牌和一名其他角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2561,
+          "name": "蜜饴",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择任意名角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择任意名角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择任意名角色"
+            }
+          ]
+        },
+        {
+          "id": 2564,
+          "name": "掌戎",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请弃置2张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请弃置1至5张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择至多1名角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择至多2名角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择至多2名角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2585,
+          "name": "词牌",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置一张牌"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置一张牌"
+            }
+          ]
+        },
+        {
+          "id": 2586,
+          "name": "双璧",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "弃置至多2张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "弃置至多5张牌"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "弃置至多1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2588,
+          "name": "知否",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“知否”，请选择一名角色执行1项"
+            }
+          ]
+        },
+        {
+          "id": 2591,
+          "name": "梁燕",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请弃置2张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请弃置1至5张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2592,
+          "name": "明慧",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色回复1点体力"
+            }
+          ]
+        },
+        {
+          "id": 2596,
+          "name": "傲势",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌交给星袁绍"
+            }
+          ]
+        },
+        {
+          "id": 2597,
+          "name": "抚黎",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一种类别的牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择一种类别的牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择一种类别的牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色攻击范围减少"
+            }
+          ]
+        },
+        {
+          "id": 2598,
+          "name": "德化",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 2611,
+          "name": "势举",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2626,
+          "name": "征辟",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色并选择一项"
+            }
+          ]
+        },
+        {
+          "id": 2628,
+          "name": "权谋",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择攻击范围内一名角色"
+            }
+          ]
+        },
+        {
+          "id": 2633,
+          "name": "连讨",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“连讨”，请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 2642,
+          "name": "讨州",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 2649,
+          "name": "识草",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择从牌堆顶或牌堆底摸1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2668,
+          "name": "质亡",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 2671,
+          "name": "附袭",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2673,
+          "name": "筏铸",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "发动“筏铸”，请选择任意张非伤害牌重铸"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "发动“筏铸”，请选择任意张非伤害牌重铸"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "发动“筏铸”，请选择任意张非伤害牌重铸"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1张牌和1名角色"
+            }
+          ]
+        },
+        {
+          "id": 2687,
+          "name": "告谏",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“告谏”，请选择1名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 2691,
+          "name": "蓄志",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择任意张手牌交换"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择任意张手牌交换"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择任意张手牌交换"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择杀的目标角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择杀的目标角色"
+            }
+          ]
+        },
+        {
+          "id": 2693,
+          "name": "骄豪",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择1项令拼点赢的角色执行"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择1项令拼点赢的角色执行"
+            }
+          ]
+        },
+        {
+          "id": 2711,
+          "name": "安国",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 2719,
+          "name": "峻刑",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌，点取消摸牌翻面"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请弃置2张牌，点取消摸牌翻面"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请弃置1至5张牌，点取消摸牌翻面"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌，点取消摸牌翻面"
+            }
+          ]
+        },
+        {
+          "id": 2721,
+          "name": "佐军",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名角色"
+            }
+          ]
+        },
+        {
+          "id": 2733,
+          "name": "知机",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "发动“知机”，请弃置任意张手牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "发动“知机”，请弃置任意张手牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "发动“知机”，请弃置任意张手牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择至多1名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择至多2名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择至多2名其他角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "发动“知机”，请弃置任意张手牌"
+            }
+          ]
+        },
+        {
+          "id": 2740,
+          "name": "先谋",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择至多1张牌获得"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择至多2张牌获得"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择至多5张牌获得"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“先谋”（阴），请选择1名角色"
+            }
+          ]
+        },
+        {
+          "id": 2742,
+          "name": "齐眉",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 2744,
+          "name": "安庶",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“安庶”，请选择【五谷丰登】开始结算的角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "发动“安庶”，请选择【五谷丰登】开始结算的角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "发动“安庶”，请选择【五谷丰登】开始结算的角色"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“安庶”，请选择将手牌摸至体力上限的角色"
+            }
+          ]
+        },
+        {
+          "id": 2745,
+          "name": "匡祚",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择每种花色各1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2757,
+          "name": "醅酿",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌当【酒】使用"
+            }
+          ]
+        },
+        {
+          "id": 2763,
+          "name": "奇巧",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名角色装备区内的1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2764,
+          "name": "研械",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1张装备置于1名其他角色的的装备区"
+            }
+          ]
+        },
+        {
+          "id": 2823,
+          "name": "博玄",
+          "rows": [
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色弃置其1张牌"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择弃置其1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2824,
+          "name": "议政",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌展示"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择任意名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择任意名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择任意名其他角色"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请将这些牌交给一名角色"
+            }
+          ]
+        },
+        {
+          "id": 2827,
+          "name": "捷思",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择1至5张牌弃置"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 3245,
+          "name": "怒袭",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张点数相同的牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色对其造成该点数的伤害"
+            }
+          ]
+        },
+        {
+          "id": 3265,
+          "name": "慈母",
+          "rows": [
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择弃置1张牌，并选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 3279,
+          "name": "赠衣",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张花色相同的牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 5223,
+          "name": "锤袭",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一张牌和一名敌方角色"
+            }
+          ]
+        },
+        {
+          "id": 8408,
+          "name": "神戟",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张手牌弃置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择至多1名角色作为【杀】的额外目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择至多2名角色作为【杀】的额外目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择至多2名角色作为【杀】的额外目标"
+            }
+          ]
+        },
+        {
+          "id": 18205,
+          "name": "诫训",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "令其弃置1张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "令其弃置2张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "令其弃置1至5张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“诫训”，请选择1名角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "令其弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 18235,
+          "name": "神速",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择【杀】的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择【杀】的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择【杀】的目标"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 19103,
+          "name": "号令",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色对另一名角色使用一张牌"
+            }
+          ]
+        },
+        {
+          "id": 19117,
+          "name": "连刺",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色，依次对其使用手牌中的【杀】"
+            }
+          ]
+        },
+        {
+          "id": 25073,
+          "name": "青牛",
+          "rows": [
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色并选择任意张手牌"
+            }
+          ]
+        },
+        {
+          "id": 2776,
+          "name": "评骘",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张手牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 2784,
+          "name": "结党",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一种类型的牌移除"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择一种类型的牌移除"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择一种类型的牌移除"
+            }
+          ]
+        },
+        {
+          "id": 2782,
+          "name": "斡衡",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“斡衡”，请选择一名其他角色并选择一项"
+            }
+          ]
+        },
+        {
+          "id": 533,
+          "name": "急断",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置每种花色的手牌各一张"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请弃置每种花色的手牌各一张"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请弃置每种花色的手牌各一张"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“急断”，令一个目标展示一张手牌"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置每种花色的手牌各一张"
+            }
+          ]
+        },
+        {
+          "id": 2792,
+          "name": "修爵",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名角色进行拼点"
+            }
+          ]
+        },
+        {
+          "id": 2794,
+          "name": "复爵",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请弃置2张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请弃置1至5张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择两名角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2808,
+          "name": "斗围",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张伤害牌弃置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择任意名攻击范围内包含你的其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择任意名攻击范围内包含你的其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择任意名攻击范围内包含你的其他角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张伤害牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 2795,
+          "name": "佐定",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“佐定”，请选择一名角色执行1个额外回合"
+            }
+          ]
+        },
+        {
+          "id": 2796,
+          "name": "势谋",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 2801,
+          "name": "典论",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择任意张点数差相同的牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择任意张点数差相同的牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择任意张点数差相同的牌"
+            }
+          ]
+        },
+        {
+          "id": 2809,
+          "name": "迎驾",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择获得一名角色手牌"
+            }
+          ]
+        },
+        {
+          "id": 2805,
+          "name": "妩艳",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名男性角色对另一名角色使用一张牌"
+            }
+          ]
+        },
+        {
+          "id": 2811,
+          "name": "献酿",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色交给其等量牌"
+            }
+          ]
+        },
+        {
+          "id": 2830,
+          "name": "伪涕",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张点数不同的牌弃置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 2833,
+          "name": "急烈",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择1至5张牌弃置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名可以使用【杀】的角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 2858,
+          "name": "诹议",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌弃置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色令其摸2张牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色弃置其1张牌"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 2873,
+          "name": "狷急",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择至多1名其他角色弃置其1张牌"
+            }
+          ]
+        },
+        {
+          "id": 2866,
+          "name": "耕读",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择一种普通锦囊牌使用"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择一种普通锦囊牌使用"
+            }
+          ]
+        },
+        {
+          "id": 3714,
+          "name": "隽谋",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择至多2名角色横置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择至多2名角色横置"
+            }
+          ]
+        },
+        {
+          "id": 3715,
+          "name": "绽炎",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择弃置同花色牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择弃置同花色牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择任意名横置的其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择任意名横置的其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择任意名横置的其他角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择弃置同花色牌"
+            }
+          ]
+        },
+        {
+          "id": 4104,
+          "name": "绽炎",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择弃置同花色牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择弃置同花色牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择任意名横置的其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择任意名横置的其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择任意名横置的其他角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择弃置同花色牌"
+            }
+          ]
+        },
+        {
+          "id": 3501,
+          "name": "真仪",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择增加或减少的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择增加或减少的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择增加或减少的目标"
+            }
+          ]
+        },
+        {
+          "id": 2875,
+          "name": "传舆",
+          "rows": [
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请交给一名角色1张牌"
+            }
+          ]
+        },
+        {
+          "id": 3731,
+          "name": "抗明",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌展示"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择被杀的角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择被杀的角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择被杀的角色"
+            }
+          ]
+        },
+        {
+          "id": 3727,
+          "name": "酖毒",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "发动“酖毒”，请选择展示至多5张基本牌或锦囊牌"
+            }
+          ]
+        },
+        {
+          "id": 3737,
+          "name": "掇月",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色拼点"
+            }
+          ]
+        },
+        {
+          "id": 3738,
+          "name": "军合",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择任意张颜色相同或类别相同的牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择任意张颜色相同或类别相同的牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 3735,
+          "name": "谏立",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张手牌使用"
+            }
+          ]
+        },
+        {
+          "id": 2568,
+          "name": "镇庭",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择两张牌获得"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 3743,
+          "name": "夯筑",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择任意张牌置入武将牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择任意张牌置入武将牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择任意张牌置入武将牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择将所有“基”交给一名角色"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色弃置与放置牌点数相同的牌"
+            }
+          ]
+        },
+        {
+          "id": 3733,
+          "name": "僭卦",
+          "rows": [
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一张手牌弃置并选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 3507,
+          "name": "谶纬",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "选择一名角色获得其一张牌并背置"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "令一名角色将你一张牌翻面"
+            }
+          ]
+        },
+        {
+          "id": 3749,
+          "name": "镇御",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌使用"
+            }
+          ]
+        },
+        {
+          "id": 3750,
+          "name": "截路",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择其一张牌弃置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名横置角色重置"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择其一张牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 3752,
+          "name": "淑任",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌获得"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 3755,
+          "name": "猘锋",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张红色牌当无限距离的【杀】"
+            }
+          ]
+        },
+        {
+          "id": 3763,
+          "name": "善刀",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌置于牌堆顶"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择任意名角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择任意名角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择任意名角色"
+            }
+          ]
+        },
+        {
+          "id": 3761,
+          "name": "赀爵",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 3509,
+          "name": "淬刃",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张装备牌弃置"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择此牌额外目标"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张装备牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 3510,
+          "name": "神锋",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张装备牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择两张牌弃置"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张装备牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 3511,
+          "name": "唤灵",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌重铸"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色获得技能"
+            }
+          ]
+        },
+        {
+          "id": 3770,
+          "name": "和戎",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张手牌与其交换"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 3772,
+          "name": "驵贸",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择弃置任意张方块牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择弃置任意张方块牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择弃置任意张方块牌"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择弃置任意张方块牌"
+            }
+          ]
+        },
+        {
+          "id": 3773,
+          "name": "缜鉴",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择增加或减少目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择增加或减少目标"
+            }
+          ]
+        },
+        {
+          "id": 3791,
+          "name": "寅谋",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请弃置2张手牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请弃置1至5张手牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色获得此牌"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张手牌"
+            }
+          ]
+        },
+        {
+          "id": 3792,
+          "name": "宏策",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张手牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择1至5张手牌"
+            }
+          ]
+        },
+        {
+          "id": 3793,
+          "name": "宏策",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张手牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择1至5张手牌"
+            }
+          ]
+        },
+        {
+          "id": 3794,
+          "name": "宏策",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张手牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择1至5张手牌"
+            }
+          ]
+        },
+        {
+          "id": 3795,
+          "name": "宏策",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张手牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择1至5张手牌"
+            }
+          ]
+        },
+        {
+          "id": 3798,
+          "name": "烈骧",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择摸牌数"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择摸牌数"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择摸牌数"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择1至2名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择2名其他角色"
+            },
+            {
+              "name": "chooseControl",
+              "cards": null,
+              "targets": null,
+              "text": "请选择摸牌数"
+            }
+          ]
+        },
+        {
+          "id": 3797,
+          "name": "放浪",
+          "rows": [
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 3815,
+          "name": "涤仇",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择对任意名角色造成1点伤害"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择对任意名角色造成1点伤害"
+            }
+          ]
+        },
+        {
+          "id": 3523,
+          "name": "仁德",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "选择1张要使用的基本牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "选择任意张手牌和1名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 3550,
+          "name": "蛊惑",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张手牌"
+            }
+          ]
+        },
+        {
+          "id": 3553,
+          "name": "连环",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张梅花牌当【铁索连环】使用或重铸"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色弃置装备区里的一张牌"
+            }
+          ]
+        },
+        {
+          "id": 3563,
+          "name": "放逐",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 3579,
+          "name": "审时",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一张牌交给一名角色"
+            }
+          ]
+        },
+        {
+          "id": 3580,
+          "name": "贞良",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张要弃置的牌"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张要弃置的牌"
+            }
+          ]
+        },
+        {
+          "id": 3582,
+          "name": "良姻",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“良姻”，令1名角色摸1张牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "发动“良姻”，令1名角色弃置1张牌"
+            }
+          ]
+        },
+        {
+          "id": 3594,
+          "name": "慧辩",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张手牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择两名角色"
+            }
+          ]
+        },
+        {
+          "id": 3860,
+          "name": "倨傲",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择使用的牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择使用的牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择此牌目标"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 3833,
+          "name": "承宠",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张黑色牌使用"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色对其造成1点伤害"
+            }
+          ]
+        },
+        {
+          "id": 3822,
+          "name": "剑道",
+          "rows": [
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择弃置一张基本牌"
+            }
+          ]
+        },
+        {
+          "id": 3823,
+          "name": "明节",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 3834,
+          "name": "清势",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择对一名其他角色使用杀"
+            }
+          ]
+        },
+        {
+          "id": 3836,
+          "name": "燃缕",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 3825,
+          "name": "维谷",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "选择一张牌弃置发动“维谷”"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "选择一张牌弃置发动“维谷”"
+            }
+          ]
+        },
+        {
+          "id": 3846,
+          "name": "靖谋",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择弃置任意张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择弃置任意张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择弃置任意张牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择将此牌交给任意角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择弃置任意张牌"
+            }
+          ]
+        },
+        {
+          "id": 3856,
+          "name": "巧谏",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择你一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 3601,
+          "name": "博洽",
+          "rows": [
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色将手牌调整至体力上限"
+            }
+          ]
+        },
+        {
+          "id": 3879,
+          "name": "溃叛",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "选择其中一个目标"
+            }
+          ]
+        },
+        {
+          "id": 3880,
+          "name": "凝袍",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择至多两张牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 3882,
+          "name": "尊谏",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一种花色的手牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择一种花色的手牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择一种花色的手牌弃置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一种花色的手牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 3884,
+          "name": "怜幼",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 3607,
+          "name": "蛊惑",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张手牌"
+            }
+          ]
+        },
+        {
+          "id": 3639,
+          "name": "贞良",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张要弃置的牌"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张要弃置的牌"
+            }
+          ]
+        },
+        {
+          "id": 3633,
+          "name": "放逐",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 3875,
+          "name": "举战",
+          "rows": [
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置一张手牌令此牌额外结算一次"
+            }
+          ]
+        },
+        {
+          "id": 3887,
+          "name": "弘敏",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一种花色牌展示"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择一种花色牌展示"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择一种花色牌展示"
+            }
+          ]
+        },
+        {
+          "id": 3888,
+          "name": "精练",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "是否弃置牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "是否弃置牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "是否弃置牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择至多1名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择至多2名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择至多2名其他角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "是否弃置牌"
+            }
+          ]
+        },
+        {
+          "id": 3889,
+          "name": "挟术",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌获得"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "选择一个目标无效"
+            }
+          ]
+        },
+        {
+          "id": 3923,
+          "name": "兴邦",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择获得其一张手牌"
+            },
+            {
+              "name": "chooseCardTarget",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一张牌交给一名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 3935,
+          "name": "析势",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择任意张手牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择任意张手牌弃置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名其他角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择任意张手牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 3944,
+          "name": "制肴",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择至多5张牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 3920,
+          "name": "坐堂",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张手牌交给"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张手牌交给"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择1至5张手牌交给"
+            }
+          ]
+        },
+        {
+          "id": 3921,
+          "name": "病论",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张手牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 3377,
+          "name": "巧变",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌弃置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色对其使用【杀】"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择至多2名有手牌的目标角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择至多2名有手牌的目标角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 3960,
+          "name": "舞棒",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择弃置任意张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择弃置任意张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择弃置任意张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择额外目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择额外目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择额外目标"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择弃置任意张牌"
+            }
+          ]
+        },
+        {
+          "id": 3951,
+          "name": "踞峙",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择攻击范围内的一名角色"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 3952,
+          "name": "攻郡",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择任意牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择任意牌弃置"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择任意牌弃置"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色发动“攻郡”"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择任意牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 2885,
+          "name": "技三",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名角色摸一张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择1至2名角色摸一张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择2名角色摸一张牌"
+            }
+          ]
+        },
+        {
+          "id": 3955,
+          "name": "共略",
+          "rows": [
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 3979,
+          "name": "技一",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择任意张牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择任意张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择杀的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择杀的目标"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择杀的目标"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择一张牌弃置"
+            }
+          ]
+        },
+        {
+          "id": 3980,
+          "name": "技二",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择1张牌获得"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择2张牌获得"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择1至5张牌获得"
+            }
+          ]
+        },
+        {
+          "id": 3961,
+          "name": "恶援",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择任意牌展示"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请选择任意牌展示"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请选择任意牌展示"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择1名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择1至2名其他角色"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择2名其他角色"
+            }
+          ]
+        },
+        {
+          "id": 3975,
+          "name": "舞槊",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择移动场上一张牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                1
+              ],
+              "text": "请选择一名角色"
+            }
+          ]
+        },
+        {
+          "id": 3976,
+          "name": "和鸣",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请选择移动场上一张牌"
+            }
+          ]
+        },
+        {
+          "id": 3977,
+          "name": "陷祸",
+          "rows": [
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张手牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                2,
+                2
+              ],
+              "targets": null,
+              "text": "请弃置2张手牌"
+            },
+            {
+              "name": "chooseCard",
+              "cards": [
+                1,
+                5
+              ],
+              "targets": null,
+              "text": "请弃置1至5张手牌"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                1,
+                2
+              ],
+              "text": "请选择角色受到伤害"
+            },
+            {
+              "name": "chooseTarget",
+              "cards": null,
+              "targets": [
+                2,
+                2
+              ],
+              "text": "请选择角色受到伤害"
+            },
+            {
+              "name": "chooseToDiscard",
+              "cards": [
+                1,
+                1
+              ],
+              "targets": null,
+              "text": "请弃置1张手牌"
+            }
+          ]
+        }
+      ],
+      "unresolvedSkills": [
+        {
+          "id": 73,
+          "name": "神速",
+          "rows": []
+        },
+        {
+          "id": 142,
+          "name": "飞军",
+          "rows": []
+        },
+        {
+          "id": 155,
+          "name": "明任",
+          "rows": []
+        },
+        {
+          "id": 156,
+          "name": "贞良",
+          "rows": []
+        },
+        {
+          "id": 181,
+          "name": "狂斧",
+          "rows": []
+        },
+        {
+          "id": 365,
+          "name": "连计",
+          "rows": []
+        },
+        {
+          "id": 371,
+          "name": "解围",
+          "rows": []
+        },
+        {
+          "id": 386,
+          "name": "荐杰",
+          "rows": []
+        },
+        {
+          "id": 412,
+          "name": "甘露",
+          "rows": []
+        },
+        {
+          "id": 431,
+          "name": "疠火",
+          "rows": []
+        },
+        {
+          "id": 432,
+          "name": "醇醪",
+          "rows": []
+        },
+        {
+          "id": 461,
+          "name": "眩惑",
+          "rows": []
+        },
+        {
+          "id": 523,
+          "name": "雄幕",
+          "rows": []
+        },
+        {
+          "id": 605,
+          "name": "密诏",
+          "rows": []
+        },
+        {
+          "id": 606,
+          "name": "竭缘",
+          "rows": []
+        },
+        {
+          "id": 734,
+          "name": "活墨",
+          "rows": []
+        },
+        {
+          "id": 739,
+          "name": "燕语",
+          "rows": []
+        },
+        {
+          "id": 762,
+          "name": "矫诏",
+          "rows": []
+        },
+        {
+          "id": 856,
+          "name": "薮影",
+          "rows": []
+        },
+        {
+          "id": 984,
+          "name": "乱战",
+          "rows": []
+        },
+        {
+          "id": 1411,
+          "name": "醇醪",
+          "rows": []
+        },
+        {
+          "id": 1433,
+          "name": "司敌",
+          "rows": []
+        },
+        {
+          "id": 1438,
+          "name": "忠勇",
+          "rows": []
+        },
+        {
+          "id": 1453,
+          "name": "燕语",
+          "rows": []
+        },
+        {
+          "id": 1454,
+          "name": "矫诏",
+          "rows": []
+        },
+        {
+          "id": 1709,
+          "name": "国色",
+          "rows": []
+        },
+        {
+          "id": 1711,
+          "name": "火计",
+          "rows": []
+        },
+        {
+          "id": 1714,
+          "name": "筹策",
+          "rows": []
+        },
+        {
+          "id": 1725,
+          "name": "凌人",
+          "rows": []
+        },
+        {
+          "id": 1726,
+          "name": "伏间",
+          "rows": []
+        },
+        {
+          "id": 1738,
+          "name": "归心",
+          "rows": []
+        },
+        {
+          "id": 1739,
+          "name": "结姻",
+          "rows": []
+        },
+        {
+          "id": 1749,
+          "name": "气霸",
+          "rows": []
+        },
+        {
+          "id": 1773,
+          "name": "拯危",
+          "rows": []
+        },
+        {
+          "id": 1810,
+          "name": "望归",
+          "rows": []
+        },
+        {
+          "id": 1815,
+          "name": "清谈",
+          "rows": []
+        },
+        {
+          "id": 1823,
+          "name": "织纴",
+          "rows": []
+        },
+        {
+          "id": 1914,
+          "name": "双刃",
+          "rows": []
+        },
+        {
+          "id": 1941,
+          "name": "避祸",
+          "rows": []
+        },
+        {
+          "id": 1951,
+          "name": "易数",
+          "rows": []
+        },
+        {
+          "id": 1995,
+          "name": "引路",
+          "rows": []
+        },
+        {
+          "id": 1998,
+          "name": "崇望",
+          "rows": []
+        },
+        {
+          "id": 2003,
+          "name": "手谈",
+          "rows": []
+        },
+        {
+          "id": 2108,
+          "name": "双刃",
+          "rows": []
+        },
+        {
+          "id": 2136,
+          "name": "护援",
+          "rows": []
+        },
+        {
+          "id": 2351,
+          "name": "伪谠",
+          "rows": []
+        },
+        {
+          "id": 2362,
+          "name": "佐谏",
+          "rows": []
+        },
+        {
+          "id": 2373,
+          "name": "踞营",
+          "rows": []
+        },
+        {
+          "id": 2376,
+          "name": "内伐",
+          "rows": []
+        },
+        {
+          "id": 2400,
+          "name": "间计",
+          "rows": []
+        },
+        {
+          "id": 2424,
+          "name": "铃音",
+          "rows": []
+        },
+        {
+          "id": 2453,
+          "name": "绡刃",
+          "rows": []
+        },
+        {
+          "id": 2490,
+          "name": "谮构",
+          "rows": []
+        },
+        {
+          "id": 2495,
+          "name": "十计",
+          "rows": []
+        },
+        {
+          "id": 2513,
+          "name": "偕举",
+          "rows": []
+        },
+        {
+          "id": 2549,
+          "name": "砺锋",
+          "rows": []
+        },
+        {
+          "id": 2556,
+          "name": "善白",
+          "rows": []
+        },
+        {
+          "id": 2558,
+          "name": "英谋",
+          "rows": []
+        },
+        {
+          "id": 2589,
+          "name": "忠言",
+          "rows": []
+        },
+        {
+          "id": 2594,
+          "name": "纵势",
+          "rows": []
+        },
+        {
+          "id": 2602,
+          "name": "护援",
+          "rows": []
+        },
+        {
+          "id": 2655,
+          "name": "覆谋",
+          "rows": []
+        },
+        {
+          "id": 2679,
+          "name": "唤理",
+          "rows": []
+        },
+        {
+          "id": 2688,
+          "name": "出山",
+          "rows": []
+        },
+        {
+          "id": 2692,
+          "name": "飒影",
+          "rows": []
+        },
+        {
+          "id": 2694,
+          "name": "庇族",
+          "rows": []
+        },
+        {
+          "id": 2710,
+          "name": "方统",
+          "rows": []
+        },
+        {
+          "id": 2718,
+          "name": "活墨",
+          "rows": []
+        },
+        {
+          "id": 2726,
+          "name": "伏械",
+          "rows": []
+        },
+        {
+          "id": 2735,
+          "name": "研作",
+          "rows": []
+        },
+        {
+          "id": 2770,
+          "name": "诀言",
+          "rows": []
+        },
+        {
+          "id": 2772,
+          "name": "低讴",
+          "rows": []
+        },
+        {
+          "id": 2828,
+          "name": "笃君",
+          "rows": []
+        },
+        {
+          "id": 3041,
+          "name": "精勇",
+          "rows": []
+        },
+        {
+          "id": 8211,
+          "name": "帝师",
+          "rows": []
+        },
+        {
+          "id": 9016,
+          "name": "樊城",
+          "rows": []
+        },
+        {
+          "id": 18025,
+          "name": "颂词",
+          "rows": []
+        },
+        {
+          "id": 18027,
+          "name": "司敌",
+          "rows": []
+        },
+        {
+          "id": 18031,
+          "name": "巧变",
+          "rows": []
+        },
+        {
+          "id": 18032,
+          "name": "活墨",
+          "rows": []
+        },
+        {
+          "id": 18228,
+          "name": "巧变",
+          "rows": []
+        },
+        {
+          "id": 18239,
+          "name": "护援",
+          "rows": []
+        },
+        {
+          "id": 536,
+          "name": "克构",
+          "rows": []
+        },
+        {
+          "id": 2800,
+          "name": "肃纲",
+          "rows": []
+        },
+        {
+          "id": 2806,
+          "name": "占欲",
+          "rows": []
+        },
+        {
+          "id": 2831,
+          "name": "圆融",
+          "rows": []
+        },
+        {
+          "id": 2836,
+          "name": "斩绊",
+          "rows": []
+        },
+        {
+          "id": 2856,
+          "name": "乱魁",
+          "rows": []
+        },
+        {
+          "id": 2832,
+          "name": "疏和",
+          "rows": []
+        },
+        {
+          "id": 3701,
+          "name": "潜曜",
+          "rows": []
+        },
+        {
+          "id": 3713,
+          "name": "极斩",
+          "rows": []
+        },
+        {
+          "id": 3716,
+          "name": "骤袭",
+          "rows": []
+        },
+        {
+          "id": 3728,
+          "name": "巧对",
+          "rows": []
+        },
+        {
+          "id": 2569,
+          "name": "持国",
+          "rows": []
+        },
+        {
+          "id": 3506,
+          "name": "爻疑",
+          "rows": []
+        },
+        {
+          "id": 3771,
+          "name": "镔济",
+          "rows": []
+        },
+        {
+          "id": 3775,
+          "name": "识变",
+          "rows": []
+        },
+        {
+          "id": 3788,
+          "name": "许愿",
+          "rows": []
+        },
+        {
+          "id": 3796,
+          "name": "悉诵",
+          "rows": []
+        },
+        {
+          "id": 3521,
+          "name": "明访",
+          "rows": []
+        },
+        {
+          "id": 3811,
+          "name": "漠规",
+          "rows": []
+        },
+        {
+          "id": 3813,
+          "name": "仁诚",
+          "rows": []
+        },
+        {
+          "id": 3573,
+          "name": "飞军",
+          "rows": []
+        },
+        {
+          "id": 3595,
+          "name": "委屈",
+          "rows": []
+        },
+        {
+          "id": 3830,
+          "name": "赋乐",
+          "rows": []
+        },
+        {
+          "id": 3781,
+          "name": "迫饮",
+          "rows": []
+        },
+        {
+          "id": 3838,
+          "name": "煌怒",
+          "rows": []
+        },
+        {
+          "id": 3779,
+          "name": "震弓",
+          "rows": []
+        },
+        {
+          "id": 3841,
+          "name": "英谋",
+          "rows": []
+        },
+        {
+          "id": 3851,
+          "name": "骁贲",
+          "rows": []
+        },
+        {
+          "id": 3862,
+          "name": "兽群",
+          "rows": []
+        },
+        {
+          "id": 3628,
+          "name": "良姻",
+          "rows": []
+        },
+        {
+          "id": 3890,
+          "name": "纵恣",
+          "rows": []
+        },
+        {
+          "id": 3893,
+          "name": "率检",
+          "rows": []
+        },
+        {
+          "id": 3895,
+          "name": "怀姝",
+          "rows": []
+        },
+        {
+          "id": 3939,
+          "name": "通令",
+          "rows": []
+        },
+        {
+          "id": 3397,
+          "name": "密诏",
+          "rows": []
+        },
+        {
+          "id": 3968,
+          "name": "技三",
+          "rows": []
+        },
+        {
+          "id": 4101,
+          "name": "技一",
+          "rows": []
+        },
+        {
+          "id": 4102,
+          "name": "技二",
+          "rows": []
+        },
+        {
+          "id": 4103,
+          "name": "技三",
+          "rows": []
+        }
+      ]
+    },
+    "ambiguous": {
+      "main": "“明任”：请选择1张牌",
+      "detail": "",
+      "skill": "明任",
+      "official": null
+    },
+    "mismatched": {
+      "main": "“缔盟”：请选择1张牌和1名角色",
+      "detail": "",
+      "skill": "缔盟",
+      "official": null
+    },
+    "errors": []
+  },
+  "onlineUI": {
+    "one": {
+      "main": "烈骧：请选择一名其他角色",
+      "detail": "这些角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。",
+      "native": "烈骧：请选择一名其他角色",
+      "nativeDetail": "这些角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。"
+    },
+    "multiple": {
+      "main": "烈骧：请选择至多三名其他角色",
+      "detail": "这些角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。",
+      "native": "烈骧：请选择至多三名其他角色",
+      "nativeDetail": "这些角色按照你选择的顺序依次执行：{你对其造成1点伤害，然后若你的手牌数：1.大于其，本回合你出【杀】次数+1且你可以交给一名其他角色至多X张牌；2.等于其，你获得其一张牌且其下回合使用的前X张牌无效；3.小于其，你失去X点体力，此技能本回合修改为“出牌阶段限两次”且可额外选择至多X名其他角色（X为你选择的摸牌数）。}。"
+    },
+    "gift": {
+      "main": "烈骧：你可以将至多五张牌交给其他角色",
+      "detail": "",
+      "native": "烈骧：你可以将至多五张牌交给其他角色"
+    },
+    "mixedDetail": {
+      "main": "请选择一名角色交给其至多5张牌",
+      "detail": "必须保留的独立条件",
+      "skill": "烈骧",
+      "official": {
+        "richMain": "请选择一名角色交给其至多5张牌",
+        "entryId": 3798,
+        "field": "ActiveTip"
+      }
+    },
+    "customDetail": {
+      "main": "烈骧：你可以将至多五张牌交给其他角色",
+      "detail": "只能交给本轮未获得过牌的角色，必须保留一张黑桃牌",
+      "native": "烈骧：你可以将至多五张牌交给其他角色",
+      "nativeDetail": "只能交给本轮未获得过牌的角色，必须保留一张黑桃牌"
+    },
+    "control": {
+      "main": "烈骧：你可以摸至多五张牌",
+      "detail": ""
+    },
+    "errors": []
+  }
+}

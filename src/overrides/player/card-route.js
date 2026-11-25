@@ -63,8 +63,8 @@ function playerRespondAnimateBefore() {
 
 function playerUseCard() {
 	const event = actionOverrides.playerUseCard.apply(this, arguments);
-	// 只跳过用牌展示等待，动画及选择、响应和结算仍走各自的原生流程。
-	event.delayx = false;
+	// 仅主视角使用装备牌时跳过展示等待；其他用牌保留原生节奏。
+	if (this === game.me && get.type(event.card, null, this) === "equip") event.delayx = false;
 	return event;
 }
 
@@ -96,11 +96,8 @@ function playerGive() {
 	return movementOverrides.playerGive.apply(this, arguments);
 }
 
-function playerPhaseJudge(card) {
-	game.addVideo("phaseJudge", this, get.cardInfo(card));
-	const cards = card[card.cardSymbol]?.cards;
-	// 只播放判定区移出画面，不登记过渡等待；判定规则仍由本体事件处理。
-	this.$throw(cards?.length ? cards : game.createCard(card.name, "虚拟", ""));
+function playerPhaseJudge() {
+	return movementOverrides.playerPhaseJudge.apply(this, arguments);
 }
 
 function playerThrow() {

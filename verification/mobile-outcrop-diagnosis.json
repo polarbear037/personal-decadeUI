@@ -1,0 +1,259 @@
+{
+  "description": "手机主视角动皮背景超出露头范围排查，仅诊断，未改产品源码",
+  "target": {
+    "serial": "e1143408",
+    "url": "https://localhost/index.html",
+    "character": "lvdai",
+    "skin": "交趾震威",
+    "scene": "fuqin_yizhou map",
+    "offscreen": true
+  },
+  "comparisons": [
+    {
+      "file": "十周年UI/src/animation/APNode.js",
+      "equal": true,
+      "normalizedEqual": true,
+      "phoneHash": "f88868a25945cd6aa08f01c3fee185ae459cb8d094169f64e2d234cff25c2230",
+      "pcHash": "f88868a25945cd6aa08f01c3fee185ae459cb8d094169f64e2d234cff25c2230"
+    },
+    {
+      "file": "十周年UI/src/animation/AnimationPlayer.js",
+      "equal": true,
+      "normalizedEqual": true,
+      "phoneHash": "e067d085e34348c7b6200398fcb360b9c1abe9845207882963faed7a29ed7873",
+      "pcHash": "e067d085e34348c7b6200398fcb360b9c1abe9845207882963faed7a29ed7873"
+    },
+    {
+      "file": "十周年UI/src/animation/AnimationPlayerPool.js",
+      "equal": true,
+      "normalizedEqual": true,
+      "phoneHash": "6286f44b45bd66191a30265ad79f64f005b84751a655d9107d059bd529fcb2ba",
+      "pcHash": "6286f44b45bd66191a30265ad79f64f005b84751a655d9107d059bd529fcb2ba"
+    },
+    {
+      "file": "十周年UI/src/animation/DynamicPlayer.js",
+      "equal": true,
+      "normalizedEqual": true,
+      "phoneHash": "9a5b82b6daa385a8e759357633ae15392496c54d8bbb46559f4ab832fa07c314",
+      "pcHash": "9a5b82b6daa385a8e759357633ae15392496c54d8bbb46559f4ab832fa07c314"
+    },
+    {
+      "file": "十周年UI/src/overrides/player/dynamic-skin.js",
+      "equal": true,
+      "normalizedEqual": true,
+      "phoneHash": "9a9d2b6010cbf8a6eb58f9ac7287ceda19b981264d001a39c45db15871226aa8",
+      "pcHash": "9a9d2b6010cbf8a6eb58f9ac7287ceda19b981264d001a39c45db15871226aa8"
+    },
+    {
+      "file": "十周年UI/src/ui/dynamicOutcrop.js",
+      "equal": true,
+      "normalizedEqual": true,
+      "phoneHash": "ba21b8f167d15fea90c9f7435a6e9b3dde14531a9e4ef724404e6ac8643c1604",
+      "pcHash": "ba21b8f167d15fea90c9f7435a6e9b3dde14531a9e4ef724404e6ac8643c1604"
+    },
+    {
+      "file": "皮肤切换/js/modules/player-dynamic-adapter.js",
+      "equal": true,
+      "normalizedEqual": true,
+      "phoneHash": "cc4ed0eea6563df30ecbd1d5f0f0befb0465ae1294f702f04b0f2ff68fb1cbc6",
+      "pcHash": "cc4ed0eea6563df30ecbd1d5f0f0befb0465ae1294f702f04b0f2ff68fb1cbc6"
+    },
+    {
+      "file": "雷的一将/utils/mobileDynamicOutcrop.js",
+      "equal": true,
+      "normalizedEqual": true,
+      "phoneHash": "69ed6f652e70a121f97f8e0a79a2ee52b5c72026b1e93455ce05737481fb9ce1",
+      "pcHash": "69ed6f652e70a121f97f8e0a79a2ee52b5c72026b1e93455ce05737481fb9ce1"
+    },
+    {
+      "file": "抚琴益州/native-dynamic-outcrop.js",
+      "equal": true,
+      "normalizedEqual": true,
+      "phoneHash": "973543415f21ced1f4880470d5e7d1821894d8916bced5ef0358d2c365c80d01",
+      "pcHash": "973543415f21ced1f4880470d5e7d1821894d8916bced5ef0358d2c365c80d01"
+    },
+    {
+      "file": "十周年UI/src/skins/dynamicSkin.js",
+      "equal": true,
+      "normalizedEqual": true,
+      "phoneHash": "6785066e6ab22ca781435e19197c398dbdd9eae486209a588cda697ec462a2bf",
+      "pcHash": "6785066e6ab22ca781435e19197c398dbdd9eae486209a588cda697ec462a2bf"
+    },
+    {
+      "file": "十周年UI/src/libs/spine.js",
+      "equal": true,
+      "normalizedEqual": true,
+      "phoneHash": "257cdd371290fe30859cc7b55d462b2de0bdc7a99328324cda3f411ca5d1ed4e",
+      "pcHash": "257cdd371290fe30859cc7b55d462b2de0bdc7a99328324cda3f411ca5d1ed4e"
+    },
+    {
+      "file": "皮肤切换/spine.js",
+      "equal": true,
+      "normalizedEqual": true,
+      "phoneHash": "7b7e58c9d19015d9f9e4fb779c547f23740610a7288c44599a712d8001d5c30c",
+      "pcHash": "7b7e58c9d19015d9f9e4fb779c547f23740610a7288c44599a712d8001d5c30c"
+    },
+    {
+      "file": "皮肤切换/animations.js",
+      "equal": true,
+      "normalizedEqual": true,
+      "phoneHash": "e0d02c93df83747b4b91890cc48a8aac4aadb9dfd82ff5d8b0d4c5ee6ebe71eb",
+      "pcHash": "e0d02c93df83747b4b91890cc48a8aac4aadb9dfd82ff5d8b0d4c5ee6ebe71eb"
+    }
+  ],
+  "workerState": [
+    {
+      "id": 0,
+      "animations": [
+        {
+          "version": "3.6",
+          "canvas": {
+            "w": 254,
+            "h": 392
+          },
+          "outcropMask": true,
+          "nodes": [
+            {
+              "id": 100000,
+              "name": "吕岱/交趾震威/beijing",
+              "isbeijing": true,
+              "completed": false
+            },
+            {
+              "id": 99999,
+              "name": "吕岱/交趾震威/beijing",
+              "isbeijing": true,
+              "clip": {
+                "x": 0,
+                "y": 0,
+                "width": [
+                  0,
+                  1
+                ],
+                "height": [
+                  0,
+                  0.9
+                ]
+              },
+              "renderClip": {
+                "x": 0,
+                "y": 0,
+                "width": 254,
+                "height": 352.8
+              },
+              "completed": false
+            },
+            {
+              "id": 1,
+              "name": "吕岱/交趾震威/daiji2",
+              "completed": false,
+              "opacity": 1,
+              "playerClip": {
+                "x": 0,
+                "y": 0,
+                "width": [
+                  0,
+                  1
+                ],
+                "height": [
+                  0,
+                  0.9
+                ]
+              },
+              "background": {
+                "id": 99999,
+                "name": "吕岱/交趾震威/beijing",
+                "clip": {
+                  "x": 0,
+                  "y": 0,
+                  "width": [
+                    0,
+                    1
+                  ],
+                  "height": [
+                    0,
+                    0.9
+                  ]
+                },
+                "renderClip": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 254,
+                  "height": 352.8
+                }
+              }
+            },
+            {
+              "id": 0,
+              "name": "吕岱/交趾震威/daiji2",
+              "completed": false,
+              "opacity": 1,
+              "background": {
+                "id": 100000,
+                "name": "吕岱/交趾震威/beijing"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pixelProbe": [
+    {
+      "id": 100000,
+      "name": "吕岱/交趾震威/beijing",
+      "topBand": {
+        "fromY": 353,
+        "toY": 392,
+        "pixels": 9906,
+        "maxAlpha": 255
+      },
+      "error": 0
+    },
+    {
+      "id": 99999,
+      "name": "吕岱/交趾震威/beijing",
+      "clip": {
+        "x": 0,
+        "y": 0,
+        "width": [
+          0,
+          1
+        ],
+        "height": [
+          0,
+          0.9
+        ]
+      },
+      "renderClip": {
+        "x": 0,
+        "y": 0,
+        "width": 254,
+        "height": 352.8
+      },
+      "topBand": {
+        "fromY": 353,
+        "toY": 392,
+        "pixels": 0,
+        "maxAlpha": 0
+      },
+      "error": 0
+    }
+  ],
+  "raceResult": {
+    "scenario": "PLAY -> STOP before assets finish -> assets finish",
+    "messagesBeforeLoad": 0,
+    "messagesAfterStop": [
+      {
+        "type": "loadFinish",
+        "spriteId": 0
+      }
+    ],
+    "remainingCallbacks": 0
+  },
+  "limitations": [
+    "未捕获最初历史消息序列；PLAY/STOP加载竞态由现场残留节点加真实函数受控复现定位",
+    "CDP截图未包含离屏动皮，视觉依据使用ADB真实屏幕截图",
+    "未实施永久修复或修改手机文件"
+  ]
+}

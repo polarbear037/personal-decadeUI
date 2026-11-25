@@ -58,6 +58,9 @@ with zipfile.ZipFile(args.game_archive) as archive:
         ('app.manager.game.GameMoveManager', ['0.0.1', '0.0.3']),
         ('app.view.game.card.CardUiNew', ['0.42', '0.53']),
         ('app.module.game.seat.PlayerSeat', ['0.143']),
+        ('cframe.ct.ui.UI_ccb', ['0.7', '0.8', '0.19']),
+        ('cframe.ct.ui.Label', ['0.0', '0.9']),
+        ('framework.display', ['0.28']),
     ]:
         data = archive.read(name)
         chunk = Chunk(data)
@@ -74,12 +77,19 @@ report = dict(
     rea_evidence=['ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965', 'ev_9c5d0ada064eb4df0e69550e647832f45a7c91a83828969b6e7b0219840bc0e9'],
     modules=modules,
     asset=dict(plist=plist_member, plist_sha256=sha(plist_data), texture=texture, texture_sha256=sha(color), alpha_sha256=sha(alpha), frame=frame, destination=destination, sha256=sha((ROOT / destination).read_bytes()), rgba_matches_official_crop=True, font=font, font_sha256=sha((ROOT / font).read_bytes()), font_matches_apk=True),
-    layout=dict(card=[126, 174], background=[130, 61], anchor='CENTER_BOTTOM', position=[63, 0], label_center=[63, 28.5], dimensions=[120, 60], font_size=22, color='#ffffff', outline='#3f3318', outline_width=1, wrapping='Native label wraps the complete sentence; no explicit name/action break'),
+    layout=dict(card=[126, 174], background=[130, 61], anchor='CENTER_BOTTOM', position=[63, 0],
+                label_center=[63, 28.5], label_center_in_card_bottom_up=[61, 28.5], dimensions=[120, 60],
+                label_left_in_background=3, label_top_in_background=2.5,
+                horizontal_alignment='center', vertical_alignment='center', background_bottom=0,
+                font_size=22, color='#ffffff', outline='#3f3318', outline_width=1,
+                wrapping='Native label wraps the complete sentence; no explicit name/action break'),
     observations=[
         'GameMoveManager0.0.1 PC250..490: general short name; AOE/self target uses 使用, other targets use 对 + names separated by 、, no targets uses 打出; equipment uses 装备. Transformed physical cards use the source skill name alone.',
         'PC84..224: 弃置, special 过河拆桥弃置 and 铁索重铸; PC45..58/65..82: 展示.',
         'CardUiNew0.53 PC59..77: all judge animations retain skill name + TXT_PANDING_CARD (判定牌), not 判定生效/失效 in card-bottom text.',
         'CfgStyleLabel PC6080..6112: fzbw22, white255, outline63/51/24 with pixel1, center/center.',
+        'UI_ccb.createLabelByStyle 0.7 -> getNodeParamsFunc.ls 0.19 -> createLabelByOptions 0.8 -> Label 0.0 -> newTTFLabel_ 0.9 -> framework.display.newTTFLabel 0.28. PC33..42 resolves params.align/valign; PC126..128 passes those actual R5/R6 values to createWithTTF. The LEFT/TOP constants are fallbacks only, not overrides of CardText center/center.',
+        'Background width130 is centered at card x63, giving background left=-2. Label center x63 within that sprite and width120 gives label left=3 within background, or x=1 within card. Previous local left5 within background displaced text two design units to the right; corrected to3/130.',
     ],
     adaptation='Only othersOff. Retain108x150 card and configured transforms. Map official sprite/label geometry proportionally; font22*108/126, CSS line-height1 with automatic wrapping. Native noname targets, conversion skills and discard ancestry supply equivalent data. Other styles retain existing HTML and animations.',
     limitations=['Shipped modified-opcode Lua bytecode and APK resources, not original authoring source.', 'Official client runtime, exact Cocos/browser font rasterization, Android device and real network multiplayer not verified.', 'Native server skill-specific rules without noname equivalents are not independently implemented.'],

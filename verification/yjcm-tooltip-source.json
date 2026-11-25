@@ -136,15 +136,17 @@
     "TextTips.initUI 0.2 lines47..136: item_tips_bg, capInsets(130,60,70,60), font fzbw, title28/body24, content width=width-55, text left19/top11, successive label top advances labelHeight+14. total height=sum(labelHeight+8)+42; two labels => titleHeight+bodyHeight+58. No card-type row or rank suffix.",
     "SpellAreaNew.initSpellBtns 0.25.0/0.25.1 calls sgs.ui.showSkillTips. UIFactory.showSkillTips 0.47 lines739..766 constructs GeneralSpellTips, not SpellTips or SkillTextTip.",
     "GeneralSpellTips width400, createSpellNode0.10 lines228..361: title LEFT_TOP(21,-16), size87x41, title FZSHENGSKSJW34 c3b252,244,188 centered43.5,20. If label width>68 grow background by width-68. Active/passive38x38 at title LEFT_BOTTOM(100+growth,1), fzbw26.",
-    "GeneralSpellTips body LEFT_TOP(19,-69), fzbw22, lineSpace6,maxWidth360,color255,240,213; bottom14; new_skill_bg scale9 default one-third caps. Rich/scroll content retained."
+    "GeneralSpellTips body LEFT_TOP(19,-69), fzbw22, lineSpace6,maxWidth360,color255,240,213; bottom14; new_skill_bg scale9 default one-third caps. Rich/scroll content retained.",
+    "This recheck used REA open_binary and inspect_artifact on the same current APK: inventory summary ev_9c5d0ada064eb4df0e69550e647832f45a7c91a83828969b6e7b0219840bc0e9 retains parent ev_21378a25c4c3a406bcbf9affc4a729d1202833a82378733501bd16f7cd446965. Packed game cache matches APK bytes; decoded archive SHA256 and each existing tooltip module/PNG SHA256 match the saved evidence. No re-extraction or loss of image quality."
   ],
-  "adaptation": "Only othersOff hand-card nodeintro and skill-button hover. Use native cardPrompt/dynamicTranslate and move original card nodes. Suppress only redundant native type row; preserve range, derivation, yingbian and interactive content. Tooltips anchor above source and clamp to ui.window, use existing --yjcm-unit with documentZoom conversion. No changes to card/skill rules. Other style branches retained.",
+  "adaptation": "Only othersOff hand-card and equipped-card nodeintro plus skill-button hover. Reuse the existing APK 6.4.5 TextTips item_tips_bg asset for equipped cards; the equipped-card hover is a local native nodeintro adaptation, not a claim about an observed official-client equipment gesture. Move the original native cardPrompt/description/range/tag nodes; hide only the redundant type row and remove rank from the title. Equipment .decade-equip-name has no browser title attribute. Anchor and clamp using existing --yjcm-unit and documentZoom conversion. Wrapper transitions are disabled so inherited visibility does not delay the body. Card/skill rules and all other style branches remain unchanged.",
   "validation": {
     "command": "node verification/yjcm-tooltip-browser.cjs",
     "results": "verification/yjcm-tooltip-results.json",
     "screenshots": [
       "verification/yjcm-tooltip-browser.png",
-      "verification/yjcm-tooltip-wuzhong.png"
+      "verification/yjcm-tooltip-wuzhong.png",
+      "verification/yjcm-tooltip-equipment.png"
     ],
     "checks": [
       "real noname entry and native get.nodeintro/lib.placePoppedDialog",
@@ -155,13 +157,36 @@
       "dynamic long-description scroll and mouse enter/leave hide",
       "hidden cards and outside-hand exclusions",
       "window resize/documentZoom",
-      "Online and other four styles isolation"
+      "Online and other four styles isolation",
+      "self and other-seat native hoverplayer entry for weapon/armor/defensive horse/offensive horse/treasure",
+      "guding spade A uses official green title and frame; native attack range2 and effect retained",
+      "no title attributes on equipment names; custom cardPrompt color and gaintag retained",
+      "body visible after preparation without inherited half-second visibility delay",
+      "equipment branch excluded in all five other styles"
     ],
     "not_verified": [
-      "official client runtime comparison",
-      "current Electron game",
+      "official client runtime visual comparison",
+      "rendered current Electron screenshot (hidden window)",
+      "full Electron match settlement",
       "mobile device",
       "network play"
-    ]
+    ],
+    "commands": [
+      "node --check src/ui/xinsha-tooltip.js",
+      "node --check src/ui/equip-xinsha.js",
+      "node --check verification/yjcm-tooltip-browser.cjs",
+      "node verification/yjcm-tooltip-browser.cjs",
+      "node verification/yjcm-tooltip-lifecycle-browser.cjs"
+    ],
+    "live_check": {
+      "method": "Existing noname background debugging connection on port9238. Reversible tooltip-only update of current renderer; native event/skill/selected cards/equipment not modified. Temporary preview removed.",
+      "observed": [
+        "Current style body/config=othersOff",
+        "Actual equipped guding has official TextTips frame and green title; native range/effect nodes retained",
+        "All current equipment-name title attributes removed; capture listener suppresses titles if the older in-memory layout recreates them until next normal launch",
+        "The current chooseToUse event remained the same object during the focused DOM check"
+      ],
+      "limitation": "document.visibilityState=hidden. Page.captureScreenshot did not produce a screenshot; live DOM/style inspection does not establish a rendered current-game screenshot or full game settlement."
+    }
   }
 }

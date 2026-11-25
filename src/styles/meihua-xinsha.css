@@ -18,7 +18,7 @@
 	position: relative;
 	width: 100%;
 	margin-top: 5px;
-	font-size: 10px;
+	font-size: 14px;
 	font-family: "yuanli";
 	font-weight: 700;
 	color: rgb(224, 215, 174);
@@ -197,9 +197,9 @@
 
 /** 手牌提示 */
 
-#arena > .hand-tip,
-#arena > .hand-tip-info,
-#arena > .hand-tip span {
+#arena>.hand-tip,
+#arena>.hand-tip-info,
+#arena>.hand-tip span {
 	font-size: 22px !important;
 	font-family: "yuanli" !important;
 	bottom: var(--hand-tip-bottom, calc(20% + 10px)) !important;

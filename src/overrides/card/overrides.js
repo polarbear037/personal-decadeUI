@@ -119,7 +119,7 @@ function p(bool, delay, baseTransform) {
 		return void setTimeout(() => {
 			this.updateTransform(this.classList.contains("selected"));
 		}, delay);
-	if (preserveConfirmedHandCard(this)) { clearXinshaHandMotion(this); return; }
+	if (preserveConfirmedHandCard(this)) { clearXinshaHandMotion(this, true); return; }
 	if (baseTransform !== undefined) this._transform = baseTransform;
 	let transform = baseTransform;
 	const xinsha = (window.decadeUI?.config?.newDecadeStyle ?? lib.config.extension_十周年UI_newDecadeStyle) === "othersOff",
@@ -131,7 +131,7 @@ function p(bool, delay, baseTransform) {
 			transform = `${this._transform} translateY(-${offset}px)`;
 		} else transform = this._transform || "";
 	if (transform !== undefined) {
-		if (xinsha && this.parentNode === ui.handcards1 && this.animate && (!hovered || this.classList.contains("selected"))) updateXinshaHandMotion(this, transform, !!bool);
+		if (xinsha && this.parentNode === ui.handcards1 && this.animate) updateXinshaHandMotion(this, transform, !!bool);
 		else {
 			clearXinshaHandMotion(this);
 			if (this.style.transform !== transform) this.style.transform = transform;
@@ -150,6 +150,14 @@ function g(player) {
 	return ((this.tx = s), (this.ty = r), (this.scaled = !0), (this.style.transform = `translate(${s}px,${r}px) scale(${scale})`), player !== game.me && applyCardBorder(this, player), this);
 }
 function y(player) {
+	// 即时牌效果的 gain2 通知不一定代表得牌。材料仍在处理区时，
+	// 保留本次用牌展示，不能在失牌飞行后又把同一副本送回角色。
+	// 真正的 gain、判定取牌、装备及延时牌仍走各自移牌入口。
+	const effect = _status.event;
+	if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && !_status.video &&
+		effect?.type === "card" && !this.fixed && ui.thrown?.includes(this) &&
+		!["equip", "delay"].includes(get.type(effect.card, null, effect.player)) &&
+		effect.cards?.some(source => source.clone === this && get.position(source, true) === "o")) return;
 	if (((this.fixed = !0), this._decadeEquipUseDirect)) {
 		const e = Math.max(0, (this._decadeEquipDirectUntil || 0) - ("object" == typeof performance && "function" == typeof performance.now ? performance.now() : Date.now()));
 		return void setTimeout(() => {

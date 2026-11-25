@@ -2,8 +2,10 @@ import { ui, game, get, _status, lib } from "noname";
 import { throttle as t } from "../../animation/utils.js";
 import "../../animation/DynamicPlayer.js";
 import { syncOnlineJudgeLayout } from "../../ui/online-judge-layout.js";
+import { syncXinshaJudgeLayout } from "../../ui/xinsha-judge-layout.js";
 import { getBaseUiUpdate as getBaseUiUpdate } from "./base.js";
 import { syncDialogOlControls as syncDialogOlControls } from "../../ui/dialog-ol-controls.js";
+import { syncXinshaActionButtons } from "../../ui/xinsha-action-buttons.js";
 import { clearDialogOlLayout as clearDialogOlLayout, isDialogOlLayout as isDialogOlLayout, syncDialogOlLayoutMarker as syncDialogOlLayoutMarker, updateDialogOlLayout as updateDialogOlLayout } from "../../ui/dialog-ol-layout.js";
 function e() {
 	const controls = ui.control.childNodes;
@@ -21,6 +23,7 @@ function i() {
 function s(player) {
 	if (!player) return;
 	syncOnlineJudgeLayout(player);
+	syncXinshaJudgeLayout(player);
 	const judges = player.node.judges.childNodes;
 	for (let o = 0; o < judges.length; o++)
 		if (!judges[o].classList.contains("removing") && (judges[o].classList.remove("drawinghidden"), _status.connectMode)) {
@@ -48,8 +51,9 @@ function l() {
 		else dialog.classList.add("prompt");
 		dialog.forcebutton || dialog._scrollset ? (dialog.classList.add("scroll1"), dialog.classList.add("scroll2")) : (dialog.classList.remove("scroll1"), dialog.classList.remove("scroll2"));
 	}
-	syncDialogOlControls(ui.dialog, ui.arena, ui.window, ui.update);
 	updateDialogOlLayout(dialog, ui.arena);
+	syncXinshaActionButtons();
+	syncDialogOlControls(ui.dialog, ui.arena, ui.window, ui.update);
 	if (dialogOl || null == ui.dialog || noupdate) return;
 	if ((ui.dialog.buttons && ui.dialog.buttons.length) || ui.dialog.forcebutton || !1 !== ui.dialog.classList.contains("fullheight") || "stone" === get.mode()) {
 		ui.dialog.classList.remove("prompt");

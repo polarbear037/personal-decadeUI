@@ -1,0 +1,33 @@
+{
+  "video": {
+    "duration": 3.606542,
+    "size": [
+      2054,
+      978
+    ],
+    "observation": "约1.7至2.2秒可见顺手牵羊先向偏下位置移动，再回跳并飞向处理区。"
+  },
+  "trace": {
+    "earliestAt": 1795343738314,
+    "latestAt": 1795343791391,
+    "rows": 1840,
+    "completeInitialFlight": false,
+    "reason": "近期记录因容量裁切从 useCard step 16 开始，顺手的副本创建、最初动画端点及调用栈已不在缓冲。",
+    "rootCause": "未确认，不能以剩余通知数排除重复飞行。"
+  },
+  "independentManualCheck": {
+    "confirmed": true,
+    "displayCopies": 1,
+    "animations": 1,
+    "sampleFrames": 269,
+    "reverseSamples": 0,
+    "errors": [],
+    "reproduced": false
+  },
+  "changes": [
+    "关键轨迹独立4000条/300万字符缓冲，与2000条/100万字符近期采样分离",
+    "记录展示牌行内transform直接重置",
+    "保持schema1与原生data库、开关、清空、导出和保存现场"
+  ],
+  "originalAnimationFixed": false
+}

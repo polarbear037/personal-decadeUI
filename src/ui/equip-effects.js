@@ -3,6 +3,28 @@ import { get, lib } from "noname";
 const EQUIP_SWEEP_NAME = "FX_PaiJu_ZhuangBei_saoguang";
 const installedApis = new WeakSet();
 
+function fitXinshaTurnSweep(sprite, position) {
+	const name = typeof sprite === "string" ? sprite : sprite?.name;
+	if (lib.config.extension_十周年UI_newDecadeStyle !== "othersOff" ||
+		!name?.endsWith("标记补充/animation/十周年入场/SF_paiju_jie_zuowei4") ||
+		!position?.parent?.classList?.contains("player")) return null;
+	const options = typeof sprite === "string" ? { name: sprite } : sprite;
+	const scale = position.scale ?? options.scale ?? 1;
+	if (!Number.isFinite(scale)) return null;
+	// 此 Spine 的 play 将框线骨骼 longkuang4_tx4 放在 (5.934717,-3.499786)，
+	// 并非骨骼原点；直接挂在 player 中心会偏右下。只平移，保留原大小和扫光轨迹。
+	const offset = (value, delta) => Array.isArray(value)
+		? [value[0] + delta, value[1]] : value == null ? [delta, 0.5] : value + delta;
+	return {
+		sprite: { ...options },
+		position: {
+			...position,
+			x: offset(position.x ?? options.x, -5.934717 * scale),
+			y: offset(position.y ?? options.y, 3.499786 * scale),
+		},
+	};
+}
+
 function fitOnlineArmorEffect(sprite, position) {
 	const name = typeof sprite === "string" ? sprite : sprite?.name;
 	if (name?.split("/").pop() !== "qimenhujia" || lib.config.extension_十周年UI_newDecadeStyle !== "onlineUI") return null;
@@ -71,7 +93,7 @@ function installEquipSweepCompatibility() {
 		// 6.4.5 EquipArea.addCard / MoveCardController 没有 OL 通用入栏扫光。
 		// 标记补充的延时回调仍会到达此入口；按实际风格拦截，保留 Online 原路径。
 		if (lib.config.extension_十周年UI_newDecadeStyle === "othersOff" && name?.split("/").pop() === EQUIP_SWEEP_NAME) return;
-		const fitted = fitOnlineArmorEffect(sprite, position) || fitEquipSweep(sprite, position);
+		const fitted = fitXinshaTurnSweep(sprite, position) || fitOnlineArmorEffect(sprite, position) || fitEquipSweep(sprite, position);
 		return original.call(this, fitted?.sprite || sprite, fitted?.position || position, ...args);
 	};
 	installedApis.add(api);

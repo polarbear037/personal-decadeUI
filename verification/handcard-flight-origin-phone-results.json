@@ -1,0 +1,21 @@
+{
+  "style": "othersOff",
+  "method": "在当前 chooseToRespond 中受控复现确认清理，结束恢复原事件、选择与实体牌；没有提交响应或运行完整手机用牌结算。",
+  "before": {
+    "quickConfirmationDeltaY": -17.18008858816961,
+    "skillMaterialDeltaY": 4.892839704241055
+  },
+  "after": {
+    "quickConfirmationDeltaY": 0,
+    "skillMaterialDeltaY": 0,
+    "eventUnchanged": true,
+    "handCount": 4
+  },
+  "syncFiles": [
+    "src/utils/hand-card-position.js",
+    "src/ui/handcard-motion-xinsha.js",
+    "src/overrides/card/overrides.js"
+  ],
+  "syncedTextVerified": true,
+  "runtimePatchApplied": true
+}
